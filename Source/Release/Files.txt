@@ -1,0 +1,82 @@
+' Add a tab and one of the following commands as applicable:
+' Programs: Copy this file to DDOLiteTools
+' Source: Copy this file to Source
+' If neither is specified, the file is copied to both (eg: data files)
+
+Root=..\..\
+Destination=Release
+Project=Source\Release\Release
+File=Source\Release\Files.txt	Source
+
+' Character Builder Lite
+File=CharacterBuilderLite.exe	Programs
+Project=CharacterBuilderLite
+File=Data\Builder\Classes.txt
+File=Data\Builder\Destinies.txt
+File=Data\Builder\Enhancements.txt
+File=Data\Builder\Exceptions.txt
+File=Data\Builder\Feats.txt
+File=Data\Builder\FeatMap.txt
+File=Data\Builder\Help.txt
+File=Data\Builder\NameChange.txt
+File=Data\Builder\Races.txt
+File=Data\Builder\ReadMe.txt
+File=Data\Builder\Spells.txt
+File=Data\Builder\Templates.txt
+
+' Cannith Crafting
+File=CannithCrafting.exe	Programs
+Project=CannithCrafting
+File=Data\Cannith\AugmentItems.txt
+File=Data\Cannith\Augments.txt
+File=Data\Cannith\AugmentVendors.txt
+File=Data\Cannith\Collectables.txt
+File=Data\Cannith\Eldritch.txt
+File=Data\Cannith\Farms.txt
+File=Data\Cannith\General.txt
+File=Data\Cannith\Help.txt
+File=Data\Cannith\ItemChoices.txt
+File=Data\Cannith\ItemCombo.txt
+File=Data\Cannith\Items.txt
+File=Data\Cannith\Misc.txt
+File=Data\Cannith\Scaling.txt
+File=Data\Cannith\Schools.txt
+File=Data\Cannith\Shards.txt
+File=Data\Cannith\SoulGems.txt
+
+' Compendium
+File=Compendium.exe	Programs
+Project=Compendium
+File=Data\Compendium\Challenges.txt
+File=Data\Compendium\Help.txt
+File=Data\Compendium\LinkLists.txt
+File=Data\Compendium\Packs.txt
+File=Data\Compendium\Patrons.txt
+File=Data\Compendium\Quests.txt
+File=Data\Compendium\ReadMe.txt
+File=Data\Compendium\SagaOrderEpic.txt
+File=Data\Compendium\SagaOrderHeroic.txt
+File=Data\Compendium\Sagas.txt
+File=Data\Compendium\Tables.txt
+File=Data\Compendium\Wilderness.txt
+
+' Shared
+File=Data\Fonts.txt
+File=Data\Tomes.txt
+
+' Utils
+File=Utils\ADQ.exe
+File=Utils\Colors.exe
+File=Utils\LightsOut.exe
+File=Utils\Stopwatch.exe
+File=Utils\Help.txt
+Project=Source\Utils\ADQ\ADQ
+Project=Source\Utils\Colors\Colors
+Project=Source\Utils\LightsOut\LightsOut
+Project=Source\Utils\Stopwatch\Stopwatch
+
+' Other
+File=Source\Graphics\Graphics.zip	Source
+Folder=Settings
+File=Save\Kensei Warpriest.build
+File=Save\Kensei Warpriest.gearset

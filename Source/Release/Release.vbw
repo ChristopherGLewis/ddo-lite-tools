@@ -1,0 +1,7 @@
+clsWindowsXP = 128, 128, 1220, 630, C
+clsFile = -64, 90, 1325, 592, C
+clsFolder = 96, 96, 1188, 598, C
+frmRelease = 160, 160, 1252, 662, C, 128, 128, 1220, 630, C
+basRelease = 0, 0, 1092, 502, C
+basControls = 224, 224, 1316, 726, C
+clsStatusbar = 64, 64, 1453, 566, C
