@@ -6,14 +6,14 @@ BAB: 0.75
 SkillPoints: 2
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, spot, Use Magic Device
 GrantedFeats1: Inscribe Alchemy Recipe, Arcane Lore, Magical Training, Alchemical Spellcasting, Echoes of Power
-GrantedFeats2: Insightful Reflexes, Artificer Knowledge
+GrantedFeats2: Insightful Reflexes, Artificer Knowledge: Potions
 GrantedFeats3: Alchemy on the Run
-GrantedFeats5: Artificer Knowledge
+GrantedFeats5: Artificer Knowledge: Potions
 GrantedFeats6: Multitude of Missiles
 GrantedFeats7: Poisonblood
-GrantedFeats8: Artificer Knowledge
-GrantedFeats11: Artificer Knowledge
-GrantedFeats14: Artificer Knowledge
+GrantedFeats8: Artificer Knowledge: Potions
+GrantedFeats11: Artificer Knowledge: Potions
+GrantedFeats14: Artificer Knowledge: Potions
 BonusFeat: 4, 8, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
