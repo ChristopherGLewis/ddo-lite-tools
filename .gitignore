@@ -1,4 +1,5 @@
 Save/
 Utils/
 *.exe
+*.obj
 Settings.txt

@@ -1,3 +1,28 @@
+ClassName: Alchemist
+Initial: A, Al, Alchemist, Alc
+Color: Blue
+Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+BAB: 0.5
+SkillPoints: 2
+Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, spot, Use Magic Device
+GrantedFeats1: Magical Training
+BonusFeat: 1, 4, 8, 16, 20
+Trees: Apothecary, Bombardier, Vile Chemist
+MaxSpellLevel: 6
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+SpellSlots2: 0, 0, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5
+SpellSlots3: 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5
+SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 4, 5, 5, 5, 5
+SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 4, 5
+SpellList1: Empty Bottle, Vial of Acid, Vial of Flame, Vial of Frost, Vial of Sparks, Vial of Venom, Vial Smash: Acid, Vial Smash: Cold, Vial Smash: Electric, Vial Smash: Fire, Vial Smash: Poison
+SpellList2: Bear's Endurance, Blindness, Blur, Bull's Strength, Cat's Grace, Command Undead, Daze Monster, Eagle's Splendor, Electric Loop, False Life, Flaming Sphere, Fog Cloud, Fox's Cunning, Ghoul Touch, Glitterdust, Gust of Wind, Hypnotic Pattern, Invisibility, Knock, Lesser Death Aura, Melf's Acid Arrow, Ooze Puppet, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scare, Scorch, Scorching Ray, See Invisibility, Snowball Swarm, Spawn Screen, Summon Monster II, Touch of Idiocy, Web
+SpellList3: Acid Blast, Chain Missiles, Deep Slumber, Dispel Magic, Displacement, Fireball, Flame Arrow, Frost Lance, Halt Undead, Haste, Heroism, Hold Person, Lightning Bolt, Magic Circle Against Evil, Protection from Energy, Rage, Ray of Exhaustion, Repair Serious Damage, Sleet Storm, Slow, Stinking Cloud, Suggestion, Summon Monster III, Water Breathing
+SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Contagion, Crushing Despair, Death Aura, Dimension Door, Enervation, Fear, Fire Shield, Fire Trap, Force Missiles, Ice Storm, Lesser Globe of Invulnerability, Negative Energy Burst, Phantasmal Killer, Remove Curse, Repair Critical Damage, Shout, Solid Fog, Stoneskin, Summon Monster IV, Symbol of Flame, Wall of Fire
+SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic Blast, Dismissal, Dominate Person, Eladar's Electric Surge, Feeblemind, Hold Monster, Mass Repair Light Damage, Mind Fog, Niac's Biting Cold, Prismatic Ray, Protection from Elements, Summon Monster V, Symbol of Pain, Teleport, Waves of Fatigue
+SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
+
 ClassName: Artificer
 Initial: A, Ar, Arti, Art
 Color: Blue

@@ -10595,3 +10595,92 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training
+
+TreeName: Apothecary
+Abbreviation: Apo
+Type: Class
+Initial: Apo
+
+AbilityName: Determination
+Descrip: +1 Will Save
+Tier: 0
+
+AbilityName: Alchemical Shield
+Descrip: While wearing Light or no armor (or in Mithral Plating), you have a +4 Shield bonus to AC and are protected from Magic Missiles. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+Tier: 0
+
+AbilityName: Curative Admixture
+Descrip:  Curative Admixture Cure Serious Wounds SLA and Curative Admixture Inflict Serious Wounds SLA that share a cooldown. (Gildleaf spells) Passive: + 1 Spell Penetration. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+Tier: 0
+
+AbilityName: Spill the Bad Stuff
+Descrip: Gildleaf Offensive SLA: Deals 1d6+4 per Caster Level of a random type of damage to enemies in a short cone. The damage all scales with Positive Spell Power. Affected enemies have a chance to be Blinded, Dazed, Silenced, Tripped, Stunned, or Paralyzed. (Fortitude save negates). }Passive: While your Reaction is Verdanite, +2% Positive & Negative Spell Critical Damage & 5% Magical Efficiency (reduced spell point cost)
+Tier: 0
+
+AbilityName: Curative Admixture Heal
+Descrip: Curative Admixture Heal SLA and Curative Admixture Harm SLA that share a cooldown (Gildleaf spells). }Passive: While your Reaction is Verdanite, +1 Transmutation DC
+Tier: 0
+
+AbilityName: Genius Never Dies!
+Descrip: +4 Intelligence. +20 Concentration. You gain +1000 Unconsciousness Range, the Diehard feat, and +1 Spell Penetration. }+4 Intelligence }Passive: While your Reaction is Verdanite, +2 Transmutation DC
+Tier: 0
+
+AbilityName: Curative Admixture Cure Light Wounds
+Descrip: Infuses a Cure Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer/Alchemist Knowledge: Potions.
+Tier: 1
+Ranks: 3
+
+AbilityName: Apothecary Skills
+Descrip: Infuses a Cure Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer/Alchemist Knowledge: Potions.
+Tier: 1
+Ranks: 3
+
+AbilityName: Spell Critical Chance Positive & Negative I
+Descrip: +2% chance to critically hit with Positive and Negative Spells.
+Tier: 1
+Ranks: 3
+Cost: 2
+
+AbilityName: Energy of the Scholar
+Descrip: +[30/60/90] Maximum Spell Points
+Tier: 1
+Ranks: 3
+
+AbilityName: Soothing Poultices
+Descrip: While your Reaction is Verdanite, when you cast spells on yourself of allies you grant temporary hitpoints equal to third/half/full Intelligence. These last for three minutes.
+Tier: 1
+Ranks: 3
+
+TreeName: Bombadier 
+Abbreviation: Bom
+Type: Class
+Initial: Bom
+
+AbilityName: Determination
+Descrip: +1 Will Save
+Tier: 0
+
+AbilityName: Alchemical Shield
+Descrip: While wearing Light or no armor (or in Mithral Plating), you have a +4 Shield bonus to AC and are protected from Magic Missiles. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+Tier: 0
+
+AbilityName: Curative Admixture
+Descrip:  Curative Admixture Cure Serious Wounds SLA and Curative Admixture Inflict Serious Wounds SLA that share a cooldown. (Gildleaf spells) Passive: + 1 Spell Penetration. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+Tier: 0
+
+AbilityName: Spill the Bad Stuff
+Descrip: Gildleaf Offensive SLA: Deals 1d6+4 per Caster Level of a random type of damage to enemies in a short cone. The damage all scales with Positive Spell Power. Affected enemies have a chance to be Blinded, Dazed, Silenced, Tripped, Stunned, or Paralyzed. (Fortitude save negates). }Passive: While your Reaction is Verdanite, +2% Positive & Negative Spell Critical Damage & 5% Magical Efficiency (reduced spell point cost)
+Tier: 0
+
+AbilityName: Curative Admixture Heal
+Descrip: Curative Admixture Heal SLA and Curative Admixture Harm SLA that share a cooldown (Gildleaf spells). }Passive: While your Reaction is Verdanite, +1 Transmutation DC
+Tier: 0
+
+AbilityName: Genius Never Dies!
+Descrip: +4 Intelligence. +20 Concentration. You gain +1000 Unconsciousness Range, the Diehard feat, and +1 Spell Penetration. }+4 Intelligence }Passive: While your Reaction is Verdanite, +2 Transmutation DC
+Tier: 0
+
+TreeName: Vile Chemist
+Abbreviation: VCh
+Type: Class
+Initial: VCh
