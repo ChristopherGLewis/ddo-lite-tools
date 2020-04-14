@@ -10651,7 +10651,7 @@ Descrip: While your Reaction is Verdanite, when you cast spells on yourself of a
 Tier: 1
 Ranks: 3
 
-TreeName: Bombadier 
+TreeName: Bombardier 
 Abbreviation: Bom
 Type: Class
 Initial: Bom
