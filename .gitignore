@@ -4,3 +4,6 @@ Utils/
 *.obj
 Settings.txt
 spells.csv
+error.log
+crawl.txt
+master
