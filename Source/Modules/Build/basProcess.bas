@@ -513,13 +513,23 @@ Private Sub FindAbility(ptypTree As TreeType, ptypPointer As PointerType, pstrRa
     Dim lngPos As Long
     Dim lngRank As Long
     Dim i As Long
+    Dim strSPC As String
+    Dim strSPC2 As String
+    strSPC = "Spell Critical Chance: "
+    strSPC2 = "Spell Critical: "
     
-    lngPos = InStr(pstrRaw, ": ")
-    If lngPos Then
-        strAbility = Left$(pstrRaw, lngPos - 1)
-        strSelector = Mid$(pstrRaw, lngPos + 2)
-    Else
+    ' Deal with SPC
+    If (Left(pstrRaw, Len(strSPC)) = strSPC) Or (Left(pstrRaw, Len(strSPC2)) = strSPC2) Then
         strAbility = pstrRaw
+    Else
+        'Parse the string for ':' -
+        lngPos = InStr(pstrRaw, ": ")
+        If lngPos Then
+            strAbility = Left$(pstrRaw, lngPos - 1)
+            strSelector = Mid$(pstrRaw, lngPos + 2)
+        Else
+            strAbility = pstrRaw
+        End If
     End If
     With ptypPointer
         With ptypTree.Tier(.Tier)

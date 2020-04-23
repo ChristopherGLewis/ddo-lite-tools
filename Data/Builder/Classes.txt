@@ -4,16 +4,9 @@ Color: Blue
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
 SkillPoints: 2
-Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, spot, Use Magic Device
-GrantedFeats1: Inscribe Alchemy Recipe, Arcane Lore, Magical Training, Alchemical Spellcasting, Echoes of Power
-GrantedFeats2: Insightful Reflexes, Artificer Knowledge: Potions
-GrantedFeats3: Alchemy on the Run
-GrantedFeats5: Artificer Knowledge: Potions
-GrantedFeats6: Multitude of Missiles
-GrantedFeats7: Poisonblood
-GrantedFeats8: Artificer Knowledge: Potions
-GrantedFeats11: Artificer Knowledge: Potions
-GrantedFeats14: Artificer Knowledge: Potions
+Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
+GrantedFeats1: Magical Training
+GrantedFeats2: Insightful Reflexes
 BonusFeat: 4, 8, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
@@ -28,7 +21,7 @@ SpellList1: Empty Bottle, Vial of Acid, Vial of Flame, Vial of Frost, Vial of Sp
 SpellList2: Greater Venom Vial, Lesser Heartseeker Poison Imbue, Lesser Ice Chill Poison Imbue, Lesser Soulshatter Poison Imbue, Lesser Voidmand Poison Imbue, Cold Spike, Corrode Weapons, Melt Armor, Voltaic Backlash, Curative Admixture: Cure Moderate Wounds, Curative Admixture: Inflict Moderate Wounds, Curative Admixture: Remove Curse, Curative Admixture: Remove Paralysis, Restorative Draught, Alluring Elixir, Augment Armor, Bottled Boost: Spell, Glue Bomb, Liquid Courage, Salt Crystals
 SpellList3: Bitter Frost Burst, Caustic Solvent, Heartstopper Poison, Molotov Cocktail, Voltaic Induction, Elemental Weapons, Curative Admixture: Cure Serious Wounds, Curative Admixture: Inflict Serious Wounds, Choking Smog, Flash Freeze, Iron Shavings, Greater Restorative Draught, Bottled Boost: Double, Displacement Draught, Evolution, Greater Liquid Courage, Invisibility Potion, Melt Lock, Quicksilver Potion
 SpellList4: Corrosive Dust, Heartseeker Poison Imbue, Ice Chill Poison Imbue, Soulshatter Poison Imbue, Voidmind Poison Imbue, Caustic Overload, Cindersmoke, Voltaic Burst, Vein Freeze, Curative Admixture: Cure Critical Wounds, Curative Admixture: Inflict Critical Wounds, Smoke Bomb, Sanctified Vial, Bottled Boost: Power, Bottled Boost: Sprint, Flesh to Gold, Hypnotic Combination, Stoneskin Potion
-SpellList5: Multivial of Acid, Multivial of Flame, Multivial of Frost, Multivial of Poison, Multivial of Sparks, Poison Breath, Greater Elemental Weapons, Flashbang, Flesh to Gold,  Mass, Greater Stoneskin, Bottled Boost: Haste, Greater Evolution, Turn to Frog
+SpellList5: Multivial of Acid, Multivial of Flame, Multivial of Frost, Multivial of Poison, Multivial of Sparks, Poison Breath, Greater Elemental Weapons, Flashbang, Mass Flesh to Gold, Greater Stoneskin, Bottled Boost: Haste, Greater Evolution, Turn to Frog
 SpellList6: Elemental Combination, Gold Breath, Greater Heartseeker Poison Imbue, Greater Ice Chill Poison Imbue, Greater Soulshatter Poison Imbue, Greater Voidmind Poison Imbue, Curative Admixture: Harm, Curative Admixture: Heal, Dust of Confusion, Goldskin Potion
 
 ClassName: Artificer

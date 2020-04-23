@@ -9824,7 +9824,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Divine Vessel
-Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{-  Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{-  Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.    Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.
+Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{-  Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{-  Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge. Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.
 Tier: 5
 Selector: Cleave, Ranged
 
@@ -10635,10 +10635,9 @@ Descrip: Infuses a Cure Light Wounds potion with magical energy, hurling it towa
 Tier: 1
 Ranks: 3
 
-AbilityName: Spell Critical Chance Positive & Negative I
+AbilityName: Spell Critical Chance: Positive & Negative I
 Descrip: +2% chance to critically hit with Positive and Negative Spells.
 Tier: 1
-Ranks: 3
 Cost: 2
 
 AbilityName: Energy of the Scholar
@@ -10651,34 +10650,345 @@ Descrip: While your Reaction is Verdanite, when you cast spells on yourself of a
 Tier: 1
 Ranks: 3
 
-TreeName: Bombardier 
+AbilityName: Hale & Hearty
+Descrip: +[3/6/10] Positive and Negative Healing Amplification
+Tier: 2
+Ranks: 3
+
+AbilityName: Spell Critical Chance: Positive & Negative II
+Descrip: +2% chance to critically hit with Positive and Negative Spells
+Tier: 2
+Cost: 2
+Ranks: 1
+All: Tier 1: Spell Critical Chance: Positive & Negative I
+
+AbilityName: Stone of the Scholar
+Descrip: Stone of the Scholar: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +10 Healing Amplification and +20 Positive Spell Power. You can only have one Alchemist's Stone Toggle active at a time.
+Tier: 2
+Cost: 2
+Ranks: 1
+
+AbilityName: Life Salve
+Descrip: Training this Enhancement also grants you a similar ability Death Salve.Target player, hireling, or pet takes 100% base healing from Positive spells for the next 3 minutes (or until target dies.) Has no effect on NPC allies or allies that already take 100% base Positive healing. This overrides their innate base healing from Positive spells for the duration. Shares a cooldownwith Death Salve and Converter.
+Tier: 2
+Cost: 2
+
+AbilityName: Panacea Poultice
+Descrip: (Gildleaf SLA): Target ally at touch range takes the Panacea effect. (6/3/1 spell point, 12/8/6 second cooldown).
+Tier: 3
+Cost: 1
+Ranks: 3
+
+AbilityName: Safety Goggles
+Descrip: +[1/2/3] Armor Class and +[2/4/6] Resistance to Fire, Cold, Acid and Electric damage. Rank 3 Blindness Immunity.
+Tier: 3
+Cost: 1
+Ranks: 3
+
+AbilityName: Spell Critical Chance: Positive & Negative III
+Descrip: +2% chance to critically hit with Positive and Negative Spells.
+Tier: 3
+Cost: 2
+Ranks: 1
+All: Tier 2: Spell Critical Chance: Positive & Negative II
+
+AbilityName: Willful Ambition
+Descrip: When your Reaction is Verdanite, you gain +1 Will Save, +1 for every 5 Alchemist Levels you have.
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Ability I
+Descrip: +1 to either Intelligence or Constitution
+Tier: 3
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Intelligence, Constitution
+
+AbilityName: Insulated Boots
+Descrip: +[2/4/6] Magical Resistance Rating.Rank 3: You are immune to Slippery Surfaces.Not quite fashionable, but they'll keep you standing!
+Tier: 4
+Cost: 1
+Ranks: 3
+
+AbilityName: Spell Critical Chance: Positive & Negative IV
+Descrip: +2% chance to critically hit with Positive and Negative Spells.
+Tier: 4
+Cost: 2
+Ranks: 1
+All: Tier 3: Spell Critical Chance: Positive & Negative III
+
+AbilityName: Run for your life!
+Descrip: While your Reaction is Verdanite, you gain 1% Movement Speed per Alchemist Level.
+Tier: 4
+Cost: 2
+Ranks: 1
+
+AbilityName: Ability II
+Descrip: +1 to either Intelligence or Constitution
+Tier: 4
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Intelligence, Constitution
+All: Tier 3: Ability I
+
+AbilityName: Curative Admixture: Cure or Inflict Critical Wounds
+Descrip: Curative Admixture: Cure Critical Wounds Or Curative Admixture: Inflict Critical Wounds Metamagic: Empower, Empower Heal, Maximize, Intensify Spell Point Cost: 45 Cooldown 12 seconds Primer Element: Gildleaf Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.
+Tier: 5
+Cost: 1
+Ranks: 1
+
+AbilityName: Gloves of the Master Apothecary
+Descrip: +5 Use Magic Device, +10 Universal Spell Power. You have a 15% chance to retain a copy of any single-use Positive, Negative, or Repair Healing Potion that you drink.
+Tier: 5
+Cost: 2
+Ranks: 1
+All: Tier 4: Insulated Boots
+
+AbilityName: Master Apothecary
+Descrip: You have no Max Caster Level with Curative Admixtures and any Gildleaf Alchemist Spells. +2 To Transmutation DCs, and +1 Spell Penetration
+Tier: 5
+Cost: 2
+Ranks: 1
+All: Tier 4: Spell Critical Chance: Positive & Negative IV
+
+AbilityName: Dissolve
+Descrip: Target enemy at touch range that is Fascinated, Sleeping, Dancing, Dazed, Tripped, Mesmerized, Paralyzed, Petrified, or Stunned must make a Fortitude save (d20 + your Heal skill) or die instantly. (20 second cooldown)
+Tier: 5
+Cost: 2
+Ranks: 1
+
+AbilityName: Deadly Neurotoxin/Nightshade
+Descrip: Choose between Deadly Neurotoxin and Nightshade.}Deadly Neurotoxin: Offensive Gildleaf or Ceruleite Spells will reduce your targets Armor Class and Magical Resistance rating by -1 per stack, max 5. }Nightshade: Spell point Cost: 10, Cooldown: 30 seconds, Metamagics: Quicken, Accelerate Primer: Gildleaf Target enemy falls asleep for 6 seconds with no save.
+Tier: 5
+Cost: 1
+Ranks: 1
+Flags: SelectorOnly
+Selector: Deadly Neurotoxin, Nightshade
+
+
+TreeName: Bombardier
 Abbreviation: Bom
 Type: Class
 Initial: Bom
 
-AbilityName: Determination
-Descrip: +1 Will Save
+AbilityName: Alchemical Resistance
+Descrip: +2 Magical Resistance Rating
 Tier: 0
+Cost: 1
+Ranks: 1
 
-AbilityName: Alchemical Shield
-Descrip: While wearing Light or no armor (or in Mithral Plating), you have a +4 Shield bonus to AC and are protected from Magic Missiles. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+AbilityName: Arcane Oil
+Descrip: All equipped weapons are considered Spellcasting Implements. While in Pyrite Reaction, you gain +5 Fire, Cold, Electric, Acid, and Poison Spell Power.
 Tier: 0
+Cost: 1
+Ranks: 1
 
-AbilityName: Curative Admixture
-Descrip:  Curative Admixture Cure Serious Wounds SLA and Curative Admixture Inflict Serious Wounds SLA that share a cooldown. (Gildleaf spells) Passive: + 1 Spell Penetration. }While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+AbilityName: Liquid Power I
+Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{-Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{-Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{-Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{-Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +5 Fire, Cold, Electric, Acid, and Poison Spell Power
 Tier: 0
+Cost: 1
+Ranks: 1
+Flags: SelectorOnly
+Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
-AbilityName: Spill the Bad Stuff
-Descrip: Gildleaf Offensive SLA: Deals 1d6+4 per Caster Level of a random type of damage to enemies in a short cone. The damage all scales with Positive Spell Power. Affected enemies have a chance to be Blinded, Dazed, Silenced, Tripped, Stunned, or Paralyzed. (Fortitude save negates). }Passive: While your Reaction is Verdanite, +2% Positive & Negative Spell Critical Damage & 5% Magical Efficiency (reduced spell point cost)
+AbilityName: Liquid Power II
+Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{-Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{-Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{-Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{-Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage
 Tier: 0
+Cost: 1
+Ranks: 1
+Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
-AbilityName: Curative Admixture Heal
-Descrip: Curative Admixture Heal SLA and Curative Admixture Harm SLA that share a cooldown (Gildleaf spells). }Passive: While your Reaction is Verdanite, +1 Transmutation DC
+AbilityName: Liquid Power III
+Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +1 Caster Level with Acid Spells, and 1 extra Burning Ambition Dice.}{-Liquid Power Cold: You gain +1 Caster Level with Cold Spells, and 1 extra Burning Ambition Dice.}{-Liquid Power Electric: You gain +1 Caster Level with Electric Spells, and 1 extra Burning Ambition Dice.}{-Liquid Power Fire: You gain +1 Caster Level with Fire Spells, and 1 extra Burning Ambition Dice.}{-Liquid Power Poison: You gain +1 Caster Level with Poison Spells, and 1 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +1 Conjuration DC
 Tier: 0
+Cost: 1
+Ranks: 1
+Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
-AbilityName: Genius Never Dies!
-Descrip: +4 Intelligence. +20 Concentration. You gain +1000 Unconsciousness Range, the Diehard feat, and +1 Spell Penetration. }+4 Intelligence }Passive: While your Reaction is Verdanite, +2 Transmutation DC
+AbilityName: Multivial
+Descrip: Select an Element to specialize in.}{-SLA: Multivial of Acid}{-SLA: Multivial of Frost}{-SLA: Multivial of Sparks}{-SLA: Multivial of Flame}{-SLA: Multivial of Poison}Primer Element: Crimsonite (Red),}Passive: +4 Intelligence, and 2 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +2 Conjuration DCs
 Tier: 0
+Cost: 1
+Ranks: 1
+Selector: Multivial of Acid, Multivial of Cold, Multivial of Electric, Multivial of Fire, Multivial of Poision
+
+AbilityName: Spellvial Selection
+Descrip: Select an Element to specialize in.}{-SLA: Vial of Acid}{-SLA: Vial of Frost}{- SLA: Vial of Sparks}{-SLA: Vial of Flame}{-SLA: Vial of Venom}Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials}Spell Point Cost: 4/2/1}Cooldown 12/8/4 seconds}Primer Element: Crimsonite (Red)}Conjuring a bottle of <element>, you throw a projectile at a single foe that deals 3 to 8 <element> damage per caster level, max caster level 10.}DND Dice: Deals 1d6+2 <element> damage per caster level, max 10d6+20
+Tier: 1
+Cost: 1
+Ranks: 3
+Selector: Vial of Acid, Vial of Cold, Vial of Electric, Vial of Fire, Vial of Poision
+
+AbilityName: Arcane Knowledge
+Descrip: +[1/2/3] to Spellcraft and Use Magic Device
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Magical Subtlety
+Descrip: -[20/40/60]% Threat with Spells
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Spell Critical: Elemental and Poison I
+Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
+Tier: 1
+Cost: 2
+Ranks: 1
+
+AbilityName: Wand and Scroll Mastery
+Descrip: +[25/50/75]% damage and healing from your wands, scrolls, and other items that cast spells, and +[1/3/6] to the save DCs of your offensive wands.
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: SLA: Rapid Condensation
+Descrip: Spell Like Ability: Rapid Condensation}Metamagic: Quicken, Accelerate}Spell Point Cost: 4/3/2}Cooldown 12/8/4 seconds}Primer Element: Gildleaf (Yellow)}Throw a bottle that explodes on impact, rapidly condensing water in the air with a magical reaction that forms a cloud of obscuring mist. This cloud obscures all friends within the area, granting them 20% Concealment. Fire spells will burn this chemical reaction out of the air, dispelling it.
+Tier: 2
+Cost: 1
+Ranks: 3
+
+AbilityName: Efficient Metamagic
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you 1/2/4 fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you 1/2/4 fewer Spell Points.
+Tier: 2
+Ranks: 3
+Cost: 1
+Flags: SelectorOnly
+Selector: Efficient Empower, Efficient Maximize, Efficient Quicken
+SelectorName: Efficient Empower
+All: Feat: Empower Spell
+SelectorName: Efficient Maximize
+All: Feat: Maximize Spell
+SelectorName: Efficient Quicken
+All: Feat: Quicken Spell
+
+AbilityName: Stone of the Savant
+Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +1 Magical Resistance Rating and Magical Resistance Rating Cap per Alchemist Level. You can only have one Alchemist's Stone Toggle active at a time.
+Tier: 2
+Cost: 2
+Ranks: 1
+
+AbilityName: Spell Critical: Elemental and Poison II
+Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
+Tier: 2
+Cost: 2
+Ranks: 1
+All: Tier 1: Spell Critical: Elemental and Poison I
+
+AbilityName: Elemental Defenses
+Descrip: When enemy spells deal elemental damage against you, there's a 25% chance you'll gain [10/20/30] temporary hitpoints for 30 seconds. This can trigger up to once every 12 seconds. (Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)
+Tier: 2 
+Cost: 1
+Ranks: 3
+
+AbilityName: Efficient Metamagic II
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-  Efficient Empower: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.}{-  Efficient Maximize: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.}{-  Efficient Quicken: Using the Quicken Spell Metamagic costs you 1/2/4 fewer Spell Points.
+Tier: 3
+Ranks: 3
+Cost: 2
+Flags: SelectorOnly
+All: Tier 2: Efficient Metamagic
+Parent: Tier 2: Efficient Metamagic
+Selector: Efficient Empower, Efficient Maximize, Efficient Quicken
+SelectorName: Efficient Empower
+All: Feat: Empower Spell
+SelectorName: Efficient Maximize
+All: Feat: Maximize Spell
+SelectorName: Efficient Quicken
+All: Feat: Quicken Spell
+
+AbilityName: Swift Ambition
+Descrip: While your Reaction is Pyrite, you gain +1 Reflex Save, +1 for every 5 Alchemist levels you have
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Spell Critical: Elemental and Poison III
+Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
+Tier: 3
+Cost: 2
+Ranks: 1
+All: Tier 2: Spell Critical: Elemental and Poison II
+
+AbilityName: Ability I
+Descrip: +1 to Intelligence
+Tier: 3
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Intelligence
+
+AbilityName: Spell Like Ability, Smoke Bomb
+Descrip: SLA: Smoke Bomb}Metamagic: Extend, Quicken, Eschew Materials}Spell Point Cost: 25/20/15}Cooldown 12 seconds}Primer Element: Gildleaf (Yellow)}Throw a bottle beneath you that explodes into a cloud of smoke and leaves you Invisible and Displaced for 12 seconds
+Tier: 4
+Cost: 1
+Ranks: 1
+
+AbilityName: Efficient Heighten
+Descrip: Using the Heighten Spell Metamagic costs you 1/2 fewer Spell Points per heightened level.
+Tier: 4
+Ranks: 2
+Cost: 2
+All: Tier 3: Efficient Metamagic II
+
+AbilityName: Burning Ambition
+Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power. *Note: Burning Ambition will proc multiple times on spells that have multiple hits.
+Tier:4
+Cost: 2
+Ranks: 1
+
+AbilityName: Spell Critical: Elemental and Poison IV
+Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
+Tier: 4
+Cost: 2
+Ranks: 1
+All: Tier 3: Spell Critical: Elemental and Poison III
+
+AbilityName: Ability II
+Descrip: +1 to Intelligence
+Tier: 4
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Intelligence
+All: Tier 3: Ability I
+
+AbilityName: Elemental Obliteration
+Descrip: Select an Element for an explosive spell.}{-SLA: Caustic Obliteration}{-SLA: Fiery Obliteration}{-SLA: Frost Obliteration}{-SLA: Poison Obliteration}{-SLA: Voltaic Obliteration}Spell Like Ability: Elemental Obliteration}Metamagic: Empower, Maximize, Quicken, Heighten}Spell Point Cost: 12/8/6}Cooldown 12/8/6 seconds}Primer Element: Crimsonite (Red)}Throw a vial that explodes with <element> on impact, dealing 1d6+3 <element> damage per Caster Level to all enemies nearby. (Max Caster Level 10)
+Tier: 5
+Cost: 1
+Ranks: 1
+Selector: Caustic Obliteration, Fiery Obliteration, Frost Obliteration, Poison Obliteration, Voltaic Obliteration
+
+AbilityName: Augmentation
+Descrip: +2 Caster Levels with Crimsonite and Gildleaf spells.
+Tier:5 
+Cost: 2
+Ranks: 1
+
+AbilityName: Inferno of Creation
+Descrip: When your Reaction is Pyrite, you gain +1 Burning Ambition die, and your harmful Crimsonite spells apply a stack of vulnerability to enemies that have at least 3 different elements of Burning Ambition.}Vulnerable: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
+Tier: 5
+Cost: 1
+Ranks: 1
+All: Tier 4: Burning Ambition
+
+AbilityName: Conjuration Focus
+Descrip: +2 to Conjuration DCs
+Tier: 5
+Cost: 2
+Ranks: 1
+
+AbilityName: Weakening Mixture
+Descrip: Select an Element to specialize in.}{-Weakening Mixture Acid: When cast an Acid spell on a creature that is immune to Acid, it makes them vulnerable to Acid for a short period of time.}{-Weakening Mixture Cold: When cast on a Cold spell on a creature that is immune to Cold, it makes them vulnerable to Cold for a short period of time.}{-Weakening Mixture Electric: When cast an Electric spell on a creature that is immune to Electric, it makes them vulnerable to Electric for a short period of time.}{-Weakening Mixture Fire: When cast on a Fire spell on a creature that is immune to Fire, it makes them vulnerable to Fire for a short period of time.}{-Weakening Mixture Poison: When cast on a Poison spell on a creature that is immune to Poison, it makes them vulnerable to Poison for a short period of time.}Note: Any spell of the proper element can remove immunities. Tested working for Sorcerer, Alchemist, and Artificer spells.
+Tier: 5
+Cost: 1
+Ranks: 1
+Selector: Weakening Mixture Acid, Weakening Mixture Cold, Weakening Mixture Electric, Weakening Mixture Fire, Weakening Mixture Poision
 
 TreeName: Vile Chemist
 Abbreviation: VCh

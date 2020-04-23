@@ -2098,21 +2098,17 @@ Stat: Wisdom 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk
 
-FeatName: Potions 1
-Group: Heroic, Spellcasting
-WikiName: Artificer Knowledge: Potions
+FeatName: Artificer Knowledge: Potions
+Group: Misc
+WikiName: Artificer Knowledge
 Descrip: Grants a +2 to UMD checks related to potion use, if any, and all potions used by the Artificer/Alchemist have their caster levels increased by 1. This caster level bonus increases by 1 at Artificer/Alchemist levels 5, 8, 11, and 14, and is capped by the Artificer/Alchemist's Intelligence Bonus. This feat also gives damage bonuses to certain infusions.
 Flags: Unselectable
-Class: Alchemist 1, Atrificer 1
-
+Class: Artificer 2, Alchemist 2
 
 FeatName: Poisonblood
 Group: Heroic, Spellcasting
 Descrip: You are immune to Natural Posions.
-Flags: ClassOnly
-ClassOnlyClass: Artificer
-ClassOnlyLevel: 6
-GrantedBy: Alchemist 6
+Flags: Unselectable
 
 FeatName: Multitude of Missiles
 Group: Heroic, Range
