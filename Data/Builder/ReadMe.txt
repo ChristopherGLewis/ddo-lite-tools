@@ -297,6 +297,7 @@ for each:
  - Defense: Increase hit points, AC, PRR/MRR, saves, healing amp, or anything like that.
  - Misc: Increase to stats or skills, guard effects, summons/pets stuff, plus anything not 
    easily categorized elsewhere. (eg: Turn Undead stuff, songs, ki, etc...) 
+ - Alchemy is a new grouping for Alchemists 
 
 Stat: 
 Ability score required. Use the format "Ability #"
@@ -371,7 +372,7 @@ Flags: RaceOnly, ClassOnly, PastLife, Legend, Unselectable, SkillTome
 ClassOnlyClass:
 ClassOnly feats (marked in the Flags: field) can only be taken as class bonus feats. The 
 ClassOnlyClass list specifies which classes can take it. (eg: Cleric & Paladin for Deity 
-feats.)
+feats.) Note: Requires the Flags: ClassOnly
 
 ClassOnlyLevel:
 Levels when this ClassOnly feat can be taken. This field was created almost entirely for 
@@ -394,6 +395,12 @@ structure can't handle conditional granted feats, so it had to be done on the fe
 
 Trees (both enhancements and destinies)
 -----
+Trees have Headers then abilities
+# Header:
+TreeName: <name> 
+Abbreviation: <Abbr>
+Type: <Race, Class, RaceClass, Global, and Destiny>
+Initial: Bom
 
 Note that due to the way the program works, all abilities on the same tier for a given tree 
 must have unique names. This can be an issue with core abilities, so slap a "I", "II", 
@@ -431,9 +438,22 @@ Optional. Defaults to 1 rank if not included.
 Cost: #
 Optional. Defaults to 1 AP (per rank) if not included.
 
+Flags:
+Selector:
+SharedSelector
+Parent:
+Siblings:
+All:
+One:
+None:
+Rank2All:
+Rank3All:
+Rank3None:
+SelectorName:
 
 Spells
 ------
+MUST BE SORTED!
 
 Flags: Rare
 Include the rare flag for rare scroll wizard and artificer spells.
