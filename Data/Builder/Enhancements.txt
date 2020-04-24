@@ -10994,3 +10994,189 @@ TreeName: Vile Chemist
 Abbreviation: VCh
 Type: Class
 Initial: VCh
+
+AbilityName: Poisoner
+Descrip: +2 to saves vs. Poisons, +2 to saves vs. Diseases.
+Tier: 0
+Cost: 1
+Ranks: 1
+
+AbilityName: Poisoned Coating
+Descrip: Toggle: While active, deal an additional 1d6 Poison damage on hit. You gain an additional 1d6 every 3 Alchemist levels (at 6, 9, 12, 15 and 18). This damage scales with Spell Power. }Passive: While your Reaction is Orchidium, +5 Physical Resistance Rating.
+Tier: 0
+Cost: 1
+Ranks: 1
+
+AbilityName: Hidden Blades
+Descrip: +3% Doublestrike and Doubleshot. }Passive: While your Reaction in Orchidium, +5 Physical Resistance Rating.
+Tier: 0
+Cost: 1
+Ranks: 1
+
+AbilityName: More Hidden Blades
+Descrip: +10 Universal Spell Power, +5% Doublestrike and Doubleshot.}Your Poisoned Coating dice are now d8s (instead of the original d6s). If you have Simple Thrown Expertise, you now use the higher of your Intelligence and Dexterity to determine how much Doubleshot you gain from that feat.}Passive: While your Reaction is Orchidium, +5% Dodge and full Base Attack Bonus.
+Tier: 0
+Cost: 1
+Ranks: 1
+
+AbilityName: Brushed Aside
+Descrip: You gain the Defensive Roll feat (While below 20% HP, there's a chance equal to your Reflex save that attacks do half damage and have their effects negated).}Your Poisoned Coating Dice are now d10s (Replacing previous d8s). While holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand, you have +1 Competence bonus to Critical Damage Multiplier.}Passive: While your Reaction is Orchidium, +5 Physicial Resistance rating and +5% Dodge Cap.
+Tier: 0 
+Cost: 1
+Ranks: 1
+
+AbilityName: Venom's Grip
+Descrip: Passive: +4 Intelligence. Your Poisoned Coating die size is now d12.}Passive: While your Reaction is Orchidium, +10 Physicial Resistance rating and +5% Dodge Cap.
+Tier: 0
+Cost: 1
+Ranks: 1
+
+AbilityName: Spell Like Ability: Stiffen Skin
+Descrip: SLA: Stiffen Skin}Metamagic: Extend, Quicken}Spell Point Cost: 8/4/2}Cooldown 20/16/12 seconds}Primer Element: Ceruleite}This potion will mutate you and make your skin a little bit more resistant to physical damage. This grants a +2 Deflection bonus to AC, +1 per 6 caster levels, for 1 minute per caster level.
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Deadly Poison I
+Descrip: You gain +2 to hit and +1 to damage while holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
+Tier: 1
+Cost: 2
+Ranks: 1
+
+AbilityName: Alchemical Accuracy
+Descrip: +[1/2/3] to attack
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Magical Subtlety
+Descrip: -[20/30/40]% threat generation with melee attacks. Antirequisite: This enhancement cannot be taken at the same time as Subtlety enhancements in other trees.
+Tier: 1 
+Cost: 1
+Ranks: 3
+
+AbilityName: Vile Skills
+Descrip: +[1/2/3] Hide, Move Silently, and Bluff}Rank 3: +1 Reflex Saving throws.
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Deadly Poison II
+Descrip: You gain +2 to hit and +1 to damage while holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
+Tier: 2
+Cost: 2
+Ranks: 1
+All: Tier 1: Deadly Poison I
+
+AbilityName: Poisoned Attack
+Descrip: Choose from either a Melee or Ranged attack.}{-Poisoned Shot: Ranged Attack: +[1/2/3][W]}{-Poisoned Strike: Melee Attack: +[1/2/3][W]}On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell.}Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.}Note: hits all enemies in a 180 degree cone in front of you like a cleave.
+Tier: 2
+Cost: 1
+Ranks: 3
+Flags: SelectorOnly
+Selector: Poisoned Shot, Poisoned Strike
+
+AbilityName: Venom Affinity
+Descrip: +[3/6/10] Poison Spell Power}Rank 3: +1 Reflex Saving throws.
+Tier: 2
+Cost: 1
+Ranks: 3
+
+AbilityName: Stone of the Subliminal
+Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +5% Doublestrike, +5% Doubleshot, and Blur. You can only have one Alchemist's Stone Toggle active at a time.
+Tier: 2
+Cost: 1
+Ranks: 1
+
+AbilityName: Spell Like Ability: Wave of Poison
+Descrip: SLA: Wave of Poison}Metamagic: Empower, Maximize, Quicken, Intensify}Spell Point Cost: 8/6/4}Cooldown 12/10/6 seconds}Primer Element: Ceruleite}You infect enemies in a short cone with a deadly poison that eats away at them. Affected enemies take 2d4 Poison damage plus 1 Poison damage per 2 Caster Levels every 2 seconds for 12 seconds. This poison will leave enemies Contaminated. (Max Caster Level: 10) When you hit a target that is immune to Poisons or Poison damage with this spell, they become vulnerable to Poisons and Poison Damage for 12 seconds.
+Tier: 3
+Cost: 1
+Ranks: 3
+
+AbilityName: Deadly Poison III
+Descrip: You gain +2 to hit and +1 to damage while holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
+Tier: 3
+Cost: 2
+Ranks: 1
+All: Tier 2: Deadly Poison II
+
+AbilityName: Toxic Augmentation
+Descrip: Your strikes against Contaminated enemies reduce their Fortitude saves by -1 for 6 seconds. This effect stacks up to 4 times.
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Willful Ambition
+Descrip: When your Reaction is Orchidium, you gain +1 Fortitude Save, +1 for every 5 Alchemist Levels you have.
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Ability I
+Descrip: +1 to either Dexterity or Intelligence
+Tier: 3
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Dexterity, Intelligence
+
+AbilityName: Deadly Poison IV
+Descrip: You gain +2 to hit and +1 to damage while holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
+Tier: 4
+Cost: 2
+Ranks: 1
+All: Tier 3: Deadly Poison III
+
+AbilityName: Venom Affinity
+Descrip: +[5/10/15] Poison Spell Power. Rank 3: +1 Reflex Saving Throws
+Tier: 4
+Cost: 1
+Ranks: 3
+
+AbilityName: Unbreakable Ambition
+Descrip: While your Reaction is Orchidium, +8 Physical Resistance Rating.
+Tier: 4
+Cost: 2
+Ranks: 1
+
+AbilityName: Ability II
+Descrip: +1 to either Dexterity or Intelligence
+Tier: 4
+Cost: 2
+Ranks: 1
+Flags: SelectorOnly
+Selector: Dexterity, Intelligence
+All: Tier 3: Ability I
+
+AbilityName: Spell Like Ability: Greater Wave of Poison
+Descrip: SLA: Greater Wave of Poison}Metamagic: Empower, Maximize, Quicken, Intensify}Spell Point Cost: 8}Cooldown 10 seconds}Primer Element: Ceruleite}You infect enemies in a short cone with a deadly poison that eats away at them. Affected enemies take 2d6 Poison damage plus 1 Poison damage per Caster Level every 2 seconds for 16 seconds. This poison will leave enemies Contaminated. (Max Caster Level: 20) When you hit a target that is immune to Poisons or Poison damage with this spell, they become vulnerable to Poisons and Poison Damage for 12 seconds.
+Tier: 5
+Cost: 1
+Ranks: 1
+
+AbilityName: Fatal Poison
+Descrip: While holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand, you gain +2 to hit, +1 damage, and +1 Competence Bonus to Critical Range. For Darts, this Range bonus is +2 instead.
+Tier: 5
+Cost: 2
+Ranks: 1
+All: Tier 4: Deadly Poison IV
+
+AbilityName: Contaminated Strikes
+Descrip: When you strike a Contaminated enemy, they gain one stack of Vulnerable. Contaminate enemies by using Poison Alchemical Spells. Vulnerable: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
+Tier: 5
+Cost: 1
+Ranks: 1
+
+AbilityName: Chemical Weapon
+Descrip: Your Simple Weapons gain +1[W]. Simple Thrown Weapons you wield also gain +15% Attack Speed as long as you are holding a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
+Tier: 5
+Cost: 2
+Ranks: 1
+
+AbilityName: Sapping Ambition
+Descrip: While your Reaction is Orchidium, you have a Simple Weapon in your Main Hand, and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand, attacking grants a 10% chance to gain 10 Temporary Spell Points, +1 per Alchemist level.
+Tier: 5
+Cost: 1
+Ranks: 1
+

@@ -148,6 +148,7 @@ Public Enum FilterEnum
     feDefense
     feMisc
     feHeroic
+    feAlchemy
     feEpic
     feDestiny
     feLegend
@@ -412,6 +413,7 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         Case ceSorcerer: GetClassResourceID = "CLSSORCERER"
         Case ceWarlock: GetClassResourceID = "CLSWARLOCK"
         Case ceWizard: GetClassResourceID = "CLSWIZARD"
+        Case ceAlchemist: GetClassResourceID = "CLSALCHEMIST"
     End Select
 End Function
 
@@ -521,6 +523,7 @@ Public Function GetGroupID(pstrGroup As String) As FilterEnum
         Case "epic": enGroup = feEpic
         Case "destiny": enGroup = feDestiny
         Case "legend": enGroup = feLegend
+        Case "alchemy": enGroup = feAlchemy
     End Select
     GetGroupID = enGroup
 End Function
@@ -537,6 +540,7 @@ Public Function GetFeatGroupName(ByVal penFeatGroup As FilterEnum) As String
         Case feEpic: GetFeatGroupName = "Epic"
         Case feDestiny: GetFeatGroupName = "Destiny"
         Case feLegend: GetFeatGroupName = "Legend"
+        Case feAlchemy: GetFeatGroupName = "Alchemy"
     End Select
 End Function
 

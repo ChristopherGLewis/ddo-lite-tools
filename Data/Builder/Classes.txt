@@ -7,6 +7,7 @@ SkillPoints: 2
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Magical Training
 GrantedFeats2: Insightful Reflexes
+GrantedFeats3: Alchemy on the Run
 BonusFeat: 4, 8, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
