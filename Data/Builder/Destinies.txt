@@ -64,7 +64,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: No Regret
-Descrip: Whenever an enemy who was recently affected by your Aura of Purification is slain, other nearby enemies gain 1 to 4 stacks of Purification. This ability also grants +2 Melee Power.}{  Bug:  No Regret does not provide Melee or Ranged Power.
+Descrip: Whenever an enemy who was recently affected by your Aura of Purification is slain, other nearby enemies gain 1 to 4 stacks of Purification. This ability also grants +2 Melee Power.
 Tier: 4
 Cost: 2
 
@@ -74,11 +74,9 @@ Tier: 4
 Cost: 2
 All: Tier 3: Sacred Ground
 
-
 AbilityName: The Book of War
 Descrip: You gain Greatsword/Long Bow/Long Sword/Morningstar as a favored weapon.
 Tier: 4
-Cost: 1
 
 AbilityName: Castigation
 Descrip: Your Aura of Purification also harms nearby enemies, dealing Bane damage every 3 seconds. Non-bosses take damage equal to 1% of their current health for each stack of Purification they have. Bosses instead take 1d6 Bane damage per stack of Purification. This ability also grants +2 Melee Power.}{ Note: Orange named monsters take both 1% of their current health AND 1d6 Bane damage per stack of Purification.
@@ -96,17 +94,15 @@ Tier: 5
 Cost: 2
 
 AbilityName: Celestial Bombardment
-Descrip: Active Ability: Evocation SLA. Divine wrath falls from the heavens to smite your foes. This spell calls down three stars at your target, dealing a total of 3d6 fire damage per character level, split into three hits. This damage is affected by fire spell power and may critically hit. In addition, enemies must succeed at three consecutive Reflex saving throws versus a DC of 20+Wisdom mod+Evocation spell DC modifier or be knocked prone. Activation cost is [300/200/100] Spell points and has a cooldown of [3/2/1] minutes. Modifiers to your evocation spell DCs affect this.
+Descrip: Active Ability: Evocation SLA. Divine wrath falls from the heavens to smite your foes. This spell calls down three stars at your target, dealing a total of 3d6 fire damage per character level, split into three hits. This damage is affected by fire spell power and may critically hit. In addition, enemies must succeed at three consecutive Reflex saving throws versus a DC of 20+Wisdom mod+Evocation spell DC modifier or be knocked prone. Activation cost is 20 Spell points and has a cooldown of 1 minute. Modifiers to your evocation spell DCs affect this.  Metamagic: Enlarge, Maximize, Empower, Intensify, Embolden, and Quicken
 Tier: 6
-Ranks: 1
 
 AbilityName: The Book of War: Wrath of the Divine
 Descrip: While wielding a Favored Weapon in your Main Hand, you gain +1 to Hit and Damage for every 2 Religious Lore Feats you have with all equipped weapons and shields.
 Tier: 6
-Cost: 1
 
 AbilityName: Strike Down
-Descrip: Active Ability: (Cooldown 12 seconds, activation cost: 5 spell points) Melee smite cleave: Gain a damage bonus of +3(W). On hit 500 fire damage (does not scale with melee power nor spell power). On hit after damage destroy undead or evil outsiders below 1000 HP.}{  Bug:  Strike Down deals light damage instead of fire and does not consume any spell points on use.
+Descrip: Active Ability: (Cooldown 12 seconds, activation cost: 5 spell points) Melee smite cleave: Gain a damage bonus of +3(W). On hit 500 light damage (scales with 200% melee power). On hit after damage destroy undead or evil outsiders below 1500 HP.}{ Bug:  Strike Down does not consume any spell points on use.
 Tier: 6
 Cost: 2
 
@@ -450,7 +446,7 @@ Tier: 4
 Cost: 2
 
 AbilityName: The Fifth Chord
-Descrip: Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and True Seeing. Passively, you benefit from an additional +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and you are immune to Blindness and benefit from the True Seeing spell. A verse from the Song of Heroes, whose powerful notes fill your limbs with vigor in battle.
+Descrip: Adds Inspire Transcendence to your Bardic Ballad.}Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and True Seeing.}Passively, you benefit from an additional +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and you are immune to Blindness and benefit from the True Seeing spell.}A verse from the Song of Heroes, whose powerful notes fill your limbs with vigor in battle.
 Tier: 5
 Ranks: 3
 
@@ -465,19 +461,22 @@ Descrip: Passive: You have a 10% reduction on the costs of your spells. You also
 Tier: 5
 
 AbilityName: Bladesong
-Descrip: Your Melee and Missile attacks deal an additional 2d6 Sonic damage on hit, scaling with Sonic Spell Power. +3% Competence Bonus to Melee Attack Speed. You have +1 Critical Multiplier on rolls of 19-20. A verse from the Song of Heroes, whose harmonious notes sweep away the strain of concentration.
+Descrip: Your Melee and Missile attacks deal an additional 2d6 Sonic damage on hit, scaling with Sonic Spell Power. +3% Competence Bonus to Melee Attack Speed. You have +1 Critical Multiplier on rolls of 19-20.}A verse from the Song of Heroes, whose harmonious notes sweep away the strain of concentration.
 Tier: 5
 Ranks: 2
 
 AbilityName: Greater Shout
-Descrip: Greater Shout: You may cast the spell Greater Shout as a Spell-like ability. Emits an ear splitting yell that deals 1d3+3 Sonic damage per caster level and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun. Cooldown: 6 seconds Cost: 6 spell points
+Descrip: You may cast the spell Greater Shout as a Spell-like ability. Emits an ear splitting yell that deals 1d3+3 Sonic damage per caster level and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun.}Cooldown: 6 seconds}Cost: 6 spell points
 Tier: 6
-Ranks: 1
 
 AbilityName: Metamagic Attunement II: Choose one:
 Descrip: Choose one:}{- Like Embolden Spell, your spells add an additional 2 to their DCs. This does not increase their Spell Point cost.}{- Like Intensify Spell, your spells have an additional 75 to their Spell Power. This does not increase their Spell Point cost.}{- Like Quicken Spell, your spells cast much faster and can't be interrupted. This does not increase their Spell Point cost.
 Tier: 6
 Selector: Embolden, Intensify, Quicken
+
+AbilityName: Turn of the Tide
+Descrip: Spontaneous Song: Activate this ability to gain:}Full Base Attack Bonus}+40% weapon damage}DR 15/-}+4 Charisma}+3 to hit}Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit}While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1.}Duration: 45 seconds. Cooldown: 3 minutes}'Shining like the sun, the Singer fell upon the horde. Fiery, his sword gleamed, cutting through their ranks. And when light had faded, and with the carnage all around, he quietly cleaned his blade, sat upon a lonely rock and wrote a poem of I know not what.'}--Recollections, Lormac Stoutarm
+Tier: 6
 
 DestinyName: Fury of the Wild
 Abbreviation: Fury
@@ -566,12 +565,17 @@ Ranks: 3
 AbilityName: Strong Swings
 Descrip: Passive Bonus: +10 Melee Power with Melee Weapons. While fighting in Two Handed Fighting style, this is instead +25.
 Tier: 5
-Cost: 1
 
 AbilityName: Fury Made Placid
-Descrip: Active Ability: (Cooldown 30 seconds) Cost: 1 Adrenaline use. For 3 minutes you gain +6 wisdom and cannot be raged or use Adrenaline, and enemies attacking you physically or magically have a 20% chance to become paralyzed and helpless with regret for 3 seconds on a failed DC 50 Will Save. You heal 2d100 HP every two seconds for the next ten seconds. Cannot train if you have Fury Eternal.
+Descrip: Active Ability: (Cooldown 30 seconds) Spend 1 Adrenaline: Stop being raged. You heal 2d100 HP every two seconds over the next ten seconds. This healing scales with Melee Power. For 3 minutes you gain +6 wisdom, +10% Doublestrike, +20 PRR and MRR, cannot benefit from rage or adrenaline, and sentient enemies attacking you physically or magically have a 3% chance to become paralyzed and helpless with regret for 3 seconds with no save. Cannot train if you have Fury Eternal.
 Tier: 5
 Cost: 2
+None: Tier 5: Fury Eternal
+
+AbilityName: Fury Eternal
+Descrip: Passive Bonus: +1 Adrenaline max use. Whenever you Vorpal Strike on melee or ranged attack, 33% chance to regain 1 Adrenaline use. Cannot train Fury Made Placid.
+Tier: 5
+None: Tier 5: Fury Made Placid
 
 AbilityName: Devastating Blow
 Descrip: Passive Bonus: +1 Critical Damage Multiplier on rolls of 19-20.
@@ -579,7 +583,12 @@ Tier: 5
 Cost: 2
 
 AbilityName: Unbridled Fury
-Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active and you fight with a two handed weapon, Glancing Blows produced on enemies around you when you stand still and attack deal +100% damage and have 100% chance of triggering weapon effects. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration. Requires and consumes 10 Fury. You gain 1 Fury each time you vorpal with a melee or ranged attack (roll a natural 20 and confirm the critical hit).}{- Bug:  Resting with 10 fury will cause you to gain an Unbridled Fury charge after rest
+Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active and you fight with a two-handed weapon, gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration.
+Tier: 6
+Cost: 2
+
+AbilityName: Bloodbath
+Descrip: Passive Bonus: While in Two Handed Fighting Style, Your Vorpal Threat Range is increased to 19/20.
 Tier: 6
 Cost: 2
 
@@ -609,22 +618,21 @@ Tier: 1
 Ranks: 3
 
 AbilityName: The Flower's Thorn
-Descrip: Melee Attack: +3[W]. 6 second cooldown. Does not require you to be Centered.
+Descrip: Melee Attack: +3[W]. 6 second cooldown. Does not require you to be Centered.}Note: Long animation. Tested with single weapon, animation resembles Confront Any Foe, but not a cleave, and only strikes once. Do not recommend.
 Tier: 2
-Ranks: 1
 
 AbilityName: Running with Wind
-Descrip: Passive Bonus: Electricity resistance [4/8/12], +[10/20/30]% enhancement bonus to movement speed. If you have Monk levels and are in Wind stance, +[1/2/3]% chance to doublestrike.
+Descrip: You gain Electricity resistance [4/8/12], and a +[10/20/30]% Enhancement bonus to Movement speed. You also gain +[2/4/6]% chance to Doublestrike on your Melee attacks.
 Tier: 2
 Ranks: 3
 
 AbilityName: Serenity
-Descrip: Passive Bonus: +[3/6/9] stacking spell resistance.
+Descrip: You gain +[3/6/9] Spell Resistance which stacks with all other sources of Spell Resistance.}{ Bug: Seems to give double the bonus.
 Tier: 2
 Ranks: 3
 
 AbilityName: Hail of Blows
-Descrip: Passive Bonus: +3% chance to doublestrike on melee attacks. Note: Does not require being centered or anything monk-related.
+Descrip: You gain +3% chance to doublestrike on your melee attacks and +3 damage with weapons.
 Tier: 2
 All: Tier 1: A Dance of Flowers
 
@@ -663,22 +671,21 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Drifting Lotus
-Descrip: Active Ability: (Cooldown 15 seconds) 100-160 +10-14 dmg per character level area-of-effect ki blast centered around you. Reflex save (DC 10 + character level + WIS mod) for half damage. Enemies who fail save are knocked down. Cost 25ki.
+Descrip: By performing the legendary Drifting Lotus technique, you coalesce a radiant orb of Ki energy in your fist, and then smash down upon your enemies with the force of falling heavens.}Enemies in the vicinity of your attack may make a Reflex saving throw (DC 10 + character level + Wisdom modifier + stun bonuses) for half damage. Any enemies who fail their Reflex save are knocked down by the force of your blow.}Damage: 100-160 +10-14 per character level. This damage scales with the highest of Melee and Ranged Power.}Cooldown: 15 seconds}Cost: 25 Ki.
 Tier: 5
 All: Tier 3: Orchid Blossom
 
 AbilityName: Dancing with Flames
-Descrip: Passive Bonus: Gain fire resistance [4/8/12]. Gain +[1/2/3] to attack and damage rolls. If you have Monk levels and are in Fire stance, add [0.3/0.6/1.0][W] to your weapons.
+Descrip: You gain Fire Resistance [4/8/12], and a +[1/2/3] bonus to your attack and damage rolls. You also gain +[0.3/0.6/1][W] damage added to your weapon attacks.
 Tier: 5
 Ranks: 3
 
 AbilityName: Devastating Critical
-Descrip: Passive Bnus: +1 Critical Damage Mulitplier on rolls of 19-20
+Descrip: Passive Bnus: +1 Critical Damage Mulitplier on rolls of 19-20.
 Tier: 5
-Ranks: 1
 
 AbilityName: Perfection of Soul
-Descrip: Passive Bonus: +[2/4/6] to Reflex saves, and gain +[1/2/3] to Bluff, Diplomacy, Haggle and Intimidate. At rank 3, do not automatically fail a Reflex save on a 1.
+Descrip: You gain a +[2/4/6] to your Reflex saving throws. You gain a +[1/2/3] bonus to your Bluff, Diplomacy, Haggle and Intimidate skills.}Rank 3: You will no longer fail a Reflex saving throw on a natural one, if your total saving throw result is equal or higher than the DC effect.
 Tier: 5
 Ranks: 3
 
@@ -1258,19 +1265,16 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Audience with the Queen
-Descrip: Active Ability: (Cooldown: 2 minutes 34 seconds) Pop off for some tea with your lady, the Queen of Summer, returning a few seconds later. Unusable while incapacitated.Depending on your Diplomacy with the Queen, you may experience effects either favorable or ill, though the tea is always delicious. (Diplomacy check)}{  Diplomacy DC: 20 - Success, 40 - Critical Success}{  Note: Usable once per day.
+Descrip: Active Ability: (Cooldown: 2 minutes 34 seconds) Pop off for some tea with your lady, the Queen of Summer, returning a few seconds later. Unusable while incapacitated.Depending on your Diplomacy with the Queen, you may experience effects either favorable or ill, though the tea is always delicious. (Diplomacy check)}{ Diplomacy DC: 20 - Success, 40 - Critical Success}{ Note: Usable once per day.
 Tier: 6
-Cost: 1
 
 AbilityName: Rain of Arrows
-Descrip: Active Ability: (Cooldown: 5 minutes) Call upon a thousand invisible fairies to rain pointy wooden death around you!Every second for thirty seconds each enemy around you has 10% to take 10d100 damage. Damage may consist of up to 10 damage types.Cost: 10 Favor of the Fey.
+Descrip: Active Ability: (Cooldown: 5 minutes) Call upon a thousand invisible fairies to rain pointy wooden death around you!Every second for thirty seconds each enemy around you has 20% to take 10d100 damage. Damage may consist of up to 10 different random damage types. This damage scales with 200% Ranged Power.
 Tier: 6
-Cost: 1
 
 AbilityName: Hunt's End
 Descrip: Active Ability: (Cooldown: 24 seconds) Your next shot with a Ranged or Thrown weapon has +400% damage and +16 to its Critical Threat Range. This shot ignores incorporeality. 24 second cooldown.
 Tier: 6
-Cost: 1
 
 DestinyName: Unyielding Sentinel
 Abbreviation: Sentinel
@@ -1346,9 +1350,8 @@ Ranks: 3
 One: Tier 3: Healing Hands, Feat: Lay On Hands
 
 AbilityName: Draw Them Out
-Descrip: Active Ability: (Cooldown 6 seconds) Melee Attack: +3[W], this attack adds 300 hate for the user to creatures it hits on top of its normal damage.
+Descrip: Active Ability: (Cooldown 6 seconds) Melee Attack: +3[W], this attack adds 300 hate for the user to creatures it hits on top of its normal damage.}{ Bug:  Each use of this ability moves your character a little to the side (180 degree turn around mob in about 10 strikes).
 Tier: 4
-Cost: 1
 
 AbilityName: Spark of Life
 Descrip: Passive Bonus: your armor gains Deathblock, protecting you from death effects.
@@ -1388,9 +1391,8 @@ Cost: 2
 All: Tier 4: Purify Weapon, Tier 5: Ward Against Evil
 
 AbilityName: Celestial Mandate
-Descrip:  Active Ability: (Cooldown 6 seconds) Melee Attack: +5[W], this attack adds 2000 hate for the user to creatures it hits on top of its normal damage.
+Descrip: Active Ability: (Cooldown 6 seconds) Melee Attack: +5[W], this attack adds 2000 hate for the user to creatures it hits on top of its normal damage.}{ Bug:  Each use of this ability moves your character a little to the side (180 degree turn around mob in about 10 strikes).
 Tier: 6
-Cost: 1
 
 AbilityName: Resurrection
 Descrip: Can cast Resurrection as a spell-like ability (Cooldown 6 seconds, Cost 15 sp).
@@ -1398,6 +1400,6 @@ Tier: 6
 Cost: 2
 
 AbilityName: Undying Vanguard
-Descrip: Active Ability: (Cooldown 2 minutes, usable once per rest) Heal yourself for 1000 HP. For 20 seconds, you gain 10,000 temporary HP.
+Descrip: Active Ability: (Cooldown 2 minutes) Heal yourself for 1000 HP. For 30 seconds, you gain 10,000 temporary HP. Usable once per rest. You may use this ability while Crowd Controlled and/or Helpless.
 Tier: 6
 Cost: 2
