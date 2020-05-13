@@ -13,7 +13,7 @@ Any issues and input should be filed there.
 ## Release Notes
 
 ### 3.2.1
-Updated Epic Destinies stated with changes in U42 Patch 4 
+Updated Epic Destinies with changes in U42 Patch 4 
 
 ### 3.2.0
 Updates for Alchemist and other Update 45 changes
