@@ -4,10 +4,10 @@ Begin VB.Form frmAbout
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "About"
-   ClientHeight    =   2076
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   3924
+   ClientHeight    =   2085
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   3930
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,10 +22,22 @@ Begin VB.Form frmAbout
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   2076
-   ScaleWidth      =   3924
+   ScaleHeight     =   2085
+   ScaleWidth      =   3930
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
+   Begin VB.Label Label1 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      Caption         =   "Updates by Chris Lewis"
+      ForeColor       =   &H80000008&
+      Height          =   252
+      Left            =   0
+      TabIndex        =   3
+      Top             =   1700
+      Width           =   3972
+   End
    Begin VB.Label lblAuthor 
       Alignment       =   2  'Center
       Appearance      =   0  'Flat

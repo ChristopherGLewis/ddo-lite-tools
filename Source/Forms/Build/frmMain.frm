@@ -3,12 +3,12 @@ Begin VB.Form frmMain
    BackColor       =   &H00000000&
    Caption         =   "Character Builder Lite"
    ClientHeight    =   8160
-   ClientLeft      =   132
-   ClientTop       =   504
-   ClientWidth     =   13536
+   ClientLeft      =   135
+   ClientTop       =   510
+   ClientWidth     =   13530
    BeginProperty Font 
       Name            =   "Verdana"
-      Size            =   10.2
+      Size            =   10.5
       Charset         =   0
       Weight          =   400
       Underline       =   0   'False
@@ -20,7 +20,7 @@ Begin VB.Form frmMain
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    ScaleHeight     =   8160
-   ScaleWidth      =   13536
+   ScaleWidth      =   13530
    Begin VB.Timer tmrDeprecate 
       Enabled         =   0   'False
       Interval        =   100
@@ -53,8 +53,8 @@ Begin VB.Form frmMain
       ForeColor       =   &H80000008&
       Height          =   1932
       Left            =   0
-      ScaleHeight     =   1932
-      ScaleWidth      =   2052
+      ScaleHeight     =   1935
+      ScaleWidth      =   2055
       TabIndex        =   2
       Top             =   0
       Width           =   2052
@@ -66,8 +66,8 @@ Begin VB.Form frmMain
          ForeColor       =   &H80000008&
          Height          =   1452
          Left            =   240
-         ScaleHeight     =   1452
-         ScaleWidth      =   1572
+         ScaleHeight     =   1455
+         ScaleWidth      =   1575
          TabIndex        =   3
          Top             =   240
          Width           =   1572
@@ -596,8 +596,12 @@ Public Sub UpdateToolsMenu()
     
     For i = 0 To Me.mnuTools.UBound
         Select Case StripMenuChars(Me.mnuTools(i).Caption)
-            Case "Refresh Data": Me.mnuTools(i).Visible = xp.DebugMode
-            Case "Messages": Me.mnuTools(i).Visible = gtypDeprecate.Deprecated
+            Case "Refresh Data":
+                
+                Me.mnuTools(i).Visible = xp.DebugMode
+                
+            Case "Messages":
+                Me.mnuTools(i).Visible = gtypDeprecate.Deprecated
         End Select
     Next
 End Sub

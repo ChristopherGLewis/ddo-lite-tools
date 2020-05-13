@@ -8,3 +8,4 @@ error.log
 crawl.txt
 master
 *.zip
+*.tmp

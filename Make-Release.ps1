@@ -11,3 +11,6 @@ $files += Get-Item *.exe
 $files += Get-Item *.md
 
 $files | Select-Object -Unique | Compress-Archive -DestinationPath $file -CompressionLevel Optimal -Force
+
+
+Write-Host "Created $file"

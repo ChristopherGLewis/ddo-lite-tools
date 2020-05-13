@@ -405,7 +405,7 @@ Tier: 2
 Ranks: 2
 
 AbilityName: Siren's Song
-Descrip: Your Inspire Greatness now grants an additional +[1/2/3] Physical Resistance Rating.}Passively, you benefit from an additional +[1/2/3] Physical Resistance Rating. 'Seductive, enchanting, tantalizing... these are the qualities that might describe my lessers...'}--Lolth, Demon Queen
+Descrip: Your Inspire Greatness now grants an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds +10 healing, negative, and repair amplification.}Passively, you benefit from an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds a passive +10 healing, negative, and repair amplification. 'Seductive, enchanting, tantalizing... these are the qualities that might describe my lessers...'}--Lolth, Demon Queen
 Tier: 3
 Ranks: 3
 
@@ -583,12 +583,12 @@ Tier: 5
 Cost: 2
 
 AbilityName: Unbridled Fury
-Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active and you fight with a two-handed weapon, gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration.
+Descrip: While in Two Handed Fighting Style, your Vorpal Threat Range is increased to 19/20.
 Tier: 6
 Cost: 2
 
 AbilityName: Bloodbath
-Descrip: Passive Bonus: While in Two Handed Fighting Style, Your Vorpal Threat Range is increased to 19/20.
+Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active, you gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration.
 Tier: 6
 Cost: 2
 
@@ -681,7 +681,7 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Devastating Critical
-Descrip: Passive Bnus: +1 Critical Damage Mulitplier on rolls of 19-20.
+Descrip: Passive Bonus: +1 Critical Damage Mulitplier on rolls of 19-20.
 Tier: 5
 
 AbilityName: Perfection of Soul
