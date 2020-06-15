@@ -6833,7 +6833,6 @@ Tier: 4
 Cost: 2
 Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
 Flags: SelectorOnly
-All: Tier 3: Eternal Servitude
 
 AbilityName: Necrotic Blast
 Descrip: Spell Like Ability: Necrotic Blast. (Activation Cost: 10 Hit Points. Cooldown: 18/12/6 seconds.)
