@@ -12,6 +12,10 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.2.2
+Updated Knight of the Chalice, Sacred Defender and Stalward Defense per U45. Pale Master per U42 patch 4.  
+General Wikicrawl of enhancements resulting in fixes to Bladeforged, 
+
 ### 3.2.1
 Updated Epic Destinies with changes in U42 Patch 4 
 

@@ -1718,6 +1718,11 @@ AbilityName: Power of the Forge
 Descrip: Action Boost: For 20 seconds you gain:}{- +20 Melee and Ranged Power}{- +30 Action Boost bonus to Universal Spell Power}{- +4 Action Boost bonus to all Saving Throws}{- +10 Action Boost bonus to Armor Class and Physical Resistance Rating
 Tier: 4
 
+AbilityName: Soulbound Plating
+Descrip: Gain 5% Quality bonus to maximum hit points
+Tier: 4
+Cost: 2
+
 TreeName: Deep Gnome
 Type: Race
 Initial: DPG
@@ -6703,24 +6708,32 @@ AbilityName: Dark Reaping
 Descrip: For each point spent in this tree you gain +0.75 Universal Spell Power and +0.75 Negative Energy Spell Power (for a total of 1.5 Negative Energy Spell Power per point spent).
 Tier: 0
 
-AbilityName: Zombie Form
-Descrip: Shroud Toggle: You shroud yourself with negative energy and assume many of the traits of a zombie. (Activation Cost: 25 Spell Points. Cooldown: 30 seconds)While in this form, you hunger for brains and gain +2 Strength, +2 Constitution, -2 Intelligence, -4 Charisma, and Damage Reduction 5/Slashing.Your unarmed damage is increased by 1[W], but you attack 20% slower than normal.Unlisted: On Critical Melee Hit: 1d6 Intelligence damageYou have +100% critical hit resistance, are healed by negative energy, and are unaffected by positive energy or repair effects, but take double damage from light effects.You are considered undead rather than your original type for the purpose of most effects.
+AbilityName: Pale Shroud
+Descrip: Multiselector: Choose an Undead Shroud. All forms grant 100% critical hit resistance and allow you to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. You are considered undead.}{-Shroud of the Zombie - While in this form, +4 Constitution, +2 Strength, +20% damage with attacks but you attack 20% slower than normal. You gain +3 PRR, +3 MRR.}{-Note: Zombie form's damage increase is multiplicative with Melee/Ranged power, and its attack speed decrease is treated as a 20 point penalty to Melee and Ranged Alacrity. It is offset by Speed items and the Haste spell.}{-Shroud of the Vampire - While in this form, +2 Charisma, +2 Intelligence, +2 Wisdom. +3 Perform skill, and your melee and unarmed attacks have a (10%) chance to heal you for 1d3 Negative Energy damage per Wizard Level.}{-Shroud of the Wraith - While in this form, +2 Dexterity, +2 Intelligence. Enemy attacks have a 10% chance to miss you due to incorporeality, +1 Sneak Attack Dice, and you gain Feather Falling.}{-Shroud of the Lich - While in this form, +2 Constitution, +2 Intelligence, +10 Negative Amplification, +5 Negative Spell Power, and +15 Magical Resistance Rating.
 Tier: 0
+Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
+Flags: SelectorOnly
 
-AbilityName: Vampire Form
-Descrip: Shroud Toggle: You shroud yourself with negative energy and assume many of the traits of a vampire. (Activation Cost: 50 Spell Points. Cooldown: 30 seconds)While in this form, you gain +2 Strength, +2 Charisma, +2 to the DC's of your Enchantment spells, and generate 25% less threat from spells and attacks.On Vorpal Melee Hit: Your attack causes Energy Drain, inflicting 1 Negative Level on your victim.You have +100% critical hit resistance, are healed by negative energy, and are unaffected by positive energy or repair effects, but take triple damage from light effects.You are considered undead rather than your original type for the purpose of most effects.
+AbilityName: Undead Augmentation 
+Descrip: Enhance your Undead Forms.}Passive: While in a Shroud, you can breathe underwater. +1 Spell Penetration. Pick one of the following abilities that applies while in a Pale Shroud.}{- Deathly Touch - +25 Maximum Hitpoints, +5 PRR}{- Deathly Resistance - +15 Magical Resistance Rating, +2 to all Saves}{- Inflict Weariness - Your attacks inflict 2-9 (1d8+1) points of Negative Energy damage to a living target. This scales with 100% Spell Power. Your Vorpal Melee Hits cause Energy Drain, inflicting 1 Negative Level on victims.}{- Bug: Currently applying negative level on any critical hit. Been in effect since Update 42. Unknown if fixed.}{- Haunting in the Dark - +2 Assassinate DCs, +1 Sneak Attack Dice}{- Ghost in the Wind - +10% Incorporeal Miss Chance. If you are in Wraith Form, this increases your total to 20%.}{- Deathly Power - +10 to Negative Energy Spellpower.}{- +2 Necromancy DC}{- +2 Enchantment DC}{- Undead Chill - +15% bonus to Cold Absorption. You no longer take extra damage from Light.}{- Undead Shock - +15% bonus to Electric Absorption. You no longer take extra damage from Light.}{- Unhallowed Touch - You gain Ghost Touch on all attacks, +5 Hide and Move Silently
 Tier: 0
+Selector: Deathly Touch, Deathly Resistance, Inflict Weariness, Haunting in the Dark, Ghost in the Wind, Deathly Power, +2 Necromancy DC, +2 Enchantment DC, Undead Chill, Undead Shock, Unhallowed Touch, 
+Flags: SelectorOnly
 
-AbilityName: Wraith Form
-Descrip: Shroud Toggle: You shroud yourself with negative energy and assume many of the traits of a wraith. (Activation Cost: 75 Spell Points. Cooldown: 30 seconds)While in this form, enemy attacks have a 25% chance to miss you due to your incorporeality, you float as if affected by featherfall, have a +20 bonus to the Move Silently and Balance skills, you can breath indefinitely underwater, and your attacks function as if they had Ghost Touch.}On Critical Melee Hit: Your attack deals 1d6 Constitution damage to the victim.You have +100% critical hit resistance, are healed by negative energy, and are unaffected by positive energy or repair effects, but take double damage from light effects.You are considered undead rather than your original type for the purpose of most effects.
+AbilityName: Undead Augmentation 
+Descrip: Pick a different ability that applies while in a Pale Shroud.}Passive: +1 Spell Penetration}Pick a trait from Undead Augmentation I that you did not previously pick.
 Tier: 0
+Selector: Deathly Touch, Deathly Resistance, Inflict Weariness, Haunting in the Dark, Ghost in the Wind, Deathly Power, +2 Necromancy DC, +2 Enchantment DC, Undead Chill, Undead Shock, Unhallowed Touch, 
+Flags: SelectorOnly
 
-AbilityName: Lich Form
-Descrip: Shroud Toggle: You shroud yourself with negative energy and assume many of the traits of a lich. (Activation Cost: 100 Spell Points. Cooldown: 30 seconds)While in this form, you gain +4 Constitution, +2 Intelligence, +2 Wisdom, +2 Charisma, +1 to DCs of your Necromancy spells, and occasionally gain temporary hit points when damaged.On Melee Hit: Your attack inflicts 2-9 points of Negative Energy damage to a living target.}You have +100% critical hit resistance, are healed by negative energy, and are unaffected by positive energy or repair effects, but take double damage from light effects.You are considered undead rather than your original type for the purpose of most effects.
+AbilityName: Undead Augmentation 
+Descrip: Pick a different ability that applies while in a Pale Shroud.}Passive: +1 Spell Penetration}Pick a trait from Undead Augmentation I that you did not previously pick.
 Tier: 0
+Selector: Deathly Touch, Deathly Resistance, Inflict Weariness, Haunting in the Dark, Ghost in the Wind, Deathly Power, +2 Necromancy DC, +2 Enchantment DC, Undead Chill, Undead Shock, Unhallowed Touch, 
+Flags: SelectorOnly
 
-AbilityName: Master of Death
-Descrip: You gain +2 intelligence and deathblock. +10 Negative Healing Amplification.
+AbilityName: Embrace the Void
+Descrip: Greater Death Aura SLA.} Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 3 to 12 negative energy damage plus 1 additional point per caster level every two seconds as long as they remain within it. A successful Fortitude save reduces the damage by half. Undead are instead healed by the aura. This aura can affect up to one target per caster level. D&D Dice: Deals 3d4 (+1 per caster level) negative energy damage every two seconds. This can be cast simultaneously with Lesser Death Aura and Death Aura. Passive: You gain +4 Intelligence and Deathblock. +10 Negative Healing Amplification.} +2 Spell Penetration.
 Tier: 0
 
 AbilityName: Necrotic Touch
@@ -6728,14 +6741,13 @@ Descrip: Spell Like Ability: Necrotic Touch (Activation Cost: 2 Hit Points. Cool
 Tier: 1
 Ranks: 3
 
-AbilityName: Deathless Vigor
-Descrip: The power of undeath has toughened your flesh, providing you with an additional +10/+20/+30 Hit Points.
+AbilityName: Negative Energy Conduit
+Descrip: : +6/+12/+20 Negative Healing Amplification. This increases the amount by which you are healed from Negative Energy while you have a Shroud toggle active.
 Tier: 1
 Ranks: 3
-Cost: 2
 
 AbilityName: Spell Critical
-Descrip: Your Negative Energy damage spells have an additional 2% chance to critically hit.
+Descrip: Negative Energy I: Your Negative Energy damage spells have an additional 2% chance to critically hit.
 Tier: 1
 Cost: 2
 
@@ -6745,9 +6757,25 @@ Tier: 1
 Ranks: 3
 Cost: 2
 
-AbilityName: Negative Energy Conduit
-Descrip: Your vulnerability to Negative Energy is increased by 6% / 12% / 20%. This increases the amount by which you are healed from Negative Energy while you have a Shroud toggle active.
+AbilityName: Deathless Vigor
+Descrip: The power of undeath has toughened your flesh, providing you with an additional +10/+20/+30 Hit Points.
 Tier: 1
+Ranks: 3
+
+AbilityName: Cloak of Night
+Descrip: While blocking in a Pale Shroud, you gain invisibility, displacement, and do not take extra damage from Light. Passive: +5 Hide.
+Tier: 2
+Ranks: 3
+
+AbilityName: Spell Critical
+Descrip: Negative Energy II: Your Negative Energy damage spells have an additional 2% chance to critically hit.
+Tier: 2
+Cost: 2
+All: Tier 1: Spell Critical
+
+AbilityName: Corpsecrafter
+Descrip: Your Skeletal Knight gains a +2/+4/+6 Profane Bonus to Strength, Dexterity, and Constitution
+Tier: 2
 Ranks: 3
 
 AbilityName: Efficient Metamagic
@@ -6766,56 +6794,45 @@ All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
 All: Feat: Quicken Spell
 
-AbilityName: Spell Critical
-Descrip: Your Negative Energy damage spells have an additional 2% chance to critically hit.
-Tier: 2
-Cost: 2
-All: Tier 1: Spell Critical
-
-AbilityName: Corpsecrafter
-Descrip: Your Skeletal Knight gains a +2/+4/+6 Profane Bonus to Strength, Dexterity, and Constitution
-Tier: 2
-Ranks: 3
-All: Tier 1: Skeletal Knight
-
-AbilityName: Bone Armor
-Descrip: While under the effect of Shroud of the Zombie, Vampire, or Lich, you gain 3/6/10 Physical Resistance. While under the effect of Shroud of the Wraith, you gain 1%/2%/3% Dodge.
-Tier: 2
-Ranks: 3
-
 AbilityName: Necrotic Bolt
 Descrip: Spell Like Ability: Necrotic Bolt (Activation Cost: 5 Hit Points. Cooldown: 15/10/5 seconds.)
 Tier: 3
 Ranks: 3
 All: Tier 1: Necrotic Touch
 
-AbilityName: Cloak of Night
-Descrip: Toggle: While active, Cloak of Night reduces the effectiveness of Positive Energy, Negative Energy, Repair, and Light damage on you by 20%/35%/50%. (Activation Cost: 25 Spell Points. Cooldown: 1 second.)}Unlisted Effect: 3/6/10 bonus to hide while toggled
+AbilityName: Negative Energy Adept
+Descrip: : +10/20/30 Negative Healing Amplification, BUG?= Hidden effect dark furor 45% doublestrike for skeletal knight
 Tier: 3
 Ranks: 3
 
 AbilityName: Spell Critical
-Descrip: Your Negative Energy damage spells have an additional 2% chance to critically hit.
+Descrip: Negative Energy III: Your Negative Energy damage spells have an additional 2% chance to critically hit.
 Tier: 3
 Cost: 2
 All: Tier 2: Spell Critical
 
-AbilityName: Eternal Servitude
-Descrip: Your Skeletal Knight gains +2/+4/+6 Profane Bonus to AC, and a +5/+10/+15 Profane Bonus to Physical Resistance.
+AbilityName: Eternal Furor
+Descrip: You (while in a Shroud) AND your Skeleton Knight gain +5/10/15 Profane Bonus to PRR. Your Skeletal Knight gains +3/6/10 to hit and damage, +2/4/6 Profane Bonus to AC, and its attacks bypass 10%/20%/50% of enemy Fortification.
 Tier: 3
 Ranks: 3
 All: Tier 2: Corpsecrafter
 
+AbilityName: Unholy Avatar
+Descrip: You are cloaked in the darkness itself, and can reach out with your Negative Energy Spells to taint the Undead with mortality. When you strike an Undead with a damage-dealing Negative Energy Spell, it leaves a lingering weakness to Negative Energy that bypasses an Undead's natural resistance to Negative Energy for 20 seconds. Only works while in a Shroud form.
+Tier: 4
+
 AbilityName: Spell Critical
-Descrip: Your Negative Energy damage spells have an additional 2% chance to critically hit.
+Descrip: Negative Energy IV: Your Negative Energy damage spells have an additional 2% chance to critically hit.
 Tier: 4
 Cost: 2
 All: Tier 3: Spell Critical
 
-AbilityName: Dark Furor
-Descrip: Your Skeletal Knight gains 15%/30%/45% Doublestrike, and its attacks bypass 5%/10%/15% of enemy Fortification.
+AbilityName: Deathly Versatile
+Descrip: Pick a second Shroud Toggle. You may only have one active at a time.}{-Shroud of the Zombie - While in this form, +4 Constitution, +2 Strength, +20% damage with attacks but you attack 20% slower than normal. You gain +3 PRR, +3 MRR.}{-Note: Zombie form's damage increase is multiplicative with Melee/Ranged power, and its attack speed decrease is treated as a 20 point penalty to Melee and Ranged Alacrity. It is offset by Speed items and the Haste spell.}{-Shroud of the Vampire - While in this form, +2 Charisma, +2 Intelligence, +2 Wisdom. +3 Perform skill, and your melee and unarmed attacks have a (10%) chance to heal you for 1d3 Negative Energy damage per Wizard Level.}{-Shroud of the Wraith - While in this form, +2 Dexterity, +2 Intelligence. Enemy attacks have a 10% chance to miss you due to incorporeality, +1 Sneak Attack Dice, and you gain Feather Falling.}{-Shroud of the Lich - While in this form, +2 Constitution, +2 Intelligence, +10 Negative Amplification, +5 Negative Spell Power, and +15 Magical Resistance Rating.
 Tier: 4
-Ranks: 3
+Cost: 2
+Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
+Flags: SelectorOnly
 All: Tier 3: Eternal Servitude
 
 AbilityName: Necrotic Blast
@@ -6834,8 +6851,15 @@ Descrip: You benefit from dark knowledge, granting you a +1 DC to spells from th
 Tier: 5
 Cost: 2
 
-AbilityName: Improved Shrouding
-Descrip: Your Undead Shrouds gain the following additional benefits:}{- While in Shroud of the Juju Zombie, you gain +2 Constitution, 15 Physical Resistance Rating, and your Damage Reduction increases to 10/Slashing.}{- While in Shroud of the Master Vampire, you gain +2 Dexterity, your vulnerability to Light damage is reduced to 200% (from 300%), and your melee and unarmed attacks heal you for 1 point of Negative Energy damage (Cloak of Night negates healing).}{- While in Shroud of the Dread Wraith, you gain +2 Dexterity and your Incorporeal Miss Chance increases from 25% to 35%.}{- While in Shroud of the Archlich, you gain an additional +2 Intelligence and +10 to Negative Energy Spellpower.
+
+AbilityName: Dark Discorporation
+Descrip:  Select your Bat Form!}{- Dark Discorporation - (as per the Warlock spell... Because Pale Masters should get to turn into bats and float away).}{- Reactive Discorporation - When your HP drops below 50% of your maximum, you automatically cast Dark Discorporation on yourself, turning into a swarm of dark fluttering bats for 20 seconds. This spell will still end if you attack as per the original version of the spell. This may only trigger once every 60 seconds.
+Tier: 5
+Cost: 2
+Selector: Dark Discorporation, Reactive Discorporation
+
+AbilityName: Ascendant Shroud: 
+Descrip: Your Undead Shrouds gain the following additional benefits:}{- While in Zombie Form: +20 Melee Power, +10 PRR, +10% Profane bonus to maximum hit points.}{- While in Vampire Form: +1 Enchantment DC. Your melee attacks have a (10%) chance to dominate your adversaries. On Hit: Target has a chance to be Paralyzed (Will save vs. DC 20 + INT Mod + Enchantment Spell Bonuses). On Save: -10% Movement and Attack Speed.}{- While in Wraith Form: +5% Incorporeality (bringing your total to 15%, or 25% if you have Ghost in the Wind), +2 Sneak Attack Dice. +3% Dodge and Dodge Cap. +10 to Hide and Move Silently.}{- While in Lich Form: +15 to MRR cap, +10 Negative Spell Power, +10 Cold and Electric Resistance, 5% spell point cost reduction on all spells
 Tier: 5
 Cost: 2
 
