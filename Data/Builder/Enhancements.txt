@@ -5677,104 +5677,108 @@ Descrip: You now gain +4 to hit evil and undead creatures. Your attacks now deal
 Tier: 0
 
 AbilityName: Champion of Good
-Descrip: You gain +4 Charisma and 10 Melee Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction.
+Descrip: You gain +4 Charisma, +10 Melee Power,  +10 Ranged Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction. Your Aura of Courage now grants allies a +3% Sacred Bonus to melee and ranged damage. Blessed Purpose now stacks up to 25 times.
 Tier: 0
 
-AbilityName: Extra Turning
-Descrip: You gain +1/2/3 use of Turn Undead per rest.
+AbilityName: Holy Combatant 
+Descrip: +1 to hit and damage with favored weapons.
+Tier: 1
+Ranks: 1
+
+AbilityName: Extra Smites
+Descrip: +2/4/6 bonus to Smite Evil.
 Tier: 1
 Ranks: 3
 
-AbilityName: Divine Light
-Descrip: Your Turn Undead ability now also deals 6d6/12d6/18d6 light damage to nearby undead. Scales with 200% Melee Power.
+AbilityName: Shieldbreaker
+Descrip: +1/2/3 to Sunder DC's
 Tier: 1
 Ranks: 3
 
-AbilityName: Extra Remove Disease
-Descrip: You gain +2/4/6 Remove Disease uses per rest.
+AbilityName: Knight's Authority
+Descrip: +1/2/3 Intimidate, Diplomacy, and Concentration. Tier 3 grants +1 Fortitude Save.
 Tier: 1
 Ranks: 3
 
-AbilityName: Extra Smite
-Descrip: You gain 2/4 additional use of Smite Evil per rest.
-Tier: 1
-Ranks: 2
-
-AbilityName: Attack Boost
-Descrip: Activate to gain a +4/6/+8 Action Boost to hit for 20 seconds
+AbilityName: Improved Second Strikes
+Descrip: +5/10/20% bonus to Strikethrough.
 Tier: 1
 Ranks: 3
-Cost: 2
 
-AbilityName: Improved Turning
-Descrip: You count as 1/2/3 level higher when turning undead and add 2/4/6 to the number of hit dice turned.
+AbilityName: Adept Combatant
+Descrip: +1 to hit and damage with all weapons. Longswords, Battle Axes, Heavy Maces, Morningstars, and War Hammers are now considered as Favored Weapons regardless of your religion.
 Tier: 2
-Ranks: 3
-All: Tier 1: Extra Turning
+Cost: 2
 
 AbilityName: Divine Might
-Descrip: Channel Divinity: You gain an Insight bonus to Strength equal to your Charisma modifier for 30/60/120 seconds.  (Activation Cost: 1 use of Turn Undead. Cooldown: 20 seconds)
+Descrip: Battle Trance: You now gain an insight bonus to hit, damage, and tactical dc's equal to half your charisma modifier for 30/60/120 seconds for 21/18/15 sp. Cooldown: 20 seconds. Anti-requisite: cannot be trained if you have any other Battle Trance abilities (Know the Angles, Falconry Deadly Instinct, etc.).
 Tier: 2
 Ranks: 3
-Cost: 2
 None: Beacon of Hope Tier 2: Might's Reward, Falconry Tier 4: Deadly Instinct, Harper Agent Tier 2: Know the Angles, War Soul Tier 1: Divine Might, Warpriest Tier 1: Divine Might
 
-AbilityName: Rally
-Descrip: Channel Divinity: Remove fear from nearby allies. You and the affected allies gain a +2/+4/+6 Morale Bonus to Will Saves vs. Fear effects and a +1/+2/+3 Morale Bonus to Attack and Damage for 60 seconds. (Coodown: 3 miniutes)
+AbilityName: Critical Mastery
+Descrip: +1/2/3 to Critical Damage and Confirmation
 Tier: 2
 Ranks: 3
-Cost: 2
 
 AbilityName: Exalted Cleave
-Descrip: Make a sweeping weapon attack against all nearby enemies for +1/+2/+3[W] damage. Shares its cooldown with the Cleave feat.}{  Note: Only does 1/2/3[1d6] with handwraps. DDO Forums
+Descrip: Multiselector: Make a sweeping melee or ranged attack against all nearby enemies for +3[W] damage. Shares its cooldown with the Cleave feat. Note: Only does 3[1d6] with handwraps. 
+Tier: 2
+Ranks: 1
+Selector: Melee, Ranged
+
+AbilityName: Action Boost
+Descrip: Action Boost: Choose between Action Boost: Attack and Action Boost: Power}{- Action Boost: Power Activate to gain a +10/20/30 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{- Attack Boost Activate this ability to gain a +4/6/8 Action Boost bonus to your attack rolls for 20 seconds.
 Tier: 2
 Ranks: 3
+Selector: Attack, Power
 
-AbilityName: Melee Power Boost
-Descrip: Activate to gain a +10/+20/+30 Action Boost bonus to Melee and Ranged Power for 20 Seconds. (Cooldown: 30 Seconds)
-Tier: 2
-Ranks: 3
 
-AbilityName: Improved Restoration
-Descrip: Your Paladin Remove Disease ability now also appiles a Lesser Restoration/Restoration/Greater Restoration effect to your target.
-Tier: 3
-Ranks: 3
-
-AbilityName: Divine Sacrifice
-Descrip: Giving up some of your life force to win the battle, you empower your next blow against your foe. This attack deals an additional (5/7/9)d6 Light damage and increases the critical multiplier of your weapon by 1 against evil opponents, but costs you 5 hp and 1 sp, whether or not the attack is successful. Light damage scales with 100% Melee Power.(Cooldown: 3 seconds)
-Tier: 3
-Ranks: 3
-
-AbilityName: Vigor of Life
-Descrip: +20 Positive Healing Amplification, -20 Negative Healing Amplification.
+AbilityName: Holy Combatant
+Descrip: +2 to hit and damage with Favored Weapons. Greatswords are considered as favored Weapons regardless of your religion.
 Tier: 3
 Cost: 2
 
-AbilityName: Exalted Smite
-Descrip: Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier and 0/+1/+2 to your weapon's critical threat range.
+AbilityName: Divine Sacrifice
+Descrip: Multiselector: +2[W]. Active this ability to perform a melee or ranged attack that deals an additional +5/7/9d6 Light damage and increases the critical multiplier of your weapon by 1 against evil opponents, but costs you 5 hp and 1 sp, whether or not the attack is successful. On damage: Gain +15 Temporary SP and +10 Melee and Ranged Power for 10 seconds if you strike an Undead or Evil Outsider with this attack. Light damage scales with 100% Melee Power. (Cooldown: 3 seconds)
 Tier: 3
 Ranks: 3
+Selector:  Melee, Ranged
+
+AbilityName: Lead the Charge
+Descrip: +2/3/5[W] and sprint forward toward your target and deliver a single-target blow. 6 second cooldown. This works with any melee weapon, and not just a shield.
+Tier: 3
+Ranks: 2
+
+AbilityName: Exalted Smite
+Descrip: Multiselector: improved melee or ranged smite. Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier and 0/+1/+2 to your weapon's critical threat range. Also, your Smite Evil and Exalted Smite abilities increase your Melee Power or Ranged Power by 5 for 10 seconds.
+Tier: 3
+Ranks: 3
+Cost: 2
+Selector: Melee, Ranged
+
+AbilityName: Knight's Training
+Descrip: +1 to hit and damage with all weapons and an additional +1 to hit and damage with Favored Weapons. Taking this enhancement grants the Knight's Training feat.
+Tier: 4
 Cost: 2
 
 AbilityName: Censure Demons
 Descrip: You gain On Vorpal: Stun Chaotic Evil outsiders for 3 seconds.
 Tier: 4
 
-AbilityName: Passion
-Descrip: Your Divine Sacrifice ability gains: On Damage: Gain 5/10/15 temporary spell points if you strike an undead or evil outsider with this attack.
-Tier: 4
-Ranks: 3
-All: Tier 3: Divine Sacrifice
-
 AbilityName: Vigor of Life
-Descrip: +20 Positive Healing Amplification, -20 Negative Healing Amplification.
+Descrip: +30 Positive Healing Amplification, -30 Negative Healing Amplification.
 Tier: 4
 Cost: 2
-All: Tier 3: Vigor of Life
 
-AbilityName: Empowered Smite
-Descrip: Active: Your Smite Evil and Exalted Smite abilities increases Melee Power by 5 for 10 seconds.
+AbilityName: Improved Turning
+Descrip: You count as 1/2/3 levels higher for the purpose of turning undead, add +2/4/6 to the hit dice turned, and gain +1/2/3 use per rest. Your Turn Undead ability now also deals +6d6/12d6/18d6 light damage to nearby undead, scaling with 200% of the higher of Melee or Ranged Power.
 Tier: 4
+Ranks: 3
+
+AbilityName: Ascendency
+Descrip: +2 to hit and damage with all weapons. An additional +2 to hit and damage with Favored Weapons. You gain 15% Fortification Bypass. Whenever you attack an undead or evil outsider with a Favored Weapon, you gain a stack of Blessed Purpose: +3 Sacred Bonus to Melee and Ranged Power that lasts for 6 seconds. You can acquire up to 15 stacks by continuing to attack Undead or Evil Outsiders. Switching to a non-Favored Weapon will reset your stacks.
+Tier: 5
 Cost: 2
 
 AbilityName: Censure Outsiders
@@ -5782,26 +5786,23 @@ Descrip: Your Censure Demons ability now applies to all Chaotic or Evil outsider
 Tier: 5
 All: Tier 4: Censure Demons
 
-AbilityName: Holy Retribution
-Descrip: Melee Channel Divinity: Executes 3 powerful holy strikes against all targets around you (same AoE as Cleave)  that deals +1/+3/+5[W] damage. On Damage: Evil creatures with less than 1,000 HP have a 50%/75%/100% chance to be forced to make a WIll save (DC 10 + Paladin Level + Charisma Mod) or be destroyed. On a successful save, the affected creatures take 100 holy damage from this attack as well as -6 to all ability scores for ten seconds. (Cooldown: 6 seconds) This ability also recharges one Smite Evil.
-Tier: 5
-Ranks: 3
-
 AbilityName: Vigor of Life
-Descrip: +20 Positive Healing Amplification, -20 Negative Healing Amplification.
+Descrip: +30 Positive Healing Amplification, -30 Negative Healing Amplification.
 Tier: 5
 Cost: 2
 All: Tier 4: Vigor of Life
 
 AbilityName: Avenging Cleave
-Descrip: "Make a sweeping weapon attack against all nearby enemies for +1/+3/+5[W] damage. Damaged enemies gains one stack of Vulnerability.}Shares its cooldown with the Great Cleave feat.}Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration."
-Tier: 5
-Ranks: 3
-
-AbilityName: Sealed Life
-Descrip: You are immune to Energy Drain.
+Descrip: Make a sweeping weapon attack against all nearby enemies for +1/+3/+5[W] damage. Damaged enemies gains one stack of Vulnerability.}Shares its cooldown with the Great Cleave feat.}Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
 Tier: 5
 Cost: 2
+Selector: Melee, Ranged
+
+AbilityName: Holy Retribution
+Descrip: Multiselector: Melee/Ranged Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for ten seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed. Evil creatures under 1000 HP must always make this save or die. Evil creatures between 1000 and 5000 HP have a 50% chance to be forced to make this save or die. Evil creatures with more than 5000 HP have a 33% chance to be forced to make this save or die.
+Tier: 5
+Cost: 1
+Selector: Melee, Ranged
 
 TreeName: Mechanic
 Type: Class
@@ -7450,11 +7451,11 @@ Descrip: The following spells are added to the Paladin spell list:}{- Level 2: R
 Tier: 0
 
 AbilityName: Glorious Stand
-Descrip: Channel Divinity: For a short duration you gain DRDamage Reduction 20/Epic: Reduces  physical damage by 20, except from Epic attacks. 20/Epic, take reduced damage from elemental and negative energy, receive double healing from positive energy, and are immune to secondary effects of attacks such as 'wounding' or 'vorpal'. (Duration is 30 seconds, cooldown is 5 minutes.) Passive: You gain +5 to Physical and Magical Resistance Rating.
+Descrip: +25 Healing Amp, +3 Lay on Hands charges, +10% Sacred Bonus to Max HP, +5 to Physical and Magical Resistance Rating.
 Tier: 0
 
 AbilityName: Eternal Defender
-Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating and your range of unconsciousness extends by 40 hitpoints.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.Passive: You gain +5 to Physical and Magical Resistance Rating.
+Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating, +100% Threat Generation, and your range of unconsciousness extends by 250 hitpoints.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.
 Tier: 0
 
 AbilityName: Item Defense
@@ -7479,8 +7480,8 @@ Descrip: +[1/2/3] Armor Class and Armor Maximum Dexterity Bonus.
 Tier: 1
 Ranks: 3
 
-AbilityName: Saves Boost
-Descrip: Activate to gain a +[2/4/6] Action Boost bonus to all saving throws for 20 seconds. While under this effect you do not automatically fail saving throws on a roll of a natural 1. (Cooldown: 30 seconds.)
+AbilityName: Commanding Presence
+Descrip:  +[2/4/6] Physical and +[50/100/150] Melee threat
 Tier: 1
 Ranks: 3
 
@@ -7573,8 +7574,8 @@ Descrip: You gain +10/15/25 Physical and Magical Resistance Rating. You gain 1/2
 Tier: 5
 Ranks: 3
 
-AbilityName: Reprisal
-Descrip: On attacked: your next attack gains +1 damage. This effect stacks up to 3/6/10 times.
+AbilityName: Divine Revelation
+Descrip: Improves your Aura of Courage. Your Aura of Courage now grants +[1/2/3] additional Armor class, +[1/2/3] Additional Saving Throws, and +[1/2/3] additional Spell Resistance. In addition, you personally also gain +100 HP.
 Tier: 5
 Ranks: 3
 
@@ -7586,6 +7587,11 @@ All: Tier 4: Greater Sacred Defense
 Flags: SelectorOnly
 Parent: Tier 3: Greater Sacred Defense
 Siblings: Tier 4: Greater Sacred Defense
+
+AbilityName: Sacred Shield
+Descrip: +10% Exceptional bonus to Armor Class, as well as +12 Spell Resistance and are protected from magic missiles the same as the Shield (spell) spell[UnverifiedIcon tooltip.png].
+Tier: 5
+Cost: 2
 
 TreeName: Season's Herald
 Abbreviation: Herald
@@ -8375,7 +8381,7 @@ Descrip: You gain +1 Hit Point for each action point you spend in this tree. Eac
 Tier: 0
 
 AbilityName: Stalwart Defense
-Descrip: Defensive Combat Stance: You gain +10 Physical and Magical Resistance and a +150% bonus to melee threat generation}}Cannot be used while raged
+Descrip: Passive: Immunity to Fear and Knockdown.
 Tier: 0
 
 AbilityName: Overbalance
@@ -8387,7 +8393,7 @@ Descrip: Action Boost: You gain a +20 bonus to saves vs. Fear and a +20 bonus to
 Tier: 0
 
 AbilityName: Defensive Sweep
-Descrip: Action Boost: You generate +50% threat and your basic attacks strike two targets per swing instead of one for 20 seconds}}Cooldown: 30 seconds
+Descrip:  Passive: +15% Exceptional bonus to Armor Class , +50% Threat, and +25 PRR
 Tier: 0
 
 AbilityName: Last Stand
@@ -8486,10 +8492,10 @@ Tier: 4
 Ranks: 3
 Selector: Reinforced Armor, Reinforced Shield
 
-AbilityName: Reprisal
-Descrip: On Attacked: Your next attack gains +1 damage. This effect can stack up to +3/+6/+10 times
+AbilityName: The Thick of Battle
+Descrip: Striking enemies adds +10% Melee Threat. Max 10 stacks, 10 second timer, all stacks fade when timer runs out.
 Tier: 5
-Ranks: 3
+Ranks: 1
 
 AbilityName: Block and Cut
 Descrip: Melee Attack: Performs a melee attack with your main hand weapon that deals +1/+2/+3[W]. On Damage: You gain a +10%/+15%/+25% Morale bonus to melee doublestrike for 10 seconds}}Cooldown: 20 seconds
@@ -8510,6 +8516,11 @@ Tier: 5
 Ranks: 3
 All: Tier 4: Reinforced Defense
 Parent: Tier 4: Reinforced Defense
+
+AbilityName: Against All Odds
+Descrip: +5 AC, taking damage adds a stacking +2 AC, stacks 10 times.
+Tier: 5
+Ranks: 1
 
 TreeName: Swashbuckler
 Type: Class
