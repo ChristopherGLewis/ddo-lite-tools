@@ -4,10 +4,10 @@ Begin VB.Form frmRefreshData
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Refresh Data"
-   ClientHeight    =   4416
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   5076
+   ClientHeight    =   4425
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   5085
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmRefreshData
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4416
-   ScaleWidth      =   5076
+   ScaleHeight     =   4425
+   ScaleWidth      =   5085
    ShowInTaskbar   =   0   'False
    StartUpPosition =   1  'CenterOwner
    Begin VB.PictureBox picProgress 
@@ -34,8 +34,8 @@ Begin VB.Form frmRefreshData
       Height          =   372
       Index           =   3
       Left            =   2880
-      ScaleHeight     =   372
-      ScaleWidth      =   1812
+      ScaleHeight     =   375
+      ScaleWidth      =   1815
       TabIndex        =   9
       Top             =   3240
       Width           =   1812
@@ -49,8 +49,8 @@ Begin VB.Form frmRefreshData
       Height          =   372
       Index           =   2
       Left            =   2880
-      ScaleHeight     =   372
-      ScaleWidth      =   1812
+      ScaleHeight     =   375
+      ScaleWidth      =   1815
       TabIndex        =   8
       Top             =   2760
       Width           =   1812
@@ -64,8 +64,8 @@ Begin VB.Form frmRefreshData
       Height          =   372
       Index           =   1
       Left            =   2880
-      ScaleHeight     =   372
-      ScaleWidth      =   1812
+      ScaleHeight     =   375
+      ScaleWidth      =   1815
       TabIndex        =   7
       Top             =   2280
       Width           =   1812
@@ -79,8 +79,8 @@ Begin VB.Form frmRefreshData
       Height          =   372
       Index           =   0
       Left            =   2880
-      ScaleHeight     =   372
-      ScaleWidth      =   1812
+      ScaleHeight     =   375
+      ScaleWidth      =   1815
       TabIndex        =   5
       Top             =   1680
       Width           =   1812
@@ -149,8 +149,8 @@ Begin VB.Form frmRefreshData
       ForeColor       =   &H80000008&
       Height          =   372
       Left            =   1020
-      ScaleHeight     =   348
-      ScaleWidth      =   1788
+      ScaleHeight     =   345
+      ScaleWidth      =   1785
       TabIndex        =   4
       Top             =   3780
       Width           =   1812
@@ -543,10 +543,12 @@ Private Sub CrawlTree(ptypTree As TreeType)
     strPage = MakeWiki(ptypTree.Wiki)
     ' Process page
     strRaw = DownloadURL(strPage)
+    'wikitable is a special class - trying to change to "wikitable enhancement"
     strTier = Split(strRaw, "wikitable")
     If UBound(strTier) <> lngLast + 1 Then
         AddChange ceInvalidPage, strPage
     Else
+        'Parse each table as a tier.  lngLast = max tier
         For i = lngFirst To lngLast
             mlngTier = i
             SplitTierIntoAbilities strTier(i + 1), ptypTree.Tier(i), ptypTree.TreeName, i, ptypTree.TreeType
@@ -559,9 +561,10 @@ Private Sub SplitTierIntoAbilities(pstrRaw As String, ptypTier As TierType, pstr
     Dim blnSkip As Boolean
     Dim i As Long
     
+    'Each row is an enhancement
     strAbility = Split(pstrRaw, "<tr>")
     ' Special consideration for archmage, which has a unique SLA table between core and tier 1 on its wiki page
-    If UBound(strAbility) = 11 Then
+    If UBound(strAbility) = 11 Then  'Typically 5
         If pstrTreeName = "Archmage" And plngTier = 0 Then ReDim Preserve strAbility(6)
     End If
     ' Process tier
@@ -585,11 +588,13 @@ Private Sub CleanAbility(pstrRaw As String, ptypAbility As AbilityType)
     Dim lngStart As Long
     Dim lngEnd As String
     
+    'Name of ability is between the first <b>...</b>
     lngStart = InStr(pstrRaw, "<b>")
     If lngStart = 0 Then Exit Sub Else lngStart = lngStart + 3
     lngEnd = InStr(lngStart, pstrRaw, "</b>")
     If lngEnd < lngStart Then Exit Sub
     strAbility = Mid$(pstrRaw, lngStart, lngEnd - lngStart)
+    'Description is 5 later until the first div.
     lngStart = lngEnd + 5
     lngEnd = InStr(lngStart, pstrRaw, "</div>")
     If lngEnd < lngStart Then Exit Sub

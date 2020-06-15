@@ -4,10 +4,10 @@ Begin VB.Form frmStats
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Stats"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmStats
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
       Left            =   0
@@ -30,8 +30,8 @@ Begin VB.Form frmStats
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -46,8 +46,8 @@ Begin VB.Form frmStats
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Stats;Schedule"
@@ -71,8 +71,8 @@ Begin VB.Form frmStats
          TabIndex        =   31
          Top             =   480
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -93,8 +93,8 @@ Begin VB.Form frmStats
          TabIndex        =   33
          Top             =   960
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -115,8 +115,8 @@ Begin VB.Form frmStats
          TabIndex        =   35
          Top             =   1200
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -137,8 +137,8 @@ Begin VB.Form frmStats
          TabIndex        =   37
          Top             =   1440
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -159,8 +159,8 @@ Begin VB.Form frmStats
          TabIndex        =   39
          Top             =   1680
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -181,8 +181,8 @@ Begin VB.Form frmStats
          TabIndex        =   41
          Top             =   1920
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -203,8 +203,8 @@ Begin VB.Form frmStats
          TabIndex        =   43
          Top             =   2160
          Width           =   972
-         _ExtentX        =   1715
-         _ExtentY        =   445
+         _ExtentX        =   1720
+         _ExtentY        =   450
          Min             =   0
          Max             =   6
          Value           =   0
@@ -217,6 +217,15 @@ Begin VB.Form frmStats
          Position        =   3
          Enabled         =   -1  'True
          DisabledColor   =   -2147483631
+      End
+      Begin VB.Label lblLimitTomes 
+         BackColor       =   &H80000005&
+         Caption         =   "Tomes locked to max level"
+         Height          =   255
+         Left            =   360
+         TabIndex        =   59
+         Top             =   2500
+         Width           =   2655
       End
       Begin VB.Label lblGroup 
          Appearance      =   0  'Flat
@@ -351,8 +360,8 @@ Begin VB.Form frmStats
          TabIndex        =   6
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3090
-         _ExtentY        =   4043
+         _ExtentX        =   3096
+         _ExtentY        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -361,8 +370,8 @@ Begin VB.Form frmStats
          TabIndex        =   7
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3090
-         _ExtentY        =   4043
+         _ExtentX        =   3096
+         _ExtentY        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -371,8 +380,8 @@ Begin VB.Form frmStats
          TabIndex        =   8
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3090
-         _ExtentY        =   4043
+         _ExtentX        =   3096
+         _ExtentY        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -381,8 +390,8 @@ Begin VB.Form frmStats
          TabIndex        =   9
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3090
-         _ExtentY        =   4043
+         _ExtentX        =   3096
+         _ExtentY        =   4048
       End
       Begin VB.Label lblGroup 
          Appearance      =   0  'Flat
@@ -827,8 +836,8 @@ Begin VB.Form frmStats
       ForeColor       =   &H80000008&
       Height          =   6792
       Left            =   120
-      ScaleHeight     =   6792
-      ScaleWidth      =   11952
+      ScaleHeight     =   6795
+      ScaleWidth      =   11955
       TabIndex        =   58
       Top             =   480
       Visible         =   0   'False
@@ -1062,7 +1071,13 @@ Private Sub EnforceLevelMax()
     mblnOverride = True
     ' Tomes
     lngMax = TomeLevel(build.MaxLevels)
-    If lngMax > tomes.Stat.Max Then lngMax = tomes.Stat.Max
+    If lngMax >= tomes.Stat.Max Then
+        lngMax = tomes.Stat.Max
+        lblLimitTomes.Visible = False
+    Else
+        lblLimitTomes.Visible = True
+    End If
+    
     blnVisible = (lngMax > 0)
     For i = 0 To 6
         Me.usrSpinner(i).Max = lngMax
