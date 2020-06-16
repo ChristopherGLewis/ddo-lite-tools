@@ -395,6 +395,7 @@ Private Sub PrepSpells()
     InitSpellPage "https://ddowiki.com/page/Ranger_spells"
     InitSpellPage "https://ddowiki.com/page/Sorcerer_/_Wizard_spells"
     InitSpellPage "https://ddowiki.com/page/Warlock_spells"
+    InitSpellPage "https://ddowiki.com/page/Alchemist_spells"
     ReDim Preserve mstrSpellPage(1 To mlngSpellPages)
     mlngTotal(0) = mlngTotal(0) + mlngSpellPages
     mlngTotal(1) = mlngSpellPages
