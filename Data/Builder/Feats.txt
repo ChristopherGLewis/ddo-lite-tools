@@ -1892,6 +1892,12 @@ All: Weapon Focus, Greater Weapon Focus
 ClassBonus: Fighter
 SharedSelector: Greater Weapon Focus
 
+FeatName: Swords to Plowshares	
+Group: Heroic, Melee
+Descrip: You are an expert with the usage of traditionally nonviolent weapons in impressive ways. When wielding one of the following weapons, you are granted the following:}{Quarterstaves, Kamas, and Sickles you wield gain a +1 Morale bonus to Critical Threat Range.
+BAB: 4
+ClassBonus: Monk
+
 FeatName: Tactical Combatant
 SortName: Tactical Training2
 Group: Heroic, Melee
