@@ -7189,7 +7189,7 @@ Tier: 5
 Cost: 2
 Selector: Dark Discorporation, Reactive Discorporation
 
-AbilityName: Ascendant Shroud:
+AbilityName: Ascendant Shroud
 Descrip: Your Undead Shrouds gain the following additional benefits:}{-While in Zombie Form: +20 Melee Power, +10 PRR, +10% Profane bonus to maximum hit points.}{-While in Vampire Form: +1 Enchantment DC. Your melee attacks have a (10%) chance to dominate your adversaries. On Hit: Target has a chance to be Paralyzed (Will save vs. DC 20 + INT Mod + Enchantment Spell Bonuses). On Save: -10% Movement and Attack Speed.}{-While in Wraith Form: +5% Incorporeality (bringing your total to 15%, or 25% if you have Ghost in the Wind), +2 Sneak Attack Dice. +3% Dodge and Dodge Cap. +10 to Hide and Move Silently.}{-While in Lich Form: +15 to MRR cap, +10 Negative Spell Power, +10 Cold and Electric Resistance, 5% spell point cost reduction on all spells
 Tier: 5
 Cost: 2
