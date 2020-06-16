@@ -5705,9 +5705,9 @@ All: Tier 3: What First?
 Parent: Tier 3: What First?
 Selector: Ask Questions Later, Shoot Later
 SelectorName: Ask Questions Later
-All: Tier 3: What First?: Ask Questions First
-SelectorName: Shoot Later
 All: Tier 3: What First?: Shoot First
+SelectorName: Shoot Later
+All: Tier 3: What First?: Ask Questions First
 
 AbilityName: Inquisition Style
 Descrip: How do you interrogate?}{-Arcane Inquisition: You gain +15 Universal Spell Power while you have a Light or Heavy (non-repeating) Crossbow equipped.}{-Dashing Inquisition: You can Swashbuckle while wielding a Light (non-repeating) Crossbow.}{-Divine Inquisition: You count Light and Heavy (non-repeating) Crossbows as Favored weapons, regardless of your Deity.}{-Martial Inquisition: +5% Doubleshot with Light and Heavy (non-repeating) Crossbows.
