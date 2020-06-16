@@ -561,7 +561,8 @@ Private Sub SplitTierIntoAbilities(pstrRaw As String, ptypTier As TierType, pstr
     Dim blnSkip As Boolean
     Dim i As Long
     
-    'Each row is an enhancement
+    'Each row is an enhancement - Wood Elf has a |-Style so clear that
+    pstrRaw = Replace(pstrRaw, "<tr style=""background-color:lightcyan;"">", "<tr>")
     strAbility = Split(pstrRaw, "<tr>")
     ' Special consideration for archmage, which has a unique SLA table between core and tier 1 on its wiki page
     If UBound(strAbility) = 11 Then  'Typically 5
@@ -594,7 +595,7 @@ Private Sub CleanAbility(pstrRaw As String, ptypAbility As AbilityType)
     lngEnd = InStr(lngStart, pstrRaw, "</b>")
     If lngEnd < lngStart Then Exit Sub
     strAbility = Mid$(pstrRaw, lngStart, lngEnd - lngStart)
-    'Description is 5 later until the first div.
+    'Description is 5 later until the first /DIV
     lngStart = lngEnd + 5
     lngEnd = InStr(lngStart, pstrRaw, "</div>")
     If lngEnd < lngStart Then Exit Sub
