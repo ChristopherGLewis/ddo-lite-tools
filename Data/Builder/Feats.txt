@@ -1458,7 +1458,7 @@ Class: Warlock 1
 Flags: ClassOnly
 ClassOnlyClass: Warlock
 ClassOnlyLevel: 1
-Selector: Fey, Fiend, Great Old One
+Selector: Fey, Fiend, Great Old One, Celestial, Abyss, Carceri Storm
 SelectorName: Fey
 Descrip: Sonic Damage}Targets Reflex saves}2: Obscuring Mist}5: Blindness}6: Daze Monster}9: Slow}14: Greater Dispel Magic}15: Abundant Step}17: Otto's Sphere of Dancing}19: Otto's Irresistible Dance
 SelectorName: Fiend
@@ -1467,6 +1467,14 @@ Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
 SelectorName: Great Old One
 Descrip: Acid Damage}Targets Will saves}2: Entangle}5: Knock}6: +5 MRR, +25% Fort}9: Phantasmal Killer}14: Dominate Person}15: Charm Monster}17: Mass Suggestion}19: Power Word: Kill
 Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+SelectorName: Celestial
+Descrip: Electric Damage}Targets Will saves}2: Bless}5: Soundburst}6: Celestial Attunement (+5 PRR and +1 to all Saves)}9: Magic Circle Against Evil}14: Prayer}15: Ameliorate (Obliterate undead)}17: Holy Aura}19: Freedom of Movement
+Alignment: Lawful Good, Chaotic Good, Neutral Good
+SelectorName: Abyss
+Descrip: Negative Damage}Targets Fortitude saves}2: Mage Armor}5: Spawn Screen}6: Unhallowed Flesh:(+5 PRR and +5 MRR) }9: Halt Undead}14: Death Aura}15: Channel the Abyss (Undead benefits)}17: Symbol of Pain}19: Rend the Soul
+Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+SelectorName: Carceri Storm
+Descrip: Cold Damage}Targets Reflex saves}2: Merfolk's Blessing}5: Gust of Wind}6: Frozen Footsteps (+10% Cold Absorption)}9: Sleet Storm}14: Ice Storm}15: Absolute Zero (Lock single enemy in ice)}17: Mass Suggestion}19: Greater Creeping Cold
 NotClass: Monk
 
 FeatName: Past Life
