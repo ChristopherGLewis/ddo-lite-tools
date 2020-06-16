@@ -10501,11 +10501,11 @@ TreeName: Wood Elf
 Type: Race
 Initial: WE
 
-AbilityName: Elven Accuracy
+AbilityName: Elven Accuracy I
 Descrip: You gain +2% to hit with all attacks. Your Point Blank Shot and Ranged Sneak Attack range is increased by 2 meters for each Elven Core Ability you possess from this tree.
 Tier: 0
 
-AbilityName: Elven Ability
+AbilityName: Nature I
 Descrip: +1 to the chosen ability score
 Tier: 0
 Cost: 2
@@ -10516,7 +10516,7 @@ AbilityName: Elven Accuracy II
 Descrip: You gain +2% to hit with all attacks.
 Tier: 0
 
-AbilityName: Elven Ability II
+AbilityName: Nature II
 Descrip: +1 to the chosen ability score
 Tier: 0
 Cost: 2
@@ -10541,7 +10541,7 @@ Descrip: +1/+2/+3 Listen, Search, and Spot.
 Tier: 1
 Ranks: 3
 
-AbilityName: Elven Weapon Training
+AbilityName: Elven Weapon Training I
 Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
 Tier: 1
 Cost: 2
@@ -10566,11 +10566,11 @@ Tier: 2
 Ranks: 3
 All: Tier 1: Keen Senses
 
-AbilityName: Elven Weapon Training
+AbilityName: Elven Weapon Training II
 Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
 Tier: 2
 Cost: 2
-All: Tier 1: Elven Weapon Training
+All: Tier 1: Elven Weapon Training I
 
 AbilityName: Arcanum
 Descrip: +25/+50/+100 spell points and +1/+2/+3 spell penetration.
@@ -10596,11 +10596,11 @@ Tier: 3
 Cost: 2
 All: Tier 3: Feywild Tap
 
-AbilityName: Elven Weapon Training
+AbilityName: Elven Weapon Training III
 Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
 Tier: 3
 Cost: 2
-All: Tier 2: Elven Weapon Training
+All: Tier 2: Elven Weapon Training II
 
 AbilityName: Arcane Archer
 Descrip: You gain access to the Arcane Archer enhancement tree. You need to click the Accept button before you can select the Arcane Archer (Elf) tree.}{  (The Elf: Arcane Archer tree uses your total character level instead of Ranger level, but advances Core Abilities at a slower rate. You cannot spend action points in both the Ranger: Arcane Archer and Elf: Arcane Archer trees.)
@@ -10619,11 +10619,11 @@ Descrip: You may use Dexterity to damage Longswords, Rapiers, Scimitars, Shortbo
 Tier: 4
 All: Tier 4: Elven Weapon Training
 
-AbilityName: Elven Weapon Training
+AbilityName: Elven Weapon Training IV
 Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
 Tier: 4
 Cost: 2
-All: Tier 3: Elven Weapon Training
+All: Tier 3: Elven Weapon Training III
 
 AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
