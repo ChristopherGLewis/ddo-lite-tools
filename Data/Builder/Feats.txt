@@ -1805,7 +1805,7 @@ Class: Rogue 10
 
 FeatName: Slicing Blow
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): Deal 1 constitution damage, plus target bleeds for 1d4 damage every 2 seconds for up to 6 seconds.
+Descrip: Tactical Melee Attack: Using this attack, you deal one point of [[Constitution]] damage to your target, and deal 1 to 6 additional damage every 2 seconds for 18 seconds. The target suffers an additional 1 to 6 damage per tick for every three Character Levels. This damage scales with 100% Melee Power, and can stack up to three times. Some creatures may be immune to the bleeding or wounding effect.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter
 
