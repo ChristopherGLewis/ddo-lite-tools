@@ -367,13 +367,13 @@ DestinyName: Fatesinger
 Type: Destiny
 Stats: Strength, Charisma
 
-AbilityName: O Fortuna
-Descrip: Your Inspire Courage has an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power.}Passively, you benefit from an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power.}'Look to the prepared for Fortune's blessing.'} --Lin Dazzar, Envoy of the Twelve
+AbilityName: First Harmonic Chord
+Descrip: Your Inspire Courage has an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power. Passively, you benefit from an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power.
 Tier: 1
 Ranks: 3
 
-AbilityName: Allure
-Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
+AbilityName: Siren's Song
+Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds
 Tier: 1
 Ranks: 3
 
@@ -383,99 +383,95 @@ Tier: 1
 All: Feat: Fascinate
 
 AbilityName: Dirge
-Descrip: Bard Song: Produce a haunting funeral march that affects nearby enemies. Affected enemies suffer from Dirge.}Dirge: For every two caster levels you have, this creature takes 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage every 3 seconds (Fortitude save for half damage). In addition, enemies affected by Dirge may be slowed by 5% if they fail the Fortitude save.}Duration: 18 seconds}'The Enemy falls to our wrath, and everywhere, their light is fading. But though our cause is just, it must also be remembered that our enemy fought for his own cause and believed in it as strongly as we did in ours. And so I have come to this quiet spot to light a candle in honor of his memory. Has Fate favored him this day, I should like to think that he would have done the same for me.'}--Elemar's Payer
+Descrip: Bard Song: Produce a haunting funeral march that affects nearby enemies. Affected enemies suffer from Dirge. Dirge: For every two caster levels you have, this creature takes 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage every 3 seconds (Fortitude save for half damage). In addition, enemies affected by Dirge may be slowed by 5% if they fail the Fortitude save. Duration: 18 seconds
 Tier: 1
 Ranks: 3
 
-AbilityName: Tailwind
-Descrip: Your Inspire Courage now grants an additional +[1/2/3] to all Skills.}Passively, you benefit from an additional +[1/2/3] to all Skills.}'Unleash the winds! Fly, my friends! Fly on to your deadly marks!'}--Gwynn Glowsing, Huntmaster of House Phiarlan
+AbilityName: Second Harmonic Chord
+Descrip: Your Inspire Courage now grants an additional +[1/2/3] to all Skills. Passively, you benefit from an additional +[1/2/3] to all Skills. 
 Tier: 2
 Ranks: 3
-All: Tier 1: O Fortuna
 
-AbilityName: Lucidity
-Descrip: Bardic Curse: Your target must make a Will save or be bound in place briefly. In addition, your target will become [6/10/12]% more vulnerable to magical damage, and also suffers -[5/10/15] Spell Resistance and -[4/6/8] damage. Duration: 45 seconds}'The chains of Fate have you, demon, and you are too dumb to know you are already dead.'}--Larisong
+AbilityName: Bound Fate
+Descrip: Bardic Curse: Your target must make a Will save or be bound in place briefly. In addition, your target will become [6/10/12]% more vulnerable to magical damage, and also suffers -[5/10/15] Spell Resistance and -[4/6/8] damage. Duration: 45 seconds
 Tier: 2
-Ranks: 3
-All: Tier 1: Allure
-
-AbilityName: Masked Ball
-Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory.
-Tier: 2
-Ranks: 2
-
-AbilityName: Siren's Song
-Descrip: Your Inspire Greatness now grants an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds +10 healing, negative, and repair amplification.}Passively, you benefit from an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds a passive +10 healing, negative, and repair amplification. 'Seductive, enchanting, tantalizing... these are the qualities that might describe my lessers...'}--Lolth, Demon Queen
-Tier: 3
 Ranks: 3
 
 AbilityName: Reign
-Descrip: Adds to your Bound Fate: Your Bound Fate now inflicts affected creatures with an additional [6/10/12]% vulnerability to physical attacks. Grim Fate may take effect, even if Bound Fate does not.}Duration: 60 seconds}'Fate, one day, claims us all. Today, she visits you.'}--Larafeal Loommistriss, upon confronting Ihlazur
+Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage. Vanquish your foes in battle with a song of glory.
+Tier: 2
+Ranks: 3
+
+AbilityName: Siren's Song
+Descrip: Your Inspire Greatness now grants an additional +[1/2/3] Physical Resistance Rating. Passively, you benefit from an additional +[1/2/3] Physical Resistance Rating.
+Tier: 3
+Ranks: 3
+
+AbilityName: Grim Fate
+Descrip:  Adds to your Bound Fate: Your Bound Fate now inflicts affected creatures with an additional [6/10/12]% vulnerability to physical attacks. Grim Fate may take effect, even if Bound Fate does not. Duration: 60 seconds
+Tier: 3
+Ranks: 3
+All: Tier 2: Bound Fate
+
+AbilityName: Arcane Hymn
+Descrip: You sing a magical Hymn that resonates within the Arcane Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Arcane Resonance. Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself. Arcane Resonance: +1 to Intelligence, Wisdom and Charisma, +20 Universal Spell Power, +2 Spell Penetration, +4 Use Magic Device, +10% to your Fire, Cold, Acid and Electric Absorption.
 Tier: 3
 Ranks: 3
 
 AbilityName: Aria
-Descrip: You sing a magical Hymn that resonates within the Arcane Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Arcane Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Arcane Resonance: +1 to Intelligence, Wisdom and Charisma, +20 Universal Spell Power, +2 Spell Penetration, +4 Use Magic Device, +10% to your Fire, Cold, Acid and Electric Absorption.
+Descrip: Passive: You sing your Bardic Inspiration as if you had [1/2/3] additional Bard levels. Spontaneous Song: Generate [15/25/35]% less threat when you cast spells for the duration of this song. In addition, you gain +[20/40/40] Sonic Spell Power, and +[5/10/15] Force, Positive, and Negative Spell Power.
 Tier: 3
 Ranks: 3
-
-AbilityName: Echoes of Arcane
-Descrip: Passive: You sing your Bardic Inspiration as if you had [1/2/3] additional Bard levels.}Spontaneous Song: Generate [15/25/35]% less threat when you cast spells for the duration of this song. In addition, you gain +[20/40/40] Sonic Spell Power, and +[5/10/15] Force, Positive, and Negative Spell Power.}Your voice carries like a gale over the skein of Fate.
-Tier: 3
 Cost: 2
 
-AbilityName: Chord of Disruption
-Descrip: Your Inspire Heroics now grants an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws.}Passively, you benefit from an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws.
+AbilityName: Fourth Harmonic Chord
+Descrip: Your Inspire Heroics now grants an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws. Passively, you benefit from an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws.
 Tier: 4
 Ranks: 3
-All: Tier 3: Siren's Song
 
-AbilityName: Echoes of Martial
-Descrip: You sing a magical Hymn that resonates within the Divine Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Divine Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Divine Resonance: +1 to Strength, Charisma and Wisdom, +1 maximum Smite Evil charges, +2 to hit damage, and to confirm critical hits, +10 Physical Resistance Rating, and +25 Positive and Negative Spell Power.
+AbilityName: Divine Hymn
+Descrip: You sing a magical Hymn that resonates within the Divine Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Divine Resonance. Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself. Divine Resonance: +1 to Strength, Charisma and Wisdom, +1 maximum Spite Evil charges, +2 to hit damage, and to confirm critical hits, +10 Physical Resistance Rating, and +25 Positive and Negative Spell Power.
 Tier: 4
 Cost: 2
 
-AbilityName: Echoes of the Divine
-Descrip: You sing a magical Hymn that resonates within the Martial Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Martial Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Martial Resonance: +1 to Strength, Dexterity and Wisdom, +2 Sneak Dice, +20 Maximum Hit Points, +10 Physical and Magical Resistance rating, +5 Armor Class, and +10 Melee and Ranged Power
+AbilityName: Martial Hymn
+Descrip: You sing a magical Hymn that resonates within the Martial Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Martial Resonance. Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself. Martial Resonance: +1 to Strength, Dexterity and Wisdom, +2 Sneak Dice, +20 Maximum Hit Points, +10 Physical and Magical Resistance rating, +5 Armor Class, and +10 Melee and Ranged Power
 Tier: 4
 Cost: 2
 
-AbilityName: Echoes of Primal
-Descrip: You sing a magical Hymn that resonates within the Primal Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Primal Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Primal Resonance: +1 to Dexterity, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell resistance, +10 Healing Amplification, +10% Attack Speed with Throwing Weapons and Bows, and an additional +3 Strength while Raging.
+AbilityName: Primal Hymn
+Descrip: You sing a magical Hymn that resonates within the Primal Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Primal Resonance. Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself. Primal Resonance: +1 to Dexterity, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell resistance, +10 Healing Amplification, +10% Attack Speed with Throwing Weapons and Bows, and an additional +3 Strength while Raging.
 Tier: 4
 Cost: 2
 
 AbilityName: The Fifth Chord
-Descrip: Adds Inspire Transcendence to your Bardic Ballad.}Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and True Seeing.}Passively, you benefit from an additional +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and you are immune to Blindness and benefit from the True Seeing spell.}A verse from the Song of Heroes, whose powerful notes fill your limbs with vigor in battle.
+Descrip: Adds Inspire Transcendence to your Bardic Ballad. Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and True Seeing. Passively, you benefit from an additional +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and you are immune to Blindness and benefit from the True Seeing spell. A verse from the Song of Heroes, whose powerful notes fill your limbs with vigor in battle.
 Tier: 5
-Ranks: 3
 
 AbilityName: Metamagic Attunement I
-Descrip: Choose one:}{- Like Enlarge Spell, your spells have twice the range. This does not increase their Spell Point cost.}{- Like Eschew Materials, your spells no longer need common material components. This does not increase their Spell Point cost.}{- Like Extend Spell, your spells last twice as long. This does not increase their Spell Point cost.
+Descrip: Choose one:}{Like Enlarge Spell, your spells have twice the range. This does not increase their Spell Point cost.}{Like Eschew Materials, your spells no longer need common material components. This does not increase their Spell Point cost.}{Like Extend Spell, your spells last twice as long. This does not increase their Spell Point cost.
 Tier: 5
-Ranks: 2
 Selector: Enlarge, Eschew, Extend
 
 AbilityName: Masquerade
-Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'
+Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.
 Tier: 5
 
 AbilityName: Bladesong
-Descrip: Your Melee and Missile attacks deal an additional 2d6 Sonic damage on hit, scaling with Sonic Spell Power. +3% Competence Bonus to Melee Attack Speed. You have +1 Critical Multiplier on rolls of 19-20.}A verse from the Song of Heroes, whose harmonious notes sweep away the strain of concentration.
+Descrip: Your Melee and Missile attacks deal an additional 2d6 Sonic damage on hit, scaling with Sonic Spell Power. +3% Competence Bonus to Melee Attack Speed. You have +1 Critical Multiplier on rolls of 19-20. A verse from the Song of Heroes, whose harmonious notes sweep away the strain of concentration.
 Tier: 5
-Ranks: 2
 
 AbilityName: Greater Shout
-Descrip: You may cast the spell Greater Shout as a Spell-like ability. Emits an ear splitting yell that deals 1d3+3 Sonic damage per caster level and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun.}Cooldown: 6 seconds}Cost: 6 spell points
+Descrip: You may cast the spell Greater Shout as a Spell-like ability. Emits an ear splitting yell that deals 1d3+3 Sonic damage per caster level and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun. Cooldown: 6 seconds. Cost: 6 spell points
 Tier: 6
 
-AbilityName: Metamagic Attunement II: Choose one:
-Descrip: Choose one:}{- Like Embolden Spell, your spells add an additional 2 to their DCs. This does not increase their Spell Point cost.}{- Like Intensify Spell, your spells have an additional 75 to their Spell Power. This does not increase their Spell Point cost.}{- Like Quicken Spell, your spells cast much faster and can't be interrupted. This does not increase their Spell Point cost.
+AbilityName: Metamagic Attunement II
+Descrip: Choose one:}{Like Embolden Spell, your spells add an additional 2 to their DCs. This does not increase their Spell Point cost.}{Like Intensify Spell, your spells have an additional 75 to their Spell Power. This does not increase their Spell Point cost.}{Quicken Spell, your spells cast much faster and can't be interrupted. This does not increase their Spell Point cost.
 Tier: 6
 Selector: Embolden, Intensify, Quicken
 
 AbilityName: Turn of the Tide
-Descrip: Spontaneous Song: Activate this ability to gain:}Full Base Attack Bonus}+40% weapon damage}DR 15/-}+4 Charisma}+3 to hit}Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit}While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1.}Duration: 45 seconds. Cooldown: 3 minutes}'Shining like the sun, the Singer fell upon the horde. Fiery, his sword gleamed, cutting through their ranks. And when light had faded, and with the carnage all around, he quietly cleaned his blade, sat upon a lonely rock and wrote a poem of I know not what.'}--Recollections, Lormac Stoutarm
+Descrip: Spontaneous Song: Activate this ability to gain: Full Base Attack Bonus +40% weapon damage DR 15/- +4 Charisma +3 to hit Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1. Cooldown: 3 minutes
 Tier: 6
 
 DestinyName: Fury of the Wild
