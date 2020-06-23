@@ -13,6 +13,9 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.2.4
+Updated Fatesinger (U42P4).  Recrawled Destinies.
+
 ### 3.2.3
 Added the new Warlock feats from U46p2.  Fix to Inquisitive "What Later?"
 
