@@ -9756,6 +9756,126 @@ Tier: 4
 Cost: 2
 All: Tier 3: Dance in the Darkness
 
+
+TreeName: Shifter
+Type: Race
+Initial: Shi
+
+AbilityName: Extra Shifting 
+Descrip: +1 Rage uses per rest. (You expend Rage uses to activate your Shifting).
+Tier: 0
+
+AbilityName: Ability Score
+Descrip: Choose an ability to improve: +1 Constitution, Dexterity, Strength, Wisdom.
+Tier: 0
+Cost: 2
+Selector: Constitution, Dexterity, Strength, Wisdom
+
+AbilityName: Extra Shifting II
+Descrip: +2 Rage uses per rest.
+Tier: 0
+
+AbilityName: Ability Score II
+Descrip: Choose an ability to improve: +1 Constitution, Dexterity, Strength, Wisdom.
+Tier: 0
+Cost: 2
+Selector: Constitution, Dexterity, Strength, Wisdom
+
+AbilityName: Regenerating Shift
+Descrip: You Regenerate 1 Rage use every 90 seconds.
+Tier: 0
+
+AbilityName: Brutality
+Descrip: Choose one:} Brutal Spellcasting: Your damaging spells generate 25%/50%/75% more hate than they normally would, making enemies more likely to attack you.} Brute Fighting: Your melee attacks generate 25%/50%/75% more hate than they normally would, making enemies more likely to attack you.
+Tier: 1
+Ranks: 3
+Selector: Brutal Fighting, Brutal Spellcasting
+
+AbilityName: Hunt & Track
+Descrip: +1/2/3 Spot, Listen and Intimidate
+Tier: 1
+Ranks: 3
+
+AbilityName: Extend Shifting
+Descrip: Your Shifting and Barbarian rage last 25/50/74% longer
+Tier: 1
+Ranks: 3
+
+AbilityName: Hardy Shifting
+Descrip: +1/2/3 Constitution while Shifting or Raging.
+Tier: 1
+Ranks: 3
+
+AbilityName: Shifted Alterations
+Descrip: <tbd>
+Tier: 2
+Selector: Shifted Defenses, Shifted Senses
+
+AbilityName: Natural Armor
+Descrip: +2/4/6 to Natural Armor
+Tier: 2
+Ranks: 3
+
+AbilityName: Howl
+Descrip: <tbd>
+Tier: 2
+
+AbilityName: Extra Howling
+Descrip: <tbd>
+Tier: 2
+All: Tier 2: Howl
+
+AbilityName: Magic Fang
+Descrip: <tbd>
+Tier: 2
+Ranks: 3
+
+AbilityName: Empowered by Nature
+Descrip: <tbd>
+Tier: 3
+Selector: Empowered by Nature (Beasthide), Empowered by Nature (Wildhubt)
+
+AbilityName: Augment Summoning
+Descrip: <tbd>
+Tier: 3
+
+AbilityName: Stronger Howl
+Descrip: <tbd>
+Tier: 3
+All: Tier 2: Howl
+
+AbilityName: Shifter Favored Enemy
+Descrip: <tbd>
+Tier: 3
+Cost: 1
+Selector: Animal, Fey, Magical Beast, Plant, Reptillian, Vermin
+SelectorName: Animal
+None: Feat: Favored Enemy: Animal
+SelectorName: Fey
+None: Feat: Favored Enemy: Fey
+SelectorName: Magical Beast
+None: Feat: Favored Enemy: Magical Beast
+SelectorName: Plant
+None: Feat: Favored Enemy: Plant
+SelectorName: Reptillian
+None: Feat: Favored Enemy: Reptillian
+SelectorName: Vermin
+None: Feat: Favored Enemy: Vermin
+
+AbilityName: Threatening Shift
+Descrip: <tbd>
+Tier: 4
+Selector: Threatening Shift, Camouflaged Shift
+
+AbilityName: True Hunter
+Descrip: <tbd>
+Tier: 4
+
+AbilityName: Howl of Terror
+Descrip: <tbd>
+Tier: 4
+
+
 TreeName: Vanguard
 Type: Class
 Initial: Van

@@ -120,3 +120,17 @@ Type: Premium
 Stats: 8, 10, 8, 6, 8, 8
 GrantedFeats1: Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Longbow, Martial Weapon: Shortbow
 Trees: Elf-Arcane Archer
+
+RaceName: Shifter
+Type: Premium
+Stats: 8, 10, 8, 6, 8, 8
+Flags: BonusFeat
+GrantedFeats1: Shifting
+
+RaceName: Razorclaw Shifter
+Abbreviation: Scourge
+Type: Iconic
+IconicClass: Barbarian
+Stats: 10, 8, 8, 6, 8, 8
+GrantedFeats1: Favored Enemy: Undead
+GrantedFeats1: Healing Hands
