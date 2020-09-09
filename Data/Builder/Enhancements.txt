@@ -4188,6 +4188,154 @@ Descrip: You have learned how to spot weaknesses in even the mightiest of foes. 
 Tier: 5
 Selector: Shot, Strike
 
+TreeName: Feydark Illusionist
+Abbreviation: Feydark
+Type: Global
+Initial: FYD
+Color: Green
+Stats: Intelligence, Wisdom, Charisma
+
+AbilityName: Find Familiar
+Descrip: You have been trained to keep a hunting bird. Activate this ability to summon your companion. Your pet cannot be attacked, and cannot die. Damage it causes is attributed to you. While your Hunting Bird is by your side, it grants you a +2 to Spot and Listen checks. Choose one: Summon Falcon, Summon Grey Owl, Summon Raven, Summon Snow Owl, Summon White Falcon. Your bird will remain with you in public areas, but, unlike a Wolf Companion or Iron Defender, it is considered a summoned creature. You can have only one summoned creature at a time.}{-Your choice of bird only differs in cosmetic appearance, they are otherwise identical in function. Images of the five different birds visible here}{-If you are a ranged attacker and don't have the Precise Shot feat, then an avian companion will block your arrows/bolts when it is in the line of fire.}{-Summoning an avian companion may disable some Hunting bird attacks for 4.5 seconds.}{-Summoning an avian companion may cause other summoned creature to despawn.}{-Casting summoning spells makes an avian companion despawn, but this still keeps the toggle on, and you can use Hunting Bird attacks.}{-Your death makes an avian companion despawn and toggle off this skill. You need to toggle on again to use Hunting Bird attacks.
+Tier: 0
+Selector: Fox, Illusory Sprite, Pseudo Dragon, White Cat, White Tressym
+
+AbilityName: Ability Score
+Descrip: Choose an ability to improve: +1 Intelligence, Wisdom, Charisma.
+Tier: 0
+Cost: 2
+Selector: Intelligence, Wisdom, Charisma
+
+AbilityName: Illusory Weaponry
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Familiar's Force
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Master Illusionist
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Feydark Explorer
+Descrip: +[1/2/3] Spellcraft, Diplomacy and Concentration.
+Tier: 1
+Ranks: 3
+
+AbilityName: Familiar's Flourish I
+Descrip: While your Familiar is by your side, you may use Charisma as your weapon's to-hit modifier.
+Tier: 1
+Cost: 2
+
+AbilityName: Twist Reality
+Descrip: Offensive Illusion spells reduce enemies' Will saves by 1 for 10 seconds. This stacks 3 times.
+Tier: 1
+Cost: 2
+
+AbilityName: Study the Arcame
+Descrip: +[30/60/100] Maximum Spellpoints
+Tier: 1
+Ranks: 3
+
+AbilityName: Illusory Armor
+Descrip: You may cast the spell Mage Armor as a Spell-Like Ability. In addition, while under the benefits of any Mage Armor, you gain +[2/4/6] Magical Resistance rating.}Cost: 30/20/10 SP}Cooldown: 5 seconds.
+Tier: 1
+Ranks: 3
+
+AbilityName: Enhanced Invisibility
+Descrip: You may cast the spell Invisibility as a Spell-Like ability. In addition, while under the effects of any source of Invisibility, you gain +3 Saves vs Traps.}Cost: 30/20/10 sp}Cooldown: 5 seconds
+Tier: 2
+Ranks: 3
+
+AbilityName: Familiar's Flourish II
+Descrip: While your Familiar is by your side, you may use Charisma as your weapon's damage modifier.
+Tier: 2
+Cost: 2
+All: Tier 1: Familiar's Flourish I
+
+AbilityName: Bend Light
+Descrip: Your studies of the Illusion school have manifested to protect you, making you slightly harder to see. You gain the benfits of the Blur spell.
+Tier: 2
+Cost: 2
+
+AbilityName: You've Got My Back
+Descrip: Your familiar draws ambient and offensive magics to it, protecting you from Magic Missiles as if you had the benefits of the Shield spell.
+Tier: 2
+Cost: 2
+
+AbilityName: Shadowblade
+Descrip: Conjure an illusory blade of shadow that flies forward at a single target. The enemy struct takes 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 10/8/6 sp}Cooldown: 8/6/6 seconds
+Tier: 2
+Ranks: 3
+
+AbilityName: Spell Penetration
+Descrip: +[1/2/3] Spell Penetration
+Tier: 3
+Ranks: 3
+
+AbilityName: Distract
+Descrip: Your familiar appears at a targeted location, acting as a distraction and attacting attention of monsters who may be searching for you in the area. This will only successfully distract monsters who are not actively attacking. This ability may be used without breaking Stealth or Invisibility.
+Tier: 3
+Cost: 2
+
+AbilityName: Magical Attunment I
+Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
+Tier: 3
+Cost: 2
+
+AbilityName: Refraction
+Descrip: When hit or missed in combat, there is a small chance you will reactively turn invisible for a short duration.
+Tier: 3
+Cost: 2
+
+AbilityName: Be My Eyes
+Descrip: Your familiar grants you the benefits of the True Seeing spell, and will automatically find Spell Wards for you.
+Tier: 4
+Cost: 2
+
+AbilityName: Fan of Shadowblades
+Descrip: Fan a series of Shadowblades outwards into a wide cone. The enemies struct take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 18/15/12 sp}Cooldown@ 14/12/10 seconds
+Tier: 4
+Ranks: 3
+
+AbilityName: Magical Attunment II
+Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
+Tier: 4
+Cost: 2
+All: Tier 3: Magical Attunment I
+
+AbilityName: Improved Shadowblades
+Descrip: All of your Shadwblade spells, attacks with weapons that have been imbued with Shadow, and attacks with conjured Shadowblades apply [1/2/3] stacks of Shattermantle when they damage an enemy.
+Tier: 4
+Ranks: 3
+
+AbilityName: Illusory Agument
+Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summoning now each grant +5 Force Spell Power and an additional +1 Illusion DCs.
+Tier: 5
+Cost: 2
+
+AbilityName: Familiar's Reach
+Descrip: Your familiar carries spells further than you would normally be able to cast them. Your spells benefit from the Enlarge Metamagic at no additional cost.
+Tier: 5
+Cost: 2
+
+AbilityName: Magical Attunment III
+Descrip: +2% Force Spell Critical Chance, +2% Universal Spell Critical Chance.
+Tier: 5
+Cost: 2
+All: Tier 4: Magical Attunment II
+
+AbilityName: Ring of Shadowblades
+Descrip: Conjure a ring of interlocking illusory Shadowblades that damage enemies passing through them. Enemies take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusory bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 50/40/25 sp}Cooldown: 40/35/30 seconds
+Tier: 5
+Ranks: 3
+
+AbilityName: Force In Tandem
+Descrip: Your familiar grants you +10 Force spellpower, 10 Universal spellpower, and 5% Force absorption. These bonuses are temporarily double if you cross the barrier of a ring of Shadowblades.
+Tier: 5
+Cost: 2
+
 TreeName: Fire Savant
 Abbreviation: Fire
 Type: Class
@@ -7666,7 +7814,6 @@ Ranks: 2
 Cost: 2
 
 TreeName: Razorclaw Shifter
-WikiName: Razorclaw shifter
 Type: Race
 Initial: Raz
 
