@@ -358,7 +358,7 @@ Tier: 6
 Cost: 2
 
 AbilityName: Reborn in Light
-Descrip: Active Ability: (Cooldown 10 mins; once per rest)}{-Epic Moment Transformation: You are healed to full health and activate Ascendance, Angelic Presence, and Astral Vibrance - even if they are currently on cooldown. For 2 minutes (or until you leave Angelic form), you are immune to light damage, gain 50% ity, and gain +100 Light and Healing Power. This ability can be used while dead, bringing you back at full health and in addition to the above benefits, the cooldowns of Light and Positive Energy spells are reduced to 1/5th normal, all spells cost 50% spell points. All of your physical attacks gain On Hit 100 Light damage and On Critical destroy evil undead or evil outsiders under 1000 hit points.
+Descrip: Active Ability: (Cooldown 10 mins; once per rest)}Epic Moment Transformation: You are healed to full health and activate Ascendance, Angelic Presence, and Astral Vibrance - even if they are currently on cooldown. This ability can be used while dead, bringing you back at full health.}{-For 2 minutes (or until you leave Angelic form), you:}{-are immune to light damage}{-gain 50% Incorporeality}{-gain +100 Light and Healing Power}{-the cooldowns of Light and Positive Energy spells are reduced to 1/5th normal}{-all spells cost 50% spell points}{-All of your physical attacks gain On Hit 100 Light damage and On Critical destroy evil undead or evil outsiders under 1000 hit points
 Tier: 6
 Cost: 2
 All: Tier 4: Blood and Radiance
@@ -373,7 +373,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Siren's Song
-Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
+Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds. Cooldown: 50 seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
 Tier: 1
 Ranks: 3
 
@@ -383,7 +383,7 @@ Tier: 1
 All: Feat: Fascinate
 
 AbilityName: Dirge
-Descrip: Bard Song: Produce a haunting funeral march that affects nearby enemies. Affected enemies suffer from Dirge.}Dirge: For every two caster levels you have, this creature takes 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage every 3 seconds (Fortitude save for half damage). In addition, enemies affected by Dirge may be slowed by 5% if they fail the Fortitude save.}Duration: 18 seconds}'The Enemy falls to our wrath, and everywhere, their light is fading. But though our cause is just, it must also be remembered that our enemy fought for his own cause and believed in it as strongly as we did in ours. And so I have come to this quiet spot to light a candle in honor of his memory. Has Fate favored him this day, I should like to think that he would have done the same for me.'}--Elemar's Payer
+Descrip: Bard Song: Produce a haunting funeral march that affects nearby enemies. Affected enemies suffer from Dirge.}Dirge: For every two caster levels you have, this creature takes 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage every 3 seconds (Fortitude save for half damage). In addition, enemies affected by Dirge may be slowed by 5% if they fail the Fortitude save.}Duration: 18 seconds}'The Enemy falls to our wrath, and everywhere, their light is fading. But though our cause is just, it must also be remembered that our enemy fought for his own cause and believed in it as strongly as we did in ours. And so I have come to this quiet spot to light a candle in honor of his memory. Has Fate favored him this day, I should like to think that he would have done the same for me.'}--Elemar's Payer}Bug: Dirge does not actually scale with caster level; only deals a total of 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage per tick. (This damage seems to scale properly with spell power.)
 Tier: 1
 Ranks: 3
 
@@ -398,7 +398,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Reign
-Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory.
+Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory. Duration: 10 minutes.} Note: The temporary hitpoints only last 3 minutes.
 Tier: 2
 Ranks: 3
 
@@ -454,7 +454,7 @@ Tier: 5
 Selector: Enlarge, Eschew, Extend
 
 AbilityName: Masquerade
-Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'
+Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'}{ Note: stacks fully with items (enhancement bonus) and morale discounts to spell point costs.
 Tier: 5
 
 AbilityName: Bladesong
@@ -471,7 +471,7 @@ Tier: 6
 Selector: Embolden, Intensify, Quicken
 
 AbilityName: Turn of the Tide
-Descrip: Spontaneous Song: Activate this ability to gain:}Full Base Attack Bonus}+40% weapon damage}DR 15/-}+4 Charisma}+3 to hit}Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit}While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1.}Duration: 45 seconds. Cooldown: 3 minutes}'Shining like the sun, the Singer fell upon the horde. Fiery, his sword gleamed, cutting through their ranks. And when light had faded, and with the carnage all around, he quietly cleaned his blade, sat upon a lonely rock and wrote a poem of I know not what.'}--Recollections, Lormac Stoutarm
+Descrip: Spontaneous Song. Duration: 45 seconds. Cooldown: 3 minutes}{-Epic Moment Activate this ability to gain:}{-Full Base Attack Bonus}{-+40% weapon damage}{-DR 15/-}{-+4 Charisma}{-+3 to hit}{-Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit}While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1.}Shining like the sun, the Singer fell upon the horde. Fiery, his sword gleamed, cutting through their ranks. And when light had faded, and with the carnage all around, he quietly cleaned his blade, sat upon a lonely rock and wrote a poem of I know not what.}--Recollections, Lormac Stoutarm
 Tier: 6
 
 DestinyName: Fury of the Wild
@@ -490,7 +490,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Boulder Toss
-Descrip: Select one:}Boulder Toss Active Ability: (Cooldown 20 seconds) Throw a boulder at an enemy, dealing [6/12/20]d100 bludgeoning damage and knocking down enemy on failed reflex save DC [10/15/20] + Str modifier.}{-This does not benefit from spell power, but can critically hit.}{-Affected by force spell power and lore.}{-Treated as low level spell, affected by Globe of Invulnerability. DDO Forums}{-Bug:  Boulder Toss Knockdown DC is not working correctly as even the lowest reflex save enemies almost always save.}Boulder's Might 5[W] attack with [+0/+1/+2] Critical Multiplier (Cooldown 6 seconds)
+Descrip: Select one:}Boulder Toss: Throw a boulder at an enemy, dealing [6/12/20]d100 bludgeoning damage and knocking down enemy on failed reflex save DC [10/15/20] + Str modifier. (Cooldown 20 seconds) This does not benefit from spell power, but can critically hit.}Boulder's Might: 5[W] attack with [+0/+1/+2] Critical Multiplier, but require 2 handed weapon to perform this attack. (Cooldown 6 seconds)
 Tier: 1
 Ranks: 3
 
@@ -723,7 +723,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Momentum Swing
-Descrip: Active Ability: (Cooldown 1 min) Tactical Melee Attack Perform an attack with +5[W] damage and +[1/2/3] critical threat range. Cleave attacks have a [15/30/50]% chance to reset the cooldown of this ability (this cannot occur more than once every 3 seconds).}{ Bug:  Cooldown often seems to be resetted, but actually it is not. Activating Momentum Swing when timer is not properly resetted will cause animation to play but you won't deal any damage. Easy way to check proper reset is to wait 2-3 seconds after ability timer is cleared, and if countdown continues - then it was false reset, if not - then ability resetted properly.
+Descrip: Active Ability: (Cooldown 1 min) Tactical Melee Attack Perform an attack with +5[W] damage and +[1/2/3] critical threat range. Cleave attacks have a [15/30/50]% chance to reset the cooldown of this ability (this cannot occur more than once every 3 seconds).}{ Bug:  Cooldown often seems to be reset but actually it does not. Activating Momentum Swing when timer is not properly reset will cause animation to play but you won't deal any damage. This appears to be caused by using a cleave attack before 3 seconds has elapsed. Waiting 3 seconds after using momentum swing before using cleave prevents this bug.
 Tier: 2
 Ranks: 3
 All: Feat: Cleave
@@ -795,7 +795,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Master's Blitz
-Descrip: Epic Moment: Active Ability: (Cooldown 5 mins) Activate: For 15 seconds, you gain +7 Melee Power, +7 Ranged Power, and select either +50% Dodge (dodge cap applies!) or +30 PRR. Any time you hit an opponent while under the effects of Master's Blitz, you have a chance to gain an additional stack of the melee/ranged damage bonus and restart the duration. When you first activate this ability, you now start with three stacks of increased damage. The damage bonus stacks up to 10 times, and decrements by 1 every 15 seconds.
+Descrip: Epic Moment: Active Ability: (Cooldown 5 mins) Activate: For 15 seconds, you gain +7 Melee Power, +7 Ranged Power, and select either +50% Dodge (dodge cap applies!) or +30 PRR. Any time you hit an opponent while under the effects of Master's Blitz you have a 10% chance to gain an additional stack of the melee/ranged damage bonus and restart the duration. When you first activate this ability you start with three stacks of increased damage. The damage bonus stacks up to 10 times, and decrements by 1 every 15 seconds.
 Tier: 6
 Cost: 2
 
@@ -990,7 +990,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Tsunami
-Descrip: Active (50SP to activate) (7 sec cooldown) (SR: no) (Empower, Maximize, Quicken, Heighten, Enlarge)}Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.
+Descrip: Active (50SP to activate) (7 sec cooldown) (SR: no) (Empower, Maximize, Quicken, Heighten, Enlarge)}Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.}Bug: The knockdown cannot be negated, regardless of DC or Fortitude save, as long as the monster does not resist Tsunami completely (is not an Ooze, Plant, etc) and can be knocked down (is not a wraith, ghost, turret, etc). This makes it an effective form of no-save crowd control against a huge portion of enemies in DDO.}Bug: The damage does not scale with character level, for many classes. It seems to scale properly with Druid level. It definitely does not scale with character level for Sorcerer, Bard, Favored Soul, and Cleric. For these classes, the damage is as if the spell were cast at character level 1 (base total 30 + 1d10 cold + 30 + 1d10 bludgeoning damage, which is then modified by spellpower and critical chance).
 Tier: 3
 Cost: 2
 
@@ -1396,6 +1396,6 @@ Tier: 6
 Cost: 2
 
 AbilityName: Undying Vanguard
-Descrip: Active Ability: (Cooldown 2 minutes) Heal yourself for 1000 HP. For 30 seconds, you gain 10,000 temporary HP. Usable once per rest. You may use this ability while Crowd Controlled and/or Helpless.
+Descrip: Active Ability: (Cooldown 2 minutes). Usable once per rest.}{-Epic Moment Heal yourself for 1000 HP. For 30 seconds, you gain 10,000 temporary HP.  You may use this ability while Crowd Controlled and/or Helpless.
 Tier: 6
 Cost: 2

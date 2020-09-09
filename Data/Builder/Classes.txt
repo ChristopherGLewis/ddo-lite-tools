@@ -64,7 +64,7 @@ SkillPoints: 4
 Skills: Intimidate, Jump, Listen, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: All
-GrantedFeats1: Rage
+GrantedFeats1: Rage, Dismiss Rage
 Trees: Frenzied Berserker, Occult Slayer, Ravager
 
 ClassName: Bard

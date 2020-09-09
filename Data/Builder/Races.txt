@@ -9,6 +9,7 @@ Abbreviation: Scourge
 Type: Iconic
 IconicClass: Ranger
 Stats: 8, 8, 8, 8, 10, 8
+Flags: BonusFeat
 GrantedFeats1: Favored Enemy: Undead
 GrantedFeats1: Healing Hands
 
@@ -125,12 +126,12 @@ RaceName: Shifter
 Type: Premium
 Stats: 8, 10, 8, 6, 8, 8
 Flags: BonusFeat
-GrantedFeats1: Shifting
 
 RaceName: Razorclaw Shifter
-Abbreviation: Scourge
+Abbreviation: Razorclaw
 Type: Iconic
 IconicClass: Barbarian
 Stats: 10, 8, 8, 6, 8, 8
-GrantedFeats1: Favored Enemy: Undead
-GrantedFeats1: Healing Hands
+Flags: BonusFeat
+GrantedFeats1: Exotic Weapon Proficiency: Handwraps
+

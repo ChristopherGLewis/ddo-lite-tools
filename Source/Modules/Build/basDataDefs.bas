@@ -103,6 +103,7 @@ Public Type SelectorType
     SelectorName As String
     Cost As Long
     ClassBonus() As Boolean
+    RaceBonus() As Boolean
     Stat As StatEnum
     StatValue As Long
     Skill As SkillsEnum

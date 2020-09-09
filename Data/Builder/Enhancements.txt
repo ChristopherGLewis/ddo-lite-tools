@@ -16,6 +16,11 @@ Selector: Strength, Wisdom, Charisma
 AbilityName: Stronger Bonds II
 Descrip: +2 more uses of Healing Hands per rest.}{-Protector Bond now grants +2% Dodge.}{-Fallen Bond now grants +2 to Tactics DCs.
 Tier: 0
+Selector: Protector Bond, Fallen Bond
+SelectorName: Protector Bond
+All: Feat: Bond of the Protector
+SelectorName: Fallen Bond
+All: Feat: Bond of the Fallen
 
 AbilityName: Stat II
 Descrip: WIS/CHA/STR
@@ -41,6 +46,11 @@ AbilityName: True Resilience
 Descrip: +1/2/3 to your (Will/Ref Saving Throws) (Choice is gated based on your Bond Feat) (Typo: Reflex saves line shows only +1 for all 3 upgrades)
 Tier: 1
 Ranks: 3
+Selector: Will, Reflex
+SelectorName: Will
+All: Feat: Bond of the Protector
+SelectorName: Reflex
+All: Feat: Bond of the Fallen
 
 AbilityName: Bold
 Descrip: You overcome fear quickly - fear and shaken effects are removed from you after 12/6/3 seconds.
@@ -66,12 +76,21 @@ Cost: 2
 AbilityName: Divine Purpose
 Descrip: Gain an active ability with one charge per rest. Must have your Bond Feat active to use.}{- Protector: You sprout ethereal wings, the mark of the Protector. For one minute, you gain a Determination Bonus to Healing Amplification and Positive Spell Power equal to your Character Level. You must have Bond of the Protector active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.}{- Fallen: You sprout strange wings, the mark of the Fallen. For one minute, you gain a +2 Primal bonus to Strength and +5% Primal bonus to Doublestrike. You must have Bond of the Fallen active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.
 Tier: 2
+Selector: Protector, Fallen
+SelectorName: Protector
+All: Feat: Bond of the Protector
+SelectorName: Fallen
+All: Feat: Bond of the Fallen
 
 AbilityName: Divine Resolve
 Descrip: Select one:}{- Protector: +1/2/3 CHA while your Divine Purpose is active.}{- Fallen: +1/2/3 STR while your Divine Purpose is active.
 Tier: 2
 Ranks: 3
 Selector: Charisma, Strength
+SelectorName: Charisma
+All: Feat: Bond of the Protector
+SelectorName: Strength
+All: Feat: Bond of the Fallen
 
 AbilityName: Fight the Wicked
 Descrip: +1 to hit and damage vs. Evil creatures.
@@ -101,11 +120,16 @@ Tier: 4
 Flags: SelectorOnly
 Selector: Tower Shield, Bastard Sword, Magical Training, Quick Draw
 
-AbilityName: Divine Form
+AbilityName: Ascendant Bond
 Descrip: Toggle: toggles off on rest. Must have your Bond Feat active to use. Mutually exclusive with Form feats (PM, Druid, etc).}{- Protector: You gain +3 stacking bonus to all Saving Throws, +5% Sacred bonus to maximum hit points, and a +10 Determination Bonus to PRR and MRR.}{- Fallen: You gain immunity to Fear, a +10 Determination bonus to Melee Power and Ranged Power, and your melee weapon attacks add a stack of Vulnerability once per second.}{-Bug: You may lose the benefits of this toggle upon death, resting, or zoning into some instances. Turn the ability off and back on to reapply.
 Tier: 4
+Selector: Protector, Fallen
+SelectorName: Protector
+All: Feat: Bond of the Protector
+SelectorName: Fallen
+All: Feat: Bond of the Fallen
 
-AbilityName: Improved Recovery
+AbilityName: Aasimar Improved Recovery
 Descrip: +20 Healing Amplification
 Tier: 4
 Cost: 2
@@ -247,11 +271,11 @@ Descrip: Passive:}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when ca
 Tier: 0
 
 AbilityName: Greater Air Affinity
-Descrip: Passive:}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{-+1 Maximum Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells
+Descrip: Passive:}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells
 Tier: 0
 
 AbilityName: Conduction
-Descrip: Passive: On Electric or Sonic Spell Cast: Your target randomly gains zero, one, or two stacks of Vulnerable (Target takes 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.)}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{-+1 Maximum Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells
+Descrip: Passive: On Electric or Sonic Spell Cast: Your target randomly gains zero, one, or two stacks of Vulnerable (Target takes 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.)}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells
 Tier: 0
 
 AbilityName: Light on Your Feet
@@ -594,7 +618,7 @@ Descrip: +1 Will Save
 Tier: 0
 
 AbilityName: Alchemical Shield
-Descrip: While wearing Light or no armor (or in Mithral Plating), you have a +4 Shield bonus to AC and are protected from Magic Missiles.}While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
+Descrip: While in cloth armor or in Composite Plating, you have a +4 Alchemical bonus to AC and are protected from Magic Missiles.}While your Reaction is Verdanite, +5 Positive & Negative Spell Power.
 Tier: 0
 
 AbilityName: Curative Admixture
@@ -1424,7 +1448,7 @@ Cost: 2
 All: Tier 3: Sneak Attack Training
 
 AbilityName: Assassinate
-Descrip: Stealth Melee Assassinate Attack: +10 Sneak Attack dice. On hit: Kills a target instantly, Fortitude save (10 + Rogue level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate) negates. (Cooldown: 12 seconds.)
+Descrip: Stealth Melee Assassinate Attack: On Sneak Attack: +10 Sneak Attack dice. Kills a target instantly, Fortitude save (10 + Rogue level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate) negates. (Cooldown: 12 seconds.)
 Tier: 5
 
 AbilityName: Measure the Foe
@@ -1443,7 +1467,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Light Armor Mastery
-Descrip: You gain 1/2/3 to Maximum Dodge. While wearing light armor, gain 2/4/6 to the Maximum Dexterity Bonus of your armor, -2/4/6 armor check penalty, and gain 2/4/6 Physical Resistance Rating.
+Descrip: Gain 2/4/6 to the Maximum Dexterity Bonus of light armor and gain 2/4/6 Physical Resistance Rating.
 Tier: 5
 Ranks: 3
 
@@ -1625,7 +1649,7 @@ Descrip: Cost 6 Spell Points. You and your allies ahead of you heal for one poin
 Tier: 0
 
 AbilityName: Shining Light
-Descrip: Whenever you cast one of your Beacons, or use Flight of Glory, you and affected allies gain a Sacred bonus to Healing Amplification equal to your Favored Soul level for 12 seconds. Enemies in the zone of effect are dazzles, and take a -1 penalty to attack, Spot, and Search. These enemies are illuminated by Shining Light, dispelling stealth, invisibility, Blur, and Displacement, for 10 seconds, and giving a -40 penalty to Hide. Sightless enemies are immune to the Dazzle effect.
+Descrip: Whenever you cast one of your Beacons, or use Flight of Glory, you and affected allies gain a Sacred bonus to Healing Amplification equal to your Favored Soul level for 12 seconds. Enemies in the zone of effect are dazzled, and take a -1 penalty to attack, Spot, and Search. These enemies are illuminated by Shining Light, dispelling stealth, invisibility, Blur, and Displacement, for 10 seconds, and giving a -40 penalty to Hide. Sightless enemies are immune to the Dazzle effect.
 Tier: 0
 
 AbilityName: Beacon of Hope
@@ -1839,7 +1863,7 @@ Cost: 2
 All: Feat: Adamantine Body
 
 AbilityName: Brute Fighting
-Descrip: Activate this ability to cause your melee attacks to generate 10%/15%/20% more hate, making enemies more likely to attack you. (Cooldown: 2 seconds)
+Descrip: Activate this ability to cause your melee attacks to generate 25%/50%/75% more hate, making enemies more likely to attack you. (Cooldown: 2 seconds)
 Tier: 3
 Ranks: 3
 
@@ -2513,7 +2537,7 @@ SelectorName: Efficient Quicken
 All: Feat: Quicken Spell
 
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{- Necrotic Bolt: (Activation Cost: 12/9/6 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Darkness}{- Searing Light: (Activation Cost: 12/9/6 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Light
+Descrip: Gain a new Spell-like ability:}{- Necrotic Bolt: (Activation Cost: 12/9/6 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Darkness}{-The in-game description wrongly states 1d6 damage per caster level. It actually does 1d6+3 per caster level. (Tested 8/24/2020)}{- Searing Light: (Activation Cost: 12/9/6 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Light
 Tier: 3
 Ranks: 3
 Flags: SelectorOnly
@@ -2561,7 +2585,7 @@ SelectorName: Light
 All: Tier 0: Emissary: Light
 
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{- Negative Energy Burst: (Activation Cost: 13/10/7 spell points. Cooldown: 10/8/6 seconds.)  Note: Unlike the spell version the caster is not selectable as the target of this spell.}{-Requires Divine Emissary of Darkness}{- Holy Smite: (Activation Cost: 13/10/7 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Light
+Descrip: Gain a new Spell-like ability:}{- Negative Energy Burst: (Activation Cost: 13/10/7 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Darkness}{-Note: the in-game description is wrong; the spell actually works according to the description here. (Tested 8/24/2020)}{- Holy Smite: (Activation Cost: 13/10/7 spell points. Cooldown: 10/8/6 seconds.)}{-Requires Divine Emissary of Light
 Tier: 4
 Ranks: 3
 Flags: SelectorOnly
@@ -3230,7 +3254,7 @@ Descrip: Your Eldritch Strike now grants you a Power Charge. When you have 5 Pow
 Tier: 0
 
 AbilityName: Improved Mage Armor
-Descrip: Spell Like Ability: Mage Armor. Activation Cost: 8/6/4 Spell Points In addition, while you are under the effect of the Mage Armor spell, you gain a +3%/+6%/+10% increase to your total Armor Class.
+Descrip: Spell Like Ability: Mage Armor. Activation Cost: 8/6/4 Spell Points In addition, while you are under the effect of the Mage Armor spell, you gain a +3%/+6%/+10% exceptional bonus to your total Armor Class.
 Tier: 1
 Ranks: 3
 
@@ -3347,7 +3371,7 @@ Descrip: Spell Like Ability: Radiant Forcefield}Activation Cost: 30 Spell Points
 Tier: 5
 
 AbilityName: Eldritch Tempest
-Descrip: Activate: Perform a spinning melee attack, dealing weapon damage +5[W] to all nearby enemies and knocking them prone for 1 second. This attack has +10 to Critical Threat Range and +3 to Critical Multiplier. Enemies affected are knocked prone for one second and Slowed by 50% for 6 seconds.}If any foes are struck by Eldritch Tempest, your weapon also releases an explosion of magical force, dealing an additional 1d6 Force damage per character level to all nearby enemies. This additional force damage is affected by your spell power.}Activation Cost: 25/20/15 Spell points Cooldown: 60/45/30 seconds
+Descrip: Activate: Perform a spinning melee attack, dealing weapon damage +5[W] to all nearby enemies and knocking them prone for 1 second. This attack has +10 to Critical Threat Range and +3 to Critical Multiplier. Enemies affected are knocked prone for one second and Slowed by 50% for 6 seconds. (Bug? As of update 46 in game functions as +10[W], +20 Critical Threat Range, +6 Critical Multiplier for Wizard EK at least.)}If any foes are struck by Eldritch Tempest, your weapon also releases an explosion of magical force, dealing an additional 1d6 Force damage per character level to all nearby enemies. This additional force damage is affected by your spell power.}Activation Cost: 25/20/15 Spell points Cooldown: 60/45/30 seconds
 Tier: 5
 Ranks: 3
 
@@ -3385,7 +3409,7 @@ Descrip: Your Eldritch Strike now grants you a Power Charge. When you have 5 Pow
 Tier: 0
 
 AbilityName: Improved Mage Armor
-Descrip: Spell Like Ability: Mage Armor. Activation Cost: 8/6/4 Spell PointsIn addition, while you are under the effect of the Mage Armor spell, you gain a +3%/+6%/+10% increase to your total Armor Class.
+Descrip: Spell Like Ability: Mage Armor. Activation Cost: 8/6/4 Spell PointsIn addition, while you are under the effect of the Mage Armor spell, you gain a +3%/+6%/+10% exceptional bonus to your total Armor Class.
 Tier: 1
 Ranks: 3
 
@@ -3502,7 +3526,7 @@ Descrip: Spell Like Ability: Radiant Forcefield Activation Cost: 30 Spell Points
 Tier: 5
 
 AbilityName: Eldritch Tempest
-Descrip: Activate: Perform a spinning melee attack, dealing weapon damage +5[W] to all nearby enemies and knocking them prone for 1 second. This attack has +10 to Critical Threat Range and +3 to Critical Multiplier. Enemies affected are knocked prone for one second and Slowed by 50% for 6 seconds.}If any foes are struck by Eldritch Tempest, your weapon also releases an explosion of magical force, dealing an additional 1d6 Force damage per character level to all nearby enemies. This additional force damage is affected by your spell power.}Activation Cost: 25/20/15 Spell points Cooldown: 60/45/30 seconds
+Descrip: Activate: Perform a spinning melee attack, dealing weapon damage +5[W] to all nearby enemies and knocking them prone for 1 second. This attack has +10 to Critical Threat Range and +3 to Critical Multiplier. Enemies affected are knocked prone for one second and Slowed by 50% for 6 seconds. (Bug? As of update 46 in game functions as +10[W], +20 Critical Threat Range, +6 Critical Multiplier.)}If any foes are struck by Eldritch Tempest, your weapon also releases an explosion of magical force, dealing an additional 1d6 Force damage per character level to all nearby enemies. This additional force damage is affected by your spell power.}Activation Cost: 25/20/15 Spell points Cooldown: 60/45/30 seconds
 Tier: 5
 Ranks: 3
 
@@ -4092,7 +4116,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Killer Instinct II
-Descrip: You can use your Wisdom modifier for damage with melee and missile weapons.
+Descrip: You can use your Wisdom modifier for damage with melee and missile weapons.}Bug: This enhancement also lets you use your Wisdom to hit with melee and missile weapons, making Killer Instinct I worthless once you have Killer Instinct II.
 Tier: 3
 Cost: 2
 
@@ -4182,11 +4206,11 @@ Descrip: Passive:}{-+10 Fire Spell Power}{-+1 Caster Level when casting Fire spe
 Tier: 0
 
 AbilityName: Greater Fire Affinity
-Descrip: Passive:}{-+10 Fire Spell Power}{-+1 Caster Level when casting Fire spells}{-+1 Maximum Caster Level when casting Fire spells}{--10 Cold Spell Power}{--1 Caster Level when casting Cold or Water spells.
+Descrip: Passive:}{-+10 Fire Spell Power}{-+1 Caster Level when casting Fire spells}{--10 Cold Spell Power}{--1 Caster Level when casting Cold or Water spells.
 Tier: 0
 
 AbilityName: Immolation
-Descrip: Passive: On Fire Spell Cast: Your target gains one stack of Burning (Target takes 1d6 fire damage every 2 seconds for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.)}{-+10 Fire Spell Power}{-+1 Caster Level when casting Fire spells}{-+1 Maximum Caster Level when casting Fire spells}{--10 Cold Spell Power}{--1 Caster Level when casting Cold or Water spells.
+Descrip: Passive: On Fire Spell Cast: Your target gains one stack of Burning (Target takes 1d6 fire damage every 2 seconds for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.)}{-+10 Fire Spell Power}{-+1 Caster Level when casting Fire spells}{--10 Cold Spell Power}{--1 Caster Level when casting Cold or Water spells.
 Tier: 0
 
 AbilityName: Elemental Persistance
@@ -4616,7 +4640,7 @@ Flags: SelectorOnly
 Selector: Elven Dexterity, Human Strength, Human Dexterity, Human Constitution, Human Intelligence, Human Wisdom, Human Charisma
 
 AbilityName: Accuracy / Versatility
-Descrip: Choose a racial ability, and whether to be more elven or human. Your selection here will affect your selection at level 16.}Choose Heritage:}{- Elven Accuracy: You gain +2% to hit with all attacks.}or}Human Versatility: Choose one:}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Damage Boost: Activate to gain a +20 Action Boost to Melee and Ranged Power for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost to Armor Class and Physical Resistance Rating for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost to Universal Spell Power for 20 seconds.
+Descrip: Choose a racial ability, and whether to be more elven or human. Your selection here will affect your selection at level 16.}Choose Heritage:}{- Elven Accuracy: You gain +2% to hit with all attacks.}or}Human Versatility: Choose one:}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds.}{- Melee & Ranged Power Boost: Activate to gain a +20 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost bonus to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost bonus to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost bonus to Universal Spell Power for 20 seconds.
 Tier: 0
 Flags: SelectorOnly
 Selector: Elven Accuracy, Human Attack Boost, Human Damage Boost, Human Defense Boost, Human Saves Boost, Human Skill Boost, Human Spell Power Boost
@@ -5427,7 +5451,7 @@ Type: Race
 Initial: Hum
 
 AbilityName: Human Versatility
-Descrip: Humans can select racial boosts that share cooldown with class action boost, but they grant extra uses per rest.}Choose one:}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Damage Boost: Activate to gain a +20 Action Boost to Melee and Ranged Power for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost to Armor Class and Physical Resistance Rating for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost to Universal Spell Power for 20 seconds.
+Descrip: Humans can select racial boosts that share cooldown with class action boost, but they grant extra uses per rest.}Choose one:}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds.}{- Melee & Ranged Power Boost: Activate to gain a +20 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost bonus to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost bonus to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost bonus to Universal Spell Power for 20 seconds.
 Tier: 0
 Flags: SelectorOnly
 Selector: Attack Boost, Damage Boost, Defense Boost, Saves Boost, Skills Boost, Spell Power Boost
@@ -6079,13 +6103,13 @@ Tier: 3
 Cost: 2
 
 AbilityName: Divine Sacrifice
-Descrip: Multiselector: +2[W]. Active this ability to perform a melee or ranged attack that deals an additional +5/7/9d6 Light damage and increases the critical multiplier of your weapon by 1 against evil opponents, but costs you 5 hp and 1 sp, whether or not the attack is successful. On damage: Gain +15 Temporary SP and +10 Melee and Ranged Power for 10 seconds if you strike an Undead or Evil Outsider with this attack. Light damage scales with 100% Melee Power. (Cooldown: 3 seconds)
+Descrip: Multiselector: +2[W]. Active this ability to perform a melee or ranged attack that deals an additional +5/7/9d6 Light damage and increases the critical multiplier of your weapon by 1 against evil opponents, but costs you 5 hp and 1 sp, whether or not the attack is successful. On damage: Gain +15 Temporary SP if the target was Undead or Evil Outsider. (Cooldown: 3 seconds)
 Tier: 3
 Ranks: 3
 Selector: Melee, Ranged
 
 AbilityName: Lead the Charge
-Descrip: +2/3/5[W] and sprint forward toward your target and deliver a single-target blow. 6 second cooldown.  This works with any melee weapon, and not just a shield.
+Descrip: +2/3/5[W] and sprint forward toward your target and deliver a single-target blow. 12 second cooldown.  This works with any melee weapon, and not just a shield.
 Tier: 3
 Ranks: 2
 
@@ -6138,7 +6162,7 @@ Cost: 2
 Selector: Melee, Ranged
 
 AbilityName: Holy Retribution
-Descrip: Multiselector: Melee/Ranged Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for ten seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed. Evil creatures under 1000 HP must always make this save or die. Evil creatures between 1000 and 5000 HP have a 50% chance to be forced to make this save or die. Evil creatures with more than 5000 HP have a 33% chance to be forced to make this save or die.
+Descrip: Multiselector: Melee/Ranged Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for ten seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed. Evil creatures under 1000 HP must always make this save or die. Evil creatures between 1000 and 5000 HP have a 50% chance to be forced to make this save or die. Evil creatures with more than 5000 HP have a 33% chance to be forced to make this save or die. 30 second cooldown.
 Tier: 5
 Selector: Melee, Ranged
 
@@ -6445,7 +6469,7 @@ Descrip: Defensive Combat Stance: +8 Physical and Magical Resistance Rating. Can
 Tier: 0
 
 AbilityName: Magical Beast
-Descrip: While in animal form the penalty on your spell cooldowns is reduced from 2.5 to 2.0. This benefit does not stack with the Nature's Warrior versions of this ability.Grants Heavy Armor Proficiency Bug:  Seems to also grant the effect of tier 4, Big Claws
+Descrip: While in animal form the penalty on your spell cooldowns is reduced from 2.5 to 2.0. This benefit does not stack with the Nature's Warrior versions of this ability.Grants Heavy Armor Proficiency Bug:  Seems to also grant the effect of Core 4, Big Claws
 Tier: 0
 
 AbilityName: Big Claws
@@ -7042,7 +7066,7 @@ Descrip: For each Core Ability in this tree, including this one, you gain +5 Neg
 Tier: 0
 
 AbilityName: Pale Shroud
-Descrip: Multiselector: Choose an Undead Shroud. All forms grant 100% critical hit resistance and allow you to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. You are considered undead.}{-Shroud of the Zombie - While in this form, +4 Constitution, +2 Strength, +20% damage with attacks but you attack 20% slower than normal. You gain +3 PRR, +3 MRR.}{-Note: Zombie form's damage increase is multiplicative with Melee/Ranged power, and its attack speed decrease is treated as a 20 point penalty to Melee and Ranged Alacrity. It is offset by Speed items and the Haste spell.}{-Shroud of the Vampire - While in this form, +2 Charisma, +2 Intelligence, +2 Wisdom. +3 Perform skill, and your melee and unarmed attacks have a (10%) chance to heal you for 1d3 Negative Energy damage per Wizard Level.}{-Shroud of the Wraith - While in this form, +2 Dexterity, +2 Intelligence. Enemy attacks have a 10% chance to miss you due to incorporeality, +1 Sneak Attack Dice, and you gain Feather Falling.}{-Shroud of the Lich - While in this form, +2 Constitution, +2 Intelligence, +10 Negative Amplification, +5 Negative Spell Power, and +15 Magical Resistance Rating.
+Descrip: Multiselector: Choose an Undead Shroud. All forms grant 100% critical hit resistance and allow you to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. You are considered undead.}{-Shroud of the Zombie - You shroud yourself with Negative Energy and assume many of the traits of a Zombie. While in this form, you hunger for brains and gain +4 Constitution, +10 Melee Power, 3 Physical and Magical Resistance Rating, and attack 10% slower. You have +100% critical hit resistance, are healed by Negative Energy, take 50% healing from Positive Energy, and take double damage from Light. You are considered Undead rather than your original type for the purposes of most effects.}{-(needs checking)Note:Attack speed decrease is treated as a 10 point penalty to Melee and Ranged Alacrity. It is offset by Speed items and the Haste spell.}{-Shroud of the Vampire - While in this form, +2 Charisma, +2 Intelligence, +2 Wisdom. +3 Perform skill, and your melee and unarmed attacks have a (10%) chance to heal you for 1d3 Negative Energy damage per Wizard Level.}{-Shroud of the Wraith - While in this form, +2 Dexterity, +2 Intelligence. Enemy attacks have a 10% chance to miss you due to incorporeality, +1 Sneak Attack Dice, and you gain Feather Falling.}{-Shroud of the Lich - While in this form, +2 Constitution, +2 Intelligence, +10 Negative Amplification, +5 Negative Spell Power, and +15 Magical Resistance Rating.
 Tier: 0
 Flags: SelectorOnly
 Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
@@ -7190,7 +7214,7 @@ Cost: 2
 Selector: Dark Discorporation, Reactive Discorporation
 
 AbilityName: Ascendant Shroud
-Descrip: Your Undead Shrouds gain the following additional benefits:}{-While in Zombie Form: +20 Melee Power, +10 PRR, +10% Profane bonus to maximum hit points.}{-While in Vampire Form: +1 Enchantment DC. Your melee attacks have a (10%) chance to dominate your adversaries. On Hit: Target has a chance to be Paralyzed (Will save vs. DC 20 + INT Mod + Enchantment Spell Bonuses). On Save: -10% Movement and Attack Speed.}{-While in Wraith Form: +5% Incorporeality (bringing your total to 15%, or 25% if you have Ghost in the Wind), +2 Sneak Attack Dice. +3% Dodge and Dodge Cap. +10 to Hide and Move Silently.}{-While in Lich Form: +15 to MRR cap, +10 Negative Spell Power, +10 Cold and Electric Resistance, 5% spell point cost reduction on all spells
+Descrip: Your Undead Shrouds gain the following additional benefits:}{-While in Zombie Form: +30 Melee Power and +10 Physical Resistance Rating, and your attacks deal +10% more damage. You also benefit from a 10% Profane Bonus to Maximum Hit Points.}{-While in Vampire Form: +1 Enchantment DC. Your melee attacks have a (10%) chance to dominate your adversaries. On Hit: Target has a chance to be Paralyzed (Will save vs. DC 20 + INT Mod + Enchantment Spell Bonuses). On Save: -10% Movement and Attack Speed.}{-While in Wraith Form: +5% Incorporeality (bringing your total to 15%, or 25% if you have Ghost in the Wind), +2 Sneak Attack Dice. +3% Dodge and Dodge Cap. +10 to Hide and Move Silently.}{-While in Lich Form: +15 to MRR cap, +10 Negative Spell Power, +10 Cold and Electric Resistance, 5% spell point cost reduction on all spells
 Tier: 5
 Cost: 2
 
@@ -7200,7 +7224,7 @@ Type: Race
 Initial: PDK
 
 AbilityName: Human Versatility
-Descrip: Humans can select racial boosts that share a number of uses per rest, but are not linked with class action boost cooldowns.}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Damage Boost: Activate to gain a +20% Action Boost to weapon damage for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost to Armor Class and Physical Resistance Rating for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost to Universal Spell Power for 20 seconds.
+Descrip: Humans can select racial action boosts that share a number of uses per rest, but are not linked with class based action boost cooldowns.}Choose one:}{- Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{- Defense Boost: Activate to gain a +10 Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds.}{- Melee & Ranged Power Boost: Activate to gain a +20 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{- Saves Boost: Activate to gain a +4 Action Boost bonus to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{- Skill Boost: Activate to gain a +4 Action Boost bonus to all skills for 20 seconds.}{- Spell Power Boost: Activate to gain a +20 Action Boost bonus to Universal Spell Power for 20 seconds.
 Tier: 0
 Flags: SelectorOnly
 Selector: Attack Boost, Damage Boost, Defense Boost, Saves Boost, Skills Boost, Spell Power Boost
@@ -7213,7 +7237,7 @@ Flags: SelectorOnly
 Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 
 AbilityName: Human Versatility II
-Descrip: Humans can select racial boosts that share a number of uses per rest, but are not linked with class action boost cooldowns.}{ Note: Choose another Action Boost that is not the same as the previous one.
+Descrip: Humans can select racial action boosts that share a number of uses per rest, but are not linked with class based action boost cooldowns.}{ Note: Choose another Action Boost that is not the same as the previous one.
 Tier: 0
 Flags: SelectorOnly
 Parent: Tier 0: Human Versatility
@@ -7227,7 +7251,7 @@ Flags: SelectorOnly
 Parent: Tier 0: Human Adaptability
 
 AbilityName: Human Versatility III
-Descrip: Humans can select racial boosts that share a number of uses per rest, but are not linked with class action boost cooldowns.}{ Note: Choose another Action Boost that is not the same as either of the previous two.
+Descrip: Humans can select racial action boosts that share a number of uses per rest, but are not linked with class based action boost cooldowns.}{ Note: Choose another Action Boost that is not the same as either of the previous two.
 Tier: 0
 Flags: SelectorOnly
 Parent: Tier 0: Human Versatility
@@ -7334,7 +7358,7 @@ Cost: 2
 All: Tier 3: Rallying Cry
 
 AbilityName: For Cormyr!
-Descrip: Once per rest, you can heal to full. If you are below 50% health when this ability is used, you and all nearby allies gain a Morale bonus to weapon damage equal to your Charisma modifier for two minutes.
+Descrip: Once per rest, you can heal to full. If you are below 50% health when this ability is used, you and all nearby allies gain a Morale bonus to weapon damage equal to your Charisma modifier for one minute.
 Tier: 4
 Cost: 2
 All: Tier 4: Final Stand
@@ -7383,7 +7407,7 @@ Descrip: You gain +1% Positive Energy Spell Critical Chance. The Empower Healing
 Tier: 0
 
 AbilityName: Positive Energy Shield
-Descrip: You gain +1% Positive Energy Spell Critical Chance.}Channel Divinity: Your living ally receives temporary hit points equal to your Heal skill. While these hit points remain, your target receives +10% Sacred bonus to healing they receive from positive energy. (Cooldown: 30 seconds)
+Descrip: You gain +1% Positive Energy Spell Critical Chance.}Channel Divinity: Your living ally receives temporary hit points equal to your Heal skill. While these hit points remain, your target receives +10% Sacred bonus to healing they receive from positive energy. (Cooldown: 30 seconds)}  "Bug": the actual effect is: while these hit points remain, your target receives +20 Sacred bonus to Healing Amplification. (Visible on buff tooltip and on character sheet. Tested August 2020.)
 Tier: 0
 
 AbilityName: Radiant Servant
@@ -7436,7 +7460,7 @@ Ranks: 3
 All: Tier 1: Divine Cleansing
 
 AbilityName: Divine Healing
-Descrip: Channel Divinity: Your target heals 1d4/2d4/4d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}{ Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).
+Descrip: Channel Divinity: Your target heals 1d4/2d4/4d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}{ Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).}{ This seems to be unaffected by positive spell power and crit chance. However, it is affected by the target's Healing Amplification.
 Tier: 2
 Ranks: 3
 Cost: 2
@@ -8255,6 +8279,123 @@ Descrip: While sneaking, your melee weapons gain the ability to envelop their ta
 Tier: 4
 Cost: 2
 
+TreeName: Shifter
+Type: Race
+Initial: Shi
+
+AbilityName: Extra Shifting
+Descrip: +1 Rage uses per rest. (You expend Rage uses to activate your Shifting).
+Tier: 0
+
+AbilityName: Ability Score
+Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Tier: 0
+Cost: 2
+Selector: Constitution, Dexterity, Strength, Wisdom
+
+AbilityName: Extra Shifting II
+Descrip: +2 Rage uses per rest.
+Tier: 0
+
+AbilityName: Ability Score II
+Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Tier: 0
+Cost: 2
+Selector: Constitution, Dexterity, Strength, Wisdom
+
+AbilityName: Regenerating Shift
+Descrip: +You regenerate 1 Rage use every 90 seconds.
+Tier: 0
+
+AbilityName: Brutality
+Descrip: Select between:}{- Brutal Spellcasting: Your damaging spells generate [25/50/75]% more hate than they normally would, making enemies more likely to attack you. Cooldown: 2 seconds}{- Brutal Fighting: Activate this ability to cause your melee attacks to generate [25/50/75]% more hate, making enemies more likely to attack you. Cooldown: 2 seconds
+Tier: 1
+Ranks: 3
+Selector: Brutal Fighting, Brutal Spellcasting
+
+AbilityName: Hunt & Track
+Descrip: >+[1/2/3] Spot, Listen and Intimidate
+Tier: 1
+Ranks: 3
+
+AbilityName: Extend Shifting
+Descrip: Your Shifting and Barbarian rages last [25/50/75]% longer.
+Tier: 1
+Ranks: 3
+
+AbilityName: Hardy Shifting
+Descrip: +[1/2/3] Constitution while Shifting or Raging.
+Tier: 1
+Ranks: 3
+
+AbilityName: Shifted Alterations
+Descrip: Shoose an effect:}{- Shifted Defenses: +[4/?/?] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/?/?] Spot and +[2/?/?]% Dodge while Raging. Requires Wildhunt Shifter
+Tier: 2
+Selector: Shifted Defenses, Shifted Senses
+
+AbilityName: Natural Armor
+Descrip: +[2/4/6] Natural Armor
+Tier: 2
+Ranks: 3
+
+AbilityName: Howl
+Descrip: Choose between:}{- Beasthide Howl: Release a mighty howl, granting nearby allies +2 Action Boost Bonus to PRR and MRR per 5 Character Levels you have for 20 seconds. You can use this once per rest. Requires Beasthide Shifter}{- Wildhunt Howl: Release a mighty howl, granting nearby allies +1 Action Boost Bonus to Saving Throws per 10 Character Levels you have for 20 seconds. You can use this once per rest. Requires Wildhunt Shifter
+Tier: 2
+
+AbilityName: Extra Howling
+Descrip: +[1/2/3] uses of Howl per rest.
+Tier: 2
+All: Tier 2: Howl
+
+AbilityName: Magic Fang
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 10/8/5 SP}Cooldown: 20/15/10 seconds
+Tier: 2
+Ranks: 3
+
+AbilityName: Empowered by Nature
+Descrip: Choose an effect:}{- Beasthide: +10 Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +25 Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter
+Tier: 3
+Selector: Empowered by Nature (Beasthide), Empowered by Nature (Wildhubt)
+
+AbilityName: Augment Summoning
+Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification.
+Tier: 3
+
+AbilityName: Stronger Howl
+Descrip: Choose between:}{- Beasthide: When you Howl, nearby enemies take -2 to Attack per 5 Character Levels you have for 20 seconds. Requires Beasthide Shifter}{- Wildhunt: When you Howl, nearby enemies take -1 to Saving Throws per 5 Character Levels you have for 20 seconds. Requires Wildhunt Shifter
+Tier: 3
+All: Tier 2: Howl
+
+AbilityName: Shifter Favored Enemy
+Descrip: Choose a Favored Enemy}{- Favored Enemy: Animal}{- Favored Enemy: Fey}{- Favored Enemy: Magical Beast}{- Favored Enemy: Plant}{- Favored Enemy: Reptilian}{- Favored Enemy: Vermin
+Tier: 3
+Selector: Animal, Fey, Magical Beast, Plant, Reptillian, Vermin
+SelectorName: Animal
+None: Feat: Favored Enemy: Animal
+SelectorName: Fey
+None: Feat: Favored Enemy
+SelectorName: Magical Beast
+None: Feat: Favored Enemy: Magical Beast
+SelectorName: Plant
+None: Feat: Favored Enemy: Plant
+SelectorName: Reptillian
+None: Feat: Favored Enemy
+SelectorName: Vermin
+None: Feat: Favored Enemy: Vermin
+
+AbilityName: Threatening Shift
+Descrip: Choose between:}{- Threatening Shift:While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Camouflaged Shift: While raging, gain Lesser Dispacement and +3% Dodge Cap. Requires Wildhunt Shifter
+Tier: 4
+Selector: Threatening Shift, Camouflaged Shift
+
+AbilityName: True Hunter
+Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Tier: 4
+
+AbilityName: Howl of Terror
+Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save negates.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
+Tier: 4
+
 TreeName: Shintao
 Type: Class
 Initial: Shi
@@ -8567,27 +8708,27 @@ Color: Blue
 Stats: Charisma
 
 AbilityName: Spellsinger
-Descrip: Each AP spent in Spellsinger grants +1 Universal Spell Power.Each Spellsinger Core Ability including this one allows you to sing Bardic Inspiration as if you had 1 additional Bard level.
+Descrip: Each AP spent in Spellsinger grants +1 Universal Spell Power.Each Spellsinger Core ability including this one allows you to sing Bardic Inspiration as if you had 1 additional Bard level.
 Tier: 0
 
 AbilityName: Music of the Sewers
-Descrip: Your Fascinate gains the power to mesmerize Oozes. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.+1 DCs to Enchantment, Evocation, and Illusion spells (actually to all spell schools).+1 Diplomacy, Listen, Perform, UMD and 2% critical chance with sonic and positive spells.
+Descrip: Your Fascinate gains the power to mesmerize Oozes. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.Your Enchantment, Evocation, and Illusion spells add +1 to their Difficulty Check. (Actually applies to all spell schools)+1 Diplomacy, Listen, Perform, and UMD+2% critical chance with sonic and positive spells.
 Tier: 0
 
 AbilityName: Music of the Dead
-Descrip: Your Fascinate gains the power to mesmerize Undead. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.Your Sustaining Song melody now works on Undead Allies, providing them with a Negative heal over time.Your Inspire Greatness now provides a +10 Music bonus to Negative Healing Amplification.}+1 DCs to Enchantment, Evocation, and Illusion spells (actually to all spell schools).+1 Diplomacy, Listen, Perform, UMD and 2% critical chance with sonic and positive spells (actually 7%).
+Descrip: Your Fascinate gains the power to mesmerize Undead. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.Your Sustaining Song melody now works on Undead Allies, providing them with a Negative heal over time.Your Inspire Greatness now provides a +10 Music bonus to Negative Healing Amplification.Your Enchantment, Evocation, and Illusion spells add +1 to their Difficulty Check. (Actually applies to all spell schools)+1 Diplomacy, Listen, Perform, and UMD+2% critical chance with sonic and positive spells. (Actually 7%)
 Tier: 0
 
 AbilityName: Music of the Makers
-Descrip: Your Fascinate gains the power to mesmerize Constructs. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.Your Sustaining Song melody now works on Construct and Living Construct Allies, such as Warforged and Artificer Iron Defenders, providing them with a Repair over time.Your Inspire Greatness now provides a +10 Music bonus to Repair Amplification.+1 DCs to Enchantment, Evocation, and Illusion spells (actually to all spell schools).+1 Diplomacy, Listen, Perform, UMD and 2% critical chance with sonic and positive spells.
+Descrip: Your Fascinate gains the power to mesmerize Constructs. They stop acting and behave like they have been fascinated. Unlike truly fascinated creatures, however, they are not susceptible to suggestion.Your Sustaining Song melody now works on Construct and Living Construct Allies, such as Warforged and Artificer Iron Defenders, providing them with a Repair over time.Your Inspire Greatness now provides a +10 Music bonus to Repair Amplification.Your Enchantment, Evocation, and Illusion spells add +1 to their Difficulty Check. (Actually applies to all spell schools)+1 Diplomacy, Listen, Perform, and UMD+2% critical chance with sonic and positive spells.
 Tier: 0
 
 AbilityName: Virtuoso
-Descrip: You regenerate 1 Song every 5 minutes.+2 Songs per rest.You sing your Bardic Inspiration as if you had two more Bard levels (for a total of 3 for this enhancement)+1 DCs to Enchantment, Evocation, and Illusion spells (actually to all spell schools).+1 Diplomacy, Listen, Perform, UMD and 2% critical chance with sonic and positive spells.
+Descrip: You regenerate 1 Song every 5 minutes. (Stacks with anthem)+2 Songs per rest.You sing your Bardic Inspiration as if you had two more Bard levels (for a total of 3 for this enhancement)Your Enchantment, Evocation, and Illusion spells add +1 to their Difficulty Check. (Actually applies to all spell schools)+1 Diplomacy, Listen, Perform, and UMD+2% critical chance with sonic and positive spells.
 Tier: 0
 
 AbilityName: Maestro of Life and Death
-Descrip: Your songs can fill allies with healing energy or strike down those that oppose you.You gain the Heal and Wail of the Banshee spells as level 6 Bard spells.+4 Charisma+25 Universal Spell Power+1 Diplomacy, Listen, Perform, UMD and 2% critical chance with sonic and positive spells (actually 5%).
+Descrip: Your songs can fill allies with healing energy or strike down those that oppose you.You gain the Heal and Wail of the Banshee spells as level 6 Bard spells.+4 Charisma+25 Universal Spell Power+1 Diplomacy, Listen, Perform, and UMD+2% critical chance with sonic and positive spells. (Actually 5%)
 Tier: 0
 
 AbilityName: Haunting Melody
@@ -8654,7 +8795,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Defensive Bonus
-Descrip: Choose Raucous Refrain or Reviving Verse.}{- Raucous Refrain: Inspiration Melody: When you use you Bardic Inspiration, your target gains a +[1/2/3] Morale bonus to save vs. Sleep, Paralysis, Exhaustion and Energy Drain for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{- Reviving Verse: +[1/2/3] saving throws vs. Sleep, Paralysis, Exhaustion and Energy Drain.
+Descrip: Choose Raucous Refrain or Reviving Verse.}{- Raucous Refrain: Inspiration Melody: When you use your Bardic Inspiration, your target gains a +[1/2/3] Morale bonus to save vs. Sleep, Paralysis, Exhaustion and Energy Drain for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{- Reviving Verse: +[1/2/3] saving throws vs. Sleep, Paralysis, Exhaustion and Energy Drain.
 Tier: 3
 Ranks: 3
 Flags: SelectorOnly
@@ -8666,29 +8807,29 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Spell Song Trance
-Descrip: Cooldown: 10 secondsInspiration Melody: When you use you Bardic Inspiration, you grant a +1 morale bonus to spell DC's and 10% morale discount on spell point costs to your target for the duration of the song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: Inspiration Melody: When you use your Bardic Inspiration, you grant a +1 morale bonus to spell DC's and 10% morale discount on spell point costs to your target for the duration of the song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 3
 Cost: 2
 
 AbilityName: Sustaining Song
-Descrip: Cooldown: 10 secondsInspiration Melody: When you use you Bardic Inspiration, you apply a temporary fast-healing effect to your target for the duration of your song (hits for 2d3 modified by your *current* positive/negative/repair spellpower, but doesn't crit).Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: Inspiration Melody: When you use your Bardic Inspiration, you apply a temporary fast-healing effect to your target for the duration of your song. (Heals for 2d3 every 2 sec. Doesn't crit. Affected by your positive/negative/repair spell power. Spell power is *not* locked in when you sing, but is rechecked for every tick.)Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 4
 Cost: 2
 
 AbilityName: Spell Penetration
-Descrip: Choose Spell Penetration for yourself or for others.}{- Arcane Aid: Inspiration Melody: When you use you Bardic Inspiration, your target gains a +[1/2/3] Music Bonus to Spell Penetration for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{- Spell Penetration: +[1/2/3] to your level when trying to overcome enemy's Spell Resistance.
+Descrip: Choose Spell Penetration for yourself or for others.}{- Arcane Aid: Inspiration Melody: When you use your Bardic Inspiration, your target gains a +[1/2/3] Music Bonus to Spell Penetration for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{- Spell Penetration: +[1/2/3] to your level when trying to overcome enemy's Spell Resistance.
 Tier: 4
 Ranks: 3
 Flags: SelectorOnly
 Selector: Arcane Aid, Spell Penetration
 
 AbilityName: Frolic
-Descrip: Inspiration Melody: When you use you Bardic Inspiration, your target gains Freedom of Movement for the duration of your song.(This is a musical effect and cannot be dispelled.)Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: Inspiration Melody: When you use your Bardic Inspiration, your target gains Freedom of Movement for the duration of your song.(This is a musical effect and cannot be dispelled.)Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 4
 Cost: 2
 
 AbilityName: Song of Arcane Might
-Descrip: Cooldown: 10 secondsInspiration Melody: When you use your Bardic Inspiration, your target gains a +1 morale bonus to caster level for all spells for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{ Bug:  Arcane Augmentation items override this, so non-wizard/sorcerer spells don't get a bonus.
+Descrip: Inspiration Melody: When you use your Bardic Inspiration, your target gains a +1 morale bonus to caster level for all spells for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.}{ Bug:  Arcane Augmentation items override this, so non-wizard/sorcerer spells don't get a bonus.
 Tier: 4
 Cost: 2
 All: Tier 3: Spell Song Trance
@@ -8711,7 +8852,7 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Spell Song Vigor
-Descrip: Cooldown: 10 secondsInspiration Melody: When you use your Bardic Inspiration, you apply an effect to your target that restores spell points over time for the duration of your song.Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: Inspiration Melody: When you use your Bardic Inspiration, you apply an effect to your target that restores spell points over time for the duration of your song. (2 spell points every 2 seconds)Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 5
 Cost: 2
 All: Tier 4: Song of Arcane Might
@@ -8736,7 +8877,7 @@ Descrip: You gain +1 Hit Point for each action point you spend in this tree. Eac
 Tier: 0
 
 AbilityName: Stalwart Defense
-Descrip: Defensive Combat Stance:}{-+10 Physical and Magical Resistance}{-+150% bonus to threat generation with melee weapons}{-Cannot be used while Raged}{-Sacred Defense and Stalwart Defense can't be active at the same time}Unlisted Passive Effect: +2 stacking Constitution
+Descrip: Defensive Combat Stance:}{-+10 Physical and Magical Resistance}{-+150% bonus to threat generation with melee weapons}{-Cannot be used while Raged}{-Sacred Defense and Stalwart Defense can't be active at the same time
 Tier: 0
 
 AbilityName: Overbalance
@@ -9756,126 +9897,6 @@ Tier: 4
 Cost: 2
 All: Tier 3: Dance in the Darkness
 
-
-TreeName: Shifter
-Type: Race
-Initial: Shi
-
-AbilityName: Extra Shifting 
-Descrip: +1 Rage uses per rest. (You expend Rage uses to activate your Shifting).
-Tier: 0
-
-AbilityName: Ability Score
-Descrip: Choose an ability to improve: +1 Constitution, Dexterity, Strength, Wisdom.
-Tier: 0
-Cost: 2
-Selector: Constitution, Dexterity, Strength, Wisdom
-
-AbilityName: Extra Shifting II
-Descrip: +2 Rage uses per rest.
-Tier: 0
-
-AbilityName: Ability Score II
-Descrip: Choose an ability to improve: +1 Constitution, Dexterity, Strength, Wisdom.
-Tier: 0
-Cost: 2
-Selector: Constitution, Dexterity, Strength, Wisdom
-
-AbilityName: Regenerating Shift
-Descrip: You Regenerate 1 Rage use every 90 seconds.
-Tier: 0
-
-AbilityName: Brutality
-Descrip: Choose one:} Brutal Spellcasting: Your damaging spells generate 25%/50%/75% more hate than they normally would, making enemies more likely to attack you.} Brute Fighting: Your melee attacks generate 25%/50%/75% more hate than they normally would, making enemies more likely to attack you.
-Tier: 1
-Ranks: 3
-Selector: Brutal Fighting, Brutal Spellcasting
-
-AbilityName: Hunt & Track
-Descrip: +1/2/3 Spot, Listen and Intimidate
-Tier: 1
-Ranks: 3
-
-AbilityName: Extend Shifting
-Descrip: Your Shifting and Barbarian rage last 25/50/74% longer
-Tier: 1
-Ranks: 3
-
-AbilityName: Hardy Shifting
-Descrip: +1/2/3 Constitution while Shifting or Raging.
-Tier: 1
-Ranks: 3
-
-AbilityName: Shifted Alterations
-Descrip: <tbd>
-Tier: 2
-Selector: Shifted Defenses, Shifted Senses
-
-AbilityName: Natural Armor
-Descrip: +2/4/6 to Natural Armor
-Tier: 2
-Ranks: 3
-
-AbilityName: Howl
-Descrip: <tbd>
-Tier: 2
-
-AbilityName: Extra Howling
-Descrip: <tbd>
-Tier: 2
-All: Tier 2: Howl
-
-AbilityName: Magic Fang
-Descrip: <tbd>
-Tier: 2
-Ranks: 3
-
-AbilityName: Empowered by Nature
-Descrip: <tbd>
-Tier: 3
-Selector: Empowered by Nature (Beasthide), Empowered by Nature (Wildhubt)
-
-AbilityName: Augment Summoning
-Descrip: <tbd>
-Tier: 3
-
-AbilityName: Stronger Howl
-Descrip: <tbd>
-Tier: 3
-All: Tier 2: Howl
-
-AbilityName: Shifter Favored Enemy
-Descrip: <tbd>
-Tier: 3
-Cost: 1
-Selector: Animal, Fey, Magical Beast, Plant, Reptillian, Vermin
-SelectorName: Animal
-None: Feat: Favored Enemy: Animal
-SelectorName: Fey
-None: Feat: Favored Enemy: Fey
-SelectorName: Magical Beast
-None: Feat: Favored Enemy: Magical Beast
-SelectorName: Plant
-None: Feat: Favored Enemy: Plant
-SelectorName: Reptillian
-None: Feat: Favored Enemy: Reptillian
-SelectorName: Vermin
-None: Feat: Favored Enemy: Vermin
-
-AbilityName: Threatening Shift
-Descrip: <tbd>
-Tier: 4
-Selector: Threatening Shift, Camouflaged Shift
-
-AbilityName: True Hunter
-Descrip: <tbd>
-Tier: 4
-
-AbilityName: Howl of Terror
-Descrip: <tbd>
-Tier: 4
-
-
 TreeName: Vanguard
 Type: Class
 Initial: Van
@@ -10491,11 +10512,11 @@ Tier: 0
 Selector: Constitution, Rage
 
 AbilityName: Weapon Training
-Descrip: Gain martial weapon proficiency and +10 hit points. Inspire Courage  grants an additional +1 damage. (If you are a dwarf, Dwarven Waraxes are included as part of this Enhancement.)
+Descrip: You gain martial weapon proficiency and +10 maximum HP. Inspire Courage  grants an additional +1 damage. (If you are a dwarf, Dwarven Waraxes are included as part of this Enhancement.)}{ Note: this seems to be giving an additional +2 attack and damage to dwarven waraxes and martial weapons. self only. probably a bug
 Tier: 0
 
 AbilityName: Song of Heroism
-Descrip: Adds the Song of Heroism To your Ballad.Inspire Courage now grants an additional +1 damage.Greater Heroism: +4 untyped* bonus to Attack, all saving throws, and skill checks, and some temporary hitpoints. Requires 4 dedicated Ranks in Perform to use.}{ (* as of [U42])
+Descrip: Adds the Song of Heroism To your Ballad.Inspire Courage now grants an additional +1 damage.Bardic Heroism: +2 untyped* bonus to Attack and all saving throws, as well as immunity to fear. Requires 4 dedicated Ranks in Perform.}{ (* as of [U42])
 Tier: 0
 
 AbilityName: Fighting Spirit
@@ -10941,11 +10962,11 @@ Descrip: Passive:}{-+10 Cold Spell Power}{-+1 Caster Level when casting Cold or 
 Tier: 0
 
 AbilityName: Greater Water Affinity
-Descrip: Passive:}{-+10 Cold Spell Power}{-+1 Caster Level when casting Cold or Water spells.}{-+1 Maximum Caster Level when casting Cold or Water spells.}{--10 Fire Spell Power}{--1 Caster Level when casting Fire spells
+Descrip: Passive:}{-+10 Cold Spell Power}{-+1 Caster Level when casting Cold or Water spells.}{--10 Fire Spell Power}{--1 Caster Level when casting Fire spells
 Tier: 0
 
 AbilityName: Hypothermia
-Descrip: Passive: 50% Chance On Cold Spell Cast: Your target gains one stack of Lethargy for 10 seconds (-1 to all Saving Throws. Non-bosses also move and attack 5% slower. Works on creatures immune to cold. This effect stacks up to 5 times. All stacks are removed when the timer expires.)}{-+10 Cold Spell Power}{-+1 Caster Level when casting Cold or Water spells.}{-+1 Maximum Caster Level when casting Cold or Water spells.}{--10 Fire Spell Power}{--1 Caster Level when casting Fire spells
+Descrip: Passive: 50% Chance On Cold Spell Cast: Your target gains one stack of Lethargy for 10 seconds (-1 to all Saving Throws. Non-bosses also move and attack 5% slower. Works on creatures immune to cold. This effect stacks up to 5 times. All stacks are removed when the timer expires.)}{-+10 Cold Spell Power}{-+1 Caster Level when casting Cold or Water spells.}{--10 Fire Spell Power}{--1 Caster Level when casting Fire spells
 Tier: 0
 
 AbilityName: Elemental Persistance
@@ -11230,3 +11251,112 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
+
+TreeName: Razorclaw Shifter
+Type: Race
+Initial: Raz
+
+AbilityName: Extra shifting
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Ability I
+Descrip: <tbd>
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Constitution, Dexterity, Strength, Wisdon
+
+
+AbilityName: Extra shifting
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Ability II
+Descrip: <tbd>
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Constitution, Dexterity, Strength, Wisdon
+
+AbilityName: Regenerating Shift
+Descrip: <tbd>
+Tier: 0
+
+AbilityName: Hone Claws
+Descrip: +1/+2/+3 to Attack with Handraps
+Tier: 1
+Ranks: 3
+
+AbilityName: Hunt & Track
+Descrip: +1/+2/+3 Spot, Listen and Intimidate.
+Tier: 1
+Ranks: 3
+
+AbilityName: Extend Shifting
+Descrip: <tbd>
+Tier: 1
+Ranks: 3
+
+AbilityName: Hardy Shifting
+Descrip: <tbd>
+Tier: 1
+Ranks: 3
+
+AbilityName: Piercing Claws
+Descrip: <tbd>
+Tier: 2
+Cost: 2
+
+AbilityName: Natural Armor
+Descrip: <tbd>
+Tier: 2
+Ranks: 3
+
+AbilityName: Howl
+Descrip: <tbd>
+Tier: 2
+Cost: 2
+
+AbilityName: Extra Howl
+Descrip: <tbd>
+Tier: 2
+Ranks: 3
+
+AbilityName: Magic Fang
+Descrip: <tbd>
+Tier: 2
+Ranks: 3
+
+AbilityName: Pounce
+Descrip: <tbd>
+Tier: 3
+Ranks: 3
+
+AbilityName: Augment Summoning
+Descrip: <tbd>
+Tier: 3
+
+AbilityName: Stronger Howl
+Descrip: <tbd>
+Tier: 3
+
+AbilityName: Favored Enemy
+Descrip: Choose a Favored Enemy feat for one of these: Goblinoid or Reptilian
+Tier: 3
+Cost: 2
+Selector: Animal, Fey, Magical Beast, Plant, Reptilian, Vermin
+
+AbilityName: Destructive Shifting
+Descrip: <tbd>
+Tier: 4
+
+AbilityName: True Hunter
+Descrip: <tbd>
+Tier: 4
+
+AbilityName: Howl of Terror
+Descrip: <tbd>
+Tier: 4
+Ranks: 3
+

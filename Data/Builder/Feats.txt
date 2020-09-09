@@ -133,6 +133,13 @@ Race: Required, Aasimar
 RaceBonus: Aasimar
 Flags: RaceOnly
 
+FeatName: Bond of the Scourge
+Group: Heroic, Misc
+Descrip: +1 Constitution and Fortitude Saving Throws. }This is toggled on to get its bonuses, has visual effects, and is mutually exclusive with Warlock Pacts.
+Race: Required, Scourge
+RaceBonus: Scourge
+Flags: RaceOnly
+
 FeatName: Bow Strength
 Group: Heroic, Range
 Descrip: Add your Strength modifier to bow damage. Bows normally get no damage bonus at all.
@@ -659,7 +666,7 @@ Group: Heroic, Melee, Range
 WikiName: Exotic Weapon Proficiency
 Descrip: Grant proficiency with the chosen exotic weapon. Proficiency grants +20% bonus to-hit compared to not being proficient.
 BAB: 1
-RaceBonus: Human, Purple Dragon Knight
+RaceBonus: Human, Purple Dragon Knight, Razorclaw
 ClassBonus: Artificer, Fighter
 Selector: Bastard Sword, Dwarven Axe, Kama, Khopesh, Great Crossbow, Rpt Lt Crossbow, Rpt Hvy Crossbow, Shuriken, Handwraps
 SelectorName: Bastard Sword
@@ -670,6 +677,10 @@ SelectorName: Dwarven Axe
 WikiName: Proficiency: Dwarven Waraxe
 Descrip: Grant proficiency with Dwarven Axes, which now deal glancing blows. Proficiency grants +20% bonus to-hit compared to not being proficient.
 Stat: Strength 13
+SelectorName: Handwraps
+WikiName: Proficiency: Handwraps
+RaceBonus: Razorclaw
+ClassBonus: Fighter
 SelectorName: Kama
 WikiName: Proficiency: Kama
 ClassBonus: Fighter
@@ -691,9 +702,7 @@ ClassBonus: Fighter
 SelectorName: Shuriken
 WikiName: Proficiency: Shuriken
 ClassBonus: Fighter
-SelectorName: Handwraps
-WikiName: Proficiency: Handwraps
-ClassBonus: Fighter
+
 
 FeatName: Extend Spell
 Group: Heroic, Spellcasting
@@ -1648,6 +1657,12 @@ Descrip: A Barbarian can fly into a Rage several times per rest. Rages grants bo
 Flags: Unselectable
 Class: Barbarian 1
 
+FeatName: Dismiss Rage
+Group: Misc
+Descrip: Activate this barbarian ability to prematurely end your rage.
+Flags: Unselectable
+Class: Barbarian 1
+
 FeatName: Rapid Reload
 Group: Heroic, Range
 Descrip: Allows crossbows (including repeating) to be reloaded significantly faster. Stacks with Rapid Shot.
@@ -2205,3 +2220,24 @@ CanCastSpell: 1
 ClassBonus: Artificer, Alchemist
 Class: Alchemist 8, Artificer 8
 
+FeatName: Beasthide Shifter
+Group: Heroic, Misc
+Descrip: Passive: +1 CON. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Armor Class and Constitution, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Constitution. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+Race: Required, Shifter
+RaceBonus: Shifter
+Flags: RaceOnly
+
+FeatName: Wildhunt Shifter
+Group: Heroic, Misc
+Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Wisdom and Dexterity, a +2 Morale bonus to Will saves, and a -2 penalty to Strength. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Wisdom. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+Race: Required, Shifter
+RaceBonus: Shifter
+Flags: RaceOnly
+
+
+FeatName: Razorclaw Shifter
+Group: Heroic, Misc
+Descrip: Passive: +1 STR. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Strength and Dexterity, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Strength. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+Race: Required, Razorclaw
+RaceBonus: Razorclaw
+Flags: RaceOnly
