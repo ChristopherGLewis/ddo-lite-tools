@@ -1574,6 +1574,9 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pe
             log.LoadLine = strLine(lngLine)
             If ParseLine(strLine(lngLine), strField, strItem, lngValue, strList, lngListMax) Then
                 Select Case strField
+                    Case "descrip"
+                        ' 20200908
+                        .Descrip = strItem
                     Case "cost"
                         .Cost = lngValue
                         If .Cost < 1 Or .Cost > 2 Then LogError

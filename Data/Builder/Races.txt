@@ -133,5 +133,5 @@ Type: Iconic
 IconicClass: Barbarian
 Stats: 10, 8, 8, 6, 8, 8
 Flags: BonusFeat
-GrantedFeats1: Exotic Weapon Proficiency: Handwraps
+GrantedFeats1: Exotic Weapon: Handwraps
 

@@ -18,9 +18,9 @@ Descrip: +2 more uses of Healing Hands per rest.}{-Protector Bond now grants +2%
 Tier: 0
 Selector: Protector Bond, Fallen Bond
 SelectorName: Protector Bond
-All: Feat: Bond of the Protector
+All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen Bond
-All: Feat: Bond of the Fallen
+All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Stat II
 Descrip: WIS/CHA/STR
@@ -48,9 +48,9 @@ Tier: 1
 Ranks: 3
 Selector: Will, Reflex
 SelectorName: Will
-All: Feat: Bond of the Protector
+All: Feat: Bond: Bond of the Protector
 SelectorName: Reflex
-All: Feat: Bond of the Fallen
+All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Bold
 Descrip: You overcome fear quickly - fear and shaken effects are removed from you after 12/6/3 seconds.
@@ -78,9 +78,9 @@ Descrip: Gain an active ability with one charge per rest. Must have your Bond Fe
 Tier: 2
 Selector: Protector, Fallen
 SelectorName: Protector
-All: Feat: Bond of the Protector
+All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen
-All: Feat: Bond of the Fallen
+All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Divine Resolve
 Descrip: Select one:}{- Protector: +1/2/3 CHA while your Divine Purpose is active.}{- Fallen: +1/2/3 STR while your Divine Purpose is active.
@@ -88,9 +88,9 @@ Tier: 2
 Ranks: 3
 Selector: Charisma, Strength
 SelectorName: Charisma
-All: Feat: Bond of the Protector
+All: Feat: Bond: Bond of the Protector
 SelectorName: Strength
-All: Feat: Bond of the Fallen
+All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Fight the Wicked
 Descrip: +1 to hit and damage vs. Evil creatures.
@@ -125,9 +125,9 @@ Descrip: Toggle: toggles off on rest. Must have your Bond Feat active to use. Mu
 Tier: 4
 Selector: Protector, Fallen
 SelectorName: Protector
-All: Feat: Bond of the Protector
+All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen
-All: Feat: Bond of the Fallen
+All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Aasimar Improved Recovery
 Descrip: +20 Healing Amplification
@@ -7665,6 +7665,114 @@ Tier: 5
 Ranks: 2
 Cost: 2
 
+TreeName: Razorclaw Shifter
+WikiName: Razorclaw shifter
+Type: Race
+Initial: Raz
+
+AbilityName: Extra shifting
+Descrip: +1 Rage uses per rest. (You expend Rage uses to activate your Shifting).
+Tier: 0
+
+AbilityName: Ability I
+Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Constitution, Dexterity, Strength, Wisdon
+
+AbilityName: Extra shifting
+Descrip: +2 Rage uses per rest.
+Tier: 0
+
+AbilityName: Ability II
+Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Constitution, Dexterity, Strength, Wisdon
+
+AbilityName: Regenerating Shift
+Descrip: +You regenerate 1 Rage use every 90 seconds.
+Tier: 0
+
+AbilityName: Hone Claws
+Descrip: +[1/2/3] to Attack with Handwraps
+Tier: 1
+Ranks: 3
+
+AbilityName: Hunt & Track
+Descrip: >+[1/2/3] Spot, Listen and Intimidate
+Tier: 1
+Ranks: 3
+
+AbilityName: Extend Shifting
+Descrip: Your Shifting and Barbarian rages last [25/50/75]% longer.
+Tier: 1
+Ranks: 3
+
+AbilityName: Hardy Shifting
+Descrip: +[1/2/3] Constitution while Shifting or Raging.
+Tier: 1
+Ranks: 3
+
+AbilityName: Piercing Claws
+Descrip: While Raging with Handwraps, you bypass Piercing DR.
+Tier: 2
+Cost: 2
+
+AbilityName: Natural Armor
+Descrip: +[2/4/6] Natural Armor
+Tier: 2
+Ranks: 3
+
+AbilityName: Howl
+Descrip: Nearby Allies gain +2 to Attack per 5 Character Levels you have for 20 seconds. You can use this once per Rest.
+Tier: 2
+Cost: 2
+
+AbilityName: Extra Howl
+Descrip: +[1/2/3] uses of Howl per rest.
+Tier: 2
+Ranks: 3
+
+AbilityName: Magic Fang
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 10/8/5 SP}Cooldown: 20/15/10 seconds
+Tier: 2
+Ranks: 3
+
+AbilityName: Pounce
+Descrip: Rush forward, dealing +[2/4/6]W to targets near you when you land. +[0/1/1] Critical Threat Range and +[0/0/1] Multiplier with this attack.
+Tier: 3
+Ranks: 3
+
+AbilityName: Augment Summoning
+Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification.
+Tier: 3
+
+AbilityName: Stronger Howl
+Descrip: When you Howl, nearby enemies take -2 to Attack per 5 Character Levels you have for 20 seconds.
+Tier: 3
+
+AbilityName: Favored Enemy
+Descrip: Choose a Favored Enemy}{- Favored Enemy: Animal}{- Favored Enemy: Fey}{- Favored Enemy: Magical Beast}{- Favored Enemy: Plant}{- Favored Enemy: Reptilian}{- Favored Enemy: Vermin
+Tier: 3
+Cost: 2
+Selector: Animal, Fey, Magical Beast, Plant, Reptilian, Vermin
+
+AbilityName: Destructive Shifting
+Descrip: While under your Iconic Rage, you gain Improved Destruction and trip enemies for 2 seconds on a Vorpal hit. Your Iconic Rage now Uncenters you.
+Tier: 4
+
+AbilityName: True Hunter
+Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Tier: 4
+
+AbilityName: Howl of Terror
+Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save negates.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
+Tier: 4
+Ranks: 3
+
 TreeName: Renegade Mastermaker
 Abbreviation: Mastermaker
 Type: Class
@@ -8332,6 +8440,10 @@ AbilityName: Shifted Alterations
 Descrip: Shoose an effect:}{- Shifted Defenses: +[4/?/?] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/?/?] Spot and +[2/?/?]% Dodge while Raging. Requires Wildhunt Shifter
 Tier: 2
 Selector: Shifted Defenses, Shifted Senses
+SelectorName: Shifted Defenses
+All: Feat: Shifter: Beasthide Shifter
+SelectorName: Shifted Senses
+All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Natural Armor
 Descrip: +[2/4/6] Natural Armor
@@ -8341,6 +8453,11 @@ Ranks: 3
 AbilityName: Howl
 Descrip: Choose between:}{- Beasthide Howl: Release a mighty howl, granting nearby allies +2 Action Boost Bonus to PRR and MRR per 5 Character Levels you have for 20 seconds. You can use this once per rest. Requires Beasthide Shifter}{- Wildhunt Howl: Release a mighty howl, granting nearby allies +1 Action Boost Bonus to Saving Throws per 10 Character Levels you have for 20 seconds. You can use this once per rest. Requires Wildhunt Shifter
 Tier: 2
+Selector: Beasthide Howl, Wildhunt Howl
+SelectorName: Beasthide Howl
+All: Feat: Shifter: Beasthide Shifter
+SelectorName: Wildhunt Howl
+All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Extra Howling
 Descrip: +[1/2/3] uses of Howl per rest.
@@ -8355,7 +8472,11 @@ Ranks: 3
 AbilityName: Empowered by Nature
 Descrip: Choose an effect:}{- Beasthide: +10 Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +25 Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter
 Tier: 3
-Selector: Empowered by Nature (Beasthide), Empowered by Nature (Wildhubt)
+Selector: Beasthide, Wildhunt
+SelectorName: Beasthide
+All: Feat: Shifter: Beasthide Shifter
+SelectorName: Wildhunt
+All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Augment Summoning
 Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification.
@@ -8365,6 +8486,11 @@ AbilityName: Stronger Howl
 Descrip: Choose between:}{- Beasthide: When you Howl, nearby enemies take -2 to Attack per 5 Character Levels you have for 20 seconds. Requires Beasthide Shifter}{- Wildhunt: When you Howl, nearby enemies take -1 to Saving Throws per 5 Character Levels you have for 20 seconds. Requires Wildhunt Shifter
 Tier: 3
 All: Tier 2: Howl
+Selector: Beasthide, Wildhunt
+SelectorName: Beasthide
+All: Tier 2: Howl, Feat: Shifter: Beasthide Shifter
+SelectorName: Wildhunt
+All: Tier 2: Howl, Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Shifter Favored Enemy
 Descrip: Choose a Favored Enemy}{- Favored Enemy: Animal}{- Favored Enemy: Fey}{- Favored Enemy: Magical Beast}{- Favored Enemy: Plant}{- Favored Enemy: Reptilian}{- Favored Enemy: Vermin
@@ -8387,6 +8513,10 @@ AbilityName: Threatening Shift
 Descrip: Choose between:}{- Threatening Shift:While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Camouflaged Shift: While raging, gain Lesser Dispacement and +3% Dodge Cap. Requires Wildhunt Shifter
 Tier: 4
 Selector: Threatening Shift, Camouflaged Shift
+SelectorName: Threatening Shift
+All: Feat: Shifter: Beasthide Shifter
+SelectorName: Camouflaged Shift
+All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: True Hunter
 Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
@@ -11251,112 +11381,3 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
-
-TreeName: Razorclaw Shifter
-Type: Race
-Initial: Raz
-
-AbilityName: Extra shifting
-Descrip: <tbd>
-Tier: 0
-
-AbilityName: Ability I
-Descrip: <tbd>
-Tier: 0
-Cost: 2
-Flags: SelectorOnly
-Selector: Constitution, Dexterity, Strength, Wisdon
-
-
-AbilityName: Extra shifting
-Descrip: <tbd>
-Tier: 0
-
-AbilityName: Ability II
-Descrip: <tbd>
-Tier: 0
-Cost: 2
-Flags: SelectorOnly
-Selector: Constitution, Dexterity, Strength, Wisdon
-
-AbilityName: Regenerating Shift
-Descrip: <tbd>
-Tier: 0
-
-AbilityName: Hone Claws
-Descrip: +1/+2/+3 to Attack with Handraps
-Tier: 1
-Ranks: 3
-
-AbilityName: Hunt & Track
-Descrip: +1/+2/+3 Spot, Listen and Intimidate.
-Tier: 1
-Ranks: 3
-
-AbilityName: Extend Shifting
-Descrip: <tbd>
-Tier: 1
-Ranks: 3
-
-AbilityName: Hardy Shifting
-Descrip: <tbd>
-Tier: 1
-Ranks: 3
-
-AbilityName: Piercing Claws
-Descrip: <tbd>
-Tier: 2
-Cost: 2
-
-AbilityName: Natural Armor
-Descrip: <tbd>
-Tier: 2
-Ranks: 3
-
-AbilityName: Howl
-Descrip: <tbd>
-Tier: 2
-Cost: 2
-
-AbilityName: Extra Howl
-Descrip: <tbd>
-Tier: 2
-Ranks: 3
-
-AbilityName: Magic Fang
-Descrip: <tbd>
-Tier: 2
-Ranks: 3
-
-AbilityName: Pounce
-Descrip: <tbd>
-Tier: 3
-Ranks: 3
-
-AbilityName: Augment Summoning
-Descrip: <tbd>
-Tier: 3
-
-AbilityName: Stronger Howl
-Descrip: <tbd>
-Tier: 3
-
-AbilityName: Favored Enemy
-Descrip: Choose a Favored Enemy feat for one of these: Goblinoid or Reptilian
-Tier: 3
-Cost: 2
-Selector: Animal, Fey, Magical Beast, Plant, Reptilian, Vermin
-
-AbilityName: Destructive Shifting
-Descrip: <tbd>
-Tier: 4
-
-AbilityName: True Hunter
-Descrip: <tbd>
-Tier: 4
-
-AbilityName: Howl of Terror
-Descrip: <tbd>
-Tier: 4
-Ranks: 3
-

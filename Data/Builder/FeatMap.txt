@@ -24,8 +24,8 @@ Beloved of: The Blood of Vol	Beloved of the Blood of Vol
 Beloved of: Undying Court	Beloved of the Undying Court	Beloved of the Undying Court
 Beloved of: Vulkoor	Beloved of Vulkoor	Beloved of Vulkoor
 Blinding Speed	Epic: Blinding Speed	Blinding Speed
-Bond of the Fallen	Aasimar: Bond: Protector	Bond of the Fallen
-Bond of the Protector	Aasimar: Bond: Fallen	Bond of the Protector
+Bond: Bond of the Fallen	Aasimar: Bond: Protector	Bond of the Fallen
+Bond: Bond of the Protector	Aasimar: Bond: Fallen	Bond of the Protector
 Bow Strength	Bow Strength	Bow Strength
 Brutal Throw	Brutal Throw	Brutal Throw
 Bullheaded	Bullheaded	Bullheaded

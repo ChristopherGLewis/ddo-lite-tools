@@ -119,19 +119,18 @@ WikiName: Epic Feats#Overview
 Descrip: You are permanently Hasted.
 Level: 27
 
-FeatName: Bond of the Fallen
+FeatName: Bond
 Group: Heroic, Misc
+WikiName: Bond#Aasimar_Bond
+Descrip: These are toggled on to get their bonuses, have visual effects, are mutually exclusive with Warlock Pacts and the Half-Elf Dilettante: Warlock feat. (Bear in mind that these ability scores don't apply to Feat Prereqs or anything.)
+Race: Required, Aasimar
+RaceBonus: Aasimar
+Flags: RaceOnly
+Selector: Bond of the Fallen, Bond of the Protector
+SelectorName: Bond of the Fallen
 Descrip: +1 Strength and Reflex saves. Racial AP adds:}Core 3: +2 Tactics DCs}Tier 1: +3 Reflex saves}Tier 2: 1:00 Boost 1/rest:}{ +2 Strength}{ +5% Doublestrike}Tier 4:}{ Immunity to Fear}{ +10 Melee Power}{ Melee attacks add vulnerable
-Race: Required, Aasimar
-RaceBonus: Aasimar
-Flags: RaceOnly
-
-FeatName: Bond of the Protector
-Group: Heroic, Misc
+SelectorName: Bond of the Protector
 Descrip: +1 Charisma and Will saves. Racial AP adds:}Core 3: +2% Dodge}Tier 1: +3 Will saves}Tier 2: 1:00 Boost 1/rest:}{ Healing Amp}{ Positive Spell Power}{ (Both equal to level)}Tier 4:}{ +3 to all saves}{ +10% Max Hit Points}{ +10 MRR and PRR
-Race: Required, Aasimar
-RaceBonus: Aasimar
-Flags: RaceOnly
 
 FeatName: Bond of the Scourge
 Group: Heroic, Misc
@@ -666,21 +665,19 @@ Group: Heroic, Melee, Range
 WikiName: Exotic Weapon Proficiency
 Descrip: Grant proficiency with the chosen exotic weapon. Proficiency grants +20% bonus to-hit compared to not being proficient.
 BAB: 1
-RaceBonus: Human, Purple Dragon Knight, Razorclaw
+RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter
 Selector: Bastard Sword, Dwarven Axe, Kama, Khopesh, Great Crossbow, Rpt Lt Crossbow, Rpt Hvy Crossbow, Shuriken, Handwraps
 SelectorName: Bastard Sword
 WikiName: Proficiency: Bastard Sword
 Descrip: Grant proficiency with Bastard Swords, which now deal glancing blows. Proficiency grants +20% bonus to-hit compared to not being proficient.
 Stat: Strength 13
+ClassBonus: Artificer, Fighter
 SelectorName: Dwarven Axe
 WikiName: Proficiency: Dwarven Waraxe
 Descrip: Grant proficiency with Dwarven Axes, which now deal glancing blows. Proficiency grants +20% bonus to-hit compared to not being proficient.
 Stat: Strength 13
-SelectorName: Handwraps
-WikiName: Proficiency: Handwraps
-RaceBonus: Razorclaw
-ClassBonus: Fighter
+ClassBonus: Artificer, Fighter
 SelectorName: Kama
 WikiName: Proficiency: Kama
 ClassBonus: Fighter
@@ -701,6 +698,9 @@ Descrip: Grant proficiency with Repeating Heavy Crossbows, which now fire 3 bolt
 ClassBonus: Fighter
 SelectorName: Shuriken
 WikiName: Proficiency: Shuriken
+ClassBonus: Fighter
+SelectorName: Handwraps
+WikiName: Proficiency: Handwraps
 ClassBonus: Fighter
 
 
@@ -2220,19 +2220,18 @@ CanCastSpell: 1
 ClassBonus: Artificer, Alchemist
 Class: Alchemist 8, Artificer 8
 
-FeatName: Beasthide Shifter
+FeatName: Shifter
 Group: Heroic, Misc
+WikiName: Shifter:Racial_traits
+Descrip: Subrace Selector. (Like Aasimar, Shifters select their subrace at level 1, which grants them some specific bonuses and informs which selections they can make in their tree).
+Race: Required, Shifter
+RaceBonus: Shifter
+Flags: RaceOnly
+Selector: Beasthide Shifter, Wildhunt Shifter
+SelectorName: Beasthide Shifter
 Descrip: Passive: +1 CON. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Armor Class and Constitution, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Constitution. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-Race: Required, Shifter
-RaceBonus: Shifter
-Flags: RaceOnly
-
-FeatName: Wildhunt Shifter
-Group: Heroic, Misc
+SelectorName: Wildhunt Shifter
 Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Wisdom and Dexterity, a +2 Morale bonus to Will saves, and a -2 penalty to Strength. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Wisdom. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-Race: Required, Shifter
-RaceBonus: Shifter
-Flags: RaceOnly
 
 
 FeatName: Razorclaw Shifter
