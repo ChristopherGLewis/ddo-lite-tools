@@ -3,7 +3,7 @@ Initial: A, Al, Alchemist, Alc
 Color: Blue
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
-SkillPoints: 2
+SkillPoints: 4
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Magical Training
 GrantedFeats2: Insightful Reflexes
