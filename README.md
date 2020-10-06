@@ -13,6 +13,9 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.3.0
+Added Shifter race, Razorclaw Shifter iconic, and Feydark Illusionist tree.  Recrawled all trees.  Updated quest info per SardaofChaos (Thanks!)
+
 ### 3.2.4
 Updated Fatesinger (U42P4).  Recrawled Destinies.
 
