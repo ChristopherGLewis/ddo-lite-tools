@@ -1,51 +1,3 @@
-QuestName: Caged Beast
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
-QuestName: Obstructing the Orcs
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
-QuestName: The Bugbear Bandits
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
-QuestName: The Hobgoblin Horde
-Patron: The Gatekeepers
-Favor: 3
-Level: 1
-Epic: 21
-
-QuestName: Total Chaos
-Patron: The Gatekeepers
-Favor: 3
-Level: 1
-Epic: 22
-
-QuestName: Treasure Hunt
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
-QuestName: Violent Delights
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
-QuestName: Watch Your Step
-Patron: The Gatekeepers
-Favor: 2
-Level: 1
-Epic: 21
-
 QuestName: The Cannith Crystal
 Patron: House Deneith
 Favor: 2
@@ -661,15 +613,96 @@ Level: 32
 Epic: 32
 Style: Raid
 
-QuestName: Legendary Shroud
-Wiki: The Codex and the Shroud
-Pack: Vale of Twilight
+QuestName: Caged Beast
+Pack: Keep on the Borderlands
 Patron: The Gatekeepers
-Favor: 14
-Level: 32
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Obstructing the Orcs
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Bugbear Bandits
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Hobgoblin Horde
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 3
+Level: 1
+Epic: 21
+
+QuestName: Total Chaos
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 3
+Level: 2
+Epic: 22
+
+QuestName: Treasure Hunt
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Violent Delights
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Watch Your Step
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Home of Memory
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 9
+Level: 3
 Epic: 32
-Style: Raid
-Link: Shroud Puzzle Solver	Shortcut	Utils\LightsOut.exe
+
+QuestName: Heart of the Problem
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 9
+Level: 3
+Epic: 32
+
+QuestName: Rosemary's Ballad
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 9
+Level: 3
+Epic: 32
+
+QuestName: The Sacred Bounty
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 6
+Level: 3
+Epic: 32
+
+QuestName: Housekeeping
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 9
+Level: 3
+Epic: 32
 
 QuestName: The Friar's Niece
 Pack: Catacombs
@@ -2114,6 +2147,16 @@ Level: 17
 Style: Raid
 Link: Shroud Puzzle Solver	Shortcut	Utils\LightsOut.exe
 
+QuestName: Legendary Shroud
+Wiki: The Codex and the Shroud
+Pack: Vale of Twilight
+Patron: The Gatekeepers
+Favor: 14
+Level: 32
+Epic: 32
+Style: Raid
+Link: Shroud Puzzle Solver	Shortcut	Utils\LightsOut.exe
+
 QuestName: Hound of Xoriat
 Pack: Vale of Twilight
 Patron: The Twelve
@@ -2195,6 +2238,14 @@ Level: 16
 Epic: 32
 
 QuestName: Too Hot to Handle
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Project Nemesis
 Pack: Masterminds of Sharn
 Patron: Sharn City Council
 Favor: 10

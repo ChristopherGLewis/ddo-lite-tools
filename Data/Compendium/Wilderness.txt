@@ -5,6 +5,7 @@ High: 3
 Explorer: 1500
 
 Area: The Borderlands
+Map: Keep-on-the-Borderlands.png
 Wiki: The Borderlands
 Map: Keep-on-the-Borderlands.png
 Link: Explorers	https://ddowiki.com/page/The_Borderlands#Explorer

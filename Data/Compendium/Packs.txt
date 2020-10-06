@@ -275,8 +275,8 @@ PackName: The Soul Splitter
 Cost: 650
 HeroicLow: 17
 HeroicHigh: 17
-HeroicLow: 32
-HeroicHigh: 32
+EpicLow: 32
+EpicHigh: 32
 Patron: Sharn City Council
 Wiki: The Soul Splitter
 Link: Named Items	Link	https://ddowiki.com/page/Update_43_named_items
@@ -286,8 +286,17 @@ Abbreviation: Borderlands
 Cost: 995
 HeroicLow: 1
 HeroicHigh: 1
-EpicLow=21
-EpicHigh=22
+EpicLow: 21
+EpicHigh: 22
 Patron: The Gatekeepers
 Wiki: Keep on the Borderlands
 Link: Named Items	Link	https://ddowiki.com/page/Update_44_named_items
+
+PackName: The Lost Gatekeepers
+HeroicLow: 3
+HeroicHigh: 3
+EpicLow: 32
+EpicHigh: 32
+Patron: The Gatekeepers
+Wiki: The Lost Gatekeepers
+Link: Named Items	Link	https://ddowiki.com/page/Update_46_named_items
