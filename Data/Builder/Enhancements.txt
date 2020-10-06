@@ -904,7 +904,7 @@ All: Tier 2: Elemental Arrows
 None: Tier 1: Elemental Arrows: Shock Arrows, Tier 2: Elemental Arrows: Shock Arrows
 
 AbilityName: Banishing Arrows
-Descrip: Arcane Archer Imbue Toggle: (Activation Cost: 20 SP. Cooldown: 10 seconds)}Your arrows gain On Vorpal: Banish an extraplanar creature back to their home plane. (Will save vs. DC 20 + Wisdom modifier + Enchantment Spell bonuses)}On hit: Inflict Pull of Reality (-1 PRR/MRR, stacks up to 25 times. 5 stacks fade away every 3 seconds).}Passive: +1 bonus to DC of Enchantment Spells}Neither the Banish effect nor the Pull of Reality affect bosses.
+Descrip: Arcane Archer Imbue Toggle: (Activation Cost: 20 SP. Cooldown: 10 seconds)}Your arrows gain On Vorpal: Banish an extraplanar creature back to their home plane. (Will save vs. DC 20 + Wisdom modifier + Enchantment Spell bonuses)}On hit: Inflict Pull of Reality (-1 PRR/MRR, stacks up to 25 times. 5 stacks fade away every 3 seconds).}Passive: +1 bonus to DC of Enchantment Spells}Neither the Banish effect nor the Pull of Reality affect bosses.}Note: Pull of Reality will only apply to outsider enemies. Banishing Arrows do not reduce the PRR/MRR of other types of creatures.
 Tier: 4
 
 AbilityName: Paralyzing Arrows
@@ -914,7 +914,7 @@ Cost: 2
 All: Tier 3: Terror Arrows
 
 AbilityName: Smiting Arrows
-Descrip: Arcane Archer Imbue Toggle: (Activation Cost: 20 SP. Cooldown: 10 seconds)}Your arrows gain On Vorpal: Destroy a construct. (Will save vs. DC 20 + Wisdom modifier + Enchantment Spell Bonuses).}Passive: +1 bonus to DC of Enchantment Spells.}On Hit: Inflicts Deconstructed (Reduced attack speed, -25% Fortification, -25% healing from Repair).}Instant kill does not affect bosses.
+Descrip: Arcane Archer Imbue Toggle: (Activation Cost: 20 SP. Cooldown: 10 seconds)}Your arrows gain On Vorpal: Destroy a construct. (Will save vs. DC 20 + Wisdom modifier + Enchantment Spell Bonuses).}Passive: +1 bonus to DC of Enchantment Spells.}On Hit: Inflicts Deconstructed (Reduced attack speed, -25% Fortification, -25% healing from Repair).}Instant kill does not affect bosses.}Note: Deconstructed will only apply to construct enemies. Smiting Arrows do not reduce the fortification of other types of creatures.
 Tier: 4
 
 AbilityName: Elemental Arrows
@@ -1362,7 +1362,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Shiv
-Descrip: Melee Attack: +1/+2/+3[W] damage. On hit: Makes a Bluff check, using your Bluff skill, for one second + .25 seconds per Rogue level. On Sneak Attack: Target also gains a -2 Fortitude Save against Poisons for 20 seconds. (Stacks 5 times.) (Cooldown: 12 seconds)}Passive: Reduces the threat of all your attacks by 5/10/15%.}Note: The Bluff effect applies to many creature types that would be immune to the regular Bluff skill, including vermin, undead, constructs and oozes (although they may still be immune to sneak attacks).
+Descrip: Melee Attack: +1/+2/+3[W] damage. On hit: Makes a Bluff check, using your Bluff skill, for one second + .25 seconds per Rogue level. On Sneak Attack: Target also gains a -2 Fortitude Save against Poisons for 20 seconds. (Stacks 5 times.) (Cooldown: 12 seconds)}Note: The Bluff effect applies to many creature types that would be immune to the regular Bluff skill, including vermin, undead, constructs and oozes (although they may still be immune to sneak attacks).
 Tier: 1
 Ranks: 3
 
@@ -2041,7 +2041,7 @@ Cost: 2
 All: Tier 3: Efficient Metamagic II
 
 AbilityName: Burning Ambition
-Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power. *Note: Burning Ambition will proc multiple times on spells that have multiple hits.
+Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Bug:  Burning ambition deals more damage than it should, according to its description. A quick test on October 2020 showed two burning ambition dice leading to a base damage of 5 to 18 before spellpower and critical hits. Taking this ability and the one above it, on a level 13 alchemist, yielded these results. This means burning ambition dice are dealing up to more than twice as much damage as advertised (1d4 per die), or perhaps some abilities are granting burning ambition dice without saying so.
 Tier: 4
 Cost: 2
 
@@ -2288,7 +2288,7 @@ Cost: 2
 All: Tier 1: Increased Empathy
 
 AbilityName: Improved Weapon Finesse
-Descrip: You can use your Dexterity modifier for damage when wielding bows, thrown weapons, and melee weapons with which you can use your Dexterity modifier to hit. The Weapon Finesse feat is NOT required to take this enhancement.}{ Note: Does not apply to crossbows.}{ Applies to Weapon Finesse weapons if you have that feat, as well as weapons with which you gain Dexterity to hit via enhancements.}{ Bug: Does not apply to Handwraps unless you have another source of dex-to-hit with them such as Basic Ninja Training.
+Descrip: You can use your Dexterity modifier for damage when wielding bows, thrown weapons, and melee weapons with which you can use your Dexterity modifier to hit. The Weapon Finesse feat is NOT required to take this enhancement.}{ Note: Does not apply to crossbows.}{ Applies to Weapon Finesse weapons if you have that feat, as well as weapons (including handwraps and unarmed) with which you gain Dexterity to hit via enhancements.
 Tier: 2
 
 AbilityName: Action Boost
@@ -2315,7 +2315,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Aimed Shot
-Descrip: Ranged Attack: Performs a ranged attack with +10 to hit and +1 Critical Damage Multiplier. On Damage: If you are in the Archer's Focus stance and Manyshot is not active, gain three stacks of Archer's Focus. (Cooldown: 10 seconds)
+Descrip: Ranged Attack: Performs a ranged attack with +10 to hit and +1 Critical Damage Multiplier. On Damage: If you are in the Archer's Focus stance and Manyshot is not active, gain three stacks of Archer's Focus. (Cooldown: 10 seconds)}Bug:  Gives stacks of Archer's Focus even if Manyshot is active.
 Tier: 3
 Cost: 2
 
@@ -2792,7 +2792,7 @@ Ranks: 3
 All: Tier 3: Power in Breath
 
 AbilityName: Augmented Breath
-Descrip: Select from:}{-Constricting Breath: 20% chance that enemies will be slowed by 50% when affected by your Breath Attacks.}{-Dazing Breath: 5% chance that enemies will be Dazed when affected by your Breath Attacks.}{-Lulling Breath: 10% chance that enemies will fall asleep when affected by your Breath Attacks.}{-Relentless Breath: 8% chance that enemies will be knocked down when affected by your Breath Attacks.
+Descrip: Select from:}{- Constricting Breath: 20% chance that enemies will be slowed by 50% when affected by your Breath Attacks.}{- Dazing Breath: 5% chance that enemies will be Dazed when affected by your Breath Attacks.}{- Lulling Breath: 10% chance that enemies will fall asleep when affected by your Breath Attacks.}{- Relentless Breath: 8% chance that enemies will be knocked down when affected by your Breath Attacks.
 Tier: 4
 Cost: 2
 All: Tier 3: Draconic Knowledge
@@ -4196,26 +4196,30 @@ Color: Green
 Stats: Intelligence, Wisdom, Charisma
 
 AbilityName: Find Familiar
-Descrip: You have been trained to keep a hunting bird. Activate this ability to summon your companion. Your pet cannot be attacked, and cannot die. Damage it causes is attributed to you. While your Hunting Bird is by your side, it grants you a +2 to Spot and Listen checks. Choose one: Summon Falcon, Summon Grey Owl, Summon Raven, Summon Snow Owl, Summon White Falcon. Your bird will remain with you in public areas, but, unlike a Wolf Companion or Iron Defender, it is considered a summoned creature. You can have only one summoned creature at a time.}{-Your choice of bird only differs in cosmetic appearance, they are otherwise identical in function. Images of the five different birds visible here}{-If you are a ranged attacker and don't have the Precise Shot feat, then an avian companion will block your arrows/bolts when it is in the line of fire.}{-Summoning an avian companion may disable some Hunting bird attacks for 4.5 seconds.}{-Summoning an avian companion may cause other summoned creature to despawn.}{-Casting summoning spells makes an avian companion despawn, but this still keeps the toggle on, and you can use Hunting Bird attacks.}{-Your death makes an avian companion despawn and toggle off this skill. You need to toggle on again to use Hunting Bird attacks.
+Descrip: Select a Familiar to accompany you on your advenures.}For each Core ability spent in this tree, including this one, your Familiar grants you +5 Force and +5 Universal Spellpower}{-File:Icon FamiliarFox.png Familiar Toggle: Summons your chosen familiar, a fox, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarIllusorySprite.png Familiar Toggle: Summons your chosen familiar, an Illusory Sprite, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarPseudoDragon.png Familiar Toggle: Summons your chosen familiar, a fPseudodragonox, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarWhiteCat.png Familiar Toggle: Summons your chosen familiar, a white cat, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarWhiteTressym.png Familiar Toggle: Summons your chosen familiar, a white tressym, to your side. Familiars will follow you and can assist in your magical endeavors
 Tier: 0
 Selector: Fox, Illusory Sprite, Pseudo Dragon, White Cat, White Tressym
 
-AbilityName: Ability Score
-Descrip: Choose an ability to improve: +1 Intelligence, Wisdom, Charisma.
+AbilityName: Ability Score I
+Descrip: Choose between Intelligence, Wisdom or Charisma}{- +1 Intelligence}{- +1 Wisdom}{- +1 Charisma
 Tier: 0
 Cost: 2
 Selector: Intelligence, Wisdom, Charisma
 
-AbilityName: Illusory Weaponry
-Descrip: <tbd>
+AbilityName: Greater Color Spray:
+Descrip: You may cast the spell Greater Colow Spray as a Spell-Like Ability. Cost: 10sp Cooldown: 8 seconds
 Tier: 0
 
-AbilityName: Familiar's Force
-Descrip: <tbd>
+AbilityName: Ability Score II
+Descrip: Choose between Intelligence, Wisdom or Charisma}{- +1 Intelligence}{- +1 Wisdom}{- +1 Charisma
+Tier: 0
+
+AbilityName: Familiar's Reach:
+Descrip: +1 Illusion DCs. Your familiar carries spells further than you would normally be able to cast them. Your spells benefit from the Enlarge Metamagic at no additional cost.
 Tier: 0
 
 AbilityName: Master Illusionist
-Descrip: <tbd>
+Descrip: Active: Shroud you and your party members, regardless of location, in illusory magic that disguises their location. They gain 95% Concealment for 10 seconds. Cooldown: 3 minutes}Passive: +2 Intelligence, Wisdom and Charisma. +2 Illusion DCs.
 Tier: 0
 
 AbilityName: Feydark Explorer
@@ -4238,13 +4242,13 @@ Descrip: +[30/60/100] Maximum Spellpoints
 Tier: 1
 Ranks: 3
 
-AbilityName: Illusory Armor
-Descrip: You may cast the spell Mage Armor as a Spell-Like Ability. In addition, while under the benefits of any Mage Armor, you gain +[2/4/6] Magical Resistance rating.}Cost: 30/20/10 SP}Cooldown: 5 seconds.
+AbilityName: Illusory Weaponry
+Descrip: You have studied Illusion to the point where you can craft more permanent manifestations of Shadow. This grants both the ability to conjure physical Shadowblades to wield as weapons as well as the ability to enchant your current weapons to be more powerful. Shadowblades are Shortswords made of force and may use your Charisma modifier for their attack and damage. As you level up, they will become more powerful. If you unequip your Shadowblades, they will dissipate into nothingness and must be summoned again. Enchanting your weapons to become Shadowblades will change their material type to Force and grant them additional bonuses. This is considered an Item Enchantment.
 Tier: 1
-Ranks: 3
+Cost: 2
 
 AbilityName: Enhanced Invisibility
-Descrip: You may cast the spell Invisibility as a Spell-Like ability. In addition, while under the effects of any source of Invisibility, you gain +3 Saves vs Traps.}Cost: 30/20/10 sp}Cooldown: 5 seconds
+Descrip: You may cast the spell Invisibility as a Spell-Like Ability. In addition, while under the effects of any source of Invisibility, you gain +15% Missile Deflection.}Cost: 30/20/10 sp}Cooldown: 5 seconds
 Tier: 2
 Ranks: 3
 
@@ -4275,7 +4279,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Distract
-Descrip: Your familiar appears at a targeted location, acting as a distraction and attacting attention of monsters who may be searching for you in the area. This will only successfully distract monsters who are not actively attacking. This ability may be used without breaking Stealth or Invisibility.
+Descrip: Your familiar appears at a targeted location, acting as a distraction and attacting attention of monsters who may be searching for you in the area. This will only successfully distract monsters who are not actively attacking. This ability may be used without breaking Stealth or Invisibility. Cooldown 30 seconds.
 Tier: 3
 Cost: 2
 
@@ -4295,7 +4299,7 @@ Tier: 4
 Cost: 2
 
 AbilityName: Fan of Shadowblades
-Descrip: Fan a series of Shadowblades outwards into a wide cone. The enemies struct take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 18/15/12 sp}Cooldown@ 14/12/10 seconds
+Descrip: Fan a series of Shadowblades outwards into a wide cone. The enemies struct take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 18/15/12 sp}Cooldown: 14/12/10 seconds
 Tier: 4
 Ranks: 3
 
@@ -4310,13 +4314,13 @@ Descrip: All of your Shadwblade spells, attacks with weapons that have been imbu
 Tier: 4
 Ranks: 3
 
-AbilityName: Illusory Agument
+AbilityName: Illusory Agumentation
 Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summoning now each grant +5 Force Spell Power and an additional +1 Illusion DCs.
 Tier: 5
 Cost: 2
 
-AbilityName: Familiar's Reach
-Descrip: Your familiar carries spells further than you would normally be able to cast them. Your spells benefit from the Enlarge Metamagic at no additional cost.
+AbilityName: Displacement
+Descrip: Metamagic: Extend, Quicken. Spell Point Cost: 6. Cooldown: 5 Seconds. You may cast the spell Displacement as a Spell-Like Ability.
 Tier: 5
 Cost: 2
 
@@ -4886,7 +4890,7 @@ Ranks: 3
 Selector: Athletic, Awareness, Focused, Negotiator, Nimble Fingers, Self Sufficient, Stealthy
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher are able to add up to 4 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
+Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a third level Alchemist (or your total character level, whichever is lower.) . +30 Spell Points.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher are able to add up to 4 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
 Tier: 1
 All: Feat: Half-Elf Dilettante
 SharedSelector: Feat: Half-Elf Dilettante
@@ -4942,7 +4946,7 @@ One: Feat: Half-Elf Dilettante: Rogue
 None: Thief-Acrobat Tier 1: Sly Flourish
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 3 or higher are able to add up to 6 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
+Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a sixth level Alchemist (or your total character level, whichever is lower.) +30 Spell Points}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 3 or higher are able to add up to 6 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
 Tier: 2
 All: Tier 1: Improved Dilettante
 SharedSelector: Tier 1: Improved Dilettante
@@ -4966,7 +4970,7 @@ Ranks: 3
 Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 
 AbilityName: Dilettante Ability Score
-Descrip: +1 to an Ability based on your Dilettante feat.}{- +1 Strength}{-Requires one of Half-Elf Dilettante: Barbarian, Fighter, Paladin, or Ranger}{- +1 Dexterity}{-Requires one of Half-Elf Dilettante: Artificer, Bard, Monk, Ranger, or Rogue}{- +1 Constitution}{-Requires one of Half-Elf Dilettante: Barbarian, Druid, or Fighter}{- +1 Intelligence}{-Requires one of Half-Elf Dilettante: Artificer, Rogue, or Wizard}{- +1 Wisdom}{-Requires one of Half-Elf Dilettante: Cleric, Druid, Favored Soul, or Monk}{- +1 Charisma}{-Requires one of Half-Elf Dilettante: Bard, Cleric, Favored Soul, Paladin, Sorcerer, or Warlock.
+Descrip: +1 to an Ability based on your Dilettante feat.}{- +1 Strength}{-Requires one of Half-Elf Dilettante: Barbarian, Fighter, Paladin, or Ranger}{- +1 Dexterity}{-Requires one of Half-Elf Dilettante: Artificer, Bard, Monk, Ranger, or Rogue}{- +1 Constitution}{-Requires one of Half-Elf Dilettante: Barbarian, Druid, or Fighter}{- +1 Intelligence}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Rogue, or Wizard}{- +1 Wisdom}{-Requires one of Half-Elf Dilettante: Cleric, Druid, Favored Soul, or Monk}{- +1 Charisma}{-Requires one of Half-Elf Dilettante: Bard, Cleric, Favored Soul, Paladin, Sorcerer, or Warlock.
 Tier: 3
 Cost: 2
 All: Tier 2: Improved Dilettante
@@ -4990,7 +4994,7 @@ Cost: 2
 All: Tier 2: Improved Recovery
 
 AbilityName: Dilettante Special Ability
-Descrip: Gain abilities from your Dilettante Class Enhancements}{- Improved Damage Reduction II: Your Barbarian damage reduction is increased by 1. +10 Hit Points. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{- Improved Recovery II: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{- Improved Spellcasting II: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{- Lesser Courage: You gain +4 to saving throws against fear and do not automatically fail saving throws against fear on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{- Master Tactics: +2 to the DC's of your Tactical abilities. This enhancement cannot be taken if you possess the Tactics enhancement from the Kensei tree.}{-Requires Half-Elf Dilettante: Fighter}{- Tanglefoot: Alchemical Trap Activate: Throws a cask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies within the area of the goo puddle take 4d6 acid damage every 2 seconds and are slowed (Reflex DC 10 + Half Character Level + Intelligence Modifier Half). (Cooldown: 30 seconds.)  This enhancement cannot be taken if you possess the Tanglefoot enhancement from the Mechanic tree.}{-Requires Half-Elf Dilettante: Rogue}{- Tempest: You gain +10% chance to make off-hand attacks when dual wielding. This enhancement cannot be taken if you possess the Tempest enhancement from the Tempest tree.}{-Requires Half-Elf Dilettante: Ranger
+Descrip: Gain abilities from your Dilettante Class Enhancements}{- Improved Damage Reduction II: Your Barbarian damage reduction is increased by 1. +10 Hit Points. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{- Improved Recovery II: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{- Improved Spellcasting II: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{- Lesser Courage: You gain +4 to saving throws against fear and do not automatically fail saving throws against fear on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{- Master Tactics: +2 to the DC's of your Tactical abilities. This enhancement cannot be taken if you possess the Tactics enhancement from the Kensei tree.}{-Requires Half-Elf Dilettante: Fighter}{- Tanglefoot: Alchemical Trap Activate: Throws a cask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies within the area of the goo puddle take 4d6 acid damage every 2 seconds and are slowed (Reflex DC 10 + Half Character Level + Intelligence Modifier Half). (Cooldown: 30 seconds.)  This enhancement cannot be taken if you possess the Tanglefoot enhancement from the Mechanic tree.}{-Requires Half-Elf Dilettante: Rogue}{- Tempest: You gain +10% chance to make off-hand attacks when dual wielding. This enhancement cannot be taken if you possess the Tempest enhancement from the Tempest tree.}{-Requires Half-Elf Dilettante: Ranger
 Tier: 4
 Cost: 2
 All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
@@ -5024,7 +5028,7 @@ One: Feat: Half-Elf Dilettante: Ranger
 None: Tempest Tier 0: Tempest
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to magical arms and armor. For item purposes you are now treated as a fourth level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a tenth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a tenth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a tenth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a tenth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 4 or higher you are able to add up to 5 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 4 or higher you may add up to 5 points of your charisma bonus to your saves. For item use purposes you are now treated as a fourth level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 4 or higher are able to add up to 8 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a fourth level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a tenth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a tenth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a tenth level Wizard (or your total character level, whichever is lower.)
+Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a tenth level Alchemist (or your total character level, whichever is lower.)}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to magical arms and armor. For item purposes you are now treated as a fourth level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a tenth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a tenth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a tenth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a tenth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 4 or higher you are able to add up to 5 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 4 or higher you may add up to 5 points of your charisma bonus to your saves. For item use purposes you are now treated as a fourth level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 4 or higher are able to add up to 8 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a fourth level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a tenth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a tenth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a tenth level Wizard (or your total character level, whichever is lower.)
 Tier: 4
 Cost: 2
 All: Tier 3: Dilettante Ability Score
@@ -6171,7 +6175,7 @@ Color: Red
 Stats: Strength, Charisma
 
 AbilityName: Slayer of Evil
-Descrip: You gain +1 to hit evil and undead creatures. Your attacks deal 1d4 additional Light damage. You resist evil influences particularly well, gaining a +2 bonus to saves against spells and effects produced by evil creatures. All Light damage from core abilities scale with 200% Melee Power.}{ Note: The light damage procs on both weapons when two-weapon fighting.
+Descrip: You gain +1 to attack evil creatures and deal 1d4 additional Light damage that scales with 200%  Melee or  Ranged Power (whichever is higher). You resist evil influences particularly well, gaining a +2 bonus to saves against spells and effects produced by evil creatures.}{ Note: The light damage procs on both weapons when two-weapon fighting.
 Tier: 0
 
 AbilityName: Courage of Heaven
@@ -6204,17 +6208,17 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Shieldbreaker
-Descrip: +1/2/3 to Sunder DC's
+Descrip: +[5/10/20]% Strikethrough
 Tier: 1
 Ranks: 3
 
 AbilityName: Knight's Authority
-Descrip: +1/2/3 Intimidate, Diplomacy, and Concentration. Tier 3 grants +1 Fortitude Save.
+Descrip: +[1/2/3] to Sunder DCs.
 Tier: 1
 Ranks: 3
 
 AbilityName: Improved Second Strikes
-Descrip: +5/10/20% bonus to Strikethrough.
+Descrip: +1/2/3 Intimidate, Diplomacy, and Concentration. Tier 3 grants +1 Fortitude Save.
 Tier: 1
 Ranks: 3
 
@@ -6235,7 +6239,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Exalted Cleave
-Descrip: Multiselector: Make a sweeping melee or ranged  attack against all nearby enemies for +3[W] damage. Shares its cooldown with the Cleave feat.}{ Note: Only does 3[1d6] with handwraps. DDO Forums
+Descrip: Multiselector: Make a sweeping melee or ranged  attack against all nearby enemies for +3[W] damage. Shares its cooldown with the Cleave feat.}{- Take a powerful shot for +3[W] damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{- Make a sweeping attack against all nearby enemies for +3[W] damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{ Note: Only does 3[1d6] with handwraps. DDO Forums
 Tier: 2
 Selector: Melee, Ranged
 
@@ -6262,7 +6266,7 @@ Tier: 3
 Ranks: 2
 
 AbilityName: Exalted Smite
-Descrip: Multiselector: improved melee or ranged smite. Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier and 0/+1/+2 to your weapon's critical threat range. Also, your Smite Evil and Exalted Smite abilities increase your Melee Power or Ranged Power by 5 for 10 seconds.
+Descrip: Multiselector}{- Exalted Smite: Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier. Smite Evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds.}{- Exalted Smite (Ranged): Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier. Smite Evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds.
 Tier: 3
 Ranks: 3
 Cost: 2
@@ -6288,7 +6292,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Ascendency
-Descrip: +2 to hit and damage with all weapons. An additional +2 to hit and damage with Favored Weapons. You gain 15% Fortification Bypass. Whenever you attack an undead or evil outsider with a Favored Weapon, you gain a stack of Blessed Purpose: +3 Sacred Bonus to Melee and Ranged Power that lasts for 6 seconds. You can acquire up to 15 stacks by continuing to attack Undead or Evil Outsiders. Switching to a non-Favored Weapon will reset your stacks.
+Descrip: +2 to hit and damage with all weapons. An additional +2 to hit and damage with Favored Weapons. You gain 15% Fortification Bypass. Whenever you attack an undead or evil outsider with a Favored Weapon, you gain a stack of Blessed Purpose: +3 Sacred Bonus to Melee and Ranged Power that lasts for 6 seconds. You can acquire up to 15 stacks (25 stacks if you have level 20 Capstone) by continuing to attack Undead or Evil Outsiders. Switching to a non-Favored Weapon will reset your stacks.
 Tier: 5
 Cost: 2
 
@@ -6304,13 +6308,13 @@ Cost: 2
 All: Tier 4: Vigor of Life
 
 AbilityName: Avenging Cleave
-Descrip: Multiselector:  Make a Melee or Ranged sweeping weapon attack against all nearby enemies for +5[W] damage. Damaged enemies gains one stack of Vulnerability.}Shares its cooldown with the Great Cleave feat.}Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
+Descrip: Multiselector}{- Avenging Cleave: Make a sweeping weapon attack against all nearby enemies for +5[W] damage. Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.}{- Avenging Shot: Take a sweeping weapon attack against all nearby enemies for +5[W] damage. Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
 Tier: 5
 Cost: 2
 Selector: Melee, Ranged
 
 AbilityName: Holy Retribution
-Descrip: Multiselector: Melee/Ranged Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for ten seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed. Evil creatures under 1000 HP must always make this save or die. Evil creatures between 1000 and 5000 HP have a 50% chance to be forced to make this save or die. Evil creatures with more than 5000 HP have a 33% chance to be forced to make this save or die. 30 second cooldown.
+Descrip: Multiselector}{- Holy Retribution: Melee Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for 10 seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed.}{- Holy Retribution Shot: Ranged Channel Divinity: Executes a powerful holy cleave against nearby targets that deals +5[W] damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for 10 seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed.}Evil creatures with under 1000 HP must always make this save or die.}Evil creatures with between 5000 and 1000 HP have a 50% chance to be forced to}make this save or die.}Evil creatures with more than 5000 have a 33% chance to be forced to make this}save or die.
 Tier: 5
 Selector: Melee, Ranged
 
@@ -6938,7 +6942,7 @@ Descrip: You gain +2 Dexterity and +2 Wisdom, +5 Sneak Attack Dice. While you ar
 Tier: 0
 
 AbilityName: Ninjutsu
-Descrip: Select one of four toggles that modify your Touch of Despair finisher: (Cooldown: 3 seconds)}{- Impending Doom: If the enemy affected by your Touch of Despair dies within the next 30 seconds, you gain 25 Ki and 25 temporary hit points. Enemies immune to your Touch of Despair cannot be Doomed.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Poison Exploit: On a failed saving throw, your Touch of Despair finisher purges an enemy of Ninja Poison, dealing 1d20 poison damage per stack of Ninja Poison removed.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Poisoned Soul: On a failed saving throw, your Touch of Despair finisher also causes your opponent to gain a stack of Ninja Poison every 6 seconds for 30 seconds.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Wave of Despair: Your Touch of Despair finisher also causes all nearby enemies to suffer one negative level.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.
+Descrip: Select one of four toggles that modify your Touch of Despair finisher: (Cooldown: 3 seconds)}{- Impending Doom: If the enemy affected by your Touch of Despair dies within the next 30 seconds, you gain 25 Ki and 25 temporary hit points. Enemies immune to your Touch of Despair cannot be Doomed.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Poison Exploit: On a failed saving throw, your Touch of Despair finisher purges an enemy of Ninja Poison, dealing 1d10 + 10 poison damage per stack of Ninja Poison removed.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Poisoned Soul: On a failed saving throw, your Touch of Despair finisher also causes your opponent to gain a stack of Ninja Poison every 6 seconds for 30 seconds.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.}{- Wave of Despair: Your Touch of Despair finisher also causes all nearby enemies to suffer one negative level.Passive: +1 to Hit and Damage while Centered, does not apply to Handwraps or Quarterstaves.
 Tier: 1
 All: Feat: Path of Inevitable Dominion
 Selector: Impending Doom, Poison Exploit, Poisoned Soul, Wave of Despair
@@ -7023,7 +7027,7 @@ Parent: Tier 1: Ninjutsu
 Siblings: Tier 2: Ninjutsu, Tier 3: Ninjutsu
 
 AbilityName: Deadly Exploits
-Descrip: Your Poison Exploit now deals 1d30/1d40/1d50 poison damage per stack of Ninja Poison removed.
+Descrip: Your Poison Exploit now deals 1d30/1d40/1d50 poison damage per stack of Ninja Poison removed.}{ Bug:  Causes Poison Exploit to do no damage, while still resetting stacks of Ninja Poison.DDO Forums
 Tier: 4
 Ranks: 3
 Cost: 2
@@ -7184,7 +7188,7 @@ Cost: 2
 All: Tier 3: Bond of Retribution
 
 AbilityName: Vampiric Bond
-Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary hit Points scales with 200% Melee Power. This can trigger at most once every 12/9/6 seconds. Bug: Not scaling with melee power. Only gives flat 20 temporary hit points.
+Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary hit Points scales with 200% Melee Power. This can trigger at most once every 12/9/6 seconds. Bug:  Not scaling with melee power. Only gives flat 20 temporary hit points.
 Tier: 5
 Ranks: 3
 
@@ -7822,7 +7826,7 @@ Descrip: +1 Rage uses per rest. (You expend Rage uses to activate your Shifting)
 Tier: 0
 
 AbilityName: Ability I
-Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Descrip: Choose between Constitution, Dexterity or Strength}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -7833,7 +7837,7 @@ Descrip: +2 Rage uses per rest.
 Tier: 0
 
 AbilityName: Ability II
-Descrip: Choose between Constitution, Dexterity, Strength or Wisdom}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength}{- +1 Wisdom
+Descrip: Choose between Constitution, Dexterity or Strength}{- +1 Constitution}{- +1 Dexterity}{- +1 Strength
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -7849,7 +7853,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Hunt & Track
-Descrip: >+[1/2/3] Spot, Listen and Intimidate
+Descrip: +[1/2/3] Spot, Listen and Intimidate
 Tier: 1
 Ranks: 3
 
@@ -7860,6 +7864,11 @@ Ranks: 3
 
 AbilityName: Hardy Shifting
 Descrip: +[1/2/3] Constitution while Shifting or Raging.
+Tier: 1
+Ranks: 3
+
+AbilityName: Self Reliant
+Descrip: +[1/2/3] to Will Saving Throws
 Tier: 1
 Ranks: 3
 
@@ -7874,32 +7883,37 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Howl
-Descrip: Nearby Allies gain +2 to Attack per 5 Character Levels you have for 20 seconds. You can use this once per Rest.
+Descrip: Release a mighty howl, granting nearby allies +2 Action Boost bonus to Attack, plus an additional 2 per 5 Character Levels you have for 20 seconds.}Cooldown: 60 Seconds
 Tier: 2
 Cost: 2
 
-AbilityName: Extra Howl
-Descrip: +[1/2/3] uses of Howl per rest.
+AbilityName: Magic Fang
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging.}Cost: 8/6/4 Hit Points}Cooldown: 20/15/10 seconds
 Tier: 2
 Ranks: 3
 
-AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 10/8/5 SP}Cooldown: 20/15/10 seconds
+AbilityName: Shred
+Descrip: Handwrap Attack: Requires equipped Handwraps. Make an attack similar to the Druid spell Shred: This attack deals an extra 3(W) damage, with +1 bonus to critical threat and multiplier to the target, and you may reduce the target's Armor Class by 4 for a short time. Some creatures may be immune to the sunder effect. Fortitude save negates. DC: 10 + Half Character Level + Highest of (Wis/Str) + Sunder bonuses.}Cost: 4 Hit Points}Cooldown: 18 seconds
 Tier: 2
-Ranks: 3
+
+AbilityName: Destructive Shifting
+Descrip: While under the effects of Razorclaw Shift, you gain Improved Destruction, +2 to Hit and Damage with Handwraps, and trip to enemies for 2 seconds on a Vorpal hit. Your Iconic Rage now Uncenters you.
+Tier: 3
+Cost: 2
 
 AbilityName: Pounce
 Descrip: Rush forward, dealing +[2/4/6]W to targets near you when you land. +[0/1/1] Critical Threat Range and +[0/0/1] Multiplier with this attack.
 Tier: 3
 Ranks: 3
 
-AbilityName: Augment Summoning
-Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification.
+AbilityName: Stronger Howl
+Descrip: When you Howl, nearby enemies take -2 to Armor Class, minus an additional 2 per 5 Character Levels you have for 20 seconds.
 Tier: 3
 
-AbilityName: Stronger Howl
-Descrip: When you Howl, nearby enemies take -2 to Attack per 5 Character Levels you have for 20 seconds.
+AbilityName: Second Claw
+Descrip: +[3/6/10]% chance to make offhand attacks, +[1/2/3]% Offhand Doublestrike.
 Tier: 3
+Ranks: 3
 
 AbilityName: Favored Enemy
 Descrip: Choose a Favored Enemy}{- Favored Enemy: Animal}{- Favored Enemy: Fey}{- Favored Enemy: Magical Beast}{- Favored Enemy: Plant}{- Favored Enemy: Reptilian}{- Favored Enemy: Vermin
@@ -7907,18 +7921,17 @@ Tier: 3
 Cost: 2
 Selector: Animal, Fey, Magical Beast, Plant, Reptilian, Vermin
 
-AbilityName: Destructive Shifting
-Descrip: While under your Iconic Rage, you gain Improved Destruction and trip enemies for 2 seconds on a Vorpal hit. Your Iconic Rage now Uncenters you.
+AbilityName: Overwhelming Shifting
+Descrip: While under the effects of Razorclaw Shift, you gain +2 to Hit and Damage with Handwraps and a +1 Primal bonus to Critical Multiplier with Handwraps.
 Tier: 4
 
 AbilityName: True Hunter
 Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
 Tier: 4
 
-AbilityName: Howl of Terror
-Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save negates.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
+AbilityName: Relentless Onslaught
+Descrip: Handwrap Attack: Requires equipped Handwraps. Make an attack similar to the Druid spell Relentless Onslaught: Perform a melee attack that deals an extra 5(W), +1 bonus to critical threat and multiplier, and knocks your target down for 4 seconds. For up to 20 seconds afterwards, as long as the target stays down, every successful hit against the target has a 30% chance of knocking it down again.}Cost: 15 Hit Points.}Cooldown: 1 minute 15 Seconds.
 Tier: 4
-Ranks: 3
 
 TreeName: Renegade Mastermaker
 Abbreviation: Mastermaker
@@ -8073,7 +8086,7 @@ Descrip: You gain +1 Hit Point and 1 Positive Energy Spell Power for each action
 Tier: 0
 
 AbilityName: Sacred Defense
-Descrip: Defensive Combat Stance:}{-+10 Physical and Magical Resistance}{-+150% bonus to threat generation with melee weapons}{-Cannot become raged while Sacred Defense is active}{-Sacred Defense and Stalwart Defense can't be active at the same time
+Descrip: Defensive Combat Stance:}{-+10 Physical and Magical Resistance Rating}{-+150% bonus to threat generation with melee weapons}{-Cannot become raged while Sacred Defense is active}{-Sacred Defense and Stalwart Defense can't be active at the same time
 Tier: 0
 
 AbilityName: Divine Righteousness
@@ -8089,7 +8102,7 @@ Descrip: +25 Healing Amp, +3 Lay on Hands charges,  +10% Sacred Bonus to Max HP,
 Tier: 0
 
 AbilityName: Eternal Defender
-Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating, +100% Threat Generation, and your range of unconsciousness extends by 250 hitpoints.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.
+Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating, +100% Melee Threat and your range of unconsciousness extends by 250 hitpoints.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.
 Tier: 0
 
 AbilityName: Item Defense
@@ -8138,7 +8151,7 @@ Flags: SelectorOnly
 Parent: Tier 1: Improved Sacred Defense
 
 AbilityName: Sacred Shield Mastery
-Descrip: +5%/+10%/+15% Shield Armor Class and +[1/2/3] Tower Shield Maximum Dexterity Bonus.
+Descrip: +[5/10/15]% Shield Armor Class and +[1/2/3] Tower Shield Maximum Dexterity Bonus.
 Tier: 2
 Ranks: 3
 All: Tier 1: Sacred Armor Mastery
@@ -8164,7 +8177,7 @@ Parent: Tier 1: Improved Sacred Defense
 Siblings: Tier 2: Improved Sacred Defense
 
 AbilityName: Greater Sacred Defense
-Descrip: Further improves your Sacred Defense stance. Choose one:}{- Hardy Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +[2/4/6] Sacred bonus to Constitution.}{- Strong Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +[2/4/6] Sacred bonus to Strength.}{- Tenacious Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +10%/+15%/+20% Competence bonus to maximum hit points.
+Descrip: Further improves your Sacred Defense stance. Choose one:}{- Hardy Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +[2/4/6] Sacred bonus to Constitution.}{- Strong Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +[2/4/6] Sacred bonus to Strength.}{- Tenacious Defense: Sacred Defence: While wearing medium or heavy armor or wielding a shield you gain a +[10/15/20]% Competence bonus to maximum hit points.
 Tier: 3
 Ranks: 3
 Flags: SelectorOnly
@@ -8184,7 +8197,7 @@ Ranks: 3
 All: Tier 3: Resistance Aura
 
 AbilityName: Swift Defense
-Descrip: Sacred Defence provides a +10% Action Boost bonus to movement speed.
+Descrip: Sacred Defense provides a +10% Action Boost bonus to movement speed.
 Tier: 4
 
 AbilityName: Greater Sacred Defense
@@ -8204,7 +8217,7 @@ Flags: SelectorOnly
 Parent: Tier 4: Reinforced Defense
 
 AbilityName: Harbored by Light
-Descrip: You gain +10/15/25 Physical and Magical Resistance Rating. You gain 1/2/3 additional uses of Lay on Hands. In addition, while you are actively blocking with a shield, enemies that attack you will take 3d4/4d4/5d4 Light Damage.
+Descrip: You gain +[10/15/25] Physical and Magical Resistance Rating. You gain [1/2/3] additional uses of Lay on Hands. In addition, while you are actively blocking with a shield, enemies that attack you will take [3/4/5]d4 Light Damage.
 Tier: 5
 Ranks: 3
 
@@ -8223,7 +8236,7 @@ Parent: Tier 3: Greater Sacred Defense
 Siblings: Tier 4: Greater Sacred Defense
 
 AbilityName: Sacred Shield
-Descrip: +10% Exceptional bonus to Armor Class, as well as +12 Spell Resistance and are protected from magic missiles  the same as the Shield (spell) spell[Unverified" the same as the Shield (spell) spell" has not been verified in-game. Please verify it!].
+Descrip: You have a +10% Exceptional bonus to Armor Class, as well as +12 Spell Resistance and are protected from Magic Missiles.
 Tier: 5
 Cost: 2
 
@@ -8562,14 +8575,14 @@ AbilityName: Regenerating Shift
 Descrip: +You regenerate 1 Rage use every 90 seconds.
 Tier: 0
 
-AbilityName: Brutality
+AbilityName: BrutBruteality Fighting
 Descrip: Select between:}{- Brutal Spellcasting: Your damaging spells generate [25/50/75]% more hate than they normally would, making enemies more likely to attack you. Cooldown: 2 seconds}{- Brutal Fighting: Activate this ability to cause your melee attacks to generate [25/50/75]% more hate, making enemies more likely to attack you. Cooldown: 2 seconds
 Tier: 1
 Ranks: 3
 Selector: Brutal Fighting, Brutal Spellcasting
 
 AbilityName: Hunt & Track
-Descrip: >+[1/2/3] Spot, Listen and Intimidate
+Descrip: +[1/2/3] Spot, Listen and Intimidate
 Tier: 1
 Ranks: 3
 
@@ -8583,8 +8596,13 @@ Descrip: +[1/2/3] Constitution while Shifting or Raging.
 Tier: 1
 Ranks: 3
 
+AbilityName: Self Reliant
+Descrip: +[1/2/3] to Will Saving Throws.
+Tier: 1
+Ranks: 3
+
 AbilityName: Shifted Alterations
-Descrip: Shoose an effect:}{- Shifted Defenses: +[4/?/?] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/?/?] Spot and +[2/?/?]% Dodge while Raging. Requires Wildhunt Shifter
+Descrip: Choice determined by your subrace:}{- Shifted Defenses: +[4/?/?] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/?/?] Spot and +[2/?/?]% Dodge while Raging. Requires Wildhunt Shifter
 Tier: 2
 Selector: Shifted Defenses, Shifted Senses
 SelectorName: Shifted Defenses
@@ -8598,7 +8616,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Howl
-Descrip: Choose between:}{- Beasthide Howl: Release a mighty howl, granting nearby allies +2 Action Boost Bonus to PRR and MRR per 5 Character Levels you have for 20 seconds. You can use this once per rest. Requires Beasthide Shifter}{- Wildhunt Howl: Release a mighty howl, granting nearby allies +1 Action Boost Bonus to Saving Throws per 10 Character Levels you have for 20 seconds. You can use this once per rest. Requires Wildhunt Shifter
+Descrip: Choice determined by your subrace:}{- Beasthide Howl: Release a mighty howl, granting nearby allies +2 Action Boost Bonus to PRR and MRR, plus an additional 2 per 5 Character Levels you have for 20 seconds. Cooldown: 60 Seconds. Requires Beasthide Shifter}{- Wildhunt Howl: Release a mighty howl, granting nearby allies +1 Action Boost Bonus to Saving Throws, plus an additional 1 per 10 Character Levels you have for 20 seconds. Cooldown: 60 Seconds. Requires Wildhunt Shifter
 Tier: 2
 Selector: Beasthide Howl, Wildhunt Howl
 SelectorName: Beasthide Howl
@@ -8606,15 +8624,14 @@ All: Feat: Shifter: Beasthide Shifter
 SelectorName: Wildhunt Howl
 All: Feat: Shifter: Wildhunt Shifter
 
-AbilityName: Extra Howling
-Descrip: +[1/2/3] uses of Howl per rest.
-Tier: 2
-All: Tier 2: Howl
-
 AbilityName: Magic Fang
 Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 10/8/5 SP}Cooldown: 20/15/10 seconds
 Tier: 2
 Ranks: 3
+
+AbilityName: Maul
+Descrip: Melee Attack: Requires an equipped Melee weapon. Make an attack similar to the Druid spell Maul: This attack deals an extra 2(W) to the target, and applies a bleeding effect that deals 1d4 slash damage every 2 seconds for 8 seconds. Striking the target successfully may also intimidate the target based on the player's intimidate skill.}Cost: 2 HP}Cooldown: 18 seconds
+Tier: 2
 
 AbilityName: Empowered by Nature
 Descrip: Choose an effect:}{- Beasthide: +10 Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +25 Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter
@@ -8630,7 +8647,7 @@ Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed min
 Tier: 3
 
 AbilityName: Stronger Howl
-Descrip: Choose between:}{- Beasthide: When you Howl, nearby enemies take -2 to Attack per 5 Character Levels you have for 20 seconds. Requires Beasthide Shifter}{- Wildhunt: When you Howl, nearby enemies take -1 to Saving Throws per 5 Character Levels you have for 20 seconds. Requires Wildhunt Shifter
+Descrip: Choose between:}{- Beasthide: When you Howl, nearby enemies take -2 to Attack, minus an additional 2 per per 5 Character Levels you have for 20 seconds. Requires Beasthide Shifter}{- Wildhunt: When you Howl, nearby enemies take -1 to Saving Throws, minus an additional 1 per 5 Character Levels you have for 20 seconds. Requires Wildhunt Shifter
 Tier: 3
 All: Tier 2: Howl
 Selector: Beasthide, Wildhunt
@@ -8639,7 +8656,7 @@ All: Tier 2: Howl, Feat: Shifter: Beasthide Shifter
 SelectorName: Wildhunt
 All: Tier 2: Howl, Feat: Shifter: Wildhunt Shifter
 
-AbilityName: Shifter Favored Enemy
+AbilityName: Favored Enemy
 Descrip: Choose a Favored Enemy}{- Favored Enemy: Animal}{- Favored Enemy: Fey}{- Favored Enemy: Magical Beast}{- Favored Enemy: Plant}{- Favored Enemy: Reptilian}{- Favored Enemy: Vermin
 Tier: 3
 Selector: Animal, Fey, Magical Beast, Plant, Reptillian, Vermin
@@ -8670,8 +8687,9 @@ Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusion
 Tier: 4
 
 AbilityName: Howl of Terror
-Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save negates.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
+Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save (18 + Wis Mod + Enchantment}bonuses) negates. This can be cast while Raging.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
 Tier: 4
+Ranks: 3
 
 TreeName: Shintao
 Type: Class
@@ -9135,7 +9153,7 @@ Cost: 2
 All: Tier 4: Song of Arcane Might
 
 AbilityName: Spell-Like Ability
-Descrip: Choose a Spell-Like AbilityMetamagic Feats can be used at no additional cost.}{- Horn of Thunder: Spell-Like Ability: Horn of Thunder. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.Blast your foes with 1d4 Sonic and 1d4 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches.}{- Mass Hold: Spell-Like Ability: Hold Monster, Mass Activation cost: 50 SP. Cooldown: [60/40/20] seconds. (DC calculated as if it were a level 6 spell)
+Descrip: Choose a Spell-Like AbilityMetamagic Feats can be used at no additional cost.}{- Horn of Thunder: Spell-Like Ability: Horn of Thunder. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.Blast your foes with 1d4 + 1 Sonic and 1d4 + 1 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches.}{- Mass Hold: Spell-Like Ability: Hold Monster, Mass Activation cost: 50 SP. Cooldown: [60/40/20] seconds. (DC calculated as if it were a level 6 spell)
 Tier: 5
 Ranks: 3
 Cost: 2
@@ -9170,7 +9188,7 @@ Descrip: Passive: +15% Exceptional bonus to Armor Class , +50% Threat, and +25 P
 Tier: 0
 
 AbilityName: Last Stand
-Descrip: Passive: You gain +2 Strength +6 Constitution +10 Physical and Magical Resist Ratings and +2 to the DCs of all Tactical Feats. Shield Action Boost: Your gain +100% Maximum hit points, +50 Physical and Magical Resistance Rating, and On Attacked: You are healed for 1d10 positive energy healing. This Action Boost does not share a cooldown with other Action Boost abilities, and can be used while helpless. (Cooldown: 3 minutes.)
+Descrip: Passive: You gain +2 Strength +6 Constitution +10 Physical and Magical Resist Ratings and +2 to the DCs of all Tactical Feats. Shield Action Boost: You gain +100% Maximum hit points, +50 Physical and Magical Resistance Rating, and On Attacked: You are healed for 1d10 positive energy healing. This Action Boost does not share a cooldown with other Action Boost abilities, and can be used while helpless. (Cooldown: 3 minutes.)}{ Note: This action boost does not increase your current hit points to match your new maximum, as one would expect. (Last tested on Update 46.3)
 Tier: 0
 
 AbilityName: Item Defense
@@ -9818,7 +9836,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Sly Flourish
-Descrip: Melee Attack: +1/2/3[W] with +1/2/3 critical threat range. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stacks 5 times.) (Cooldown: 8 seconds)}{ Passively provides: Reduces the threat of all attacks by 5/10/15%.
+Descrip: Melee Attack: +1/2/3[W] with +1/2/3 critical threat range. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stacks 5 times.) (Cooldown: 8 seconds)}{ Passively provides: 5/10/15% threat reduction (Note: only reduces melee threat).
 Tier: 1
 Ranks: 3
 None: Half-Elf Tier 2: Dilettante Special Ability: Sly Flourish
@@ -9873,7 +9891,7 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Sweeping Strikes
-Descrip: Melee Quarterstaff Trip Cleave Attack: +1/3/5[W] to all nearby enemies and trips them. (Listed DC: Balance DC 10 + Rogue Level + Dexterity Modifier Negates trip). Cooldown: 30/25/20 seconds. Observed effect: see tests.
+Descrip: Melee Quarterstaff Trip Cleave Attack: +1/3/5[W] to all nearby enemies and trips them. Listed DC: Balance DC 10 + Rogue Level + Dexterity Modifier Negates trip (Actual DC is 10/12/14 + Rogue Level + Dexterity Modifier). Cooldown: 30/25/20 seconds. Observed effect: see tests.
 Tier: 3
 Ranks: 3
 All: Tier 2: Quick Strike
@@ -11478,7 +11496,7 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Forest Origins
-Descrip: Multiselector}{-Rugged Upbringing: While Raging, gain +5% Doublestrike with Longswords, Rapiers, Scimitars, and Falchions.}{-Oath of the Wild: You take an oath to forego metal armor, metal shields, and Rune Arms. As long as you do not have these equipped, you gain +10 Physical Resistance Rating.}{-Faith of the Forest: You now count Rapiers, Falchions, and Shortbows as Favored weapons, regardless of your Deity.
+Descrip: Multiselector}{- Rugged Upbringing: While Raging, gain +5% Doublestrike with Longswords, Rapiers, Scimitars, and Falchions.}{- Oath of the Wild: You take an oath to forego metal armor, metal shields, and Rune Arms. As long as you do not have these equipped, you gain +10 Physical Resistance Rating.}{- Faith of the Forest: You now count Rapiers, Falchions, and Shortbows as Favored weapons, regardless of your Deity.
 Tier: 3
 Flags: SelectorOnly
 Selector: Rugged Upbringing, Oath of the Wild, Faith of the Forest
@@ -11508,7 +11526,7 @@ Cost: 4
 All: Tier 2: Arcanum
 
 AbilityName: Forest's Versatility
-Descrip: Multiselector}{-Wild Swings: +5% Offhand Strike Chance}{-Drive Them Back: +10% Chance of Shield Bash with non-metal shields.}{-Ferocity: +3 to damage while using Two-handed Weapons.}{-Like a Leaf: +2 to hit and damage while Single Weapon Fighting.}{-Through the Branches: +3% Doubleshot with Longbows and Shortbows.}{-Vigor SLA: 10 Spell Points, 20 second cooldown.
+Descrip: Multiselector}{- Wild Swings: +5% Offhand Strike Chance}{- Drive Them Back: +10% Chance of Shield Bash with non-metal shields.}{- Ferocity: +3 to damage while using Two-handed Weapons.}{- Like a Leaf: +2 to hit and damage while Single Weapon Fighting.}{- Through the Branches: +3% Doubleshot with Longbows and Shortbows.}{- Vigor SLA: 10 Spell Points, 20 second cooldown.
 Tier: 4
 Flags: SelectorOnly
 Selector: Wild Swings, Drive Them Back, Ferocity, Like a Leaf, Through the Branches, Vigor SLA

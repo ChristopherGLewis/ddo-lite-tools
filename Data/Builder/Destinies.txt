@@ -29,7 +29,7 @@ Cost: 2
 One: Tier 1: Bane of Undeath, Feat: Turn Undead
 
 AbilityName: Consecration
-Descrip: Active Ability: The ground you are standing on is consecrated. Evil creatures standing on consecrated ground are burned every 3 seconds, gaining a stack of Purification and taking 1d6 damage per character level. This damage is half Fire, half Good. Both damage components are affected by Fire Spell Power. (Cooldown: [30/25/20] seconds). Duration 15 seconds. Activation Cost: [50/40/30] Spell Points.
+Descrip: Active Ability: The ground you are standing on is consecrated. Evil creatures standing on consecrated ground are burned every 3 seconds, gaining a stack of Purification and taking 1d6 damage per character level. This damage is half Fire, half Good. Both damage components are affected by Fire Spell Power. (Cooldown: [30/25/20] seconds). Duration 15 seconds. Activation Cost: [50/40/30] Spell Points.} Note: Checks spell power every tick.
 Tier: 2
 Ranks: 3
 
@@ -44,12 +44,12 @@ Tier: 2
 Cost: 2
 
 AbilityName: Stand and Be Judged
-Descrip: Active Ability: (Cooldown [30/25/20] seconds) Activation Cost: [25/20/15] Spell Points. A targeted foe must make a Will saving throw or be stunned for 30 seconds. (DC: 10 + Character Level + Wisdom Modifier + Stunning Bonuses)}{ Bug:  Currently benefits twice as much from stunning and combat mastery items as and benefits from Deadly Instinct while wearing insightful items.
+Descrip: Active Ability: (Cooldown [30/25/20] seconds) Activation Cost: [25/20/15] Spell Points. A targeted foe must make a Will saving throw or be stunned for 30 seconds. (DC: 10 + Character Level + Wisdom Modifier + Stunning Bonuses)}{ Bug:  Currently benefits twice as much from stunning and combat mastery items and benefits from Deadly Instinct while wearing insightful items.
 Tier: 3
 Ranks: 3
 
 AbilityName: Sacred Ground
-Descrip: Passive Bonus: While standing on consecrated ground you and your allies (note that despite the description, hirelings are not healed by this effect) are healed every 3 seconds for 1 point of positive energy per character level. This is affected by your positive spell power.}{ Bug:  Does not include the Heal skill when calculating positive spell power.
+Descrip: Passive Bonus: While standing on consecrated ground you and your allies (note that despite the description, hirelings are not healed by this effect) are healed every 3 seconds for 1 point of positive energy per character level. This is affected by your positive spell power.  Note: Checks spell power every tick and is not subject to spell criticals. It can be used while raging.}{ Bug:  Does not include the Heal skill when calculating positive spell power.
 Tier: 3
 Cost: 2
 All: Tier 2: Consecration
@@ -301,7 +301,7 @@ Cost: 2
 All: Tier 2: Judgment
 
 AbilityName: Shadows Upon You
-Descrip: Active Ability: (Cooldown 20 seconds, 20sp) Target foe becomes cursed with Shadows Upon You, reducing all saving throws by -2 for 20 seconds. Whenever this foe is damaged by spells or attacks, saving throws are reduced by an additional -1 for 5 seconds. Stacks up to 10 times.
+Descrip: Active Ability: (Cooldown 20 seconds, 20sp) Target foe becomes cursed with Shadows Upon You, reducing all saving throws by -2 for 20 seconds. Whenever this foe is damaged by spells or attacks, saving throws are reduced by an additional -1 for 5 seconds. Stacks up to 10 times.}Bug:  Alchemist vial spells won't trigger additional effect.
 Tier: 3
 Cost: 2
 
@@ -393,7 +393,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Bound Fate
-Descrip: Bardic Curse: Your target must make a Will save or be bound in place briefly. In addition, your target will become [6/10/12]% more vulnerable to magical damage, and also suffers -[5/10/15] Spell Resistance and -[4/6/8] damage. Duration: 45 seconds}'The chains of Fate have you, demon, and you are too dumb to know you are already dead.'}--Larisong
+Descrip: Bardic Curse: Your target must make a Will save or be bound in place briefly. In addition, your target will become [6/10/12]% more vulnerable to magical damage, and also suffers -[5/10/15] Spell Resistance and -[4/6/8] damage. Duration: 45 seconds. Cooldown: 1 minute.}'The chains of Fate have you, demon, and you are too dumb to know you are already dead.'}--Larisong
 Tier: 2
 Ranks: 3
 
@@ -584,7 +584,7 @@ Tier: 6
 Cost: 2
 
 AbilityName: Bloodbath
-Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active, you gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration.
+Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active, you gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration. *Note:  This does not provide the extra 6 melee power, it is only an 100% with, or without, the THF line.
 Tier: 6
 Cost: 2
 
@@ -990,7 +990,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Tsunami
-Descrip: Active (50SP to activate) (7 sec cooldown) (SR: no) (Empower, Maximize, Quicken, Heighten, Enlarge)}Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.}Bug: The knockdown cannot be negated, regardless of DC or Fortitude save, as long as the monster does not resist Tsunami completely (is not an Ooze, Plant, etc) and can be knocked down (is not a wraith, ghost, turret, etc). This makes it an effective form of no-save crowd control against a huge portion of enemies in DDO.}Bug: The damage does not scale with character level, for many classes. It seems to scale properly with Druid level. It definitely does not scale with character level for Sorcerer, Bard, Favored Soul, and Cleric. For these classes, the damage is as if the spell were cast at character level 1 (base total 30 + 1d10 cold + 30 + 1d10 bludgeoning damage, which is then modified by spellpower and critical chance).
+Descrip: Active (50SP to activate) (7 sec cooldown) (SR: no) (Empower, Maximize, Quicken, Heighten, Enlarge)}Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.}Bug:  When Tsunami is cast with the Quicken Spell Metamagic[1], the knockdown cannot be negated, regardless of DC or Fortitude save, as long as the monster does not resist Tsunami completely (is not an Ooze, Plant, etc) and can be knocked down (is not a wraith, ghost, turret, etc). This makes it an effective form of no-save crowd control against a huge portion of enemies in DDO. (If you do not use Quicken, the knockdown portion can fail.)}Bug: The damage does not scale with character level, for many classes. It seems to scale properly with Druid level. It definitely does not scale with character level for Sorcerer, Bard, Favored Soul, and Cleric. For these classes, the damage is as if the spell were cast at character level 1 (base total 30 + 1d10 cold + 30 + 1d10 bludgeoning damage, which is then modified by spellpower and critical chance).
 Tier: 3
 Cost: 2
 
@@ -1014,7 +1014,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Stormrage
-Descrip: Active (50SP to activate) (12 sec cooldown) (SR: No) (Quicken)}Enemies damaged by your attacks or spells are also struck by lightning, dealing 10d20 electric damage, halved on a reflex save vs. DC 50. Lightning strikes up to one enemy each second. You also gain featherfall and Deflect Arrows. Lasts 18 seconds.
+Descrip: Active (50SP to activate) (12 sec cooldown) (SR: No) (Quicken)}Enemies damaged by your attacks or spells are also struck by lightning, dealing 10d20 electric damage, halved on a reflex save vs. DC 50. Lightning strikes up to one enemy each second. You also gain featherfall and Deflect Arrows. Lasts 18 seconds. See also tests from 2020.
 Tier: 4
 Cost: 2
 
