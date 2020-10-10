@@ -255,10 +255,10 @@ Private Function MakeStatLine(ByVal penStat As StatEnum, pblnTotal As Boolean, p
         strReturn = strReturn & strStat
     Next
     If Not pblnTotal Then
-        If build.tome(penStat) = 0 Then
+        If build.Tome(penStat) = 0 Then
             strStat = "   "
         Else
-            strStat = " " & Right$("  " & build.tome(penStat), 2)
+            strStat = " " & Right$("  " & build.Tome(penStat), 2)
             pblnInclude = True
         End If
         strReturn = strReturn & strStat
@@ -898,8 +898,8 @@ Private Sub ParseStatLine(penStat As StatEnum)
         build.StatPoints(i, penStat) = Val(Trim$(Mid$(mstrValue, (i * 6) + 1, 4)))
         build.StatPoints(i, 0) = build.StatPoints(i, 0) + build.StatPoints(i, penStat)
     Next
-    build.tome(penStat) = Val(Trim$(Mid$(mstrValue, 25, 4)))
-    If build.tome(penStat) > tomes.Stat.Max Then build.tome(penStat) = tomes.Stat.Max
+    build.Tome(penStat) = Val(Trim$(Mid$(mstrValue, 25, 4)))
+    If build.Tome(penStat) > tomes.Stat.Max Then build.Tome(penStat) = tomes.Stat.Max
 End Sub
 
 
@@ -982,6 +982,10 @@ Private Function FindFeat(pstrRaw As String, pstrFeat As String, pstrSelector As
     Else
         pstrFeat = Left$(pstrRaw, lngPos - 1)
         pstrSelector = Trim$(Mid$(pstrRaw, lngPos + 1))
+        '2020.10.07 - hack to fix AchStudies which has a ":" in the feat name
+        If (pstrFeat = "Alchemical Studies") Then
+            pstrFeat = Trim(pstrRaw)
+        End If
     End If
     lngFeat = DeprecateGetFeatID(pstrFeat)
     If lngFeat Then

@@ -2133,32 +2133,35 @@ Descrip: You can now move while drinking potions.
 Flags: Unselectable
 Class: Alchemist 3
 
-FeatName: Alchemical Studies: Pyrite
+FeatName: Alchemical Studies - Pyrite
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
-FeatName: Alchemical Studies: Verudite
+FeatName: Alchemical Studies - Verudite
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
-FeatName: Alchemical Studies: Orchidium
+FeatName: Alchemical Studies - Orchidium
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
 FeatName: Battalion Brew
 Group: Heroic, Alchemy
