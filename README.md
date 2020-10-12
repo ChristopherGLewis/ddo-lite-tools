@@ -13,6 +13,9 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.3.1
+Fix for Alchemical Studies. Alchemical Studies - X can be taken at as a Class Feat, but only 2 times per Reaction. Recrawled all trees.  Updated quest info per tremlas (Thanks!)
+
 ### 3.3.0
 Added Shifter race, Razorclaw Shifter iconic, and Feydark Illusionist tree.  Recrawled all trees.  Updated quest info per SardaofChaos (Thanks!)
 
