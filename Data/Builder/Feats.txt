@@ -1343,7 +1343,7 @@ Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Spellcasting passive feats
 Descrip: +140 Maximum Spell Points}+10 Maximum Caster Level for selected spells and SLAs
 Level: 24
-Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, the Dead, the Wilds, Water
+Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, Poisons, Spellvials, the Dead, the Wilds, Water
 SelectorName: Air
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shocking Grasp}{-Electric Loop}{-Lightning Bolt
 SelectorName: Alignment
@@ -1360,6 +1360,10 @@ SelectorName: Light
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Sun Bolt}{-Searing Light}{-Divine Punishment
 SelectorName: Music
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater Shout}{-Sonic Blast}{-Reverberate
+SelectorName: Poisons
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
+SelectorName: Spellvials
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Multivial}{-Elemental Obliteration
 SelectorName: the Dead
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
 SelectorName: the Wilds
