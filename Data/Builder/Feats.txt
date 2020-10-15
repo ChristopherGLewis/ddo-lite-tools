@@ -632,7 +632,7 @@ FeatName: Epic Spell Power
 Group: Destiny, Spellcasting
 Descrip: +20 Spell Power of the selected type. This feat can be taken multiple times, though each time must be for a different type.
 Level: 26
-Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Positive, Repair, Sonic
+Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
 
 FeatName: Epic Will
 Group: Epic, Defense
