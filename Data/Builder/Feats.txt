@@ -2222,7 +2222,7 @@ ClassBonus: Alchemist
 
 FeatName: Accelerate Spell
 Group: Heroic, Spellcasting
-Descrip: Doubles the duration of a spell at the cost of +10 spell points per cast.
+Descrip: While this Metamagic feat is active, the projectiles of spells affected by Accelerate Spell fly faster and with less of an arc, but consume 5 additional spell points.
 CanCastSpell: 1
 ClassBonus: Artificer, Alchemist
 Class: Alchemist 8, Artificer 8
