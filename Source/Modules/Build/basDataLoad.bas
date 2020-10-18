@@ -757,7 +757,7 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         If lngValue < 1 Or lngValue > 20 Then LogError Else .BAB = lngValue
                     Case "repeat"
                         Select Case lngValue
-                            Case 1, 3, 99: .Times = lngValue
+                            Case 1, 2, 3, 99: .Times = lngValue
                             Case Else: LogError
                         End Select
                     Case "stat"

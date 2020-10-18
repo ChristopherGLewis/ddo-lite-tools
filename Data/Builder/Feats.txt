@@ -632,7 +632,7 @@ FeatName: Epic Spell Power
 Group: Destiny, Spellcasting
 Descrip: +20 Spell Power of the selected type. This feat can be taken multiple times, though each time must be for a different type.
 Level: 26
-Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Positive, Repair, Sonic
+Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
 
 FeatName: Epic Will
 Group: Epic, Defense
@@ -1343,7 +1343,7 @@ Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Spellcasting passive feats
 Descrip: +140 Maximum Spell Points}+10 Maximum Caster Level for selected spells and SLAs
 Level: 24
-Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, the Dead, the Wilds, Water
+Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, Poisons, Spellvials, the Dead, the Wilds, Water
 SelectorName: Air
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shocking Grasp}{-Electric Loop}{-Lightning Bolt
 SelectorName: Alignment
@@ -1360,6 +1360,10 @@ SelectorName: Light
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Sun Bolt}{-Searing Light}{-Divine Punishment
 SelectorName: Music
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater Shout}{-Sonic Blast}{-Reverberate
+SelectorName: Poisons
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
+SelectorName: Spellvials
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Multivial}{-Elemental Obliteration
 SelectorName: the Dead
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
 SelectorName: the Wilds
@@ -2133,32 +2137,35 @@ Descrip: You can now move while drinking potions.
 Flags: Unselectable
 Class: Alchemist 3
 
-FeatName: Alchemical Studies: Pyrite
+FeatName: Alchemical Studies - Pyrite
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
-FeatName: Alchemical Studies: Verudite
+FeatName: Alchemical Studies - Verudite
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
-FeatName: Alchemical Studies: Orchidium
+FeatName: Alchemical Studies - Orchidium
 Group: Alchemy
 Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
 Class: Alchemist 4
 ClassBonus: Alchemist
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
 
 FeatName: Battalion Brew
 Group: Heroic, Alchemy
@@ -2215,7 +2222,7 @@ ClassBonus: Alchemist
 
 FeatName: Accelerate Spell
 Group: Heroic, Spellcasting
-Descrip: Doubles the duration of a spell at the cost of +10 spell points per cast.
+Descrip: While this Metamagic feat is active, the projectiles of spells affected by Accelerate Spell fly faster and with less of an arc, but consume 5 additional spell points.
 CanCastSpell: 1
 ClassBonus: Artificer, Alchemist
 Class: Alchemist 8, Artificer 8

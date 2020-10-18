@@ -1915,13 +1915,13 @@ Descrip: All equipped weapons are considered Spellcasting Implements.}While in P
 Tier: 0
 
 AbilityName: Liquid Power I
-Descrip: Select an Element to specialize in.}{- Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{- Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{- Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{- Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{- Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +5 Fire, Cold, Electric, Acid, and Poison Spell Power
+Descrip: Select an Element to specialize in.}{- Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{- Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{- Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{- Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{- Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +5 Fire, Cold, Electric, Acid, and Poison Spell Power. Hidden: Grants an extra Burning Ambition dice
 Tier: 0
 Flags: SelectorOnly
 Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
 AbilityName: Liquid Power II
-Descrip: Select an Element to specialize in.}{- Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{- Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{- Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{- Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{- Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.
+Descrip: Select an Element to specialize in.}{- Liquid Power Acid: You gain +1 Caster Level with Acid Spells.}{- Liquid Power Cold: You gain +1 Caster Level with Cold Spells.}{- Liquid Power Electric: You gain +1 Caster Level with Electric Spells.}{- Liquid Power Fire: You gain +1 Caster Level with Fire Spells.}{- Liquid Power Poison: You gain +1 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage. Hidden: Grants an extra Burning Ambition dice
 Tier: 0
 Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
@@ -2041,7 +2041,7 @@ Cost: 2
 All: Tier 3: Efficient Metamagic II
 
 AbilityName: Burning Ambition
-Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Bug:  Burning ambition deals more damage than it should, according to its description. A quick test on October 2020 showed two burning ambition dice leading to a base damage of 5 to 18 before spellpower and critical hits. Taking this ability and the one above it, on a level 13 alchemist, yielded these results. This means burning ambition dice are dealing up to more than twice as much damage as advertised (1d4 per die), or perhaps some abilities are granting burning ambition dice without saying so.
+Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Bug:  Core 3 and 4 add an additional burning ambition dice each.
 Tier: 4
 Cost: 2
 
@@ -3321,7 +3321,7 @@ Cost: 2
 All: Tier 2: Spellpower Boost
 
 AbilityName: Critical Mastery
-Descrip: +1/+2/+3 to attack rolls to confirm critical hits.
+Descrip: +1/2/3 to confirm critical hits and critical hit damage (before weapon multipliers)
 Tier: 3
 Ranks: 3
 
@@ -3476,7 +3476,7 @@ Cost: 2
 All: Tier 2: Spellpower Boost
 
 AbilityName: Critical Mastery
-Descrip: +1/+2/+3 to attack rolls to confirm critical hits.
+Descrip: +1/2/3 to confirm critical hits and critical hit damage (before weapon multipliers)
 Tier: 3
 Ranks: 3
 
@@ -9420,7 +9420,7 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Different Tack
-Descrip: Choose One:}{- Smooth Flourishes: You get Charisma to Damage with weapon attacks while Single Weapon Fighting.}{- Swift Strikes: You get Dexterity to Damage with weapon attacks while Single Weapon Fighting.}{- Two Steps Ahead: You get Intelligence to Damage with weapon attacks while Single Weapon Fighting.}{-Note: Applies to orbs as well.
+Descrip: Choose One:}{- Smooth Flourishes: You get Charisma to Damage with weapon attacks while swashbuckling.}{- Swift Strikes: You get Dexterity to Damage with weapon attacks while swashbuckling.}{- Two Steps Ahead: You get Intelligence to Damage with weapon attacks while swashbuckling.}{-Note: Applies to orbs as well.
 Tier: 3
 Cost: 2
 All: Feat: Single Weapon Fighting
@@ -9785,7 +9785,7 @@ Cost: 2
 All: Tier 4: Whirling Blades
 
 AbilityName: Dance of Death
-Descrip: Grants you the ability to Strikethrough with melee attacks regardless of Combat Style for the duration of the buff (10 seconds), and grants +50%/100%/200% Strikethrough Chance for the duration of the buff. These replace the previous component that allowed you to hit multiple targets directly. Cooldown: 15 seconds. This buff applies even if the attack is missed.
+Descrip: Melee Dual Wielding Attack: Deals 1/3/5[W]damage. On hit: For 10 seconds, you gain the ability to Strikethrough regardless of combat style. You also gain +0/100/200 Strikethrough for the duration.}(Note: the initial attack only works if dual wielding weapons. However, the Strikethrough ability and bonus do persist through weapon swaps to other styles, such as Sword and Board or SWF with weapons like longsword or dagger, as described. The bonus appears to apply whether of not the attack hits anything.)
 Tier: 5
 Ranks: 3
 
@@ -10381,7 +10381,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Magical Subtlety
-Descrip: -[20/30/40]% threat generation with melee attacks.}Antirequisite: This enhancement cannot be taken at the same time as Subtlety enhancements in other trees.}{ Bug:  This enhancement can be taken at the same time as the Subtlety enhancement from Ninja Spy.
+Descrip: -[20/30/40]% threat generation with melee attacks.}Antirequisite: This enhancement cannot be taken at the same time as Subtlety enhancements in other trees.}{ Bug:  This enhancement can be taken at the same time as other Subtlety enhancements, such as from Bombardier and Ninja Spy.
 Tier: 1
 Ranks: 3
 
@@ -11496,7 +11496,7 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Forest Origins
-Descrip: Multiselector}{- Rugged Upbringing: While Raging, gain +5% Doublestrike with Longswords, Rapiers, Scimitars, and Falchions.}{- Oath of the Wild: You take an oath to forego metal armor, metal shields, and Rune Arms. As long as you do not have these equipped, you gain +10 Physical Resistance Rating.}{- Faith of the Forest: You now count Rapiers, Falchions, and Shortbows as Favored weapons, regardless of your Deity.
+Descrip: Multiselector}{- Rugged Upbringing: While Raging, gain +5% Doublestrike with Longswords, Rapiers, Scimitars, and Falchions.}{- Oath of the Wild: You take an oath to forego metal armor, metal shields, and Rune Arms. As long as you do not have these equipped, you gain +10 Physical Resistance Rating.}{- Faith of the Forest: You now count Rapiers, Falchions, and Shortbows as Favored weapons, regardless of your Deity, for the purpose of everything in the Warpriest tree, the War Soul tree, Favored Soul Grace of Battle, and Favored Soul Knowledge of Battle. (Your basic Deity Feats do not add hit+damage with these weapons).
 Tier: 3
 Flags: SelectorOnly
 Selector: Rugged Upbringing, Oath of the Wild, Faith of the Forest
