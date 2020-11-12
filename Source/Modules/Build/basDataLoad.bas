@@ -500,6 +500,7 @@ Public Function SeekSpell(pstrSpellName As String) As Long
     Dim lngMid As Long
     Dim lngLast As Long
     
+    'Binary search into spell list - Spells has to be sorted.
     lngFirst = 1
     lngLast = db.Spells
     Do While lngFirst <= lngLast
@@ -1280,6 +1281,7 @@ Private Function LoadTreeHeader(pstrRaw As String, ptypTree As TreeType) As Bool
     Dim enStat As StatEnum
     Dim i As Long
     
+    CleanText pstrRaw
     strLine = Split(pstrRaw, vbNewLine)
     With ptypTree
         .TreeName = strLine(0)
@@ -1932,8 +1934,8 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
         Exit Function
     End If
     ParseLine = True
-    pstrField = LCase$(Trim$(Left$(pstrLine, lngPos - 1)))
-    pstrLine = Trim$(Mid$(pstrLine, lngPos + 1))
+    pstrField = LCase$(TrimAll(Left$(pstrLine, lngPos - 1)))
+    pstrLine = TrimAll(Mid$(pstrLine, lngPos + 1))
     ' Descriptions
     If Left$(pstrField, 4) = "wiki" Or pstrField = "descrip" Then
         pstrItem = pstrLine
