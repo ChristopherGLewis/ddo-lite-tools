@@ -102,8 +102,8 @@ Private Sub LoadRace(ByVal pstrRaw As String)
     Dim i As Long
     
     log.Activity = actFindRace
-    CleanText pstrRaw
-    strLine = Split(pstrRaw, vbNewLine)
+    CleanText pstrRaw  'Remove trailing CRLF
+    strLine = Split(pstrRaw, vbNewLine) 'Make an array
     log.LoadItem = Trim$(strLine(0))
     enRace = GetRaceID(log.LoadItem)
     If enRace = reAny Then
@@ -757,6 +757,7 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         If lngValue < 1 Or lngValue > 20 Then LogError Else .BAB = lngValue
                     Case "repeat"
                         Select Case lngValue
+                            ' Updated 2020.10.07 to allow for 2 ranks of Alchemical Studies: xxx
                             Case 1, 2, 3, 99: .Times = lngValue
                             Case Else: LogError
                         End Select
@@ -1922,7 +1923,7 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
     plngValue = 0
     If plngListMax <> -1 Then Erase pstrList
     plngListMax = -1
-    pstrLine = Trim$(pstrLine)
+    pstrLine = TrimAll(pstrLine)
     If Len(pstrLine) = 0 Then Exit Function
     ' Field
     lngPos = InStr(pstrLine, ":")
