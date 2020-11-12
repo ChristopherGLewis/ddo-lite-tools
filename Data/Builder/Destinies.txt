@@ -55,7 +55,7 @@ Cost: 2
 All: Tier 2: Consecration
 
 AbilityName: Empyrean Magic
-Descrip: Passive Bonus: Whenever you cast a fire, light, or healing spell you gain a stack of Empyrean Fervor. Each stack of Empyrean Fervor gives you +2 Sacred bonus to Universal Spell power, +1% Sacred Bonus to Critical Chance with all spells. Duration: 10 seconds. Stacks 10 times.
+Descrip: Passive Bonus: Whenever you cast a fire, light, or healing spell you gain a stack of Empyrean Fervor. Each stack of Empyrean Fervor gives you +2 Sacred bonus to Universal Spell power, +1% Sacred Bonus to Critical Chance with all spells. Duration: 10 seconds. Stacks 10 times.}Bug:  Alchemist fire and healing spells and spell-like-abilities do not trigger Empyrean Magic.
 Tier: 3
 
 AbilityName: Blessed Blades
@@ -388,7 +388,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Second Harmonic Chord
-Descrip: Your Inspire Courage now grants an additional +[1/2/3] to all Skills.}Passively, you benefit from an additional +[1/2/3] to all Skills.}'Unleash the winds! Fly, my friends! Fly on to your deadly marks!'}--Gwynn Glowsing, Huntmaster of House Phiarlan
+Descrip: Your Inspire Competence now grants an additional +[1/2/3] to all Skills.}Passively, you benefit from an additional +[1/2/3] to all Skills.}'Unleash the winds! Fly, my friends! Fly on to your deadly marks!'}--Gwynn Glowsing, Huntmaster of House Phiarlan
 Tier: 2
 Ranks: 3
 
@@ -563,13 +563,13 @@ Descrip: Passive Bonus: +10 Melee Power with Melee Weapons. While fighting in Tw
 Tier: 5
 
 AbilityName: Fury Made Placid
-Descrip: Active Ability: (Cooldown 30 seconds) Spend 1 Adrenaline: Stop being raged. You heal 2d100 HP every two seconds over the next ten seconds. This healing scales with Melee Power. For 3 minutes you gain +6 wisdom, +10% Doublestrike, +20 PRR and MRR, cannot benefit from rage or adrenaline, and sentient enemies attacking you physically or magically have a 3% chance to become paralyzed and helpless with regret for 3 seconds with no save. Cannot train if you have Fury Eternal.
+Descrip: Active Ability: (Cooldown 30 seconds) Spend 1 Adrenaline: Stop being raged. You heal 2d100 HP every two seconds over the next ten seconds. This healing scales with Melee Power. For 3 minutes you gain +6 wisdom, +10% Doublestrike, +20 PRR and MRR, cannot benefit from rage or adrenaline, and sentient enemies attacking you physically or magically have a 3% chance to become paralyzed and helpless with regret for 3 seconds with no save.
 Tier: 5
 Cost: 2
 None: Tier 5: Fury Eternal
 
 AbilityName: Fury Eternal
-Descrip: Passive Bonus: +1 Adrenaline max use. Whenever you Vorpal Strike on melee or ranged attack, 33% chance to regain 1 Adrenaline use. Cannot train Fury Made Placid.
+Descrip: Passive Bonus: +1 Adrenaline max use. Whenever you Vorpal Strike on melee or ranged attack, 33% chance to regain 1 Adrenaline use.
 Tier: 5
 None: Tier 5: Fury Made Placid
 
