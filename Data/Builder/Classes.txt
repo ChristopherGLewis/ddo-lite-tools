@@ -8,13 +8,13 @@ Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcra
 GrantedFeats1: Magical Training
 GrantedFeats2: Insightful Reflexes
 GrantedFeats3: Alchemy on the Run
-BonusFeat: 4, 8, 16, 20
+BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
 SpellSlots1: 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
 SpellSlots2: 0, 0, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5
-SpellSlots3: 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5
+SpellSlots3: 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5
 SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 4, 5, 5, 5, 5
 SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 4, 5
