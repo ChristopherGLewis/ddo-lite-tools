@@ -155,6 +155,13 @@ Begin VB.Form frmRefreshData
       Top             =   3780
       Width           =   1812
    End
+   Begin VB.Label lblCurrent 
+      Height          =   375
+      Left            =   360
+      TabIndex        =   13
+      Top             =   3840
+      Width           =   4215
+   End
    Begin VB.Label lblHelp 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
@@ -250,10 +257,10 @@ Private mlngSpellPage As Long
 Private mblnSortSpells As Boolean
 
 Private mblnOverride As Boolean
-Private mlngValue(3) As Long
+Private mlngValue(3) As Long   ' This records the progress. (0) is total, 1/spells, 2/enh, 3/Dest
 Private mlngTotal(3) As Long
 Private mlngCurrent As Long
-Private mblnCrawl(3) As Long
+Private mblnCrawl(3) As Long  'This records if something is to be crawled or has been crawled
 
 Private mtypChange() As ChangeType
 Private mlngChanges As Long
@@ -281,8 +288,12 @@ Private Sub Form_Unload(Cancel As Integer)
 End Sub
 
 Private Sub chkRefresh_Click(Index As Integer)
+'Checkbox used as a push button.
     Dim blnAll As Boolean
     Dim i As Long
+    
+    'Index 0 is all, 1/spells, 2/enh, 3/dest
+    'This sets our checkboxes that eventally set mblnCrawl()
     
     If UncheckButton(Me.chkRefresh(Index), mblnOverride) Then Exit Sub
     Erase mblnCrawl
@@ -294,6 +305,9 @@ Private Sub chkRefresh_Click(Index As Integer)
     If Index = 1 Then PrepSpells
     If Index = 0 Or Index = 2 Then PrepEnhancements
     If Index = 0 Or Index = 3 Then PrepDestinies
+    
+    'If Index = 0 Or Index = 4 Then PrepFeats
+    
     ShowProgressIndex 0
     mclsStatbar.ProgressbarInit 1, mlngTotal(0)
     xp.Mouse = msAppWait
@@ -336,6 +350,7 @@ Private Sub tmrCrawl_Timer()
             Case 1: CrawlSpells mstrSpellPage(mlngValue(1))
             Case 2: CrawlTree db.Tree(mlngValue(2))
             Case 3: CrawlTree db.Destiny(mlngValue(3))
+            'Case 4: CrawlFeat db.Feat(mlngValue(4))
         End Select
         Me.tmrCrawl.Interval = RandomDelay()
         Me.tmrCrawl.Enabled = True
@@ -374,13 +389,12 @@ Private Function Increment() As Boolean
 End Function
 
 Private Function RandomDelay() As Long
-    RandomDelay = Int(2001 * Rnd + 2000)
+    '2020.10.15 changed from 2000 to 500
+    RandomDelay = Int(2001 * Rnd + 500)
 End Function
 
 
 ' ************* SPELLS *************
-
-
 Private Sub PrepSpells()
     If db.Spells = 0 Then Exit Sub
     SortSpellWiki
@@ -494,10 +508,7 @@ Private Function ProcessSpell(pstrRaw As String) As String
     strSpell = Split(pstrRaw, "<tr style=")
 End Function
 
-
 ' ************* ENHANCEMENTS *************
-
-
 Private Sub PrepEnhancements()
     mlngTotal(0) = mlngTotal(0) + db.Trees
     mlngTotal(2) = db.Trees
@@ -507,8 +518,6 @@ End Sub
 
 
 ' ************* DESTINIES *************
-
-
 Private Sub PrepDestinies()
     If db.Destinies = 0 Then Exit Sub
     mlngTotal(0) = mlngTotal(0) + db.Destinies
@@ -517,10 +526,15 @@ Private Sub PrepDestinies()
     ShowProgressIndex 3
 End Sub
 
+' ************* FEATS *************
+Private Sub PrepFeats()
+    mlngTotal(0) = mlngTotal(0) + db.Feats
+    mlngTotal(4) = db.Feats
+    mblnCrawl(4) = True
+    ShowProgressIndex 4
+End Sub
 
 ' ************* TREES *************
-
-
 Private Sub CrawlTree(ptypTree As TreeType)
     Dim strPage As String
     Dim strRaw As String
@@ -541,6 +555,7 @@ Private Sub CrawlTree(ptypTree As TreeType)
             lngLast = 6
     End Select
     ' Wiki page
+    lblCurrent.Caption = ptypTree.Wiki
     strPage = MakeWiki(ptypTree.Wiki)
     ' Process page
     strRaw = DownloadURL(strPage)
@@ -667,9 +682,18 @@ Private Sub CleanCodes(pstrRaw As String)
 End Sub
 
 
+' ************* FEATS *************
+Private Sub CrawlFeat(ptypTree As TreeType)
+    Dim strPage As String
+    Dim strRaw As String
+    Dim strTier() As String
+    Dim lngFirst As Long
+    Dim lngLast As Long
+    Dim i As Long
+End Sub
+
+
 ' ************* MESSAGES *************
-
-
 Private Sub AddChange(penChange As ChangeEnum, pstrItem As String, Optional pstrOld As String, Optional pstrNew As String)
     Dim lngMax As Long
     

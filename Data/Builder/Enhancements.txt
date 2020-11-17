@@ -634,7 +634,7 @@ Descrip: Curative Admixture Heal SLA and Curative Admixture Harm SLA that share 
 Tier: 0
 
 AbilityName: Genius Never Dies!
-Descrip: +4 Intelligence. +20 Concentration. You gain +1000 Unconsciousness Range, the Diehard feat, and +1 Spell Penetration.}+4 Intelligence}Passive: While your Reaction is Verdanite, +2 Transmutation DC
+Descrip: You gain +4 Intelligence, +20 Concentration, +1000 Unconsciousness Range, the Diehard feat, and +1 Spell Penetration.}Passive: While your Reaction is Verdanite, +2 Transmutation DC
 Tier: 0
 
 AbilityName: Curative Admixture Cure Light Wounds
@@ -674,7 +674,7 @@ Cost: 2
 All: Tier 1: Spell Critical Chance: Positive & Negative I
 
 AbilityName: Stone of the Scholar
-Descrip: Stone of the Scholar: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +10 Healing Amplification and +20 Positive Spell Power. You can only have one Alchemist's Stone Toggle active at a time.
+Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +10 Healing Amplification and +20 Positive Spell Power. You can only have one Alchemist's Stone Toggle active at a time.
 Tier: 2
 Cost: 2
 
@@ -1591,7 +1591,7 @@ Flags: SelectorOnly
 Selector: Crossbow Training, Hand and a Half Training, Hammer and Morningstar Training
 
 AbilityName: Battle Mastery
-Descrip: Choose one:}{- Endless Fusilade: Action Boost: You may activate this ability to enchant your crossbow to instantly reload itself for 18 seconds. (Cooldown: 30 seconds.)}{ Note: This skill will activate instant if you are bare hand. But took 3 seconds (90 frames on 30 fps capture) to activate if you wielding Repeating Crossbow. You can run/jump freely during activate motion. Also not interrupted even if you dive into water.}{- Haste Boost: Activate this ability to receive a 30% Action Boost attack speed bonus for 20 seconds. (Cooldown: 30 seconds.)
+Descrip: Choose one:}{- Endless Fusilade: Action Boost: You may activate this ability to enchant your crossbow to instantly reload itself for 18 seconds. (Cooldown: 30 seconds.) Cost: 2AP}{ Note: This skill will activate instant if you are bare hand. But took 3 seconds (90 frames on 30 fps capture) to activate if you are wielding a Repeating Crossbow. You can run/jump freely during activate motion. Also not interrupted even if you dive into water.}{- Haste Boost: Activate this ability to receive a 30% Action Boost attack speed bonus for 20 seconds. (Cooldown: 30 seconds.) Cost: 1AP
 Tier: 4
 All: Tier 4: Weapon Training
 Flags: SelectorOnly
@@ -1931,7 +1931,7 @@ Tier: 0
 Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
 AbilityName: Multivial
-Descrip: Select an Element to specialize in.}{- SLA: Multivial of Acid(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Frost(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Sparks(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Flame(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Poison(SP:15, Cooldown:12 seconds)}Primer Element: Crimsonite (Red),}Passive: +4 Intelligence, and 2 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +2 Conjuration DCs.
+Descrip: Select an Element to specialize in.}{- SLA: Multivial of Acid(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Frost(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Sparks(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Flame(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Poison(SP:15, Cooldown:12 seconds)}Primer Element: Crimsonite (Red),}Passive: +4 Intelligence, and 2 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +2 Conjuration DCs.}Bug:  Unlike the multivial spells, this ability requires a target. (You can't just throw this ability whenever you want; there needs to be an enemy in order to be allowed to use this ability.)
 Tier: 0
 Selector: Multivial of Acid, Multivial of Cold, Multivial of Electric, Multivial of Fire, Multivial of Poision
 
@@ -2041,7 +2041,7 @@ Cost: 2
 All: Tier 3: Efficient Metamagic II
 
 AbilityName: Burning Ambition
-Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Bug:  Core 3 and 4 add an additional burning ambition dice each.
+Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Burning Ambition does not apply to Curative Admixtures, even when they would inflict damage to their targets. It also does not apply to Spill the Bad Stuff.}{-Bug:  Core 3 and 4 add an additional burning ambition dice each.
 Tier: 4
 Cost: 2
 
@@ -2226,7 +2226,7 @@ Descrip: +1 Sneak Attack Die. +10 Positive Spell Power. +1 Use of Wild Empathy. 
 Tier: 0
 
 AbilityName: Called Shot
-Descrip: Passive: +10 Positive Spell Power. Select a melee or ranged attack that deals extra damage and renders a target vulnerable to sneak attacks.}{- Exposing Strike: Melee Attack: Performs a melee attack with +2[W], a +4 bonus to-hit, +1 to critical threat range, and +1 to Critical Damage Multiplier. On Damage: The target will become momentarily confused and rendered vulnerable to sneak attacks for four seconds as if affected by the bluff skill. (Cooldown 6 seconds)}{- Sniper Shot: Ranged Attack: Performs a ranged attack with +2[W], a +4 bonus to-hit, +2 to critical threat range, and +2 to Critical Damage Multiplier. On Damage: The target will become momentarily confused and rendered vulnerable to sneak attacks for four seconds as if affected by the bluff skill. (Cooldown 6 seconds)
+Descrip: Passive: +10 Positive Spell Power. Select a melee or ranged attack that deals extra damage and renders a target vulnerable to sneak attacks.}{- Exposing Strike: Melee Attack: Performs a melee attack with +2[W], a +4 bonus to-hit, +1 to critical threat range, and +1 to Critical Damage Multiplier. On Damage: The target will become momentarily confused and rendered vulnerable to sneak attacks for four seconds as if affected by the bluff skill. (Cooldown 6 seconds)}{- Sniper Shot: Ranged Attack: Performs a ranged attack with +2[W], a +4 bonus to-hit, +2 to critical threat range, and +2 to Critical Damage Multiplier. On Damage: The target will become momentarily confused and rendered vulnerable to sneak attacks for four seconds as if affected by the bluff skill. (Cooldown 6 seconds)}Notes:}{-The bluff effect works on orange-named bosses and creatures not normally susceptible to influence skills, such as skeletons. However, it does not appear to affect red-named bosses.needs verification}{-The effect propagates on strikethrough, and thus can affect multiple targets.}{-There appears to be a recurring save, as the effect does not always last the full four seconds.needs verification
 Tier: 0
 Flags: SelectorOnly
 Selector: Exposing Strike, Sniper Shot
@@ -3405,7 +3405,7 @@ Descrip: +5% Stacking Incorpreality. Your Deflect Arrows now triggers every 2 se
 Tier: 0
 
 AbilityName: Eldritch Blade
-Descrip: Your Eldritch Strike now grants you a Power Charge. When you have 5 Power Charges, they are removed, and you gain Eldritch Power.}Eldritch Power: +10% to your damage with weapon attacks, +4 Spellsword Dice, +25 Universal spellpower. Duration: 30 seconds.}Passive}{-Your Spellsword die size is now d12}{-+1 Spellsword die}{-+2 Intelligence, +2 Constitution}{-+2% Doublestrike, +10 Universal Spell Power
+Descrip: Your Eldritch Strike now grants you a Power Charge. When you have 5 Power Charges, they are removed, and you gain Eldritch Power.}Eldritch Power: +10% to your damage with weapon attacks, +4 Spellsword Dice, +25 Universal spellpower. Duration: 30 seconds.}Passive}{-Your Spellsword die size is now d12}{-+1 Spellsword die}{-+2 Intelligence, +2 Constitution}{-+2% Doublestrike, +10 Universal Spell Power}{ Bug:  Currently not giving any Constituion.
 Tier: 0
 
 AbilityName: Improved Mage Armor
@@ -3563,7 +3563,7 @@ Ranks: 3
 All: Feat: Least Dragonmark: Shadow
 
 AbilityName: Child of Nature
-Descrip: You are able to produce an Entangle effect using a drop of your blood (1 HP) and 10 spell points.
+Descrip: You are able to produce an Entangle effect using a drop of your blood (1 HP) and 10 spell points. DC (10 + Half Character Level + Wisdom modifier)}{-Bug:  Actual DC appears to be 10 + spell level + Wisdom Modifier + Transmutation bonuses. It is considered a level 1 spell and will be heightened up to a level 9 spell based on character level.
 Tier: 1
 
 AbilityName: Keen Senses
@@ -4172,7 +4172,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Death from Above
-Descrip: Your Hunting Bird swoops down and attempts to end someone's life. You make an attack for +1/3/5[W], and your Hunting Bird also attacks for 50/100/200 points of damage that scales with 200% of Melee or Ranged Power, whichever is higher. The target struck makes a Fortitude Saving Throw, and on a failed save, dies.}{ DC: 10 + Character level + Wisdom bonus + Assassinate bonuses.}{ Cooldown one minute, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{ Choose One: Death from Above Shot (Ranged Falconer Attack) or Death from Above: (Melee Falconer Attack).}{-You can't use this skill without target which is not blocked. Hunting Bird will hit the target regardless attack is hit or miss or doesn't reach.
+Descrip: Your Hunting Bird swoops down and attempts to end someone's life. You make an attack for +1/3/5[W], and your Hunting Bird also attacks for 50/100/200 points of damage that scales with 200% of Melee or Ranged Power, whichever is higher. The target struck makes a Fortitude Saving Throw, and on a failed save, dies.}{ DC: 10 + Character level + Wisdom bonus + Assassinate bonuses. (Note: Assassinate bonuses do not increase the displayed DC. Unclear if this is an actual or only a display bug. Nov. 11/2020)}{ Cooldown one minute, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{ Choose One: Death from Above Shot (Ranged Falconer Attack) or Death from Above: (Melee Falconer Attack).}{-You can't use this skill without target which is not blocked. Hunting Bird will hit the target regardless attack is hit or miss or doesn't reach.
 Tier: 5
 Ranks: 3
 Selector: Shot, Strike
@@ -4196,7 +4196,7 @@ Color: Green
 Stats: Intelligence, Wisdom, Charisma
 
 AbilityName: Find Familiar
-Descrip: Select a Familiar to accompany you on your advenures.}For each Core ability spent in this tree, including this one, your Familiar grants you +5 Force and +5 Universal Spellpower}{-File:Icon FamiliarFox.png Familiar Toggle: Summons your chosen familiar, a fox, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarIllusorySprite.png Familiar Toggle: Summons your chosen familiar, an Illusory Sprite, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarPseudoDragon.png Familiar Toggle: Summons your chosen familiar, a fPseudodragonox, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarWhiteCat.png Familiar Toggle: Summons your chosen familiar, a white cat, to your side. Familiars will follow you and can assist in your magical endeavors}{-File:Icon FamiliarWhiteTressym.png Familiar Toggle: Summons your chosen familiar, a white tressym, to your side. Familiars will follow you and can assist in your magical endeavors
+Descrip: Select a Familiar to accompany you on your advenures.}For each Core ability spent in this tree, including this one, your Familiar grants you +5 Force and +5 Universal Spellpower}{- Familiar Toggle: Summons your chosen familiar, a fox, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a Pseudodragon, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white cat, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white tressym, to your side. Familiars will follow you and can assist in your magical endeavors
 Tier: 0
 Selector: Fox, Illusory Sprite, Pseudo Dragon, White Cat, White Tressym
 
@@ -4207,7 +4207,7 @@ Cost: 2
 Selector: Intelligence, Wisdom, Charisma
 
 AbilityName: Greater Color Spray:
-Descrip: You may cast the spell Greater Colow Spray as a Spell-Like Ability. Cost: 10sp Cooldown: 8 seconds
+Descrip: You may cast the spell Greater Color Spray as a Spell-Like Ability. Cost: 10sp Cooldown: 8 seconds} DC = 17 + Highest of Int/Wis/Cha mod + Illusion bonuses
 Tier: 0
 
 AbilityName: Ability Score II
@@ -4219,16 +4219,16 @@ Descrip: +1 Illusion DCs. Your familiar carries spells further than you would no
 Tier: 0
 
 AbilityName: Master Illusionist
-Descrip: Active: Shroud you and your party members, regardless of location, in illusory magic that disguises their location. They gain 95% Concealment for 10 seconds. Cooldown: 3 minutes}Passive: +2 Intelligence, Wisdom and Charisma. +2 Illusion DCs.
+Descrip: Active: Shroud you and your party members, regardless of location, in illusory magic that disguises their location. They gain 95% Concealment for 15 seconds. Cooldown: 3 minutes}Passive: +2 Intelligence, Wisdom and Charisma. +2 Illusion DCs.
 Tier: 0
 
 AbilityName: Feydark Explorer
-Descrip: +[1/2/3] Spellcraft, Diplomacy and Concentration.
+Descrip: +[1/2/3] Spellcraft, Move Silently and Concentration.}Rank 3: +1 Use Magic Device
 Tier: 1
 Ranks: 3
 
 AbilityName: Familiar's Flourish I
-Descrip: While your Familiar is by your side, you may use Charisma as your weapon's to-hit modifier.
+Descrip: While your Familiar is by your side, you may use Charisma as your weapon's to-hit modifier.}{ Note: This does not function with shields.
 Tier: 1
 Cost: 2
 
@@ -4243,33 +4243,33 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Illusory Weaponry
-Descrip: You have studied Illusion to the point where you can craft more permanent manifestations of Shadow. This grants both the ability to conjure physical Shadowblades to wield as weapons as well as the ability to enchant your current weapons to be more powerful. Shadowblades are Shortswords made of force and may use your Charisma modifier for their attack and damage. As you level up, they will become more powerful. If you unequip your Shadowblades, they will dissipate into nothingness and must be summoned again. Enchanting your weapons to become Shadowblades will change their material type to Force and grant them additional bonuses. This is considered an Item Enchantment.
+Descrip: You have studied Illusion to the point where you can craft more permanent manifestations of Shadow. This grants both the ability to conjure physical Shadowblades to wield as weapons as well as the ability to enchant your current weapons to be more powerful. Shadowblades are Shortswords made of force and may use your Charisma modifier for their attack and damage. As you level up, they will become more powerful. If you unequip your Shadowblades, they will dissipate into nothingness and must be summoned again. Enchanting your weapons to become Shadowblades will change their material type to Force and grant them additional bonuses. This is considered an Item Enchantment.}{ Note: Enchanting your weapons (including the Shadowblades) in this way will not add the "magic" enchantment for the purposes of breaking DR (this also means that it will not prevent Shadowblades and Flameblades, etc. from bypassing DR). Also, similar to Flame Blades, Shadowblades are ki weapons (you stay centered).
 Tier: 1
 Cost: 2
 
 AbilityName: Enhanced Invisibility
-Descrip: You may cast the spell Invisibility as a Spell-Like Ability. In addition, while under the effects of any source of Invisibility, you gain +15% Missile Deflection.}Cost: 30/20/10 sp}Cooldown: 5 seconds
+Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are immune to Fear
 Tier: 2
 Ranks: 3
 
 AbilityName: Familiar's Flourish II
-Descrip: While your Familiar is by your side, you may use Charisma as your weapon's damage modifier.
+Descrip: While your Familiar is by your side, you may use Charisma as your weapon's damage modifier.}{ Note: This does not function with shields.
 Tier: 2
 Cost: 2
 All: Tier 1: Familiar's Flourish I
 
 AbilityName: Bend Light
-Descrip: Your studies of the Illusion school have manifested to protect you, making you slightly harder to see. You gain the benfits of the Blur spell.
+Descrip: Your studies of the Illusion school have manifested to protect you, making you slightly harder to see. You gain the benefits of the Blur spell. When you cast the Blur spell on yourself or an ally, it now also briefly grants Invisibility and a +3 bonus to Armor Class. The AC bonus will linger as long as the Invisibility does.
 Tier: 2
 Cost: 2
 
 AbilityName: You've Got My Back
-Descrip: Your familiar draws ambient and offensive magics to it, protecting you from Magic Missiles as if you had the benefits of the Shield spell.
+Descrip: Your familiar draws ambient and offensive magics to it, protecting you from Magic Missiles as if you had the benefits of the Shield spell. In addition the Shield spell now provides +10 Physical Resistance Rating, and the Nightshield spell now provides +10 Magical Resistance Rating. Note the increased PRR from the Shield spell does not stack with the Improved Shield Enhancement from the wizard Eldritch Knight tree.
 Tier: 2
 Cost: 2
 
 AbilityName: Shadowblade
-Descrip: Conjure an illusory blade of shadow that flies forward at a single target. The enemy struct takes 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 10/8/6 sp}Cooldown: 8/6/6 seconds
+Descrip: Conjure an illusory blade of shadow that flies forward at a single target. The enemy struck takes 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusion bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 10/8/6 sp}Cooldown: 8/6/6 seconds
 Tier: 2
 Ranks: 3
 
@@ -4289,7 +4289,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Refraction
-Descrip: When hit or missed in combat, there is a small chance you will reactively turn invisible for a short duration.
+Descrip: When hit or missed in combat, there is a small chance you will reactively turn invisible for a short duration. In addition, while under the effects of any source of Invisibility, you gain +15% Missile Deflection
 Tier: 3
 Cost: 2
 
@@ -4320,7 +4320,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Displacement
-Descrip: Metamagic: Extend, Quicken. Spell Point Cost: 6. Cooldown: 5 Seconds. You may cast the spell Displacement as a Spell-Like Ability.
+Descrip: You are Displaced, as if you had cast the spell Displacement
 Tier: 5
 Cost: 2
 
@@ -6675,7 +6675,7 @@ Tier: 2
 All: Tier 1: Bloody Claws
 
 AbilityName: Improved Natural Defense
-Descrip: Further improve your Nature's Defense stance. Choose one that you did not choose for Tier 1:}{- Enchanted Defense: While in Nature's Defense stance, you gain [4/8/12] competence bonus to Physical and Magical Resistance Rating.}{- Fierce Defense: While in Nature's Defense stance, you gain [50/100/150]% competence bonus to melee threat.}{- Grizzled Defense: While in Nature's Defense stance, you gain [1/2/3] sacred bonus to all saving throws.
+Descrip: Further improve your Nature's Defense stance. Choose one that you did not choose for Tier 1:}{- Enchanted Defense: While in Nature's Defense stance, you gain [4/8/12] competence bonus to Physical and Magical Resistance Rating.}{- Fierce Defense: While in Nature's Defense stance, you gain [150/300/450]% competence bonus to melee threat.}{- Grizzled Defense: While in Nature's Defense stance, you gain [1/2/3] sacred bonus to all saving throws.
 Tier: 2
 Ranks: 3
 All: Tier 1: Improved Natural Defense
@@ -6703,7 +6703,7 @@ Descrip: Using the Roar spell with 1 stack of Killer Instinct active now trigger
 Tier: 3
 
 AbilityName: Improved Natural Defense
-Descrip: Further improve your Nature's Defense stance. Choose the last of:}{- Enchanted Defense: While in Nature's Defense stance, you gain [4/8/12] competence bonus to Physical and Magical Resistance Rating.}{- Fierce Defense: While in Nature's Defense stance, you gain [50/100/150]% competence bonus to melee threat.}{- Grizzled Defense: While in Nature's Defense stance, you gain [1/2/3] sacred bonus to all saving throws.
+Descrip: Further improve your Nature's Defense stance. Choose the last of:}{- Enchanted Defense: While in Nature's Defense stance, you gain [4/8/12] competence bonus to Physical and Magical Resistance Rating.}{- Fierce Defense: While in Nature's Defense stance, you gain [150/300/450]% competence bonus to melee threat.}{- Grizzled Defense: While in Nature's Defense stance, you gain [1/2/3] sacred bonus to all saving throws.
 Tier: 3
 Ranks: 3
 All: Tier 2: Improved Natural Defense
@@ -7188,7 +7188,7 @@ Cost: 2
 All: Tier 3: Bond of Retribution
 
 AbilityName: Vampiric Bond
-Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary hit Points scales with 200% Melee Power. This can trigger at most once every 12/9/6 seconds. Bug:  Not scaling with melee power. Only gives flat 20 temporary hit points.
+Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary hit Points scales with 200% Melee Power. This can trigger at most once every 12/9/6 seconds. Bug:  Not scaling with melee power. Only gives flat 20 temporary hit points. Should be fixed in Update 47.
 Tier: 5
 Ranks: 3
 
@@ -7873,7 +7873,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Piercing Claws
-Descrip: While Raging with Handwraps, you bypass Piercing DR.
+Descrip: While Raging with Handwraps, you bypass Piercing and Slashing DR.
 Tier: 2
 Cost: 2
 
@@ -7888,7 +7888,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging.}Cost: 8/6/4 Hit Points}Cooldown: 20/15/10 seconds
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging.}Cost: 8 Hit Points}Cooldown: 20 seconds
 Tier: 2
 Ranks: 3
 
@@ -7926,7 +7926,7 @@ Descrip: While under the effects of Razorclaw Shift, you gain +2 to Hit and Dama
 Tier: 4
 
 AbilityName: True Hunter
-Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Descrip: You gain +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
 Tier: 4
 
 AbilityName: Relentless Onslaught
@@ -8128,7 +8128,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Commanding Presence
-Descrip: +[2/4/6] Physical and +[50/100/150] Melee threat
+Descrip: +[2/4/6] Physical Resistance Rating and +[50/100/150] Melee threat
 Tier: 1
 Ranks: 3
 
@@ -8602,7 +8602,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Shifted Alterations
-Descrip: Choice determined by your subrace:}{- Shifted Defenses: +[4/?/?] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/?/?] Spot and +[2/?/?]% Dodge while Raging. Requires Wildhunt Shifter
+Descrip: Choice determined by your subrace:}{- Shifted Defenses: +[4/8/12] Physical Resistance Rating while Raging. Requires Beasthide Shifter}{- Shifted Senses: +[3/6/10] Spot and +[2/4/6]% Dodge while Raging. Requires Wildhunt Shifter
 Tier: 2
 Selector: Shifted Defenses, Shifted Senses
 SelectorName: Shifted Defenses
@@ -8625,7 +8625,7 @@ SelectorName: Wildhunt Howl
 All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 10/8/5 SP}Cooldown: 20/15/10 seconds
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 8 HP}Cooldown: 20 seconds
 Tier: 2
 Ranks: 3
 
@@ -8634,7 +8634,7 @@ Descrip: Melee Attack: Requires an equipped Melee weapon. Make an attack similar
 Tier: 2
 
 AbilityName: Empowered by Nature
-Descrip: Choose an effect:}{- Beasthide: +10 Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +25 Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter
+Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
 Tier: 3
 Selector: Beasthide, Wildhunt
 SelectorName: Beasthide
@@ -8674,7 +8674,7 @@ SelectorName: Vermin
 None: Feat: Favored Enemy: Vermin
 
 AbilityName: Threatening Shift
-Descrip: Choose between:}{- Threatening Shift:While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Camouflaged Shift: While raging, gain Lesser Dispacement and +3% Dodge Cap. Requires Wildhunt Shifter
+Descrip: Choose an effect based on your subrace:}{- Threatening Shift:While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Wild Magic: While raging, gain Lesser Dispacement. When you activate a Rage, you gain Temporary Spell Points equal to 5 + double your Character Level. These last for 5 minutes, until you dismiss or activate another rage, or until used. Requires Wildhunt Shifter
 Tier: 4
 Selector: Threatening Shift, Camouflaged Shift
 SelectorName: Threatening Shift
@@ -8683,7 +8683,7 @@ SelectorName: Camouflaged Shift
 All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: True Hunter
-Descrip: You gain Freedom of Movement, +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Descrip: You gain +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
 Tier: 4
 
 AbilityName: Howl of Terror
@@ -9761,7 +9761,7 @@ Cost: 2
 All: Tier 3: Whirling Blades
 
 AbilityName: Dual Perfection
-Descrip: Your off hand weapon now adds your full attribute damage modifier.
+Descrip: Your off hand weapon now adds your full attribute damage modifier.Minor bug:  The inventory display panel continues to show half attribute damage, but full damage is implemented in practice. (DDO Forums)
 Tier: 5
 Cost: 2
 
@@ -9785,7 +9785,7 @@ Cost: 2
 All: Tier 4: Whirling Blades
 
 AbilityName: Dance of Death
-Descrip: Melee Dual Wielding Attack: Deals 1/3/5[W]damage. On hit: For 10 seconds, you gain the ability to Strikethrough regardless of combat style. You also gain +0/100/200 Strikethrough for the duration.}(Note: the initial attack only works if dual wielding weapons. However, the Strikethrough ability and bonus do persist through weapon swaps to other styles, such as Sword and Board or SWF with weapons like longsword or dagger, as described. The bonus appears to apply whether of not the attack hits anything.)
+Descrip: Melee Dual Wielding Attack: Deals 1/3/5[W]damage. On activation: For 10 seconds, you gain the ability to Strikethrough regardless of combat style. You also gain +0/100/200 Strikethrough for the duration. (Cooldown: 15 seconds)}Note: the initial attack only works if dual wielding weapons. However, the Strikethrough ability and bonus persist through weapon swaps to other styles, such as Sword and Board or SWF with weapons like longsword or dagger, as described. The bonus appears to apply whether or not the attack hits anything.
 Tier: 5
 Ranks: 3
 
@@ -10362,7 +10362,7 @@ Descrip: You gain the Defensive Roll feat (While below 20% HP, there's a chance 
 Tier: 0
 
 AbilityName: Venom's Grip
-Descrip: Passive: +4 Intelligence. Your Poisoned Coating die size is now d12.}Passive: While your Reaction is Orchidium, +10 Physicial Resistance rating and +5% Dodge Cap.
+Descrip: +4 Intelligence. Your Poisoned Coating die size is now d12.}While your Reaction is Orchidium, +10 Physicial Resistance rating and +5% Dodge Cap.
 Tier: 0
 
 AbilityName: Spell Like Ability: Stiffen Skin
@@ -10397,7 +10397,7 @@ Cost: 2
 All: Tier 1: Deadly Poison I
 
 AbilityName: Poisoned Attack
-Descrip: Choose from either a Melee or Ranged attack.}{-Poisoned Shot: Ranged Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.}{-Poisoned Strike: Melee Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.  Note: hits all enemies in a 180 degree cone in front of you like a cleave.
+Descrip: Choose from either a Melee or Ranged attack.}{-Poisoned Shot: Ranged Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds. Note: If you use this attack with any Crossbow, then this attack have 3 seconds long of after attack motion. No such thing with Bows. Unlike other attack skills this attack shots only 1 bolt when you use this with Repeating Crossbow.}{-Poisoned Strike: Melee Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.  Note: hits all enemies in a 180 degree cone in front of you like a cleave.
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
@@ -10447,7 +10447,7 @@ Cost: 2
 All: Tier 3: Deadly Poison III
 
 AbilityName: Venom Affinity
-Descrip: +[5/10/15] Poison Spell Power.}Rank 3: +1 Reflex Saving Throws
+Descrip: +[3/6/10] Poison Spell Power.}Rank 3: +1 Reflex Saving Throws
 Tier: 4
 Ranks: 3
 
@@ -10775,7 +10775,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Divine Vessel
-Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{- Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{- Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.    Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.
+Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{- Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{- Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.    Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.}One stack decays every 6 seconds (gaining a stack resets the timer).
 Tier: 5
 Selector: Cleave, Ranged
 
@@ -11219,7 +11219,7 @@ Descrip: Your god has imbued you with power and skill in combat, granting a +6 S
 Tier: 5
 
 AbilityName: Divine Vessel
-Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{- Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{- Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.  Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.
+Descrip: Your attacks generate a stack of Divine Conduit.  When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack.  (Max uses: 1.  You cannot gain stacks of Divine Conduit while you have any uses of this attack.)  Choose between Melee and Ranged attacks:}{- Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{- Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.  Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.}One stack decays every 6 seconds (gaining a stack resets the timer).
 Tier: 5
 Selector: Cleave, Ranged
 
@@ -11450,7 +11450,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Child of Nature
-Descrip: You are able to produce an Entangle effect using a drop of your blood (1 HP) and 10 spell points.
+Descrip: You are able to produce an Entangle effect using a drop of your blood (1 HP) and 10 spell points. DC (10 + Half Character Level + Wisdom modifier)}{-Bug:  Actual DC appears to be 10 + spell level + Wisdom Modifier + Transmutation bonuses. It is considered a level 1 spell and will be heightened up to a level 9 spell based on character level.
 Tier: 1
 
 AbilityName: Keen Senses

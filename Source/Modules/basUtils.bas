@@ -24,6 +24,10 @@ Public Function CleanText(pstrText As String)
     Loop
 End Function
 
+Public Function TrimAll(pstrText As String)
+    TrimAll = Replace(Trim$(pstrText), vbTab, "")
+End Function
+
 ' Set of functions to return a part of a filespec ("C:\Folder\File.ext")
 Public Function GetPathFromFilespec(pstrFile As String) As String
     GetPathFromFilespec = Left(pstrFile, InStrRev(pstrFile, "\") - 1)

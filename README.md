@@ -13,6 +13,15 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.3.2
+Fixes: 
+   Alchemist missing Bonus feat at 12.
+   Alchemist had an extra L3 spell at L15
+   Swords to Plowshares had a tab at the end of line breaking save/restore
+Changes:
+    The data load should now trim off tabs
+Recrawled all trees.
+
 ### 3.3.1
 Fix for Alchemical Studies. Alchemical Studies - X can be taken at as a Class Feat, but only 2 times per Reaction. 
 Note that is required a feat rename (':' is a special character in parsing the input files) so if you reload a saved Alchemist you will have to indicate the appropriate new feat name. 

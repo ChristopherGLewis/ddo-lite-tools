@@ -102,8 +102,8 @@ Private Sub LoadRace(ByVal pstrRaw As String)
     Dim i As Long
     
     log.Activity = actFindRace
-    CleanText pstrRaw
-    strLine = Split(pstrRaw, vbNewLine)
+    CleanText pstrRaw  'Remove trailing CRLF
+    strLine = Split(pstrRaw, vbNewLine) 'Make an array
     log.LoadItem = Trim$(strLine(0))
     enRace = GetRaceID(log.LoadItem)
     If enRace = reAny Then
@@ -500,6 +500,7 @@ Public Function SeekSpell(pstrSpellName As String) As Long
     Dim lngMid As Long
     Dim lngLast As Long
     
+    'Binary search into spell list - Spells has to be sorted.
     lngFirst = 1
     lngLast = db.Spells
     Do While lngFirst <= lngLast
@@ -757,6 +758,7 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         If lngValue < 1 Or lngValue > 20 Then LogError Else .BAB = lngValue
                     Case "repeat"
                         Select Case lngValue
+                            ' Updated 2020.10.07 to allow for 2 ranks of Alchemical Studies: xxx
                             Case 1, 2, 3, 99: .Times = lngValue
                             Case Else: LogError
                         End Select
@@ -1279,6 +1281,7 @@ Private Function LoadTreeHeader(pstrRaw As String, ptypTree As TreeType) As Bool
     Dim enStat As StatEnum
     Dim i As Long
     
+    CleanText pstrRaw
     strLine = Split(pstrRaw, vbNewLine)
     With ptypTree
         .TreeName = strLine(0)
@@ -1922,7 +1925,7 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
     plngValue = 0
     If plngListMax <> -1 Then Erase pstrList
     plngListMax = -1
-    pstrLine = Trim$(pstrLine)
+    pstrLine = TrimAll(pstrLine)
     If Len(pstrLine) = 0 Then Exit Function
     ' Field
     lngPos = InStr(pstrLine, ":")
@@ -1931,8 +1934,8 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
         Exit Function
     End If
     ParseLine = True
-    pstrField = LCase$(Trim$(Left$(pstrLine, lngPos - 1)))
-    pstrLine = Trim$(Mid$(pstrLine, lngPos + 1))
+    pstrField = LCase$(TrimAll(Left$(pstrLine, lngPos - 1)))
+    pstrLine = TrimAll(Mid$(pstrLine, lngPos + 1))
     ' Descriptions
     If Left$(pstrField, 4) = "wiki" Or pstrField = "descrip" Then
         pstrItem = pstrLine
