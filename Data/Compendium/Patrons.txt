@@ -45,3 +45,9 @@ Abbreviation: Harper
 
 PatronName: Sharn City Council
 Abbreviation: Sharn
+
+PatronName: Morgrave University
+Abbreviation: Morgrave
+
+PatronName: The Summer Court
+Abbreviation: S. Court

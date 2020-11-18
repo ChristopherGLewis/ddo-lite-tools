@@ -40,6 +40,13 @@ High: 8
 Explorer: 5000
 Pack: Three-Barrel Cove
 
+Area: The Feywild
+Map: Map-of-the-Feywild.png
+Low: 3
+High: 8
+Explorer: 3000
+Pack: Fables of the Feywild
+
 Area: Searing Heights
 Map: SearingHeightsMap.jpg
 Low: 4

@@ -395,7 +395,7 @@ Favor: 5
 Level: 10
 Map: Ataraxia's Haven
 
-QuestName: Hiding in Plain Sight 
+QuestName: Hiding in Plain Sight
 Patron: The Free Agents
 Favor: 5
 Level: 10
@@ -2296,7 +2296,7 @@ Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
 QuestName: Security Detail
 Pack: Sharn: The Cogs
 Patron: Sharn City Council
-Favor: 4
+Favor: 5
 Level: 16
 Epic: 32
 Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
@@ -2384,6 +2384,13 @@ Level: 17
 Epic: 32
 
 QuestName: The Underlane Assignment
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: The Offshore Account
 Pack: The Soul Splitter
 Patron: Sharn City Council
 Favor: 6
@@ -2875,3 +2882,113 @@ Level: 30
 Epic: 30
 Style: Raid
 Map: The Ruins of Thunderholme
+
+QuestName: The Promise of Fire
+Patron: Morgrave University
+Favor: 4
+Level: 6
+Epic: 27
+
+QuestName: The Endless Revels
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Witch Hunt
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Quid Pro Quo
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Needle in a Fey Stack
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Make Believe
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Wake me up inside
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Thornwright
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Immortality Lessons
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: The Icemount Curse
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: A Frosty Reception
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Legend of the Lost Locket
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Knight who Cried Windmill
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Combatting Corruption
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 2
+Level: 5
+Epic: 32
+Map: The Feywild
