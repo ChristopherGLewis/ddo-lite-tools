@@ -1,9 +1,9 @@
 ;***** IMPORTANT ******
 ; You can reorder sagas columns by changing the order of sagas in this file,
-; BUT DO NOT CHANGE THE QUEST ORDER WITHIN A SAGA. Character saga progress is 
+; BUT DO NOT CHANGE THE QUEST ORDER WITHIN A SAGA. Character saga progress is
 ; stored as a number, not a quest name, so if the quest order in this file
 ; changes your progress will point to the wrong quests.
-; 
+;
 ; You can freely change quest order within sagas using the SagaOrderXXXX.txt files
 
 SagaName: The Pirates of the Thunder Sea (heroic)
@@ -23,6 +23,27 @@ Quest: The Black Loch
 Quest: Storm the Beaches
 Quest: Bargain of Blood
 Quest: The Tide Turns
+
+SagaName: Fables of the Feywild: Heroic
+Abbreviation: Feywild
+Tier: Heroic
+NPC: ???
+Tome: 1
+Astrals: 1
+XP: : ???	???	???	???
+Quest: The Endless Revels
+Quest: Witch Hunt
+Quest: The Knight Who Cried Windmill
+Quest: Make Believe
+Quest: A Frosty Reception
+Quest: Wake Me Up Inside
+Quest: The Icemount Curse
+Quest: Combatting Corruption
+Quest: The Thornwright
+Quest: Needle in a Fey Stack
+Quest: The Legend of the Lost Locket
+Quest: Quid Pro Quo
+Quest: Immortality Lessons
 
 SagaName: Mists of Ravenloft Saga: Heroic
 Abbreviation: Ravenloft
@@ -66,9 +87,9 @@ SagaName: Cogs: Heroic
 Abbreviation: Cogs
 Tier: Heroic
 NPC: Bellman Rulth
-Tome: ?
+Tome: 1
 Astrals: 1
-XP: ???	???	???	???
+XP: ???	22	35	46
 Quest: Smash and Burn
 Quest: Thralls of the Fungus Lord
 Quest: Scavenger Hunt
@@ -82,9 +103,9 @@ SagaName: Masterminds of Sharn: Heroic
 Abbreviation: Sharn
 Tier: Heroic
 NPC: Darius Benford
-Tome: ?
+Tome: 1
 Astrals: 1
-XP: ???	???	???	???
+XP: ???	22	35	46
 Quest: Lost at Sea
 Quest: A Sharn Welcome
 Quest: Red Rain
@@ -330,9 +351,9 @@ SagaName: Cogs: Epic
 Abbreviation: Cogs
 Tier: Epic
 NPC: Alle Latham
-Tome: ?
+Tome: 3
 Astrals: 1
-XP: ???	???	???	???
+XP: 96	147	207	276
 Quest: Smash and Burn
 Quest: Thralls of the Fungus Lord
 Quest: Scavenger Hunt
@@ -346,9 +367,9 @@ SagaName: Masterminds of Sharn: Epic
 Abbreviation: Sharn
 Tier: Epic
 NPC: Cyrene Gorham
-Tome: ?
+Tome: 3
 Astrals: 1
-XP: ???	???	???	???
+XP: 96	147	207	276
 Quest: Lost at Sea
 Quest: A Sharn Welcome
 Quest: Red Rain
@@ -359,3 +380,24 @@ Quest: No Refunds
 Quest: House of Pain
 Quest: Blown Deadline
 Quest: Reach for the Sky
+
+SagaName: Fables of the Feywild: Epic
+Abbreviation: Feywild
+Tier: Epic
+NPC: ???
+Tome: 3
+Astrals: 1
+XP: : ???	???	???	???
+Quest: The Endless Revels
+Quest: Witch Hunt
+Quest: The Knight Who Cried Windmill
+Quest: Make Believe
+Quest: A Frosty Reception
+Quest: Wake Me Up Inside
+Quest: The Icemount Curse
+Quest: Combatting Corruption
+Quest: The Thornwright
+Quest: Needle in a Fey Stack
+Quest: The Legend of the Lost Locket
+Quest: Quid Pro Quo
+Quest: Immortality Lessons
