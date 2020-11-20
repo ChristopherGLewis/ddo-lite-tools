@@ -709,6 +709,7 @@ Pack: Catacombs
 Patron: The Silver Flame
 Favor: 2
 Level: 3
+Epic: 23
 
 QuestName: Return to the Sanctuary
 Wiki: To Find a Witness: Return to the Sanctuary
@@ -716,18 +717,21 @@ Pack: Catacombs
 Patron: The Silver Flame
 Favor: 3
 Level: 3
+Epic: 23
 
 QuestName: The Old Archives
 Pack: Catacombs
 Patron: The Silver Flame
 Favor: 3
 Level: 3
+Epic: 23
 
 QuestName: The Crypt of Gerard Dryden
 Pack: Catacombs
 Patron: The Silver Flame
 Favor: 4
 Level: 3
+Epic: 23
 
 QuestName: Setting the Wards: Lower
 Wiki: Setting the Wards: The Lower Cathedral
@@ -735,6 +739,7 @@ Pack: Catacombs
 Patron: The Silver Flame
 Favor: 3
 Level: 3
+Epic: 23
 
 QuestName: Setting the Wards: Patriarch's
 Wiki: Setting the Wards: The Patriarchs' Crypt
@@ -742,12 +747,14 @@ Pack: Catacombs
 Patron: The Silver Flame
 Favor: 3
 Level: 3
+Epic: 23
 
 QuestName: Endgame: Marguerite
 Pack: Catacombs
 Patron: The Silver Flame
 Favor: 2
 Level: 3
+Epic: 23
 
 QuestName: Endgame: Archbishop's Fate
 Wiki: Endgame: The Archbishop's Fate
@@ -755,6 +762,7 @@ Pack: Catacombs
 Patron: The Silver Flame
 Favor: 2
 Level: 4
+Epic: 23
 
 QuestName: Cloven Jaw Scourge: Blockade
 Wiki: The Cloven-jaw Scourge: Blockade
@@ -1042,18 +1050,21 @@ Pack: Delera's Tomb
 Patron: House Jorasco
 Favor: 4
 Level: 5
+Epic: 27
 
 QuestName: The Missing Party
 Pack: Delera's Tomb
 Patron: House Jorasco
 Favor: 6
 Level: 7
+Epic: 27
 
 QuestName: Free Delera
 Pack: Delera's Tomb
 Patron: House Jorasco
 Favor: 5
 Level: 7
+Epic: 27
 
 QuestName: Return to Delera's Tomb
 Wiki: Return to Delera's Tomb (quest)
@@ -1062,12 +1073,14 @@ Patron: House Jorasco
 Favor: 3
 Level: 6
 GroupLevel: 7
+Epic: 27
 
 QuestName: Thrall of the Necromancer
 Pack: Delera's Tomb
 Patron: House Jorasco
 Favor: 6
 Level: 8
+Epic: 27
 
 QuestName: Devil Assault
 Wiki: Devil Assault (quest)
