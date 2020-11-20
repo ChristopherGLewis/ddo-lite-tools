@@ -1,0 +1,3002 @@
+QuestName: The Cannith Crystal
+Patron: House Deneith
+Favor: 2
+Level: 1
+
+QuestName: The Storehouse's Secret
+Patron: The Coin Lords
+Favor: 2
+Level: 1
+
+QuestName: Heyton's Rest
+Patron: The Coin Lords
+Favor: 2
+Level: 1
+
+QuestName: The Collaborator
+Patron: The Coin Lords
+Favor: 4
+Level: 1
+
+QuestName: Stopping the Sahuagin
+Patron: The Coin Lords
+Favor: 3
+Level: 1
+Map: Korthos Island
+
+QuestName: Redemption
+Wiki: Redemption (quest)
+Patron: The Coin Lords
+Favor: 3
+Level: 1
+Map: Korthos Island
+
+QuestName: Necromancer's Doom
+Patron: House Jorasco
+Favor: 2
+Level: 1
+Map: Korthos Island
+
+QuestName: Sacrifices
+Patron: The Free Agents
+Favor: 3
+Level: 1
+Map: Korthos Island
+
+QuestName: Misery's Peak
+Patron: The Free Agents
+Favor: 4
+Level: 2
+GroupLevel: 1
+Map: Korthos Island
+
+QuestName: Protect Baudry's Interests
+Patron: The Free Agents
+Favor: 2
+Level: 2
+
+QuestName: Stop Hazadill's Shipment
+Patron: The Free Agents
+Favor: 2
+Level: 2
+
+QuestName: Retrieve the Stolen Goods
+Patron: The Free Agents
+Favor: 3
+Level: 2
+
+QuestName: The Smuggler's Warehouse
+Patron: The Free Agents
+Favor: 3
+Level: 2
+
+QuestName: Bringing the Light
+Patron: The Silver Flame
+Favor: 2
+Level: 2
+
+QuestName: The Kobolds' New Ringleader
+Patron: The Coin Lords
+Favor: 4
+Level: 2
+
+QuestName: Stealthy Repossession
+Patron: The Free Agents
+Favor: 3
+Level: 2
+
+QuestName: Garrison's Missing Pack
+Patron: The Coin Lords
+Favor: 4
+Level: 2
+
+QuestName: Recovering the Lost Tome
+Patron: The Coin Lords
+Favor: 3
+Level: 2
+
+QuestName: Walk the Butcher's Path
+Patron: The Free Agents
+Favor: 4
+Level: 2
+
+QuestName: Durk's Got A Secret
+Patron: The Free Agents
+Favor: 4
+Level: 2
+
+QuestName: Haverdasher
+Patron: House Kundarak
+Favor: 2
+Level: 2
+
+QuestName: The Miller's Debt
+Patron: The Coin Lords
+Favor: 2
+Level: 2
+Style: Solo
+
+QuestName: Arachnophobia
+Patron: The Coin Lords
+Favor: 2
+Level: 2
+Style: Solo
+
+QuestName: Information is Key
+Patron: House Phiarlan
+Favor: 4
+Level: 2
+
+QuestName: Missing in Action
+Patron: The Coin Lords
+Favor: 3
+Level: 2
+
+QuestName: The Sunken Sewer
+Patron: The Coin Lords
+Favor: 3
+Level: 2
+
+QuestName: Redfang the Unruled
+Patron: The Free Agents
+Favor: 3
+Level: 3
+
+QuestName: The Swiped Signet
+Patron: The Free Agents
+Favor: 4
+Level: 3
+
+QuestName: Home Sweet Sewer
+Patron: The Coin Lords
+Favor: 2
+Level: 3
+Style: Solo
+
+QuestName: An Explosive Situation
+Patron: The Coin Lords
+Favor: 2
+Level: 3
+Style: Solo
+
+QuestName: Kobold Assault
+Patron: The Coin Lords
+Favor: 3
+Level: 3
+
+QuestName: Where There's Smoke...
+Patron: The Free Agents
+Favor: 3
+Level: 3
+Map: The Cerulean Hills
+
+QuestName: The Captives
+Patron: The Free Agents
+Favor: 3
+Level: 3
+Map: The Cerulean Hills
+
+QuestName: Kobold's Den: Clan Gnashtooth
+Patron: The Coin Lords
+Wiki: The Kobold's Den: Clan Gnashtooth
+Favor: 4
+Level: 3
+Map: The Waterworks
+
+QuestName: Kobold's Den: Rescuing Arlos
+Compendium: Kobold's Den:  Rescuing Arlos
+Patron: The Coin Lords
+Wiki: The Kobold's Den: Rescuing Arlos
+Favor: 4
+Level: 3
+Map: The Waterworks
+
+QuestName: Venn's Trail: Clan Tunnelworm
+Patron: The Coin Lords
+Favor: 4
+Level: 4
+Map: The Waterworks
+
+QuestName: Venn's Trail: Venn's Fate
+Patron: The Coin Lords
+Favor: 3
+Level: 4
+Map: The Waterworks
+
+QuestName: Irestone Inlet
+Patron: The Coin Lords
+Favor: 4
+Level: 4
+
+QuestName: Proof is in the Poison
+Patron: The Coin Lords
+Favor: 5
+Level: 4
+
+QuestName: Freshen the Air
+Patron: The Free Agents
+Favor: 3
+Level: 4
+
+QuestName: Rest for the Restless
+Patron: House Phiarlan
+Favor: 3
+Level: 4
+
+QuestName: The Depths of Despair
+Patron: House Deneith
+Favor: 3
+Level: 4
+
+QuestName: The Depths of Darkness
+Patron: House Deneith
+Favor: 3
+Level: 4
+
+QuestName: The Depths of Discord
+Patron: House Deneith
+Favor: 3
+Level: 5
+
+QuestName: The Depths of Doom
+Patron: House Deneith
+Favor: 3
+Level: 5
+
+QuestName: The Chamber of Insanity
+Patron: House Kundarak
+Favor: 3
+Level: 5
+
+QuestName: The Lair of Summoning
+Patron: House Kundarak
+Favor: 3
+Level: 5
+
+QuestName: Archer Point Defense
+Patron: The Coin Lords
+Favor: 3
+Level: 5
+
+QuestName: Gladewatch Outpost Defense
+Patron: House Deneith
+Favor: 4
+Level: 6
+
+QuestName: The Forgotten Caverns
+Patron: House Kundarak
+Favor: 4
+Level: 6
+
+QuestName: Ruined Halls
+Patron: House Kundarak
+Favor: 4
+Level: 6
+
+QuestName: Redwillow's Ruins
+Patron: House Jorasco
+Favor: 5
+Level: 6
+
+QuestName: Mirra's Sleepless Nights
+Patron: House Jorasco
+Favor: 4
+Level: 6
+
+QuestName: Dead Predators
+Patron: House Jorasco
+Favor: 4
+Level: 6
+
+QuestName: Dead Girl's Spellbook
+Compendium: Valak's Mausoleum
+Wiki: Valak's Mausoleum
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 4
+Level: 6
+
+QuestName: The Bounty Hunter
+Patron: House Deneith
+Favor: 5
+Level: 6
+
+QuestName: Caged Trolls
+Patron: House Phiarlan
+Favor: 4
+Level: 6
+
+QuestName: Purge the Heretics
+Patron: House Phiarlan
+Favor: 4
+Level: 6
+
+QuestName: The Tear of Dhakaan
+Patron: House Kundarak
+Favor: 7
+Level: 7
+
+QuestName: Gwylan's Stand
+Patron: House Phiarlan
+Favor: 6
+Level: 7
+
+QuestName: The Pit
+Patron: House Deneith
+Favor: 9
+Level: 7
+
+QuestName: The Graverobber
+Patron: House Jorasco
+Favor: 5
+Level: 7
+
+QuestName: Taming the Flames
+Patron: House Kundarak
+Favor: 5
+Level: 7
+
+QuestName: Caverns of Korromar
+Patron: House Kundarak
+Favor: 5
+Level: 8
+
+QuestName: The Faithful Departed
+Patron: House Phiarlan
+Favor: 4
+Level: 8
+Link: Map: Shrouded Vale	Link	https://ddowiki.com/page/Shrouded_Vale
+
+QuestName: Stromvauld's Mine
+Patron: House Kundarak
+Favor: 5
+Level: 8
+
+QuestName: Stormcleave Outpost
+Patron: House Deneith
+Favor: 6
+Level: 8
+
+QuestName: The Path to Madness
+Patron: House Jorasco
+Favor: 3
+Level: 8
+
+QuestName: The Xorian Cipher
+Patron: House Jorasco
+Favor: 7
+Level: 8
+
+QuestName: Haunted Library
+Patron: House Jorasco
+Favor: 5
+Level: 8
+
+QuestName: The Keeper's Sanctuary
+Pack: Delera's Tomb
+Patron: House Phiarlan
+Favor: 4
+Level: 9
+
+QuestName: The Church and the Cult
+Patron: The Silver Flame
+Favor: 5
+Level: 9
+
+QuestName: Sykros' Jewel
+Patron: House Kundarak
+Favor: 5
+Level: 10
+Map: Ataraxia's Haven
+
+QuestName: Reclamation
+Patron: House Kundarak
+Favor: 5
+Level: 10
+Map: Ataraxia's Haven
+
+QuestName: Hiding in Plain Sight
+Patron: The Free Agents
+Favor: 5
+Level: 10
+
+QuestName: Tempest's Spine
+Patron: House Jorasco
+Favor: 6
+Level: 10
+Style: Raid
+
+QuestName: The Spawn of Whisperdoom
+Patron: House Phiarlan
+Favor: 6
+Level: 11
+
+QuestName: Dreams of Insanity
+Patron: House Jorasco
+Favor: 6
+Level: 11
+
+QuestName: The Enemy Within
+Patron: House Jorasco
+Favor: 8
+Level: 11
+
+QuestName: And the Dead Shall Rise...
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 6
+Level: 11
+
+QuestName: From Beyond the Grave
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 5
+Level: 11
+
+QuestName: Made to Order
+Patron: House Kundarak
+Favor: 6
+Level: 11
+
+QuestName: A Relic of a Sovereign Past
+Patron: House Deneith
+Favor: 7
+Level: 12
+
+QuestName: Diplomatic Impunity
+Patron: The Coin Lords
+Favor: 6
+Level: 12
+
+QuestName: Frame Work
+Patron: The Coin Lords
+Favor: 5
+Level: 12
+
+QuestName: Eyes of Stone
+Patron: The Coin Lords
+Favor: 6
+Level: 12
+
+QuestName: Invaders!
+Patron: The Coin Lords
+Favor: 7
+Level: 12
+
+QuestName: Mired in Kobolds
+Patron: The Free Agents
+Favor: 5
+Level: 13
+
+QuestName: Memoirs of an Illusory Larcener
+Patron: The Free Agents
+Favor: 6
+Level: 13
+Epic: 31
+
+QuestName: Tower of Frost
+Patron: The Free Agents
+Favor: 5
+Level: 14
+Epic: 28
+
+QuestName: Acid Wit
+Patron: The Twelve
+Favor: 6
+Level: 15
+
+QuestName: Delirium
+Patron: The Free Agents
+Favor: 5
+Level: 15
+
+QuestName: Disciples of Shar
+Patron: Purple Dragon Knights
+Favor: 6
+Level: 15
+
+QuestName: Escape Plan
+Patron: Purple Dragon Knights
+Favor: 5
+Level: 15
+
+QuestName: Shadow of a Doubt
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 6
+Level: 15
+
+QuestName: Search and Rescue
+Patron: The Harpers
+Favor: 6
+Level: 15
+Epic: 31
+
+QuestName: Lost at Sea
+Patron: The Free Agents
+Favor: 5
+Level: 15
+Epic: 32
+Link: Named Items	Link	https://ddowiki.com/page/Update_41_named_items
+
+QuestName: The Lords of Dust
+Patron: The Silver Flame
+Favor: 7
+Level: 16
+Epic: 21
+
+QuestName: Servants of the Overlord
+Patron: The Silver Flame
+Favor: 7
+Level: 16
+Epic: 21
+
+QuestName: The Spinner of Shadows
+Patron: The Silver Flame
+Favor: 7
+Level: 16
+Epic: 21
+
+QuestName: Beyond the Rift
+Patron: The Silver Flame
+Favor: 7
+Level: 16
+Epic: 21
+
+QuestName: The Mask of Deception
+Patron: The Harpers
+Favor: 6
+Level: 16
+Epic: 30
+
+QuestName: Good Intentions
+Patron: The Free Agents
+Favor: 7
+Level: 17
+Epic: 31
+
+QuestName: In the Demon's Den
+Patron: The Silver Flame
+Favor: 6
+Level: 18
+
+QuestName: Murder by Night
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 6
+Level: 19
+
+QuestName: The Riddle
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 19
+
+QuestName: Don't Drink the Water
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+
+QuestName: In the Belly of the Beast
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+Map: The Underdark
+
+QuestName: A Study in Sable
+Patron: Purple Dragon Knights
+Favor: 9
+Level: 26
+Epic: 26
+
+QuestName: Brothers of the Forge
+Patron: House Cannith
+Favor: 9
+Level: 28
+Epic: 28
+
+QuestName: Legendary Tempest's Spine
+Patron: House Jorasco
+Favor: 11
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Legendary Hound of Xoriat
+Patron: The Twelve
+Favor: 12
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Caged Beast
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Obstructing the Orcs
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Bugbear Bandits
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Hobgoblin Horde
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 3
+Level: 1
+Epic: 21
+
+QuestName: Total Chaos
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 3
+Level: 2
+Epic: 22
+
+QuestName: Treasure Hunt
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Violent Delights
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: Watch Your Step
+Pack: Keep on the Borderlands
+Patron: The Gatekeepers
+Favor: 2
+Level: 1
+Epic: 21
+
+QuestName: The Home of Memory
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: Heart of the Problem
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: Rosemary's Ballad
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: The Sacred Bounty
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 2
+Level: 3
+Epic: 32
+
+QuestName: Housekeeping
+Pack: The Lost Gatekeepers
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: The Friar's Niece
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 2
+Level: 3
+Epic: 23
+
+QuestName: Return to the Sanctuary
+Wiki: To Find a Witness: Return to the Sanctuary
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 3
+Level: 3
+Epic: 23
+
+QuestName: The Old Archives
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 3
+Level: 3
+Epic: 23
+
+QuestName: The Crypt of Gerard Dryden
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 4
+Level: 3
+Epic: 23
+
+QuestName: Setting the Wards: Lower
+Wiki: Setting the Wards: The Lower Cathedral
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 3
+Level: 3
+Epic: 23
+
+QuestName: Setting the Wards: Patriarch's
+Wiki: Setting the Wards: The Patriarchs' Crypt
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 3
+Level: 3
+Epic: 23
+
+QuestName: Endgame: Marguerite
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 2
+Level: 3
+Epic: 23
+
+QuestName: Endgame: Archbishop's Fate
+Wiki: Endgame: The Archbishop's Fate
+Pack: Catacombs
+Patron: The Silver Flame
+Favor: 2
+Level: 4
+Epic: 23
+
+QuestName: Cloven Jaw Scourge: Blockade
+Wiki: The Cloven-jaw Scourge: Blockade
+Pack: Seal of Shan-To-Kor
+Patron: The Coin Lords
+Favor: 4
+Level: 3
+Link: Map: Steam Tunnels	Link	https://ddowiki.com/page/Steam_Tunnels
+
+QuestName: Cloven Jaw Scourge: Caverns
+Wiki: The Cloven-jaw Scourge: The Caverns of Shaagh
+Pack: Seal of Shan-To-Kor
+Patron: The Coin Lords
+Favor: 4
+Level: 4
+Link: Map: Steam Tunnels	Link	https://ddowiki.com/page/Steam_Tunnels
+
+QuestName: Halls of Shan-To-Kor
+Pack: Seal of Shan-To-Kor
+Patron: The Coin Lords
+Favor: 4
+Level: 5
+Link: Map: Steam Tunnels	Link	https://ddowiki.com/page/Steam_Tunnels
+
+QuestName: The Sacred Helm
+Pack: Seal of Shan-To-Kor
+Patron: The Coin Lords
+Favor: 4
+Level: 3
+Link: Map: Steam Tunnels	Link	https://ddowiki.com/page/Steam_Tunnels
+
+QuestName: First Strike
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 3
+Map: Tangleroot Gorge
+
+QuestName: The Hobgoblins' Captives
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 3
+
+QuestName: Yarkuch's War-plans
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 4
+
+QuestName: Whisperdoom's Spawn
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 4
+
+QuestName: Deadly Package: Stronghold
+Wiki: The Deadly Package: The Stronghold Key
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 5
+
+QuestName: Deadly Package: Agent
+Wiki: The Deadly Package: Agent of the Darguul
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 5
+
+QuestName: Doom of Witch-Doctor: Way
+Compendium: Doom of Witch-Doctor: The Way
+Wiki: Doom of the Witch-doctor: The Way to Zulkash
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 4
+Level: 6
+
+QuestName: Doom of Witch-Doctor: Herald
+Compendium: Doom of Witch-Doctor: Zulkash
+Wiki: Doom of the Witch-doctor: Zulkash, Herald of Woe
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 4
+Level: 6
+
+QuestName: Last Move: Way to Yarkuch
+Wiki: The Last Move: The Way to Yarkuch
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 3
+Level: 7
+
+QuestName: Last Move: Last Stand
+Compendium: Last Move: Yarkuch's Last
+Wiki: The Last Move: Yarkuch's Last Stand
+Pack: Tangleroot Gorge
+Patron: House Phiarlan
+Favor: 4
+Level: 7
+
+QuestName: Stand Your Ground
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: Dirty Laundry
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: The Stormreaver Fresco
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: The Bookbinder Rescue
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: Repossession
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: Come Out and Slay
+Pack: Sharn Syndicate
+Patron: The Coin Lords
+Favor: 2
+Level: 4
+
+QuestName: A Small Problem
+Pack: Phiarlan Carnival
+Patron: House Phiarlan
+Favor: 4
+Level: 5
+Epic: 20
+
+QuestName: Partycrashers
+Pack: Phiarlan Carnival
+Patron: House Phiarlan
+Favor: 4
+Level: 5
+Epic: 20
+
+QuestName: The Snitch
+Pack: Phiarlan Carnival
+Patron: House Phiarlan
+Favor: 4
+Level: 5
+Epic: 20
+
+QuestName: Under the Big Top
+Pack: Phiarlan Carnival
+Patron: House Phiarlan
+Favor: 4
+Level: 5
+Epic: 20
+
+QuestName: Tomb of the Immortal Heart
+Pack: Necropolis Part 1
+Patron: The Silver Flame
+Favor: 4
+Level: 5
+
+QuestName: Tomb of the Crimson Heart
+Pack: Necropolis Part 1
+Patron: The Silver Flame
+Favor: 4
+Level: 5
+
+QuestName: Tomb of the Sanguine Heart
+Pack: Necropolis Part 1
+Patron: The Silver Flame
+Favor: 4
+Level: 5
+
+QuestName: Tomb of the Burning Heart
+Pack: Necropolis Part 1
+Patron: The Silver Flame
+Favor: 3
+Level: 5
+
+QuestName: The Bloody Crypt
+Pack: Necropolis Part 1
+Patron: The Silver Flame
+Favor: 7
+Level: 6
+
+QuestName: Guard Duty
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 3
+Level: 5
+
+QuestName: Legend of Two-Toed Tobias
+Wiki: The Legend of Two-Toed Tobias
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 5
+Epic: 25
+Map: Three-Barrel Cove
+Map: Three-Barrel Cove (epic)
+
+QuestName: Prove Your Worth
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 5
+Epic: 25
+Map: Three-Barrel Cove
+Map: Three-Barrel Cove (epic)
+
+QuestName: Ghost of a Chance
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 5
+Epic: 25
+Map: Three-Barrel Cove
+Map: Three-Barrel Cove (epic)
+
+QuestName: Fire Caves: Stones Run Red
+Compendium: Stones Run Red
+Wiki: The Stones Run Red
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 5
+Map: Three-Barrel Cove
+
+QuestName: Fire Caves: Brood of Flame
+Compendium: Brood of Flame
+Wiki: Brood of Flame
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 3
+Level: 5
+Map: Three-Barrel Cove
+
+QuestName: Garl's Tomb: Troglodyte's Get
+Compendium: The Troglodytes' Get
+Wiki: The Troglodytes' Get
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 6
+Map: Three-Barrel Cove
+
+QuestName: Garl's Tomb: Old Grey Garl
+Compendium: Old Grey Garl
+Wiki: Old Grey Garl
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 5
+Level: 7
+Epic: 25
+Map: Three-Barrel Cove
+Map: Three-Barrel Cove (epic)
+
+QuestName: The Scoundrel's Run
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 4
+Level: 7
+Map: Three-Barrel Cove
+
+QuestName: Precious Cargo
+Pack: Three-Barrel Cove
+Patron: The Free Agents
+Favor: 7
+Level: 25
+Epic: 25
+Map: Three-Barrel Cove (epic)
+
+QuestName: The Mystery of Delera's Tomb
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 4
+Level: 5
+
+QuestName: The Missing Party
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 6
+Level: 7
+
+QuestName: Free Delera
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 5
+Level: 7
+
+QuestName: Return to Delera's Tomb
+Wiki: Return to Delera's Tomb (quest)
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 3
+Level: 6
+GroupLevel: 7
+
+QuestName: Thrall of the Necromancer
+Pack: Delera's Tomb
+Patron: House Jorasco
+Favor: 6
+Level: 8
+
+QuestName: Devil Assault
+Wiki: Devil Assault (quest)
+Pack: Devil Assault
+Patron: The Coin Lords
+Favor: 5
+Level: 6
+Epic: 21
+
+QuestName: Chronoscope
+Wiki: The Chronoscope
+Pack: Devil Assault
+Patron: The Coin Lords
+Favor: 5
+Level: 6
+Epic: 21
+Style: Raid
+
+QuestName: Kind of a Big Deal
+Pack: White Plume Mountain
+Patron: The Twelve
+Favor: 4
+Level: 6
+Epic: 21
+
+QuestName: Another Man's Treasure
+Pack: White Plume Mountain
+Patron: The Twelve
+Favor: 5
+Level: 6
+Epic: 21
+
+QuestName: Memory Lapse
+Pack: White Plume Mountain
+Patron: The Twelve
+Favor: 4
+Level: 6
+Epic: 23
+
+QuestName: The Price of Freedom
+Pack: White Plume Mountain
+Patron: The Twelve
+Favor: 5
+Level: 6
+Epic: 25
+
+QuestName: White Plume Mountain
+Pack: White Plume Mountain
+Patron: The Gatekeepers
+Favor: 5
+Level: 9
+Epic: 32
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: Freeing Achka
+Compendium: Iron Mines: Freeing Achka
+Wiki: The Iron Mines: Freeing Achka
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 3
+Level: 6
+Map: Sorrowdusk Isle
+
+QuestName: Justice for Grust
+Compendium: Iron Mines: Justice for Grust
+Wiki: The Iron Mines: Justice for Grust
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 6
+Map: Sorrowdusk Isle
+
+QuestName: The Trollish Scourge
+Compendium: Grey Moon: Trollish Scourge
+Wiki: The Grey Moon's Den: The Trollish Scourge
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 7
+Map: Sorrowdusk Isle
+
+QuestName: Extermination
+Compendium: Grey Moon: Extermination
+Wiki: The Grey Moon's Den: Extermination
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 7
+Map: Sorrowdusk Isle
+
+QuestName: Captives of the Cult
+Compendium: Temple Outpost: Captives
+Wiki: The Temple Outpost: Captives of the Cult
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 8
+Map: Sorrowdusk Isle
+
+QuestName: The Libram of the Six
+Compendium: Temple Outpost: Libram
+Wiki: The Temple Outpost: The Libram of the Six
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 8
+Map: Sorrowdusk Isle
+
+QuestName: Cleansing the Temple
+Compendium: Fane of the Six: Cleansing
+Wiki: The Fane of the Six: Cleansing the Temple
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 9
+Map: Sorrowdusk Isle
+
+QuestName: Fall of the Prelate
+Compendium: Fane of the Six: Fall of Prelate
+Wiki: The Fane of the Six: Fall of the Prelate
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 9
+Map: Sorrowdusk Isle
+
+QuestName: Quench the Flames
+Compendium: Sanctum: Quench the Flames
+Wiki: The Sanctum: Quench the Flames
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 10
+Map: Sorrowdusk Isle
+
+QuestName: Church of the Fury
+Compendium: Sanctum: Church of the Fury
+Wiki: The Sanctum: Church of the Fury
+Pack: Sorrowdusk Isle
+Patron: House Deneith
+Favor: 4
+Level: 10
+Map: Sorrowdusk Isle
+
+QuestName: Temple of Elemental Evil Part 1
+Wiki: Temple of Elemental Evil Part One
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 7
+Epic: 30
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: Temple of Elemental Evil Part 2
+Wiki: Temple of Elemental Evil Part Two
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 7
+Epic: 30
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: Bargain of Blood
+Pack: Sentinels of Stormreach
+Patron: House Deneith
+Favor: 4
+Level: 7
+Epic: 20
+Map: Searing Heights
+
+QuestName: The Black Loch
+Pack: Sentinels of Stormreach
+Patron: House Deneith
+Favor: 4
+Level: 7
+Epic: 20
+
+QuestName: Storm the Beaches
+Pack: Sentinels of Stormreach
+Patron: House Deneith
+Favor: 4
+Level: 7
+Epic: 20
+
+QuestName: The Tide Turns
+Pack: Sentinels of Stormreach
+Patron: House Deneith
+Favor: 5
+Level: 7
+Epic: 20
+
+QuestName: Spies in the House
+Pack: Sentinels of Stormreach
+Patron: House Deneith
+Favor: 5
+Level: 8
+Epic: 21
+
+QuestName: Slave Pits of the Undercity
+Pack: Against the Slave Lords
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 31
+
+QuestName: Secret of the Slavers' Stockade
+Pack: Against the Slave Lords
+Patron: The Gatekeepers
+Favor: 6
+Level: 8
+Epic: 31
+
+QuestName: Aerie of the Slave Lords
+Wiki: Assault on the Aerie of the Slave Lords
+Pack: Against the Slave Lords
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 31
+
+QuestName: Tomb of the Shadow Guard
+Pack: Necropolis Part 2
+Patron: The Silver Flame
+Favor: 5
+Level: 8
+
+QuestName: Tomb of the Shadow King
+Pack: Necropolis Part 2
+Patron: The Silver Flame
+Favor: 5
+Level: 8
+
+QuestName: Tomb of the Shadow Knight
+Pack: Necropolis Part 2
+Patron: The Silver Flame
+Favor: 5
+Level: 8
+
+QuestName: Tomb of the Shadow Lord
+Pack: Necropolis Part 2
+Patron: The Silver Flame
+Favor: 5
+Level: 8
+
+QuestName: The Shadow Crypt
+Pack: Necropolis Part 2
+Patron: The Silver Flame
+Favor: 7
+Level: 9
+
+QuestName: In Need of Supplies
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 3
+Level: 8
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: The Rescue
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 5
+Level: 8
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: Secure the Area
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 4
+Level: 10
+GroupLevel: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: The Library of Threnal
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 3
+Level: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: Escort the Expedition
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 6
+Level: 10
+GroupLevel: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: Hold for Reinforcements
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 3
+Level: 10
+GroupLevel: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: The Missing Expedition
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 4
+Level: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: Entering the Gate Chamber
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 5
+Level: 9
+Link: Map: Threnal Encounter Area	Link	https://ddowiki.com/images/ThrenalMap.jpg
+
+QuestName: The Gate Chamber
+Pack: Ruins of Threnal
+Patron: House Phiarlan
+Favor: 3
+Level: 10
+GroupLevel: 9
+
+QuestName: Tharashk Arena
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 5
+Level: 8
+Epic: 21
+
+QuestName: The Prisoner
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 5
+Level: 8
+Epic: 21
+
+QuestName: Gateway to Khyber
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 3
+Level: 9
+
+QuestName: The Jungle of Khyber
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 9
+Level: 9
+Epic: 22
+
+QuestName: Haywire Foundry
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 6
+Level: 9
+Epic: 22
+
+QuestName: Vault of Night
+Wiki: The Vault of Night
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 9
+Level: 10
+Epic: 22
+Style: Raid
+
+QuestName: Plane of Night
+Pack: Vault of Night
+Patron: House Kundarak
+Favor: 5
+Level: 10
+Epic: 22
+Style: Raid
+
+QuestName: The Last Stand
+Pack: Red Fens
+Patron: House Kundarak
+Favor: 4
+Level: 9
+Epic: 21
+Map: The Red Fens
+
+QuestName: Fathom the Depths
+Pack: Red Fens
+Patron: House Kundarak
+Favor: 5
+Level: 9
+Epic: 21
+Map: The Red Fens
+
+QuestName: The Claw of Vulkoor
+Pack: Red Fens
+Patron: House Kundarak
+Favor: 4
+Level: 9
+Epic: 21
+Map: The Red Fens
+
+QuestName: Into the Deep
+Pack: Red Fens
+Patron: House Kundarak
+Favor: 5
+Level: 9
+Epic: 21
+Map: The Red Fens
+
+QuestName: Bring Me the Head of Ghola-Fan!
+Pack: Restless Isles
+Patron: The Free Agents
+Favor: 6
+Level: 10
+Map: The Restless Isles
+
+QuestName: Slavers of the Shrieking Mines
+Pack: Restless Isles
+Patron: The Free Agents
+Favor: 6
+Level: 10
+Map: The Restless Isles
+
+QuestName: The Twilight Forge
+Pack: Restless Isles
+Patron: The Free Agents
+Favor: 10
+Level: 11
+Style: Raid
+Map: The Restless Isles
+
+QuestName: The Titan Awakes
+Pack: Restless Isles
+Patron: The Free Agents
+Favor: 6
+Level: 12
+Style: Raid
+Map: The Restless Isles
+
+QuestName: The Newcomers
+Pack: Dragonblood Prophecy
+Patron: Agents of Argonnessen
+Favor: 5
+Level: 10
+Epic: 31
+
+QuestName: Black and Blue
+Pack: Dragonblood Prophecy
+Patron: Agents of Argonnessen
+Favor: 5
+Level: 10
+Epic: 31
+
+QuestName: Riding the Storm Out
+Pack: Dragonblood Prophecy
+Patron: Agents of Argonnessen
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Killing Time
+Pack: Dragonblood Prophecy
+Patron: Agents of Argonnessen
+Favor: 11
+Level: 32
+Epic: 32
+Style: Raid
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: Into the Mists
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 3
+Level: 10
+Epic: 31
+
+QuestName: Death House
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 4
+Level: 10
+Epic: 31
+
+QuestName: Fresh-baked Dreams
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 4
+Level: 10
+Epic: 31
+
+QuestName: An Invitation to Dinner
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 10
+Epic: 32
+
+QuestName: Oath of Vengeance
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 11
+Epic: 31
+
+QuestName: A Raven at the Door
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 11
+Epic: 31
+
+QuestName: Mad Tea Party
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 11
+Epic: 31
+
+QuestName: Sealed in Amber
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 11
+Epic: 31
+
+QuestName: The Final Vintage
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 4
+Level: 12
+Epic: 31
+
+QuestName: Wrath of the Earth
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 5
+Level: 12
+Epic: 32
+
+QuestName: Ravens' Bane
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 5
+Level: 12
+Epic: 31
+
+QuestName: Sunrise
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 6
+Level: 12
+Epic: 31
+
+QuestName: The Curse of Strahd
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Old Baba's Hut
+Pack: Mists of Ravenloft
+Patron: Keepers of the Feather
+Favor: 9
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Desert Caravan
+Pack: Demon Sands
+Patron: House Phiarlan
+Favor: 5
+Level: 11
+
+QuestName: Purge the Fallen Shrine
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 6
+Level: 11
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: The Chamber of Rahmat
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 5
+Level: 10
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: The Chamber of Kourush
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 6
+Level: 11
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: Maraud the Mines
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 6
+Level: 11
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: Raid the Vulkoorim
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 6
+Level: 11
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: An Offering of Blood
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 8
+Level: 11
+Epic: 21
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: Chains of Flame
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 7
+Level: 12
+Epic: 22
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: The Chamber of Raiyum
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 8
+Level: 12
+Epic: 22
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: Against the Demon Queen
+Wiki: Against the Demon Queen (quest)
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 8
+Level: 12
+Epic: 22
+Link: ADQ Riddle Solver	Shortcut	Utils\ADQ.exe
+Map: Sands of Menechtarun
+Link: Map: Sands of Menechtarun (Pathing)	Link	https://ddowiki.com/images/Menechtarun_Desert_Map_w_Paths.jpg
+
+QuestName: Zawabi's Revenge
+Pack: Demon Sands
+Patron: The Free Agents
+Favor: 6
+Level: 12
+Epic: 22
+Style: Raid
+
+QuestName: Tomb of the Blighted
+Pack: Necropolis Part 3
+Patron: The Silver Flame
+Favor: 6
+Level: 11
+
+QuestName: Tomb of the Unhallowed
+Pack: Necropolis Part 3
+Patron: The Silver Flame
+Favor: 6
+Level: 11
+
+QuestName: Tomb of the Forbidden
+Pack: Necropolis Part 3
+Patron: The Silver Flame
+Favor: 6
+Level: 11
+
+QuestName: Tomb of the Tormented
+Pack: Necropolis Part 3
+Patron: The Silver Flame
+Favor: 6
+Level: 11
+
+QuestName: The Cursed Crypt
+Pack: Necropolis Part 3
+Patron: The Silver Flame
+Favor: 7
+Level: 12
+
+QuestName: Assault on Summerfield
+Pack: Attack on Stormreach
+Patron: The Coin Lords
+Favor: 5
+Level: 13
+
+QuestName: Blockade Buster
+Pack: Attack on Stormreach
+Patron: The Coin Lords
+Favor: 5
+Level: 13
+
+QuestName: Undermine
+Pack: Attack on Stormreach
+Patron: The Coin Lords
+Favor: 5
+Level: 13
+
+QuestName: Siegebreaker
+Pack: Attack on Stormreach
+Patron: The Coin Lords
+Favor: 6
+Level: 13
+
+QuestName: Feast or Famine
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 13
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: Trial by Fire
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 13
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: The Maze of Madness
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 13
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: Foundation of Discord
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 13
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: A Cry for Help
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 7
+Level: 13
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: The Crucible
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 14
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: Madstone Crater
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 14
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: The Prison of the Planes
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 14
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: A Cabal for One
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 14
+Epic: 24
+Map: Ruins of Gianthold
+Map: Ruins of Gianthold (epic)
+
+QuestName: Gianthold Tor
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 7
+Level: 14
+Epic: 24
+
+QuestName: The Reaver's Fate
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 6
+Level: 14
+Style: Raid
+
+QuestName: The Fall of Truth
+Pack: Ruins of Gianthold
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 25
+Epic: 25
+Style: Raid
+
+QuestName: The Archons' Trial
+Pack: Trials of the Archons
+Patron: The Gatekeepers
+Favor: 6
+Level: 13
+Epic: 30
+
+QuestName: Demon Assault
+Pack: Trials of the Archons
+Patron: The Gatekeepers
+Favor: 6
+Level: 13
+Epic: 30
+
+QuestName: The Devil's Details
+Pack: Trials of the Archons
+Patron: The Gatekeepers
+Favor: 6
+Level: 13
+Epic: 30
+
+QuestName: Defiler of the Just
+Pack: Trials of the Archons
+Patron: The Gatekeepers
+Favor: 9
+Level: 30
+Epic: 30
+Style: Raid
+
+QuestName: Tavern Brawl
+Wiki: Tavern Brawl (quest)
+Pack: Devil's Gambit
+Patron: The Gatekeepers
+Favor: 4
+Level: 14
+Epic: 30
+
+QuestName: Grim and Barett
+Pack: Devil's Gambit
+Patron: The Gatekeepers
+Favor: 6
+Level: 14
+Epic: 30
+
+QuestName: Subversion
+Pack: Devil's Gambit
+Patron: The Gatekeepers
+Favor: 6
+Level: 14
+Epic: 30
+
+QuestName: Multitude of Menace
+Pack: Devil's Gambit
+Patron: The Gatekeepers
+Favor: 6
+Level: 14
+Epic: 30
+
+QuestName: Night Falls on Stormreach
+Pack: Disciples of Rage
+Patron: House Jorasco
+Favor: 5
+Level: 14
+Epic: 31
+
+QuestName: Quarantine
+Pack: Disciples of Rage
+Patron: House Jorasco
+Favor: 5
+Level: 14
+Epic: 31
+
+QuestName: The Madness of Crowds
+Pack: Disciples of Rage
+Patron: House Jorasco
+Favor: 5
+Level: 14
+Epic: 31
+
+QuestName: The Age of Rage
+Pack: Disciples of Rage
+Patron: House Jorasco
+Favor: 5
+Level: 14
+Epic: 31
+
+QuestName: Toxic Treatment
+Pack: Disciples of Rage
+Patron: House Jorasco
+Favor: 6
+Level: 14
+Epic: 31
+
+QuestName: Desecrated Temple of Vol
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 6
+Level: 14
+Epic: 29
+Map: Orchard of the Macabre
+Map: Orchard of the Macabre (epic)
+
+QuestName: Inferno of the Damned
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 6
+Level: 14
+Epic: 29
+Map: Orchard of the Macabre
+Map: Orchard of the Macabre (epic)
+
+QuestName: Flesh Maker's Laboratory
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 6
+Level: 14
+Epic: 29
+Map: Orchard of the Macabre
+Map: Orchard of the Macabre (epic)
+
+QuestName: Ghosts of Perdition
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 6
+Level: 14
+Epic: 29
+Map: Orchard of the Macabre
+Map: Orchard of the Macabre (epic)
+
+QuestName: Litany of the Dead
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 6
+Level: 15
+
+QuestName: Ascension Chamber
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 7
+Level: 17
+Style: Raid
+Link: Shortman Guide	Link	https://www.ddo.com/forums/showthread.php/481822-Ascension-Chamber-Shortman-Guide
+
+QuestName: Mark of Death
+Wiki: The Mark of Death
+Pack: Necropolis Part 4
+Patron: The Silver Flame
+Favor: 9
+Level: 30
+Epic: 30
+Style: Raid
+
+QuestName: Missing
+Pack: Harbinger of Madness
+Patron: The Free Agents
+Favor: 6
+Level: 15
+
+QuestName: Sinister Storage
+Pack: Harbinger of Madness
+Patron: The Free Agents
+Favor: 5
+Level: 15
+
+QuestName: Fear Factory
+Pack: Harbinger of Madness
+Patron: The Free Agents
+Favor: 5
+Level: 15
+
+QuestName: In the Flesh
+Wiki: In The Flesh
+Pack: Harbinger of Madness
+Patron: The Free Agents
+Favor: 6
+Level: 15
+
+QuestName: Third Time's a Charm
+Pack: Mines of Tethyamar
+Patron: The Harpers
+Favor: 5
+Level: 15
+Epic: 31
+
+QuestName: Strike Back
+Pack: Mines of Tethyamar
+Patron: The Harpers
+Favor: 5
+Level: 15
+Epic: 31
+
+QuestName: Graveyard Shift
+Pack: Mines of Tethyamar
+Patron: The Harpers
+Favor: 5
+Level: 15
+Epic: 31
+
+QuestName: Records of the Past
+Pack: Mines of Tethyamar
+Patron: The Harpers
+Favor: 5
+Level: 15
+Epic: 31
+
+QuestName: Desire in the Dark
+Pack: Mines of Tethyamar
+Patron: The Harpers
+Favor: 5
+Level: 15
+Epic: 31
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: Creeping Death
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 6
+Level: 15
+Epic: 31
+
+QuestName: To Curse the Sky
+Pack: Vale of Twilight
+Patron: House Deneith
+Favor: 6
+Level: 15
+Epic: 31
+
+QuestName: Running with the Devils
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 8
+Level: 16
+Map: The Vale of Twilight
+
+QuestName: Ritual Sacrifice
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 8
+Level: 16
+Map: The Vale of Twilight
+
+QuestName: Let Sleeping Dust Lie
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 8
+Level: 16
+Map: The Vale of Twilight
+
+QuestName: The Coalescence Chamber
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 8
+Level: 16
+Map: The Vale of Twilight
+
+QuestName: Rainbow in the Dark
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 8
+Level: 16
+Map: The Vale of Twilight
+
+QuestName: The Shroud
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 11
+Level: 17
+Style: Raid
+Link: Shroud Puzzle Solver	Shortcut	Utils\LightsOut.exe
+
+QuestName: Legendary Shroud
+Wiki: The Codex and the Shroud
+Pack: Vale of Twilight
+Patron: The Gatekeepers
+Favor: 14
+Level: 32
+Epic: 32
+Style: Raid
+Link: Shroud Puzzle Solver	Shortcut	Utils\LightsOut.exe
+
+QuestName: Hound of Xoriat
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 9
+Level: 18
+Style: Raid
+Map: The Subterrane - Central
+Map: The Subterrane - East
+
+QuestName: A Vision of Destruction
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 9
+Level: 18
+Style: Raid
+Map: The Subterrane - Central
+
+QuestName: A Sharn Welcome
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+
+QuestName: Red Rain
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+
+QuestName: Best Laid Plans
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+
+QuestName: The Same Old Song
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+
+QuestName: Just Business
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+
+QuestName: No Refunds
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 6
+Level: 16
+Epic: 32
+
+QuestName: House of Pain
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 7
+Level: 16
+Epic: 32
+
+QuestName: Blown Deadline
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 6
+Level: 16
+Epic: 32
+
+QuestName: Reach for the Sky
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 7
+Level: 16
+Epic: 32
+
+QuestName: Too Hot to Handle
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Project Nemesis
+Pack: Masterminds of Sharn
+Patron: Sharn City Council
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Smash and Burn
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Thralls of the Fungus Lord
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 15
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Scavenger Hunt
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 16
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: The Magma Must Flow
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 16
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Roll Call
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 16
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Security Detail
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 5
+Level: 16
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Ruinous Schemes
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 4
+Level: 15
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: The Wraithcallers
+Pack: Sharn: The Cogs
+Patron: Sharn City Council
+Favor: 4
+Level: 15
+Epic: 32
+Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Friends in Low Places
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 16
+Epic: 26
+Map: Wheloon Prison
+Map: Wheloon Prison (epic)
+
+QuestName: A Lesson in Deception
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 16
+Epic: 26
+Map: Wheloon Prison
+Map: Wheloon Prison (epic)
+
+QuestName: The Thrill of the Hunt
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 6
+Level: 16
+Epic: 26
+Map: Wheloon Prison
+Map: Wheloon Prison (epic)
+
+QuestName: Army of Shadow
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 16
+Epic: 26
+Map: Wheloon Prison
+Map: Wheloon Prison (epic)
+
+QuestName: Through a Mirror Darkly
+Pack: Shadowfell Conspiracy
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 16
+Epic: 26
+Map: Wheloon Prison
+Map: Wheloon Prison (epic)
+
+QuestName: Finding Dorris
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 7
+Level: 17
+Epic: 32
+
+QuestName: Members Only
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: Safety in Numbers
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: The Underlane Assignment
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: The Offshore Account
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: Soul Survivor
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 7
+Level: 17
+Epic: 32
+
+QuestName: Acute Delirium
+Pack: Reign of Madness
+Patron: The Twelve
+Favor: 7
+Level: 17
+
+QuestName: Sane Asylum
+Wiki: The Sane Asylum
+Pack: Reign of Madness
+Patron: The Twelve
+Favor: 7
+Level: 17
+
+QuestName: Lord of Stone
+Wiki: The Lord of Stone
+Pack: Reign of Madness
+Patron: The Twelve
+Favor: 6
+Level: 17
+
+QuestName: Lord of Eyes
+Wiki: The Lord of Eyes
+Pack: Reign of Madness
+Patron: The Twelve
+Favor: 7
+Level: 17
+
+QuestName: Enter the Kobold
+Pack: Reaver's Reach
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 17
+Map: Mount Reysalon
+
+QuestName: Monastery of the Scorpion
+Pack: Reaver's Reach
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 17
+Map: Soami Gardens
+
+QuestName: Prey on the Hunter
+Pack: Reaver's Reach
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 17
+Map: Aussircaex's Valley
+
+QuestName: Stealer of Souls
+Pack: Reaver's Reach
+Patron: Agents of Argonnessen
+Favor: 8
+Level: 17
+Map: Eerie Forest
+
+QuestName: Outbreak
+Pack: Druid's Deep
+Patron: The Harpers
+Favor: 6
+Level: 17
+Epic: 23
+
+QuestName: Overgrowth
+Pack: Druid's Deep
+Patron: The Harpers
+Favor: 6
+Level: 17
+Epic: 23
+
+QuestName: Thorn and Paw
+Pack: Druid's Deep
+Patron: The Harpers
+Favor: 6
+Level: 17
+Epic: 23
+
+QuestName: Druid's Curse
+Wiki: The Druid's Curse
+Pack: Druid's Deep
+Patron: The Harpers
+Favor: 7
+Level: 17
+Epic: 23
+
+QuestName: Detour
+Pack: High Road of Shadows
+Patron: The Harpers
+Favor: 7
+Level: 18
+Epic: 24
+Map: The High Road
+
+QuestName: Rest Stop
+Pack: High Road of Shadows
+Patron: The Harpers
+Favor: 6
+Level: 18
+Epic: 24
+Map: The High Road
+
+QuestName: Lost in the Swamp
+Pack: High Road of Shadows
+Patron: The Harpers
+Favor: 6
+Level: 18
+Epic: 24
+Map: The High Road
+
+QuestName: A Stay at the Inn
+Pack: High Road of Shadows
+Patron: The Harpers
+Favor: 6
+Level: 18
+Epic: 24
+Map: The High Road
+
+QuestName: The End of the Road
+Pack: High Road of Shadows
+Patron: The Harpers
+Favor: 7
+Level: 18
+Epic: 24
+Map: The High Road
+
+QuestName: Palace of Stone
+Pack: Heart of Madness
+Patron: The Twelve
+Favor: 7
+Level: 18
+Epic: 26
+
+QuestName: Fashion Madness
+Pack: Heart of Madness
+Patron: The Twelve
+Favor: 7
+Level: 18
+Epic: 26
+
+QuestName: Terminal Delirium
+Pack: Heart of Madness
+Patron: The Twelve
+Favor: 7
+Level: 18
+Epic: 26
+
+QuestName: Finding the Path
+Pack: Path of Inspiration
+Patron: The Coin Lords
+Favor: 6
+Level: 18
+
+QuestName: Dream Conspiracy
+Pack: Path of Inspiration
+Patron: The Coin Lords
+Favor: 6
+Level: 18
+
+QuestName: The Shipwrecked Spy
+Pack: Path of Inspiration
+Patron: The Coin Lords
+Favor: 6
+Level: 18
+
+QuestName: I Dream of Jeets
+Pack: Path of Inspiration
+Patron: The Coin Lords
+Favor: 6
+Level: 18
+
+QuestName: The Mindsunder
+Pack: Path of Inspiration
+Patron: The Coin Lords
+Favor: 6
+Level: 18
+
+QuestName: Eye of the Titan
+Pack: Dreaming Dark
+Patron: The Coin Lords
+Favor: 6
+Level: 19
+
+QuestName: Reclaiming Memories
+Pack: Dreaming Dark
+Patron: The Coin Lords
+Favor: 6
+Level: 19
+
+QuestName: Raiding the Giants' Vault
+Pack: Dreaming Dark
+Patron: The Coin Lords
+Favor: 6
+Level: 19
+Style: Solo
+
+QuestName: Mining for Ancient Secrets
+Pack: Dreaming Dark
+Patron: The Coin Lords
+Favor: 6
+Level: 19
+
+QuestName: Dreaming Dark
+Wiki: The Dreaming Dark (quest)
+Pack: Dreaming Dark
+Patron: The Coin Lords
+Favor: 6
+Level: 20
+
+QuestName: The Tracker's Trap
+Pack: Shadowfell Conspiracy
+Patron: The Harpers
+Favor: 6
+Level: 19
+Epic: 27
+Map: The Storm Horns
+Map: The Storm Horns (epic)
+
+QuestName: Lines of Supply
+Pack: Shadowfell Conspiracy
+Patron: The Harpers
+Favor: 6
+Level: 19
+Epic: 27
+Map: The Storm Horns
+Map: The Storm Horns (epic)
+
+QuestName: Breaking the Ranks
+Pack: Shadowfell Conspiracy
+Patron: The Harpers
+Favor: 6
+Level: 19
+Epic: 27
+Map: The Storm Horns
+Map: The Storm Horns (epic)
+
+QuestName: A Break in the Ice
+Wiki: A Break In the Ice
+Pack: Shadowfell Conspiracy
+Patron: The Harpers
+Favor: 7
+Level: 19
+Epic: 27
+Map: The Storm Horns
+Map: The Storm Horns (epic)
+
+QuestName: What Goes Up
+Pack: Shadowfell Conspiracy
+Patron: The Harpers
+Favor: 7
+Level: 19
+Epic: 27
+Map: The Storm Horns
+Map: The Storm Horns (epic)
+
+QuestName: Weapons Shipment
+Wiki: The Weapons Shipment
+Pack: Devils of Shavarath
+Patron: The Twelve
+Favor: 6
+Level: 19
+Map: Devil Battlefield
+
+QuestName: Wrath of the Flame
+Pack: Devils of Shavarath
+Patron: The Twelve
+Favor: 6
+Level: 19
+Map: Devil Battlefield
+
+QuestName: A New Invasion
+Pack: Devils of Shavarath
+Patron: The Yugoloth
+Favor: 7
+Level: 19
+Map: Devil Battlefield
+
+QuestName: Bastion of Power
+Pack: Devils of Shavarath
+Patron: The Yugoloth
+Favor: 7
+Level: 19
+Map: Devil Battlefield
+
+QuestName: Genesis Point
+Pack: Devils of Shavarath
+Patron: The Yugoloth
+Favor: 8
+Level: 19
+Map: Devil Battlefield
+
+QuestName: Sins of Attrition
+Pack: Devils of Shavarath
+Patron: The Yugoloth
+Favor: 7
+Level: 19
+Map: Devil Battlefield
+
+QuestName: Tower of Despair
+Pack: Devils of Shavarath
+Patron: The Yugoloth
+Favor: 8
+Level: 20
+Style: Raid
+Map: Devil Battlefield
+
+QuestName: Blown to Bits
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 6
+Level: 19
+Map: House Cannith Manufactury
+
+QuestName: Power Play
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 7
+Level: 19
+Map: House Cannith Manufactury
+
+QuestName: Schemes of the Enemy
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 6
+Level: 19
+Map: House Cannith Manufactury
+
+QuestName: Master Artificer
+Wiki: The Master Artificer
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 7
+Level: 19
+Epic: 22
+Style: Raid
+Map: House Cannith Manufactury
+Map: Artificer Workshops
+
+QuestName: Lord of Blades
+Wiki: The Lord of Blades
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 7
+Level: 20
+Epic: 22
+Style: Raid
+Map: House Cannith Manufactury
+Map: Research Facility
+
+QuestName: Impossible Demands
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 21
+Epic: 21
+Map: The King's Forest
+
+QuestName: Unquiet Graves
+Wiki: The Unquiet Graves
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 7
+Level: 21
+Epic: 21
+Map: The King's Forest
+
+QuestName: Lost Thread
+Wiki: The Lost Thread
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 21
+Epic: 21
+Map: The King's Forest
+Map: The Underdark
+Map: Sschindylryn
+
+QuestName: The Battle for Eveningstar
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 21
+Epic: 21
+
+QuestName: House of Rusted Blades
+Wiki: The House of Rusted Blades
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+Map: The King's Forest
+Map: The Underdark
+Map: Sschindylryn
+
+QuestName: House of Broken Chains
+Wiki: The House of Broken Chains
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+Map: Sschindylryn
+
+QuestName: House of Death Undone
+Wiki: The House of Death Undone
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+Map: Sschindylryn
+
+QuestName: The Portal Opens
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 22
+Epic: 22
+Map: Sschindylryn
+
+QuestName: Trial by Fury
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 23
+Epic: 23
+Map: The Demonweb
+Link: Puzzle Solver	Shortcut	Utils\LightsOut.exe
+
+QuestName: Deal and the Demon
+Wiki: The Deal and the Demon
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 23
+Epic: 23
+Map: The Demonweb
+
+QuestName: Reclaiming the Rift
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 23
+Epic: 23
+Map: The Demonweb
+
+QuestName: Caught in the Web
+Pack: Menace of the Underdark
+Patron: Purple Dragon Knights
+Favor: 8
+Level: 24
+Epic: 24
+Style: Raid
+
+QuestName: Haunted Halls of Eveningstar
+Wiki: The Haunted Halls of Eveningstar
+Pack: Haunted Halls of Eveningstar
+Patron: The Harpers
+Favor: 9
+Level: 28
+Epic: 28
+
+QuestName: Fire on Thunder Peak
+Pack: Shadow Under Thunderholme
+Patron: Purple Dragon Knights
+Favor: 9
+Level: 30
+Epic: 30
+Style: Raid
+Map: The Ruins of Thunderholme
+
+QuestName: Temple of the Deathwyrm
+Pack: Shadow Under Thunderholme
+Patron: Purple Dragon Knights
+Favor: 9
+Level: 30
+Epic: 30
+Style: Raid
+Map: The Ruins of Thunderholme
+
+QuestName: The Promise of Fire
+Patron: Morgrave University
+Favor: 4
+Level: 6
+Epic: 27
+
+QuestName: The Endless Revels
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Witch Hunt
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Quid Pro Quo
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Needle in a Fey Stack
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Make Believe
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: Wake me up inside
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Thornwright
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Immortality Lessons
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: The Icemount Curse
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: A Frosty Reception
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Legend of the Lost Locket
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+Map: The Feywild
+
+QuestName: The Knight who Cried Windmill
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+Map: The Feywild
+
+QuestName: Combatting Corruption
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 2
+Level: 5
+Epic: 32
+Map: The Feywild
