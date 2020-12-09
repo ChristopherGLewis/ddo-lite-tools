@@ -42,6 +42,7 @@ Pack: Three-Barrel Cove
 
 Area: The Feywild
 Map: Map-of-the-Feywild.png
+Wiki: The Feywild
 Low: 3
 High: 8
 Explorer: 3000
@@ -238,7 +239,7 @@ Explorer: 91000
 Pack: Menace of the Underdark
 
 Area: The Underdark
-Map: UnderdarkMap.jpg
+Map: Underdark_map_with_pathing_overlay.jpg
 Low: 20
 High: 26
 Explorer: 30468
@@ -328,10 +329,10 @@ High: 35
 Explorer: 47811
 Pack: Mists of Ravenloft
 
-Area: The Feywild (epic)
+Area: The Feywild (Epic)
 Map: Map-of-the-Feywild.png
+Wiki: The Feywild
 Low: 20
 High: 36
-Explorer: 34125
+Explorer: 39375
 Pack: Fables of the Feywild
-

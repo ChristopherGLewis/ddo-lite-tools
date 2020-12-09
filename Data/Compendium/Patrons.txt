@@ -50,4 +50,4 @@ PatronName: Morgrave University
 Abbreviation: Morgrave
 
 PatronName: The Summer Court
-Abbreviation: S. Court
+Abbreviation: Summer

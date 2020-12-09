@@ -308,5 +308,5 @@ HeroicHigh: 6
 EpicLow: 32
 EpicHigh: 32
 Patron: The Summer Court
-Wiki: The Feywild
+Wiki: Fables of the Feywild
 Link: Named Items	Link	https://ddowiki.com/page/Update_48_named_items

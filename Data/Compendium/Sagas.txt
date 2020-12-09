@@ -1,9 +1,9 @@
 ;***** IMPORTANT ******
 ; You can reorder sagas columns by changing the order of sagas in this file,
-; BUT DO NOT CHANGE THE QUEST ORDER WITHIN A SAGA. Character saga progress is
+; BUT DO NOT CHANGE THE QUEST ORDER WITHIN A SAGA. Character saga progress is 
 ; stored as a number, not a quest name, so if the quest order in this file
 ; changes your progress will point to the wrong quests.
-;
+; 
 ; You can freely change quest order within sagas using the SagaOrderXXXX.txt files
 
 SagaName: The Pirates of the Thunder Sea (heroic)
@@ -24,26 +24,26 @@ Quest: Storm the Beaches
 Quest: Bargain of Blood
 Quest: The Tide Turns
 
-SagaName: Fables of the Feywild: Heroic
+SagaName: Fables of the Feywild (Heroic)
 Abbreviation: Feywild
 Tier: Heroic
-NPC: ???
+NPC: Gallant Twillford
 Tome: 1
 Astrals: 1
-XP: ???	???	???	???
-Quest: The Endless Revels
-Quest: Witch Hunt
-Quest: The Knight Who Cried Windmill
-Quest: Make Believe
+XP: 16	22	35	46
 Quest: A Frosty Reception
-Quest: Wake Me Up Inside
-Quest: The Icemount Curse
 Quest: Combatting Corruption
-Quest: The Thornwright
-Quest: Needle in a Fey Stack
+Quest: Make Believe
+Quest: The Endless Revels
 Quest: The Legend of the Lost Locket
-Quest: Quid Pro Quo
+Quest: Wake Me Up Inside
+Quest: Witch Hunt
 Quest: Immortality Lessons
+Quest: Needle in a Fey Stack
+Quest: Quid Pro Quo
+Quest: The Icemount Curse
+Quest: The Knight Who Cried Windmill
+Quest: The Thornwright
 
 SagaName: Mists of Ravenloft Saga: Heroic
 Abbreviation: Ravenloft
@@ -89,7 +89,7 @@ Tier: Heroic
 NPC: Bellman Rulth
 Tome: 1
 Astrals: 1
-XP: ???	22	35	46
+XP: 16	22	35	46
 Quest: Smash and Burn
 Quest: Thralls of the Fungus Lord
 Quest: Scavenger Hunt
@@ -105,7 +105,7 @@ Tier: Heroic
 NPC: Darius Benford
 Tome: 1
 Astrals: 1
-XP: ???	22	35	46
+XP: 16	22	35	46
 Quest: Lost at Sea
 Quest: A Sharn Welcome
 Quest: Red Rain
@@ -351,7 +351,7 @@ SagaName: Cogs: Epic
 Abbreviation: Cogs
 Tier: Epic
 NPC: Alle Latham
-Tome: 3
+Tome: ?
 Astrals: 1
 XP: 96	147	207	276
 Quest: Smash and Burn
@@ -384,20 +384,20 @@ Quest: Reach for the Sky
 SagaName: Fables of the Feywild: Epic
 Abbreviation: Feywild
 Tier: Epic
-NPC: ???
+NPC: Amber Brightleaf
 Tome: 3
 Astrals: 1
 XP: 96	147	207	276
-Quest: The Endless Revels
-Quest: Witch Hunt
-Quest: The Knight Who Cried Windmill
-Quest: Make Believe
 Quest: A Frosty Reception
-Quest: Wake Me Up Inside
-Quest: The Icemount Curse
 Quest: Combatting Corruption
-Quest: The Thornwright
-Quest: Needle in a Fey Stack
+Quest: Make Believe
+Quest: The Endless Revels
 Quest: The Legend of the Lost Locket
-Quest: Quid Pro Quo
+Quest: Wake Me Up Inside
+Quest: Witch Hunt
 Quest: Immortality Lessons
+Quest: Needle in a Fey Stack
+Quest: Quid Pro Quo
+Quest: The Icemount Curse
+Quest: The Knight Who Cried Windmill
+Quest: The Thornwright

@@ -958,6 +958,97 @@ Patron: The Silver Flame
 Favor: 7
 Level: 6
 
+QuestName: A Frosty Reception
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 5
+Epic: 32
+
+QuestName: Combatting Corruption
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 2
+Level: 5
+Epic: 32
+
+QuestName: Make Believe
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+
+QuestName: The Endless Revels
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+
+QuestName: The Legend of the Lost Locket
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+
+QuestName: Wake Me Up Inside
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+
+QuestName: Witch Hunt
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 5
+Epic: 32
+
+QuestName: Immortality Lessons
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+
+QuestName: Needle in a Fey Stack
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+
+QuestName: Quid Pro Quo
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 4
+Level: 6
+Epic: 32
+
+QuestName: The Icemount Curse
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 5
+Level: 6
+Epic: 32
+
+QuestName: The Knight Who Cried Windmill
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+
+QuestName: The Thornwright
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 3
+Level: 6
+Epic: 32
+
 QuestName: Guard Duty
 Pack: Three-Barrel Cove
 Patron: The Free Agents
@@ -1134,6 +1225,12 @@ Favor: 5
 Level: 9
 Epic: 32
 Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: The Promise of Fire
+Patron: Morgrave University
+Favor: 4
+Level: 6
+Epic: 27
 
 QuestName: Freeing Achka
 Compendium: Iron Mines: Freeing Achka
@@ -2187,6 +2284,14 @@ Level: 18
 Style: Raid
 Map: The Subterrane - Central
 
+QuestName: Legendary Vision of Destruction
+Pack: Vale of Twilight
+Patron: The Twelve
+Favor: 12
+Level: 32
+Style: Raid
+Map: The Subterrane - Central
+
 QuestName: A Sharn Welcome
 Pack: Masterminds of Sharn
 Patron: Sharn City Council
@@ -2382,13 +2487,6 @@ Favor: 7
 Level: 17
 Epic: 32
 
-QuestName: Members Only
-Pack: The Soul Splitter
-Patron: Sharn City Council
-Favor: 6
-Level: 17
-Epic: 32
-
 QuestName: Safety in Numbers
 Pack: The Soul Splitter
 Patron: Sharn City Council
@@ -2397,6 +2495,13 @@ Level: 17
 Epic: 32
 
 QuestName: The Underlane Assignment
+Pack: The Soul Splitter
+Patron: Sharn City Council
+Favor: 6
+Level: 17
+Epic: 32
+
+QuestName: Members Only
 Pack: The Soul Splitter
 Patron: Sharn City Council
 Favor: 6
@@ -2753,6 +2858,17 @@ Style: Raid
 Map: House Cannith Manufactury
 Map: Artificer Workshops
 
+QuestName: Legendary Master Artificer
+Wiki: Legendary Master Artificer
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+Map: House Cannith Manufactury
+Map: Artificer Workshops
+
 QuestName: Lord of Blades
 Wiki: The Lord of Blades
 Pack: Secrets of the Artificers
@@ -2760,6 +2876,17 @@ Patron: House Cannith
 Favor: 7
 Level: 20
 Epic: 22
+Style: Raid
+Map: House Cannith Manufactury
+Map: Research Facility
+
+QuestName: Legendary Lord of Blades
+Wiki: Legendary Lord of Blades
+Pack: Secrets of the Artificers
+Patron: House Cannith
+Favor: 10
+Level: 32
+Epic: 32
 Style: Raid
 Map: House Cannith Manufactury
 Map: Research Facility
@@ -2895,113 +3022,3 @@ Level: 30
 Epic: 30
 Style: Raid
 Map: The Ruins of Thunderholme
-
-QuestName: The Promise of Fire
-Patron: Morgrave University
-Favor: 4
-Level: 6
-Epic: 27
-
-QuestName: The Endless Revels
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: Witch Hunt
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: Quid Pro Quo
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 4
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: Needle in a Fey Stack
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 5
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: Make Believe
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: Wake me up inside
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: The Thornwright
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: Immortality Lessons
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 5
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: The Icemount Curse
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 5
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: A Frosty Reception
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 4
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: The Legend of the Lost Locket
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 5
-Epic: 32
-Map: The Feywild
-
-QuestName: The Knight who Cried Windmill
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 3
-Level: 6
-Epic: 32
-Map: The Feywild
-
-QuestName: Combatting Corruption
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 2
-Level: 5
-Epic: 32
-Map: The Feywild
