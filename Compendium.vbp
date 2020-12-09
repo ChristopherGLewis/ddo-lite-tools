@@ -1,5 +1,5 @@
 Type=Exe
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
 Class=clsFile; Source\Classes\clsFile.cls
 Class=clsFolder; Source\Classes\clsFolder.cls
 Class=clsWindowsXP; Source\Classes\clsWindowsXP.cls
@@ -66,8 +66,8 @@ Name="Compendium"
 HelpContextID="0"
 CompatibleMode="0"
 MajorVer=1
-MinorVer=3
-RevisionVer=1
+MinorVer=4
+RevisionVer=0
 AutoIncrementVer=0
 ServerSupportFiles=0
 VersionProductName="Compendium"

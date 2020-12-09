@@ -13,6 +13,13 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+
+### 3.3.3
+Changes:
+    Added Alchemist, Shifter and Shifter iconic to compendium
+    Updated Compendium with updates from SardaofChaos 
+    Compendium version is now 1.4.0, other versions unchanged
+
 ### 3.3.2
 Fixes: 
    Alchemist missing Bonus feat at 12.
