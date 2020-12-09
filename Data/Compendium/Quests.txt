@@ -395,7 +395,7 @@ Favor: 5
 Level: 10
 Map: Ataraxia's Haven
 
-QuestName: Hiding in Plain Sight
+QuestName: Hiding in Plain Sight 
 Patron: The Free Agents
 Favor: 5
 Level: 10
