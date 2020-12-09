@@ -328,10 +328,10 @@ High: 35
 Explorer: 47811
 Pack: Mists of Ravenloft
 
-Area: The Feywild
+Area: The Feywild (epic)
 Map: Map-of-the-Feywild.png
 Low: 20
 High: 36
-Explorer: 7875
+Explorer: 34125
 Pack: Fables of the Feywild
 
