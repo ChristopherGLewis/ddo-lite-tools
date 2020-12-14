@@ -1331,19 +1331,19 @@ Private Sub CompendiumCharacter(pstrRaw As String)
                     Case "tomeepicxp"
                         If strItem = "Lesser" Or strItem = "Greater" Then .Tome.EpicXP = strItem
                     Case "pastlifeclass"
-                        For i = 1 To 14
+                        For i = 1 To maxClassCount
                             .PastLife.Class(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastliferace"
-                        For i = 1 To 11
+                        For i = 1 To maxRaceCount
                             .PastLife.Racial(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastlifeiconic"
-                        For i = 1 To 6
+                        For i = 1 To maxIconicCount
                             .PastLife.Iconic(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastlifeepic"
-                        For i = 1 To 12
+                        For i = 1 To maxEpicCount
                             .PastLife.Epic(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                 End Select

@@ -228,11 +228,17 @@ Public Type TomeType
     RR(1 To 2) As Long
 End Type
 
+'TODO Remove hard coding
+Public Const maxClassCount = 15
+Public Const maxRaceCount = 12
+Public Const maxIconicCount = 6
+Public Const maxEpicCount = 12
+
 Public Type PastLifeType
-    Class(1 To 14) As Long
-    Racial(1 To 11) As Long
-    Iconic(1 To 6) As Long
-    Epic(1 To 12) As Long
+    Class(1 To maxClassCount) As Long
+    Racial(1 To maxRaceCount) As Long
+    Iconic(1 To maxIconicCount) As Long
+    Epic(1 To maxEpicCount) As Long
 End Type
 
 Public Type CharacterType

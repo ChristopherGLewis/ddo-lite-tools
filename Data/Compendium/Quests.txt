@@ -672,35 +672,35 @@ Epic: 21
 QuestName: The Home of Memory
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers
-Favor: 3
+Favor: 9
 Level: 3
 Epic: 32
 
 QuestName: Heart of the Problem
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers
-Favor: 3
+Favor: 9
 Level: 3
 Epic: 32
 
 QuestName: Rosemary's Ballad
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers
-Favor: 3
+Favor: 9
 Level: 3
 Epic: 32
 
 QuestName: The Sacred Bounty
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers
-Favor: 2
+Favor: 6
 Level: 3
 Epic: 32
 
 QuestName: Housekeeping
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers
-Favor: 3
+Favor: 9
 Level: 3
 Epic: 32
 

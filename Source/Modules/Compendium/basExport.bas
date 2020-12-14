@@ -357,15 +357,14 @@ Private Sub AddBuilderSpecialFeats(ptypTome As TomeType, ptypPL As PastLifeType)
     Dim strArray() As String
     Dim i As Long
     
-    strArray = Split("Heroic,Barbarian,Bard,Cleric,Fighter,Paladin,Ranger,Rogue,Sorcerer,Wizard,Monk,Favored Soul,Artificer,Druid,Warlock", ",")
+    strArray = Split("Heroic,Barbarian,Bard,Cleric,Fighter,Paladin,Ranger,Rogue,Sorcerer,Wizard,Monk,Favored Soul,Artificer,Druid,Warlock,Alchemist", ",")
     For i = 1 To UBound(ptypPL.Class)
         AddBuilderPastLife strArray(0), strArray(i), ptypPL.Class(i), blnSpecial
     Next
-    strArray = Split("Racial,Aasimar,Dragonborn,Drow,Dwarf,Elf,Gnome,Halfling,Half-Elf,Half-Orc,Human,Warforged", ",")
+    strArray = Split("Racial,Aasimar,Dragonborn,Drow,Dwarf,Elf,Gnome,Halfling,Half-Elf,Half-Orc,Human,Warforged,Shifter", ",")
     For i = 1 To UBound(ptypPL.Racial)
         AddBuilderPastLife strArray(0), strArray(i), ptypPL.Racial(i), blnSpecial
     Next
-    strArray = Split("Iconic,Bladeforged,Deep Gnome,Morninglord,Purple Dragon Knight,Aasimar Scourge,Shadar-Kai", ",")
     For i = 1 To UBound(ptypPL.Iconic)
         AddBuilderPastLife strArray(0), strArray(i), ptypPL.Iconic(i), blnSpecial
     Next
