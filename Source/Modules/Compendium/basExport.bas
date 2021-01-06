@@ -359,7 +359,8 @@ Private Sub AddBuilderSpecialFeats(ptypTome As TomeType, ptypPL As PastLifeType)
     Const HeroicList As String = "Heroic,Barbarian,Bard,Cleric,Fighter,Paladin,Ranger,Rogue,Sorcerer,Wizard,Monk,Favored Soul,Artificer,Druid,Warlock,Alchemist"
     Const RacialList As String = "Racial,Aasimar,Dragonborn,Drow,Dwarf,Elf,Gnome,Halfling,Half-Elf,Half-Orc,Human,Warforged,Shifter"
     Const IconicList As String = "Iconic,Bladeforged,Deep Gnome,Morninglord,Purple Dragon Knight,Aasimar Scourge,Shadar-Kai"
-    Const EpicList As String = "Epic,Arcane Sphere: Arcane Alacrity,Arcane Sphere: Energy Criticals,Arcane Sphere: Enchant Weapon,Arcane Sphere: Ancient Knowledge, Divine Sphere: Brace,Divine Sphere: Power Over Life and Death,Divine Sphere: Block Energy,Divine Sphere: Ancient Blessings,Martial Sphere: Doublestrike,Martial Sphere: Fortification,Martial Sphere: Skill Mastery,Martial Sphere: Ancient Tactics,Primal Sphere: Doubleshot,Primal Sphere: Fast Healing,Primal Sphere: Colors of the Queen,Primal Sphere: Ancient Power"
+    Const EpicList As String = "Epic,Arcane Sphere: Arcane Alacrity,Arcane Sphere: Energy Criticals,Arcane Sphere: Enchant Weapon,Divine Sphere: Brace,Divine Sphere: Power Over Life and Death,Divine Sphere: Block Energy,Martial Sphere: Doublestrike,Martial Sphere: Fortification,Martial Sphere: Skill Mastery,Primal Sphere: Doubleshot,Primal Sphere: Fast Healing,Primal Sphere: Colors of the Queen,Arcane Sphere: Ancient Knowledge,Divine Sphere: Ancient Blessings,Martial Sphere: Ancient Tactics,Primal Sphere: Ancient Power"
+    ' Note ^^^ is out of order to support older load files
     
     strArray = Split(HeroicList, ",")
     For i = 1 To UBound(ptypPL.Class)

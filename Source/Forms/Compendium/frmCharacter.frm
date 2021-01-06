@@ -1191,7 +1191,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   255
-            Index           =   4
+            Index           =   13
             Left            =   1380
             TabIndex        =   226
             Top             =   960
@@ -1296,7 +1296,7 @@ Begin VB.Form frmCharacter
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   13
+            Index           =   10
             Left            =   1380
             TabIndex        =   207
             Top             =   240
@@ -1318,7 +1318,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   14
+            Index           =   11
             Left            =   1380
             TabIndex        =   209
             Top             =   480
@@ -1340,7 +1340,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   15
+            Index           =   12
             Left            =   1380
             TabIndex        =   211
             Top             =   720
@@ -1467,7 +1467,7 @@ Begin VB.Form frmCharacter
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   9
+            Index           =   7
             Left            =   1380
             TabIndex        =   199
             Top             =   240
@@ -1489,7 +1489,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   10
+            Index           =   8
             Left            =   1380
             TabIndex        =   201
             Top             =   480
@@ -1511,7 +1511,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   11
+            Index           =   9
             Left            =   1380
             TabIndex        =   203
             Top             =   720
@@ -1533,7 +1533,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   255
-            Index           =   12
+            Index           =   15
             Left            =   1380
             TabIndex        =   228
             Top             =   960
@@ -1638,7 +1638,7 @@ Begin VB.Form frmCharacter
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   5
+            Index           =   4
             Left            =   1380
             TabIndex        =   191
             Top             =   240
@@ -1660,7 +1660,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   6
+            Index           =   5
             Left            =   1380
             TabIndex        =   193
             Top             =   480
@@ -1682,7 +1682,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   7
+            Index           =   6
             Left            =   1380
             TabIndex        =   195
             Top             =   720
@@ -1704,7 +1704,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   255
-            Index           =   8
+            Index           =   14
             Left            =   1380
             TabIndex        =   229
             Top             =   960
