@@ -4,7 +4,7 @@ Begin VB.Form frmCharacter
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Characters"
-   ClientHeight    =   8850
+   ClientHeight    =   8805
    ClientLeft      =   30
    ClientTop       =   390
    ClientWidth     =   10425
@@ -21,7 +21,7 @@ Begin VB.Form frmCharacter
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8850
+   ScaleHeight     =   8805
    ScaleWidth      =   10425
    ShowInTaskbar   =   0   'False
    Begin VB.Frame fraImport 
@@ -548,10 +548,10 @@ Begin VB.Form frmCharacter
       BackColor       =   &H00FFC0C0&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   3855
+      Height          =   3975
       Index           =   2
       Left            =   360
-      ScaleHeight     =   3855
+      ScaleHeight     =   3975
       ScaleWidth      =   9735
       TabIndex        =   113
       TabStop         =   0   'False
@@ -1116,12 +1116,12 @@ Begin VB.Form frmCharacter
          BackColor       =   &H00FFFFC0&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   972
+         Height          =   1215
          Index           =   3
          Left            =   4680
          TabIndex        =   180
          Tag             =   "ctl"
-         Top             =   2580
+         Top             =   2700
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
@@ -1185,9 +1185,45 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   4
+            Left            =   1380
+            TabIndex        =   226
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
             Position        =   3
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Knowlege"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   96
+            Left            =   0
+            TabIndex        =   230
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
          End
          Begin VB.Label lblLabel 
             Alignment       =   2  'Center
@@ -1251,16 +1287,16 @@ Begin VB.Form frmCharacter
          BackColor       =   &H00FFFFC0&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   972
+         Height          =   1215
          Index           =   2
-         Left            =   7140
+         Left            =   7200
          TabIndex        =   204
          Tag             =   "ctl"
-         Top             =   2580
+         Top             =   2700
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   10
+            Index           =   13
             Left            =   1380
             TabIndex        =   207
             Top             =   240
@@ -1282,7 +1318,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   11
+            Index           =   14
             Left            =   1380
             TabIndex        =   209
             Top             =   480
@@ -1304,7 +1340,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   12
+            Index           =   15
             Left            =   1380
             TabIndex        =   211
             Top             =   720
@@ -1320,9 +1356,45 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   16
+            Left            =   1380
+            TabIndex        =   227
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
             Position        =   3
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Power"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   99
+            Left            =   0
+            TabIndex        =   233
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
          End
          Begin VB.Label lblLabel 
             Alignment       =   2  'Center
@@ -1386,16 +1458,16 @@ Begin VB.Form frmCharacter
          BackColor       =   &H00FFFFC0&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   972
+         Height          =   1215
          Index           =   1
-         Left            =   7140
+         Left            =   7200
          TabIndex        =   196
          Tag             =   "ctl"
-         Top             =   1380
+         Top             =   1440
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   7
+            Index           =   9
             Left            =   1380
             TabIndex        =   199
             Top             =   240
@@ -1417,7 +1489,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   8
+            Index           =   10
             Left            =   1380
             TabIndex        =   201
             Top             =   480
@@ -1439,7 +1511,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   9
+            Index           =   11
             Left            =   1380
             TabIndex        =   203
             Top             =   720
@@ -1455,9 +1527,45 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   12
+            Left            =   1380
+            TabIndex        =   228
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
             Position        =   3
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Tactics"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   98
+            Left            =   0
+            TabIndex        =   232
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
          End
          Begin VB.Label lblLabel 
             Alignment       =   2  'Center
@@ -1521,16 +1629,16 @@ Begin VB.Form frmCharacter
          BackColor       =   &H00FFFFC0&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   972
+         Height          =   1215
          Index           =   0
-         Left            =   7140
+         Left            =   7200
          TabIndex        =   188
          Tag             =   "ctl"
          Top             =   180
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   4
+            Index           =   5
             Left            =   1380
             TabIndex        =   191
             Top             =   240
@@ -1552,7 +1660,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   5
+            Index           =   6
             Left            =   1380
             TabIndex        =   193
             Top             =   480
@@ -1574,7 +1682,7 @@ Begin VB.Form frmCharacter
          End
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
-            Index           =   6
+            Index           =   7
             Left            =   1380
             TabIndex        =   195
             Top             =   720
@@ -1590,9 +1698,45 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   8
+            Left            =   1380
+            TabIndex        =   229
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
             Position        =   3
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Blessings"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   97
+            Left            =   0
+            TabIndex        =   231
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
          End
          Begin VB.Label lblLabel 
             Alignment       =   1  'Right Justify

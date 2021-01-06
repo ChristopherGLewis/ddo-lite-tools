@@ -232,7 +232,7 @@ End Type
 Public Const maxClassCount = 15
 Public Const maxRaceCount = 12
 Public Const maxIconicCount = 6
-Public Const maxEpicCount = 12
+Public Const maxEpicCount = 16
 
 Public Type PastLifeType
     Class(1 To maxClassCount) As Long
