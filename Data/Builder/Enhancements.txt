@@ -4247,8 +4247,8 @@ Descrip: You have studied Illusion to the point where you can craft more permane
 Tier: 1
 Cost: 2
 
-AbilityName: Enhanced Invisibility
-Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are immune to Fear
+AbilityName: Reality Bulwark
+Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are now immune to Fear
 Tier: 2
 Ranks: 3
 
@@ -4319,7 +4319,7 @@ Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summo
 Tier: 5
 Cost: 2
 
-AbilityName: Displacement
+AbilityName: Permanent Displacement
 Descrip: You are Displaced, as if you had cast the spell Displacement
 Tier: 5
 Cost: 2
