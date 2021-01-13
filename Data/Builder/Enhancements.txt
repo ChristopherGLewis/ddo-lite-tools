@@ -4247,8 +4247,8 @@ Descrip: You have studied Illusion to the point where you can craft more permane
 Tier: 1
 Cost: 2
 
-AbilityName: Enhanced Invisibility
-Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are immune to Fear
+AbilityName: Reality Bulwark
+Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are now immune to Fear
 Tier: 2
 Ranks: 3
 
@@ -4283,7 +4283,7 @@ Descrip: Your familiar appears at a targeted location, acting as a distraction a
 Tier: 3
 Cost: 2
 
-AbilityName: Magical Attunment I
+AbilityName: Magical Attunement I
 Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
 Tier: 3
 Cost: 2
@@ -4303,11 +4303,11 @@ Descrip: Fan a series of Shadowblades outwards into a wide cone. The enemies str
 Tier: 4
 Ranks: 3
 
-AbilityName: Magical Attunment II
+AbilityName: Magical Attunement II
 Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
 Tier: 4
 Cost: 2
-All: Tier 3: Magical Attunment I
+All: Tier 3: Magical Attunement I
 
 AbilityName: Improved Shadowblades
 Descrip: All of your Shadwblade spells, attacks with weapons that have been imbued with Shadow, and attacks with conjured Shadowblades apply [1/2/3] stacks of Shattermantle when they damage an enemy.
@@ -4319,16 +4319,16 @@ Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summo
 Tier: 5
 Cost: 2
 
-AbilityName: Displacement
+AbilityName: Permanent Displacement
 Descrip: You are Displaced, as if you had cast the spell Displacement
 Tier: 5
 Cost: 2
 
-AbilityName: Magical Attunment III
+AbilityName: Magical Attunement III
 Descrip: +2% Force Spell Critical Chance, +2% Universal Spell Critical Chance.
 Tier: 5
 Cost: 2
-All: Tier 4: Magical Attunment II
+All: Tier 4: Magical Attunement II
 
 AbilityName: Ring of Shadowblades
 Descrip: Conjure a ring of interlocking illusory Shadowblades that damage enemies passing through them. Enemies take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusory bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 50/40/25 sp}Cooldown: 40/35/30 seconds

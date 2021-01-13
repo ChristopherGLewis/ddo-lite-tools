@@ -13,6 +13,11 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.3.4
+Changes:
+    Added 4th Epic past live per circle to Compendium
+    Compendium version is now 1.5.0, other versions unchanged
+
 
 ### 3.3.3
 Changes:
