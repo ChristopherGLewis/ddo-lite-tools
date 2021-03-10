@@ -1,4 +1,3 @@
-Save/
 Utils/
 *.exe
 *.obj
@@ -9,3 +8,6 @@ crawl.txt
 master
 *.zip
 *.tmp
+
+**/*.bak
+**/Save/TEST_*.*

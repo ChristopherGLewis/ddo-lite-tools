@@ -55,7 +55,7 @@ Cost: 2
 All: Tier 2: Consecration
 
 AbilityName: Empyrean Magic
-Descrip: Passive Bonus: Whenever you cast a fire, light, or healing spell you gain a stack of Empyrean Fervor. Each stack of Empyrean Fervor gives you +2 Sacred bonus to Universal Spell power, +1% Sacred Bonus to Critical Chance with all spells. Duration: 10 seconds. Stacks 10 times.}Bug:  Alchemist fire and healing spells and spell-like-abilities do not trigger Empyrean Magic.
+Descrip: Passive Bonus: Whenever you cast a fire, light, or healing spell you gain a stack of Empyrean Fervor. Each stack of Empyrean Fervor gives you +2 Sacred bonus to Universal Spell power, +1% Sacred Bonus to Critical Chance with all spells. Duration: 10 seconds. Stacks 10 times.}Bug:  Alchemist healing spells and spell-like-abilities do not trigger Empyrean Magic. Alchemist fire spells must hit target to trigger.
 Tier: 3
 
 AbilityName: Blessed Blades
@@ -258,7 +258,7 @@ Type: Destiny
 Stats: Wisdom, Charisma
 
 AbilityName: Avenging Light
-Descrip: Active Ability: (Cooldown 3 seconds, Costs 3 sp) Deals 1d4+4 light damage + 1d4+4 per three character levels to 1 target. Fortitude save (DC 10 + character level + charisma or wisdom mod) for half.
+Descrip: Active Ability: (Cooldown 3 seconds, Costs 3 sp) Deals 1d6+2 light damage per Caster Level (based on Character Level) to 1 target. Fortitude save (DC 10 + character level + charisma or wisdom mod) for half.
 Tier: 1
 Cost: 2
 
@@ -373,12 +373,12 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Siren's Song
-Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds. Cooldown: 50 seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
+Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds. Cooldown: [60/50/40] seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
 Tier: 1
 Ranks: 3
 
 AbilityName: Music of the Spider Queen
-Descrip: Adds to your Fascinate: Your Fascinate gains the power to mesmerize Vermin. Mesmerized Vermin stop acting and behave like they have been fascinated. However, unlike truly fascinated creatures, they are not susceptible to suggestion.
+Descrip: Adds to your Fascinate: Your Fascinate gains the power to mesmerize Vermin. Mesmerized Vermin stop acting and behave like they have been fascinated. However, unlike truly fascinated creatures, they are not susceptible to suggestion. Passive: When you use your bardic inspiration, the target benefits from the Neutralize Poison spell
 Tier: 1
 All: Feat: Fascinate
 
@@ -398,7 +398,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Reign
-Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory. Duration: 10 minutes.} Note: The temporary hitpoints only last 3 minutes.
+Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory. Duration: 10 minutes.} Note: The temporary hitpoints only last 3 minutes.  Additionally, Reign doesn't cost a song unlike other spontaneous songs.
 Tier: 2
 Ranks: 3
 
@@ -419,7 +419,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Aria
-Descrip: Passive: You sing your Bardic Inspiration as if you had [1/2/3] additional Bard levels.}Spontaneous Song: Generate [15/25/35]% less threat when you cast spells for the duration of this song. In addition, you gain +[20/40/40] Sonic Spell Power, and +[5/10/15] Force, Positive, and Negative Spell Power.}Your voice carries like a gale over the skein of Fate.
+Descrip: Passive: You sing your Bardic Inspiration as if you had [1/2/3] additional Bard levels.}Spontaneous Song: Generate [20/40/60]% less threat when you cast spells for the duration of this song. In addition, you gain +[20/40/40] Sonic Spell Power, and +[5/10/15] Force, Positive, and Negative Spell Power.}Your voice carries like a gale over the skein of Fate.
 Tier: 3
 Ranks: 3
 Cost: 2
@@ -454,7 +454,7 @@ Tier: 5
 Selector: Enlarge, Eschew, Extend
 
 AbilityName: Masquerade
-Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'}{ Note: stacks fully with items (enhancement bonus) and morale discounts to spell point costs.
+Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}Open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'}{ Note: stacks fully with items (enhancement bonus) and morale discounts to spell point costs.
 Tier: 5
 
 AbilityName: Bladesong
@@ -548,7 +548,7 @@ Ranks: 3
 All: Tier 3: Malicious Weapons
 
 AbilityName: Sense Weakness
-Descrip: Passive Bonus: You deal [10/20/30]% extra damage to helpless targets. Your melee attacks deal [1d8/1d8/1d8] extra untyped damage to enemies below 75% HP, [0/1d12/1d12] extra damage to enemies below 50% HP, and [0/0/1d20] extra damage to enemies below 25% HP. These are cumulative.
+Descrip: Passive Bonus: You deal [10/20/30]% extra damage to helpless targets. +1/2/3 Damage.
 Tier: 4
 Ranks: 3
 All: Tier 2: Acute Instincts
@@ -718,7 +718,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Attack Boost
-Descrip: Active Ability: (Cooldown 30 seconds) Activate to gain a [+15/+20/+25] Action Boost bonus to attack bonus for 20 seconds. (This enhancement cannot be taken if you have Action Boost Attack as a class enhancement, and it shares a cooldown with all other action boosts).
+Descrip: Active Ability: (Cooldown 30 seconds) Activate to gain a [+15/+20/+25] Action Boost bonus to attack bonus for 20 seconds. (This enhancement cannot be taken if you have Action Boost Attack as a class enhancement, and it shares a cooldown with all other action boosts). Bug:  Only gives +10 as it gives the action boost from the ranger tree.
 Tier: 1
 Ranks: 3
 
@@ -1192,7 +1192,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Pin
-Descrip: Ranged or Thrown Attack: (Cooldown: [20/15] seconds) Deals [+2/+3][w]. If enemy is not moving, enemy is pinned in place for [9/18] seconds. Enemy is slowed if moving.}{ Note: No saving throw observed for either effect. When pinned the enemy is also helpless. Bosses can not be pinned in place, but are affected by the slow.}{ Bug:  Moving target will have 'Pined' and 'Slowed' debuff but can move with -90% moving speed. Moving targets will have 'Slowed' debuff but no penalty to moving speed.
+Descrip: Ranged or Thrown Attack: (Cooldown: [20/15] seconds) Deals [+2/+3][w]. If enemy is not moving, enemy is pinned in place for [9/18] seconds. Enemy is slowed if moving.}{ Note: No saving throw observed for either effect. When pinned the enemy is also helpless. Bosses can not be pinned in place, but are affected by the slow.}{ Bug:  Moving target will have 'Pinned' and 'Slowed' debuff but can move with -90% moving speed. Moving targets will have 'Slowed' debuff but no penalty to moving speed.
 Tier: 2
 Ranks: 2
 
@@ -1329,7 +1329,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Intolerant Blows
-Descrip: Active Ability: (Cooldown 20 seconds) Expend one Smite Evil: For 60 seconds you gain +200% Sacred bonus to threat generation and deal +1[W] damage.
+Descrip: Active Ability: (Cooldown 20 seconds) Expend one Smite Evil: For 60 seconds you gain +200% Sacred bonus to threat generation and deal +1[W] damage.}{ Bug:  Does not increase threat.
 Tier: 3
 Ranks: 3
 One: Tier 2: Fanaticism, Feat: Smite Evil

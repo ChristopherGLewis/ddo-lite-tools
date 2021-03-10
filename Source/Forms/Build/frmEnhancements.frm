@@ -4,10 +4,10 @@ Begin VB.Form frmEnhancements
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Enhancements"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,8 +22,8 @@ Begin VB.Form frmEnhancements
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
       Left            =   0
@@ -31,8 +31,8 @@ Begin VB.Form frmEnhancements
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -46,8 +46,8 @@ Begin VB.Form frmEnhancements
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Trees;Enhancements;Leveling Guide"
@@ -61,12 +61,85 @@ Begin VB.Form frmEnhancements
       Height          =   6492
       Index           =   0
       Left            =   600
-      ScaleHeight     =   6492
-      ScaleWidth      =   11052
+      ScaleHeight     =   6495
+      ScaleWidth      =   12015
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   600
-      Width           =   11052
+      Width           =   12012
+      Begin VB.Frame fraUniversalAP 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   2352
+         Left            =   5800
+         TabIndex        =   60
+         Top             =   3780
+         Width           =   5000
+         Begin CharacterBuilderLite.userSpinner usrspnUniversalAP 
+            Height          =   300
+            Left            =   540
+            TabIndex        =   61
+            Top             =   480
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   529
+            Min             =   0
+            Value           =   0
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   -2147483631
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblUniversalAP 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Universal AP"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Left            =   120
+            TabIndex        =   63
+            Top             =   0
+            Width           =   1170
+         End
+         Begin VB.Shape shpUniversalAP 
+            Height          =   2232
+            Left            =   0
+            Top             =   120
+            Width           =   5000
+         End
+         Begin VB.Label lblUniversalAPhelp 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "- Universal AP can be spent at level 1"
+            ForeColor       =   &H80000008&
+            Height          =   210
+            Index           =   0
+            Left            =   360
+            TabIndex        =   64
+            Top             =   1020
+            Width           =   3525
+         End
+         Begin VB.Label lblUniversalAPhelp 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "- Universal AP Tomes can add +?"
+            ForeColor       =   &H80000008&
+            Height          =   210
+            Index           =   1
+            Left            =   360
+            TabIndex        =   62
+            Top             =   1320
+            Width           =   3090
+         End
+      End
       Begin VB.Frame fraRacialAP 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
@@ -76,14 +149,14 @@ Begin VB.Form frmEnhancements
          Left            =   600
          TabIndex        =   7
          Top             =   3780
-         Width           =   5412
+         Width           =   5000
          Begin CharacterBuilderLite.userSpinner usrspnRacialAP 
             Height          =   300
             Left            =   540
             TabIndex        =   9
             Top             =   480
             Width           =   972
-            _ExtentX        =   1715
+            _ExtentX        =   1720
             _ExtentY        =   529
             Min             =   0
             Value           =   0
@@ -165,7 +238,7 @@ Begin VB.Form frmEnhancements
             Height          =   2232
             Left            =   0
             Top             =   120
-            Width           =   5412
+            Width           =   5000
          End
       End
       Begin VB.Frame fraTreeSelection 
@@ -184,8 +257,8 @@ Begin VB.Form frmEnhancements
             TabIndex        =   2
             Top             =   0
             Width           =   5412
-            _ExtentX        =   9546
-            _ExtentY        =   5313
+            _ExtentX        =   9551
+            _ExtentY        =   5318
          End
          Begin VB.ListBox lstTree 
             Appearance      =   0  'Flat
@@ -243,8 +316,8 @@ Begin VB.Form frmEnhancements
       Height          =   6828
       Index           =   1
       Left            =   0
-      ScaleHeight     =   6828
-      ScaleWidth      =   12012
+      ScaleHeight     =   6825
+      ScaleWidth      =   12015
       TabIndex        =   14
       TabStop         =   0   'False
       Top             =   480
@@ -286,8 +359,8 @@ Begin VB.Form frmEnhancements
          TabIndex        =   15
          Top             =   0
          Width           =   4932
-         _ExtentX        =   8700
-         _ExtentY        =   11451
+         _ExtentX        =   8705
+         _ExtentY        =   11456
       End
       Begin CharacterBuilderLite.userDetails usrDetails 
          Height          =   2040
@@ -296,7 +369,7 @@ Begin VB.Form frmEnhancements
          TabStop         =   0   'False
          Top             =   4452
          Width           =   6372
-         _ExtentX        =   7006
+         _ExtentX        =   7011
          _ExtentY        =   3598
       End
       Begin CharacterBuilderLite.userCheckBox usrchkShowAll 
@@ -305,8 +378,8 @@ Begin VB.Form frmEnhancements
          TabIndex        =   23
          Top             =   816
          Width           =   1812
-         _ExtentX        =   3196
-         _ExtentY        =   445
+         _ExtentX        =   3201
+         _ExtentY        =   450
          Value           =   0   'False
          Caption         =   "Show All"
          CheckPosition   =   1
@@ -461,8 +534,8 @@ Begin VB.Form frmEnhancements
       Height          =   6828
       Index           =   2
       Left            =   0
-      ScaleHeight     =   6828
-      ScaleWidth      =   12012
+      ScaleHeight     =   6825
+      ScaleWidth      =   12015
       TabIndex        =   33
       TabStop         =   0   'False
       Top             =   480
@@ -485,7 +558,7 @@ Begin VB.Form frmEnhancements
          TabStop         =   0   'False
          Top             =   4452
          Width           =   5532
-         _ExtentX        =   9758
+         _ExtentX        =   9763
          _ExtentY        =   3598
       End
       Begin VB.PictureBox picContainer 
@@ -495,8 +568,8 @@ Begin VB.Form frmEnhancements
          ForeColor       =   &H80000008&
          Height          =   6132
          Left            =   6000
-         ScaleHeight     =   6132
-         ScaleWidth      =   5976
+         ScaleHeight     =   6135
+         ScaleWidth      =   5970
          TabIndex        =   50
          TabStop         =   0   'False
          Tag             =   "ctl"
@@ -522,8 +595,8 @@ Begin VB.Form frmEnhancements
             ForeColor       =   &H80000008&
             Height          =   2112
             Left            =   300
-            ScaleHeight     =   2112
-            ScaleWidth      =   3552
+            ScaleHeight     =   2115
+            ScaleWidth      =   3555
             TabIndex        =   51
             TabStop         =   0   'False
             Top             =   480
@@ -560,8 +633,8 @@ Begin VB.Form frmEnhancements
          ForeColor       =   &H80000008&
          Height          =   3912
          Left            =   240
-         ScaleHeight     =   3912
-         ScaleWidth      =   2052
+         ScaleHeight     =   3915
+         ScaleWidth      =   2055
          TabIndex        =   34
          TabStop         =   0   'False
          Top             =   240
@@ -583,8 +656,8 @@ Begin VB.Form frmEnhancements
             TabIndex        =   35
             Top             =   0
             Width           =   1872
-            _ExtentX        =   3302
-            _ExtentY        =   445
+            _ExtentX        =   3307
+            _ExtentY        =   450
             Value           =   0   'False
             Caption         =   "Show All"
          End
@@ -596,8 +669,8 @@ Begin VB.Form frmEnhancements
          ForeColor       =   &H80000008&
          Height          =   3912
          Left            =   240
-         ScaleHeight     =   3912
-         ScaleWidth      =   2052
+         ScaleHeight     =   3915
+         ScaleWidth      =   2055
          TabIndex        =   57
          Top             =   240
          Visible         =   0   'False
@@ -952,6 +1025,7 @@ Public Sub MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal Xpo
     Select Case mlngTab
         Case 0
             If IsOver(Me.usrspnRacialAP.hwnd, Xpos, Ypos) Then Me.usrspnRacialAP.WheelScroll lngValue
+            If IsOver(Me.usrspnUniversalAP.hwnd, Xpos, Ypos) Then Me.usrspnUniversalAP.WheelScroll lngValue
         Case 1
             Select Case True
                 Case IsOver(Me.usrList.hwnd, Xpos, Ypos): Me.usrList.Scroll lngValue
@@ -1113,6 +1187,12 @@ Private Sub LoadData()
     Me.usrspnRacialAP.Max = lngMax + tomes.RacialAPMax
     Me.usrspnRacialAP.Value = build.RacialAP
     Me.lblRacialAPhelp(2).Caption = "- Racial AP Tomes can add another +" & tomes.RacialAPMax & " Racial AP"
+    ' Universal AP
+    Me.lblUniversalAPhelp(1).Caption = Replace(Me.lblUniversalAPhelp(1).Caption, "?", tomes.UniversalAPMax)
+    Me.usrspnUniversalAP.Max = tomes.UniversalAPMax
+    Me.usrspnUniversalAP.Value = build.UniversalAP
+    
+    
     Me.lblTier5Label.Visible = (build.MaxLevels > 11)
     Me.lblTier5.Visible = (build.MaxLevels > 11)
     If build.MaxLevels < 12 And Len(build.Tier5) Then
@@ -1148,8 +1228,6 @@ End Sub
 
 
 ' ************* TREES *************
-
-
 Private Sub usrspnRacialAP_Change()
     Dim lngLives As Long
     
@@ -1168,6 +1246,18 @@ Private Sub usrspnRacialAP_Change()
     ShowSpentAll Me.lblSpentAll
     SetDirty
 End Sub
+
+Private Sub usrspnUniversalAP_Change()
+    Dim lngLives As Long
+    
+    If mblnOverride Then Exit Sub
+    build.UniversalAP = Me.usrspnUniversalAP.Value
+    If build.UniversalAP > tomes.UniversalAPMax Then lngLives = build.UniversalAP - tomes.UniversalAPMax
+    InitGuideEnhancements
+    ShowSpentAll Me.lblSpentAll
+    SetDirty
+End Sub
+
 
 Private Sub usrTree_SlotClick(Index As Integer, Button As Integer)
     Dim strTreeName As String
@@ -1296,12 +1386,21 @@ Private Sub ShowSpentAll(plbl As Label)
     Dim lngMaxBase As Long
     Dim lngMaxBonus As Long
 
+    'Const sTemplate As String = "<Base> / <Racial> / <Universal>"
+    Const sTemplate As String = "<Base> / <Racial>"
+
     GetPointsSpentAndMax lngSpentBase, lngSpentBonus, lngMaxBase, lngMaxBonus
     If build.RacialAP = 0 Then
         plbl.Caption = lngSpentBase & " / " & lngMaxBase & " AP"
     Else
         plbl.Caption = lngSpentBase & "+" & lngSpentBonus & " / " & lngMaxBase & "+" & lngMaxBonus & " AP"
     End If
+    If build.UniversalAP = 0 Then
+        plbl.Caption = lngSpentBase & " / " & lngMaxBase & " AP"
+    Else
+        plbl.Caption = lngSpentBase & "+" & lngSpentBonus & " / " & lngMaxBase & "+" & lngMaxBonus & " AP"
+    End If
+    
     If lngSpentBase > lngMaxBase Then plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
     plbl.Visible = True
 End Sub

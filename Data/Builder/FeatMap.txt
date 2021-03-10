@@ -473,7 +473,6 @@ Ten Thousand Stars	Ten Thousand Stars	Ten Thousand Stars
 Toughness	Toughness	Toughness
 Tower Shield Proficiency	Tower Shield Proficiency	Tower Shield Proficiency
 Two Handed Fighting	Two Handed Fighting	Two Handed Fighting
-Two Weapon Blocking	Two Weapon Blocking	Two Weapon Blocking
 Two Weapon Defense	Two Weapon Defense	Two Weapon Defense
 Two Weapon Fighting	Two Weapon Fighting	Two Weapon Fighting
 Vorpal Strikes	Epic: Vorpal Strikes	Vorpal Strikes

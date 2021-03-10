@@ -193,8 +193,9 @@ Public Type FeatTakenType
     SelectorsTaken As Long
 End Type
 
+'This is an actual enhancement.
 Public Type AbilityType
-    AbilityName As String
+    AbilityName As String  'AbilityName:
     Abbreviation As String
     Ranks As Long
     Cost As Long
@@ -206,7 +207,7 @@ Public Type AbilityType
     Sibling() As PointerType
     Siblings As Long
     SelectorOnly As Boolean ' If TRUE, display name as [Selector]. If false, use [AbilityName]: [Selector]
-    Descrip As String
+    Descrip As String 'Descrip:
     ' Prereqs
     Req() As ReqListType ' 1 = All, 2 = One, 3 = None
     Rank() As RankType
@@ -216,8 +217,8 @@ Public Type AbilityType
 End Type
 
 Public Type TierType
-    Ability() As AbilityType
-    Abilities As Long
+    Ability() As AbilityType ' This is the Column in a row
+    Abilities As Long  ' Count of abilities
 End Type
 
 Public Type TreeType
@@ -228,7 +229,7 @@ Public Type TreeType
     Color As ColorValueEnum ' Color for Leveling Guide
     TreeType As TreeStyleEnum
     Stats() As Boolean
-    Tier() As TierType ' Tier(0) = Cores
+    Tier() As TierType ' This is the ROW in a tree - Tier(0) = Cores
     Tiers As Long
     Lockout As String
     Wiki As String

@@ -1456,23 +1456,51 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             Next
                         End With
                     Case "rank2all", "rank3all", "rank3none"
-                        .RankReqs = True
-                        InitRanks .Rank
-                        lngRank = Val(Mid$(strField, 5, 1))
-                        With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
-                            .Reqs = lngListMax + 1
-                            ReDim .Req(1 To .Reqs)
-                            For i = 0 To lngListMax
-                                .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf ptypTree.TreeType = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
+                        'See if this is selector only
+                        If .SelectorOnly Then
+                            'We can't determine what selector the Req is on, add it to all
+                            'if we had something like Rank3NoneSel1 we could do this.
+                            Dim s As Integer
+                            For s = 1 To .Selectors
+                                .Selector(s).RankReqs = True
+                                InitRanks .Selector(s).Rank
+                                lngRank = Val(Mid$(strField, 5, 1))
+                                With .Selector(s).Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
+                                    .Reqs = lngListMax + 1
+                                    ReDim .Req(1 To .Reqs)
+                                    For i = 0 To lngListMax
+                                        .Req(i + 1).Raw = strList(i)
+                                        If Left$(strList(i), 5) = "Feat:" Then
+                                            .Req(i + 1).Style = peFeat
+                                        ElseIf ptypTree.TreeType = tseDestiny Then
+                                            .Req(i + 1).Style = peDestiny
+                                        Else
+                                            .Req(i + 1).Style = peEnhancement
+                                        End If
+                                    Next
+                                End With
                             Next
-                        End With
+                        Else
+                            'Add our requirement
+                            .RankReqs = True
+                            InitRanks .Rank
+                            lngRank = Val(Mid$(strField, 5, 1))
+                            With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
+                                .Reqs = lngListMax + 1
+                                ReDim .Req(1 To .Reqs)
+                                For i = 0 To lngListMax
+                                    .Req(i + 1).Raw = strList(i)
+                                    If Left$(strList(i), 5) = "Feat:" Then
+                                        .Req(i + 1).Style = peFeat
+                                    ElseIf ptypTree.TreeType = tseDestiny Then
+                                        .Req(i + 1).Style = peDestiny
+                                    Else
+                                        .Req(i + 1).Style = peEnhancement
+                                    End If
+                                Next
+                            End With
+                        End If
+
 '                    Case "class"
 '                        .Class(0) = True
 '                        For i = 0 To lngListMax
@@ -1512,7 +1540,10 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
 '                            Next
 '                        End With
                     Case "selectorname"
+                        'Split the raw on selectorName.
                         strLine = Split(pstrRaw, "SelectorName: ")
+                        'parse selectorNames, ignoring (0) which is before the
+                        'first selector
                         For i = 1 To UBound(strLine)
                             LoadSelector typNew, strLine(i), ptypTree.TreeType
                         Next
@@ -1563,6 +1594,9 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pe
     Dim lngRank As Long
     Dim i As Long
     
+    'This function loads SelectorName: and a couple of lines after.
+    'SelectorName: should be used whenever you want all/none per selector
+    'vs all/non per all
     CleanText pstrRaw
     strLine = Split(pstrRaw, vbNewLine)
     strSelector = Trim$(strLine(0))

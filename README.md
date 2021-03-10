@@ -12,6 +12,16 @@ The code and releases are available at https://github.com/ChristopherGLewis/ddo-
 Any issues and input should be filed there.
 
 ## Release Notes
+### 3.4.0
+Changes:
+    Updated Builder to support Universal Tome & Destiny tome points.  
+    Rev'd save version to 5
+    Added 48.4 enhancement changes (thanks @LrdSlvrhnd, @SardaofChaos & @Grace_ana)
+    Fixed an issue with SpellSinger T1 studies that @Grace_ana found
+    Updated Compendium easer none/6 selection
+      - click on the 1st star to toggle one/none
+      - click on the 5th star to toggle 5/6
+      - This is in addtion to clicking left/right of the stars
 
 ### 3.3.4
 Changes:

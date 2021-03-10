@@ -466,12 +466,13 @@ End Sub
 Private Sub SaveEnhancementsLite()
     Dim i As Long
     
-    If Len(build.Tier5) = 0 And build.RacialAP = 0 And build.Trees = 0 Then Exit Sub
+    If Len(build.Tier5) = 0 And build.RacialAP = 0 And build.UniversalAP = 0 And build.Trees = 0 Then Exit Sub
     AddSection "Enhancements"
     ' Tier5
     If Len(build.Tier5) Then AddLine "Tier5: " & build.Tier5
     ' Racial AP
     If build.RacialAP <> 0 Then AddLine "RacialAP: " & build.RacialAP
+    If build.UniversalAP <> 0 Then AddLine "UniversalAP: " & build.UniversalAP
     If Len(build.Tier5) <> 0 Or build.RacialAP <> 0 Then BlankLine
     ' Trees
     For i = 1 To build.Trees
@@ -1105,6 +1106,8 @@ Private Sub LoadEnhancementsText()
             build.Tier5 = mstrValue
         Case "racialap"
             build.RacialAP = Val(mstrValue)
+        Case "universalap"
+            build.UniversalAP = Val(mstrValue)
         Case "tree"
             build.Trees = build.Trees + 1
             ReDim Preserve build.Tree(1 To build.Trees)

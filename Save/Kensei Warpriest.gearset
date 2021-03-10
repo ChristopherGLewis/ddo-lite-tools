@@ -1,0 +1,213 @@
+Section: General
+
+BaseLevel: 34
+Analyzed: True
+
+
+Section: Slots
+
+Slot: Helmet
+Crafted: True
+Yellow: Underwater Action
+ML: 34
+Prefix: Sheltering
+Suffix: Accuracy
+Extra: Insightful Fortification
+
+Slot: Goggles
+Crafted: True
+Yellow: Blindness Ward
+Colorless: Exceptional Constitution
+ML: 34
+Prefix: Wisdom
+Suffix: True Seeing
+Extra: Insightful Seeker
+
+Slot: Necklace
+Crafted: True
+Yellow: Deathblock
+ML: 34
+Prefix: Constitution
+Suffix: Devotion
+Extra: Insightful Magical Sheltering
+
+Slot: Cloak
+Crafted: True
+Named: Cloak of Invisibility
+Yellow: Feather Falling
+ML: 34
+Prefix: Charisma
+Suffix: Dodge Bonus
+Extra: Insightful Charisma
+
+Slot: Bracers
+Crafted: False
+Named: Greensteel Smoke
+Eldritch: Resistance
+ML: 34
+
+Slot: Gloves
+Crafted: True
+Colorless: Dexterity
+ML: 34
+Prefix: Melee Alacrity
+Suffix: Deadly
+Extra: Insightful Accuracy
+
+Slot: Belt
+Crafted: True
+Green: Good Luck
+ML: 34
+Prefix: Doublestrike
+Suffix: Stunning
+Extra: Insightful Constitution
+
+Slot: Boots
+Crafted: True
+Yellow: Draconic Soul Gem
+ML: 34
+Prefix: Seeker
+Suffix: Strength
+Extra: Insightful Combat Mastery
+
+Slot: Ring1
+Crafted: False
+Named: Epic Ring of the Stalker
+Green: Fortification
+Colorless: Diamond of Vitality
+ML: 34
+
+Slot: Ring2
+Crafted: True
+Yellow: Fear Immunity
+ML: 34
+Prefix: Wizardry
+Suffix: False Life
+Extra: Insightful Physical Sheltering
+
+Slot: Trinket
+Crafted: True
+ML: 34
+Prefix: Resistance
+Suffix: Armor Piercing
+Extra: Insightful Devotion
+
+Slot: Armor
+Crafted: True
+ArmorStyle: Metal
+ItemName: Full Plate
+Blue: Armored Agility
+ML: 34
+Prefix: Combat Mastery
+Suffix: Healing Amplification
+Extra: Parrying
+
+Slot: Mainhand
+Crafted: False
+Named: Epic Riftmaker
+MainHandStyle: Melee
+TwoHanded: True
+ItemName: Great Axe
+Orange: Ruby of Iron Blows
+ML: 34
+
+Slot: Offhand
+Crafted: False
+OffHandStyle: Empty
+ItemName: Empty
+ML: 34
+
+
+
+Section: Effects
+
+Effect: Charisma
+ValidSpots: Necklace Suffix, Cloak Prefix, Ring Prefix
+
+Effect: Constitution
+ValidSpots: Necklace Prefix
+
+Effect: Insightful Charisma
+ValidSpots: Necklace Extra, Cloak Extra, Ring Extra
+
+Effect: Insightful Constitution
+ValidSpots: Belt Extra
+
+Effect: Strength
+ValidSpots: Boots Suffix
+
+Effect: Wisdom
+ValidSpots: Helmet Prefix, Goggles Prefix, Cloak Prefix
+
+Effect: Accuracy
+ValidSpots: Helmet Suffix
+
+Effect: Armor Piercing
+ValidSpots: Gloves Suffix, Trinket Suffix
+
+Effect: Deadly
+ValidSpots: Goggles Suffix, Gloves Suffix, Trinket Suffix
+
+Effect: Doublestrike
+ValidSpots: Belt Prefix
+
+Effect: Insightful Accuracy
+ValidSpots: Gloves Extra, Trinket Extra
+
+Effect: Insightful Seeker
+ValidSpots: Goggles Extra
+
+Effect: Melee Alacrity
+ValidSpots: Gloves Prefix
+
+Effect: Seeker
+ValidSpots: Goggles Prefix, Boots Prefix
+
+Effect: Healing Amplification
+ValidSpots: Armor Suffix
+
+Effect: Insightful Fortification
+ValidSpots: Helmet Extra
+
+Effect: Insightful Magical Sheltering
+ValidSpots: Necklace Extra, Cloak Extra, Ring Extra
+
+Effect: Insightful Physical Sheltering
+ValidSpots: Necklace Extra, Cloak Extra, Ring Extra
+
+Effect: Sheltering
+ValidSpots: Helmet Prefix, Necklace Suffix, Ring Suffix
+
+Effect: False Life
+ValidSpots: Necklace Suffix, Ring Suffix
+
+Effect: Parrying
+ValidSpots: Armor Extra
+
+Effect: Resistance
+ValidSpots: Trinket Prefix
+
+Effect: Wizardry
+ValidSpots: Helmet Prefix, Ring Prefix
+
+Effect: Devotion
+ValidSpots: Necklace Suffix, Ring Suffix, Armor Prefix
+
+Effect: Insightful Devotion
+ValidSpots: Gloves Extra, Trinket Extra
+
+Effect: True Seeing
+ValidSpots: Goggles Suffix, Trinket Suffix
+
+Effect: Insightful Combat Mastery
+ValidSpots: Boots Extra
+
+Effect: Stunning
+ValidSpots: Belt Suffix
+
+Effect: Combat Mastery
+ValidSpots: Boots Prefix, Armor Prefix
+
+Effect: Dodge Bonus
+ValidSpots: Cloak Suffix
+

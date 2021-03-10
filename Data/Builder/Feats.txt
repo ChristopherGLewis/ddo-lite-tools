@@ -521,7 +521,7 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Epic Arcane Eldritch Blast
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Arcane sphere
-Descrip: +4d6 Eldritch Blast dice.
+Descrip: Grants +1 Pact dice, +1 per 2 Epic Levels, for a max +6d4 Pact Dice at level 30.
 Level: 26
 
 FeatName: Epic Damage Reduction
@@ -532,7 +532,7 @@ Level: 27
 
 FeatName: Epic Eldritch Blast
 Group: Epic, Spellcasting
-Descrip: +3d6 Eldritch Blast dice.
+Descrip: +2d6 Blast Dice, +1 per 2 Epic levels, max +7d6 dice at level 30.
 Level: 21
 Class: Warlock 12
 
@@ -837,6 +837,14 @@ Descrip: Greater Ruin (150 SP): Deal 1000 untyped damage to a single enemy. No s
 Level: 30
 All: Ruin
 
+FeatName: Greater Shield Mastery
+SortName: Shield Mastery3
+Group: Heroic, Melee, Defense
+Descrip: Net effect including Shield Mastery: +10 Combat Style bonus to Melee Power and +10% doublestrike when using a shield. +10/15/20 PRR when using small (or buckler)/large/tower shields.
+BAB: 13
+All: Improved Shield Mastery
+ClassBonus: Fighter
+
 FeatName: Greater Single Weapon Fighting
 Abbreviation: Greater SWF
 SortName: Single Weapon Fighting3
@@ -870,7 +878,7 @@ FeatName: Greater Two Handed Fighting
 Abbreviation: Greater THF
 SortName: Two Handed Fighting3
 Group: Heroic, Melee
-Descrip: Your THF Combat Style bonus increases to +6 Melee Power. Your glancing blows now do 50% of your base damage and have a 9% chance to proc weapon effects. You now get glancing blows on three out of every four swings, instead of the default two out of four.
+Descrip: 30% additional Strikethrough Chance. Your THF Combat Style bonus increases to +6 Melee Power. In addition, while using a two-handed weapon, your Ability Score bonus to damage improves to 2.25x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.6x instead.
 BAB: 11
 Stat: Strength 17
 All: Two Handed Fighting, Improved Two Handed Fighting
@@ -1112,7 +1120,7 @@ ClassBonus: Artificer
 
 FeatName: Improved Martial Arts
 Group: Epic, Melee
-Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using ki weapons such as kamas, quarterstaves, and shuriken.
+Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using weapons you are centered with.
 Class: Monk 12
 Level: 21
 
@@ -1191,7 +1199,7 @@ FeatName: Improved Two Handed Fighting
 Abbreviation: Improved THF
 SortName: Two Handed Fighting2
 Group: Heroic, Melee
-Descrip: Your THF Combat Style bonus increases to +4 Melee Power. Your glancing blows now do 40% of your base damage and have a 6% chance to proc weapon effects.
+Descrip: +30% additional Strikethrough chance while two-handed fighting. Your THF Combat Style bonus increases to +4 Melee Power. While using a two-handed weapon, your Ability Score bonus to damage improves to 2x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.35x instead.
 BAB: 6
 Stat: Strength 17
 All: Two Handed Fighting
@@ -1363,7 +1371,7 @@ Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater S
 SelectorName: Poisons
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
 SelectorName: Spellvials
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Multivial}{-Elemental Obliteration
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Elemental Obliteration
 SelectorName: the Dead
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
 SelectorName: the Wilds
@@ -1423,7 +1431,7 @@ ClassBonus: Fighter, Monk, Alchemist
 
 FeatName: Natural Fighting
 Group: Heroic, Melee
-Descrip: +4 Melee Power, PRR and Doublestrike while in a druid animal form. Also +10% Glancing Blows while in Bear form. This may be taken up to 3 times.
+Descrip: +4 Melee Power, PRR and Doublestrike while in a druid animal form.}{ In bear form: Increase the ability score modifier to damage while using a two-handed weapon to 2.0/2.5/3.0. Gain 60/30/30% Strikethrough chance.}{ This may be taken up to 3 times.
 Class: Druid 3
 Repeat: 3
 
@@ -1437,6 +1445,13 @@ Group: Heroic, Misc
 Descrip: +2 bonus to the Disable Device and Open Lock skills.
 Class: Rogue 1, Artificer 1
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Offhand Versatility
+Group: Heroic, Melee
+Descrip: Your offhand item modifies your main hand:}{ Runearms and Orbs now grant: when you vorpal strike, your next spell automatically crits. This has an internal cooldown of 20 seconds and lasts for 20 seconds.}{ Nothing in your offhand increases your ability score modifier to damage by 25%.
+BAB: 8
+All: Single Weapon Fighting
+ClassBonus: Fighter
 
 FeatName: Opportunist
 Group: Heroic, Melee
@@ -1560,22 +1575,37 @@ ClassOnlyClass: Monk
 ClassOnlyLevel: 3
 Class: Monk 3
 
+FeatName: Perfect Natural Fighting
+Abbreviation: Perfect NF
+Group: Destiny, Melee
+Descrip: If in Bear form, your Two-Handed ability mod increases by .25, and your Bear form's bonus to Armor Class is increased by 5%. If in Wolf form, +15% competence bonus to maximum hit points, and you gain +2d6 sneak attack dice.
+All: Natural Fighting
+Level: 26
+
+FeatName: Perfect Shield Mastery
+Abbreviation: Perfect SM
+Group: Destiny, Melee
+Descrip: Your shield gains +1W, and you gain +20% Shield Armor Class and +5 Physical Resistance Rating.
+All: Shield Mastery
+Level: 26
+
 FeatName: Perfect Single Weapon Fighting
 Abbreviation: Perfect SWF
 Group: Destiny, Melee
-Descrip: While Single Weapon Fighting, your vorpal threat range is increased by 1. (19-20 instead of natural 20.)
+Descrip: While Single Weapon Fighting, your vorpal threat range is increased by 1. (19-20 instead of natural 20.) Your ability score modifier to damage increases by 25%. +10 combat style bonus to Melee Power.
+All: Single Weapon Fighting
 Level: 26
 
 FeatName: Perfect Two Handed Fighting
 Abbreviation: Perfect THF
 Group: Destiny, Melee
-Descrip: +10% glancing blow damage, +10% chance for glancing blows to trigger weapon procs.
+Descrip: While Two Handed Fighting: Gain 30% Strikethrough Chance, and a +10 Combat Style bonus to Melee Power. Two Handed Weapons add 25% more of your ability score modifier to their base damage.
 Level: 26
 
 FeatName: Perfect Two Weapon Fighting
 Abbreviation: Perfect TWF
 Group: Destiny, Melee
-Descrip: +5% doublstrike regardless of your combat style, +10% offhand doublestrike.
+Descrip: +5% doublestrike regardless of your combat style, +10% offhand doublestrike.
 Level: 26
 
 FeatName: Pierce Damage Reduction
@@ -1986,24 +2016,16 @@ Flags: Unselectable
 
 FeatName: Two Handed Fighting
 Group: Heroic, Melee
-Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power. Your glancing blows now do 30% of your base damage (normally 20%) and have a 3% chance to proc weapon effects.
+Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Bastard Sword or Dwarven axe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
 Stat: Strength 15
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk
 None: Single Weapon Fighting
 
-FeatName: Two Weapon Blocking
-SortName: Two Weapon Fighting6
-Group: Heroic, Melee
-Descrip: +2 DR while actively blocking with two weapons.
-All: Two Weapon Fighting
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
-
 FeatName: Two Weapon Defense
 SortName: Two Weapon Fighting4
 Group: Heroic, Melee, Defense
-Descrip: +5 PRR and +1 AC while wielding two weapons.
+Descrip: +5 PRR and +1 AC while wielding two weapons, +2 DR while actively blocking with two weapons, and +10 Magical Resistance Rating Cap.
 All: Two Weapon Fighting
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter

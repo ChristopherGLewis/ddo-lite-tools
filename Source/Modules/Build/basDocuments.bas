@@ -185,7 +185,7 @@ Public Sub SetAppCaption()
 End Sub
 
 Public Sub ClearBuild(Optional pblnClearFile As Boolean = True)
-    Dim typBlank As BuildType4
+    Dim typBlank As BuildType5
     
     build = typBlank
     If pblnClearFile Then mstrFile = vbNullString
@@ -524,6 +524,7 @@ On Error GoTo LoadBuildError
     Dim typVersion1 As BuildType1
     Dim typVersion2 As BuildType2
     Dim typVersion3 As BuildType3
+    Dim typVersion4 As BuildType4
     
     CloseForm "frmDeprecate"
     If Not xp.File.Exists(pstrFile) Then
@@ -557,15 +558,21 @@ On Error GoTo LoadBuildError
                         Get #FileNumber, 6, typVersion1
                         Version1To2 typVersion1, typVersion2
                         Version2To3 typVersion2, typVersion3
-                        Version3To4 typVersion3, build
+                        Version3To4 typVersion3, typVersion4
+                        Version4To5 typVersion4, build
                     Case 2
                         Get #FileNumber, 6, typVersion2
                         Version2To3 typVersion2, typVersion3
-                        Version3To4 typVersion3, build
+                        Version3To4 typVersion3, typVersion4
+                        Version4To5 typVersion4, build
                     Case 3
                         Get #FileNumber, 6, typVersion3
-                        Version3To4 typVersion3, build
+                        Version3To4 typVersion3, typVersion4
+                        Version4To5 typVersion4, build
                     Case 4
+                        Get #FileNumber, 6, typVersion3
+                        Version4To5 typVersion4, build
+                    Case 5
                         Get #FileNumber, 6, build
                     Case Else
                         LoadBuild = leeUnsupported

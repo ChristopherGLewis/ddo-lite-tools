@@ -1991,12 +1991,13 @@ Public Sub GetPointsSpentAndMax(plngSpentBase As Long, plngSpentBonus As Long, p
             Next
         End With
     Next
-    If plngSpentBonus > build.RacialAP Then
-        plngSpentBase = plngSpentBase + plngSpentBonus - build.RacialAP
-        plngSpentBonus = build.RacialAP
+    'set our max spend
+    If plngSpentBonus > (build.RacialAP + build.UniversalAP) Then
+        plngSpentBase = plngSpentBase + plngSpentBonus - (build.RacialAP + build.UniversalAP)
+        plngSpentBonus = (build.RacialAP + build.UniversalAP)
     End If
     plngMaxBase = HeroicLevels() * 4
-    plngMaxBonus = build.RacialAP
+    plngMaxBonus = (build.RacialAP + build.UniversalAP)
 End Sub
 
 
@@ -2545,16 +2546,25 @@ Public Function CheckAbilityErrors(ptypTree As TreeType, ptypBuildTree As BuildT
             ' All/One/None
             If .Selector = 0 Then
                 If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Req, .Rank, False) Then Exit Do
+                ' Ranks
+                If .Rank > 1 And ptypTree.Tier(.Tier).Ability(.Ability).RankReqs Then
+                    If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Rank(.Rank).Req, .Rank, True) Then Exit Do
+                    If .Selector <> 0 Then
+                        If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Rank(.Rank).Req, .Rank, True) Then Exit Do
+                    End If
+                End If
             Else
                 If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Req, .Rank, False) Then Exit Do
-            End If
-            ' Ranks
-            If .Rank > 1 And ptypTree.Tier(.Tier).Ability(.Ability).RankReqs Then
-                If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Rank(.Rank).Req, .Rank, True) Then Exit Do
-                If .Selector <> 0 Then
+                ' Ranks
+                If .Rank > 1 And ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).RankReqs Then
+                    'Note this is checking at the selector level - we don't have data if the req is
+                    'only on one selector (SS->t1:Studies->Magic/Music)
+                    'We'd need to add something like Rank3Sel1None: to the ench.txt file
+                    'and update the dataload stuff
                     If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Rank(.Rank).Req, .Rank, True) Then Exit Do
                 End If
             End If
+
             blnPassChecks = True
         Loop Until True
     End With

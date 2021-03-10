@@ -6,6 +6,7 @@ Public Type TomeScheduleType
     Level() As Long
 End Type
     
+' Controls
 Public Type TomesType
     Stat As TomeScheduleType
     Skill As TomeScheduleType
@@ -13,6 +14,8 @@ Public Type TomesType
     FateMax As Long
     PowerMax As Long
     RRMax As Long
+    UniversalAPMax As Long
+    DestinyMax As Long
 End Type
 
 Public tomes As TomesType
@@ -42,6 +45,8 @@ Public Sub LoadTomeData()
                     Case "fatemax": SetTomeMax .FateMax, strToken(1)
                     Case "powermax": SetTomeMax .PowerMax, strToken(1)
                     Case "prr/mrrmax": SetTomeMax .RRMax, strToken(1)
+                    Case "universalapmax": SetTomeMax .UniversalAPMax, strToken(1)
+                    Case "destinymax": SetTomeMax .DestinyMax, strToken(1)
                 End Select
             End With
         End If
@@ -60,6 +65,8 @@ Private Sub SetDefaults()
         .RacialAPMax = 2
         .PowerMax = 4
         .RRMax = 4
+        .UniversalAPMax = 1
+        .DestinyMax = 1
     End With
 End Sub
 
@@ -68,6 +75,9 @@ Private Sub ParseTomeSchedule(ptypTome As TomeScheduleType, pstrRaw As String)
     Dim lngMax As Long
     Dim i As Long
     
+    ' Format is
+    '  <max tome level>
+    '  list of level that you can use the tome.
     If InStr(pstrRaw, ",") = 0 Then Exit Sub
     strToken = Split(pstrRaw, ",")
     With ptypTome

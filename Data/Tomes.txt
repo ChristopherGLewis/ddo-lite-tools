@@ -4,3 +4,5 @@ RacialAPMax: 2
 FateMax: 3
 PowerMax: 4
 PRR/MRRMax: 4
+UniversalAPMax: 1
+DestinyMax: 1

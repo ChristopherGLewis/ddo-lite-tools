@@ -1,0 +1,293 @@
+[Overview]
+
+Name: Kensei Warpriest
+Race: Human
+MaxLevels: 30
+
+Class: Fighter
+Class: Cleric
+
+Level: 1	Fighter
+Level: 2	Fighter
+Level: 3	Cleric
+Level: 4	Fighter
+Level: 5	Cleric
+Level: 6	Fighter
+Level: 7	Cleric
+Level: 8	Fighter
+Level: 9	Cleric
+Level: 10	Fighter
+Level: 11	Cleric
+Level: 12	Fighter
+Level: 13	Cleric
+Level: 14	Fighter
+Level: 15	Cleric
+Level: 16	Fighter
+Level: 17	Fighter
+Level: 18	Fighter
+Level: 19	Fighter
+Level: 20	Cleric
+
+
+[Stats]
+
+Preferred: Adventurer
+
+;    Advn  Chmp  Hero  Lgnd  Tome
+;    ----  ----  ----  ----  ----
+STR:  10    16    16    16      
+DEX:                            
+CON:   6     6     6    10      
+INT:   4     4     4     4      
+WIS:   2           2            
+CHA:   6     6     6     6      
+;    ----  ----  ----  ----
+;     28    32    34    36   
+
+Levelup: 0	Strength
+Levelup: 4	Strength
+Levelup: 8	Strength
+Levelup: 12	Strength
+Levelup: 16	Strength
+Levelup: 20	Strength
+Levelup: 24	Strength
+Levelup: 28	Strength
+
+
+[Skills]
+
+;         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  Tome
+;        ------------------------------------------------------------------------------------
+Balance:  2   2       2                                                                     
+Bluff  :                                                                                    
+Concent:      2   4       3   2   1   2   1   2   1   2   1   2   1   2   2   2   2   1     
+Diplo  :                                                                                    
+Disable:                                                                                    
+Haggle :                                                                                    
+Heal   :  4               1       3       3       3       3       3           2       3     
+Hide   :                                                                                    
+Intim  :                                                                                    
+Jump   :  4                                                                                 
+Listen :                                                                                    
+Move Si:                                                                                    
+Open Lo:                                                                                    
+Perform:                                                                                    
+Repair :                                                                                    
+Search :                                                                                    
+Spellcr:                                                                                    
+Spot   :                                                                                    
+Swim   :                                                                                    
+Tumble :  2                                                                                 
+UMD    :  4           2       2       2       2       2       2       2   2       2         
+
+
+[Feats]
+
+Standard: Heroic 1	Power Attack
+Standard: Heroic 3	Weapon Focus: Slashing
+Standard: Heroic 6	Great Cleave
+Standard: Heroic 9	Empower Healing Spell
+Standard: Heroic 12	Extend Spell
+Standard: Heroic 15	Two Handed Fighting
+Standard: Heroic 18	Greater Two Handed Fighting
+Standard: Epic 21	Tactical Mastery
+Standard: Epic 24	Overwhelming Critical
+Standard: Destiny 26	Perfect Two Weapon Fighting
+Standard: Epic 27	Heavy Armor Master
+Standard: Destiny 28	Perfect Two Handed Fighting
+Standard: Destiny 29	Dire Charge
+Standard: Epic 30	Tactical Combatant
+
+Legend: Legend 30	Scion of: Arborea
+
+Race: Human 1	Least Dragonmark: Passage
+
+Class: Fighter 1	Cleave
+Class: Fighter 2	Stunning Blow
+Class: Fighter 4	Weapon Specialization: Slashing
+Class: Fighter 6	Improved Critical: Slashing
+Class: Fighter 8	Greater Weapon Focus: Slashing
+Class: Fighter 10	Improved Two Handed Fighting
+Class: Fighter 12	Greater Weapon Specialization: Slashing
+
+Class: Cleric 2	Domain: Strength Domain
+
+Deity: Deity 3	Follower of: Sovereign Host
+Deity: Deity 13	Deity Ability: Unyielding Sovereignty
+
+Alternate: Legend 30	Scion of: Astral Plane
+
+
+[Spells]
+
+Spell: Cleric 1	Cure Light Wounds
+Spell: Cleric 1	Nightshield
+Spell: Cleric 1	Remove Fear
+Spell: Cleric 1	Protection from Evil
+Spell: Cleric 1	Divine Favor
+Spell: Cleric 1	
+
+Spell: Cleric 2	Cure Moderate Wounds
+Spell: Cleric 2	Resist Energy
+Spell: Cleric 2	Eagle's Splendor
+Spell: Cleric 2	
+Spell: Cleric 2	
+
+Spell: Cleric 3	Cure Serious Wounds
+Spell: Cleric 3	Magic Circle Against Evil
+Spell: Cleric 3	Protection from Energy
+Spell: Cleric 3	Prayer
+Spell: Cleric 3	
+
+Spell: Cleric 4	Cure Critical Wounds
+Spell: Cleric 4	Death Ward
+Spell: Cleric 4	Freedom of Movement
+Spell: Cleric 4	
+
+
+[Enhancements]
+
+Tier5: Kensei
+
+Tree: Kensei
+Type: Class
+Source: Fighter
+ClassLevels: 12
+Ability: Tier 0: Kensei Focus: Axes
+Ability: Tier 0: Spiritual Bond
+Ability: Tier 0: Strike with No Thought
+Ability: Tier 0: Power Surge
+Ability: Tier 1: Extra Action Boost (Rank 3)
+Ability: Tier 1: Weapon Group Specialization
+Ability: Tier 1: Action Boost: Haste Boost (Rank 3)
+Ability: Tier 2: Tactics (Rank 3)
+Ability: Tier 2: Weapon Group Specialization
+Ability: Tier 2: Ascetic Training: Conditioning (Rank 1)
+Ability: Tier 3: Weapon Group Specialization
+Ability: Tier 4: Opportunity Attack
+Ability: Tier 4: Weapon Group Specialization
+Ability: Tier 5: A Good Death: Melee
+Ability: Tier 5: Weapon Master
+Ability: Tier 5: One with the Blade
+Ability: Tier 5: Deadly Strike: Deadly Strike
+Ability: Tier 5: Keen Edge
+
+Tree: Warpriest
+Type: Class
+Source: Cleric
+ClassLevels: 8
+Ability: Tier 0: Smite Foe: Melee
+Ability: Tier 1: Divine Might (Rank 3)
+Ability: Tier 1: Toughness (Rank 3)
+Ability: Tier 2: Smite Weakness
+Ability: Tier 2: Wall of Steel (Rank 3)
+Ability: Tier 2: Inflame (Rank 3)
+Ability: Tier 3: Greater Inflame (Rank 3)
+Ability: Tier 3: Stat: Strength
+Ability: Tier 4: Ameliorating Strike
+
+Tree: Stalwart Defender
+Type: Class
+Source: Fighter
+ClassLevels: 12
+Ability: Tier 0: Toughness
+Ability: Tier 0: Stalwart Defense
+Ability: Tier 1: Improved Stalwart Defense: Durable Defense (Rank 3)
+Ability: Tier 1: Stalwart Defensive Mastery (Rank 3)
+Ability: Tier 2: Improved Stalwart Defense: Resilient Defense (Rank 3)
+Ability: Tier 3: Greater Stalwart Defense: Strong Defense (Rank 3)
+
+Tree: Human
+Type: Race
+ClassLevels: 30
+Ability: Tier 0: Human Versatility: Damage Boost
+Ability: Tier 1: Dragonmark Focus: Orien (Rank 1)
+Ability: Tier 1: Action Surge: Strength (Rank 3)
+Ability: Tier 1: Improved Recovery
+Ability: Tier 2: Lesser Dragonmark: Dimension Door
+
+
+[LevelingGuide]
+
+Guide: Human Tier 0: Human Versatility: Damage Boost
+Guide: Human Tier 1: Dragonmark Focus: Orien (Rank 1)
+Guide: Human Tier 1: Improved Recovery
+Guide: Kensei Tier 0: Kensei Focus: Axes
+Guide: Kensei Tier 1: Action Boost: Haste Boost (Rank 1)
+Guide: Kensei Tier 1: Action Boost: Haste Boost (Rank 2)
+Guide: Kensei Tier 1: Action Boost: Haste Boost (Rank 3)
+Guide: Human Tier 1: Action Surge: Strength (Rank 1)
+Guide: Human Tier 2: Lesser Dragonmark: Dimension Door
+Guide: Warpriest Tier 0: Smite Foe: Melee
+Guide: Warpriest Tier 1: Toughness (Rank 1)
+Guide: Warpriest Tier 1: Toughness (Rank 2)
+Guide: Kensei Tier 1: Weapon Group Specialization
+Guide: Warpriest Tier 1: Toughness (Rank 3)
+Guide: Warpriest Tier 1: Divine Might (Rank 1)
+Guide: Warpriest Tier 1: Divine Might (Rank 2)
+Guide: Warpriest Tier 1: Divine Might (Rank 3)
+Guide: Warpriest Tier 2: Smite Weakness
+Guide: Warpriest Tier 2: Wall of Steel (Rank 1)
+Guide: Warpriest Tier 2: Wall of Steel (Rank 2)
+Guide: Warpriest Tier 0: Resilience of Battle
+Guide: Warpriest Tier 2: Wall of Steel (Rank 3)
+Guide: Warpriest Tier 2: Inflame (Rank 1)
+Guide: Warpriest Tier 2: Inflame (Rank 2)
+Guide: Warpriest Tier 3: Stat: Strength
+Guide: Warpriest Tier 2: Inflame (Rank 3)
+Guide: Warpriest Tier 3: Greater Inflame (Rank 1)
+Guide: Warpriest Tier 3: Greater Inflame (Rank 2)
+Guide: Warpriest Tier 4: Ameliorating Strike
+Guide: Kensei Tier 0: Spiritual Bond
+Guide: Kensei Tier 2: Weapon Group Specialization
+Guide: Kensei Tier 2: Ascetic Training: Conditioning (Rank 1)
+Guide: Kensei Tier 0: Strike with No Thought
+Guide: Kensei Tier 3: Weapon Group Specialization
+Guide: Kensei Tier 2: Tactics (Rank 1)
+Guide: Kensei Tier 2: Tactics (Rank 2)
+Guide: Kensei Tier 2: Tactics (Rank 3)
+Guide: Kensei Tier 1: Extra Action Boost (Rank 1)
+Guide: Kensei Tier 1: Extra Action Boost (Rank 2)
+Guide: Kensei Tier 4: Weapon Group Specialization
+Guide: Kensei Tier 1: Extra Action Boost (Rank 3)
+Guide: Kensei Tier 4: Opportunity Attack
+Guide: Kensei Tier 2: Ascetic Training: Conditioning (Rank 2)
+Guide: Kensei Tier 5: One with the Blade
+Guide: Kensei Tier 5: Keen Edge
+Guide: Kensei Tier 5: A Good Death: Melee
+Guide: Kensei Tier 5: Weapon Master
+Guide: Kensei Tier 5: Deadly Strike: Deadly Strike
+Guide: Stalwart Tier 0: Toughness
+Guide: Stalwart Tier 1: Item Defense (Rank 1)
+Guide: Stalwart Tier 1: Improved Stalwart Defense: Durable Defense (Rank 1)
+Guide: Stalwart Tier 1: Improved Stalwart Defense: Durable Defense (Rank 2)
+Guide: Stalwart Tier 1: Improved Stalwart Defense: Durable Defense (Rank 3)
+Guide: Stalwart Tier 0: Stalwart Defense
+Guide: Stalwart Tier 2: Improved Stalwart Defense: Resilient Defense (Rank 1)
+Guide: Stalwart Tier 2: Improved Stalwart Defense: Resilient Defense (Rank 2)
+Guide: Bank AP
+Guide: Reset All Trees
+
+
+[Destiny]
+
+Destiny: Legendary Dreadnought
+Ability: Tier 1: Legendary Tactics (Rank 3)
+Ability: Tier 1: Extra Action Boost (Rank 3)
+Ability: Tier 1: Stat: Strength
+Ability: Tier 2: Momentum Swing (Rank 3)
+Ability: Tier 2: Improved Power Attack
+Ability: Tier 2: Stat: Strength
+Ability: Tier 3: Lay Waste
+Ability: Tier 3: Critical Damage (Rank 1)
+Ability: Tier 5: Devastating Critical
+Ability: Tier 6: Master's Blitz
+Ability: Tier 6: Headman's Chop
+
+
+[Twists]
+
+Twist: Fury of the Wild Tier 4: Sense Weakness
+Twist: Primal Avatar Tier 1: Rejuvenation Cocoon
+Twist: Fury of the Wild Tier 1: Boulder Toss
+

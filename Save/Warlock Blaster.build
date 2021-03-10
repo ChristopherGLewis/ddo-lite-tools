@@ -1,0 +1,149 @@
+[Overview]
+
+Name: New Build
+Race: Tiefling
+Alignment: True Neutral
+MaxLevels: 20
+
+Class: Warlock
+
+
+[Stats]
+
+Preferred: Legend
+
+Adventurer: No
+Champion: No
+Hero: No
+;    Advn  Chmp  Hero  Lgnd  Tome
+;    ----  ----  ----  ----  ----
+STR:                           8
+DEX:                           8
+CON:                           8
+INT:                           8
+WIS:                           8
+CHA:                           8
+;    ----  ----  ----  ----
+;                            
+
+
+[Skills]
+
+;         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  Tome
+;        ------------------------------------------------------------------------------------
+Balance:                                          1   1   1   1   2   2   2   2   2   2     
+Bluff  :                                                                                    
+Concent:      1   1   1   1   1   2   2   2   2   1   1   1   1   1   1   1   1   1   1     
+Diplo  :                                                                                    
+Disable:                                                                                    
+Haggle :                                                                                    
+Heal   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1         
+Hide   :                                                                                    
+Intim  :                                                                              1     
+Jump   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Listen :                                                                                    
+Move Si:                                                                                    
+Open Lo:                                                                                    
+Perform:                                                                                    
+Repair :                                                                                    
+Search :                                                                                    
+Spellcr:  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Spot   :                                                                                    
+Swim   :                                                                                    
+Tumble :                                                                                    
+UMD    :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+
+
+[Feats]
+
+Standard: Heroic 1	Quicken Spell
+Standard: Heroic 3	Completionist
+Standard: Heroic 6	Enlarge Spell
+Standard: Heroic 9	Empower Spell
+Standard: Heroic 12	Spell Focus: Conjuration
+Standard: Heroic 15	Spell Penetration
+Standard: Heroic 18	Greater Spell Focus: Conjuration
+Standard: Epic 21	Epic Eldritch Blast
+Standard: Epic 24	Greater Spell Penetration
+Standard: Destiny 26	Epic Arcane Eldritch Blast
+Standard: Epic 27	Ruin
+Standard: Destiny 28	Hellball
+Standard: Destiny 29	Elusive Target
+Standard: Epic 30	Greater Ruin
+
+Legend: Legend 30	Scion of: Plane of Fire
+
+Class: Warlock 1	Pact: Fiend
+
+
+[Enhancements]
+
+Tier5: Soul Eater
+RacialAP: 10
+
+Tree: Tiefling
+Type: Race
+ClassLevels: 20
+Ability: Tier 0: Bloodhunt I
+Ability: Tier 0: Charisma I
+Ability: Tier 0: Bloodhunt II
+Ability: Tier 0: Charisma II
+Ability: Tier 1: Hellish Rebuke
+Ability: Tier 1: Infernal Nature (Rank 3)
+
+Tree: Soul Eater
+Type: Class
+Source: Warlock
+ClassLevels: 20
+Ability: Tier 0: Inhuman Understanding
+Ability: Tier 0: Inhuman Nature
+Ability: Tier 0: No Worse Fate
+Ability: Tier 0: Inhuman Nature II
+Ability: Tier 0: Eldritch Seeker
+Ability: Tier 1: Consume
+Ability: Tier 1: Hungry for Destruction (Rank 3)
+Ability: Tier 2: Stricken (Rank 3)
+Ability: Tier 2: Feeding Frenzy
+Ability: Tier 2: Hungry for Destruction (Rank 3)
+Ability: Tier 3: Eldritch Cone Shape
+Ability: Tier 3: Charisma
+Ability: Tier 4: Greater Hunger
+Ability: Tier 4: Steal Life Force (Rank 3)
+Ability: Tier 4: Immortal Will
+Ability: Tier 4: Charisma
+Ability: Tier 5: Eldritch Wave
+Ability: Tier 5: Supreme Hunger
+Ability: Tier 5: Spell Tearing
+
+Tree: Tainted Scholar
+Type: Class
+Source: Warlock
+ClassLevels: 20
+Ability: Tier 0: Tainted Spellcasting
+Ability: Tier 0: Tainted Lore
+Ability: Tier 0: Stanch
+Ability: Tier 0: Tainted Lore II
+Ability: Tier 1: Planar Power (Rank 2)
+Ability: Tier 1: Feigned Health (Rank 3)
+Ability: Tier 1: Strong Pact
+Ability: Tier 1: Eldritch Focus (Rank 3)
+Ability: Tier 2: Utterdark Blast
+Ability: Tier 2: Eldritch Chain Shape
+Ability: Tier 2: Strong Pact
+Ability: Tier 2: Wand and Scroll Mastery (Rank 1)
+Ability: Tier 3: Strong Pact
+Ability: Tier 3: Stat: Charisma
+Ability: Tier 4: Strong Pact
+Ability: Tier 4: Stat: Charisma
+
+Tree: Enlightened Spirit
+Type: Class
+Source: Warlock
+ClassLevels: 20
+Ability: Tier 0: Eldritch Aura
+Ability: Tier 1: Resilience of Body (Rank 3)
+Ability: Tier 1: Rewards of Tribute (Rank 3)
+Ability: Tier 2: Power of Enlightenment (Rank 3)
+Ability: Tier 2: Shield
+Ability: Tier 3: Stat: Charisma
+

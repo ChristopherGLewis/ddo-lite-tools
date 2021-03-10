@@ -283,7 +283,7 @@ Descrip: Passive:}{-Immunity to most knockdown effects}{-+10 Electric and Sonic 
 Tier: 0
 
 AbilityName: Elemental Apotheosis
-Descrip: Activate this ability to transform into an Air Elemental.While in elemental form, you gain +100% fortification. If you are a Warforged, you are no longer considered a Living Construct, and so are immune to Repair spells, but can be healed normally by Positive Energy spells.  When Elemental Apotheosis is active, casting a spell of that tree's element on a creature that is immune to that element, that creature becomes vulnerable to that element for a short time.While in Air Elemental form, you also gain an additional +20 Electric and Sonic Spell Power, +2% Electric and Sonic Spell Critical Chance, and a +1 bonus to caster level and max caster level for Air, electrical, and sonic spells, but your water, earth, and fire spells have a -3 penalty to caster level and max caster level. You also gain a +10 racial bonus to electrical resistance, +20 Physical Resistance Rating, +3% dodge chance, and a -10 penalty to acid resistance. While in Elemental Form, your spells also cost an additional 10% Spell Points to cast.You also gain the following passive benefits, even while not in elemental form:}{-+2 Charisma}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{-+1 Maximum Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells}Note: This form's immunity remove don't work against Portals. Even though work against raid boss like Stormreaver and Queen Lailat.
+Descrip: Activate this ability to transform into an Air Elemental.While in elemental form, you gain +100% fortification. If you are a Warforged, you are no longer considered a Living Construct, and so are immune to Repair spells, but can be healed normally by Positive Energy spells.  When Elemental Apotheosis is active, casting a spell of that tree's element on a creature that is immune to that element, that creature becomes vulnerable to that element for a short time.While in Air Elemental form, you also gain an additional +20 Electric and Sonic Spell Power, +2% Electric and Sonic Spell Critical Chance, and a +1 bonus to caster level and max caster level for Air, electrical, and sonic spells, but your water, earth, and fire spells have a -3 penalty to caster level and max caster level. You also gain a +10 racial bonus to electrical resistance, +20 Physical Resistance Rating, +3% dodge chance, and a -10 penalty to acid resistance. While in Elemental Form, your spells also cost an additional 10% Spell Points to cast.You also gain the following passive benefits, even while not in elemental form:}{-+2 Charisma}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{-+1 Maximum Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells}Note: This form's immunity remove doesn't work against Portals. Even though it works against raid boss like Stormreaver and Queen Lailat.
 Tier: 0
 
 AbilityName: Shocking Grasp
@@ -679,7 +679,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Life Salve
-Descrip: Training this Enhancement also grants you a similar ability Death Salve.}Target player, hireling, or pet takes 100% base healing from Positive spells for the next 3 minutes (or until target dies.) Has no effect on NPC allies or allies that already take 100% base Positive healing. This overrides their innate base healing from Positive spells for the duration. Shares a cooldown with Death Salve and Converter. Note: cannot be used on self.
+Descrip: Training this Enhancement also grants you a similar ability Death Salve.}Target player, hireling, or pet takes 100% base healing from Positive spells for the next 3 minutes (or until target dies.) Has no effect on NPC allies or allies that already take 100% base Positive healing. This overrides their innate base healing from Positive spells for the duration. Shares a cooldown with Death Salve and Converter. Note: cannot be used on self.}{ Bug:  The Death Salve does not allow living allies to heal from negative spells. In addition, those characters cannot be properly targeted with the inflict admixture spells even while under the effect of Death Salve.
 Tier: 2
 Cost: 2
 
@@ -736,7 +736,7 @@ Flags: SelectorOnly
 Selector: Intelligence, Constitution
 
 AbilityName: Curative Admixture: Cure or Inflict Critical Wounds
-Descrip: Curative Admixture: Cure Critical Wounds Or Curative Admixture: Inflict Critical Wounds}Metamagic: Empower, Empower Heal, Maximize, Intensify}Spell Point Cost: 45}Cooldown 12 seconds}Primer Element: Gildleaf}Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.
+Descrip: Curative Admixture: Cure Critical Wounds Or Curative Admixture: Inflict Critical Wounds}Metamagic: Empower, Empower Heal, Maximize, Intensify}Spell Point Cost: 5}Cooldown 12 seconds}Primer Element: Gildleaf}Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.
 Tier: 5
 
 AbilityName: Gloves of the Master Apothecary
@@ -1049,7 +1049,6 @@ AbilityName: Shocking Vulnerability
 Descrip: Each Electric spell you cast has a 5% chance of applying 1/1d2/1d3 stack[s] of Vulnerable to each affected enemy.}Vulnerable - Target takes 1% more damage for 3 seconds. This effect stacks up to 20 times and loses one stack on expiration.
 Tier: 2
 Ranks: 3
-Cost: 2
 
 AbilityName: Lightning Sphere
 Descrip: Spell Like Ability: Lightning Sphere (Activation Cost: 8/6/4 spell points. Cooldown: 15/10/5 seconds.)
@@ -1110,22 +1109,26 @@ AbilityName: Lightning Motes
 Descrip: Spell Like Ability: Lightning Motes (Activation Cost: 12/8/6 spell points. Cooldown: 18/12/6 seconds.)
 Tier: 5
 Ranks: 3
-Cost: 2
 All: Tier 4: Blast Rod
 
-AbilityName: Master Defender
+AbilityName: Charged Recoil
 Descrip: Your Iron Defender gain +2/+4/+6 to Strength, Dexterity, and Constitution. In addition, as long as you remain near your Iron Defender, he will provide you with 1%/2%/3% Dodge.
+Tier: 5
+Cost: 2
+
+AbilityName: Master Defender
+Descrip: You have trained extensively in Evocation magic, granting a +1/+2/+3 bonus to your spell DCs of that school.
 Tier: 5
 Ranks: 3
 All: Tier 4: Arcane Engine
 
 AbilityName: Evocation Focus
-Descrip: You have trained extensively in Evocation magic, granting a +1/+2/+3 bonus to your spell DCs of that school.
+Descrip: While wielding a Rune Arm, +10/+15/+20 Electric Spell Power, +5/+10/+15 Universal Spell Power.
 Tier: 5
 Ranks: 3
 
 AbilityName: Arcane Mechanism
-Descrip: While wielding a Rune Arm, +10/+15/+20 Electric Spell Power, +5/+10/+15 Universal Spell Power.
+Descrip: Runearm shots now strip Electric Immunity for 10 seconds.
 Tier: 5
 Ranks: 3
 
@@ -1136,7 +1139,7 @@ Color: Blue
 Stats: Intelligence
 
 AbilityName: Archmage Specialization
-Descrip: Choose a school to specialize in, gaining a Spell Like Ability from that school. In addition, each enhancement point spent in the Archmage tree grants +1 Spell Power to all spells and +2 to your Maximum Spell points.}{- Abjuration I: Shield: Spell Like Ability: Shield (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Conjuration I: Grease: Spell Like Ability: Grease (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Enchantment I: Hypnotism: Spell Like Ability: Hypnotism (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Evocation I: Magic Missile: Spell Like Ability: Magic Missile (Activation Cost: 2 SP. Cooldown: 6 seconds)}{- Illusion I: Invisibility: Spell Like Ability: Invisibility (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Necromancy I: Chill Touch: Spell Like Ability: Chill Touch (Activation Cost: 2 SP. Cooldown: 6 seconds)}{- Transmutation I: Jump: Spell Like Ability: Jump (Activation Cost: 1 SP. Cooldown: 6 seconds)
+Descrip: Choose a school to specialize in, gaining a Spell Like Ability from that school. In addition, each enhancement point spent in the Archmage tree grants +1 Spell Power to all spells and +2 to your Maximum Spell points.}{- Abjuration I: Shield: Spell Like Ability: Shield (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Conjuration I: Grease: Spell Like Ability: Grease (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Enchantment I: Hypnotism: Spell Like Ability: Hypnotism (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Evocation I: Magic Missile: Spell Like Ability: Magic Missile (Activation Cost: 2 SP. Cooldown: 6 seconds)}{- Illusion I: Invisibility: Spell Like Ability: Invisibility (Activation Cost: 1 SP. Cooldown: 6 seconds)}{- Necromancy I: Chill Touch: Spell Like Ability: Chill Touch (Activation Cost: 2 SP. Cooldown: 6 seconds)}{ Note: Does not share a cooldown with the Divine Disciple's Chill Touch SLA.}{- Transmutation I: Jump: Spell Like Ability: Jump (Activation Cost: 1 SP. Cooldown: 6 seconds)
 Tier: 0
 Flags: SelectorOnly
 Selector: Shield, Grease, Hypnotism, Magic Missile, Invisibility, Chill Touch, Jump
@@ -1372,7 +1375,7 @@ Tier: 1
 Cost: 2
 
 AbilityName: Stealthy
-Descrip: +1/+2/+3 Hide and Move Silently. +25/50/75% movement speed while sneaking.}{-Bug:  Actual progression is the lesser +20/35/50% of similar enhancements}{-Bug:  If you jump or fall down to a different surface while sneaking, your speed may reset to a slower value until you exit and re-enter sneak mode, or switch weapons.
+Descrip: +1/+2/+3 Hide and Move Silently. +25/50/75% enchantment bonus to movement speed while sneaking.}{-Bug:  Actual progression is the lesser +20/35/50% of similar enhancements}{-Bug:  If you jump or fall down to a different surface while sneaking, your speed may reset to a slower value until you exit and re-enter sneak mode, or switch weapons.
 Tier: 1
 Ranks: 3
 
@@ -1740,7 +1743,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Hope for Victory
-Descrip: Target ally gains a Sacred bonus to Melee and Ranged Power equal to 3 + half your Favored Soul level, and Universal Spell Power equal to 6 + your Favored Soul level, for 20 seconds. 6 second cooldown.}(Metamagic: Quicken, Enlarge.)
+Descrip: Target ally gains a Sacred bonus to Melee and Ranged Power equal to 3 + half your Favored Soul level, and Universal Spell Power equal to 6 + your Favored Soul level, for 20 seconds. 6 second cooldown. Bug:  Grants scaling Melee and Ranged Power at a lesser value than listed, while spell power scales correctly.}(Metamagic: Quicken, Enlarge.)
 Tier: 4
 Cost: 2
 
@@ -1931,7 +1934,7 @@ Tier: 0
 Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poision
 
 AbilityName: Multivial
-Descrip: Select an Element to specialize in.}{- SLA: Multivial of Acid(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Frost(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Sparks(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Flame(SP:15, Cooldown:12 seconds)}{- SLA: Multivial of Poison(SP:15, Cooldown:12 seconds)}Primer Element: Crimsonite (Red),}Passive: +4 Intelligence, and 2 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +2 Conjuration DCs.}Bug:  Unlike the multivial spells, this ability requires a target. (You can't just throw this ability whenever you want; there needs to be an enemy in order to be allowed to use this ability.)
+Descrip: Select an Element to specialize in.}{- SLA: Multivial of Acid(SP:40, Cooldown:12 seconds)}{- SLA: Multivial of Frost(SP:40, Cooldown:12 seconds)}{- SLA: Multivial of Sparks(SP:40, Cooldown:12 seconds)}{- SLA: Multivial of Flame(SP:40, Cooldown:12 seconds)}{- SLA: Multivial of Poison(SP:40, Cooldown:12 seconds)}Primer Element: Crimsonite (Red),}Passive: +4 Intelligence, and 2 extra Burning Ambition Dice.}While in Pyrite Reaction, you gain +2 Conjuration DCs.}Bug:  Unlike the multivial spells, this ability requires a target. (You can't just throw this ability whenever you want; there needs to be an enemy in order to be allowed to use this ability.)
 Tier: 0
 Selector: Multivial of Acid, Multivial of Cold, Multivial of Electric, Multivial of Fire, Multivial of Poision
 
@@ -2041,7 +2044,7 @@ Cost: 2
 All: Tier 3: Efficient Metamagic II
 
 AbilityName: Burning Ambition
-Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Burning Ambition does not apply to Curative Admixtures, even when they would inflict damage to their targets. It also does not apply to Spill the Bad Stuff.}{-Bug:  Core 3 and 4 add an additional burning ambition dice each.
+Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Alchemist spells will ignite your enemies with magic, dealing additional damage. This damage determines its element based on the element of the spell cast. This ability begins at 1d4 damage, adding another 1d4 for each Burning Ambition die you get from other abilities. This damage scales with Spell Power.}Notes:}{-Burning Ambition will proc multiple times on spells that have multiple hits.}{-Burning Ambition has a chance to critically hit, probably based on the spell critical chance for the corresponding element.}{-Burning Ambition does not apply to Curative Admixtures, even when they would inflict damage to their targets. It also does not apply to Spill the Bad Stuff and Corrosive Dust.}{-Burning Ambition lasts 11 seconds for purpose of Inferno of Creation. You can't overwrite a duration of current Burning Ambition by same elemental. Need to apply again once current one is expired.}{-Bug:  Core 3 and 4 add an additional burning ambition dice each.
 Tier: 4
 Cost: 2
 
@@ -2275,7 +2278,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Faster Sneaking
-Descrip: +20%/+35%/+50% movement speed while sneaking.
+Descrip: +20%/+35%/+50% enchantment bonus to movement speed while sneaking.
 Tier: 2
 Ranks: 3
 All: Tier 1: Stealthy
@@ -2326,7 +2329,7 @@ Cost: 2
 All: Tier 3: Survivalist
 
 AbilityName: Killer
-Descrip: When you kill a target, you gain a 5% Morale bonus to Melee Doublestrike and Extra Shot Chance for 15 seconds. Weak enemies will not always produce this effect. The Killer buff can stack up to 2/3/4 times. Stacks are reduced one at a time. (Repeating Crossbows have a reduced chance to produce Extra Shots.)
+Descrip: When you kill a target, you gain a 5% Morale bonus to Doublestrike and Doubleshot for 15 seconds. Weak enemies will not always produce this effect. The Killer buff can stack up to 2/3/4 times. Stacks are reduced one at a time. (Repeating Crossbows have a reduced chance to produce Extra Shots.)
 Tier: 4
 Ranks: 3
 
@@ -2389,7 +2392,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Head Shot
-Descrip: Ranged Attack. +5[W] attack that is automatically considered a critical threat. On hit, blinds the opponent for 6 seconds. (Fortitude save negates, 14 + Ranger level + Dexterity Mod + Tactical Feat DCs) Cooldown: 12 seconds.}{-Taking this ability also grants Head Strike, a Melee version of the exact same ability.
+Descrip: Ranged Attack. +5[W] attack that is automatically considered a critical threat. On hit, blinds the opponent for 6 seconds. (Fortitude save negates, 14 + Ranger level + Dexterity Mod + Tactical Feat DCs) Cooldown: 12 seconds.}{-Taking this ability also grants Head Strike, a Melee version of the exact same ability.}Bug:  Doesn't seem to give a save against the blind.
 Tier: 5
 Cost: 2
 
@@ -2442,7 +2445,7 @@ Tier: 0
 SharedSelector: Tier 0: Emissary
 
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{- Chill Touch: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Darkness}{- Nimbus of Light: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Light
+Descrip: Gain a new Spell-like ability:}{- Chill Touch: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Darkness}{ Note: Does not share a cooldown with the Archmage's Chill Touch SLA.}{- Nimbus of Light: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Light
 Tier: 1
 Ranks: 3
 Flags: SelectorOnly
@@ -3264,7 +3267,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Item Defense
-Descrip: You have a 25%/50%/75% chance to negate potential item wear.
+Descrip: You have a 25%/50%/75% chance to negate potential item wear.}{-Bug:  Getting one point negates all item damage.
 Tier: 1
 Ranks: 3
 
@@ -3419,7 +3422,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Item Defense
-Descrip: You have a 25%/50%/75% chance to negate potential item wear.
+Descrip: You have a 25%/50%/75% chance to negate potential item wear.}{-Bug:  Getting one point negates all item damage.
 Tier: 1
 Ranks: 3
 
@@ -3481,7 +3484,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Knight's Transformation
-Descrip: Toggle: While this is turned on, all your spells and SLAs that can be affected by Metamagics have their range reduced to touch range. You gain +30 Universal Spell Power and +3% Spell Critical Damage. Your Base Attack Bonus equals your Character Level. You gain +5 to hit with Melee Weapons and 3% Doublestrike.}Exclusive from the Enlarge Metamagic and any Eldritch Blast shape stance. This stance works with other offensive and defensive stances, as well as Rages.}Cooldown: 12 Seconds}{ Bug:  Still provides this effect even if an Eldritch Blast shape stance is toggled on.
+Descrip: Toggle: While this is turned on, all your spells and SLAs that can be affected by Metamagics have their range reduced to touch range. You gain +30 Universal Spell Power and +3% Spell Critical Damage. Your Base Attack Bonus equals your Character Level. You gain +5 to hit with weapons and 3% Doublestrike.}Exclusive from the Enlarge Metamagic and any Eldritch Blast shape stance. This stance works with other offensive and defensive stances, as well as Rages.}Cooldown: 12 Seconds}{ Bug:  Still provides this effect even if an Eldritch Blast shape stance is toggled on.
 Tier: 4
 Cost: 2
 
@@ -4105,7 +4108,7 @@ Ranks: 3
 Selector: Diving Attack Shot, Diving Attack Strike
 
 AbilityName: Meticulous Weaponry
-Descrip: Protect your items, or increase your chance of recovering ammunition. Choose one:}{-Meticulous Weaponry: You have a 25/50/75% chance to negate potential item wear.}{-Meticulous Fletching: You are skilled at enhancing, salvaging, and re-purposing your arrows, bolts, and throwing weapons. your ammunition gains a 50/65/80% chance of returning.
+Descrip: Protect your items, or increase your chance of recovering ammunition. Choose one:}{-Meticulous Weaponry: You have a 25/50/75% chance to negate potential item wear.}{-Meticulous Fletching: You are skilled at enhancing, salvaging, and re-purposing your arrows, bolts, and throwing weapons. your ammunition gains a 50/65/80% chance of returning.}{ Note: Cannot be taken at the same time as Fletching.
 Tier: 2
 Ranks: 3
 Selector: Meticulous Fletching, Meticulous Weaponry
@@ -4153,7 +4156,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Coordinated Strikes
-Descrip: Choose between a melee or ranged attack that will cause your bird to rain attacks over an area, damaging and blinding all foes in the area. Choose One:}{-Coordinated Shot: Ranged Falconer Attack: You make a ranged attack for +2[W], as your Hunting Bird descends to frenzy in a large area around the first target struck for an additional 10d6 damage that scales with Melee or Ranged Power, whichever is higher. Your Hunting Bird also attempts to Blind each opponent Struck.}{ Blind DC: 10 + Character level + Wisdom modifier + Assassinate bonuses.}{ Cooldown 25 seconds, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{-If you don't have a target, then Hunting Bird will attack an area centered you.}{-Coordinated Strike: Melee Falconer Cleave Attack: You cleave all opponents near you for +2[W], as your Hunting Bird descends to frenzy in a large area for an additional 10d6 damage that scales with Melee or Ranged Power, whichever is higher. Your Hunting Bird also attempts to Blind each opponent struck.}{ Blind DC: 10 + Character Level + Wisdom modifier + Assassinate bonuses.}{ Cooldown 25 seconds, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{-Unlike other Hunting Bird attacks, Hunting Bird will attack an area centered you regardless you have a target or not and target distance.
+Descrip: Choose between a melee or ranged attack that will cause your bird to rain attacks over an area, damaging and blinding all foes in the area. Choose One:}{-Coordinated Shot: Ranged Falconer Attack: You make a ranged attack for +2[W], as your Hunting Bird descends to frenzy in a large area around the first target struck for an additional 10d6 damage that scales with Melee or Ranged Power, whichever is higher. Your Hunting Bird also attempts to Blind each opponent Struck.}{ Blind DC: 10 + Character level + Wisdom modifier + Assassinate bonuses.}{ Cooldown 25 seconds, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{-If you don't have a target, then Hunting Bird will attack an area centered you.}{-Coordinated Strike: Melee Falconer Cleave Attack: You cleave all opponents near you for +2[W], as your Hunting Bird descends to frenzy in a large area for an additional 10d6 damage that scales with Melee or Ranged Power, whichever is higher. Your Hunting Bird also attempts to Blind each opponent struck.}{ Blind DC: 10 + Character Level + Wisdom modifier + Assassinate bonuses.}{ Cooldown 25 seconds, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{-Unlike other Hunting Bird attacks, Hunting Bird will attack an area centered you regardless you have a target or not and target distance.}{-Bug:  Assassinate bonuses do not seem to apply to the calculation of the DC.
 Tier: 4
 Selector: Coordinated Shot, Coordinated Strike
 
@@ -4172,7 +4175,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Death from Above
-Descrip: Your Hunting Bird swoops down and attempts to end someone's life. You make an attack for +1/3/5[W], and your Hunting Bird also attacks for 50/100/200 points of damage that scales with 200% of Melee or Ranged Power, whichever is higher. The target struck makes a Fortitude Saving Throw, and on a failed save, dies.}{ DC: 10 + Character level + Wisdom bonus + Assassinate bonuses. (Note: Assassinate bonuses do not increase the displayed DC. Unclear if this is an actual or only a display bug. Nov. 11/2020)}{ Cooldown one minute, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{ Choose One: Death from Above Shot (Ranged Falconer Attack) or Death from Above: (Melee Falconer Attack).}{-You can't use this skill without target which is not blocked. Hunting Bird will hit the target regardless attack is hit or miss or doesn't reach.
+Descrip: Your Hunting Bird swoops down and attempts to end someone's life. You make an attack for +1/3/5[W], and your Hunting Bird also attacks for 50/100/200 points of damage that scales with 200% of Melee or Ranged Power, whichever is higher. The target struck makes a Fortitude Saving Throw, and on a failed save, dies.}{ DC: 10 + Character level + Wisdom bonus + Assassinate bonuses. (Note: Assassinate bonuses do not increase the displayed DC. Unclear if this is an actual or only a display bug. Nov. 11/2020)}{ Cooldown one minute, with a 4.5 second shared cooldown with other Hunting Bird attacks.}{ Choose One: Death from Above Shot (Ranged Falconer Attack) or Death from Above: (Melee Falconer Attack).}{-You can't use this skill without a target which is not blocked. The Hunting Bird will hit the target regardless of whether the attack is a hit or a miss or doesn't reach.
 Tier: 5
 Ranks: 3
 Selector: Shot, Strike
@@ -4196,7 +4199,7 @@ Color: Green
 Stats: Intelligence, Wisdom, Charisma
 
 AbilityName: Find Familiar
-Descrip: Select a Familiar to accompany you on your advenures.}For each Core ability spent in this tree, including this one, your Familiar grants you +5 Force and +5 Universal Spellpower}{- Familiar Toggle: Summons your chosen familiar, a fox, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a Pseudodragon, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white cat, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white tressym, to your side. Familiars will follow you and can assist in your magical endeavors
+Descrip: Select a Familiar to accompany you on your advenures.}For each Core ability spent in this tree, including this one, your Familiar grants you +5 Force and +5 Universal Spellpower}{- Familiar Toggle: Summons your chosen familiar, a fox, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, an illusory Sprite, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a Pseudodragon, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white cat, to your side. Familiars will follow you and can assist in your magical endeavors}{- Familiar Toggle: Summons your chosen familiar, a white tressym, to your side. Familiars will follow you and can assist in your magical endeavors
 Tier: 0
 Selector: Fox, Illusory Sprite, Pseudo Dragon, White Cat, White Tressym
 
@@ -4219,7 +4222,7 @@ Descrip: +1 Illusion DCs. Your familiar carries spells further than you would no
 Tier: 0
 
 AbilityName: Master Illusionist
-Descrip: Active: Shroud you and your party members, regardless of location, in illusory magic that disguises their location. They gain 95% Concealment for 15 seconds. Cooldown: 3 minutes}Passive: +2 Intelligence, Wisdom and Charisma. +2 Illusion DCs.
+Descrip: Active: Shroud you and your party members, regardless of location, in illusory magic that disguises their location. They gain 95% Concealment for 15 seconds. Cooldown: 3 minutes}Passive: +2 Intelligence, Wisdom and Charisma. +2 Illusion DCs. Note: That the 95% Concealment will be shown as Blurry during combat, despite Blurry normally being used to represent 20% Concealment only.
 Tier: 0
 
 AbilityName: Feydark Explorer
@@ -4237,18 +4240,18 @@ Descrip: Offensive Illusion spells reduce enemies' Will saves by 1 for 10 second
 Tier: 1
 Cost: 2
 
-AbilityName: Study the Arcame
+AbilityName: Study the Arcane
 Descrip: +[30/60/100] Maximum Spellpoints
 Tier: 1
 Ranks: 3
 
 AbilityName: Illusory Weaponry
-Descrip: You have studied Illusion to the point where you can craft more permanent manifestations of Shadow. This grants both the ability to conjure physical Shadowblades to wield as weapons as well as the ability to enchant your current weapons to be more powerful. Shadowblades are Shortswords made of force and may use your Charisma modifier for their attack and damage. As you level up, they will become more powerful. If you unequip your Shadowblades, they will dissipate into nothingness and must be summoned again. Enchanting your weapons to become Shadowblades will change their material type to Force and grant them additional bonuses. This is considered an Item Enchantment.}{ Note: Enchanting your weapons (including the Shadowblades) in this way will not add the "magic" enchantment for the purposes of breaking DR (this also means that it will not prevent Shadowblades and Flameblades, etc. from bypassing DR). Also, similar to Flame Blades, Shadowblades are ki weapons (you stay centered).
+Descrip: You have studied Illusion to the point where you can craft more permanent manifestations of Shadow. This grants both the ability to conjure physical Shadowblades to wield as weapons as well as the ability to enchant your current weapons to be more powerful. Shadowblades are Shortswords made of force and may use your Charisma modifier for their attack and damage. As you level up, they will become more powerful. If you unequip your Shadowblades, they will dissipate into nothingness and must be summoned again. Enchanting your weapons to become Shadowblades will change their material type to Force and grant them additional bonuses. This is considered an Item Enchantment.}Note: Enchanting your weapons (including the Shadowblades) in this way will not add the "magic" enchantment for the purposes of breaking DR (this also means that it will not prevent Shadowblades and Flameblades, etc. from bypassing DR). Also, similar to Flame Blades, Shadowblades are ki weapons (you stay centered). This enhancement has three components: Conjure Shadowblade; Conjure Dual Shadowblades; and Imbue with Shadow.  This latter effect changes the Material type of weapons, shields & orbs to Force (preventing damage from oozes & rust monsters, although any special material properties of the original weapon remain and even a non-magical weapon doesn't gain any bypass it doesn't already inherently possess) and grants a +1 Enhancement bonus to them.}Bug:  Summoned shadowblade cannot be moved from TR cache to inventory (prevents TRing!). Workaround: It can be moved to character bank. DDO Forums
 Tier: 1
 Cost: 2
 
-AbilityName: Reality Bulwark
-Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are now immune to Fear
+AbilityName: Enhanced Invisibility
+Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are immune to Fear
 Tier: 2
 Ranks: 3
 
@@ -4264,7 +4267,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: You've Got My Back
-Descrip: Your familiar draws ambient and offensive magics to it, protecting you from Magic Missiles as if you had the benefits of the Shield spell. In addition the Shield spell now provides +10 Physical Resistance Rating, and the Nightshield spell now provides +10 Magical Resistance Rating. Note the increased PRR from the Shield spell does not stack with the Improved Shield Enhancement from the wizard Eldritch Knight tree.
+Descrip: Your familiar draws ambient and offensive magics to it, protecting you from Magic Missiles as if you had the benefits of the Shield spell. In addition the Shield spell now provides +10 Physical Resistance Rating, and the Nightshield spell now provides +10 Magical Resistance Rating. Note: the increased PRR from the Shield spell does stack with the Improved Shield Enhancement from the wizard Eldritch Knight tree.
 Tier: 2
 Cost: 2
 
@@ -4283,7 +4286,7 @@ Descrip: Your familiar appears at a targeted location, acting as a distraction a
 Tier: 3
 Cost: 2
 
-AbilityName: Magical Attunement I
+AbilityName: Magical Attunment I
 Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
 Tier: 3
 Cost: 2
@@ -4303,11 +4306,11 @@ Descrip: Fan a series of Shadowblades outwards into a wide cone. The enemies str
 Tier: 4
 Ranks: 3
 
-AbilityName: Magical Attunement II
+AbilityName: Magical Attunment II
 Descrip: +2% Force Spell Critical Chance, +1% Universal Spell Critical Chance.
 Tier: 4
 Cost: 2
-All: Tier 3: Magical Attunement I
+All: Tier 3: Magical Attunment I
 
 AbilityName: Improved Shadowblades
 Descrip: All of your Shadwblade spells, attacks with weapons that have been imbued with Shadow, and attacks with conjured Shadowblades apply [1/2/3] stacks of Shattermantle when they damage an enemy.
@@ -4319,16 +4322,16 @@ Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summo
 Tier: 5
 Cost: 2
 
-AbilityName: Permanent Displacement
+AbilityName: Displacement
 Descrip: You are Displaced, as if you had cast the spell Displacement
 Tier: 5
 Cost: 2
 
-AbilityName: Magical Attunement III
+AbilityName: Magical Attunment III
 Descrip: +2% Force Spell Critical Chance, +2% Universal Spell Critical Chance.
 Tier: 5
 Cost: 2
-All: Tier 4: Magical Attunement II
+All: Tier 4: Magical Attunment II
 
 AbilityName: Ring of Shadowblades
 Descrip: Conjure a ring of interlocking illusory Shadowblades that damage enemies passing through them. Enemies take 1d6+2 Force damage per caster level, with a Will save vs (DC17 + Illusory bonuses + Highest of Int/Wis/Cha) for half damage.}Cost: 50/40/25 sp}Cooldown: 40/35/30 seconds
@@ -4656,7 +4659,7 @@ Flags: SelectorOnly
 Selector: Accelerated Metabolism, Raging Blows
 
 AbilityName: Tantrum
-Descrip: Activation Cost: 25 Hit Points. Cooldown: 30 seconds}Tactical Melee Cleave: Expend 25 hit points to activate this ability and attack enemies around you. This deals +5[W] damage and has a 50% to knock down each damage enemy briefly on a failed Fortitude save vs. (10 + Strength modifier + Barbarian Level).}Abilities that trigger on Supreme Cleave also trigger on Tantrum. (Blood Trail, Wade In, Lash Out, Sundering Spin, Storm's Eye)
+Descrip: Activation Cost: 25 Hit Points. Cooldown: 30 seconds}Tactical Melee Cleave: Expend 25 hit points to activate this ability and attack enemies around you. This deals +5[W] damage and has a 50% to knock down each damaged enemy briefly on a failed Fortitude save vs. (10 + Strength modifier + Barbarian Level). Downed enemies become helpless.}Abilities that trigger on Supreme Cleave also trigger on Tantrum. (Blood Trail, Wade In, Lash Out, Sundering Spin, <)  -->
 Tier: 5
 Cost: 2
 
@@ -4912,7 +4915,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Dilettante Special Ability
-Descrip: Gain abilities from your Dilettante Class Enhancements}{- Armor Mastery: +2 Armor Class and +2 Maximum Dexterity Bonus when wearing Armor. This enhancement cannot be taken if you possess the Armor Mastery enhancement from the Stalwart Defender tree.}{-Requires Half-Elf Dilettante: Fighter}{- Conjure Arrows: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out. This enhancement cannot be taken if you possess the Conjure Arrows enhancement from the Arcane Archer tree.}{-Requires Half-Elf Dilettante: Ranger}{- Improved Damage Reduction I: Your Barbarian damage reduction is increased by 1. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{- Improved Recovery I: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{- Improved Spellcasting I: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{- Lesser Divine Health: You are immune to Natural diseases, and gain +4 to saving throws against Magical disease and do not automatically fail saving throws against them on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{- Sly Flourish: Melee Attack: Deals +1[W] damage with +1 critical threat range, and reduces your threat with nearby enemies by 100. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stack 5 times.) This enhancement cannot be taken if you possess the Sly Flourish enhancement from the Thief-Acrobat tree. (Cooldown: 12 seconds)}{-Requires Half-Elf Dilettante: Rogue
+Descrip: Gain abilities from your Dilettante Class Enhancements}{- Armor Mastery: +2 Armor Class and +2 Maximum Dexterity Bonus when wearing Armor. This enhancement cannot be taken if you possess the Armor Mastery enhancement from the Stalwart Defender tree.}{-Requires Half-Elf Dilettante: Fighter}{- Conjure Arrows: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out. This enhancement cannot be taken if you possess the Conjure Arrows enhancement from the Arcane Archer tree.}{-Requires Half-Elf Dilettante: Ranger}{- Improved Damage Reduction I: Your Barbarian damage reduction is increased by 1. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{- Improved Recovery I: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{- Improved Spellcasting I: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{- Lesser Divine Health: You are immune to Natural diseases, and gain +4 to saving throws against Magical disease and do not automatically fail saving throws against them on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{- Sly Flourish: Melee Attack: Deals +1[W] damage with +1 critical threat range, and reduces your threat with nearby enemies by 100. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stack 5 times.) This enhancement cannot be taken if you possess the Sly Flourish enhancement from the Thief-Acrobat tree. (Cooldown: 12 seconds)}{-Requires Half-Elf Dilettante: Rogue
 Tier: 2
 Cost: 2
 All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
@@ -5336,7 +5339,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Heroic Companion
-Descrip: Action Boost: Grants an ally +0.25/+0.5/+1[W], +2/+4/+6 to hit and saving throws, 0/+2%/+4% Dodge and 0/0/+10 Physical Resistance Rating. (Cooldown: 30 seconds). Antireq: Cannot be taken with the Halfling racial enhancement.
+Descrip: Action Boost: Grants an ally +0.25/+0.5/+1[W], +2/+4/+6 to hit and saving throws, 0/+2%/+4% Dodge and 0/0/+10 Physical Resistance Rating. (Cooldown: 30 seconds). Antireq: Cannot be taken with the Halfling racial enhancement. Duration 60 seconds.
 Tier: 2
 Ranks: 3
 None: Halfling Tier 2: Heroic Companion
@@ -5776,7 +5779,7 @@ Descrip: +1 to Attack with all weapons. +1 to Diplomacy, Intimidate and Bluff.
 Tier: 0
 
 AbilityName: Hit the Streets
-Descrip: You gain an additional copy of Diplomacy on a separate cooldown timer.}This timer is shared with Half-Elven Social Grace's Diplomacy.}Diplomacy allows you to attempt to encourage enemies to find targets other than yourself.}Passive: +2% Dodge, +3 Diplomacy skill.}If you are a Half-Elf, this Diplomacy bonus is instead +10.}Cooldown: 1 Minute
+Descrip: You gain an additional copy of Diplomacy on a separate cooldown timer.}This timer is shared with Half-Elven Social Grace's Diplomacy.}Diplomacy allows you to attempt to encourage enemies to find targets other than yourself.}Passive: +2% Dodge, +3 Diplomacy skill.}If you are a Half-Elf, this Diplomacy bonus is instead +10.}Cooldown: 1 Minute}{ Bug:  Passive bonuses are currently not working. DDO Forums
 Tier: 0
 
 AbilityName: Mind Like Iron
@@ -5898,7 +5901,7 @@ Cost: 2
 All: Tier 1: Law on your Side
 
 AbilityName: No Holds Barred
-Descrip: Action Boost: You may activate this ability to enchant your Light or Heavy (non-repeating) crossbow to instantly reload itself for 18 seconds. This shares charges and a cooldown with Endless Fusilade. If you also have Endless Fusilade, you gain +10 Ranged Power while No Holds}Barred is active. Passive: +5 Ranged Power, +10% Doubleshot. Cooldown: 30 seconds
+Descrip: Action Boost: You may activate this ability to enchant your Light or Heavy (non-repeating) crossbow to instantly reload itself for 18 seconds. This shares charges and a cooldown with Endless Fusilade. If you also have Endless Fusilade, you gain +10 Ranged Power while No Holds Barred is active.}Passive: +5 Ranged Power, +10% Doubleshot. Cooldown: 30 seconds}{ Note: No Holds Barred reportedly also works with repeating crossbows. DDO Forums
 Tier: 5
 Cost: 2
 
@@ -5907,7 +5910,7 @@ Descrip: Activate Ability: All nearby enemies receive -10 Melee, Ranged, and Spe
 Tier: 5
 
 AbilityName: Improved Uncanny Dodge
-Descrip: Grants the Improved Uncanny Dodge feat. Activate this ability to gain a temporary 50% Dodge bonus and a +6 reflex save bonus. This feat also grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16 and 20.
+Descrip: Grants the Improved Uncanny Dodge feat. Activate this ability to gain a temporary 50% Dodge bonus and a +6 reflex save bonus. This feat also grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16 and 20.}{ Bug:  Passive bonuses are currently not working. DDO Forums
 Tier: 5
 
 AbilityName: Inquisitor's Path
@@ -6175,7 +6178,7 @@ Color: Red
 Stats: Strength, Charisma
 
 AbilityName: Slayer of Evil
-Descrip: You gain +1 to attack evil creatures and deal 1d4 additional Light damage that scales with 200%  Melee or  Ranged Power (whichever is higher). You resist evil influences particularly well, gaining a +2 bonus to saves against spells and effects produced by evil creatures.}{ Note: The light damage procs on both weapons when two-weapon fighting.
+Descrip: You gain +1 to attack evil creatures and deal 1d4 additional Light damage that scales with 200%  Melee or  Ranged Power (whichever is higher). You resist evil influences particularly well, gaining a +2 bonus to saves against spells and effects produced by evil creatures.}{ Note: The light damage procs on both weapons when two-weapon fighting, as well as shield bashes (active and passive).
 Tier: 0
 
 AbilityName: Courage of Heaven
@@ -6195,7 +6198,7 @@ Descrip: You now gain +4 to hit evil and undead creatures. Your attacks now deal
 Tier: 0
 
 AbilityName: Champion of Good
-Descrip: You gain +4 Charisma, +10 Melee Power, +10 Ranged Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction. Your Aura of Courage now grants allies a +3% Sacred Bonus to melee and ranged damage. Blessed Purpose now stacks up to 25 times.
+Descrip: You gain +4 Charisma, +10 Melee Power, +10 Ranged Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction. Your Aura of Courage now grants allies a +3% Sacred Bonus to melee and ranged damage. Blessed Purpose now stacks up to 25 times.}{ Note: An unlisted effect is your Blessed Purpose becomes "Champion's Ascendancy" and now gives 5 melee power per stack for a total of 125 melee power at 25 stacks
 Tier: 0
 
 AbilityName: Holy Combatant
@@ -6255,7 +6258,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Divine Sacrifice
-Descrip: Multiselector: +2[W]. Active this ability to perform a melee or ranged attack that deals an additional +5/7/9d6 Light damage and increases the critical multiplier of your weapon by 1 against evil opponents, but costs you 5 hp and 1 sp, whether or not the attack is successful. On damage: Gain +15 Temporary SP if the target was Undead or Evil Outsider. (Cooldown: 3 seconds)
+Descrip: Multiselector: +2[W]. Active this ability to perform a melee or ranged attack that deals an additional +5/7/9d6 Light damage and increases the critical multiplier of your weapon by 1, but costs you 5 hp and 1 sp, whether or not the attack is successful. On damage: Gain +15 Temporary SP if the target was Undead or Evil Outsider. (Cooldown: 3 seconds)
 Tier: 3
 Ranks: 3
 Selector: Melee, Ranged
@@ -6266,7 +6269,7 @@ Tier: 3
 Ranks: 2
 
 AbilityName: Exalted Smite
-Descrip: Multiselector}{- Exalted Smite: Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier. Smite Evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds.}{- Exalted Smite (Ranged): Active: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier. Smite Evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds.
+Descrip: Multiselector: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier and +0/+1/+2 to your weapon's critical threat range. Smite evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds. In addition, your Smite evil and Exalted Smite abilities increase melee and ranged power by 5 for 10 seconds.}{- Exalted Smite (Melee)}{- Exalted Smite (Ranged)
 Tier: 3
 Ranks: 3
 Cost: 2
@@ -6432,7 +6435,7 @@ Ranks: 3
 All: Tier 3: Wrack Construct
 
 AbilityName: Fletching
-Descrip: You are skilled at enhancing, salvaging, and re-purposing your arrows, bolts, and throwing weapons. +3/6/10 Ranged Power and your ammunition gains a 50/65/80% chance of returning.
+Descrip: You are skilled at enhancing, salvaging, and re-purposing your arrows, bolts, and throwing weapons. +3/6/10 Ranged Power and your ammunition gains a 50/65/80% chance of returning.}{ Note: Cannot be taken at the same time as Meticulous Fletching.
 Tier: 4
 Ranks: 3
 
@@ -6747,7 +6750,7 @@ Descrip: Bear Form Melee Attack: Charge forward, inflicting +2(W) with a +1 crit
 Tier: 5
 
 AbilityName: Lightning Strikes the Mountain
-Descrip: Bear Form Melee Attack: Activate to call down a bolt of lightning as you launch an attack. On hit: +3(W) and 5-8 lightning damage per character level, scales with melee power. You are also granted a 100% bonus to melee threat and 20 Magical Resistance Rating for 15 seconds. Bonuses are doubled if Nature's Protector stance is active.(Cost: 15 SP. Cooldown: 30 seconds)
+Descrip: Bear Form Melee Attack: Activate to call down a bolt of lightning as you launch an attack. On hit: +3(W) and 5-8 lightning damage per character level, scales with melee power. You are also granted a 100% bonus to melee threat and 20 Magical Resistance Rating for 15 seconds. Bonuses are doubled if Nature's Protector stance is active.(Cost: 15 SP (actually 30 SP). Cooldown: 30 seconds)
 Tier: 5
 
 AbilityName: Ursa's Protector
@@ -7160,7 +7163,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Arcane Encumberance
-Descrip: When enemies damage you with spells, there's a [10/20/30]% chance they'll be knocked down. (Does not affect bosses.)
+Descrip: When enemies damage you with spells, there's a [10/20/30]% chance they'll be knocked down. (Does not affect bosses.) Enemies knocked down this way become helpless.
 Tier: 3
 Ranks: 3
 
@@ -7264,15 +7267,15 @@ AbilityName: Skeletal Knight
 Descrip: Summon the reanimated body of an ancient knight to do your bidding once per rest.}Cooldown: 20 seconds}The Skeletal Knight is a Fighter with a level equal to your current Wizard level plus any Epic levels. You can summon it in addition to any Summon Monster spell you might be using. Additional ranks in this enhancement increase your Knight's Damage, Attack Speed, Movement Speed, and Fortification.
 Tier: 1
 Ranks: 3
-Cost: 2
 
 AbilityName: Deathless Vigor
 Descrip: The power of undeath has toughened your flesh, providing you with an additional +10/+20/+30 Hit Points.
 Tier: 1
 Ranks: 3
+Cost: 2
 
 AbilityName: Cloak of Night
-Descrip: While blocking in a Pale Shroud, you gain invisibility, displacement, and do not take extra damage from Light. Passive: +5 Hide.
+Descrip: While blocking in a Pale Shroud, you gain invisibility, displacement, and do not take extra damage from Light. Passive: +5 Hide.}Note: Works with Channel the Abyss (Abyss Pact) as well.
 Tier: 2
 Ranks: 3
 
@@ -7310,7 +7313,7 @@ Ranks: 3
 All: Tier 1: Necrotic Touch
 
 AbilityName: Negative Energy Adept
-Descrip: +10/20/30 Negative Healing Amplification, BUG?= Hidden effect dark furor 45% doublestrike for skeletal knight
+Descrip: +10/20/30 Negative Healing Amplification Hidden effect: Dark Furor: The Skeletal Knight benefits from Dark Furor, granting it +15/30/45% chance to Doublestrike, and causing its attacks to bypass 5/10/15 of enemy Fortification.
 Tier: 3
 Ranks: 3
 
@@ -7321,7 +7324,7 @@ Cost: 2
 All: Tier 2: Spell Critical
 
 AbilityName: Eternal Furor
-Descrip: You (while in a Shroud) AND your Skeleton Knight gain +5/10/15 Profane Bonus to PRR. Your Skeletal Knight gains +3/6/10 to hit and damage, +2/4/6 Profane Bonus to AC, and its attacks bypass 10%/20%/50% of enemy Fortification.
+Descrip: You (while in a Shroud) AND your Skeleton Knight gain +5/10/15 Profane Bonus to PRR. Your Skeletal Knight gains +3/6/10 to hit and damage, +2/4/6 Profane Bonus to AC, and its attacks bypass 10%/20%/50% of enemy Fortification.}Note: PRR bonus works with Channel the Abyss (Abyss Pact) as well.
 Tier: 3
 Ranks: 3
 All: Tier 2: Corpsecrafter
@@ -8014,10 +8017,6 @@ Ranks: 3
 Flags: SelectorOnly
 Selector: Defense Boost, Saves Boost
 
-AbilityName: Conjure Component
-Descrip: You conjure a large number of components (1000) that stand in for the Potion requirements in all of your Admixture spells that expire on log out. (Cost 10 Spell Points. Cooldown: 12 seconds.)
-Tier: 3
-
 AbilityName: Battlefist
 Descrip: You've attuned your Rune Arm to deal a devastating strike. Single Target Melee Attack: +3[W], if the target is under the effect of Mighty Slam, it takes 1d3 Sonic damage per Artificer level, 1d3 Force damage per Artificer level, and is knocked down for 10 seconds with no save. This damage scales with 100% Melee Power. Must Have a Rune Arm equipped to use. (Cooldown: 15 seconds)
 Tier: 3
@@ -8090,7 +8089,7 @@ Descrip: Defensive Combat Stance:}{-+10 Physical and Magical Resistance Rating}{
 Tier: 0
 
 AbilityName: Divine Righteousness
-Descrip: Channel Divinity: You gain temporary hit points equal your Charisma score and a 200% Sacred bonus to threat generation for 60 seconds. (Activation Cost: 1 use of Turn Undead. Cooldown: 6 seconds)
+Descrip: Channel Divinity: You gain temporary hit points equal your Charisma score and a 200% Sacred bonus to threat generation for 60 seconds. (Activation Cost: 1 use of Turn Undead. Cooldown: 6 seconds)}{ Bug:  Only provides +100% threat to ranged combat and spellcasting; offers no threat increase to melee combat.
 Tier: 0
 
 AbilityName: Redemption
@@ -8625,7 +8624,7 @@ SelectorName: Wildhunt Howl
 All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 8 HP}Cooldown: 20 seconds
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. Equipping a new weapon cancels the effect.}Cost: 8 HP}Cooldown: 20 seconds
 Tier: 2
 Ranks: 3
 
@@ -8634,7 +8633,7 @@ Descrip: Melee Attack: Requires an equipped Melee weapon. Make an attack similar
 Tier: 2
 
 AbilityName: Empowered by Nature
-Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. Requires Wildhunt Shifter}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
+Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. You are now immune to Fatigue, including Fatigue from Shifting. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. You are now immune to Fatigue, including Fatigue from Shifting. Requires Wildhunt Shifter}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
 Tier: 3
 Selector: Beasthide, Wildhunt
 SelectorName: Beasthide
@@ -8674,7 +8673,7 @@ SelectorName: Vermin
 None: Feat: Favored Enemy: Vermin
 
 AbilityName: Threatening Shift
-Descrip: Choose an effect based on your subrace:}{- Threatening Shift:While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Wild Magic: While raging, gain Lesser Dispacement. When you activate a Rage, you gain Temporary Spell Points equal to 5 + double your Character Level. These last for 5 minutes, until you dismiss or activate another rage, or until used. Requires Wildhunt Shifter
+Descrip: Choose an effect based on your subrace:}{- Threatening Shift: While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Wild Magic: While raging, gain Lesser Displacement. When you activate a Rage, you gain Temporary Spell Points equal to 5 + double your Character Level. These last for 5 minutes, until you dismiss or activate another rage, or until used. Requires Wildhunt Shifter
 Tier: 4
 Selector: Threatening Shift, Camouflaged Shift
 SelectorName: Threatening Shift
@@ -8683,11 +8682,11 @@ SelectorName: Camouflaged Shift
 All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: True Hunter
-Descrip: You gain +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Descrip: You gain +2 to Saves vs. Enchantments and Illusions, Freedom of Movement, and +10 to Spot.
 Tier: 4
 
 AbilityName: Howl of Terror
-Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save (18 + Wis Mod + Enchantment}bonuses) negates. This can be cast while Raging.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
+Descrip: You utter a terrifying howl, filling your foes with a paralyzing fear. Foes around you are paralyzed for 6 to 24 seconds. Will save (18 + Wis Mod + Enchantment bonuses) negates. This can be cast while Raging.}Cost: 45/40/30 SP}Cooldown: 20/15/10 seconds
 Tier: 4
 Ranks: 3
 
@@ -8836,7 +8835,7 @@ Cost: 2
 All: Tier 4: Instinctive Defense
 
 AbilityName: Meditation of War
-Descrip: Toggle: You gain additional benefits in different stances:}{-Air Stance: +2 to hit, +10% bonus to off-hand attack chance. You take 10% more physical and elemental damage.}{-Fire Stance: +2 bonus to damage and to the DC's of your Stun, Sunder, and Trip abilities. -5 Armor Class.}{-Earth Stance: +10 to Physical Resistance and +10% quality bonus to maximum hit points. -5% Dodge Cap.}{-Water Stance: +5 Maximum Dodge Bonus. You deal 10% less damage with attacks.}{ Note: Mutually exclusive with Stalwart stance and Sacred stance. DDO Forums, DDO Forums}{ U33 Patch 2: No longer considered a Defensive stance
+Descrip: Toggle: You gain additional benefits in different stances:}{-Air Stance: +2 to hit, +10% bonus to off-hand attack chance. You take 10% more physical and elemental damage.}{-Fire Stance: +2 bonus to damage and to the DC's of your Stun, Sunder, and Trip abilities. -5 Armor Class.}{-Earth Stance: +10 to Physical Resistance and +10% quality bonus to maximum hit points. -5% Dodge Cap.}{-Water Stance: +5 Maximum Dodge Bonus. You deal 10% less damage with attacks.
 Tier: 5
 Cost: 2
 
@@ -9035,6 +9034,7 @@ AbilityName: Studies
 Descrip: Choose either Magical Studies or Musical Studies to advance your training:}{- Magical Studies: +[30/60/100] maximum Spell Points. Rank 3: You gain the Magical Training feat.  Anti-Requisite: You cannot take Rank 3 of Magical Studies if you already possess the Magical Training feat.}{- Musical Studies: +[1/2/3] Bard Songs per rest
 Tier: 1
 Ranks: 3
+Flags: SelectorOnly
 Selector: Magical, Musical
 SelectorName: Magical
 Rank3None: Feat: Magical Training
@@ -9045,7 +9045,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Sonic Blast
-Descrip: Spell-Like Ability: Sonic Blast. Activation cost: [6/5/4] SP. Cooldown: [12/8/4] seconds.}{-Metamagic Feats can be used at no additional cost.
+Descrip: Spell-Like Ability: Sonic Blast. Activation cost: [6/5/4] SP. Cooldown: [12/8/4] seconds.}{-Metamagic Feats can be used at no additional cost.}{ Bug:  Description incorrectly lists the damage as 1d6+2 per caster level, up to caster level 10. The damage actually matches the Sonic Blast spell (1d6+1 per caster level, max 8)
 Tier: 1
 Ranks: 3
 
@@ -9136,10 +9136,9 @@ Cost: 2
 All: Tier 4: Sustaining Song
 
 AbilityName: Advanced Studies
-Descrip: Increase your magical or musical training}{- Advanced Magical Studies: +65/+130/+200 Spell Points.}{- Advanced Musical Studies: +1/+2/+3 Bard Songs per rest.
+Descrip: Gain 200 Spell Points, +3 Bard Songs per rest, and add the spell Hold Monster, Mass, to your spell book at level 5.}{ Bug:  This 5th level bard spell uses 6th level spell components.
 Tier: 5
-Ranks: 3
-Selector: Magical, Musical
+Cost: 2
 
 AbilityName: Prodigy
 Descrip: +[1/2/2] Concentration and Perform+[1/2/2] Spell Penetration+[1/2/2] to DCs of your Enchantment spellsRank 3: When you use your Bardic Inspiration, your target gains a moderate amount of temporary spell points (10 temporary spell points).Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
@@ -9152,13 +9151,10 @@ Tier: 5
 Cost: 2
 All: Tier 4: Song of Arcane Might
 
-AbilityName: Spell-Like Ability
-Descrip: Choose a Spell-Like AbilityMetamagic Feats can be used at no additional cost.}{- Horn of Thunder: Spell-Like Ability: Horn of Thunder. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.Blast your foes with 1d4 + 1 Sonic and 1d4 + 1 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches.}{- Mass Hold: Spell-Like Ability: Hold Monster, Mass Activation cost: 50 SP. Cooldown: [60/40/20] seconds. (DC calculated as if it were a level 6 spell)
+AbilityName: SLA: Horn of Thunder
+Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
 Tier: 5
 Ranks: 3
-Cost: 2
-Flags: SelectorOnly
-Selector: Horn of Thunder, Mass Hold
 
 TreeName: Stalwart Defender
 Abbreviation: Stalwart
@@ -9817,7 +9813,7 @@ Descrip: After tumbling, you gain a +2 Morale bonus to Strength and Dexterity fo
 Tier: 0
 
 AbilityName: Followthrough
-Descrip: You gain +2 Strength and Dexterity, +1 to hit and +2 damage with quarterstaves, +5% attack speed with quarterstaves, +2 critical hit damage with all weapons, +2 Balance, Jump, and Tumble, +2 Sneak Attack dice and +2 to hit when performing Sneak Attacks.After tumbling, for 6 seconds gain +50% strikethrough chance and gain On Vorpal: Your target is knocked down.
+Descrip: You gain +2 Strength and Dexterity, +1 to hit and +2 damage with quarterstaves, +5% attack speed with quarterstaves, +2 critical hit damage with all weapons, +2 Balance, Jump, and Tumble, +2 Sneak Attack dice and +2 to hit when performing Sneak Attacks.After tumbling, for 12 seconds gain +50% strikethrough chance and gain On Vorpal: Your target is knocked down.
 Tier: 0
 
 AbilityName: Acrobat Staff Training
@@ -9866,7 +9862,6 @@ AbilityName: Quick Strike
 Descrip: Melee Quarterstaff Attack: Deals +1/+2/+3[W] damage. You gain a 5%/15%/25% Morale bonus to melee doublestrike for 10 seconds. (Cooldown: 18/15/12 seconds)
 Tier: 2
 Ranks: 3
-Cost: 2
 
 AbilityName: Haste Boost
 Descrip: Activate to gain a 10%/20%/30% Action Boost bonus to attack speed for 20 seconds. (Cooldown: 30 seconds)
@@ -9888,7 +9883,6 @@ AbilityName: Shadow Dodge
 Descrip: +1/2/3 to Dodge, and Dexterity. +1/2/3 Maximum Dexterity while wearing light armor.
 Tier: 3
 Ranks: 3
-Cost: 2
 
 AbilityName: Sweeping Strikes
 Descrip: Melee Quarterstaff Trip Cleave Attack: +1/3/5[W] to all nearby enemies and trips them. Listed DC: Balance DC 10 + Rogue Level + Dexterity Modifier Negates trip (Actual DC is 10/12/14 + Rogue Level + Dexterity Modifier). Cooldown: 30/25/20 seconds. Observed effect: see tests.
@@ -10326,7 +10320,7 @@ Descrip: When you shield bash, damaged enemies gain a stack of Vulnerability whi
 Tier: 5
 Ranks: 3
 
-AbilityName: Shield Charge
+AbilityName: Shield Rush
 Descrip: While shield equipped, Activate: Rush forward in a line, delivering a shield bash to every creature hit. Each enemy is knocked down for [+2/+4/+6] (W) damage. The knockdown is negated on Fortitude saving throw vs DC(20 + highest ability modifier + class level + bonus to trip attacks). [60/45/25] seconds cooldown.
 Tier: 5
 Ranks: 3
@@ -10381,7 +10375,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Magical Subtlety
-Descrip: -[20/30/40]% threat generation with melee attacks.}Antirequisite: This enhancement cannot be taken at the same time as Subtlety enhancements in other trees.}{ Bug:  This enhancement can be taken at the same time as other Subtlety enhancements, such as from Bombardier and Ninja Spy.
+Descrip: -[20/30/40]% threat generation with melee attacks.}Antirequisite: This enhancement cannot be taken at the same time as Subtlety enhancements in other trees.}{ Bug:  This enhancement can be taken at the same time as other Subtlety enhancements, such as from Ninja Spy.
 Tier: 1
 Ranks: 3
 
@@ -10397,7 +10391,7 @@ Cost: 2
 All: Tier 1: Deadly Poison I
 
 AbilityName: Poisoned Attack
-Descrip: Choose from either a Melee or Ranged attack.}{-Poisoned Shot: Ranged Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds. Note: If you use this attack with any Crossbow, then this attack have 3 seconds long of after attack motion. No such thing with Bows. Unlike other attack skills this attack shots only 1 bolt when you use this with Repeating Crossbow.}{-Poisoned Strike: Melee Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.  Note: hits all enemies in a 180 degree cone in front of you like a cleave.
+Descrip: Choose from either a Melee or Ranged attack.}{-Poisoned Shot: Ranged Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.}{-Note: If you use this attack with any Crossbow, then this attack have 3 seconds long of after attack motion. No such thing with Bows. Unlike other attack skills this attack shots only 1 bolt when you use this with Repeating Crossbow.}{-Bug:  Using inquisitive style crossbows while moving will cause this ability to not do damage and not clear poison immunity.}{-Poisoned Strike: Melee Attack: +[1/2/3][W]: On successful damage, your opponent is Contaminated. Using this attack acts as if you cast a Crimsonite spell. Rank 3: When you hit a target that is immune to Poisons or Poison Damage with this attack, they become vulnerable to Poisons and Poison Damage for 20 seconds.}{-Note: hits all enemies in a 180 degree cone in front of you like a cleave.
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
@@ -10670,7 +10664,7 @@ Tier: 0
 Selector: Strength, Wisdom, Charisma
 
 AbilityName: Divine Might
-Descrip: Choose one: (Activation Cost: 21/18/15 spell points. Duration: 30/60/120 seconds. Cooldown: 20 seconds). Antirequisite: This ability cannot be trained if you have any other Battle Trance abilities.}{- Divine Might: Battle Trance: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to 1/2 of your Charisma modifier for 30/60/120 seconds.}{- Divine Will: Battle Trance: You gain an Insight bonus to Damage and the DC of tactical feats equal to 1/2 of your Wisdom modifier.
+Descrip: Choose one: (Activation Cost: 21/18/15 spell points. Duration: 30/60/120 seconds. Cooldown: 20 seconds). Antirequisite: This ability cannot be trained if you have any other Battle Trance abilities.}{- Divine Might: Battle Trance: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to 1/2 of your Charisma modifier for 30/60/120 seconds.}{- Divine Will: Battle Trance: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to 1/2 of your Wisdom modifier for 30/60/120 seconds.
 Tier: 1
 Ranks: 3
 None: Beacon of Hope Tier 2: Might's Reward, Falconry Tier 4: Deadly Instinct, Harper Agent Tier 2: Know the Angles, Knight of the Chalice Tier 2: Divine Might, Warpriest Tier 1: Divine Might
@@ -11459,7 +11453,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Elven Weapon Training I
-Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
+Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.}{-Bug:  Only gives +1 to damage with Falchions.
 Tier: 1
 Cost: 2
 
@@ -11514,7 +11508,7 @@ Cost: 2
 All: Tier 3: Feywild Tap
 
 AbilityName: Elven Weapon Training III
-Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions.
+Descrip: Grants +1 to hit and damage with Longswords, Rapiers, Scimitars, Shortbows, and Longbows; +1 to hit and +2 to damage with Falchions. Bug(?) Only gives +1 damage to Falchions.
 Tier: 3
 Cost: 2
 All: Tier 2: Elven Weapon Training II

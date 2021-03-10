@@ -3,10 +3,10 @@ Begin VB.Form frmChallenges
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    Caption         =   "Challenges"
-   ClientHeight    =   5904
-   ClientLeft      =   48
-   ClientTop       =   396
-   ClientWidth     =   10152
+   ClientHeight    =   5910
+   ClientLeft      =   45
+   ClientTop       =   390
+   ClientWidth     =   10155
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -18,8 +18,8 @@ Begin VB.Form frmChallenges
    EndProperty
    Icon            =   "frmChallenges.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5904
-   ScaleWidth      =   10152
+   ScaleHeight     =   5910
+   ScaleWidth      =   10155
    Begin Compendium.userCheckBox usrchkOrder 
       Height          =   312
       Left            =   3060
@@ -27,8 +27,8 @@ Begin VB.Form frmChallenges
       Tag             =   "nav"
       Top             =   30
       Width           =   2412
-      _ExtentX        =   4255
-      _ExtentY        =   550
+      _ExtentX        =   4260
+      _ExtentY        =   556
       Caption         =   "Match In-Game Order"
    End
    Begin VB.ComboBox cboCharacter 
@@ -46,16 +46,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   0
       Left            =   5280
       Picture         =   "frmChallenges.frx":08CA
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   11
       Top             =   1560
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -63,16 +63,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   1
       Left            =   5280
       Picture         =   "frmChallenges.frx":1002
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   10
       Top             =   1824
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -80,16 +80,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   2
       Left            =   5280
       Picture         =   "frmChallenges.frx":17F3
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   9
       Top             =   2088
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -97,16 +97,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   3
       Left            =   5280
       Picture         =   "frmChallenges.frx":2027
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   8
       Top             =   2352
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -114,16 +114,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   4
       Left            =   5280
       Picture         =   "frmChallenges.frx":285E
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   7
       Top             =   2616
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -131,16 +131,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   5
       Left            =   5280
       Picture         =   "frmChallenges.frx":3064
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   6
       Top             =   2880
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picStars 
       Appearance      =   0  'Flat
@@ -148,16 +148,16 @@ Begin VB.Form frmChallenges
       BackColor       =   &H00000000&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   264
+      Height          =   330
       Index           =   6
       Left            =   5280
       Picture         =   "frmChallenges.frx":37A8
-      ScaleHeight     =   264
-      ScaleWidth      =   1848
+      ScaleHeight     =   330
+      ScaleWidth      =   2310
       TabIndex        =   5
       Top             =   3144
       Visible         =   0   'False
-      Width           =   1848
+      Width           =   2310
    End
    Begin VB.PictureBox picContainer 
       Appearance      =   0  'Flat
@@ -166,8 +166,8 @@ Begin VB.Form frmChallenges
       ForeColor       =   &H80000008&
       Height          =   4332
       Left            =   0
-      ScaleHeight     =   4332
-      ScaleWidth      =   5052
+      ScaleHeight     =   4335
+      ScaleWidth      =   5055
       TabIndex        =   0
       Top             =   720
       Width           =   5052
@@ -187,8 +187,8 @@ Begin VB.Form frmChallenges
          ForeColor       =   &H80000008&
          Height          =   3792
          Left            =   0
-         ScaleHeight     =   3792
-         ScaleWidth      =   4572
+         ScaleHeight     =   3795
+         ScaleWidth      =   4575
          TabIndex        =   1
          Tag             =   "wrk"
          Top             =   0
@@ -203,8 +203,8 @@ Begin VB.Form frmChallenges
             Height          =   264
             Index           =   0
             Left            =   1920
-            ScaleHeight     =   264
-            ScaleWidth      =   1848
+            ScaleHeight     =   270
+            ScaleWidth      =   1845
             TabIndex        =   4
             Top             =   120
             Visible         =   0   'False
@@ -232,8 +232,8 @@ Begin VB.Form frmChallenges
       TabIndex        =   14
       Top             =   0
       Width           =   10152
-      _ExtentX        =   17907
-      _ExtentY        =   656
+      _ExtentX        =   17912
+      _ExtentY        =   661
       Spacing         =   264
       BorderColor     =   -2147483640
       RightLinks      =   "Help"
@@ -368,6 +368,10 @@ Public Sub ReQueryData(plngCharacter As Long)
     If plngCharacter = 0 Or plngCharacter <> mlngCharacter Then Exit Sub
     SortTable
     DrawGrid
+End Sub
+
+Private Sub picStars_Click(Index As Integer)
+     MsgBox ("here")
 End Sub
 
 Private Sub usrhdrHeader_Click(pstrCaption As String)
@@ -671,14 +675,23 @@ Private Sub SetStars(Index As Integer, ByVal X As Long)
     
     If mlngCharacter = 0 Then Exit Sub
     Select Case X
-        Case -1: lngStars = 0
-        Case -2: lngStars = 6
+        Case -1: lngStars = 0  'Clicking left of all stars clears
+        Case -2: lngStars = 6  'Clicking right of all stars sets to 6
         Case Else: lngStars = (X \ (Me.picStars(0).Width \ 7))
     End Select
     If lngStars < 0 Then lngStars = 0
     With db.Challenge(mtypRow(Index).Index)
         If lngStars > .MaxStars Then lngStars = .MaxStars
     End With
+    'mlngStars is character current, lngStars is desired
+    'We allow clicking 5 twice to toggle 6
+    'mlngStars vs mtypRow(Index).Stars?
+    If mtypRow(Index).Stars = 5 And lngStars = 5 Then
+        lngStars = 6
+    End If
+    If mtypRow(Index).Stars = 1 And lngStars = 1 Then
+        lngStars = 0
+    End If
     If mlngStars <> lngStars Or mlngIndex <> Index Then
         mlngStars = lngStars
         mtypRow(Index).Stars = mlngStars
