@@ -18,7 +18,7 @@ Changes:
     Rev'd save version to 5
     Added 48.4 enhancement changes (thanks @LrdSlvrhnd, @SardaofChaos & @Grace_ana)
     Fixed an issue with SpellSinger T1 studies that @Grace_ana found
-    Updated Compendium easer none/6 selection
+    Updated Compendium - easier none/6 selection on challenges
       - click on the 1st star to toggle one/none
       - click on the 5th star to toggle 5/6
       - This is in addition to clicking left/right of the stars
