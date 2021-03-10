@@ -21,7 +21,7 @@ Changes:
     Updated Compendium easer none/6 selection
       - click on the 1st star to toggle one/none
       - click on the 5th star to toggle 5/6
-      - This is in addtion to clicking left/right of the stars
+      - This is in addition to clicking left/right of the stars
 
 ### 3.3.4
 Changes:
