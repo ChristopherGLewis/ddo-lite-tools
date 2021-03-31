@@ -6,8 +6,7 @@ AbilityName: Stronger Bonds
 Descrip: +1 use of Healing Hands per rest.
 Tier: 0
 
-AbilityName: Stat
-Descrip: WIS/CHA/STR
+AbilityName: Aasimar Ability I
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -22,8 +21,7 @@ All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen Bond
 All: Feat: Bond: Bond of the Fallen
 
-AbilityName: Stat II
-Descrip: WIS/CHA/STR
+AbilityName: Aasimar Ability II
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -612,6 +610,7 @@ TreeName: Apothecary
 Abbreviation: Apo
 Type: Class
 Initial: Apo
+Stats: Intelligence, Constitution
 
 AbilityName: Determination
 Descrip: +1 Will Save
@@ -704,13 +703,6 @@ Descrip: When your Reaction is Verdanite, you gain +1 Will Save, +1 for every 5 
 Tier: 3
 Cost: 2
 
-AbilityName: Ability I
-Descrip: +1 to either Intelligence or Constitution
-Tier: 3
-Cost: 2
-Flags: SelectorOnly
-Selector: Intelligence, Constitution
-
 AbilityName: Insulated Boots
 Descrip: +[2/4/6] Magical Resistance Rating.}Rank 3: You are immune to Slippery Surfaces.}Not quite fashionable, but they'll keep you standing!
 Tier: 4
@@ -726,14 +718,6 @@ AbilityName: Run for your life!
 Descrip: While your Reaction is Verdanite, you gain 1% Movement Speed per Alchemist Level.
 Tier: 4
 Cost: 2
-
-AbilityName: Ability II
-Descrip: +1 to either Intelligence or Constitution
-Tier: 4
-Cost: 2
-All: Tier 3: Ability I
-Flags: SelectorOnly
-Selector: Intelligence, Constitution
 
 AbilityName: Curative Admixture: Cure or Inflict Critical Wounds
 Descrip: Curative Admixture: Cure Critical Wounds Or Curative Admixture: Inflict Critical Wounds}Metamagic: Empower, Empower Heal, Maximize, Intensify}Spell Point Cost: 5}Cooldown 12 seconds}Primer Element: Gildleaf}Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.
@@ -1112,7 +1096,7 @@ Ranks: 3
 All: Tier 4: Blast Rod
 
 AbilityName: Charged Recoil
-Descrip: Your Iron Defender gain +2/+4/+6 to Strength, Dexterity, and Constitution. In addition, as long as you remain near your Iron Defender, he will provide you with 1%/2%/3% Dodge.
+Descrip:  Runearm shots now strip Electric Immunity for 10 seconds.
 Tier: 5
 Cost: 2
 
@@ -1908,6 +1892,7 @@ TreeName: Bombardier
 Abbreviation: Bom
 Type: Class
 Initial: Bom
+Stats: Intelligence
 
 AbilityName: Alchemical Resistance
 Descrip: +2 Magical Resistance Rating
@@ -2025,13 +2010,6 @@ Tier: 3
 Cost: 2
 All: Tier 2: Spell Critical: Elemental and Poison II
 
-AbilityName: Ability I
-Descrip: +1 to Intelligence
-Tier: 3
-Cost: 2
-Flags: SelectorOnly
-Selector: Intelligence
-
 AbilityName: Spell Like Ability, Smoke Bomb
 Descrip: SLA: Smoke Bomb}Metamagic: Extend, Quicken, Eschew Materials}Spell Point Cost: 25/20/15}Cooldown 12 seconds}Primer Element: Gildleaf (Yellow),}Throw a bottle beneath you  that explodes into a cloud of smoke and leaves you Invisible and Displaced for 12 seconds.
 Tier: 4
@@ -2053,14 +2031,6 @@ Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an addit
 Tier: 4
 Cost: 2
 All: Tier 3: Spell Critical: Elemental and Poison III
-
-AbilityName: Ability II
-Descrip: +1 to Intelligence
-Tier: 4
-Cost: 2
-All: Tier 3: Ability I
-Flags: SelectorOnly
-Selector: Intelligence
 
 AbilityName: Elemental Obliteration
 Descrip: Select an Element for an explosive spell.}{- SLA: Caustic Obliteration}{- SLA: Fiery Obliteration}{- SLA: Frost Obliteration}{- SLA: Poison Obliteration}{- SLA: Voltaic Obliteration}Spell Like Ability: Elemental Obliteration}Metamagic: Empower, Maximize, Quicken, Heighten}Spell Point Cost: 12/8/6}Cooldown 12/8/6 seconds}Primer Element: Crimsonite (Red),}Throw a vial that explodes with <element> on impact, dealing 1d6+3 <element> damage per Caster Level to all enemies nearby. (Max Caster Level 10)
@@ -2656,27 +2626,27 @@ TreeName: Dragonborn
 Type: Race
 Initial: Dra
 
-AbilityName: Hardy
+AbilityName: Hardy I
 Descrip: +1 Fortitude
 Tier: 0
 
-AbilityName: Strength or Charisma
+AbilityName: Dragonborn Ability I
 Descrip: +1 Strength or Charisma
 Tier: 0
 Cost: 2
 Selector: Strength, Charisma
 
-AbilityName: Hardy
+AbilityName: Hardy II
 Descrip: +1 Fortitude
 Tier: 0
 
-AbilityName: Strength or Charisma
+AbilityName:  Dragonborn Ability II
 Descrip: +1 Strength or Charisma
 Tier: 0
 Cost: 2
 Selector: Strength, Charisma
 
-AbilityName: Hardy
+AbilityName: Hardy III
 Descrip: +1 Fortitude
 Tier: 0
 
@@ -4209,15 +4179,17 @@ Tier: 0
 Cost: 2
 Selector: Intelligence, Wisdom, Charisma
 
-AbilityName: Greater Color Spray:
+AbilityName: Greater Color Spray
 Descrip: You may cast the spell Greater Color Spray as a Spell-Like Ability. Cost: 10sp Cooldown: 8 seconds} DC = 17 + Highest of Int/Wis/Cha mod + Illusion bonuses
 Tier: 0
 
 AbilityName: Ability Score II
 Descrip: Choose between Intelligence, Wisdom or Charisma}{- +1 Intelligence}{- +1 Wisdom}{- +1 Charisma
 Tier: 0
+Cost: 2
+Selector: Intelligence, Wisdom, Charisma
 
-AbilityName: Familiar's Reach:
+AbilityName: Familiar's Reach
 Descrip: +1 Illusion DCs. Your familiar carries spells further than you would normally be able to cast them. Your spells benefit from the Enlarge Metamagic at no additional cost.
 Tier: 0
 
@@ -7929,7 +7901,7 @@ Descrip: While under the effects of Razorclaw Shift, you gain +2 to Hit and Dama
 Tier: 4
 
 AbilityName: True Hunter
-Descrip: You gain +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
+Descrip: You gain +2 to Saves vs. Enchantments and Illusions, Freedom of Movement and +10 to Spot.
 Tier: 4
 
 AbilityName: Relentless Onslaught
@@ -8353,7 +8325,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Autumn Winds
-Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown:&#160;?)
+Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown: ?)
 Tier: 3
 
 AbilityName: Efficient Heighten
@@ -8633,7 +8605,7 @@ Descrip: Melee Attack: Requires an equipped Melee weapon. Make an attack similar
 Tier: 2
 
 AbilityName: Empowered by Nature
-Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. You are now immune to Fatigue, including Fatigue from Shifting. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. You are now immune to Fatigue, including Fatigue from Shifting. Requires Wildhunt Shifter}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
+Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. You are now immune to Fatigue, including Fatigue from Shifting. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. You are now immune to Fatigue, including Fatigue from Shifting. Requires Wildhunt Shifter}{You are now immune to Fatigue, including Fatigue from Shifting}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
 Tier: 3
 Selector: Beasthide, Wildhunt
 SelectorName: Beasthide
@@ -8673,7 +8645,7 @@ SelectorName: Vermin
 None: Feat: Favored Enemy: Vermin
 
 AbilityName: Threatening Shift
-Descrip: Choose an effect based on your subrace:}{- Threatening Shift: While raging, +20% to Threat Generation and +5% Quality Bonus to Maximum Hit Points. Requires Beasthide Shifter}{- Wild Magic: While raging, gain Lesser Displacement. When you activate a Rage, you gain Temporary Spell Points equal to 5 + double your Character Level. These last for 5 minutes, until you dismiss or activate another rage, or until used. Requires Wildhunt Shifter
+Descrip: Choose an effect based on your subrace:}{- Threatening Shift: While raging, +20% to Threat Generation, +5% Quality Bonus to Maximum Hit Points and +10 Physical Resistance Rating. Requires Beasthide Shifter}{- Wild Magic: While raging, gain Lesser Displacement. When you activate a Rage, you gain Temporary Spell Points equal to 5 + double your Character Level. These last for 5 minutes, until you dismiss or activate another rage, or until used. Requires Wildhunt Shifter
 Tier: 4
 Selector: Threatening Shift, Camouflaged Shift
 SelectorName: Threatening Shift
@@ -9135,13 +9107,13 @@ Tier: 5
 Cost: 2
 All: Tier 4: Sustaining Song
 
-AbilityName: Advanced Studies
+AbilityName: Advanced Musical Studies
 Descrip: Gain 200 Spell Points, +3 Bard Songs per rest, and add the spell Hold Monster, Mass, to your spell book at level 5.}{ Bug:  This 5th level bard spell uses 6th level spell components.
 Tier: 5
 Cost: 2
 
 AbilityName: Prodigy
-Descrip: +[1/2/2] Concentration and Perform+[1/2/2] Spell Penetration+[1/2/2] to DCs of your Enchantment spellsRank 3: When you use your Bardic Inspiration, your target gains a moderate amount of temporary spell points (10 temporary spell points).Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: +[1/2/3] Concentration and Perform +[1/2/3] Spell Penetratio n+[1/2/3] to DCs of your Enchantment spellsRank 3: When you use your Bardic Inspiration, your target gains a moderate amount of temporary spell points (10 temporary spell points).Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 5
 Ranks: 3
 
@@ -9152,7 +9124,7 @@ Cost: 2
 All: Tier 4: Song of Arcane Might
 
 AbilityName: SLA: Horn of Thunder
-Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
+Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds. Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
 Tier: 5
 Ranks: 3
 
@@ -10025,7 +9997,6 @@ Parent: Tier 2: Infernal Resistance
 AbilityName: Incineration
 Descrip: +2% Spell Critical Chance with all spells, plus an additional 2% with Fire Spells
 Tier: 3
-Cost: 2
 
 AbilityName: Student of Darkness
 Descrip: While in Obscuring Darkness, you gain +3 Saving Throws, +3 Magical Resistance Rating and +15 Magical Resistance Cap.
@@ -10190,7 +10161,7 @@ TreeName: Vanguard
 Type: Class
 Initial: Van
 Color: Green
-Stats: Strength
+Stats: Strength, Dexterity  
 
 AbilityName: To the Fore!
 Descrip: While shield equipped, +1 to hit and +1 damage with main hand weapon and shield bash attacks.
@@ -10295,7 +10266,7 @@ Tier: 4
 Cost: 2
 All: Tier 3: Shield Specialization
 
-AbilityName: Armor Mastery
+AbilityName: Vanguard Armor Mastery
 Descrip: [+1/+2/+3] to armor class and armor maximum dexterity bonus. (Note: maximum dexterity bonus limits maximum dodge as well).
 Tier: 4
 Ranks: 3
@@ -10310,13 +10281,14 @@ Descrip: [+1/+2/+3] to attack rolls to confirm critical hits and [+1/+2/+3] dama
 Tier: 4
 Ranks: 3
 
-AbilityName: Shield to the Face
-Descrip: Additional +10% chance to make a secondary shield bash.
+AbilityName: Shield Specialization
+Descrip: While shield equipped, +3 to hit, +3 damage, and +3 armor class.
 Tier: 5
 Cost: 2
+All: Tier 4: Shield Specialization
 
 AbilityName: Disorienting Smash
-Descrip: When you shield bash, damaged enemies gain a stack of Vulnerability which can occur once every [3/2/1] seconds. Vulnerability makes enemies take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack every 3 seconds.
+Descrip: When you shield bash, damaged enemies gain 1d4 stacks of Vulnerability which can occur once every [3/2/1] seconds. Vulnerability makes enemies take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack every 3 seconds.
 Tier: 5
 Ranks: 3
 
@@ -10326,7 +10298,12 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Armored Strength
-Descrip: +10 to Melee Power.
+Descrip: +10 to Melee Power. +10% chance to make a secondary shield bash
+Tier: 5
+Cost: 2
+
+AbilityName: Brutal Impact
+Descrip: +1 Critical Damage Multiplier on a roll of a 19-20
 Tier: 5
 Cost: 2
 
@@ -10334,6 +10311,7 @@ TreeName: Vile Chemist
 Abbreviation: VCh
 Type: Class
 Initial: VCh
+Stats: Dexterity, Intelligence
 
 AbilityName: Poisoner
 Descrip: +2 to saves vs. Poisons, +2 to saves vs. Diseases.
@@ -10427,13 +10405,6 @@ Descrip: When your Reaction is Orchidium, you gain +1 Fortitude Save, +1 for eve
 Tier: 3
 Cost: 2
 
-AbilityName: Ability I
-Descrip: +1 to either Dexterity or Intelligence
-Tier: 3
-Cost: 2
-Flags: SelectorOnly
-Selector: Dexterity, Intelligence
-
 AbilityName: Deadly Poison IV
 Descrip: You gain +2 to hit and +1 to damage while holding a Simple Weapon in your Main Hand and a Simple Weapon, Orb, Rune Arm, or nothing in your off hand.
 Tier: 4
@@ -10449,14 +10420,6 @@ AbilityName: Unbreakable Ambition
 Descrip: While your Reaction is Orchidium, +8 Physical Resistance Rating.
 Tier: 4
 Cost: 2
-
-AbilityName: Ability II
-Descrip: +1 to either Dexterity or Intelligence
-Tier: 4
-Cost: 2
-All: Tier 3: Ability I
-Flags: SelectorOnly
-Selector: Dexterity, Intelligence
 
 AbilityName: Spell Like Ability: Greater Wave of Poison
 Descrip: SLA: Greater Wave of Poison}Metamagic: Empower, Maximize, Quicken, Intensify}Spell Point Cost: 8}Cooldown 10 seconds}Primer Element: Ceruleite}You infect enemies in a short cone with a deadly poison that eats away at them. Affected enemies take 2d6 Poison damage plus 1 Poison damage per Caster Level every 2 seconds for 16 seconds. This poison will leave enemies Contaminated. (Max Caster Level: 20) When you hit a target that is immune to Poisons or Poison damage with this spell, they become vulnerable to Poisons and Poison Damage for 12 seconds.
