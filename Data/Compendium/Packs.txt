@@ -293,6 +293,7 @@ Wiki: Keep on the Borderlands
 Link: Named Items	Link	https://ddowiki.com/page/Update_44_named_items
 
 PackName: The Lost Gatekeepers
+Cost: 725
 HeroicLow: 3
 HeroicHigh: 3
 EpicLow: 32
