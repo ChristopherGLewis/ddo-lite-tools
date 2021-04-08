@@ -1965,25 +1965,31 @@ End Function
 
 ' ************* RACIAL AP *************
 
-
-Public Sub GetPointsSpentAndMax(plngSpentBase As Long, plngSpentBonus As Long, plngMaxBase As Long, plngMaxBonus As Long)
+'calculate the Enhancement tree available/spent - all the plngs are altered in this sub
+Public Sub GetPointsSpentAndMax(plngSpentBase As Long, plngSpentRPLBonus As Long, plngSpentUniBonus As Long, plngMaxBase As Long, plngMaxRPLBonus As Long, plngMaxUniBonus As Long)
     Dim lngTree As Long
     Dim lngBuildTree As Long
     Dim lngAbility As Long
     Dim lngPoints As Long
     
     plngSpentBase = 0
-    plngSpentBonus = 0
+    plngSpentRPLBonus = 0
+    plngSpentUniBonus = 0
+    'evaluate each tree
     For lngBuildTree = 1 To build.Trees
         With build.Tree(lngBuildTree)
             lngTree = SeekTree(.TreeName, peEnhancement)
             For lngAbility = 1 To .Abilities
                 With .Ability(lngAbility)
                     If .Ability <> 0 Then
+                        'Get our points spent on each ability in a tree
                         lngPoints = GetPoints(db.Tree(lngTree).Tier(.Tier).Ability(.Ability), .Selector, .Rank)
+                        'Pull from appropriate bonus pool first
                         If db.Tree(lngTree).TreeType = tseRace Then
-                            plngSpentBonus = plngSpentBonus + lngPoints
-                        Else
+                            plngSpentRPLBonus = plngSpentRPLBonus + lngPoints
+                        ElseIf db.Tree(lngTree).TreeType = tseGlobal Then
+                           plngSpentUniBonus = plngSpentUniBonus + lngPoints
+                         Else
                             plngSpentBase = plngSpentBase + lngPoints
                         End If
                     End If
@@ -1992,12 +1998,17 @@ Public Sub GetPointsSpentAndMax(plngSpentBase As Long, plngSpentBonus As Long, p
         End With
     Next
     'set our max spend
-    If plngSpentBonus > (build.RacialAP + build.UniversalAP) Then
-        plngSpentBase = plngSpentBase + plngSpentBonus - (build.RacialAP + build.UniversalAP)
-        plngSpentBonus = (build.RacialAP + build.UniversalAP)
+    If plngSpentRPLBonus > build.RacialAP Then
+        plngSpentBase = plngSpentBase + plngSpentRPLBonus - build.RacialAP
+        plngSpentRPLBonus = build.RacialAP
+    End If
+    If plngSpentUniBonus > build.UniversalAP Then
+        plngSpentBase = plngSpentBase + plngSpentUniBonus - build.UniversalAP
+        plngSpentUniBonus = build.UniversalAP
     End If
     plngMaxBase = HeroicLevels() * 4
-    plngMaxBonus = (build.RacialAP + build.UniversalAP)
+    plngMaxRPLBonus = build.RacialAP
+    plngMaxUniBonus = build.UniversalAP
 End Sub
 
 

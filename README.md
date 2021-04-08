@@ -12,6 +12,16 @@ The code and releases are available at https://github.com/ChristopherGLewis/ddo-
 Any issues and input should be filed there.
 
 ## Release Notes
+### 3.4.2
+Changes:
+    Updated how Enhancement point calcs work to allow for separate pools for RacialPL and Universal bonuses
+    Recrawled Enhancement tree and fixed order of Arcanotechnician T5's 
+
+### 3.4.1
+Changes:
+    Added more 48.4 enhancement changes (thanks @LrdSlvrhnd, @SardaofChaos & @Grace_ana)
+    Added Destiny Tome UI element
+
 ### 3.4.0
 Changes:
     Updated Builder to support Universal Tome & Destiny tome points.  

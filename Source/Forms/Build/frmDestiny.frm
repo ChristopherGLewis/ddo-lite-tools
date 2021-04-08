@@ -4,10 +4,10 @@ Begin VB.Form frmDestiny
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Destiny"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,8 +22,8 @@ Begin VB.Form frmDestiny
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrHeader 
       Height          =   384
       Left            =   0
@@ -31,8 +31,8 @@ Begin VB.Form frmDestiny
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Destiny;Twists of Fate"
@@ -44,8 +44,8 @@ Begin VB.Form frmDestiny
       TabIndex        =   1
       Top             =   480
       Width           =   4932
-      _ExtentX        =   8700
-      _ExtentY        =   11451
+      _ExtentX        =   8705
+      _ExtentY        =   11456
    End
    Begin VB.ComboBox cboDestiny 
       Height          =   312
@@ -83,8 +83,8 @@ Begin VB.Form frmDestiny
       TabIndex        =   7
       Top             =   1296
       Width           =   1452
-      _ExtentX        =   2561
-      _ExtentY        =   445
+      _ExtentX        =   2566
+      _ExtentY        =   450
       Value           =   0   'False
       Caption         =   "Show All"
       CheckPosition   =   1
@@ -96,7 +96,7 @@ Begin VB.Form frmDestiny
       TabStop         =   0   'False
       Top             =   4932
       Width           =   6372
-      _ExtentX        =   9123
+      _ExtentX        =   9128
       _ExtentY        =   3598
    End
    Begin CharacterBuilderLite.userHeader usrFooter 
@@ -106,12 +106,43 @@ Begin VB.Form frmDestiny
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
       LeftLinks       =   "< Enhancements"
+   End
+   Begin CharacterBuilderLite.userSpinner usrspnDestinyAP 
+      Height          =   300
+      Left            =   10000
+      TabIndex        =   17
+      Top             =   7020
+      Width           =   972
+      _ExtentX        =   1720
+      _ExtentY        =   529
+      Min             =   0
+      Value           =   0
+      ForeColor       =   -2147483640
+      BackColor       =   -2147483643
+      BorderColor     =   -2147483631
+      BorderInterior  =   -2147483631
+      Position        =   0
+      Enabled         =   -1  'True
+      DisabledColor   =   -2147483631
+   End
+   Begin VB.Label lblTome 
+      Alignment       =   1  'Right Justify
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      Caption         =   "Tome"
+      ForeColor       =   &H80000008&
+      Height          =   210
+      Left            =   11205
+      TabIndex        =   18
+      Top             =   7020
+      Width           =   510
    End
    Begin VB.Label lblSpent 
       Alignment       =   1  'Right Justify
@@ -121,7 +152,7 @@ Begin VB.Form frmDestiny
       Caption         =   "Fate Points: 15"
       ForeColor       =   &H80000008&
       Height          =   216
-      Left            =   3792
+      Left            =   2400
       TabIndex        =   3
       Top             =   7020
       Visible         =   0   'False
@@ -136,7 +167,7 @@ Begin VB.Form frmDestiny
       Left            =   480
       TabIndex        =   2
       Top             =   7020
-      Width           =   1932
+      Width           =   1600
    End
    Begin VB.Label lblProg 
       Alignment       =   1  'Right Justify
@@ -146,7 +177,7 @@ Begin VB.Form frmDestiny
       Caption         =   "12 AP spent in tree"
       ForeColor       =   &H80000008&
       Height          =   216
-      Left            =   10080
+      Left            =   7680
       TabIndex        =   15
       Top             =   7020
       Visible         =   0   'False
@@ -159,7 +190,7 @@ Begin VB.Form frmDestiny
       Caption         =   "Ranks: 3"
       ForeColor       =   &H80000008&
       Height          =   216
-      Left            =   5640
+      Left            =   4240
       TabIndex        =   13
       Top             =   7020
       Visible         =   0   'False
@@ -173,7 +204,7 @@ Begin VB.Form frmDestiny
       Caption         =   "Cost: 2 AP per rank"
       ForeColor       =   &H80000008&
       Height          =   216
-      Left            =   7380
+      Left            =   5480
       TabIndex        =   14
       Top             =   7020
       Visible         =   0   'False
@@ -257,6 +288,8 @@ Private msngDownY As Single
 
 Private mblnOverride As Boolean
 
+' Max Destiny. 24 + Tomes
+Const MaxDestinyAP = 24
 
 ' ************* FORM *************
 
@@ -291,6 +324,8 @@ Public Sub MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal Xpo
     
     If Rotation < 0 Then lngValue = -3 Else lngValue = 3
     If IsOver(Me.usrDetails.hwnd, Xpos, Ypos) Then Me.usrDetails.Scroll lngValue
+    
+    If IsOver(Me.usrspnDestinyAP.hwnd, Xpos, Ypos) Then Me.usrspnDestinyAP.WheelScroll lngValue
 End Sub
 
 
@@ -355,6 +390,9 @@ Private Sub LoadData()
         End If
         .Refresh
     End With
+    
+    Me.usrspnDestinyAP.Max = tomes.DestinyMax
+    Me.usrspnDestinyAP.Value = build.DestinyTome
     PopulateCombo
     If Not mblnTwists Then ComboSetText Me.cboDestiny, build.Destiny.TreeName
 End Sub
@@ -414,9 +452,15 @@ Private Sub ShowDestinyAbilities()
             End If
         Next
     End If
+    'Set bottom label visibility
     Me.lblTotal.Visible = True
-    If lngTotal > 24 Then lngColor = cfg.GetColor(cgeWorkspace, cveTextError) Else lngColor = cfg.GetColor(cgeWorkspace, cveText)
-    Me.lblTotal.Caption = lngTotal & " / 24 AP"
+    Me.usrspnDestinyAP.Visible = True
+    If lngTotal > (MaxDestinyAP + Me.usrspnDestinyAP.Value) Then
+        lngColor = cfg.GetColor(cgeWorkspace, cveTextError)
+    Else
+        lngColor = cfg.GetColor(cgeWorkspace, cveText)
+    End If
+    Me.lblTotal.Caption = lngTotal & " / " & (MaxDestinyAP + Me.usrspnDestinyAP.Value) & "AP"
     Me.lblTotal.ForeColor = lngColor
     Me.lblSpent.Visible = False
 End Sub
@@ -449,7 +493,9 @@ Private Sub ShowTwists(penDropState As DropStateEnum, Optional ByVal plngSource 
             Me.usrList.SetText i, 3, lngFate
         End If
     Next
+    'Set bottom label visibility
     Me.lblTotal.Visible = False
+    Me.usrspnDestinyAP.Visible = False
     With Me.lblSpent
         .Caption = "Fate Points: " & lngTotal
         If lngTotal > MaxFatePoints() Then .ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else .ForeColor = cfg.GetColor(cgeWorkspace, cveText)
@@ -1260,4 +1306,18 @@ End Sub
 
 Private Sub Form_Click()
 '    NoSelection
+End Sub
+
+Private Sub usrspnDestinyAP_Change()
+    Dim lngLives As Long
+    
+    If mblnOverride Then Exit Sub
+    build.DestinyTome = Me.usrspnDestinyAP.Value
+    If build.DestinyTome > tomes.DestinyMax Then lngLives = build.DestinyTome - tomes.DestinyMax
+    InitGuideEnhancements
+    'ShowSpentAll Me.lblSpentAll
+    ShowDestinyAbilities
+    'Me.lblTotal.Caption = lngTotal & " / " & (MaxDestinyAP + Me.usrspnDestinyAP.Value) & "AP"
+
+    SetDirty
 End Sub

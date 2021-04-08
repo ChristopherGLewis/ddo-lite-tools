@@ -272,7 +272,6 @@ Begin VB.Form frmEnhancements
             Width           =   3972
          End
          Begin VB.Label lblSpentAll 
-            Alignment       =   1  'Right Justify
             Appearance      =   0  'Flat
             BackColor       =   &H80000005&
             Caption         =   "0 / 80 AP"
@@ -281,7 +280,7 @@ Begin VB.Form frmEnhancements
             Left            =   3360
             TabIndex        =   3
             Top             =   3120
-            Width           =   2052
+            Width           =   4000
          End
          Begin VB.Label lblSource 
             Appearance      =   0  'Flat
@@ -1380,27 +1379,30 @@ Private Sub ShowTrees(pblnDrop As Boolean, pblnAdd As Boolean)
     mblnOverride = False
 End Sub
 
+'This shows the spend line on the Enhancement tab
+'TODO move to a bas file so it can be shared btwn Enh and main
 Private Sub ShowSpentAll(plbl As Label)
     Dim lngSpentBase As Long
-    Dim lngSpentBonus As Long
+    Dim lngSpentRPLBonus As Long
+    Dim lngSpentUniBonus As Long
     Dim lngMaxBase As Long
-    Dim lngMaxBonus As Long
-
-    'Const sTemplate As String = "<Base> / <Racial> / <Universal>"
-    Const sTemplate As String = "<Base> / <Racial>"
-
-    GetPointsSpentAndMax lngSpentBase, lngSpentBonus, lngMaxBase, lngMaxBonus
-    If build.RacialAP = 0 Then
-        plbl.Caption = lngSpentBase & " / " & lngMaxBase & " AP"
-    Else
-        plbl.Caption = lngSpentBase & "+" & lngSpentBonus & " / " & lngMaxBase & "+" & lngMaxBonus & " AP"
-    End If
-    If build.UniversalAP = 0 Then
-        plbl.Caption = lngSpentBase & " / " & lngMaxBase & " AP"
-    Else
-        plbl.Caption = lngSpentBase & "+" & lngSpentBonus & " / " & lngMaxBase & "+" & lngMaxBonus & " AP"
-    End If
+    Dim lngMaxRPLBonus As Long
+    Dim lngMaxUniBonus As Long
+    Dim strDisplay As String
     
+    'Display should be Spent/Max AP.  Long form is Spent+r+u/Max+r+u AP
+
+    'retrieve each of the spent/maxes from the build tree object
+    'This should be a func that returns a class object
+    GetPointsSpentAndMax lngSpentBase, lngSpentRPLBonus, lngSpentUniBonus, lngMaxBase, lngMaxRPLBonus, lngMaxUniBonus
+    
+    'Display
+    strDisplay = strDisplay & "Spent: " & lngSpentBase & "+" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
+    strDisplay = strDisplay & lngMaxBase & "+" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
+    
+    plbl.Caption = strDisplay
+    
+    'Flag this as an error if spent is > max
     If lngSpentBase > lngMaxBase Then plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
     plbl.Visible = True
 End Sub

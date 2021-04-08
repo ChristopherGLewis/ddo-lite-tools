@@ -147,6 +147,10 @@ Private msngCourierSize As Single
 ' Stack structure for handling nested [List]s
 Private mtypList As ListType
 
+' Max Destiny. 24 + Tomes
+Const MaxDestinyAP = 24
+
+
 Public Function GenerateOutput(penOutput As OutputEnum) As String
     Dim strRaw As String
     Dim i As Long
@@ -1443,23 +1447,39 @@ Private Sub OutputEnhancementTreesReddit()
     BlankLine
 End Sub
 
+'This returns the text of Enh Spent and alters the penValid field if we're in error
 Private Function GetSpentText(penValid As ValidEnum) As String
     Dim lngSpentBase As Long
-    Dim lngSpentBonus As Long
+    Dim lngSpentRPLBonus As Long
+    Dim lngSpentUniBonus As Long
     Dim lngMaxBase As Long
-    Dim lngMaxBonus As Long
+    Dim lngMaxRPLBonus As Long
+    Dim lngMaxUniBonus As Long
     Dim strSpent As String
     Dim strMax As String
+    Dim strDisplay As String
+    
+    'Display should be Spent/Max AP.  Long form is Spent+r+u/Max+r+u AP
 
-    GetPointsSpentAndMax lngSpentBase, lngSpentBonus, lngMaxBase, lngMaxBonus
+    'retrieve each of the spent/maxes from the build tree object
+    GetPointsSpentAndMax lngSpentBase, lngSpentRPLBonus, lngSpentUniBonus, lngMaxBase, lngMaxRPLBonus, lngMaxUniBonus
+        
+    'Display
+    strDisplay = strDisplay & "Spent: " & lngSpentBase & "+" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
+    strDisplay = strDisplay & lngMaxBase & "+" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
+    
+    'Figure out if we're in error
     If lngSpentBase > lngMaxBase Then penValid = veErrors
-    strSpent = lngSpentBase
-    If lngSpentBonus > 0 Then strSpent = strSpent & "+" & lngSpentBonus
-    strSpent = strSpent & " of "
-    strMax = lngMaxBase
-    If lngMaxBonus > 0 Then strMax = strMax & "+" & lngMaxBonus
-    If lngSpentBase = 80 And lngMaxBase = 80 And lngSpentBonus = lngMaxBonus Then strSpent = vbNullString
-    GetSpentText = "(" & strSpent & strMax & " AP)"
+    
+    'strSpent = lngSpentBase
+    'If lngSpentBonus > 0 Then strSpent = strSpent & "+" & lngSpentBonus
+    'strSpent = strSpent & " of "
+    'strMax = lngMaxBase
+    'If lngMaxBonus > 0 Then strMax = strMax & "+" & lngMaxBonus
+    'If lngSpentBase = 80 And lngMaxBase = 80 And lngSpentBonus = lngMaxBonus Then strSpent = vbNullString
+    
+    'Return display
+    GetSpentText = "(" & strDisplay & ")"
 End Function
 
 Private Function FindGuideTree(plngBuildTree As Long) As Long
@@ -2047,7 +2067,11 @@ Private Sub OutputDestiny()
     Else
         ' Title
         OutputText "Destiny", False, , , , True
-        If lngPoints = 24 Then strDisplay = " (24 AP)" Else strDisplay = " (" & lngPoints & " of 24 AP)"
+        If lngPoints = (MaxDestinyAP + build.DestinyTome) Then
+            strDisplay = " (" & (MaxDestinyAP + build.DestinyTome) & " AP)"
+        Else
+            strDisplay = " (" & lngPoints & " of " & (MaxDestinyAP + build.DestinyTome) & " AP)"
+        End If
         OutputText strDisplay, False
         ErrorFlag (enValid = veErrors)
         BlankLine
@@ -2175,10 +2199,11 @@ Private Function ValidDestiny(plngPoints As Long, plngFate As Long) As ValidEnum
             If ValidTree(db.Destiny(lngDestiny), build.Destiny, plngPoints) = veErrors Then
                 enValid = veErrors
             Else
+                'this is now tome driven
                 Select Case plngPoints
                     Case 0: enValid = veEmpty
-                    Case 1 To 23: enValid = veIncomplete
-                    Case 24: enValid = veComplete
+                    Case 1 To (MaxDestinyAP + build.DestinyTome - 1): enValid = veIncomplete
+                    Case (MaxDestinyAP + build.DestinyTome): enValid = veComplete
                     Case Else: enValid = veErrors
                 End Select
             End If
@@ -2208,7 +2233,11 @@ End Function
 
 
 Private Sub ErrorFlag(pblnErrors As Boolean)
-    If pblnErrors Then OutputText " (Errors)", True, cfg.GetColor(cgeOutput, cveTextError) Else BlankLine
+    If pblnErrors Then
+        OutputText " (Errors)", True, cfg.GetColor(cgeOutput, cveTextError)
+    Else
+        BlankLine
+    End If
 End Sub
 
 Private Sub OutputText(ByVal pstrText As String, Optional pblnNewLine As Boolean = True, Optional ByVal plngColor As Long = -1, Optional penSpecial As SpecialCodeEnum = sceNone, Optional pblnBold As Boolean, Optional pblnUnderline As Boolean)
@@ -2216,7 +2245,11 @@ Private Sub OutputText(ByVal pstrText As String, Optional pblnNewLine As Boolean
         With frmMain.picBuild
             SetStyle pblnBold, pblnUnderline, plngColor, penSpecial
             GrowClient .TextWidth(pstrText), .TextHeight(pstrText)
-            If pblnNewLine Then frmMain.picBuild.Print pstrText Else frmMain.picBuild.Print pstrText;
+            If pblnNewLine Then
+                frmMain.picBuild.Print pstrText
+            Else
+                frmMain.picBuild.Print pstrText;
+            End If
             ResetStyle pblnBold, pblnUnderline, plngColor, penSpecial
         End With
     Else

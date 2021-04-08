@@ -7,6 +7,7 @@ Descrip: +1 use of Healing Hands per rest.
 Tier: 0
 
 AbilityName: Aasimar Ability I
+Descrip: WIS/CHA/STR
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -22,6 +23,7 @@ SelectorName: Fallen Bond
 All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Aasimar Ability II
+Descrip: WIS/CHA/STR
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
@@ -610,7 +612,7 @@ TreeName: Apothecary
 Abbreviation: Apo
 Type: Class
 Initial: Apo
-Stats: Intelligence, Constitution
+Stats: Constitution, Intelligence
 
 AbilityName: Determination
 Descrip: +1 Will Save
@@ -1095,26 +1097,26 @@ Tier: 5
 Ranks: 3
 All: Tier 4: Blast Rod
 
-AbilityName: Charged Recoil
-Descrip:  Runearm shots now strip Electric Immunity for 10 seconds.
-Tier: 5
-Cost: 2
-
 AbilityName: Master Defender
-Descrip: You have trained extensively in Evocation magic, granting a +1/+2/+3 bonus to your spell DCs of that school.
+Descrip: Your Iron Defender gain +2/+4/+6 to Strength, Dexterity, and Constitution. In addition, as long as you remain near your Iron Defender, he will provide you with 1%/2%/3% Dodge.
 Tier: 5
 Ranks: 3
 All: Tier 4: Arcane Engine
 
 AbilityName: Evocation Focus
-Descrip: While wielding a Rune Arm, +10/+15/+20 Electric Spell Power, +5/+10/+15 Universal Spell Power.
+Descrip: You have trained extensively in Evocation magic, granting a +1/+2/+3 bonus to your spell DCs of that school.
 Tier: 5
 Ranks: 3
 
 AbilityName: Arcane Mechanism
-Descrip: Runearm shots now strip Electric Immunity for 10 seconds.
+Descrip: While wielding a Rune Arm, +10/+15/+20 Electric Spell Power, +5/+10/+15 Universal Spell Power.
 Tier: 5
 Ranks: 3
+
+AbilityName: Charged Recoil
+Descrip: Runearm shots now strip Electric Immunity for 10 seconds.
+Tier: 5
+Cost: 2
 
 TreeName: Archmage
 Type: Class
@@ -1182,7 +1184,7 @@ Tier: 1
 Cost: 2
 
 AbilityName: Wand and Scroll Mastery
-Descrip: +25%/+50%/+75% effectiveness from your wands, scrolls, and other items that cast spells, and +1/+2/+3 to the save DC of your offensive wands. Taking Wand and Scroll Mastery in one enhancement tree will block its availability in other enhancement trees.
+Descrip: +25%/+50%/+75% effectiveness from your wands, scrolls, and other items that cast spells, and +1/+3/+6 to the save DC of your offensive wands. Taking Wand and Scroll Mastery in one enhancement tree will block its availability in other enhancement trees.
 Tier: 1
 Ranks: 3
 
@@ -2640,7 +2642,7 @@ AbilityName: Hardy II
 Descrip: +1 Fortitude
 Tier: 0
 
-AbilityName:  Dragonborn Ability II
+AbilityName: Dragonborn Ability II
 Descrip: +1 Strength or Charisma
 Tier: 0
 Cost: 2
@@ -2733,7 +2735,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Draconic Knowledge
-Descrip: +1 Caster Level and +2 Max Caster Level with the element spell associated with selected Draconic Ancestry.
+Descrip: +1 Caster Level and +2 Max Caster Level with the element spell associated with selected Draconic Ancestry.}{-Note: "Draconic Knowledge: Blue" improves sonic spells as well.
 Tier: 3
 Cost: 2
 All: Tier 2: Dragon Breath, Tier 3: Power in Breath
@@ -3428,7 +3430,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Wand and Scroll Mastery
-Descrip: +25%/+50%/+75% damage and healing from your wands, scrolls, and other items that cast spells, and +1/+2/+3 to the save DC of your offensive wands.
+Descrip: +25%/+50%/+75% damage and healing from your wands, scrolls, and other items that cast spells, and +1/+3/+6 to the save DC of your offensive wands.
 Tier: 2
 Ranks: 3
 
@@ -6170,7 +6172,7 @@ Descrip: You now gain +4 to hit evil and undead creatures. Your attacks now deal
 Tier: 0
 
 AbilityName: Champion of Good
-Descrip: You gain +4 Charisma, +10 Melee Power, +10 Ranged Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction. Your Aura of Courage now grants allies a +3% Sacred Bonus to melee and ranged damage. Blessed Purpose now stacks up to 25 times.}{ Note: An unlisted effect is your Blessed Purpose becomes "Champion's Ascendancy" and now gives 5 melee power per stack for a total of 125 melee power at 25 stacks
+Descrip: You gain +4 Charisma, +10 Melee Power, +10 Ranged Power. The bonuses granted by Courage of Heaven are increased by an additional +2. Your attacks now deal 7d6 additional Light damage. Any weapon you wield is considered Good aligned for purposes of bypassing damage reduction. Your Aura of Courage now grants allies a +3% Sacred Bonus to melee and ranged damage. Blessed Purpose now stacks up to 25 times.
 Tier: 0
 
 AbilityName: Holy Combatant
@@ -7163,7 +7165,7 @@ Cost: 2
 All: Tier 3: Bond of Retribution
 
 AbilityName: Vampiric Bond
-Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary hit Points scales with 200% Melee Power. This can trigger at most once every 12/9/6 seconds. Bug:  Not scaling with melee power. Only gives flat 20 temporary hit points. Should be fixed in Update 47.
+Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary Hit Points scale with 200% Melee Power. This can trigger at most once every 12/9/6 seconds.
 Tier: 5
 Ranks: 3
 
@@ -7199,7 +7201,7 @@ Flags: SelectorOnly
 Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
 
 AbilityName: Undead Augmentation
-Descrip: Enhance your Undead Forms.}Passive: While in a Shroud, you can breathe underwater. +1 Spell Penetration.}Pick one of the following abilities that applies while in a Pale Shroud.}{-Deathly Touch - +25 Maximum Hitpoints, +5 PRR}{-Deathly Resistance - +15 Magical Resistance Rating, +2 to all Saves}{-Inflict Weariness - Your attacks inflict 2-9 (1d8+1) points of Negative Energy damage to a living target. This scales with 100% Spell Power. Your Vorpal Melee Hits cause Energy Drain, inflicting 1 Negative Level on victims.}{-Bug: Currently applying negative level on any critical hit. Been in effect since Update 42. Unknown if fixed.}{-Haunting in the Dark - +2 Assassinate DCs, +1 Sneak Attack Dice}{-Ghost in the Wind - +10% Incorporeal Miss Chance. If you are in Wraith Form, this increases your total to 20%.}{-Deathly Power - +10 to Negative Energy Spellpower.}{-+2 Necromancy DC}{-+2 Enchantment DC}{-Undead Chill - +15% bonus to Cold Absorption. You no longer take extra damage from Light.}{-Undead Shock - +15% bonus to Electric Absorption. You no longer take extra damage from Light.}{-Unhallowed Touch - You gain Ghost Touch on all attacks, +5 Hide and Move Silently
+Descrip: Enhance your Undead Forms.}Passive: While in a Shroud, you can breathe underwater. +1 Spell Penetration.}Pick one of the following abilities that applies while in a Pale Shroud.}{-Deathly Touch - +25 Maximum Hitpoints, +5 PRR}{-Deathly Resistance - +15 Magical Resistance Rating, +2 to all Saves}{-Inflict Weariness - Your attacks inflict 2-9 (1d8+1) points of Negative Energy damage to a living target. This scales with 100% Spell Power. Your Vorpal Melee Hits cause Energy Drain, inflicting 1 Negative Level on victims.}{-Haunting in the Dark - +2 Assassinate DCs, +1 Sneak Attack Dice}{-Ghost in the Wind - +10% Incorporeal Miss Chance. If you are in Wraith Form, this increases your total to 20%.}{-Deathly Power - +10 to Negative Energy Spellpower.}{-+2 Necromancy DC}{-+2 Enchantment DC}{-Undead Chill - +15% bonus to Cold Absorption. You no longer take extra damage from Light.}{-Undead Shock - +15% bonus to Electric Absorption. You no longer take extra damage from Light.}{-Unhallowed Touch - You gain Ghost Touch on all attacks, +5 Hide and Move Silently
 Tier: 0
 Flags: SelectorOnly
 Selector: Deathly Touch, Deathly Resistance, Inflict Weariness, Haunting in the Dark, Ghost in the Wind, Deathly Power, +2 Necromancy DC, +2 Enchantment DC, Undead Chill, Undead Shock, Unhallowed Touch, 
@@ -7863,7 +7865,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beats, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging.}Cost: 8 Hit Points}Cooldown: 20 seconds
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging.}Cost: 8 Hit Points}Cooldown: 20 seconds
 Tier: 2
 Ranks: 3
 
@@ -7901,7 +7903,7 @@ Descrip: While under the effects of Razorclaw Shift, you gain +2 to Hit and Dama
 Tier: 4
 
 AbilityName: True Hunter
-Descrip: You gain +2 to Saves vs. Enchantments and Illusions, Freedom of Movement and +10 to Spot.
+Descrip: You gain +2 to Saves vs. Enchantments and Illusions, immunity to Petrification and +10 to Spot.
 Tier: 4
 
 AbilityName: Relentless Onslaught
@@ -8325,7 +8327,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Autumn Winds
-Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown: ?)
+Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown:&#160;?)
 Tier: 3
 
 AbilityName: Efficient Heighten
@@ -8605,7 +8607,7 @@ Descrip: Melee Attack: Requires an equipped Melee weapon. Make an attack similar
 Tier: 2
 
 AbilityName: Empowered by Nature
-Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. You are now immune to Fatigue, including Fatigue from Shifting. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. You are now immune to Fatigue, including Fatigue from Shifting. Requires Wildhunt Shifter}{You are now immune to Fatigue, including Fatigue from Shifting}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
+Descrip: Choose an effect:}{- Beasthide: +[10/20/30] Positive Healing Amplification. You are now immune to Fatigue, including Fatigue from Shifting. Requires Beasthide Shifter}{- Wildhunt: +[25/50/100] Maximum Spell Points. You can now cast while Raging. You are now immune to Fatigue, including Fatigue from Shifting. Requires Wildhunt Shifter}{ You are now immune to Fatigue, including Fatigue from Shifting}{ Note: The casting while raging seems to work for all spells. This includes clickies and wand/scroll casting.
 Tier: 3
 Selector: Beasthide, Wildhunt
 SelectorName: Beasthide
@@ -8614,7 +8616,7 @@ SelectorName: Wildhunt
 All: Feat: Shifter: Wildhunt Shifter
 
 AbilityName: Augment Summoning
-Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification.
+Descrip: Grants the Augment Summoning feat: Your summoned creatures, charmed minions, pets, and hirelings have +4 to all ability scores, increased health, and increased fortification. Bug:  Does not give Augment Summoning feat.needs verification
 Tier: 3
 
 AbilityName: Stronger Howl
@@ -9017,7 +9019,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Sonic Blast
-Descrip: Spell-Like Ability: Sonic Blast. Activation cost: [6/5/4] SP. Cooldown: [12/8/4] seconds.}{-Metamagic Feats can be used at no additional cost.}{ Bug:  Description incorrectly lists the damage as 1d6+2 per caster level, up to caster level 10. The damage actually matches the Sonic Blast spell (1d6+1 per caster level, max 8)
+Descrip: Spell-Like Ability: Sonic Blast. Activation cost: [6/5/4] SP. Cooldown: [12/8/4] seconds.}{-Metamagic Feats can be used at no additional cost.}{ Bug:  Description incorrectly lists the damage as 1d6+2 per caster level, up to caster level 10. The damage actually matches the Sonic Blast spell (1d6+1 per caster level, max 8). Increased ranks do not reduce the cooldown on your toolbar skill automatically, you must drag the upgraded enhancement to the toolbar to get the benefit of the reduction.
 Tier: 1
 Ranks: 3
 
@@ -9113,7 +9115,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Prodigy
-Descrip: +[1/2/3] Concentration and Perform +[1/2/3] Spell Penetratio n+[1/2/3] to DCs of your Enchantment spellsRank 3: When you use your Bardic Inspiration, your target gains a moderate amount of temporary spell points (10 temporary spell points).Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
+Descrip: +[1/2/3] Concentration and Perform}{ +[1/2/3] Spell Penetration}{ +[1/2/3] to DCs of your Enchantment spells}{ Rank 3: When you use your Bardic Inspiration, your target gains a moderate amount of temporary spell points (10 temporary spell points).}{ Passive: You sing your Bardic Inspiration as if you had 1 more level of Bard.
 Tier: 5
 Ranks: 3
 
@@ -9124,7 +9126,7 @@ Cost: 2
 All: Tier 4: Song of Arcane Might
 
 AbilityName: SLA: Horn of Thunder
-Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds. Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
+Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.}{ Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
 Tier: 5
 Ranks: 3
 
@@ -9372,7 +9374,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Swashbuckling Style
-Descrip: Choose One:}{- Arcane Marauder: Passive: You can now Swashbuckle with an Orb in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{- Cannoneer: Passive: You can now Swashbuckle with a Rune Arm in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{- Dashing Scoundrel: Passive: While Swashbuckling with nothing in your off hand, you gain +1 Attack Damage per 5 Character levels and 10% Doublestrike/Doubleshot.}{ Bug:  Dashing Scoundrel gives 6 damage regardless of level.}{- Skirmisher: Passive: While Swashbuckling with a Buckler in your off hand, you gain 10% Dodge, and you may use a Buckler and still benefit from the Single Weapon Fighting line of feats.}{-Allows you to benefit from both Single Weapon Fighting and Shield Mastery simultaneously. (Melee Power does not stack, both feat chains grant Combat Style bonus).}{-While using Different Tack your buckler also gets selected modifier to damage (CHA/DEX/INT)}{-Bug:  Does not require Swashbuckling. It may be used with non finesse weapon.[Unverified"Does not require Swashbuckling. It may be used with non finesse weapon." has not been verified in-game. Please verify it!] Tested in Game with Bastard Sword and Buckler, SWF attack speed and Shield Mastery bonuses were maintained. The swashbuckling bonuses (+10 Dodge) are not applied.
+Descrip: Choose One:}{- Arcane Marauder: Passive: You can now Swashbuckle with an Orb in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{- Cannoneer: Passive: You can now Swashbuckle with a Rune Arm in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{- Dashing Scoundrel: Passive: While Swashbuckling with nothing in your off hand, you gain +1 Attack Damage per 5 Character levels and 10% Doublestrike/Doubleshot.}{ Bug:  Dashing Scoundrel gives 6 damage regardless of level.}{- Skirmisher: Passive: While Swashbuckling with a Buckler in your off hand, you gain 10% Dodge, and you may use a Buckler and still benefit from the Single Weapon Fighting line of feats.}{-Allows you to benefit from both Single Weapon Fighting and Shield Mastery simultaneously. (Melee Power does not stack, both feat chains grant Combat Style bonus).}{-While using Different Tack your buckler also gets selected modifier to damage (CHA/DEX/INT)}{-Note: Swashbuckling is only required for the 10% Dodge bonus; Single Weapon Fighting & Shield Mastery effects apply while wielding a buckler even without Swashbuckling, or with a non-finesse weapon.
 Tier: 3
 Flags: SelectorOnly
 Selector: Arcane Marauder, Cannoneer, Dashing Scoundrel, Skirmisher
@@ -9500,7 +9502,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Utterdark Blast
-Descrip: Eldritch Essence Stance: Your Eldritch Blast base damage is now Evil instead of Force.}(Evil Damage from spells is usually boosted by alignment-based Spell power, and normally deals full damage to enemies regardless of enemy alignment, though particular enemies may have special defenses.
+Descrip: Eldritch Essence Stance: Your Eldritch Blast base damage is now Evil instead of Force.}{ (Evil Damage from spells is usually boosted by alignment-based spell power, and normally deals full damage to enemies regardless of enemy alignment, though particular enemies may have special defenses.)
 Tier: 2
 Cost: 2
 
@@ -10161,7 +10163,7 @@ TreeName: Vanguard
 Type: Class
 Initial: Van
 Color: Green
-Stats: Strength, Dexterity  
+Stats: Strength, Dexterity
 
 AbilityName: To the Fore!
 Descrip: While shield equipped, +1 to hit and +1 damage with main hand weapon and shield bash attacks.
@@ -10298,7 +10300,7 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Armored Strength
-Descrip: +10 to Melee Power. +10% chance to make a secondary shield bash
+Descrip: +10 to Melee Power.}{ +10% chance to make a secondary shield bash
 Tier: 5
 Cost: 2
 

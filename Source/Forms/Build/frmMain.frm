@@ -168,10 +168,12 @@ Begin VB.Form frmMain
       Begin VB.Menu mnuFile 
          Caption         =   "&New..."
          Index           =   0
+         Shortcut        =   ^N
       End
       Begin VB.Menu mnuFile 
          Caption         =   "&Open..."
          Index           =   1
+         Shortcut        =   ^O
       End
       Begin VB.Menu mnuFile 
          Caption         =   "&Close"
@@ -186,6 +188,7 @@ Begin VB.Form frmMain
          Caption         =   "&Save"
          Enabled         =   0   'False
          Index           =   4
+         Shortcut        =   ^S
       End
       Begin VB.Menu mnuFile 
          Caption         =   "Save &As..."

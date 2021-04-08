@@ -473,7 +473,7 @@ Private Sub SaveEnhancementsLite()
     ' Racial AP
     If build.RacialAP <> 0 Then AddLine "RacialAP: " & build.RacialAP
     If build.UniversalAP <> 0 Then AddLine "UniversalAP: " & build.UniversalAP
-    If Len(build.Tier5) <> 0 Or build.RacialAP <> 0 Then BlankLine
+    If Len(build.Tier5) <> 0 Or build.RacialAP <> 0 Or build.UniversalAP <> 0 Then BlankLine
     ' Trees
     For i = 1 To build.Trees
         With build.Tree(i)
@@ -610,6 +610,9 @@ End Sub
 Private Sub SaveDestinyLite()
     If Len(build.Destiny.TreeName) = 0 Then Exit Sub
     AddSection "Destiny"
+    ' Racial AP
+    If build.DestinyTome <> 0 Then AddLine "DestinyTome: " & build.DestinyTome
+    If build.DestinyTome <> 0 Then BlankLine
     AddLine "Destiny: " & build.Destiny.TreeName
     AddAbilityLite build.Destiny, peDestiny
 End Sub
@@ -1125,6 +1128,8 @@ End Sub
 
 Private Sub LoadDestinyText()
     Select Case mstrField
+        Case "destinytome"
+            build.DestinyTome = Val(mstrValue)
         Case "destiny"
             build.Destiny.TreeName = mstrValue
             build.Destiny.TreeType = tseDestiny
