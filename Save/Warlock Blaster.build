@@ -17,14 +17,14 @@ Champion: No
 Hero: No
 ;    Advn  Chmp  Hero  Lgnd  Tome
 ;    ----  ----  ----  ----  ----
-STR:                           8
-DEX:                           8
-CON:                           8
-INT:                           8
-WIS:                           8
-CHA:                           8
+STR:                           7
+DEX:                           7
+CON:  10    16    16    16     7
+INT:   2           2     4     7
+WIS:                           7
+CHA:  16    16    16    16     7
 ;    ----  ----  ----  ----
-;                            
+;     28    32    34    36   
 
 
 [Skills]
@@ -40,7 +40,7 @@ Haggle :
 Heal   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1         
 Hide   :                                                                                    
 Intim  :                                                                              1     
-Jump   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Jump   :                                                                                    
 Listen :                                                                                    
 Move Si:                                                                                    
 Open Lo:                                                                                    
@@ -80,6 +80,7 @@ Class: Warlock 1	Pact: Fiend
 
 Tier5: Soul Eater
 RacialAP: 10
+UniversalAP: 1
 
 Tree: Tiefling
 Type: Race
@@ -146,4 +147,30 @@ Ability: Tier 1: Rewards of Tribute (Rank 3)
 Ability: Tier 2: Power of Enlightenment (Rank 3)
 Ability: Tier 2: Shield
 Ability: Tier 3: Stat: Charisma
+
+Tree: Feydark Illusionist
+Type: Global
+ClassLevels: 20
+Ability: Tier 0: Find Familiar: Fox
+
+
+[LevelingGuide]
+
+Guide: Tiefling Tier 0: Bloodhunt I
+Guide: Bank AP
+Guide: Bank AP
+Guide: Bank AP
+Guide: Bank AP
+Guide: Soul Tier 0: Inhuman Understanding
+Guide: Soul Tier 1: Consume
+Guide: Soul Tier 1: Hungry for Destruction (Rank 1)
+Guide: Soul Tier 1: Hungry for Destruction (Rank 2)
+Guide: Soul Tier 1: Hungry for Destruction (Rank 3)
+Guide: Soul Tier 2: Hungry for Destruction (Rank 1)
+Guide: Soul Tier 2: Hungry for Destruction (Rank 2)
+Guide: Soul Tier 2: Hungry for Destruction (Rank 3)
+Guide: Soul Tier 2: Stricken (Rank 1)
+Guide: Soul Tier 2: Stricken (Rank 2)
+Guide: Soul Tier 2: Stricken (Rank 3)
+Guide: Soul Tier 3: Charisma
 

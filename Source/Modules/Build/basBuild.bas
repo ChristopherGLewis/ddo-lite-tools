@@ -2164,7 +2164,7 @@ Public Function CostDescrip(ptypAbility As AbilityType, plngSelector As Long, Op
         lngCost = ptypAbility.Selector(plngSelector).Cost
     End If
     If ptypAbility.Ranks > 1 And pblnPerRank Then
-        CostDescrip = "Cost: " & lngCost & " AP per rank"
+        CostDescrip = "Cost: " & lngCost & " AP/rank"
     Else
         CostDescrip = "Cost: " & lngCost & " AP"
     End If

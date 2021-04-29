@@ -19,7 +19,6 @@ Begin VB.Form frmEnhancements
    EndProperty
    Icon            =   "frmEnhancements.frx":0000
    LinkTopic       =   "Form1"
-   LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   7770
@@ -52,6 +51,348 @@ Begin VB.Form frmEnhancements
       BorderColor     =   -2147483640
       LeftLinks       =   "Trees;Enhancements;Leveling Guide"
       RightLinks      =   "Help"
+   End
+   Begin VB.PictureBox picTab 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00C0FFC0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   6828
+      Index           =   2
+      Left            =   0
+      ScaleHeight     =   6825
+      ScaleWidth      =   12015
+      TabIndex        =   33
+      TabStop         =   0   'False
+      Top             =   480
+      Visible         =   0   'False
+      Width           =   12012
+      Begin VB.ComboBox cboGuideAbility 
+         Height          =   312
+         ItemData        =   "frmEnhancements.frx":000C
+         Left            =   2340
+         List            =   "frmEnhancements.frx":001C
+         Style           =   2  'Dropdown List
+         TabIndex        =   37
+         Top             =   180
+         Width           =   3432
+      End
+      Begin CharacterBuilderLite.userDetails usrdetGuide 
+         Height          =   2040
+         Left            =   240
+         TabIndex        =   40
+         TabStop         =   0   'False
+         Top             =   4452
+         Width           =   5532
+         _ExtentX        =   9763
+         _ExtentY        =   3598
+      End
+      Begin VB.PictureBox picContainer 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0FFFF&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   6132
+         Left            =   6000
+         ScaleHeight     =   6135
+         ScaleWidth      =   5970
+         TabIndex        =   50
+         TabStop         =   0   'False
+         Tag             =   "ctl"
+         Top             =   360
+         Width           =   5976
+         Begin VB.Timer tmrInterval 
+            Enabled         =   0   'False
+            Interval        =   200
+            Left            =   5340
+            Top             =   360
+         End
+         Begin VB.Timer tmrScroll 
+            Enabled         =   0   'False
+            Interval        =   50
+            Left            =   4860
+            Top             =   360
+         End
+         Begin VB.PictureBox picGuide 
+            Appearance      =   0  'Flat
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H00FFFFC0&
+            BorderStyle     =   0  'None
+            ForeColor       =   &H80000008&
+            Height          =   2112
+            Left            =   300
+            ScaleHeight     =   2115
+            ScaleWidth      =   3555
+            TabIndex        =   51
+            TabStop         =   0   'False
+            Top             =   480
+            Width           =   3552
+         End
+         Begin VB.VScrollBar scrollVertical 
+            Enabled         =   0   'False
+            Height          =   2568
+            LargeChange     =   20
+            Left            =   4260
+            Max             =   20
+            TabIndex        =   52
+            TabStop         =   0   'False
+            Top             =   360
+            Value           =   1
+            Width           =   252
+         End
+      End
+      Begin VB.ListBox lstGuideAbility 
+         Appearance      =   0  'Flat
+         Height          =   3552
+         IntegralHeight  =   0   'False
+         ItemData        =   "frmEnhancements.frx":005B
+         Left            =   2340
+         List            =   "frmEnhancements.frx":005D
+         TabIndex        =   38
+         Top             =   540
+         Width           =   3432
+      End
+      Begin VB.PictureBox picGuideTree 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0E0FF&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   3912
+         Left            =   240
+         ScaleHeight     =   3915
+         ScaleWidth      =   2055
+         TabIndex        =   34
+         TabStop         =   0   'False
+         Top             =   240
+         Width           =   2052
+         Begin VB.ListBox lstGuideTree 
+            Appearance      =   0  'Flat
+            Height          =   3552
+            IntegralHeight  =   0   'False
+            ItemData        =   "frmEnhancements.frx":005F
+            Left            =   0
+            List            =   "frmEnhancements.frx":0061
+            TabIndex        =   36
+            Top             =   300
+            Width           =   1872
+         End
+         Begin CharacterBuilderLite.userCheckBox usrchkGuideTree 
+            Height          =   252
+            Left            =   0
+            TabIndex        =   35
+            Top             =   0
+            Width           =   1872
+            _ExtentX        =   3307
+            _ExtentY        =   450
+            Value           =   0   'False
+            Caption         =   "Show All"
+         End
+      End
+      Begin VB.PictureBox picSelector 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0FF&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   3912
+         Left            =   240
+         ScaleHeight     =   3915
+         ScaleWidth      =   2055
+         TabIndex        =   57
+         Top             =   240
+         Visible         =   0   'False
+         Width           =   2052
+         Begin VB.CheckBox chkBackToTrees 
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Back to Trees"
+            ForeColor       =   &H80000008&
+            Height          =   372
+            Left            =   120
+            Style           =   1  'Graphical
+            TabIndex        =   59
+            Top             =   3480
+            Width           =   1632
+         End
+         Begin VB.ListBox lstGuideSub 
+            Appearance      =   0  'Flat
+            Height          =   3072
+            IntegralHeight  =   0   'False
+            ItemData        =   "frmEnhancements.frx":0063
+            Left            =   0
+            List            =   "frmEnhancements.frx":006A
+            TabIndex        =   58
+            Top             =   300
+            Width           =   1872
+         End
+      End
+      Begin VB.Label lblGuideAP 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Available: 4 AP"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   7800
+         TabIndex        =   54
+         Top             =   6540
+         Width           =   1335
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Prog"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   6
+         Left            =   11340
+         TabIndex        =   49
+         Top             =   120
+         Width           =   588
+      End
+      Begin VB.Label lblGuideSpent 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Spent: 80 AP"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   10080
+         TabIndex        =   55
+         Top             =   6540
+         Width           =   1185
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Tier"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   3
+         Left            =   9120
+         TabIndex        =   46
+         Top             =   120
+         Width           =   348
+      End
+      Begin VB.Label lblGuideDetails 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Details"
+         ForeColor       =   &H80000008&
+         Height          =   252
+         Left            =   240
+         TabIndex        =   39
+         Top             =   4212
+         Width           =   5532
+      End
+      Begin VB.Label lblGuideSpentInTree 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "12 AP spent in tree"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   2184
+         TabIndex        =   42
+         Top             =   6540
+         Visible         =   0   'False
+         Width           =   1716
+      End
+      Begin VB.Label lblGuideCost 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Cost: 2 AP"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   300
+         TabIndex        =   41
+         Top             =   6540
+         Visible         =   0   'False
+         Width           =   972
+      End
+      Begin VB.Label lblGuideLevels 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Levels: 20"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   4560
+         TabIndex        =   43
+         Top             =   6540
+         Visible         =   0   'False
+         Width           =   930
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "AP"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   5
+         Left            =   10740
+         TabIndex        =   48
+         Top             =   120
+         Width           =   528
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Tree"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   4
+         Left            =   9540
+         TabIndex        =   47
+         Top             =   120
+         Width           =   1044
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Ability"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   2
+         Left            =   6660
+         TabIndex        =   45
+         Top             =   120
+         Width           =   2316
+      End
+      Begin VB.Label lblGuide 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Level"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   1
+         Left            =   6000
+         TabIndex        =   44
+         Top             =   120
+         Width           =   588
+      End
+      Begin VB.Label lblGuideLevel 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Current Level: 1"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   5760
+         TabIndex        =   53
+         Top             =   6540
+         Width           =   1455
+      End
    End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
@@ -264,9 +605,9 @@ Begin VB.Form frmEnhancements
             Appearance      =   0  'Flat
             Height          =   2652
             IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":000C
+            ItemData        =   "frmEnhancements.frx":007B
             Left            =   5880
-            List            =   "frmEnhancements.frx":002E
+            List            =   "frmEnhancements.frx":009D
             TabIndex        =   6
             Top             =   360
             Width           =   3972
@@ -334,9 +675,9 @@ Begin VB.Form frmEnhancements
          Appearance      =   0  'Flat
          Height          =   3012
          IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":007B
+         ItemData        =   "frmEnhancements.frx":00EA
          Left            =   5520
-         List            =   "frmEnhancements.frx":007D
+         List            =   "frmEnhancements.frx":00EC
          TabIndex        =   24
          Top             =   1080
          Width           =   3492
@@ -345,9 +686,9 @@ Begin VB.Form frmEnhancements
          Appearance      =   0  'Flat
          Height          =   3012
          IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":007F
+         ItemData        =   "frmEnhancements.frx":00EE
          Left            =   9240
-         List            =   "frmEnhancements.frx":0081
+         List            =   "frmEnhancements.frx":00F0
          TabIndex        =   26
          Top             =   1080
          Width           =   2652
@@ -416,12 +757,12 @@ Begin VB.Form frmEnhancements
          BackColor       =   &H80000005&
          Caption         =   "Cost: 2 AP per rank"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   7380
+         Height          =   210
+         Left            =   8040
          TabIndex        =   31
          Top             =   6540
          Visible         =   0   'False
-         Width           =   1788
+         Width           =   1785
       End
       Begin VB.Label lblRanks 
          Appearance      =   0  'Flat
@@ -429,12 +770,12 @@ Begin VB.Form frmEnhancements
          BackColor       =   &H80000005&
          Caption         =   "Ranks: 3"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   5640
+         Height          =   210
+         Left            =   6960
          TabIndex        =   30
          Top             =   6540
          Visible         =   0   'False
-         Width           =   804
+         Width           =   810
       End
       Begin VB.Label lblProg 
          Alignment       =   1  'Right Justify
@@ -470,12 +811,12 @@ Begin VB.Form frmEnhancements
          BackColor       =   &H80000005&
          Caption         =   "Spent in Tree: 24 AP"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   3324
+         Height          =   210
+         Left            =   4560
          TabIndex        =   17
          Top             =   6540
          Visible         =   0   'False
-         Width           =   1848
+         Width           =   1845
       End
       Begin VB.Label lblTotal 
          Appearance      =   0  'Flat
@@ -523,348 +864,6 @@ Begin VB.Form frmEnhancements
          TabIndex        =   27
          Top             =   4212
          Width           =   6372
-      End
-   End
-   Begin VB.PictureBox picTab 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00C0FFC0&
-      BorderStyle     =   0  'None
-      ForeColor       =   &H80000008&
-      Height          =   6828
-      Index           =   2
-      Left            =   0
-      ScaleHeight     =   6825
-      ScaleWidth      =   12015
-      TabIndex        =   33
-      TabStop         =   0   'False
-      Top             =   480
-      Visible         =   0   'False
-      Width           =   12012
-      Begin VB.ComboBox cboGuideAbility 
-         Height          =   312
-         ItemData        =   "frmEnhancements.frx":0083
-         Left            =   2340
-         List            =   "frmEnhancements.frx":0093
-         Style           =   2  'Dropdown List
-         TabIndex        =   37
-         Top             =   180
-         Width           =   3432
-      End
-      Begin CharacterBuilderLite.userDetails usrdetGuide 
-         Height          =   2040
-         Left            =   240
-         TabIndex        =   40
-         TabStop         =   0   'False
-         Top             =   4452
-         Width           =   5532
-         _ExtentX        =   9763
-         _ExtentY        =   3598
-      End
-      Begin VB.PictureBox picContainer 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00C0FFFF&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   6132
-         Left            =   6000
-         ScaleHeight     =   6135
-         ScaleWidth      =   5970
-         TabIndex        =   50
-         TabStop         =   0   'False
-         Tag             =   "ctl"
-         Top             =   360
-         Width           =   5976
-         Begin VB.Timer tmrInterval 
-            Enabled         =   0   'False
-            Interval        =   200
-            Left            =   5340
-            Top             =   360
-         End
-         Begin VB.Timer tmrScroll 
-            Enabled         =   0   'False
-            Interval        =   50
-            Left            =   4860
-            Top             =   360
-         End
-         Begin VB.PictureBox picGuide 
-            Appearance      =   0  'Flat
-            AutoRedraw      =   -1  'True
-            BackColor       =   &H00FFFFC0&
-            BorderStyle     =   0  'None
-            ForeColor       =   &H80000008&
-            Height          =   2112
-            Left            =   300
-            ScaleHeight     =   2115
-            ScaleWidth      =   3555
-            TabIndex        =   51
-            TabStop         =   0   'False
-            Top             =   480
-            Width           =   3552
-         End
-         Begin VB.VScrollBar scrollVertical 
-            Enabled         =   0   'False
-            Height          =   2568
-            LargeChange     =   20
-            Left            =   4260
-            Max             =   20
-            TabIndex        =   52
-            TabStop         =   0   'False
-            Top             =   360
-            Value           =   1
-            Width           =   252
-         End
-      End
-      Begin VB.ListBox lstGuideAbility 
-         Appearance      =   0  'Flat
-         Height          =   3552
-         IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":00D2
-         Left            =   2340
-         List            =   "frmEnhancements.frx":00D4
-         TabIndex        =   38
-         Top             =   540
-         Width           =   3432
-      End
-      Begin VB.PictureBox picGuideTree 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00C0E0FF&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   3912
-         Left            =   240
-         ScaleHeight     =   3915
-         ScaleWidth      =   2055
-         TabIndex        =   34
-         TabStop         =   0   'False
-         Top             =   240
-         Width           =   2052
-         Begin VB.ListBox lstGuideTree 
-            Appearance      =   0  'Flat
-            Height          =   3552
-            IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":00D6
-            Left            =   0
-            List            =   "frmEnhancements.frx":00D8
-            TabIndex        =   36
-            Top             =   300
-            Width           =   1872
-         End
-         Begin CharacterBuilderLite.userCheckBox usrchkGuideTree 
-            Height          =   252
-            Left            =   0
-            TabIndex        =   35
-            Top             =   0
-            Width           =   1872
-            _ExtentX        =   3307
-            _ExtentY        =   450
-            Value           =   0   'False
-            Caption         =   "Show All"
-         End
-      End
-      Begin VB.PictureBox picSelector 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0FF&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   3912
-         Left            =   240
-         ScaleHeight     =   3915
-         ScaleWidth      =   2055
-         TabIndex        =   57
-         Top             =   240
-         Visible         =   0   'False
-         Width           =   2052
-         Begin VB.CheckBox chkBackToTrees 
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Back to Trees"
-            ForeColor       =   &H80000008&
-            Height          =   372
-            Left            =   120
-            Style           =   1  'Graphical
-            TabIndex        =   59
-            Top             =   3480
-            Width           =   1632
-         End
-         Begin VB.ListBox lstGuideSub 
-            Appearance      =   0  'Flat
-            Height          =   3072
-            IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":00DA
-            Left            =   0
-            List            =   "frmEnhancements.frx":00E1
-            TabIndex        =   58
-            Top             =   300
-            Width           =   1872
-         End
-      End
-      Begin VB.Label lblGuideAP 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Available: 4 AP"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   8424
-         TabIndex        =   54
-         Top             =   6540
-         Width           =   1332
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Prog"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   6
-         Left            =   11340
-         TabIndex        =   49
-         Top             =   120
-         Width           =   588
-      End
-      Begin VB.Label lblGuideSpent 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Spent: 80 AP"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   10620
-         TabIndex        =   55
-         Top             =   6540
-         Width           =   1188
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Tier"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   3
-         Left            =   9120
-         TabIndex        =   46
-         Top             =   120
-         Width           =   348
-      End
-      Begin VB.Label lblGuideDetails 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Details"
-         ForeColor       =   &H80000008&
-         Height          =   252
-         Left            =   240
-         TabIndex        =   39
-         Top             =   4212
-         Width           =   5532
-      End
-      Begin VB.Label lblGuideSpentInTree 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "12 AP spent in tree"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   2184
-         TabIndex        =   42
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   1716
-      End
-      Begin VB.Label lblGuideCost 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Cost: 2 AP"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   300
-         TabIndex        =   41
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   972
-      End
-      Begin VB.Label lblGuideLevels 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Levels: 20"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   4752
-         TabIndex        =   43
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   936
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "AP"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   5
-         Left            =   10740
-         TabIndex        =   48
-         Top             =   120
-         Width           =   528
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Tree"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   4
-         Left            =   9540
-         TabIndex        =   47
-         Top             =   120
-         Width           =   1044
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Ability"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   2
-         Left            =   6660
-         TabIndex        =   45
-         Top             =   120
-         Width           =   2316
-      End
-      Begin VB.Label lblGuide 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Level"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   1
-         Left            =   6000
-         TabIndex        =   44
-         Top             =   120
-         Width           =   588
-      End
-      Begin VB.Label lblGuideLevel 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Current Level: 1"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   6060
-         TabIndex        =   53
-         Top             =   6540
-         Width           =   1452
       End
    End
    Begin VB.Menu mnuMain 
@@ -2434,10 +2433,13 @@ Private Sub GuideTotals()
     Dim lngAP As Long
     Dim lngRacialSpent As Long
     Dim lngRacialAvailable
+    Dim lngUniversalSpent As Long  'New as of 20210421
+    Dim lngUniversalAvailable
     Dim i As Long
     
     If Guide.Enhancements = 0 Then
         lngRacialAvailable = build.RacialAP
+        lngUniversalAvailable = build.UniversalAP
         If db.Race(build.Race).Type = rteIconic Then
             If build.MaxLevels > 14 Then mlngGuideLevel = 14 Else mlngGuideLevel = build.MaxLevels
             mlngGuideAP = mlngGuideLevel * 4
@@ -2447,20 +2449,24 @@ Private Sub GuideTotals()
         End If
         mlngGuideAP = mlngGuideAP
     Else
-        ' Calculate how many RacialAP spent
+        ' Calculate how many RacialAP/UniversalAP spent
         For i = 1 To Guide.Enhancements
             With Guide.Enhancement(i)
                 If db.Tree(.TreeID).TreeType = tseRace Then lngRacialSpent = lngRacialSpent + .Cost
+                If db.Tree(.TreeID).TreeType = tseGlobal Then lngUniversalSpent = lngUniversalSpent + .Cost
             End With
         Next
         If lngRacialSpent > build.RacialAP Then lngRacialSpent = build.RacialAP
         lngRacialAvailable = build.RacialAP - lngRacialSpent
+        If lngUniversalSpent > build.UniversalAP Then lngUniversalSpent = build.UniversalAP
+        lngUniversalAvailable = build.UniversalAP - lngUniversalSpent
+        
         ' Get totals
         With Guide.Enhancement(Guide.Enhancements)
             If .Style = geBankAP Then mlngGuideLevel = .Level + 1 Else mlngGuideLevel = .Level
             If mlngGuideLevel > build.MaxLevels Then mlngGuideLevel = build.MaxLevels
             If mlngGuideLevel > 20 Then lngAP = 80 Else lngAP = mlngGuideLevel * 4
-            lngSpent = .Spent - lngRacialSpent
+            lngSpent = .Spent - lngRacialSpent - lngUniversalSpent
             mlngGuideAP = lngAP - lngSpent
             If mlngGuideAP = 0 And mlngGuideLevel < 20 Then
                 mlngGuideLevel = mlngGuideLevel + 1
@@ -2468,18 +2474,19 @@ Private Sub GuideTotals()
             End If
         End With
     End If
-    Me.lblGuideLevel.Caption = "Current Level: " & mlngGuideLevel
-    If lngRacialAvailable Then
-        Me.lblGuideAP.Caption = "Available: " & mlngGuideAP & "+" & lngRacialAvailable
-    Else
-        Me.lblGuideAP.Caption = "Available: " & mlngGuideAP & " AP"
-    End If
+    
+    Me.lblGuideLevel.Caption = "Cur. Level: " & mlngGuideLevel
+    'If lngRacialAvailable Then
+        Me.lblGuideAP.Caption = "Available: " & mlngGuideAP & " + " & lngRacialAvailable & "r + " & lngUniversalAvailable & "u"
+    'Else
+    '    Me.lblGuideAP.Caption = "Available: " & mlngGuideAP & " AP"
+    'End If
     If mlngGuideAP < 0 Then Me.lblGuideAP.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else Me.lblGuideAP.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
-    If lngRacialSpent Then
-        Me.lblGuideSpent.Caption = "Spent: " & lngSpent & "+" & lngRacialSpent
-    Else
-        Me.lblGuideSpent.Caption = "Spent: " & lngSpent & " AP"
-    End If
+    'If lngRacialSpent Then
+        Me.lblGuideSpent.Caption = "Spent: " & lngSpent & " + " & lngRacialSpent & "r +" & lngUniversalSpent & "u"
+    'Else
+    '    Me.lblGuideSpent.Caption = "Spent: " & lngSpent & " AP"
+    'End If
     If lngSpent > HeroicLevels() * 4 Then Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
 End Sub
 
