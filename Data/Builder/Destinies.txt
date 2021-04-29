@@ -440,7 +440,7 @@ Tier: 4
 Cost: 2
 
 AbilityName: Primal Hymn
-Descrip: You sing a magical Hymn that resonates within the Primal Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Primal Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Primal Resonance: +1 to Dexterity, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell resistance, +10 Healing Amplification, +10% Attack Speed with Throwing Weapons and Bows, and an additional +3 Strength while Raging.
+Descrip: You sing a magical Hymn that resonates within the Primal Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Primal Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Primal Resonance: +1 to Dexterity, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell resistance, +10 Healing Amplification, +10% Attack Speed with Throwing Weapons, and an additional +3 Strength while Raging.
 Tier: 4
 Cost: 2
 
@@ -531,7 +531,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Ward Against Weird
-Descrip: Passive Bonus: [5/30/60] Primal bonus to spell resistance when you are below [100%/70%/30%] of health.}{-Note: Primal bonus as of Update 36, now stacks with spell resistance items. Each tier adds increasing bonus at lower&#160;% of health while retaining the bonus provided by the previous tiers.
+Descrip: Passive Bonus: [5/30/60] Primal bonus to spell resistance when you are below [100%/70%/30%] of health.}{-Note: Primal bonus as of Update 36, now stacks with spell resistance items. Each tier adds increasing bonus at lower % of health while retaining the bonus provided by the previous tiers.
 Tier: 3
 Ranks: 3
 

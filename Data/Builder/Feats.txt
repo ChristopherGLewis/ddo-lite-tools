@@ -227,8 +227,8 @@ ClassBonus: Fighter
 
 FeatName: Combat Archery
 Group: Epic, Range
-Descrip: Your ranged damage is increased by +1[W]. You also gain 2% dodge bonus when using a ranged weapon.
-Stat: Dexterity 21
+Descrip: Your ranged damage is increased by +1[W]. You also gain 2% dodge bonus when using a ranged weapon. Grants +1 Critical Multiplier with Longbows and Shortbows.
+Stat: Dexterity 17
 Level: 21
 All: Point Blank Shot
 
@@ -975,7 +975,7 @@ Descrip: You gain up to +2 saves from your Charisma modifier. You can improve th
 Stat: Charisma 13
 SelectorName: Ranger
 WikiName: Half-Elf Dilettante#Ranger
-Descrip: You are proficient with all martial ranged weapons, and can add up to 2 points of your Strength modifier to bow damage. You are considered a level 1 ranger for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows. You are considered a level 1 ranger for scrolls and wands, and can further improve these bonuses with enhancements.
 Stat: Dexterity 13
 SelectorName: Rogue
 WikiName: Half-Elf Dilettante#Rogue
@@ -1324,7 +1324,7 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Manyshot
 Group: Heroic, Range
-Descrip: Fire multiple arrows per shot (based on BAB) for the next 20 seconds. Does not work with crossbows. The number of arrows depends on BAB:}{ 6-10: 2 arrows}{ 11-15: 3 arrows}{ 16+: 4 arrows
+Descrip: Bow Attack: Ranged Bow Attack: Expend one charge to fire three arrows in quick succession. You have +1 Critical Threat Range and Critical Multiplier with these shots. Each of these shots can Doubleshot. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Manyshot (Requires a Longbow or Shortbow to use). Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows.
 BAB: 6
 Stat: Dexterity 17
 All: Point Blank Shot, Rapid Shot
@@ -1631,7 +1631,7 @@ Descrip: Your equipped weapons are considered Silver for bypassing DR.
 
 FeatName: Point Blank Shot
 Group: Heroic, Range
-Descrip: +1[W] damage with ranged weapons. Also +1 to-hit within 45 feet.
+Descrip: +1[W] damage with ranged weapons. Also +1 to-hit within 45 feet. When using a Longbow or Shortbow, you gain +1 Critical Threat Range.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Alchemist
 
@@ -1707,7 +1707,7 @@ ClassBonus: Fighter
 
 FeatName: Rapid Shot
 Group: Heroic, Range
-Descrip: Bows, crossbows and throwers fire and reload about 20% faster. Stacks with Rapid Reload and Quick Draw.
+Descrip: Bows, crossbows and throwers fire and reload about 20% faster. Stacks with Rapid Reload and Quick Draw. You gain Ranged Power equal to 1.5x your BAB with longbows and shortbows.
 Stat: Dexterity 13
 All: Point Blank Shot
 RaceBonus: Human, Purple Dragon Knight
@@ -1803,7 +1803,7 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Shot on the Run
 Group: Heroic, Range
-Descrip: +3 Ranged Power. You no longer incur to-hit penalties from moving while firing range (and thrown) weapons.
+Descrip: +6 Ranged Power. You no longer incur to-hit penalties from moving while firing range (and thrown) weapons.
 BAB: 4
 Stat: Dexterity 13
 All: Point Blank Shot, Dodge, Mobility
@@ -1992,7 +1992,7 @@ Level: 26
 
 FeatName: Ten Thousand Stars
 Group: Heroic, Range
-Descrip: Descrip: Chance based on Wisdom modifier to throw multiple shuriken at a time for 30 seconds. This also works with bows if you have the Zen Archery feat.
+Descrip: Descrip: Chance based on Wisdom modifier to throw multiple shuriken at a time for 30 seconds.
 Stat: Dexterity 13
 Class: Monk 6
 ClassBonus: Monk

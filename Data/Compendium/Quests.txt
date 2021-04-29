@@ -1847,6 +1847,34 @@ Patron: The Silver Flame
 Favor: 7
 Level: 12
 
+QuestName: An Element of Chaos
+Pack: Perils of the Planar Eyes
+Patron: Morgrave University
+Favor: 5
+Level: 12
+Epic: 32
+
+QuestName: Eye Know Whodunnit
+Pack: Perils of the Planar Eyes
+Patron: Morgrave University
+Favor: 6
+Level: 12
+Epic: 32
+
+QuestName: Seizing the Dawn
+Pack: Perils of the Planar Eyes
+Patron: Morgrave University
+Favor: 5
+Level: 12
+Epic: 32
+
+QuestName: Beautiful Nightmares
+Pack: Perils of the Planar Eyes
+Patron: Morgrave University
+Favor: 6
+Level: 12
+Epic: 32
+
 QuestName: Assault on Summerfield
 Pack: Attack on Stormreach
 Patron: The Coin Lords

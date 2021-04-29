@@ -934,7 +934,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Final Strike
-Descrip: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage. More injured enemies receive increased damage.
+Descrip: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage, scaling with ranged power. More injured enemies receive increased damage.
 Tier: 5
 Cost: 2
 
@@ -2369,7 +2369,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Improved Archer's Focus
-Descrip: Your Archer's Focus stance can now stack up to 25 times instead of 15 and you gain a 10% Insight Bonus to Ranged Alacrity with Longbows and Shortbows when you have Archer's Focus active.Passive: +10 Melee Power
+Descrip: Your Archer's Focus stance can now stack up to 25 times instead of 15. Passive: +10 Melee & Ranged Power
 Tier: 5
 Cost: 2
 All: Feat: Precise Shot
@@ -3835,7 +3835,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Final Strike
-Descrip: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage. More injured enemies receive increased damage.
+Descrip: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage, scaling with ranged power. More injured enemies receive increased damage.
 Tier: 5
 Cost: 2
 
@@ -4867,7 +4867,7 @@ Ranks: 3
 Selector: Athletic, Awareness, Focused, Negotiator, Nimble Fingers, Self Sufficient, Stealthy
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a third level Alchemist (or your total character level, whichever is lower.) . +30 Spell Points.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher are able to add up to 4 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
+Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a third level Alchemist (or your total character level, whichever is lower.) . +30 Spell Points.}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher grants an additional +1 to Damage with Longbows and Shortbows (for +2 total). For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
 Tier: 1
 All: Feat: Half-Elf Dilettante
 SharedSelector: Feat: Half-Elf Dilettante
@@ -4923,7 +4923,7 @@ One: Feat: Half-Elf Dilettante: Rogue
 None: Thief-Acrobat Tier 1: Sly Flourish
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a sixth level Alchemist (or your total character level, whichever is lower.) +30 Spell Points}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 3 or higher are able to add up to 6 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
+Descrip: Improves your Dilettante feat.}{- Improved Dilettante: Alchemist: For item use purposes you are now treated as a sixth level Alchemist (or your total character level, whichever is lower.) +30 Spell Points}{- Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}{- Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{- Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}{- Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}{- Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}{- Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever is lower.)}{- Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{- Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}{- Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}{- Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher grants an additional +1 to Damage with Longbows and Shortbows (for +3 total). For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}{- Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{- Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}{- Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}{- Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
 Tier: 2
 All: Tier 1: Improved Dilettante
 SharedSelector: Tier 1: Improved Dilettante
@@ -6240,7 +6240,7 @@ Selector: Melee, Ranged
 AbilityName: Lead the Charge
 Descrip: +2/3/5[W] and sprint forward toward your target and deliver a single-target blow. 12 second cooldown.  This works with any melee weapon, and not just a shield.
 Tier: 3
-Ranks: 2
+Ranks: 3
 
 AbilityName: Exalted Smite
 Descrip: Multiselector: An improved smite that adds +1/+1/+2 to your weapon's critical damage multiplier and +0/+1/+2 to your weapon's critical threat range. Smite evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds. In addition, your Smite evil and Exalted Smite abilities increase melee and ranged power by 5 for 10 seconds.}{- Exalted Smite (Melee)}{- Exalted Smite (Ranged)
@@ -6250,7 +6250,7 @@ Cost: 2
 Selector: Melee, Ranged
 
 AbilityName: Knight's Training
-Descrip: +1 to hit and damage with all weapons and an additional +1 to hit and damage with Favored Weapons. Taking this enhancement grants the Knight's Training feat.
+Descrip: +1 to hit and damage with all weapons and an additional +1 to hit and damage with Favored Weapons. Taking this enhancement grants the Knight's Training & Shot on the Run feats.
 Tier: 4
 Cost: 2
 
@@ -8327,7 +8327,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Autumn Winds
-Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown:&#160;?)
+Descrip: Toggle to be shielded by the autumn winds. Under this effect gain Feather Fall, +3 Dodge, and a 10% chance to knock down any enemy who strikes you in melee.(Cost: 8 SP, Cooldown: ?)
 Tier: 3
 
 AbilityName: Efficient Heighten
