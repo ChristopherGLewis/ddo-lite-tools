@@ -96,6 +96,7 @@ Abbreviation: Shadar
 Type: Iconic
 IconicClass: Rogue
 Stats: 8, 10, 8, 8, 8, 6
+GrantedFeats1: Spiked Chain Attack: Light Melee Weapon Attack
 
 RaceName: Tiefling
 Abbreviation: Tief
