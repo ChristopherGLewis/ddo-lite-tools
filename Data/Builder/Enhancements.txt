@@ -7523,8 +7523,8 @@ AbilityName: Healing Domain
 Descrip: For each action point spent in this tree, you gain 0.5 Universal Spell Power and 1 Positive Energy Spell Power. (These stack, effectively giving 1.5 Positive Spell Power per point)
 Tier: 0
 
-AbilityName: Pacifism
-Descrip: Toggle: You gain 25 Positive Energy Spell Power and 3% Positive Energy Spell Critical Chance, but have -50 Spell Power and cannot critically hit with other spell damage types, and deal -1[W] damage.
+AbilityName: Cure Moderate Wounds SLA
+Descrip: Cure Moderate Wounds Spell Like Ability: 4SP, 6 second cooldown.
 Tier: 0
 
 AbilityName: Positive Energy Burst
@@ -7540,13 +7540,12 @@ Descrip: You gain +1% Positive Energy Spell Critical Chance.}Channel Divinity: Y
 Tier: 0
 
 AbilityName: Radiant Servant
-Descrip: You gain +2 Wisdom. Every fifth positive energy spell you cast deals maximum healing and has +50% chance to critical.
+Descrip: You gain +4 Wisdom. Every fifth positive energy spell you cast deals maximum healing and has +50% chance to critical.
 Tier: 0
 
-AbilityName: Extra Turning
-Descrip: +1/+2/+3 Turn Undead per rest.
+AbilityName:  Divine Aid
+Descrip: +3% Positive Spell Critical Damage
 Tier: 1
-Ranks: 3
 
 AbilityName: Wand Mastery
 Descrip: +25%/+50%/+75% effectiveness of your wands, scrolls, and other items that cast spells, and +1/+2/+3 to the save DCs of your offensive wands. Taking Wand and Scroll Mastery in one enhancement tree will block its availability in other enhancement trees.
@@ -7557,13 +7556,11 @@ AbilityName: Divine Cleansing
 Descrip: Channel Divinity: Removes harmful effects from your target. Leaves a lingering immunity to natural and magical diseases and poisons for 12 seconds per Cleric level. (Cooldown: 2 seconds)}{-Rank 1: Removes all Disease and Poison effects.}{-Rank 2: Removes all Disease, Poison, Blindness and Curse effects.}{-Rank 3: Removes all Disease, Poison, Blindness, Curse, Paralysis and Petrification effects.
 Tier: 1
 Ranks: 3
-Cost: 2
 
 AbilityName: Bliss
 Descrip: When you use a Turn Attempt for any reason, you gain 3/4/5 Temporary Hit Points for each Healing Core Ability you possess.
 Tier: 1
 Ranks: 3
-Cost: 2
 
 AbilityName: Altruism
 Descrip: +1/+2/+3 Concentration, Diplomacy and Heal. Rank 3: You also gain +10 Positive Energy Spell Power.
@@ -7571,15 +7568,13 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Improved Turning
-Descrip: You count as 1/2/3 levels higher when turning undead. This increases the maximum level of creature you can turn and also increases the total number of hit dice you can turn. In addition, you add an additional 2/4/6 to the number of hit dice you can turn.
+Descrip: +1/+2/+3 Turn Undead per rest. You count as 1/2/3 levels higher when turning undead. This increases the maximum level of creature you can turn and also increases the total number of hit dice you can turn. In addition, you add an additional 2/4/6 to the number of hit dice you can turn.
 Tier: 2
 Ranks: 3
-All: Tier 1: Extra Turning
 
 AbilityName: Mighty Turning
 Descrip: Undead that you successfully turn are instead destroyed.
 Tier: 2
-Cost: 2
 All: Tier 2: Improved Turning
 
 AbilityName: Purge Dark Magics
@@ -7592,7 +7587,6 @@ AbilityName: Divine Healing
 Descrip: Channel Divinity: Your target heals 1d4/2d4/4d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}{ Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).}{ This seems to be unaffected by positive spell power and crit chance. However, it is affected by the target's Healing Amplification.
 Tier: 2
 Ranks: 3
-Cost: 2
 
 AbilityName: Efficient Empower Healing
 Descrip: Healing spells cast while the Empower Healing Spell feat is activated cost 1/2/4 fewer spell points.
@@ -7605,33 +7599,38 @@ AbilityName: Intense Healing
 Descrip: Your Positive Energy Spells are cast at +1/+2/+3 caster level.
 Tier: 3
 Ranks: 3
-Cost: 2
 
 AbilityName: Unyielding Sovereignty
 Descrip: Activate: Fully heals all hit point damage done to a targeted ally, and removes ability damage, death penalty effects, negative levels, and the conditions blinded, dazed, deafened, diseased, exhausted, fatigued, feebleminded, insanity, nauseated, poisoned, and stunned. (Cooldown: 5 minutes)
 Tier: 3
 Cost: 2
 
-AbilityName: Martyrdom
-Descrip: Toggle: When you are killed, four turn attempts are expended. All nearby living allies and enemy undead receive 250/500/1000 positive energy healing and are affected by your Divine Cleansing ability if you possess it. This healing effect is unaffected by Spell Power. (This ability has no effect if you have insufficient turn attempts when you die.) This ability toggles off on death.Bug:  Martyrdom applies to enemy mobs as well as party members. It also heals for more than it is suppose to (twice as much in this case).
+AbilityName:  Divine Aid
+Descrip: +3% Positive Spell Critical Damage
 Tier: 3
-Ranks: 3
+All: Tier 1: Divine Aid
+
+AbilityName: Martyrdom
+Descrip: Toggle: When you are killed, four turn attempts are expended. All nearby living allies and enemy undead receive 1000 positive energy healing and are affected by your Divine Cleansing ability if you possess it. This healing effect is unaffected by Spell Power. (This ability has no effect if you have insufficient turn attempts when you die.) This ability toggles off on death.
+Tier: 3
 Cost: 2
-All: Tier 2: Divine Healing
 
 AbilityName: Endless Turning
 Descrip: Turn Undead uses regenerate at a rate of one every 120 seconds, or 10%/20%/30% faster if it already regenerates.
 Tier: 4
 Ranks: 3
-Cost: 2
 All: Tier 2: Improved Turning
 
 AbilityName: Incredible Healing
 Descrip: The maximum caster level of your Positive Energy Spells are increased by 1/2/3.
 Tier: 4
 Ranks: 3
-Cost: 2
 All: Tier 3: Intense Healing
+
+AbilityName:  Divine Aid
+Descrip: +3% Positive Spell Critical Damage
+Tier: 4
+All: Tier 3: Divine Aid
 
 AbilityName: Divine Health
 Descrip: You are immune to natural, magical, and supernatural diseases.
@@ -7641,18 +7640,23 @@ Cost: 2
 AbilityName: Positive Energy Aura
 Descrip: Channel Divinity: A positive energy aura envelops you in an aura of healing, positive energy, and affects a number of targets equal to Cleric level. Allies within the aura are healed 1 hit point per 3 Cleric levels as long as they remain within it. Undead enemies are damaged for the same amount. (Cooldown: 6 seconds) (Metamagic: Empower Heal)}Note: Each tick refreshes on-heal abilities such as Sacred Touch and Empyrean Magic.
 Tier: 5
-Cost: 2
 
 AbilityName: Cure Focus
 Descrip: Your Cure Wounds spells have no maximum caster level.
 Tier: 5
-Cost: 2
+
+AbilityName: Mass Resist Energy
+Descrip: Mass Resist Energy Spell Like Ability (75 SP)
+Tier: 5
 
 AbilityName: Reactive Heal
 Descrip: Channel Divinity: The next time your target falls below half hit points, they receive 250 positive energy healing. A target can only benefit from a Reactive Heal once every 3 minutes (reset by resting). This healing effect is unaffected by spell power. (Cooldown: 6 seconds)
 Tier: 5
-Cost: 2
-All: Tier 3: Martyrdom
+
+AbilityName: Radiance
+Descrip: Activate: All allies in the dungeon (regardless of distance) gain the effects of the Greater Restoration spell, and purges Paralysis, Stun, and Knockdown/Trip. This can be used while Crowd Controlled. (Activation Cost: 30 Spell Points. Cooldown: 1 minute.)
+Tier: 5
+
 
 TreeName: Ravager
 Type: Class
@@ -11526,11 +11530,11 @@ Descrip: Your Marked Targets get -2 to Saving Throws. Their Fortification penalt
 Tier: 0
 
 AbilityName: Dauntless Marking
-Descrip: Your Marked Target's Saving Throw penalty increases to -4, Fortification penalty increases to -20%, and AC penalty increases to -10. You gain +3 Maximum Dodge.
+Descrip: Your Marked Target's Saving Throw penalty increases to -4, Fortification penalty increases to -25%, and AC penalty increases to -10. You gain +3 Maximum Dodge.
 Tier: 0
 
 AbilityName: Dimension Door
-Descrip: Once per rest, you can cast Dimension Door. Activation Cost: 0 Spell Points. Cooldown: 10 Minutes. Passive: Your Marked Targets get -20% to movement speed.
+Descrip: Once per rest, you can cast Dimension Door as a Spell Like Ability.. Activation Cost: 0 Spell Points. Cooldown: 10 Minutes. Passive: Your Marked Targets get -25% to movement speed.
 Tier: 0
 
 AbilityName: Horizon
@@ -11558,7 +11562,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Conjure Arrow
-Descrip: SLA, as in AA tree
+Descrip: SLA, Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out for an extended period of time.
 Tier: 1
 Cost: 2
 
@@ -11622,7 +11626,7 @@ Descrip: You and targeted ally gain Evasion, Improved Evasion, and +5 to Saving 
 Tier: 4
 
 AbilityName: Scattershot
-Descrip: Ranged Bow Attack: Expend one charge to randomly select up to three different enemies at close range and shoot one arro at each of them. Each of these shots can Doubleshot and have +1 Critical Threat Range and Multiplier. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Scattershot or Manyshot. (Requires a Longbow or Shortbow to use). Shares Charges and a Cooldown with Manyshot.
+Descrip: Ranged Bow Attack: Expend one charge to randomly select up to three different enemies at close range and shoot one arrow at each of them. Each of these shots can Doubleshot and have +1 Critical Threat Range and Multiplier. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Scattershot or Manyshot. (Requires a Longbow or Shortbow to use). Shares Charges and a Cooldown with Manyshot.
 Tier: 4
 Cost: 2
 
@@ -11633,6 +11637,7 @@ Tier: 5
 AbilityName: Banish the Quarry
 Descrip:  If Corner the Quarry is used against a Marked Target, they take an additional 1d10 Force Damage per Character Level. This damage scales with Ranged Power. If the creature is Extraplanar, it must make a Will Save (d20+your Listen skill) or be Banished. (Bosses cannot be banished).
 Tier: 5
+All: Tier 4: Corner the Quarry
 
 AbilityName: Misty Step
 Descrip: Rush forward. You have +5 to Reflex Saves and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 12 second cooldown. Additionally, when you tumble or use Misty Step, you gain Ranged Power equal to your Character Level for 12 seconds. 12 second cooldown.
