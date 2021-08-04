@@ -1448,6 +1448,7 @@ Private Sub OutputEnhancementTreesReddit()
 End Sub
 
 'This returns the text of Enh Spent and alters the penValid field if we're in error
+' THis should be merged with frmEnhancements.GuideTotal and frmEnhancements.ShowSpentAll
 Private Function GetSpentText(penValid As ValidEnum) As String
     Dim lngSpentBase As Long
     Dim lngSpentRPLBonus As Long
@@ -1465,11 +1466,13 @@ Private Function GetSpentText(penValid As ValidEnum) As String
     GetPointsSpentAndMax lngSpentBase, lngSpentRPLBonus, lngSpentUniBonus, lngMaxBase, lngMaxRPLBonus, lngMaxUniBonus
         
     'Display
-    strDisplay = strDisplay & "Spent: " & lngSpentBase & "+" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
-    strDisplay = strDisplay & lngMaxBase & "+" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
+    strDisplay = strDisplay & "Spent: " & lngSpentBase & " +" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
+    strDisplay = strDisplay & lngMaxBase & " +" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
     
     'Figure out if we're in error
-    If lngSpentBase > lngMaxBase Then penValid = veErrors
+    If lngSpentBase > lngMaxBase Then
+        penValid = veErrors
+    End If
     
     'strSpent = lngSpentBase
     'If lngSpentBonus > 0 Then strSpent = strSpent & "+" & lngSpentBonus

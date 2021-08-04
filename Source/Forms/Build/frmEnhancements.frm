@@ -1396,13 +1396,17 @@ Private Sub ShowSpentAll(plbl As Label)
     GetPointsSpentAndMax lngSpentBase, lngSpentRPLBonus, lngSpentUniBonus, lngMaxBase, lngMaxRPLBonus, lngMaxUniBonus
     
     'Display
-    strDisplay = strDisplay & "Spent: " & lngSpentBase & "+" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
-    strDisplay = strDisplay & lngMaxBase & "+" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
+    strDisplay = strDisplay & "Spent: " & lngSpentBase & " +" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
+    strDisplay = strDisplay & lngMaxBase & " +" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
     
     plbl.Caption = strDisplay
     
     'Flag this as an error if spent is > max
-    If lngSpentBase > lngMaxBase Then plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
+    If lngSpentBase > lngMaxBase Then
+        plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError)
+    Else
+        plbl.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
+    End If
     plbl.Visible = True
 End Sub
 
@@ -2487,7 +2491,11 @@ Private Sub GuideTotals()
     'Else
     '    Me.lblGuideSpent.Caption = "Spent: " & lngSpent & " AP"
     'End If
-    If lngSpent > HeroicLevels() * 4 Then Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError) Else Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
+    If lngSpent > HeroicLevels() * 4 Then
+        Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError)
+    Else
+        Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
+    End If
 End Sub
 
 Private Sub usrchkGuideTree_UserChange()

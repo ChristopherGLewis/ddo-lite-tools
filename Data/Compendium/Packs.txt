@@ -272,7 +272,6 @@ Link: The Cogs	Link	https://ddowiki.com/page/The_Cogs
 Link: Named Items	Link	https://ddowiki.com/page/Update_42_named_items
 
 PackName: The Soul Splitter
-Abbreviation: Soul Splitter
 Cost: 650
 HeroicLow: 17
 HeroicHigh: 17
@@ -314,12 +313,13 @@ Patron: The Summer Court
 Wiki: Fables of the Feywild
 Link: Named Items	Link	https://ddowiki.com/page/Update_48_named_items
 
-PackName: Perils of the Planar Eyes
+PackName: Peril of the Planar Eyes
 Abbreviation: Planar Eyes
+Cost: 650
 HeroicLow: 12
 HeroicHigh: 12
 EpicLow: 32
 EpicHigh: 32
 Patron: Morgrave University
-Wiki: Perils of the Planar Eyes
-Link: Named Items	Link	
+Wiki: Peril of the Planar Eyes
+Link: Named Items	Link	https://ddowiki.com/page/Update_49_named_items
