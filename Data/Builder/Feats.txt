@@ -2279,11 +2279,9 @@ Flags: RaceOnly
 
 FeatName: Spiked Chain Attack
 Group: Heroic, Misc
-Descrip: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
+Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
 Race: Required, Shadar-Kai
 RaceBonus: Shadar-Kai
 Flags: RaceOnly
-Selector: Light Melee Weapon Attack
-SelectorName: Light Melee Weapon Attack
-Descrip: Spiked Chain Attack: Light Melee Weapon Attack
-WikiName: Spiked Chain Attack Light Melee Weapon Attack
+Descrip: Spiked Chain Attack
+WikiName: Spiked Chain Attack
