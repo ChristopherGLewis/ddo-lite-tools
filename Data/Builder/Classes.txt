@@ -8,6 +8,7 @@ Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcra
 GrantedFeats1: Magical Training
 GrantedFeats2: Insightful Reflexes
 GrantedFeats3: Alchemy on the Run
+GrantedFeats6: Multitude of Missiles
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6

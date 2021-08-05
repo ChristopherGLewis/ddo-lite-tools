@@ -1431,6 +1431,12 @@ All: Dodge
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Alchemist
 
+FeatName: Multitude of Missiles
+Group: Heroic, Range
+Descrip: For the next 20 seconds, while wielding a Simple Thrown Weapon add 100 to your Doubleshot and 2x your Base Attack Bonus to Ranged Power. Shares a cooldown with Manyshot.
+BAB: 6
+All: Point Blank Shot
+
 FeatName: Natural Fighting
 Group: Heroic, Melee
 Descrip: +4 Melee Power, PRR and Doublestrike while in a druid animal form.}{ In bear form: Increase the ability score modifier to damage while using a two-handed weapon to 2.0/2.5/3.0. Gain 60/30/30% Strikethrough chance.}{ This may be taken up to 3 times.

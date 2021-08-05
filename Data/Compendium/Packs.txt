@@ -3,6 +3,8 @@ Wiki: The Catacombs
 Cost: 250
 HeroicLow: 3
 HeroicHigh: 4
+EpicLow: 23
+EpicHigh: 23
 Patron: The Silver Flame
 Link: Named Items	Link	http://ddowiki.com/page/The_Catacombs#Reward_List
 
@@ -48,6 +50,8 @@ Abbreviation: Delera's
 Cost: 850
 HeroicLow: 5
 HeroicHigh: 11
+EpicLow: 27
+EpicHigh: 27
 Link: Named Items	Link	http://ddowiki.com/page/Delera's_Tomb#Rewards
 
 PackName: Devil Assault

@@ -4084,6 +4084,7 @@ Descrip: Protect your items, or increase your chance of recovering ammunition. C
 Tier: 2
 Ranks: 3
 Selector: Meticulous Fletching, Meticulous Weaponry
+None: Battle Engineer Tier 1: Item Defense, Eldritch Knight (Wizard) Tier 1: Item Defense, Sacred Defender Tier 1: Item Defense, Stalwart Defender Tier 1: Item Defense, Tempest Tier 1: Item Defense
 
 AbilityName: Action Boost: Sprint
 Descrip: Action Boost: Sprint +30/35/45% Action Boost bonus to movement speed for 20 seconds.
@@ -7519,7 +7520,7 @@ Initial: Rad
 Color: Yellow
 Stats: Wisdom, Charisma
 
-AbilityName: Healing Domain
+AbilityName: Healing Power
 Descrip: For each action point spent in this tree, you gain 0.5 Universal Spell Power and 1 Positive Energy Spell Power. (These stack, effectively giving 1.5 Positive Spell Power per point)
 Tier: 0
 
@@ -7567,6 +7568,23 @@ Descrip: +1/+2/+3 Concentration, Diplomacy and Heal. Rank 3: You also gain +10 P
 Tier: 1
 Ranks: 3
 
+AbilityName: Efficient Empower Healing
+Descrip: Healing spells cast while the Empower Healing Spell feat is activated cost 1/2/4 fewer spell points.
+Tier: 2
+Ranks: 3
+Cost: 2
+All: Feat: Empower Healing Spell
+
+AbilityName: Purge Dark Magics
+Descrip: Channel Divinity: Dispels 1/2/3 hostile magical effects from your target. (Cooldown: 6 seconds)
+Tier: 2
+Ranks: 3
+
+AbilityName: Divine Healing
+Descrip: Channel Divinity: Your target heals 1d4/2d4/4d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}{ Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).}{ This seems to be unaffected by positive spell power and crit chance. However, it is affected by the target's Healing Amplification.
+Tier: 2
+Ranks: 3
+
 AbilityName: Improved Turning
 Descrip: +1/+2/+3 Turn Undead per rest. You count as 1/2/3 levels higher when turning undead. This increases the maximum level of creature you can turn and also increases the total number of hit dice you can turn. In addition, you add an additional 2/4/6 to the number of hit dice you can turn.
 Tier: 2
@@ -7577,23 +7595,9 @@ Descrip: Undead that you successfully turn are instead destroyed.
 Tier: 2
 All: Tier 2: Improved Turning
 
-AbilityName: Purge Dark Magics
-Descrip: Channel Divinity: Dispels 1/2/3 hostile magical effects from your target. (Cooldown: 6 seconds)
-Tier: 2
-Ranks: 3
-All: Tier 1: Divine Cleansing
-
-AbilityName: Divine Healing
-Descrip: Channel Divinity: Your target heals 1d4/2d4/4d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}{ Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).}{ This seems to be unaffected by positive spell power and crit chance. However, it is affected by the target's Healing Amplification.
-Tier: 2
-Ranks: 3
-
-AbilityName: Efficient Empower Healing
-Descrip: Healing spells cast while the Empower Healing Spell feat is activated cost 1/2/4 fewer spell points.
-Tier: 2
-Ranks: 3
-Cost: 2
-All: Feat: Empower Healing Spell
+AbilityName:  Divine Aid
+Descrip: +3% Positive Spell Critical Damage
+Tier: 3
 
 AbilityName: Intense Healing
 Descrip: Your Positive Energy Spells are cast at +1/+2/+3 caster level.
@@ -7605,21 +7609,15 @@ Descrip: Activate: Fully heals all hit point damage done to a targeted ally, and
 Tier: 3
 Cost: 2
 
-AbilityName:  Divine Aid
-Descrip: +3% Positive Spell Critical Damage
-Tier: 3
-All: Tier 1: Divine Aid
-
 AbilityName: Martyrdom
 Descrip: Toggle: When you are killed, four turn attempts are expended. All nearby living allies and enemy undead receive 1000 positive energy healing and are affected by your Divine Cleansing ability if you possess it. This healing effect is unaffected by Spell Power. (This ability has no effect if you have insufficient turn attempts when you die.) This ability toggles off on death.
 Tier: 3
 Cost: 2
 
-AbilityName: Endless Turning
-Descrip: Turn Undead uses regenerate at a rate of one every 120 seconds, or 10%/20%/30% faster if it already regenerates.
+AbilityName:  Divine Aid
+Descrip: +3% Positive Spell Critical Damage
 Tier: 4
-Ranks: 3
-All: Tier 2: Improved Turning
+All: Tier 3: Divine Aid
 
 AbilityName: Incredible Healing
 Descrip: The maximum caster level of your Positive Energy Spells are increased by 1/2/3.
@@ -7627,15 +7625,15 @@ Tier: 4
 Ranks: 3
 All: Tier 3: Intense Healing
 
-AbilityName:  Divine Aid
-Descrip: +3% Positive Spell Critical Damage
-Tier: 4
-All: Tier 3: Divine Aid
-
 AbilityName: Divine Health
 Descrip: You are immune to natural, magical, and supernatural diseases.
 Tier: 4
 Cost: 2
+
+AbilityName: Endless Turning
+Descrip: Turn Undead uses regenerate at a rate of one every 120 seconds, or 10%/20%/30% faster if it already regenerates.
+Tier: 4
+Ranks: 3
 
 AbilityName: Positive Energy Aura
 Descrip: Channel Divinity: A positive energy aura envelops you in an aura of healing, positive energy, and affects a number of targets equal to Cleric level. Allies within the aura are healed 1 hit point per 3 Cleric levels as long as they remain within it. Undead enemies are damaged for the same amount. (Cooldown: 6 seconds) (Metamagic: Empower Heal)}Note: Each tick refreshes on-heal abilities such as Sacred Touch and Empyrean Magic.
@@ -7644,19 +7642,19 @@ Tier: 5
 AbilityName: Cure Focus
 Descrip: Your Cure Wounds spells have no maximum caster level.
 Tier: 5
+All: Tier 3: Incredible Healing
 
-AbilityName: Mass Resist Energy
-Descrip: Mass Resist Energy Spell Like Ability (75 SP)
+AbilityName: Radiance
+Descrip: Activate: All allies in the dungeon (regardless of distance) gain the effects of the Greater Restoration spell, and purges Paralysis, Stun, and Knockdown/Trip. This can be used while Crowd Controlled. (Activation Cost: 30 Spell Points. Cooldown: 1 minute.)
 Tier: 5
 
 AbilityName: Reactive Heal
 Descrip: Channel Divinity: The next time your target falls below half hit points, they receive 250 positive energy healing. A target can only benefit from a Reactive Heal once every 3 minutes (reset by resting). This healing effect is unaffected by spell power. (Cooldown: 6 seconds)
 Tier: 5
 
-AbilityName: Radiance
-Descrip: Activate: All allies in the dungeon (regardless of distance) gain the effects of the Greater Restoration spell, and purges Paralysis, Stun, and Knockdown/Trip. This can be used while Crowd Controlled. (Activation Cost: 30 Spell Points. Cooldown: 1 minute.)
+AbilityName: Mass Resist Energy
+Descrip: Mass Resist Energy Spell Like Ability (75 SP)
 Tier: 5
-
 
 TreeName: Ravager
 Type: Class
