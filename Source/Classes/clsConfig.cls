@@ -222,6 +222,7 @@ Private Type CharBuildType
     FeatOrder As FeatOrderEnum
     FeatChannels As Boolean
     FeatOrderOutput As FeatOrderOutputEnum
+    FeatShowAll As Boolean '2021.08.06 added FeatShowAll flag
     IconOverview As Boolean
     IconSkills As Boolean
     Version As String
@@ -443,6 +444,7 @@ Public Sub SetDefaults(penSection As SectionEnum)
             .FeatOrder = foeAlphabetical
             .FeatChannels = False
             .FeatOrderOutput = fooChannel
+            .FeatShowAll = False '2021.08.06 added FeatShowAll flag
             .IconOverview = True
             .IconSkills = True
             .UseIcons = True
@@ -611,7 +613,7 @@ Private Sub LoadCharBuild(pstrRaw As String)
         For i = 1 To UBound(strLine)
             If ParseLine(strLine(i), strField, strValue) Then
                 Select Case strField
-                    Case "windowsize": .MainWindow.WindowSize = Val(strValue)
+                    Case "windowsize": .MainWindow.WindowSize = val(strValue)
                     Case "maximized": If LCase$(strValue) = "true" Then .MainWindow.Maximized = True Else .MainWindow.Maximized = False
                     Case "windowcoords": ParseCoords .MainWindow.WindowCoords, strValue
                     Case "dialogcoords": ParseCoords .DialogCoords, strValue
@@ -623,20 +625,21 @@ Private Sub LoadCharBuild(pstrRaw As String)
                     Case "iconoverview": If LCase$(strValue) = "true" Then .IconOverview = True Else .IconOverview = False
                     Case "iconskills": If LCase$(strValue) = "true" Then .IconSkills = True Else .IconSkills = False
                     Case "mrulist": SplitMRU strValue
-                    Case "mrucount": .MRUCount = Val(strValue)
-                    Case "buildpoints": .BuildPoints = Val(strValue)
-                    Case "skillorderscreen": .SkillOrderScreen = Val(strValue)
-                    Case "skillorderoutput": .SkillOrderOutput = Val(strValue)
-                    Case "featorder": .FeatOrder = Val(strValue)
+                    Case "mrucount": .MRUCount = val(strValue)
+                    Case "buildpoints": .BuildPoints = val(strValue)
+                    Case "skillorderscreen": .SkillOrderScreen = val(strValue)
+                    Case "skillorderoutput": .SkillOrderOutput = val(strValue)
+                    Case "featorder": .FeatOrder = val(strValue)
                     Case "featchannels": If LCase$(strValue) = "true" Then .FeatChannels = True Else .FeatChannels = False
-                    Case "featorderoutput": .FeatOrderOutput = Val(strValue)
+                    Case "featorderoutput": .FeatOrderOutput = val(strValue)
+                    Case "featshowall": If LCase$(strValue) = "true" Then .FeatShowAll = True Else .FeatShowAll = False '2021.08.06 added FeatShowAll flag
                     Case "useicons": If LCase$(strValue) = "true" Then .UseIcons = True Else .UseIcons = False
                     Case "bbcodes": .BBCodes = strValue
-                    Case "outputmargin": .OutputMargin = Val(strValue)
+                    Case "outputmargin": .OutputMargin = val(strValue)
                     Case "confirm": If LCase$(strValue) = "true" Then .Confirm = True Else .Confirm = False
                     Case "version": .Version = strValue
-                    Case "processtime": .ProcessTime = Val(strValue)
-                    Case "contrast": .Contrast = Val(strValue)
+                    Case "processtime": .ProcessTime = val(strValue)
+                    Case "contrast": .Contrast = val(strValue)
                     Case "litepath"
                         mtypPath.CharacterBuilderLite = strValue
                         mblnOldPaths = True
@@ -693,35 +696,35 @@ Private Sub LoadCompendium(pstrRaw As String)
                     Case "runbefore": If LCase$(strValue) = "true" Then .RunBefore = True Else .RunBefore = False
                     Case "playbutton": If LCase$(strValue) = "true" Then .PlayButton = True Else .PlayButton = False
                     Case "playexe": .PlayEXE = strValue
-                    Case "sortorder": .CompendiumOrder = Val(strValue)
-                    Case "levelsort": .LevelSort = Val(strValue)
+                    Case "sortorder": .CompendiumOrder = val(strValue)
+                    Case "levelsort": .LevelSort = val(strValue)
                     Case "abbreviatecolumns": If LCase$(strValue) = "true" Then .AbbreviateColumns = True Else .AbbreviateColumns = False
                     Case "abbreviatepacks": If LCase$(strValue) = "true" Then .AbbreviatePacks = True Else .AbbreviatePacks = False
                     Case "abbreviatepatrons": If LCase$(strValue) = "true" Then .AbbreviatePatrons = True Else .AbbreviatePatrons = False
-                    Case "challengeorder": .ChallengeOrder = Val(strValue)
+                    Case "challengeorder": .ChallengeOrder = val(strValue)
                     Case "sagaepic": If LCase$(strValue) = "true" Then .SagaTier = steEpic Else .SagaTier = steHeroic ' For backwards compatibility
-                    Case "sagatier": .SagaTier = Val(strValue)
-                    Case "sagasort": .SagaSort = Val(strValue)
+                    Case "sagatier": .SagaTier = val(strValue)
+                    Case "sagasort": .SagaSort = val(strValue)
                     Case "sagabringtotop"
                         .SagaBringToTops = .SagaBringToTops + 1
                         ReDim Preserve .SagaBringToTop(1 To .SagaBringToTops)
                         .SagaBringToTop(.SagaBringToTops) = strValue
-                    Case "scroll": .Scroll = Val(strValue)
-                    Case "wheelstep": .WheelStep = Val(strValue)
-                    Case "marginx": .MarginX = Val(strValue)
-                    Case "marginy": .MarginY = Val(strValue)
-                    Case "sides": .Sides = Val(strValue)
-                    Case "bottom": .Bottom = Val(strValue)
-                    Case "leftpane": .LeftPane = Val(strValue)
-                    Case "rightpane": .RightPane = Val(strValue)
-                    Case "character": .Character = Val(strValue)
-                    Case "difficulty": .Difficulty = Val(strValue)
-                    Case "backcolor": .BackColor = Val(strValue)
-                    Case "namedhigh": .NamedHigh = Val(strValue)
-                    Case "namedmed": .NamedMed = Val(strValue)
-                    Case "namedlow": .NamedLow = Val(strValue)
-                    Case "nameddim": .NamedDim = Val(strValue)
-                    Case "windowsize": .MainWindow.WindowSize = Val(strValue)
+                    Case "scroll": .Scroll = val(strValue)
+                    Case "wheelstep": .WheelStep = val(strValue)
+                    Case "marginx": .MarginX = val(strValue)
+                    Case "marginy": .MarginY = val(strValue)
+                    Case "sides": .Sides = val(strValue)
+                    Case "bottom": .Bottom = val(strValue)
+                    Case "leftpane": .LeftPane = val(strValue)
+                    Case "rightpane": .RightPane = val(strValue)
+                    Case "character": .Character = val(strValue)
+                    Case "difficulty": .Difficulty = val(strValue)
+                    Case "backcolor": .BackColor = val(strValue)
+                    Case "namedhigh": .NamedHigh = val(strValue)
+                    Case "namedmed": .NamedMed = val(strValue)
+                    Case "namedlow": .NamedLow = val(strValue)
+                    Case "nameddim": .NamedDim = val(strValue)
+                    Case "windowsize": .MainWindow.WindowSize = val(strValue)
                     Case "maximized": If LCase$(strValue) = "true" Then .MainWindow.Maximized = True Else .MainWindow.Maximized = False
                     Case "childwindows": If LCase$(strValue) = "false" Then .ChildWindows = False Else .ChildWindows = True
                     Case "windowcoords": ParseCoords .MainWindow.WindowCoords, strValue
@@ -748,10 +751,10 @@ Private Sub ParseCoords(ptypCoords As CoordsType, pstrRaw As String)
     strValue = Split(pstrRaw, vbTab)
     If UBound(strValue) <> 3 Then Exit Sub
     With ptypCoords
-        .Left = Val(strValue(0))
-        .Top = Val(strValue(1))
-        .Width = Val(strValue(2))
-        .Height = Val(strValue(3))
+        .Left = val(strValue(0))
+        .Top = val(strValue(1))
+        .Width = val(strValue(2))
+        .Height = val(strValue(3))
     End With
 End Sub
 
@@ -796,7 +799,7 @@ Private Function LoadShared(pstrRaw As String) As Boolean
                     Case "colorcoords": ParseCoords .ColorCoords, strValue
                     Case "screencolors": .ScreenColors = strValue
                     Case "outputcolors": .OutputColors = strValue
-                    Case "colorversion": .ColorVersion = Val(strValue)
+                    Case "colorversion": .ColorVersion = val(strValue)
                     Case Else: blnValid = False
                 End Select
                 If blnValid Then LoadShared = True
@@ -1057,13 +1060,13 @@ Private Function ColorToValue(pstrRaw As String) As Long
     If InStr(pstrRaw, ",") Then
         strSplit = Split(pstrRaw, ",")
         If UBound(strSplit) = 2 Then
-            lngRed = Val(strSplit(0))
-            lngGreen = Val(strSplit(1))
-            lngBlue = Val(strSplit(2))
+            lngRed = val(strSplit(0))
+            lngGreen = val(strSplit(1))
+            lngBlue = val(strSplit(2))
             lngValue = RGB(lngRed, lngGreen, lngBlue)
         End If
     ElseIf IsNumeric(pstrRaw) Then
-        lngValue = Val(pstrRaw)
+        lngValue = val(pstrRaw)
     Else
         Select Case pstrRaw
             Case "Button Text": lngValue = vbButtonText
@@ -1196,6 +1199,7 @@ Private Function MakeCharBuildSettings() As String
         AddString "FeatOrder=" & .FeatOrder
         AddString "FeatChannels=" & .FeatChannels
         AddString "FeatOrderOutput=" & .FeatOrderOutput
+        AddString "FeatShowAll=" & .FeatShowAll '2021.08.06 added FeatShowAll flag
         AddString "BBCodes=" & .BBCodes
         AddString "OutputMargin=" & .OutputMargin
         AddString "Confirm=" & .Confirm
@@ -1804,18 +1808,26 @@ End Property
 Public Property Get FeatChannels() As Boolean
     FeatChannels = mtypCharBuild.FeatChannels
 End Property
-
-Public Property Let FeatChannels(ByVal pblnFeatChannels As Boolean)
-    mtypCharBuild.FeatChannels = pblnFeatChannels
+Public Property Let FeatChannels(ByVal val As Boolean)
+    mtypCharBuild.FeatChannels = val
 End Property
 
 Public Property Get FeatOrderOutput() As FeatOrderOutputEnum
     FeatOrderOutput = mtypCharBuild.FeatOrderOutput
 End Property
-
 Public Property Let FeatOrderOutput(ByVal penFeatOrderOutput As FeatOrderOutputEnum)
     mtypCharBuild.FeatOrderOutput = penFeatOrderOutput
 End Property
+
+'2021.08.06 Added FeatShowAll flag
+Public Property Get FeatShowAll() As Boolean
+    FeatShowAll = mtypCharBuild.FeatShowAll
+End Property
+Public Property Let FeatShowAll(ByVal val As Boolean)
+    mtypCharBuild.FeatShowAll = val
+End Property
+
+
 
 Public Property Get OutputSection() As OutputEnum
     OutputSection = menOutputSection

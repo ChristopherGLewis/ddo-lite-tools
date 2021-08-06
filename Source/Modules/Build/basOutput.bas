@@ -916,7 +916,9 @@ Private Sub OutputFeats()
     Dim strError As String
     Dim i As Long
 
+    ' Check if we're displaying feats
     If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeFeats) Then Exit Sub
+    'Get all valid feats
     enValid = ValidFeats()
     Select Case enValid
         Case veSkip: Exit Sub
@@ -938,7 +940,14 @@ Private Sub OutputFeats()
             Next
             BlankLine
         Else
-            For enChannel = fceGeneral To fceDeity
+            'Show all feats if flag is set
+            Dim iEndChannel As Integer
+            If cfg.FeatShowAll Then
+                iEndChannel = fceGranted
+            Else
+                iEndChannel = fceDeity
+            End If
+            For enChannel = fceGeneral To iEndChannel
                 lngCount = 0
                 If enChannel <> fceGeneral Then
                     For i = 1 To .Feats
@@ -1042,6 +1051,7 @@ Public Function ValidFeats(Optional pblnImport As Boolean = False) As ValidEnum
     mtypFeatOutput.Feats = 0
     ReDim mtypFeatOutput.Feat(48)
     For i = 1 To Feat.Count
+        ' Feat Output??
         Select Case AddFeatOutput(Feat.List(i))
             Case veSkip
             Case veEmpty
@@ -1069,9 +1079,12 @@ Private Function AddFeatOutput(ptypDetail As FeatDetailType) As ValidEnum
     Dim lngFeat As Long
     Dim strDisplay As String
     
-    If ptypDetail.ActualType = bftGranted Then
-        AddFeatOutput = veSkip
-        Exit Function
+    ' 2021.08.06 Show granted
+    If Not cfg.FeatShowAll Then
+        If ptypDetail.ActualType = bftGranted Then
+            AddFeatOutput = veSkip
+            Exit Function
+        End If
     End If
     If ptypDetail.ErrorState Then
         AddFeatOutput = veErrors

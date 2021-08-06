@@ -12,6 +12,17 @@ The code and releases are available at https://github.com/ChristopherGLewis/ddo-
 Any issues and input should be filed there.
 
 ## Release Notes
+
+### 3.5.0
+Changes:
+    Updated Enhancements, Feats and Races for u50
+        * Added Horizon Walker
+        * Updated Shadar-Kai and Radian Servant Enhancemnts
+        * Added Shadar-Kai Spiked Chain Attack feat.
+        * Falconry: Meticulous Weaponry now has antireq of Item Defense.
+            * May need to look at other Item Defenses to add AntiReq's
+    Minor updates to Enhancement tracking of Base, Racial and Universals
+
 ### 3.4.2
 Changes:
     Updated how Enhancement point calcs work to allow for separate pools for RacialPL and Universal bonuses

@@ -848,6 +848,7 @@ Public Function InitFeatList(Optional penNewType As BuildFeatTypeEnum, Optional 
     Feat = typBlank
     ReDim Feat.ChannelCount(fceChannels)
     If build.Class(1) = ceAny Then Exit Function
+    'is 48 arbitrary?
     ReDim Feat.List(1 To 48)
     For enType = bftGranted To bftExchange
         For lngIndex = 1 To build.Feat(enType).Feats
@@ -967,6 +968,7 @@ Private Sub InitFeatChannels()
             End Select
             Feat.ChannelCount(.Channel) = Feat.ChannelCount(.Channel) + 1
             .ChannelSlot(.Channel) = Feat.ChannelCount(.Channel)
+            'Channel + Granted ???
             If .Channel <> fceGranted Then
                 Feat.ChannelCount(fceSelected) = Feat.ChannelCount(fceSelected) + 1
                 .ChannelSlot(fceSelected) = Feat.ChannelCount(fceSelected)
@@ -1127,6 +1129,7 @@ Public Sub CheckSlotErrors()
         With Feat.List(i)
             .ErrorState = False
             .ErrorText = vbNullString
+            'Check non granted for errors
             If .ActualType <> bftGranted Then
                 If .ActualType = bftExchange Then
                     .ErrorState = SlotLocked(i)
