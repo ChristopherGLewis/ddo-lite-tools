@@ -8,6 +8,17 @@
 ; as this file and make your changes there. On load, if UserSagaOrderHeroic.txt
 ; exists, it will be used instead of this file.
 
+The Haunting of Saltmarsh
+Under the Cover of Darkness
+Danger at Dunwater
+The Final Enemy
+Swim at Your Own Risk
+Back to Basics
+What Sleeps Below
+The Hijacked Haul
+Rest for the Night
+Down You Go
+
 Irestone Inlet
 Legend of Two-Toed Tobias
 Prove Your Worth

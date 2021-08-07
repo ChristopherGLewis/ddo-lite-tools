@@ -6,6 +6,24 @@
 ; 
 ; You can freely change quest order within sagas using the SagaOrderXXXX.txt files
 
+SagaName: Sinister Secret of Saltmarsh (heroic)
+Abbreviation: Saltmarsh
+Tier: Heroic
+NPC: Mattias Deckland
+Tome: 1
+Astrals: 1
+XP: ?	?	?	20
+Quest: The Haunting of Saltmarsh
+Quest: Under the Cover of Darkness
+Quest: Danger at Dunwater
+Quest: The Final Enemy
+Quest: Swim at Your Own Risk
+Quest: Back to Basics
+Quest: What Sleeps Below
+Quest: The Hijacked Haul
+Quest: Rest for the Night
+Quest: Down You Go
+
 SagaName: The Pirates of the Thunder Sea (heroic)
 Abbreviation: Pirates
 Tier: Heroic
@@ -346,6 +364,24 @@ Quest: The Final Vintage
 Quest: Wrath of the Earth
 Quest: Ravens' Bane
 Quest: Sunrise
+
+SagaName: Sinister Secret of Saltmarsh (epic)
+Abbreviation: Saltmarsh
+Tier: Epic
+NPC: Mara Deckland
+Tome: 3
+Astrals: 1
+XP: 96	147	207	276
+Quest: The Haunting of Saltmarsh
+Quest: Under the Cover of Darkness
+Quest: Danger at Dunwater
+Quest: The Final Enemy
+Quest: Swim at Your Own Risk
+Quest: Back to Basics
+Quest: What Sleeps Below
+Quest: The Hijacked Haul
+Quest: Rest for the Night
+Quest: Down You Go
 
 SagaName: Cogs: Epic
 Abbreviation: Cogs

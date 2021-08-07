@@ -675,6 +675,76 @@ Favor: 2
 Level: 1
 Epic: 21
 
+QuestName: The Haunting of Saltmarsh
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: Under the Cover of Darkness
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 2
+Level: 3
+Epic: 32
+
+QuestName: Danger at Dunwater
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 4
+Level: 3
+Epic: 32
+
+QuestName: The Final Enemy
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 4
+Level: 3
+Epic: 32
+
+QuestName: Swim at Your Own Risk
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 2
+Level: 3
+Epic: 32
+
+QuestName: Back to Basics
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: What Sleeps Below
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: The Hijacked Haul
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: Rest for the Night
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
+QuestName: Down You Go
+Pack: Sinister Secret of Saltmarsh
+Patron: The Gatekeepers
+Favor: 3
+Level: 3
+Epic: 32
+
 QuestName: The Home of Memory
 Pack: The Lost Gatekeepers
 Patron: The Gatekeepers

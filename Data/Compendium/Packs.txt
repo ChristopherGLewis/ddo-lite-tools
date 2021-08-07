@@ -327,3 +327,14 @@ EpicHigh: 32
 Patron: Morgrave University
 Wiki: Peril of the Planar Eyes
 Link: Named Items	Link	https://ddowiki.com/page/Update_49_named_items
+
+PackName: Sinister Secret of Saltmarsh
+Abbreviation: Saltmarsh
+Cost: 1995
+HeroicLow: 3
+HeroicHigh: 3
+EpicLow: 32
+EpicHigh: 32
+Patron: The Gatekeepers
+Wiki: Sinister Secret of Saltmarsh
+Link Named Items	Link	https://ddowiki.com/page/Update_50_named_items
