@@ -25,6 +25,13 @@ Map: WaterworksMap.jpg
 Low: 1
 High: 6
 
+Area: Saltmarsh
+Map: Map-of-Saltmarsh.jpg
+Low: 1
+High: 6
+Explorer: 3937
+Pack: Sinister Secret of Saltmarsh
+
 Area: Tangleroot Gorge
 Map: TanglerootGorgeMap.jpg
 Low: 2
