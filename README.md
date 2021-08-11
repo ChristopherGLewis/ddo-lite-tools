@@ -17,7 +17,7 @@ Any issues and input should be filed there.
 Changes:
     Updated Enhancements, Feats and Races for u50
         * Added Horizon Walker
-        * Updated Shadar-Kai and Radian Servant Enhancemnts
+        * Updated Shadar-Kai and Radian Servant Enhancements
         * Added Shadar-Kai Spiked Chain Attack feat.
         * Falconry: Meticulous Weaponry now has antireq of Item Defense.
             * May need to look at other Item Defenses to add AntiReq's
