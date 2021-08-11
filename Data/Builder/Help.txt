@@ -37,6 +37,8 @@
 ' All codes and identifiers are case-sensitive. Special codes must be lower case.
 
 HelpTopic: What's New?
+{b}Click {url=https://github.com/ChristopherGLewis/ddo-lite-tools}here {b}for_updated_release_notes.
+
 
 {b}Version_3.1.5 (Click {url=https://www.ddo.com/forums/showthread.php/455712-Character-Builder-Lite?p=6215114&viewfull=1#post6215114}here for full release notes.)
 

@@ -2,7 +2,7 @@ VERSION 5.00
 Begin VB.UserControl userFavor 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   ClientHeight    =   2808
+   ClientHeight    =   2805
    ClientLeft      =   0
    ClientTop       =   0
    ClientWidth     =   5520
@@ -15,7 +15,7 @@ Begin VB.UserControl userFavor
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   2808
+   ScaleHeight     =   2805
    ScaleWidth      =   5520
    Begin VB.HScrollBar scrollHorizontal 
       Height          =   252
@@ -40,8 +40,8 @@ Begin VB.UserControl userFavor
       ForeColor       =   &H80000008&
       Height          =   1932
       Left            =   0
-      ScaleHeight     =   1932
-      ScaleWidth      =   4512
+      ScaleHeight     =   1935
+      ScaleWidth      =   4515
       TabIndex        =   0
       Top             =   60
       Width           =   4512
@@ -54,8 +54,8 @@ Begin VB.UserControl userFavor
          ForeColor       =   &H80000008&
          Height          =   1272
          Left            =   360
-         ScaleHeight     =   1272
-         ScaleWidth      =   3912
+         ScaleHeight     =   1275
+         ScaleWidth      =   3915
          TabIndex        =   1
          Top             =   240
          Width           =   3912
@@ -249,6 +249,10 @@ Private Sub SizeControl()
     mlngSides = UserControl.scrollVertical.Width ' UserControl.ScaleX(UserControl.ScaleY(UserControl.TextHeight("Q"), vbTwips, vbPixels), vbPixels, vbTwips) * 2
     mlngFitWidth = mlngPatronWidth + (lngCharacters + 1) * mlngWidth + mlngSides * 2
     mlngFitHeight = mlngRowHeight * (db.Patrons + 2)
+    
+    ' + 50
+    mlngFitWidth = mlngFitWidth + 50
+    mlngFitHeight = mlngFitHeight + 50
     UserControl.picClient.Move 0, 0, mlngFitWidth, mlngFitHeight
     ShowScrollbars
     UserControl.Refresh

@@ -3,6 +3,8 @@ Attribute VB_Name = "basBuild"
 ' These are public functions used by the dialogs, the output routine and the import screen
 Option Explicit
 
+Public Const MAX_FEATS = 128
+
 ' Used for enhancement/destiny trees
 Private Type LongType
     Value As Long
@@ -454,22 +456,30 @@ Private Sub InitGrantedFeats()
     If build.Race = reDwarf Then blnDwarvenAxe = True
     ' Allocate enough space that we only have to resize once at the end
     With build.Feat(bftGranted)
-        ReDim .Feat(1 To 32)
+        'TODO Make this MAX_FEATS constant = 48?
+        ReDim .Feat(1 To MAX_FEATS)
         .Feats = 0
     End With
+    'Loop through our levels
     For lngLevel = 1 To 20
         ' Race granted feats
         With db.Race(build.Race)
             For lngGranted = 1 To .GrantedFeats
-                If .GrantedFeat(lngGranted).Tier = lngLevel Then GrantFeat .GrantedFeat(lngGranted), lngLevel, bfsRace, build.Feat(bftGranted).Feats
+                If .GrantedFeat(lngGranted).Tier = lngLevel Then
+                    GrantFeat .GrantedFeat(lngGranted), lngLevel, bfsRace, build.Feat(bftGranted).Feats
+                End If
             Next
         End With
         ' Class granted feats
-        enClass = build.Class(lngLevel)
+        enClass = build.Class(lngLevel)  'Class for this level
         lngClassLevels(enClass) = lngClassLevels(enClass) + 1
         With db.Class(enClass)
+            ' TODO Figure why this breaks warlock eldritch blast
             For lngGranted = 1 To .GrantedFeats
-                If .GrantedFeat(lngGranted).Tier = lngClassLevels(enClass) Then GrantFeat .GrantedFeat(lngGranted), lngLevel, bfsClass, build.Feat(bftGranted).Feats
+                'If this feat was granted at this class level...
+                If .GrantedFeat(lngGranted).Tier = lngClassLevels(enClass) Then
+                    GrantFeat .GrantedFeat(lngGranted), lngLevel, bfsClass, build.Feat(bftGranted).Feats
+                End If
             Next
         End With
         ' Dwarven axes
@@ -490,14 +500,21 @@ Private Sub GrantFeat(ptypPointer As PointerType, plngLevel As Long, penSource A
     Dim blnFound As Boolean
     Dim i As Long
     
+    'pbytIndex s/b INT - this is a ref to build.feat(Granted).feat
+    
     If ptypPointer.Feat = 0 Then Exit Sub
+    
+    '2021.08.09 removed this loop - feats can be granted multiple times
     ' Don't grant feats that are already granted
-    For i = 1 To pbytIndex - 1
-        With build.Feat(bftGranted).Feat(i)
-            If .FeatName = db.Feat(ptypPointer.Feat).FeatName And .Selector = ptypPointer.Selector Then blnFound = True
-        End With
-        If blnFound Then Exit Sub
-    Next
+    'For i = 1 To pbytIndex - 1  ' Loop through all previous feats minus last one
+    '    With build.Feat(bftGranted).Feat(i)
+    '        If .FeatName = db.Feat(ptypPointer.Feat).FeatName And .Selector = ptypPointer.Selector Then
+    '            blnFound = True
+    '        End If
+    '    End With
+    '    ' If blnFound Then Exit Sub
+    'Next
+    
     ' Granted Feats store the level they're granted in Tier
     pbytIndex = pbytIndex + 1
     With build.Feat(bftGranted).Feat(pbytIndex)
@@ -848,8 +865,8 @@ Public Function InitFeatList(Optional penNewType As BuildFeatTypeEnum, Optional 
     Feat = typBlank
     ReDim Feat.ChannelCount(fceChannels)
     If build.Class(1) = ceAny Then Exit Function
-    'is 48 arbitrary?
-    ReDim Feat.List(1 To 48)
+    'TODO MAX_FEATS
+    ReDim Feat.List(1 To MAX_FEATS)
     For enType = bftGranted To bftExchange
         For lngIndex = 1 To build.Feat(enType).Feats
             AddFeatToList enType, lngIndex, (enType = penNewType And lngIndex = plngNewIndex)

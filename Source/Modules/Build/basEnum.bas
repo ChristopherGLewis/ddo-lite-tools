@@ -143,7 +143,7 @@ Public Enum ReqGroupEnum
 End Enum
 
 Public Enum FilterEnum
-    feAll
+    feAll 'This has to be first
     feMelee
     feRange
     feSpellcasting
@@ -151,10 +151,11 @@ Public Enum FilterEnum
     feMisc
     feHeroic
     feAlchemy
+    'feBard  - not really usefull since there's no selections
     feEpic
     feDestiny
     feLegend
-    feFilters
+    feFilters  'This has to be last
 End Enum
 
 Public Enum BuildFeatSourceEnum ' Source column in feats screen (display only)
@@ -530,6 +531,7 @@ Public Function GetGroupID(pstrGroup As String) As FilterEnum
         Case "destiny": enGroup = feDestiny
         Case "legend": enGroup = feLegend
         Case "alchemy": enGroup = feAlchemy
+        'Case "bard song": enGroup = feBard
     End Select
     GetGroupID = enGroup
 End Function
@@ -547,6 +549,7 @@ Public Function GetFeatGroupName(ByVal penFeatGroup As FilterEnum) As String
         Case feDestiny: GetFeatGroupName = "Destiny"
         Case feLegend: GetFeatGroupName = "Legend"
         Case feAlchemy: GetFeatGroupName = "Alchemy"
+        'Case feBard: GetFeatGroupName = "Bard Song"
     End Select
 End Function
 

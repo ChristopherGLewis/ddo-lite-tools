@@ -932,15 +932,20 @@ Private Sub OutputFeats()
         OutputText "|||"
         OutputText "|:--|:--|:--"
     End If
-    ' Feat list
+    ' Feat list mtypFeatOutput is loaded in ValidFeats
     With mtypFeatOutput
         If cfg.FeatOrderOutput = fooLevel Then
             For i = 1 To .Feats
-                If mblnReddit Then OutputFeatReddit i Else OutputFeat i
+                If mblnReddit Then
+                    OutputFeatReddit i
+                Else
+                    OutputFeat i
+                End If
             Next
             BlankLine
         Else
             'Show all feats if flag is set
+            'This reads mtypFeatOutput, which is loaded
             Dim iEndChannel As Integer
             If cfg.FeatShowAll Then
                 iEndChannel = fceGranted
@@ -1049,7 +1054,8 @@ Public Function ValidFeats(Optional pblnImport As Boolean = False) As ValidEnum
     blnEmpty = True
     blnComplete = True
     mtypFeatOutput.Feats = 0
-    ReDim mtypFeatOutput.Feat(48)
+    'TODO MAX_FEATS
+    ReDim mtypFeatOutput.Feat(MAX_FEATS)
     For i = 1 To Feat.Count
         ' Feat Output??
         Select Case AddFeatOutput(Feat.List(i))
@@ -1278,7 +1284,9 @@ Private Sub OutputEnhancements()
     Dim blnReverse As Boolean
     Dim frm As Form
     
-    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeEnhancements) Then Exit Sub
+    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeEnhancements) Then
+        Exit Sub
+    End If
     enValid = ValidEnhancements()
     Select Case enValid
         Case veSkip: Exit Sub
@@ -1722,7 +1730,11 @@ Private Function ValidTree(ptypTree As TreeType, ptypBuildTree As BuildTreeType,
         If blnError Then Exit For
     Next
     ' Points in tree
-    If ptypBuildTree.Abilities = 0 Then ValidTree = veEmpty Else ValidTree = CheckSpentInTree(ptypTree, ptypBuildTree, plngPoints)
+    If ptypBuildTree.Abilities = 0 Then
+        ValidTree = veEmpty
+    Else
+        ValidTree = CheckSpentInTree(ptypTree, ptypBuildTree, plngPoints)
+    End If
     If blnError Then ValidTree = veErrors
 End Function
 

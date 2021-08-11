@@ -129,7 +129,7 @@ Private Sub LoadRace(ByVal pstrRaw As String)
                             blnError = True
                         Else
                             For i = 0 To 5
-                                .Stats(i + 1) = Val(strList(i))
+                                .Stats(i + 1) = val(strList(i))
                                 Select Case .Stats(i + 1)
                                     Case 6, 8, 10
                                     Case Else: blnError = True
@@ -184,7 +184,7 @@ Private Sub LoadGrantedFeats(ptypGrantedFeat() As PointerType, plngGrantedFeats 
     Dim lngStart As Long
     Dim i As Long
     
-    lngLevel = Val(Mid$(pstrField, 13))
+    lngLevel = val(Mid$(pstrField, 13))
     If lngLevel < 1 Or lngLevel > MaxLevel Then
         LogError
         Exit Sub
@@ -295,7 +295,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                             Case Else: LoadError strLine(0) & " has invalid BAB: " & strItem
                         End Select
                     Case "skillpoints"
-                        .SkillPoints = Val(strItem)
+                        .SkillPoints = val(strItem)
                         Select Case .SkillPoints
                             Case 2, 4, 6, 8
                             Case Else: LoadError strLine(0) & " has invalid skill points: " & strItem
@@ -307,7 +307,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                         Next
                     Case "bonusfeat"
                         For i = 0 To lngListMax
-                            lngLevel = Val(strList(i))
+                            lngLevel = val(strList(i))
                             Select Case lngLevel
                                 Case 1 To 20: .BonusFeat(lngLevel) = bfsClass
                                 Case Else: LogError
@@ -315,7 +315,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                         Next
                     Case "classfeat"
                         For i = 0 To lngListMax
-                            lngLevel = Val(strList(i))
+                            lngLevel = val(strList(i))
                             Select Case lngLevel
                                 Case 1 To 20: .BonusFeat(lngLevel) = bfsClassOnly
                                 Case Else: LogError
@@ -328,7 +328,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                             .Tree(i + 1) = strList(i)
                         Next
                     Case "maxspelllevel"
-                        .MaxSpellLevel = Val(strItem)
+                        .MaxSpellLevel = val(strItem)
                         Select Case .MaxSpellLevel
                             Case 4, 6, 9
                             Case Else: LogError
@@ -338,7 +338,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                             ReDim .SpellSlots(1 To 20, 1 To .MaxSpellLevel)
                         End If
                     Case "healingspell"
-                        .CanCastSpell(0) = Val(strItem)
+                        .CanCastSpell(0) = val(strItem)
                         If .CanCastSpell(0) < 1 Or .CanCastSpell(0) > 20 Then LogError
                     Case "freespells"
                         .FreeSpells = lngListMax + 1
@@ -354,7 +354,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                         Next
                     Case Else
                         If Left$(strField, 10) = "spellslots" Then
-                            lngSpellLevel = Val(Mid$(strField, 11, 1))
+                            lngSpellLevel = val(Mid$(strField, 11, 1))
                             If lngSpellLevel = 0 Then
                                 ' Ignore header row
                             ElseIf lngSpellLevel > .MaxSpellLevel Then
@@ -364,12 +364,12 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                             Else
                                 For i = 0 To lngListMax
                                     lngClassLevel = i + 1
-                                    .SpellSlots(lngClassLevel, lngSpellLevel) = Val(strList(i))
-                                    If .CanCastSpell(lngSpellLevel) = 0 And Val(strList(i)) <> 0 Then .CanCastSpell(lngSpellLevel) = lngClassLevel
+                                    .SpellSlots(lngClassLevel, lngSpellLevel) = val(strList(i))
+                                    If .CanCastSpell(lngSpellLevel) = 0 And val(strList(i)) <> 0 Then .CanCastSpell(lngSpellLevel) = lngClassLevel
                                 Next
                             End If
                         ElseIf Left$(strField, 9) = "spelllist" Then
-                            lngSpellLevel = Val(Mid$(strField, 10, 1))
+                            lngSpellLevel = val(Mid$(strField, 10, 1))
                             If lngSpellLevel < 1 Then
                                 LogError
                             ElseIf lngSpellLevel > .MaxSpellLevel Then
@@ -624,7 +624,7 @@ Private Sub LoadTemplate(ByVal pstrRaw As String)
                     Case "str", "dex", "con", "int", "wis", "cha"
                         enStat = GetStatID(strField)
                         For i = 0 To 4
-                            .StatPoints(i, enStat) = Val(Mid$(strItem, (i * 3) + 1, 2))
+                            .StatPoints(i, enStat) = val(Mid$(strItem, (i * 3) + 1, 2))
                         Next
                     Case "pts"
                     Case Else
@@ -724,7 +724,7 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
         ReDim .Class(ceClasses - 1)
         ReDim .ClassLevel(ceClasses - 1)
         ReDim .Req(3)
-        ReDim .Group(feFilters - 1)
+        ReDim .Group(feFilters - 1)  'feFilters is always last
         .Group(feAll) = True
         log.LoadItem = .FeatName
         ' Process lines
@@ -860,7 +860,7 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         Next
                     Case "classonlylevel"
                         For i = 0 To lngListMax
-                            lngValue = Val(strList(i))
+                            lngValue = val(strList(i))
                             If lngValue < 1 Or lngValue > 20 Then blnError = True Else .ClassOnlyLevels(lngValue) = True
                         Next
                     Case "all", "one", "none"
@@ -1464,7 +1464,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             For s = 1 To .Selectors
                                 .Selector(s).RankReqs = True
                                 InitRanks .Selector(s).Rank
-                                lngRank = Val(Mid$(strField, 5, 1))
+                                lngRank = val(Mid$(strField, 5, 1))
                                 With .Selector(s).Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                     .Reqs = lngListMax + 1
                                     ReDim .Req(1 To .Reqs)
@@ -1484,7 +1484,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             'Add our requirement
                             .RankReqs = True
                             InitRanks .Rank
-                            lngRank = Val(Mid$(strField, 5, 1))
+                            lngRank = val(Mid$(strField, 5, 1))
                             With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                 .Reqs = lngListMax + 1
                                 ReDim .Req(1 To .Reqs)
@@ -1635,7 +1635,7 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pe
                     Case "rank2all", "rank3all", "rank3none"
                         .RankReqs = True
                         InitRanks .Rank
-                        lngRank = Val(Mid$(strField, 5, 1))
+                        lngRank = val(Mid$(strField, 5, 1))
                         With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
@@ -1991,11 +1991,11 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
         strValue = Mid$(pstrLine, lngPos + 1)
         If IsNumeric(strValue) Then
             pstrItem = Left$(pstrLine, lngPos - 1)
-            plngValue = Val(strValue)
+            plngValue = val(strValue)
         End If
     Else
         ' If only a single value, and it's numeric, return it in Value also
-        If IsNumeric(pstrItem) Then plngValue = Val(pstrItem)
+        If IsNumeric(pstrItem) Then plngValue = val(pstrItem)
     End If
     ' Return single item in list form as well
     plngListMax = 0
@@ -2010,6 +2010,6 @@ Private Function ParseClassLevel(pstrRaw As String, penClass As ClassEnum, plngL
     If lngPos = 0 Then Exit Function
     penClass = GetClassID(Left$(pstrRaw, lngPos - 1))
     If penClass = ceAny Then Exit Function
-    plngLevel = Val(Mid$(pstrRaw, lngPos + 1))
+    plngLevel = val(Mid$(pstrRaw, lngPos + 1))
     ParseClassLevel = (plngLevel >= 1 And plngLevel <= 20)
 End Function

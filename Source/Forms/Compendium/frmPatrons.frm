@@ -5,10 +5,10 @@ Begin VB.Form frmPatrons
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Patrons"
-   ClientHeight    =   3840
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   5808
+   ClientHeight    =   5910
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   5820
    FillStyle       =   0  'Solid
    BeginProperty Font 
       Name            =   "Verdana"
@@ -23,17 +23,17 @@ Begin VB.Form frmPatrons
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   3840
-   ScaleWidth      =   5808
+   ScaleHeight     =   5910
+   ScaleWidth      =   5820
    ShowInTaskbar   =   0   'False
    Begin Compendium.userFavor usrFavor 
-      Height          =   2292
+      Height          =   3615
       Left            =   480
       TabIndex        =   0
       Top             =   900
-      Width           =   4572
-      _ExtentX        =   8065
-      _ExtentY        =   4043
+      Width           =   4575
+      _ExtentX        =   8070
+      _ExtentY        =   6376
    End
 End
 Attribute VB_Name = "frmPatrons"
@@ -58,7 +58,7 @@ End Sub
 Private Sub SizeControl()
     With Me.usrFavor
         Me.Width = .FitWidth + Me.Width - Me.ScaleWidth
-        Me.Height = .FitHeight + Me.Height - Me.ScaleHeight + Me.TextHeight("Q") \ 2
+        Me.Height = (.FitHeight + Me.Height - Me.ScaleHeight + Me.TextHeight("Q") \ 2)
         .Move 0, 0, Me.ScaleWidth, Me.ScaleHeight
     End With
 End Sub

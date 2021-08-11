@@ -298,6 +298,8 @@ for each:
  - Misc: Increase to stats or skills, guard effects, summons/pets stuff, plus anything not 
    easily categorized elsewhere. (eg: Turn Undead stuff, songs, ki, etc...) 
  - Alchemy is a new grouping for Alchemists 
+ - Bard Song is for bard songs
+
 
 Stat: 
 Ability score required. Use the format "Ability #"

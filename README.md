@@ -22,6 +22,13 @@ Changes:
         * Falconry: Meticulous Weaponry now has antireq of Item Defense.
             * May need to look at other Item Defenses to add AntiReq's
     Minor updates to Enhancement tracking of Base, Racial and Universals
+    Added Granted Feats
+        * Added all Granted Feats to the Feats.txt and Classes.txt files
+        * Added a toggle in settings to show granted feats on display
+        * Changed max feats per build to 128
+        * Added ability to take feat more than once
+    COmpendium 1.6.0
+        * Resized Patron window
 
 ### 3.4.2
 Changes:

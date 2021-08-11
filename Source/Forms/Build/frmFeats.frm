@@ -4,10 +4,10 @@ Begin VB.Form frmFeats
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Feats"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmFeats
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userCheckBox usrchkChannels 
       Height          =   252
       Left            =   5520
@@ -30,8 +30,8 @@ Begin VB.Form frmFeats
       Tag             =   "nav"
       Top             =   7440
       Width           =   1692
-      _ExtentX        =   2985
-      _ExtentY        =   445
+      _ExtentX        =   2990
+      _ExtentY        =   450
       Value           =   0   'False
       Caption         =   "Channels"
       Bold            =   -1  'True
@@ -43,8 +43,8 @@ Begin VB.Form frmFeats
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -58,8 +58,8 @@ Begin VB.Form frmFeats
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Selected;Granted"
@@ -72,8 +72,8 @@ Begin VB.Form frmFeats
       TabStop         =   0   'False
       Top             =   4860
       Width           =   2772
-      _ExtentX        =   4890
-      _ExtentY        =   3937
+      _ExtentX        =   4895
+      _ExtentY        =   3942
    End
    Begin VB.ListBox lstGroup 
       Appearance      =   0  'Flat
@@ -89,7 +89,7 @@ Begin VB.Form frmFeats
    End
    Begin VB.ListBox lstSub 
       Appearance      =   0  'Flat
-      Height          =   3480
+      Height          =   3390
       Left            =   9720
       Sorted          =   -1  'True
       TabIndex        =   6
@@ -98,7 +98,7 @@ Begin VB.Form frmFeats
    End
    Begin VB.ListBox lstFeat 
       Appearance      =   0  'Flat
-      Height          =   3480
+      Height          =   3390
       ItemData        =   "frmFeats.frx":008F
       Left            =   6720
       List            =   "frmFeats.frx":0091
@@ -112,8 +112,8 @@ Begin VB.Form frmFeats
       TabIndex        =   3
       Top             =   696
       Width           =   1332
-      _ExtentX        =   2350
-      _ExtentY        =   445
+      _ExtentX        =   2355
+      _ExtentY        =   450
       Value           =   0   'False
       Caption         =   "Show All"
       CheckPosition   =   1
@@ -124,8 +124,8 @@ Begin VB.Form frmFeats
       TabIndex        =   1
       Top             =   600
       Width           =   6132
-      _ExtentX        =   10816
-      _ExtentY        =   11451
+      _ExtentX        =   10821
+      _ExtentY        =   11456
    End
    Begin VB.Label lblFeats 
       Appearance      =   0  'Flat
@@ -430,6 +430,7 @@ Private Sub LoadData()
     Me.usrchkChannels.Value = cfg.FeatChannels
     If build.CanCastSpell(1) <> 0 Then Me.usrFooter.RightLinks = "Spells >" Else Me.usrFooter.RightLinks = "Enhancements >"
     Me.lstGroup.Clear
+    'Loop through all groups - feFilters is always last
     For i = 0 To feFilters - 1
         ListboxAddItem Me.lstGroup, GetFeatGroupName(i), i
     Next

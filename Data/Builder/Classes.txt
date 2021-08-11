@@ -5,10 +5,16 @@ Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neut
 BAB: 0.75
 SkillPoints: 4
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Inscribe Alchemy Recipe, Arcane Lore, Alchemical Spellcasting
 GrantedFeats2: Insightful Reflexes
+GrantedFeats2: Artificer Knowlege: Potions
 GrantedFeats3: Alchemy on the Run
+GrantedFeats5:  Artificer Knowlege: Potions
 GrantedFeats6: Multitude of Missiles
+GrantedFeats7: PoisonBlood
+GrantedFeats8:  Artificer Knowlege: Potions
+GrantedFeats11:  Artificer Knowlege: Potions
+GrantedFeats14:  Artificer Knowlege: Potions
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
@@ -34,9 +40,29 @@ BAB: 0.75
 SkillPoints: 4
 Skills: Concentration, Disable Device, Haggle, Open Lock, Repair, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Simple Weapons, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Exotic Weapon: Great Crossbow, Exotic Weapon: Rpt Lt Crossbow, Exotic Weapon: Rpt Hvy Crossbow
-GrantedFeats1: Magical Training, Rapid Reload
-GrantedFeats2: Rune Arm Use
-GrantedFeats6: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
+GrantedFeats1: Magical Training, Rapid Reload, Arcane Lore, Inscribe Artificer Scroll, Trapfinding
+GrantedFeats1: Unleash Iron Defender, Reanimate Construct
+GrantedFeats2: Artificer Knowlege: Scrolls
+GrantedFeats2: Rune Arm Use, Artificer Craft Mastery
+GrantedFeats2: Artificer Knowlege: Potions
+GrantedFeats3: Artificer Knowlege: Wands
+GrantedFeats4: Artificer Knowlege: Scrolls, Trapmaking, Artificer Craft Mastery
+GrantedFeats5: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Retain Essence
+GrantedFeats6: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency, Artificer Craft Mastery
+GrantedFeats6: Artificer Knowlege: Wands
+GrantedFeats7: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls
+GrantedFeats8: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Artificer Craft Mastery
+GrantedFeats9: Artificer Knowlege: Wands
+GrantedFeats10: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls, Artificer Craft Mastery
+GrantedFeats11: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions
+GrantedFeats12: Artificer Knowlege: Wands, Artificer Craft Mastery
+GrantedFeats13: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls
+GrantedFeats14: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Artificer Craft Mastery, Artificer Skill Mastery
+GrantedFeats15: Artificer Knowlege: Wands
+GrantedFeats16: Artificer Knowlege: Wounderous Items, Artificer Craft Mastery
+GrantedFeats17: Artificer Knowlege: Arms and Armor
+GrantedFeats18: Artificer Craft Mastery
+GrantedFeats19: Artificer Knowlege: Wounderous Items
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Arcanotechnician, Battle Engineer, Renegade Mastermaker
 HealingSpell: 1
@@ -65,7 +91,22 @@ SkillPoints: 4
 Skills: Intimidate, Jump, Listen, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: All
-GrantedFeats1: Rage, Dismiss Rage
+GrantedFeats1: Rage, Dismiss Rage, Fast Movement, Wilderness Lore
+GrantedFeats2: Barbarian Damage Reduction
+GrantedFeats3: Trap Sense
+GrantedFeats4: Rage, Uncanny Dodge
+GrantedFeats5: Barbarian Damage Reduction
+GrantedFeats6: Trap Sense
+GrantedFeats8: Rage, Barbarian Damage Reduction, Improved Uncanny Dodge
+GrantedFeats9: Trap Sense
+GrantedFeats11: Barbarian Damage Reduction, Greater Rage
+GrantedFeats12: Rage,Trap Sense
+GrantedFeats14: Barbarian Damage Reduction, Indomitable Will
+GrantedFeats15: Trap Sense
+GrantedFeats16: Rage
+GrantedFeats17: Barbarian Damage Reduction, Tireless Rage
+GrantedFeats18: Trap Sense
+GrantedFeats20: Rage, Barbarian Damage Reduction, Mighty Rage
 Trees: Frenzied Berserker, Occult Slayer, Ravager
 
 ClassName: Bard
@@ -77,8 +118,15 @@ SkillPoints: 6
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Hide, Jump, Listen, Move Silently, Perform, Spellcraft, Swim, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light, Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Shortsword, Martial Weapon: Shortbow
-GrantedFeats1: Fascinate
+GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore
+GrantedFeats1: Bardic Ballad
+GrantedFeats3: Bardic Inspiration
+GrantedFeats6: Suggesion
+GrantedFeats8: Soothing Song, Improved Inspire Courage
+GrantedFeats12: Song of Freedom
 GrantedFeats15: Inspire Heroics
+GrantedFeats18: Mass Suggesion
+GrantedFeats20: Improved Inspire Courage
 Trees: Swashbuckler, Warchanter, Spellsinger
 HealingSpell: 1
 MaxSpellLevel: 6
@@ -105,7 +153,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Turn Undead
+GrantedFeats1: Magical Training, Turn Undead,Religious Lore
 ClassFeat: 1, 2, 6
 Trees: Divine Disciple, Radiant Servant, Warpriest
 HealingSpell: 1
@@ -140,7 +188,11 @@ SkillPoints: 4
 Skills: Concentration, Diplomacy, Heal, Intimidate, Listen, Spellcraft, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Martial Weapon: Scimitar
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Call Wolf Companion, Druidic Oath, Goodberry, Wild Empathy, Druid - Spontaneous Casting
+GrantedFeats1: Wilderness Lore
+GrantedFeats7: Improved Wild Empathy
+GrantedFeats9: Venom Immunity
+GrantedFeats15: Timeless Body
 ClassFeat: 2, 5, 8, 11, 13, 17
 Trees: Nature's Warrior, Nature's Protector, Season's Herald
 HealingSpell: 1
@@ -176,7 +228,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Jump, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Religious Lore
 ClassFeat: 1, 2, 5, 6, 7, 10, 15, 20
 Trees: Angel of Vengeance, War Soul, Beacon of Hope
 HealingSpell: 1
@@ -221,9 +273,26 @@ BAB: 0.75
 SkillPoints: 4
 Skills: Balance, Concentration, Diplomacy, Hide, Jump, Listen, Move Silently, Spot, Swim, Tumble
 GrantedFeats1: Martial Weapon: Handaxe, Exotic Weapon: Handwraps, Exotic Weapon: Kama, Exotic Weapon: Shuriken
-GrantedFeats6: Adept of Forms
-GrantedFeats12: Master of Forms
-GrantedFeats18: Grandmaster of Forms
+GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, Finishing Moves
+GrantedFeats2: Armor Class Bonus, Evasion, Meditation
+GrantedFeats3: Still Mind, Fast Movement
+GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike
+GrantedFeats5:Armor Class Bonus, Purity of Body
+GrantedFeats6: Adept of Forms, Fast Movement, Slow Fall
+GrantedFeats7: Wholeness of Body
+GrantedFeats8: Slow Fall, Unarmed Strike
+GrantedFeats9: Improved Evasion, Fast Movement
+GrantedFeats10: Armor Class Bonus, Ki Strike: Lawful, Slow Fall
+GrantedFeats11: Diamond Body
+GrantedFeats12: Abundant Step, Fast Movement, Master of Forms, Slow Fall, Unarmed Strike
+GrantedFeats13: Diamond Soul
+GrantedFeats14: Slow Fall
+GrantedFeats15: Armor Class Bonus, Fast Movement, Quivering Palm
+GrantedFeats16: Ki Strike: Adamantine, Slow Fall, Unarmed Strike
+GrantedFeats17: Timeless Body
+GrantedFeats18: Fast Movement, Grandmaster of Forms, Slow Fall
+GrantedFeats19: Empty Body
+GrantedFeats20: Armor Class Bonus, Perfect Self, Perfect Slow Fall, Shining Star, Unarmed Strike
 BonusFeat: 1, 2, 6
 ClassFeat: 3
 Trees: Shintao, Henshin Mystic, Ninja Spy
@@ -238,9 +307,17 @@ Skills: Concentration, Diplomacy, Heal, Intimidate
 ClassFeat: 1, 6
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: All
-GrantedFeats1: Smite Evil
-GrantedFeats2: Lay On Hands
+GrantedFeats1: Aura of Good, Smite Evil, Religious Lore
+GrantedFeats2: Divine Grace, Lay On Hands
+GrantedFeats4: Aura of Courage, Divine Health, Fear Immunity
 GrantedFeats4: Turn Undead
+GrantedFeats5: Smite Evil
+GrantedFeats6: Remove Disease
+GrantedFeats9: Remove Disease
+GrantedFeats12: Remove Disease
+GrantedFeats15: Remove Disease, Smite Evil
+GrantedFeats18: Remove Disease
+GrantedFeats20: Smite Evil
 Trees: Knight of the Chalice, Sacred Defender, Vanguard
 HealingSpell: 4
 MaxSpellLevel: 4
@@ -262,14 +339,16 @@ BAB: 1
 SkillPoints: 6
 Skills: Concentration, Heal, Hide, Jump, Listen, Move Silently, Search, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Shield Proficiency
-GrantedFeats1: Simple Weapons, Martial Weapon: All
-GrantedFeats1: Bow Strength
+GrantedFeats1: Simple Weapons, Martial Weapon: All, Bow Strength
+GrantedFeats1: Wilderness Lore, Wild Empathy
 GrantedFeats2: Rapid Shot, Two Weapon Fighting
 GrantedFeats3: Diehard
 GrantedFeats4: Precise Shot
 GrantedFeats6: Manyshot, Improved Two Weapon Fighting
+GrantedFeats7: Improved Wild Empathy
 GrantedFeats9: Evasion
 GrantedFeats11: Improved Precise Shot, Greater Two Weapon Fighting
+GrantedFeats17: Hide in Plain Sight
 ClassFeat: 1, 5, 10, 15, 20
 Trees: Arcane Archer, Deepwood Stalker, Tempest
 HealingSpell: 8
@@ -293,8 +372,25 @@ SkillPoints: 8
 Skills: Balance, Bluff, Diplomacy, Disable Device, Haggle, Hide, Intimidate, Jump, Listen, Move Silently, Open Lock, Repair, Search, Spot, Swim, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light
 GrantedFeats1: Simple Weapons, Martial Weapon: Rapier, Martial Weapon: Shortbow, Martial Weapon: Shortsword
-GrantedFeats1: Sneak Attack
+GrantedFeats1: Sneak Attack, Trapfinding
 GrantedFeats2: Evasion
+GrantedFeats3: Sneak Attack, Trap Sense
+GrantedFeats4: Trapmaking, Uncanny Dodge
+GrantedFeats5: Sneak Attack
+GrantedFeats6: Trap Sense
+GrantedFeats7: Sneak Attack
+GrantedFeats8: Improved Uncanny Dodge
+GrantedFeats9: Sneak Attack, Trap Sense
+GrantedFeats11: Sneak Attack
+GrantedFeats12: Trap Sense
+GrantedFeats13: Sneak Attack
+GrantedFeats15: Sneak Attack, Trap Sense
+GrantedFeats17: Sneak Attack
+GrantedFeats18: Trap Sense
+GrantedFeats19: Sneak Attack
+
+
+
 ClassFeat: 10, 13, 16, 19
 Trees: Assassin, Mechanic, Thief-Acrobat
 
@@ -306,7 +402,7 @@ BAB: 0.5
 SkillPoints: 2
 Skills: Bluff, Concentration, Spellcraft
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm
 Trees: Air Savant, Earth Savant, Fire Savant, Water Savant, Eldritch Knight (Sorcerer)
 MaxSpellLevel: 9
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -338,7 +434,13 @@ SkillPoints: 2
 Skills: Bluff, Concentration, Intimidate, Jump, Spellcraft, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Dismiss Charm
+GrantedFeats1: Eldritch Blast
+GrantedFeats4: Eldritch Blast
+GrantedFeats8: Eldritch Blast
+GrantedFeats12: Eldritch Blast
+GrantedFeats16: Eldritch Blast
+GrantedFeats20: Eldritch Blast
 ClassFeat: 1
 Trees: Enlightened Spirit, Soul Eater, Tainted Scholar
 MaxSpellLevel: 6
@@ -366,7 +468,7 @@ Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neut
 BAB: 0.5
 SkillPoints: 2
 Skills: Concentration, Repair, Spellcraft
-GrantedFeats1: Magical Training
+GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Inscribe Scroll
 BonusFeat: 1, 5, 10, 15, 20
 Trees: Archmage, Pale Master, Eldritch Knight (Wizard)
 MaxSpellLevel: 9

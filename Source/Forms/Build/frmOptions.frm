@@ -4,10 +4,10 @@ Begin VB.Form frmOptions
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Options"
-   ClientHeight    =   6360
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   7104
+   ClientHeight    =   6420
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   7110
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,16 +21,16 @@ Begin VB.Form frmOptions
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6360
-   ScaleWidth      =   7104
+   ScaleHeight     =   6420
+   ScaleWidth      =   7110
    Begin CharacterBuilderLite.userHeader usrHeader 
       Height          =   384
       Left            =   0
       TabIndex        =   0
       Top             =   0
       Width           =   7032
-      _ExtentX        =   12404
-      _ExtentY        =   677
+      _ExtentX        =   12409
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       RightLinks      =   "Help"
@@ -51,8 +51,8 @@ Begin VB.Form frmOptions
          TabIndex        =   14
          Top             =   1200
          Width           =   2292
-         _ExtentX        =   4043
-         _ExtentY        =   445
+         _ExtentX        =   4048
+         _ExtentY        =   450
          Caption         =   "Skills Screen"
       End
       Begin CharacterBuilderLite.userCheckBox usrchkIconOverview 
@@ -61,8 +61,8 @@ Begin VB.Form frmOptions
          TabIndex        =   13
          Top             =   840
          Width           =   2292
-         _ExtentX        =   4043
-         _ExtentY        =   445
+         _ExtentX        =   4048
+         _ExtentY        =   450
          Caption         =   "Overview Screen"
       End
       Begin CharacterBuilderLite.userCheckBox usrchkUseIcons 
@@ -71,8 +71,8 @@ Begin VB.Form frmOptions
          TabIndex        =   12
          Top             =   480
          Width           =   2592
-         _ExtentX        =   4572
-         _ExtentY        =   445
+         _ExtentX        =   4577
+         _ExtentY        =   450
          Caption         =   "Use Class Icons"
       End
       Begin VB.CheckBox chkColors 
@@ -93,7 +93,7 @@ Begin VB.Form frmOptions
          TabIndex        =   16
          Top             =   1620
          Width           =   972
-         _ExtentX        =   1715
+         _ExtentX        =   1720
          _ExtentY        =   529
          Appearance3D    =   -1  'True
          Min             =   0
@@ -179,7 +179,7 @@ Begin VB.Form frmOptions
          TabIndex        =   6
          Top             =   840
          Width           =   972
-         _ExtentX        =   1715
+         _ExtentX        =   1720
          _ExtentY        =   529
          Appearance3D    =   -1  'True
          Max             =   9
@@ -199,8 +199,8 @@ Begin VB.Form frmOptions
          TabIndex        =   7
          Top             =   1320
          Width           =   3192
-         _ExtentX        =   5630
-         _ExtentY        =   445
+         _ExtentX        =   5636
+         _ExtentY        =   450
          Caption         =   "Show Error Log on startup"
       End
       Begin CharacterBuilderLite.userCheckBox usrchkChildWindows 
@@ -209,8 +209,8 @@ Begin VB.Form frmOptions
          TabIndex        =   8
          Top             =   1740
          Width           =   3192
-         _ExtentX        =   5630
-         _ExtentY        =   445
+         _ExtentX        =   5636
+         _ExtentY        =   450
          Caption         =   "Child Windows"
       End
       Begin CharacterBuilderLite.userCheckBox usrchkConfirm 
@@ -219,8 +219,8 @@ Begin VB.Form frmOptions
          TabIndex        =   9
          Top             =   2160
          Width           =   3192
-         _ExtentX        =   5630
-         _ExtentY        =   445
+         _ExtentX        =   5636
+         _ExtentY        =   450
          Caption         =   "Confirmation Prompts"
       End
       Begin VB.Label lblGeneral 
@@ -274,7 +274,7 @@ Begin VB.Form frmOptions
       BorderStyle     =   0  'None
       Caption         =   "Output"
       ForeColor       =   &H80000008&
-      Height          =   2592
+      Height          =   2955
       Left            =   4260
       TabIndex        =   27
       Top             =   3480
@@ -298,7 +298,7 @@ Begin VB.Form frmOptions
          Left            =   1020
          Style           =   1  'Graphical
          TabIndex        =   33
-         Top             =   2100
+         Top             =   2280
          Width           =   1392
       End
       Begin VB.ComboBox cboSkillOrderOutput 
@@ -310,6 +310,16 @@ Begin VB.Form frmOptions
          TabIndex        =   30
          Top             =   660
          Width           =   1932
+      End
+      Begin CharacterBuilderLite.userCheckBox usrchkFeatsShowAll 
+         Height          =   255
+         Left            =   240
+         TabIndex        =   34
+         Top             =   1920
+         Width           =   1815
+         _ExtentX        =   3201
+         _ExtentY        =   450
+         Caption         =   "Show All Feats"
       End
       Begin VB.Label lblLabel 
          Appearance      =   0  'Flat
@@ -350,10 +360,10 @@ Begin VB.Form frmOptions
          Width           =   612
       End
       Begin VB.Shape shpOutput 
-         Height          =   2472
+         Height          =   2715
          Left            =   0
          Top             =   120
-         Width           =   2532
+         Width           =   2535
       End
    End
    Begin VB.Frame fraBuild 
@@ -537,6 +547,9 @@ Private Sub LoadData()
     Me.usrchkIconSkills.Value = cfg.IconSkills
     Me.usrchkIconSkills.Enabled = Me.usrchkUseIcons.Value
     Me.usrspnOutputMargin.Value = cfg.OutputMargin
+    
+    Me.usrchkFeatsShowAll.Value = cfg.FeatShowAll
+    
     mblnOverride = False
 End Sub
 
@@ -645,4 +658,8 @@ Private Sub UpdateIcons()
     
     If GetForm(frm, "frmOverview") Then frm.RefreshIcons
     If GetForm(frm, "frmSkills") Then frm.RefreshIcons
+End Sub
+
+Private Sub usrchkFeatsShowAll_UserChange()
+    cfg.FeatShowAll = Me.usrchkFeatsShowAll.Value
 End Sub
