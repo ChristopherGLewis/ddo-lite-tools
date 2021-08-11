@@ -13,7 +13,7 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
-### 3.5.0
+### 3.5.0 - U50 Updates and addition of Granted Feats
 Changes:
     Updated Enhancements, Feats and Races for u50
         * Added Horizon Walker
@@ -27,7 +27,7 @@ Changes:
         * Added a toggle in settings to show granted feats on display
         * Changed max feats per build to 128
         * Added ability to take feat more than once
-    COmpendium 1.6.0
+    Compendium 1.6.0
         * Resized Patron window
 
 ### 3.4.2
