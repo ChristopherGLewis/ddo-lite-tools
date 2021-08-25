@@ -327,7 +327,7 @@ SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4
 SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 4
 SpellList1: Bless, Cure Light Wounds, Divine Favor, Lesser Restoration, Lionheart, Protection from Evil, Resistance, Seek Eternal Rest, Virtue
-SpellList2: Angelskin, Bull's Strength, Eagle's Splendor, Owl's Wisdom, Remove Paralysis, Resist Energy
+SpellList2: Angelskin, Bull's Strength, Eagle's Splendor, Owl's Wisdom, Remove Paralysis, Resist Energy, Righteous Command
 SpellList3: Cure Moderate Wounds, Dispel Magic, Magic Circle Against Evil, Prayer, Remove Blindness, Remove Curse
 SpellList4: Break Enchantment, Cure Serious Wounds, Death Ward, Holy Sword, Neutralize Poison, Restoration, Stalwart Pact, Zeal
 

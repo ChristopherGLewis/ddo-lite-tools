@@ -74,7 +74,7 @@ SpellName: Alluring Elixir
 Descrip: This small vial of golden liquid will increase your confidence and your allure, granting you a +4 Insight bonus to your social skills for 1 minute +1 minute per Caster Level.
 
 SpellName: Angelskin
-Descrip: The target gains damage reduction 5/Evil. The target must be Lawful Good.
+Descrip: The caster gains +1 racial bonus to Physical and Magical Resistance Rating per caster level. Lasts 1 minute per caster level. Max caster level 20.
 
 SpellName: Anger of the Noonday Sun
 Descrip: Valid Forms: Fire Elemental. When your fire spell's damage is reduced by a creature that is immune/resistant/healed by fire, that target is debuffed to take full damage from fire effects that follow. This does not stack with effects that amplify damage beyond 100%. Target also takes -8% Fortification.
@@ -1340,6 +1340,9 @@ Descrip: Throw a small vial of magical liquid at a single target that provides t
 
 SpellName: Resurrection
 Descrip: Resurrects the target, restores 50% of the target's Hit Points, and preserves current spell points.
+
+SpellName: Righteous Command
+Descrip: Grants the caster a +1 sacred bonus to Melee and Ranged Power per caster level. Lasts 1 minute per caster level. (Maximum caster level 15.)
 
 SpellName: Rising Fury
 Descrip: Valid Forms: Bear, Dire Bear. With each blow, your fury rises. For the duration of this spell, every time an enemy hits you, you gain a +2 morale bonus to Strength and Constitution. This stacks up to 5 times.

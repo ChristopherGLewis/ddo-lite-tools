@@ -6185,17 +6185,17 @@ Descrip: +2/4/6 bonus to Smite Evil.
 Tier: 1
 Ranks: 3
 
-AbilityName: Shieldbreaker
+AbilityName: Improved Second Strikes
 Descrip: +[5/10/20]% Strikethrough
 Tier: 1
 Ranks: 3
 
-AbilityName: Knight's Authority
+AbilityName: Shieldbreaker
 Descrip: +[1/2/3] to Sunder DCs.
 Tier: 1
 Ranks: 3
 
-AbilityName: Improved Second Strikes
+AbilityName: Knight's Authority
 Descrip: +1/2/3 Intimidate, Diplomacy, and Concentration. Tier 3 grants +1 Fortitude Save.
 Tier: 1
 Ranks: 3
@@ -11539,22 +11539,22 @@ Descrip: +2 to all Ability Scores. You gain +2 Maximum Manyshot charges. You gai
 Tier: 0
 
 AbilityName: Eye for Accuracy
-Descrip: +[1/2/3] +1/2/3 to Attack with Weapons.
+Descrip: +[1/2/3] to Attack with Weapons.
 Tier: 1
 Ranks: 3
 
 AbilityName: Opening Shot
-Descrip: +1/2/3[w] Bow Attack. Adds 1/2/3d6 Force damage on hit. This damage scales with Ranged Power. Cooldown: 6 seconds.
+Descrip: [+1/2/3][w] Bow Attack. Adds [1/2/3]d6 Force damage on hit. This damage scales with Ranged Power. Cooldown: 6 seconds.
 Tier: 1
 Ranks: 3
 
 AbilityName: Planar Dodge
-Descrip: +1/2/3 to Dodge.
+Descrip: +[1/2/3] to Dodge.
 Tier: 1
 Ranks: 3
 
 AbilityName: Skills
-Descrip: +1/2/3 to Spot, Listen, and Search.
+Descrip: +[1/2/3] to Spot, Listen, and Search.
 Tier: 1
 Ranks: 3
 
@@ -11578,7 +11578,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Skilled Navigator
-Descrip: : +2/4/6 to Saving Throws vs. Traps
+Descrip: : +[2/4/6] to Saving Throws vs. Traps
 Tier: 2
 Ranks: 3
 
@@ -11604,7 +11604,7 @@ Descrip: If Archer's Focus is enabled, remaining stationary for 6 seconds grants
 Tier: 3
 
 AbilityName: Tenacious Hunter
-Descrip: Against Extraplanar creatures and Marked Targets (regardless of whether or not they are extraplanar), you deal an additional +2/4/6 damage with Longbows and Shortbows.
+Descrip: Against Extraplanar creatures and Marked Targets (regardless of whether or not they are extraplanar), you deal an additional +[2/4/6] damage with Longbows and Shortbows.
 Tier: 3
 Ranks: 3
 
@@ -11614,7 +11614,7 @@ Tier: 4
 All: Tier 2: Walker Training I
 
 AbilityName: Corner the Quarry
-Descrip: +2/3/4[w] Bow Attack. If this is used against your Marked Target, they must make a Reflex Save (d20+your Listen skill) or be immobilized for 12 seconds. On a Vorpal hit, the target is also Stunned with no save (20sec cooldown). On bosses, this does not immobilize or stun.
+Descrip: +[2/3/4][w] Bow Attack. If this is used against your Marked Target, they must make a Reflex Save (d20+your Listen skill) or be immobilized for 12 seconds. On a Vorpal hit, the target is also Stunned with no save (20sec cooldown). On bosses, this does not immobilize or stun.
 Tier: 4
 Ranks: 3
 

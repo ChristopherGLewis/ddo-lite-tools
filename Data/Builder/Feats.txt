@@ -730,7 +730,7 @@ Flags: ClassOnly
 ClassOnlyClass: Ranger
 ClassOnlyLevel: 1, 5, 10, 15, 20
 Class: Ranger 1
-Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
+Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Fey, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
 
 FeatName: First Blood
 Group: Destiny, Melee
