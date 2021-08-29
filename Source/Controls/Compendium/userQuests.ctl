@@ -1,21 +1,93 @@
 VERSION 5.00
 Begin VB.UserControl userQuests 
    BackColor       =   &H00FFFFC0&
-   ClientHeight    =   3756
+   ClientHeight    =   4980
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   5004
+   ClientWidth     =   6480
    BeginProperty Font 
-      Name            =   "Arial Narrow"
-      Size            =   10.2
+      Name            =   "Arial"
+      Size            =   10.5
       Charset         =   0
       Weight          =   400
       Underline       =   0   'False
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   3756
-   ScaleWidth      =   5004
+   ScaleHeight     =   4980
+   ScaleWidth      =   6480
+   Begin VB.PictureBox picTotals 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00FFC0FF&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   675
+      Left            =   720
+      ScaleHeight     =   675
+      ScaleWidth      =   3075
+      TabIndex        =   6
+      Top             =   3600
+      Visible         =   0   'False
+      Width           =   3075
+      Begin VB.Label lblLabel 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   " Challenge Favor:"
+         ForeColor       =   &H80000008&
+         Height          =   270
+         Index           =   0
+         Left            =   180
+         TabIndex        =   10
+         Tag             =   "wrk"
+         Top             =   60
+         Width           =   1830
+      End
+      Begin VB.Label lblLabel 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   " Total Favor:"
+         ForeColor       =   &H80000008&
+         Height          =   270
+         Index           =   1
+         Left            =   795
+         TabIndex        =   9
+         Tag             =   "wrk"
+         Top             =   360
+         Width           =   1200
+      End
+      Begin VB.Label lnkChallengeFavor 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         ForeColor       =   &H80000008&
+         Height          =   255
+         Index           =   0
+         Left            =   2190
+         TabIndex        =   8
+         Tag             =   "wrk"
+         Top             =   60
+         Visible         =   0   'False
+         Width           =   975
+      End
+      Begin VB.Label lnkTotalFavor 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         ForeColor       =   &H80000008&
+         Height          =   255
+         Index           =   0
+         Left            =   2190
+         TabIndex        =   7
+         Tag             =   "wrk"
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   975
+      End
+   End
    Begin VB.PictureBox picHeader 
       Appearance      =   0  'Flat
       AutoRedraw      =   -1  'True
@@ -25,8 +97,8 @@ Begin VB.UserControl userQuests
       ForeColor       =   &H80000008&
       Height          =   372
       Left            =   1080
-      ScaleHeight     =   372
-      ScaleWidth      =   2592
+      ScaleHeight     =   375
+      ScaleWidth      =   2595
       TabIndex        =   4
       Top             =   240
       Visible         =   0   'False
@@ -42,7 +114,7 @@ Begin VB.UserControl userQuests
    End
    Begin VB.VScrollBar scrollVertical 
       Height          =   2172
-      Left            =   4440
+      Left            =   5040
       TabIndex        =   2
       Top             =   840
       Visible         =   0   'False
@@ -55,12 +127,12 @@ Begin VB.UserControl userQuests
       ForeColor       =   &H80000008&
       Height          =   2472
       Left            =   420
-      ScaleHeight     =   2472
-      ScaleWidth      =   3672
+      ScaleHeight     =   2475
+      ScaleWidth      =   4635
       TabIndex        =   0
       Top             =   720
       Visible         =   0   'False
-      Width           =   3672
+      Width           =   4635
       Begin VB.PictureBox picQuests 
          Appearance      =   0  'Flat
          AutoRedraw      =   -1  'True
@@ -69,83 +141,11 @@ Begin VB.UserControl userQuests
          ForeColor       =   &H80000008&
          Height          =   1752
          Left            =   420
-         ScaleHeight     =   1752
-         ScaleWidth      =   3012
+         ScaleHeight     =   1755
+         ScaleWidth      =   3735
          TabIndex        =   1
          Top             =   360
-         Width           =   3012
-         Begin VB.PictureBox picTotals 
-            Appearance      =   0  'Flat
-            BackColor       =   &H00FFC0FF&
-            BorderStyle     =   0  'None
-            ForeColor       =   &H80000008&
-            Height          =   792
-            Left            =   120
-            ScaleHeight     =   792
-            ScaleWidth      =   2832
-            TabIndex        =   5
-            Top             =   660
-            Visible         =   0   'False
-            Width           =   2832
-            Begin VB.Label lnkTotalFavor 
-               Alignment       =   1  'Right Justify
-               Appearance      =   0  'Flat
-               BackColor       =   &H80000005&
-               ForeColor       =   &H80000008&
-               Height          =   252
-               Index           =   0
-               Left            =   1584
-               TabIndex        =   9
-               Tag             =   "wrk"
-               Top             =   360
-               Visible         =   0   'False
-               Width           =   972
-            End
-            Begin VB.Label lnkChallengeFavor 
-               Alignment       =   1  'Right Justify
-               Appearance      =   0  'Flat
-               BackColor       =   &H80000005&
-               ForeColor       =   &H80000008&
-               Height          =   252
-               Index           =   0
-               Left            =   1584
-               TabIndex        =   8
-               Tag             =   "wrk"
-               Top             =   60
-               Visible         =   0   'False
-               Width           =   972
-            End
-            Begin VB.Label lblLabel 
-               Alignment       =   1  'Right Justify
-               Appearance      =   0  'Flat
-               AutoSize        =   -1  'True
-               BackColor       =   &H80000005&
-               Caption         =   " Total Favor:"
-               ForeColor       =   &H80000008&
-               Height          =   264
-               Index           =   1
-               Left            =   432
-               TabIndex        =   7
-               Tag             =   "wrk"
-               Top             =   360
-               Width           =   960
-            End
-            Begin VB.Label lblLabel 
-               Alignment       =   1  'Right Justify
-               Appearance      =   0  'Flat
-               AutoSize        =   -1  'True
-               BackColor       =   &H80000005&
-               Caption         =   " Challenge Favor:"
-               ForeColor       =   &H80000008&
-               Height          =   264
-               Index           =   0
-               Left            =   60
-               TabIndex        =   6
-               Tag             =   "wrk"
-               Top             =   60
-               Width           =   1356
-            End
-         End
+         Width           =   3735
       End
    End
    Begin VB.Label lblControl 
@@ -166,7 +166,7 @@ Begin VB.UserControl userQuests
       ForeColor       =   &H80000008&
       Height          =   216
       Left            =   0
-      TabIndex        =   10
+      TabIndex        =   5
       Top             =   0
       Width           =   624
    End
@@ -366,7 +366,8 @@ Private Sub UserControl_Initialize()
 End Sub
 
 Private Sub UserControl_Resize()
-    If mblnInitialized Then SizeClient
+    'If mblnInitialized Then SizeClient
+    If mblnInitialized Then Show
 End Sub
 
 Private Sub UserControl_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -512,8 +513,12 @@ Public Property Get ClientWidth() As Long
 End Property
 
 Public Property Get HeaderHeight() As Long
-    HeaderHeight = UserControl.picContainer.Top
+    HeaderHeight = UserControl.picContainer.Top  'Shouldnt this be .picHeader.Height?
 End Property
+Public Property Get FooterHeight() As Long
+    FooterHeight = UserControl.picTotals.Height
+End Property
+
 
 Public Property Get PageSize() As Long
     PageSize = UserControl.scrollVertical.LargeChange
@@ -867,7 +872,8 @@ Private Sub SizeClient()
     Dim blnFavorTotals As Boolean
     
     If (UserControl.ScaleHeight \ mlngRowHeight) < 3 Then Exit Sub
-    blnFavorTotals = (mlngRows = db.Quests And db.Characters > 0)
+    '*** blnFavorTotals = (mlngRows = db.Quests And db.Characters > 0)
+    blnFavorTotals = True
     With UserControl
         ' Header
         lngLeft = 0
@@ -875,22 +881,31 @@ Private Sub SizeClient()
         lngWidth = mtypCol(mlngCols).Left + mtypCol(mlngCols).Width + PixelX
         lngHeight = frmCompendium.usrToolbar.FitHeight + PixelY
         .picHeader.Move lngLeft, lngTop, lngWidth, lngHeight
+        
+        'PicTotal height - hack to get this to work
+        .picTotals.Height = .TextHeight("Q") * 3
+        
         ' Container
         lngLeft = 0
         lngWidth = .ScaleWidth - .scrollVertical.Width
-        lngHeight = .ScaleHeight - .picHeader.Height
+        'picTotals is now outside of container: subtract from height
+        lngHeight = .ScaleHeight - .picHeader.Height - .picTotals.Height
         lngTop = .picHeader.Height - PixelY
         .picContainer.Move lngLeft, lngTop, lngWidth, lngHeight
+        
         ' Quests
         lngLeft = 0
         lngTop = 0
         lngWidth = mtypCol(mlngCols).Left + mtypCol(mlngCols).Width + PixelX
         lngHeight = mlngRows * mlngRowHeight + Screen.TwipsPerPixelY
-        If blnFavorTotals Then lngHeight = lngHeight + .TextHeight("Q") * 2
+        ' *** If blnFavorTotals Then lngHeight = lngHeight + .TextHeight("Q") * 2
         .picQuests.Move lngLeft, lngTop, lngWidth, lngHeight
-        lngTop = lngHeight - .TextHeight("Q") * 2
-        .picTotals.Move lngLeft, lngTop, lngWidth, .TextHeight("Q") * 2
+        
+        'pic total
+        lngTop = .picContainer.Height + .TextHeight("Q") * 2
+        .picTotals.Move lngLeft, lngTop, lngWidth, .TextHeight("Q") * 3
         ShowFavorTotals
+        
         ' Vertical scrollbar
         lngLeft = .ScaleWidth - .scrollVertical.Width
         lngTop = .picContainer.Top
@@ -942,7 +957,15 @@ Private Sub DrawGrid()
             DrawCell lngRow, lngCol, False
         Next
     Next
+    DrawColumnFooters
 End Sub
+
+Private Sub DrawColumnFooters()
+    
+    'UserControl.picTotals.Parent = UserControl.picHeader.Parent
+
+End Sub
+
 
 Private Sub DrawColumnHeaders()
     Dim lngSortCol As Long
@@ -950,7 +973,7 @@ Private Sub DrawColumnHeaders()
     
     If cfg.CompendiumOrder < 4 Then lngSortCol = cfg.CompendiumOrder Else lngSortCol = cfg.CompendiumOrder + db.Characters
     UserControl.picHeader.Cls
-    For lngCol = 1 To mlngCols
+    For lngCol = 1 To mlngCols  'Draw each header cell
         DrawColumnHeader lngCol, (lngCol = lngSortCol + 1)
     Next
 End Sub

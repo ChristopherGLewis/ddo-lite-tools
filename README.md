@@ -13,6 +13,15 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 3.5.1 - Updates to Paladin and compendium fixes
+Changes:
+    Updates to Paladin spells & Enhancements
+
+    Compendium 1.7.0
+        * Changed favor points to a permenant footer
+        * Added a font checkbox to show all saga's on small screens
+        * Added The Dryad and the Demigod Raid
+
 ### 3.5.0 - U50 Updates and addition of Granted Feats
 Changes:
     Updated Enhancements, Feats and Races for u50

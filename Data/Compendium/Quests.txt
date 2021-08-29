@@ -2387,6 +2387,7 @@ Pack: Vale of Twilight
 Patron: The Twelve
 Favor: 12
 Level: 32
+Epic: 32
 Style: Raid
 Map: The Subterrane - Central
 
@@ -3126,4 +3127,5 @@ Pack: Fables of the Feywild
 Patron: The Summer Court
 Favor: 10
 Level: 32
+Epic: 32
 Style: Raid

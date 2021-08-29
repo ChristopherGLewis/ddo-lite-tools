@@ -4,10 +4,10 @@ Begin VB.Form frmSagas
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Sagas"
-   ClientHeight    =   6804
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   9336
+   ClientHeight    =   6945
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   9345
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -19,18 +19,42 @@ Begin VB.Form frmSagas
    EndProperty
    Icon            =   "frmSagas.frx":0000
    LinkTopic       =   "Form1"
-   MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6804
-   ScaleWidth      =   9336
+   ScaleHeight     =   6945
+   ScaleWidth      =   9345
+   Begin VB.CheckBox chkFontSize 
+      Caption         =   "Small Font Size"
+      Height          =   255
+      Left            =   4680
+      TabIndex        =   10
+      Top             =   0
+      Width           =   1815
+   End
+   Begin VB.ComboBox cboCharacter 
+      Height          =   330
+      Left            =   2820
+      Style           =   2  'Dropdown List
+      TabIndex        =   9
+      Tag             =   "nav"
+      Top             =   0
+      Width           =   1752
+   End
+   Begin VB.HScrollBar scrollHorizontal 
+      Height          =   252
+      Left            =   120
+      TabIndex        =   8
+      Top             =   6600
+      Visible         =   0   'False
+      Width           =   2472
+   End
    Begin Compendium.userTab usrTab 
       Height          =   372
       Left            =   60
       TabIndex        =   0
       Top             =   0
       Width           =   1632
-      _ExtentX        =   2879
-      _ExtentY        =   656
+      _ExtentX        =   2884
+      _ExtentY        =   661
       Captions        =   "Epic,Heroic"
    End
    Begin VB.CheckBox chkRedo 
@@ -42,7 +66,7 @@ Begin VB.Form frmSagas
       Height          =   372
       Left            =   6840
       Style           =   1  'Graphical
-      TabIndex        =   3
+      TabIndex        =   2
       Top             =   0
       Width           =   972
    End
@@ -54,7 +78,7 @@ Begin VB.Form frmSagas
       Height          =   372
       Left            =   7860
       Style           =   1  'Graphical
-      TabIndex        =   4
+      TabIndex        =   3
       Top             =   0
       Width           =   972
    End
@@ -67,7 +91,7 @@ Begin VB.Form frmSagas
       Height          =   372
       Left            =   5760
       Style           =   1  'Graphical
-      TabIndex        =   2
+      TabIndex        =   1
       Top             =   0
       Width           =   972
    End
@@ -78,8 +102,8 @@ Begin VB.Form frmSagas
       BorderStyle     =   0  'None
       FillStyle       =   0  'Solid
       BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   10.2
+         Name            =   "Arial"
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -89,27 +113,18 @@ Begin VB.Form frmSagas
       ForeColor       =   &H80000008&
       Height          =   252
       Left            =   60
-      ScaleHeight     =   252
-      ScaleWidth      =   4752
-      TabIndex        =   5
+      ScaleHeight     =   255
+      ScaleWidth      =   4755
+      TabIndex        =   4
       TabStop         =   0   'False
       Tag             =   "drp"
       Top             =   600
       Width           =   4752
    End
-   Begin VB.ComboBox cboCharacter 
-      Height          =   312
-      Left            =   2820
-      Style           =   2  'Dropdown List
-      TabIndex        =   1
-      Tag             =   "nav"
-      Top             =   0
-      Width           =   1752
-   End
    Begin VB.VScrollBar scrollVertical 
       Height          =   3252
       Left            =   7620
-      TabIndex        =   8
+      TabIndex        =   7
       TabStop         =   0   'False
       Top             =   780
       Visible         =   0   'False
@@ -120,8 +135,8 @@ Begin VB.Form frmSagas
       BackColor       =   &H00FFFFC0&
       BorderStyle     =   0  'None
       BeginProperty Font 
-         Name            =   "Arial Narrow"
-         Size            =   10.2
+         Name            =   "Arial"
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -131,9 +146,9 @@ Begin VB.Form frmSagas
       ForeColor       =   &H80000008&
       Height          =   5652
       Left            =   60
-      ScaleHeight     =   5652
-      ScaleWidth      =   7212
-      TabIndex        =   6
+      ScaleHeight     =   5655
+      ScaleWidth      =   7215
+      TabIndex        =   5
       TabStop         =   0   'False
       Top             =   960
       Width           =   7212
@@ -144,8 +159,8 @@ Begin VB.Form frmSagas
          BorderStyle     =   0  'None
          FillStyle       =   0  'Solid
          BeginProperty Font 
-            Name            =   "Arial Narrow"
-            Size            =   10.2
+            Name            =   "Arial"
+            Size            =   9.75
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -155,9 +170,9 @@ Begin VB.Form frmSagas
          ForeColor       =   &H80000008&
          Height          =   1632
          Left            =   540
-         ScaleHeight     =   1632
-         ScaleWidth      =   3912
-         TabIndex        =   7
+         ScaleHeight     =   1635
+         ScaleWidth      =   3915
+         TabIndex        =   6
          TabStop         =   0   'False
          Tag             =   "ctl"
          Top             =   840
@@ -336,6 +351,19 @@ Private menSort As SagaSortEnum
 Private mlngSagaMenu As Long
 
 
+Private Sub chkFontSize_Click()
+    If Me.chkFontSize.Value = vbChecked Then
+        Me.picClient.FontSize = 8
+        Me.picContainer.FontSize = 8
+        Me.picHeader.FontSize = 8
+    Else
+        Me.picClient.FontSize = 10
+        Me.picContainer.FontSize = 10
+        Me.picHeader.FontSize = 10
+    End If
+    Redraw
+End Sub
+
 ' ************* FORM *************
 
 
@@ -346,7 +374,7 @@ Private Sub Form_Load()
         mblnOverride = False
     End If
     menSort = ssePack
-    If mlngCharacter = 0 Then ReDraw
+    If mlngCharacter = 0 Then Redraw
     If Not xp.DebugMode Then Call WheelHook(Me.Hwnd)
 End Sub
 
@@ -370,6 +398,8 @@ Private Sub Form_Resize()
     lngLeft = Me.usrTab.Left + Me.usrTab.Width + (lngWidth - Me.cboCharacter.Width) \ 2
     lngTop = (Me.chkHelp.Height - Me.cboCharacter.Height) \ 2
     Me.cboCharacter.Move lngLeft, lngTop
+    Me.chkFontSize.Move (Me.cboCharacter.Left + Me.cboCharacter.Width), lngTop
+    
     With Me.picHeader
         lngLeft = .Left
         lngTop = .Top + .Height - PixelY
@@ -399,9 +429,13 @@ Private Sub ShowScrollbar()
             .Visible = False
         End If
     End With
+    
+    With Me.scrollHorizontal
+    .Visible = False
+    End With
 End Sub
 
-Public Sub ReDraw()
+Public Sub Redraw()
     ClearQueue
     cfg.RefreshColors Me
     Me.usrTab.TabActiveColor = cfg.GetColor(cgeDropSlots, cveBackground)
@@ -689,7 +723,6 @@ End Function
 
 ' ************* SIZING *************
 
-
 Private Sub SizeClient()
     Dim lngLeft As Long
     Dim lngTop As Long
@@ -753,11 +786,13 @@ Private Sub SizeClient()
         Me.picContainer.Move .Left, .Top + .Height - PixelY, mtypCol(mlngColumns).Right + PixelX
     End With
     ' Form
-    Me.Width = Me.Width - Me.ScaleWidth + Me.picHeader.Left + mtypCol(mlngColumns).Right + PixelY + Me.scrollVertical.Width
-    lngHeight = Me.Height - Me.ScaleHeight + Me.picHeader.Top + mlngRowHeight * mlngMaxRows
-    xp.GetDesktop 0, 0, 0, lngMaxHeight
-    If lngHeight > lngMaxHeight Then lngHeight = lngMaxHeight
-    Me.Height = lngHeight
+    If Me.WindowState <> 2 Then  ' don't move if maximized
+        Me.Width = Me.Width - Me.ScaleWidth + Me.picHeader.Left + mtypCol(mlngColumns).Right + PixelY + Me.scrollVertical.Width
+        lngHeight = Me.Height - Me.ScaleHeight + Me.picHeader.Top + mlngRowHeight * mlngMaxRows
+        xp.GetDesktop 0, 0, 0, lngMaxHeight
+        If lngHeight > lngMaxHeight Then lngHeight = lngMaxHeight
+        Me.Height = lngHeight
+    End If
 End Sub
 
 Private Function GrowColumn(plngCol As Long, pstrText As String) As Long
@@ -919,7 +954,7 @@ End Sub
 ' ************* TOP MENUS *************
 
 
-Private Sub usrtab_Click(pstrCaption As String)
+Private Sub usrTab_Click(pstrCaption As String)
     Dim enTier As SagaTierEnum
     
     If mblnOverride Then Exit Sub
@@ -927,7 +962,7 @@ Private Sub usrtab_Click(pstrCaption As String)
     If cfg.SagaTier <> enTier Then
         cfg.SagaTier = enTier
         DirtyFlag dfeSettings
-        ReDraw
+        Redraw
     End If
 End Sub
 
@@ -940,7 +975,7 @@ Private Sub cboCharacter_Click()
     End With
     If mlngCharacter <> lngCharacter Then
         mlngCharacter = lngCharacter
-        ReDraw
+        Redraw
     End If
 End Sub
 
@@ -1053,7 +1088,7 @@ Private Sub picHeader_MouseDown(Button As Integer, Shift As Integer, X As Single
                     lngScroll = Me.scrollVertical.Value
                     frmSagaDetail.SetDetail mtypCol(lngCol).Saga, mlngCharacter
                     frmSagaDetail.Show vbModal, Me
-                    ReDraw
+                    Redraw
                     If Me.scrollVertical.Visible Then Me.scrollVertical.Value = lngScroll
                 Case vbRightButton
                     mlngSagaMenu = lngCol
@@ -1476,3 +1511,20 @@ End Sub
 Private Sub VerticalScroll()
     Me.picClient.Top = 0 - Me.scrollVertical.Value * mlngRowHeight
 End Sub
+
+Private Sub scrollHorizontal_GotFocus()
+    Me.picHeader.SetFocus
+End Sub
+
+Private Sub scrollHorizontal_Change()
+    HorizontalScroll
+End Sub
+
+Private Sub scrollHorizontal_Scroll()
+    HorizontalScroll
+End Sub
+Private Sub HorizontalScroll()
+    '2021.08.27 figure out how much to HScroll
+    Me.picClient.Left = 0 - Me.scrollHorizontal.Value
+End Sub
+

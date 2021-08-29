@@ -3,10 +3,10 @@ Begin VB.Form frmHelp
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    Caption         =   "Help"
-   ClientHeight    =   7368
-   ClientLeft      =   48
-   ClientTop       =   348
-   ClientWidth     =   7512
+   ClientHeight    =   7365
+   ClientLeft      =   45
+   ClientTop       =   345
+   ClientWidth     =   7515
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -19,9 +19,9 @@ Begin VB.Form frmHelp
    Icon            =   "frmHelp.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
-   ScaleHeight     =   614
+   ScaleHeight     =   491
    ScaleMode       =   3  'Pixel
-   ScaleWidth      =   626
+   ScaleWidth      =   501
    StartUpPosition =   3  'Windows Default
    Begin VB.VScrollBar scrollVertical 
       Height          =   2352
@@ -49,8 +49,8 @@ Begin VB.Form frmHelp
       ForeColor       =   &H80000008&
       Height          =   252
       Left            =   2520
-      ScaleHeight     =   252
-      ScaleWidth      =   732
+      ScaleHeight     =   255
+      ScaleWidth      =   735
       TabIndex        =   4
       Top             =   540
       Visible         =   0   'False
@@ -69,9 +69,9 @@ Begin VB.Form frmHelp
       ForeColor       =   &H80000008&
       Height          =   2652
       Left            =   60
-      ScaleHeight     =   221
+      ScaleHeight     =   177
       ScaleMode       =   3  'Pixel
-      ScaleWidth      =   326
+      ScaleWidth      =   261
       TabIndex        =   1
       Top             =   120
       Width           =   3912
@@ -83,9 +83,9 @@ Begin VB.Form frmHelp
          ForeColor       =   &H80000008&
          Height          =   1812
          Left            =   240
-         ScaleHeight     =   151
+         ScaleHeight     =   121
          ScaleMode       =   3  'Pixel
-         ScaleWidth      =   276
+         ScaleWidth      =   221
          TabIndex        =   2
          Top             =   180
          Width           =   3312

@@ -4,10 +4,10 @@ Begin VB.Form frmTools
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Tools"
-   ClientHeight    =   6876
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   9132
+   ClientHeight    =   6870
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   9135
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,9 +21,540 @@ Begin VB.Form frmTools
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   6876
-   ScaleWidth      =   9132
+   ScaleHeight     =   6870
+   ScaleWidth      =   9135
    ShowInTaskbar   =   0   'False
+   Begin VB.CheckBox chkHelp 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      Caption         =   "Help"
+      ForeColor       =   &H80000008&
+      Height          =   372
+      Left            =   8160
+      Style           =   1  'Graphical
+      TabIndex        =   51
+      Top             =   0
+      Width           =   972
+   End
+   Begin Compendium.userTab usrTab 
+      Height          =   372
+      Left            =   0
+      TabIndex        =   0
+      TabStop         =   0   'False
+      Top             =   0
+      Width           =   4512
+      _ExtentX        =   7964
+      _ExtentY        =   661
+      Captions        =   "Tools,Options"
+   End
+   Begin VB.ComboBox cboSize 
+      Height          =   312
+      Left            =   7260
+      Style           =   2  'Dropdown List
+      TabIndex        =   63
+      Top             =   1260
+      Width           =   912
+   End
+   Begin VB.ComboBox cboFont 
+      Height          =   312
+      Left            =   5160
+      Style           =   2  'Dropdown List
+      TabIndex        =   64
+      Top             =   1260
+      Width           =   1992
+   End
+   Begin VB.PictureBox picTab 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00C0FFC0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   6492
+      Index           =   1
+      Left            =   0
+      ScaleHeight     =   6492
+      ScaleMode       =   0  'User
+      ScaleWidth      =   9132
+      TabIndex        =   28
+      TabStop         =   0   'False
+      Tag             =   "ctl"
+      Top             =   360
+      Visible         =   0   'False
+      Width           =   9132
+      Begin VB.CheckBox chkFonts 
+         Caption         =   "Check Fonts"
+         Height          =   492
+         Index           =   2
+         Left            =   900
+         Style           =   1  'Graphical
+         TabIndex        =   62
+         Top             =   4740
+         Visible         =   0   'False
+         Width           =   2172
+      End
+      Begin VB.CheckBox chkFonts 
+         Caption         =   "Create Patrons.csv"
+         Height          =   492
+         Index           =   1
+         Left            =   900
+         Style           =   1  'Graphical
+         TabIndex        =   60
+         Top             =   4080
+         Visible         =   0   'False
+         Width           =   2172
+      End
+      Begin VB.CheckBox chkFonts 
+         Caption         =   "Create Packs.csv"
+         Height          =   492
+         Index           =   0
+         Left            =   900
+         Style           =   1  'Graphical
+         TabIndex        =   59
+         Top             =   3420
+         Visible         =   0   'False
+         Width           =   2172
+      End
+      Begin VB.Frame fraQuests 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   5592
+         Left            =   4680
+         TabIndex        =   38
+         Tag             =   "ctl"
+         Top             =   240
+         Width           =   4092
+         Begin VB.PictureBox picFont 
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            ForeColor       =   &H80000008&
+            Height          =   372
+            Left            =   3540
+            ScaleHeight     =   345
+            ScaleWidth      =   465
+            TabIndex        =   61
+            Top             =   840
+            Visible         =   0   'False
+            Width           =   492
+         End
+         Begin VB.ComboBox cboLevelSort 
+            Height          =   312
+            ItemData        =   "frmTools.frx":000C
+            Left            =   840
+            List            =   "frmTools.frx":0019
+            Style           =   2  'Dropdown List
+            TabIndex        =   41
+            Top             =   3300
+            Width           =   2712
+         End
+         Begin Compendium.userSpinner usrspnVertical 
+            Height          =   312
+            Left            =   2580
+            TabIndex        =   45
+            Top             =   4440
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   556
+            Min             =   0
+            Value           =   2
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnHorizontal 
+            Height          =   312
+            Left            =   2580
+            TabIndex        =   43
+            Top             =   4080
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   556
+            Min             =   0
+            Value           =   4
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnWheel 
+            Height          =   312
+            Left            =   2580
+            TabIndex        =   47
+            Top             =   4980
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   556
+            Min             =   0
+            Max             =   20
+            Value           =   6
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userCheckBox usrchkAbbrev 
+            Height          =   252
+            Index           =   0
+            Left            =   480
+            TabIndex        =   54
+            Tag             =   "ctl"
+            Top             =   1440
+            Width           =   2832
+            _ExtentX        =   5001
+            _ExtentY        =   450
+            Caption         =   "Abbreviate Columns"
+         End
+         Begin Compendium.userCheckBox usrchkAbbrev 
+            Height          =   252
+            Index           =   1
+            Left            =   900
+            TabIndex        =   55
+            Tag             =   "ctl"
+            Top             =   1800
+            Width           =   1752
+            _ExtentX        =   3096
+            _ExtentY        =   450
+            Caption         =   "Pack names"
+         End
+         Begin Compendium.userCheckBox usrchkAbbrev 
+            Height          =   252
+            Index           =   2
+            Left            =   900
+            TabIndex        =   56
+            Tag             =   "ctl"
+            Top             =   2160
+            Width           =   2172
+            _ExtentX        =   3836
+            _ExtentY        =   450
+            Caption         =   "Patron names"
+         End
+         Begin VB.Label lnkDefaultFont 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Default"
+            ForeColor       =   &H00FF0000&
+            Height          =   216
+            Left            =   3300
+            TabIndex        =   65
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   624
+         End
+         Begin VB.Line linQuests 
+            Index           =   2
+            X1              =   0
+            X2              =   4080
+            Y1              =   3840
+            Y2              =   3840
+         End
+         Begin VB.Line linQuests 
+            Index           =   1
+            X1              =   0
+            X2              =   4080
+            Y1              =   2640
+            Y2              =   2640
+         End
+         Begin VB.Line linQuests 
+            Index           =   0
+            X1              =   0
+            X2              =   4080
+            Y1              =   1260
+            Y2              =   1260
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Size"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   13
+            Left            =   2580
+            TabIndex        =   58
+            Tag             =   "ctl"
+            Top             =   420
+            Width           =   372
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Font"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   12
+            Left            =   480
+            TabIndex        =   57
+            Tag             =   "ctl"
+            Top             =   420
+            Width           =   408
+         End
+         Begin VB.Label lbl 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Vertical Margins"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   5
+            Left            =   1020
+            TabIndex        =   44
+            Tag             =   "ctl"
+            Top             =   4476
+            Width           =   1392
+         End
+         Begin VB.Label lbl 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Horizontal Margins"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   4
+            Left            =   756
+            TabIndex        =   42
+            Tag             =   "ctl"
+            Top             =   4116
+            Width           =   1656
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "When Sorting Quests by Level"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   3
+            Left            =   600
+            TabIndex        =   40
+            Tag             =   "ctl"
+            Top             =   2940
+            Width           =   2676
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Quests"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   9
+            Left            =   120
+            TabIndex        =   39
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   624
+         End
+         Begin VB.Label lbl 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Mouse Wheel Step"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   10
+            Left            =   756
+            TabIndex        =   46
+            Tag             =   "ctl"
+            Top             =   5016
+            Width           =   1656
+         End
+         Begin VB.Shape shpQuests 
+            Height          =   5472
+            Left            =   0
+            Top             =   120
+            Width           =   4092
+         End
+      End
+      Begin VB.TextBox txtPlay 
+         Height          =   324
+         Left            =   540
+         TabIndex        =   49
+         TabStop         =   0   'False
+         Top             =   6000
+         Width           =   7632
+      End
+      Begin VB.CheckBox chkPlay 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "..."
+         ForeColor       =   &H80000008&
+         Height          =   312
+         Left            =   8172
+         Style           =   1  'Graphical
+         TabIndex        =   50
+         Top             =   5400
+         Width           =   312
+      End
+      Begin VB.Frame fraMainWindow 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   2772
+         Left            =   360
+         TabIndex        =   29
+         Tag             =   "ctl"
+         Top             =   240
+         Width           =   4092
+         Begin Compendium.userCheckBox usrchkChildWindows 
+            Height          =   252
+            Left            =   1080
+            TabIndex        =   37
+            Tag             =   "ctl"
+            Top             =   2160
+            Width           =   2412
+            _ExtentX        =   4260
+            _ExtentY        =   450
+            Caption         =   "Child Windows"
+            CheckPosition   =   1
+         End
+         Begin VB.ComboBox cboWindow 
+            Height          =   312
+            ItemData        =   "frmTools.frx":005C
+            Left            =   780
+            List            =   "frmTools.frx":0069
+            Style           =   2  'Dropdown List
+            TabIndex        =   32
+            Top             =   780
+            Width           =   2712
+         End
+         Begin Compendium.userSpinner usrspnBottom 
+            Height          =   312
+            Left            =   2520
+            TabIndex        =   36
+            Top             =   1620
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   556
+            Min             =   0
+            Max             =   20
+            Value           =   8
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnSides 
+            Height          =   312
+            Left            =   2520
+            TabIndex        =   34
+            Top             =   1260
+            Width           =   972
+            _ExtentX        =   1720
+            _ExtentY        =   556
+            Min             =   0
+            Max             =   20
+            Value           =   8
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   0
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Main Window Startup Position"
+            ForeColor       =   &H80000008&
+            Height          =   252
+            Index           =   0
+            Left            =   540
+            TabIndex        =   31
+            Tag             =   "ctl"
+            Top             =   420
+            Width           =   2892
+         End
+         Begin VB.Label lbl 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Bottom Margin"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   2
+            Left            =   1020
+            TabIndex        =   35
+            Tag             =   "ctl"
+            Top             =   1656
+            Width           =   1332
+         End
+         Begin VB.Label lbl 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Side Margins"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   1
+            Left            =   1236
+            TabIndex        =   33
+            Tag             =   "ctl"
+            Top             =   1296
+            Width           =   1116
+         End
+         Begin VB.Label lbl 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Main Window"
+            ForeColor       =   &H80000008&
+            Height          =   216
+            Index           =   7
+            Left            =   120
+            TabIndex        =   30
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   1176
+         End
+         Begin VB.Shape shpMainWindow 
+            Height          =   2652
+            Left            =   0
+            Top             =   120
+            Width           =   4092
+         End
+      End
+      Begin Compendium.userCheckBox usrchkPlay 
+         Height          =   252
+         Left            =   540
+         TabIndex        =   48
+         Tag             =   "ctl"
+         Top             =   5700
+         Width           =   1872
+         _ExtentX        =   3307
+         _ExtentY        =   450
+         Caption         =   "Play Button"
+      End
+      Begin VB.Shape shpBorder 
+         Height          =   492
+         Index           =   1
+         Left            =   0
+         Top             =   0
+         Width           =   312
+      End
+   End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
       BackColor       =   &H00C0FFFF&
@@ -70,10 +601,10 @@ Begin VB.Form frmTools
          End
          Begin VB.ListBox lstDataFile 
             Appearance      =   0  'Flat
-            Height          =   1752
-            ItemData        =   "frmTools.frx":000C
+            Height          =   1710
+            ItemData        =   "frmTools.frx":009E
             Left            =   240
-            List            =   "frmTools.frx":000E
+            List            =   "frmTools.frx":00A0
             TabIndex        =   15
             Tag             =   "ctl"
             Top             =   360
@@ -429,537 +960,6 @@ Begin VB.Form frmTools
          Width           =   900
       End
    End
-   Begin VB.CheckBox chkHelp 
-      Appearance      =   0  'Flat
-      BackColor       =   &H80000005&
-      Caption         =   "Help"
-      ForeColor       =   &H80000008&
-      Height          =   372
-      Left            =   8160
-      Style           =   1  'Graphical
-      TabIndex        =   51
-      Top             =   0
-      Width           =   972
-   End
-   Begin Compendium.userTab usrTab 
-      Height          =   372
-      Left            =   0
-      TabIndex        =   0
-      TabStop         =   0   'False
-      Top             =   0
-      Width           =   4512
-      _ExtentX        =   7959
-      _ExtentY        =   656
-      Captions        =   "Tools,Options"
-   End
-   Begin VB.ComboBox cboSize 
-      Height          =   312
-      Left            =   7260
-      Style           =   2  'Dropdown List
-      TabIndex        =   63
-      Top             =   1260
-      Width           =   912
-   End
-   Begin VB.ComboBox cboFont 
-      Height          =   312
-      Left            =   5160
-      Style           =   2  'Dropdown List
-      TabIndex        =   64
-      Top             =   1260
-      Width           =   1992
-   End
-   Begin VB.PictureBox picTab 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00C0FFC0&
-      BorderStyle     =   0  'None
-      ForeColor       =   &H80000008&
-      Height          =   6492
-      Index           =   1
-      Left            =   0
-      ScaleHeight     =   6492
-      ScaleMode       =   0  'User
-      ScaleWidth      =   9132
-      TabIndex        =   28
-      TabStop         =   0   'False
-      Tag             =   "ctl"
-      Top             =   360
-      Visible         =   0   'False
-      Width           =   9132
-      Begin VB.CheckBox chkFonts 
-         Caption         =   "Check Fonts"
-         Height          =   492
-         Index           =   2
-         Left            =   900
-         Style           =   1  'Graphical
-         TabIndex        =   62
-         Top             =   4740
-         Visible         =   0   'False
-         Width           =   2172
-      End
-      Begin VB.CheckBox chkFonts 
-         Caption         =   "Create Patrons.csv"
-         Height          =   492
-         Index           =   1
-         Left            =   900
-         Style           =   1  'Graphical
-         TabIndex        =   60
-         Top             =   4080
-         Visible         =   0   'False
-         Width           =   2172
-      End
-      Begin VB.CheckBox chkFonts 
-         Caption         =   "Create Packs.csv"
-         Height          =   492
-         Index           =   0
-         Left            =   900
-         Style           =   1  'Graphical
-         TabIndex        =   59
-         Top             =   3420
-         Visible         =   0   'False
-         Width           =   2172
-      End
-      Begin VB.Frame fraQuests 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   5592
-         Left            =   4680
-         TabIndex        =   38
-         Tag             =   "ctl"
-         Top             =   240
-         Width           =   4092
-         Begin VB.PictureBox picFont 
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            ForeColor       =   &H80000008&
-            Height          =   372
-            Left            =   3540
-            ScaleHeight     =   348
-            ScaleWidth      =   468
-            TabIndex        =   61
-            Top             =   840
-            Visible         =   0   'False
-            Width           =   492
-         End
-         Begin VB.ComboBox cboLevelSort 
-            Height          =   312
-            ItemData        =   "frmTools.frx":0010
-            Left            =   840
-            List            =   "frmTools.frx":001D
-            Style           =   2  'Dropdown List
-            TabIndex        =   41
-            Top             =   3300
-            Width           =   2712
-         End
-         Begin Compendium.userSpinner usrspnVertical 
-            Height          =   312
-            Left            =   2580
-            TabIndex        =   45
-            Top             =   4440
-            Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   550
-            Min             =   0
-            Value           =   2
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   0
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnHorizontal 
-            Height          =   312
-            Left            =   2580
-            TabIndex        =   43
-            Top             =   4080
-            Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   550
-            Min             =   0
-            Value           =   4
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   0
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnWheel 
-            Height          =   312
-            Left            =   2580
-            TabIndex        =   47
-            Top             =   4980
-            Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   550
-            Min             =   0
-            Max             =   20
-            Value           =   6
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   0
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userCheckBox usrchkAbbrev 
-            Height          =   252
-            Index           =   0
-            Left            =   480
-            TabIndex        =   54
-            Tag             =   "ctl"
-            Top             =   1440
-            Width           =   2832
-            _ExtentX        =   4995
-            _ExtentY        =   445
-            Caption         =   "Abbreviate Columns"
-         End
-         Begin Compendium.userCheckBox usrchkAbbrev 
-            Height          =   252
-            Index           =   1
-            Left            =   900
-            TabIndex        =   55
-            Tag             =   "ctl"
-            Top             =   1800
-            Width           =   1752
-            _ExtentX        =   3090
-            _ExtentY        =   445
-            Caption         =   "Pack names"
-         End
-         Begin Compendium.userCheckBox usrchkAbbrev 
-            Height          =   252
-            Index           =   2
-            Left            =   900
-            TabIndex        =   56
-            Tag             =   "ctl"
-            Top             =   2160
-            Width           =   2172
-            _ExtentX        =   3831
-            _ExtentY        =   445
-            Caption         =   "Patron names"
-         End
-         Begin VB.Label lnkDefaultFont 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Default"
-            ForeColor       =   &H00FF0000&
-            Height          =   216
-            Left            =   3300
-            TabIndex        =   65
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   624
-         End
-         Begin VB.Line linQuests 
-            Index           =   2
-            X1              =   0
-            X2              =   4080
-            Y1              =   3840
-            Y2              =   3840
-         End
-         Begin VB.Line linQuests 
-            Index           =   1
-            X1              =   0
-            X2              =   4080
-            Y1              =   2640
-            Y2              =   2640
-         End
-         Begin VB.Line linQuests 
-            Index           =   0
-            X1              =   0
-            X2              =   4080
-            Y1              =   1260
-            Y2              =   1260
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Size"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   13
-            Left            =   2580
-            TabIndex        =   58
-            Tag             =   "ctl"
-            Top             =   420
-            Width           =   372
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Font"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   12
-            Left            =   480
-            TabIndex        =   57
-            Tag             =   "ctl"
-            Top             =   420
-            Width           =   408
-         End
-         Begin VB.Label lbl 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Vertical Margins"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   5
-            Left            =   1020
-            TabIndex        =   44
-            Tag             =   "ctl"
-            Top             =   4476
-            Width           =   1392
-         End
-         Begin VB.Label lbl 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Horizontal Margins"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   4
-            Left            =   756
-            TabIndex        =   42
-            Tag             =   "ctl"
-            Top             =   4116
-            Width           =   1656
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "When Sorting Quests by Level"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   3
-            Left            =   600
-            TabIndex        =   40
-            Tag             =   "ctl"
-            Top             =   2940
-            Width           =   2676
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Quests"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   9
-            Left            =   120
-            TabIndex        =   39
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   624
-         End
-         Begin VB.Label lbl 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Mouse Wheel Step"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   10
-            Left            =   756
-            TabIndex        =   46
-            Tag             =   "ctl"
-            Top             =   5016
-            Width           =   1656
-         End
-         Begin VB.Shape shpQuests 
-            Height          =   5472
-            Left            =   0
-            Top             =   120
-            Width           =   4092
-         End
-      End
-      Begin VB.TextBox txtPlay 
-         Height          =   324
-         Left            =   540
-         TabIndex        =   49
-         TabStop         =   0   'False
-         Top             =   6000
-         Width           =   7632
-      End
-      Begin VB.CheckBox chkPlay 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "..."
-         ForeColor       =   &H80000008&
-         Height          =   312
-         Left            =   8172
-         Style           =   1  'Graphical
-         TabIndex        =   50
-         Top             =   5400
-         Width           =   312
-      End
-      Begin VB.Frame fraMainWindow 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   2772
-         Left            =   360
-         TabIndex        =   29
-         Tag             =   "ctl"
-         Top             =   240
-         Width           =   4092
-         Begin Compendium.userCheckBox usrchkChildWindows 
-            Height          =   252
-            Left            =   1080
-            TabIndex        =   37
-            Tag             =   "ctl"
-            Top             =   2160
-            Width           =   2412
-            _ExtentX        =   4255
-            _ExtentY        =   445
-            Caption         =   "Child Windows"
-            CheckPosition   =   1
-         End
-         Begin VB.ComboBox cboWindow 
-            Height          =   312
-            ItemData        =   "frmTools.frx":0060
-            Left            =   780
-            List            =   "frmTools.frx":006D
-            Style           =   2  'Dropdown List
-            TabIndex        =   32
-            Top             =   780
-            Width           =   2712
-         End
-         Begin Compendium.userSpinner usrspnBottom 
-            Height          =   312
-            Left            =   2520
-            TabIndex        =   36
-            Top             =   1620
-            Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   550
-            Min             =   0
-            Max             =   20
-            Value           =   8
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   0
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnSides 
-            Height          =   312
-            Left            =   2520
-            TabIndex        =   34
-            Top             =   1260
-            Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   550
-            Min             =   0
-            Max             =   20
-            Value           =   8
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   0
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Main Window Startup Position"
-            ForeColor       =   &H80000008&
-            Height          =   252
-            Index           =   0
-            Left            =   540
-            TabIndex        =   31
-            Tag             =   "ctl"
-            Top             =   420
-            Width           =   2892
-         End
-         Begin VB.Label lbl 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Bottom Margin"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   2
-            Left            =   1020
-            TabIndex        =   35
-            Tag             =   "ctl"
-            Top             =   1656
-            Width           =   1332
-         End
-         Begin VB.Label lbl 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Side Margins"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   1
-            Left            =   1236
-            TabIndex        =   33
-            Tag             =   "ctl"
-            Top             =   1296
-            Width           =   1116
-         End
-         Begin VB.Label lbl 
-            Appearance      =   0  'Flat
-            AutoSize        =   -1  'True
-            BackColor       =   &H80000005&
-            Caption         =   "Main Window"
-            ForeColor       =   &H80000008&
-            Height          =   216
-            Index           =   7
-            Left            =   120
-            TabIndex        =   30
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   1176
-         End
-         Begin VB.Shape shpMainWindow 
-            Height          =   2652
-            Left            =   0
-            Top             =   120
-            Width           =   4092
-         End
-      End
-      Begin Compendium.userCheckBox usrchkPlay 
-         Height          =   252
-         Left            =   540
-         TabIndex        =   48
-         Tag             =   "ctl"
-         Top             =   5700
-         Width           =   1872
-         _ExtentX        =   3302
-         _ExtentY        =   445
-         Caption         =   "Play Button"
-      End
-      Begin VB.Shape shpBorder 
-         Height          =   492
-         Index           =   1
-         Left            =   0
-         Top             =   0
-         Width           =   312
-      End
-   End
 End
 Attribute VB_Name = "frmTools"
 Attribute VB_GlobalNameSpace = False
@@ -1107,13 +1107,18 @@ Private Sub PopulateFontSizes(Optional pdblSelected As Double = 0)
     Dim strSize() As String
     Dim i As Long
     
+    '2021.08.27 fix bad size array
+    ReDim strSize(0)
+    
     strSelected = FontSizeToString(pdblSelected)
     ComboClear Me.cboSize
-    strSize = GetFontSizes(Me.cboFont.Text, Me.picFont)
-    For i = 1 To UBound(strSize)
-        Me.cboSize.AddItem strSize(i)
-    Next
-    ComboSetText Me.cboSize, strSelected
+    If (Len(Me.cboFont.Text) > 0) Then
+        strSize = GetFontSizes(Me.cboFont.Text, Me.picFont)
+        For i = 1 To UBound(strSize)
+            Me.cboSize.AddItem strSize(i)
+        Next
+        ComboSetText Me.cboSize, strSelected
+    End If
 End Sub
 
 Private Sub lnkDefaultFont_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -1615,7 +1620,7 @@ End Sub
 
 Private Sub cboSize_Click()
     If mblnOverride Then Exit Sub
-    frmCompendium.SetQuestsFont Me.cboFont.Text, Val(Me.cboSize.Text)
+    frmCompendium.SetQuestsFont Me.cboFont.Text, val(Me.cboSize.Text)
 End Sub
 
 

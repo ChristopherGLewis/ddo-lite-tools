@@ -230,8 +230,8 @@ End Type
 
 'TODO Remove hard coding
 Public Const maxClassCount = 15
-Public Const maxRaceCount = 12
-Public Const maxIconicCount = 6
+Public Const maxRaceCount = 13 ' 2021.08.25 Added missing tiefling
+Public Const maxIconicCount = 7 ' 2021.08.25 Added missing tiefling Scoundrel
 Public Const maxEpicCount = 16
 
 Public Type PastLifeType
