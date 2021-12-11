@@ -6321,6 +6321,7 @@ Tier: 0
 AbilityName: Holy Combatant
 Descrip: +1 to hit and damage with favored weapons.
 Tier: 1
+Cost: 2
 
 AbilityName: Extra Smites
 Descrip: +2/4/6 bonus to Smite Evil.
@@ -6361,6 +6362,7 @@ Ranks: 3
 AbilityName: Exalted Cleave
 Descrip: Multiselector: Make a sweeping melee or ranged  attack against all nearby enemies for +3[W] damage. Shares its cooldown with the Cleave feat.}{- Take a powerful shot for +3[W] damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{- Make a sweeping attack against all nearby enemies for +3[W] damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{ Note: Only does 3[1d6] with handwraps. DDO Forums
 Tier: 2
+Cost: 2
 Selector: Melee, Ranged
 
 AbilityName: Action Boost
@@ -7936,7 +7938,6 @@ AbilityName: Critical Rage
 Descrip: Increases your critical threat range by +[1/2] (competence bonus). Does not require rage.
 Tier: 5
 Ranks: 2
-Cost: 2
 
 TreeName: Razorclaw Shifter
 Type: Race
