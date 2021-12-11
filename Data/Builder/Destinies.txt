@@ -807,4 +807,188 @@ DestinyName: Fury of the wild
 Abbreviation: Fury
 Type: Destiny
 
+AbilityName: Die Hard
+Descrip: TODO
+Cost: 1
+Ranks: 1
+Tier: 0
 
+AbilityName: Die Harder
+Descrip: TODO
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Die Hardest
+Descrip: TODO
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Acute Senses
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Adrenaline 
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Savage Takedown 
+Descrip: +1/2/3 to trip DC's
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Mantle of Fury 
+Descrip: Fury of the Wild Destiny Mantle
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Enduring
+Descrip: + 2/4/6 Physical Resistance Rating
+Cost: 1
+Ranks: 3
+Tier: 1
+
+
+AbilityName: Boulder's Might
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Fear My Vengeance 
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: I'm Always Angry
+Descrip: You gain the Barbarian Rage Feat. Adds +1/2/3 usages of Rage per rest.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Primal Scream
+Descrip: TODO
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Gird Against Demons
+Descrip: Weapons bypass Cold Iron damage reduction
+Cost: 2
+Ranks: 1
+Tier: 2
+
+
+AbilityName: Sense Weakness
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Wild Weapons
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Eternal Rage
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Furious
+Descrip: +3 Strength while raging. Adrenaline damage bonus is increased by +25/50/75%.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Embrace the Pain
+Descrip: TODO
+Cost: 1
+Ranks: 3
+Tier: 3
+
+
+AbilityName: Top Dog
+Descrip: You gain the Improved Trip feat.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: The Voice of Fury
+Descrip: TODO
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Wade Through
+Descrip: Multiselector: Double Strike, Off Hand Attack, Strike Through
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Double Strike, Off Hand Attack, Strike Through
+SelectorName: Double Strike
+Descrip: +2 Double Strike
+SelectorName: Off Hand Attack
+Descrip: +3 Off Hand Attack
+SelectorName: Strike Through
+Descrip: +10 Strikethrough chance
+
+AbilityName: Force Selector
+Descrip: Multiselector: Overwelming Force. 
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Overwelming Force , Off Hand Attack, Strike Through
+SelectorName: Overwelming Force
+Descrip: TODO
+SelectorName: Primal Force
+Descrip: TODO
+
+
+AbilityName: Unquenchable Rage
+Descrip: Reduce all damage, except Untyped, by %8/12/15 for 5 seconds after you use a Rage charge or use Primal Scream. Rank 3: You also apply the effects of the Heal spell to yourself which scales with Melee Power.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+
+
+AbilityName: Lore of the Wilds
+Descrip: Every 2 Wilderness Lore feats now grants a %1 Primal bonus to Maximize Hit Points
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Scarred by Chaos
+Descrip: Grants +50 Maximum Hit Points and 10 Physical Resistance Rating.  Double these bonuses if you have the Harbringer of Chaos feat.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Unbridled Fury
+Descrip: Cooldown 5 minutes. For the next 30 seconds you gain +1000 unconsciousness Range and 100% Strikethrough.  Every 5 seconds you heal for 10% of your max hit points, gain teh Adrenaline & Quick Effects, and the cooldown of the Great Leveler resets.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Nature's Fury
+Descrip: While Two Weapon Fighting, Two Handed Fighting, or in Animal Form, you gain a +1 bonus to your Critical Multiplier on rolls of 19 or 20.
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: The Great Leveler 
+Descrip: Cooldown 20 seconds: Melee Attack +3/4/6[W], +4/8/16 Critical Threat Range. You stop in place to create a shockwave that blasts all enemies in a short line. The size of the line triples if Adrenaline or Quick is active, consuming those effects. Applies a Trip to all enemies struck (DC 20 + highest of STR/DEX/CON + Trip DCs)
+Cost: 1
+Ranks: 3
+Tier: 5
