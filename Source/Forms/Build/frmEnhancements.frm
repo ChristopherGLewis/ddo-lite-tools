@@ -1094,7 +1094,7 @@ Private Sub usrFooter_Click(pstrCaption As String)
     Select Case pstrCaption
         Case "< Feats": If Not OpenForm("frmFeats") Then Exit Sub
         Case "< Spells": If Not OpenForm("frmSpells") Then Exit Sub
-        Case "Destiny >": If Not OpenForm("frmDestiny") Then Exit Sub
+        Case "Destiny >": If Not OpenForm("frmDestiny2") Then Exit Sub
     End Select
     mblnOverride = True
     Unload Me
@@ -2037,7 +2037,11 @@ Private Function ListAbilityClick() As Boolean
     If Me.lstAbility.ListIndex = -1 Then Exit Function
     GetUserChoices lngTier, lngAbility, -1
     ShowDetails lngTier, lngAbility, 0, 0
-    If db.Tree(mlngTree).Tier(lngTier).Ability(lngAbility).SelectorStyle <> sseNone Then ShowSelectors lngTier, lngAbility Else ListAbilityClick = True
+    If db.Tree(mlngTree).Tier(lngTier).Ability(lngAbility).SelectorStyle <> sseNone Then
+        ShowSelectors lngTier, lngAbility
+    Else
+        ListAbilityClick = True
+    End If
 End Function
 
 Private Sub lstAbility_OLEStartDrag(Data As DataObject, AllowedEffects As Long)
@@ -2752,12 +2756,13 @@ Private Function CheckGuideReq(ptypReqList As ReqListType, penReq As ReqGroupEnu
                         If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, 1)
                     End If
                 Case peDestiny
-                    If CheckAbility(build.Destiny, ptypReqList.Req(i), penReq, plngRanks) Then
-                        If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, .Tree)
-                        lngMatches = lngMatches + 1
-                    Else
-                        If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
-                    End If
+                    'TODO fix guide for destiny
+                    'If CheckAbility(build.Destiny, ptypReqList.Req(i), penReq, plngRanks) Then
+                    '    If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                    '    lngMatches = lngMatches + 1
+                    'Else
+                    '    If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                    'End If
                 Case peEnhancement
                     lngGuide = FindGuideTree(.Tree)
                     If lngGuide <> 0 Then

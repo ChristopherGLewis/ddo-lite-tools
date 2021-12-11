@@ -44,8 +44,8 @@ Begin VB.Form frmDestiny
       TabIndex        =   1
       Top             =   480
       Width           =   4932
-      _ExtentX        =   8705
-      _ExtentY        =   11456
+      _extentx        =   8705
+      _extenty        =   11456
    End
    Begin VB.ComboBox cboDestiny 
       Height          =   312
@@ -83,11 +83,11 @@ Begin VB.Form frmDestiny
       TabIndex        =   7
       Top             =   1296
       Width           =   1452
-      _ExtentX        =   2566
-      _ExtentY        =   450
-      Value           =   0   'False
-      Caption         =   "Show All"
-      CheckPosition   =   1
+      _extentx        =   2566
+      _extenty        =   450
+      value           =   0   'False
+      caption         =   "Show All"
+      checkposition   =   1
    End
    Begin CharacterBuilderLite.userDetails usrDetails 
       Height          =   2040
@@ -96,8 +96,8 @@ Begin VB.Form frmDestiny
       TabStop         =   0   'False
       Top             =   4932
       Width           =   6372
-      _ExtentX        =   9128
-      _ExtentY        =   3598
+      _extentx        =   9128
+      _extenty        =   3598
    End
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
@@ -370,44 +370,43 @@ End Sub
 
 Private Sub LoadData()
     Dim lngRows As Long
+    Dim i As Long
     
     mlngSourceIndex = 0
     Me.usrDetails.Clear
     With Me.usrList
-        If mblnTwists Then
-            lngRows = MaxTwistSlots()
-            .DefineDimensions 4, 3, 2
-            .DefineColumn 1, vbCenter, "Tier", "Tier"
-            .DefineColumn 2, vbCenter, "Ability"
-            .DefineColumn 3, vbRightJustify, "Fate Points", " 20"
-        Else
-            lngRows = build.Destiny.Abilities
+        For i = 1 To build.Destinies
+            lngRows = build.Destiny(i).Abilities
             If lngRows = 0 Then lngRows = 1
             .DefineDimensions lngRows, 3, 2
             .DefineColumn 1, vbCenter, "Tier", "Tier"
             .DefineColumn 2, vbCenter, "Ability"
             .DefineColumn 3, vbCenter, "AP", " 20"
-        End If
-        .Refresh
+        Next
     End With
     
     Me.usrspnDestinyAP.Max = tomes.DestinyMax
     Me.usrspnDestinyAP.Value = build.DestinyTome
     PopulateCombo
-    If Not mblnTwists Then ComboSetText Me.cboDestiny, build.Destiny.TreeName
+    'TODO
+    'If Not mblnTwists Then ComboSetText Me.cboDestiny, build.Destiny.TreeName
 End Sub
 
 Private Sub PopulateCombo()
     Dim strFirst As String
     Dim i As Long
+    Dim j As Long
     
     ListboxClear Me.lstSub
     ListboxClear Me.lstAbility
     ComboClear Me.cboDestiny
-    If mblnTwists Then strFirst = "All Destinies"
     ComboAddItem Me.cboDestiny, strFirst, 0
     For i = 1 To db.Destinies
-        If Not (mblnTwists And build.Destiny.TreeName = db.Destiny(i).TreeName) Then ComboAddItem Me.cboDestiny, db.Destiny(i).TreeName, i
+        For j = 1 To build.Destinies
+            If Not (mblnTwists And build.Destiny(j).TreeName = db.Destiny(i).TreeName) Then
+                ComboAddItem Me.cboDestiny, db.Destiny(i).TreeName, i
+            End If
+        Next
     Next
     If Len(build.Destiny.TreeName) And Not mblnTwists Then ComboSetText Me.cboDestiny, build.Destiny.TreeName
 End Sub
@@ -417,7 +416,7 @@ End Sub
 
 
 Private Sub ShowAbilities()
-    If mblnTwists Then ShowTwists dsDefault Else ShowDestinyAbilities
+    ShowDestinyAbilities
 End Sub
 
 Private Sub ShowDestinyAbilities()
@@ -480,11 +479,7 @@ Private Sub ShowTwists(penDropState As DropStateEnum, Optional ByVal plngSource 
         Me.usrList.SetError i, False
         If i = plngSource Then enDropState = dsDefault Else enDropState = penDropState
         Me.usrList.SetDropState i, enDropState
-        If i > build.Twists Then
-            Me.usrList.SetSlot i, vbNullString, 0, 0
-            Me.usrList.SetText i, 1, vbNullString
-            Me.usrList.SetText i, 3, vbNullString
-        Else
+
             Me.usrList.SetSlot i, GetTwistDisplayName(i), 0, 0
             Me.usrList.SetError i, CheckTwistSlot(i)
             lngFate = CalculateFatePoints(i, build.Twist(i).Tier)

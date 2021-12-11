@@ -171,7 +171,7 @@ Public Function OpenForm(pstrForm As String) As Boolean
         End If
     End If
     ' Epic levels?
-    If pstrForm = "frmDestiny" Then
+    If pstrForm = "frmDestiny2" Then
         If build.MaxLevels < 20 Then
             Notice "This build never reaches level 20."
             Exit Function
@@ -185,7 +185,7 @@ Public Function OpenForm(pstrForm As String) As Boolean
         Case "frmFeats": Set frm = frmFeats
         Case "frmSpells": Set frm = frmSpells
         Case "frmEnhancements": Set frm = frmEnhancements
-        Case "frmDestiny": Set frm = frmDestiny
+        Case "frmDestiny2": Set frm = frmDestiny2
 '        Case "frmGear": Set frm = frmGear
         Case "frmImport": Set frm = frmImport
         Case "frmExport": Set frm = frmExport
@@ -211,7 +211,7 @@ Public Sub CloseForm(pstrForm As String)
     For Each frm In Forms
         If InStr("frmMain.frmOptions.frmFormat.frmMessages.frmConvert", frm.Name) = 0 And pstrForm = "All" Then
             Unload frm
-        ElseIf InStr("frmOverview.frmStats.frmSkills.frmFeats.frmSpells.frmEnhancements.frmDestiny.frmGear.frmDeprecate", frm.Name) Then
+        ElseIf InStr("frmOverview.frmStats.frmSkills.frmFeats.frmSpells.frmEnhancements.frmDestiny2.frmGear.frmDeprecate", frm.Name) Then
             If frm.Name = pstrForm Then Unload frm
         End If
     Next
@@ -226,7 +226,7 @@ Public Sub UnloadForm(pfrm As Form, pblnOverride As Boolean)
     cfg.SavePosition pfrm
     SaveBackup
     For Each frm In Forms
-        If frm.Name <> pfrm.Name And InStr("frmOverview.frmStats.frmSkills.frmFeats.frmSpells.frmEnhancements.frmDestiny.frmGear", frm.Name) <> 0 Then
+        If frm.Name <> pfrm.Name And InStr("frmOverview.frmStats.frmSkills.frmFeats.frmSpells.frmEnhancements.frmDestiny2.frmGear", frm.Name) <> 0 Then
             blnSkip = True
             Exit For
         End If
@@ -310,8 +310,8 @@ Public Sub CascadeChanges(penChange As CascadeChangeEnum)
                 Select Case penChange
                     Case cceAll, cceRace, cceClass, cceMaxLevel, cceFeat, cceEnhancements: If build.Race = reAny Or build.Class(1) = ceAny Then CloseForm "frmEnhancements" Else frm.Cascade
                 End Select
-            Case "frmDestiny"
-                If build.MaxLevels < 20 Then CloseForm "frmDestiny" Else frm.Cascade
+            Case "frmDestiny2"
+                If build.MaxLevels < 20 Then CloseForm "frmDestiny2" Else frm.Cascade
         End Select
     Next
 End Sub

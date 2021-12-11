@@ -9,7 +9,7 @@ Option Explicit
 ' it's used and need to be changed. For example, when clearing a build, a blank
 ' structure is initialized and copied over it, and that blank structure's definition
 ' will also need to be upgraded.
-Public build As BuildType5
+Public build As BuildType6
 Public Skill As SkillGridType ' Not saved to build file (calculated as needed)
 Public Feat As FeatListType ' Not saved to build file (calculated as needed)
 Public Guide As GuideType ' Not saved to build file (calculated as needed)
@@ -136,7 +136,7 @@ End Type
 
 Public Type BuildTreeType
     TreeName As String
-    TreeType As Byte
+    TreeType As Byte   ' From ???
     Source As Byte ' ClassEnum, or 0 for global (eg: Harper) or racial class tree (eg: Elf-AA)
     ClassLevels As Byte
     Ability() As BuildAbilityType
@@ -391,6 +391,39 @@ Public Type BuildType5
     DestinyTome As Byte
 End Type
 
+
+' Version 6 (3.0) Destiny change
+Public Type BuildType6
+    Notes As String
+    BuildName As String
+    Race As Byte
+    Alignment As Byte
+    MaxLevels As Byte
+    BuildClass(2) As Byte ' The three classes chosen in the Overview screen
+    Class(1 To 20) As Byte
+    BAB() As Byte ' 1 to MaxLevel
+    StatPoints(3, 6) As Byte ' 28/32/34/36 versions, stored as Points Spent
+    BuildPoints As Byte ' Which version is the "main"? (BuildPointsEnum; 0=28pt)
+    IncludePoints(3) As Byte ' Which build point versions to include in display/export
+    Levelups(7) As Byte
+    Tome(6) As Byte
+    Skills(1 To 21, 1 To 20) As Byte
+    SkillTome(1 To 21) As Byte
+    Feat() As BuildFeatListType
+    CanCastSpell(9) As Byte  ' Index 0 = healing spells; if index 1 = 0, build can't cast spells at all (never gets level 1 spells)
+    Spell() As BuildClassSpellType
+    Tree() As BuildTreeType
+    Trees As Byte
+    Guide As BuildGuideType
+    Tier5 As String
+    RacialAP As Byte
+    UniversalAP As Byte
+    Destiny() As BuildTreeType
+    Destinies As Byte
+    DestinyAP As Byte
+    DestinyTome As Byte
+    DestinyTier5 As String
+End Type
 
 Public Sub Version1To2(ptypBuild1 As BuildType1, ptypBuild2 As BuildType2)
     Dim i As Long
@@ -666,4 +699,59 @@ Public Sub Version4To5(ptyp4 As BuildType4, ptyp5 As BuildType5)
     End With
 End Sub
 
-
+Public Sub Version5To6(ptyp5 As BuildType5, ptyp6 As BuildType6)
+    Dim typBlank As BuildType6
+    Dim i As Long
+    Dim j As Long
+    
+    ptyp6 = typBlank
+    With ptyp6
+        .Notes = ptyp5.Notes
+        .BuildName = ptyp5.BuildName
+        .Race = ptyp5.Race
+        .Alignment = ptyp5.Alignment
+        .MaxLevels = ptyp5.MaxLevels
+        For i = 0 To 2
+            .BuildClass(i) = ptyp5.BuildClass(i)
+        Next
+        For i = 1 To 20
+            .Class(i) = ptyp5.Class(i)
+        Next
+        .BAB = ptyp5.BAB
+        For i = 0 To 3
+            For j = 0 To 6
+                .StatPoints(i, j) = ptyp5.StatPoints(i, j)
+            Next
+        Next
+        .BuildPoints = ptyp5.BuildPoints
+        For i = 0 To 3
+            .IncludePoints(i) = ptyp5.IncludePoints(i)
+        Next
+        For i = 0 To 7
+            .Levelups(i) = ptyp5.Levelups(i)
+        Next
+        For i = 0 To 6
+            .Tome(i) = ptyp5.Tome(i)
+        Next
+        For i = 1 To 21
+            For j = 1 To 20
+                .Skills(i, j) = ptyp5.Skills(i, j)
+            Next
+            .SkillTome(i) = ptyp5.SkillTome(i)
+        Next
+        .Feat = ptyp5.Feat
+        For i = 0 To 9
+            .CanCastSpell(i) = ptyp5.CanCastSpell(i)
+        Next
+        .Spell = ptyp5.Spell
+        .Tree = ptyp5.Tree
+        .Trees = ptyp5.Trees
+        .Guide = ptyp5.Guide
+        .Tier5 = ptyp5.Tier5
+        .RacialAP = 0
+        .UniversalAP = 0
+        .DestinyTome = 0
+        .DestinyAP = 0
+        .DestinyTier5 = 0
+    End With
+End Sub

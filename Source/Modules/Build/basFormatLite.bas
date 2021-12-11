@@ -74,7 +74,6 @@ Public Sub SaveFileLite(pstrFile As String)
     SaveEnhancementsLite
     SaveLevelingGuideLite
     SaveDestinyLite
-    SaveTwistsLite
     TrimArray
     If xp.File.Exists(pstrFile) Then xp.File.Delete pstrFile
     xp.File.SaveStringAs pstrFile, Join(mstrLine, vbNewLine)
@@ -608,55 +607,31 @@ End Sub
 
 
 Private Sub SaveDestinyLite()
-    If Len(build.Destiny.TreeName) = 0 Then Exit Sub
-    AddSection "Destiny"
-    ' Racial AP
-    If build.DestinyTome <> 0 Then AddLine "DestinyTome: " & build.DestinyTome
-    If build.DestinyTome <> 0 Then BlankLine
-    AddLine "Destiny: " & build.Destiny.TreeName
-    AddAbilityLite build.Destiny, peDestiny
-End Sub
-
-
-' ************* SAVE - TWISTS *************
-
-
-Private Sub SaveTwistsLite()
     Dim i As Long
     
-    For i = 1 To build.Twists
-        If build.Twist(i).Ability <> 0 Then Exit For
-    Next
-    If i > build.Twists Then Exit Sub
-    AddSection "Twists"
-    For i = 1 To build.Twists
-        With build.Twist(i)
-            If .Ability <> 0 Then AddLine "Twist: " & GetTwistLine(build.Twist(i))
+    If Len(build.DestinyTier5) = 0 And build.DestinyAP = 0 Then Exit Sub
+    AddSection "Destiny"
+    ' Tier5
+    If Len(build.DestinyTier5) Then AddLine "DestinyTier5: " & build.DestinyTier5
+    ' Destiny AP
+    If build.DestinyAP <> 0 Then AddLine "DestinyAP: " & build.DestinyAP
+    If Len(build.DestinyTier5) <> 0 Or build.DestinyAP <> 0 Then BlankLine
+    ' Destinies
+    For i = 1 To build.Destinies
+        With build.Destiny(i)
+            AddLine "Destiny: " & .TreeName
+            AddLine "Type: " & GetTreeStyleName(.TreeType)
+            'TODO
+            'If .Source <> 0 Then AddLine "Source: " & GetClassName(.Source)
+            'If .ClassLevels <> 0 Then AddLine "ClassLevels: " & .ClassLevels
+            AddAbilityLite build.Destiny(i), peDestiny
+            BlankLine
         End With
     Next
-End Sub
 
-Private Function GetTwistLine(ptypTwist As TwistType) As String
-On Error GoTo GetTwistLineErr
-    Dim strReturn As String
-    Dim lngTree As Long
-    
-    lngTree = SeekTree(ptypTwist.DestinyName, peDestiny)
-    If lngTree = 0 Then Exit Function
-    strReturn = ptypTwist.DestinyName & " Tier " & ptypTwist.Tier & ": "
-    With db.Destiny(lngTree).Tier(ptypTwist.Tier).Ability(ptypTwist.Ability)
-        strReturn = strReturn & .AbilityName
-        If ptypTwist.Selector <> 0 Then strReturn = strReturn & ": " & .Selector(ptypTwist.Selector).SelectorName
-    End With
-    
-GetTwistLineExit:
-    GetTwistLine = strReturn
-    Exit Function
-    
-GetTwistLineErr:
-    strReturn = "Error"
-    Resume GetTwistLineExit
-End Function
+
+
+End Sub
 
 
 ' ************* LOAD *************
@@ -686,7 +661,6 @@ On Error GoTo LoadFileLiteErr
                 Case secEnhancements: LoadEnhancementsText
                 Case secLevelingGuide: LoadLevelingGuideText
                 Case secDestiny: LoadDestinyText
-                Case secTwists: LoadTwistsText
             End Select
         End If
     Next
@@ -775,7 +749,7 @@ Private Function SplitCombo(pstrCombo As String, pstrText As String, plngNumber 
     pstrText = LCase$(Left$(pstrCombo, lngPos - 1))
     strNumber = Trim$(Mid$(pstrCombo, lngPos + 1))
     If Not IsNumeric(strNumber) Then Exit Function
-    plngNumber = Val(strNumber)
+    plngNumber = val(strNumber)
     SplitCombo = True
 End Function
 
@@ -788,7 +762,7 @@ Private Sub LoadOverviewText()
         Case "name": build.BuildName = mstrValue
         Case "race": build.Race = GetRaceID(mstrValue)
         Case "alignment": build.Alignment = GetAlignmentID(mstrValue)
-        Case "maxlevels": build.MaxLevels = Val(mstrValue)
+        Case "maxlevels": build.MaxLevels = val(mstrValue)
         Case "notes": If Len(build.Notes) = 0 Then build.Notes = mstrValue Else build.Notes = build.Notes & vbNewLine & mstrValue
         Case "class": SetBuildClass
         Case "level": SetBuildLevel
@@ -812,7 +786,7 @@ Private Sub SetBuildLevel()
     Dim enClass As ClassEnum
     
     If mlngListMax <> 1 Then Exit Sub
-    lngLevel = Val(mstrList(0))
+    lngLevel = val(mstrList(0))
     If lngLevel < 1 Or lngLevel > 20 Then Exit Sub
     enClass = GetClassID(mstrList(1))
     If enClass <> ceAny Then build.Class(lngLevel) = enClass
@@ -865,7 +839,7 @@ Private Sub LoadStatsText()
             build.BuildPoints = GetBuildPointsID(mstrValue)
         Case "levelup"
             If mlngListMax = 1 Then
-                i = Val(mstrList(0)) \ 4
+                i = val(mstrList(0)) \ 4
                 If i >= 0 And i <= 7 Then build.Levelups(i) = GetStatID(mstrList(1))
             End If
         Case Else
@@ -899,10 +873,10 @@ Private Sub ParseStatLine(penStat As StatEnum)
     Dim i As Long
     
     For i = 0 To 3
-        build.StatPoints(i, penStat) = Val(Trim$(Mid$(mstrValue, (i * 6) + 1, 4)))
+        build.StatPoints(i, penStat) = val(Trim$(Mid$(mstrValue, (i * 6) + 1, 4)))
         build.StatPoints(i, 0) = build.StatPoints(i, 0) + build.StatPoints(i, penStat)
     Next
-    build.Tome(penStat) = Val(Trim$(Mid$(mstrValue, 25, 4)))
+    build.Tome(penStat) = val(Trim$(Mid$(mstrValue, 25, 4)))
     If build.Tome(penStat) > tomes.Stat.Max Then build.Tome(penStat) = tomes.Stat.Max
 End Sub
 
@@ -918,9 +892,9 @@ Private Sub LoadSkillsText()
     For enSkill = 1 To seSkills - 1
         If mstrField = LCase$(GetSkillName(enSkill, True)) Then
             For lngLevel = 1 To 20
-                build.Skills(enSkill, lngLevel) = Val(Mid$(mstrValue, (lngLevel - 1) * 4 + 1, 3))
+                build.Skills(enSkill, lngLevel) = val(Mid$(mstrValue, (lngLevel - 1) * 4 + 1, 3))
             Next
-            build.SkillTome(enSkill) = Val(Mid$(mstrValue, 82, 3))
+            build.SkillTome(enSkill) = val(Mid$(mstrValue, 82, 3))
             If build.SkillTome(enSkill) > tomes.Skill.Max Then build.SkillTome(enSkill) = tomes.Skill.Max
             Exit Sub
         End If
@@ -955,7 +929,7 @@ Private Sub LoadFeatsText()
         build.Feat(enType).Feat(lngIndex).ChildType = enChildType
         build.Feat(enType).Feat(lngIndex).Child = lngChildIndex
         If enType = bftExchange Then
-            build.Feat(enType).Feat(lngIndex).Level = Val(mstrList(1))
+            build.Feat(enType).Feat(lngIndex).Level = val(mstrList(1))
         Else
             build.Feat(enType).Feat(lngIndex).Level = build.Feat(enChildType).Feat(lngChildIndex).Level
         End If
@@ -1108,9 +1082,9 @@ Private Sub LoadEnhancementsText()
         Case "tier5"
             build.Tier5 = mstrValue
         Case "racialap"
-            build.RacialAP = Val(mstrValue)
+            build.RacialAP = val(mstrValue)
         Case "universalap"
-            build.UniversalAP = Val(mstrValue)
+            build.UniversalAP = val(mstrValue)
         Case "tree"
             build.Trees = build.Trees + 1
             ReDim Preserve build.Tree(1 To build.Trees)
@@ -1120,7 +1094,7 @@ Private Sub LoadEnhancementsText()
         Case "source"
             If build.Trees <> 0 Then build.Tree(build.Trees).Source = GetClassID(mstrValue)
         Case "classlevels"
-            If build.Trees <> 0 Then build.Tree(build.Trees).ClassLevels = Val(mstrValue)
+            If build.Trees <> 0 Then build.Tree(build.Trees).ClassLevels = val(mstrValue)
         Case "ability"
             If build.Trees <> 0 Then AddTreeAbility mstrValue, build.Tree(build.Trees), peEnhancement
     End Select
@@ -1129,12 +1103,14 @@ End Sub
 Private Sub LoadDestinyText()
     Select Case mstrField
         Case "destinytome"
-            build.DestinyTome = Val(mstrValue)
+            build.DestinyTome = val(mstrValue)
         Case "destiny"
-            build.Destiny.TreeName = mstrValue
-            build.Destiny.TreeType = tseDestiny
+            build.Destinies = build.Destinies + 1
+            ReDim Preserve build.Destiny(1 To build.Destinies)
+            build.Destiny(build.Destinies).TreeName = mstrValue
+            
         Case "ability"
-            AddTreeAbility mstrValue, build.Destiny, peDestiny
+            AddTreeAbility mstrValue, build.Destiny(build.Destinies), peDestiny
     End Select
 End Sub
 
@@ -1160,7 +1136,7 @@ Private Function ParseAbility(ptypAbility As DeprecateAbilityType, ByVal pstrRaw
     If lngPos = 0 Then Exit Function
     strNumber = Mid$(pstrRaw, lngPos + 5, 1)
     If Not IsNumeric(strNumber) Then Exit Function
-    ptypAbility.Tier = Val(strNumber)
+    ptypAbility.Tier = val(strNumber)
     If lngPos > 1 Then
         ptypAbility.TreeName = Left$(pstrRaw, lngPos - 2)
         ptypAbility.GuideTreeDisplay = ptypAbility.TreeName
@@ -1172,7 +1148,7 @@ Private Function ParseAbility(ptypAbility As DeprecateAbilityType, ByVal pstrRaw
     Else
         strNumber = Mid$(pstrRaw, lngPos + 6, 1)
         If Not IsNumeric(strNumber) Then Exit Function
-        ptypAbility.Rank = Val(strNumber)
+        ptypAbility.Rank = val(strNumber)
         pstrRaw = Left$(pstrRaw, lngPos - 2)
     End If
     lngPos = InStr(pstrRaw, ": ")
@@ -1371,29 +1347,3 @@ Private Function GetGuideTreeClass(plngTree As Long, penClass As ClassEnum) As B
     End If
 End Function
 
-
-' ************* LOAD - TWISTS *************
-
-
-Private Sub LoadTwistsText()
-    Dim typAbility As DeprecateAbilityType
-    
-    If mstrField <> "twist" Or build.Twists > 4 Then Exit Sub
-    typAbility.PointerType = peDestiny
-    If Not ParseAbility(typAbility, mstrValue) Then
-        DeprecateTwist typAbility
-    ElseIf Not ResolveAbility(typAbility) Then
-        DeprecateTwist typAbility
-    Else
-        With build
-            .Twists = .Twists + 1
-            ReDim Preserve .Twist(1 To .Twists)
-            With .Twist(.Twists)
-                .DestinyName = typAbility.TreeName
-                .Tier = typAbility.Tier
-                .Ability = typAbility.Ability
-                .Selector = typAbility.Selector
-            End With
-        End With
-    End If
-End Sub

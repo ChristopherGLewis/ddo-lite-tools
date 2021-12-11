@@ -185,7 +185,7 @@ Public Sub SetAppCaption()
 End Sub
 
 Public Sub ClearBuild(Optional pblnClearFile As Boolean = True)
-    Dim typBlank As BuildType5
+    Dim typBlank As BuildType6
     
     build = typBlank
     If pblnClearFile Then mstrFile = vbNullString
@@ -525,6 +525,7 @@ On Error GoTo LoadBuildError
     Dim typVersion2 As BuildType2
     Dim typVersion3 As BuildType3
     Dim typVersion4 As BuildType4
+    Dim typVersion5 As BuildType5
     
     CloseForm "frmDeprecate"
     If Not xp.File.Exists(pstrFile) Then
@@ -559,20 +560,26 @@ On Error GoTo LoadBuildError
                         Version1To2 typVersion1, typVersion2
                         Version2To3 typVersion2, typVersion3
                         Version3To4 typVersion3, typVersion4
-                        Version4To5 typVersion4, build
+                        Version4To5 typVersion4, typVersion5
+                        Version5To6 typVersion5, build
                     Case 2
                         Get #FileNumber, 6, typVersion2
                         Version2To3 typVersion2, typVersion3
                         Version3To4 typVersion3, typVersion4
-                        Version4To5 typVersion4, build
+                        Version4To5 typVersion4, typVersion5
+                        Version5To6 typVersion5, build
                     Case 3
                         Get #FileNumber, 6, typVersion3
                         Version3To4 typVersion3, typVersion4
-                        Version4To5 typVersion4, build
+                        Version4To5 typVersion4, typVersion5
+                        Version5To6 typVersion5, build
                     Case 4
                         Get #FileNumber, 6, typVersion3
-                        Version4To5 typVersion4, build
+                        Version4To5 typVersion4, typVersion5
+                        Version5To6 typVersion5, build
                     Case 5
+                        Version5To6 typVersion5, build
+                    Case 6
                         Get #FileNumber, 6, build
                     Case Else
                         LoadBuild = leeUnsupported

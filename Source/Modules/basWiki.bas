@@ -7,6 +7,7 @@ Private Const ImageBase As String = "https://ddowiki.com/images/"
 Public Function MakeWiki(pstrName As String) As String
     Dim strReturn As String
     
+    'Returns a WikiLink
     strReturn = pstrName
     If InStr(strReturn, " ") Then strReturn = Replace$(strReturn, " ", "_")
     MakeWiki = WikiBase & strReturn

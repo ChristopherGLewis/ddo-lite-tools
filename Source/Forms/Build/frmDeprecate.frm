@@ -4,10 +4,10 @@ Begin VB.Form frmDeprecate
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Messages"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   12216
+   ClientHeight    =   7755
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,8 +22,8 @@ Begin VB.Form frmDeprecate
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7755
+   ScaleWidth      =   12225
    ShowInTaskbar   =   0   'False
    Begin CharacterBuilderLite.userCheckBox usrchkGuess 
       Height          =   252
@@ -31,8 +31,8 @@ Begin VB.Form frmDeprecate
       TabIndex        =   6
       Top             =   3720
       Width           =   2052
-      _ExtentX        =   3620
-      _ExtentY        =   445
+      _ExtentX        =   3625
+      _ExtentY        =   450
       Caption         =   "Best Guess"
    End
    Begin VB.CheckBox chkSelector 
@@ -55,8 +55,8 @@ Begin VB.Form frmDeprecate
       TabStop         =   0   'False
       Top             =   4020
       Width           =   3612
-      _ExtentX        =   6371
-      _ExtentY        =   5757
+      _ExtentX        =   6376
+      _ExtentY        =   5768
    End
    Begin VB.CheckBox chkChoose 
       Appearance      =   0  'Flat
@@ -73,7 +73,7 @@ Begin VB.Form frmDeprecate
    End
    Begin VB.ListBox lstMessage 
       Appearance      =   0  'Flat
-      Height          =   2400
+      Height          =   2340
       ItemData        =   "frmDeprecate.frx":000C
       Left            =   420
       List            =   "frmDeprecate.frx":000E
@@ -84,7 +84,7 @@ Begin VB.Form frmDeprecate
    Begin VB.ListBox lstGuess 
       Appearance      =   0  'Flat
       Enabled         =   0   'False
-      Height          =   3264
+      Height          =   3180
       ItemData        =   "frmDeprecate.frx":0010
       Left            =   4320
       List            =   "frmDeprecate.frx":0012
@@ -112,8 +112,8 @@ Begin VB.Form frmDeprecate
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       RightLinks      =   "Help"
@@ -121,7 +121,7 @@ Begin VB.Form frmDeprecate
    Begin VB.ListBox lstSelector 
       Appearance      =   0  'Flat
       Enabled         =   0   'False
-      Height          =   3264
+      Height          =   3180
       ItemData        =   "frmDeprecate.frx":0014
       Left            =   8220
       List            =   "frmDeprecate.frx":0016
@@ -136,8 +136,8 @@ Begin VB.Form frmDeprecate
       TabStop         =   0   'False
       Top             =   4020
       Width           =   3612
-      _ExtentX        =   6371
-      _ExtentY        =   5757
+      _ExtentX        =   6376
+      _ExtentY        =   5768
    End
    Begin VB.Label lblGuess 
       Appearance      =   0  'Flat
@@ -283,9 +283,6 @@ Private Function CountMessages(Optional plngIssues As Long, Optional plngNotices
         If .LevelingGuide.Deprecated Then plngNotices = plngNotices + 1
         ' Destiny
         plngNotices = plngNotices + .Destinies
-        If Len(.BinaryDestiny) Then plngNotices = plngNotices + 1
-        ' Twists
-        plngNotices = plngNotices + .Twists + .BinaryTwists
     End With
     CountMessages = plngIssues + plngNotices
 End Function
@@ -381,18 +378,12 @@ Private Sub ShowNotices()
         Next
         ' Leveling guide
         If .LevelingGuide.Deprecated Then ListboxAddItem Me.lstMessage, "Leveling Guide: " & AbilityNotice(.LevelingGuide), dgeGuide + 1
-        ' Destiny
-        If Len(.BinaryDestiny) Then ListboxAddItem Me.lstMessage, "Destiny: " & .BinaryDestiny & " was reset", dgeBinaryDestiny + 1
-        For i = 1 To .Destinies
-            ListboxAddItem Me.lstMessage, "Destiny: " & AbilityNotice(.Destiny(i)), dgeDestiny + i
-        Next
-        ' Twists
-        For i = 1 To .Twists
-            ListboxAddItem Me.lstMessage, "Twist: " & AbilityNotice(.Twist(i)), dgeTwist + i
-        Next
-        For i = 1 To .BinaryTwists
-            ListboxAddItem Me.lstMessage, "Twist: " & BinaryTwistNotice(.BinaryTwist(i)), dgeBinaryTwist + i
-        Next
+        
+        ' Destiny  TODO
+        'If Len(.Destiny) Then ListboxAddItem Me.lstMessage, "Destiny: " & .Destiny & " was reset", dgeBinaryDestiny + 1
+        'For i = 1 To .Destinies
+        '    ListboxAddItem Me.lstMessage, "Destiny: " & AbilityNotice(.Destiny(i)), dgeDestiny + i
+        'Next
     End With
 End Sub
 
@@ -472,25 +463,7 @@ Private Sub lstMessage_Click()
             ShowAbilityDetails gtypDeprecate.LevelingGuide, strMessage
         ' Destiny
         Case dgeDestiny
-            ShowAbilityDetails gtypDeprecate.Destiny(lngIndex), "Destiny ability not found or invalid:"
-        Case dgeBinaryDestiny
-            Me.usrDetails.AddText gtypDeprecate.BinaryDestiny & " was reset due to an invalid ability."
-        ' Twists
-        Case dgeTwist
-            ShowAbilityDetails gtypDeprecate.Twist(lngIndex), "Twist not found or invalid:"
-        Case dgeBinaryTwist
-            Me.usrDetails.AddText "Twist not found or invalid: "
-            Me.usrDetails.AddText vbNullString
-            With gtypDeprecate.BinaryTwist(lngIndex)
-                Me.usrDetails.AddText "Destiny: " & .DestinyName
-                Me.usrDetails.AddText "Tier: " & .Tier
-                Me.usrDetails.AddText "Ability: Ability " & .Ability
-                If .Selector <> 0 Then
-                    Me.usrDetails.AddText "Selector: Selector " & .Selector
-                Else
-                    Me.usrDetails.AddText "Selector: [None]"
-                End If
-            End With
+            ShowAbilityDetails gtypDeprecate.DestinyType(lngIndex), "Destiny ability not found or invalid:"
     End Select
     Me.chkIgnore.Caption = strCaption
     ShowControls enGroup, blnPassive
@@ -891,21 +864,6 @@ Private Sub ResolveMessage()
                 Next
                 .Destinies = .Destinies - 1
                 If .Destinies = 0 Then Erase .Destiny Else ReDim Preserve .Destiny(1 To .Destinies)
-            Case dgeBinaryDestiny
-                .BinaryDestiny = vbNullString
-            ' Twists
-            Case dgeTwist
-                For i = lngIndex To .Twists - 1
-                    .Twist(i) = .Twist(i + 1)
-                Next
-                .Twists = .Twists - 1
-                If .Twists = 0 Then Erase .Twist Else ReDim Preserve .Twist(1 To .Twists)
-            Case dgeBinaryTwist
-                For i = lngIndex To .BinaryTwists - 1
-                    .BinaryTwist(i) = .BinaryTwist(i + 1)
-                Next
-                .BinaryTwists = .BinaryTwists - 1
-                If .BinaryTwists = 0 Then Erase .BinaryTwist Else ReDim Preserve .BinaryTwist(1 To .BinaryTwists)
         End Select
     End With
     Me.usrDetails.Clear

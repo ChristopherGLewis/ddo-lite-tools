@@ -184,6 +184,7 @@ Public Enum OutputEnum
     oeSpells
     oeEnhancements
     oeDestiny
+    oeDestiny2
     oeGear
     oeRemember
     oeExport
@@ -1616,7 +1617,7 @@ Public Sub MoveForm(pfrm As Form, Optional pblnCascade As Boolean = False)
         Next
     Else
         Select Case pfrm.Name
-            Case "frmOverview", "frmStats", "frmSkills", "frmFeats", "frmSpells", "frmEnhancements", "frmDestiny", "frmExport", "frmDeprecate": typCoords = mtypCharBuild.DialogCoords
+            Case "frmOverview", "frmStats", "frmSkills", "frmFeats", "frmSpells", "frmEnhancements", "frmDestiny2", "frmExport", "frmDeprecate": typCoords = mtypCharBuild.DialogCoords
             Case "frmOptions": typCoords = mtypCharBuild.OptionsCoords
             Case "frmConvert": typCoords = mtypCharBuild.ConvertCoords
             Case "frmColors": typCoords = mtypShared.ColorCoords
@@ -1663,7 +1664,7 @@ Public Sub SavePosition(pfrm As Form, Optional pblnDimensions As Boolean = False
         End If
     End With
     Select Case pfrm.Name
-        Case "frmOverview", "frmStats", "frmSkills", "frmFeats", "frmSpells", "frmEnhancements", "frmDestiny", "frmExport", "frmDeprecate": mtypCharBuild.DialogCoords = typCoords
+        Case "frmOverview", "frmStats", "frmSkills", "frmFeats", "frmSpells", "frmEnhancements", "frmDestiny2", "frmExport", "frmDeprecate": mtypCharBuild.DialogCoords = typCoords
         Case "frmOptions": mtypCharBuild.OptionsCoords = typCoords
         Case "frmConvert": mtypCharBuild.ConvertCoords = typCoords
         Case "frmColors": mtypShared.ColorCoords = typCoords
@@ -1766,7 +1767,7 @@ Public Sub CascadeWindows()
     If GetForm(frm, "frmFeats") Then AddForm "frmFeats"
     If GetForm(frm, "frmSpells") Then AddForm "frmSpells"
     If GetForm(frm, "frmEnhancements") Then AddForm "frmEnhancements"
-    If GetForm(frm, "frmDestiny") Then AddForm "frmDestiny"
+    If GetForm(frm, "frmDestiny2") Then AddForm "frmDestiny2"
     If GetForm(frm, "frmExport") Then AddForm "frmExport"
     For i = 1 To mlngForms
         GetForm frm, mstrForm(i)

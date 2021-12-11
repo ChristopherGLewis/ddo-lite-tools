@@ -16,6 +16,7 @@ Public Type TomesType
     RRMax As Long
     UniversalAPMax As Long
     DestinyMax As Long
+    DestinyAPMax As Long
 End Type
 
 Public tomes As TomesType
@@ -81,10 +82,10 @@ Private Sub ParseTomeSchedule(ptypTome As TomeScheduleType, pstrRaw As String)
     If InStr(pstrRaw, ",") = 0 Then Exit Sub
     strToken = Split(pstrRaw, ",")
     With ptypTome
-        .Max = Val(strToken(0))
+        .Max = val(strToken(0))
         ReDim .Level(.Max)
         For i = 1 To UBound(strToken)
-            If i <= .Max Then .Level(i) = Val(strToken(i))
+            If i <= .Max Then .Level(i) = val(strToken(i))
         Next
     End With
 End Sub
@@ -92,6 +93,6 @@ End Sub
 Private Sub SetTomeMax(plngTome As Long, pstrRaw As String)
     Dim lngValue As Long
     
-    lngValue = Val(pstrRaw)
+    lngValue = val(pstrRaw)
     If lngValue Then plngTome = lngValue
 End Sub

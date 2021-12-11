@@ -4,10 +4,10 @@ Begin VB.Form frmImport
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Import"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmImport
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin VB.TextBox txtImport 
       Appearance      =   0  'Flat
       BorderStyle     =   0  'None
@@ -195,6 +195,9 @@ Private mlngSpellLevel As Long
 Private mlngTree As Long
 Private mlngTier As Long
 
+Private mlngDestiny As Long
+Private mlngDestinyTier As Long
+
 Private mtypGuess() As GuessType
 Private mlngGuesses As Long
 
@@ -327,7 +330,6 @@ Private Sub Translate()
                     Case seEnhancements: ParseEnhancements strLine(i)
                     Case seLevelingGuide
                     Case seDestiny: ParseDestiny strLine(i)
-                    Case seTwists: ParseTwist strLine(i)
                 End Select
             End If
         End If
@@ -473,7 +475,7 @@ Private Function ParseClassSplit(ByVal pstrText As String) As Boolean
     If lngPos > 0 Then
         strLevel = Mid$(pstrText, InStrRev(pstrText, " ") + 1)
         If Not IsNumeric(strLevel) Then Exit Function
-        mlngEpic = Val(strLevel)
+        mlngEpic = val(strLevel)
         pstrText = Left$(pstrText, lngPos - 1)
     End If
     ' Pure class? ("Class ##")
@@ -483,7 +485,7 @@ Private Function ParseClassSplit(ByVal pstrText As String) As Boolean
             If lngPos = 0 Then Exit Function
             strLevel = Mid$(pstrText, lngPos + 1)
             If Not IsNumeric(strLevel) Then Exit Function
-            mlngHeroic = Val(strLevel)
+            mlngHeroic = val(strLevel)
             build.BuildClass(0) = enClass
             SetMaxLevel
             For i = 1 To 20
@@ -504,7 +506,7 @@ Private Function ParseClassSplit(ByVal pstrText As String) As Boolean
     mlngHeroic = 0
     For i = 0 To UBound(strLevels)
         If Not IsNumeric(strLevels(i)) Then Exit For
-        mlngHeroic = mlngHeroic + Val(strLevels(i))
+        mlngHeroic = mlngHeroic + val(strLevels(i))
         enClass = GetClassID(strClasses(i))
         If enClass = ceAny Then Exit For
         build.BuildClass(i) = enClass
@@ -570,7 +572,7 @@ Private Sub ParseLevelOrderEntry(pstrRaw As String, plngStart As Long, ByVal pln
     If Len(pstrRaw) < plngStart - 2 Then Exit Sub
     strLevel = Trim$(Mid$(pstrRaw, plngStart, 2))
     If Not IsNumeric(strLevel) Then Exit Sub
-    lngLevel = Val(strLevel)
+    lngLevel = val(strLevel)
     If lngLevel < 1 Or lngLevel > 20 Then Exit Sub
     ' Class
     If Len(pstrRaw) < plngEnd Then plngEnd = Len(pstrRaw)
@@ -642,11 +644,11 @@ Private Sub ParseStats(ByVal pstrRaw As String)
                 If Left$(strColumn(i), 1) <> "+" Then Exit Sub
                 strTome = Right$(strColumn(i), 1)
                 If Not IsNumeric(strTome) Then Exit Sub
-                build.Tome(enStat) = Val(strTome)
+                build.Tome(enStat) = val(strTome)
             Else
                 If enStat = aeAny Then Exit Sub
                 If Not IsNumeric(strColumn(i)) Then Exit Sub
-                lngStat = Val(strColumn(i)) - db.Race(build.Race).Stats(enStat)
+                lngStat = val(strColumn(i)) - db.Race(build.Race).Stats(enStat)
                 Select Case lngStat
                     Case 7: lngStat = 8
                     Case 8: lngStat = 10
@@ -762,7 +764,7 @@ Private Sub ParseRanks(penSkill As SkillsEnum, plngLevel As Long, ByVal pstrRank
         If Len(pstrRanks) = 1 Then pstrRanks = "0" Else pstrRanks = Left$(pstrRanks, Len(pstrRanks) - 1)
     End If
     If Not IsNumeric(pstrRanks) Then Exit Sub
-    lngPoints = Val(pstrRanks)
+    lngPoints = val(pstrRanks)
     If Not blnNative Then lngPoints = lngPoints * 2
     If blnHalf Then lngPoints = lngPoints + 1
     build.Skills(penSkill, plngLevel) = lngPoints
@@ -788,7 +790,7 @@ Private Sub ParseFeats(ByVal pstrRaw As String)
     ' Parse line into level and display
     strLevel = Trim$(Left$(pstrRaw, 2))
     If Not IsNumeric(strLevel) Then Exit Sub
-    lngLevel = Val(strLevel)
+    lngLevel = val(strLevel)
     If Mid$(pstrRaw, 11, 2) <> ": " Then Exit Sub
     strSource = Trim$(Mid$(pstrRaw, 4, 7))
     strDisplay = Mid$(pstrRaw, 13)
@@ -1182,95 +1184,49 @@ End Function
 
 Private Sub ParseDestiny(ByVal pstrRaw As String)
     Dim strText As String
-    Dim lngTree As Long
+    Dim lngDestiny As Long
     Dim strList() As String
     Dim lngPos As Long
     Dim i As Long
     
     strText = StripBrowserFormatting(pstrRaw)
     If Len(strText) = 0 Then Exit Sub
-    lngTree = SeekTree(strText, peDestiny)
-    If lngTree <> 0 Then
-        mlngTree = lngTree
-        mlngTier = 1
-        build.Destiny.TreeName = db.Destiny(mlngTree).TreeName
-        build.Destiny.TreeType = tseDestiny
-    ElseIf mlngTree <> 0 Then
+    If Right$(strText, 4) = " AP)" Then
+        lngPos = InStrRev(strText, " (")
+        If lngPos = 0 Then Exit Sub
+        strText = Left$(strText, lngPos - 1)
+    End If
+    ''Find our destiny id
+    lngDestiny = SeekTree(strText, peDestiny)
+    If lngDestiny <> 0 Then
+        mlngDestiny = lngDestiny
+        mlngDestinyTier = 0
+        AddBuildDestiny strText
+    ElseIf mlngDestiny <> 0 Then
         strList = Split(strText, ",")
         For i = 0 To UBound(strList)
-            ParseAbility strList(i), db.Destiny(mlngTree).Tier(mlngTier), build.Destiny
+            'TODO Fix
+            ParseAbility strList(i), db.Destiny(mlngDestiny).Tier(mlngDestinyTier), build.Destiny(mlngDestiny)
         Next
-        mlngTier = mlngTier + 1
+        mlngDestinyTier = mlngDestinyTier + 1
     End If
 End Sub
 
-
-' ************* TWISTS *************
-
-
-Private Sub ParseTwist(pstrRaw As String)
-    Dim strText As String
-    Dim lngTree As Long
-    Dim lngTier As Long
-    Dim strTree As String
-    Dim strTier As String
-    Dim strAbility As String
-    Dim strSelector As String
-    Dim lngPos As Long
-    Dim i As Long
-    Dim s As Long
-    
-    strText = StripBrowserFormatting(pstrRaw)
-    lngPos = InStrRev(strText, "(")
-    If lngPos = 0 Then Exit Sub
-    strAbility = Left$(strText, lngPos - 2)
-    strText = Mid$(strText, lngPos + 1)
-    If Right$(strText, 1) = ")" Then strText = Left$(strText, Len(strText) - 1) Else Exit Sub
-    If Left$(strText, 5) = "Tier " Then strTier = Mid$(strText, 6, 1) Else Exit Sub
-    If IsNumeric(strTier) Then lngTier = Val(strTier) Else Exit Sub
-    If Mid$(strText, 7, 1) = " " Then strTree = Mid$(strText, 8) Else Exit Sub
-    For lngTree = 1 To db.Destinies
-        If db.Destiny(lngTree).Abbreviation = strTree Then Exit For
-    Next
-    If lngTree > db.Destinies Then Exit Sub
-    With db.Destiny(lngTree).Tier(lngTier)
-        Do
-            For i = 1 To .Abilities
-                ' Perfect match? (Don't split for selector yet; some ability names contain ":")
-                If .Ability(i).AbilityName = strAbility Then Exit Do
-            Next
-            ' SelectorOnly?
-            For i = 1 To .Abilities
-                For s = 1 To .Ability(i).Selectors
-                    If .Ability(i).Selector(s).SelectorName = strAbility Then Exit Do
-                Next
-            Next
-            ' Selector?
-            lngPos = InStr(strAbility, ": ")
-            If lngPos = 0 Then Exit Do
-            strSelector = Mid$(strAbility, lngPos + 2)
-            strAbility = Left$(strAbility, lngPos - 1)
-            For i = 1 To .Abilities
-                If .Ability(i).AbilityName = strAbility Then
-                    For s = 1 To .Ability(i).Selectors
-                        If .Ability(i).Selector(s).SelectorName = strSelector Then Exit Do
-                    Next
-                End If
-            Next
-        Loop Until True
-    End With
-    If i > db.Destiny(lngTree).Tier(lngTier).Abilities Then Exit Sub
+Private Sub AddBuildDestiny(pstrRaw As String)
+    ' Add this build Destiny
     With build
-        .Twists = .Twists + 1
-        ReDim Preserve .Twist(1 To .Twists)
-        With .Twist(.Twists)
-            .DestinyName = db.Destiny(lngTree).TreeName
-            .Tier = lngTier
-            .Ability = i
-            .Selector = s
+        .Destinies = .Destinies + 1
+        ReDim Preserve .Destiny(1 To .Destinies)
+        With .Destiny(.Destinies)
+            .TreeName = db.Destiny(mlngDestiny).TreeName
+            .TreeType = db.Destiny(mlngDestiny).TreeType
+            .Source = 0 ' not used for destiny
+            .ClassLevels = 0 ' not used for destiny
         End With
     End With
 End Sub
+
+
 
 
 ' ************* GENERAL *************

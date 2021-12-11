@@ -7,13 +7,14 @@ Public db As DatabaseType
 
 Public Type PointerType
     Raw As String
-    Style As PointerEnum
+    Style As PointerEnum  'NOTE This is NOT tree type
     Feat As Long
     Tree As Long
     Tier As Long ' This is where Level goes for granted feats
     Ability As Long
     Selector As Long
     Rank As Long ' 0=Standard rules, otherwise the specific rank required
+    Destiny As Long
 End Type
 
 Public Type RaceType
@@ -221,6 +222,7 @@ Public Type TierType
     Abilities As Long  ' Count of abilities
 End Type
 
+'Tree - either Enhancement or Destiny
 Public Type TreeType
     TreeID As Long
     TreeName As String
@@ -263,6 +265,11 @@ Public Type TemplateType
     StatPoints(4, 6) As Long
 End Type
 
+Public Type EpicGrantedFeatType
+    FeatName As String
+    Level() As Long
+End Type
+
 Public Type DatabaseType
     Race() As RaceType
     Class() As ClassType
@@ -276,12 +283,15 @@ Public Type DatabaseType
     Trees As Long
     Tree() As TreeType
     Destinies As Long
-    Destiny() As TreeType
+    Destiny() As TreeType  'Array of Destiny starting at 1
     Spells As Long
     Spell() As SpellType
     NameChanges As Long
     NameChange() As NameChangeType
     Templates As Long
     Template() As TemplateType
+    '2021.11.10 - Epic Granted
+    EpicGrantedFeats As Long
+    EpicGrantedFeat() As EpicGrantedFeatType
     Loaded As Boolean
 End Type

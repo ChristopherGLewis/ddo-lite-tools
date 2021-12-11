@@ -101,9 +101,13 @@ End Function
 
 ' ************* CALCULATIONS *************
 
-
+'Return the number of Heroic levels, either 20 or Max
 Public Function HeroicLevels() As Long
-    If build.MaxLevels > 19 Then HeroicLevels = 20 Else HeroicLevels = build.MaxLevels
+    If build.MaxLevels > 19 Then
+        HeroicLevels = 20
+    Else
+        HeroicLevels = build.MaxLevels
+    End If
 End Function
 
 Public Function GetClassSplit(ptypClassSplit() As ClassSplitType) As Long
@@ -546,6 +550,7 @@ Private Sub GrantDwarvenAxe(plngLevel As Long, pbytIndex As Byte)
     End With
 End Sub
 
+'Updated 2021.11.10 for U51
 Private Sub InitStandardFeats()
     Dim lngIndex As Long
     
@@ -557,13 +562,19 @@ Private Sub InitStandardFeats()
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 12
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 15
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 18
-    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 21
-    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 24
-    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 26
-    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 27
-    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 28
-    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 29
-    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 30
+    'New from U51
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 21    'Epic1
+    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 22 'Dest1
+    'ED core2 @ 23
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 24    'Epic2
+    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 25 'Dest2
+    'ED core3 @ 26
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 27    'Epic3
+    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 28 'Dest3
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 30    'Epic4
+
+    InitBuildFeatSlot bftGranted, bfsEpic, lngIndex, 21    'Epic Power1
+
 End Sub
 
 Private Sub InitLegendFeats()
@@ -2109,48 +2120,9 @@ Public Function FindBuildTree(pstrTreeName As String) As Long
     Next
 End Function
 
-
 ' ************* DESTINY *************
 
-
-Public Function GetTwistDisplayName(plngTwist As Long) As String
-    Dim lngDestiny As Long
-    Dim lngTier As Long
-    Dim lngAbility As Long
-    Dim lngSelector As Long
-    Dim strDisplay As String
-    Dim strSelector As String
-    
-    If build.Twist(plngTwist).Tier < 1 Then Exit Function
-    With build.Twist(plngTwist)
-        lngDestiny = SeekTree(.DestinyName, peDestiny)
-        lngTier = .Tier
-        lngAbility = .Ability
-        lngSelector = .Selector
-    End With
-    If lngDestiny > db.Destinies Then Exit Function
-    With db.Destiny(lngDestiny).Tier(lngTier).Ability(lngAbility)
-        strDisplay = .AbilityName
-        If lngSelector Then
-            strSelector = db.Destiny(lngDestiny).Tier(lngTier).Ability(lngAbility).Selector(lngSelector).SelectorName
-            If .SelectorOnly Then strDisplay = strSelector Else strDisplay = strDisplay & ": " & strSelector
-        End If
-    End With
-    GetTwistDisplayName = strDisplay
-End Function
-
-Public Function CalculateFatePoints(plngTwist As Long, ByVal plngTier As Long) As Long
-    Dim lngTotal As Long
-    Dim lngStep As Long
-    Dim i As Long
-    
-    lngStep = plngTwist
-    For i = 1 To plngTier
-        lngTotal = lngTotal + lngStep
-        lngStep = lngStep + 1
-    Next
-    CalculateFatePoints = lngTotal
-End Function
+'Fate points are now permanent
 
 Public Function MaxFatePoints() As Long
     Select Case build.MaxLevels
@@ -2160,8 +2132,15 @@ Public Function MaxFatePoints() As Long
     End Select
 End Function
 
-Public Function MaxTwistSlots() As Long
-    If build.MaxLevels = 30 Then MaxTwistSlots = 5 Else MaxTwistSlots = 4
+Public Function FindDestinyTree(pstrDestinyName As String) As Long
+    Dim i As Long
+    
+    For i = 1 To build.Destinies
+        If build.Destiny(i).TreeName = pstrDestinyName Then
+            FindDestinyTree = i
+            Exit Function
+        End If
+    Next
 End Function
 
 
@@ -2226,15 +2205,14 @@ End Sub
 Public Function AbilityTaken(ptypBuildTree As BuildTreeType, plngTier As Long, plngAbility As Long) As Boolean
     Dim blnTaken As Boolean
     Dim i As Long
-    
+    'Sees if an ability has already been taken by comparing tier/ability
     For i = 1 To ptypBuildTree.Abilities
         With ptypBuildTree.Ability(i)
-            If .Tier = plngTier And .Ability = plngAbility Then blnTaken = True
+            If .Tier = plngTier And .Ability = plngAbility Then
+                AbilityTaken = True
+                Exit Function
+            End If
         End With
-        If blnTaken Then
-            AbilityTaken = True
-            Exit Function
-        End If
     Next
 End Function
 
@@ -2287,6 +2265,7 @@ End Sub
 
 Private Function GetSelector(ptypPointer As PointerType) As Long
     Dim lngBuildTree As Long
+    Dim lngBuildDestiny As Long
     
     With ptypPointer
         Select Case .Style
@@ -2294,7 +2273,8 @@ Private Function GetSelector(ptypPointer As PointerType) As Long
                 lngBuildTree = FindBuildTree(db.Tree(.Tree).TreeName)
                 GetSelector = GetSelectorChosen(build.Tree(lngBuildTree), ptypPointer)
             Case peDestiny
-                GetSelector = GetSelectorChosen(build.Destiny, ptypPointer)
+                lngBuildDestiny = FindDestinyTree(db.Destiny(.Destiny).TreeName)
+                GetSelector = GetSelectorChosen(build.Destiny(lngBuildDestiny), ptypPointer)
         End Select
     End With
 End Function
@@ -2356,7 +2336,7 @@ Public Function GetSpentInTree(ptypTree As TreeType, ptypBuildTree As BuildTreeT
     ReDim plngSpent(6)
     ' Total up points spent per tier
     With ptypBuildTree
-        If .TreeType = tseDestiny Then GetSpentInTree = True
+        If .TreeType = tseDestiny Then GetSpentInTree = True   'TODO DESTINY fix this
         For i = 1 To .Abilities
             With .Ability(i)
                 If .Tier = 0 And .Ability = 1 Then GetSpentInTree = True
@@ -2420,16 +2400,20 @@ Public Function CheckSpentInTreeAbility(ptypTree As TreeType, ptypAbility As Bui
     End If
 End Function
 
-' Returns TRUE if this ability fails class/character levels
+' Returns TRUE if this ability passes class/character levels
 Public Function CheckLevels(ptypBuildTree As BuildTreeType, ByVal plngTier As Long, ByVal plngAbility As Long) As Boolean
     Dim lngLevels As Long
     Dim lngClassLevels As Long
     
+    'Default to false
+    CheckLevels = False
+    'See the level requirements for this tree/Tier/Ability - return levels and class levels needed
     GetLevelReqs ptypBuildTree.TreeType, plngTier, plngAbility, lngLevels, lngClassLevels
-    If build.MaxLevels < lngLevels Then
+    
+    If build.MaxLevels < lngLevels Then    'Check char level including destiny levels
         gstrError = "Not enough character levels"
         CheckLevels = True
-    ElseIf ptypBuildTree.ClassLevels < lngClassLevels Then
+    ElseIf ptypBuildTree.ClassLevels < lngClassLevels Then   'Check class levels
         gstrError = "Not enough class levels"
         CheckLevels = True
     End If
@@ -2499,6 +2483,12 @@ Private Function GetLevelReqsCore(penTreeStyle As TreeStyleEnum, plngAbility As 
                 Case 5: lngMin = 22
                 Case 6: lngMin = 25
             End Select
+        Case tseDestiny  'New destiny cores
+            Select Case plngAbility
+                Case 1: lngMin = 20
+                Case 2: lngMin = 23
+                Case 3: lngMin = 26
+            End Select
     End Select
     If penTreeStyle = tseClass Then plngClassLevels = lngMin Else plngLevels = lngMin
 End Function
@@ -2510,9 +2500,17 @@ Private Function GetLevelReqsTier(penTreeStyle As TreeStyleEnum, plngTier As Lon
             If plngTier = 5 Then plngLevels = 12
         Case tseGlobal, tseRaceClass
             If plngTier = 5 Then plngLevels = 12 Else plngLevels = plngTier
+        Case tseDestiny  'New destiny cores
+            If plngTier = 1 Then plngLevels = 20
+            If plngTier = 2 Then plngLevels = 20
+            If plngTier = 3 Then plngLevels = 23
+            If plngTier = 4 Then plngLevels = 26
+            If plngTier = 5 Then plngLevels = 30
+            
     End Select
 End Function
 
+'Get the required spent for each tier
 Public Function GetSpentReq(ByVal penTreeStyle As TreeStyleEnum, ByVal plngTier As Long, ByVal plngAbility As Long) As Long
     Select Case penTreeStyle
         Case tseRace
@@ -2539,15 +2537,32 @@ Public Function GetSpentReq(ByVal penTreeStyle As TreeStyleEnum, ByVal plngTier 
                     End Select
             End Select
         Case tseDestiny
-            If plngTier > 1 Then GetSpentReq = (plngTier - 1) * 4
+            'Required spend per tier
+            Select Case plngTier
+                Case 0
+                    Select Case plngAbility
+                        Case 2: GetSpentReq = 5
+                        Case 3: GetSpentReq = 10  'only 3 for now
+                    End Select
+                Case 1: GetSpentReq = 1
+                Case 2: GetSpentReq = 5
+                Case 3: GetSpentReq = 10
+                Case 4: GetSpentReq = 20
+                Case 5: GetSpentReq = 30
+            End Select
     End Select
 End Function
 
+'returns the number of points spent on an ability
 Private Function GetPoints(ptypAbility As AbilityType, ByVal plngSelector As Long, ByVal plngRanks As Long) As Long
     Dim lngPoints As Long
     
-    If plngSelector = 0 Or ptypAbility.Selectors = 0 Then lngPoints = ptypAbility.Cost Else lngPoints = ptypAbility.Selector(plngSelector).Cost
-    If plngRanks > 1 Then lngPoints = lngPoints * plngRanks
+    If plngSelector = 0 Or ptypAbility.Selectors = 0 Then
+        lngPoints = ptypAbility.Cost 'No selectors, cost is cost
+    Else
+        lngPoints = ptypAbility.Selector(plngSelector).Cost 'No selectors, cost is selector cost
+    End If
+    If plngRanks > 1 Then lngPoints = lngPoints * plngRanks  'cost * ranks
     GetPoints = lngPoints
 End Function
 
@@ -2557,6 +2572,7 @@ Public Function CheckAbilityErrors(ptypTree As TreeType, ptypBuildTree As BuildT
     
     CheckAbilityErrors = True
     ' Levels (eg: 3 class levels for tier 3, 12 build levels for tier 5, 4 character levels for racial core 2, etc...)
+    'CheckLevels is now destinly aware
     If CheckLevels(ptypBuildTree, ptypAbility.Tier, ptypAbility.Ability) Then Exit Function
     ' Points in tree
     If CheckSpentInTreeAbility(ptypTree, ptypAbility, plngSpent) Then Exit Function
@@ -2602,6 +2618,54 @@ Public Function CheckAbilityErrors(ptypTree As TreeType, ptypBuildTree As BuildT
     CheckAbilityErrors = Not blnPassChecks
 End Function
 
+
+' Returns TRUE if errors found
+Public Function CheckDestinyAbilityErrors(ptypTree As TreeType, ptypBuildTree As BuildTreeType, ptypAbility As BuildAbilityType, plngSpent() As Long) As Boolean
+    Dim blnPassChecks As Boolean
+    
+    'Default to an error
+    CheckDestinyAbilityErrors = True
+    ' Levels (eg: 3 class levels for tier 3, 12 build levels for tier 5, 4 character levels for racial core 2, etc...)
+    'CheckLevels is now destinly aware
+    If CheckLevels(ptypBuildTree, ptypAbility.Tier, ptypAbility.Ability) Then Exit Function
+    ' Points in tree
+    If CheckSpentInTreeAbility(ptypTree, ptypAbility, plngSpent) Then Exit Function
+    With ptypAbility
+        Do
+            'Destiny abilities have dependancies on MaxLevel and intra destiny only.
+            blnPassChecks = False
+            ' All/One/None
+            If .Selector = 0 Then
+                'Check ability requirements
+                If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Req, .Rank, False) Then Exit Do
+                ' Ranks
+                If .Rank > 1 And ptypTree.Tier(.Tier).Ability(.Ability).RankReqs Then
+                    If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Rank(.Rank).Req, .Rank, True) Then Exit Do
+                    If .Selector <> 0 Then
+                        If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Rank(.Rank).Req, .Rank, True) Then Exit Do
+                    End If
+                End If
+            Else
+                If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Req, .Rank, False) Then Exit Do
+                ' Ranks
+                If .Rank > 1 And ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).RankReqs Then
+                    'Note this is checking at the selector level - we don't have data if the req is
+                    'only on one selector (SS->t1:Studies->Magic/Music)
+                    'We'd need to add something like Rank3Sel1None: to the ench.txt file
+                    'and update the dataload stuff
+                    If Not CheckAbilityReqs(ptypTree.Tier(.Tier).Ability(.Ability).Selector(.Selector).Rank(.Rank).Req, .Rank, True) Then Exit Do
+                End If
+            End If
+
+            blnPassChecks = True
+        Loop Until True
+    End With
+    CheckDestinyAbilityErrors = Not blnPassChecks
+End Function
+
+
+
+
 ' Returns TRUE if we fail this check
 Public Function CheckAbilityClassLevels(pblnClass() As Boolean, plngLevel() As Long, ByVal plngRank As Long) As Boolean
     Dim lngClassLevels() As Long
@@ -2617,31 +2681,38 @@ Public Function CheckAbilityClassLevels(pblnClass() As Boolean, plngLevel() As L
             If lngClassLevels(i) >= plngLevel(i) Then Exit Function
         End If
     Next
-    If plngRank > 1 Then gstrError = "Rank " & plngRank & " class requirements" Else gstrError = "Class requirements"
+    If plngRank > 1 Then
+        gstrError = "Rank " & plngRank & " class requirements"
+    Else
+        gstrError = "Class requirements"
+    End If
     CheckAbilityClassLevels = True
 End Function
 
-' Returns TRUE if we successfully pass all abilityreqs
+' Returns TRUE if successfully pass all abilityreqs
 Private Function CheckAbilityReqs(ptypReqList() As ReqListType, ByVal plngRanks As Long, pblnRankReq As Boolean) As Boolean
     Dim enReq As ReqGroupEnum
     
+    'Loop through all requirements (All/One/None)
     For enReq = rgeAll To rgeNone
         If CheckAbilityReq(ptypReqList(enReq), enReq, plngRanks, pblnRankReq) Then Exit Function
     Next
     CheckAbilityReqs = True
 End Function
 
-' Returns TRUE if we fail any reqs
+' Returns TRUE if successfully pass all abilities.
 Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupEnum, plngRanks As Long, pblnRankReq As Boolean) As Boolean
     Dim lngMatches As Long
     Dim lngTree As Long
+    Dim lngDestiny As Long
     Dim strTaken As String
     Dim strMissing As String
     Dim i As Long
 
-    If ptypReqList.Reqs = 0 Then Exit Function
+    If ptypReqList.Reqs = 0 Then Exit Function  'Exit if no reqs of this type
     For i = 1 To ptypReqList.Reqs
         With ptypReqList.Req(i)
+            'Reqirement type Feat/Dest/Enh
             Select Case .Style
                 Case peFeat
                     If CheckAbilityFeat(.Feat, .Selector) Then
@@ -2651,11 +2722,15 @@ Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupE
                         If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, 1)
                     End If
                 Case peDestiny
-                    If CheckAbility(build.Destiny, ptypReqList.Req(i), penReq, plngRanks) Then
-                        If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, .Tree)
-                        lngMatches = lngMatches + 1
-                    Else
-                        If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                    'We need to find the treeID for current destiny/enh
+                    lngDestiny = FindDestinyTree(db.Destiny(.Tree).TreeName)
+                    If lngDestiny <> 0 Then
+                        If CheckAbility(build.Destiny(lngDestiny), ptypReqList.Req(i), penReq, plngRanks) Then
+                            If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                            lngMatches = lngMatches + 1
+                        Else
+                            If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                        End If
                     End If
                 Case peEnhancement
                     lngTree = FindBuildTree(db.Tree(.Tree).TreeName)
@@ -2691,76 +2766,6 @@ Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupE
     End Select
 End Function
 
-' Returns TRUE if errors found
-Public Function CheckTwistSlot(plngTwist As Long) As Boolean
-    Dim lngDestiny As Long
-    Dim lngTier As Long
-    Dim lngAbility As Long
-    
-    If plngTwist > build.Twists Then Exit Function
-    With build.Twist(plngTwist)
-        If Len(.DestinyName) Then lngDestiny = SeekTree(.DestinyName, peDestiny)
-        lngTier = .Tier
-        lngAbility = .Ability
-    End With
-    If lngDestiny = 0 Or lngTier = 0 Or lngAbility = 0 Then Exit Function
-    If lngTier > 4 Then
-        gstrError = "Can't twist tier " & lngTier & " abilities"
-        CheckTwistSlot = True
-    Else
-        CheckTwistSlot = True
-        If CheckTwistReq(db.Destiny(lngDestiny).Tier(lngTier).Ability(lngAbility).Req(rgeAll), rgeAll) Then Exit Function
-        If CheckTwistReq(db.Destiny(lngDestiny).Tier(lngTier).Ability(lngAbility).Req(rgeNone), rgeNone) Then Exit Function
-        CheckTwistSlot = False
-    End If
-End Function
-
-' Returns TRUE if feat prereqs not satisfied
-Public Function CheckTwistErrors(ptypAbility As AbilityType) As Boolean
-    CheckTwistErrors = True
-    If CheckTwistReq(ptypAbility.Req(rgeAll), rgeAll) Then Exit Function
-    If CheckTwistReq(ptypAbility.Req(rgeNone), rgeNone) Then Exit Function
-    CheckTwistErrors = False
-End Function
-
-' Returns TRUE if we fail any reqs
-Private Function CheckTwistReq(ptypReqList As ReqListType, penReq As ReqGroupEnum) As Boolean
-    Dim lngMatches As Long
-    Dim lngTree As Long
-    Dim strTaken As String
-    Dim strMissing As String
-    Dim lngTotal As Long
-    Dim i As Long
-
-    If ptypReqList.Reqs = 0 Then Exit Function
-    lngTotal = ptypReqList.Reqs
-    For i = 1 To ptypReqList.Reqs
-        With ptypReqList.Req(i)
-            If .Style = peFeat Then
-                If CheckAbilityFeat(.Feat, .Selector) Then
-                    If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, 1)
-                    lngMatches = lngMatches + 1
-                Else
-                    If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
-                End If
-            Else
-                lngTotal = lngTotal - 1
-            End If
-        End With
-    Next
-    Select Case penReq
-        Case rgeAll
-            If lngMatches < lngTotal Then
-                gstrError = "Requires " & strMissing
-                CheckTwistReq = True
-            End If
-        Case rgeNone
-            If lngMatches > 0 Then
-                gstrError = "Antireq for " & strMissing
-                CheckTwistReq = True
-            End If
-    End Select
-End Function
 
 Public Function CheckAbilityFeat(ByVal plngFeat As Long, ByVal plngSelector As Long) As Boolean
     Dim typTaken() As FeatTakenType

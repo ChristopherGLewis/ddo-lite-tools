@@ -733,7 +733,7 @@ Private Sub mnuEdit_Click(Index As Integer)
         Case "Feats": OpenForm "frmFeats"
         Case "Enhancements": OpenForm "frmEnhancements"
         Case "Spells": OpenForm "frmSpells"
-        Case "Destiny": OpenForm "frmDestiny"
+        Case "Destiny": OpenForm "frmDestiny2"
         Case "Gear": OpenForm "frmGear"
     End Select
 End Sub
@@ -748,7 +748,7 @@ Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
         Case vbKeyF: OpenForm "frmFeats"
         Case vbKeyE: OpenForm "frmEnhancements"
         Case vbKeyP: OpenForm "frmSpells"
-        Case vbKeyD: OpenForm "frmDestiny"
+        Case vbKeyD: OpenForm "frmDestiny2"
         Case vbKeyEscape: Unload Me
     End Select
 End Sub

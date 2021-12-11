@@ -1188,6 +1188,7 @@ Private Sub LoadEnhancements()
     For i = 1 To UBound(strTree)
         If InStr(strTree(i), "Type: ") Then
             typNew = typBlank
+            typNew.TreeID = db.Trees + 1 ' Set our future treeID
             If LoadTree(strTree(i), typNew) Then
                 db.Trees = db.Trees + 1
                 db.Tree(db.Trees) = typNew
@@ -1219,12 +1220,13 @@ Private Sub LoadDestinies()
     If DataFile(strFile, "Destinies.txt") Then Exit Sub
     log.Activity = actLoadTree
     ' Allocate enough space that we never have to increase
-    ReDim db.Destiny(15)
+    ReDim db.Destiny(32)
     strRaw = xp.File.LoadToString(strFile)
     strDestiny = Split(strRaw, "DestinyName: ")
     For i = 1 To UBound(strDestiny)
-        If InStr(strDestiny(i), "Stats: ") Then
+        If InStr(strDestiny(i), "Type: ") Then  'Split on type, this splits by destiny (ish)
             typNew = typBlank
+            typNew.TreeID = db.Destinies + 1 ' Set our future treeID
             If LoadTree(strDestiny(i), typNew) Then
                 db.Destinies = db.Destinies + 1
                 db.Destiny(db.Destinies) = typNew
@@ -1248,7 +1250,7 @@ Private Function LoadTree(ByVal pstrRaw As String, ptypTree As TreeType) As Bool
     Dim i As Long
     
     CleanText pstrRaw
-    ' Split abilities now to isolate tree header
+    ' Split abilities now to isolate tree header - header is in (0)
     strAbility = Split(pstrRaw, "AbilityName: ")
     ' Process header
     log.Tier = -1
@@ -1257,11 +1259,11 @@ Private Function LoadTree(ByVal pstrRaw As String, ptypTree As TreeType) As Bool
         Exit Function
     End If
     log.Tier = 0
-     ' Process abilities
+     ' Process abilities (1) +
     For i = 1 To UBound(strAbility)
         LoadAbility strAbility(i), ptypTree
     Next
-    ' Stats
+    ' Stats - race and destiny are handled in this function
     AddStats ptypTree
     ' Core prereqs
     AddCoreReqs ptypTree
@@ -1269,6 +1271,7 @@ Private Function LoadTree(ByVal pstrRaw As String, ptypTree As TreeType) As Bool
     LoadTree = True
 End Function
 
+'This loads the header lines (Tree/DestinyName, Abbr etc)
 Private Function LoadTreeHeader(pstrRaw As String, ptypTree As TreeType) As Boolean
     Dim strLine() As String
     Dim lngLine As Long
@@ -1382,14 +1385,14 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
     With typNew
         .AbilityName = strAbility
         .Abbreviation = strAbility
-        .Ranks = 1
+        .Ranks = 1  'Default to 1/1
         .Cost = 1
         log.LoadItem = .AbilityName
 '        ReDim .Class(ceClasses - 1)
 '        ReDim .ClassLevel(ceClasses - 1)
 '        ReDim .Group(feFilters - 1)
 '        .Group(feAll) = True
-        ReDim .Req(3)
+        ReDim .Req(3)  'Three reqs All/One/None
         ' Process lines
         For lngLine = 1 To UBound(strLine)
             log.LoadLine = strLine(lngLine)
@@ -1440,7 +1443,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                                 .Sibling(i + 1).Raw = strList(i)
                             Next
                         End If
-                    Case "all", "one", "none"
+                    Case "all", "one", "none"   'Requirements
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
@@ -1450,6 +1453,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                                     .Req(i + 1).Style = peFeat
                                 ElseIf ptypTree.TreeType = tseDestiny Then
                                     .Req(i + 1).Style = peDestiny
+                                    .Req(i + 1).Tree = -1 'TODO set this req to this tree id ???
                                 Else
                                     .Req(i + 1).Style = peEnhancement
                                 End If
@@ -1557,7 +1561,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
     End With
     With ptypTree.Tier(lngTier)
         .Abilities = .Abilities + 1
-        ReDim Preserve .Ability(1 To .Abilities)
+        ReDim Preserve .Ability(1 To .Abilities)   'hmm some arrays start at 0, some at 1...
         .Ability(.Abilities) = typNew
     End With
 End Sub
@@ -1571,9 +1575,9 @@ Private Function ValidTier(penType As TreeStyleEnum, plngTier As Long) As Boolea
             lngMax = 5
         Case tseRace
             lngMax = 4
-        Case tseDestiny
-            lngMin = 1
-            lngMax = 6
+        Case tseDestiny  'Now like enh
+            lngMin = 0
+            lngMax = 5
     End Select
     Select Case plngTier
         Case lngMin To lngMax: ValidTier = True
@@ -1684,14 +1688,11 @@ Private Sub AddStats(ptypTree As TreeType)
     Dim i As Long
     
     Select Case ptypTree.TreeType
-        Case tseRace
+        Case tseRace, tseDestiny  'Race and destiny get no default stats
             Exit Sub
         Case tseClass, tseRaceClass, tseGlobal
             lngStart = 3
             lngEnd = 4
-        Case tseDestiny
-            lngStart = 1
-            lngEnd = 6
         Case Else
             LogError
             Exit Sub
@@ -1753,7 +1754,7 @@ End Sub
 
 Private Sub AddCoreReqs(ptypTree As TreeType)
     Dim i As Long
-    
+    'This works with destinies - core (Tier(0)).Ability(N) is dependant on Tier(0).Ability(n-1)
     With ptypTree.Tier(0)
         For i = 2 To .Abilities
             With .Ability(i).Req(rgeAll)
@@ -1761,6 +1762,15 @@ Private Sub AddCoreReqs(ptypTree As TreeType)
                 ReDim Preserve .Req(1 To .Reqs)
                 With .Req(.Reqs)
                     .Raw = "Tier 0: " & ptypTree.Tier(0).Ability(i - 1).AbilityName
+                    .Tree = ptypTree.TreeID    'Set our TreeID for our core requirements
+                    .Ability = i - 1
+                    Select Case ptypTree.TreeType
+                        Case tseDestiny
+                          .Style = peDestiny
+                        Case Else ' tseRace , tseClass, tseGlobal, tseRaceClass
+                          'What about feat???
+                          .Style = peEnhancement
+                    End Select
                 End With
             End With
         Next

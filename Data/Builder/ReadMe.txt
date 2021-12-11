@@ -2,7 +2,6 @@ Data file structure notes
 
 This file is best viewed with word wrap turned OFF.
 
-
 All Files
 ---------
 
@@ -135,6 +134,8 @@ granted by that pact. You can include as many PactSpells: lines as you need.
 
 Feats, Enhancements, Destinies, Spells
 --------------------------------------
+NOTE - for the most part, if the feats/enh/destinies/spells are NOT in correct alphabetical order
+BAD things will happen.
 
 Descrip:
 Descriptions are pulled all at once from ddowiki before releasing each update. Special codes
@@ -172,6 +173,9 @@ and abilities. (Though feats can only point to other feats.)
        All: Feat: Cleave, Tier 2: Momentum Swing
  - Abilities can also take a " Rank #" suffix. For example:
    - None: Feat: Magical Training, Arcane Archer Tier 1: Energy of the Wild Rank 3, Spellsinger Tier 1: Studies: Magical Rank 3
+
+Note: Tier 0 prereqs are not required, but this requires the Dest/Enh.txt to be in the proper order
+
 
 Rank#All:
 Rank#One:

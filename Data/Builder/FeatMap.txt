@@ -118,33 +118,6 @@ Epic Mage Armor	Arcane Sphere: Epic Mage Armor	Epic Mage Armor
 Epic Mental Toughness	Epic: Epic Mental Toughness	Epic Mental Toughness
 Epic Reflexes	Epic: Epic Reflexes	Epic Reflexes
 Epic Reputation	Epic: Epic Reputation	Epic Reputation
-Epic Skill Focus: Balance	Martial Sphere: Epic Skill Focus: Balance	Epic Skill Focus: Balance
-Epic Skill Focus: Bluff	Divine Sphere: Epic Skill Focus: Bluff	Epic Skill Focus: Bluff
-Epic Skill Focus: Concentration	Arcane Sphere: Epic Skill Focus: Concentration	Epic Skill Focus: Concentration
-Epic Skill Focus: Diplomacy	Divine Sphere: Epic Skill Focus: Diplomacy	Epic Skill Focus: Diplomacy
-Epic Skill Focus: Disable Device	Arcane Sphere: Epic Skill Focus: Disable Device	Epic Skill Focus: Disable Device
-Epic Skill Focus: Haggle	Divine Sphere: Epic Skill Focus: Haggle	Epic Skill Focus: Haggle
-Epic Skill Focus: Heal	Divine Sphere: Epic Skill Focus: Heal	Epic Skill Focus: Heal
-Epic Skill Focus: Hide	Martial Sphere: Epic Skill Focus: Hide	Epic Skill Focus: Hide
-Epic Skill Focus: Intimidate	Primal Sphere: Epic Skill Focus: Intimidate	Epic Skill Focus: Intimidate
-Epic Skill Focus: Jump	Primal Sphere: Epic Skill Focus: Jump	Epic Skill Focus: Jump
-Epic Skill Focus: Listen	Divine Sphere: Epic Skill Focus: Listen	Epic Skill Focus: Listen
-Epic Skill Focus: Move Silently	Primal Sphere: Epic Skill Focus: Move Silently	Epic Skill Focus: Move Silently
-Epic Skill Focus: Open Lock	Martial Sphere: Epic Skill Focus: Open Lock	Epic Skill Focus: Open Lock
-Epic Skill Focus: Perform	Arcane Sphere: Epic Skill Focus: Perform	Epic Skill Focus: Perform
-Epic Skill Focus: Repair	Arcane Sphere: Epic Skill Focus: Repair	Epic Skill Focus: Repair
-Epic Skill Focus: Search	Martial Sphere: Epic Skill Focus: Search	Epic Skill Focus: Search
-Epic Skill Focus: Spellcraft	Arcane Sphere: Epic Skill Focus: Spellcraft	Epic Skill Focus: Spell Craft
-Epic Skill Focus: Spot	Primal Sphere: Epic Skill Focus: Spot	Epic Skill Focus: Spot
-Epic Skill Focus: Swim	Martial Sphere: Epic Skill Focus: Swim	Epic Skill Focus: Swim
-Epic Skill Focus: Tumble	Primal Sphere: Epic Skill Focus: Tumble	Epic Skill Focus: Tumble
-Epic Spell Focus: Abjuration	Epic: Epic Spell Focus: Abjuration	Epic Spell Focus: Abjuration
-Epic Spell Focus: Conjuration	Epic: Epic Spell Focus: Conjuration	Epic Spell Focus: Conjuration
-Epic Spell Focus: Enchantment	Epic: Epic Spell Focus: Enchantment	Epic Spell Focus: Enchantment
-Epic Spell Focus: Evocation	Epic: Epic Spell Focus: Evocation	Epic Spell Focus: Evocation
-Epic Spell Focus: Illusion	Epic: Epic Spell Focus: Illusion	Epic Spell Focus: Illusion
-Epic Spell Focus: Necromancy	Epic: Epic Spell Focus: Necromancy	Epic Spell Focus: Necromancy
-Epic Spell Focus: Transmutation	Epic: Epic Spell Focus: Transmutation	Epic Spell Focus: Transmutation
 Epic Spell Penetration	Epic: Epic Spell Penetration	Epic Spell Penetration
 Epic Spell Power: Acid	Arcane Sphere: Epic Spell Power: Acid	Epic Spell Power: Acid
 Epic Spell Power: Acid	Primal Sphere: Epic Spell Power: Acid	Epic Spell Power: Acid

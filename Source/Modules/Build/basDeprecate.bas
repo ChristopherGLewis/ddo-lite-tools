@@ -47,13 +47,10 @@ Public Type DeprecateType
     Trees As Long
     Tree() As String
     LevelingGuide As DeprecateAbilityType
-    BinaryDestiny As String
-    Destiny() As DeprecateAbilityType
     Destinies As Long
-    Twists As Long
-    Twist() As DeprecateAbilityType
-    BinaryTwists As Long
-    BinaryTwist() As TwistType
+    Destiny() As String
+    DestinyTypes As Long
+    DestinyType() As DeprecateAbilityType
 End Type
 
 Public gtypDeprecate As DeprecateType
@@ -120,7 +117,6 @@ Public Sub DeprecateBinary()
     DeprecateBinaryEnhancements
     DeprecateBinaryLevelingGuide
     DeprecateBinaryDestiny
-    DeprecateBinaryTwists
 End Sub
 
 Private Sub DeprecateBinaryFeats()
@@ -256,31 +252,55 @@ Private Sub DeprecateBinaryEnhancements()
                     .Tree(i) = .Tree(i + 1)
                 Next
                 .Trees = .Trees - 1
-                If .Trees = 0 Then Erase .Tree Else ReDim Preserve .Tree(1 To .Trees)
+                If .Trees = 0 Then
+                    Erase .Tree
+                Else
+                    ReDim Preserve .Tree(1 To .Trees)
+                End If
             End With
         End If
     Next
 End Sub
 
 Private Sub DeprecateBinaryDestiny()
+    Dim lngBuildDestiny As Long
+    Dim strDestiny As String
     Dim lngDestiny As Long
     Dim blnDeprecate As Boolean
     Dim i As Long
     
-    If Len(build.Destiny.TreeName) = 0 Then Exit Sub
-    lngDestiny = SeekTree(build.Destiny.TreeName, peDestiny)
-    If lngDestiny = 0 Then
-        blnDeprecate = True
-    ElseIf DeprecateBinaryTree(build.Destiny, db.Destiny(lngDestiny)) Then
-        blnDeprecate = True
-    End If
-    If blnDeprecate Then
-        gtypDeprecate.BinaryDestiny = build.Destiny.TreeName
-        build.Destiny.TreeName = vbNullString
-        Erase build.Destiny.Ability
-        build.Destiny.Abilities = 0
-        gtypDeprecate.Deprecated = True
-    End If
+    For lngBuildDestiny = build.Destinies To 1 Step -1
+        blnDeprecate = False
+        With build.Destiny(lngBuildDestiny)
+            strDestiny = .TreeName
+            lngDestiny = SeekTree(strDestiny, peDestiny)
+            If lngDestiny = 0 Then
+                blnDeprecate = True
+            ElseIf DeprecateBinaryTree(build.Destiny(lngBuildDestiny), db.Destiny(lngDestiny)) Then
+                blnDeprecate = True
+            End If
+        End With
+        If blnDeprecate Then
+            With gtypDeprecate
+                .Destinies = .Destinies + 1
+                ReDim Preserve .Destiny(1 To .Destinies)
+                .Destiny(.Destinies) = strDestiny
+                .Deprecated = True
+            End With
+            With build
+                For i = lngBuildDestiny To build.Destinies - 1
+                    .Destiny(i) = .Destiny(i + 1)
+                Next
+                .Destinies = .Destinies - 1
+                If .Destinies = 0 Then
+                    Erase .Destiny
+                Else
+                    ReDim Preserve .Destiny(1 To .Destinies)
+                End If
+            End With
+        End If
+    Next
+
 End Sub
 
 ' Return TRUE if tree needs to be deprecated
@@ -377,55 +397,6 @@ Private Sub DeprecateBinaryLevelingGuide()
     End If
 End Sub
 
-Private Sub DeprecateBinaryTwists()
-    Dim typBlank As TwistType
-    Dim lngDestiny As Long
-    Dim blnError As Boolean
-    Dim i As Long
-    
-    For i = build.Twists To 1 Step -1
-        With build.Twist(i)
-            blnError = False
-            If .Tier = 0 Or .Ability = 0 Or Len(.DestinyName) = 0 Then
-                ' Do nothing
-            ElseIf .Tier > 4 Then
-                blnError = True
-            Else
-                lngDestiny = SeekTree(.DestinyName, peDestiny)
-                If lngDestiny = 0 Then
-                    blnError = True
-                ElseIf .Ability > db.Destiny(lngDestiny).Tier(.Tier).Abilities Then
-                    blnError = True
-                ElseIf .Selector > db.Destiny(lngDestiny).Tier(.Tier).Ability(.Ability).Selectors Then
-                    blnError = True
-                ElseIf .Selector = 0 And db.Destiny(lngDestiny).Tier(.Tier).Ability(.Ability).Selectors > 0 Then
-                    blnError = True
-                End If
-            End If
-        End With
-        If blnError Then
-            With gtypDeprecate
-                .BinaryTwists = .BinaryTwists + 1
-                ReDim Preserve .BinaryTwist(1 To .BinaryTwists)
-                .BinaryTwist(.BinaryTwists) = build.Twist(i)
-                .Deprecated = True
-            End With
-            RemoveTwist i
-        End If
-    Next
-End Sub
-
-Private Sub RemoveTwist(plngTwist As Long)
-    Dim i As Long
-    
-    With build
-        For i = plngTwist To build.Twists - 1
-            .Twist(i) = .Twist(i + 1)
-        Next
-        .Twists = .Twists - 1
-        If .Twists = 0 Then Erase .Twist Else ReDim Preserve .Twist(1 To .Twists)
-    End With
-End Sub
 
 
 ' ************* FEATS *************
@@ -481,7 +452,7 @@ Public Sub DeprecateAbility(ptypAbility As DeprecateAbilityType)
             Case peDestiny
                 .Destinies = .Destinies + 1
                 ReDim Preserve .Destiny(1 To .Destinies)
-                .Destiny(.Destinies) = ptypAbility
+                .DestinyType(.DestinyTypes) = ptypAbility
         End Select
     End With
 End Sub
@@ -493,11 +464,3 @@ Public Sub DeprecateLevelingGuide(ptypAbility As DeprecateAbilityType)
     End With
 End Sub
 
-Public Sub DeprecateTwist(ptypAbility As DeprecateAbilityType)
-    With gtypDeprecate
-        .Twists = .Twists + 1
-        ReDim Preserve .Twist(1 To .Twists)
-        .Twist(.Twists) = ptypAbility
-        .Deprecated = True
-    End With
-End Sub

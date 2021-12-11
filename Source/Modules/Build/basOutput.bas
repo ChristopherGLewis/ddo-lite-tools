@@ -2077,24 +2077,24 @@ Private Sub OutputDestiny()
     Dim lngTier As Long
     Dim strDisplay As String
     Dim lngPoints As Long
-    Dim lngFate As Long
     Dim enValid As ValidEnum
     Dim i As Long
-    
+    Dim lngI As Long
+   
     If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeDestiny) Then Exit Sub
     If mblnReddit Then
         OutputDestinyReddit
         Exit Sub
     End If
-    enValid = ValidDestiny(lngPoints, lngFate)
+    enValid = ValidDestiny(lngPoints)
     Select Case enValid
         Case veSkip, veEmpty: Exit Sub
     End Select
     If lngPoints = 0 Then
-        OutputText "Destiny", , , , , True
+        OutputText "Destinies", , , , , True
     Else
         ' Title
-        OutputText "Destiny", False, , , , True
+        OutputText "Destinies", False, , , , True
         If lngPoints = (MaxDestinyAP + build.DestinyTome) Then
             strDisplay = " (" & (MaxDestinyAP + build.DestinyTome) & " AP)"
         Else
@@ -2104,45 +2104,37 @@ Private Sub OutputDestiny()
         ErrorFlag (enValid = veErrors)
         BlankLine
         ' Destiny
-        lngDestiny = SeekTree(build.Destiny.TreeName, peDestiny)
-        OutputText build.Destiny.TreeName
-        ListBegin True
-        lngTier = 1
-        strDisplay = vbNullString
-        For i = 1 To build.Destiny.Abilities
-            With build.Destiny.Ability(i)
-                If .Tier > lngTier Then
-                    If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-                    ListStartLine
-                    OutputText strDisplay, True
-                    lngTier = lngTier + 1
-                    Do While .Tier > lngTier
+        For lngI = 1 To build.Destinies
+            lngDestiny = SeekTree(build.Destiny(lngI).TreeName, peDestiny)
+            OutputText build.Destiny(lngI).TreeName
+            ListBegin True
+            lngTier = 1
+            strDisplay = vbNullString
+            For i = 1 To build.Destiny(lngI).Abilities
+                With build.Destiny(lngI).Ability(i)
+                    If .Tier > lngTier Then
+                        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
                         ListStartLine
-                        OutputText "(none)", True
+                        OutputText strDisplay, True
                         lngTier = lngTier + 1
-                    Loop
-                    strDisplay = vbNullString
-                End If
-                strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
-            End With
-        Next
-        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-        ListStartLine
-        OutputText strDisplay, True
-        ListEnd
-    End If
-    If lngFate > 0 Then
-        BlankLine
-        strDisplay = "Twists of Fate (" & lngFate & " fate points)"
-        If lngFate > MaxFatePoints() Then strDisplay = strDisplay & " - Error"
-        OutputText strDisplay
-        ListBegin True
-        For i = 1 To build.Twists
+                        Do While .Tier > lngTier
+                            ListStartLine
+                            OutputText "(none)", True
+                            lngTier = lngTier + 1
+                        Loop
+                        strDisplay = vbNullString
+                    End If
+                    strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
+                End With
+            Next
+            If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
             ListStartLine
-            OutputText GetTwistDisplay(i)
+            OutputText strDisplay, True
         Next
+        
         ListEnd
     End If
+    
     If mblnDisplay Then BlankLine 2 Else BlankLine
 End Sub
 
@@ -2151,62 +2143,52 @@ Private Sub OutputDestinyReddit()
     Dim lngTier As Long
     Dim strDisplay As String
     Dim lngPoints As Long
-    Dim lngFate As Long
     Dim enValid As ValidEnum
+    Dim j As Long
     Dim i As Long
     
-    enValid = ValidDestiny(lngPoints, lngFate)
+    enValid = ValidDestiny(lngPoints)
     Select Case enValid
         Case veSkip, veEmpty: Exit Sub
     End Select
     If enValid = veErrors Then strDisplay = "(Errors)"
-    OutputTitle "Destiny", , strDisplay
+    OutputTitle "Destinies", , strDisplay
     BlankLine
     If lngPoints Then
         ' Destiny
-        If lngPoints = 24 Then strDisplay = " (24 AP)" Else strDisplay = " (" & lngPoints & " of 24 AP)"
-        lngDestiny = SeekTree(build.Destiny.TreeName, peDestiny)
-        OutputText build.Destiny.TreeName & strDisplay
-        BlankLine
-        OutputText "|||"
-        OutputText "|:--|:--|:--"
-        ' Table
-        lngTier = 1
-        strDisplay = vbNullString
-        For i = 1 To build.Destiny.Abilities
-            With build.Destiny.Ability(i)
-                If .Tier > lngTier Then
-                    If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-                    OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
-                    lngTier = lngTier + 1
-                    Do While .Tier > lngTier
-                        OutputText "|Tier " & lngTier & "|(none)|"
+        For j = 1 To build.Destinies
+            If lngPoints = 24 Then strDisplay = " (24 AP)" Else strDisplay = " (" & lngPoints & " of 24 AP)"
+            lngDestiny = SeekTree(build.Destiny(j).TreeName, peDestiny)
+            OutputText build.Destiny(j).TreeName & strDisplay
+            BlankLine
+            OutputText "|||"
+            OutputText "|:--|:--|:--"
+            ' Table
+            lngTier = 1
+            strDisplay = vbNullString
+            For i = 1 To build.Destiny(j).Abilities
+                With build.Destiny(j).Ability(i)
+                    If .Tier > lngTier Then
+                        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
+                        OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
                         lngTier = lngTier + 1
-                    Loop
-                    strDisplay = vbNullString
-                End If
-                strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
-            End With
+                        Do While .Tier > lngTier
+                            OutputText "|Tier " & lngTier & "|(none)|"
+                            lngTier = lngTier + 1
+                        Loop
+                        strDisplay = vbNullString
+                    End If
+                    strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
+                End With
+            Next
         Next
         If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
         OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
         BlankLine
     End If
-    If lngFate > 0 Then
-        strDisplay = "Twists of Fate (" & lngFate & " fate points)"
-        If lngFate > MaxFatePoints() Then strDisplay = strDisplay & " _Error_"
-        OutputText strDisplay
-        BlankLine
-        OutputText "|||"
-        OutputText "|:--|:--|:--"
-        For i = 1 To build.Twists
-            OutputText "|Twist " & i & "|" & GetTwistDisplay(i) & "|"
-        Next
-        BlankLine
-    End If
 End Sub
 
-Private Function ValidDestiny(plngPoints As Long, plngFate As Long) As ValidEnum
+Private Function ValidDestiny(plngPoints As Long) As ValidEnum
     Dim lngDestiny As Long
     Dim enValid As ValidEnum
     Dim i As Long
@@ -2215,46 +2197,34 @@ Private Function ValidDestiny(plngPoints As Long, plngFate As Long) As ValidEnum
         ValidDestiny = veSkip
         Exit Function
     End If
-    If Len(build.Destiny.TreeName) = 0 Or build.Destiny.Abilities = 0 Then
+    If build.Destinies = 0 Then
         enValid = veEmpty
     ElseIf mblnDisplay And Not (menOutput = oeAll Or menOutput = oeDestiny) Then
         enValid = veSkip
     Else
-        lngDestiny = SeekTree(build.Destiny.TreeName, peDestiny)
-        If lngDestiny = 0 Then
-            enValid = veSkip
-        Else
-            If ValidTree(db.Destiny(lngDestiny), build.Destiny, plngPoints) = veErrors Then
-                enValid = veErrors
+        For i = 1 To build.Destinies
+            lngDestiny = SeekTree(build.Destiny(i).TreeName, peDestiny)
+            If lngDestiny = 0 Then
+                enValid = veSkip
             Else
-                'this is now tome driven
-                Select Case plngPoints
-                    Case 0: enValid = veEmpty
-                    Case 1 To (MaxDestinyAP + build.DestinyTome - 1): enValid = veIncomplete
-                    Case (MaxDestinyAP + build.DestinyTome): enValid = veComplete
-                    Case Else: enValid = veErrors
-                End Select
+                If ValidTree(db.Destiny(lngDestiny), build.Destiny(i), plngPoints) = veErrors Then
+                    enValid = veErrors
+                Else
+                    'this is now tome driven
+                    Select Case plngPoints
+                        Case 0: enValid = veEmpty
+                        Case 1 To (MaxDestinyAP + build.DestinyTome - 1): enValid = veIncomplete
+                        Case (MaxDestinyAP + build.DestinyTome): enValid = veComplete
+                        Case Else: enValid = veErrors
+                    End Select
+                End If
             End If
-        End If
+        Next
     End If
-    For i = 1 To build.Twists
-        plngFate = plngFate + CalculateFatePoints(i, build.Twist(i).Tier)
-    Next
-    If enValid = veEmpty And plngFate > 0 Then enValid = veIncomplete
+    If enValid = veEmpty Then enValid = veIncomplete
     ValidDestiny = enValid
 End Function
 
-Private Function GetTwistDisplay(plngTwist As Long) As String
-    Dim lngDestiny As Long
-    Dim strReturn As String
-    
-    With build.Twist(plngTwist)
-        lngDestiny = SeekTree(.DestinyName, peDestiny)
-        strReturn = GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, 0, .Selector)
-        strReturn = strReturn & " (Tier " & .Tier & " " & db.Destiny(lngDestiny).Abbreviation & ")"
-    End With
-    GetTwistDisplay = strReturn
-End Function
 
 
 ' ************* OUTPUT *************

@@ -1,1401 +1,810 @@
 DestinyName: Divine Crusader
 Abbreviation: Crusader
 Type: Destiny
-Stats: Strength, Wisdom, Charisma
 
-AbilityName: Bane of Undeath
-Descrip: Passive Bonus: You gain the Turn Undead feat. Weapons you equip gain undead bane (+2 enhancement bonus and +2d6 damage against undead).
-Tier: 1
-Cost: 2
+AbilityName: Just Cause
+Descrip: Each core including this one in this tree provides +15 Hit Points, +5 Melee and +4 Ranged Power.
+Cost: 1
+Ranks: 1
+Tier: 0
 
-AbilityName: Endless Turning
-Descrip: Passive Bonus: +[1/2/3] Turn Undead per rest. Turn Undead uses regenerate every 2 minutes, or [10/20/30]% faster if it already regenerates.
-Tier: 1
+AbilityName: Confront any Foe
+Descrip: Your weapons are immune to durability damage. +3 to all saving throws.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Weather any Blow
+Descrip: +5 Armor Class and Physical Resistance Rating. +15 Healing, Repair, and Negative Amplification.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Divine Smite
+Descrip: You gain the Smite Evil feat, and +1 uses of Smite Evil. Enhances Smite Evil by adding 5 effective Paladin levels to its damage calculation. Furthermore, Smite Evil attacks to grant you and nearby allies 1d2 Positive Healing per Character Level when they hit an enemy. This may only apply once every 10 seconds.
+Cost: 1
 Ranks: 3
-One: Tier 1: Bane of Undeath, Feat: Turn Undead
-
-AbilityName: Interrogation
-Descrip: Passive Bonus: +5 Universal Spell Power and +1% Spell Critical Chance. Your offensive spells cause enemies to gain a stack of Purification. This affects each enemy up to once per 2 seconds. Purification: -1 attack damage, -2 spell power. Stacks up to 25 times.
 Tier: 1
 
-AbilityName: Purge the Wicked
-Descrip: Passive Bonus: +2 bonus to Confirm Critical Hits and Critical Hit Damage. Your Critical Hits with weapons also cause enemies to gain a stack of Purification. This affects each enemy up to once per 2 seconds. Purification: -1 attack damage, -2 spell power. Stacks up to 25 times.
+AbilityName: Shield of Justice
+Descrip: +5/10/15% secondary shield bash chance.
+Cost: 1
+Ranks: 3
 Tier: 1
 
-AbilityName: Confront Any Foe
-Descrip: Active Ability: (Cooldown 2 seconds) +3[W] Melee Attack: Expend one Turn Undead: Deals 10d10 extra Light Damage on a successful hit. (scales with 300% Melee Power)}{ Note: Strikes multiple enemies in a small arc three times and may doublestrike for a fourth strike.
-Tier: 2
-Cost: 2
-One: Tier 1: Bane of Undeath, Feat: Turn Undead
+AbilityName: Spear of Light
+Descrip: +1/2/3 to Attack and Damage
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Divine Sundering
+Descrip: +2/4/6 Sunder DCs
+Cost: 1
+Ranks: 3
+Tier: 1
 
 AbilityName: Consecration
-Descrip: Active Ability: The ground you are standing on is consecrated. Evil creatures standing on consecrated ground are burned every 3 seconds, gaining a stack of Purification and taking 1d6 damage per character level. This damage is half Fire, half Good. Both damage components are affected by Fire Spell Power. (Cooldown: [30/25/20] seconds). Duration 15 seconds. Activation Cost: [50/40/30] Spell Points.} Note: Checks spell power every tick.
-Tier: 2
+Descrip: Epic Strike: The ground you are standing on is consecrated. While standing on consecrated ground you and your allies are healed every 3 seconds for 1 point of positive energy per character level. This is affected by your Positive Spell Power. (Cooldown: 30/25/20 seconds). Duration: 15 seconds.
+Cost: 1
 Ranks: 3
+Tier: 1
 
-AbilityName: Flames of Purity
-Descrip: Passive Bonus: +[10/20/30] Fire Spell Power.
-Tier: 2
+AbilityName: Endless Smiting
+Descrip: +2/4/6 Uses of Smite Evil, Smite Evil regenerates 10/20/30% faster.
+Cost: 1
 Ranks: 3
-
-AbilityName: Smite the Wicked
-Descrip: Active Ability: (Cooldown 15 seconds, activation cost 10 spell points) Melee smite: Gain twice your Charisma bonus to your attack roll and damage bonus of 2(W) + 7 against evil opponents. On hit: 100 light damage against undead or evil outsiders or 200 for both (scales with 200% melee power). On vorpal: Destroy undead or evil outsiders under 1500 hit points.
 Tier: 2
-Cost: 2
 
-AbilityName: Stand and Be Judged
-Descrip: Active Ability: (Cooldown [30/25/20] seconds) Activation Cost: [25/20/15] Spell Points. A targeted foe must make a Will saving throw or be stunned for 30 seconds. (DC: 10 + Character Level + Wisdom Modifier + Stunning Bonuses)}{ Bug:  Currently benefits twice as much from stunning and combat mastery items and benefits from Deadly Instinct while wearing insightful items.
-Tier: 3
+AbilityName: Bulk Up
+Descrip: +5/10/15 Hit Points, +25/50/75% Fortification
+Cost: 1
 Ranks: 3
+Tier: 2
 
-AbilityName: Sacred Ground
-Descrip: Passive Bonus: While standing on consecrated ground you and your allies (note that despite the description, hirelings are not healed by this effect) are healed every 3 seconds for 1 point of positive energy per character level. This is affected by your positive spell power.  Note: Checks spell power every tick and is not subject to spell criticals. It can be used while raging.}{ Bug:  Does not include the Heal skill when calculating positive spell power.
-Tier: 3
+AbilityName: Holy Mantle
+Descrip: Divine Crusader Destiny Mantle: Weapons and Shields you wield are considered to have your alignment for Damage Reduction purposes. Your Base Attack Bonus is now equal to your Character Level.
 Cost: 2
-All: Tier 2: Consecration
+Ranks: 1
+Tier: 2
 
-AbilityName: Empyrean Magic
-Descrip: Passive Bonus: Whenever you cast a fire, light, or healing spell you gain a stack of Empyrean Fervor. Each stack of Empyrean Fervor gives you +2 Sacred bonus to Universal Spell power, +1% Sacred Bonus to Critical Chance with all spells. Duration: 10 seconds. Stacks 10 times.}Bug:  Alchemist healing spells and spell-like-abilities do not trigger Empyrean Magic. Alchemist fire spells must hit target to trigger.
-Tier: 3
+AbilityName: Divine Deflection
+Descrip: +1/2/3 all saves, additional +1/2/3 saves vs Enchantments
+Cost: 1
+Ranks: 3
+Tier: 2
 
-AbilityName: Blessed Blades
-Descrip: Passive Bonus: Any weapon you wield and your unarmed attacks are treated as having your alignment for damage reduction bypass purpose. (Has no effect if you are True Neutral.)
-Tier: 3
+AbilityName: Shield of Light
+Descrip: +2/4/6 Physical Resistance Rating and Magical Resistance Rating. Rank 3: You gain Magic Missile immunity (as per the Shield spell) while holding a shield.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Saze of the Divine
+Descrip: You gain True Seeing and Blindness Immunity.
 Cost: 2
-
-AbilityName: No Regret
-Descrip: Whenever an enemy who was recently affected by your Aura of Purification is slain, other nearby enemies gain 1 to 4 stacks of Purification. This ability also grants +2 Melee Power.
-Tier: 4
-Cost: 2
+Ranks: 1
+Tier: 3
 
 AbilityName: Crusade
-Descrip: While standing on consecrated ground, you and your allies gain a 10% enhancement bonus to the damage of your melee and ranged attacks. This is a 4 second buff that activates every 4 seconds when standing on consecrated ground.
-Tier: 4
+Descrip: Consecration now grants Crusade to allies who stand inside of it (+10% damage for 4 seconds) and burns all enemies within it. (every 3 seconds, they take 1 point of fire damage per character level. This scales with your Fire Spell Power)
 Cost: 2
-All: Tier 3: Sacred Ground
+Ranks: 1
+Tier: 3
 
-AbilityName: The Book of War
-Descrip: You gain Greatsword/Long Bow/Long Sword/Morningstar as a favored weapon.
+AbilityName: Axiom of Faith
+Descrip: Multiselector: Choose a Religion from the full list of Religions. You are now considered to be a follower of that religion, including being able to use its Favored Weapon.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Strike with Poise
+Descrip: Your Divine Crusader Destiny Mantle grants Favored Weapons an additional +1/2/3 to their Enhancement bonus. Rank 3: Favored Weapons are also now considered Implements to you automatically, and gain +1[W].
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: How Dare You
+Descrip: Being struck by magic has a 10/20/30% chance to regenerate a Smite Evil. Rank 3: Getting hit below 50% will automatically Consecrate the ground beneath your feet. Can only happen once every 2 minutes.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Purge the Wicked
+Descrip: +1/2/3 Critical Hit damage and +1/2/3 to your Critical Hit confirmation, doubles if you have the Power Critical feat.
+Cost: 1
+Ranks: 3
 Tier: 4
 
-AbilityName: Castigation
-Descrip: Your Aura of Purification also harms nearby enemies, dealing Bane damage every 3 seconds. Non-bosses take damage equal to 1% of their current health for each stack of Purification they have. Bosses instead take 1d6 Bane damage per stack of Purification. This ability also grants +2 Melee Power.}{ Note: Orange named monsters take both 1% of their current health AND 1d6 Bane damage per stack of Purification.
-Tier: 5
-Cost: 2
+AbilityName: Blessed Strikes
+Descrip: +2/4/6% Doublestrike and Doubleshot.
+Cost: 1
+Ranks: 3
+Tier: 4
 
 AbilityName: Heavenly Presence
-Descrip: You gain some abilities of a Celestial. Passive Bonus: Grants you +10 Physical Resistance Rating and 10% Acid, Cold and Electricity absorption. In addition, you are immune to petrification.
+Descrip: Your Divine Crusader Destiny Mantle now grants you the traits of a Celestial. +10 Physical Resistance Rating and 10% Acid, Cold and Electricity Absorption. In addition, you are immune to Petrification.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Cower Before Me
+Descrip: When you use Consecrate, nearby enemies must make a Fortitude save or become Cowered for 4 seconds. Cower makes an enemy helpless for the duration. Only sentient creatures, Undead, Aberrations, and Outsiders may be cowered (so constructs, oozes, etc, are immune) DC: 20 + Sunder DC + highest ability score.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Rend Armor
+Descrip: You gain the Improved Sunder feat.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Beckon Divinity
+Descrip: Epic Moment: Divine Power infuses you and your party members, granting them Divinity for 30 seconds. This blessing is so strong that any allies who are dead are raised from it to their Maximum Hit Points. Divinity: When you are struck by any type of damage, you are healed for 4d6 Positive Healing (this healing becomes Repair if you are a Warforged, or Negative if you are Undead). Furthermore, for the first 10 seconds, you are immune to all forms of Crowd Control. The Resurrection portion of this ability may only affect you once per rest.
+Cost: 2
+Ranks: 1
 Tier: 5
-Cost: 2
 
-AbilityName: Celestial Champion
-Descrip: +1 Feat Bonus to Critical Threat Range with all weapons.  When you critically hit with an attack, you gain a stack of Celestial Fervor.}A stack of Celestial Fervor grants you +1 Sacred Bonus to Melee and Ranged Power. Stacks up to 10 times, with a duration of 6 seconds.
+AbilityName: Law of the Divine
+Descrip: You gain the Embodiment of Law feat. If you already had it, it instead enhances the feat to deal 1d6 Law damage per Epic Level scaling with 200% Melee or Ranged Power, and apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application)
+Cost: 2
+Ranks: 1
 Tier: 5
+
+AbilityName: Bring Down Wrath
+Descrip: Your shield is now considered a Favored Weapon for the purposes of your Divine Crusader Destiny Mantle, and now Doublestrikes at 50% of the rate of your main hand Doublestrike as if it were an offhand weapon.
 Cost: 2
+Ranks: 1
+Tier: 5
 
-AbilityName: Celestial Bombardment
-Descrip: Active Ability: Evocation SLA. Divine wrath falls from the heavens to smite your foes. This spell calls down three stars at your target, dealing a total of 3d6 fire damage per character level, split into three hits. This damage is affected by fire spell power and may critically hit. In addition, enemies must succeed at three consecutive Reflex saving throws versus a DC of 20+Wisdom mod+Evocation spell DC modifier or be knocked prone. Activation cost is 20 Spell points and has a cooldown of 1 minute. Modifiers to your evocation spell DCs affect this.  Metamagic: Enlarge, Maximize, Empower, Intensify, Embolden, and Quicken
-Tier: 6
-
-AbilityName: The Book of War: Wrath of the Divine
-Descrip: While wielding a Favored Weapon in your Main Hand, you gain +1 to Hit and Damage for every 2 Religious Lore Feats you have with all equipped weapons and shields.
-Tier: 6
-
-AbilityName: Strike Down
-Descrip: Active Ability: (Cooldown 12 seconds, activation cost: 5 spell points) Melee smite cleave: Gain a damage bonus of +3(W). On hit 500 light damage (scales with 200% melee power). On hit after damage destroy undead or evil outsiders below 1500 HP.}{ Bug:  Strike Down does not consume any spell points on use.
-Tier: 6
+AbilityName: Blessed Blades
+Descrip: While using a Favored Weapon, +1 Critical Multiplier on a roll of 19-20.
 Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Mighty Crusade
+Descrip: Smite Evil attacks apply the Crusade buff to your entire party for 4 seconds. You gain +1 Armor Class and +1 Physical Resistance Rating for every two Religious Lore feats you have.
+Cost: 2
+Ranks: 1
+Tier: 5
 
 DestinyName: Draconic Incarnation
 Abbreviation: Draconic
 Type: Destiny
-Stats: Intelligence, Charisma
 
-AbilityName: Energy Sheath
-Descrip: Active Ability: (Cooldown 1min, 10 spell points) For [2/4/6] minutes gain 50% [fire/cold/acid/electric] absorption. Enemies that strike you take [1d3+10/2d3+15/3d3+20] [fire/cold/acid/electric] and have a small chance to take 4d20+100 damage of that type. Removes fire shield(hot/cold)[Metamagic: Empower Spell,Maximize Spell,Quicken Spell]. Bug: Empower and Maximize do not increase the damage taken by attackers.
-Tier: 1
-Ranks: 3
-Selector: Acid, Cold, Electricity, Fire
+AbilityName: Draconic Bloodline
+Descrip: Multiselector: Select the Color of Dragon you embody from Black (Acid), Blue (Electricity), Green (Poison), Red (Fire), Shadow (Negative) or White (Frost). No matter what color you pick, you gain the Magical Training feat. Each Core ability in this tree also grants +50 Spell Points, +5 Spell Power with the chosen element, and +5 Universal Spell Power. Each core also grants a +1 Epic bonus to all Spell DCs. This Epic bonus is a non-stacking bonus type.
+Cost: 1
+Ranks: 1
+Tier: 0
+Selector: Black, Blue, Green, Red, Shadow, White
 
-AbilityName: Draconic Presence
-Descrip: Passive Bonus: +[2/4/6] intimidate, +[2/4/6] to saving throws of fear based effects, and +[1/2/3] DC to fear-based spells. At rank 3 you are immune to fear.}Unlisted effect: +6 to reflex saves
-Tier: 1
-Ranks: 3
+AbilityName: Draconic Heritage
+Descrip: -5% Spell Point cost on all spells. Your spells no longer need material components, as if you had the Eschew Materials feat.
+Cost: 1
+Ranks: 1
+Tier: 0
 
-AbilityName: Dragonhide
-Descrip: Passive Bonus: +[1/2/3] natural armor and +[2/4/6] fortitude saves. At rank 3 you no longer automatically fail fort save on a 1.
-Tier: 1
-Ranks: 3
+AbilityName: Elemental Blood
+Descrip: -5% Spell Point cost on all spells. Casting spells that align with your Draconic Heritage now trigger a 15% chance to grant yourself +10 temporary Hit Points per character level, these last for 10 seconds. This can only trigger once per 10 seconds.
+Cost: 1
+Ranks: 1
+Tier: 0
 
 AbilityName: Draconic Perception
 Descrip: Passive Bonus: +[2/4/6] spot and +[2/4/6] reflex.
+Cost: 1
+Ranks: 3
 Tier: 1
-Ranks: 3
 
-AbilityName: Go out with a bang
-Abbreviation: Out with bang
-Descrip: Active Ability: (Cooldown 4mins) Can only be used when HP <=50%. Nearby enemies take [1d8+8/1d10+10/1d12+12] [fire/cold/acid/electric] damage per caster level (reflex save DC 20 + 1/2 character level + INT/CHA modifier for half damage). Then trigger a diplomacy effect and become invisible for 20 seconds. Invisibility doesn't break if attacking or casting spells.}{ Note: Cost: 15 sp. Metamagic: Quicken (does not increase spell point cost)
+AbilityName: Dragonhide
+Descrip: Passive Bonus: +[1/2/3] natural armor and +[2/4/6] fortitude saves. At rank 3 you no longer automatically fail fort save on a 1.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Attune the Arcane
+Descrip: Draconic Destiny Mantle: Offensive spells you cast have a 25% chance to deal 1d6+6 bonus damage per caster level in the elemental damage of your Draconic Bloodline. This has a cooldown of 5 seconds.
+Cost: 2
+Ranks: 1
+Tier: 1
+
+AbilityName: Dragonscales
+Descrip: +1/2/3 Physical and Magical Resistance Rating
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Arcane Studies
+Descrip: +2/4/6 Concentration, +1/2/3 Use Magic Device. Rank 3: +5 Spell Power of your Draconic Heritage and +5 Universal Spell Power
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Draconic Presence
+Descrip: +1/2/3 DC to breath weapons. Rank 3: Immunity to Fear
+Cost: 1
+Ranks: 3
 Tier: 2
-Ranks: 3
-All: Tier 1: Energy Sheath
-Selector: Acid, Cold, Electricity, Fire
 
-AbilityName: Barrier of Scales
-Descrip: Active Ability: (Cooldown 2mins, 20 sp) For the next [30/60/90] seconds, [60/80/100] points of ablative protection versus physical damage. Stacks with Stoneskin and ablative armor.
+AbilityName: Draconic Rage
+Descrip: You may now cast spells while Raging.
+Cost: 2
+Ranks: 1
 Tier: 2
-Ranks: 3
-All: Tier 1: Dragonhide
-
-AbilityName: Precise Casting
-Abbreviation: Precise
-Descrip: Passive Bonus: +1 DC to spells of the selected school.
-Tier: 2
-Ranks: 2
-All: Feat: Spell Focus
-Selector: Conjuration, Evocation
-SelectorName: Conjuration
-All: Feat: Spell Focus: Conjuration
-SelectorName: Evocation
-All: Feat: Spell Focus: Evocation
-
-AbilityName: Daunting Roar
-Descrip: Active Ability: (Cooldown 2mins) Enemies within the AoE are subject to despair effect and will be paralyzed for 15 seconds. Will save DC 20 + 1/2 character level + INT/CHA modifier negates the effect (if save successful still shaken).
-Tier: 3
-All: Tier 1: Draconic Presence
-
-AbilityName: Dragon Heritage
-Descrip: Passive Bonus: Choose a dragon color. +[10/20/30] spell power with the element associated with that dragon color.
-Tier: 3
-Ranks: 3
-Selector: Black, Blue, Red, White
-
-AbilityName: Piercing Spellcraft
-Descrip: Passive Bonus: +[1/2/3] to spell penetration.
-Tier: 3
-Ranks: 3
-All: Feat: Spell Penetration
-
-AbilityName: Energy Burst
-Descrip: Active Ability: (Cooldown 30 seconds, cost 20 sp, metamagic: quicken) A pulse of [fire/ice/electricity/corrosion] emanates from your body dealing [1d10+10/1d12+12/1d15+15] [fire/cold/electric/acid] damage per character level (reflex save DC 20 + 1/2 character level + INT/CHA modifier for half damage).
-Tier: 4
-Ranks: 3
-All: Tier 2: Go out with a bang
-Selector: Acid, Cold, Electricity, Fire
-
-AbilityName: Secondary Spell Specialty
-Abbreviation: Secondary Specialty
-Descrip: Passive Bonus: Choose an energy type not opposed to your dragon heritage. +[10/20] spell power and +[1/2] caster level and maximum caster level for spells of that element.
-Tier: 4
-Ranks: 2
-All: Tier 3: Dragon Heritage, Tier 4: Draconic Spell Knowledge
-Parent: Tier 3: Dragon Heritage
-Selector: Black, Blue, Red, White
-SelectorName: Black
-All: Tier 3: Dragon Heritage, Tier 4: Draconic Spell Knowledge
-None: Tier 3: Dragon Heritage: Blue
-SelectorName: Blue
-All: Tier 3: Dragon Heritage, Tier 4: Draconic Spell Knowledge
-None: Tier 3: Dragon Heritage: Black
-SelectorName: Red
-All: Tier 3: Dragon Heritage, Tier 4: Draconic Spell Knowledge
-None: Tier 3: Dragon Heritage: White
-SelectorName: White
-All: Tier 3: Dragon Heritage, Tier 4: Draconic Spell Knowledge
-None: Tier 3: Dragon Heritage: Red
-
-AbilityName: Draconic Spell Knowledge
-Abbreviation: Spell Knowledge
-Descrip: Passive Bonus: +[1/2/3] caster level and maximum caster level on spells of your dragon element.
-Tier: 4
-Ranks: 3
-All: Tier 3: Dragon Heritage
-
-AbilityName: Draconic Spell Augmentation
-Abbreviation: Spell Augmentation
-Descrip: Passive Bonus: Adds special effect to spells of your heritage.}{-Fire spells have a [5/10/15]% chance to deal a blast of [3d6/6d6/9d6] extra light damage}{-Cold spells have a [5/10/15]% chance to deal a blast of [3d6/6d6/9d6] extra sonic damage}{-Acid spells have a [5/10/15]% chance to reduce enemies' Fortitude save by 5 for [10/20/30] seconds}{-Electric spells have a [5/10/15]% chance to reduce enemies' Reflex save by 10 for [10/20/30] seconds
-Tier: 4
-Ranks: 3
-All: Tier 4: Draconic Spell Knowledge
-
-AbilityName: Flyby Attack
-Descrip: Active Ability: (Cooldown 60 seconds) Executes an abundant step which passes through enemies and deals 2d6 [fire/cold/acid/electric] damage per character level to any enemy struck during the attack. Each enemy is also knocked down (reflex save DC 20 + 1/2 character level + INT/CHA modifier for half damage; STR/DEX save DC 20 + 1/2 character level + INT/CHA modifier negates knockdown).
-Tier: 5
-All: Tier 5: Dragon Breath
 
 AbilityName: Dragon Breath
-Descrip: Active Ability: (Cooldown 60 seconds) Cone that deals 1d15 +15 [red fire/white cold/black acid/blue electric] damage per character level (reflex save for half). Counts as Conjuration spell for acid and Evocation otherwise; gets full Metamagic feats.
+Descrip: Epic Strike: This is a Breath Attack spell. Deals 1d6+10 damage per Character level of the element of your choice to enemies in a cone in front of you. Cooldown 25/20/15 seconds, Costs 20 Spell Points.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Coalescence
+Descrip: You bypass the first 5/10/15 points of Damage Reduction with your spells. Rank 3: +5 Spell Power of your Draconic Heritage element and +5 Universal Spell Power
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Conduit
+Descrip: Double the implement bonus of quarterstaves you wield.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Inevitable
+Descrip: When your Attune the Arcane Destiny Mantle procs, it now instead applies a Damage Over Time effect that deals its full damage 3 additional times after application, for a total of 4 ticks of damage beyond the first, application damage.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Daunting-Roar
+Descrip: Breath Weapons (including your Dragon Breath Epic Strike) have a 25% chance to paralyze enemies caught within them with fear for 6 seconds with no save. This can only affect each monster once; once they have been feared successfully, successive attempts will fail. Enemies that are immune to fear are immune to this effect.
+Cost: 2
+Ranks: 1
+Tier: 3
+AbilityName: Scales of the Dragon
+Descrip: Activate this to shroud yourself in the Scales of a Dragon. This has two components; first, it absorbs 15 points of damage per Character Level in Ablative protection. Secondly, it shields you from 50% of the Elemental Damage of your dragon type. Both effects last for 5 minutes. Cooldown: 30 Seconds. Costs 30 Spell Points.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Arcane Spellsword
+Descrip: Multiselector, choose 1) +1/2/3 dice with either Eldritch Knight, Vile Chemist, or Arcane Archer toggles.
+Cost: 1
+Ranks: 3
+Tier: 3
+Selector: Black, Blue, Green, Red, Shadow, White
+SelectorName: Black
+All: Tier 0: Draconic Bloodline: Black
+SelectorName: Blue
+All: Tier 0: Draconic Bloodline: Blue
+SelectorName: Green
+All: Tier 0: Draconic Bloodline: Green
+SelectorName: Red
+All: Tier 0: Draconic Bloodline: Red
+SelectorName: Shadow
+All: Tier 0: Draconic Bloodline: Shadow
+SelectorName: White
+All: Tier 0: Draconic Bloodline: White
+
+AbilityName: Draconic Spell Focus
+Descrip: (Multiselector, choose 1) +1/2/3 Evocation, Conjuration, Necromancy, or Transmutation DCs. Note: Exclusive with the T3 DC bonuses in other Epic Destiny caster trees, but the bonus may be taken for different schools in different trees.
+Cost: 1
+Ranks: 3
+Tier: 3
+Selector: Evocation, Conjuration, Necromancy, Transmutation
+
+AbilityName: Pull from the Wellspring: Wellspring of Power's duration is doubled. When you activate it, you gain +10 temporary Spell Points per character level that last for the full, doubled duration.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Dragonspeed
+Descrip: While in your Attune the Arcane Destiny Mantle, your spell cooldowns are reduced by 10%, you gain the Mobile Spellcasting feat, and you have a 30% enhancement bonus to movement speed.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Improve Dragon Breath
+Descrip: Multiselector:  Energy Vortex, Energy Burst, Gaping Maw
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Energy Vortex, Energy Burst, Gaping Maw
+SelectorName: Energy Vortex
+Descrip: Your Dragon Breath Epic Strike is modified to instead cause energies to swirl around you, dealing its damage to nearby enemies every 3 seconds for 15 seconds.
+SelectorName: Energy Burst
+Descrip: Your Dragon Breath Epic Strike is modified to instead burst from within you in a 360 degree area, dealing double its damage to all nearby enemies
+SelectorName: Gaping Maw
+Descrip: Your Dragon Breath Epic Strike now deals double its damage.
+
+AbilityName: Epic Improved Metamagic: Quicken or Enlarge
+Descrip: Multiselector: Quicken or Enlarge
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Quicken, Enlarge
+SelectorName: Quicken
+Descrip: Using the Quicken Spell Metamagic costs you 1/2/4 fewer Spell Points.
+SelectorName: Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you 1/2/4 fewer Spell Points.
+
+AbilityName: Epic Improved Metamagic: Maximize, Intensify, or Empower
+Descrip: Multiselector: Maximize, Intensify, or Empower
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Maximize, Intensify, Empower
+SelectorName: Maximize
+Descrip: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.
+SelectorName: Intensify
+Descrip: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.
+SelectorName: Empower
+Descrip: Using the Intensify Spell Metamagic costs you 2/4/6 fewer Spell Points.
+
+AbilityName: Hellstorm
+Descrip: +10 spellpower of your Draconic Element, +10 Universal spellpower. Your Eldar's Electric Surge, Niac's Biting Cold, Burning Blood, Enervation, and Venom Concentration spells now stack two additional times.
+Cost: 2
+Ranks: 1
 Tier: 5
-All: Tier 4: Draconic Spell Knowledge
 
-AbilityName: Draconic Breath Augmentation
-Abbreviation: Breath Augment
-Descrip: Passive Bonus: Adds one of those special effects to your breath:}{-15% chance that target will sleep.}{-15% chance that target will be slowed for 10 seconds.}{-15% chance that target will be paralyzed for 4 seconds.}{-15% chance that target will suffer 2d8 strength damage.
+AbilityName: Ruin Intensified
+Descrip: Your Ruin and Greater Ruin now apply a secondary burst of damage based on your Draconic Bloodline. This scales with the appropriate spellpower.
+Cost: 2
+Ranks: 1
 Tier: 5
-Cost: 2
-All: Tier 5: Dragon Breath
-Selector: Paralysis, Sleep, Slow, Weaken
 
-AbilityName: Energy Vortex
-Descrip: Active Ability: (Cooldown 2mins, 30 sp) Intense elemental energy swirl around you dealing damage to enemy in the AoE. Follows you and deal 1d6 [fire/cold/acid/electric] damage per caster level every 2 seconds for 45 seconds (reflex save DC 20 + 1/2 character level + INT/CHA modifier for half damage). (Despite the description, it actually ticks every *3* seconds, for 15 ticks total)
-Tier: 6
+AbilityName: Dragonform
+Descrip: Epic Moment: (Cooldown 5 minutes) Activate this ability to take on the aspect of your Draconic Bloodline. For 30 seconds, you gain the following:}{-You become immune to the Elemental damage of your Draconic Bloodline.{-You gain DR 100/- and your hit points begin to regenerate at a fast rate.{-Your spells gain a 50% spell cost reduction.{-Your spells have a chance to turn a non-boss enemy to gold permanently, adding them to your hoard, with no save.
 Cost: 2
-All: Tier 4: Energy Burst
-Selector: Acid, Cold, Electricity, Fire
+Ranks: 1
+Tier: 5
 
-AbilityName: Draconic Hunger
-Descrip: Passive Bonus: Once per second, when you cast a spell, there is a 5% chance that you will gain an Enhancement Bonus to Temporary HP equal to (10 + Double your Epic Level) for 10 seconds, and a 5% chance that you will gain an Enhancement Bonus Temporary SP equal to (10 + Double your Epic Level) for 10 seconds.}If Draconic Fury is active, you also gain a 5% chance that you will gain an Racial Bonus to Temporary HP equal to (10 + Double your Epic Level) for 10 seconds, and a 5% chance that you will gain an Racial Bonus Temporary SP equal to (10 + Double your Epic Level) for 10 seconds.
-Tier: 6
+AbilityName: Spread Your Wings
+Descrip: Active Ability: (Cooldown 15 seconds) Draconic wings sprout from you and propel you forward a moderate distance.
 Cost: 2
+Ranks: 1
+Tier: 5
 
-AbilityName: Fearsome Invulnerability
-Descrip: Active Ability: (Cooldown 4mins) For 30 seconds you have DR 100/Epic, Resistance 200 to Fire/Cold/Electricity/Acid, +30 PRR, MRR, and MRR Cap, and your hitpoints regenerate at a very swift rate.
-Tier: 6
-Cost: 2
+AbilityName: Enhanced Draconic Spell Focus
+Descrip: +1/2/3 to all spell DC's.
+Cost: 1
+Ranks: 3
+Tier: 5
 
 DestinyName: Exalted Angel
-Abbreviation: Exalted
+Abbreviation: ExAngel
 Type: Destiny
-Stats: Wisdom, Charisma
 
-AbilityName: Avenging Light
-Descrip: Active Ability: (Cooldown 3 seconds, Costs 3 sp) Deals 1d6+2 light damage per Caster Level (based on Character Level) to 1 target. Fortitude save (DC 10 + character level + charisma or wisdom mod) for half.
+AbilityName: Astral Touch
+Descrip: You gain the Magical Training feat. Each core of this tree grants +50 max Spell Points, +5 Positive, Fire, and Light Spell Power, and +5 Universal Spell Power. Each core also grants a +1 Epic bonus to all Spell DCs.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Deepening Faith
+Descrip: Spell Point Pool increased by 10%, Echoes of Power now restores up to 30 Spell Points. Does not stack with Deepening Arcana (which is now core 2 of Magus).
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Angelic Charge
+Descrip: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk. 9 second cooldown. Using this ability costs 10 Spell Points. Uses of this ability recharge at a rate of one every 15 seconds in private areas, and 3 seconds in public areas. If you already have the Leap of Faith feat, it now recharges at a rate of one every 12 seconds in private areas instead.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Subtle Flame
+Descrip: You gain +3/6/10 Universal Spell Power. Rank 3: If you have Fascinate it now gains the power to mesmerize Vermin and if you have Bardic Inspiration it now applies Neutralize Poison. Mesmerized Vermin are not susceptible to suggestion.
+Cost: 1
+Ranks: 3
 Tier: 1
+
+AbilityName: Born By Flame
+Descrip: +1/2/3 bonus to all Skills. Rank 3: If you have the Inspire Bardic Ability it now also grants +3 Skills to those you inspire.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Angelic Form
+Descrip: Exalted Angel Destiny Mantle: Your offensive spells have a 15% chance to deal 1d3+3 bonus Fire damage per caster level. Your offensive spells also have a 15% chance to deal 1d3+3 bonus Light damage per caster level. Your Positive Healing spells have a 15% chance to deal 1d3+3 extra Positive Healing per every 2 Character Levels. These damage effects each have a unique cooldown of 5 seconds.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Avenging Magic
+Descrip: Multiselector:Sun Pillar, Flame Pillar, Healing Pillar
+Cost: 1
+Ranks: 1
+Tier: 1
+Selector: Sun Pillar, Flame Pillar, Healing Pillar
+SelectorName: Sun Pillar
+Descrip: (Epic Strike): SLA: Bring a beam of light down on a single enemy, dealing 1d6+6 Light damage per caster level. Cooldown 6 seconds, cost 5 Spell Points.
+SelectorName: Flame Pillar
+Descrip: (Epic Strike): SLA: Bring a pillar of fire down on a single enemy, dealing 1d6+6 Fire damage per caster level. Cooldown 6 seconds, cost 5 Spell Points.
+SelectorName: Healing Pillar
+Descrip: (Epic Strike): SLA: Bring a pillar of positive energy down on a single ally, healing them for 3d6+6 Hit Points, plus an additional 1 per Caster Level (Max Caster Level: 15). This is a Conjuration spell, and counts as both a Positive and Cure Wounds spell. Can be used on Undead enemies, who take that Positive healing as damage. Cooldown 6 seconds, cost 5 Spell Points
+
+AbilityName: Bane of Undeath
+Descrip: You gain the Turn Undead feat. +1/2/3 uses of Turn Undead. Rank 3: If you have the Improved Turning feat, +3 to Effective Level for Turn Undead, +3 to Maximum Hit Dice for Turn Undead, and +3 Hit Die for Turn Undead.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+
+AbilityName: Divine Protection
+Descrip: +6 Magical Resistance Rating.
 Cost: 2
-
-AbilityName: Radiant Power
-Descrip: Passive Bonus: +[10/20/30] Light spellpower.
-Tier: 1
-Ranks: 3
-
-AbilityName: Endless Faith
-Descrip: Passive Bonus: Spell point pool increased by [4/7/10]%. Echoes of power restore up to [18/24/30] sp.
-Tier: 1
-Ranks: 3
-All: Tier 1: Radiant Power, Tier 1: Healing Power
-
-AbilityName: Healing Power
-Descrip: Passive Bonus: +[10/20/30] Positive energy spellpower.
-Tier: 1
-Ranks: 3
-
-AbilityName: Judgment
-Descrip: Active Ability: (Cooldown 15 seconds, 10sp) Target undead or evil outsider will explode when killed, dealing 10d100 light damage to other undead or evil outsiders near them. This ability does not affect players.
+Ranks: 1
 Tier: 2
+
+AbilityName: Stand And Be Judged
+Descrip: Targeted foe at any range (but with line of sight) is Dazed for 8 seconds. (Taking damage breaks the Daze). 20 second cooldown.
 Cost: 2
-
-AbilityName: Embrace the Light
-Descrip: Passive Bonus: You take +[10/20/30]% less light damage.
+Ranks: 1
 Tier: 2
-Ranks: 3
-All: Tier 1: Radiant Power
 
-AbilityName: Soundburst
-Descrip: Active Ability: (Cooldown 15/11/7 seconds, Costs 12/9/6sp) Casts Soundburst  as a Spell-Like Ability (benefits from metamagic feats at no additional cost). Fortitude (DC 10 + character level + charisma or wisdom mod) or Spell Resistance save negates stun.
+AbilityName: Angelic Body
+Descrip: While in your Exalted Angel Destiny Mantle, you are immune to Natural Poisons and Natural Diseases.
+Cost: 2
+Ranks: 1
 Tier: 2
-Ranks: 3
 
-AbilityName: Lay to Rest
-Descrip: Active Ability: (Cooldown 15 seconds, 10sp) Target undead or evil outsider under the effect of Judgement takes 10d100 light damage.
+AbilityName: Saving Grace
+Descrip: +2/4/6 Will Saves. Rank 3: You no longer fail Will Saves on a Natural 1.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Endless Turning
+Descrip: Turn Undead regenerates 10/20/30% faster. Rank 3: When you Turn Undead, you apply Restoration to allies in the Turn.
+Cost: 1
+Ranks: 3
+Tier: 2
+All: Tier 1: Bane of Undeath
+
+
+AbilityName: Angelic Spell Focus
+Descrip: Multiselector:Enchantment, Evocation, Cojuration, Necromancy.
+Cost: 1
+Ranks: 3
 Tier: 3
+Selector: Enchantment, Evocation, Cojuration, Necromancy
+SelectorName: Enchantment
+Descrip: +1/2/3 Enchantment DCs
+SelectorName: Evocation
+Descrip: +1/2/3 Evocation DCs
+SelectorName: Cojuration
+Descrip: +1/2/3 Cojuration DCs
+SelectorName: Necromancy
+Descrip: +1/2/3 Necromancy DCs
+
+
+AbilityName: Noble Affinity
+Descrip: Multiselector: Sun Bolt, Flaming Sphere, Mass Cure Moderate Wounds
 Cost: 2
-All: Tier 2: Judgment
+Ranks: 1
+Tier: 3
+Selector: Sun Bolt, Flaming Sphere, Mass Cure Moderate Wounds
+SelectorName: Sun Bolt
+Descrip: Sun Bolt SLA (12 second cooldown, 12 spell points)
+SelectorName: Flaming Sphere
+Descrip: Flaming Sphere SLA (60 second cooldown, 15 spell points)
+SelectorName: Mass Cure Moderate Wounds
+Descrip: Mass Cure Moderate Wounds SLA (9 second cooldown, 35 spellpoints)
+
+AbilityName: Holy Presence
+Descrip: While in your Exalted Angel Destiny Mantle and conscious, you and your allies in close range heal for 1d4+1 bonus Hit Points per caster level in Positive healing every 6 seconds. This scales with 100% Positive Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 3
+
+AbilityName: Purity of Mind & Soul
+Descrip: +5/10/15 to Positive, Negative, and Repair Healing Amplification
+Cost: 1
+Ranks: 3
+Tier: 3
 
 AbilityName: Shadows Upon You
-Descrip: Active Ability: (Cooldown 20 seconds, 20sp) Target foe becomes cursed with Shadows Upon You, reducing all saving throws by -2 for 20 seconds. Whenever this foe is damaged by spells or attacks, saving throws are reduced by an additional -1 for 5 seconds. Stacks up to 10 times.}Bug:  Alchemist vial spells won't trigger additional effect.
-Tier: 3
+Descrip: When you Turn Undead, foes in the area become cursed with Shadows Upon You, reducing all saving throws by -1 for 20 seconds. Whenever this foe is damaged by spells or attacks, saving throws are reduced by an additional -1 for 5 seconds. Stacks up to 5 times.
 Cost: 2
-
-AbilityName: Piercing Spellcraft
-Descrip: Passive Bonus: +[1/2/3] to spell penetration.
+Ranks: 1
 Tier: 3
-Ranks: 3
-
-AbilityName: Purity of Essence
-Descrip: Passive Bonus: +[6/12/20] Healing Amplification.
-Tier: 3
-Ranks: 3
-
-AbilityName: Judge the Many
-Descrip: Passive Bonus: Undead or evil outsiders judged gain "Guilt by association". When target with guilt dies, any undead or outsiders caught in the area have 50% chance to receive the effects of the Judgement epic ability (see above).
-Tier: 4
-Cost: 2
-All: Tier 3: Lay to Rest
-
-AbilityName: Rebuke Foe
-Descrip: Active Ability: (Cooldown 3 seconds) Only usable when Endless Ardor stack >=5. Target enemy takes 5% additional damage from physical and light damage for 30 seconds. Can stack up to 5 times, new stacks add 30 seconds to remaining duration. Endless Ardor stacks reset to zero.
-Tier: 4
-Cost: 2
-All: Tier 4: Blood and Radiance
 
 AbilityName: Blood and Radiance
-Descrip: Passive Bonus: Each time you cast a light based spell, you gain Endless Ardor: +1/+2/+3 sacred bonus to positive energy for 10 seconds. Each time you cast a positive energy spell, gain Righteous Fervor: +1/+2/+3 sacred bonus to light spellpower for 10 seconds. Can stack up to 10 times. Each stack add 10 seconds to remaining duration. Stacks decay at 1-2 decrements per second. Successive ranks in Blood and radiance increase both bonus to respective spell power, and increments in Endless Ardor or Righteous Fervor each time a qualifying spell is cast. Each an Archon's light attack count as a "spell" for this purpose.
+Descrip: +10 Fire, Light, Positive, Alignment, and Universal Spell Power
+Cost:1
+Ranks: 3
 Tier: 4
-Ranks: 3
 
-AbilityName: Excoriate
-Descrip: Passive Bonus: When your Righteous Fervor stack is >=5, your light spells and smites have a 3% chance to stun opponents for 6 seconds.
+AbilityName: Delayed Judgement
+Descrip: Foes affected by Stand And Be Judged must now also make Will saving throw (20 + Highest of Intelligence/Wisdom/Charisma modifiers + Highest of Evocation and Conjuration bonuses) or be Stunned for 8 seconds. If stunned, after 6 seconds they take 10d50 Fire damage and 10d50 Light damage. This damage scales with Spell Power.
+Cost:2
+Ranks: 1
 Tier: 4
-Cost: 2
-All: Tier 4: Blood and Radiance
 
-AbilityName: Be at Peace
-Descrip: Active Ability: (Cooldown 2 mins, 10sp) Target enemy is dazed for 1 minute, no save. Damage breaks this effect. Endless Ardor and Righteous Fervor stacks are reset to zero.
-Tier: 5
-Cost: 2
-
-AbilityName: Leap of Faith
-Descrip: Active Ability: (Cooldown 3 seconds, 10 sp) Leap through air (like leap of faith). Costs 10 sp, recharges at a rate of 15 seconds in private areas and 3 seconds in public areas. If you already possess this ability, it now recharges at a rate of 1 every 12 seconds in private areas.
-Tier: 5
-
-AbilityName: Sun Bolt
-Descrip: Active Ability: (Cooldown 12 seconds, 12sp) Casts Sun Bolt as a Spell-Like Ability (benefits from metamagic feats at no additional cost). Reflex save (DC 10 + character level + charisma or wisdom mod) for half damage.
-Tier: 6
-Cost: 2
-
-AbilityName: Divine Wrath
-Descrip: Active Ability: (Cooldown 20 seconds, 40sp, standard Area of Effect) Call down divine wrath on foes, dealing 2d6 light damage per character level, will save for half (DC 10 + character level + charisma or wisdom mod). Allies caught within blast are healed for 1d6 HP per character level. This SLA does not require Endless Ardor but casting this will reset Endless Ardor stacks to zero.
-Tier: 6
-Cost: 2
-
-AbilityName: Reborn in Light
-Descrip: Active Ability: (Cooldown 10 mins; once per rest)}Epic Moment Transformation: You are healed to full health and activate Ascendance, Angelic Presence, and Astral Vibrance - even if they are currently on cooldown. This ability can be used while dead, bringing you back at full health.}{-For 2 minutes (or until you leave Angelic form), you:}{-are immune to light damage}{-gain 50% Incorporeality}{-gain +100 Light and Healing Power}{-the cooldowns of Light and Positive Energy spells are reduced to 1/5th normal}{-all spells cost 50% spell points}{-All of your physical attacks gain On Hit 100 Light damage and On Critical destroy evil undead or evil outsiders under 1000 hit points
-Tier: 6
-Cost: 2
-All: Tier 4: Blood and Radiance
-
-DestinyName: Fatesinger
-Type: Destiny
-Stats: Strength, Charisma
-
-AbilityName: First Harmonic Chord
-Descrip: Your Inspire Courage has an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power.}Passively, you benefit from an additional +[1/2/3] to hit, damage, saves versus Fear, and +[3/6/9] Universal Spell Power.}'Look to the prepared for Fortune's blessing.'} --Lin Dazzar, Envoy of the Twelve
-Tier: 1
-Ranks: 3
-
-AbilityName: Siren's Song
-Descrip: Mesmerize a single target. The target also takes 2 Constitution damage every [3/2/1] seconds. Duration: 12 seconds. Cooldown: [60/50/40] seconds}'Look into my eyes. Trust in me, my pet, and let all the world melt away...'}--Selis
-Tier: 1
-Ranks: 3
-
-AbilityName: Music of the Spider Queen
-Descrip: Adds to your Fascinate: Your Fascinate gains the power to mesmerize Vermin. Mesmerized Vermin stop acting and behave like they have been fascinated. However, unlike truly fascinated creatures, they are not susceptible to suggestion. Passive: When you use your bardic inspiration, the target benefits from the Neutralize Poison spell
-Tier: 1
-All: Feat: Fascinate
-
-AbilityName: Dirge
-Descrip: Bard Song: Produce a haunting funeral march that affects nearby enemies. Affected enemies suffer from Dirge.}Dirge: For every two caster levels you have, this creature takes 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage every 3 seconds (Fortitude save for half damage). In addition, enemies affected by Dirge may be slowed by 5% if they fail the Fortitude save.}Duration: 18 seconds}'The Enemy falls to our wrath, and everywhere, their light is fading. But though our cause is just, it must also be remembered that our enemy fought for his own cause and believed in it as strongly as we did in ours. And so I have come to this quiet spot to light a candle in honor of his memory. Has Fate favored him this day, I should like to think that he would have done the same for me.'}--Elemar's Payer}Bug: Dirge does not actually scale with caster level; only deals a total of 10d[4/6/8] Negative damage and 10d[8/10/12] Sonic damage per tick. (This damage seems to scale properly with spell power.)
-Tier: 1
-Ranks: 3
-
-AbilityName: Second Harmonic Chord
-Descrip: Your Inspire Competence now grants an additional +[1/2/3] to all Skills.}Passively, you benefit from an additional +[1/2/3] to all Skills.}'Unleash the winds! Fly, my friends! Fly on to your deadly marks!'}--Gwynn Glowsing, Huntmaster of House Phiarlan
-Tier: 2
-Ranks: 3
-
-AbilityName: Bound Fate
-Descrip: Bardic Curse: Your target must make a Will save or be bound in place briefly. In addition, your target will become [6/10/12]% more vulnerable to magical damage, and also suffers -[5/10/15] Spell Resistance and -[4/6/8] damage. Duration: 45 seconds. Cooldown: 1 minute.}'The chains of Fate have you, demon, and you are too dumb to know you are already dead.'}--Larisong
-Tier: 2
-Ranks: 3
-
-AbilityName: Reign
-Descrip: Spontaneous Song: You gain +[20/40/60] temporary hitpoints. For the duration of the buff, on a vorpal strike, you unleash a debilitating thunderclap for [7/9/11]d20 Sonic and [7/9/11]d20 Electrical damage.}Vanquish your foes in battle with a song of glory. Duration: 10 minutes.} Note: The temporary hitpoints only last 3 minutes.  Additionally, Reign doesn't cost a song unlike other spontaneous songs.
-Tier: 2
-Ranks: 3
-
-AbilityName: Siren's Song
-Descrip: Your Inspire Greatness now grants an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds +10 healing, negative, and repair amplification.}Passively, you benefit from an additional +[1/2/3] Physical Resistance Rating. Rank 3 adds a passive +10 healing, negative, and repair amplification. 'Seductive, enchanting, tantalizing... these are the qualities that might describe my lessers...'}--Lolth, Demon Queen
-Tier: 3
-Ranks: 3
-
-AbilityName: Grim Fate
-Descrip: Adds to your Bound Fate: Your Bound Fate now inflicts affected creatures with an additional [6/10/12]% vulnerability to physical attacks. Grim Fate may take effect, even if Bound Fate does not.}Duration: 60 seconds}'Fate, one day, claims us all. Today, she visits you.'}--Larafeal Loommistriss, upon confronting Ihlazur
-Tier: 3
-Ranks: 3
-All: Tier 2: Bound Fate
-
-AbilityName: Arcane Hymn
-Descrip: You sing a magical Hymn that resonates within the Arcane Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Arcane Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Arcane Resonance: +1 to Intelligence, Wisdom and Charisma, +20 Universal Spell Power, +2 Spell Penetration, +4 Use Magic Device, +10% to your Fire, Cold, Acid and Electric Absorption.
-Tier: 3
-Ranks: 3
-
-AbilityName: Aria
-Descrip: Passive: You sing your Bardic Inspiration as if you had [1/2/3] additional Bard levels.}Spontaneous Song: Generate [20/40/60]% less threat when you cast spells for the duration of this song. In addition, you gain +[20/40/40] Sonic Spell Power, and +[5/10/15] Force, Positive, and Negative Spell Power.}Your voice carries like a gale over the skein of Fate.
-Tier: 3
-Ranks: 3
-Cost: 2
-
-AbilityName: Fourth Harmonic Chord
-Descrip: Your Inspire Heroics now grants an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws.}Passively, you benefit from an additional +[1/2/3] Armor Class, +[1/2/3]% Dodge, and +[1/2/3] to all Saving throws.
+AbilityName: Angelic Soul
+Descrip: Your Exalted Angel Destiny Mantle now grants +10 Magical Resistance Rating and 15% damage absorption to all damage types other than Piercing, Slashing, Bludgeoning, Negative, Positive, Repair, and Bane/Untyped.
+Cost:2
+Ranks: 1
 Tier: 4
+
+AbilityName: Holy Command
+Descrip: When you hit enemies with Sun Pillar, Flame Pillar, or Healing Pillar, they must make a saving throw (20 + highest of Intelligence/Wisdom/Charisma + highest of Evocation and Conjuration bonuses) or be tripped, blinded, and made helpless for 12 seconds.
+Cost:2
+Ranks: 1
+Tier: 4
+
+AbilityName: Metamagics Attunement
+Descrip: Multiselector:  Enhanced Metamagics
+Cost:1
 Ranks: 3
-
-AbilityName: Divine Hymn
-Descrip: You sing a magical Hymn that resonates within the Divine Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Divine Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Divine Resonance: +1 to Strength, Charisma and Wisdom, +1 maximum Smite Evil charges, +2 to hit damage, and to confirm critical hits, +10 Physical Resistance Rating, and +25 Positive and Negative Spell Power.
 Tier: 4
-Cost: 2
+Selector: Maximize, Empower, Quicken
+SelectorName: Maximize
+Descrip: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.
+SelectorName: Empower
+Descrip: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.
+SelectorName: Quicken
+Descrip: Using the Quicken Spell Metamagic costs you 1/2/4 fewer Spell Points.
 
-AbilityName: Martial Hymn
-Descrip: You sing a magical Hymn that resonates within the Martial Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Martial Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Martial Resonance: +1 to Strength, Dexterity and Wisdom, +2 Sneak Dice, +20 Maximum Hit Points, +10 Physical and Magical Resistance rating, +5 Armor Class, and +10 Melee and Ranged Power
-Tier: 4
-Cost: 2
-
-AbilityName: Primal Hymn
-Descrip: You sing a magical Hymn that resonates within the Primal Sphere. When you activate this ability, your target is surrounded by magical energies, bestowing Primal Resonance.}Each member of your party, including yourself, may only benefit from one Hymn at a time, regardless of source. Attempting to activate this ability on someone else will dispel the Hymn from your former target. If you attempt to activate a different Hymn on someone who is already benefitting from this Hymn, it will dispel this Hymn as it applies the new one. You may activate this ability on yourself.}Primal Resonance: +1 to Dexterity, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell resistance, +10 Healing Amplification, +10% Attack Speed with Throwing Weapons, and an additional +3 Strength while Raging.
-Tier: 4
-Cost: 2
-
-AbilityName: The Fifth Chord
-Descrip: Adds Inspire Transcendence to your Bardic Ballad.}Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and True Seeing.}Passively, you benefit from an additional +1 to all Spell DCs, +1 to the DC of all Tactical Feats, +3 Spell Resistance and you are immune to Blindness and benefit from the True Seeing spell.}A verse from the Song of Heroes, whose powerful notes fill your limbs with vigor in battle.
+AbilityName: Enhanced Angelic Spell Focus
+Descrip: +1/2/3 spell DCs
+Cost: 1
+Ranks: 3
 Tier: 5
 
-AbilityName: Metamagic Attunement I
-Descrip: Choose one:}{- Like Enlarge Spell, your spells have twice the range. This does not increase their Spell Point cost.}{- Like Eschew Materials, your spells no longer need common material components. This does not increase their Spell Point cost.}{- Like Extend Spell, your spells last twice as long. This does not increase their Spell Point cost.
+AbilityName: Heavenly Magic
+Descrip: Multiselector:Holy Fireball, Chain Cure
+Cost: 2
+Ranks: 1
 Tier: 5
-Selector: Enlarge, Eschew, Extend
+Selector: Holy Fireball, Chain Cure
+SelectorName: Holy Fireball
+Descrip: SLA: (Cooldown 9 seconds, Costs 40 Spell Points) Creates a ball of fire that detonates on impact, causing an explosion of light and flame that deals 1d3+9 Light damage and 1d3+9 Fire damage per caster level to targets in its path. A successful Reflex save reduces the damage by half. This counts as both a Fire and Light spell. (Max Caster Level: 20). (Available Metamagics: Empower Maximize Quicken Enlarge Intensify Embolden)
+SelectorName: Chain Cure
+Descrip: SLA: (Cooldown 9 seconds, Costs 40 Spell Points) A powerful discharge of Positive energy strikes a primary Ally or Undead Foe for 1d6+3 Positive Healing per Caster Level and then arcs to other nearby Allies and Undead Foes hitting each of them with a similar bolt of Positive energy. (Max Caster Level: 20). This is considered a Cure Wounds spell. (Available Metamagics: Empower, Empower Healing, Maximize, Quicken, Enlarge, and Intensify)
 
-AbilityName: Masquerade
-Descrip: Passive: You have a 10% reduction on the costs of your spells. You also have the power to switch your Twist of Fate at a Rest Shrine.}Close your eyes.}Roll a dream into a ball.}Count to three and throw it over your shoulder.}Open your eyes, and let Destiny be undone!}--excerpt from 'Secret Recipes'}{ Note: stacks fully with items (enhancement bonus) and morale discounts to spell point costs.
+AbilityName: Blessed Water
+Descrip: +1/2/3 to all Turn Undead attributes and Turn Undead charges. If you have the Font of Life feat, you gain +15 Physical Resistance Rating and +15 Armor Class. (Note: This needs to be checked to see if the feat bonus is Rank 3).
+Cost: 1
+Ranks: 3
 Tier: 5
 
-AbilityName: Bladesong
-Descrip: Your Melee and Missile attacks deal an additional 2d6 Sonic damage on hit, scaling with Sonic Spell Power. +3% Competence Bonus to Melee Attack Speed. You have +1 Critical Multiplier on rolls of 19-20.}A verse from the Song of Heroes, whose harmonious notes sweep away the strain of concentration.
+AbilityName: Ascendance
+Descrip: Epic Moment. You are healed to full health. For 20 seconds, you gain the following traits:}{-You gain a ring of flaming blades around you. Enemies that enter or exit your flaming blades take 1d6 Fire and 1d6 Light damage per Caster Level. This scales with Spell Power. Allies that enter your ring gain 1d6 Positive healing per Caster Level, which also scales with Spell Power.{-Every 2 seconds, you gain 1d20+20 Positive Healing per caster level. This scales with Positive Spell Power.{-+30% Action Boost Bonus to Movement Speed.{-You cannot be interrupted while casting.{-You cannot swing weapons.
+Cost: 2
+Ranks: 1
 Tier: 5
-
-AbilityName: Greater Shout
-Descrip: You may cast the spell Greater Shout as a Spell-like ability. Emits an ear splitting yell that deals 1d3+3 Sonic damage per caster level and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun.}Cooldown: 6 seconds}Cost: 6 spell points
-Tier: 6
 
 AbilityName: Metamagic Attunement II
-Descrip: Choose one:}{- Like Embolden Spell, your spells add an additional 2 to their DCs. This does not increase their Spell Point cost.}{- Like Intensify Spell, your spells have an additional 75 to their Spell Power. This does not increase their Spell Point cost.}{- Like Quicken Spell, your spells cast much faster and can't be interrupted. This does not increase their Spell Point cost.
-Tier: 6
-Selector: Embolden, Intensify, Quicken
+Descrip: Multiselector:Empower Healing, Intensify
+Cost: 2
+Ranks: 1
+Tier: 5
+Selector: Empower Healing, Intensify
+SelectorName: Empower Healing
+Descrip: The Empower Healing Metamagic no longer costs Spell Points
+SelectorName: Intensify
+Descrip: The Intensify Metamagic no longer costs Spell Points.
 
-AbilityName: Turn of the Tide
-Descrip: Spontaneous Song. Duration: 45 seconds. Cooldown: 3 minutes}{-Epic Moment Activate this ability to gain:}{-Full Base Attack Bonus}{-+40% weapon damage}{-DR 15/-}{-+4 Charisma}{-+3 to hit}{-Your attacks from weapons deal an additional 5d10+75 Sonic damage and 5d10+75 Light damage per hit}While under the effects of Turn of the Tide, you do not automatically fail Will save by rolling a natural 1.}Shining like the sun, the Singer fell upon the horde. Fiery, his sword gleamed, cutting through their ranks. And when light had faded, and with the carnage all around, he quietly cleaned his blade, sat upon a lonely rock and wrote a poem of I know not what.}--Recollections, Lormac Stoutarm
-Tier: 6
+DestinyName: Fatesinger
+Abbreviation: Fatesinger
+Type: Destiny
 
-DestinyName: Fury of the Wild
+AbilityName: Fatesinger's Repertoire
+Descrip: You gain the Magical Training feat. Each core of this tree grants +25 Spell Points, +5 Positive and Sonic Spell Power, +5 Universal Spell Power, +5 Melee Power, +4 Ranged Power. Each core also grants a +1 Epic Bonus to all spell DCs.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Intoxicating Presence
+Descrip: Passive: Enemies that strike you have a 5% chance of becoming Fascinated for 12 seconds, with no saving throw.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Glitter of Fame
+Descrip: +1 to all ability scores and saves
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Music of the Spider Queen
+Descrip: You gain +3/6/10 Universal Spell Power. Rank 3: If you have Fascinate it now gains the power to mesmerize Vermin and if you have Bardic Inspiration it now applies Neutralize Poison. Mesmerized Vermin are not susceptible to suggestion.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Jack of all trades
+Descrip: +1/2/3 bonus to all Skills. Rank 3: If you have the Inspire Bardic Ability it now also grants +3 Skills to those you inspire.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Epic Strike
+Descrip: Multiselector:Strike a Chord, The Sword Sings, The Pluck of a String
+Cost: 1
+Ranks: 1
+Tier: 1
+Selector: Strike a Chord, The Sword Sings, The Pluck of a String
+SelectorName: Strike a Chord
+Descrip: SLA: Cost: 2 Spell Points, Blasts a single target with a random note of music for 1d6+1 Sonic damage per character level scaling with Spell Power. You gain a stack of Chords of Fate which 30 seconds, stacks 3 times. Cooldown: 2 seconds.
+SelectorName: The Sword Sings
+Descrip: Melee Attack: 3[W] +2 Critical Threat Range, Your weapon swings with the power of song, causing an additional 2d10 Sonic damage per character level that scales 200% with Melee Power. You gain a stack of Chords of Fate which lasts 30 seconds, stacks 3 times. Critical hits cause the target to be Stunned for 2 seconds, no save. Cooldown: 4 seconds
+SelectorName: The Pluck of a String
+Descrip: Ranged Attack: 3[W] +2 Critical Threat Range. Your ranged weapon sings through the air causing 2d10 Sonic Damage per character level that scales with 200% Ranged power. You gain a stack of Chords of Fate which lasts 30 seconds, stacks 3 times. Critical Hits cause the target to be stunned for 2 seconds, no save. Cooldown: 5 seconds.
+
+AbilityName: Harmonic Resonance
+Descrip: Your Epic Strikes in this tree and all of your attacks and offensive spells have a 20% chance to build up a stacking Harmonic Resonance in your enemies. Harmonic Resonance: Each stack increases the creature's vulnerability to Sonic damage by 10% and reduces their Armor Class by 5. The effect may stack up to 3 times and lasts up to 20 seconds.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Tune of the Weave
+Descrip: You gain 2/4/6 Magical Resistance Rating & 10/30/50 Spell Points.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: ​The Rhythm to Reign
+Descrip: You generate 15/25/35% less threat from all sources. In addition, you gain +5/10/15 Positive Spell Power.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: ​Mantle of Sound and Fury
+Descrip: Fate Singer Destiny Mantle: All your attacks and spells have a chance to cause a swirl of music notes to surround you causing 1d6 Sonic damage per level to all nearby foes. Scales with the highest of Sonic Spell Power or 200% Melee Power or Ranged Power. This will not damage Fascinated targets. When this occurs you gain 6 per character level temporary Hit Points for 10 seconds. Can only occur once every 10 seconds.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Discord
+Descrip: ​Manifest Discord against your Enemies
+Cost: 2
+Ranks: 1
+Tier: 2
+All: Tier 1: Epic Strike
+Selector: Echoes of Discord, Blade of Discord, Arrow of Discord
+SelectorName: Echoes of Discord
+Descrip: Spell: Consumes all Chords of Fate. Creates a blast of music on the target that strikes nearby enemies for 1d6+1 Sonic damage per Character Level, scales with 100% with Sonic Spell Power. Each Chords of Fate you have increases the damage by 100%. This attempts to stun the target for 1 second per Chords of Fate. Fortitude Save of DC:20 + STR/DEX/INT/CHA + Evocation Bonuses. Releasing 3 Chords of Fate restores 10 Spell Points.
+SelectorName: Blade of Discord
+Descrip: Melee Cleave Attack: +3[W], +2 to Critical Threat Range. Consumes all Chords of Fate. You cleave your foes with the power of discord. Stuns for 1 second for each Chords of Fate consumed unless they make a Fortitude Save vs (DC 20 + Highest of STR/DEX/INT/CHA Mod + Stunning Bonuses). Releasing 3 Chords of Fate restores 10 Spell Points.
+SelectorName: Arrow of Discord
+Descrip: Ranged Attack: +3[W], +2 Critical Threat Range. Consumes all Chords of Fate. Discord erupts from the first enemy struck, applying a Stun for 1 second per Chords of Fate consumed unless the enemies make a Fortitude Save vs (DC 20 + Highest of DEX/WIS/INT/CHA Mod + Stunning Bonuses). Releasing 3 Chords of Fate Restores 10 Spell Points.
+
+AbilityName: Grandeur
+Descrip: Your friendly spells now apply a lingering buff that grants +3 Armor Class and Physical Resistance Rating. Stacks twice for 10 seconds.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: ​Master the Acoustics
+Descrip: 5/10/15 Sonic Spell Power. Rank 3: When using the Sonic Blast or Reverberate spells the damage is increased by 50%.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: ​A Little Bit of Music
+Descrip: Grants Bardic Inspiration if you don't already have it. Passive: +3 Bard Songs & +1 Spell Penetration.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: ​The Magic of Music
+Descrip: Multiselector: Enchantment, Illusion, Abjuration, Evocation
+Cost: 1
+Ranks: 3
+Tier: 3
+Selector: Enchantment, Illusion, Abjuration, Evocation
+SelectorName: Enchantment
+Descrip: +1/2/3 Enchantment DCs
+SelectorName: Illusion
+Descrip: +1/2/3 Illusion DCs
+SelectorName: Abjuration
+Descrip: +1/2/3 Abjuration DCs
+SelectorName: Evocation
+Descrip: +1/2/3 Evocation DCs
+
+AbilityName: ​Reign
+Descrip: Your Vorpal Strikes cause 7/9/11d20 Electric and Sonic damage. Scales with Melee and Ranged Power by 300%. Passive: Gain +1/2/3 to Hit.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: ​The Sonata to Serve
+Descrip: +1/2/3 Spell Penetration and 3/6/9% Fortification Bypass. Rank 3: If you are actively using the Mantle of Sound & Fury you are now immune to Arcane Spell Failure.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: ​Masquerade
+Descrip: You have a 3/6/10% reduction in the cost of your spells.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Great Ballads of War
+Descrip: You gain +1/2/3 to hit and damage. If you have the Bardic Ballad Feat this also applies to your Ballad's bonus to others.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Majesty
+Descrip: You are immune to Charisma stat damage. When you play any Bardic Song while using the Mantle of Sound and Fury, you heal yourself and nearby applies for 1d2 Hit Points per Character Level and apply the Restoration spell. Scales with Spell Power.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Resonance of Fate
+Descrip: Select a Resonance
+Cost: 2
+Ranks: 1
+Tier: 4
+Selector: Arcane Resonance, Divine Resonance, Martial Resonance, Primal Resonance
+SelectorName: Arcane Resonance
+Descrip: +1 to Intelligence, Wisdom and Charisma. When using the Mantle of Sound & Fury gain +10 Universal Spell Power, +2 Spell Penetration, +4 Use Magic Device, +10% to your Fire, Cold, Acid and Electric Absorption.
+SelectorName: Divine Resonance
+Descrip: +1 to Strength, Charisma and Wisdom. When using the Mantle of Sound & Fury gain +1 to hit damage, and to confirm critical hits, +5 Physical Resistance Rating, and +15 Positive and Negative Spell Power.
+SelectorName: Martial Resonance
+Descrip: +1 to Strength, Dexterity and Constitution. When using the Mantle of Sound & Fury gain +5 Physical and Magical Resistance rating, +5 Armor Class, and +10 Melee and Ranged Power
+SelectorName: Primal Resonance
+Descrip: +1 to Strength, Constitution and Wisdom, +25 Maximum Hit Points, +10 Spell Resistance, +10 Healing Amplification, and an additional +3 Strength while Raging.
+
+AbilityName: Shout it out
+Descrip: Multiselector:Greatest Shout SLA, Very Very Vocal
+Cost: 2
+Ranks: 1
+Tier: 4
+Selector: Greatest Shout SLA, Very Very Vocal
+SelectorName: Greatest Shout SLA
+Descrip : Cooldown of 6 seconds. Costs 6 Spell Points. You may cast the spell Greater Shout as a Spell-like ability with an increased DC. Emits an ear-splitting yell that deals 1d6+3 Sonic damage per caster level (up to caster level 20) and stuns targets in its path. A successful Fortitude save halves the damage and negates the stun, DC:20 + Highest of Stat Mod + Evocation.
+SelectorName: Very Very Vocal
+Descrip : When you cast Shout, Great Shout or Horn of Thunder the damage is doubled. Your Discord abilities stun for an additional 3 seconds when used with 3 Chords of Fate
+
+AbilityName: ​Metamagics Attunement
+Descrip: Gain one of the following Metamagic Feat effects with no additional spell cost: {-Enlarge{-Extend{-Eschew
+Cost: 2
+Ranks: 1
+Tier: 4
+Selector: 
+SelectorName: Enlarge
+SelectorName: Extend
+SelectorName: Eschew
+
+AbilityName: Ballad of the ages
+Descrip: You benefit from the True Seeing spell and gain +2 to damage with all weapons. If you have Bardic Ballad it adds Inspired Transcendence to that effect. Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, and True Seeing.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Mastering the Strings: +1/2/3 Spell DCs
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Blade Song
+Descrip: +1 multiplier on 19-20 critical hits when using any hand held weapon. This excludes punch weapons and animal forms.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Turn the Tide
+Descrip: Epic Moment. The trumpets call the rally! For 20 seconds you and your party gain full attack bonus, +10% to weapon damage, +10% uncapped Dodge, +100 Universal Spell Power and -25% to spell costs. 5 minute cooldown.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Cut the Strings
+Descrip: SLA. Strike a note to reveal the chords of fate so you might cut them. All monsters within a wide radius around you are forced to dance (Will vs DC:20 + Highest Stat Mod + Enchantment) pulled by the strings of fate for 10 seconds. In Addition for 10 seconds your character gains the ability to cut their strings with any weapon strike or spell at a rate of once per second, instantly killing them. Bosses if they fail their save do not dance but will take an additional 100 Sonic damage that scales with Spell Power when attacked by you in melee for the duration of the effect. Cooldown: 60 seconds.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+DestinyName: Fury of the wild
 Abbreviation: Fury
 Type: Destiny
-Stats: Strength, Constitution
 
-AbilityName: Tunnel Vision
-Descrip: Passive Bonus: While raged, melee attacks deal +1d[8/10/12] extra untyped damage. In addition, you gain +[1/2/3] intimidate and +[1/2/3] will saves. You also suffer a -5 Penalty to Armor Class and suffer a 10% penalty to fortification while raged.
-Tier: 1
-Ranks: 3
 
-AbilityName: Primal Scream
-Descrip: Active Ability: (Cooldown 15 seconds) Nearby allies are raged gaining +[3/4/5] morale bonus to Strength and Constitution, and suffer a -2 penalty to armor class. Nearby enemies take up to [10/20/30]d20 sonic damage. [3/4/5] uses per rest. Duration 3 minutes per use.
-Tier: 1
-Ranks: 3
-
-AbilityName: Boulder Toss
-Descrip: Select one:}Boulder Toss: Throw a boulder at an enemy, dealing [6/12/20]d100 bludgeoning damage and knocking down enemy on failed reflex save DC [10/15/20] + Str modifier. (Cooldown 20 seconds) This does not benefit from spell power, but can critically hit.}Boulder's Might: 5[W] attack with [+0/+1/+2] Critical Multiplier, but require 2 handed weapon to perform this attack. (Cooldown 6 seconds)
-Tier: 1
-Ranks: 3
-
-AbilityName: Fast Healing
-Descrip: Passive Bonus: You heal [2/4/6]d20 HP each minute using positive energy.
-Tier: 1
-Ranks: 3
-
-AbilityName: Injury
-Descrip: Passive Bonus: While you are injured, enemies you damage in melee are shaken. At rank 2 when you're below 70% of your hit points enemies receive a bleed proc for 1d10 damage every 2 seconds for 10 seconds. At rank 3 when you are below 30% hit points, you have a 10% chance of paralyzing your enemies for 5 seconds.}{-Bug:  Injury's shaken effect has a DC29 will save, lasts only 6 seconds, and offers a recurring save every 2 seconds.}{-Bug:  Injury's  3rd rank effect functions the same as the 2nd rank.}{-Note: The bleed damage uses the same rather annoying sound effect as the Slicing Blow feat, except it goes off constantly.
-Tier: 2
-Cost: 2
-
-AbilityName: Unstoppable Fury
-Descrip: Passive Bonus: While raged, when you roll a natural 1 with a melee attack, you gain +[1/2/3] attack for 20 seconds. Can stack 3 times for up to +[3/6/9] attack. Loses 1 stack every 20 seconds.
-Tier: 2
-Ranks: 3
-
-AbilityName: Acute Instincts
-Descrip: Passive Bonus: While raged, you gain +[0/1/2] wisdom, +[2/4/6] balance, heal, listen, spot, search, concentration and +[1/2/3] insight bonus to saves vs traps.
-Tier: 2
-Ranks: 3
-
-AbilityName: Damage Reduction
-Descrip: Passive Bonus: Gain [2/4/6] Physical Resistance Rating. Barbarians gain a +1% to Barbarian Damage Reduction at rank 3.
-Tier: 2
-Ranks: 3
-
-AbilityName: Insult
-Descrip: (Active) (Cooldown: 20 seconds) Your next attack generates triple threat, and for 20 seconds your target gains +2 Strength, +2 constitution and loses -10 AC, -10 concentration and -10% fortification.
-Tier: 3
-Cost: 2
-All: Tier 2: Injury
-
-AbilityName: Malicious Weapons
-Descrip: Passive Bonus:  +5/10/20% Strikethrough chance.
-Tier: 3
-Ranks: 3
-
-AbilityName: Ward Against Weird
-Descrip: Passive Bonus: [5/30/60] Primal bonus to spell resistance when you are below [100%/70%/30%] of health.}{-Note: Primal bonus as of Update 36, now stacks with spell resistance items. Each tier adds increasing bonus at lower % of health while retaining the bonus provided by the previous tiers.
-Tier: 3
-Ranks: 3
-
-AbilityName: Gird Against Demons
-Descrip: Passive Bonus: Weapons you equip are considered cold iron and gain [lesser evil outsider bane / evil outsider bane].}{-Note: This effect now shows up as "Gird Against Demons" on your weapons as an enchantment, and thus fully stacks with all other weapon enchantments.}{-Bug:  Cold Iron damage bypass will removed if you change your Arcane Archer Secondary Imbue from metalline to any other. This does not occur if you equipping the bow which you equipped when you enter current instance.
-Tier: 4
-Ranks: 2
-Cost: 2
-
-AbilityName: Wild Weapons
-Descrip: Passive Bonus:  +5/10/20% Strikethrough chance.
-Tier: 4
-Ranks: 3
-All: Tier 3: Malicious Weapons
-
-AbilityName: Sense Weakness
-Descrip: Passive Bonus: You deal [10/20/30]% extra damage to helpless targets. +1/2/3 Damage.
-Tier: 4
-Ranks: 3
-All: Tier 2: Acute Instincts
-
-AbilityName: Overwhelming Force
-Descrip: Passive Bonus: Melee attacks under the effect of Adrenaline knock down [2/6/10] seconds.}{-Note: While knocked down by Overwhelming Force, the enemy is considered helpless.
-Tier: 4
-Ranks: 3
-
-AbilityName: Strong Swings
-Descrip: Passive Bonus: +10 Melee Power with Melee Weapons. While fighting in Two Handed Fighting style, this is instead +25.
-Tier: 5
-
-AbilityName: Fury Made Placid
-Descrip: Active Ability: (Cooldown 30 seconds) Spend 1 Adrenaline: Stop being raged. You heal 2d100 HP every two seconds over the next ten seconds. This healing scales with Melee Power. For 3 minutes you gain +6 wisdom, +10% Doublestrike, +20 PRR and MRR, cannot benefit from rage or adrenaline, and sentient enemies attacking you physically or magically have a 3% chance to become paralyzed and helpless with regret for 3 seconds with no save.
-Tier: 5
-Cost: 2
-None: Tier 5: Fury Eternal
-
-AbilityName: Fury Eternal
-Descrip: Passive Bonus: +1 Adrenaline max use. Whenever you Vorpal Strike on melee or ranged attack, 33% chance to regain 1 Adrenaline use.
-Tier: 5
-None: Tier 5: Fury Made Placid
-
-AbilityName: Devastating Blow
-Descrip: Passive Bonus: +1 Critical Damage Multiplier on rolls of 19-20.
-Tier: 5
-Cost: 2
-
-AbilityName: Unbridled Fury
-Descrip: While in Two Handed Fighting Style, your Vorpal Threat Range is increased to 19/20.
-Tier: 6
-Cost: 2
-
-AbilityName: Bloodbath
-Descrip: Epic Moment: Active Ability: (Cooldown 5mins) Every three seconds, for thirty seconds, you gain Adrenaline Overload: Your next attack deals +400% damage and has +16 critical threat range and confirmation of critical hits. While this is active, you gain +100% Strikethrough chance. You gain the feats Two-Handed Fighting, Improved Two-Handed Fighting, and Greater Two-Handed Fighting for the duration. *Note:  This does not provide the extra 6 melee power, it is only an 100% with, or without, the THF line.
-Tier: 6
-Cost: 2
-
-DestinyName: Grandmaster of Flowers
-Abbreviation: Flowers
-Type: Destiny
-Stats: Dexterity, Wisdom
-
-AbilityName: Lily Petal
-Descrip: Project a bolt of pure Ki energy to damage a single enemy at range and restore 5 Ki to yourself.}Damage: 80 to 120 plus 8 to 12 per Character Level. This damage scales with the higher of Melee and Ranged Power.
-Tier: 1
-
-AbilityName: Perfect Balance
-Descrip: Passive Bonus: +[2/4/6] to Balance, Jump and Tumble and [1/2/3]% Dodge.
-Tier: 1
-Ranks: 3
-
-AbilityName: Enlightenment
-Descrip: Passive Bonus: +[15/30/45] Ki and +[2/4/6] Concentration. Gain +[0/0/1] passive Ki regeneration.
-Tier: 1
-Ranks: 3
-
-AbilityName: A Dance of Flowers
-Abbreviation: Dance of Flowers
-Descrip: You gain +[0.25/0.5/1][W] to weapon attacks.}Note: works on shields.
-Tier: 1
-Ranks: 3
-
-AbilityName: The Flower's Thorn
-Descrip: Melee Attack: +3[W]. 6 second cooldown. Does not require you to be Centered.}Note: Long animation. Tested with single weapon, animation resembles Confront Any Foe, but not a cleave, and only strikes once. Do not recommend.
-Tier: 2
-
-AbilityName: Running with Wind
-Descrip: You gain Electricity resistance [4/8/12], and a +[10/20/30]% Enhancement bonus to Movement speed. You also gain +[2/4/6]% chance to Doublestrike on your Melee attacks.
-Tier: 2
-Ranks: 3
-
-AbilityName: Serenity
-Descrip: You gain +[3/6/9] Spell Resistance which stacks with all other sources of Spell Resistance.}{ Bug: Seems to give double the bonus.
-Tier: 2
-Ranks: 3
-
-AbilityName: Hail of Blows
-Descrip: You gain +3% chance to doublestrike on your melee attacks and +3 damage with weapons.
-Tier: 2
-All: Tier 1: A Dance of Flowers
-
-AbilityName: Orchid Blossom
-Descrip: Project a blast of pure Ki energy to damage enemies at range. The Orchid Blossom will detonate upon hitting an enemy or solid object, damaging any nearby foes.}Damage: 80 to 120 plus 8 to 12 per Character Level (Reflex Saving Throw DC 10 + Character Level + Wisdom Modifier + Stunning Bonuses for half damage).}The damage scales with the higher of Melee or Ranged Power.}Cooldown: 12 seconds}Cost: 20 Ki.
-Tier: 3
-All: Tier 1: Lily Petal
-
-AbilityName: Walking with Waves
-Descrip: You gain Cold Resistance [4/8/12] and +[2/4/6] bonus to your Armor Class. You also gain+[1/2/3]% to your chance to Dodge enemy attacks.
-Tier: 3
-Ranks: 3
-
-AbilityName: Light as a Feather
-Descrip: You are immune to damage caused by falling. In addition, when this ability is toggled on, you are under the effect of Feather Fall
-Tier: 3
-
-AbilityName: Perfection of Body
-Descrip: You gain a +[2/4/6] bonus to your Fortitude saving throws. You will no longer fail a saving throw against Disease on a natural one, if your total saving throw result is equal or higher than the DC of the disease.}Rank 2: Adds poison saves}Rank 3: All Fortitude saves
-Tier: 3
-Ranks: 3
-
-AbilityName: Standing with Stone
-Descrip: You gain Acid Resistance [4/8/12], +[5/10/15] to your maximum hit point total. You also gain +[5/10/15] PRR.
-Tier: 4
-Ranks: 3
-
-AbilityName: Piercing Clarity
-Descrip: Passive Bonus: Your attacks bypass [5/10]% of enemy fortification. Your attacks have Ghost Touch. On rank 2 your attacks bypass concealment as if you had True Seeing.
-Tier: 4
-Ranks: 2
-
-AbilityName: Perfection of Mind
-Descrip: You gain a +[2/4/6] bonus to your to Will saving throws. You gain an additional +[2/4/6] to Will saving throws against Enchantment, Fear and Illusion effects.}Rank 3: You will no longer fail a Will saving throw on a natural one, if your total saving throw result is equal or higher than the DC of the effect.
-Tier: 4
-Ranks: 3
-
-AbilityName: Drifting Lotus
-Descrip: By performing the legendary Drifting Lotus technique, you coalesce a radiant orb of Ki energy in your fist, and then smash down upon your enemies with the force of falling heavens.}Enemies in the vicinity of your attack may make a Reflex saving throw (DC 10 + character level + Wisdom modifier + stun bonuses) for half damage. Any enemies who fail their Reflex save are knocked down by the force of your blow.}Damage: 100-160 +10-14 per character level. This damage scales with the highest of Melee and Ranged Power.}Cooldown: 15 seconds}Cost: 25 Ki.
-Tier: 5
-All: Tier 3: Orchid Blossom
-
-AbilityName: Dancing with Flames
-Descrip: You gain Fire Resistance [4/8/12], and a +[1/2/3] bonus to your attack and damage rolls. You also gain +[0.3/0.6/1][W] damage added to your weapon attacks.
-Tier: 5
-Ranks: 3
-
-AbilityName: Devastating Critical
-Descrip: Passive Bonus: +1 Critical Damage Mulitplier on rolls of 19-20.
-Tier: 5
-
-AbilityName: Perfection of Soul
-Descrip: You gain a +[2/4/6] to your Reflex saving throws. You gain a +[1/2/3] bonus to your Bluff, Diplomacy, Haggle and Intimidate skills.}Rank 3: You will no longer fail a Reflex saving throw on a natural one, if your total saving throw result is equal or higher than the DC effect.
-Tier: 5
-Ranks: 3
-
-AbilityName: A Scattering of Petals
-Abbreviation: Scattering of Petals
-Descrip: You focus your Ki into a handful of flower petals, and release them into the air, blinding nearby enemies and deflecting enemy blows.}On Activation: Nearby enemies have their Fortification reduced by 200% and lose sneak attack immunity for 12 seconds. In addition, each nearby enemy must make a Fortitude saving throw (DC 10 + Character Level + Wisdom Modifier + Stunning bonuses) or become blinded for 9 seconds. For the next 12 seconds, you gain +100 PRR and +10 Natural Armor.}Cooldown: 90 seconds}Cost: 30 Ki.
-Tier: 6
-All: Tier 5: Drifting Lotus
-
-AbilityName: Everything is Nothing
-Descrip: On Activation: Your state of luminous consciousness allows your will to alter the fabric of the planes, ripping your foes out of time and space. Up to six nearby enemies must make a saving throw (DC 10 + Character Level + Wisdom Modifier + Stunning bonuses) or be erased from the multiverse.}If they succeed at their saving throw, they are instead paralyzed by temporal shock for 6 seconds, after which point they take 1000 points of damage (Fortitude save as above for half damage). This damage scales with the highest of Melee or Ranged power. Bosses are immune to the death and paralysis effects, and instead immediately take damage. Player characters are entirely immune to Everything is Nothing.
-Tier: 6
-Cost: 2
-
-DestinyName: Legendary Dreadnought
-Abbreviation: Dreadnought
-Type: Destiny
-Stats: Strength, Constitution
-
-AbilityName: Sundering Swing
-Descrip: Active Ability: (Cooldown 1 min) For the next [9/12/15] seconds, all attacks you make apply an Improved Sunder effect on hit.}{ Bug:  Sundering Swing functions as the old version of Improved Sunder (-5 AC, but does not lower fortification). It's also not applying the -3 fortitude penalty that Improved Sunder normally does regardless if saved against.}{ Note: It does not apply to unarmed attacks.
-Tier: 1
-Ranks: 3
-All: Feat: Improved Sunder
-
-AbilityName: Legendary Tactics
-Descrip: Passive Bonus: +[2/4/6] to DC's of all tactical feats.
-Tier: 1
-Ranks: 3
-
-AbilityName: Extra Action Boost
-Descrip: Passive Bonus: +[1/2/3] Action Boost per rest.
-Tier: 1
-Ranks: 3
-
-AbilityName: Attack Boost
-Descrip: Active Ability: (Cooldown 30 seconds) Activate to gain a [+15/+20/+25] Action Boost bonus to attack bonus for 20 seconds. (This enhancement cannot be taken if you have Action Boost Attack as a class enhancement, and it shares a cooldown with all other action boosts). Bug:  Only gives +10 as it gives the action boost from the ranger tree.
-Tier: 1
-Ranks: 3
-
-AbilityName: Momentum Swing
-Descrip: Active Ability: (Cooldown 1 min) Tactical Melee Attack Perform an attack with +5[W] damage and +[1/2/3] critical threat range. Cleave attacks have a [15/30/50]% chance to reset the cooldown of this ability (this cannot occur more than once every 3 seconds).}{ Bug:  Cooldown often seems to be reset but actually it does not. Activating Momentum Swing when timer is not properly reset will cause animation to play but you won't deal any damage. This appears to be caused by using a cleave attack before 3 seconds has elapsed. Waiting 3 seconds after using momentum swing before using cleave prevents this bug.
-Tier: 2
-Ranks: 3
-All: Feat: Cleave
-
-AbilityName: Improved Combat Expertise
-Abbreviation: Imp. Combat Expertise
-Descrip: Active Ability: (Cooldown 6 seconds) When Stance: Combat Expertise is active, you gain +20 Physical Resistance Rating.
-Tier: 2
-Cost: 2
-All: Feat: Combat Expertise
-
-AbilityName: Improved Power Attack
-Abbreviation: Imp. Power Attack
-Descrip: Active Ability: (Cooldown 6 seconds) When Stance: Power Attack is active, you deal +0.5[W] damage with weapons. Note: works on shields.}{ Bug:  As of Update 22.3 the extra 0.5[W] damage from Improved Power Attack does not display on your weapons, but does display on the inventory damage box and in the players combat chat log. The +0.5[W] increase in damage works and applies normally.
-Tier: 2
-Cost: 2
-All: Feat: Power Attack
-
-AbilityName: Damage Boost
-Descrip: Active Ability: (Cooldown 30 seconds) Activate to gain a +[10/20/30] Action Boost bonus to melee and ranged power for 20 seconds (This epic ability cannot be taken if you have Action Boost Damage as a class enhancement, and it shares a cooldown with all other action boosts).
-Tier: 2
-Ranks: 3
-
-AbilityName: Lay Waste
-Descrip: Active Ability: (Cooldown 1 min) Perform an Area of Effect attack with +5[W] damage and +1 critical damage multiplier. On Hit Knocks the target down, Balance DC (10 + Character Level + Strength Modifier) Negates. Momentum Swing has a 25% chance to reset the cooldown of this ability (this cannot occur more than once every 3 seconds).}{ Bug:  Cooldown often seems to be reset, but actually it is not. Activating Lay Waste when timer is not properly reset will cause animation to play but you won't deal any damage. Easy way to check proper reset is to wait 2-3 seconds after ability timer is cleared, and if countdown continues - then it was false reset, if not - then ability reset properly.
-Tier: 3
-Cost: 2
-All: Feat: Cleave, Tier 2: Momentum Swing
-
-AbilityName: Critical Damage
-Descrip: Passive Bonus: +[2/4/6] damage on critical hits (before weapon multipliers).
-Tier: 3
-Ranks: 3
-
-AbilityName: Haste Boost
-Descrip: Active Ability: (Cooldown 20 seconds (30 if you twist it)) Activate this ability to receive a +[20/25/30]% Action Boost attack speed bonus for 20 seconds. (This ability cannot be taken if you have Action Boost Haste as a class enhancement, and it shares a cooldown with all other action boosts).}{ Bug:  The ability can be taken if you have Action Boost Haste from an enhancement line. In that case, it will share the number of uses with the existing haste boost.
-Tier: 3
-Ranks: 3
-
-AbilityName: Tactical Genius
-Descrip: Passive Ability: You are a studied master of a wide variety of methods for gaining the upper hand. +2 to the DCs of your Tactical Feats, DC of Rune Arm shots, DC of Breath Weapons, DC of Assassinate, DC of Poisons, and +2 to the Perform, Bluff, Diplomacy, and Intimidate skills.
-Tier: 4
-Cost: 2
-All: Feat: Combat Expertise
-
-AbilityName: Volcano's Edge
-Descrip: Active Ability: (Cooldown 12 seconds) Melee Attack On Hit 100 Fire damage. On Critical Target takes Magma Surge damage. On Vorpal Target takes 10d100 Fire damage. Requires a Dagger, Kama, Sickle or Sword to be equipped in your main hand.}{ Note: Does also work with a Rapier or Kukri equipped in the main hand.
-Tier: 4
-Cost: 2
-
-AbilityName: Lightning Mace
-Descrip: Active Ability: (Cooldown 12 seconds) Melee Attack On Hit 100 Electrical damage. On Critical Gain +15% enhancement bonus to melee doublestrike for 6 seconds. On Vorpal Target takes 10d100 Electrical damage. Requires a Club (weapon), Greatclub, Heavy Mace, Light Mace, Morningstar, or Quarterstaff to be equipped in your main hand.
-Tier: 4
-Cost: 2
-
-AbilityName: Anvil of Thunder
-Descrip: Active Ability: (Cooldown 12 seconds) Melee Attack On Hit 100 Sonic damage. On Critical Target is stunned for 6 seconds. NOTE: It can stun even constucts or undead, which is great coz of extra damage and crowd control. On Vorpal Target takes 10d100 Sonic damage. Requires a Dwarven Waraxe, Greataxe, Battleaxe, Handaxe, Warhammer, Maul, Light Pick or Heavy Pick to be equipped in your main hand.
-Tier: 4
-Cost: 2
-
-AbilityName: Advancing Blows
-Descrip: Passive Bonus: You gain on Critical Hit +1 to hit and damage for 6 seconds. Stacks 5 times.}{-As of Update 37 Patch 2, Advancing Blows no longer treats critical hits as action boost activations. Therefore, it no longer has a great synergy with Purple Dragon Focus
-Tier: 5
-Cost: 2
-
-AbilityName: Devastating Critical
-Descrip: Passive Bonus: +1 Critical Damage Multiplier on rolls of 19-20.}{-Stacks with Headman's Chop and Overwhelming Critical.}{-Functions with handwraps and shields.
-Tier: 5
-Cost: 2
-
-AbilityName: Master's Blitz
-Descrip: Epic Moment: Active Ability: (Cooldown 5 mins) Activate: For 15 seconds, you gain +7 Melee Power, +7 Ranged Power, and select either +50% Dodge (dodge cap applies!) or +30 PRR. Any time you hit an opponent while under the effects of Master's Blitz you have a 10% chance to gain an additional stack of the melee/ranged damage bonus and restart the duration. When you first activate this ability you start with three stacks of increased damage. The damage bonus stacks up to 10 times, and decrements by 1 every 15 seconds.
-Tier: 6
-Cost: 2
-
-AbilityName: Pulverizer
-Descrip: Passive Bonus: Increases the critical threat range of bludgeoning weapons you equip by 1 (Insight bonus).}{ Notes:}{-As insight bonus, this does stack with most common effects that increase threat range (exception: Exploit Weakness).}{-Does not work with Shields.}{-Works with Handwraps as of U35}{-Does not work for bludgeoning weapons that don't deal bludgeoning damage, for example Cranium Cracker or Sireth.}{-Works for Blunted Ammunition ranged weapons, as well as bows dealing bludgeoning damage via Morphic Arrows.
-Tier: 6
-Cost: 2
-
-AbilityName: Headman's Chop
-Descrip: Passive Bonus: When you have an axe equipped in your main hand, you gain an additional +1 Critical Damage Multiplier on rolls of 19-20.}{-This also increases the Critical Damage Multiplier of your off-hand weapons and shields, as long as you have an axe equipped in your main hand.}{-Stacks with Devastating Critical and Overwhelming Critical.
-Tier: 6
-Cost: 2
-All: Tier 5: Devastating Critical
-
-DestinyName: Magister
-Type: Destiny
-Stats: Intelligence, Charisma
-
-AbilityName: Sigil of Spell Warding
-Abbreviation: Sigil of Warding
-Descrip: Inscribes a runic sigil on the ground where you designate. It remains there for 60 seconds and adds [1/2/3] AC and [5/10/15] PRR to you and any allies standing within its radius. No more than a single Sigil per caster can exist at one time - if you cast another, your previous one is immediately erased.}Cooldown: 30 seconds}Cost: 20 spell points
-Tier: 1
-Ranks: 3
-
-AbilityName: Imperceptible Casting
-Descrip: Your deep understanding of the arcane allows you to cast powerful spells using only the merest gestures and whispers. For the next 30 seconds, you gain +10 Universal Spell Power and the threat you generate from spells is reduced by 95%.}Cooldown: 1 minute
-Tier: 1
-
-AbilityName: Unearthly Reactions
-Descrip: From years of honing your mind, your wits have become quick to react to danger. You gain +[1/2/3] Dodge, +[2/4/6] to Reflex saves.}Rank 3: When you tumble, you will phase out from reality briefly, passing through enemies as you do so.
-Tier: 1
-Ranks: 3
-
-AbilityName: Impregnable Mind
-Descrip: Your mind is protected by powerful psychic wards. You gain +[2/4/6] concentration and +[2/4/6] to Will saves.}Rank 3: You will also no longer automatically fail Will saves on a 1.
-Tier: 1
-Ranks: 3
-
-AbilityName: Sigil of Lifeshielding
-Descrip: Inscribes a runic sigil on the ground where you designate. It remains there for 60 seconds  and grants all the same protection of a Deathward spell (immunity to death spells, Energy Drain, and Negative energy damage) to you and any allies standing within it's radius. Any Undead enemies that enter the sigil's radius take [1/2/3]d6 Light damage every 2 seconds as long as they remain within. No more than a single Sigil per caster can exist at one time - if you cast another, your previous one is immediately erased.}Cooldown: 30 seconds}Cost: 20 spell points
-Tier: 2
-Ranks: 3
-
-AbilityName: Fade into the Weave
-Descrip: Your mind and body are so closely interweaved with the essence of magic that you can meld into it when you are in danger. Upon activating this ability you gain +25 Universal Spell Power, trigger a Diplomacy effect, and for the next 20 seconds you are invisible. This invisibility does not break if you cast spells or attack enemies.}Cooldown: 2 minutes
-Tier: 2
-All: Tier 1: Imperceptible Casting
-
-AbilityName: School Specialist
-Descrip: Choose a school. You gain +1 to the DCs of spells from that school per tier.
-Tier: 2
-Ranks: 3
-All: Feat: Spell Focus
-SharedSelector: Feat: Spell Focus
-
-AbilityName: Sigil of Energy Negation
-Abbreviation: Sigil of Energy
-Descrip: Inscribes a runic sigil on the ground where you designate. It remains there for 60 seconds and grants [20/40/60] stacking resistance vs. Fire, Cold, Electricity and Acid damage to you and any allies standing within its radius. No more than a single Sigil per caster can exist at one time - if you cast another, your previous one is immediately erased.}Cooldown: 30 seconds}Cost: 20 spell points
-Tier: 3
-Ranks: 3
-
-AbilityName: Variable Resistance
-Descrip: Whenever you take fire, cold, electric, or acid damage, you gain 10 stacking resistance to that element for [1/2/3] minutes. If you are hit by the same energy type consecutively, the effect can stack up to 3 times for 30 stacking resistance. The whole stack is cleared if you take damage from a different energy type.
-Tier: 3
-Ranks: 3
-All: Tier 3: Sigil of Energy Negation
-
-AbilityName: Piercing Spellcraft
-Descrip: You understand magical wardings well enough to know just how to breach such defenses. You gain +[1/2/3] bonus to spell penetration.
-Tier: 3
-Ranks: 3
-All: Feat: Spell Penetration
-
-AbilityName: School Augmentation
-Descrip: Passive Bonus: Chosen school spells have [5/10/15]% chance to reduce target <save depending on school> by 5 or 10 for [10/20/30] seconds.Conjuration/Evocation: Reflex -10. Enchantment/Illusion: Will -10. Necromancy (tests) / Transmutation: Fortitude -5. Abjuration: [5/10/15]% chance to increase target's Armor Class by 5 for [2/?/?] minutes.
-Tier: 3
-Ranks: 3
-All: Tier 2: School Specialist
-
-AbilityName: Sigil of Battering Spellcraft
-Abbreviation: Sigil of Battering
-Descrip: Inscribes a runic sigil on the ground where you designate. It remains there for 60 seconds and grants +[15/30/45] stacking spellpower to you and any to allies standing within its radius. No more than a single Sigil per caster can exist at one time - if you cast another, your previous one is immediately erased.}Cooldown: 30 seconds}Cost: 20 spell points
-Tier: 4
-Ranks: 3
-
-AbilityName: Nullmagic Guard
-Descrip: When you take damage, there is a [2/4/6]% chance that a burst of antimagic energy expands from your body. Nearby enemies are subject to a Dispel Magic effect, which may strip them of their magical protections, and will be rendered unable to cast spells and lose [2/3/4] Spell Resistance for [10/20/30] seconds.
-Tier: 4
-Ranks: 3
-
-AbilityName: Call Kindred Being
-Descrip: Active Ability: (Cooldown 60 seconds) Summon an epic (CR20) creature to aid you. The creature type depends on school familiarity as follows: Abjuration summons an Animated Armor, Conjuration summons a Golem, Enchantment summons a Succubus, Evocation summons a Living Meteor Swarm, Illusion summons a Dream Reaver, Necromancy summons a Lich, Transmutation summons a Gargoyle. Note--the golem sometimes turns hostile and attacks the party.
-Tier: 4
-All: Tier 4: School Familiarity
-
-AbilityName: School Familiarity
-Descrip: Passive Bonus: Reduces cooldown for chosen school spells by [5/10/15]%.
-Tier: 4
-Ranks: 3
-All: Tier 3: School Augmentation
-
-AbilityName: Nullmagic Strike
-Descrip: Passive Bonus: Offensive spells you cast, melee and ranged attacks have a [5/10/15]% chance to subject the target to a Dispel Magic effect, which may strip them of their magical protections, and will render them unable to cast spells and lose [2/3/4] Spell Resistance for [10/20/30] seconds.
-Tier: 5
-Ranks: 3
-All: Tier 4: Nullmagic Guard
-
-AbilityName: Grand Summoner
-Descrip: Passive Bonus: Summons gain +4 to all ability scores, increased health, increased fort (50%) and a 40% increase to movement speed. Stack with augment summoning and similar effects.
-Tier: 5
-All: Tier 4: Call Kindred Being, Feat: Augment Summoning
-
-AbilityName: School Master
-Descrip: Passive Bonus: You have achieved a virtually unparalleled mastery of <School> magic. Your caster level and maximum caster level on spells of this school are each increased by +[1/2/3]. You also gain a +[1/2/3] to DCs with spells from this School.
-Tier: 5
-Ranks: 3
-All: Tier 4: School Familiarity
-
-AbilityName: Arcane Tempest
-Descrip: Creates a chaotic massively powerful storm of force energy that deals 1d6+6 Force damage per caster level every 2 seconds for 10 seconds.}Cooldown: 30 seconds}Cost: 30 spell points
-Tier: 6
-Cost: 2
-All: Tier 4: Sigil of Battering Spellcraft
-
-AbilityName: Nullmagic Aura
-Descrip: Your comprehension of the arcane allows you to unravel spells at the base level, before they do any harm. When activated, for 20 seconds, you and allies near you are immune to harmful spells.}Cooldown: 4 minutes
-Tier: 6
-Cost: 2
-All: Tier 5: Nullmagic Strike
-
-AbilityName: Arcane Adept
-Descrip: Your vast understanding of magic allow you to bend spells in ways that make you energy use far more efficient. All spells you cast receive an enhancement bonus of -10% to their spell point costs.
-Tier: 6
-Cost: 2
-
-DestinyName: Primal Avatar
-Abbreviation: Primal
-Type: Destiny
-Stats: Strength, Wisdom
-
-AbilityName: Ephemeral Evolution
-Descrip: Passive When you take physical damage, you gain +1 Physical Resistance for 3 seconds. This stacks up to [5/10/15] times, up to once per second. Stacks fade away 1 at a time.
-Tier: 1
-Ranks: 3
-
-AbilityName: Rejuvenation Cocoon
-Descrip: Active (12 SP activation) (12 sec cooldown) (Empower Heal, Quicken, Enlarge) (SR: no)}Protect target ally with a shield of [90/120/150] temporary HP for 9 seconds. Heals 5d6 HP every 2 seconds while the shield persists.
-Tier: 1
-Ranks: 3
-
-AbilityName: Insidious Spores
-Descrip: Active (30 SP activation) (12 sec cooldown) (Empower, Maximize, Quicken, Enlarge) (SR: no)}Target enemy becomes contaminated with spores for 18 seconds. Every 2 seconds the target takes [6d6] Poison and Rust damage. Stacks up to [2/3/4] times. Enemies damaged by Insidious Spores become Contagious for five minutes after, spreading Insidious Spores to some nearby enemies when they die.
-Tier: 1
-Ranks: 3
-
-AbilityName: Friends of Nature
-Descrip: Active}You call forth a small nature animal, providing a bonus to nearby allies. Duration: 3 minutes. Cooldown: 3 minutes.}{-Bat: +10 Sonic Spell Power, +5 Sonic Resistance, +3 Listen}{-Bird: +1 Dodge, +3 Spot}{-Fox: +1 sneak attack damage, +3 Move Silently}{-Frog: +2 PRR, +3 Jump}{-Squirrel: +2 attack while flanking, +3 Hide
-Tier: 1
-Cost: 2
-Selector: Bat, Bird, Fox, Frog, Squirrel
-
-AbilityName: Seeking Balance
-Descrip: Passive You gain +[1/2/3] Reflex Saving Throws, +[2/4/6] Tumble, and +[2/4/6] Balance while shapeshifted into an animal form, wielding two weapons, or unarmed. These are Primal bonuses. Skill bonuses required already having at least one rank in the skill.
-Tier: 2
-Ranks: 3
-
-AbilityName: Supple as Spring
-Descrip: Passive Nearby allies gain +[1/2/3]% Primal Bonus to Dodge if they have been damaged in combat in the past six seconds.
-Tier: 2
-Ranks: 3
-
-AbilityName: Favored Enemy
-Descrip: Passive (multiple Enhancement Selector) Some things should not be. Gain the feat Favored Enemy Aberrations, Constructs, or Undead, dealing +2 damage to that race per Favored Enemy feat you have. This also increases the damage dealt against any of your other Favored Enemies by 2.  (You cannot pick a Favored Enemy you already have.)
-Tier: 2
-Cost: 2
-Selector: Aberration, Construct, Undead
-
-AbilityName: Natural Shielding
-Descrip: Passive Your summoned and charmed pets, hirelings, and monsters gain +[30/60/100] maximum HP and +[10/20/30] PRR.  Rank 3: Natural Creatures also gain evasion: When they make a successful Reflex save to avoid damage, they suffer no damage instead of half damage. (Natural Creatures include: Animals, Elementals, Magical Beasts, Plants, & Vermin)}{ Note: ingame description says that it gives 60 PRR; Evasion applies to hirelings and Dryad, probably anything can get evasion from rank 3.
-Tier: 2
-Ranks: 3
-
-AbilityName: Balanced Attacks
-Descrip: Passive You gain a +[2/4/6] Primal bonus to Attack as long as you are shapeshifted into an animal form, wielding two weapons, or unarmed. Rank 3: Knock down enemies for 2 seconds on vorpal hit. Enemies knocked down by this effect are helpless.
-Tier: 3
-Ranks: 3
-All: Tier 2: Seeking Balance
-
-AbilityName: Summer Smoke
-Descrip: Active Ability: (5 sec cooldown) Toggle: Nearby allies have a small chance to deal [5/10/15]d20 extra fire damage with their attacks.
-Tier: 3
-Ranks: 3
-
-AbilityName: Tsunami
-Descrip: Active (50SP to activate) (7 sec cooldown) (SR: no) (Empower, Maximize, Quicken, Heighten, Enlarge)}Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.}Bug:  When Tsunami is cast with the Quicken Spell Metamagic[1], the knockdown cannot be negated, regardless of DC or Fortitude save, as long as the monster does not resist Tsunami completely (is not an Ooze, Plant, etc) and can be knocked down (is not a wraith, ghost, turret, etc). This makes it an effective form of no-save crowd control against a huge portion of enemies in DDO. (If you do not use Quicken, the knockdown portion can fail.)}Bug: The damage does not scale with character level, for many classes. It seems to scale properly with Druid level. It definitely does not scale with character level for Sorcerer, Bard, Favored Soul, and Cleric. For these classes, the damage is as if the spell were cast at character level 1 (base total 30 + 1d10 cold + 30 + 1d10 bludgeoning damage, which is then modified by spellpower and critical chance).
-Tier: 3
-Cost: 2
-
-AbilityName: The Oncoming Storm
-Descrip: Passive Attacks by your summoned and charmed pets, hirelings, and monsters gain a 1% chance to knockdown enemies. Rank 2: Attacks by your summoned and charmed pets, hirelings, and monsters gain a 1% chance to deal 20d20 sonic damage. Rank 3: Attacks by your summoned and charmed pets, hirelings, and monsters gain a 1% chance to deal 20d20 lightning damage.
-Tier: 3
-Ranks: 3
-All: Tier 2: Natural Shielding
-
-AbilityName: Paired / Symetric
-Descrip: Passive (Multiple Enhancement Selector) Gain +5 AC or +5% Primal bonus to physical damage, while in animal form, unarmed, or two-weapon fighting.
-Tier: 4
-Cost: 2
-All: Tier 3: Balanced Attacks
-Flags: SelectorOnly
-Selector: Paired Parry, Symetric Strikes
-
-AbilityName: Autumn Harvest
-Descrip: Active You and nearby allies have a 5% chance to heal [10/15/20]d10 when nearby enemies die. Not affected by spell power.
-Tier: 4
-Ranks: 3
-
-AbilityName: Stormrage
-Descrip: Active (50SP to activate) (12 sec cooldown) (SR: No) (Quicken)}Enemies damaged by your attacks or spells are also struck by lightning, dealing 10d20 electric damage, halved on a reflex save vs. DC 50. Lightning strikes up to one enemy each second. You also gain featherfall and Deflect Arrows. Lasts 18 seconds. See also tests from 2020.
-Tier: 4
-Cost: 2
-
-AbilityName: Summon Dryad Elder
-Descrip: Active (50SP to activate) (30 sec cooldown) (SR: No) (Quicken)}Summon a Dryad Elder. She uses her magic for damage spells as well as support and healing (Regenerate on self,Deathward on group, Mass Cure Critical Wounds on others - heals enemies as well).
-Tier: 4
-Cost: 2
-
-AbilityName: Chill of Winter
-Descrip: Active Ability: (5 sec cooldown)}Toggle: Enemies that damage your nearby allies have a 20% chance to become chilled, receiving 1d20 cold and 1d20 rust damage every two seconds and slowing their attack and movement speed by [5/15/25]% for 20 seconds.}This damage can stack up to 10 times. Chill of Winter also affects bosses.
-Tier: 5
-Ranks: 3
-
-AbilityName: Spirit Boon
-Descrip: Active Ability: (Multiple Enhancement Selector)}Toggle: Temporarily gain +2 Primal bonus to all physical abilities (Str, Dex, Con) or mental abilities (Int, Wis, Cha).
-Tier: 5
-Cost: 2
-Selector: Mental, Physical
-
-AbilityName: Nature's Fury
-Descrip: Passive (Multiple Enhancement Selector)}Gain +1 critical damage multiplier on a roll of 19-20, or Evasion, while in animal form, unarmed, or two-weapon fighting.
-Tier: 6
-Cost: 2
-Selector: Crit Multiplier, Evasion
-
-AbilityName: Avatar of Nature
-Descrip: Epic Moment: Active (2 AP) (35SP to activate) (5 min cooldown)}{-Major Form:}You become an Avatar of Nature (Wood woad) Every 6 seconds, you gain +1 size, +2 Strength, +2 Constitution, a large bonus to damage based on size, and lose some movement speed, stacking up to size 4 which lasts 12 seconds.}{-Size 1+: +50 size bonus to PRR　(Damage dice: 18.5[1d20])}{-Size 2+: When you attack enemies they become poisoned, taking 2d10 poison damage every 2 seconds for several seconds. This poison stacks up to 5 times. (Damage dice: 36.0[1d20])}{-Size 3+: Enemies attacking you have a chance to become diseased, dealing 1d4 Constitution damage every two seconds for 10 seconds. (Damage dice:53.5[1d20])}{-Size 4: The ground shakes when you put your foot down. Your third attack while standing still knocks down nearby enemies and deals extra bludgeoning damage in an area. (Damage dice:71.0[1d20])}{-Fighting in this form counts as Unarmed combat, uses Two Weapon Fighting feats and has a base critical profile of 20 x2, regardless of weapon(s) wielded.}{ Tip: Turning off effects in combat log can prevent some lag related to changing shapes (DDO Forums).
-Tier: 6
-Cost: 2
-
-DestinyName: Shadowdancer
-Type: Destiny
-Stats: Dexterity, Intelligence
-
-AbilityName: Stealthy
-Descrip: Passive Bonus: +[2/4/6] to Hide and Move Silently skills. +[2/4/6] to Assassinate DC (if you have Assassinate). Hide in Plain Sight at rank 3.
-Tier: 1
-Ranks: 3
-
-AbilityName: Shadow Lance
-Descrip: Active Ability: (Cooldown: 30 seconds) Throws 3 spears, each dealing [4/6/8]d8 + [18/24/30] unholy damage and has a chance to blind target (Fort DC [14/16/18] + character level + higher of Dex or Int modifier + Assassination bonuses). This damage scales with 400% of the higher of your melee or ranged power.
-Tier: 1
-Ranks: 3
-
-AbilityName: Acrobatic
-Descrip: Passive Bonus: +[2/4/6] to Balance, Jump and Tumble and a +[3/6/9] bonus to reflex while tumbling.
-Tier: 1
-Ranks: 3
-
-AbilityName: Technician
-Descrip: Passive Bonus: +[2/4/6] to Search, Spot, Disable Device, Open Lock and flanking bonus to attack.
-Tier: 1
-Ranks: 3
-
-AbilityName: Escape Notice
-Descrip: Active Ability: (Cooldown: 1 minute) Triggers a Diplomacy effect that uses the Hide skill instead of the Diplomacy skill.
-Tier: 2
-Cost: 2
-
-AbilityName: Lithe
-Descrip: Passive Bonus: +[2/4/6] reflex saves, AC and light armor Max Dex Bonus.
-Tier: 2
-Ranks: 3
-
-AbilityName: Skill Mastery
-Descrip: Passive Bonus: +1 stacking to all skills.
-Tier: 2
-All: Tier 1: Technician
-
-AbilityName: Cloak of Shadows
-Descrip: Active Ability: (Cooldown: 2 minutes) Activate to cloak in darkness, granting immunity to light and negative damage for 5 minutes, or until 120 damage have been absorbed.
-Tier: 3
-Cost: 2
-All: Tier 3: Shrouding Strike/Shot
-
-AbilityName: Shrouding Strike/Shot
-Descrip: Active Ability: (Cooldown: 6 seconds) Melee or Ranged Attack: Perform an attack with +[1/2/3][W] damage. On hit: Apply a stack of Improved Destruction.
-Tier: 3
-Ranks: 3
-Flags: SelectorOnly
-Selector: Shrouding Strike, Shrouding Shot
-
-AbilityName: Meld into Darkness
-Descrip: Active Ability: (Cooldown: 2 minutes) +100% Enhancement bonus to dodge for [9/12/15] seconds.
-Tier: 3
-Ranks: 3
-
-AbilityName: Grim Precision
-Descrip: Passive Bonus: Bypass [5/10/15]% enemy fortification and [1/2/3]% enemy dodge.
-Tier: 3
-Ranks: 3
-
-AbilityName: Improved Invisibility
-Descrip: Active Ability: (Cooldown: 4 minutes) Turn invisible for [10/20/30] seconds. Attacking does not break this effect. After it wears off, you retain partial concealment for a time (grants Displacement for [30/60/90] seconds).
-Tier: 4
-Ranks: 3
-All: Tier 3: Shrouding Strike/Shot
-
-AbilityName: Pierce the Gloom
-Descrip: Active Ability: (Cooldown: 2 minutes) You are accustomed to seeing clearly even in the darkest conditions. Activate this ability to clear any Blindness effect on yourself. For 30 seconds afterwards you always hit except when you roll a 1 on your attack roll.
-Tier: 4
-Cost: 2
-All: Tier 3: Grim Precision
-
-AbilityName: Shadow Manipulation
-Descrip: Active Ability: (Cooldown: 2 minutes) Activate to dominate the target for 1 minute (Will DC 10 + character level + higher of Dex or Int modifier + Assassination bonuses), after which it is subject to instant death if it fails a fortitude save (DC 10 + character level + higher of Dex or Int modifier + Assassination bonuses). This effect appears to work only on humanoids, living constructs and some aberrations.
-Tier: 5
-Cost: 2
-All: Tier 3: Cloak of Shadows
-
-AbilityName: Untouchable
-Descrip: Passive Bonus: Gain 3% dodge and +1 critical multiplier on rolls of 19-20.
-Tier: 5
-All: Tier 4: Improved Invisibility
-
-AbilityName: Executioner's Strike/Shot
-Descrip: Active Ability: (Cooldown: 12 seconds) Melee or ranged attack. Perform an attack with +[1/2/3][W] damage, +1 critical threat range and +1 critical damage multiplier. On hit: You have a 35% chance to kill a target instantly if the target fails a Fortitude save (DC 7 + character level + higher of Dex or Int modifier + Assassination bonuses). Even on successful save target takes an additional [50/75/100] damage from this attack.
-Tier: 5
-Ranks: 3
-Flags: SelectorOnly
-Selector: Executioner's Strike, Executioner's Shot
-
-AbilityName: Sealed Soul
-Descrip: Passive Bonus: Grants you immunity to energy drain.
-Tier: 5
-Cost: 2
-
-AbilityName: Consume
-Descrip: Active Ability: (Cooldown: 2 minutes) Activate to create a field around you for 10 seconds. Every 2 seconds the aura causes one nearby corporeal enemy to be devoured by its own shadow and die (Fort DC 10 + character level + higher of Dex or Int modifier + Assassination bonuses), or take 80-120 damage. You are free to perform other actions while the aura is active.
-Tier: 6
-Cost: 2
-All: Tier 5: Shadow Manipulation
-
-AbilityName: Shadow Form
-Descrip: Active Ability
-Tier: 6
-Cost: 2
-All: Tier 5: Untouchable
-
-AbilityName: Dark Imbuement
-Descrip: Active Ability: (Cooldown: 2 minutes) For 30 seconds, you deal an extra 9d6 unholy damage with every strike (scales with 200% higher of melee or ranged power), +15 Melee and Ranged Power, +2 Sneak Attack dice, the effective range of your melee attacks increases dramatically, and your ranged attacks have a 30% chance to explode, dealing 18d6 unholy damage (scales with 200% ranged power) to all enemies in a large radius around your target.
-Tier: 6
-Cost: 2
-All: Tier 6: Shadow Form
-
-DestinyName: Shiradi Champion
-Abbreviation: Shiradi
-Type: Destiny
-Stats: Dexterity, Wisdom
-
-AbilityName: Stay Frosty
-Descrip: Shiradi Ranged Stance: (Cooldown: 5 seconds) Ranged and thrown attacks and offensive spells have a 7% chance to deal [3d10/3d20] extra cold damage and slow movement speed for [5/10] seconds. This Cold damage scales with 200% Ranged Power.}Passive Bonus: [+3/+6] Listen and Spot. (Appears on buff bar but only as +3 Spot, +3 Listen)}{ Note: Can be active at the same time as Archer's Focus or Improved Precise Shot Ranged Stances. The slow effect seems to not be affecting bosses.
-Tier: 1
-Ranks: 2
-
-AbilityName: Wild Shots
-Descrip: Active Ability: (Cooldown: [30/20/15] seconds) Hurl nine daggers in a wide arc in front you. Each deals [10d20/15d20/20d20] piercing damage that scales with 200% Ranged Power.Enemies hit by daggers are immune to further hits from Wild Shots for 5 seconds.
-Tier: 1
-Ranks: 3
-
-AbilityName: Healing Spring
-Descrip: Active Ability: (Cooldown: 30 seconds) Nearby allies heal 1d100 positive energy every [60/40/20] seconds for five minutes. Usable once per rest.}Although not specified in the description, "allies" includes yourself, and the buff is affected by healing amplification and positive spell power effects (such as the caster's heal skill). When Healing Spring is cast, a healing buff is calculated and added to all nearby allies, including the caster; there is no need to remain near the caster (as one must to take advantage of a cleric's healing aura), and equipment that improves healing or spell power can be removed after the buff is applied without losing its bonus.
-Tier: 1
-Ranks: 3
-
-AbilityName: Illusion of Well Being
-Descrip: Passive Bonus: Healing spring additionally grants [10/15/20] temporary hitpoints when it heals for at least one HP.Grants one additional use of healing spring per rest.
-Tier: 1
-Ranks: 3
-All: Tier 1: Healing Spring
-
-AbilityName: Prism
-Descrip: Shiradi Ranged Stance (Cooldown: 5 seconds)  Ranged and thrown attacks and offensive spells have a 7% chance to deal 2d10 damage to a random ability score.
-Tier: 2
-Cost: 2
-
-AbilityName: Pin
-Descrip: Ranged or Thrown Attack: (Cooldown: [20/15] seconds) Deals [+2/+3][w]. If enemy is not moving, enemy is pinned in place for [9/18] seconds. Enemy is slowed if moving.}{ Note: No saving throw observed for either effect. When pinned the enemy is also helpless. Bosses can not be pinned in place, but are affected by the slow.}{ Bug:  Moving target will have 'Pinned' and 'Slowed' debuff but can move with -90% moving speed. Moving targets will have 'Slowed' debuff but no penalty to moving speed.
-Tier: 2
-Ranks: 2
-
-AbilityName: Fey Spring
-Descrip: Passive Bonus: Healing spring additionally grants DR[2/4/6]/Cold Iron and stacking [2/4/6] Spell Power to nearby allies.Grants one additional use of healing spring per rest.
-Tier: 2
-Ranks: 3
-All: Tier 1: Healing Spring, Tier 2: Fey Form
-
-AbilityName: Fey Form
-Descrip: Passive Bonus: Gain DR[3/5/7]/Cold Iron and +[5/10/15] Spell Power.
-Tier: 2
-Ranks: 3
-
-AbilityName: Rainbow
-Descrip: Passive Bonus: While in Prism Stance, your ranged and thrown attacks and offensive spells have a 7% chance to deal 1d100 extra damage of a random type. This damage scales with 200% Ranged Power.
-Tier: 3
-Cost: 2
-All: Tier 2: Prism
-
-AbilityName: Otto's Whistler
-Descrip: Ranged or Thrown Attack: (Cooldown: [20/15] seconds) Deals [+2/+3][w] damage. If enemy is moving, enemy starts dancing for [9/18] seconds.}{ Note: No saving throw observed.
-Tier: 3
-Ranks: 2
-
-AbilityName: Whirling Wrists
-Descrip: Passive Bonus: Increases your attack speed with thrown weapons by [20%/40%/60%] (This is a Feat Bonus). You also gain [2%/4%/6%] Doubleshot.
-Tier: 3
-Ranks: 3
-
-AbilityName: Double Rainbow
-Descrip: Passive Bonus: While in Prism Stance, your ranged and thrown attacks and offensive spells have a 7% chance to inflict a random effect on your target. These effects scale with various different things depending on their origins, including Melee, Ranged, and Spell Power.
-Tier: 4
-Cost: 2
-All: Tier 3: Rainbow
-
-AbilityName: Stay Good
-Descrip: Shiradi Ranged Stance: (Cooldown: 5 seconds) Ranged and thrown attacks and offensive spells have a 7% chance to deal [3d10/3d20/3d20] extra light damage. This Light damage scales with 200% Ranged Power. Rank 3: Ranged and throwing weapons you equip are considered Good.
-Tier: 4
-Ranks: 3
-
-AbilityName: In the Weeds
-Descrip: Passive Bonus: +[1/2/3] Dodge, +[2/4/6] Hide. After standing still for a few seconds you gain +1 Dodge, +3 Hide, +3 PRR, +3 MRR. Ranks 2/3: This can stack [2/3] times.
-Tier: 4
-Ranks: 3
-
-AbilityName: Elemental Absorption
-Descrip: Active Ability: (Cooldown: 2 seconds) Target ally receives a primal shield that reduces [5%/10%/15%] damage from fire, cold, electric, acid, and sonic. Two uses per rest. Lasts until rest.
-Tier: 4
-Ranks: 3
-All: Tier 2: Fey Form
-
-AbilityName: Track
-Descrip: Passive Bonus: Ranged attack and thrown weapon attacks reduce enemy AC by -1 and Fortification by 2% for 5 seconds. This effect stacks up to [3/6/10] times.
-Tier: 5
-Ranks: 3
-
-AbilityName: Stand and Deliver
-Descrip: Passive Bonus: While standing still you gain +1 competence bonus to ranged damage and +1% Spell Power every few seconds, stacking up to ten times. Passive Bonus: +1 Critical Damage Multiplier on rolls of 19-20.}{ Note: Does not increase Spell Power by a percent bonus, but rather by a flat +1 per stack.
-Tier: 5
-Cost: 2
-
-AbilityName: Nerve Venom
-Descrip: Passive Bonus: Your ranged and thrown attacks and offensive spells have a [3%/5%/7%] chance to paralyze living creatures for 6 seconds.}{ Note: No saving throw observed.
-Tier: 5
-Ranks: 3
-
-AbilityName: Audience with the Queen
-Descrip: Active Ability: (Cooldown: 2 minutes 34 seconds) Pop off for some tea with your lady, the Queen of Summer, returning a few seconds later. Unusable while incapacitated.Depending on your Diplomacy with the Queen, you may experience effects either favorable or ill, though the tea is always delicious. (Diplomacy check)}{ Diplomacy DC: 20 - Success, 40 - Critical Success}{ Note: Usable once per day.
-Tier: 6
-
-AbilityName: Rain of Arrows
-Descrip: Active Ability: (Cooldown: 5 minutes) Call upon a thousand invisible fairies to rain pointy wooden death around you!Every second for thirty seconds each enemy around you has 20% to take 10d100 damage. Damage may consist of up to 10 different random damage types. This damage scales with 200% Ranged Power.
-Tier: 6
-
-AbilityName: Hunt's End
-Descrip: Active Ability: (Cooldown: 24 seconds) Your next shot with a Ranged or Thrown weapon has +400% damage and +16 to its Critical Threat Range. This shot ignores incorporeality. 24 second cooldown.
-Tier: 6
-
-DestinyName: Unyielding Sentinel
-Abbreviation: Sentinel
-Type: Destiny
-Stats: Constitution, Charisma
-
-AbilityName: Divine Energy Resistance
-Abbreviation: Energy Resistance
-Descrip: This SLA grants 35 resistance to acid, cold, fire, sonic, electric for 1 min per character level [225/150/75] sp to all allies in the standard area of effect; centered on the caster. You can apply metamagic feats to this SLA for free (extend, quicken). The effect does not stack with Resist Energy spell.
-Tier: 1
-Ranks: 3
-
-AbilityName: Commanding Presence
-Descrip: +150/300/450% Threat Generation
-Tier: 1
-Ranks: 3
-
-AbilityName: Brace for Impact
-Descrip: Passive Bonus: +[20/40]% fortification. +[1/2] Fortitude, Reflex, and Will saving throws.
-Tier: 1
-Ranks: 2
-Cost: 2
-
-AbilityName: Shield Prowess
-Descrip: Passive Bonus: Your shield's AC contribution is increased by [15/30/50]%.
-Tier: 1
-Ranks: 3
-
-AbilityName: Block Energy
-Descrip: Passive Bonus: While blocking, you absorb [10/20/30]% of Acid, Cold, Electric, Fire, Force, Light, and Sonic damage.
-Tier: 2
-Ranks: 3
-
-AbilityName: Fanaticism
-Descrip: Passive Bonus: You gain the Smite Evil feat. While you are Unbreakable, weapons you equip gain True Law if you are Lawful, and True Chaos if you are Chaotic, dealing 1d6 damage of that alignment to enemies of different alignments.}{ Note: Also grants +6 uses of Smite Evil (not mentioned in tooltip).
-Tier: 2
-Cost: 2
-
-AbilityName: Endless Smiting
-Descrip: Passive Bonus: +[1/2/3] Smite Evil use per rest. Smite Evil uses regenerate [10/20/30]% faster. (Note, this means you regenerate uses once every 81/72/63 seconds)
-Tier: 2
-Ranks: 3
-One: Tier 2: Fanaticism, Feat: Smite Evil
-
-AbilityName: Legendary Shield Mastery
-Descrip: Passive Bonus: While wearing a shield, you gain +[5/10/15] Physical Resistance Rating and +[2/4/7]% chance to doublestrike.
-Tier: 2
-Ranks: 3
-All: Tier 1: Shield Prowess
-Rank2All: Feat: Shield Mastery
-Rank3All: Feat: Improved Shield Mastery
-
-AbilityName: Renewal
-Descrip: Active Ability: (Cooldown 3 seconds, 5 sp) Heals 1d2 HP per 4/3/2 character levels every 2 seconds for 8 seconds. If target is below 50% health, grants celestial shield absorbing the 30/40/50 next damage. Requires being in Unyielding Sentinel destiny to self-target. As a Spell-like ability it benefits from metamagic feats at no additional cost.
-Tier: 3
-Ranks: 3
-
-AbilityName: Intolerant Blows
-Descrip: Active Ability: (Cooldown 20 seconds) Expend one Smite Evil: For 60 seconds you gain +200% Sacred bonus to threat generation and deal +1[W] damage.}{ Bug:  Does not increase threat.
-Tier: 3
-Ranks: 3
-One: Tier 2: Fanaticism, Feat: Smite Evil
-
-AbilityName: Healing Hands
-Descrip: Passive Bonus: You gain the Lay On Hands feat. You gain +25 positive spellpower.
-Tier: 3
-Cost: 2
-
-AbilityName: Endless Lay On Hands
-Descrip: Passive Bonus: +[1/2/3] Lay On Hands use per rest. Lay On Hands regenerate one use every 3 minutes and regenerate [0/10/20]% faster.
-Tier: 3
-Ranks: 3
-One: Tier 3: Healing Hands, Feat: Lay On Hands
-
-AbilityName: Draw Them Out
-Descrip: Active Ability: (Cooldown 6 seconds) Melee Attack: +3[W], this attack adds 300 hate for the user to creatures it hits on top of its normal damage.}{ Bug:  Each use of this ability moves your character a little to the side (180 degree turn around mob in about 10 strikes).
-Tier: 4
-
-AbilityName: Spark of Life
-Descrip: Passive Bonus: your armor gains Deathblock, protecting you from death effects.
-Tier: 4
-Cost: 2
-
-AbilityName: Light the Dark
-Descrip: Active Ability: (Cooldown 12 seconds) Expend one Lay on Hands: Heals 150HP to allies around you, and deals that much damage to nearby undead enemies.  NOTE: Affected by Positive spell power +50% more than most spells
-Tier: 4
-Cost: 2
-One: Tier 3: Healing Hands, Feat: Lay On Hands
-
-AbilityName: Purify Weapon
-Descrip: Passive Bonus: If you are Good, weapons you equip gain Pure Good, dealing 1d6 Good damage vs. non-Good targets.
-Tier: 4
-Cost: 2
-
-AbilityName: Hardened
-Descrip: Passive Bonus: +[5/10/15] AC.
-Tier: 5
-Ranks: 3
-
-AbilityName: Strength of Vitality
-Descrip: Passive Bonus: +10/15/20% Insight bonus to maximum hit points. (Note: the bonus is calculated from hit points ignoring those in the "HP Adjustment" category.)
-Tier: 5
-Ranks: 3
-
-AbilityName: Ward Against Evil
-Descrip: Passive Bonus: When you are hit or missed by Evil, you deal [3/6/10]d6 Good damage to the attacker. At rank 3 you gain immunity to the Mind Control effects of Evil creatures.
-Tier: 5
-Ranks: 3
-
-AbilityName: Anoint Weapon
-Descrip: Passive Bonus: If you are Good, while you Stand Against the Tide weapons you equip gain Holy, dealing 2d6 extra damage vs. Evil targets.
-Tier: 5
-Cost: 2
-All: Tier 4: Purify Weapon, Tier 5: Ward Against Evil
-
-AbilityName: Celestial Mandate
-Descrip: Active Ability: (Cooldown 6 seconds) Melee Attack: +5[W], this attack adds 2000 hate for the user to creatures it hits on top of its normal damage.}{ Bug:  Each use of this ability moves your character a little to the side (180 degree turn around mob in about 10 strikes).
-Tier: 6
-
-AbilityName: Resurrection
-Descrip: Can cast Resurrection as a spell-like ability (Cooldown 6 seconds, Cost 15 sp).
-Tier: 6
-Cost: 2
-
-AbilityName: Undying Vanguard
-Descrip: Active Ability: (Cooldown 2 minutes). Usable once per rest.}{-Epic Moment Heal yourself for 1000 HP. For 30 seconds, you gain 10,000 temporary HP.  You may use this ability while Crowd Controlled and/or Helpless.
-Tier: 6
-Cost: 2

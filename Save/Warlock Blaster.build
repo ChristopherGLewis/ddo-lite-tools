@@ -3,7 +3,7 @@
 Name: New Build
 Race: Tiefling
 Alignment: True Neutral
-MaxLevels: 20
+MaxLevels: 30
 
 Class: Warlock
 
@@ -84,7 +84,7 @@ UniversalAP: 1
 
 Tree: Tiefling
 Type: Race
-ClassLevels: 20
+ClassLevels: 30
 Ability: Tier 0: Bloodhunt I
 Ability: Tier 0: Charisma I
 Ability: Tier 0: Bloodhunt II
@@ -150,7 +150,7 @@ Ability: Tier 3: Stat: Charisma
 
 Tree: Feydark Illusionist
 Type: Global
-ClassLevels: 20
+ClassLevels: 30
 Ability: Tier 0: Find Familiar: Fox
 
 

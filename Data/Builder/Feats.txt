@@ -30,13 +30,13 @@ FeatName: Arcane Pulse
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Arcane sphere
 Descrip: Single target DoT: 3d6+6 force damage every 2 seconds for 16 seconds. Can stack up to 5 times. 3 second cooldown.
-Level: 29
+Level: 28
 
 FeatName: Arcane Warrior
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Your weapon and unarmed attacks grant you a stack of Arcane Warrior: Magical (+1 Universal Spell Power). Your offensive spells grant you a stack of Arcane Warrior: Physical (+1 Melee and Ranged power). Each of these stacks to 20 times and each stack lasts for 6 seconds. You may gain a stack of each no more than once per second.
-Level: 29
+Level: 28
 
 FeatName: Armor Proficiency
 Group: Heroic, Defense
@@ -316,7 +316,7 @@ FeatName: Deific Warding
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Divine sphere
 Descrip: +10 PRR and MRR. When you take damage, add one stack of Deific Warding: +2 PRR and MRR per stack, maximum 10 stacks, one stack removed every 3 seconds.
-Level: 29
+Level: 28
 
 FeatName: Deity Ability
 Group: Heroic, Misc
@@ -376,7 +376,7 @@ FeatName: Dire Charge
 Group: Destiny, Melee
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: Charge forward to strike targeted enemy. Target and nearby foes take +2[W] damage and have a chance to be stunned. (DC 25 + highest stat mod + stun bonuses)
-Level: 29
+Level: 28
 
 FeatName: Discipline
 Group: Heroic, Misc, Defense
@@ -445,7 +445,7 @@ FeatName: Doubleshot
 Group: Destiny, Range
 WikiName: Epic Destiny Feats#Primal sphere
 Descrip: +10% Doubleshot.
-Level: 28
+Level: 25
 
 FeatName: Draconic Ancestry
 Group: Heroic, Misc
@@ -467,19 +467,19 @@ FeatName: Dreamscape
 Group: Destiny, Misc
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Activate to disappear to the land of dreams for 5 seconds (become invisible and invulnerable), return with a random 30-second buff, 1 minute cooldown. 9 possible buffs:}{ 1) +30 Melee/Ranged Power, +60 Universal spellpower}{ 2) +15 AC/PRR/MRR}{ 3) +6 to all skills}{ 4) DR 18/-}{ 5) +15 Energy Resistance}{ 6) Sprint Boost}{ 7) +6 Fortitude saves}{ 8) +6 Reflex saves}{ 9) +6 Will saves
-Level: 29
+Level: 28
 
 FeatName: Elusive Target
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: 5% chance to ignore any given damage, both physical and magical.
-Level: 28
+Level: 25
 
 FeatName: Embodiment of Law
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Weapon and unarmed attacks deal +10 Bane damage vs all targets plus another 20 Law damage vs Chaotic targets. Scales with Melee / Ranged power.
-Level: 29
+Level: 28
 
 FeatName: Embolden Spell
 Group: Epic, Spellcasting
@@ -522,7 +522,7 @@ FeatName: Epic Arcane Eldritch Blast
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Arcane sphere
 Descrip: Grants +1 Pact dice, +1 per 2 Epic Levels, for a max +6d4 Pact Dice at level 30.
-Level: 26
+Level: 22
 
 FeatName: Epic Damage Reduction
 Group: Epic, Defense
@@ -546,55 +546,7 @@ FeatName: Epic Mage Armor
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Arcane sphere
 Descrip: Spell Point Cost: 5. Target: Friend, Self. +20 Armor bonus to AC.
-Level: 26
-
-FeatName: Epic Skill Focus
-Group: Destiny, Misc
-WikiName: Epic Destiny Feats
-Descrip: +5 to a chosen skill. Requires 20 trained ranks of the corresponding skill.
-Level: 26
-Flags: SkillTome
-Selector: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Heal, Hide, Intimidate, Jump, Listen, Move Silently, Open Lock, Perform, Repair, Search, Spellcraft, Spot, Swim, Tumble
-SelectorName: Balance
-Skill: Balance 20
-SelectorName: Bluff
-Skill: Bluff 20
-SelectorName: Concentration
-Skill: Concentration 20
-SelectorName: Diplomacy
-Skill: Diplomacy 20
-SelectorName: Disable Device
-Skill: Disable Device 20
-SelectorName: Haggle
-Skill: Haggle 20
-SelectorName: Heal
-Skill: Heal 20
-SelectorName: Hide
-Skill: Hide 20
-SelectorName: Intimidate
-Skill: Intimidate 20
-SelectorName: Jump
-Skill: Jump 20
-SelectorName: Listen
-Skill: Listen 20
-SelectorName: Move Silently
-Skill: Move Silently 20
-SelectorName: Open Lock
-Skill: Open Lock 20
-SelectorName: Perform
-Skill: Perform 20
-SelectorName: Repair
-Skill: Repair 20
-SelectorName: Search
-Skill: Search 20
-SelectorName: Spellcraft
-Skill: Spellcraft 20
-SelectorName: Spot
-Skill: Spot 20
-SelectorName: Swim
-Skill: Swim 20
-SelectorName: Tumble
-Skill: Tumble 20
+Level: 22
 
 FeatName: Epic Mental Toughness
 Group: Epic, Spellcasting
@@ -611,7 +563,7 @@ Level: 27
 FeatName: Epic Reputation
 Group: Epic, Defense
 WikiName: Epic Feats#General Epic passive feats
-Descrip: +3 Bluff, Diplomacy, Haggle, Intimidate, and Perform.
+Descrip: +5 Bluff, Diplomacy, Haggle, Intimidate, and Perform.
 Level: 27
 
 FeatName: Epic Spell Focus
@@ -627,12 +579,6 @@ Group: Epic, Spellcasting
 Descrip: +4 to your caster level check for defeating Spell Resistance.
 All: Spell Penetration, Greater Spell Penetration
 Level: 21
-
-FeatName: Epic Spell Power
-Group: Destiny, Spellcasting
-Descrip: +20 Spell Power of the selected type. This feat can be taken multiple times, though each time must be for a different type.
-Level: 26
-Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
 
 FeatName: Epic Will
 Group: Epic, Defense
@@ -703,7 +649,6 @@ SelectorName: Handwraps
 WikiName: Proficiency: Handwraps
 ClassBonus: Fighter
 
-
 FeatName: Extend Spell
 Group: Heroic, Spellcasting
 Descrip: Doubles the duration of a spell at the cost of +10 spell points per cast.
@@ -736,7 +681,7 @@ FeatName: First Blood
 Group: Destiny, Melee
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: Melee weapons and unarmed attacks deal 50-300 extra untyped damage against enemies with 90% or more HP. This extra damage won't trigger twice within three seconds.
-Level: 28
+Level: 25
 
 FeatName: Follower of
 Group: Heroic, Misc
@@ -793,13 +738,13 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Forced Escape
 Group: Destiny, Defense
 Descrip: You radiate destruction, dealing 20d20 sonic damage to enemies around you. Enemies succeeding a Fortitude saving throw vs. (20 + Wisdom modifier) take half damage. This dispels crowd control effects such as stuns on you, and can be used when stunned or otherwise incapacitated (but still conscious).
-Level: 28
+Level: 25
 
 FeatName: Fount of Life
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: +20 Healing Amp and Positive spellpower.
-Level: 29
+Level: 28
 
 FeatName: Grace of Battle
 Group: Heroic, Melee, Misc
@@ -918,7 +863,7 @@ FeatName: Guardian Angel
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Divine sphere
 Descrip: When you drop below 50% HP, for 30 seconds you gain PRR equal to your Wisdom and saving throws equal to your epic level. This won't trigger again for three minutes.
-Level: 26
+Level: 22
 
 FeatName: Grandmaster of Forms
 SortName: Adept of Forms3
@@ -1005,7 +950,7 @@ FeatName: Harbinger of Chaos
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Weapon and unarmed attacks deal 1d20 Bane damage vs all targets plus another 2d20 Chaos damage vs Lawful targets. Scales with Melee / Ranged power.
-Level: 29
+Level: 28
 
 FeatName: Healing Hands
 Group: Misc
@@ -1049,13 +994,13 @@ ClassBonus: Artificer, Wizard, Alchemist
 FeatName: Hellball
 Group: Destiny, Spellcasting
 Descrip: Hellball (45 spell points, 6 second cooldown): Deal 3d20+15 acid, electric, fire, and sonic damage to enemies in an area. Reflex save for half, but not subject to Evasion. Metamagics can be applied but are not free.
-Level: 28
+Level: 25
 
 FeatName: Holy Strike
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Divine sphere
 Descrip: Your weapons gain Ghost Touch, and your vorpal strikes deal 10d6 untyped damage vs. Evil enemies. (Works with melee, unarmed, and ranged attacks.)
-Level: 26
+Level: 22
 
 FeatName: Improved Augment Summoning
 Group: Epic, Spellcasting, Misc
@@ -1263,7 +1208,7 @@ ClassOnlyLevel: 2
 FeatName: Lasting Inspiration
 Group: Destiny, Misc
 Descrip: +3 songs/rest and +50% song duration. Duration also applies to Fascinate. 
-Level: 26
+Level: 22
 
 FeatName: Lay On Hands
 Group: Misc
@@ -1344,7 +1289,7 @@ Descrip: Grants proficiency with all martial weapons. Barbarians, Fighters, Pala
 FeatName: Mass Frog
 Group: Destiny, Spellcasting
 Descrip: Mass Frog (75 spell points, 60 second cooldown): Up to five nearby enemies are turned into frogs. Fort save DC 30 + Wisdom modifier. Feats and focus items do not affect the DC. Ignores death ward, and works on undead and constructs.
-Level: 28
+Level: 25
 
 FeatName: Master of
 Group: Epic, Spellcasting
@@ -1588,39 +1533,33 @@ Abbreviation: Perfect NF
 Group: Destiny, Melee
 Descrip: If in Bear form, your Two-Handed ability mod increases by .25, and your Bear form's bonus to Armor Class is increased by 5%. If in Wolf form, +15% competence bonus to maximum hit points, and you gain +2d6 sneak attack dice.
 All: Natural Fighting
-Level: 26
+Level: 22
 
 FeatName: Perfect Shield Mastery
 Abbreviation: Perfect SM
 Group: Destiny, Melee
 Descrip: Your shield gains +1W, and you gain +20% Shield Armor Class and +5 Physical Resistance Rating.
 All: Shield Mastery
-Level: 26
+Level: 22
 
 FeatName: Perfect Single Weapon Fighting
 Abbreviation: Perfect SWF
 Group: Destiny, Melee
 Descrip: While Single Weapon Fighting, your vorpal threat range is increased by 1. (19-20 instead of natural 20.) Your ability score modifier to damage increases by 25%. +10 combat style bonus to Melee Power.
 All: Single Weapon Fighting
-Level: 26
+Level: 22
 
 FeatName: Perfect Two Handed Fighting
 Abbreviation: Perfect THF
 Group: Destiny, Melee
 Descrip: While Two Handed Fighting: Gain 30% Strikethrough Chance, and a +10 Combat Style bonus to Melee Power. Two Handed Weapons add 25% more of your ability score modifier to their base damage.
-Level: 26
-
-FeatName: Perfect Two Weapon Fighting
-Abbreviation: Perfect TWF
-Group: Destiny, Melee
-Descrip: +5% doublestrike regardless of your combat style, +10% offhand doublestrike.
-Level: 26
+Level: 22
 
 FeatName: Pierce Damage Reduction
 Group: Destiny, Melee
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: Your equipped weapons are considered the selected metal type for bypassing DR.
-Level: 26
+Level: 22
 Selector: Adamantine, Byeshk, Cold Iron, Silver
 SelectorName: Adamantine
 WikiName: Pierce Adamantine
@@ -1935,7 +1874,7 @@ FeatName: Spirit Blades
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Shoot 5 blades at a nearby target, 10d6 Piercing + 5d6 Force damage each.
-Level: 29
+Level: 28
 
 FeatName: Spring Attack
 Group: Heroic, Melee, Defense
@@ -2018,7 +1957,7 @@ FeatName: Tactician
 Group: Destiny, Melee
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: +2 Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Level: 26
+Level: 22
 
 FeatName: Ten Thousand Stars
 Group: Heroic, Range
@@ -2175,7 +2114,7 @@ FeatName: Wind through the Trees
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Primal sphere
 Descrip: 5% chance to knock down enemies that attack you (hit or miss), no save. 12 second cooldown.
-Level: 29
+Level: 28
 
 FeatName: Zen Archery
 Group: Heroic, Range
@@ -2752,3 +2691,51 @@ Group: Heroic, Spellcasting
 Descrip: You are able to inscribe spells from scrolls into your spellbook. This action will destroy the scroll.
 Class: Wizard 1, Sorcerer 1, Warlock 1, Bard 1, Ranger 1, Druid 1, Cleric 1, Favored Soul 1, Artificer 1, Alchemist 1
 Flags: Unselectable
+
+FeatName: Expanded Clip
+Group: Epic, Range
+Descrip: Your repeating crossbows have 1 extra shot in their clips.
+Level: 21
+Class: Artificer 12
+
+FeatName: Epic Barbarian Damage Reduction
+Group: Epic, Defense
+Descrip: Your Barbarian Damage Reduction is increased by 1%.}You also gain +5 Physical and Magical Resistance Rating
+Level: 21
+Class: Barbarian 12
+
+FeatName: Perfect Two Weapon Fighting
+Abbreviation: Perfect TWF
+Group: Destiny, Melee
+Descrip: Your offhand attacks now doublestrike at 65% of the rate of your main hand, versus the base 50%, up to a maximum of 65%.
+Level: 22
+All: Two Weapon Fighting
+
+FeatName: Doublestrike
+Group: Destiny, Melee
+WikiName: Doublestrike_(epic_destiny_feat)
+Descrip: +5% Doublestrike.
+Level: 22
+
+FeatName: Crush Weakness
+Group: Destiny, Melee
+Descrip: +15% damage versus the Helpless
+Level: 25
+
+FeatName: Epic Spell Power
+Group: Destiny, Spellcasting
+Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% all other types of spell critical damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
+Level: 22
+Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
+
+FeatName: Epic Power
+Group: Epic, Misc
+Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}-1% to the Spell Point cost of all spells}This feat is automatically given to all characters each time they gain an Epic level.}The spell point cost reduction does not apply to Spell-like abilities.
+Flags: Unselectable
+Level: 21
+
+FeatName: Epic Knowlege
+Group: Epic, Spellcasting
+Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
+Flags: Unselectable
+Level: 22
