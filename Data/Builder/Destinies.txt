@@ -808,43 +808,48 @@ Abbreviation: Fury
 Type: Destiny
 
 AbilityName: Die Hard
-Descrip: TODO
+Descrip: You gain the Diehard feat. Each Core ability grants +20 Hit Points as well as 5 Melee Power.
 Cost: 1
 Ranks: 1
 Tier: 0
 
 AbilityName: Die Harder
-Descrip: TODO
+Descrip:  +100 Unconsciousness Range.
 Cost: 1
 Ranks: 1
 Tier: 0
 
 AbilityName: Die Hardest
-Descrip: TODO
+Descrip: +250 Unconsciousness Range.
 Cost: 1
 Ranks: 1
 Tier: 0
 
 AbilityName: Acute Senses
-Descrip: TODO
+Descrip:  +2/4/6 Balance, Listen, Spot, Search, and Saves versus Traps. Rank 3: You gain 1% Dodge
 Cost: 1
 Ranks: 3
 Tier: 1
 
-AbilityName: Adrenaline 
-Descrip: TODO
+AbilityName: Epic Strike 
+Descrip: Multiselector: Adrenaline, Quick Cutter
 Cost: 1
 Ranks: 3
 Tier: 1
+Selector: Adrenaline, Quick Cutter
+SelectorName: Adrenaline
+Descrip: Your next melee attack deals +25/50/75% damage, and increases your threat by 4/8/16. Requires a melee weapon to use. Cooldown: 8 seconds.
+SelectorName: Quick Cutter
+Descrip: Melee Attack: 0/1/2[W] + 0/1/2 Critical Threat Range. When you use this skill gain the effect “Quick” which grants +2/4/6% Dodge for 9 seconds. If you use this skill again while Quick is still active you instead apply Cutter to your target. Cutter: 4d6
 
 AbilityName: Savage Takedown 
-Descrip: +1/2/3 to trip DC's
+Descrip: +1/2/3 Trip DCs. Rank 3: Gain an additional +3 to Trip DCs if you're wearing Medium or Light Armor.
 Cost: 1
 Ranks: 3
 Tier: 1
 
 AbilityName: Mantle of Fury 
-Descrip: Fury of the Wild Destiny Mantle
+Descrip: Destiny Mantle: Gain 3/6/9% damage against helpless targets. You also heal 2/4/6d10 Hit Points every 15 seconds. Scales with the highest of Positive Spell Power or 200% Melee Power.
 Cost: 1
 Ranks: 3
 Tier: 1
@@ -855,15 +860,19 @@ Cost: 1
 Ranks: 3
 Tier: 1
 
-
-AbilityName: Boulder's Might
-Descrip: TODO
+AbilityName: Speed or Strength
+Descrip: Multiselector: Fast and Furious, Boulder's Might
 Cost: 1
 Ranks: 3
 Tier: 2
+Selector: Fast and Furious, Boulder's Might
+SelectorName: Fast and Furious
+Descrip:  Charge a target dealing 1/2/3[W] +0/1/2 Critical Hit Multiplier. Rank 3: When you activate this ability, if you are raging, the cooldown is immediately reset. This cooldown reset may only happen once every 10 seconds, independent of the skill’s cooldown. Requires a melee weapon to use. Cooldown: 12/10/8 seconds.
+SelectorName: Boulder's Might
+Descrip: Melee Cleave: +5[W], +0/1/2 Critical Multiplier on this attack. Requires you to be fighting in Two Handed Fighting style (using a Two Handed Weapon while not Natural Fighting) to use. Cooldown 10/8/6 seconds
 
 AbilityName: Fear My Vengeance 
-Descrip: TODO
+Descrip: +1/2/3 damage to Shaken foes.
 Cost: 1
 Ranks: 3
 Tier: 2
@@ -875,7 +884,7 @@ Ranks: 3
 Tier: 2
 
 AbilityName: Primal Scream
-Descrip: TODO
+Descrip:  Nearby Allies gain a +2 Morale bonus to Strength and Constitution for 5 minutes. This effect cannot be refreshed until the first one expires. Nearby Enemies take 1d20 Sonic damage per character level and are Shaken for 30 seconds. Damage Scales the highest of 200% with Melee Power or Sonic Spell Power. Cooldown: 30 seconds.
 Cost: 2
 Ranks: 1
 Tier: 2
@@ -888,35 +897,46 @@ Tier: 2
 
 
 AbilityName: Sense Weakness
-Descrip: TODO
+Descrip: +2/4/6% Fortification Bypass. Your Fury Destiny Mantle grants you an additional 3/6/9% damage against helpless targets.
 Cost: 1
 Ranks: 3
 Tier: 3
 
 AbilityName: Wild Weapons
-Descrip: TODO
+Descrip: Multiselector: Strikethrough, Offhand Strike, Doublestrike
 Cost: 1
 Ranks: 3
 Tier: 3
+Selector: Double Strike, Off Hand Attack, Strike Through
+SelectorName: Double Strike
+Descrip: +1/2/3 Double Strike
+SelectorName: Off Hand Attack
+Descrip: +3/6/10 Off Hand Attack
+SelectorName: Strike Through
+Descrip: +5/10/15 Strikethrough chance
 
 AbilityName: Eternal Rage
-Descrip: TODO
+Descrip: If you are not Raging and you are out of Rage charges, you have a 1/2/3% chance to gain 1 charge of Rage whenever you strike a foe.
 Cost: 1
 Ranks: 3
 Tier: 3
 
 AbilityName: Furious
-Descrip: +3 Strength while raging. Adrenaline damage bonus is increased by +25/50/75%.
+Descrip: Multiselector: Furious Force, Spirit of the Beast
 Cost: 1
 Ranks: 3
 Tier: 3
+Selector: Furious Force, Spirit of the Beast
+SelectorName: Furious Force
+Descrip: +1 Strength while Raging. Increases Adrenaline damage bonus by 25/50/75%.
+SelectorName: Spirit of the Beast
+Descrip: +1/2/3 attack bonus. Rank 3: The effects of Ram’s Might and Animal Growth are doubled on you.
 
 AbilityName: Embrace the Pain
-Descrip: TODO
+Descrip: When you are below 15/25/40% of your Max Hit Points you gain 2d10 Hit Points every 6 seconds. Scales with the highest of Positive Spell Power or 200% Melee Power.
 Cost: 1
 Ranks: 3
 Tier: 3
-
 
 AbilityName: Top Dog
 Descrip: You gain the Improved Trip feat.
@@ -925,23 +945,23 @@ Ranks: 1
 Tier: 4
 
 AbilityName: The Voice of Fury
-Descrip: TODO
+Descrip:  Doubles the damage and Stat Bonuses of your Primal Scream. If Adrenaline or Quick is active when you use Primal Scream, triple the damage instead, and nearby enemies have a 75% chance of become Confused for 3 seconds, no save. Adrenaline and Quick are consumed.
 Cost: 2
 Ranks: 1
 Tier: 4
 
 AbilityName: Wade Through
-Descrip: Multiselector: Double Strike, Off Hand Attack, Strike Through
+Descrip: Multiselector: Double Strike, OffHand Strike, Strikethrough
 Cost: 1
 Ranks: 3
 Tier: 4
 Selector: Double Strike, Off Hand Attack, Strike Through
 SelectorName: Double Strike
-Descrip: +2 Double Strike
+Descrip: +2/4/6% Double Strike
 SelectorName: Off Hand Attack
-Descrip: +3 Off Hand Attack
+Descrip: +3/6/10% Off Hand Attack
 SelectorName: Strike Through
-Descrip: +10 Strikethrough chance
+Descrip: +10/15/25% Strikethrough chance
 
 AbilityName: Force Selector
 Descrip: Multiselector: Overwelming Force. 
@@ -950,18 +970,15 @@ Ranks: 3
 Tier: 4
 Selector: Overwelming Force , Off Hand Attack, Strike Through
 SelectorName: Overwelming Force
-Descrip: TODO
+Descrip: +1/2/3 bonus to hit. Increases your Adrenaline effect by 25/50/75% additional damage. Rank 3: Melee attacks under the effect of Adrenaline cause knock down on target for 4 seconds.
 SelectorName: Primal Force
-Descrip: TODO
-
+Descrip: You gain a +1/2/3 Attack bonus and 2/4/6% Fortification Bypass. Rank 3: If duel wielding, using punch weapons or in animal form gain a +2% Epic Damage bonus to all physical attacks.
 
 AbilityName: Unquenchable Rage
 Descrip: Reduce all damage, except Untyped, by %8/12/15 for 5 seconds after you use a Rage charge or use Primal Scream. Rank 3: You also apply the effects of the Heal spell to yourself which scales with Melee Power.
 Cost: 1
 Ranks: 3
 Tier: 4
-
-
 
 AbilityName: Lore of the Wilds
 Descrip: Every 2 Wilderness Lore feats now grants a %1 Primal bonus to Maximize Hit Points
@@ -976,7 +993,7 @@ Ranks: 1
 Tier: 5
 
 AbilityName: Unbridled Fury
-Descrip: Cooldown 5 minutes. For the next 30 seconds you gain +1000 unconsciousness Range and 100% Strikethrough.  Every 5 seconds you heal for 10% of your max hit points, gain teh Adrenaline & Quick Effects, and the cooldown of the Great Leveler resets.
+Descrip:  Epic Moment: Cooldown: 5 minutes. For the next 30 seconds you gain +1000 Unconsciousness Range and 100% Strikethrough. Every 5 seconds you heal for 10% of your max Hit Points, Gain Adrenaline and Quick Effects, and the cooldown for the Great Leveler resets.
 Cost: 2
 Ranks: 1
 Tier: 5
@@ -988,7 +1005,1558 @@ Ranks: 3
 Tier: 5
 
 AbilityName: The Great Leveler 
-Descrip: Cooldown 20 seconds: Melee Attack +3/4/6[W], +4/8/16 Critical Threat Range. You stop in place to create a shockwave that blasts all enemies in a short line. The size of the line triples if Adrenaline or Quick is active, consuming those effects. Applies a Trip to all enemies struck (DC 20 + highest of STR/DEX/CON + Trip DCs)
+Descrip: Cooldown of 20 seconds. Melee attack. 3/4/6[W]. +4/8/16 Critical Threat Range. This attack creates a shock wave that affects all enemies in a short narrow line. The length and width of the line doubles if Adrenaline or Quick is active, consuming those effects. Applies Trip (DC 20 + Highest of Dexterity/Strength/Constitution + Trip/Tactics DCs).
 Cost: 1
 Ranks: 3
+Tier: 5
+
+
+DestinyName: Grandmaster of Flowers
+Abbreviation: GoF
+Type: Destiny
+
+
+AbilityName: Inner Focus
+Descrip: You gain proficiency with Handwraps. Each Core ability of this tree grants +5 Melee Power and +4 Ranged Power, +1 Spell Resistance, as well as 15 Maximum Hit Points. You also gain +10 Maximum Ki per Epic Level if you have at least one level of Monk or are in the Grandmaster of Flowers Destiny Mantle.
+Cost: 1
+Rank: 1
+Tier: 0
+
+AbilityName: Disciple of Material
+Descrip: Select from Adamantine, Byeshk, Cold Iron, Crystal, or Silver. Your weapons now bypass that kind of Damage Reduction innately. +5 Physical Resistance Rating (doubled if you have the Discipline feat)
+Cost: 1
+Rank: 1
+Tier: 0
+Multiselector: Adamantine, Byeshk, Cold Iron, Crystal, Silver
+SelectorName: Adamantine
+Descrip: Your Weapons now bypass Adamantine damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Byeshk
+Descrip: Your Weapons now bypass Byeshk damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Cold Iron
+Descrip: Your Weapons now bypass Cold damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat Iron
+SelectorName: Crystal
+Descrip: Your Weapons now bypass Crystal damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Silver
+Descrip: Your Weapons now bypass Silver damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+
+AbilityName: Disciple of Morality
+Descrip: Select from Good, Evil, Lawful, or Chaotic. Your weapons now bypass that kind of Damage Reduction innately. +5 Magical Resistance Rating (doubled if you have the Discipline feat)
+Cost: 1
+Rank: 1
+Tier: 0
+Multiselector: Good, Evil, Lawful, Chaotic
+SelectorName: Good
+Descrip: Your weapons now bypass Good damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Evil
+Descrip: Your weapons now bypass Evil damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Lawful
+Descrip: Your weapons now bypass Lawful damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+SelectorName: Chaotic
+Descrip: Your weapons now bypass Chaotic damage reduction. You gain + 5 Physical Resistance Rating, or +10 if you have the Discipline feat
+
+
+Tier 1 (requires level 20):
+
+AbilityName: Strike with Poise
+Descrip: +2/4/6 Stunning DCs
+Cost: 1
+Rank: 3
+Tier: 1
+
+AbilityName: Disciple's Studies
+Descrip: +2/4/6 Heal and Diplomacy, +3/6/10 Healing, Repair, and Negative Amp.
+Enlightenment: +15/30/45 Maximum Ki and +2/4/6 Concentration. Rank 3: +1 passive Ki generation.
+Cost: 1
+Rank: 3
+Tier: 1
+
+AbilityName: Serenity
+Descrip: Grandmaster of Flowers Destiny Mantle: You may now fight with the Unarmed combat style as if you were a Monk, and may be Centered and use Ki. When you attack with Handwraps or begin falling, you will use the Monk class' animations instead of your own. You gain a +15% Action Boost bonus to movement speed, and no longer take damage from falling. Finally, you are unbothered by the physical restraints of the world: you may tumble through enemies, and are immune to slippery surfaces and most forms of knockdown. You also gain 10 Ki for training this enhancement.
+Cost: 1
+Rank: 1
+Tier: 1
+
+
+AbilityName: Gain Strength
+Descrip: Select a way to restore your self
+Cost: 1
+Rank: 3
+Tier: 1
+Selector: Wholeness of Spirit, 
+SelectorName: Wholeness of Spirit
+Descrip: You may expend 50 Ki to bring your mind, body, and soul into harmonious balance, restoring health as if you were affected by the benefits of a Heal spell, as well as curing all ability damage, negative levels, and other Adverse Conditions that may be affecting you. Cooldown: 180/120/90 seconds.
+SelectorName: Inner Focus
+Descrip: Activate to gain 20d10 Ki. Cooldown: 180/160/120 seconds
+
+
+
+Tier 2 (req level 20):
+
+AbilityName: Calm Before Storms
+Descrip: +3/6/10 Spell Resistance. Rank 3: You no longer fail Will saves automatically on a roll of 1.
+Cost: 1
+Rank: 3
+Tier: 2
+
+AbilityName:Grandmaster Strikes
+Descrip: Multiselector
+Cost: 1
+Rank: 3
+Tier: 2
+Selector: Drifting Lotus, Orchid Blossom
+SelectorName: Drifting Lotus
+Descrip: Melee Cleave attack, deals +3/4/5[W] with a +1/2/3 Critical Threat Range and Critical Multiplier. Deals 1d6+5 Force damage per character level to all enemies struck. The force damage scales with the higher of Melee or Ranged power. Cost 25 Ki, cooldown 15 seconds.
+SelectorName: Orchid Blossom
+Descrip: A blossom is released from your palm in a line, exploding when it makes contact, dealing 1d6+5 Force damage per character level to all enemies within. The force damage scales with the higher of Melee or Ranged power. Grants 5/10/25 Ki when used, cooldown 15 seconds.
+
+AbilityName: A Dance of Flowers
+Descrip: While in the Grandmaster Destiny Mantle, your weapons gain 1[W].
+Cost: 2
+Rank: 3
+Tier: 2
+
+
+AbilityName: Lotus Blades
+Descrip: Select a feat to get access to without meeting its prerequisites
+Cost: 2
+Rank: 1
+Tier: 2
+Selector: Deflection, Longbow, Long Sword, Sickle
+SelectorName: Deflection
+Descrip: You gain the Deflect Arrows feat, letting you knock aside one projectile every 6 seconds.
+SelectorName: Longbow
+Descrip: You gain the effects of the Zen Archery feat, and may use Longbows as if they were Ki weapons.
+SelectorName: Long Sword
+Descrip: You gain the effects of the Whirling Steel Strike feat, and may use Longswords as if they were Ki weapons.
+SelectorName: Sickle
+Descrip: You gain the effects of the Prescient Curve feat, and may use Sickles as if they were Ki weapons.
+
+AbilityName: Hail of Blows
+Descrip: +5% Offhand strike chance, +10% Strikethrough, +3% Doublestrike and Doubleshot
+Cost: 2
+Rank: 1
+Tier: 2
+
+Tier 3 (requires level 23):
+
+AbilityName: The Flickering Flame
+Descrip: +1/2/3 to hit and damage. Rank 3: +25% Fire Absorption. If you are in any Sun Stance, the bonuses of this enhancement are doubled.
+Cost: 1
+Rank: 3
+Tier: 3
+
+AbilityName: Flow of Water
+Descrip: +1/2/3 saving throws, you take 5/10/15% less damage from being Helpless. Rank 3: +25% Cold Absorption. If you are in any Ocean Stance, the bonuses of this enhancement are doubled.
+Cost: 1
+Rank: 3
+Tier: 3
+
+AbilityName: Serene Mercy
+Descrip: While in the Grandmaster of Flowers Destiny Mantle, you deal +5/10/15% bonus damage to the Helpless.
+Cost: 1
+Rank: 3
+Tier: 3
+
+AbilityName: Catch the Wind
+Descrip: +1/2/3% Dodge, +2/4/6 Armor Class. Rank 3: +25% Electric Absorption. If you are in any Air Stance, the bonuses of this enhancement are doubled.
+Cost: 1
+Rank: 3
+Tier: 3
+
+AbilityName: Strength of Stone
+Descrip: +5/10/15 Hit Points and +2/4/6 Physical Resistance Rating Rank 3: +25% Acid Absorption. If you are in any Mountain Stance, the bonuses of this enhancement are doubled.
+Cost: 1
+Rank: 3
+Tier: 3
+
+AbilityName: The Clarity of Law
+Descrip: Your attacks bypass 5/10/15% of enemy Fortification. Rank 3: +15% Law Absorption
+Cost: 1
+Rank: 3
+Tier: 4
+
+AbilityName: The Serenity of Good
+Descrip: +1/2/3 Saves vs Enchantments, Curses, and Illusions, and +2/4/6 Magical Resistance Rating. Rank 3: +15% Good Absorption
+Cost: 1
+Rank: 3
+Tier: 4
+
+AbilityName: Epic Strike Upgrades
+Descrip: Upgrade your Epic Strike
+Cost: 2
+Rank: 1
+Tier: 4
+Selector:Lotus Bloom, Blossoming Peace
+SelectorName: 
+SelectorName: Lotus Bloom
+Descrip: Drifting Lotus now attempts to Stun all enemies struck. Stun DC: 20 + Highest Ability Score Mod + Stunning Bonuses. This stun lasts 4 seconds.
+SelectorName: Blossoming Peace
+Descrip: Orchid Blossom now attempts to Stun all enemies struck. Stun DC: 20 + Highest Ability Score Mod + Stunning Bonuses. This stun lasts 2 seconds.
+
+AbilityName: The Delight of Chaos
+Descrip: +1/2/3 Critical Hit Confirmation and Critical Hit Damage. Rank 3: +15% Chaos Absorption
+Cost: 1
+Rank: 3
+Tier: 4
+AbilityName: The Cruelty of Evil
+Descrip: +1/2/3 Sneak Attack and Sneak Attack Damage. Rank 3: +15% Evil Absorption
+Cost: 1
+Rank: 3
+Tier: 4
+
+AbilityName: Beyond the Center
+Descrip: +5/10/15 Magical Resistance Rating cap. Rank 3: +15% Force Absorption
+Cost: 1
+Rank: 3
+Tier: 5
+
+AbilityName: Imposing Force
+Descrip: +1 damage multiplier on a roll of 19-20 while centered.
+Cost: 2
+Rank: 1
+Tier: 5
+
+AbilityName: Everything is Nothing
+Descrip: Your state of luminous consciousness allows your will to alter the fabric of the planes, ripping your foes out of time and space. Up to six nearby non-boss enemies must make a saving throw (DC: 20 + Highest Ability Score Mod + Stunning Bonuses) or be erased from the multiverse. If they succeed at their saving throw, they are instead paralyzed by temporal shock for six seconds. When you activate Everything is Nothing, you are affected by Emptiness for 5 minutes. Emptiness: +3% Dodge, +1% Dodge cap. You gain the effects of the Elusive Target feat, or if you already have it, it instead has double the chance to proc. Ki Cost: 50. Cooldown: 3 minutes.
+Cost: 2
+Rank: 1
+Tier: 5
+
+AbilityName: Split the Soul
+Descrip: Epic Moment: For 30 seconds, your soul is split, and a fragment of it manifests beside you as a combatant. Your Soul Warrior provides the following benefits as a baseline: Dark: Your attacks may strike an additional target regardless of weapon type, and each attack has a 5% chance of banishing your enemies from the multiverse with no save. Light: Your Soul Warrior also grants you 25% Concealment, 25% Incorporeality, and 25% Dodge/max Dodge, as your physical form is less present while you are in this state. If you follow a Monk Philosophy, your split soul will embody that choice more fully (either Light or Dark), doubling either the Dark portions or Light portions and still granting you the baseline version of the other philosophy.
+Cost: 2
+Rank: 1
+Tier: 5
+
+AbilityName: Legendary Flurry of Blows
+Descrip: +1/2/3% Doublestrike and Doubleshot, +3/6/10% Strikethrough, +3/6/10% Offhand Strike chance. Rank 3: While dual wielding (including handwraps) or using a quarterstaff, you gain: On Vorpal: Daze an enemy for 2 seconds. Dazed enemies are Helpless. (Since Daze breaks on any damage, this means you'll only get one Helpless hit in before the Daze breaks)
+Cost: 1
+Rank: 3
+Tier: 5
+
+DestinyName: Legendary Dreadnaught
+Abbreviation: Dreadnaught
+Type: Destiny
+
+AbilityName: Fearless
+Descrip: You are now immune to Fear. Each core grants +15 Hit Points, +5 Melee Power, +4 Ranged Power
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Weaponmaster
+Descrip: +2 to Attack and Damage with all weapons.
+Cost: 1
+Ranks: 1
+Tier: 0
+AbilityName: Thick Skinned
+Descrip: +15 Physical Resistance Rating.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+
+AbilityName: Push Through The Line: Activating an Action Boost grants +1/2/3 to all Ability Scores for its duration.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Epic Tactics
+Descrip: +1/2/3 to all tactical DCs
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Dire Attack
+Descrip: Epic Strike: (Multiselector)
+Cost: 1
+Ranks: 1
+Tier: 1
+Selector: Dire Charge, Dire Shot
+SelectorName: Dire Charge
+Descrip: (Melee Attack): Epic Strike: Rush forward at the targeted foe. That foe and all nearby foes are subject to +2[W] damage and must save or be Sundered. Sunder DC is (20 + highest ability score + bonus to Stun attacks). 12 second cooldown.
+SelectorName: Dire Shot
+Descrip: (Ranged Attack): Epic Strike: Fire your weapon at the targeted foe. That foe is subject to +2[W] damage and must save or be Sundered. Sunder DC is (20 + highest ability score + bonus to Stun attacks). 12 second cooldown. (This is a single-target Ranged attack, but can be affected by Improved Precise Shot.)
+
+AbilityName: Dread Mantle
+Descrip: Legendary Dreadnought Destiny Mantle: Your weapon attacks apply 1 stack of Terror. The Terror effect is: -1 Melee Power, -1 Ranged Power, -3 Universal Spell Power, -1 Armor Class. stacks up to 15 times. This effect has a 0.1 second cooldown.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Shrug Off Punishment
+Descrip: +10/20/30 Hit Points
+Cost: 1
+Ranks: 3
+Tier: 1
+
+
+AbilityName: Extra Action Boosts
+Descrip: +1/2/3 Action Boosts
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Ghost Touch
+Descrip: Your melee and ranged weapons get the Ghost Touch effect.
+Cost: 1
+Ranks: 1
+Tier: 2
+
+AbilityName: Honor or Backstab
+Descrip: Pick a style of aproach to combat!
+Cost: 1
+Ranks: 3
+Tier: 2
+Selector: Backstab, Honor
+SelectorName: Backstab
+Descrip: +2/4/6 Attack when Flanking. If you have the Tactician feat, double this bonus.
+SelectorName: Honor
+Descrip: +1/2/3 Attack. If you have the Tactician feat, double this bonus.
+
+AbilityName: Combat Brute
+Descrip: While in your Dread Mantle, your weapons gain +1[W].
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Life and Death
+Descrip: +3/6/10 Positive, Negative, and Repair Healing Amplification
+Cost: 1
+Ranks: 3
+Tier: 2
+
+
+AbilityName: Action Boost: Tactics
+Descrip: For 20 seconds, gain +3/6/9 Action Boost bonus to Sunder, Trip, and Stun DCs. (30 second cooldown, shared with other Action Boosts. Has charges like any other Action Boost)
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Strike Twice
+Descrip: +2/4/6% Doublestrike and Doubleshot
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Momentum Swing
+Descrip: When you use your Dire Attack, enemies must now also save or be Tripped. Trip DC is (20 + highest ability score + bonus to Stun attacks).
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Epic Power & Precision
+Descrip: When you have Power Attack active, you gain +2/4/6 Critical Hit damage (before weapon multipliers). When you have Precision active, you gain +2/4/6 to your critical confirmation rolls.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Armor of Dusk
+Descrip: +2/4/6 Armor Class and maximum Dexterity bonus, -1/2/3 armor check penalty
+Cost: 1
+Ranks: 3
+Tier: 3
+
+
+AbilityName: Carry On
+Descrip: When you activate an Action Boost, you gain a 10% Action Boost bonus to attack speed for 20 seconds. (As it is an Action Boost bonus, it does not stack with Action Boost: Haste)
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Lay Waste
+Descrip: When you use your Dire Attack, enemies must now also save or be Stunned. Stun DC is (20 + highest ability score + bonus to Stun attacks).
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Strike with Fear
+Descrip: Your weapon attacks against creatures inflicted with Fear, or creatures with at least 5 stacks of Terror, add one stack of Vulnerability.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+
+AbilityName: Kick While They're Down
+Descrip: While in Dread Mantle, you deal +5/10/15% damage to Helpless opponents.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Untouchable
+Descrip: While any Action Boost is active, you have Displacement.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+
+AbilityName: Overpower
+Descrip: Select a boost to Bludgeoning, Piercing or Slashing weapons
+Cost: 1
+Ranks: 1
+Tier: 5
+Selector: Pulverizor, Lacerator, Impaler
+SelectorName: Pulverizor
+Descrip: +1 Critical Multiplier on a roll of 19-20 with bludgeoning weapons.
+SelectorName: Lacerator
+Descrip: +1 Critical Multiplier on a roll of 19-20 with slashing weapons.
+SelectorName: Impaler
+Descrip: +1 Critical Multiplier on a roll of 19-20 with piercing weapons.
+
+AbilityName: Legendary Rally
+Descrip: Pick a Melee or Ranged attack
+Cost: 1
+Ranks: 1
+Tier: 5
+Selector: Melee, Ranged
+SelectorName: Melee
+Descrip: +5[W] Cleave attack. Attack is considered an automatic critical. Can be used while Crowd Controlled, clears all Crowd Control effects on you when used. 30 second cooldown.
+SelectorName: Ranged
+Descrip: +5[W] Single-Target Ranged attack. Fire a shot at your targeted foe. Attack is considered an automatic critical. Can be used while Crowd Controlled, clears all Crowd Control effects on you when used. 30 second cooldown. (This is a single-target Ranged attack, but can be affected by Improved Precise Shot.)
+
+AbilityName: Sundering Swings
+Descrip: Creatures affected by your Improved Trip are also made Helpless. This supercedes other Improved Trip effects. Creatures affected by your Improved Sunder take -75% Fortification instead of the usual -25%. This supercedes other Improved Sunder effects.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Dusk Surge
+Descrip: While in Dread Mantle, striking with weapons now has a chance to regenerate an Action Boost. Does not stack with other abilities that can regenerate Action Boosts.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Action Hero
+Descrip: Epic Moment: For 40 seconds, you gain the following Bonuses: This ability is counted as an Action Boost, and triggers everything that a normal Action Boost does for the duration.  Tthis ability has a 5 minute cooldown, which is not shared with other Action Boosts.}{-+8 Action Boost Bonus to Attack{-+30 Action Boost Bonus to Melee and Ranged Power{-+30% Action Boost Bonus to Attack Speed{-+30% Action Boost Bonus to Doublestrike and Doubleshot{-+50% Action Boost Bonus to Movement Speed{-+15 Action Boost Bonus to Armor Class and Physical Resistance Rating{-+15% Action Boost Bonus to Dodge. This bonus ignores your Dodge Cap.{-+9 Action Boost bonus to Sunder, Trip, and Stun DCs.{-+6 Action Boost Bonus to Saving Throws{-+6 Action Boost Bonus to Skills{-
+Cost: 1
+Ranks: 1
+Tier: 5
+
+
+DestinyName: Magus of the Eclipse
+Abbreviation: Magus 
+Type: Destiny
+
+Core Abilities:
+
+AbilityName: Touched by the Moon
+Descrip: You gain the Magical Training feat. Each core of this tree grants +50 Spell Points, +5 Cold, Negative, and Force Spell Power, +5 Universal Spell Power. Each core also grants a +1 Epic bonus to all Spell DCs.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Deepening Arcana
+Descrip: Spell Point Pool increased by 10%, Echoes of Power now restores up to 30 Spell Points. Does not stack with Deepening Faith (from Exalted Angel).
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Nullmagic Aura
+Descrip: Your comprehension of the arcane allows you to unravel spells at the base level, before they do any harm. When activated, for 20 seconds, you and allies near you are immune to harmful spells. Cooldown: 2 minutes
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Imperceptible Casting
+Descrip: -10/20/30% spell threat. Rank 3: if you have the Discipline feat, double these bonuses.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Moonlance
+Descrip: Multiselector:
+Cost: 1
+Ranks: 1
+Tier: 1
+Selector: Gloomspear, Moon Lance
+SelectorName: Gloomspear
+Descrip: Epic Strike: Single-target SLA, 1d6+6 Negative Damage per caster level and applies 3 stacks of Shattermantle. Cooldown 6 seconds, cost 5 Spell Points
+SelectorName: Moon Lance
+Descrip: Epic Strike: Single-target SLA, 1d6+6 Cold Damage per caster level and applies 3 stacks of Shattermantle. Cooldown 6 seconds, cost 5 Spell Points
+
+AbilityName: Great Summoner
+Descrip: Your summons, pets, and hirelings gain +4 to all ability scores, increased Hit Points, 100% Fortification, and a 40% increase to movement speed. These benefits stack with Augment Summoning and similar effects.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Frostlight
+Descrip: Magus of the Eclipse Destiny Mantle: You take half damage from Cold and, if you are not Undead, take half from Negative. If you are Undead, you take half damage from Light instead. This does not stack with Fire Shield: Cold or Cold Energy Sheathe.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Impregnable Mind
+Descrip: +2/4/6 Will saves and concentration. Rank 3: you no longer fail Will saves on a 1.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+
+AbilityName: Moontouched
+Descrip: +1/2/3 to the DCs of Fear-based spells.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Call Upon
+Descrip: Multiselector: Active Ability: (Cooldown 60 seconds) Summon an epic (CR20) creature to aid you:
+Cost: 1
+Ranks: 1
+Tier: 2
+Selector: Animated Armor, Golem, Succubus, Living Meteor Swarm, Dream Reaver, Lich, Gargoyle
+SelectorName: Animated Armor
+SelectorName: Golem
+SelectorName: Succubus
+SelectorName: Living Meteor Swarm
+SelectorName: Dream Reaver
+SelectorName: Lich
+SelectorName: Gargoyle
+
+AbilityName: Moonlight
+Descrip: Multiselector: Cold Light of the Moon, Dark Light of the Moon
+Cost: 1
+Ranks: 1
+Tier: 2
+Selector: Cold Light of the Moon, Dark Light of the Moon
+SelectorName: Cold Light of the Moon
+Descrip: Creates a lingering Area of Effect of moonlight. Deals 3d6 Cold Damage plus 2 per Caster Level to enemies inside the zone every 2 seconds. The zone lasts for 10 seconds. 25 second cooldown.
+SelectorName: Dark Light of the Moon
+Descrip: Creates a lingering Area of Effect of moonlight. Deals 3d6 Negative Damage plus 2 per Caster Level. to non-undead enemies inside the zone every 2 seconds The zone lasts for 10 seconds. 25 second cooldown.
+
+AbilityName: Chill Aura
+Descrip: While in your Frostlight Mantle, enemies within melee range take 2d4 Cold damage per caster level and 2d4 Negative damage per caster level every 6 seconds. If an enemy would heal from either of these effects, they do not take the damage.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Lunar Insight
+Descrip: Multiselector: Charisma, Intelligence, Wisdom
+Cost: 1
+Ranks: 1
+Tier: 2
+Selector: Charisma, Intelligence, Wisdom
+SelectorName: Charisma
+Descrip: When using Arcane Insight Gain 200% of your Charisma in Temporary Spell Points that last 60 seconds and the cool downs of all Words of Power Reset.
+SelectorName: Intelligence
+Descrip: When using Arcane Insight Gain 200% of your Intelligence in Temporary Spell Points that last 60 seconds and the cool downs of all Words of Power Reset.
+SelectorName: Wisdom
+Descrip: When using Arcane Insight Gain 200% of your Wisdom in Temporary Spell Points that last 60 seconds and the cool downs of all Words of Power Reset.
+
+
+
+AbilityName: Partial Eclipse
+Descrip : Multiselector: Evocation, Necromancy, Illusion
+Cost: 1
+Ranks: 3
+Tier: 3
+Selector: Evocation, Necromancy, Illusion
+SelectorName: Evocation
+Descrip: +1/2/3 Evocation DC
+SelectorName: Necromancy
+Descrip: +1/2/3 Necromancy DC
+SelectorName: Illusion
+Descrip: +1/2/3 Illusion DC
+
+AbilityName: Lunar Imbuement
+Descrip: When you hit an enemy with Moon Lance, you gain +10 Cold and Force Spell Power for 12 seconds. When you hit an enemy with Gloomspear, you gain +10 Negative and Force Spell Power for 12 seconds. When you hit an enemy with either, they take 5 stacks of Vulnerable.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Starlight
+Descrip: Your Cold or Dark Light zone now has the following attributes:}{-Rank 1: Slows the movement of non-boss enemies that enter it by 20%{-Rank 2: Adds 5% Incorporeality to all allies inside the zone{-Rank 3: On expiration, the zone explodes, dealing 3d20 + 6 per Caster Level of the relevant kind of damage to enemies within.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Share the Light
+Descrip: While your Frostlight Mantle is active, your summons now also benefit from it. For the purpose of this skill, these summons have your Cold and Negative Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 3
+
+AbilityName: Piercing Spellcraft
+Descrip: +1/2/3 Spell Penetration.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Nullmagic Protection
+Descrip: When you are hit or missed by an enemy, there is a 6% chance that a burst of antimagic energy expands from your body. Nearby enemies are subject to a Dispel Magic effect, which may strip them of their magical protections, and will be rendered unable to cast spells and lose 4 Spell Resistance for 30 seconds.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+
+AbilityName: Greater Beams
+Descrip: When you use Moon Lance, the target must make a save (DC 20 + highest of Intelligence/Wisdom/Charisma modifier + the highest of your Evocation and Conjuration bonuses) or be Frozen for 12 seconds. When you use Gloomspear, the target must make a save (DC 20 + highest of Intelligence/Wisdom/Charisma modifier + Necromancy bonuses) or be Paralyzed for 12 seconds.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Improved Arcane Pulse
+Descrip: The effect of the Arcane Pulse feat now stacks up to 7 times.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: Nullmagic Strike
+Descrip: While in your Frostlight Mantle, attacks you make and offensive spells you cast have a 15% chance to subject the target to a Dispel Magic effect, which may strip them of their magical protections, and will render them unable to cast spells and lose 4 Spell Resistance for 30 seconds.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: Enhanced Metamagics
+Descrip: Reduced Metamagic Feats: Multiselector: Maximize, Empower
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Maximize, Empower
+SelectorName: Maximize
+Descrip: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.
+SelectorName: Empower
+Descrip: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.
+
+AbilityName: Total Eclipse
+Descrip: +1/2/3 spell DCs.
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Cosmos
+Descrip: Multiselector: Zero Degree Comet, Moon's Shadow
+Cost: 1
+Ranks: 1
+Tier: 5
+Selector: Zero Degree Comet, Moon's Shadow
+
+SelectorName: Zero Degree Comet
+Descrip: Evocation SLA. Hit target enemy with a falling chunk of ice for 1d6+28 Cold damage per caster level. A successful Reflex save reduces the damage by half. Cooldown 18 seconds, costs 40 Spell Points.
+SelectorName: Moon's Shadow
+Descrip: Necromancy SLA. Hit target enemy with a miniature black hole for 1d6+28 Negative damage per caster level. A successful Reflex save reduces the damage by half. Cooldown 18 seconds, cost 40 Spell Points.
+
+AbilityName: Time Stop
+Descrip: Epic Moment: Enemies in a small area are Paralyzed and Helpless with no save for 10 seconds. They cannot die in this state, but if they are below 0 HP when they leave this state, they die quickly after the effect expires. Bosses and Raid Bosses in the area are instead considered Helpless for the purpose of damage for 10 seconds, but take 10% less extra damage from being Helpless than normal. 5 minute cooldown.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Lunar Power
+Descrip: +10 Negative, Cold, and Force Spell Power, +20 Universal Spell Power, If you are in your Frostlight Mantle, you also gain +20 Magical Resistance Rating Cap.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Epic Metamagic Feats
+Descrip: Intensify: Using the Intensify Metamagic no longer costs Spell Points.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+DestinyName: Primal Avatar
+Abbreviation: Primal
+Type: Destiny
+
+AbilityName: This is your Nature
+Descrip: Select your path. Multiselector: Select either Heart, Sky or Thorn.
+Cost: 1
+Ranks: 1
+Tier: 0
+Selector: Nature of Heart, Nature of Sky, Nature of Thorn
+SelectorName: Nature of Heart
+Descrip: Fire, Light, Positive: +5 Spell Power of these types and 5 Universal Spell Power and +50 Max Spell Points per core you have trained. Each core also grants a +1 Epic bonus to all Spell DCs. Grants Magical Training.
+SelectorName: Nature of Sky
+Descrip: Cold, Electric, Sonic: +5 Spell Power of these types and 5 Universal Spell Power and +50 Max Spell Points per core you have trained. Each core also grants a +1 Epic bonus to all Spell DCs. Grants Magical Training.
+SelectorName: Nature of Thorn
+Descrip: Acid, Poison, Force: +5 Spell Power of these types and 5 Universal Spell Powers and +50 Max Spell Points per core you have trained. Each core also grants a +1 Epic bonus to all Spell DCs. Grants Magical Training.
+
+AbilityName: Now Grow
+Descrip: Select a second path. Multiselector: Choose another aspect of nature at reduced power. You cannot choose what you took in the first core again.
+Cost: 1
+Ranks: 1
+Tier: 0
+SelectorName: Heart
+Descrip: +3 Spell Power of these types per core you have trained.
+SelectorName: Sky
+Descrip: +3 Spell Power of these types per core you have trained.
+SelectorName: Thorn
+Descrip: +3 Spell Power of these types per core you have trained.
+
+AbilityName: Weathering the Elements
+Descrip: Gain 15% Absorption against Fire/Cold/Acid/Electric/Poison Damage. Whenever you cast any Protection from Element spell it grants you 25 Spell Points [probably a typo, they mean energy-absorbing damage points] per level instead of 12 with no level cap.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Seeking Balance
+Descrip: You gain +1/2/3 Reflex Saving Throws, +2/4/6 Tumble, and +2/4/6 Balance. Rank 3: If you’re using a quarterstaff gain +1 Damage and +5 Universal Spell Power.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Well Weathered
+Descrip: +1/2/3 to Physical and Magical Resistance Rating.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Epic Strikes 
+Descrip: Gain a Primal Spell based off your nature.  Shares a cooldown with all Epic Strikes
+Cost: 2
+Ranks: 1
+Tier: 1
+Selector: Spring to Summer, Carrion Swarm, Storm Catcher
+SelectorName: Carrion Swarm
+Descrip: (requires Nature of Thorn) Cost 8 SP, cooldown: 6 secs. Target enemies and nearby enemies becomes swarmed by biting acidic and poisonous insects. Every 2 seconds they take 1d4+1 acid and 1d4+1 poison damage per 2 character levels for 8 seconds. Stacks up to 3 times. Each stack also causes a -4 penalty to attack rolls and Armor class.
+All: Tier 0: Nature of Thorn
+SelectorName: Spring to Summer
+Descrip: (requires Nature of Heart) Cost 20 SP, A burst of butterflies forms around the caster in a small radius applying a copy of rejuvenation cocoon to all allies. After several seconds the butterflies burst into flame causing 2d6 Fire Damage per character level to all nearby enemies, Reflex vs Evocation DC:20+Highest of INT/WIS/CHA for half damage. Cooldown: 12 seconds.
+All: Tier 0: Nature of Heart
+SelectorName: Storm Catcher
+Descrip: (requires Nature of Sky) Cost 5 SP, Target enemy is instantly struck by a bolt of lightning for 1d6+3 damage per level. Fortitude vs Evocation DC:20+Highest of INT/WIS/CHA for half damage. Target also becomes chilled to the bone for 8 seconds slowing their movement and reducing their reflex save by half your character level. They also taking 1d6 per 2 character level in Cold damage every two seconds. Cooldown: 6 seconds.
+All: Tier 0: Nature of Sky
+
+AbilityName: Nature's Friend
+Descrip: When you sit to rest at a rest shrine your selected friend of nature visits you briefly and offers comfort. You and your party are granting a buff that lasts until the end of your current quest.
+Cost: 2
+Ranks: 1
+Tier: 1
+Selector: Bat of Echoes, Bird of Wind, Fox of Flame, Frog of the Lake, Squirrel of Luck, Spider of the Deep
+SelectorName: Bat of Echoes
+Descrip: +10 Sonic Spell Power, +15 Sonic Absorption and +3 Listen
+SelectorName: Bird of Wind
+Descrip: +15 Electric Spell Power, +1 Dodge, +3 and Spot
+SelectorName: Fox of Flame
+Descrip: +10 Fire Spell Power, +2 Sneak Attack damage, and +3 Move Silently
+SelectorName: Frog of the Lake
+Descrip: +10 Cold Spell Power, +2 Magical Resistance Rating, and +3 Jump
+SelectorName: Squirrel of Luck
+Descrip: +1 to attack, damage and saving throws.
+SelectorName: Spider of the Deeps
+Descrip: +10 Poison & Acid Spell Power. 15% Poison Absorb.
+
+AbilityName: Rejuvenation Cocoon
+Descrip: Cost 12 SP Protects target with a shield of 150 temporary HP for 9 seconds. Heals 5d6 HP every 2 seconds while the shield persists. Cooldown: 12 seconds.
+Cost: 2
+Ranks: 1
+Tier: 1
+
+AbilityName: Flowers in the Thorns
+Descrip: Stepping inside a Thorn Spikes or Entangle spell whether hostile or friendly heals you for 1d3 hit points every 5 seconds per character level of the spell's owner.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Mantle of Nature
+Descrip: Multiselector: Heart, Sky, Thorn
+Cost: 1
+Ranks: 3
+Tier: 2
+Selector: Heart, Sky, Thorn
+SelectorName: Heart
+Descrip: Your heal spells have a chance to apply Cocoon to your target. Your Fire and Light spells have a chance to apply a blast of that damage type for an extra 1d3/4/6 per character level. All effects scale with spell power. Each effect can only occur once every 5 seconds, tracked separately. Any melee or ranged attack can also generate one of these effects.
+All: Tier 0: Nature of Heart
+SelectorName: Sky
+Descrip: Your Cold and Electric spells have a chance to blast one target for an additional 1d3/4/6 damage per character of the same type as the spell used. Each element can only strike once every 5 seconds, tracked separately. Any melee or ranged attack can also generate one of these effects.
+All: Tier 0: Nature of Sky
+SelectorName: Thorn
+Descrip: Your Acid and Poison spells have a chance to blast one target for an additional 1d3/4/6 damage per character of the same type as the spell used. Each element can only strike once every 5 seconds, tracked separately. Any melee or ranged attack can also generate one of these effects.
+All: Tier 0: Nature of Thorn
+
+AbilityName: Primal Spell
+Descrip: Choose a powerful Primal Spell
+Cost: 2
+Ranks: 1
+Tier: 2
+Selector: Reborn in Fire, Thunder Snow, Shard Storm
+SelectorName: Reborn in Fire 
+Descrip: Cost 30 SP, Cooldown: 20secs. A swirl of fire surrounds you dealing 1d6 fire damage per character to enemies and healing allies for 1d6 per character level. Level.
+All: Tier 0: Nature of Heart, Tier 1: Epic Strikes: Spring to Summer
+SelectorName: Shard Storm 
+Descrip: SP: 20 CD: 20 Summons a cloud of acidic poisonous shards that randomly strikes enemies within 15 meters. 6 strikes over 6 seconds. Each shard deals 1d4+2 poison and acid damage per character level.
+All: Tier 0: Nature of Thorn, Tier 1: Epic Strikes: Carrion Swarm
+SelectorName: Thunder Snow
+Descrip: SP: 20 CD: 20 Sends forth a wide wave of freezing hail before you with a narrow blast of lightning at its center directly in front of the caster. The hail deals 1d6+4 cold damage per character level. The bolt of lightning strikes for 1d6+4 per character level.
+All: Tier 0: Nature of Sky, Tier 1: Epic Strikes: Storm Catcher
+
+AbilityName: Thrive
+Descrip: Epic strike abilities in this tree grants now have a 30% chance to grant a 25% Enhancement discount to all spells. Lasts 4 seconds.
+Cost: 2
+Ranks: 1
+Tier: 2
+One: Tier 2: Reborn in Fire, Tier 2: Thunder Snow, Tier 2: Shard Storm
+
+AbilityName: Spirit Boon
+Descrip:  Multiselector: - Body or Mind
+Cost: 1
+Ranks: 1
+Tier: 2
+Selector: Body, Mind
+SelectorName: Body
+Descrip: Gain +1/2/2 Primal bonus to all physical abilities (Strength, Dexterity, Constitution).
+SelectorName: Bind
+Descrip: Gain +1/2/2 Primal bonus to all mental abilities (Intelligence, Wisdom, Charisma).
+
+AbilityName: Ever Green
+Descrip: +30/60/100 Maximum Spell Points. Rank 3: Mantle of Nature now has a chance to grant 100 Temporary Spell Points for 60 seconds.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Shared Mantle
+Descrip: Your summons and pets now also benefit from your Mantle of Nature. In additional your Spell Power values are now added to theirs.
+Cost: 1
+Ranks: 3
+Tier: 3
+One: Tier 2: Mantle of Nature: Heart, Tier 2: Mantle of Nature: Sky, Tier 2: Mantle of Nature: Thorn
+
+AbilityName: Magic of the Old World
+Descrip: +1/2/3 DCs for Evocation, Conjuration, Transmutation, or Enchantment spells.
+Cost: 1
+Ranks: 3
+Tier: 3
+Selector: Evocation, Conjuration, Transmutation, Enchantment
+SelectorName: Evocation
+Descrip: +1/2/3 Evocation DCs
+SelectorName: Conjuration
+Descrip: +1/2/3 Conjuration DCs
+SelectorName: Transmutation
+Descrip: +1/2/3 Transmutation DCs
+SelectorName: Enchantment
+Descrip: +1/2/3 Enchantment DCs
+
+AbilityName: At Its Core
+Descrip: Upgrade your Primal Spell. Multiselector: Heart, Sky, Thorn
+Cost: 1
+Ranks: 1
+Tier: 3
+All: Tier 2: Thrive
+Selector: Heart, Sky, Thorn
+SelectorName: Heart
+Descrip: Doubles the damage of Reborn in Fire, and the ability now grants +25% uncapped Dodge for 4 seconds on use.
+All: Tier 0: Nature of Heart, Tier 2: Thrive
+SelectorName: Sky
+Descrip: Doubles the damage of Thunder Snow which now also applies the slow effect of Storm Catcher, slowing movement and reducing all targets reflex saves by half your character level for the duration of the slow.
+All: Tier 0: Nature of Sky, Tier 2: Thrive
+SelectorName: Thorn
+Descrip: Doubles the damage of Shard Storm and you gain Shard Reflection for 12 seconds which grants 25% of your max Hit Points as temporary Hit Points.
+All: Tier 0: Nature of Thorn, Tier 2: Thrive
+
+AbilityName: Natural Shielding
+Descrip: You gain 10 Hit Points and +2 Magical Resistance Rating. Your summons, pets and hirelings gain 60% of your Max Hit Points and 30 Magical Resistance Rating instead. Summoned minions also gain +4 Reflex Saves and Evasion.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Natural Evasion
+Descrip: Gain the Evasion Feat. Exclusive from other enhancements that grant this feat.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Nature's Reach
+Descrip: +5/10/15 Universal Spell Power and reduces the cost of the Enlarge Metamagic by 3/6/9 Spell Points.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Nature's Blessing
+Descrip: When you rest the spirit of a nature manifests as a unicorn and provides a blessing on your party that lasts until quest's end or you rest again, granting a +5% inspiration bonus to Max Hit Points.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Epic Improved Metamagics 1
+Descrip: Select a  Metamagic to improve (Stacks with other Improve Metamagics)
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Epic Improved Empower III, Epic Improved Maximize III, Epic Improved Quicken III
+SelectorName: Epic Improved Empower III
+Descrip: Using the Empower Metamagic costs you 2/4/6 fewer Spell points
+SelectorName: Epic Improved Maximize III
+Descrip: Using the Maximize Metamagic costs you 2/4/6 fewer Spell points
+SelectorName: Epic Improved Quicken III
+Descrip: Using the Quicken Metamagic costs you 2/4/6 fewer Spell points
+
+AbilityName: Epic Improved Metamagics 2
+Descrip: Select a  Metamagic to improve (Stacks with other Improve Metamagics)
+Cost: 1
+Ranks: 3
+Tier: 4
+Selector: Epic Improved Empower III, Epic Improved Maximize III, Epic Improved Quicken III
+SelectorName: Epic Improved Empower III
+Descrip: Using the Empower Metamagic costs you 2/4/6 fewer Spell points
+SelectorName: Epic Improved Maximize III
+Descrip: Using the Maximize Metamagic costs you 2/4/6 fewer Spell points
+SelectorName: Epic Improved Quicken III
+Descrip: Using the Quicken Metamagic costs you 2/4/6 fewer Spell points
+
+AbilityName: Primal Ally
+Descrip: SLA - Multi Selector: Costs 50 Spell Points. Creates a focal point of power that spawns a powerful ally who casts spells adding twice your highest mental stat bonus to their DCs and your Spell Power. Summon lasts for 25 seconds. Cooldown: 20 seconds.
+Cost: 2
+Ranks: 1
+Tier: 5
+Selector: Heart Flame, Storm Guard, Briar Patch
+SelectorName: Heart Flame Dryad
+Descrip: Creates an elder dryad that casts fire and healing spells. She remains rooted to her summoning point.
+One: Tier 0: This is your Nature: Nature of Heart, Tier 0: Now Grow: Heart
+SelectorName: Storm Guard
+Descrip: Creates a greater storm spirit to blast your foes with lightning and cold. Remains bound to their summoning spot.
+One: Tier 0: This is your Nature: Nature of Sky, Tier 0: Now Grow: Sky
+SelectorName: Briar Patch
+Descrip: Creates a greater thorn spirit which launches attacks of poison and acid at nearby enemies.
+One: Tier 0: This is your Nature: Nature of Thorn, Tier 0: Now Grow: Thorn
+
+AbilityName: Ancient Wisdom
+Descrip: +1/2/3 spell DCs
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Mass Frog
+Descrip: Costs 60 Spell Points. Up to six nearby enemies are turned into frogs. Each may avoid ribbiting on a successful Fortitude saving throw vs. DC (20 + Highest of Wisdom/Intelligence/Charisma modifier + Transmutation bonuses). Cooldown: 60 seconds.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Epic Moment - Greater Form
+Descrip: Transform briefly into an ultimate form based on your nature. Cooldown: 5 minutes.
+Cost: 2
+Ranks: 1
+Tier: 5
+Selector: Heart of Flame, Sky Rager, Thorn Cloud
+SelectorName: Heart of Flame
+Descrip: Become like a Summer Fire for 15 seconds and gain:}{-Become ethereal to monsters (you can pass through them){-25% Action Boost to movement speed{-25% Uncapped Dodge{-100% Absorption to Fire and Light{-Deal 1d6 Fire damage per character level to enemies that are close to you, and heal you and your allies for 1d6 Positive every character level as well.{-Immunity to most forms of Crowd Control
+All: Tier 0: This is your Nature: Nature of Heart
+SelectorName: Heart of Sky
+Descrip: Become like a Raging Storm for 15 seconds and gain:}{-Become ethereal to monsters (you can pass through them){-25% Action Boost to movement speed{-60% Incorporeality{-100% Absorption to Cold and Electric{-Deal 1d6 Cold damage per character level and apply a slow to all enemies near you every two seconds. A single random enemy will be struck every 3 seconds with a bolt of lightning for 1d6+6 Electric damage per character level and knock down for 4 seconds. No save.{-Immunity to most forms of Crowd Control
+All: Tier 0: This is your Nature: Nature of Sky
+SelectorName: Heart of Thorn
+Descrip: Become like a Cloud of Biting Insects for 15 seconds and gain:}{-Become ethereal to monsters (you can pass through them){-25% Action Boost to movement speed{-60% Incorporeality{-100% Absorption to Poison and Acid{-Deal 1d2 Acid and 1d2 Poison damage per character level to enemies near you every two seconds. Enemies also have a 50% chance to become swarmed which causes confusion for 6 seconds. No save.{-Immunity to most forms of Crowd Control
+All: Tier 0: This is your Nature: Nature of Thorn
+
+AbilityName: Epic Metamagics
+Descrip: Intensify: Reduces the cost of Intensify by 2/4/6
+Cost: 1
+Ranks: 3
+Tier: 5
+
+DestinyName: Shiradi Champion
+Abbreviation: Shiradi
+Type: Destiny
+
+
+AbilityName: Fey Favor
+Descrip: You gain the Magical Training Feat. Each core ability including this one grants +4 Ranged power, +50 Spell Points, and +5 Force and Universal Spell Power. Each core also grants a +1 Epic bonus to all Spell DCs. Only the highest Epic Bonus to Spell DCs you get from Destiny Cores applies.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Vision
+Descrip: Your attacks have Ghost Touch and you bypass 5% Dodge and Fortification. If you have the Holy Strike feat, double the Dodge and Fortification bypass.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Audience with the Queen
+Descrip: Get some tea! When you Rest, you pop off for some tea, and randomly get one cool buff. This benefit no longer uses a Diplomacy check to determine which buff. Buffs last for 10 minutes or until you die.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Prism
+Descrip: Shiradi Champion Destiny Mantle: Your ranged and thrown attacks have a 15% chance to deal 3d100+100 extra damage of a random type. This damage scales with 200% Ranged Power. Your offensive spells have a 30% chance to deal 3d100+100 extra damage of a random type. This damage scales with 100% of the type's Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 1
+
+AbilityName: Wild Magics
+Descrip: +30/60/100 Spell Points. Rank 3: +5 Force and Universal Spell Power
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Good Luck
+Descrip: +1/2/3 Luck bonus to attack and saving throws. If you have the Luck of Heroes feat, double this bonus.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Shiradi Strike
+Descrip: Pick a Ranged or Caster Epic Strike
+Cost: 1
+Ranks: 1
+Tier: 1
+Selector: Hunt's End, Fey Lights
+SelectorName: Hunt's End
+Descrip: Epic Strike: Your next shot with a Ranged or Thrown weapon has +75% damage, and increases your Critical Threat Range by 16. (Cooldown: 8 seconds). Costs 2 Destiny Points.
+SelectorName: Fey Lights
+Descrip: Epic Strike: Cone SLA. Enemies are sprayed with illusions of color, and must make a Will save or be Dazed, Blinded, and/or Silenced. The target must make a saving throw for each effect. (20 + Highest of Intelligence/Wisdom/Charisma + Highest of Enchantment or Illusion bonuses) Cooldown: 6 seconds. Costs 10 Spell Points.
+
+AbilityName: Fey Sight
+Descrip: +2/4/6 Listen, Search, and Spot. Rank 3: You are immune to Blindness.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Stay
+Descrip: Pick whether to Stay Good or Stay Frosty
+Cost: 1
+Ranks: 1
+Tier: 2
+Selector: Stay Good, Stay Frosty
+SelectorName: Stay Good
+Descrip: While in your Prism stance, Ranged and thrown attacks have a 15% chance to deal 1d100+30/2d100+60/3d100+100 extra Light damage. Your offensive spells have a 30% chance to proc this damage. This Light damage scales with 200% Ranged Power if from a Ranged attack, or 200% Light Spell Power if from a spell. Rank 3: Enemies hit by your ranged attacks have a 20% chance to be blinded for 10 seconds. Enemies hit by your offensive spells have a 30% chance to be blinded for 10 seconds.
+SelectorName: Stay Frosty
+Descrip: While in your Prism stance, Ranged and thrown attacks have a 15% chance to deal 1d100+30/2d100+60/3d100+100 extra Cold damage. Your offensive spells have a 30% chance to proc this damage. This Light damage scales with 200% Ranged Power if from a Ranged attack, or 200% Cold Spell Power if from a spell. Rank 3: Enemies hit by your ranged attacks have a 20% chance to be slowed for 10 seconds. Enemies hit by your offensive spells have a 30% chance to be slowed for 10 seconds.
+
+AbilityName: Phase Double
+Descrip: +2/4/6% Doubleshot.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Shiradi Power
+Descrip: Pick a Ranged Attack or a Charm Spell
+Cost: 1
+Ranks: 1
+Tier: 2
+Multiselector: Pin, Beguiling Charm
+SelectorName: Pin
+Descrip: Ranged Attack. +3[W]: If target is moving, they are Slowed for 12 seconds. Cooldown: 15 seconds
+SelectorName: Beguiling Charm
+Descrip: Target must make a Will save versus (20 + Highest of Intelligence/Wisdom/Charisma + Enchantment bonuses) or be Charmed for 12 seconds. Cooldown 15 seconds. Cost: 10 Spell Points.
+
+AbilityName: Healing Spring
+Descrip: (Cooldown: 30 seconds) SLA of Greater Vigor, Mass. Uses charges of Wild Empathy, +1 Maximum Wild Empathy charge.
+Cost: 1
+Ranks: 1
+Tier: 2
+
+AbilityName: Empathetic Link
+Descrip: +1/2/3 charges of Wild Empathy.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Double Rainbow
+Descrip: While in your Prism Mantle, your ranged and thrown attacks have a 7% chance to inflict a random effect on your target. Your offensive spells have a 14% chance to proc these effects. These effects scale with various different things depending on their origins, including Melee, Ranged, and Spell Power.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Pierce Deception
+Descrip: You gain the Watchful Eye feat. (If you pass within 5 feet of a trap, you make a Search check to notice it as if actively Searching. (You still need the Trapfinding feat to successfully Search for difficult traps.)) If you have the Watchful Eye feat, +5% Doubleshot.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Improve Shiradi Power
+Descrip: Upgrade Pin or Beguiling Charm
+Selector: Otto's Whistler, Greater Beguiling Charm
+Cost: 1
+Ranks: 1
+Tier: 3
+SelectorName: Otto's Whistler
+Descrip: If enemies hit by Pin are not moving, they must make a Reflex save (20 + highest ability score + Spot bonus) or be Immobilized for 18 seconds. If enemies hit by Pin are moving, they must make a Will save (20 + highest ability score + Listen bonus) or Dance for 18 seconds.
+SelectorName: Greater Beguiling Charm
+Descrip: Enemies Charmed by your Beguiling Charm deal double damage with attacks and spells while under the effects of Beguile.
+
+AbilityName: Fey Force
+Descrip: Upgrade Hunt's End or Fey Lights
+Cost: 2
+Ranks: 1
+Tier: 3
+Selector: Fey Flash, Fey Force
+SelectorName: Fey Flash
+Descrip: Fey Lights' Daze now additionally affects Undead, Plants, Constructs, and Oozes, who would normally be immune to such effects.
+SelectorName: Fey Force
+Descrip: Increases Hunt's End damage bonus by 75%.
+
+AbilityName: Shiradi Magic
+Descrip: Select a Spell School to gain DCs in 
+Cost: 1
+Ranks: 2
+Tier: 3
+Selector: Illusion, Enchantment, Transmutation, Conjuration
+SelectorName: Illusion
+Descrip: +1/2/3 Illusion DC
+SelectorName: Enchantment
+Descrip: +1/2/3 Enchantment DC
+SelectorName: Transmutation
+Descrip: +1/2/3 Transmutation DC
+SelectorName: Conjuration
+Descrip: +1/2/3 Conjuration DC
+
+AbilityName: Fey Form
+Descrip: While in your Prism Mantle, gain 9% extra damage against Helpless targets, DR 10 Cold Iron, and +5 Force and Universal Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: Track
+Descrip: Dealing damage to enemies reduces their Armor Class by 1 and Fortification by 2%. Stacks up to 10 times.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: Enemy of my Own
+Descrip: You gain the Favored Enemy: Fey feat.
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: Overwelming Force
+Descrip: Upgrade Hunt's End or Fey Lights
+Cost: 2
+Ranks: 1
+Tier: 4
+Selector: Overwhelming Force, Fey Flare
+SelectorName: Overwhelming Force
+Descrip: Increases your Hunt's End effect by 75%.
+SelectorName: Fey Flare
+Descrip: The Daze portion of Fey Lights is now a Stun instead. (This Stun applies to the additional creature types in Fey Flash, if you have that skill).
+
+AbilityName: Whirling Wrists
+Descrip: +10/20/30% Attack Speed with Thrown Weapons. You gain +2/4/6% stacking Incorporeality.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Stay II
+Descrip: Upgrade Stay Good or Stay Frosty
+Cost: 2
+Ranks: 1
+Tier: 5
+Selector: Stay Frozen, Stay Still
+SelectorName: Stay Frozen
+Descrip: While in Prism stance, your ranged and thrown attacks and offensive spells have a 7% chance to freeze living creatures for 6 seconds. Requires Stay Frosty.
+SelectorName: Stay Still
+Descrip: While in Prism stance, your ranged and thrown attacks and offensive spells have a 7% chance to paralyze living creatures for 6 seconds. Requires Stay Good.
+
+AbilityName: Control
+Descrip: +1/2/3 to all Spell DCs
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Lore of the Hunt
+Descrip: Ranged Weapons gain +1 Critical Damage Multiplier on rolls of 19-20.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Feywild Attunement
+Descrip: Every 4 Wilderness Lore feats grant you +1% Dodge. You are always considered to be in Point Blank Shot range and have a Base Attack Bonus equal to character level with Longbows and Shortbows. +10 Force and Universal Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Epic Moment
+Descrip: Select an Epic Moment
+Cost: 1
+Ranks: 1
+Tier: 5
+Selector: Inexorable Advance, Mass Chaos
+SelectorName: Inexorable Advance
+Descrip: Epic Moment: For 30 seconds, you gain +30 Ranged Power, can move while still gaining Archer's Focus stacks, and you do not take the normal 20% damage penalty while using Improved Precise Shot. You also gain 30% Action Boost bonus to Movement Speed for the duration. In addition, your Ranged attacks have a 100% chance to deal 3d100+180 Cold damage and 3d100+180 Light damage which scale with 200% Ranged Power in addition to Stay Good or Stay Frosty. Finally, your Ranged attacks in this state have a 100% chance to proc Double Rainbow effects. Cooldown: 5 minutes.
+SelectorName: Mass Chaos
+Descrip: Epic Moment: Enemies in an area are Confused with no save for 30 seconds, gain a stack of Fey Chaos, and apply a stack of Fey Chaos on hitting non-Player, non-Hireling targets while Confused. 5 minute cooldown.}Fey Chaos: This creature takes 5% more damage from all sources for 10 seconds. This effect can stack up to 10 times, and all stacks expire after not gaining new ones for 10 seconds. This effect works on Bosses and Raid Bosses.
+
+DestinyName: Shadowdancer
+Abbreviation: Shadowdancer
+Type: Destiny
+
+AbilityName: Shadow Training
+Descrip: You gain the Magical Training feat if you didn't have it already. Each core ability including this one grants +5 Melee Power and +4 Ranged Power, +1 Sneak Attack Dice, 50 Spell Points, +1 Epic DC, 5 Force Spell Power and 5 Universal Spell Power.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Step Through Shadow
+Descrip: Dimension Door SLA. Cooldown of 2 minutes.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: The Darkest Luck
+Descrip: You have Evasion, normal Evasion rules apply. If you have Evasion already, you gain Improved Evasion. If you have Improved Evasion already, you no longer fail Reflex Saves automatically by rolling a 1.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Stealthy
+Descrip: +1/2/3 Reflex Saves, +2/4/6 Hide and Move Silently. Rank 3: Gain the Hide in Plain Sight feat.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Cover of Darkness
+Descrip: +10/20/30% less threat from all sources. Rank 3: Gain a permanent benefit of Nightshield.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Well of Darkness
+Descrip: +30/60/100 Spell Points, Rank 3: +5 Force/Universal Spell Power
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Assassinate
+Descrip: +2/4/6 to your Assassinate DCs.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Technician
+Descrip: +2/4/6 to Search, Spot, Disable Device, Open Lock. Rank 3: If you have the Nimble Fingers feat, +1 Sneak Attack dice.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Sleight of Hand
+Descrip: +2/4/6 UMD. +25/50/75% damage and healing of your wands, scrolls and other items that cast spells. Adds +1/2/3 to the save DC's of your offensive wands.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Dance in the Dark
+Descrip: +1/2/3 Sneak Attack Dice
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Shadowform
+Descrip: Shadowdancer Destiny Mantle. Grants +30% Enhancement bonus to movement speed, 25% Insight bonus to Sneak Speed, 25% Insight bonus to Cast Run Speed, and grants ghost touch on all attacks.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Lithe
+Descrip: +2/4/6 reflex saves, AC and light armor Max Dex Bonus, Rank 3: +5 Force/Universal Spellpower.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Epic Strike
+Descrip: Select an Epic Strike
+Cost: 2
+Ranks: 1
+Tier: 2
+Selector: Nightmare Lance, Shadowstrike (melee), Shadowstrike (ranged)
+SelectorName: Nightmare Lance
+Descrip: Epic Strike: Illusion Spell, deals 1d6+6 Force damage per caster level. Enemies must make a Will save vs (20 + highest ability score + illusion bonuses + fear bonuses) or be cursed with Shadow Loss. Cooldown: 10 seconds.}Shadow Loss: You no longer cast a shadow. In addition, you have -5 PRR, MRR, and Spell Resistance.
+SelectorName: Shadowstrike (melee)
+Descrip: Epic Strike: +5[W], +3 Critical Threat Range and Critical Damage Multiplier. Enemy must make a Fortitude save vs (20 + highest ability score + assassinate) or be cursed with Shadow Loss. Cooldown: 10 seconds.}Shadow Loss: You no longer cast a shadow. In addition, you have -5 PRR, MRR, and Spell Resistance.
+SelectorName: Shadowstrike (ranged)
+Descrip: Epic Strike: +5[W], +3 Critical Threat Range and Critical Damage Multiplier. Enemy must make a Fortitude save vs (20 + highest ability score + assassinate) or be cursed with Shadow Loss. Cooldown: 10 seconds.}Shadow Loss: You no longer cast a shadow. In addition, you have -5 PRR, MRR, and Spell Resistance.
+
+AbilityName: Grim Precision
+Descrip: +1/2/3 Spell Penetration, and you bypass 5/10/15% enemy Fortification.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Shadowcaster
+Descrip: 
+Cost: 2
+Ranks: 1
+Tier: 3
+Selector: Shadowcaster, Shadowstriker
+SelectorName:  Shadowcaster
+Descrip: -10% Spell Cooldowns. Immunity to Energy Drain.
+SelectorName:  Shadowstriker
+Descrip: +5% Doublestrike and Doubleshot. Immunity to Energy Drain.
+
+AbilityName: Depths of Darkness
+Descrip: While in your Shadowdancer Destiny Mantle, you gain 25% Incorporeality and 25% Concealment.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Shadowdancer Spell Focus
+Descrip: Select a Spell School to specialize in 
+Cost: 1
+Ranks: 1
+Tier: 3
+Selector: Illusion, Necromancy, Enchantment, Abjuration
+SelectorName: Illusion
+Descrip: +1/2/3 Illusion DCs
+SelectorName: Necromancy
+Descrip: +1/2/3 Necromancy DCs
+SelectorName: Enchantment
+Descrip: +1/2/3 Enchantment DCs
+SelectorName: Abjuration
+Descrip: +1/2/3 Abjuration DCs
+
+AbilityName: Epic Strike Upgrades
+Descrip: Select an upgrade for your Epic Strike
+Cost: 2
+Ranks: 1
+Tier: 3
+Selector: Dark Imbuement, Meld into Darkness, Paranoia
+SelectorName: Dark Imbuement
+Descrip: Your Epic Strike now imbues your weapons with Evil energies for 10s: You deal 1d6 per Sneak Attack Dice in Untyped damage on hit (scaling with Melee or Ranged Power, or Force Spell Power if its higher), and on a vorpal strike, your attacks blind enemies with no save. This blind lasts 5 seconds and can only apply to each monster once per 60 seconds.
+One: Tier 2: Nightmare Lance, Tier 2: Shadowstrike (melee), Tier 2: Shadowstrike (ranged)
+SelectorName: Meld into Darkness
+Descrip: Your Epic Strike now grants you 10% uncapped dodge for 10s
+One: Tier 2: Nightmare Lance, Tier 2: Shadowstrike (melee), Tier 2: Shadowstrike (ranged)
+SelectorName: Paranoia
+Descrip: Your Epic Strike now imbues your spells with Evil energies for 10s: Your Sneak Attack dice are now applied to your harmful spellcasts. Your spells deal 1d6 Untyped damage per Sneak Attack Dice you have (scaling with Melee or Ranged Power, or Force Spell Power if it is higher). This may only trigger once per spellcast per monster, so multi-hit spells will only have one additional damage value.
+One: Tier 2: Nightmare Lance, Tier 2: Shadowstrike (melee), Tier 2: Shadowstrike (ranged)
+
+
+AbilityName: Pierce the Gloom
+Descrip: +1/2/3 Accuracy, to-hit with Sneak Attacks, to-hit while flanking. Rank 3: You gain immunity to Silence, Quell, and Blindness.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: From the Shadows
+Descrip: From-Stealth Active: From a stealthed position, dissolve into shadows, before appearing some distance in front of you. This grants you the buffs from your Shadowdancer Epic strike if you have them trained.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Dark Mercy
+Descrip: Your Shadowdancer mantle now grants you +5/10/15% Helplessness damage.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Bring Darkness
+Descrip: When you roll a natural 20 on a melee or ranged attack, you envelop the target in shadow, applying the Darkness debuff. If you have the feat First Blood, the trigger of First Blood now also applies the Darkness debuff, and First Blood now triggers on Harmful Spellcasts.}Darkness debuff: The target is no longer immune to Sneak Attacks. -3 Spell Resistance, -3 Physical Resistance Rating and -3 Magical Resistance Rating per stack. Lasts 12 seconds, stacks drop 1 at a time. Max 3 stacks.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Epic Strike Upgrade
+Descrip: Select an upgrade for your Epic Strike
+Cost: 1
+Ranks: 1
+Tier: 4
+Selector: Improved Imbument, Improved Meld, Improved Paranoia
+SelectorName: Improved Imbument
+Descrip: Your Dark Imbuement Epic Strike upgrade now increases your melee range.
+SelectorName: Improved Meld
+Descrip: Your Meld into Darkest Epic Strike upgrade now grants 15% Dodge that is not affect by your Dodge Cap. When enemies miss you in combat while Meld is active, they are blinded by shadows with no save. This blind lasts 5 seconds and can only apply to each monster once per 60 seconds.
+SelectorName: Improved Paranoia
+Descrip: Your Paranoia Epic Strike upgrade now reduces the cost of all of your Metamagics by 1 Spell Point each.
+
+AbilityName: Epic Ability - Weird or Consumed by Shadows
+Descrip: 
+Cost: 1
+Ranks: 1
+Tier: 5
+Class: Cleric 17, Bard 16, Sorcerer 18, Wizard 17, Favored Soul 18, Artificer 15, Alchemist 15, Druid 17, Warlock 16
+Selector: Weird, Shadow Expulsion
+SelectorName: Weird
+Descrip: You gain the Weird spell - Area of effect Phantasmal Killer, scales off Illusion DC. You must be able to cast level 9 spells. Cooldown 60 seconds, Spell Point code of 50 (matches Implosion). DC 20 + highest of INT/WIS/CHA + illusion bonuses
+SelectorName: Shadow Expulsion
+Descrip: Stealth Action. Your shadow courses out from you, cursing nearby monsters with Illusory Panic if they fail a Fortitude save vs (DC 20 + Highest ability score mod + Assassinate bonuses)}Illusory Panic: your Armor Class is 0. When you are struck, you take a stack of Vulnerability, taking 1% more damage.
+
+AbilityName: Just a Taste
+Descrip: You have +1 Critical Multiplier on an attack roll of 19-20 with Bows, Thrown Weapons, Crossbows, Quarterstaves, and Finessable Melee weapons
+Cost: 2
+Ranks: 1
+Tier: 5
+
+AbilityName: Greater Shadowform
+Descrip: Adds to your Destiny Mantle: You float as if you had Feather Fall, +20 Hide and Move Silently, and no longer trigger pressure plate or bear traps. +10 Force/Universal Spell Power
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Greater Shadowdancer Spell Focus
+Descrip: +1/2/3 Spell DCs
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Shadow Mastery
+Descrip: Epic Moment: Dissolve into a whorl of shadow, leaving your corporeal form behind. While in this form, you are considered Sneaking and Invisible regardless of what you do. You also gain 3d6 Sneak Attack Dice, 50% Incorporeality, as well as the effects your Epic Strike as if they had been fully trained and upgraded. When non-boss enemies miss you in this state, they are slain by their fear, automatically taking a Phantasmal Killer effect with no save. Duration: 20 seconds. Cooldown: 5 minutes.
+Cost: 2
+Ranks: 1
+Tier: 5
+
+DestinyName: Unyielding Sentinel
+Abbreviation: Unyielding
+Type: Destiny
+
+AbilityName: Unyielding
+Descrip: You gain the Diehard feat. Each core ability of this tree, including this one, grants +35 Hit Points, 20 Spell Points, and 5 Melee Power
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Ward Against Darkness
+Descrip: You are protected by a ward against curses. This ward can absorb one curse every 60 seconds. You gain 10% Evil damage absorption.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Stand Against the Tide
+Descrip: Immune to most forms of Knockdown while wearing a shield.
+Cost: 1
+Ranks: 1
+Tier: 0
+
+AbilityName: Ever Watchful
+Descrip: +2/4/6 Spot & Listen. Rank 3: You are immune to blindness effects.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Divine Energy Resistance: Cost
+Descrip: 15 Spell Points This SLA grants 35 resistance to Acid, Cold, Fire, Sonic, Electric damage for 1 minute per character level to all allies in the standard area of effect; centered on the caster. You can apply Metamagic feats to this SLA for free (Extend, Quicken). The effect does not stack with the Resist Energy spell. Cooldown: 6 seconds.
+Cost: 2
+Ranks: 1
+Tier: 1
+
+AbilityName: Unyielding Sentinel - Epic Strike 
+Descrip: 
+Cost: 2
+Ranks: 1
+Tier: 1
+Selector: Celestial Mandate, Guard Up
+SelectorName: Celestial Mandate
+Descrip: Melee Cleave: 6[W] Adds 3000 Hate to target and slows their movement by 50% for 10 seconds. Grants a +1/2/3 buff to Magical and Physical Resistance Ratings for 15 seconds. Double this bonus if using a shield. Stacks 6 times. Cooldown: 6 seconds.
+SelectorName: Guard Up
+Descrip: Gain a Sacred Temporary Hit Point bonus equal to 300% of your Melee Power for 6 seconds. This can be used while stunned, or otherwise disabled. Cooldown: 12 seconds.
+
+AbilityName: Attack and Defend
+Descrip: +1/2/3 to hit. Triple this bonus if using combat expertise.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Brace for Impact
+Descrip: +10/25/50% Fortification, rank 3: +1 to all Saving Throws.
+Cost: 1
+Ranks: 3
+Tier: 1
+
+AbilityName: Mantle of the Sentinel
+Descrip: Unyielding Sentinel Destiny Mantel: While this mantle is active you gain a 15 Healing Amplification, +15% Fire, Electric, Acid, Cold, Force, Sonic, Chaos and Evil damage absorption. You also are immune to Mind-Altering Effects and Compulsions as per a Protection from Alignment spell.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Renewal
+Descrip: SLA: heal-over time. Heals 1d2 Hit Points per 2 character levels every 2 seconds for 8 seconds.
+Cost: 1
+Ranks: 1
+Tier: 2
+
+AbilityName: Knight's Challenge
+Descrip: Requires shield to use. Throws a Spiritual version of your Shield at a single target for 1d20 Law damage per character level, scales with 200% Melee Power. Creatures struck by the shield reset their hate and are compelled to target the player for 8 seconds. Cooldown: 20 seconds.
+Cost: 2
+Ranks: 1
+Tier: 2
+
+AbilityName: Commanding Presence
+Descrip: +150/300/450% Threat Generation.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Shield Prowess
+Descrip: Your Shield's Armor Class contribution is increased by 15/30/50%.
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Hands of the Sentinel
+Descrip: Gain the Lay on Hands feat. Using Lay Hands now uses the highest of Charisma or Constitution score to determine its effect and also uses your total character level instead of paladin level.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Legendary Shield Mastery
+Descrip: While wearing a shield, you gain +5/10/15 Physical Resistance Rating. Rank 3: You gain 6% Doublestrike.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Spark of Life
+Descrip: Your armor gains Deathblock, protecting you from death effects. Passive: Gain 25 Hit Points.
+Cost: 2
+Ranks: 1
+Tier: 3
+All: Tier 2: Knight's Challenge
+
+AbilityName: The Rule of Law
+Descrip: Your Unyielding Sentinel Destiny now grants your melee attacks a chance to create a wave of d3/4/6 Law damage per character level. This wave can occur once every 8 seconds. Scales with the highest of 200% Melee Power or Light Spell Power.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Into the Fray
+Descrip: When you first strike a foe with a melee attack gain +2/4/6 Damage & +10/15/25 Physical and Magical Resistance Rating buff for 5 seconds. This effect will not reoccur until you are out of combat for at least 3 seconds.
+Cost: 1
+Ranks: 3
+Tier: 3
+
+AbilityName: Endless Vigil
+Descrip: Requires Lay Hands or Hands of the Sentinel. Passive Bonus: +1/2/3 Lay On Hands use per rest. Lay On Hands regenerate one use every 180/160/145 seconds.
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Hardened
+Descrip: +5/10/15 Armor Class. Rank 3: Increase the Absorption of your Mantle of the Sentinel by 10%.
+Cost: 2
+Ranks: 1
+Tier: 4
+
+AbilityName: Throw the Boom
+Descrip: Knight's Challenge now resonates against its target, strigking nearby enemies and applies a Stun as well as its usual effects. Stun DC: 20 + Stun Bonuses + Highest Ability Score Modifierfor 4 seconds.
+Cost: 1
+Ranks: 3
+Tier: 4
+All: Tier 3: Spark of Life
+
+AbilityName: Divine Bulwark
+Descrip: +5 Physical Resistance Rating. If you have the Bulwark of Defense feat, gain an additional +10 Physical Resistance Rating
+Cost: 1
+Ranks: 1
+Tier: 4
+
+AbilityName: The Best Defense
+Descrip: Blocking a Melee attack now grants a +1/2/4 bonus to Damage, Hit and Critical Hit damage for 12 seconds. This can only occur once every 12 seconds. Passive: Gain +20/40/60 to Max Hit Points
+Cost: 1
+Ranks: 3
+Tier: 4
+
+AbilityName: Resurrection
+Descrip: Cost: 15 Spell Points. Can now cast Resurrection as a spell-like ability. Cooldown: 6 seconds.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Strength of Vitality
+Descrip: Gain 3/6/10% Insight bonus to Max Hit Points. Rank 3: Double this bonus if you are using the Unyielding Sentinel Mantel of Destiny.
+Cost: 1
+Ranks: 3
+Tier: 5
+
+AbilityName: Undying Vanguard
+Descrip: Your body becomes like a towering fortress. Completely heal yourself, then gain 10,000 Temporary Hit Points, and +5 Weapon Dice for 30 seconds. You can use this while Crowd Controlled. Usable once per rest.
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Deific Resilience
+Descrip: You gain the Deific Warding feat. If you already have it, you gain +5% Quality bonus to Maximum Hit Points
+Cost: 1
+Ranks: 1
+Tier: 5
+
+AbilityName: Light the Dark
+Descrip: Requires Lay Hands.  Lay on Hands is now an AoE, healing friends and damaging undead near the selected target. This effect scales with the highest of 200% Melee Power or 50% of Spell Power.
+Cost: 1
+Ranks: 1
 Tier: 5
