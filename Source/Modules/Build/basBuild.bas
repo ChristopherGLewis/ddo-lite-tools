@@ -24,9 +24,12 @@ End Type
 Public Function PointerDisplay(ptypPointer As PointerType, pblnAbbreviate As Boolean, Optional plngTree As Long) As String
     With ptypPointer
         Select Case .Style
-            Case peFeat: PointerDisplay = GetFeatDisplay(.Feat, .Selector, pblnAbbreviate, (plngTree <> 0))
-            Case peEnhancement: PointerDisplay = GetEnhancementDisplay(ptypPointer, pblnAbbreviate, plngTree)
-            Case peDestiny: PointerDisplay = GetDestinyDisplay(ptypPointer, pblnAbbreviate, plngTree)
+            Case peFeat
+                PointerDisplay = GetFeatDisplay(.Feat, .Selector, pblnAbbreviate, (plngTree <> 0))
+            Case peEnhancement
+                PointerDisplay = GetEnhancementDisplay(ptypPointer, pblnAbbreviate, plngTree)
+            Case peDestiny
+                PointerDisplay = GetDestinyDisplay(ptypPointer, pblnAbbreviate, plngTree)
         End Select
     End With
 End Function
@@ -81,8 +84,10 @@ Private Function GetDestinyDisplay(ptypPointer As PointerType, pblnAbbreviate As
     Dim strRank As String
     
     With ptypPointer
-        If .Tree <> plngTree Then strTree = db.Destiny(.Tree).Abbreviation & " "
+        '''If .Tree <> plngTree Then strTree = db.Destiny(.Tree).Abbreviation & " "
+        
         strTier = "Tier " & .Tier & ": "
+        'With db.Destiny(.Destiny).Tier(.Tier).Ability(.Ability)  'This should use .Destiny
         With db.Destiny(.Tree).Tier(.Tier).Ability(.Ability)
             If ptypPointer.Selector = 0 Then
                 If pblnAbbreviate Then strAbility = .Abbreviation Else strAbility = .AbilityName
@@ -107,6 +112,15 @@ Public Function HeroicLevels() As Long
         HeroicLevels = 20
     Else
         HeroicLevels = build.MaxLevels
+    End If
+End Function
+
+'Return the number of Epic levels
+Public Function EpicLevels() As Long
+    If build.MaxLevels > 20 Then
+        EpicLevels = build.MaxLevels - 20
+    Else
+        EpicLevels = 0
     End If
 End Function
 
@@ -2122,9 +2136,53 @@ End Function
 
 ' ************* DESTINY *************
 
+
+Public Sub GetDestinyPointsSpentAndMax(plngSpentBase As Long, plngSpentPDPBonus As Long, plngMaxBase As Long, plngMaxPDPBonus As Long)
+    Dim lngDestiny As Long
+    Dim lngBuildDestiny As Long
+    Dim lngAbility As Long
+    Dim lngPoints As Long
+    
+    plngSpentBase = 0
+    plngSpentPDPBonus = 0
+    'set our max spend
+    plngMaxBase = EpicLevels() * 4
+    plngMaxPDPBonus = build.PermDestinyPoints
+    
+    'evaluate each Destiny
+    For lngBuildDestiny = 1 To build.Destinies
+        With build.Destiny(lngBuildDestiny)
+            lngDestiny = SeekTree(.TreeName, peDestiny)
+            For lngAbility = 1 To .Abilities
+                With .Ability(lngAbility)
+                    If .Ability <> 0 Then
+                        'Get our points spent on each ability in a tree
+                        lngPoints = GetPoints(db.Destiny(lngDestiny).Tier(.Tier).Ability(.Ability), .Selector, .Rank)
+                        'Pull from appropriate bonus pool first
+                        If plngSpentPDPBonus < plngMaxPDPBonus Then
+                            plngSpentPDPBonus = plngSpentPDPBonus + lngPoints
+                            If plngSpentPDPBonus > plngMaxPDPBonus Then
+                                'if we're more than PDP Max
+                                plngSpentBase = plngSpentPDPBonus - plngMaxPDPBonus
+                                plngSpentPDPBonus = plngMaxPDPBonus
+                            End If
+                        Else
+                            plngSpentBase = plngSpentBase + lngPoints
+                        End If
+                    End If
+                End With
+            Next
+        End With
+    Next
+End Sub
+
+
 'Fate points are now permanent
 
+
 Public Function MaxFatePoints() As Long
+    Dim iErr As Long
+    iErr = 1 / 0 ''throw an error
     Select Case build.MaxLevels
         Case 20 To 28: MaxFatePoints = 32
         Case 29: MaxFatePoints = 34
@@ -2336,7 +2394,9 @@ Public Function GetSpentInTree(ptypTree As TreeType, ptypBuildTree As BuildTreeT
     ReDim plngSpent(6)
     ' Total up points spent per tier
     With ptypBuildTree
-        If .TreeType = tseDestiny Then GetSpentInTree = True   'TODO DESTINY fix this
+        If .TreeType = tseDestiny Then
+            GetSpentInTree = True   'TODO DESTINY fix this
+        End If
         For i = 1 To .Abilities
             With .Ability(i)
                 If .Tier = 0 And .Ability = 1 Then GetSpentInTree = True
@@ -2344,7 +2404,7 @@ Public Function GetSpentInTree(ptypTree As TreeType, ptypBuildTree As BuildTreeT
                     lngPoints = GetPoints(ptypTree.Tier(.Tier).Ability(.Ability), .Selector, .Rank)
                     lngTier = GetTier(.Tier, .Ability, ptypTree.TreeType)
                     For j = lngTier To 6
-                        plngSpent(j) = plngSpent(j) + lngPoints
+                        plngSpent(j) = plngSpent(j) + lngPoints  'This seems to be a cumulative spend
                     Next
                     plngTotal = plngTotal + lngPoints
                 End If

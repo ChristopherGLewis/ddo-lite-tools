@@ -420,9 +420,14 @@ Public Type BuildType6
     UniversalAP As Byte
     Destiny() As BuildTreeType
     Destinies As Byte
-    DestinyAP As Byte
-    DestinyTome As Byte
     DestinyTier5 As String
+    DestinyAP As Byte
+    PermDestinyPoints As Byte
+'PDP are strange.  the min for PDP is 12 (3 fp per (free)destiny unlock *12 destiny)/3 = 12 PDP)
+'There are also still the FatePoint tomes (no nonger tracked) that can get you 3fp/1PDP
+'You also get 3 FP/EPL.  This currently gives us a max PDP 18
+'55: 36 from unlocking trees + 16 from Epic Past Lives + 3 from a Tome of Fate
+
 End Type
 
 Public Sub Version1To2(ptypBuild1 As BuildType1, ptypBuild2 As BuildType2)
@@ -750,8 +755,8 @@ Public Sub Version5To6(ptyp5 As BuildType5, ptyp6 As BuildType6)
         .Tier5 = ptyp5.Tier5
         .RacialAP = 0
         .UniversalAP = 0
-        .DestinyTome = 0
-        .DestinyAP = 0
+        .DestinyAP = 0     'Total spend in Destiny
         .DestinyTier5 = 0
+        .PermDestinyPoints = 0
     End With
 End Sub

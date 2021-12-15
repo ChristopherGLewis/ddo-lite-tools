@@ -5,6 +5,8 @@ Option Explicit
 
 Public db As DatabaseType
 
+'This is kinda screwy, used for GrantedFeats and Enh/Des Reqs.
+'TODO make Enh/Des Reqs a separate TYPE
 Public Type PointerType
     Raw As String
     Style As PointerEnum  'NOTE This is NOT tree type
@@ -295,3 +297,15 @@ Public Type DatabaseType
     EpicGrantedFeat() As EpicGrantedFeatType
     Loaded As Boolean
 End Type
+
+Public Type ReqAbilityType
+    TreeID As Long  'Both Destiny and Enhancement
+    Tier As String
+    TierID As Long
+    TreeName As String
+    AbilityID As Long
+    AbilityName As String
+    SelectorID As Long
+    SelectorName As String
+End Type
+

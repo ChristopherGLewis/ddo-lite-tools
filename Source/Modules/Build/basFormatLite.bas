@@ -1102,8 +1102,10 @@ End Sub
 
 Private Sub LoadDestinyText()
     Select Case mstrField
-        Case "destinytome"
-            build.DestinyTome = val(mstrValue)
+        Case "destinyap"
+            build.DestinyAP = val(mstrValue)
+        Case "permdestinypoints"
+            build.PermDestinyPoints = val(mstrValue)
         Case "destiny"
             build.Destinies = build.Destinies + 1
             ReDim Preserve build.Destiny(1 To build.Destinies)

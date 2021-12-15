@@ -11,12 +11,13 @@ Public Type TomesType
     Stat As TomeScheduleType
     Skill As TomeScheduleType
     RacialAPMax As Long
-    FateMax As Long
     PowerMax As Long
     RRMax As Long
     UniversalAPMax As Long
-    DestinyMax As Long
-    DestinyAPMax As Long
+    DestinyTomeMax As Long
+    PermDestinyPointMin As Long  '12  https://ddowiki.com/page/Update_51_Release_Notes#Fate_Points
+    PermDestinyPointMax As Long  '18
+    'FatePointTomeMax As Long
 End Type
 
 Public tomes As TomesType
@@ -43,11 +44,12 @@ Public Sub LoadTomeData()
                     Case "stat": ParseTomeSchedule .Stat, strToken(1)
                     Case "skill": ParseTomeSchedule .Skill, strToken(1)
                     Case "racialapmax": SetTomeMax .RacialAPMax, strToken(1)
-                    Case "fatemax": SetTomeMax .FateMax, strToken(1)
                     Case "powermax": SetTomeMax .PowerMax, strToken(1)
                     Case "prr/mrrmax": SetTomeMax .RRMax, strToken(1)
                     Case "universalapmax": SetTomeMax .UniversalAPMax, strToken(1)
-                    Case "destinymax": SetTomeMax .DestinyMax, strToken(1)
+                    Case "permdestinypointmax": SetTomeMax .PermDestinyPointMax, strToken(1)
+                    Case "permdestinypointmin": SetTomeMax .PermDestinyPointMin, strToken(1)
+                    'Case "fatepointtomemax": SetTomeMax .FatePointTomeMax, strToken(1)
                 End Select
             End With
         End If
@@ -62,12 +64,12 @@ Private Sub SetDefaults()
     With tomes
         ParseTomeSchedule .Stat, "8, 1, 1, 3, 7, 11, 15, 19, 22"
         ParseTomeSchedule .Skill, "5, 1, 1, 3, 7, 11"
-        .FateMax = 3
         .RacialAPMax = 2
         .PowerMax = 4
         .RRMax = 4
         .UniversalAPMax = 1
-        .DestinyMax = 1
+        .PermDestinyPointMax = 18
+        '.FatePointTomeMax = 1
     End With
 End Sub
 

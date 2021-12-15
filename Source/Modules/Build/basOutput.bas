@@ -147,8 +147,8 @@ Private msngCourierSize As Single
 ' Stack structure for handling nested [List]s
 Private mtypList As ListType
 
-' Max Destiny. 24 + Tomes
-Const MaxDestinyAP = 24
+' Max Destiny. 24 + PDP
+Const MaxDestinyAP = 40  '4 per epic level
 
 
 Public Function GenerateOutput(penOutput As OutputEnum) As String
@@ -168,7 +168,12 @@ Public Function GenerateOutput(penOutput As OutputEnum) As String
     If menOutput <> oeExport Then menRemember = menOutput
     If menOutput = oeAll Then xp.Mouse = msSystemWait
     mblnDisplay = (menOutput <> oeExport)
-    If cfg.OutputReddit = True And mblnDisplay = False Then mblnReddit = True Else mblnReddit = False
+    'Check for Reddit display
+    If cfg.OutputReddit = True And mblnDisplay = False Then
+        mblnReddit = True
+    Else
+        mblnReddit = False
+    End If
     If mblnReddit Then mlngSectionLines = 1 Else mlngSectionLines = 2
     If mblnDisplay And frmMain.WindowState = vbMinimized Then
         cfg.OutputRefresh = True
@@ -1714,6 +1719,7 @@ Private Function ValidTree(ptypTree As TreeType, ptypBuildTree As BuildTreeType,
     Dim i As Long
     
     plngPoints = 0
+    
     GetSpentInTree ptypTree, ptypBuildTree, lngSpent, lngTotal
     For i = 1 To ptypBuildTree.Abilities
         With ptypBuildTree.Ability(i)
@@ -2076,29 +2082,36 @@ Private Sub OutputDestiny()
     Dim lngDestiny As Long
     Dim lngTier As Long
     Dim strDisplay As String
-    Dim lngPoints As Long
+    Dim lngSpentPoints As Long  'Max Dest points available
     Dim enValid As ValidEnum
     Dim i As Long
     Dim lngI As Long
    
-    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeDestiny) Then Exit Sub
+    'Check our display or if our config says no destiny
+    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeDestiny) Then
+        Exit Sub
+    End If
     If mblnReddit Then
         OutputDestinyReddit
         Exit Sub
     End If
-    enValid = ValidDestiny(lngPoints)
+    
+    'Get our points spent
+    enValid = ValidDestiny(lngSpentPoints)
     Select Case enValid
         Case veSkip, veEmpty: Exit Sub
     End Select
-    If lngPoints = 0 Then
+    'See if any Destiny AP's spent
+    If lngSpentPoints = 0 Then
         OutputText "Destinies", , , , , True
     Else
         ' Title
         OutputText "Destinies", False, , , , True
-        If lngPoints = (MaxDestinyAP + build.DestinyTome) Then
-            strDisplay = " (" & (MaxDestinyAP + build.DestinyTome) & " AP)"
+        'Points
+        If lngSpentPoints = (MaxDestinyAP + build.PermDestinyPoints) Then
+            strDisplay = " (" & lngSpentPoints & " AP)"
         Else
-            strDisplay = " (" & lngPoints & " of " & (MaxDestinyAP + build.DestinyTome) & " AP)"
+            strDisplay = " (" & lngSpentPoints & " of " & (MaxDestinyAP + build.PermDestinyPoints) & " AP)"
         End If
         OutputText strDisplay, False
         ErrorFlag (enValid = veErrors)
@@ -2142,22 +2155,29 @@ Private Sub OutputDestinyReddit()
     Dim lngDestiny As Long
     Dim lngTier As Long
     Dim strDisplay As String
-    Dim lngPoints As Long
+    Dim lngSpentPoints As Long  'Max Dest points available
     Dim enValid As ValidEnum
     Dim j As Long
     Dim i As Long
     
-    enValid = ValidDestiny(lngPoints)
+    'Get our points spent
+    enValid = ValidDestiny(lngSpentPoints)
     Select Case enValid
         Case veSkip, veEmpty: Exit Sub
     End Select
     If enValid = veErrors Then strDisplay = "(Errors)"
     OutputTitle "Destinies", , strDisplay
     BlankLine
-    If lngPoints Then
+    'See if any Destiny AP's spent
+    If build.DestinyAP Then
         ' Destiny
         For j = 1 To build.Destinies
-            If lngPoints = 24 Then strDisplay = " (24 AP)" Else strDisplay = " (" & lngPoints & " of 24 AP)"
+            'Points
+            If lngSpentPoints = (MaxDestinyAP + build.PermDestinyPoints) Then
+                strDisplay = " (" & lngSpentPoints & " AP)"
+            Else
+                strDisplay = " (" & lngSpentPoints & " of " & (MaxDestinyAP + build.PermDestinyPoints) & " AP)"
+            End If
             lngDestiny = SeekTree(build.Destiny(j).TreeName, peDestiny)
             OutputText build.Destiny(j).TreeName & strDisplay
             BlankLine
@@ -2213,8 +2233,8 @@ Private Function ValidDestiny(plngPoints As Long) As ValidEnum
                     'this is now tome driven
                     Select Case plngPoints
                         Case 0: enValid = veEmpty
-                        Case 1 To (MaxDestinyAP + build.DestinyTome - 1): enValid = veIncomplete
-                        Case (MaxDestinyAP + build.DestinyTome): enValid = veComplete
+                        Case 1 To (MaxDestinyAP + build.PermDestinyPoints - 1): enValid = veIncomplete
+                        Case (MaxDestinyAP + build.PermDestinyPoints): enValid = veComplete
                         Case Else: enValid = veErrors
                     End Select
                 End If

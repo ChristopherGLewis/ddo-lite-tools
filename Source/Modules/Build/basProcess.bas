@@ -314,7 +314,7 @@ Private Sub ProcessTreeSelectorParent(ptypTree As TreeType, ptypPointer As Point
         With ptypPointer
             .Style = log.Style
             .Tree = log.Tree
-            .Tier = Val(Left$(strRaw, lngPos - 1))
+            .Tier = val(Left$(strRaw, lngPos - 1))
             strRaw = Mid$(strRaw, lngPos + 2)
             With ptypTree.Tier(.Tier)
                 For i = 1 To .Abilities
@@ -391,37 +391,45 @@ Private Sub ProcessPointer(ptypPointer As PointerType)
     strField = Left$(ptypPointer.Raw, lngPos - 1)
     strData = Mid$(ptypPointer.Raw, lngPos + 2)
     ProcessRank ptypPointer, strData
+        
+    'Requirements can be FEAT
     If strField = "Feat" Then
         ProcessPointerFeat ptypPointer
         Exit Sub
     End If
+    
+    'or TIER
     ' Get tier from rightmost word in strField
-    lngPos = InStr(strField, "Tier ")
-    strValue = Mid$(strField, lngPos + 5)
-    ptypPointer.Tier = Val(strValue)
-    If lngPos = 1 Then
-        ptypPointer.Tree = log.Tree
-        ptypPointer.Style = log.Style
-    Else
-        strField = Left$(strField, lngPos - 2)
-        ' Pointing to a foreign tree
-        ptypPointer.Tree = SeekTree(strField, ptypPointer.Style)
-        If ptypPointer.Tree = 0 Then
-            LogError
-            Exit Sub
+    If strField = "Tier" Then
+        lngPos = InStr(strField, "Tier ")
+        strValue = Mid$(strField, lngPos + 5)  'Tier Number
+        ptypPointer.Tier = val(strValue)
+        If lngPos = 1 Then
+            ptypPointer.Tree = log.Tree
+            ptypPointer.Style = log.Style
+        Else
+            strField = Left$(strField, lngPos - 2)
+            ' Pointing to a foreign tree
+            ptypPointer.Tree = SeekTree(strField, ptypPointer.Style)
+            If ptypPointer.Tree = 0 Then
+                LogError
+                Exit Sub
+            End If
+        End If
+        If ptypPointer.Style = peEnhancement Then
+            FindAbility db.Tree(ptypPointer.Tree), ptypPointer, strData
+        Else
+            FindAbility db.Destiny(ptypPointer.Tree), ptypPointer, strData
         End If
     End If
-    If ptypPointer.Style = peEnhancement Then
-        FindAbility db.Tree(ptypPointer.Tree), ptypPointer, strData
-    Else
-        FindAbility db.Destiny(ptypPointer.Tree), ptypPointer, strData
+    If strField = "Class" Then
     End If
 End Sub
 
 Private Sub ProcessRank(ptypPointer As PointerType, pstrData As String)
     If Len(pstrData) < 8 Then Exit Sub
     If Mid$(pstrData, Len(pstrData) - 6, 6) <> " Rank " Then Exit Sub
-    ptypPointer.Rank = Val(Right$(pstrData, 1))
+    ptypPointer.Rank = val(Right$(pstrData, 1))
     pstrData = Left$(pstrData, Len(pstrData) - 7)
 End Sub
 
