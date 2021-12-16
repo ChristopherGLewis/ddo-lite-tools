@@ -13,7 +13,7 @@ Public Enum LoadErrorEnum
 End Enum
 
 Private Const Signature As Long = 735346
-Private Const Version As Byte = 4
+Private Const Version As Byte = buildVersion  'New version
 
 Private Const OpenFilter As String = "Build Files|*.build;*.bld|Text Build Files (*.build)|*.build|Binary Build Files (*.bld)|*.bld"
 Private Const LiteExt As String = "*.build;*.bld"
@@ -620,7 +620,11 @@ LoadBuildClose:
     Exit Function
     
 LoadBuildError:
-    If pblnSilent Then LoadBuild = Err.Number Else MsgBox Err.Description, vbExclamation, "Error #" & Err.Number
+    If pblnSilent Then
+        LoadBuild = Err.Number
+    Else
+        MsgBox Err.Description, vbExclamation, "Error #" & Err.Number
+    End If
     Resume LoadBuildClose
 End Function
 

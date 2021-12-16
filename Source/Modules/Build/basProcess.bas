@@ -6,21 +6,21 @@ Option Explicit
 
 
 Public Sub ProcessData()
-    ProcessRacialTrees
-    ProcessClassTrees
+    ValidateRacialTrees
+    ValidateClassTrees
     ProcessFeatSelectors
     ProcessAbilitySelectors
     ProcessPointers
     ProcessSpells
     ProcessTemplates
     ProcessFeatMap
-    ProcessTreeLockouts
+    ValidateTreeLockouts
 End Sub
 
 
 ' ************* SPELLS *************
 
-
+'Add Class Mandatory, Free Spells and Pact spells
 Private Sub ProcessSpells()
     Dim i As Long
     
@@ -60,6 +60,7 @@ End Sub
 
 ' ************* FEATMAP *************
 
+'Proces feat map - this is a feat old to new mapping
 Private Sub ProcessFeatMap()
     Dim lngPos As Long
     Dim strFeat As String
@@ -94,7 +95,7 @@ End Sub
 
 ' ************* TEMPLATES *************
 
-
+'Process templates
 Public Sub ProcessTemplates()
     Dim lngPoints As Long
     Dim enStat As StatEnum
@@ -121,8 +122,9 @@ End Sub
 
 ' ************* TREES *************
 
-
-Private Sub ProcessRacialTrees()
+'This validates that each race has a tree,
+' and validates that each racetree has a race
+Private Sub ValidateRacialTrees()
     Dim lngTree As Long
     
     log.Activity = actProcessRacialTrees
@@ -147,7 +149,8 @@ Private Sub ProcessRacialTrees()
     Next
 End Sub
 
-Private Sub ProcessClassTrees()
+'This validates that each Class has a tree
+Private Sub ValidateClassTrees()
     Dim lngTree As Long
     
     log.Activity = actProcessClassTrees
@@ -163,7 +166,8 @@ Private Sub ProcessClassTrees()
     Next
 End Sub
 
-Private Sub ProcessTreeLockouts()
+'This validates each lockout is a valid tree
+Private Sub ValidateTreeLockouts()
     Dim lngTree As Long
     Dim i As Long
     
@@ -184,8 +188,6 @@ End Sub
 
 
 ' ************* SELECTORS *************
-
-
 Private Sub ProcessFeatSelectors()
     Dim lngSelector As Long
     Dim lngParent As Long
@@ -314,7 +316,7 @@ Private Sub ProcessTreeSelectorParent(ptypTree As TreeType, ptypPointer As Point
         With ptypPointer
             .Style = log.Style
             .Tree = log.Tree
-            .Tier = Val(Left$(strRaw, lngPos - 1))
+            .Tier = val(Left$(strRaw, lngPos - 1))
             strRaw = Mid$(strRaw, lngPos + 2)
             With ptypTree.Tier(.Tier)
                 For i = 1 To .Abilities
@@ -332,8 +334,6 @@ End Sub
 
 
 ' ************* POINTERS *************
-
-
 Private Sub ProcessPointers()
     Dim i As Long
     
@@ -365,13 +365,13 @@ Private Sub ProcessPointers()
     log.Activity = actProcessEnhancementReqs
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
-        ProcessTree db.Tree(log.Tree)
+        ProcessTree db.Tree(log.Tree), peEnhancement
     Next
     ' Destinies
     log.Activity = actProcessDestinyReqs
     log.Style = peDestiny
     For log.Tree = 1 To db.Destinies
-        ProcessTree db.Destiny(log.Tree)
+        ProcessTree db.Destiny(log.Tree), peDestiny
     Next
 End Sub
 
@@ -386,64 +386,102 @@ Private Sub ProcessPointer(ptypPointer As PointerType)
     If Len(ptypPointer.Raw) = 0 Or ptypPointer.Ability <> 0 Or ptypPointer.Feat <> 0 Then Exit Sub
     log.HasError = False
     log.ptr = ptypPointer
+    
     ' Split on first ":" strField = Left, strData = Right
+    
+    
     lngPos = InStr(ptypPointer.Raw, ": ")
     strField = Left$(ptypPointer.Raw, lngPos - 1)
     strData = Mid$(ptypPointer.Raw, lngPos + 2)
     ProcessRank ptypPointer, strData
+        
+    'Requirements can be FEAT
     If strField = "Feat" Then
         ProcessPointerFeat ptypPointer
         Exit Sub
     End If
+    
+    'or TIER
     ' Get tier from rightmost word in strField
-    lngPos = InStr(strField, "Tier ")
-    strValue = Mid$(strField, lngPos + 5)
-    ptypPointer.Tier = Val(strValue)
-    If lngPos = 1 Then
-        ptypPointer.Tree = log.Tree
-        ptypPointer.Style = log.Style
-    Else
-        strField = Left$(strField, lngPos - 2)
-        ' Pointing to a foreign tree
-        ptypPointer.Tree = SeekTree(strField, ptypPointer.Style)
-        If ptypPointer.Tree = 0 Then
-            LogError
-            Exit Sub
+    If strField = "Tier" Then
+        lngPos = InStr(strField, "Tier ")
+        strValue = Mid$(strField, lngPos + 5)  'Tier Number
+        ptypPointer.Tier = val(strValue)
+        If lngPos = 1 Then
+            ptypPointer.Tree = log.Tree
+            ptypPointer.Style = log.Style
+        Else
+            strField = Left$(strField, lngPos - 2)
+            ' Pointing to a foreign tree
+            ptypPointer.Tree = SeekTree(strField, ptypPointer.Style)
+            If ptypPointer.Tree = 0 Then
+                LogError
+                Exit Sub
+            End If
+        End If
+        If ptypPointer.Style = peEnhancement Then
+            FindAbility db.Tree(ptypPointer.Tree), ptypPointer, strData
+        Else
+            FindAbility db.Destiny(ptypPointer.Tree), ptypPointer, strData
         End If
     End If
-    If ptypPointer.Style = peEnhancement Then
-        FindAbility db.Tree(ptypPointer.Tree), ptypPointer, strData
-    Else
-        FindAbility db.Destiny(ptypPointer.Tree), ptypPointer, strData
+    If strField = "Class" Then
     End If
 End Sub
 
 Private Sub ProcessRank(ptypPointer As PointerType, pstrData As String)
     If Len(pstrData) < 8 Then Exit Sub
     If Mid$(pstrData, Len(pstrData) - 6, 6) <> " Rank " Then Exit Sub
-    ptypPointer.Rank = Val(Right$(pstrData, 1))
+    ptypPointer.Rank = val(Right$(pstrData, 1))
     pstrData = Left$(pstrData, Len(pstrData) - 7)
 End Sub
 
-Private Sub ProcessTree(ptypTree As TreeType)
-    Dim lngStart As Long
-    Dim i As Long
+'Processes a enh/dest tree
+Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
+    Dim i, j As Long
+    Dim enReq As Long
+    Dim lngReq As Long
     
-    If log.Style = peDestiny Then lngStart = 1
-    With ptypTree
-        For log.Tier = lngStart To .Tiers
+    With ptypTree   'db.Destiny or db.Tree
+        'Look at each tier in tree
+        For log.Tier = 0 To .Tiers
+            'Look at each ability in tier
             For log.Ability = 1 To .Tier(log.Tier).Abilities
-                With .Tier(log.Tier).Ability(log.Ability)
+                With .Tier(log.Tier).Ability(log.Ability) 'db.t/d().tier().Ability
                     ProcessPointer .Parent
                     For i = 1 To .Siblings
                         ProcessPointer .Sibling(i)
                     Next
+                    
+                    'Abilities can have requirements
+                    For enReq = rgeAll To rgeNone
+                        For lngReq = 1 To .Req(enReq).Reqs
+                            '.Req(enReq).Req(lngReq) is a PointerType
+                            'Parse Raw in to ReqListType
+                            ParseReqLine .Req(enReq).Req(lngReq).Raw, .Req(enReq).Req(lngReq), ptypTree.TreeID, ptypTree.TreeType
+                        Next
+                    Next
+                    
+                    'Abilities can have Selectors that haverequirements
+                    For j = 1 To .Selectors
+                        For enReq = rgeAll To rgeNone
+                            For lngReq = 1 To .Selector(j).Req(enReq).Reqs
+                                '.Req(enReq).Req(lngReq) is a PointerType
+                                'Parse Raw in to ReqListType
+                                ParseReqLine .Selector(j).Req(enReq).Req(lngReq).Raw, .Selector(j).Req(enReq).Req(lngReq), ptypTree.TreeID, ptypTree.TreeType
+                            Next
+                        Next
+                    Next
+                    
                     If .RankReqs Then
                         For log.Rank = 2 To 3
                             ProcessReqs .Rank(log.Rank).Req
                         Next
                     End If
-                    ProcessReqs .Req
+    
+                    'ParseReqLine ptypTree.Raw, ptypTree.TreeType, ptypTree.TreeType
+                    
+                    'ProcessReqs .Req  'Process Requirements
                     For log.Selector = 1 To .Selectors
                         ProcessReqs .Selector(log.Selector).Req
                         If .Selector(log.Selector).RankReqs Then
@@ -463,6 +501,7 @@ Private Sub ProcessReqs(ptypReqList() As ReqListType)
     For log.ReqGroup = rgeAll To rgeNone
         With ptypReqList(log.ReqGroup)
             For log.Req = 1 To .Reqs
+                'Process requirement as a pointer object
                 ProcessPointer .Req(log.Req)
             Next
         End With
@@ -562,3 +601,161 @@ Private Sub FindAbility(ptypTree As TreeType, ptypPointer As PointerType, pstrRa
         ptypPointer.Selector = i
     End If
 End Sub
+
+
+' ************* Requirement Parsing *************
+
+'Parse our Requirements line to populate our pointer type with Tier/Ability/Selector + ID's
+Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Long, tseStyle As TreeStyleEnum) As Boolean
+    Dim Req As ReqAbilityType
+    Dim strReqParse() As String
+    Dim strReqParse2() As String
+    Dim strTree As String
+    Dim strFeet As String
+    
+    ParseReqLine = False 'Default to false
+    
+    If InStr(strRaw, ":") = 0 Then Exit Function
+    
+    'Requirements can be in the form
+    'tier 0: <ability>  - Same Tree
+    '<tree> tier 1: <ability> - different tree
+    'Feat: <feat> - feat
+    'each value after the : can be
+    '  <ability>
+    '  <ability> : Selector
+    
+    
+    'Determine if we're feat based or Tree based
+    If InStr(LCase(strRaw), "feat:") Then
+        'Feat based: 'Feat: Favored Enemy: Goblinoid'
+        strReqParse = Split(strRaw, ":")
+        If (InStr(strReqParse(1), ":") > 0) Then
+            strReqParse2 = Split(strReqParse(1), ":")
+            Req.FeatName = strReqParse2(0)
+            Req.FeatID = SeekFeat(Req.FeatName)
+            Req.SelectorName = strReqParse2(1)
+            Req.SelectorID = FindSelectorIdInFeat(Req.FeatID, Req.SelectorName)
+        Else
+            Req.FeatName = strReqParse(1)
+            Req.FeatID = SeekFeat(Req.FeatName)
+        End If
+        'Copy to our req pointer
+        pReq.Feat = Req.FeatID
+        pReq.Selector = Req.SelectorID
+    Else '(tree based)
+        'Get our fields
+        Req.TreeID = idTree
+        Req.TreeStype = tseStyle
+        If tseStyle = tseDestiny Then
+            Req.TreeName = db.Destiny(idTree).TreeName
+        Else
+            Req.TreeName = db.Tree(idTree).TreeName
+        End If
+        'strReqParse(0) can either be 'Tier #' or '<tree> tier #"
+        strReqParse = Split(strRaw, ":")
+        If LCase(Left(Trim(strReqParse(0)), 4)) = "tier" Then
+            'Current tree
+            Req.TreeID = idTree
+            If tseStyle = tseDestiny Then
+                Req.TreeName = db.Destiny(idTree).TreeName
+            Else
+                Req.TreeName = db.Tree(idTree).TreeName
+            End If
+            Req.Tier = Trim(strReqParse(0))
+            Req.TierID = Split(strReqParse(0), " ")(1)
+        Else
+            'Different tree  'ONLY IN Enh
+            strReqParse2 = Split(strReqParse(0), "Tier")
+            If tseStyle = tseDestiny Then
+                'ERROR!!!
+                Req.TreeName = db.Destiny(idTree).TreeName
+                Req.TreeID = SeekTree(Req.TreeName, peDestiny)
+            Else
+                Req.TreeName = Trim(Left(strReqParse(0), InStr(strReqParse(0), "Tier") - 1))
+                Req.TreeID = SeekTree(Req.TreeName, peEnhancement)
+            End If
+            
+            Req.Tier = Mid(strReqParse(0), InStr(strReqParse(0), "Tier"))
+            Req.TierID = Split(Req.Tier, " ")(1)
+        End If
+        Req.AbilityName = Trim(strReqParse(1))
+        If tseStyle = tseDestiny Then
+            Req.AbilityID = FindAbilityIdInTree(Req.TierID, Req.AbilityName, db.Destiny(Req.TreeID))
+        Else
+            Req.AbilityID = FindAbilityIdInTree(Req.TierID, Req.AbilityName, db.Tree(Req.TreeID))
+        End If
+        If UBound(strReqParse) > 1 Then
+             Req.SelectorName = Trim(strReqParse(2))
+             'Find our selector name
+            If tseStyle = tseDestiny Then
+                Req.SelectorID = FindSelectorIdInAbility(Req.TierID, Req.AbilityID, Req.SelectorName, db.Destiny(Req.TreeID))
+            Else
+                Req.SelectorID = FindSelectorIdInAbility(Req.TierID, Req.AbilityID, Req.SelectorName, db.Tree(Req.TreeID))
+            End If
+        End If
+        'Copy to our req pointer
+        pReq.Tree = Req.TreeID
+        Select Case Req.TreeStype
+            Case tseDestiny
+                pReq.Style = Req.TreeStype
+            Case Else
+                pReq.Style = Req.TreeStype
+        End Select
+        pReq.Tier = Req.TierID
+        pReq.Ability = Req.AbilityID
+        pReq.Selector = Req.SelectorID
+    End If
+    ParseReqLine = True
+End Function
+
+
+''These probably don't have to be WIP trees anymore and can work off the db.Tree/db.Destiny
+
+'Find an AbilityID in current tree in iTierID
+Public Function FindAbilityIdInTree(iTierID As Long, strAbilityName As String, ptypTree As TreeType) As Long
+    Dim i As Long
+    'Default to not found
+    FindAbilityIdInTree = -1
+    For i = 1 To ptypTree.Tier(iTierID).Abilities
+      
+        If strAbilityName = ptypTree.Tier(iTierID).Ability(i).AbilityName Then
+            'Found
+            FindAbilityIdInTree = i
+            Exit Function
+        End If
+    Next
+    'TODO Log an error here...
+End Function
+
+'Find a SelectorID in current tree in iTierID/iAbilityID
+Public Function FindSelectorIdInAbility(iTierID As Long, iAbilityID As Long, strSelectorName As String, ptypTree As TreeType) As Long
+    Dim i As Long
+    'Default to not found
+    FindSelectorIdInAbility = -1
+    For i = 1 To ptypTree.Tier(iTierID).Ability(iAbilityID).Selectors
+        If strSelectorName = ptypTree.Tier(iTierID).Ability(iAbilityID).Selector(i).SelectorName Then
+            'Found
+            FindSelectorIdInAbility = i
+            Exit Function
+        End If
+    Next
+    'TODO Log an error here...
+End Function
+
+'Find a SelectorID in current tree in iTierID/iAbilityID
+Public Function FindSelectorIdInFeat(iFeatID As Long, strSelectorName As String) As Long
+    Dim i As Long
+    'Default to not found
+    FindSelectorIdInFeat = -1
+    'Search all feats
+    For i = 1 To db.Feat(iFeatID).Selectors
+        If strSelectorName = db.Feat(iFeatID).Selector(i).SelectorName Then
+            'Found
+            FindSelectorIdInFeat = i
+            Exit Function
+        End If
+    Next
+    'TODO Log an error here...
+End Function
+

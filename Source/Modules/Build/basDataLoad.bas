@@ -867,6 +867,9 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = "Feat: " & strList(i)
                                 .Req(i + 1).Style = peFeat
@@ -991,6 +994,9 @@ Private Sub LoadFeatSelector(ptypFeat As FeatType, ByVal pstrRaw As String)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To lngListMax + 1)
+                            ' NOTE - load RAW & Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = "Feat: " & strList(i)
                                 .Req(i + 1).Style = peFeat
@@ -1223,10 +1229,11 @@ Private Sub LoadDestinies()
     ReDim db.Destiny(32)
     strRaw = xp.File.LoadToString(strFile)
     strDestiny = Split(strRaw, "DestinyName: ")
+    'Load each destiny
     For i = 1 To UBound(strDestiny)
         If InStr(strDestiny(i), "Type: ") Then  'Split on type, this splits by destiny (ish)
             typNew = typBlank
-            typNew.TreeID = db.Destinies + 1 ' Set our future treeID
+            typNew.TreeID = db.Destinies + 1 ' Set our future treeID- This locks our txt to alphabetical
             If LoadTree(strDestiny(i), typNew) Then
                 db.Destinies = db.Destinies + 1
                 db.Destiny(db.Destinies) = typNew
@@ -1245,6 +1252,7 @@ Private Sub LoadDestinies()
     End With
 End Sub
 
+'ptypeTree is typNew from LoadDestinies/LoadEnhancements  and contains shell of a new Destiny.Enhancement tree
 Private Function LoadTree(ByVal pstrRaw As String, ptypTree As TreeType) As Boolean
     Dim strAbility() As String
     Dim i As Long
@@ -1259,7 +1267,7 @@ Private Function LoadTree(ByVal pstrRaw As String, ptypTree As TreeType) As Bool
         Exit Function
     End If
     log.Tier = 0
-     ' Process abilities (1) +
+     ' Load each ability
     For i = 1 To UBound(strAbility)
         LoadAbility strAbility(i), ptypTree
     Next
@@ -1379,9 +1387,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
     Dim i As Long
     
     CleanText pstrRaw
-    strLine = Split(pstrRaw, vbNewLine)
-    strAbility = Trim$(strLine(0))
+    strLine = Split(pstrRaw, vbNewLine)  'Split this ablity by newline
+    strAbility = Trim$(strLine(0))  'Ability is (0)
     If Len(strAbility) = 0 Then Exit Sub
+    
+    'typNew is a new Ability.  Copy our information
     With typNew
         .AbilityName = strAbility
         .Abbreviation = strAbility
@@ -1393,7 +1403,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
 '        ReDim .Group(feFilters - 1)
 '        .Group(feAll) = True
         ReDim .Req(3)  'Three reqs All/One/None
-        ' Process lines
+        ' Process lines after the first.  Each line should be '<TOKEN>: Value'
         For lngLine = 1 To UBound(strLine)
             log.LoadLine = strLine(lngLine)
             If ParseLine(strLine(lngLine), strField, strItem, lngValue, strList, lngListMax) Then
@@ -1447,16 +1457,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf ptypTree.TreeType = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                    .Req(i + 1).Tree = -1 'TODO set this req to this tree id ???
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case "rank2all", "rank3all", "rank3none"
@@ -1472,15 +1477,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                                 With .Selector(s).Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                     .Reqs = lngListMax + 1
                                     ReDim .Req(1 To .Reqs)
+                                    ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                                    ' all its details on the PROCESS side after all Feats/Enh/Dest
+                                    ' are all loaded
                                     For i = 0 To lngListMax
                                         .Req(i + 1).Raw = strList(i)
-                                        If Left$(strList(i), 5) = "Feat:" Then
-                                            .Req(i + 1).Style = peFeat
-                                        ElseIf ptypTree.TreeType = tseDestiny Then
-                                            .Req(i + 1).Style = peDestiny
-                                        Else
-                                            .Req(i + 1).Style = peEnhancement
-                                        End If
                                     Next
                                 End With
                             Next
@@ -1492,19 +1493,16 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                 .Reqs = lngListMax + 1
                                 ReDim .Req(1 To .Reqs)
+                                ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                                ' all its details on the PROCESS side after all Feats/Enh/Dest
+                                ' are all loaded
                                 For i = 0 To lngListMax
                                     .Req(i + 1).Raw = strList(i)
-                                    If Left$(strList(i), 5) = "Feat:" Then
-                                        .Req(i + 1).Style = peFeat
-                                    ElseIf ptypTree.TreeType = tseDestiny Then
-                                        .Req(i + 1).Style = peDestiny
-                                    Else
-                                        .Req(i + 1).Style = peEnhancement
-                                    End If
                                 Next
                             End With
                         End If
 
+                    'Class requirements are not supported in TREEs
 '                    Case "class"
 '                        .Class(0) = True
 '                        For i = 0 To lngListMax
@@ -1549,7 +1547,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                         'parse selectorNames, ignoring (0) which is before the
                         'first selector
                         For i = 1 To UBound(strLine)
-                            LoadSelector typNew, strLine(i), ptypTree.TreeType
+                            LoadSelector typNew, strLine(i), ptypTree
                         Next
                         Exit For
                     Case Else
@@ -1585,7 +1583,7 @@ Private Function ValidTier(penType As TreeStyleEnum, plngTier As Long) As Boolea
     End Select
 End Function
 
-Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, penTreeStyle As TreeStyleEnum)
+Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, ptypTree As TreeType)
     Dim strLine() As String
     Dim lngLine As Long
     Dim strSelector As String
@@ -1625,15 +1623,11 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pe
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf penTreeStyle = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case "rank2all", "rank3all", "rank3none"
@@ -1643,15 +1637,11 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pe
                         With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf penTreeStyle = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case Else
@@ -1804,7 +1794,7 @@ Public Function SeekTree(pstrTreeName As String, penTreeStyle As PointerEnum) As
     If penTreeStyle = peDestiny Then
         lngFirst = 1
         lngLast = db.Destinies
-        Do While lngFirst <= lngLast
+        Do While lngFirst <= lngLast 'TODO Dest Search - only works when Dest are alphabetical
             lngMid = (lngFirst + lngLast) \ 2
             If db.Destiny(lngMid).TreeName < pstrTreeName Then
                 lngFirst = lngMid + 1
@@ -1818,7 +1808,7 @@ Public Function SeekTree(pstrTreeName As String, penTreeStyle As PointerEnum) As
     Else
         lngFirst = 1
         lngLast = db.Trees
-        Do While lngFirst <= lngLast
+        Do While lngFirst <= lngLast  'TODO Tree search - only works when trees are alphabetical
             lngMid = (lngFirst + lngLast) \ 2
             If db.Tree(lngMid).TreeName < pstrTreeName Then
                 lngFirst = lngMid + 1
@@ -1956,8 +1946,6 @@ End Function
 
 
 ' ************* GENERAL *************
-
-
 Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrItem As String, plngValue As Long, pstrList() As String, plngListMax As Long) As Boolean
     Dim lngPos As Long
     Dim strValue As String
@@ -2013,6 +2001,7 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
     pstrList(0) = pstrLine
 End Function
 
+'Parse class & level from string (1-20 only)
 Private Function ParseClassLevel(pstrRaw As String, penClass As ClassEnum, plngLevel As Long) As Boolean
     Dim lngPos As Long
     
@@ -2023,3 +2012,4 @@ Private Function ParseClassLevel(pstrRaw As String, penClass As ClassEnum, plngL
     plngLevel = val(Mid$(pstrRaw, lngPos + 1))
     ParseClassLevel = (plngLevel >= 1 And plngLevel <= 20)
 End Function
+

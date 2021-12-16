@@ -133,7 +133,7 @@ Begin VB.Form frmDestiny2
          Caption         =   "Cost: 2 AP per rank"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   8040
+         Left            =   8160
          TabIndex        =   23
          Top             =   6540
          Visible         =   0   'False
@@ -146,7 +146,7 @@ Begin VB.Form frmDestiny2
          Caption         =   "Ranks: 3"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   6960
+         Left            =   7200
          TabIndex        =   22
          Top             =   6540
          Visible         =   0   'False
@@ -159,12 +159,12 @@ Begin VB.Form frmDestiny2
          BackColor       =   &H80000005&
          Caption         =   "12 AP spent in tree"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   10080
+         Height          =   210
+         Left            =   10200
          TabIndex        =   24
          Top             =   6540
          Visible         =   0   'False
-         Width           =   1704
+         Width           =   1710
       End
       Begin VB.Label lblTree 
          Appearance      =   0  'Flat
@@ -187,7 +187,7 @@ Begin VB.Form frmDestiny2
          Caption         =   "Spent in Tree: 24 AP"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   4560
+         Left            =   4320
          TabIndex        =   9
          Top             =   6540
          Visible         =   0   'False
@@ -288,17 +288,17 @@ Begin VB.Form frmDestiny2
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   2352
+         Height          =   2595
          Left            =   5800
          TabIndex        =   26
          Top             =   3780
          Width           =   5000
-         Begin CharacterBuilderLite.userSpinner usrspnDestinyAP 
+         Begin CharacterBuilderLite.userSpinner usrspnPDP 
             Height          =   300
             Left            =   540
             TabIndex        =   27
-            Top             =   480
-            Width           =   972
+            Top             =   360
+            Width           =   975
             _ExtentX        =   1720
             _ExtentY        =   529
             Min             =   0
@@ -311,49 +311,88 @@ Begin VB.Form frmDestiny2
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
          End
-         Begin VB.Label lblDestinyAP 
+         Begin VB.Label lblPDPhelp 
             Appearance      =   0  'Flat
             AutoSize        =   -1  'True
             BackColor       =   &H80000005&
-            Caption         =   "Destiny AP"
+            Caption         =   "- You get 36 FP's for unlocking all Destiny Trees"
+            ForeColor       =   &H80000008&
+            Height          =   210
+            Index           =   4
+            Left            =   360
+            TabIndex        =   33
+            Top             =   1920
+            Width           =   4470
+         End
+         Begin VB.Label lblPDPhelp 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "- Fate/Destiny Tomes can add more points"
+            ForeColor       =   &H80000008&
+            Height          =   210
+            Index           =   3
+            Left            =   360
+            TabIndex        =   32
+            Top             =   1620
+            Width           =   4005
+         End
+         Begin VB.Label lblPDPhelp 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "- Fate Point are earned 1 per 3 EPL "
+            ForeColor       =   &H80000008&
+            Height          =   210
+            Index           =   2
+            Left            =   360
+            TabIndex        =   31
+            Top             =   1320
+            Width           =   3405
+         End
+         Begin VB.Label lblPermDestinyPoints 
+            Appearance      =   0  'Flat
+            AutoSize        =   -1  'True
+            BackColor       =   &H80000005&
+            Caption         =   "Perm Destiny Points"
             ForeColor       =   &H80000008&
             Height          =   210
             Left            =   120
             TabIndex        =   29
             Top             =   0
-            Width           =   1005
+            Width           =   1890
          End
-         Begin VB.Shape shpDestinyAP 
-            Height          =   2232
+         Begin VB.Shape shpPermDestinyPoints 
+            Height          =   2235
             Left            =   0
-            Top             =   120
-            Width           =   5000
+            Top             =   240
+            Width           =   4995
          End
-         Begin VB.Label lblDestinyAPhelp 
+         Begin VB.Label lblPDPhelp 
             Appearance      =   0  'Flat
             AutoSize        =   -1  'True
             BackColor       =   &H80000005&
-            Caption         =   "- Destiny AP can be spent at level 20"
+            Caption         =   "- Perm Destiny Points can be spent at level 20"
             ForeColor       =   &H80000008&
             Height          =   210
             Index           =   0
             Left            =   360
             TabIndex        =   30
-            Top             =   1020
-            Width           =   3480
+            Top             =   720
+            Width           =   4365
          End
-         Begin VB.Label lblDestinyAPhelp 
+         Begin VB.Label lblPDPhelp 
             Appearance      =   0  'Flat
             AutoSize        =   -1  'True
             BackColor       =   &H80000005&
-            Caption         =   "- Destiny AP Tomes can add +?"
+            Caption         =   "- PDPs are earned at 1 per 3 Fate Points"
             ForeColor       =   &H80000008&
             Height          =   210
             Index           =   1
             Left            =   360
             TabIndex        =   28
-            Top             =   1320
-            Width           =   2925
+            Top             =   1020
+            Width           =   3840
          End
       End
       Begin VB.Frame fraTreeSelection 
@@ -560,7 +599,7 @@ Public Sub MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal Xpo
     If Rotation < 0 Then lngValue = -3 Else lngValue = 3
     Select Case mlngTab
         Case 0  'DestinyTrees
-            If IsOver(Me.usrspnDestinyAP.hwnd, Xpos, Ypos) Then Me.usrspnDestinyAP.WheelScroll lngValue
+            If IsOver(Me.usrspnPDP.hwnd, Xpos, Ypos) Then Me.usrspnPDP.WheelScroll lngValue
         Case 1 'Destiny
             Select Case True
                 Case IsOver(Me.usrList.hwnd, Xpos, Ypos): Me.usrList.Scroll lngValue
@@ -628,6 +667,7 @@ End Sub
 
 Private Sub ChangeTab(plngTab As Long)
     If mlngTab = plngTab Then Exit Sub
+    If cboTree.ListCount = 0 Then Exit Sub  'Exit if none are selected
     mlngTab = plngTab
     ShowTab
     SaveBackup
@@ -701,13 +741,14 @@ Private Sub LoadData()
     mblnOverride = True
     ShowAvailableDestinies
     
-    'Figure out our destiny points
+    ' Perm Destiny Points
+    Me.usrspnPDP.Max = tomes.PermDestinyPointMax
+    Me.usrspnPDP.Min = tomes.PermDestinyPointMin
+    If build.PermDestinyPoints < tomes.PermDestinyPointMin Then
+        build.PermDestinyPoints = tomes.PermDestinyPointMin
+    End If
     
-    ' Destiny AP
-    Me.lblDestinyAPhelp(1).Caption = Replace(Me.lblDestinyAPhelp(1).Caption, "?", tomes.DestinyAPMax)
-    Me.usrspnDestinyAP.Max = tomes.DestinyAPMax
-    Me.usrspnDestinyAP.Value = build.DestinyAP
-    
+    Me.usrspnPDP.Value = build.PermDestinyPoints
     
     Me.lblTier5Label.Visible = (build.MaxLevels > 29)
     Me.lblTier5.Visible = (build.MaxLevels > 29)
@@ -744,12 +785,17 @@ End Sub
 
 
 ' ************* TREES *************
-Private Sub usrspnDestinyAP_Change()
-    Dim lngLives As Long
+Private Sub usrspnPDP_Change()
+    Dim lngPDP  As Long
     
-    If mblnOverride Then Exit Sub
-    build.DestinyAP = Me.usrspnDestinyAP.Value
-    If build.DestinyAP > tomes.DestinyAPMax Then lngLives = build.DestinyAP - tomes.DestinyAPMax
+    'Form based override - used to prevent recalcing???
+    If mblnOverride Then
+        Exit Sub
+    End If
+    build.PermDestinyPoints = Me.usrspnPDP.Value
+    If build.PermDestinyPoints > tomes.PermDestinyPointMax Then
+        lngPDP = tomes.PermDestinyPointMax
+    End If
     ShowSpentAll Me.lblSpentAll
     SetDirty
 End Sub
@@ -857,7 +903,7 @@ Private Sub ShowDestinies(pblnDrop As Boolean, pblnAdd As Boolean)
                 lngDestiny = SeekTree(.TreeName, peDestiny)
                 Me.usrTree.SetItemData i, lngDestiny
                 Me.usrTree.SetText i, 1, GetMaxTier(i)
-                Me.usrTree.SetText i, 4, QuickSpentInTree(i)
+                Me.usrTree.SetText i, 4, QuickSpentInDestiny(i)
             End With
         End If
         If pblnDrop And i <> lngRaceTree Then
@@ -871,26 +917,24 @@ Private Sub ShowDestinies(pblnDrop As Boolean, pblnAdd As Boolean)
     mblnOverride = False
 End Sub
 
-'This shows the spend line on the Destiny tab
-'TODO move to a bas file so it can be shared btwn Enh and main
+'This shows the spent line on the Destiny tab
+'TODO move to a bas file so it can be shared btwn Enh and main???
 Private Sub ShowSpentAll(plbl As Label)
-    Dim lngSpentBase As Long
-    Dim lngSpentRPLBonus As Long
-    Dim lngSpentUniBonus As Long
+    Dim lngSpentBase As Long  'Base spent in tree
+    Dim lngSpentPDPBonus As Long ' Additional PermDestPoints spent
     Dim lngMaxBase As Long
-    Dim lngMaxRPLBonus As Long
-    Dim lngMaxUniBonus As Long
+    Dim lngMaxPDPBonus As Long
     Dim strDisplay As String
     
-    'Display should be Spent/Max AP.  Long form is Spent+r+u/Max+r+u AP
+    'Display should be Spent/Max AP.  Long form is Spent+pdp/Max+pdp AP
 
     'retrieve each of the spent/maxes from the build tree object
     'This should be a func that returns a class object
-    GetPointsSpentAndMax lngSpentBase, lngSpentRPLBonus, lngSpentUniBonus, lngMaxBase, lngMaxRPLBonus, lngMaxUniBonus
+    GetDestinyPointsSpentAndMax lngSpentBase, lngSpentPDPBonus, lngMaxBase, lngMaxPDPBonus
     
     'Display
-    strDisplay = strDisplay & "Spent: " & lngSpentBase & " +" & lngSpentRPLBonus & "r +" & lngSpentUniBonus & "u / Max: "
-    strDisplay = strDisplay & lngMaxBase & " +" & lngMaxRPLBonus & "r +" & lngMaxUniBonus & "u AP"
+    strDisplay = strDisplay & "Spent: " & lngSpentBase & " +" & lngSpentPDPBonus & "pdp / Max: "
+    strDisplay = strDisplay & lngMaxBase & " +" & lngMaxPDPBonus & "pdp AP"
     
     plbl.Caption = strDisplay
     
@@ -946,7 +990,7 @@ Private Sub AddDestiny(plngDestiny As Long, pstrSource As String)
         Next
     End If
     ' Add this tree
-    ListboxAddItem Me.lstTree, db.Destiny(plngDestiny).TreeName & vbTab & pstrSource, plngDestiny
+    ListboxAddItem Me.lstTree, db.Destiny(plngDestiny).TreeName, plngDestiny
 End Sub
 
 Private Sub lstTree_Click()
@@ -954,7 +998,7 @@ Private Sub lstTree_Click()
 End Sub
 
 Private Sub lstTree_DblClick()
-    If Me.lstTree.ListIndex = -1 Or build.Destinies > MAX_DESTINIES Then Exit Sub
+    If Me.lstTree.ListIndex = -1 Or build.Destinies >= MAX_DESTINIES Then Exit Sub
     AddBuildDestiny build.Destinies + 1
     ShowDestinies False, False
     ShowAvailableDestinies

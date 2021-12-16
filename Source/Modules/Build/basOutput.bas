@@ -147,8 +147,8 @@ Private msngCourierSize As Single
 ' Stack structure for handling nested [List]s
 Private mtypList As ListType
 
-' Max Destiny. 24 + Tomes
-Const MaxDestinyAP = 24
+' Max Destiny. 24 + PDP
+Const MaxDestinyAP = 40  '4 per epic level
 
 
 Public Function GenerateOutput(penOutput As OutputEnum) As String
@@ -168,7 +168,12 @@ Public Function GenerateOutput(penOutput As OutputEnum) As String
     If menOutput <> oeExport Then menRemember = menOutput
     If menOutput = oeAll Then xp.Mouse = msSystemWait
     mblnDisplay = (menOutput <> oeExport)
-    If cfg.OutputReddit = True And mblnDisplay = False Then mblnReddit = True Else mblnReddit = False
+    'Check for Reddit display
+    If cfg.OutputReddit = True And mblnDisplay = False Then
+        mblnReddit = True
+    Else
+        mblnReddit = False
+    End If
     If mblnReddit Then mlngSectionLines = 1 Else mlngSectionLines = 2
     If mblnDisplay And frmMain.WindowState = vbMinimized Then
         cfg.OutputRefresh = True
@@ -202,7 +207,7 @@ Public Function GenerateOutput(penOutput As OutputEnum) As String
     OutputFeats
     OutputSpells
     OutputEnhancements
-    OutputDestiny
+    OutputDestinies
     ' Finish
     If mblnDisplay Then
         ResizeOutput
@@ -1277,8 +1282,6 @@ End Function
 
 
 ' ************* ENHANCEMENTS *************
-
-
 Private Sub OutputEnhancements()
     Dim enValid As ValidEnum
     Dim blnReverse As Boolean
@@ -1319,7 +1322,7 @@ Private Sub OutputEnhancementTrees(pblnFirst As Boolean, penValid As ValidEnum)
     Dim i As Long
     
     ' Title
-    strDisplay = GetSpentText(penValid)
+    strDisplay = GetSpentTreeText(penValid)
     If penValid = veErrors Then strError = "Errors"
     OutputTitle "Enhancements", strDisplay, strError
     ' Reddit
@@ -1333,6 +1336,7 @@ Private Sub OutputEnhancementTrees(pblnFirst As Boolean, penValid As ValidEnum)
         lngBuildTree = typTreeOrder(lngTreeOrder).ID
         If build.Tree(lngBuildTree).Abilities > 0 Then
             BlankLine
+            'Guide
             lngGuideTree = FindGuideTree(lngBuildTree)
             If lngGuideTree > 0 Then
                 If Guide.Tree(lngGuideTree).Spent > 0 Then
@@ -1470,7 +1474,7 @@ End Sub
 
 'This returns the text of Enh Spent and alters the penValid field if we're in error
 ' THis should be merged with frmEnhancements.GuideTotal and frmEnhancements.ShowSpentAll
-Private Function GetSpentText(penValid As ValidEnum) As String
+Private Function GetSpentTreeText(penValid As ValidEnum) As String
     Dim lngSpentBase As Long
     Dim lngSpentRPLBonus As Long
     Dim lngSpentUniBonus As Long
@@ -1503,8 +1507,40 @@ Private Function GetSpentText(penValid As ValidEnum) As String
     'If lngSpentBase = 80 And lngMaxBase = 80 And lngSpentBonus = lngMaxBonus Then strSpent = vbNullString
     
     'Return display
-    GetSpentText = "(" & strDisplay & ")"
+    GetSpentTreeText = "(" & strDisplay & ")"
 End Function
+
+
+'This returns the text of DSpent and alters the penValid field if we're in error
+' THis should be merged with frmEnhancements.GuideTotal and frmEnhancements.ShowSpentAll
+Private Function GetSpentDestinyText(penValid As ValidEnum) As String
+    Dim lngSpentBase As Long
+    Dim lngSpentPDPBonus As Long
+    Dim lngMaxBase As Long
+    Dim lngMaxPDPBonus As Long
+    Dim strSpent As String
+    Dim strMax As String
+    Dim strDisplay As String
+    
+    'Display should be Spent/Max AP.  Long form is Spent+r+u/Max+r+u AP
+
+    'retrieve each of the spent/maxes from the build tree object
+    GetDestinyPointsSpentAndMax lngSpentBase, lngSpentPDPBonus, lngMaxBase, lngMaxPDPBonus
+        
+    'Display
+    strDisplay = strDisplay & "Spent: " & (lngSpentBase + lngSpentPDPBonus) & " (" & lngSpentBase & " +" & lngSpentPDPBonus & "pdp) / Max: "
+    strDisplay = strDisplay & (lngMaxBase + lngMaxPDPBonus) & " (" & lngMaxBase & " +" & lngMaxPDPBonus & "pdp) AP"
+    
+    'Figure out if we're in error
+    If lngSpentBase > lngMaxBase Then
+        penValid = veErrors
+    End If
+  
+    
+    'Return display
+    GetSpentDestinyText = "(" & strDisplay & ")"
+End Function
+
 
 Private Function FindGuideTree(plngBuildTree As Long) As Long
     Dim i As Long
@@ -1672,6 +1708,30 @@ Private Sub TreeOrder(ptypTreeOrder() As OutputTreeType)
     Next i
 End Sub
 
+Private Sub DestinyOrder(ptypTreeOrder() As OutputTreeType)
+    Dim typSwap As OutputTreeType
+    Dim i As Long
+    Dim j As Long
+    
+    ReDim ptypTreeOrder(1 To build.Destinies)
+    For i = 1 To build.Destinies
+        ptypTreeOrder(i).ID = i
+        ptypTreeOrder(i).AP = QuickSpentInDestiny(i)
+    Next
+    For i = 2 To build.Destinies
+        typSwap = ptypTreeOrder(i)
+        For j = i To 2 Step -1
+            If typSwap.AP > ptypTreeOrder(j - 1).AP Then
+                ptypTreeOrder(j) = ptypTreeOrder(j - 1)
+            Else
+                Exit For
+            End If
+        Next j
+        ptypTreeOrder(j) = typSwap
+    Next i
+End Sub
+
+
 Private Function ValidEnhancements() As ValidEnum
     Dim lngTree As Long
     Dim lngPoints As Long
@@ -1695,6 +1755,7 @@ Private Function ValidEnhancements() As ValidEnum
                 blnEmpty = False
         End Select
     Next
+    'TODO do we need veIncomplete ???
     If blnEmpty Then
         ValidEnhancements = veEmpty
     ElseIf blnError Then
@@ -1714,6 +1775,7 @@ Private Function ValidTree(ptypTree As TreeType, ptypBuildTree As BuildTreeType,
     Dim i As Long
     
     plngPoints = 0
+    
     GetSpentInTree ptypTree, ptypBuildTree, lngSpent, lngTotal
     For i = 1 To ptypBuildTree.Abilities
         With ptypBuildTree.Ability(i)
@@ -1737,6 +1799,8 @@ Private Function ValidTree(ptypTree As TreeType, ptypBuildTree As BuildTreeType,
     End If
     If blnError Then ValidTree = veErrors
 End Function
+
+
 
 ' Returns total points spent in tree, or 0 if "spent in tree" prereqs are violated
 Private Function CheckSpentInTree(ptypTree As TreeType, ptypBuildTree As BuildTreeType, plngPoints As Long) As ValidEnum
@@ -2070,159 +2134,227 @@ End Function
 
 
 ' ************* DESTINY *************
-
-
-Private Sub OutputDestiny()
-    Dim lngDestiny As Long
-    Dim lngTier As Long
-    Dim strDisplay As String
-    Dim lngPoints As Long
+Private Sub OutputDestinies()
     Dim enValid As ValidEnum
-    Dim i As Long
-    Dim lngI As Long
-   
-    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeDestiny) Then Exit Sub
-    If mblnReddit Then
-        OutputDestinyReddit
+    Dim blnReverse As Boolean
+    Dim frm As Form
+    
+    If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeDestiny) Then
         Exit Sub
     End If
-    enValid = ValidDestiny(lngPoints)
+    enValid = ValidDestinies()
     Select Case enValid
-        Case veSkip, veEmpty: Exit Sub
+        Case veSkip: Exit Sub
+        Case veEmpty: Exit Sub
     End Select
-    If lngPoints = 0 Then
-        OutputText "Destinies", , , , , True
-    Else
-        ' Title
-        OutputText "Destinies", False, , , , True
-        If lngPoints = (MaxDestinyAP + build.DestinyTome) Then
-            strDisplay = " (" & (MaxDestinyAP + build.DestinyTome) & " AP)"
-        Else
-            strDisplay = " (" & lngPoints & " of " & (MaxDestinyAP + build.DestinyTome) & " AP)"
-        End If
-        OutputText strDisplay, False
-        ErrorFlag (enValid = veErrors)
-        BlankLine
-        ' Destiny
-        For lngI = 1 To build.Destinies
-            lngDestiny = SeekTree(build.Destiny(lngI).TreeName, peDestiny)
-            OutputText build.Destiny(lngI).TreeName
-            ListBegin True
-            lngTier = 1
-            strDisplay = vbNullString
-            For i = 1 To build.Destiny(lngI).Abilities
-                With build.Destiny(lngI).Ability(i)
-                    If .Tier > lngTier Then
-                        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-                        ListStartLine
-                        OutputText strDisplay, True
-                        lngTier = lngTier + 1
-                        Do While .Tier > lngTier
-                            ListStartLine
-                            OutputText "(none)", True
-                            lngTier = lngTier + 1
-                        Loop
-                        strDisplay = vbNullString
-                    End If
-                    strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
-                End With
-            Next
-            If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-            ListStartLine
-            OutputText strDisplay, True
-        Next
-        
-        ListEnd
+    If GetForm(frm, "frmDestiny2") Then
+        blnReverse = (frm.CurrentTab = 2)
     End If
-    
-    If mblnDisplay Then BlankLine 2 Else BlankLine
+    ' Title
+    If blnReverse Then
+        If enValid <> veEmpty Then OutputDestinyTrees False, enValid
+    Else
+        If enValid <> veEmpty Then OutputDestinyTrees True, enValid
+    End If
 End Sub
 
-Private Sub OutputDestinyReddit()
+Private Sub OutputDestinyTrees(pblnFirst As Boolean, penValid As ValidEnum)
+    Dim lngBuildDestiny As Long
+    Dim lngDestiny As Long
+    Dim lngTier As Long
+    Dim strError As String
+    Dim strDisplay As String
+    Dim blnTiers As Boolean
+    Dim typDestinyOrder() As OutputTreeType
+    Dim lngDestinyOrder As Long
+    Dim i As Long
+   
+    ' Title
+    strDisplay = GetSpentDestinyText(penValid)
+    If penValid = veErrors Then strError = "Errors"
+    OutputTitle "Destinies", strDisplay, strError
+    ' Reddit
+    If mblnReddit Then
+        OutputDestinyTreesReddit
+        Exit Sub
+    End If
+
+    ' Build trees
+    DestinyOrder typDestinyOrder
+    For lngDestinyOrder = 1 To build.Destinies
+        lngBuildDestiny = typDestinyOrder(lngDestinyOrder).ID
+        If build.Destiny(lngBuildDestiny).Abilities > 0 Then
+            BlankLine
+            'Guide - TODO
+            OutputText build.Destiny(lngBuildDestiny).TreeName & " (" & typDestinyOrder(lngDestinyOrder).AP & " AP)"
+            lngDestiny = SeekTree(build.Destiny(lngBuildDestiny).TreeName, peDestiny)
+            ' Cores
+            strDisplay = vbNullString
+            ListBegin False
+            ListStartLine
+            blnTiers = False
+            'Output tier 0
+            For i = 1 To build.Destiny(lngBuildDestiny).Abilities
+                With build.Destiny(lngBuildDestiny).Ability(i)
+                    If .Tier = 0 Then
+                        If Len(strDisplay) Then strDisplay = strDisplay & ", "
+                        strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector)
+                    Else
+                        blnTiers = True
+                    End If
+                End With
+            Next
+            If Len(strDisplay) = 0 Then strDisplay = "(none)"
+            OutputText strDisplay
+            strDisplay = vbNullString
+            'Output tiers 1-5
+            If blnTiers Then
+                ' Tiers
+                ListBegin True
+                lngTier = 1
+                For i = 1 To build.Destiny(lngBuildDestiny).Abilities
+                    With build.Destiny(lngBuildDestiny).Ability(i)
+                        If .Tier > 0 Then
+                            If .Tier > lngTier Then
+                                If Len(strDisplay) Then
+                                    strDisplay = Left$(strDisplay, Len(strDisplay) - 2)
+                                Else
+                                    strDisplay = "(none)"
+                                End If
+                                ListStartLine
+                                OutputText strDisplay
+                                lngTier = lngTier + 1
+                                Do While .Tier > lngTier
+                                    ListStartLine
+                                    OutputText "(none)"
+                                    lngTier = lngTier + 1
+                                Loop
+                                strDisplay = vbNullString
+                            End If
+                            strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
+                        End If
+                    End With
+                Next
+                If Len(strDisplay) Then
+                    strDisplay = Left$(strDisplay, Len(strDisplay) - 2)
+                Else
+                    strDisplay = "(none)"
+                End If
+                ListStartLine
+                OutputText strDisplay
+                ListEnd
+            End If
+            ListEnd
+        End If
+    Next
+    If pblnFirst Then BlankLine 1 Else BlankLine 2
+End Sub
+
+Private Sub OutputDestinyTreesReddit()
+    Dim lngBuildDestiny As Long
     Dim lngDestiny As Long
     Dim lngTier As Long
     Dim strDisplay As String
-    Dim lngPoints As Long
-    Dim enValid As ValidEnum
-    Dim j As Long
+    Dim blnTiers As Boolean
+    Dim typDestinyOrder() As OutputTreeType
+    Dim lngDestinyOrder As Long
+    Dim lngColor As Long
     Dim i As Long
     
-    enValid = ValidDestiny(lngPoints)
-    Select Case enValid
-        Case veSkip, veEmpty: Exit Sub
-    End Select
-    If enValid = veErrors Then strDisplay = "(Errors)"
-    OutputTitle "Destinies", , strDisplay
-    BlankLine
-    If lngPoints Then
-        ' Destiny
-        For j = 1 To build.Destinies
-            If lngPoints = 24 Then strDisplay = " (24 AP)" Else strDisplay = " (" & lngPoints & " of 24 AP)"
-            lngDestiny = SeekTree(build.Destiny(j).TreeName, peDestiny)
-            OutputText build.Destiny(j).TreeName & strDisplay
+    ' Build Destinys
+    DestinyOrder typDestinyOrder
+    For lngDestinyOrder = 1 To build.Destinies
+        lngBuildDestiny = typDestinyOrder(lngDestinyOrder).ID
+        If build.Destiny(lngBuildDestiny).Abilities > 0 Then
+            BlankLine
+            OutputText build.Destiny(lngBuildDestiny).TreeName & " (" & typDestinyOrder(lngDestinyOrder).AP & " AP)"
             BlankLine
             OutputText "|||"
             OutputText "|:--|:--|:--"
-            ' Table
-            lngTier = 1
+            lngDestiny = SeekTree(build.Destiny(lngBuildDestiny).TreeName, peDestiny)
+            ' Cores
             strDisplay = vbNullString
-            For i = 1 To build.Destiny(j).Abilities
-                With build.Destiny(j).Ability(i)
-                    If .Tier > lngTier Then
-                        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-                        OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
-                        lngTier = lngTier + 1
-                        Do While .Tier > lngTier
-                            OutputText "|Tier " & lngTier & "|(none)|"
-                            lngTier = lngTier + 1
-                        Loop
-                        strDisplay = vbNullString
+            blnTiers = False
+            For i = 1 To build.Destiny(lngBuildDestiny).Abilities
+                With build.Destiny(lngBuildDestiny).Ability(i)
+                    If .Tier = 0 Then
+                        If Len(strDisplay) Then strDisplay = strDisplay & ", "
+                        strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector)
+                    Else
+                        blnTiers = True
                     End If
-                    strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
                 End With
             Next
-        Next
-        If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
-        OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
-        BlankLine
-    End If
+            If Len(strDisplay) = 0 Then strDisplay = "(none)"
+            OutputText "|Cores|" & strDisplay & "|"
+            strDisplay = vbNullString
+            If blnTiers Then
+                ' Tiers
+                lngTier = 1
+                For i = 1 To build.Destiny(lngBuildDestiny).Abilities
+                    With build.Destiny(lngBuildDestiny).Ability(i)
+                        If .Tier > 0 Then
+                            If .Tier > lngTier Then
+                                If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
+                                OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
+                                lngTier = lngTier + 1
+                                Do While .Tier > lngTier
+                                    OutputText "|Tier " & lngTier & "|(none)|"
+                                    lngTier = lngTier + 1
+                                Loop
+                                strDisplay = vbNullString
+                            End If
+                            strDisplay = strDisplay & GetAbilityDisplay(db.Destiny(lngDestiny), .Tier, .Ability, .Rank, .Selector) & ", "
+                        End If
+                    End With
+                Next
+                If Len(strDisplay) Then strDisplay = Left$(strDisplay, Len(strDisplay) - 2) Else strDisplay = "(none)"
+                OutputText "|Tier " & lngTier & "|" & strDisplay & "|"
+            End If
+        End If
+    Next
+    BlankLine
 End Sub
 
-Private Function ValidDestiny(plngPoints As Long) As ValidEnum
+
+Private Function ValidDestinies() As ValidEnum
     Dim lngDestiny As Long
-    Dim enValid As ValidEnum
+    Dim lngPoints As Long
+    Dim blnEmpty As Boolean
+    Dim blnError As Boolean
+    Dim blnComplete As Boolean
     Dim i As Long
     
     If mblnDisplay And Not (menOutput = oeAll Or menOutput = oeDestiny) Then
-        ValidDestiny = veSkip
+        ValidDestinies = veSkip
         Exit Function
     End If
-    If build.Destinies = 0 Then
-        enValid = veEmpty
-    ElseIf mblnDisplay And Not (menOutput = oeAll Or menOutput = oeDestiny) Then
-        enValid = veSkip
+    blnEmpty = True
+    For i = 1 To build.Destinies
+        lngDestiny = SeekTree(build.Destiny(i).TreeName, peDestiny)
+        Select Case ValidTree(db.Destiny(lngDestiny), build.Destiny(i), lngPoints)
+            Case veErrors
+                blnError = True
+                blnEmpty = False
+            Case veComplete
+                blnEmpty = False
+        End Select
+    Next
+    'TODO do we need veIncomplete ???
+    If blnEmpty Then
+        ValidDestinies = veEmpty
+    ElseIf blnError Then
+        ValidDestinies = veErrors
     Else
-        For i = 1 To build.Destinies
-            lngDestiny = SeekTree(build.Destiny(i).TreeName, peDestiny)
-            If lngDestiny = 0 Then
-                enValid = veSkip
-            Else
-                If ValidTree(db.Destiny(lngDestiny), build.Destiny(i), plngPoints) = veErrors Then
-                    enValid = veErrors
-                Else
-                    'this is now tome driven
-                    Select Case plngPoints
-                        Case 0: enValid = veEmpty
-                        Case 1 To (MaxDestinyAP + build.DestinyTome - 1): enValid = veIncomplete
-                        Case (MaxDestinyAP + build.DestinyTome): enValid = veComplete
-                        Case Else: enValid = veErrors
-                    End Select
-                End If
-            End If
-        Next
+        ValidDestinies = veComplete
     End If
-    If enValid = veEmpty Then enValid = veIncomplete
-    ValidDestiny = enValid
+    Exit Function
+        'Select Case plngPoints
+        '    Case 0: enValid = veEmpty
+        '    Case 1 To (MaxDestinyAP + build.PermDestinyPoints - 1): enValid = veIncomplete
+        '    Case (MaxDestinyAP + build.PermDestinyPoints): enValid = veComplete
+        '    Case Else: enValid = veErrors
+        'End Select
 End Function
 
 
@@ -2414,6 +2546,7 @@ Private Sub BlankLine(Optional plngLines As Long = 1)
     End If
 End Sub
 
+'Start a display list with either a number or bullet.
 Private Sub ListBegin(pblnNumbered As Boolean)
     With mtypList
         ' Push list onto stack

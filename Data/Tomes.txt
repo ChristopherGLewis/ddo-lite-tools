@@ -1,9 +1,8 @@
-
 Stat: 8, 1, 1, 3, 7, 11, 15, 19, 22
 Skill: 5, 1, 1, 3, 7, 11
 RacialAPMax: 2
-FateMax: 3
 PowerMax: 4
 PRR/MRRMax: 4
 UniversalAPMax: 1
-DestinyMax: 1
+PermDestinyPointMax: 18
+PermDestinyPointMin: 12
