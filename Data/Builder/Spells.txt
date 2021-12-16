@@ -85,6 +85,10 @@ Descrip: Grants an Animal, Magical Beast, or Vermin a +4 size Bonus to Strength,
 SpellName: Animal Trance
 Descrip: Fascinates nearby Animals, Magical Beasts, and Vermin, causing them to stop and stare blankly until damaged. A successful Will save negates this effect. Creatures targeted by this effect have their will save momentarily weakened (-3 to will). Mindless targets cannot save, but the duration is halved.
 
+SpellName: Arcane Tempest
+Descrip: You create a storm of arcane energy that rains shards of force energy upon your foes. Any creatures caught within the storm take 7 to 12 per caster level in force damage every 2 seconds for a duration of 8 seconds. Targets first entering the storm may take a reflex save for half, but remaining in the storm they take damage with no saving throw.
+Flags: Rare
+
 SpellName: Armor of Speed
 Descrip: Your target's currently equipped armor gains Equip Effect: Quickens the wearer, causing them to attack 15% faster than normal. In addition the recipient gains a +1 enhancement bonus to attack rolls and a +1 dodge bonus to AC and Reflex saves. An item can have only one temporary item enchantment at a time.
 Flags: Rare
@@ -205,6 +209,10 @@ Descrip: Throw a bottle at a targeted foe that explodes into caustic acid dealin
 SpellName: Caustic Solvent
 Descrip: Toss a bottle of acrid liquid at a group of enemies, causing caustic acid to eat away at their flesh for significant Acid damage. This deals 1d6+3 Acid damage per caster level, max caster level 15, to all affected enemies.
 
+SpellName: Celestial Bombardment
+Descrip: Divine wrath falls from the heavens to smite your foes. This spell calls down three stars at your target, dealing a total of 3d6 fire damage per character level, split into three hits. This damage is affected by fire spell power and may critically hit. In addition, enemies must succeed at three consecutive Reflex saving throws or be knocked prone.
+Flags: Rare
+
 SpellName: Chain Lightning
 Descrip: An electrical discharge strikes a primary target for 1d6+6 per caster level electrical damage, then arcs to other nearby targets hitting each of them with a similar lightning bolt. A successful Reflex save reduces the damage by half. Maximum caster level 20.
 
@@ -243,7 +251,7 @@ Descrip: Slow moving poisonous cloud dealing 2d6 acid damage plus 1 damage per c
 Flags: Rare
 
 SpellName: Cold Breath
-Descrip: Valid Forms: Winter Wolf. Creates an area of extreme cold, originating in front of you and spreaing outward in a cone. It drains heat, dealing 4 to 6 points of cold damage per caster level (up to a maximum of 60 to 90 adage at caster level 15). A successful Reflex save reduces the damage by half. D&amp;D Dice: Deals 1d3+3 cold damage per caster level (max 15d3+45).
+Descrip: Valid Forms: Winter Wolf. Creates an area of extreme cold, originating in front of you and spreaing outward in a cone. It drains heat, dealing 4 to 6 points of cold damage per caster level (up to a maximum of 60 to 90 adage at caster level 15). A successful Reflex save reduces the damage by half. D&D Dice: Deals 1d3+3 cold damage per caster level (max 15d3+45).
 
 SpellName: Cold Iron Weapons
 Descrip: Your target's currently equipped weapons gain the ability to bypass Cold Iron damage reduction. An item can have only one temporary item enchantment at a time.
@@ -424,6 +432,10 @@ Descrip: The divine power of a god imbues the caster with power and skill in com
 SpellName: Divine Punishment
 Descrip: Focuses the power of the gods upon the target, inflicting 1 to 6 +1 per caster level light damage every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
 
+SpellName: Divine Wrath
+Descrip: Calls down divine wrath on foes, dealing 2d6 light damage per character level, will save for half . Allies caught within blast are healed for 1d6 Positive Energy damage per character level.
+Flags: Rare
+
 SpellName: Dominate Animal
 Descrip: Telepathically controls the actions of an Animal, Magical Beast, or Vermin, causing it to change sides. Dominate acts like Charm, with additional Will saves every 15 to 30 seconds, but the creature will follow you throughout the dungeon. Mindless targets cannot save, but the duration is halved.
 
@@ -444,7 +456,7 @@ SpellName: Eagle's Splendor
 Descrip: An ally gains a +4 enhancement bonus to Charisma for 1 minute per caster level.
 
 SpellName: Earthquake
-Descrip: Summons an earthquake beneath your enemies' feet. Enemies within the area of effect have an additional 30% spell failure chance, and every three seconds they are knocked down and take 2 to 16 points of damage. A successful reflex save vs. the damage halves the damage, and a reflex save vs. the knockdown negates it. Flying enemies are immune. D&amp;D Dice: Deals 2d8 level bludgeoning damage.
+Descrip: Summons an earthquake beneath your enemies' feet. Enemies within the area of effect have an additional 30% spell failure chance, and every three seconds they are knocked down and take 2 to 16 points of damage. A successful reflex save vs. the damage halves the damage, and a reflex save vs. the knockdown negates it. Flying enemies are immune. D&D Dice: Deals 2d8 level bludgeoning damage.
 
 SpellName: Eladar's Electric Surge
 Descrip: The target's body is wracked with powerful electric shocks, dealing 1 to 6 electric damage + 1 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
@@ -487,7 +499,7 @@ Descrip: A black ray of crackling negative energy suppresses the life force of a
 Flags: Rare
 
 SpellName: Enervation
-Descrip: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack.
+Descrip: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack. As of U51, the Enervation spell now applies a Negative Damage Over Time effect.
 
 SpellName: Entangle
 Descrip: Primal magic awakens plants and vines to grasp at the caster's enemies. Entangled creatures suffer a 90% penalty to movement speed, a 50% attack speed penalty, and a -1 penalty to attack rolls, AC and Reflex. A successful Reflex save negates this effect. Entangled creatures may leave the affected area to escape its effects, or attempt to make a Strength check every 2 seconds to negate. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
@@ -819,6 +831,10 @@ Descrip: Transmutes the structure of a construct enemy to deal 3d6+6 damage plus
 SpellName: Inflict Serious Wounds
 Descrip: Negative energy is channeled through the caster touch to inflict serious wounds on the target for 1d6+6 per caster level (Maximum caster level 15), or to heal Undead. A successful Will save reduces the damage by half.
 
+SpellName: Insidious Spores
+Descrip: Target enemy becomes contaminated with spores for 18 seconds. Every 2 seconds the target takes 6d6 Poison and Rust damage. Stacks up to 4 times. Enemies damaged by Insidious Spores become Contagious for five minutes after, spreading Insidious Spores to some nearby enemies when they die.
+Flags: Rare
+
 SpellName: Insightful Damage
 Descrip: Enchants a crossbow or one handed melee weapon to permit the use of the equipper's Intelligence modifier for damage rolls, if it is the only weapon (other than a Runearm) equipped. This spell dispels Insightful Strikes, but as a personal item enchantment it can be used alongside other general temporary item enchantments. The item is temporarily bound to character while this effect is active.
 
@@ -869,7 +885,7 @@ SpellName: Lesser Restoration
 Descrip: Dispels magical effects reducing 1 of an ally’s Ability scores, it also eliminates the condition Fatigued suffered by the creature, and improves the Exhausted condition to Fatigued.
 
 SpellName: Lesser Restorative Draught
-Descrip: Throw a small vial of magical liquid at a single target that provides the effects of the Lesser Restoration spell: Dispels magical effects reducing your ability scores, eliminates fatigue, and improves exhaustion to fatigue.
+Descrip: Throw a small vial of magical liquid at a single target that provides the effects of the Lesser Restoration spell: Dispels magical effects reducing your ability scores, eliminates fatigue, and improves exhaustion to fatigue.
 
 SpellName: Lesser Soulshatter Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the willpower from your enemies on contact. On Hit: -1 Will Save (does not stack). On Crit: 1d6 Wisdom Damage. An item can have only one Temporary item enchantment at a time
@@ -1250,7 +1266,7 @@ SpellName: Protection from Evil
 Descrip: Creates a magical barrier that wards a target from attacks by Evil creatures. It grants a +2 deflection bonus to Armor Class, and a +2 resistance bonus to saves versus attacks from Evil creatures. The target is also warded from Evil magical controls and compulsions.
 
 SpellName: Quench
-Descrip: A burst of water quenches flames. Lingering fire spells, such as Wall of Fire, are dispelled. Your allies are cured of any lingering fire damage effects, and receive a +15 enhancement bonus to fire resistance. Your enemies receive a -20 penalty to cold and electricity resistance. The resistance bonuses and penalties increase to 25 at caster level 8, and 35 and caster level 12. They last one minute. Fiery enemies, such as fire elementals, take 27 to 33 cold damage per 4 caster levels, to a maximum of 108 to 132. A successful fortitude save halves the damage, and negates the resistance penalties. D&amp;D Dice: Deals 2d4+25 cold damage per 4 caster levels.
+Descrip: A burst of water quenches flames. Lingering fire spells, such as Wall of Fire, are dispelled. Your allies are cured of any lingering fire damage effects, and receive a +15 enhancement bonus to fire resistance. Your enemies receive a -20 penalty to cold and electricity resistance. The resistance bonuses and penalties increase to 25 at caster level 8, and 35 and caster level 12. They last one minute. Fiery enemies, such as fire elementals, take 27 to 33 cold damage per 4 caster levels, to a maximum of 108 to 132. A successful fortitude save halves the damage, and negates the resistance penalties. D&D Dice: Deals 2d4+25 cold damage per 4 caster levels.
 
 SpellName: Quicksilver Potion
 Descrip: Drink a potion of shiny liquid that bestows incredible speed for a short time, the effect of the Haste spell. You are quickened, causing you to attack 15% faster than normal. In addition, you gain a +1 enhancement bonus to attack rolls, a +1 bonus to Reflex Saving Throws, and +1% Dodge.
@@ -1358,7 +1374,7 @@ SpellName: Salt Ray
 Descrip: A thin shaft of whirling salt crystals lances out from your crooked finger to strike and shred your foe. Your target takes 1d6+6 force damage per caster level. (Max Caster Level 10) Targets are also stunned. Fortitude save negates the stun.
 
 SpellName: Sanctified Vial
-Descrip: Casting this spell requires levels in Cleric, Paladin, or Favored Soul, or for you tobe in a Divine Epic Destiny. Throw a bottle that splashes Holy Water when it breaks, dealing 1d4+4 Bane Damage per Caster Level to Undead and Extraplanar creatures nearby. (This damage scales with Force Spell Power). This Holy Water will attempt to force all extraplanar creatures in the bottle's splash back to thier home plane with the effect of the Banishment spell. A successful Will save negates this effect. (DC = spell's save DC - creature's Hit Dice or Level + your caster level).
+Descrip: Casting this spell requires levels in Cleric, Paladin, or Favored Soul, or for you to be in a Divine Epic Destiny. Throw a bottle that splashes Holy Water when it breaks, dealing 1d4+4 Bane Damage per Caster Level to Undead and Extraplanar creatures nearby. (This damage scales with Force Spell Power). This Holy Water will attempt to force all extraplanar creatures in the bottle's splash back to thier home plane with the effect of the Banishment spell. A successful Will save negates this effect. (DC = spell's save DC - creature's Hit Dice or Level + your caster level).
 
 SpellName: Scare
 WikiName: Scare (spell)
@@ -1493,6 +1509,10 @@ Descrip: Turn your skin to durable stone. Gain a resistance to physical damage o
 SpellName: Storm of Vengeance
 Descrip: Conjures a storm with a massive thunderclap, deafening enemies, dousing them in acid rain, and lancing them with lightning bolts. Enemies within the cloud when it is first conjured are deafened for 3 seconds per caster level. Enemies within the storm take Acid damage every 2 seconds (1d8 for every 3 Druid levels.) Every 4 seconds, a random enemy within the storm takes 1d6+6 electricity damage per caster level. (A successful reflex save halves). The storm lasts 3 seconds per caster level. Maximum Caster Level 25.
 
+SpellName: Stormrage
+Descrip: Enemies damaged by your attacks or spells are also struck by lightning, dealing 10d20 electric damage, halved on a reflex save vs. DC 50. Lightning strikes up to one enemy each second. You also gain featherfall and Deflect Arrows. Lasts 18 seconds.
+Flags: Rare
+
 SpellName: Suggestion
 WikiName: Suggestion (spell)
 Descrip: Influences the actions of an enemy, allowing you to suggest it to fight as your ally for 6 seconds per caster level. A successful Will save negates this effect.
@@ -1539,19 +1559,19 @@ SpellName: Summon Nature's Ally IV
 Descrip: Summons a Challenge Rating 4 Young Razor Cat or Glass Spider to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Summon Nature's Ally IX
-Descrip: Summons a Challenge Rating &lt;?&gt; Dryad or Elder Fire Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
+Descrip: Summons a Challenge Rating <?> Dryad or Elder Fire Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Summon Nature's Ally V
-Descrip: Summons a Challenge Rating &lt;?&gt; Bear or Medium Earth Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
+Descrip: Summons a Challenge Rating <?> Bear or Medium Earth Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Summon Nature's Ally VI
-Descrip: Summons a Challenge Rating &lt;?&gt; IV Mudman or Large Water Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
+Descrip: Summons a Challenge Rating <?> IV Mudman or Large Water Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Summon Nature's Ally VII
-Descrip: Summons a Challenge Rating &lt;?&gt; Djinni or Huge Earth Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
+Descrip: Summons a Challenge Rating <?> Djinni or Huge Earth Elemental to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Summon Nature's Ally VIII
-Descrip: Summons a Challenge Rating &lt;?&gt; Greater Air Elemental or Dire Bear to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
+Descrip: Summons a Challenge Rating <?> Greater Air Elemental or Dire Bear to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Sunbeam
 Descrip: Deals 1d6+7 light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
@@ -1630,6 +1650,10 @@ Descrip: Resurrects the target, restoring full Hit Points, and preserves current
 SpellName: True Seeing
 WikiName: True Seeing (spell)
 Descrip: You confer on the subject the ability to see things as they actually are. This allows the target to find secret doors that have a DC of 30 or less, see the exact location of creatures hidden by Blur or Displacement effects, and see Invisible creatures or objects normally.
+
+SpellName: Tsunami
+Descrip: Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.
+Flags: Rare
 
 SpellName: Tumble
 WikiName: Tumble (spell)

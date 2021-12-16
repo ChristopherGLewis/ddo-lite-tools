@@ -79,7 +79,7 @@ SpellList2: Admixture: Cure Moderate Wounds, Bear's Endurance, Bull's Strength, 
 SpellList3: Adamantine Weapons, Admixture: Cure Serious Wounds, Admixture: Remove Disease, Blast Rod, Flame Turret, Inflict Serious Damage, Insightful Damage, Lightning Bolt, Mass Inflict Light Damage, Mass Repair Light Damage, Mass Shield of Faith, Repair Serious Damage, Positive Energy Infusion, Stoneskin
 Spelllist4: Admixture: Remove Poison, Armor of Speed, Cold Iron Weapons, Inflict Critical Damage, Lesser Globe of Invulnerability, Lightning Motes, Mass Inflict Moderate Damage, Mass Repair Moderate Damage, Protection from Elements, Repair Critical Damage, Thundering Armor
 SpellList5: Admixture: Cure Critical Wounds, Admixture: Remove Curse, Align Weapons, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Inflict Serious Damage, Mass Owl's Wisdom, Mass Repair Serious Damage, Prismatic Strike, Radiant Forcefield, Silver Weapons, Tenser's Transformation
-SpellList6: Blade Barrier, Chain Lightning, Deadly Weapons, Deconstruct, Globe of Invulnerability, Mass Inflict Critical Damage, Mass Protection from Elements, Mass Repair Critical Damage, Reconstruct, Tactical Detonation
+SpellList6: Arcane Tempest, Blade Barrier, Chain Lightning, Deadly Weapons, Deconstruct, Globe of Invulnerability, Mass Inflict Critical Damage, Mass Protection from Elements, Mass Repair Critical Damage, Reconstruct, Tactical Detonation
 FreeSpells: Inflict Light Damage, Inflict Moderate Damage, Inflict Serious Damage, Inflict Critical Damage, Repair Light Damage, Repair Moderate Damage, Repair Serious Damage, Repair Critical Damage
 
 ClassName: Barbarian
@@ -176,7 +176,7 @@ SpellList5: Break Enchantment, Divine Punishment, Flame Strike, Greater Command,
 SpellList6: Banishment, Blade Barrier, Cometfall, Create Undead, Greater Dispel Magic, Greater Glyph of Warding, Harm, Heal, Heroes' Feast, Mass Bear's Endurance, Mass Bull's Strength, Mass Cure Moderate Wounds, Mass Eagle's Splendor, Mass Inflict Moderate Wounds, Mass Owl's Wisdom, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Undeath to Death, Word of Recall
 SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
 SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Summon Monster VIII, Symbol of Death
-SpellList9: Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
+SpellList9: Celestial Bombardment, Divine Wrath, Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
 MandatorySpells: Cure Light Wounds, Cure Moderate Wounds, Cure Serious Wounds, Cure Critical Wounds, Mass Cure Light Wounds, Mass Cure Moderate Wounds, Mass Cure Serious Wounds, Mass Cure Critical Wounds
 
 ClassName: Druid
@@ -213,9 +213,9 @@ SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Domin
 SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Lesser Vigor, Mass Longstrider, Rising Fury, Summon Nature's Ally IV
 SpellList5: Animal Growth, Call Lightning Storm, Cold Breath, Cure Critical Wounds, Death Ward, Greater Vigor, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Wall of Fire
 SpellList6: Fire Seeds, Fire Shield, Frostbite, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Vigor, Summon Nature's Ally VI, Tenacious Pack, Tremor, Word of Balance
-SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
-SpellList8: Earthquake, Finger of Death, Fires of Purity, Heal, Howl of Terror, Ice Flowers, Summon Nature's Ally VIII, Sunburst, Unstoppable
-SpellList9: Anger of the Noonday Sun, Mantle of the Icy Soul, Mass Regenerate, Snowslide, Storm of Vengeance, Summon Nature's Ally IX
+SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Insidious Spores, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
+SpellList8: Earthquake, Finger of Death, Fires of Purity, Heal, Howl of Terror, Ice Flowers, Stormrage, Summon Nature's Ally VIII, Sunburst, Unstoppable
+SpellList9: Anger of the Noonday Sun, Mantle of the Icy Soul, Mass Regenerate, Snowslide, Storm of Vengeance, Summon Nature's Ally IX, Tsunami
 FreeSpells: Summon Nature's Ally I, Summon Nature's Ally II, Summon Nature's Ally III, Summon Nature's Ally IV, Summon Nature's Ally V, Summon Nature's Ally VI, Summon Nature's Ally VII, Summon Nature's Ally VIII, Summon Nature's Ally IX
 
 ClassName: Favored Soul
@@ -251,7 +251,7 @@ SpellList5: Break Enchantment, Divine Punishment, Flame Strike, Greater Command,
 SpellList6: Banishment, Blade Barrier, Cometfall, Create Undead, Greater Dispel Magic, Greater Glyph of Warding, Harm, Heal, Heroes' Feast, Mass Bear's Endurance, Mass Bull's Strength, Mass Cure Moderate Wounds, Mass Eagle's Splendor, Mass Inflict Moderate Wounds, Mass Owl's Wisdom, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Undeath to Death, Word of Recall
 SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
 SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Summon Monster VIII, Symbol of Death
-SpellList9: Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
+SpellList9: Celestial Bombardment, Divine Wrath, Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
 
 ClassName: Fighter
 Initial: F, Fi, Fighter, Ftr
@@ -422,7 +422,7 @@ SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Contagion, Cr
 SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic Blast, Dismissal, Dominate Person, Eladar's Electric Surge, Feeblemind, Hold Monster, Mass Repair Light Damage, Mind Fog, Niac's Biting Cold, Prismatic Ray, Protection from Elements, Summon Monster V, Symbol of Pain, Teleport, Waves of Fatigue
 SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
-SpellList8: Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
+SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
 SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Warlock
@@ -489,5 +489,5 @@ SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Contagion, Cr
 SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic Blast, Dismissal, Dominate Person, Eladar's Electric Surge, Feeblemind, Hold Monster, Mass Repair Light Damage, Mind Fog, Niac's Biting Cold, Prismatic Ray, Protection from Elements, Summon Monster V, Symbol of Pain, Teleport, Waves of Fatigue
 SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
-SpellList8: Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
+SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
 SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
