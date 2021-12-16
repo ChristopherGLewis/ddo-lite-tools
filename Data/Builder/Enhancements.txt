@@ -264,7 +264,7 @@ Lockout: Earth Savant
 AbilityName: Air Savant
 Descrip: Every point you spend in the Air Savant enhancement tree provides +0.75 Universal Spell Power.Passive:}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells}Selecting this enhancement will prevent you from spending points in the Earth Savant enhancement tree.
 Tier: 0
-None: Earth Savant Tier 0: Earth Savant
+None: Tier 0: Earth Savant
 
 AbilityName: Air Affinity
 Descrip: Passive:}{-+10 Electric and Sonic Spell Power}{-+1 Caster Level when casting Electric, Sonic, and Air spells.}{--10 Acid Spell Power}{--1 Caster Level when casting Acid and Earth spells
@@ -648,7 +648,7 @@ Descrip: +[1/2/3] Haggle, Concentration, and Heal.}Rank 3: +1 Will Saves
 Tier: 1
 Ranks: 3
 
-AbilityName: Spell Critical Chance: Positive & Negative I
+AbilityName: Spell Critical Chance - Positive & Negative I
 Descrip: +2% chance to critically hit with Positive and Negative Spells.
 Tier: 1
 Cost: 2
@@ -668,11 +668,11 @@ Descrip: +[3/6/10] Positive and Negative Healing Amplification
 Tier: 2
 Ranks: 3
 
-AbilityName: Spell Critical Chance: Positive & Negative II
+AbilityName: Spell Critical Chance - Positive & Negative II
 Descrip: +2% chance to critically hit with Positive and Negative Spells.
 Tier: 2
 Cost: 2
-All: Tier 1: Spell Critical Chance: Positive & Negative I
+All: Tier 1: Spell Critical Chance - Positive & Negative I
 
 AbilityName: Stone of the Scholar
 Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +10 Healing Amplification and +20 Positive Spell Power. You can only have one Alchemist's Stone Toggle active at a time.
@@ -694,11 +694,11 @@ Descrip: +[1/2/3] Armor Class and +[2/4/6] Resistance to Fire, Cold, Acid and El
 Tier: 3
 Ranks: 3
 
-AbilityName: Spell Critical Chance: Positive & Negative III
+AbilityName: Spell Critical Chance - Positive & Negative III
 Descrip: +2% chance to critically hit with Positive and Negative Spells.
 Tier: 3
 Cost: 2
-All: Tier 2: Spell Critical Chance: Positive & Negative II
+All: Tier 2: Spell Critical Chance - Positive & Negative II
 
 AbilityName: Willful Ambition
 Descrip: When your Reaction is Verdanite, you gain +1 Will Save, +1 for every 5 Alchemist Levels you have.
@@ -710,18 +710,18 @@ Descrip: +[2/4/6] Magical Resistance Rating.}Rank 3: You are immune to Slippery 
 Tier: 4
 Ranks: 3
 
-AbilityName: Spell Critical Chance: Positive & Negative IV
+AbilityName: Spell Critical Chance - Positive & Negative IV
 Descrip: +2% chance to critically hit with Positive and Negative Spells.
 Tier: 4
 Cost: 2
-All: Tier 3: Spell Critical Chance: Positive & Negative III
+All: Tier 3: Spell Critical Chance - Positive & Negative III
 
 AbilityName: Run for your life!
 Descrip: While your Reaction is Verdanite, you gain 1% Movement Speed per Alchemist Level.
 Tier: 4
 Cost: 2
 
-AbilityName: Curative Admixture: Cure or Inflict Critical Wounds
+AbilityName: Curative Admixture Cure or Inflict Critical Wounds
 Descrip: Curative Admixture: Cure Critical Wounds Or Curative Admixture: Inflict Critical Wounds}Metamagic: Empower, Empower Heal, Maximize, Intensify}Spell Point Cost: 5}Cooldown 12 seconds}Primer Element: Gildleaf}Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.
 Tier: 5
 
@@ -735,7 +735,7 @@ AbilityName: Master Apothecary
 Descrip: You have no Max Caster Level with Curative Admixtures and any Gildleaf Alchemist Spells. +2 To Transmutation DCs, and +1 Spell Penetration
 Tier: 5
 Cost: 2
-All: Tier 4: Spell Critical Chance: Positive & Negative IV
+All: Tier 4: Spell Critical Chance - Positive & Negative IV
 
 AbilityName: Dissolve
 Descrip: Target enemy at touch range that is Fascinated, Sleeping, Dancing, Dazed, Tripped, Mesmerized, Paralyzed, Petrified, or Stunned must make a Fortitude save (d20 + your Heal skill) or die instantly. (20 second cooldown)
@@ -1941,7 +1941,7 @@ Descrip: -[20/40/60]% Threat with Spells
 Tier: 1
 Ranks: 3
 
-AbilityName: Spell Critical: Elemental and Poison I
+AbilityName: Spell Critical - Elemental and Poison I
 Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
 Tier: 1
 Cost: 2
@@ -1951,7 +1951,7 @@ Descrip: +[25/50/75]% damage and healing from your wands, scrolls, and other ite
 Tier: 1
 Ranks: 3
 
-AbilityName: SLA: Rapid Condensation
+AbilityName: Rapid Condensation
 Descrip: Spell Like Ability: Rapid Condensation}Metamagic: Quicken, Accelerate}Spell Point Cost: 4/3/2}Cooldown 12/8/4 seconds}Primer Element: Gildleaf (Yellow),}Throw a bottle that explodes on impact, rapidly condensing water in the air with a magical reaction that forms a cloud of obscuring mist. This cloud obscures all friends within the area, granting them 20% Concealment. Fire spells will burn this chemical reaction out of the air, dispelling it.
 Tier: 2
 Ranks: 3
@@ -1974,11 +1974,11 @@ Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you g
 Tier: 2
 Cost: 2
 
-AbilityName: Spell Critical: Elemental and Poison II
+AbilityName: Spell Critical - Elemental and Poison II
 Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
 Tier: 2
 Cost: 2
-All: Tier 1: Spell Critical: Elemental and Poison I
+All: Tier 1: Spell Critical - Elemental and Poison I
 
 AbilityName: Elemental Defenses
 Descrip: When enemy spells deal elemental damage against you, there's a 25% chance you'll gain [10/20/30] temporary hitpoints for 30 seconds. This can trigger up to once every 12 seconds.}(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)
@@ -2006,11 +2006,11 @@ Descrip: While your Reaction is Pyrite, you gain +1 Reflex Save, +1 for every 5 
 Tier: 3
 Cost: 2
 
-AbilityName: Spell Critical: Elemental and Poison III
+AbilityName: Spell Critical - Elemental and Poison III
 Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
 Tier: 3
 Cost: 2
-All: Tier 2: Spell Critical: Elemental and Poison II
+All: Tier 2: Spell Critical - Elemental and Poison II
 
 AbilityName: Spell Like Ability, Smoke Bomb
 Descrip: SLA: Smoke Bomb}Metamagic: Extend, Quicken, Eschew Materials}Spell Point Cost: 25/20/15}Cooldown 12 seconds}Primer Element: Gildleaf (Yellow),}Throw a bottle beneath you  that explodes into a cloud of smoke and leaves you Invisible and Displaced for 12 seconds.
@@ -2028,11 +2028,11 @@ Descrip: When your Reaction is Pyrite, your offensive Crimsonite and Gildleaf Al
 Tier: 4
 Cost: 2
 
-AbilityName: Spell Critical: Elemental and Poison IV
+AbilityName: Spell Critical - Elemental and Poison IV
 Descrip: Your Acid, Cold, Electric, Fire, and Poison damage spells have an additional 1% chance to critically hit.
 Tier: 4
 Cost: 2
-All: Tier 3: Spell Critical: Elemental and Poison III
+All: Tier 3: Spell Critical - Elemental and Poison III
 
 AbilityName: Elemental Obliteration
 Descrip: Select an Element for an explosive spell.}{- SLA: Caustic Obliteration}{- SLA: Fiery Obliteration}{- SLA: Frost Obliteration}{- SLA: Poison Obliteration}{- SLA: Voltaic Obliteration}Spell Like Ability: Elemental Obliteration}Metamagic: Empower, Maximize, Quicken, Heighten}Spell Point Cost: 12/8/6}Cooldown 12/8/6 seconds}Primer Element: Crimsonite (Red),}Throw a vial that explodes with <element> on impact, dealing 1d6+3 <element> damage per Caster Level to all enemies nearby. (Max Caster Level 10)
@@ -4086,7 +4086,7 @@ Ranks: 3
 Selector: Meticulous Fletching, Meticulous Weaponry
 None: Battle Engineer Tier 1: Item Defense, Eldritch Knight (Wizard) Tier 1: Item Defense, Sacred Defender Tier 1: Item Defense, Stalwart Defender Tier 1: Item Defense, Tempest Tier 1: Item Defense
 
-AbilityName: Action Boost: Sprint
+AbilityName: Action Boost - Sprint
 Descrip: Action Boost: Sprint +30/35/45% Action Boost bonus to movement speed for 20 seconds.
 Tier: 2
 Ranks: 3
@@ -5961,7 +5961,7 @@ Tier: 2
 Cost: 2
 All: Tier 1: Law on your Side
 
-AbilityName: Action Boost: Skills
+AbilityName: Action Boost - Skills
 Descrip: Active to gain a +2/4/6 Action Boost bonus to all skills for 20 seconds.}Cooldown: 30 seconds.
 Tier: 2
 Ranks: 3
@@ -9269,7 +9269,7 @@ Tier: 5
 Cost: 2
 All: Tier 4: Song of Arcane Might
 
-AbilityName: SLA: Horn of Thunder
+AbilityName: SLA - Horn of Thunder
 Descrip: Gain Spell-Like Ability. Activation cost: [30/25/20] SP. Cooldown: [20/16/12] seconds.}{ Blast your foes with 1d6 + 3 Sonic and 1d6 + 3 Electric damage per caster level. Sonic damage is doubled vs. Oozes, as the thunderous pressure disrupts their amorphous structure. Creatures making a Reflex save take half damage. Max caster level: 25. Affects liches. Metamagic Feats can be used at no additional cost
 Tier: 5
 Ranks: 3
@@ -10483,7 +10483,7 @@ AbilityName: Venom's Grip
 Descrip: +4 Intelligence. Your Poisoned Coating die size is now d12.}While your Reaction is Orchidium, +10 Physicial Resistance rating and +5% Dodge Cap.
 Tier: 0
 
-AbilityName: Spell Like Ability: Stiffen Skin
+AbilityName: SLA - Stiffen Skin
 Descrip: SLA: Stiffen Skin}Metamagic: Extend, Quicken}Spell Point Cost: 8/4/2}Cooldown 20/16/12 seconds}Primer Element: Ceruleite}This potion will mutate you and make your skin a little bit more resistant to physical damage. This grants a +2 Deflection bonus to AC, +1 per 6 caster levels, for 1 minute per caster level.
 Tier: 1
 Ranks: 3
@@ -10530,7 +10530,7 @@ AbilityName: Stone of the Subliminal
 Descrip: Alchemist's Stone Toggle: While wielding an Orb in your off-hand, you gain +5% Doublestrike, +5% Doubleshot, and Blur. You can only have one Alchemist's}Stone Toggle active at a time.
 Tier: 2
 
-AbilityName: Spell Like Ability: Wave of Poison
+AbilityName: SLA - Wave of Poison
 Descrip: SLA: Wave of Poison}Metamagic: Empower, Maximize, Quicken, Intensify}Spell Point Cost: 8/6/4}Cooldown 12/10/6 seconds}Primer Element: Ceruleite}You infect enemies in a short cone with a deadly poison that eats away at them. Affected enemies take 2d4 Poison damage plus 1 Poison damage per 2 Caster Levels every 2 seconds for 12 seconds. This poison will leave enemies Contaminated. (Max Caster Level: 10) When you hit a target that is immune to Poisons or Poison damage with this spell, they become vulnerable to Poisons and Poison Damage for 12 seconds.
 Tier: 3
 Ranks: 3
@@ -10567,7 +10567,7 @@ Descrip: While your Reaction is Orchidium, +8 Physical Resistance Rating.
 Tier: 4
 Cost: 2
 
-AbilityName: Spell Like Ability: Greater Wave of Poison
+AbilityName: SLA - Greater Wave of Poison
 Descrip: SLA: Greater Wave of Poison}Metamagic: Empower, Maximize, Quicken, Intensify}Spell Point Cost: 8}Cooldown 10 seconds}Primer Element: Ceruleite}You infect enemies in a short cone with a deadly poison that eats away at them. Affected enemies take 2d6 Poison damage plus 1 Poison damage per Caster Level every 2 seconds for 16 seconds. This poison will leave enemies Contaminated. (Max Caster Level: 20) When you hit a target that is immune to Poisons or Poison damage with this spell, they become vulnerable to Poisons and Poison Damage for 12 seconds.
 Tier: 5
 

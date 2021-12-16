@@ -10,6 +10,8 @@ Option Explicit
 ' structure is initialized and copied over it, and that blank structure's definition
 ' will also need to be upgraded.
 Public build As BuildType6
+Public Const buildVersion As Byte = 6   'Current Build Version
+
 Public Skill As SkillGridType ' Not saved to build file (calculated as needed)
 Public Feat As FeatListType ' Not saved to build file (calculated as needed)
 Public Guide As GuideType ' Not saved to build file (calculated as needed)

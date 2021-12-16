@@ -867,6 +867,9 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = "Feat: " & strList(i)
                                 .Req(i + 1).Style = peFeat
@@ -991,6 +994,9 @@ Private Sub LoadFeatSelector(ptypFeat As FeatType, ByVal pstrRaw As String)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To lngListMax + 1)
+                            ' NOTE - load RAW & Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = "Feat: " & strList(i)
                                 .Req(i + 1).Style = peFeat
@@ -1451,19 +1457,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf ptypTree.TreeType = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                    .Req(i + 1).Tree = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    .Req(i + 1).Destiny = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    'Parse Raw to get our Tier/Ability/Selector
-                                    ParseReqLine strList(i), ptypTree, .Req(i + 1)
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case "rank2all", "rank3all", "rank3none"
@@ -1479,19 +1477,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                                 With .Selector(s).Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                     .Reqs = lngListMax + 1
                                     ReDim .Req(1 To .Reqs)
+                                    ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                                    ' all its details on the PROCESS side after all Feats/Enh/Dest
+                                    ' are all loaded
                                     For i = 0 To lngListMax
                                         .Req(i + 1).Raw = strList(i)
-                                        If Left$(strList(i), 5) = "Feat:" Then
-                                            .Req(i + 1).Style = peFeat
-                                        ElseIf ptypTree.TreeType = tseDestiny Then
-                                            .Req(i + 1).Style = peDestiny
-                                            .Req(i + 1).Tree = ptypTree.TreeID ' set this req to this destiny's treeID
-                                            .Req(i + 1).Destiny = ptypTree.TreeID ' set this req to this destiny's treeID
-                                            'Parse Raw to get our Tier/Ability/Selector
-                                            ParseReqLine strList(i), ptypTree, .Req(i + 1)
-                                        Else
-                                            .Req(i + 1).Style = peEnhancement
-                                        End If
                                     Next
                                 End With
                             Next
@@ -1503,19 +1493,11 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                                 .Reqs = lngListMax + 1
                                 ReDim .Req(1 To .Reqs)
+                                ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                                ' all its details on the PROCESS side after all Feats/Enh/Dest
+                                ' are all loaded
                                 For i = 0 To lngListMax
                                     .Req(i + 1).Raw = strList(i)
-                                    If Left$(strList(i), 5) = "Feat:" Then
-                                        .Req(i + 1).Style = peFeat
-                                    ElseIf ptypTree.TreeType = tseDestiny Then
-                                        .Req(i + 1).Style = peDestiny
-                                        .Req(i + 1).Tree = ptypTree.TreeID ' set this req to this destiny's treeID
-                                        .Req(i + 1).Destiny = ptypTree.TreeID ' set this req to this destiny's treeID
-                                        'Parse Raw to get our Tier/Ability/Selector
-                                        ParseReqLine strList(i), ptypTree, .Req(i + 1)
-                                    Else
-                                        .Req(i + 1).Style = peEnhancement
-                                    End If
                                 Next
                             End With
                         End If
@@ -1641,21 +1623,11 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pt
                         With .Req(GetReqGroupID(strField))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
-                            'strList is our list of req's
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                'Req's can be Feat or Destiny/Enhancement
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf ptypTree.TreeType = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                    .Req(i + 1).Tree = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    .Req(i + 1).Destiny = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    'Parse Raw to get our Tier/Ability/Selector
-                                    ParseReqLine strList(i), ptypTree, .Req(i + 1)
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case "rank2all", "rank3all", "rank3none"
@@ -1665,19 +1637,11 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pt
                         With .Rank(lngRank).Req(GetReqGroupID(Mid$(strField, 6)))
                             .Reqs = lngListMax + 1
                             ReDim .Req(1 To .Reqs)
+                            ' NOTE - load RAW & maybe Style only at this point.  Req stuff gets
+                            ' all its details on the PROCESS side after all Feats/Enh/Dest
+                            ' are all loaded
                             For i = 0 To lngListMax
                                 .Req(i + 1).Raw = strList(i)
-                                If Left$(strList(i), 5) = "Feat:" Then
-                                    .Req(i + 1).Style = peFeat
-                                ElseIf ptypTree.TreeType = tseDestiny Then
-                                    .Req(i + 1).Style = peDestiny
-                                    .Req(i + 1).Tree = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    .Req(i + 1).Destiny = ptypTree.TreeID ' set this req to this destiny's treeID
-                                    'Parse Raw to get our Tier/Ability/Selector
-                                    ParseReqLine strList(i), ptypTree, .Req(i + 1)
-                                Else
-                                    .Req(i + 1).Style = peEnhancement
-                                End If
                             Next
                         End With
                     Case Else
@@ -1830,7 +1794,7 @@ Public Function SeekTree(pstrTreeName As String, penTreeStyle As PointerEnum) As
     If penTreeStyle = peDestiny Then
         lngFirst = 1
         lngLast = db.Destinies
-        Do While lngFirst <= lngLast
+        Do While lngFirst <= lngLast 'TODO Dest Search - only works when Dest are alphabetical
             lngMid = (lngFirst + lngLast) \ 2
             If db.Destiny(lngMid).TreeName < pstrTreeName Then
                 lngFirst = lngMid + 1
@@ -1844,7 +1808,7 @@ Public Function SeekTree(pstrTreeName As String, penTreeStyle As PointerEnum) As
     Else
         lngFirst = 1
         lngLast = db.Trees
-        Do While lngFirst <= lngLast
+        Do While lngFirst <= lngLast  'TODO Tree search - only works when trees are alphabetical
             lngMid = (lngFirst + lngLast) \ 2
             If db.Tree(lngMid).TreeName < pstrTreeName Then
                 lngFirst = lngMid + 1
@@ -2047,65 +2011,5 @@ Private Function ParseClassLevel(pstrRaw As String, penClass As ClassEnum, plngL
     If penClass = ceAny Then Exit Function
     plngLevel = val(Mid$(pstrRaw, lngPos + 1))
     ParseClassLevel = (plngLevel >= 1 And plngLevel <= 20)
-End Function
-
-'Parse our Requirements line to return Tier/Ability/Selector + ID's
-Public Function ParseReqLine(strRaw As String, ptypTree As TreeType, pReq As PointerType) As Boolean
-    Dim Req As ReqAbilityType
-    Dim strReqParse() As String
-    
-    ParseReqLine = False 'Default to false
-    If InStr(strRaw, ":") = 0 Then Exit Function
-    strReqParse = Split(strRaw, ":")
-    'Get our fields
-    Req.TreeID = ptypTree.TreeID
-    Req.TreeName = ptypTree.TreeName
-    Req.Tier = Trim(strReqParse(0))
-    Req.TierID = Split(strReqParse(0), " ")(1)
-    Req.AbilityName = Trim(strReqParse(1))
-    Req.AbilityID = FindAbilityIdInWIPTree(Req.TierID, Req.AbilityName, ptypTree)
-    If UBound(strReqParse) > 1 Then
-         Req.SelectorName = Trim(strReqParse(2))
-         'Find our selector name
-         Req.SelectorID = FindSelectorIdInWIPAbility(Req.TierID, Req.AbilityID, Req.SelectorName, ptypTree)
-    End If
-    'Copy to our req pointer
-    pReq.Tree = Req.TreeID
-    pReq.Tier = Req.TierID
-    pReq.Ability = Req.AbilityID
-    pReq.Selector = Req.SelectorID
-    
-    ParseReqLine = True
-End Function
-
-'Find an AbilityID in current tree in iTierID
-Public Function FindAbilityIdInWIPTree(iTierID As Long, strAbilityName As String, ptypTree As TreeType) As Long
-    Dim i As Long
-    'Default to not found
-    FindAbilityIdInWIPTree = -1
-    For i = 1 To ptypTree.Tier(iTierID).Abilities
-      
-        If strAbilityName = ptypTree.Tier(iTierID).Ability(i).AbilityName Then
-            'Found
-            FindAbilityIdInWIPTree = i
-            Exit Function
-        End If
-    Next
-    'TODO Log an error here...
-End Function
-
-'Find a SelectorID in current tree in iTierID/iAbilityID
-Public Function FindSelectorIdInWIPAbility(iTierID As Long, iAbilityID As Long, strSelectorName As String, ptypTree As TreeType) As Long
-    Dim i As Long
-    'Default to not found
-    FindSelectorIdInWIPAbility = -1
-    For i = 1 To ptypTree.Tier(iTierID).Ability(iAbilityID).Selectors
-        If strSelectorName = ptypTree.Tier(iTierID).Ability(iAbilityID).Selector(i).SelectorName Then
-            'Found
-            FindSelectorIdInWIPAbility = i
-            Exit Function
-        End If
-    Next
-    'TODO Log an error here...
 End Function
 

@@ -2436,6 +2436,31 @@ Public Function QuickSpentInTree(plngBuildTree As Long) As Long
     QuickSpentInTree = lngTotal
 End Function
 
+' Send 0 to get total for all Destiny
+Public Function QuickSpentInDestiny(plngBuildDestiny As Long) As Long
+    Dim lngDestiny As Long
+    Dim lngBuildDestiny As Long
+    Dim lngTotal As Long
+    Dim lngAbility As Long
+    
+    For lngBuildDestiny = 1 To build.Destinies
+        If plngBuildDestiny = 0 Or plngBuildDestiny = lngBuildDestiny Then
+            With build.Destiny(lngBuildDestiny)
+                lngDestiny = SeekTree(.TreeName, peDestiny)
+                For lngAbility = 1 To .Abilities
+                    With .Ability(lngAbility)
+                        If .Ability <> 0 Then
+                            lngTotal = lngTotal + GetPoints(db.Destiny(lngDestiny).Tier(.Tier).Ability(.Ability), .Selector, .Rank)
+                        End If
+                    End With
+                Next
+            End With
+            If plngBuildDestiny <> 0 Then Exit For
+        End If
+    Next
+    QuickSpentInDestiny = lngTotal
+End Function
+
 ' Treat class tree cores as tier = core # for Spent In Tree purposes
 Public Function GetTier(ByVal plngTier As Long, ByVal plngAbility As Long, penTreeStyle As TreeStyleEnum) As Long
     If penTreeStyle = tseRace Or plngTier > 0 Then

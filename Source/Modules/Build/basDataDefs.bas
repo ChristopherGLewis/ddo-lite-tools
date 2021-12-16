@@ -231,9 +231,9 @@ Public Type TreeType
     Abbreviation As String
     Initial() As String ' Used for Leveling Guide
     Color As ColorValueEnum ' Color for Leveling Guide
-    TreeType As TreeStyleEnum
+    TreeType As TreeStyleEnum   'THIS SHOULD BE STYLE
     Stats() As Boolean
-    Tier() As TierType ' This is the ROW in a tree - Tier(0) = Cores
+    Tier() As TierType ' This is the ROW in a tree - Tier(0) = Cores.  Array of AbilityTypes
     Tiers As Long
     Lockout As String
     Wiki As String
@@ -292,17 +292,20 @@ Public Type DatabaseType
     NameChange() As NameChangeType
     Templates As Long
     Template() As TemplateType
-    '2021.11.10 - Epic Granted
+    '2021.11.10 - Epic Granted - TODO
     EpicGrantedFeats As Long
     EpicGrantedFeat() As EpicGrantedFeatType
     Loaded As Boolean
 End Type
 
 Public Type ReqAbilityType
+    FeatID As Long   'Req is either feat based or Tree/Ability based
+    FeatName As String
     TreeID As Long  'Both Destiny and Enhancement
+    TreeName As String
+    TreeStype As TreeStyleEnum
     Tier As String
     TierID As Long
-    TreeName As String
     AbilityID As Long
     AbilityName As String
     SelectorID As Long
