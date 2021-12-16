@@ -13,6 +13,22 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+
+### 4.0.0 - U51 Destiny Updates
+Changes:
+    Updates to support U51's Destiny Updates.
+        * Reformatted Destiny.txt
+        * Created a new Destiny page to work with U51 3 Destiny system
+        * Updated outputs to match U51
+        * Destinies now only track Permenant Destiny Points, not Fate Points.  
+          This makes the use of Destinies simpler since FP's are just left around
+          for legacy purposes.  
+        * Revamped Requirements to make them work with selectors better
+
+    Compendium
+        * Added Dread Sea Scrolls
+
+
 ### 3.5.1 - Updates to Paladin and compendium fixes
 Changes:
     Updates to Paladin spells & Enhancements
