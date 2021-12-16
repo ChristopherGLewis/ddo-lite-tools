@@ -13,7 +13,6 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
-
 ### 4.0.0 - U51 Destiny Updates
 Changes:
     Updates to support U51's Destiny Updates.
@@ -23,7 +22,24 @@ Changes:
         * Destinies now only track Permenant Destiny Points, not Fate Points.  
           This makes the use of Destinies simpler since FP's are just left around
           for legacy purposes.  
-        * Revamped Requirements to make them work with selectors better
+        * Revamped Requirements to make them work with selectors better. This update
+          works for both Destinies and Enhancements, although Destinies currently
+          have no requirements outside their own tree.
+
+    Added new spells
+        * Thanks to yhelm123
+
+    Fixed Ravager T5 Critical Rage
+        * Thanks to SouCarioca 
+
+    Notes:
+        * There is no leveling guide for Destinies.  I'll see if I can implement it
+          in the future - should be similar in functionality to Enhancements LG.
+        * There is no tree crawler for the Destinies yet.  
+        * Destiny names and descriptions are still being updated by SSG.  Expect
+          issues with saved files until the SSG updates settle down.
+        * There may be lots of corner case bugs.  Please enter them in the issues 
+          tracker
 
     Compendium
         * Added Dread Sea Scrolls
