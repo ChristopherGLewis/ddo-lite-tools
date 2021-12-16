@@ -3129,3 +3129,9 @@ Favor: 10
 Level: 32
 Epic: 32
 Style: Raid
+
+QuestName: Dread Sea Scrolls
+Patron: The Gatekeepers
+Favor: 4
+Level: 6
+Epic: 32
