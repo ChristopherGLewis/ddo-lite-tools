@@ -13,13 +13,28 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.0.1 - U51 Destiny Updates - Fixes
+Changes:
+    
+    Fixed Destiny Save
+
+    Max Permanent Destiny Points to 19 (update in Tomes.txt).
+    SSG notes say 18, but I've personally got 19, and don't have all 
+    my EPL's...
+    
+    Destinies
+        * Fury - minor tweeks on selectors
+    
+    Enhancements
+        * Fixed issue with requirements that use Feat:
+
 ### 4.0.0 - U51 Destiny Updates
 Changes:
     Updates to support U51's Destiny Updates.
         * Reformatted Destiny.txt
         * Created a new Destiny page to work with U51 3 Destiny system
         * Updated outputs to match U51
-        * Destinies now only track Permenant Destiny Points, not Fate Points.  
+        * Destinies now only track Permanent Destiny Points, not Fate Points.  
           This makes the use of Destinies simpler since FP's are just left around
           for legacy purposes.  
         * Revamped Requirements to make them work with selectors better. This update

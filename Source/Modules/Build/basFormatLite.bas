@@ -609,7 +609,7 @@ End Sub
 Private Sub SaveDestinyLite()
     Dim i As Long
     
-    If Len(build.DestinyTier5) = 0 And build.DestinyAP = 0 Then Exit Sub
+    If Len(build.DestinyTier5) = 0 And build.Destinies = 0 Then Exit Sub
     AddSection "Destiny"
     ' Tier5
     If Len(build.DestinyTier5) Then AddLine "DestinyTier5: " & build.DestinyTier5

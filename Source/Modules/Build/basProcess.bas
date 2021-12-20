@@ -441,13 +441,17 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
     Dim i, j As Long
     Dim enReq As Long
     Dim lngReq As Long
+    Dim lngTier As Long
+    Dim lngAbility As Long
     
     With ptypTree   'db.Destiny or db.Tree
         'Look at each tier in tree
-        For log.Tier = 0 To .Tiers
+        For lngTier = 0 To .Tiers
+            log.Tier = lngTier
             'Look at each ability in tier
-            For log.Ability = 1 To .Tier(log.Tier).Abilities
-                With .Tier(log.Tier).Ability(log.Ability) 'db.t/d().tier().Ability
+            For lngAbility = 1 To .Tier(lngTier).Abilities
+                log.Ability = lngAbility
+                With .Tier(lngTier).Ability(lngAbility) 'db.t/d().tier().Ability
                     ProcessPointer .Parent
                     For i = 1 To .Siblings
                         ProcessPointer .Sibling(i)
@@ -634,15 +638,18 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
             strReqParse2 = Split(strReqParse(1), ":")
             Req.FeatName = strReqParse2(0)
             Req.FeatID = SeekFeat(Req.FeatName)
+            Req.TreeStype = peFeat
             Req.SelectorName = strReqParse2(1)
             Req.SelectorID = FindSelectorIdInFeat(Req.FeatID, Req.SelectorName)
         Else
-            Req.FeatName = strReqParse(1)
+            Req.FeatName = Trim(strReqParse(1))
             Req.FeatID = SeekFeat(Req.FeatName)
+            Req.TreeStype = peFeat
         End If
         'Copy to our req pointer
         pReq.Feat = Req.FeatID
         pReq.Selector = Req.SelectorID
+        pReq.Style = peFeat
     Else '(tree based)
         'Get our fields
         Req.TreeID = idTree
