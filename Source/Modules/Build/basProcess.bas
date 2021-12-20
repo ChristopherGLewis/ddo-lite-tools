@@ -466,7 +466,7 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
                         Next
                     Next
                     
-                    'Abilities can have Selectors that haverequirements
+                    'Abilities can have Selectors that have requirements
                     For j = 1 To .Selectors
                         For enReq = rgeAll To rgeNone
                             For lngReq = 1 To .Selector(j).Req(enReq).Reqs
@@ -705,9 +705,9 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
         pReq.Tree = Req.TreeID
         Select Case Req.TreeStype
             Case tseDestiny
-                pReq.Style = Req.TreeStype
+                pReq.Style = peDestiny
             Case Else
-                pReq.Style = Req.TreeStype
+                pReq.Style = peEnhancement
         End Select
         pReq.Tier = Req.TierID
         pReq.Ability = Req.AbilityID

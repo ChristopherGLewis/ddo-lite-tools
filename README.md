@@ -27,6 +27,7 @@ Changes:
     
     Enhancements
         * Fixed issue with requirements that use Feat:
+        * Fixed issue with Racial Req: processing
 
 ### 4.0.0 - U51 Destiny Updates
 Changes:
