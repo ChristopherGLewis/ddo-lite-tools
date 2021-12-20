@@ -968,7 +968,7 @@ Descrip: Multiselector: Overwelming Force.
 Cost: 1
 Ranks: 3
 Tier: 4
-Selector: Overwelming Force , Off Hand Attack, Strike Through
+Selector: Overwelming Force, Primal Force
 SelectorName: Overwelming Force
 Descrip: +1/2/3 bonus to hit. Increases your Adrenaline effect by 25/50/75% additional damage. Rank 3: Melee attacks under the effect of Adrenaline cause knock down on target for 4 seconds.
 SelectorName: Primal Force
@@ -1247,8 +1247,8 @@ Cost: 1
 Ranks: 1
 Tier: 0
 
-
-AbilityName: Push Through The Line: Activating an Action Boost grants +1/2/3 to all Ability Scores for its duration.
+AbilityName: Push Through The Line
+Descrip: Activating an Action Boost grants +1/2/3 to all Ability Scores for its duration.
 Cost: 1
 Ranks: 3
 Tier: 1
