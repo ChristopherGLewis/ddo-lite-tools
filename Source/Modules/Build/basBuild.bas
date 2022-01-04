@@ -576,7 +576,10 @@ Private Sub InitStandardFeats()
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 12
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 15
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 18
-    'New from U51
+    
+    'Should split out bftStandard into heroic/Epic/Destiny
+    
+    'New from U51  - NEED TO CHANGE SAVE FILE GetBuildFeatSlot
     InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 21    'Epic1
     InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 22 'Dest1
     'ED core2 @ 23
@@ -587,7 +590,7 @@ Private Sub InitStandardFeats()
     InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 28 'Dest3
     InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 30    'Epic4
 
-    InitBuildFeatSlot bftGranted, bfsEpic, lngIndex, 21    'Epic Power1
+    'InitBuildFeatSlot bftGranted, bfsEpic, lngIndex, 21    'Epic Power1
 
 End Sub
 

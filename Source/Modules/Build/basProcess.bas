@@ -247,14 +247,18 @@ End Sub
 Private Sub ProcessTreeSelectors(ptypTree As TreeType)
     Dim lngSelector As Long
     Dim lngParent As Long
+    Dim iTier As Long
+    Dim iAbility As Long
     
-    For log.Tier = 0 To ptypTree.Tiers
-        For log.Ability = 1 To ptypTree.Tier(log.Tier).Abilities
+    For iTier = 0 To ptypTree.Tiers
+        log.Tier = iTier
+        For iAbility = 1 To ptypTree.Tier(iTier).Abilities
+            log.Ability = iAbility
             log.HasError = False
-            With ptypTree.Tier(log.Tier).Ability(log.Ability)
+            With ptypTree.Tier(iTier).Ability(iAbility)
                 Select Case .SelectorStyle
                     Case sseShared, sseExclusive
-                        If .Selectors = 0 Then
+                        'If .Selectors = 0 Then
                             If Left$(.Parent.Raw, 5) = "Feat:" Then
                                 log.ptr = .Parent
                                 log.Style = peFeat
@@ -274,10 +278,15 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                     Next
                                 End If
                             Else
+                                'This should be a parent in this tree
                                 log.ptr = .Parent
-                                If ptypTree.TreeType = tseDestiny Then log.Style = peDestiny Else log.Style = peEnhancement
+                                If ptypTree.TreeType = tseDestiny Then
+                                    log.Style = peDestiny
+                                Else
+                                    log.Style = peEnhancement
+                                End If
                                 ' Enhancements / Destinies
-                                ProcessTreeSelectorParent ptypTree, .Parent
+                                ProcessTreeSelectorParent ptypTree, .Parent   ' ---???
                                 If .Parent.Ability = 0 Then
                                     LogError
                                 Else
@@ -292,7 +301,7 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                     End If
                                 End If
                             End If
-                        End If
+                        'End If
                 End Select
             End With
         Next

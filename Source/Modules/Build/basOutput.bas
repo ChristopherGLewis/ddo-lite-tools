@@ -1842,7 +1842,13 @@ Private Function GetAbilityDisplay(ptypTree As TreeType, ByVal plngTier As Long,
     End If
     With ptypTree.Tier(plngTier).Ability(plngAbility)
         If plngSelector Then
-            If .SelectorOnly Then strReturn = .Selector(plngSelector).SelectorName Else strReturn = .Abbreviation & ": " & .Selector(plngSelector).SelectorName
+            If .SelectorOnly Then
+                strReturn = .Selector(plngSelector).SelectorName
+            Else
+                strReturn = .Abbreviation & ": " & .Selector(plngSelector).SelectorName
+            End If
+            'TODO Fix display of Ability/Selector
+            strReturn = .Abbreviation & ": " & .Selector(plngSelector).SelectorName
         Else
             strReturn = .Abbreviation
         End If

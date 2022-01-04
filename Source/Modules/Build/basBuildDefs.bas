@@ -183,7 +183,7 @@ Public Type BuildType1
     Levelups(7) As Byte
     Tome(6) As Byte
     Skills(1 To 21, 1 To 20) As Byte
-    Feat() As BuildFeatListType
+    Feat() As BuildFeatListType   'Array of Feat types. 0-granted, 1-selected, etc from here: BuildFeatTypeEnum
     CanCastSpell(9) As Byte  ' Index 0 = healing spells; if index 1 = 0, build can't cast spells at all (never gets level 1 spells)
     ClassSpell() As BuildSpellListType
     ClassSpells As Byte

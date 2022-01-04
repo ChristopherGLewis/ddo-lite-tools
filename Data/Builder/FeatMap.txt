@@ -71,7 +71,6 @@ Deity Ability: Undying Call	Undying Call	Undying Call
 Deity Ability: Unyielding Sovereignty	Unyielding Sovereignty	Unyielding Sovereignty
 Deity Ability: Vulkoor's Avatar	Vulkoor's Avatar	Vulkoor's Avatar
 Diehard	Diehard	Diehard
-Dire Charge	Martial Sphere: Dire Charge	Dire Charge
 Discipline	Discipline	Discipline
 Dodge	Dodge	Dodge
 Domain: Air Domain	Domain: Air Domain	Air Domain Tier I

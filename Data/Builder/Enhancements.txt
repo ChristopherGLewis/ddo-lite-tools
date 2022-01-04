@@ -2417,12 +2417,17 @@ Tier: 0
 SharedSelector: Tier 0: Emissary
 
 AbilityName: Prophetic Zenith
+Abbreviation: Prophetic Zenith
 Descrip: Gain a new Spell-like ability:}{- Chill Touch: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Darkness}{ Note: Does not share a cooldown with the Archmage's Chill Touch SLA.}{- Nimbus of Light: (Activation Cost: 4/3/2 spell points. Cooldown: 6/5/4 seconds.)}{-Requires Divine Emissary of Light
 Tier: 1
 Ranks: 3
 Flags: SelectorOnly
 SharedSelector: Tier 0: Emissary
 Selector: Chill Touch, Nimbus of Light
+SelectorName: Nimbus of Light
+All: Tier 0: Emissary: Light
+SelectorName: Chill Touch
+All: Tier 0: Emissary: Darkness
 
 AbilityName: Spellpower
 Descrip: Choose a type of spellpower to gain:}{- Spellpower: Light: +5/+10/+15 Light Spellpower}{-Requires Divine Emissary of Light}{- Spellpower: Negative: +5/+10/+15 Negative Spellpower}{-Requires Divine Emissary of Darkness}{- Spellpower: Universal: +3/+6/+9 Universal Spellpower

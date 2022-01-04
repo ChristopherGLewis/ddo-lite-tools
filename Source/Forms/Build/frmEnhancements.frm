@@ -1708,12 +1708,19 @@ Private Sub GetSlotInfo(ptypTree As TreeType, ptypAbility As BuildAbilityType, p
     With ptypAbility
         plngRanks = .Rank
         With ptypTree.Tier(.Tier).Ability(.Ability)
+            'Display the name of the ability
             If ptypAbility.Selector = 0 Then
                 pstrCaption = .Abbreviation
                 plngCost = .Cost
             Else
-                pstrCaption = .Selector(ptypAbility.Selector).SelectorName
-                If Not .SelectorOnly Then pstrCaption = .Abbreviation & ": " & pstrCaption
+                'Display name + Selector
+                If .SelectorOnly Then
+                    pstrCaption = .Selector(ptypAbility.Selector).SelectorName
+                Else
+                    pstrCaption = .Abbreviation & ": " & .Selector(ptypAbility.Selector).SelectorName
+                End If
+                'TODO Fix display of Ability/Selector
+                pstrCaption = .Abbreviation & ": " & .Selector(ptypAbility.Selector).SelectorName
                 plngCost = .Selector(ptypAbility.Selector).Cost
             End If
             If plngRanks <> 0 Then plngCost = plngCost * plngRanks

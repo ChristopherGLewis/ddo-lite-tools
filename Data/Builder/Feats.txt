@@ -372,12 +372,6 @@ Descrip: You automatically stabilize when you become unconscious from damage.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
 
-FeatName: Dire Charge
-Group: Destiny, Melee
-WikiName: Epic Destiny Feats#Martial sphere
-Descrip: Charge forward to strike targeted enemy. Target and nearby foes take +2[W] damage and have a chance to be stunned. (DC 25 + highest stat mod + stun bonuses)
-Level: 28
-
 FeatName: Discipline
 Group: Heroic, Misc, Defense
 Descrip: +2 bonus to Concentration skill checks, and +1 to Will saves.

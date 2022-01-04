@@ -23,7 +23,7 @@ less data we need to put in the file the better.
 Capitalization matters. "Hello" and "hello" are considered different, so be mindful of 
 captialization inconsistencies.
 
-xxxName:
+Name:
 Required. Full name. This is used when pointing to it as a prereq for something else.
 
 Abbreviation:

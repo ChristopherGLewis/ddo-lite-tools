@@ -13,6 +13,17 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.0.2 - U51 Destiny Updates - Fixes
+Changes:
+    
+    Fixed issue where Destiny at 22 & 25 were not being saved.
+
+    Feats
+        * Removed Dire Charge since its now a Destiny enhancement
+    
+    Enhancements
+        * Fixed issue with SharedSelector in enhancements like Divine Disciple
+
 ### 4.0.1 - U51 Destiny Updates - Fixes
 Changes:
     

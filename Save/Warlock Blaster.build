@@ -65,10 +65,8 @@ Standard: Heroic 15	Spell Penetration
 Standard: Heroic 18	Greater Spell Focus: Conjuration
 Standard: Epic 21	Epic Eldritch Blast
 Standard: Epic 24	Greater Spell Penetration
-Standard: Destiny 26	Epic Arcane Eldritch Blast
 Standard: Epic 27	Ruin
 Standard: Destiny 28	Hellball
-Standard: Destiny 29	Elusive Target
 Standard: Epic 30	Greater Ruin
 
 Legend: Legend 30	Scion of: Plane of Fire
@@ -173,4 +171,14 @@ Guide: Soul Tier 2: Stricken (Rank 1)
 Guide: Soul Tier 2: Stricken (Rank 2)
 Guide: Soul Tier 2: Stricken (Rank 3)
 Guide: Soul Tier 3: Charisma
+
+
+[Destiny]
+
+Destiny: Divine Crusader
+Type: Destiny
+Ability: Tier 0: Just Cause
+Ability: Tier 0: Confront any Foe
+Ability: Tier 1: Divine Smite (Rank 3)
+Ability: Tier 1: Shield of Justice (Rank 3)
 

@@ -331,7 +331,7 @@ Private Sub SaveFeatsLite()
     
     lngLines = mlngLines
     AddSection "Feats"
-    For i = bftStandard To bftFeatTypes - 1
+    For i = bftStandard To bftFeatTypes - 1   ' Granted (0) don't get saved
         If AddFeatGroup(i) Then
             BlankLine
             blnInclude = True
@@ -399,6 +399,7 @@ End Function
 Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
     Dim strReturn As String
     
+    'Should split out bftStandard into heroic/Epic/Destiny
     With ptypBuildFeat
         Select Case .Type
             Case bftGranted: strReturn = "Granted"
@@ -406,7 +407,7 @@ Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
                 Select Case .Level
                     Case Is < 20: strReturn = "Heroic " & .Level
                     Case 21, 24, 27, 30: strReturn = "Epic " & .Level
-                    Case 26, 28, 29: strReturn = "Destiny " & .Level
+                    Case 22, 25, 28: strReturn = "Destiny " & .Level
                 End Select
             Case bftLegend: strReturn = "Legend " & .Level
             Case bftRace: strReturn = GetRaceName(build.Race) & " " & .Level
