@@ -22,8 +22,8 @@ Tier: 0
 
 AbilityName: Divine Smite
 Descrip: You gain the Smite Evil feat, and +1 uses of Smite Evil. Enhances Smite Evil by adding 5 effective Paladin levels to its damage calculation. Furthermore, Smite Evil attacks to grant you and nearby allies 1d2 Positive Healing per Character Level when they hit an enemy. This may only apply once every 10 seconds.
-Cost: 1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 1
 
 AbilityName: Shield of Justice
@@ -56,22 +56,10 @@ Cost: 1
 Ranks: 3
 Tier: 2
 
-AbilityName: Bulk Up
-Descrip: +5/10/15 Hit Points, +25/50/75% Fortification
-Cost: 1
-Ranks: 3
-Tier: 2
-
 AbilityName: Holy Mantle
 Descrip: Divine Crusader Destiny Mantle: Weapons and Shields you wield are considered to have your alignment for Damage Reduction purposes. Your Base Attack Bonus is now equal to your Character Level.
 Cost: 2
 Ranks: 1
-Tier: 2
-
-AbilityName: Divine Deflection
-Descrip: +1/2/3 all saves, additional +1/2/3 saves vs Enchantments
-Cost: 1
-Ranks: 3
 Tier: 2
 
 AbilityName: Shield of Light
@@ -80,20 +68,20 @@ Cost: 1
 Ranks: 3
 Tier: 2
 
-AbilityName: Saze of the Divine
+AbilityName: Bulk Up
+Descrip: +5/10/15 Hit Points, +25/50/75% Fortification
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Divine Deflection
+Descrip: +1/2/3 all saves, additional +1/2/3 saves vs Enchantments
+Cost: 1
+Ranks: 3
+Tier: 2
+
+AbilityName: Gaze of the Divine
 Descrip: You gain True Seeing and Blindness Immunity.
-Cost: 2
-Ranks: 1
-Tier: 3
-
-AbilityName: Crusade
-Descrip: Consecration now grants Crusade to allies who stand inside of it (+10% damage for 4 seconds) and burns all enemies within it. (every 3 seconds, they take 1 point of fire damage per character level. This scales with your Fire Spell Power)
-Cost: 2
-Ranks: 1
-Tier: 3
-
-AbilityName: Axiom of Faith
-Descrip: Multiselector: Choose a Religion from the full list of Religions. You are now considered to be a follower of that religion, including being able to use its Favored Weapon.
 Cost: 2
 Ranks: 1
 Tier: 3
@@ -104,7 +92,19 @@ Cost: 1
 Ranks: 3
 Tier: 3
 
-AbilityName: How Dare You
+AbilityName: Axiom of Faith
+Descrip: Multiselector: Choose a Religion from the full list of Religions. You are now considered to be a follower of that religion, including being able to use its Favored Weapon.
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: Crusade
+Descrip: Consecration now grants Crusade to allies who stand inside of it (+10% damage for 4 seconds) and burns all enemies within it. (every 3 seconds, they take 1 point of fire damage per character level. This scales with your Fire Spell Power)
+Cost: 2
+Ranks: 1
+Tier: 3
+
+AbilityName: How Dare You Strike Me
 Descrip: Being struck by magic has a 10/20/30% chance to regenerate a Smite Evil. Rank 3: Getting hit below 50% will automatically Consecrate the ground beneath your feet. Can only happen once every 2 minutes.
 Cost: 1
 Ranks: 3
@@ -116,16 +116,16 @@ Cost: 1
 Ranks: 3
 Tier: 4
 
+AbilityName: Heavenly Presence
+Descrip: Your Divine Crusader Destiny Mantle now grants you the traits of a Celestial. +10 Physical Resistance Rating and 10% Acid, Cold and Electricity Absorption. In addition, you are immune to Petrification.
+Cost: 1
+Ranks: 1
+Tier: 4
+
 AbilityName: Blessed Strikes
 Descrip: +2/4/6% Doublestrike and Doubleshot.
 Cost: 1
 Ranks: 3
-Tier: 4
-
-AbilityName: Heavenly Presence
-Descrip: Your Divine Crusader Destiny Mantle now grants you the traits of a Celestial. +10 Physical Resistance Rating and 10% Acid, Cold and Electricity Absorption. In addition, you are immune to Petrification.
-Cost: 2
-Ranks: 1
 Tier: 4
 
 AbilityName: Cower Before Me
@@ -140,14 +140,8 @@ Cost: 2
 Ranks: 1
 Tier: 4
 
-AbilityName: Beckon Divinity
-Descrip: Epic Moment: Divine Power infuses you and your party members, granting them Divinity for 30 seconds. This blessing is so strong that any allies who are dead are raised from it to their Maximum Hit Points. Divinity: When you are struck by any type of damage, you are healed for 4d6 Positive Healing (this healing becomes Repair if you are a Warforged, or Negative if you are Undead). Furthermore, for the first 10 seconds, you are immune to all forms of Crowd Control. The Resurrection portion of this ability may only affect you once per rest.
-Cost: 2
-Ranks: 1
-Tier: 5
-
-AbilityName: Law of the Divine
-Descrip: You gain the Embodiment of Law feat. If you already had it, it instead enhances the feat to deal 1d6 Law damage per Epic Level scaling with 200% Melee or Ranged Power, and apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application)
+AbilityName: Mighty Crusade
+Descrip: Smite Evil attacks apply the Crusade buff to your entire party for 4 seconds. You gain +1 Armor Class and +1 Physical Resistance Rating for every two Religious Lore feats you have.
 Cost: 2
 Ranks: 1
 Tier: 5
@@ -158,14 +152,20 @@ Cost: 2
 Ranks: 1
 Tier: 5
 
+AbilityName: Law of the Divine
+Descrip: You gain the Embodiment of Law feat. If you already had it, it instead enhances the feat to deal 1d6 Law damage per Epic Level scaling with 200% Melee or Ranged Power, and apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application)
+Cost: 2
+Ranks: 1
+Tier: 5
+
 AbilityName: Blessed Blades
 Descrip: While using a Favored Weapon, +1 Critical Multiplier on a roll of 19-20.
 Cost: 2
 Ranks: 1
 Tier: 5
 
-AbilityName: Mighty Crusade
-Descrip: Smite Evil attacks apply the Crusade buff to your entire party for 4 seconds. You gain +1 Armor Class and +1 Physical Resistance Rating for every two Religious Lore feats you have.
+AbilityName: Beckon Divinity
+Descrip: Epic Moment: Divine Power infuses you and your party members, granting them Divinity for 30 seconds. This blessing is so strong that any allies who are dead are raised from it to their Maximum Hit Points. Divinity: When you are struck by any type of damage, you are healed for 4d6 Positive Healing (this healing becomes Repair if you are a Warforged, or Negative if you are Undead). Furthermore, for the first 10 seconds, you are immune to all forms of Crowd Control. The Resurrection portion of this ability may only affect you once per rest.
 Cost: 2
 Ranks: 1
 Tier: 5
@@ -264,6 +264,7 @@ Descrip: Breath Weapons (including your Dragon Breath Epic Strike) have a 25% ch
 Cost: 2
 Ranks: 1
 Tier: 3
+
 AbilityName: Scales of the Dragon
 Descrip: Activate this to shroud yourself in the Scales of a Dragon. This has two components; first, it absorbs 15 points of damage per Character Level in Ablative protection. Secondly, it shields you from 50% of the Elemental Damage of your dragon type. Both effects last for 5 minutes. Cooldown: 30 Seconds. Costs 30 Spell Points.
 Cost: 2
@@ -303,14 +304,14 @@ Tier: 4
 
 AbilityName: Dragonspeed
 Descrip: While in your Attune the Arcane Destiny Mantle, your spell cooldowns are reduced by 10%, you gain the Mobile Spellcasting feat, and you have a 30% enhancement bonus to movement speed.
-Cost: 1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 4
 
 AbilityName: Improve Dragon Breath
 Descrip: Multiselector:  Energy Vortex, Energy Burst, Gaping Maw
-Cost: 1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 4
 Selector: Energy Vortex, Energy Burst, Gaping Maw
 SelectorName: Energy Vortex
@@ -344,7 +345,7 @@ Descrip: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.
 SelectorName: Empower
 Descrip: Using the Intensify Spell Metamagic costs you 2/4/6 fewer Spell Points.
 
-AbilityName: Hellstorm
+AbilityName: Bring About Destruction
 Descrip: +10 spellpower of your Draconic Element, +10 Universal spellpower. Your Eldar's Electric Surge, Niac's Biting Cold, Burning Blood, Enervation, and Venom Concentration spells now stack two additional times.
 Cost: 2
 Ranks: 1
@@ -433,7 +434,6 @@ Cost: 1
 Ranks: 3
 Tier: 1
 
-
 AbilityName: Divine Protection
 Descrip: +6 Magical Resistance Rating.
 Cost: 2
@@ -448,7 +448,7 @@ Tier: 2
 
 AbilityName: Angelic Body
 Descrip: While in your Exalted Angel Destiny Mantle, you are immune to Natural Poisons and Natural Diseases.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 2
 
@@ -489,7 +489,8 @@ Ranks: 1
 Tier: 3
 Selector: Sun Bolt, Flaming Sphere, Mass Cure Moderate Wounds
 SelectorName: Sun Bolt
-Descrip: Sun Bolt SLA (12 second cooldown, 12 spell points)
+Descrip: Sun Bolt SLA (12 second cooldown, 12 spell points) (Note - Only costs 1 DP, not 2)
+Cost: 1
 SelectorName: Flaming Sphere
 Descrip: Flaming Sphere SLA (60 second cooldown, 15 spell points)
 SelectorName: Mass Cure Moderate Wounds
@@ -501,7 +502,7 @@ Cost: 1
 Ranks: 1
 Tier: 3
 
-AbilityName: Purity of Mind & Soul
+AbilityName: Purity of Mind and Soul
 Descrip: +5/10/15 to Positive, Negative, and Repair Healing Amplification
 Cost: 1
 Ranks: 3
@@ -509,36 +510,36 @@ Tier: 3
 
 AbilityName: Shadows Upon You
 Descrip: When you Turn Undead, foes in the area become cursed with Shadows Upon You, reducing all saving throws by -1 for 20 seconds. Whenever this foe is damaged by spells or attacks, saving throws are reduced by an additional -1 for 5 seconds. Stacks up to 5 times.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 3
 
 AbilityName: Blood and Radiance
 Descrip: +10 Fire, Light, Positive, Alignment, and Universal Spell Power
-Cost:1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 4
 
 AbilityName: Delayed Judgement
 Descrip: Foes affected by Stand And Be Judged must now also make Will saving throw (20 + Highest of Intelligence/Wisdom/Charisma modifiers + Highest of Evocation and Conjuration bonuses) or be Stunned for 8 seconds. If stunned, after 6 seconds they take 10d50 Fire damage and 10d50 Light damage. This damage scales with Spell Power.
-Cost:2
+Cost: 2
 Ranks: 1
 Tier: 4
 
 AbilityName: Angelic Soul
 Descrip: Your Exalted Angel Destiny Mantle now grants +10 Magical Resistance Rating and 15% damage absorption to all damage types other than Piercing, Slashing, Bludgeoning, Negative, Positive, Repair, and Bane/Untyped.
-Cost:2
+Cost: 1
 Ranks: 1
 Tier: 4
 
 AbilityName: Holy Command
 Descrip: When you hit enemies with Sun Pillar, Flame Pillar, or Healing Pillar, they must make a saving throw (20 + highest of Intelligence/Wisdom/Charisma + highest of Evocation and Conjuration bonuses) or be tripped, blinded, and made helpless for 12 seconds.
-Cost:2
+Cost: 1
 Ranks: 1
 Tier: 4
 
-AbilityName: Metamagics Attunement
-Descrip: Multiselector:  Enhanced Metamagics
+AbilityName: Enhanced Metamagics
+Descrip: Multiselector: Maximize, Empower, Quicken
 Cost:1
 Ranks: 3
 Tier: 4
@@ -579,8 +580,8 @@ Cost: 2
 Ranks: 1
 Tier: 5
 
-AbilityName: Metamagic Attunement II
-Descrip: Multiselector:Empower Healing, Intensify
+AbilityName: Enhanced Metamagics II
+Descrip: Multiselector: Empower Healing, Intensify
 Cost: 2
 Ranks: 1
 Tier: 5
@@ -589,6 +590,7 @@ SelectorName: Empower Healing
 Descrip: The Empower Healing Metamagic no longer costs Spell Points
 SelectorName: Intensify
 Descrip: The Intensify Metamagic no longer costs Spell Points.
+Cost: 1
 
 DestinyName: Fatesinger
 Abbreviation: Fatesinger
@@ -626,7 +628,7 @@ Tier: 1
 
 AbilityName: Epic Strike
 Descrip: Multiselector:Strike a Chord, The Sword Sings, The Pluck of a String
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 1
 Selector: Strike a Chord, The Sword Sings, The Pluck of a String
@@ -639,14 +641,14 @@ Descrip: Ranged Attack: 3[W] +2 Critical Threat Range. Your ranged weapon sings 
 
 AbilityName: Harmonic Resonance
 Descrip: Your Epic Strikes in this tree and all of your attacks and offensive spells have a 20% chance to build up a stacking Harmonic Resonance in your enemies. Harmonic Resonance: Each stack increases the creature's vulnerability to Sonic damage by 10% and reduces their Armor Class by 5. The effect may stack up to 3 times and lasts up to 20 seconds.
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 1
 
 AbilityName: Tune of the Weave
 Descrip: You gain 2/4/6 Magical Resistance Rating & 10/30/50 Spell Points.
 Cost: 1
-Ranks: 1
+Ranks: 3
 Tier: 1
 
 AbilityName: ​The Rhythm to Reign
@@ -693,6 +695,12 @@ Cost: 2
 Ranks: 1
 Tier: 3
 
+AbilityName: ​Reign
+Descrip: Your Vorpal Strikes cause 7/9/11d20 Electric and Sonic damage. Scales with Melee and Ranged Power by 300%. Passive: Gain +1/2/3 to Hit.
+Cost: 1
+Ranks: 3
+Tier: 3
+
 AbilityName: ​The Magic of Music
 Descrip: Multiselector: Enchantment, Illusion, Abjuration, Evocation
 Cost: 1
@@ -707,12 +715,6 @@ SelectorName: Abjuration
 Descrip: +1/2/3 Abjuration DCs
 SelectorName: Evocation
 Descrip: +1/2/3 Evocation DCs
-
-AbilityName: ​Reign
-Descrip: Your Vorpal Strikes cause 7/9/11d20 Electric and Sonic damage. Scales with Melee and Ranged Power by 300%. Passive: Gain +1/2/3 to Hit.
-Cost: 1
-Ranks: 3
-Tier: 3
 
 AbilityName: ​The Sonata to Serve
 Descrip: +1/2/3 Spell Penetration and 3/6/9% Fortification Bypass. Rank 3: If you are actively using the Mantle of Sound & Fury you are now immune to Arcane Spell Failure.
@@ -766,7 +768,7 @@ Descrip: When you cast Shout, Great Shout or Horn of Thunder the damage is doubl
 
 AbilityName: ​Metamagics Attunement
 Descrip: Gain one of the following Metamagic Feat effects with no additional spell cost: {-Enlarge{-Extend{-Eschew
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 4
 Selector: 
@@ -774,9 +776,9 @@ SelectorName: Enlarge
 SelectorName: Extend
 SelectorName: Eschew
 
-AbilityName: Ballad of the ages
+AbilityName: Ballad of the Ages
 Descrip: You benefit from the True Seeing spell and gain +2 to damage with all weapons. If you have Bardic Ballad it adds Inspired Transcendence to that effect. Inspire Transcendence: +1 to all Spell DCs, +1 to the DC of all Tactical Feats, and True Seeing.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 5
 
@@ -787,19 +789,19 @@ Tier: 5
 
 AbilityName: Blade Song
 Descrip: +1 multiplier on 19-20 critical hits when using any hand held weapon. This excludes punch weapons and animal forms.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 5
 
 AbilityName: Turn the Tide
 Descrip: Epic Moment. The trumpets call the rally! For 20 seconds you and your party gain full attack bonus, +10% to weapon damage, +10% uncapped Dodge, +100 Universal Spell Power and -25% to spell costs. 5 minute cooldown.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 5
 
 AbilityName: Cut the Strings
 Descrip: SLA. Strike a note to reveal the chords of fate so you might cut them. All monsters within a wide radius around you are forced to dance (Will vs DC:20 + Highest Stat Mod + Enchantment) pulled by the strings of fate for 10 seconds. In Addition for 10 seconds your character gains the ability to cut their strings with any weapon strike or spell at a rate of once per second, instantly killing them. Bosses if they fail their save do not dance but will take an additional 100 Sonic damage that scales with Spell Power when attacked by you in melee for the duration of the effect. Cooldown: 60 seconds.
-Cost: 2
+Cost: 1
 Ranks: 1
 Tier: 5
 
@@ -921,13 +923,13 @@ Cost: 1
 Ranks: 3
 Tier: 3
 
-AbilityName: Furious
-Descrip: Multiselector: Furious Force, Spirit of the Beast
+AbilityName: Fury Selector
+Descrip: Multiselector: Furious, Spirit of the Beast
 Cost: 1
 Ranks: 3
 Tier: 3
-Selector: Furious Force, Spirit of the Beast
-SelectorName: Furious Force
+Selector: Furious, Spirit of the Beast
+SelectorName: Furious
 Descrip: +1 Strength while Raging. Increases Adrenaline damage bonus by 25/50/75%.
 SelectorName: Spirit of the Beast
 Descrip: +1/2/3 attack bonus. Rank 3: The effects of Ram’s Might and Animal Growth are doubled on you.
@@ -940,7 +942,7 @@ Tier: 3
 
 AbilityName: Top Dog
 Descrip: You gain the Improved Trip feat.
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 4
 
@@ -964,7 +966,7 @@ SelectorName: Strike Through
 Descrip: +10/15/25% Strikethrough chance
 
 AbilityName: Force Selector
-Descrip: Multiselector: Overwelming Force. 
+Descrip: Multiselector: Overwelming Force, Primal Force 
 Cost: 1
 Ranks: 3
 Tier: 4
@@ -1001,7 +1003,7 @@ Tier: 5
 AbilityName: Nature's Fury
 Descrip: While Two Weapon Fighting, Two Handed Fighting, or in Animal Form, you gain a +1 bonus to your Critical Multiplier on rolls of 19 or 20.
 Cost: 1
-Ranks: 3
+Ranks: 1
 Tier: 5
 
 AbilityName: The Great Leveler 
@@ -1060,20 +1062,14 @@ Ranks: 3
 Tier: 1
 
 AbilityName: Disciple's Studies
-Descrip: +2/4/6 Heal and Diplomacy, +3/6/10 Healing, Repair, and Negative Amp.
-Cost: 1
-Ranks: 3
-Tier: 1
-
-AbilityName: Enlightenment
-Descrip: +15/30/45 Maximum Ki and +2/4/6 Concentration. Rank 3: +1 passive Ki generation.
+Descrip: +1/2/3 Heal and Diplomacy. Rank 3: +10 Healing, Repair, and Negative Amp.
 Cost: 1
 Ranks: 3
 Tier: 1
 
 AbilityName: Serenity
 Descrip: Grandmaster of Flowers Destiny Mantle: You may now fight with the Unarmed combat style as if you were a Monk, and may be Centered and use Ki. When you attack with Handwraps or begin falling, you will use the Monk class' animations instead of your own. You gain a +15% Action Boost bonus to movement speed, and no longer take damage from falling. Finally, you are unbothered by the physical restraints of the world: you may tumble through enemies, and are immune to slippery surfaces and most forms of knockdown. You also gain 10 Ki for training this enhancement.
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 1
 
@@ -1087,6 +1083,12 @@ SelectorName: Wholeness of Spirit
 Descrip: You may expend 50 Ki to bring your mind, body, and soul into harmonious balance, restoring health as if you were affected by the benefits of a Heal spell, as well as curing all ability damage, negative levels, and other Adverse Conditions that may be affecting you. Cooldown: 180/120/90 seconds.
 SelectorName: Inner Focus
 Descrip: Activate to gain 20d10 Ki. Cooldown: 180/160/120 seconds
+
+AbilityName: Enlightenment
+Descrip: +15/30/45 Maximum Ki and +2/4/6 Concentration. Rank 3: +1 passive Ki generation.
+Cost: 1
+Ranks: 3
+Tier: 1
 
 AbilityName: Calm Before Storms
 Descrip: +3/6/10 Spell Resistance. Rank 3: You no longer fail Will saves automatically on a roll of 1.
@@ -1108,7 +1110,7 @@ Descrip: A blossom is released from your palm in a line, exploding when it makes
 AbilityName: A Dance of Flowers
 Descrip: While in the Grandmaster Destiny Mantle, your weapons gain 1[W].
 Cost: 2
-Ranks: 3
+Ranks: 1
 Tier: 2
 
 AbilityName: Lotus Blades
@@ -1190,6 +1192,7 @@ Descrip: +1/2/3 Critical Hit Confirmation and Critical Hit Damage. Rank 3: +15% 
 Cost: 1
 Ranks: 3
 Tier: 4
+
 AbilityName: The Cruelty of Evil
 Descrip: +1/2/3 Sneak Attack and Sneak Attack Damage. Rank 3: +15% Evil Absorption
 Cost: 1
@@ -1241,6 +1244,7 @@ Descrip: +2 to Attack and Damage with all weapons.
 Cost: 1
 Ranks: 1
 Tier: 0
+
 AbilityName: Thick Skinned
 Descrip: +15 Physical Resistance Rating.
 Cost: 1
@@ -1281,7 +1285,6 @@ Descrip: +10/20/30 Hit Points
 Cost: 1
 Ranks: 3
 Tier: 1
-
 
 AbilityName: Extra Action Boosts
 Descrip: +1/2/3 Action Boosts
@@ -1465,7 +1468,7 @@ Descrip: Epic Strike: Single-target SLA, 1d6+6 Cold Damage per caster level and 
 
 AbilityName: Great Summoner
 Descrip: Your summons, pets, and hirelings gain +4 to all ability scores, increased Hit Points, 100% Fortification, and a 40% increase to movement speed. These benefits stack with Augment Summoning and similar effects.
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 1
 
@@ -1502,9 +1505,9 @@ SelectorName: Dream Reaver
 SelectorName: Lich
 SelectorName: Gargoyle
 
-AbilityName: Moonlight
+AbilityName: Light of the Moon
 Descrip: Multiselector: Cold Light of the Moon, Dark Light of the Moon
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 2
 Selector: Cold Light of the Moon, Dark Light of the Moon
@@ -1577,7 +1580,6 @@ Cost: 1
 Ranks: 1
 Tier: 4
 
-
 AbilityName: Greater Beams
 Descrip: When you use Moon Lance, the target must make a save (DC 20 + highest of Intelligence/Wisdom/Charisma modifier + the highest of your Evocation and Conjuration bonuses) or be Frozen for 12 seconds. When you use Gloomspear, the target must make a save (DC 20 + highest of Intelligence/Wisdom/Charisma modifier + Necromancy bonuses) or be Paralyzed for 12 seconds.
 Cost: 2
@@ -1607,6 +1609,7 @@ Descrip: Using the Maximize Spell Metamagic costs you 3/6/9 fewer Spell Points.
 SelectorName: Empower
 Descrip: Using the Empower Spell Metamagic costs you 2/4/6 fewer Spell Points.
 
+
 AbilityName: Total Eclipse
 Descrip: +1/2/3 spell DCs.
 Cost: 1
@@ -1619,7 +1622,6 @@ Cost: 1
 Ranks: 1
 Tier: 5
 Selector: Zero Degree Comet, Moon's Shadow
-
 SelectorName: Zero Degree Comet
 Descrip: Evocation SLA. Hit target enemy with a falling chunk of ice for 1d6+28 Cold damage per caster level. A successful Reflex save reduces the damage by half. Cooldown 18 seconds, costs 40 Spell Points.
 SelectorName: Moon's Shadow
@@ -1774,7 +1776,7 @@ Descrip: SP: 20 CD: 20 Sends forth a wide wave of freezing hail before you with 
 All: Tier 0: This is your Nature: Nature of Sky, Tier 1: Epic Strikes: Storm Catcher
 
 AbilityName: Thrive
-Descrip: Epic strike abilities in this tree grants now have a 30% chance to grant a 25% Enhancement discount to all spells. Lasts 4 seconds.
+Descrip: Gain 50 Spell Points. Your Epic strike in this tree has a 30% chance to grant a 25% Enhancement discount to all spells. Lasts 4 seconds.
 Cost: 2
 Ranks: 1
 Tier: 2
@@ -1783,13 +1785,13 @@ One: Tier 2: Primal Spell: Reborn in Fire, Tier 2: Primal Spell: Thunder Snow, T
 AbilityName: Spirit Boon
 Descrip:  Multiselector: - Body or Mind
 Cost: 1
-Ranks: 1
+Ranks: 2
 Tier: 2
 Selector: Body, Mind
 SelectorName: Body
-Descrip: Gain +1/2/2 Primal bonus to all physical abilities (Strength, Dexterity, Constitution).
+Descrip: Gain +1/2 Primal bonus to all physical abilities (Strength, Dexterity, Constitution).
 SelectorName: Bind
-Descrip: Gain +1/2/2 Primal bonus to all mental abilities (Intelligence, Wisdom, Charisma).
+Descrip: Gain +1/2 Primal bonus to all mental abilities (Intelligence, Wisdom, Charisma).
 
 AbilityName: Ever Green
 Descrip: +30/60/100 Maximum Spell Points. Rank 3: Mantle of Nature now has a chance to grant 100 Temporary Spell Points for 60 seconds.
@@ -1799,8 +1801,8 @@ Tier: 3
 
 AbilityName: Shared Mantle
 Descrip: Your summons and pets now also benefit from your Mantle of Nature. In additional your Spell Power values are now added to theirs.
-Cost: 1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 3
 One: Tier 2: Mantle of Nature: Heart, Tier 2: Mantle of Nature: Sky, Tier 2: Mantle of Nature: Thorn
 
@@ -2051,7 +2053,7 @@ Tier: 3
 AbilityName: Shadowdancer Spell Focus
 Descrip: Select a Spell School to specialize in 
 Cost: 1
-Ranks: 1
+Ranks: 3
 Tier: 3
 Selector: Illusion, Necromancy, Enchantment, Abjuration
 SelectorName: Illusion
@@ -2278,14 +2280,15 @@ Ranks: 1
 Tier: 3
 Selector: Fey Flash, Fey Force
 SelectorName: Fey Flash
-Descrip: Fey Lights' Daze now additionally affects Undead, Plants, Constructs, and Oozes, who would normally be immune to such effects.
+Descrip: Fey Lights' Daze now additionally affects Undead, Plants, Constructs, and Oozes, who would normally be immune to such effects. (Note - This only costs 1 DP)
+Cost: 1
 SelectorName: Fey Force
 Descrip: Increases Hunt's End damage bonus by 75%.
 
 AbilityName: Shiradi Magic
 Descrip: Select a Spell School to gain DCs in 
 Cost: 1
-Ranks: 2
+Ranks: 3
 Tier: 3
 Selector: Illusion, Enchantment, Transmutation, Conjuration
 SelectorName: Illusion
@@ -2327,10 +2330,12 @@ SelectorName: Fey Flare
 Descrip: The Daze portion of Fey Lights is now a Stun instead. (This Stun applies to the additional creature types in Fey Flash, if you have that skill).
 
 AbilityName: Whirling Wrists
-Descrip: +10/20/30% Attack Speed with Thrown Weapons. You gain +2/4/6% stacking Incorporeality.
-Cost: 1
+Descrip: +10/20/30% Attack Speed with Thrown Weapons. You gain +2/4/6% stacking Incorporeality. (Note - First rank costs 2 DP, additional ranks cost 1 DP.)
+Cost: 2
 Ranks: 3
 Tier: 4
+Rank2Cost: 1
+Rank3Cost: 1
 
 AbilityName: Stay II
 Descrip: Upgrade Stay Good or Stay Frosty
@@ -2400,8 +2405,8 @@ Cost: 1
 Ranks: 3
 Tier: 1
 
-AbilityName: Divine Energy Resistance: Cost
-Descrip: 15 Spell Points This SLA grants 35 resistance to Acid, Cold, Fire, Sonic, Electric damage for 1 minute per character level to all allies in the standard area of effect; centered on the caster. You can apply Metamagic feats to this SLA for free (Extend, Quicken). The effect does not stack with the Resist Energy spell. Cooldown: 6 seconds.
+AbilityName: Divine Energy Resistance
+Descrip: Cost: 15 Spell Points. This SLA grants 35 resistance to Acid, Cold, Fire, Sonic, Electric damage for 1 minute per character level to all allies in the standard area of effect; centered on the caster. You can apply Metamagic feats to this SLA for free (Extend, Quicken). The effect does not stack with the Resist Energy spell. Cooldown: 6 seconds.
 Cost: 2
 Ranks: 1
 Tier: 1
@@ -2479,7 +2484,7 @@ Tier: 3
 All: Tier 2: Knight's Challenge
 
 AbilityName: The Rule of Law
-Descrip: Your Unyielding Sentinel Destiny now grants your melee attacks a chance to create a wave of d3/4/6 Law damage per character level. This wave can occur once every 8 seconds. Scales with the highest of 200% Melee Power or Light Spell Power.
+Descrip: Your Unyielding Sentinel Destiny Mantle now grants your melee attacks a chance to create a wave of d3/4/6 Law damage per character level. This wave can occur once every 8 seconds. Scales with the highest of 200% Melee Power or Light Spell Power.
 Cost: 1
 Ranks: 3
 Tier: 3
@@ -2498,14 +2503,14 @@ Tier: 4
 
 AbilityName: Hardened
 Descrip: +5/10/15 Armor Class. Rank 3: Increase the Absorption of your Mantle of the Sentinel by 10%.
-Cost: 2
-Ranks: 1
+Cost: 1
+Ranks: 3
 Tier: 4
 
 AbilityName: Throw the Boom
 Descrip: Knight's Challenge now resonates against its target, strigking nearby enemies and applies a Stun as well as its usual effects. Stun DC: 20 + Stun Bonuses + Highest Ability Score Modifierfor 4 seconds.
-Cost: 1
-Ranks: 3
+Cost: 2
+Ranks: 1
 Tier: 4
 All: Tier 3: Spark of Life
 
@@ -2535,7 +2540,7 @@ Tier: 5
 
 AbilityName: Undying Vanguard
 Descrip: Your body becomes like a towering fortress. Completely heal yourself, then gain 10,000 Temporary Hit Points, and +5 Weapon Dice for 30 seconds. You can use this while Crowd Controlled. Usable once per rest.
-Cost: 1
+Cost: 2
 Ranks: 1
 Tier: 5
 

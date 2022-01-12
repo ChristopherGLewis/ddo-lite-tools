@@ -358,7 +358,7 @@ WikiName: Deity feats
 Descrip: Heal self or ally to full health and bestow a +1d6 Luck bonus to each ability score, lasting 24 seconds plus 6 seconds per Religious Lore feat you have.
 SelectorName: Onatar's Forge
 WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +3 to Tactical feats, +10 Melee Power, and +10 Repair, Rust and Fire spellpower. If you benefit from Repair, gain +30 Repair Amplification.
+Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +3 to Tactical feats, +10 Melee Power, and +10 Repair, Rust and Fire Spell Power. If you benefit from Repair, gain +30 Repair Amplification.
 SelectorName: Blessing of Silvanus
 WikiName: Deity feats
 Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Natural Armor and +2 critical threat range with Mauls. This stacks with other sources.
@@ -460,7 +460,7 @@ Descrip: You gain stacking Cold resistance. Enhancements can increase Cold spell
 FeatName: Dreamscape
 Group: Destiny, Misc
 WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Activate to disappear to the land of dreams for 5 seconds (become invisible and invulnerable), return with a random 30-second buff, 1 minute cooldown. 9 possible buffs:}{ 1) +30 Melee/Ranged Power, +60 Universal spellpower}{ 2) +15 AC/PRR/MRR}{ 3) +6 to all skills}{ 4) DR 18/-}{ 5) +15 Energy Resistance}{ 6) Sprint Boost}{ 7) +6 Fortitude saves}{ 8) +6 Reflex saves}{ 9) +6 Will saves
+Descrip: Activate to disappear to the land of dreams for 5 seconds (become invisible and invulnerable), return with a random 30-second buff, 1 minute cooldown. 9 possible buffs:}{ 1) +30 Melee/Ranged Power, +60 Universal Spell Power}{ 2) +15 AC/PRR/MRR}{ 3) +6 to all skills}{ 4) DR 18/-}{ 5) +15 Energy Resistance}{ 6) Sprint Boost}{ 7) +6 Fortitude saves}{ 8) +6 Reflex saves}{ 9) +6 Will saves
 Level: 28
 
 FeatName: Elusive Target
@@ -714,7 +714,7 @@ SelectorName: Olladra
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Standard
 SelectorName: Onatar
-Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust spellpower}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Standard
 SelectorName: Silvanus
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
@@ -737,7 +737,7 @@ Level: 25
 FeatName: Fount of Life
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: +20 Healing Amp and Positive spellpower.
+Descrip: +20 Healing Amp and Positive Spell Power.
 Level: 28
 
 FeatName: Grace of Battle
@@ -1302,7 +1302,7 @@ Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Acid Spray}{-Melf
 SelectorName: Fire
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Burning Hands}{-Scorch}{-Fireball
 SelectorName: Knowledge
-Descrip: +140 Maximum Spell Points}The Archmage SLAs Arcane Bolt and Blast now grant 1 stack of Mental Honing: +3 Universal spellpower, +2% Spell Critical damage. Stacks up to 30 times, lose 1 stack every 6 seconds.
+Descrip: +140 Maximum Spell Points}The Archmage SLAs Arcane Bolt and Blast now grant 1 stack of Mental Honing: +3 Universal Spell Power, +2% Spell Critical damage. Stacks up to 30 times, lose 1 stack every 6 seconds.
 SelectorName: Light
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Sun Bolt}{-Searing Light}{-Divine Punishment
 SelectorName: Music
@@ -1713,31 +1713,31 @@ Level: 30
 Descrip: Legendary feats pull their power from different planes.
 Selector: Arborea, Astral Plane, Celestia, Elysium, Ethereal Plane, Feywild, Limbo, Mechanus, Plane of Air, Plane of Earth, Plane of Fire, Plane of Water, Shadowfell
 SelectorName: Arborea
-Descrip: +20 Melee and Ranged Power}+20 Force spellpower}+20 stacking Universal spellpower}+2 Enhancement Bonus to your weapon}+4 Fortitude Saves
+Descrip: +20 Melee and Ranged Power}+20 Force Spell Power}+20 stacking Universal Spell Power}+2 Enhancement Bonus to your weapon}+4 Fortitude Saves
 SelectorName: Astral Plane
-Descrip: +4 tactical feat and Assassinate DCs}+4% Doublestrike and Doubleshot (+8% if centered)}+4% Dodge and Dodge Cap}+4 Reflex Saves
+Descrip: +4 tactical feat and Assassinate DCs}+4% Doublestrike and Doubleshot (+8% if centered)}+4% Dodge and +4 Dodge Cap}+4 Reflex Saves
 SelectorName: Celestia
-Descrip: +20 Positive, Light and Alignment spellpower}+20 stacking Universal spellpower}+30% Crit Damage with Positive, Light and Alignment spells}+150 Maximum Hit Points}+4 Will Saves
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+20 Positive, Light and Alignment Spell Power}+20 stacking Universal Spell Power}+25% Crit Damage with Positive, Light and Alignment spells}+10% Crit Damage for all others}+150 Maximum Hit Points}+4 Will Saves
 SelectorName: Elysium
-Descrip: Summoned creatures gain:}{ +25 PRR and MRR}{ +20 Melee Power, Range Power, and Universal spellpower}{ +100% Fortification}{ 5% chance to ignore incoming damage
+Descrip: Summoned creatures gain:}{ +25 PRR and MRR}{ +20 Melee Power, Range Power, and Universal Spell Power}{ +100% Fortification}{ 5% chance to ignore incoming damage. Does not affect any incoming Positive, Negative, or Repair effects.
 SelectorName: Ethereal Plane
-Descrip: Permanent Blur}Permanent Invisibility Guard}+1 sneak damage for every 3 points of Hide you have}+4 to all skills
+Descrip: Permanent Displacement and Ghost Touch}Permanent Invisibility Guard}+6d6 Sneak Attack Dice} +5 Melee and Ranged Power}+4 to all skills
 SelectorName: Feywild
-Descrip: +4 Enchantment DC, +2 DC to other schools}+10 Sonic spellpower}+30 stacking Universal spellpower}+20 Healing Amp}+2d20 Sonic damage with weapons and unarmed (scales with spellpower)
+Descrip: +4 Enchantment and Illusion DCs, +2 DCs to other schools}+10 Sonic and Force Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Sonic and Force spells}+10% Crit Damage for all others}+20 Healing Amp}+2d20 Sonic damage with weapons and unarmed (scales with Spell Power)
 SelectorName: Limbo
-Descrip: +2 to all saves}Passive buff that randomly cycles each minute between 8 varieties:}{ 1) +40 Melee and Ranged Power, +80 Universal spellpower}{ 2) +16% Doublestrike and Doubleshot, +20% Spell Critical damage}{ 3) +30 PRR and MRR}{ 4) +20% Dodge and +40 Healing Amp}{ 5) +20 DR/Law}{ 6) +1d20 Chaos Damage for weapons and unarmed}{ 7) 5% change to ignore incoming damage}{ 8) Confetti explodes around your shoulders. Festive!
+Descrip: +2 Determination Bonus to all saves}Passive buff that randomly cycles each minute between 8 varieties:}{ 1) +40 Melee and Ranged Power, +80 Universal Spell Power}{ 2) +16% Doublestrike and Doubleshot, +20% Spell Critical damage}{ 3) +30 PRR and MRR}{ 4) +20% Dodge and +40 Healing Amp}{ 5) +20 DR/Law}{ 6) +1d20 Chaos Damage for weapons and unarmed}{ 7) 5% change to ignore incoming damage}{ 8) Confetti explodes around your shoulders. Festive!
 SelectorName: Mechanus
-Descrip: +20 Repair and Rust spellpower}+20 stacking Universal spellpower}+20 Repair Amp}+10% Fortification bypass}Gain: Master Reconstruction, shares cooldown with Communion of Scribing
+Descrip: +20 Repair and Rust Spell Power}+20 stacking Universal Spell Power}+25% Crit Damage with Repair and Rust spells}+10% Crit Damage for all others}+20 Repair Amp}+10% Fortification bypass}Gain: Master Reconstruction, shares cooldown with Communion of Scribing
 SelectorName: Plane of Air
-Descrip: +4 Evocation DC, +2 DC to other schools}+10 Electric spellpower}+30 stacking Universal spellpower}+4% Dodge and Dodge Cap}+2d20 Electric damage with weapons and unarmed (scales with spellpower)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Electric Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Electric spells}+10% Crit Damage for all others}+4% Dodge and Dodge Cap}+2d20 Electric damage with weapons and unarmed (scales with Spell Power)
 SelectorName: Plane of Earth
-Descrip: +4 Conjuration DC, +2 DC to other schools}+10 Acid spellpower}+30 stacking Universal spellpower}+20 PRR}+2d20 Acid damage with weapons and unarmed (scales with spellpower)
+Descrip: +4 Conjuration DCs, +2 DCs to other schools}+10 Acid and Poison Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Acid and Poison spells}+10% Crit Damage for all others}+20 PRR}+2d20 Acid damage with weapons and unarmed (scales with Spell Power)
 SelectorName: Plane of Fire
-Descrip: +25% Spell Critical damage}+10 Fire spellpower}+30 stacking Universal spellpower}+10 PRR and MRR}+2d20 Fire damage with weapons and unarmed (scales with spellpower)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Fire Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Fire spells}+10% Crit Damage for all others}+10 PRR, +10 MRR}+2d20 Fire damage with weapons and unarmed (scales with Spell Power)
 SelectorName: Plane of Water
-Descrip: +200 Maximum Spell Points}+10 Cold spellpower}+30 stacking Universal spellpower}+20 MRR}+2d20 Cold damage with weapons and unarmed (scales with spellpower)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Cold spells}+10% Crit Damage for all others}+20 MRR}+200 Maximum Spell Points}+2d20 Cold damage with weapons and unarmed (scales with Spell Power)
 SelectorName: Shadowfell
-Descrip: +4 Necromancy DC, +2 DC to other schools}+40 Negative spellpower}+20 Negative Amp}Weapon and unarmed attacks heal you for 1d6 damage
+Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
 
 FeatName: Self Sufficient
 Group: Heroic, Misc
@@ -2056,7 +2056,7 @@ SharedSelector: Weapon Focus
 FeatName: Wellspring of Power
 Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Spellcasting active feats
-Descrip: Passive: +110 Maximum Spell Points}Active: Gain +150 Universal spellpower and +20% Spell Critical damage for 30 seconds. 3 minute cooldown.
+Descrip: Passive: +110 Maximum Spell Points}Active: Gain +150 Universal Spell Power and +20% Spell Critical damage for 30 seconds. 3 minute cooldown.
 Level: 21
 
 FeatName: Whirling Steel Strike
