@@ -29,12 +29,12 @@ GrantedFeats1: Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Martial 
 
 RaceName: Dragonborn
 Abbreviation: Dragon
-Type: Premium
+Type: Free
 Stats: 10, 6, 8, 8, 8, 10
 Flags: BonusFeat
 
 RaceName: Drow
-Type: Premium
+Type: Free
 Stats: 8, 10, 6, 10, 8, 10
 GrantedFeats1: Martial Weapon: Rapier, Martial Weapon: Shortsword
 GrantedFeats1: Exotic Weapon: Shuriken, Shuriken Expertise
@@ -50,20 +50,20 @@ GrantedFeats1: Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon
 Trees: Elf-Arcane Archer
 
 RaceName: Gnome
-Type: Premium
+Type: Free
 Stats: 6, 8, 8, 10, 8, 8
 GrantedFeats1: Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Martial Weapon: Throwing Hammer
 
 RaceName: Half-Elf
 Abbreviation: HalfElf
-Type: Premium
+Type: Free
 Stats: 8, 8, 8, 8, 8, 8
 Flags: BonusFeat
 Trees: Elf-Arcane Archer
 
 RaceName: Half-Orc
 Abbreviation: HalfOrc
-Type: Premium
+Type: Free
 Stats: 10, 8, 8, 6, 8, 6
 
 RaceName: Halfling
@@ -100,7 +100,7 @@ GrantedFeats1: Spiked Chain Attack
 
 RaceName: Tiefling
 Abbreviation: Tief
-Type: Premium
+Type: Free
 Stats: 8, 8, 8, 8, 8, 10
 
 RaceName: Tiefling Scoundrel
@@ -118,7 +118,7 @@ GrantedFeats1: Warforged Traits
 RaceName: Wood Elf
 Abbreviation: WoodElf
 SubRace: Elf
-Type: Premium
+Type: Free
 Stats: 8, 10, 8, 6, 8, 8
 GrantedFeats1: Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Longbow, Martial Weapon: Shortbow
 Trees: Elf-Arcane Archer
@@ -136,3 +136,15 @@ Stats: 10, 8, 8, 6, 8, 8
 Flags: BonusFeat
 GrantedFeats1: Exotic Weapon: Handwraps
 
+RaceName: Tabaxi
+Type: Premium
+Stats: 8, 10, 8, 8, 8, 8
+Flags: BonusFeat
+GrantedFeats1: Feline Agility
+
+RaceName: Tabaxi Trailblazer
+Abbreviation: Trailblazer
+Type: Iconic
+Stats: 8, 10, 8, 8, 8, 8
+Flags: BonusFeat
+GrantedFeats1: Feline Agility

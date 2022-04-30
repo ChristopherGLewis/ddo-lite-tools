@@ -95,6 +95,7 @@ Public Type RankType
     Req() As ReqListType ' 1 = All, 2 = One, 3 = None
     Class() As Boolean
     ClassLevel() As Long
+    Cost As Long  'Cost for this rank - typically defaults to ability cost
 End Type
 
 Public Type ClassLevelType
@@ -102,6 +103,7 @@ Public Type ClassLevelType
     ClassLevels As Long
 End Type
 
+'This is a Selector in an Ability
 Public Type SelectorType
     SelectorName As String
     Cost As Long
@@ -201,7 +203,7 @@ Public Type AbilityType
     AbilityName As String  'AbilityName:
     Abbreviation As String
     Ranks As Long
-    Cost As Long
+    Cost As Long   'This is the cost per.  See Ranks
 '    Group() As Boolean ' Index = FilterEnum
     SelectorStyle As SelectorStyleEnum
     Selector() As SelectorType

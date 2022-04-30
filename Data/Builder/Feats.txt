@@ -246,10 +246,15 @@ RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Artificer
 
 FeatName: Completionist
-Group: Heroic, Misc
+Group: Misc
 Descrip: You win DDO! +2 bonus to all skills and ability scores.
-Level: 3
-Flags: Legend
+Level: 1
+
+FeatName: Composite Plating
+Group: Heroic
+Descrip: You are not considered to be wearing armor. You have a 5% arcane spell failure chance.
+Level: 1
+Race: Required,  Warforged, Bladeforged 
 
 FeatName: Construct Essence
 Group: Heroic, Defense
@@ -1279,11 +1284,6 @@ SelectorName: Composite Shortbow
 Hide: True
 SelectorName: All
 Descrip: Grants proficiency with all martial weapons. Barbarians, Fighters, Paladins and Rangers receive this feat for free. All other classes must train individual martial weapons they want to use, one feat per weapon.
-
-FeatName: Mass Frog
-Group: Destiny, Spellcasting
-Descrip: Mass Frog (75 spell points, 60 second cooldown): Up to five nearby enemies are turned into frogs. Fort save DC 30 + Wisdom modifier. Feats and focus items do not affect the DC. Ignores death ward, and works on undead and constructs.
-Level: 25
 
 FeatName: Master of
 Group: Epic, Spellcasting
@@ -2733,3 +2733,8 @@ Group: Epic, Spellcasting
 Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
 Flags: Unselectable
 Level: 22
+
+FeatName: Feline Agility
+Group: Misc
+Descrip: After standing still for 6 seconds, when you move again you gain a +20% Action Boost bonus to Movement Speed for 6 seconds.
+Race: Required, Tabaxi, Trailblazer

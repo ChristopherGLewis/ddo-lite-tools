@@ -221,18 +221,20 @@ Public Type TomeType
     Stat(1 To 6) As Long
     Skill(1 To 21) As Long
     RacialAP As Long
-    HerociXP As String
+    UniversalAP As Long
+    HeroicXP As String
     EpicXP As String
     Fate As Long
+    Destiny As Long
     Power(1 To 3) As Long
     RR(1 To 2) As Long
 End Type
 
 'TODO Remove hard coding
 Public Const maxClassCount = 15
-Public Const maxRaceCount = 13 ' 2021.08.25 Added missing tiefling
-Public Const maxIconicCount = 7 ' 2021.08.25 Added missing tiefling Scoundrel
-Public Const maxEpicCount = 16
+Public Const maxRaceCount = 14 ' 2022.04.29 Tabaxi
+Public Const maxIconicCount = 9 ' 2022.04.29 Tabaxi Trailblazer
+Public Const maxEpicCount = 17 ' 2022.04.29 Added Eclispe Power
 
 Public Type PastLifeType
     Class(1 To maxClassCount) As Long

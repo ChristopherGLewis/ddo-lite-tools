@@ -166,6 +166,7 @@ Optional prereq lists. Each is a comma separated list. Each list can include a m
 and abilities. (Though feats can only point to other feats.)
  - Feats take the prefix "Feat: " in the enhancements and destinies files. Do not include 
    the "Feat: " prefix in the feats file.
+ - for Feats with selectors enter Feat: Favored Enemy: Animal
  - Abilities take one of the following two prefixes:
     - "Tier #: "
     - "TreeName Tier #: "
@@ -442,7 +443,8 @@ Ranks: #
 Optional. Defaults to 1 rank if not included.
 
 Cost: #
-Optional. Defaults to 1 AP (per rank) if not included.
+Optional. Defaults to 1 AP (per rank) if not included.  This is typically cost per rank, but
+if rank costs are different this is cost per rank 1
 
 Flags:
 Selector:
@@ -456,6 +458,8 @@ Rank2All:
 Rank3All:
 Rank3None:
 SelectorName:
+Rank2Cost:  used if costs are different for rank2/3
+Rank3Cost:
 
 Spells
 ------

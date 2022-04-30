@@ -163,6 +163,7 @@ Private Sub SaveOverviewLite()
     If build.Race <> reAny Then AddLine "Race: " & GetRaceName(build.Race)
     If build.Alignment <> aleAny Then AddLine "Alignment: " & GetAlignmentName(build.Alignment)
     AddLine "MaxLevels: " & build.MaxLevels
+    AddLine "MaxLevels: " & build.MaxLevels
     ' Notes
     SaveNotesLite
     ' Build Classes
@@ -610,12 +611,14 @@ End Sub
 Private Sub SaveDestinyLite()
     Dim i As Long
     
-    If Len(build.DestinyTier5) = 0 And build.Destinies = 0 Then Exit Sub
+    If Len(build.DestinyTier5) = 0 And build.Destinies = 0 And build.PermDestinyPoints = 0 Then Exit Sub
     AddSection "Destiny"
     ' Tier5
     If Len(build.DestinyTier5) Then AddLine "DestinyTier5: " & build.DestinyTier5
     ' Destiny AP
     If build.DestinyAP <> 0 Then AddLine "DestinyAP: " & build.DestinyAP
+    If build.PermDestinyPoints <> 0 Then AddLine "PermDestinyPoints: " & build.PermDestinyPoints
+    
     If Len(build.DestinyTier5) <> 0 Or build.DestinyAP <> 0 Then BlankLine
     ' Destinies
     For i = 1 To build.Destinies
@@ -1111,7 +1114,7 @@ Private Sub LoadDestinyText()
             build.Destinies = build.Destinies + 1
             ReDim Preserve build.Destiny(1 To build.Destinies)
             build.Destiny(build.Destinies).TreeName = mstrValue
-            
+            build.Destiny(build.Destinies).TreeType = tseDestiny
         Case "ability"
             AddTreeAbility mstrValue, build.Destiny(build.Destinies), peDestiny
     End Select

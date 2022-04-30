@@ -311,6 +311,12 @@ Patron: House Phiarlan
 Favor: 4
 Level: 6
 
+QuestName: Dread Sea Scrolls
+Patron: The Gatekeepers
+Favor: 4
+Level: 6
+Epic: 32
+
 QuestName: The Promise of Fire
 Patron: Morgrave University
 Favor: 4
@@ -1125,6 +1131,14 @@ Favor: 3
 Level: 6
 Epic: 32
 
+QuestName: The Dryad and the Demigod
+Pack: Fables of the Feywild
+Patron: The Summer Court
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
 QuestName: Guard Duty
 Pack: Three-Barrel Cove
 Patron: The Free Agents
@@ -1409,6 +1423,31 @@ Favor: 5
 Level: 7
 Epic: 30
 Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: One Dame Thing After Another
+Wiki: One Dame Thing After Another
+Pack: Hunter and Hunted
+Patron: The Summer Court
+Favor: 4
+Level: 7
+Epic: 32
+
+QuestName: Through the Tulgey Wood
+Wiki: Through the Tulgey Wood
+Pack: Hunter and Hunted
+Patron: The Summer Court
+Favor: 5
+Level: 7
+Epic: 32
+
+QuestName: Hunt or Be Hunted
+Wiki: Hunt or Be Hunted
+Pack: Hunter and Hunted
+Patron: The Summer Court
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
 
 QuestName: Bargain of Blood
 Pack: Sentinels of Stormreach
@@ -2387,7 +2426,6 @@ Pack: Vale of Twilight
 Patron: The Twelve
 Favor: 12
 Level: 32
-Epic: 32
 Style: Raid
 Map: The Subterrane - Central
 
@@ -3121,17 +3159,3 @@ Level: 30
 Epic: 30
 Style: Raid
 Map: The Ruins of Thunderholme
-
-QuestName: The Dryad and the Demigod
-Pack: Fables of the Feywild
-Patron: The Summer Court
-Favor: 10
-Level: 32
-Epic: 32
-Style: Raid
-
-QuestName: Dread Sea Scrolls
-Patron: The Gatekeepers
-Favor: 4
-Level: 6
-Epic: 32

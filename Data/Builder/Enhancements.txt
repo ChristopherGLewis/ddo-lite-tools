@@ -3636,8 +3636,7 @@ Descrip: You may use Dexterity to damage with your chosen set of weapons.}Choose
 Tier: 4
 All: Tier 4: Elven Weapon Training
 Flags: SelectorOnly
-SharedSelector: Tier 4: Elven Weapon Training
-Selector: Aerenal Grace, Valenar Grace
+SharedSelector: Tier 3: Elven Weapon Training
 
 AbilityName: Elven Weapon Training
 Descrip: Grants bonuses to hit and damage with a chosen set of weapons.}Choose one:}{- Aerenal Weapon Training: +1 to hit and damage with Longswords, Rapiers, and Longbows.}{- Valenar Weapon Training: +1 to hit and damage with Scimitars and Shortbows. +1 to hit and +2 to damage with Falchions.
@@ -11655,3 +11654,250 @@ Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dod
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
 
+
+TreeName: Tabaxi
+Type: Race
+Initial: Tab
+
+AbilityName: Nimble Cat
+Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor. You gain Dexterity to Hit with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Tier: 0
+
+AbilityName: Ability Score Increase
+Descrip: +1 Dexterity / +1 Charisma
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Dexterity, Charisma
+
+AbilityName: Nimble Cat II
+Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor
+Tier: 0
+
+AbilityName: Ability Score Increase II
+Descrip: +1 Dexterity / +1 Charisma
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Dexterity, Charisma
+
+AbilityName: Nimble Cat III
+Descrip: +1% Dodge and Dodge Cap. +1 Maximum Dexterity Bonus in Light Armor
+Tier: 0 
+
+AbilityName: Sharp Claws
+Descrip: +1/2/3 to Attack.
+Ranks: 3
+Tier: 1
+
+AbilityName: Cat Scratch
+Descrip: Active: +2[W] Area of Effect Melee Attack. 6 second cooldown.
+Tier: 1
+
+AbilityName: Acrobatic
+Descrip: +1/2/3 Balance, Jump, and Tumble. +2/4/6 Armor Class while Tumbling.
+Ranks: 3
+Tier: 1
+
+AbilityName: Land On Your Feet
+Descrip: You don't take falling damage.
+Tier: 1
+
+AbilityName: Sneaky Strikes
+Descrip: +1 Sneak Attack Die
+Tier: 1
+
+AbilityName: Hunt Down
+Descrip: Your Cat Scratch now Hamstrings opponents for 3 seconds, reducing their movement rate by 50%. Some creatures are immune to the Hamstring effect.
+Tier: 2
+All: Tier 1: Sharp Claws
+
+AbilityName: Surprise Claws
+Descrip: +1/2/3 to Attack while Flanking.
+Ranks: 3
+Tier: 2
+
+AbilityName: High Places
+Descrip: After falling for at least 1.5 seconds, when you land you gain +2 Critical Hit Confirmation, +2 Critical Hit Damage, and +25% Armor Piercing for 20 seconds.
+Tier: 2
+
+AbilityName: Deflect Arrows
+Descrip: You gain the benefits of the Deflect Arrows feat, knocking aside one incoming projectile that would have struck you every 6 seconds.
+Tier: 2
+
+AbilityName: Slip Out of Danger
+Descrip: +2/4/6 Saves vs. Traps. Rank 3: You gain +1 to Reflex Saves.
+Ranks: 3
+Tier: 2
+
+AbilityName: Stabby Claws
+Descrip: +1/2/3 to Melee Damage.
+Ranks: 3
+Tier: 3
+
+AbilityName: Corner
+Descrip: +1/2/3% Dodge Bypass
+Ranks: 3
+Tier: 3
+
+AbilityName: Improved Nimble Cat
+Descrip: You gain Dexterity to Damage with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Tier: 3
+
+AbilityName: Focused Agility
+Descrip: Your Feline Agility now only requires you to stand still for 3 seconds, and lasts for 9 seconds.
+Tier: 3
+
+AbilityName: Sneaky Strikes
+Descrip: +1 Sneak Attack Die
+Tier: 3
+
+AbilityName: Feline Versatility
+Descrip: Multiselector
+Tier: 4
+Selector: Lash Out, Rapid Scratch, Quick Paw, Vigor
+SelectorName: Lash Out
+Descrip: +5% Offhand Strike Chance if using a Light Melee Weapon or Rapier in both hands.
+SelectorName: Quick Paw
+Descrip: +3% Doubleshot with Thrown Weapons
+SelectorName: Rapid Scratch
+Descrip: +3% Doublestrike while Single Weapon Fighting
+SelectorName: Vigor
+Descrip: Vigor spell like ability
+
+AbilityName: Deep Scratches
+Descrip: Your Cat Scratch now deals Bane damage to targets it hits that are vulnerable to Bleed. This damage is equal to 1d4 per Character Level, and scales with Melee Power.
+Tier: 4
+
+AbilityName: 9 Lives
+Descrip: You gain Rogue's Defensive Roll feat. (While below 20% HP, there's a chance equal to your Reflex save that attacks do half damage and have their effects negated.)
+Tier: 4
+
+AbilityName: Fast Sprinter
+Descrip: Your Feline Agility now grants 30% Action Boost Bonus to Movement Speed and lasts for 18 seconds.
+Tier: 4
+All: Tier 3: Focused Agility 
+
+AbilityName: Lucky Cat
+Descrip: You gain Evasion.
+Tier: 4
+All: Tier 4: 9 Lives
+
+TreeName: Tabaxi Trailblazer
+Type: Race
+Initial: Trailblazer
+
+AbilityName: Instinct
+Descrip: +1% Dodge, +2% Dodge Bypass. You gain Dexterity to Hit with Quarterstaves, Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Tier: 0
+
+AbilityName: Ability Score Increase
+Descrip: +1 Dexterity / +1 Wisdom
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Dexterity, Wisdom
+
+AbilityName: Instinct II
+Descrip: 1% Dodge, +2% Dodge Bypass
+Tier: 0
+
+AbilityName: Ability Score Increase II
+Descrip: +1 Dexterity / +1 Wisdom
+Tier: 0
+Cost: 2
+Flags: SelectorOnly
+Selector: Dexterity, Wisdom
+
+AbilityName: Instinct III
+Descrip: +1% Dodge and Dodge Cap. +2% Dodge Bypass
+Tier: 0 
+
+AbilityName: Sharp Claws
+Descrip: +1/2/3 to Attack.
+Ranks: 3
+Tier: 1
+
+AbilityName: Low Blows
+Descrip: +1/2/3 Trip DCs. Doubled if you have a Quarterstaff equipped.
+Ranks: 3
+Tier: 1
+
+AbilityName: Acrobatic
+Descrip: +1/2/3 Balance, Jump, and Tumble. +2/4/6 Armor Class while Tumbling.
+Ranks: 3
+Tier: 1
+
+AbilityName: Land On Your Feet
+Descrip: You don't take falling damage.
+Tier: 1
+
+AbilityName: Sneaky Strikes
+Descrip: +1 Sneak Attack Die
+Tier: 1
+
+AbilityName: Staff Deflection
+Descrip: While holding a Quarterstaff, when Deflect Arrows triggers you gain a +10% Action Boost bonus to Doublestrike for 6 seconds.
+Tier: 2
+
+AbilityName: Wayfinder's Weapons
+Descrip: Quarterstaves and Wooden Weapons you are wielding are immune to damage.
+Tier: 2
+
+AbilityName: High Places
+Descrip: After falling for at least 1.5 seconds, when you land you gain +2 Critical Hit Confirmation, +2 Critical Hit Damage, and +25% Armor Piercing for 20 seconds.
+Tier: 2
+
+AbilityName: Deflect Arrows
+Descrip: You gain the benefits of the Deflect Arrows feat, knocking aside one incoming projectile that would have struck you every 6 seconds.
+Tier: 2
+
+AbilityName: Slip Out of Danger
+Descrip: +2/4/6 Saves vs. Traps. Rank 3: You gain +1 to Reflex Saves.
+Ranks: 3
+Tier: 2
+
+AbilityName: Attune
+Descrip: +1 Ki Regeneration on melee attacks, +1 Passive Ki Regeneration
+Ranks: 3
+Tier: 3
+
+AbilityName: Great Weapon Aptitude
+Descrip: +5/10/20% Strikethrough (req: Two Handed Fighting)
+Ranks: 3
+Tier: 3
+All: Feat: Two Handed Fighting
+
+AbilityName: Improved Instincts
+Descrip: You gain Dexterity to Damage with Quarterstaff, Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Tier: 3
+
+AbilityName: Focused Agility
+Descrip: Your Feline Agility now only requires you to stand still for 3 seconds, and lasts for 9 seconds.
+Tier: 3
+
+AbilityName: Sneaky Strikes
+Descrip: +1 Sneak Attack Die
+Tier: 3
+
+AbilityName: Wide Sweep
+Descrip: Melee Quarterstaff Trip Cleave Attack: +1/3/5[W] to all nearby enemies. Enemies who are hit must make a Balance check (DC 14 + Highest of DEX and WIS mod + Trip bonuses) or be Tripped for 20 seconds. Shares cooldown with Great Cleave.
+Ranks: 3
+Tier: 4
+
+AbilityName: Springing Pounce
+Descrip: You gain the Spring Attack feat. When you use it while holding a Quarterstaff, you gain Feline Agility and deal bludgeoning damage equal to your Jump score to all enemies Spring Attack hits. This damage scales with 200% Melee Power.
+Tier: 4
+
+AbilityName: Cat's Eye
+Descrip: You have True Seeing, which cannot be dispelled from you.
+Tier: 4
+
+AbilityName: Fast Sprinter
+Descrip: Your Feline Agility now grants 30% Action Boost Bonus to Movement Speed and lasts for 18 seconds.
+Tier: 4
+All: Tier 3: Focused Agility
+
+AbilityName: Escape Artist
+Descrip: When you tumble, you gain 25% Incorporeality and 25% Concealment for 20 seconds. This can only trigger once per minute.Tier: 4
+Tier: 4

@@ -11,13 +11,13 @@ Public Type TomesType
     Stat As TomeScheduleType
     Skill As TomeScheduleType
     RacialAPMax As Long
+    UniversalAPMax As Long
     PowerMax As Long
     RRMax As Long
-    UniversalAPMax As Long
-    DestinyTomeMax As Long
     PermDestinyPointMin As Long  '12  https://ddowiki.com/page/Update_51_Release_Notes#Fate_Points
     PermDestinyPointMax As Long  '18
-    'FatePointTomeMax As Long
+    FateTomeMax As Long
+    DestinyTomeMax As Long
 End Type
 
 Public tomes As TomesType
@@ -49,7 +49,8 @@ Public Sub LoadTomeData()
                     Case "universalapmax": SetTomeMax .UniversalAPMax, strToken(1)
                     Case "permdestinypointmax": SetTomeMax .PermDestinyPointMax, strToken(1)
                     Case "permdestinypointmin": SetTomeMax .PermDestinyPointMin, strToken(1)
-                    'Case "fatepointtomemax": SetTomeMax .FatePointTomeMax, strToken(1)
+                    Case "fatetomemax": SetTomeMax .FateTomeMax, strToken(1)
+                    Case "destinytomemax": SetTomeMax .DestinyTomeMax, strToken(1)
                 End Select
             End With
         End If
@@ -68,8 +69,9 @@ Private Sub SetDefaults()
         .PowerMax = 4
         .RRMax = 4
         .UniversalAPMax = 1
+        .DestinyTomeMax = 2
+        .FateTomeMax = 3
         .PermDestinyPointMax = 18
-        '.FatePointTomeMax = 1
     End With
 End Sub
 

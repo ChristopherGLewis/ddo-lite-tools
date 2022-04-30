@@ -1192,6 +1192,10 @@ Private Sub LoadEnhancements()
     strRaw = xp.File.LoadToString(strFile)
     strTree = Split(strRaw, "TreeName: ")
     For i = 1 To UBound(strTree)
+        ' Debugging a tree
+        'If Left(strTree(i), 7) = "Horizon" Then
+        '    Debug.Print strTree(i)
+        'End If
         If InStr(strTree(i), "Type: ") Then
             typNew = typBlank
             typNew.TreeID = db.Trees + 1 ' Set our future treeID
@@ -1393,6 +1397,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
     
     'typNew is a new Ability.  Copy our information
     With typNew
+        'Initialize typNew
         .AbilityName = strAbility
         .Abbreviation = strAbility
         .Ranks = 1  'Default to 1/1
@@ -1403,6 +1408,8 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
 '        ReDim .Group(feFilters - 1)
 '        .Group(feAll) = True
         ReDim .Req(3)  'Three reqs All/One/None
+        ReDim .Rank(0)  'no ranks
+        
         ' Process lines after the first.  Each line should be '<TOKEN>: Value'
         For lngLine = 1 To UBound(strLine)
             log.LoadLine = strLine(lngLine)
@@ -1418,7 +1425,7 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                         If log.Tier > lngTier Then LoadError log.LoadTree & " Tier " & lngTier & "(" & log.Tier & "?): " & strAbility & " not in Tier order"
                         log.Tier = lngTier
                     Case "ranks"
-                        .Ranks = lngValue
+                        .Ranks = lngValue  'Note this doesn't init the rank array
                         If .Ranks < 1 Or .Ranks > 3 Then LogError
                     Case "cost"
                         .Cost = lngValue
@@ -1434,10 +1441,15 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                         If .SelectorStyle = sseNone Then .SelectorStyle = sseRoot
                         .Selectors = lngListMax + 1
                         ReDim .Selector(1 To .Selectors)
-                        For i = 0 To lngListMax
-                            .Selector(i + 1).SelectorName = strList(i)
-                            .Selector(i + 1).Cost = .Cost
-                            .Selector(i + 1).Req = .Req
+                        'For i = 0 To lngListMax
+                        '    .Selector(i + 1).SelectorName = strList(i)
+                        '    .Selector(i + 1).Cost = .Cost
+                        '    .Selector(i + 1).Req = .Req
+                        ' FIX when selectors only have 1 choice (HZW:Favored Enemy)
+                        For i = 1 To .Selectors
+                            .Selector(i).SelectorName = strList(i - 1)
+                            .Selector(i).Cost = .Cost
+                            .Selector(i).Req = .Req
                         Next
                     Case "sharedselector"
                         .SelectorStyle = sseShared
@@ -1501,6 +1513,12 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                                 Next
                             End With
                         End If
+                    Case "rank2cost", "rank3cost"  'Separate costs per rank
+                            'Add costs for rank 2/3
+                            InitRanks .Rank
+                            lngRank = val(Mid$(strField, 5, 1))
+                            .Rank(lngRank).Cost = strList(i)
+
 
                     'Class requirements are not supported in TREEs
 '                    Case "class"
@@ -1608,6 +1626,9 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pt
     Next
     If lngSelector > ptypAbility.Selectors Then Exit Sub
     With ptypAbility.Selector(lngSelector)
+        'TODO CHeck this
+        ReDim .Rank(0)  'Default to no ranks
+    
         ' Process lines
         For lngLine = 1 To UBound(strLine)
             log.LoadLine = strLine(lngLine)
@@ -1656,7 +1677,12 @@ End Sub
 Private Sub InitRanks(ptypRank() As RankType)
     Dim i As Long
     
-    ReDim Preserve ptypRank(2 To 3)
+    If UBound(ptypRank) = 0 Then
+        ReDim ptypRank(2 To 3)  '2-3 since rank 1 uses base ability items
+    Else
+        ReDim Preserve ptypRank(2 To 3)  '2-3 since rank 1 uses base ability items
+    End If
+    
     For i = 2 To 3
         With ptypRank(i)
             ReDim Preserve .Class(ceClasses - 1)
@@ -1976,7 +2002,7 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
     ' List
     If InStr(pstrLine, ",") Then
         pstrList = Split(pstrLine, ",")
-        plngListMax = UBound(pstrList)
+        plngListMax = UBound(pstrList)   'issue with selector count = 1
         For i = 0 To plngListMax
             pstrList(i) = Trim$(pstrList(i))
         Next

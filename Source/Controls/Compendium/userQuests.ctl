@@ -547,9 +547,16 @@ Private Sub GatherData()
                     .SortName = db.Quest(i).SortName
                 End If
                 Select Case cfg.LevelSort
-                    Case lseHeroic: .SortLevel = db.Quest(i).GroupLevel
-                    Case lseEpic: If .BaseLevel < .EpicLevel And (cfg.CompendiumOrder = coeLevel Or cfg.CompendiumOrder = coeEpic) Then .SortLevel = .EpicLevel Else .SortLevel = db.Quest(i).GroupLevel
-                    Case lseGame: .SortLevel = .BaseLevel
+                    Case lseHeroic:
+                        .SortLevel = db.Quest(i).GroupLevel
+                    Case lseEpic:
+                        If .BaseLevel < .EpicLevel And (cfg.CompendiumOrder = coeLevel Or cfg.CompendiumOrder = coeEpic) Then
+                            .SortLevel = .EpicLevel
+                        Else
+                            .SortLevel = db.Quest(i).GroupLevel
+                        End If
+                    Case lseGame:
+                        .SortLevel = .BaseLevel
                 End Select
                 .Favor = db.Quest(i).Favor
                 .Patron = db.Quest(i).Patron
@@ -1093,7 +1100,9 @@ Private Sub ShowFavorTotals()
     Dim lngRowHeight As Long
     Dim i As Long
     
-    If mlngRows <> db.Quests Or db.Characters = 0 Then
+    'Fix for totals hiding when EP sorting
+    'If mlngRows <> db.Quests Or db.Characters = 0 Then
+    If db.Characters = 0 Then
         UserControl.picTotals.Visible = False
         Exit Sub
     End If

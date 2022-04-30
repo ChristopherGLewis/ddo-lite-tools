@@ -189,10 +189,12 @@ Private Sub SaveCharacters()
             End With
             AddLine "TomeStat: " & ArrayToString(.Tome.Stat)
             AddLine "TomeSkill: " & ArrayToString(.Tome.Skill)
-            AddLine "TomeHeroicXP: " & .Tome.HerociXP
+            AddLine "TomeHeroicXP: " & .Tome.HeroicXP
             AddLine "TomeEpicXP: " & .Tome.EpicXP
             AddLine "TomeRacialAP: " & .Tome.RacialAP
+            AddLine "TomeUniversalAP: " & .Tome.UniversalAP
             AddLine "TomeFate: " & .Tome.Fate
+            AddLine "TomeDestiny: " & .Tome.Destiny
             AddLine "TomePower: " & ArrayToString(.Tome.Power)
             AddLine "TomeRR: " & ArrayToString(.Tome.RR)
             AddLine "PastLifeClass: " & ArrayToString(.PastLife.Class)

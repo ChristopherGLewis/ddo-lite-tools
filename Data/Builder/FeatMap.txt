@@ -306,7 +306,6 @@ Martial Weapon: Shortsword	Martial Weapon Proficiency: Shortsword	Martial Weapon
 Martial Weapon: Throwing Axe	Martial Weapon Proficiency: Throwing Axe	Martial Weapon Proficiency: Throwing Axe
 Martial Weapon: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer
 Martial Weapon: Warhammer	Martial Weapon Proficiency: Warhammer	Martial Weapon Proficiency: Warhammer
-Mass Frog	Primal Sphere: Mass Frog	Mass Frog
 Master of Forms	Monk Feats: Master of Forms	Master of Forms
 Master of: Air	Epic: Master of Air	Master of Air
 Master of: Alignment	Epic: Master of Alignment	Master of Alignment

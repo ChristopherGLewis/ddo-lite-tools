@@ -1186,7 +1186,6 @@ Private Sub LoadData()
     Me.usrspnRacialAP.Value = build.RacialAP
     Me.lblRacialAPhelp(2).Caption = "- Racial AP Tomes can add another +" & tomes.RacialAPMax & " Racial AP"
     ' Universal AP
-    Me.lblUniversalAPhelp(1).Caption = Replace(Me.lblUniversalAPhelp(1).Caption, "?", tomes.UniversalAPMax)
     Me.usrspnUniversalAP.Max = tomes.UniversalAPMax
     Me.usrspnUniversalAP.Value = build.UniversalAP
     
@@ -1700,6 +1699,8 @@ Private Sub ShowDropSlots()
 End Sub
 
 ' Returns TRUE if errors found
+' ptypTree -> DB tree
+' ptypAbility -> BuildID tree/Ability (build id's only)
 Private Function CheckErrors(ptypTree As TreeType, ptypAbility As BuildAbilityType, plngSpent() As Long) As Boolean
     CheckErrors = CheckAbilityErrors(ptypTree, build.Tree(mlngBuildTree), ptypAbility, plngSpent)
 End Function

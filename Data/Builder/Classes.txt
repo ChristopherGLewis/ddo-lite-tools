@@ -456,7 +456,7 @@ SpellList2: Blur, Command Undead, Dispel Magic, Fog Cloud, Ghoul Touch, Invisibi
 SpellList3: Banishment, Bestow Curse, Charm Monster, Contagion, Dark Discorporation, Deep Slumber, Dimension Door, Displacement, Enervation, Fear, Haste, Stoneskin, Summon Monster IV
 SpellList4: Dismissal, Evard's Black Tentacles, Flesh to Stone, Hold Monster, Lesser Globe of Invulnerability, Protection from Elements, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Teleport, True Seeing, Waves of Fatigue
 SpellList5: Circle of Death, Control Undead, Create Undead, Finger of Death, Globe of Invulnerability, Greater Teleport, Mass Hold Person, Mass Invisibility, Mind Fog, Mass Protection from Elements, Shadow Walk, Summon Monster VIII, Symbol of Stunning, Tenser's Transformation, Undeath to Death, Waves of Exhaustion
-SpellList6: Mass Charm Monster, Dominate Monster, Mass Hold Monster, Mordenkainen's Disjunction, Power Word: Stun, Summon Monster IX, Symbol of Death, Trap the Soul, Wail of the Banshee
+SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Monster, Mordenkainen's Disjunction, Power Word: Stun, Summon Monster IX, Symbol of Death, Trap the Soul, Wail of the Banshee
 PactSpells: Fey, Obscuring Mist, Blindness, Slow, Greater Dispel Magic, Otto's Sphere of Dancing, Otto's Irresistible Dance
 PactSpells: Fiend, Command, Rage, Fire Shield, Binding Chain, Power Word: Blind, Howl of Terror
 PactSpells: Great Old One, Entangle, Knock, Phantasmal Killer, Dominate Person, Mass Suggestion, Power Word: Kill

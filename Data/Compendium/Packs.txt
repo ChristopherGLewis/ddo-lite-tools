@@ -338,3 +338,9 @@ EpicHigh: 32
 Patron: The Gatekeepers
 Wiki: Sinister Secret of Saltmarsh
 Link Named Items	Link	https://ddowiki.com/page/Update_50_named_items
+
+PackName: Hunter and Hunted
+Abbreviation: Hunt
+Cost: 595
+HeroicLow: 7
+HeroicHigh: 7

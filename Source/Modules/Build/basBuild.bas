@@ -2655,6 +2655,9 @@ Private Function GetPoints(ptypAbility As AbilityType, ByVal plngSelector As Lon
 End Function
 
 ' Returns TRUE if errors found
+' ptypTree -> DB tree
+' ptypBuildTree -> Build tree
+' ptypAbility-> BuildID tree/Ability (build id's only)
 Public Function CheckAbilityErrors(ptypTree As TreeType, ptypBuildTree As BuildTreeType, ptypAbility As BuildAbilityType, plngSpent() As Long) As Boolean
     Dim blnPassChecks As Boolean
     
@@ -2778,6 +2781,9 @@ Public Function CheckAbilityClassLevels(pblnClass() As Boolean, plngLevel() As L
 End Function
 
 ' Returns TRUE if successfully pass all abilityreqs
+' ptypReqList -> Array of requirements from DB.Tree(id).Tier(id).Ability(id).Selector(id).Req
+' plngRanks -> Ranks taken
+' pblnRankReq -> Ranks required
 Private Function CheckAbilityReqs(ptypReqList() As ReqListType, ByVal plngRanks As Long, pblnRankReq As Boolean) As Boolean
     Dim enReq As ReqGroupEnum
     
@@ -2789,6 +2795,8 @@ Private Function CheckAbilityReqs(ptypReqList() As ReqListType, ByVal plngRanks 
 End Function
 
 ' Returns TRUE if successfully pass all abilities.
+' ptypReqList -> Ability Requirement
+' penReq -> Requirement type (All/One/None)
 Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupEnum, plngRanks As Long, pblnRankReq As Boolean) As Boolean
     Dim lngMatches As Long
     Dim lngTree As Long
@@ -2804,7 +2812,9 @@ Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupE
             Select Case .Style
                 Case peFeat
                     If CheckAbilityFeat(.Feat, .Selector) Then
-                        If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, 1)
+                        If Len(strTaken) = 0 Then
+                            strTaken = PointerDisplay(ptypReqList.Req(i), True, 1)
+                        End If
                         lngMatches = lngMatches + 1
                     Else
                         If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, 1)

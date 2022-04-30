@@ -175,10 +175,14 @@ Guide: Soul Tier 3: Charisma
 
 [Destiny]
 
+PermDestinyPoints: 30
 Destiny: Divine Crusader
 Type: Destiny
 Ability: Tier 0: Just Cause
 Ability: Tier 0: Confront any Foe
-Ability: Tier 1: Divine Smite (Rank 3)
+Ability: Tier 1: Divine Smite
 Ability: Tier 1: Shield of Justice (Rank 3)
+
+Destiny: Fatesinger
+Type: Destiny
 

@@ -136,43 +136,47 @@ Private Sub CompendiumCharacter(pstrRaw As String)
                         End If
                     Case "tomestat"
                         For i = 1 To 6
-                            .Tome.Stat(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, tomes.Stat.Max)
+                            .Tome.Stat(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.Stat.Max)
                         Next
                     Case "tomeskill"
                         For i = 1 To 21
-                            .Tome.Skill(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, tomes.Skill.Max)
+                            .Tome.Skill(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.Skill.Max)
                         Next
                     Case "tomeracialap"
-                        .Tome.RacialAP = LimitValue(Val(strItem), 0, tomes.RacialAPMax)
+                        .Tome.RacialAP = LimitValue(val(strItem), 0, tomes.RacialAPMax)
+                    Case "tomeuniversalap"
+                        .Tome.UniversalAP = LimitValue(val(strItem), 0, tomes.UniversalAPMax)
                     Case "tomefate"
-                        .Tome.Fate = LimitValue(Val(strItem), 0, tomes.FateMax)
+                        .Tome.Fate = LimitValue(val(strItem), 0, tomes.FateTomeMax)
+                    Case "tomedestiny"
+                        .Tome.Destiny = LimitValue(val(strItem), 0, tomes.DestinyTomeMax)
                     Case "tomepower"
                         For i = 1 To 3
-                            .Tome.Power(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, tomes.PowerMax)
+                            .Tome.Power(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.PowerMax)
                         Next
                     Case "tomerr"
                         For i = 1 To 2
-                            .Tome.RR(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, tomes.RRMax)
+                            .Tome.RR(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.RRMax)
                         Next
                     Case "tomeheroicxp"
-                        If strItem = "Lesser" Or strItem = "Greater" Then .Tome.HerociXP = strItem
+                        If strItem = "Lesser" Or strItem = "Greater" Then .Tome.HeroicXP = strItem
                     Case "tomeepicxp"
                         If strItem = "Lesser" Or strItem = "Greater" Then .Tome.EpicXP = strItem
                     Case "pastlifeclass"
                         For i = 1 To 14
-                            .PastLife.Class(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
+                            .PastLife.Class(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastliferace"
                         For i = 1 To 11
-                            .PastLife.Racial(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
+                            .PastLife.Racial(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastlifeiconic"
                         For i = 1 To 6
-                            .PastLife.Iconic(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
+                            .PastLife.Iconic(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                     Case "pastlifeepic"
                         For i = 1 To 12
-                            .PastLife.Epic(i) = LimitValue(Val(Mid$(strItem, i, 1)), 0, 3)
+                            .PastLife.Epic(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, 3)
                         Next
                 End Select
             End If
@@ -243,7 +247,7 @@ Private Sub CompendiumChallenges(pstrRaw As String)
             If lngChallenge Then
                 With idb.Challenge(lngChallenge)
                     For c = 1 To idb.Characters
-                        .Stars(c) = Val(Mid$(strToken(1), c, 1))
+                        .Stars(c) = val(Mid$(strToken(1), c, 1))
                     Next
                 End With
             End If
@@ -291,7 +295,7 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
     ' Value
     pstrItem = pstrLine
     If Left$(pstrField, 4) <> "tome" And Left$(pstrField, 8) <> "pastlife" Then
-        If IsNumeric(pstrItem) Then plngValue = Val(pstrItem)
+        If IsNumeric(pstrItem) Then plngValue = val(pstrItem)
     End If
     ' Return single item in list form as well
     plngListMax = 0

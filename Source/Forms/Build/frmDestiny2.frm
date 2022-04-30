@@ -833,7 +833,7 @@ Private Sub mnuTrees_Click(Index As Integer)
                 build.Destiny(i) = build.Destiny(i + 1)
             Next
             build.Destinies = build.Destinies - 1
-            ReDim Preserve build.Destiny(1 To build.Destinies)
+            ReDim Preserve build.Destiny(1 To build.Destinies)  'Reset.  Destiny is 1 based
             PopulateCombo
         Case 1 ' Delete all trees
             If Not Ask("Delete all trees?") Then Exit Sub

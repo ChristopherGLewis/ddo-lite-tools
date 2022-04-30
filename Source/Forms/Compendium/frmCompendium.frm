@@ -3,10 +3,10 @@ Begin VB.Form frmCompendium
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
    Caption         =   "Compendium"
-   ClientHeight    =   6096
-   ClientLeft      =   132
+   ClientHeight    =   6090
+   ClientLeft      =   135
    ClientTop       =   180
-   ClientWidth     =   12312
+   ClientWidth     =   12315
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -18,8 +18,8 @@ Begin VB.Form frmCompendium
    EndProperty
    Icon            =   "frmCompendium.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6096
-   ScaleWidth      =   12312
+   ScaleHeight     =   6090
+   ScaleWidth      =   12315
    Begin Compendium.userToolbar usrToolbar 
       Height          =   372
       Left            =   3540
@@ -27,8 +27,8 @@ Begin VB.Form frmCompendium
       Top             =   0
       Visible         =   0   'False
       Width           =   8772
-      _ExtentX        =   15473
-      _ExtentY        =   656
+      _ExtentX        =   15478
+      _ExtentY        =   661
       Captions        =   "Home,XP,Wilderness,Notes,Links"
    End
    Begin Compendium.userLinkLists usrLinks 
@@ -38,8 +38,8 @@ Begin VB.Form frmCompendium
       Top             =   3180
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6160
-      _ExtentY        =   4149
+      _ExtentX        =   6165
+      _ExtentY        =   4154
    End
    Begin Compendium.userTextbox usrtxtNotes 
       Height          =   2352
@@ -48,8 +48,8 @@ Begin VB.Form frmCompendium
       Top             =   2580
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6160
-      _ExtentY        =   4149
+      _ExtentX        =   6165
+      _ExtentY        =   4154
    End
    Begin VB.Timer tmrLoad 
       Enabled         =   0   'False
@@ -64,8 +64,8 @@ Begin VB.Form frmCompendium
       Top             =   1980
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6160
-      _ExtentY        =   4149
+      _ExtentX        =   6165
+      _ExtentY        =   4154
    End
    Begin Compendium.userTables usrXP 
       Height          =   2352
@@ -74,8 +74,8 @@ Begin VB.Form frmCompendium
       Top             =   1380
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6160
-      _ExtentY        =   4149
+      _ExtentX        =   6165
+      _ExtentY        =   4154
    End
    Begin Compendium.userOverview usrOverview 
       Height          =   2352
@@ -84,8 +84,8 @@ Begin VB.Form frmCompendium
       Top             =   780
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6160
-      _ExtentY        =   4149
+      _ExtentX        =   6165
+      _ExtentY        =   4154
    End
    Begin VB.Timer tmrAutoSave 
       Enabled         =   0   'False
@@ -100,8 +100,8 @@ Begin VB.Form frmCompendium
       Top             =   1080
       Visible         =   0   'False
       Width           =   4332
-      _ExtentX        =   7641
-      _ExtentY        =   6583
+      _ExtentX        =   7646
+      _ExtentY        =   6588
    End
    Begin VB.Menu mnuMain 
       Caption         =   "LinkContext"
@@ -468,7 +468,11 @@ Private Sub ShowTab()
     Dim enPane As PaneEnum
     Dim i As Long
     
-    If win.Separate Then enPane = cfg.RightPane Else enPane = cfg.LeftPane
+    If win.Separate Then
+        enPane = cfg.RightPane
+    Else
+        enPane = cfg.LeftPane
+    End If
     For i = 0 To pePaneCount - 1
         If i <> enPane Then TabVisible i, False
     Next

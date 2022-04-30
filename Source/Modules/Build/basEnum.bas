@@ -49,6 +49,8 @@ Public Enum RaceEnum
     reScoundrel
     reShifter
     reRazorclaw
+    reTabaxi
+    reTrailblazer
     reRaces
 End Enum
 
@@ -316,6 +318,8 @@ Public Function GetRaceID(pstrRace As String) As RaceEnum
         Case "scoundrel", "tiefling scoundrel": GetRaceID = reScoundrel
         Case "shifter": GetRaceID = reShifter
         Case "razorclaw", "razorclaw shifter": GetRaceID = reRazorclaw
+        Case "tabaxi": GetRaceID = reTabaxi
+        Case "trailblazer", "tabaxi trailblazer": GetRaceID = reTrailblazer
     End Select
 End Function
 
@@ -343,6 +347,8 @@ Public Function GetRaceName(ByVal penRace As RaceEnum) As String
         Case reScoundrel: GetRaceName = "Tiefling Scoundrel"
         Case reShifter: GetRaceName = "Shifter"
         Case reRazorclaw: GetRaceName = "Razorclaw Shifter"
+        Case reTabaxi: GetRaceName = "Tabaxi"
+        Case reTrailblazer: GetRaceName = "Tabaxi Trailblazer"
     End Select
 End Function
 

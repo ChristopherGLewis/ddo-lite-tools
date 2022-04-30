@@ -1316,8 +1316,12 @@ Private Sub CompendiumCharacter(pstrRaw As String)
                         Next
                     Case "tomeracialap"
                         .Tome.RacialAP = LimitValue(val(strItem), 0, tomes.RacialAPMax)
+                    Case "tomeuniversalap"
+                        .Tome.UniversalAP = LimitValue(val(strItem), 0, tomes.UniversalAPMax)
                     Case "tomefate"
-                        .Tome.Fate = LimitValue(val(strItem), 0, tomes.FateMax)
+                        .Tome.Fate = LimitValue(val(strItem), 0, tomes.FateTomeMax)
+                    Case "tomedestiny"
+                        .Tome.Destiny = LimitValue(val(strItem), 0, tomes.DestinyTomeMax)
                     Case "tomepower"
                         For i = 1 To 3
                             .Tome.Power(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.PowerMax)
@@ -1327,7 +1331,7 @@ Private Sub CompendiumCharacter(pstrRaw As String)
                             .Tome.RR(i) = LimitValue(val(Mid$(strItem, i, 1)), 0, tomes.RRMax)
                         Next
                     Case "tomeheroicxp"
-                        If strItem = "Lesser" Or strItem = "Greater" Then .Tome.HerociXP = strItem
+                        If strItem = "Lesser" Or strItem = "Greater" Then .Tome.HeroicXP = strItem
                     Case "tomeepicxp"
                         If strItem = "Lesser" Or strItem = "Greater" Then .Tome.EpicXP = strItem
                     Case "pastlifeclass"

@@ -235,6 +235,11 @@ Private Sub ProcessAbilitySelectors()
     log.Activity = actProcessEnhancementSelectors
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
+        ' Debugging a tree
+        If Left(db.Tree(log.Tree).TreeName, 7) = "Horizon" Then
+            Debug.Print db.Tree(log.Tree).TreeName
+        End If
+    
         ProcessTreeSelectors db.Tree(log.Tree)
     Next
     log.Activity = actProcessDestinySelectors
@@ -252,10 +257,19 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
     
     For iTier = 0 To ptypTree.Tiers
         log.Tier = iTier
+        ' Debugging a Tier
+        'If iTier = 2 Then
+        '    Debug.Print iTier
+        'End If
         For iAbility = 1 To ptypTree.Tier(iTier).Abilities
             log.Ability = iAbility
             log.HasError = False
             With ptypTree.Tier(iTier).Ability(iAbility)
+                ' Debugging an ability
+                 If Left(.AbilityName, 7) = "Favored" Then
+                     Debug.Print .AbilityName
+                 End If
+            
                 Select Case .SelectorStyle
                     Case sseShared, sseExclusive
                         'If .Selectors = 0 Then
@@ -374,6 +388,11 @@ Private Sub ProcessPointers()
     log.Activity = actProcessEnhancementReqs
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
+        ' Debugging a tree
+        'If Left(db.Tree(log.Tree).TreeName, 7) = "Horizon" Then
+        '    Debug.Print db.Tree(log.Tree).TreeName
+        'End If
+    
         ProcessTree db.Tree(log.Tree), peEnhancement
     Next
     ' Destinies
@@ -387,7 +406,7 @@ End Sub
 Private Sub ProcessPointer(ptypPointer As PointerType)
     Dim strField As String
     Dim strValue As String
-    Dim lngTier As Long
+    Dim iTier As Long
     Dim strData As String
     Dim strSelector As String
     Dim lngPos As Long
@@ -450,17 +469,27 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
     Dim i, j As Long
     Dim enReq As Long
     Dim lngReq As Long
-    Dim lngTier As Long
+    Dim iTier As Long
     Dim lngAbility As Long
     
     With ptypTree   'db.Destiny or db.Tree
         'Look at each tier in tree
-        For lngTier = 0 To .Tiers
-            log.Tier = lngTier
+        For iTier = 0 To .Tiers
+            log.Tier = iTier
+            ' Debugging a Tier
+            'If iTier = 2 Then
+            '    Debug.Print iTier
+            'End If
+            
             'Look at each ability in tier
-            For lngAbility = 1 To .Tier(lngTier).Abilities
+            For lngAbility = 1 To .Tier(iTier).Abilities
                 log.Ability = lngAbility
-                With .Tier(lngTier).Ability(lngAbility) 'db.t/d().tier().Ability
+                With .Tier(iTier).Ability(lngAbility) 'db.t/d().tier().Ability
+                    ' Debugging an ability
+                    'If Left(.AbilityName, 13) = "Favored Enemy" Then
+                    '    Debug.Print .AbilityName
+                    'End If
+                
                     ProcessPointer .Parent
                     For i = 1 To .Siblings
                         ProcessPointer .Sibling(i)
@@ -643,12 +672,11 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
     If InStr(LCase(strRaw), "feat:") Then
         'Feat based: 'Feat: Favored Enemy: Goblinoid'
         strReqParse = Split(strRaw, ":")
-        If (InStr(strReqParse(1), ":") > 0) Then
-            strReqParse2 = Split(strReqParse(1), ":")
-            Req.FeatName = strReqParse2(0)
+        If UBound(strReqParse) = 2 Then
+            Req.FeatName = Trim(strReqParse(1))
             Req.FeatID = SeekFeat(Req.FeatName)
             Req.TreeStype = peFeat
-            Req.SelectorName = strReqParse2(1)
+            Req.SelectorName = Trim(strReqParse(2))
             Req.SelectorID = FindSelectorIdInFeat(Req.FeatID, Req.SelectorName)
         Else
             Req.FeatName = Trim(strReqParse(1))
