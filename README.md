@@ -16,37 +16,38 @@ Any issues and input should be filed there.
 ### 4.1.0 - U54 Tabaxi
 Changes:
     
-    Race
+    Race:
         * Added Tabaxi and Tabaxi Trailblazer
         * Tabaxi issues:
             * Corner is MultiSelector but only offers dodge
             * Lucky Cat may require 9 lives per release notes.
 
-    Feats
+    Feats:
         * Added Tabaxi Feline Agility
         * Removed Mass Frog (Thanks Amastris)
 
-    Spells 
+    Spells:
         * Added Arcane Tempest to Warlock (Thanks Amastris)
 
-    Enhancements
+    Enhancements:
         * Fixed issue with Grace in Elf
         * Fixed issue with Favored Enemy not recognizing selector
 
-    Destinies
+    Destinies:
         * Updates from U53.1 & U53.2
     
-    Other
+    Other:
         * Fixed Perm Destiny Pts not saving if no destiny points spent
 
-    Compendium Updates (1.8.0)
+    Compendium Updates (1.8.0):
         * Updates for U53 from SardaOfChaos
         * Fixed footer disappearing on EP Sort
         * Added Eclipse Power PL
         * Added Tabaxi/Trailblazer PL
         * Added Universal AP/Destiny Tomes
         
-
+    Issues:  
+        * Destinies with Rank costs of 2/1/1 not working correctly
 
 ### 4.0.2 - U51 Destiny Updates - Fixes
 Changes:

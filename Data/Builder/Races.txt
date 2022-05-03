@@ -139,12 +139,10 @@ GrantedFeats1: Exotic Weapon: Handwraps
 RaceName: Tabaxi
 Type: Premium
 Stats: 8, 10, 8, 8, 8, 8
-Flags: BonusFeat
 GrantedFeats1: Feline Agility
 
 RaceName: Tabaxi Trailblazer
 Abbreviation: Trailblazer
 Type: Iconic
 Stats: 8, 10, 8, 8, 8, 8
-Flags: BonusFeat
 GrantedFeats1: Feline Agility

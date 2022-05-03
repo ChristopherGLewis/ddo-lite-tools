@@ -1518,7 +1518,9 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                             InitRanks .Rank
                             lngRank = val(Mid$(strField, 5, 1))
                             .Rank(lngRank).Cost = strList(i)
-
+                            '--------
+                            'THIS ISN'T COMPLETE'
+                            '----
 
                     'Class requirements are not supported in TREEs
 '                    Case "class"

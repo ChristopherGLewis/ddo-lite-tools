@@ -246,7 +246,7 @@ RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Artificer
 
 FeatName: Completionist
-Group: Misc
+Group: Heroic, Misc
 Descrip: You win DDO! +2 bonus to all skills and ability scores.
 Level: 1
 

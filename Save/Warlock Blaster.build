@@ -1,8 +1,9 @@
 [Overview]
 
 Name: New Build
-Race: Tiefling
+Race: Tabaxi
 Alignment: True Neutral
+MaxLevels: 30
 MaxLevels: 30
 
 Class: Warlock
@@ -17,41 +18,50 @@ Champion: No
 Hero: No
 ;    Advn  Chmp  Hero  Lgnd  Tome
 ;    ----  ----  ----  ----  ----
-STR:                           7
-DEX:                           7
-CON:  10    16    16    16     7
-INT:   2           2     4     7
-WIS:                           7
-CHA:  16    16    16    16     7
+STR:                           8
+DEX:                           8
+CON:  10    16    16    16     8
+INT:   2           2     4     8
+WIS:                           8
+CHA:  16    16    16    16     8
 ;    ----  ----  ----  ----
 ;     28    32    34    36   
+
+Levelup: 0	Charisma
+Levelup: 4	Charisma
+Levelup: 8	Charisma
+Levelup: 12	Charisma
+Levelup: 16	Charisma
+Levelup: 20	Charisma
+Levelup: 24	Charisma
+Levelup: 28	Charisma
 
 
 [Skills]
 
 ;         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  Tome
 ;        ------------------------------------------------------------------------------------
-Balance:                                          1   1   1   1   2   2   2   2   2   2     
+Balance:                                              1   1   1   1   1   1   1   1   2     
 Bluff  :                                                                                    
-Concent:      1   1   1   1   1   2   2   2   2   1   1   1   1   1   1   1   1   1   1     
+Concent:      1   1   1   1                                                                 
 Diplo  :                                                                                    
 Disable:                                                                                    
 Haggle :                                                                                    
-Heal   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1         
+Heal   :                      1   1   1   1   2   2   2   2   2   2   2   2   1   1         
 Hide   :                                                                                    
-Intim  :                                                                              1     
-Jump   :                                                                                    
+Intim  :                                                                                    
+Jump   :      1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
 Listen :                                                                                    
 Move Si:                                                                                    
 Open Lo:                                                                                    
 Perform:                                                                                    
 Repair :                                                                                    
-Search :                                                                                    
+Search :  4                       1   1   1   1   1               1   1   1   2   2   2     
 Spellcr:  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
 Spot   :                                                                                    
 Swim   :                                                                                    
 Tumble :                                                                                    
-UMD    :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+UMD    :  4   1   1   1   1   1   1   1   1                                                 
 
 
 [Feats]
@@ -64,12 +74,14 @@ Standard: Heroic 12	Spell Focus: Conjuration
 Standard: Heroic 15	Spell Penetration
 Standard: Heroic 18	Greater Spell Focus: Conjuration
 Standard: Epic 21	Epic Eldritch Blast
+Standard: Destiny 22	Epic Arcane Eldritch Blast
 Standard: Epic 24	Greater Spell Penetration
+Standard: Destiny 25	Crush Weakness
 Standard: Epic 27	Ruin
 Standard: Destiny 28	Hellball
 Standard: Epic 30	Greater Ruin
 
-Legend: Legend 30	Scion of: Plane of Fire
+Legend: Legend 30	Scion of: Plane of Earth
 
 Class: Warlock 1	Pact: Fiend
 
@@ -77,18 +89,8 @@ Class: Warlock 1	Pact: Fiend
 [Enhancements]
 
 Tier5: Soul Eater
-RacialAP: 10
+RacialAP: 16
 UniversalAP: 1
-
-Tree: Tiefling
-Type: Race
-ClassLevels: 30
-Ability: Tier 0: Bloodhunt I
-Ability: Tier 0: Charisma I
-Ability: Tier 0: Bloodhunt II
-Ability: Tier 0: Charisma II
-Ability: Tier 1: Hellish Rebuke
-Ability: Tier 1: Infernal Nature (Rank 3)
 
 Tree: Soul Eater
 Type: Class
@@ -151,38 +153,22 @@ Type: Global
 ClassLevels: 30
 Ability: Tier 0: Find Familiar: Fox
 
-
-[LevelingGuide]
-
-Guide: Tiefling Tier 0: Bloodhunt I
-Guide: Bank AP
-Guide: Bank AP
-Guide: Bank AP
-Guide: Bank AP
-Guide: Soul Tier 0: Inhuman Understanding
-Guide: Soul Tier 1: Consume
-Guide: Soul Tier 1: Hungry for Destruction (Rank 1)
-Guide: Soul Tier 1: Hungry for Destruction (Rank 2)
-Guide: Soul Tier 1: Hungry for Destruction (Rank 3)
-Guide: Soul Tier 2: Hungry for Destruction (Rank 1)
-Guide: Soul Tier 2: Hungry for Destruction (Rank 2)
-Guide: Soul Tier 2: Hungry for Destruction (Rank 3)
-Guide: Soul Tier 2: Stricken (Rank 1)
-Guide: Soul Tier 2: Stricken (Rank 2)
-Guide: Soul Tier 2: Stricken (Rank 3)
-Guide: Soul Tier 3: Charisma
+Tree: Tabaxi
+Type: Race
+ClassLevels: 30
+Ability: Tier 0: Nimble Cat
+Ability: Tier 0: Ability Score Increase: Charisma
+Ability: Tier 0: Nimble Cat II
+Ability: Tier 0: Ability Score Increase II: Charisma
+Ability: Tier 0: Nimble Cat III
+Ability: Tier 1: Land On Your Feet
+Ability: Tier 2: Deflect Arrows
+Ability: Tier 2: Slip Out of Danger (Rank 3)
+Ability: Tier 3: Corner (Rank 3)
+Ability: Tier 4: 9 Lives
 
 
 [Destiny]
 
 PermDestinyPoints: 30
-Destiny: Divine Crusader
-Type: Destiny
-Ability: Tier 0: Just Cause
-Ability: Tier 0: Confront any Foe
-Ability: Tier 1: Divine Smite
-Ability: Tier 1: Shield of Justice (Rank 3)
-
-Destiny: Fatesinger
-Type: Destiny
 
