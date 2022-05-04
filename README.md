@@ -49,6 +49,9 @@ Changes:
         
     Issues:  
         * Destinies with Rank costs of 2/1/1 not working correctly
+        * AM Enhancements SharedSelector can't pick 2/3/4/5 spells correctly - changed
+          to use spell class & desc.
+        * Siblings is not working correctly
 
 ### 4.0.2 - U51 Destiny Updates - Fixes
 Changes:
