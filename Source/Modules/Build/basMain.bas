@@ -406,7 +406,9 @@ Private Sub FindPrereqsWithFewerRanksTree(ptypTree As TreeType)
                     For lngReq = 1 To .Req(enReq).Reqs
                         If .Req(enReq).Req(lngReq).Style <> peFeat Then
                             lngPrereqRanks = ReqMaxRanks(.Req(enReq).Req(lngReq))
-                            If lngPrereqRanks < .Ranks Then Debug.Print ptypTree.TreeName & " Tier " & lngTier & ": " & .AbilityName & " " & .Ranks & " requires " & PointerDisplay(.Req(enReq).Req(lngReq), True)
+                            If lngPrereqRanks < .Ranks Then
+                                Debug.Print ptypTree.TreeName & " Tier " & lngTier & ": " & .AbilityName & " " & .Ranks & " requires " & PointerDisplay(.Req(enReq).Req(lngReq), True)
+                            End If
                         End If
                     Next
                 Next

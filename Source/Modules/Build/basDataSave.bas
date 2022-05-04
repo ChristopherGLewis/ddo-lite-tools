@@ -67,7 +67,9 @@ Public Sub SaveEnhancementsFile()
                 Next
                 strRaw(i) = strRaw(i) & Left$(strStat, Len(strStat) - 2) & vbNewLine
             End If
-            If Len(.Lockout) Then strRaw(i) = strRaw(i) & "Lockout: " & .Lockout & vbNewLine
+            If Len(.Lockout) Then
+                strRaw(i) = strRaw(i) & "Lockout: " & .Lockout & vbNewLine
+            End If
             strRaw(i) = strRaw(i) & vbNewLine & SaveAbilities(db.Tree(i))
         End With
     Next
@@ -180,7 +182,12 @@ Private Function GetLastAbility(plngTier As Long, plngAbilities As Long, penTree
     Select Case penTreeType
         Case tseRace: GetLastAbility = plngAbilities
         Case tseDestiny: GetLastAbility = plngAbilities - 1
-        Case Else: If pblnStats And (plngTier = 3 Or plngTier = 4) Then GetLastAbility = plngAbilities - 1 Else GetLastAbility = plngAbilities
+        Case Else
+            If pblnStats And (plngTier = 3 Or plngTier = 4) Then
+                GetLastAbility = plngAbilities - 1
+            Else
+                GetLastAbility = plngAbilities
+            End If
     End Select
 End Function
 

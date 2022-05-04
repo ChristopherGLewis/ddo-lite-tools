@@ -32,12 +32,13 @@ Changes:
     Enhancements:
         * Fixed issue with Grace in Elf
         * Fixed issue with Favored Enemy not recognizing selector
+        * fixed issue with requirements using Ranks (AA->Soul Magic)
 
     Destinies:
         * Updates from U53.1 & U53.2
     
     Other:
-        * Fixed Perm Destiny Pts not saving if no destiny points spent
+        * Fixed Perm Destiny Pts not saving if no destiny points spent 
 
     Compendium Updates (1.8.0):
         * Updates for U53 from SardaOfChaos

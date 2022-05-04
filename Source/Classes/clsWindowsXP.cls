@@ -143,7 +143,7 @@ End Type
 
 Private Type APPBARDATA
     cbSize As Long
-    hWnd As Long
+    hwnd As Long
     uCallbackMessage As Long
     uEdge As Long
     rc As RECT
@@ -165,19 +165,19 @@ Private Declare Function InternetOpen Lib "wininet.dll" Alias "InternetOpenA" (B
 Private Declare Function InternetOpenUrl Lib "wininet.dll" Alias "InternetOpenUrlA" (ByVal hOpen As Long, ByVal sUrl As String, ByVal sHeaders As String, ByVal lLength As Long, ByVal lFlags As Long, ByVal lContext As Long) As Long
 Private Declare Function InternetReadFile Lib "wininet.dll" (ByVal hFile As Long, ByVal sBuffer As String, ByVal lNumBytesToRead As Long, lNumberOfBytesRead As Long) As Long
 Private Declare Function LoadCursor Lib "user32" Alias "LoadCursorA" (ByVal hInstance As Long, ByVal lpCursorName As Long) As Long
-Private Declare Function LockWindowUpdate Lib "user32" (ByVal hWnd As Long) As Long
+Private Declare Function LockWindowUpdate Lib "user32" (ByVal hwnd As Long) As Long
 Private Declare Function LookupPrivilegeValue Lib "Advapi32" Alias "LookupPrivilegeValueA" (ByVal lpSystemName As String, ByVal lpName As String, lpLuid As LUID) As Long
 Private Declare Function OleTranslateColor Lib "oleaut32.dll" (ByVal lOleColor As Long, ByVal lHPalette As Long, lColorRef As Long) As Long
 Private Declare Function OpenProcessToken Lib "Advapi32" (ByVal ProcessHandle As Long, ByVal DesiredAccess As Long, TokenHandle As Long) As Long
 Private Declare Function PrintDlg Lib "comdlg32.dll" Alias "PrintDlgA" (pPrintdlg As PRINTDLGS) As Long
-Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hWnd As Long, ByVal wMsg As Long, ByVal wParam As Long, ByVal lParam As Long) As Long
+Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, ByVal lParam As Long) As Long
 Private Declare Function SetCursor Lib "user32" (ByVal hcursor As Long) As Long
 Private Declare Function SetCursorPos Lib "user32" (ByVal X As Long, ByVal Y As Long) As Long
-Private Declare Function SetWindowPos Lib "user32" (ByVal hWnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
+Private Declare Function SetWindowPos Lib "user32" (ByVal hwnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
 Private Declare Function SHAppBarMessage Lib "shell32" (ByVal dwMessage As Long, pData As APPBARDATA) As Long
 Private Declare Sub SHChangeNotify Lib "shell32.dll" (ByVal wEventId As Long, ByVal uFlags As Long, dwItem1 As Any, dwItem2 As Any)
-Private Declare Sub SHEmptyRecycleBin Lib "shell32.dll" Alias "SHEmptyRecycleBinA" (ByVal hWnd As Long, ByVal pszRootPath As String, ByVal dwFlags As Long)
-Private Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hWnd As Long, ByVal lpszOp As String, ByVal lpszFile As String, ByVal lpszParams As String, ByVal lpszDir As String, ByVal FsShowCmd As Long) As Long
+Private Declare Sub SHEmptyRecycleBin Lib "shell32.dll" Alias "SHEmptyRecycleBinA" (ByVal hwnd As Long, ByVal pszRootPath As String, ByVal dwFlags As Long)
+Private Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hwnd As Long, ByVal lpszOp As String, ByVal lpszFile As String, ByVal lpszParams As String, ByVal lpszDir As String, ByVal FsShowCmd As Long) As Long
 Private Declare Function ShowCursor Lib "user32" (ByVal bShow As Long) As Long
 Private Declare Function SystemParametersInfo Lib "user32" Alias "SystemParametersInfoA" (ByVal uAction As Long, ByVal uParam As Long, lpvParam As Any, ByVal fuWinIni As Long) As Long
 
@@ -235,9 +235,9 @@ End Sub
 
 ' Suppress paint requests to a window
 ' (reduces flicker, but don't abuse as a crutch)
-Public Sub LockWindow(ByVal hWnd As Long)
+Public Sub LockWindow(ByVal hwnd As Long)
     mlngLockCount = mlngLockCount + 1
-    If mlngLockCount = 1 Then LockWindowUpdate hWnd
+    If mlngLockCount = 1 Then LockWindowUpdate hwnd
 End Sub
 
 ' Launch default browser
@@ -277,18 +277,18 @@ Public Sub ScreenSaver()
     Const WM_SYSCOMMAND = &H112&
     Const SC_SCREENSAVE = &HF140&
     Dim frm As Form
-    Dim hWnd As Long
+    Dim hwnd As Long
     
     For Each frm In Forms
-        hWnd = frm.hWnd
+        hwnd = frm.hwnd
         Set frm = Nothing
         Exit For
     Next
-    SendMessage hWnd, WM_SYSCOMMAND, SC_SCREENSAVE, 0&
+    SendMessage hwnd, WM_SYSCOMMAND, SC_SCREENSAVE, 0&
 End Sub
 
 ' Set/unset a form as AlwaysOnTop
-Public Sub SetAlwaysOnTop(ByVal hWnd As Long, Optional ByVal AlwaysOnTop As Boolean = True)
+Public Sub SetAlwaysOnTop(ByVal hwnd As Long, Optional ByVal AlwaysOnTop As Boolean = True)
     Const SWP_NOSIZE = &H1
     Const SWP_NOMOVE = &H2
     Const SWP_SHOWWINDOW = &H40
@@ -296,9 +296,9 @@ Public Sub SetAlwaysOnTop(ByVal hWnd As Long, Optional ByVal AlwaysOnTop As Bool
     Const HWND_TOPMOST = -1
     
     If AlwaysOnTop Then
-        SetWindowPos hWnd, HWND_TOPMOST, 0&, 0&, 0&, 0&, SWP_NOMOVE Or SWP_NOSIZE Or SWP_SHOWWINDOW
+        SetWindowPos hwnd, HWND_TOPMOST, 0&, 0&, 0&, 0&, SWP_NOMOVE Or SWP_NOSIZE Or SWP_SHOWWINDOW
     Else
-        SetWindowPos hWnd, HWND_NOTOPMOST, 0&, 0&, 0&, 0&, SWP_NOMOVE Or SWP_NOSIZE Or SWP_SHOWWINDOW
+        SetWindowPos hwnd, HWND_NOTOPMOST, 0&, 0&, 0&, 0&, SWP_NOMOVE Or SWP_NOSIZE Or SWP_SHOWWINDOW
     End If
 End Sub
 
@@ -472,7 +472,7 @@ Public Sub ColorToRGBDebug(plngColor As Long)
     Dim lngBlue As Long
     
     ColorToRGB plngColor, lngRed, lngGreen, lngBlue
-    Debug.Print "RGB " & lngRed & "," & lngGreen & "," & lngBlue
+    'Debug.Print "RGB " & lngRed & "," & lngGreen & "," & lngBlue
 End Sub
 
 Public Function HexToColor(ByVal pstrHex As String) As Long
@@ -643,7 +643,7 @@ Private Function GetStructure(pstrPath As String, pstrFile As String, pstrFilter
 
     With GetStructure
         .lStructSize = Len(GetStructure)
-        .hwndOwner = Screen.ActiveForm.hWnd
+        .hwndOwner = Screen.ActiveForm.hwnd
 '        .hInstance = App.hInstance
         .lpstrFilter = Replace(pstrFilter, "|", vbNullChar) & vbNullChar
         .nMaxFile = MAX_PATH + 1

@@ -236,10 +236,9 @@ Private Sub ProcessAbilitySelectors()
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
         ' Debugging a tree
-        If Left(db.Tree(log.Tree).TreeName, 7) = "Horizon" Then
-            Debug.Print db.Tree(log.Tree).TreeName
-        End If
-    
+        'If Left(db.Tree(log.Tree).TreeName, 7) = "Arcane " Then
+        '    Debug.Print db.Tree(log.Tree).TreeName
+        'End If
         ProcessTreeSelectors db.Tree(log.Tree)
     Next
     log.Activity = actProcessDestinySelectors
@@ -265,10 +264,10 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
             log.Ability = iAbility
             log.HasError = False
             With ptypTree.Tier(iTier).Ability(iAbility)
-                ' Debugging an ability
-                 If Left(.AbilityName, 7) = "Favored" Then
-                     Debug.Print .AbilityName
-                 End If
+                'Debugging an ability
+                'If Left(.AbilityName, 7) = "Favored" Then
+                '    Debug.Print .AbilityName
+                'End If
             
                 Select Case .SelectorStyle
                     Case sseShared, sseExclusive
@@ -388,11 +387,10 @@ Private Sub ProcessPointers()
     log.Activity = actProcessEnhancementReqs
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
-        ' Debugging a tree
-        'If Left(db.Tree(log.Tree).TreeName, 7) = "Horizon" Then
+        ' Debugging a tree's requirement pointers
+        'If Left(db.Tree(log.Tree).TreeName, 7) = "Arcane " Then
         '    Debug.Print db.Tree(log.Tree).TreeName
         'End If
-    
         ProcessTree db.Tree(log.Tree), peEnhancement
     Next
     ' Destinies
@@ -459,10 +457,19 @@ End Sub
 
 Private Sub ProcessRank(ptypPointer As PointerType, pstrData As String)
     If Len(pstrData) < 8 Then Exit Sub
+    'Check to see if our requirement has a rank requirement at the end
     If Mid$(pstrData, Len(pstrData) - 6, 6) <> " Rank " Then Exit Sub
     ptypPointer.Rank = val(Right$(pstrData, 1))
     pstrData = Left$(pstrData, Len(pstrData) - 7)
 End Sub
+
+Private Function GetAbilityReqRank(ptypReqAbility As ReqAbilityType, pstrData As String) As Long
+    If Len(pstrData) < 8 Then Exit Function
+    'Check to see if our requirement has a rank requirement at the end
+    If Mid$(pstrData, Len(pstrData) - 6, 6) <> " Rank " Then Exit Function
+    GetAbilityReqRank = val(Right$(pstrData, 1))
+    pstrData = Left$(pstrData, Len(pstrData) - 7)
+End Function
 
 'Processes a enh/dest tree
 Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
@@ -486,7 +493,7 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
                 log.Ability = lngAbility
                 With .Tier(iTier).Ability(lngAbility) 'db.t/d().tier().Ability
                     ' Debugging an ability
-                    'If Left(.AbilityName, 13) = "Favored Enemy" Then
+                    'If Left(.AbilityName, 10) = "Soul Magic" Then
                     '    Debug.Print .AbilityName
                     'End If
                 
@@ -515,6 +522,7 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
                         Next
                     Next
                     
+                    'Abilities can have rank requirements
                     If .RankReqs Then
                         For log.Rank = 2 To 3
                             ProcessReqs .Rank(log.Rank).Req
@@ -523,7 +531,7 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
     
                     'ParseReqLine ptypTree.Raw, ptypTree.TreeType, ptypTree.TreeType
                     
-                    'ProcessReqs .Req  'Process Requirements
+                    'Process Selector Requirements
                     For log.Selector = 1 To .Selectors
                         ProcessReqs .Selector(log.Selector).Req
                         If .Selector(log.Selector).RankReqs Then
@@ -666,6 +674,8 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
     'each value after the : can be
     '  <ability>
     '  <ability> : Selector
+    'Rank can also be used
+    '  <ability> Rank #
     
     
     'Determine if we're feat based or Tree based
@@ -723,6 +733,8 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
             Req.Tier = Mid(strReqParse(0), InStr(strReqParse(0), "Tier"))
             Req.TierID = Split(Req.Tier, " ")(1)
         End If
+        'Check if we end in " Rank #"
+        Req.Rank = GetAbilityReqRank(Req, strReqParse(1))
         Req.AbilityName = Trim(strReqParse(1))
         If tseStyle = tseDestiny Then
             Req.AbilityID = FindAbilityIdInTree(Req.TierID, Req.AbilityName, db.Destiny(Req.TreeID))
@@ -730,8 +742,10 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
             Req.AbilityID = FindAbilityIdInTree(Req.TierID, Req.AbilityName, db.Tree(Req.TreeID))
         End If
         If UBound(strReqParse) > 1 Then
-             Req.SelectorName = Trim(strReqParse(2))
-             'Find our selector name
+            'Selector can have RANK
+            Req.Rank = GetAbilityReqRank(Req, strReqParse(2))
+            Req.SelectorName = Trim(strReqParse(2))
+            'Find our selector name
             If tseStyle = tseDestiny Then
                 Req.SelectorID = FindSelectorIdInAbility(Req.TierID, Req.AbilityID, Req.SelectorName, db.Destiny(Req.TreeID))
             Else
@@ -749,6 +763,7 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
         pReq.Tier = Req.TierID
         pReq.Ability = Req.AbilityID
         pReq.Selector = Req.SelectorID
+        pReq.Rank = Req.Rank
     End If
     ParseReqLine = True
 End Function

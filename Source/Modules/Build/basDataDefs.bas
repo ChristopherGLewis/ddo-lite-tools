@@ -300,6 +300,7 @@ Public Type DatabaseType
     Loaded As Boolean
 End Type
 
+'Full Requirement type
 Public Type ReqAbilityType
     FeatID As Long   'Req is either feat based or Tree/Ability based
     FeatName As String
@@ -310,6 +311,7 @@ Public Type ReqAbilityType
     TierID As Long
     AbilityID As Long
     AbilityName As String
+    Rank As Long
     SelectorID As Long
     SelectorName As String
 End Type

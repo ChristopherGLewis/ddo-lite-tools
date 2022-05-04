@@ -1782,7 +1782,9 @@ Private Function AddAbility(Optional pblnBlank As Boolean = False) As Boolean
 
     If Not GetUserChoices(lngTier, lngAbility, lngSelector) Then Exit Function
     lngInsert = GetInsertionPoint(build.Tree(mlngBuildTree), lngTier, lngAbility)
-    If lngAbility Then lngRanks = db.Tree(mlngTree).Tier(lngTier).Ability(lngAbility).Ranks
+    If lngAbility Then
+        lngRanks = db.Tree(mlngTree).Tier(lngTier).Ability(lngAbility).Ranks
+    End If
     With build.Tree(mlngBuildTree)
         .Abilities = .Abilities + 1
         ReDim Preserve .Ability(1 To .Abilities)

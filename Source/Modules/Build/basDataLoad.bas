@@ -1193,7 +1193,7 @@ Private Sub LoadEnhancements()
     strTree = Split(strRaw, "TreeName: ")
     For i = 1 To UBound(strTree)
         ' Debugging a tree
-        'If Left(strTree(i), 7) = "Horizon" Then
+        'If Left(strTree(i), 7) = "Air Sav" Then
         '    Debug.Print strTree(i)
         'End If
         If InStr(strTree(i), "Type: ") Then
