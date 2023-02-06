@@ -195,10 +195,10 @@ Public Sub SetBuildDefaults()
     Dim i As Long
     
     build.BuildName = "New Build"
-    build.MaxLevels = MaxLevel
+    build.MaxLevels = MAX_LEVEL
     build.BuildPoints = cfg.BuildPoints
     ReDim build.Feat(bftFeatTypes - 1)
-    ReDim build.BAB(1 To MaxLevel) ' Note: BAB needs to be redimmed to system max levels, not build max levels
+    ReDim build.BAB(1 To MAX_LEVEL) ' Note: BAB needs to be redimmed to system max levels, not build max levels
     For i = 0 To 3
         build.IncludePoints(i) = 1
     Next

@@ -1756,3 +1756,36 @@ Descrip: Teleports you to the Temple of the Sovereign Host in House Deneith.
 
 SpellName: Zeal
 Descrip: Grants the caster a +10% sacred bonus to doublestrike.
+
+SpellName: Rend the Soul
+Descrip: Twists unholy energies around a single foe, causing it significant negative damage over time. Deals 5 to 10 damage every two seconds for 10 seconds for every caster level up to 20. A successful fortitude save reduces the damage by half.
+
+SpellName: Thorn Strike
+Descrip: You hurl a magical thorn at your target dealing 5 to 7 points of Piercing damage per caster level (up to a maximum of 50 to 70 damage at caster level 10).
+
+SpellName: Thorn Bloom
+Descrip: Thorns blast out from your body inflicting 5 to 10 points of Piercing damage per caster level (up to a maximum of 50 to 100 damage at caster level 10) to all nearby foes. Reflex save for half.
+
+SpellName: Plant Growth
+Descrip: copy of Animal Growth for plants
+
+SpellName: Thorn Wave
+Descrip: You hurl a wave of magical thorns in front of you dealing to all targets in front of you for 6 to 11 points of Piercing damage per caster level (up to a maximum of 90 to 165 damage at caster level 15). Reflex save for half.
+
+SpellName: Grasping Roots
+Descrip:  Powerful thorny vines rip out of the ground seizing all enemies in the area. Enemies save vs Reflex or become entangled, with a re-occuring Strength save to break free. Targets also take 1d6 in piercing damage every 2 seconds. All enemy movement through the area is slowed by 30%, no save. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
+
+SpellName: Thorn Lance
+Descrip: You hurl a great thorn lance at your target dealing 9 to 14 points of Piercing damage per caster level (up to a maximum of 180 to 280 damage at caster level 20). The lance will damage all enemies in front or behind the target.
+
+SpellName: Blighted Breath
+Descrip: Sends out a breath of poisonous gas in a frontal cone dealing 1d8+2 points of Poison damage per caster level (up to a maximum of 45 to 150 damage at caster level 15) with a Reflex save for half damage. They must also make a Fortitude save or be Blinded for 10 seconds. If you are using the Biting Acid Imbue this damage is converted into 1d6+2 Acid damage per caster level (up to a maximum of 45 to 120 damage at caster level 15).
+
+SpellName: Blighted Charge
+Descrip: ou leap forward with the speed and ferocity spewing blight around you as you pass. You attack enemies in your path, dealing an extra 5(W), with a +1 bonus to critical threat & multiplier, and targets caught in your wake are Blinded and Helpless for 8 seconds. A successful reflex save negates this effect. For 10 seconds after the charge you gain +3 Imbue Dice. Stun vs Reflex DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses."
+
+SpellName: Jaws of Doom
+Descrip:  As your jaws close over your enemies, they feel their life end. This attack deals an extra 10(W), +1 bonus to critical threat and multiplier, and your foe must save vs Fortitude or dies as if slayed by a vorpal weapon (Does not affect Oozes, Undead, Constructs or Elementals). Death vs Fortitude DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses.
+
+SpellName: Blighted Bite
+Descrip: You gain +2 Imbue dice while in any wolf form for 20 minutes.

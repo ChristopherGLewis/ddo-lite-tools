@@ -344,3 +344,17 @@ Abbreviation: Hunt
 Cost: 595
 HeroicLow: 7
 HeroicHigh: 7
+EpicLow: 32
+EpicHigh: 32
+Link Named Items	Link	https://ddowiki.com/page/Update_53_named_items
+
+PackName: The Isle of Dread
+Abbreviation: Dread
+Cost: 3995
+HeroicLow: 7
+HeroicHigh: 8
+EpicLow: 32
+EpicHigh: 34
+Patron: The Gatekeepers
+Wiki: The Isle of Dread
+Link Named Items	Link	https://ddowiki.com/page/Update_55_named_items

@@ -428,7 +428,13 @@ Private Sub LoadData()
     
     mblnOverride = True
     Me.usrchkChannels.Value = cfg.FeatChannels
-    If build.CanCastSpell(1) <> 0 Then Me.usrFooter.RightLinks = "Spells >" Else Me.usrFooter.RightLinks = "Enhancements >"
+    'Navigation
+    If build.CanCastSpell(1) <> 0 Then
+        Me.usrFooter.RightLinks = "Spells >"
+    Else
+        Me.usrFooter.RightLinks = "Enhancements >"
+    End If
+    'Load the feat selection grouping list
     Me.lstGroup.Clear
     'Loop through all groups - feFilters is always last
     For i = 0 To feFilters - 1
@@ -1264,7 +1270,11 @@ Private Sub ShowAvailable()
                 End If
             End If
             ' This feat meets all qualifications, so add it to list
-            If db.Feat(lngFeat).SortName <> db.Feat(lngFeat).FeatName And IsNumeric(Right$(db.Feat(lngFeat).SortName, 1)) And cfg.FeatOrder = foeGroupRelated Then strPrefix = "  " Else strPrefix = vbNullString
+            If db.Feat(lngFeat).SortName <> db.Feat(lngFeat).FeatName And IsNumeric(Right$(db.Feat(lngFeat).SortName, 1)) And cfg.FeatOrder = foeGroupRelated Then
+                strPrefix = "  "
+            Else
+                strPrefix = vbNullString
+            End If
             ListboxAddItem Me.lstFeat, strPrefix & db.Feat(lngFeat).Abbreviation, lngFeat
         Loop Until True
     Next

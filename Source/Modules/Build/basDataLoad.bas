@@ -185,7 +185,7 @@ Private Sub LoadGrantedFeats(ptypGrantedFeat() As PointerType, plngGrantedFeats 
     Dim i As Long
     
     lngLevel = val(Mid$(pstrField, 13))
-    If lngLevel < 1 Or lngLevel > MaxLevel Then
+    If lngLevel < 1 Or lngLevel > MAX_LEVEL Then
         LogError
         Exit Sub
     End If
@@ -278,6 +278,22 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                             Case Else
                                 LoadError strLine(0) & " has invalid color: " & strItem
                         End Select
+                        
+                    Case "disallowedclasses"
+                        'Disallowed classes for Archtypes
+                        For i = 0 To lngListMax
+                            lngID = GetClassID(strList(i))
+                            .DisallowedClasses = i + 1
+                            If lngID <> ceAny Then
+                                ReDim .DisallowedClass(1 To i + 1)
+                                ReDim .DisallowedClassID(1 To i + 1)
+                                .DisallowedClass(i + 1) = strList(i)
+                                .DisallowedClassID(i + 1) = lngID
+                            Else
+                                LoadError strLine(0) & " has invalid DisallowedClass: " & strList(i)
+                            End If
+                        Next
+                        
                     Case "alignment"
                         For i = 0 To lngListMax
                             lngID = GetAlignmentID(strList(i))
@@ -795,15 +811,25 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                             .ClassBonusLevel.ClassLevels = lngValue
                         End If
                     Case "level"
-                        If lngValue < 1 Or lngValue > MaxLevel Then LogError Else .Level = lngValue
+                        If lngValue < 1 Or lngValue > MAX_LEVEL Then
+                            LogError
+                        Else
+                            .Level = lngValue
+                        End If
                     Case "race"
+                        'Load Race.  0 is list style (Standard, Iconic, Required)
+                        ' This is broken since there are non-FR iconics now.
                         .Race(0) = GetRaceReqID(strList(0))
                         If .Race(0) = rreAny Then
                             blnError = True
                         Else
                             For i = 1 To lngListMax
                                 enRace = GetRaceID(strList(i))
-                                If enRace = reAny Then blnError = True Else .Race(enRace) = 1
+                                If enRace = reAny Then
+                                    blnError = True
+                                Else
+                                    .Race(enRace) = 1
+                                End If
                             Next
                         End If
                     Case "cancastspell"
@@ -971,7 +997,11 @@ Private Sub LoadFeatSelector(ptypFeat As FeatType, ByVal pstrRaw As String)
                         Else
                             For i = 1 To lngListMax
                                 enRace = GetRaceID(strList(i))
-                                If enRace = reAny Then blnError = True Else .Race(enRace) = 1
+                                If enRace = reAny Then
+                                    blnError = True
+                                Else
+                                    .Race(enRace) = 1
+                                End If
                             Next
                         End If
                     Case "classbonus"

@@ -99,7 +99,11 @@ Public Sub ExportFileBuilder()
     OpenTag "Character"
     TagValue "Name", build.BuildName
     TagValue "Alignment", BldGetAlignmentName(GetExportAlignment())
-    If build.Race = reAny Then TagValue "Race", "Human" Else TagValue "Race", GetRaceName(build.Race)
+    If build.Race = reAny Then
+        TagValue "Race", "Human"
+    Else
+        TagValue "Race", GetRaceName(build.Race)
+    End If
     AddStatTags
     TagValue "TomeOfFate", 0
     OpenTag "SkillTomes"
@@ -234,7 +238,8 @@ Private Sub AddLevelTraining()
         End If
         CloseTag
     Next
-    For lngLevel = 21 To 30
+    ' NEED TO DEAL WITH LEGENDARY HERE
+    For lngLevel = 21 To 30  'Should be MaxLevel
         OpenTag "LevelTraining"
         TagValue "Class", "Epic"
         TagValue "SkillPointsAvailable", 0
@@ -370,7 +375,7 @@ Private Sub ProcessValue(pstrTag As String, pstrValue As String)
             ProcessStats pstrTag, pstrValue
         Case "<SkillTomes>"
             enSkill = GetSkillID(pstrTag)
-            If enSkill <> seAny Then build.SkillTome(enSkill) = Val(pstrValue)
+            If enSkill <> seAny Then build.SkillTome(enSkill) = val(pstrValue)
         Case Else
             If Left$(mstrTrail, 15) = "<LevelTraining>" Then LevelTraining pstrTag, pstrValue
     End Select
@@ -383,7 +388,7 @@ Private Sub ProcessOverview(pstrTag As String, pstrValue As String)
     
     ' Levelups
     If Left$(pstrTag, 5) = "Level" Then
-        lngLevelUp = Val(Mid$(pstrTag, 6)) \ 4
+        lngLevelUp = val(Mid$(pstrTag, 6)) \ 4
         build.Levelups(lngLevelUp) = GetStatID(pstrValue)
         If lngLevelUp = 7 Then
             build.Levelups(0) = build.Levelups(1)
@@ -397,10 +402,10 @@ Private Sub ProcessOverview(pstrTag As String, pstrValue As String)
     ' Stat tomes
     ElseIf Right$(pstrTag, 4) = "Tome" Then
         enStat = GetStatID(Left$(pstrTag, 3))
-        If enStat <> aeAny Then build.Tome(enStat) = Val(pstrValue)
+        If enStat <> aeAny Then build.Tome(enStat) = val(pstrValue)
     ' Buildclass
     ElseIf Left$(pstrTag, 5) = "Class" Then
-        i = Val(Right$(pstrTag, 1))
+        i = val(Right$(pstrTag, 1))
         If i < 4 Then
             build.BuildClass(i - 1) = GetClassID(pstrValue)
         End If
@@ -487,7 +492,8 @@ Private Sub ProcessFeats()
     
     InitBuildFeats
     SortFeatMap peBuilder
-    For lngLevel = 1 To 30
+    ' NEED TO DEAL WITH LEGENDARY HERE
+    For lngLevel = 1 To 30  's/b MAXLEVEL
         For i = 1 To mtypFeat(lngLevel).Feats
             ProcessFeat mtypFeat(lngLevel).Feat(i)
         Next

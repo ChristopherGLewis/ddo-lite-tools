@@ -78,6 +78,12 @@ Public Enum ClassEnum
     ceDruid
     ceWarlock
     ceAlchemist
+    ceStormsinger
+    ceDarkApostate
+    ceBlightcaster
+    ceSacredFist
+    ceDarkHunter
+    ceAcolyte
     ceClasses
     ceEmpty
 End Enum
@@ -171,6 +177,7 @@ Public Enum BuildFeatSourceEnum ' Source column in feats screen (display only)
     bfsLegend
 End Enum
 
+'These map to the build.feat slots
 Public Enum BuildFeatTypeEnum ' Feat type: build.Feat(Type).Feat(Index)
     bftGranted
     bftStandard
@@ -385,6 +392,13 @@ Public Function GetClassID(ByVal pstrClass As String) As ClassEnum
         Case "warlock": GetClassID = ceWarlock
         Case "wizard": GetClassID = ceWizard
         Case "alchemist": GetClassID = ceAlchemist
+        Case "stormsinger": GetClassID = ceStormsinger
+        Case "darkapostate": GetClassID = ceDarkApostate
+        Case "blightcaster": GetClassID = ceBlightcaster
+        Case "sacredfist": GetClassID = ceSacredFist
+        Case "darkhunter": GetClassID = ceDarkHunter
+        Case "acolyte": GetClassID = ceAcolyte
+      
     End Select
 End Function
 
@@ -405,6 +419,14 @@ Public Function GetClassName(ByVal penClass As ClassEnum, Optional pblnAbbreviat
         Case ceWarlock: GetClassName = "Warlock"
         Case ceWizard: GetClassName = "Wizard"
         Case ceAlchemist: GetClassName = "Alchemist"
+        Case ceStormsinger: GetClassName = "Stormsinger"
+        Case ceDarkApostate: GetClassName = "DarkApostate"
+        Case ceBlightcaster: GetClassName = "Blightcaster"
+        Case ceSacredFist: GetClassName = "SacredFist"
+        Case ceDarkHunter: GetClassName = "DarkHunter"
+        Case ceAcolyte: GetClassName = "Acolyte"
+
+        
     End Select
 End Function
 
@@ -427,6 +449,13 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         Case ceWarlock: GetClassResourceID = "CLSWARLOCK"
         Case ceWizard: GetClassResourceID = "CLSWIZARD"
         Case ceAlchemist: GetClassResourceID = "CLSALCHEMIST"
+        Case ceStormsinger: GetClassResourceID = "CLSSTORMSINGER"
+        Case ceDarkApostate: GetClassResourceID = "CLSDARKAPOSTATE"
+        Case ceBlightcaster: GetClassResourceID = "CLSBLIGHTCASTER"
+        Case ceSacredFist: GetClassResourceID = "CLSSACREDFIST"
+        Case ceDarkHunter: GetClassResourceID = "CLSDARKHUNTER"
+        Case ceAcolyte: GetClassResourceID = "CLSACOLYTE"
+    
     End Select
 End Function
 

@@ -83,6 +83,9 @@ Public Type ClassType
     GrantedFeats As Long
     Pact() As PactType
     Pacts As Long
+    DisallowedClasses As Long
+    DisallowedClass() As String
+    DisallowedClassID() As Long
 End Type
 
 Public Type ReqListType

@@ -56,6 +56,7 @@ Module=basFormat; Source\Modules\Build\basFormat.bas
 Module=basDeprecate; Source\Modules\Build\basDeprecate.bas
 Module=basTomes; Source\Modules\basTomes.bas
 Form=Source\Forms\Build\frmDestiny2.frm
+Module=basCONST; Source\Modules\basCONST.bas
 ResFile32="CharacterBuilderLite.RES"
 IconForm="frmMain"
 Startup="Sub Main"

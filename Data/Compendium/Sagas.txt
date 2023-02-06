@@ -12,7 +12,7 @@ Tier: Heroic
 NPC: Mattias Deckland
 Tome: 1
 Astrals: 1
-XP: ?	?	?	20
+XP: 8	13	20	26
 Quest: The Haunting of Saltmarsh
 Quest: Under the Cover of Darkness
 Quest: Danger at Dunwater
@@ -62,6 +62,26 @@ Quest: Quid Pro Quo
 Quest: The Icemount Curse
 Quest: The Knight Who Cried Windmill
 Quest: The Thornwright
+
+SagaName: The Isle of Dread (Heroic)
+Abbreviation: Dread
+Tier: Heroic
+NPC: Yupan the Tale Weaver
+Tome: 1
+Astrals: ?
+XP: ?	?	?	?
+Quest: Captive of the Hidden God
+Quest: The Curse and the Captive Crustacean
+Quest: Plundering Pirates' Point
+Quest: Bullywugs and Booby Traps
+Quest: Fall of the Forbidden Temple
+Quest: Wild Thing
+Quest: The Stone Crypt Chronicle
+Quest: All Hail The King
+Quest: Trials of the Triceratops
+Quest: The Trouble with Tar Pits
+Quest: Whispers of Return
+Quest: Spiders and Flies
 
 SagaName: Mists of Ravenloft Saga: Heroic
 Abbreviation: Ravenloft
@@ -437,3 +457,23 @@ Quest: Quid Pro Quo
 Quest: The Icemount Curse
 Quest: The Knight Who Cried Windmill
 Quest: The Thornwright
+
+SagaName: The Isle of Dread (Epic)
+Abbreviation: Dread
+Tier: Epic
+NPC: Okmak the Tale Weaver
+Tome: 3
+Astrals: ?
+XP: ?	?	?	?
+Quest: Captive of the Hidden God
+Quest: The Curse and the Captive Crustacean
+Quest: Plundering Pirates' Point
+Quest: Bullywugs and Booby Traps
+Quest: Fall of the Forbidden Temple
+Quest: Wild Thing
+Quest: The Stone Crypt Chronicle
+Quest: All Hail The King
+Quest: Trials of the Triceratops
+Quest: The Trouble with Tar Pits
+Quest: Whispers of Return
+Quest: Spiders and Flies

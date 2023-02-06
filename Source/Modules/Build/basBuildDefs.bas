@@ -407,7 +407,7 @@ Public Type BuildType6
     StatPoints(3, 6) As Byte ' 28/32/34/36 versions, stored as Points Spent
     BuildPoints As Byte ' Which version is the "main"? (BuildPointsEnum; 0=28pt)
     IncludePoints(3) As Byte ' Which build point versions to include in display/export
-    Levelups(7) As Byte
+    Levelups(8) As Byte  'This should be based off maxlevel\4
     Tome(6) As Byte
     Skills(1 To 21, 1 To 20) As Byte
     SkillTome(1 To 21) As Byte
@@ -502,6 +502,7 @@ Public Sub Version2To3(ptyp2 As BuildType2, ptyp3 As BuildType3)
         .Race = ptyp2.Race
         .Alignment = ptyp2.Alignment
         .MaxLevels = ptyp2.MaxLevels
+        'Version 3 has max level 30
         If .MaxLevels = 28 Then .MaxLevels = 30
         For i = 0 To 2
             .BuildClass(i) = ptyp2.BuildClass(i)

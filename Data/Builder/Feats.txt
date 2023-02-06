@@ -245,11 +245,6 @@ Stat: Intelligence 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Artificer
 
-FeatName: Completionist
-Group: Heroic, Misc
-Descrip: You win DDO! +2 bonus to all skills and ability scores.
-Level: 1
-
 FeatName: Composite Plating
 Group: Heroic
 Descrip: You are not considered to be wearing armor. You have a 5% arcane spell failure chance.
@@ -517,11 +512,18 @@ CanCastSpell: 1
 ClassBonus: Artificer, Wizard, Alchemist
 RaceBonus: Human, Purple Dragon Knight
 
-FeatName: Epic Arcane Eldritch Blast
+FeatName: Epic Skills
+Group: Epic
+WikiName: Epic Skills
+Descrip: As part of your epic training, you gain +1 to all skills. This feat can be taken multiple times.
+Flags: Unselectable
+
+FeatName: Epic Pact Dice
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Arcane sphere
 Descrip: Grants +1 Pact dice, +1 per 2 Epic Levels, for a max +6d4 Pact Dice at level 30.
 Level: 22
+Class: Warlock 12
 
 FeatName: Epic Damage Reduction
 Group: Epic, Defense
@@ -693,16 +695,16 @@ ClassOnlyLevel: 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Iconic, Bladeforged
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Lord of Blades
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
 SelectorName: Silver Flame
 Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Sovereign Host
 Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Undying Court
 Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
 Race: Required, Elf, Half-Elf, Wood Elf
@@ -711,22 +713,22 @@ Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon C
 Race: Required, Drow
 SelectorName: Aureon
 Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Helm
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Iconic, Bladeforged, Morninglord
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Olladra
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Onatar
 Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Silvanus
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Iconic, Bladeforged, Morninglord
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: The Blood of Vol
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Standard
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 
 FeatName: Force of Personality
 Group: Heroic, Defense, Misc
@@ -1008,12 +1010,6 @@ Descrip: +140 Maximum Spell Points}Your summoned creatures gain:}{ +8 to all abi
 Level: 24
 All: Augment Summoning
 
-FeatName: Improved Bardic Music
-Group: Heroic, Misc
-Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
-Class: Bard 12
-Skill: Perform 15
-
 FeatName: Improved Critical
 Group: Heroic, Melee, Range
 Descrip: Doubles the threat range of the chosen weapon type. Can be taken multiple times, though each time must be for a different type.
@@ -1163,6 +1159,25 @@ FeatName: Insightful Reflexes
 Group: Heroic, Defense, Misc
 Descrip: Use your Intelligence modifier for Reflex Saves instead of Dexterity.
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Inspire Courage
+Group: Heroic, Misc
+Descrip: Gives a +1 music bonus to attack rolls, damage rolls, and saving throws versus fear, as well as +3 universal Spell Power.
+Class: Bard 12
+Skill: Perform 3
+
+FeatName: Inspire Greatness
+Group: Heroic, Misc
+Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
+Class: Bard 9
+Skill: Perform 15
+
+FeatName: Improved Inspire Courage
+Group: Heroic, Misc
+Descrip: Gives a +2 (total) morale bonus to attack rolls, damage rolls, and saving throws versus fear. At Bard level 14, these bonuses rise to +3, and at Bard level 20 they rise to +4.
+Class: Bard 8
+Skill: Perform 3
+All: Inspire Courage
 
 FeatName: Inspire Excellence
 Group: Epic, Misc
@@ -2381,11 +2396,6 @@ Group: Heroic, Misc
 Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
 Class: Barbarian 8, Rogue 8
 
-FeatName: Bardic Ballad
-Group: Heroic, Misc
-Descrip: You are constantly surrounded by a faint aura of Bardic Music, and it benefits you and your nearby allies in combat. You and all nearby allies receive the benefits of Inspire Courage as long as you are alive and not incapacitated. Certain Bard feats and abilities can alter or increased the benefits of your Ballad.
-Class: Bard 1
-Flags: Unselectable
 
 FeatName: Bardic Inspiration
 Group: Heroic, Misc
@@ -2393,12 +2403,12 @@ Descrip: Activate this ability to Inspire a single target ally or yourself. Gain
 Class: Bard 3
 Flags: Unselectable
 
-FeatName: Suggesion 
+FeatName: Suggestion 
 Group: Heroic, Misc
 Descrip: This song charms a single foe that is currently under the effects of the bardic Fascinate song.
 Class: Bard 6
 Flags: Unselectable
-WikiName: Suggesion_(song)
+WikiName: Suggestion_(song)
 
 FeatName: Soothing Song
 Group: Heroic, Misc
@@ -2406,11 +2416,6 @@ Descrip: Sing a song to apply a small positive energy heal to your target and ne
 Class: Bard 8
 Flags: Unselectable
 
-FeatName: Improved Inspire Courage
-Group: Heroic, Misc
-Descrip:  Gives a +2 (total) morale bonus to attack rolls, damage rolls, and saving throws versus fear. At Bard level 14, these bonuses rise to +3, and at Bard level 20 they rise to +4.
-Class: Bard 8
-Flags: Unselectable
 
 FeatName: Song of Freedom
 Group: Heroic, Misc
@@ -2424,12 +2429,12 @@ Descrip:  Gives a +4 Music Bonus to Armor Class, +4% Music Bonus to Dodge, and a
 Class: Bard 15
 Flags: Unselectable
 
-FeatName: Mass Suggesion 
+FeatName: Mass Suggestion 
 Group: Heroic, Misc
 Descrip: This song charms multiple foes that are currently under the effects of the bardic Fascinate song.
 Class: Bard 18
 Flags: Unselectable
-WikiName: Mass_Suggesion_(song)
+WikiName: Mass_Suggestion_(song)
 
 FeatName: Call Wolf Companion
 Group: Heroic, Misc
@@ -2650,12 +2655,6 @@ Descrip: A paladin is immune to fear effects.
 Class: Paladin 3
 Flags: Unselectable
 
-FeatName: Fear Immunity
-Group: Heroic, Misc
-Descrip: A paladin is immune to fear effects.
-Class: Paladin 3
-Flags: Unselectable
-
 FeatName: Remove Disease
 Group: Heroic, Misc
 Descrip: Cures all diseases on an ally.
@@ -2738,3 +2737,63 @@ FeatName: Feline Agility
 Group: Misc
 Descrip: After standing still for 6 seconds, when you move again you gain a +20% Action Boost bonus to Movement Speed for 6 seconds.
 Race: Required, Tabaxi, Trailblazer
+
+FeatName: Disease Immunity
+Group: Misc
+Class: Blightcaster 1
+Flags: Unselectable
+
+FeatName: Venom Immunity
+Group: Misc
+Class: Blightcaster 5
+Flags: Unselectable
+
+
+FeatName: Blightcaster Wild Shape
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 2 and 5 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
+Class: Blightcaster 2
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 2
+Selector: Plague Wolf
+
+FeatName: Blightcaster Wild Shape 2
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 11 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
+Class: Blightcaster 11
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 11
+Selector: Blighted Wolf
+
+FeatName: Blightcaster Elemental Kin 1
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 4 and 8 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
+Class: Blightcaster 4
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 4, 8
+Selector: Thorn-Kin, Hive Keeper
+SelectorName: Thorn-Kin
+Descrip: You create a suit of living thorny wood around your body armoring you from harm. Note: Note this will be gearset over-ride instead of an animal form so the player will fight with their regular weapons. Basically you become a knight in plate mail made of wood and thorns.}{-+1 bonus to caster level and max caster level of Physical and Poison spells}{-10% exceptional bonus to armor class and 50% fortification.}{-You gain access to the thorn imbue.}{-10% vulnerability to fire damage
+SelectorName: Hive Keeper
+Descrip: You give part of yourself to the hive, gaining insect like reflexes and senses. Your bodily fluids become poisonous to others, and the swarm is always close.}{-+1 bonus to caster level and max caster level of Poison and Acid Spells}{-You gain 25% concealment and Evasion.}{-Your reflex saves are increased by 1 for every 3 druid levels.}{-10% vulnerability to cold. Your diplomacy checks are reduced by 5 (Jeff Goldblum early in The Fly)
+
+
+FeatName: Blightcaster Elemental Kin 2
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 13 and 17 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
+Class: Blightcaster 13
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 13, 17
+Selector: Thorn Knight, Hive Master
+SelectorName: Thorn Knight
+Descrip: A more advanced version of Thorn Kin where you actually become a plant under the armor.}{-You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water.}{-+3 bonus to caster level and max caster level of Physical and Poison spells}{-You gain 10% absorption against piercing damage and 5% absorb against blunt damage.}{-You gain +2 imbue dice}{-10% exceptional bonus to armor class and 100% fortification.}{-15% vulnerability to fire damage
+SelectorName: Hive Master
+Descrip: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm.}{-You are considered vermin for the purposes of immunities and are immune to mind effects and knock down.}{-+3 bonus to caster level and max caster level of Poison and Acid Spells}{-You are ethereal to monsters while tumbling.}{-You gain 50% concealment as displacement and Improved Evasion.}{-You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10)}{-15% vulnerability to cold and -15 on diplomacy checks (Yeah Jeff is just pretty creepy now).

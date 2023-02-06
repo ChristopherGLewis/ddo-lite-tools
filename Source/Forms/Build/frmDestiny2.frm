@@ -1681,6 +1681,7 @@ End Function
 
 Private Function CapDestinyTreeTier(pstrTreeName As String, ByVal plngLevel As Long) As Long
     Dim lngCap As Long
+    ' NEED TO DEAL WITH LEGENDARY HERE
     'Level based
     If plngLevel <= 20 And plngLevel < 22 Then
         lngCap = 2

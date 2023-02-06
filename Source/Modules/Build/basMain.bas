@@ -3,7 +3,9 @@ Attribute VB_Name = "basMain"
 ' Program entrypoint, global classes, window functions, developer tools, test functions
 Option Explicit
 
-Public Const MaxLevel As Long = 30
+' MAX Level - this may be set elsewhere
+
+'Public Const MaxLevel As Long = 32
 
 Public Const ErrorIgnore As Long = 37001
 

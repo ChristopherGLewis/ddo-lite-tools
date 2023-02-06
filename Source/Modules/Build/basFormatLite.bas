@@ -401,14 +401,16 @@ Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
     Dim strReturn As String
     
     'Should split out bftStandard into heroic/Epic/Destiny
+    ' NEED TO DEAL WITH LEGENDARY HERE
     With ptypBuildFeat
         Select Case .Type
             Case bftGranted: strReturn = "Granted"
             Case bftStandard
                 Select Case .Level
+                    ' TODO Need to fix this for MAX Levels
                     Case Is < 20: strReturn = "Heroic " & .Level
                     Case 21, 24, 27, 30: strReturn = "Epic " & .Level
-                    Case 22, 25, 28: strReturn = "Destiny " & .Level
+                    Case 22, 25, 28, 31: strReturn = "Destiny " & .Level
                 End Select
             Case bftLegend: strReturn = "Legend " & .Level
             Case bftRace: strReturn = GetRaceName(build.Race) & " " & .Level

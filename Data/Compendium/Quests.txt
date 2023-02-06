@@ -1485,6 +1485,90 @@ Favor: 5
 Level: 8
 Epic: 21
 
+QuestName: Captive of the Hidden God
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 32
+
+QuestName: The Curse and the Captive Crustacean
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: Plundering Pirates' Point
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: Bullywugs and Booby Traps
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 5
+Level: 7
+Epic: 33
+
+QuestName: Fall of the Forbidden Temple
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+
+QuestName: Wild Thing
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 3
+Level: 7
+Epic: 33
+
+QuestName: The Stone Crypt Chronicle
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 5
+Level: 7
+Epic: 33
+
+QuestName: All Hail the King
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: Trials of the Triceratops
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: The Trouble With Tar Pits
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: Whispers of Return
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
+QuestName: Spiders and Flies
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 4
+Level: 7
+Epic: 33
+
 QuestName: Slave Pits of the Undercity
 Pack: Against the Slave Lords
 Patron: The Gatekeepers

@@ -328,6 +328,7 @@ Private Function GetFeatTypeName(ByVal penType As BuildFeatTypeEnum, ByVal plngL
     
     Select Case penType
         Case bftStandard
+            ' NEED TO DEAL WITH LEGENDARY HERE
             Select Case plngLevel
                 Case 1, 3, 6, 9, 12, 15, 18: strReturn = "Heroic"
                 Case 21, 24, 27, 30: strReturn = "Epic"

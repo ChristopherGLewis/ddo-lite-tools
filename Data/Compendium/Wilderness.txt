@@ -68,6 +68,14 @@ High: 11
 Explorer: 5000
 Pack: Sorrowdusk Isle
 
+Area: Isle of Dread
+Wiki: Isle of Dread (wilderness)
+Map: Map-of-Isle-of-Dread.jpg
+Low: 4
+High: 11
+Explorer: 17500
+Pack: The Isle of Dread
+
 Area: The Red Fens
 Map: RedFensMap.jpg
 Low: 6
@@ -319,7 +327,7 @@ High: 33
 Explorer: 60000
 Pack: Shadow Under Thunderholme
 
-Area: The Cogs (epic)
+Area: The Cogs (legendary)
 Wiki: The Cogs
 Map: TheCogsMap.png
 Low: 20
@@ -327,7 +335,7 @@ High: 34
 Explorer: 92808
 Pack: Masterminds of Sharn
 
-Area: The Land of Barovia (epic)
+Area: The Land of Barovia (legendary)
 Wiki: The Land of Barovia
 Map: The_Land_of_Barovia_map.jpg
 Link: Journal Locations	Journals	https://ddowiki.com/page/The_Land_of_Barovia#Journal
@@ -336,10 +344,26 @@ High: 35
 Explorer: 47811
 Pack: Mists of Ravenloft
 
-Area: The Feywild (Epic)
-Map: Map-of-the-Feywild.png
+Area: The Feywild (legendary)
 Wiki: The Feywild
+Map: Map-of-the-Feywild.png
 Low: 20
 High: 36
 Explorer: 39375
 Pack: Fables of the Feywild
+
+Area: Saltmarsh (legendary)
+Wiki: Saltmarsh
+Map: Map-of-Saltmarsh.jpg
+Low: 20
+High: 36
+Explorer: 68904
+Pack: Sinister Secret of Saltmarsh
+
+Area: Isle of Dread (legendary)
+Wiki: Isle of Dread (wilderness)
+Map: Map-of-Isle-of-Dread.jpg
+Low: 20
+High: 36
+Explorer: 61250
+Pack: The Isle of Dread

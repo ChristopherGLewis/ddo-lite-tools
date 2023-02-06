@@ -76,6 +76,8 @@ Users can customize the actual color values for those six colors in Tools => Opt
 Alignment:
 List of alignments this class can take.
 
+DisallowedClass: 
+Classes explicitly not allowed for MultiClassing (ie archtype)
 BAB:
 Legal values are 1, 0.75, 0.5
 
@@ -327,6 +329,7 @@ List of compatible alignments. Do not include if there are no alignment restrict
 Race: [ListStyle], [Race], [Race], [Race], ..., [Race]
 Custom list where the first list entry determines the logic applied to the list,
 followed by a list of race names. The first list entry can be one of the following values:
+  Standard: all non-iconics.  don't include race list
   Required: Listed races allowed
   NotAllowed: Listed races are not allowed
   Not Iconic: All non-iconic races allowed except the listed non-iconic races 
@@ -340,6 +343,9 @@ list of allowed races:
 3) Details on the feats screen are much more human-readable. For example, Instead of a list 
    of a dozen allowed races, the Construct Essences feat will say: Races Not Allowed: 
    Warforged, Bladeforged. And Follower of Onatar will say: Not Iconic.
+
+** 2022.06.22 - the above broke when eberron iconics were added.  So rather than re-write the 
+overly complex logic above, the first deity feat just uses required and a list of races/iconics
 
 RaceBonus:
 List of races that can take this feat as a racial bonus feat. eg: Human, Purple Dragon Knight

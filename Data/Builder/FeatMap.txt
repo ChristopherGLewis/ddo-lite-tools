@@ -47,7 +47,6 @@ Cleave	Cleave	Cleave
 Combat Archery	Epic: Combat Archery	Combat Archery
 Combat Casting	Combat Casting	Combat Casting
 Combat Expertise	Combat Expertise	Combat Expertise
-Completionist	Completionist	Completionist
 Construct Essence	Construct Essence	Construct Essence
 Construct Exemplar	Epic: Construct Exemplar	Construct Exemplar
 Crippling Strike	Crippling Strike	Crippling Strike
@@ -109,7 +108,7 @@ Energy Absorption: Electricity	Energy Resistance: Electricity	Energy Absorption:
 Energy Absorption: Fire	Energy Resistance: Fire	Energy Absorption: Fire
 Energy Absorption: Sonic	Energy Resistance: Sonic	Energy Absorption: Sonic
 Enlarge Spell	Enlarge Spell	Enlarge Spell
-Epic Arcane Eldritch Blast	Arcane Sphere: Epic Arcane Eldritch Blast	Epic Arcane Eldritch Blast
+Epic Pact Dice	Arcane Sphere: Epic Arcane Eldritch Blast	Epic Arcane Eldritch Blast
 Epic Damage Reduction	Epic: Epic Damage Reduction	Epic Damage Reduction
 Epic Eldritch Blast	Epic: Epic Eldritch Blast	Epic Eldritch Blast
 Epic Fortitude	Epic: Epic Fortitude	Epic Fortitude
@@ -244,7 +243,6 @@ Heighten Spell	Heighten Spell	Heighten
 Hellball	Arcane Sphere: Hellball	Hellball
 Holy Strike	Divine Sphere: Holy Strike	Holy Strike
 Improved Augment Summoning	Epic: Improved Augment Summoning	Improved Augment Summoning
-Improved Bardic Music	Improved Bardic Music	Improved Bardic Music
 Improved Construct Essence	Improved Construct Essence	Improved Construct Essence
 Improved Critical: Bludgeoning	Improved Critical: Bludgeoning Weapons	Improved Critical: Bludgeoning Weapons
 Improved Critical: Piercing	Improved Critical: Piercing Weapons	Improved Critical: Piercing Weapons

@@ -521,7 +521,7 @@ End Function
 
 Private Sub SetMaxLevel()
     If mlngHeroic = 20 And mlngEpic = 0 Then
-        build.MaxLevels = MaxLevel
+        build.MaxLevels = MAX_LEVEL
         mbln20orMax = True
     Else
         build.MaxLevels = mlngHeroic + mlngEpic

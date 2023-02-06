@@ -201,9 +201,10 @@ Public Sub InitExportFeats()
     Dim i As Long
     
     SortFeatMap peLite
-    ReDim Export(1 To 30)
+    ' NEED TO DEAL WITH LEGENDARY HERE
+    ReDim Export(1 To 30)  'S/B MAXLEVEL
     TransposeFeats
-    For lngLevel = 1 To 30
+    For lngLevel = 1 To 30 'S/B MAXLEVEL
         For i = 1 To Export(lngLevel).Feats
             IdentifyChannels Export(lngLevel).Feat(i)
             With Export(lngLevel)
@@ -273,6 +274,7 @@ Private Sub IdentifyChannels(ptypFeat As ExportFeatType)
     With ptypFeat
         Select Case .Type
             Case bftStandard
+                ' NEED TO DEAL WITH LEGENDARY HERE
                 Select Case .Level
                     Case 1, 3, 6, 9, 12, 15, 18
                         .BuilderType = "Standard"

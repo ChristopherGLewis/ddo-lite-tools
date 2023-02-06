@@ -118,11 +118,24 @@ End Function
 'Return the number of Epic levels
 Public Function EpicLevels() As Long
     If build.MaxLevels > 20 Then
-        EpicLevels = build.MaxLevels - 20
+        If build.MaxLevels < 30 Then
+            EpicLevels = build.MaxLevels - 20
+        Else
+            EpicLevels = 10
+        End If
     Else
         EpicLevels = 0
     End If
 End Function
+
+Public Function LegendaryLevels() As Long
+    If build.MaxLevels >= 30 Then
+        LegendaryLevels = build.MaxLevels - 30
+    Else
+        LegendaryLevels = 0
+    End If
+End Function
+
 
 Public Function GetClassSplit(ptypClassSplit() As ClassSplitType) As Long
     Dim lngNext As Long
@@ -276,12 +289,19 @@ Public Function CalculateTome(penStat As StatEnum, plngLevel As Long, pblnFred A
     CalculateTome = lngTome
 End Function
 
+'Calcupate number of level ups - MAX LEVEL
 Public Function CalculateLevelup(penStat As StatEnum, plngLevel As Long)
     Dim lngLevelUp As Long
     Dim i As Long
     
-    For i = 1 To 7
-        If plngLevel >= i * 4 And build.Levelups(i) = penStat Then lngLevelUp = lngLevelUp + 1
+    Dim iMaxLevelUp As Integer
+    'NEED MAX LEVEL HERE
+    iMaxLevelUp = 32 \ 4
+    
+    For i = 1 To iMaxLevelUp
+        If plngLevel >= i * 4 And build.Levelups(i) = penStat Then
+            lngLevelUp = lngLevelUp + 1
+        End If
     Next
     CalculateLevelup = lngLevelUp
 End Function
@@ -346,12 +366,15 @@ Public Sub CalculateBAB()
             build.BAB(i) = lngBAB
         End If
     Next
-    For i = 21 To MaxLevel
+    For i = 21 To MAX_LEVEL
         If GetBAB(enBAB, i) Then lngBAB = lngBAB + 1
+        'Cap at 25 (U56)
+        If lngBAB < 25 Then lngBAB = 25
         build.BAB(i) = lngBAB
     Next
 End Sub
 
+'Do we need MAX_LEVEL here
 Public Function GetBAB(penBAB As BABEnum, plngLevel As Long) As Boolean
     Select Case plngLevel
         Case 21, 23, 25, 27, 29: GetBAB = True
@@ -455,7 +478,7 @@ End Sub
 Public Sub InitBuildFeats()
     InitGrantedFeats
     InitStandardFeats
-    InitLegendFeats
+    'InitLegendFeats
     InitRaceFeats
     InitClassFeats
     InitDeityFeats
@@ -474,7 +497,6 @@ Private Sub InitGrantedFeats()
     If build.Race = reDwarf Then blnDwarvenAxe = True
     ' Allocate enough space that we only have to resize once at the end
     With build.Feat(bftGranted)
-        'TODO Make this MAX_FEATS constant = 48?
         ReDim .Feat(1 To MAX_FEATS)
         .Feats = 0
     End With
@@ -508,6 +530,9 @@ Private Sub InitGrantedFeats()
                     blnDwarvenAxe = False
             End Select
         End If
+    Next
+    For lngLevel = 21 To 30
+      'Add epic Skills
     Next
     With build.Feat(bftGranted)
         If .Feats = 0 Then Erase .Feat Else ReDim Preserve .Feat(1 To .Feats)
@@ -568,7 +593,11 @@ End Sub
 Private Sub InitStandardFeats()
     Dim lngIndex As Long
     
-    AllocateFeatSlots bftStandard, 14
+    'TODO When MAX level increases, Standard Feats needs to increase
+    
+    'Allocate 16 slots for all listed below
+    AllocateFeatSlots bftStandard, 16
+    
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 1
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 3
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 6
@@ -590,13 +619,18 @@ Private Sub InitStandardFeats()
     InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 28 'Dest3
     InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 30    'Epic4
 
-    'InitBuildFeatSlot bftGranted, bfsEpic, lngIndex, 21    'Epic Power1
+    ' Feats +30 Legendary/Destiny
+    InitBuildFeatSlot bftLegend, bfsLegend, lngIndex, 30    'Legendary
+    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 31 'Dest4
+
 
 End Sub
-
+'No Longer used
 Private Sub InitLegendFeats()
-    AllocateFeatSlots bftLegend, 1
-    InitBuildFeatSlot bftLegend, bfsLegend, 0, 30
+    AllocateFeatSlots bftLegend, 2
+    ' NEED TO DEAL WITH LEGENDARY HERE
+    InitBuildFeatSlot bftStandard, bfsLegend, 0, 30
+    InitBuildFeatSlot bftStandard, bfsDestiny, 0, 31
 End Sub
 
 Private Sub AllocateFeatSlots(penType As BuildFeatTypeEnum, plngFeats As Long, Optional pblnEraseFirst As Boolean = False)
@@ -1079,6 +1113,7 @@ Private Function AddFeatToList(penType As BuildFeatTypeEnum, plngIndex As Long, 
             Case bfsDestiny: .SourceFilter = "Destiny " & .Level
             Case bfsRace: .SourceFilter = db.Race(build.Race).Abbreviation
             Case bfsClass, bfsClassOnly, bfsDeity: .SourceFilter = db.Class(build.Class(lngLevel)).Initial(2) & " " & .ClassLevel
+            ' NEED TO DEAL WITH LEGENDARY HERE
             Case bfsLegend: .SourceFilter = "Legend 30"
         End Select
     End With
@@ -1458,11 +1493,16 @@ End Function
 Public Function RaceRestricted(plngRace() As Long) As Boolean
     RaceRestricted = True
     Select Case plngRace(0)
-        Case rreAny: RaceRestricted = False
-        Case rreRequired: If plngRace(build.Race) = 1 Then RaceRestricted = False
-        Case rreNotAllowed: If plngRace(build.Race) = 0 Then RaceRestricted = False
-        Case rreStandard: If (db.Race(build.Race).Type = rteFree Or db.Race(build.Race).Type = rtePremium) And plngRace(build.Race) = 0 Then RaceRestricted = False
-        Case rreIconic: If db.Race(build.Race).Type = rteIconic And plngRace(build.Race) = 0 Then RaceRestricted = False
+        Case rreAny
+            RaceRestricted = False
+        Case rreRequired
+            If plngRace(build.Race) = 1 Then RaceRestricted = False
+        Case rreNotAllowed
+            If plngRace(build.Race) = 0 Then RaceRestricted = False
+        Case rreStandard
+            If (db.Race(build.Race).Type = rteFree Or db.Race(build.Race).Type = rtePremium) And plngRace(build.Race) = 0 Then RaceRestricted = False
+        Case rreIconic
+            If db.Race(build.Race).Type = rteIconic And plngRace(build.Race) = 0 Then RaceRestricted = False
     End Select
 End Function
 
@@ -2190,6 +2230,7 @@ Public Function MaxFatePoints() As Long
         Case 20 To 28: MaxFatePoints = 32
         Case 29: MaxFatePoints = 34
         Case 30: MaxFatePoints = 37
+        ' NEED TO DEAL WITH LEGENDARY HERE
     End Select
 End Function
 
@@ -2594,6 +2635,7 @@ Private Function GetLevelReqsTier(penTreeStyle As TreeStyleEnum, plngTier As Lon
             If plngTier = 3 Then plngLevels = 23
             If plngTier = 4 Then plngLevels = 26
             If plngTier = 5 Then plngLevels = 30
+' NEED TO DEAL WITH LEGENDARY HERE
             
     End Select
 End Function

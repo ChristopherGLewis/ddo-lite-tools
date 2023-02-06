@@ -384,7 +384,7 @@ Private Function FindRace() As RaceEnum
     Dim enRonRace As RonRaceEnum
     
     strValue = FindValue("RACE:")
-    enRonRace = Val(strValue)
+    enRonRace = val(strValue)
     Select Case enRonRace
         Case rreDrow: FindRace = reDrow
         Case rreDwarf: FindRace = reDwarf
@@ -412,7 +412,7 @@ Private Function FindAlignment() As AlignmentEnum
     Dim enRonAlign As RonAlignEnum
     
     strValue = FindValue("ALIGNMENT:")
-    enRonAlign = Val(strValue)
+    enRonAlign = val(strValue)
     Select Case enRonAlign
         Case raeNeutral: FindAlignment = aleTrueNeutral
         Case raeNeutralGood: FindAlignment = aleNeutralGood
@@ -467,7 +467,7 @@ Private Sub IdentifyBuildPoints()
     If lngLine >= 0 And lngLine < mlngLines Then
         strList = Split(mstrLine(lngLine + 1), ",")
         For i = 0 To UBound(strList)
-            lngLives = lngLives + Val(Trim$(strList(i)))
+            lngLives = lngLives + val(Trim$(strList(i)))
         Next
     End If
     lngLine = FindLine("ABILITYFAVORBONUS:")
@@ -485,7 +485,7 @@ Private Sub IdentifyBuildPoints()
     strList = Split(strValue, ",")
     If UBound(strList) = 5 Then
         For i = 0 To 5
-            lngPoints = GetImportStatRaise(Val(Trim$(strList(i))))
+            lngPoints = GetImportStatRaise(val(Trim$(strList(i))))
             build.StatPoints(build.BuildPoints, i + 1) = lngPoints
             build.StatPoints(build.BuildPoints, 0) = build.StatPoints(build.BuildPoints, 0) + lngPoints
         Next
@@ -500,7 +500,7 @@ Private Sub IdentifyLevelups()
     
     For i = 1 To 7
         strValue = FindValue("ABILITY" & i * 4 & ":")
-        enStat = Val(strValue) + 1
+        enStat = val(strValue) + 1
         build.Levelups(i) = enStat
         If build.Levelups(0) = aeAny Then build.Levelups(0) = enStat
         If build.Levelups(0) <> enStat Then blnMixed = True
@@ -521,7 +521,7 @@ Private Sub IdentifyTomes()
         lngTome = 0
         strLevel = Split(mstrLine(lngLine + lngStat), ",")
         For i = 0 To UBound(strLevel)
-            lngTome = lngTome + Val(Trim$(strLevel(i)))
+            lngTome = lngTome + val(Trim$(strLevel(i)))
         Next
         If lngTome > tomes.Stat.Max Then lngTome = tomes.Stat.Max
         build.Tome(lngStat) = lngTome
@@ -540,7 +540,7 @@ Private Sub IdentifySkills()
         strSkill = Split(mstrLine(lngLine + lngLevel), ",")
         If UBound(strSkill) >= 20 Then
             For i = 0 To 20
-                build.Skills(i + 1, lngLevel) = Val(Trim$(strSkill(i)))
+                build.Skills(i + 1, lngLevel) = val(Trim$(strSkill(i)))
             Next
         End If
     Next
@@ -607,7 +607,7 @@ Private Function RonFindSlot(pstrRaw As String, penType As BuildFeatTypeEnum, pl
 
     strToken = Split(pstrRaw, ",")
     If UBound(strToken) < 2 Then Exit Function
-    Select Case Val(Trim$(strToken(2)))
+    Select Case val(Trim$(strToken(2)))
         Case rseStandard, rseDestiny: penType = bftStandard
         Case rseDeity: penType = bftDeity
         Case rseLegend: penType = bftLegend
@@ -633,7 +633,7 @@ Private Function RonFindSlot(pstrRaw As String, penType As BuildFeatTypeEnum, pl
         End Select
     End If
     If penType = bftUnknown Then Exit Function
-    lngLevel = Val(Trim$(strToken(1)))
+    lngLevel = val(Trim$(strToken(1)))
     With build.Feat(penType)
         For plngSlot = .Feats To 1 Step -1
             If .Feat(plngSlot).Level = lngLevel Then Exit For

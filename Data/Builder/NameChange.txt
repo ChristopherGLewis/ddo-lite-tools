@@ -5,3 +5,7 @@ New: Energy Absorption
 NameChangeType: Feat
 Old: Purity of Spirit
 New: Purity of Heart
+
+NameChangeType: Feat
+Old: Epic Arcane Eldritch Blast
+New: Epic Pact Dice

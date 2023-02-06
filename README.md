@@ -13,6 +13,21 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.2.0 - U55 Isle of Dread
+Changes:
+    Update to Level 32
+    Added L31 feats
+    
+    
+Fixes:
+    Feats:
+        * Deity feats fixed for Eberron based Iconics
+        * Epic Arcane Blast renamed to Epic Pact Dice
+    Destinies:
+        * Updates to Destinies from @yhelm123
+
+
+
 ### 4.1.0 - U54 Tabaxi
 Changes:
     

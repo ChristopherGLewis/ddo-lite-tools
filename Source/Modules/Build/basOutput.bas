@@ -315,7 +315,7 @@ Private Sub OutputHeader()
             strClassNames = strClassNames & "/" & typClassSplit(i).ClassName
         Next
         If lngClasses = 1 Then strText = strClassNames & " " & strLevels Else strText = strLevels & " " & strClassNames
-        If build.MaxLevels <> MaxLevel Then
+        If build.MaxLevels <> MAX_LEVEL Then
             lngEpic = build.MaxLevels - 20
             If lngEpic > 0 Then strText = strText & ", Epic " & lngEpic
         End If
