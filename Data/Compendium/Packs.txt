@@ -358,3 +358,12 @@ EpicHigh: 34
 Patron: The Gatekeepers
 Wiki: The Isle of Dread
 Link Named Items	Link	https://ddowiki.com/page/Update_55_named_items
+
+PackName: Grip of the Hidden Hand
+Abbreviation: Hidden Hand
+Cost: 725
+HeroicLow: 16
+HeroicHigh: 16
+EpicLow: 33
+EpicHigh: 33
+Link Named Items	Link	https://ddowiki.com/page/Update_57_named_items
