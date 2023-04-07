@@ -572,6 +572,12 @@ Patron: The Silver Flame
 Favor: 6
 Level: 18
 
+QuestName: Kill Ten Rats
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
 QuestName: Murder by Night
 Pack: Menace of the Underdark
 Patron: Purple Dragon Knights
@@ -1253,7 +1259,6 @@ Pack: Delera's Tomb
 Patron: House Jorasco
 Favor: 3
 Level: 6
-GroupLevel: 7
 Epic: 27
 
 QuestName: Thrall of the Necromancer
@@ -1406,7 +1411,7 @@ Favor: 4
 Level: 10
 Map: Sorrowdusk Isle
 
-QuestName: Temple of Elemental Evil Part 1
+QuestName: (Old) Temple of Elemental Evil Part 1
 Wiki: Temple of Elemental Evil Part One
 Pack: Temple of Elemental Evil
 Patron: The Gatekeepers
@@ -1415,13 +1420,76 @@ Level: 7
 Epic: 30
 Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
 
-QuestName: Temple of Elemental Evil Part 2
+QuestName: (Old) Temple of Elemental Evil Part 2
 Wiki: Temple of Elemental Evil Part Two
 Pack: Temple of Elemental Evil
 Patron: The Gatekeepers
 Favor: 5
 Level: 7
 Epic: 30
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: First Level and Earth Temple
+Wiki: ToEE: First Level and Earth Temple
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Lower Temple Complex
+Wiki: ToEE: Lower Temple Complex
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 6
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Air Node
+Wiki: ToEE: Air Node
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Earth Node
+Wiki: ToEE: Earth Node
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Fire Node
+Wiki: ToEE: Fire Node
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Water Node
+Wiki: ToEE: Water Node
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 5
+Level: 8
+Epic: 34
+Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
+
+QuestName: ToEE: Depths of the Temple
+Wiki: ToEE: Depths of the Temple
+Pack: Temple of Elemental Evil
+Patron: The Gatekeepers
+Favor: 4
+Level: 8
+Epic: 34
 Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
 
 QuestName: One Dame Thing After Another
@@ -1548,7 +1616,7 @@ Favor: 4
 Level: 7
 Epic: 33
 
-QuestName: The Trouble With Tar Pits
+QuestName: The Trouble with Tar Pits
 Pack: The Isle of Dread
 Patron: The Gatekeepers
 Favor: 4
@@ -2655,6 +2723,42 @@ Favor: 4
 Level: 15
 Epic: 32
 Link: Map: The Cogs	Link	https://ddowiki.com/images/TheCogsMap.png
+
+QuestName: Army of Eternal Night
+Pack: Grip of the Hidden Hand
+Patron: Morgrave University
+Favor: 6
+Level: 16
+Epic: 33
+
+QuestName: Order in the Court!
+Wiki: Order in the Court
+Pack: Grip of the Hidden Hand
+Patron: Morgrave University
+Favor: 6
+Level: 16
+Epic: 33
+
+QuestName: Growing Pains
+Pack: Grip of the Hidden Hand
+Patron: Morgrave University
+Favor: 6
+Level: 16
+Epic: 33
+
+QuestName: Three Paths to Battle
+Pack: Grip of the Hidden Hand
+Patron: Morgrave University
+Favor: 7
+Level: 16
+Epic: 33
+
+QuestName: The Hand and the Eyes
+Pack: Grip of the Hidden Hand
+Patron: Morgrave University
+Favor: 7
+Level: 16
+Epic: 33
 
 QuestName: Friends in Low Places
 Pack: Shadowfell Conspiracy
