@@ -1,3 +1,16 @@
+FeatName: Abundant Step
+Group: Heroic, Misc
+Descrip: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk.
+Class: Monk 12
+Flags: Unselectable
+
+FeatName: Accelerate Spell
+Group: Heroic, Spellcasting
+Descrip: While this Metamagic feat is active, the projectiles of spells affected by Accelerate Spell fly faster and with less of an arc, but consume 5 additional spell points.
+CanCastSpell: 1
+ClassBonus: Artificer, Alchemist
+Class: Alchemist 8, Artificer 8
+
 FeatName: Acrobatic
 Group: Heroic, Misc
 Descrip: +2 bonus to Jump and Tumble. 
@@ -15,6 +28,48 @@ Descrip: Improve your monk stances and elemental strikes. Automatically granted 
 Class: Monk 1
 Level: 6
 
+FeatName: Alchemical Spellcasting
+Group: Heroic, Spellcasting
+Descrip: Alchemical Spellcasting
+Class: Alchemist 1
+Flags: Unselectable
+
+FeatName: Alchemical Studies - Pyrite
+Group: Alchemy
+Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
+Class: Alchemist 4
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
+
+FeatName: Alchemical Studies - Verudite
+Group: Alchemy
+Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
+Class: Alchemist 4
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
+
+FeatName: Alchemical Studies - Orchidium
+Group: Alchemy
+Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
+Class: Alchemist 4
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 4, 16, 20
+Repeat: 2
+
+FeatName: Alchemy on the Run
+Group: Alchemy
+Descrip: You can now move while drinking potions.
+Flags: Unselectable
+Class: Alchemist 3
+
 FeatName: Alertness
 Group: Heroic, Misc
 Descrip: +2 bonus to Listen and Spot.
@@ -26,9 +81,15 @@ WikiName: Epic Feats#Epic Spellcasting active feats
 Descrip: Passive: +110 Maximum Spell Points}Active: Gain +6 to all spell DCs and +6 Spell Penetration for 30 seconds. 3 minute cooldown.
 Level: 21
 
+FeatName: Arcane Lore
+Group: Heroic, Spellcasting
+Descrip: This feat represents your knowledge of the Arcane.
+Class: Artificer 1, Alchemist 1, Bard 1, Sorcerer 1, Wizard 1, Warlock 1
+Flags: Unselectable
+
 FeatName: Arcane Pulse
 Group: Destiny, Spellcasting
-WikiName: Epic Destiny Feats#Arcane sphere
+WikiName: Epic Destiny Feats
 Descrip: Single target DoT: 3d6+6 force damage every 2 seconds for 16 seconds. Can stack up to 5 times. 3 second cooldown.
 Level: 28
 
@@ -37,6 +98,18 @@ Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Your weapon and unarmed attacks grant you a stack of Arcane Warrior: Magical (+1 Universal Spell Power). Your offensive spells grant you a stack of Arcane Warrior: Physical (+1 Melee and Ranged power). Each of these stacks to 20 times and each stack lasts for 6 seconds. You may gain a stack of each no more than once per second.
 Level: 28
+
+FeatName: Armor Class Bonus
+Group: Heroic, Misc
+Descrip: Monks get a stacking bonus to their AC:}{-A passive Wisdom bonus equal to their Wisdom modifier, while unarmored and not using a shield.{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
+Class: Monk 1
+Flags: Unselectable
+
+FeatName: Armor Class Bonus Sacred Fist
+Group: Heroic, Misc
+Descrip: Sacred Fist Paladins get a stacking bonus to their AC:}{-A passive Charisma bonus equal to their Charisma modifier, while unarmored and not using a shield.}{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
+Class: Paladin 1
+Flags: Unselectable
 
 FeatName: Armor Proficiency
 Group: Heroic, Defense
@@ -56,6 +129,40 @@ Descrip: Grants proficiency with all heavy armor. Basic heavy armor includes Hal
 WikiName: Heavy Armor Proficiency
 All: Armor Proficiency: Medium
 
+FeatName: Artificer Craft Mastery
+Group: Heroic, Misc
+Descrip: This feat grants you a +1 bonus to all of your Crafting Levels for every second (even) Artificer level you posses.
+Class: Artificer 2
+Flags: Unselectable
+
+FeatName: Artificer Construct Mastery
+Group: Heroic, Spellcasting
+Descrip: This feat allows an Artificer to spontaneously cast any single-target Repair Damage or Inflict Damage spell they have inscribed in their spellbook. These spells will appear in bonus spell slots once inscribed.
+Class: Artificer 1
+Flags: Unselectable
+
+FeatName: Artificer Knowlege
+Group: Heroic, Misc
+Descrip: This feat grants you benefits based on your Artificer or Alchemist level.
+Selector: Scrolls, Potions, Wands, Arms and Armor, Wounderous Items
+SelectorName: Scrolls
+Descrip: Grants a +2 to UMD checks related to scroll use, and all scrolls used by the Artificer have their caster levels increased by 1
+SelectorName: Potions
+Descrip: Grants a +2 to UMD checks related to potion use, if any, and all potions used by the Artificer/Alchemist have their caster levels increased by 1
+SelectorName: Wands
+Descrip: Grants a +2 to UMD checks related to wand use, and all wands used by the Artificer have their caster levels increased by 1
+SelectorName: Arms and Armor
+Descrip: Grants a +2 to UMD checks related to weapons, armor, and staves. Any activated abilities on weapons and armor ("clickies") used by the Artificer are cast at a +1 caster level.
+SelectorName: Wounderous Items
+Descrip: Grants a +2 to UMD checks related to clothing, jewelry, and trinkets. Any activated abilities on these items ("clickies") used by the Artificer are cast at a +1 caster level.
+Class: Alchemist 2, Artificer 1
+
+FeatName: Artificer Skill Mastery
+Group: Heroic, Misc
+Descrip: This feat grants you a +1 bonus to all skills.
+Class: Artificer 13
+Flags: Unselectable
+
 FeatName: Athletic
 Group: Heroic, Misc
 Descrip: +2 bonus to Balance and Swim.
@@ -66,6 +173,45 @@ Group: Heroic, Misc
 Descrip: Summons, hirelings, pets and charmed minions have +4 to all ability scores, increased HP, and +50% fortification.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Wizard
+
+FeatName: Aura of Courage
+Group: Heroic, Misc
+Descrip: Beginning at 3rd level, a Paladin is immune to fear (magical or otherwise).}Each ally within 10 feet of the paladin gains a +4 morale bonus on saving throws against fear effects for 9 seconds. This ability functions while the paladin is conscious, but not if she is unconscious or dead.
+Class: Paladin 3
+Flags: Unselectable
+
+FeatName: Aura of Good
+Group: Heroic, Misc
+Descrip: This Paladin class feature grants a +1 bonus to AC and saving throws to all allies within range.
+Class: Paladin 1
+Flags: Unselectable
+
+FeatName: Barbarian Damage Reduction
+Group: Heroic, Misc
+Descrip: A barbarian can resist incoming attacks, shrugging off 3% of all damage. This increases by 1% at 5th level and every three barbarian levels thereafter.
+Flags: Unselectable
+Class: Barbarian 1
+
+FeatName: Battalion Brew
+Group: Heroic, Alchemy
+Descrip: You can use Intelligence for to hit and damage rolls with simple weapons.
+Class: Alchemist 4
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 4, 8, 12, 16, 20
+
+FeatName: Bardic Ballad
+Group: Heroic, Misc
+Descrip: You are constantly surrounded by a faint aura of Bardic Music, and it benefits you and your nearby allies in combat. You and all nearby allies receive the benefits of Inspire Courage as long as you are alive and not incapacitated. Certain Bard feats and abilities can alter or increased the benefits of your Ballad.
+Class: Bard 1
+Flags: Unselectable
+
+FeatName: Bardic Inspiration
+Group: Heroic, Misc
+Descrip: Activate this ability to Inspire a single target ally or yourself. Gaining more effective Bard levels will increase the duration. The following additional abilities add to the effect of Bardic Inspiration.
+Class: Bard 3
+Flags: Unselectable
 
 FeatName: Beloved of
 Group: Heroic, Misc
@@ -113,6 +259,19 @@ SelectorName: The Blood of Vol
 WikiName: Deity feats
 Descrip: +3 to attack and damage rolls with daggers.
 
+FeatName: Biting Acid
+Group: Heroic, Melee
+Descrip: 1d6 acid damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
+Class: Druid 2
+Flags: Unselectable
+
+FeatName: Biting Poison
+Group: Heroic, Melee
+Descrip: 1d8 poison damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
+Class: Druid 2
+Flags: Unselectable
+
+
 FeatName: Blinding Speed
 Group: Epic, Melee, Range
 WikiName: Epic Feats#Overview
@@ -128,9 +287,9 @@ RaceBonus: Aasimar
 Flags: RaceOnly
 Selector: Bond of the Fallen, Bond of the Protector
 SelectorName: Bond of the Fallen
-Descrip: +1 Strength and Reflex saves. Racial AP adds:}Core 3: +2 Tactics DCs}Tier 1: +3 Reflex saves}Tier 2: 1:00 Boost 1/rest:}{ +2 Strength}{ +5% Doublestrike}Tier 4:}{ Immunity to Fear}{ +10 Melee Power}{ Melee attacks add vulnerable
+Descrip: You connection to your Celestial patron causes you to guard the weak and stand vigilant against the darkness. While this Protector Bond is toggled on, you tap into that connection, gaining glowing eyes, +1 Charisma and +1 to Will Saving Throws.
 SelectorName: Bond of the Protector
-Descrip: +1 Charisma and Will saves. Racial AP adds:}Core 3: +2% Dodge}Tier 1: +3 Will saves}Tier 2: 1:00 Boost 1/rest:}{ Healing Amp}{ Positive Spell Power}{ (Both equal to level)}Tier 4:}{ +3 to all saves}{ +10% Max Hit Points}{ +10 MRR and PRR
+Descrip: Twisted by dark powers in your youth, your connection to your Celestial patron is unusual, but powerful. While this Fallen Bond is toggled on, you tap into that connection, gaining darkened eyes, +1 Strength and +1 to Reflex Saving Throws.
 
 FeatName: Bond of the Scourge
 Group: Heroic, Misc
@@ -170,6 +329,12 @@ Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Spell feats
 Descrip: Passive: +140 Maximum Spell Points}Active: Cone spell (35 spell points, 10 second cooldown): Deals 30d6 Cold damage, Fortitude save (20 + highest of Int/Wis/Cha mod + Evocation bonuses) or be frozen.
 Level: 24
+
+FeatName: Call Wolf Companion
+Group: Heroic, Misc
+Descrip:  Activate this ability to summon your Wolf Companion.
+Class: Druid 1
+Flags: Unselectable
 
 FeatName: Child of
 Group: Heroic, Misc
@@ -245,11 +410,17 @@ Stat: Intelligence 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Artificer
 
+FeatName: Completionist
+Group: Heroic, Misc
+Descrip: You win DDO! +2 bonus to all skills and ability scores.
+Level: 3
+Flags: Unselectable
+
 FeatName: Composite Plating
 Group: Heroic
 Descrip: You are not considered to be wearing armor. You have a 5% arcane spell failure chance.
 Level: 1
-Race: Required,  Warforged, Bladeforged 
+Race: Required, Warforged, Bladeforged 
 
 FeatName: Construct Essence
 Group: Heroic, Defense
@@ -270,6 +441,11 @@ Flags: ClassOnly
 ClassOnlyClass: Rogue
 ClassOnlyLevel: 10, 13, 16, 19
 Class: Rogue 10
+
+FeatName: Crush Weakness
+Group: Destiny, Melee
+Descrip: +15% damage versus the Helpless
+Level: 25
 
 FeatName: Damage Reduction
 Group: Heroic, Misc
@@ -366,6 +542,18 @@ SelectorName: The Blood is The Life
 WikiName: Deity feats
 Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Constitution, 100% Fortification, +10 to Fortitude Saves, and PRR and MRR equal to the number of Religious Lore feats you have. Your attacks with Daggers also gain Vampirism, stacking with other sources of Vampirism.
 
+FeatName: Diamond Body
+Group: Heroic, Misc
+Descrip: You have firm control over your metabolism and are now immune to ability score damage from natural poison. You gain a +10 racial bonus to saving throws against magical poisons, and do not fail saving rolls against them on a roll of natural 1. (Note, since Update 14, poisons and disease have natural, magical and supernatural qualities. Diamond Body does not protect against unnatural poisons. Also you are not immune to the health damage of natural poison.)
+Class: Monk 11
+Flags: Unselectable
+
+FeatName: Diamond Soul
+Group: Heroic, Misc
+Descrip: You gain a racial bonus to Spell Resistance (SR) equal to your Monk level + 10. This stacks with Racial Spell Resistance granted to Drow and Deep Gnomes.
+Class: Monk 13
+Flags: Unselectable
+
 FeatName: Diehard
 Group: Heroic, Defense
 Descrip: You automatically stabilize when you become unconscious from damage.
@@ -377,6 +565,41 @@ Group: Heroic, Misc, Defense
 Descrip: +2 bonus to Concentration skill checks, and +1 to Will saves.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
+
+FeatName: Disease Immunity
+Group: Heroic, Misc
+Descrip: You are immune to Natural Diseases.
+Class: Blightcaster 1
+Flags: Unselectable
+
+FeatName: Dismiss Charm
+Group: Heroic, Spellcasting
+Descrip: Activate this short-ranged ability while targeting a charmed, commanded, controlled, or dominated enemy that is under your control to dispel the controlling effect.
+Class: Wizard 1, Sorcerer 1, Warlock 1, Bard 1, Ranger 1, Druid 1, Cleric 1, Favored Soul 1, Artificer 1, Alchemist 1
+Flags: Unselectable
+
+FeatName: Dismiss Rage
+Group: Misc
+Descrip: Activate this ability to prematurely end your rage.
+Flags: Unselectable
+
+FeatName: Divine Dream
+Group: Heroic, Misc
+Descrip: While centered, you may use your Charisma score for attack and damage with weapons. In addition, while centered, you qualify for the bonuses from the Greater Sacred Defense enhancements, regardless of equipped armor.
+Class: Paladin 6
+Flags: Unselectable
+
+FeatName: Divine Grace
+Group: Heroic, Misc
+Descrip: At 2nd level, a Paladin gains a bonus equal to his or her Charisma modifier (if not negative) on all saving throws.{Divine Grace is capped at 2+(3 x paladin level). For multiclassing, this means 2 levels of Paladin would at best grant a max of +8 to saves (2 + (3x2)).
+Class: Paladin 2
+Flags: Unselectable
+
+FeatName: Divine Health
+Group: Heroic, Misc
+Descrip: This class feature makes the Paladin immune to all diseases (natural, magical, and supernatural).
+Class: Paladin 3
+Flags: Unselectable
 
 FeatName: Dodge
 Group: Heroic, Defense
@@ -437,9 +660,14 @@ Descrip: Base Bonuses:}{-Water Breathing, Swim}{-Cold Spell power}{-Use higher o
 
 FeatName: Doubleshot
 Group: Destiny, Range
-WikiName: Epic Destiny Feats#Primal sphere
 Descrip: +10% Doubleshot.
 Level: 25
+
+FeatName: Doublestrike
+Group: Destiny, Melee
+WikiName: Doublestrike_(epic_destiny_feat)
+Descrip: +5% Doublestrike.
+Level: 22
 
 FeatName: Draconic Ancestry
 Group: Heroic, Misc
@@ -463,6 +691,31 @@ WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: Activate to disappear to the land of dreams for 5 seconds (become invisible and invulnerable), return with a random 30-second buff, 1 minute cooldown. 9 possible buffs:}{ 1) +30 Melee/Ranged Power, +60 Universal Spell Power}{ 2) +15 AC/PRR/MRR}{ 3) +6 to all skills}{ 4) DR 18/-}{ 5) +15 Energy Resistance}{ 6) Sprint Boost}{ 7) +6 Fortitude saves}{ 8) +6 Reflex saves}{ 9) +6 Will saves
 Level: 28
 
+FeatName: Druid Spontaneous Casting
+Group: Heroic, Misc
+Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
+Class: Druid 1
+Flags: Unselectable
+
+FeatName: Druidic Oath
+Group: Heroic, Misc
+Descrip: All druids take an oath that prohibits them from wearing metal armor, using metal shields or orbs, and using rune arms. Doing so suppresses your druidic abilities. Warforged druids are forbidden from taking armor feats other than Composite Plating.
+Class: Druid 1
+Flags: Unselectable
+
+FeatName: Eldritch Blast
+Group: Heroic, Misc
+Descrip: This is a toggle feat. When you toggle it on, your basic attack, regardless of weapons held (except for wands), becomes a ranged magical attack that hits a single enemy. It does not cost spell points or hit points; only time, much like swinging a weapon.
+Class: Warlock 1
+ClassBonus: Warlock
+Flags: ClassOnly, Unselectable
+
+FeatName: Elemental Form Specialty
+Group: Destiny, Spellcasting
+Descrip: Your elemental forms grant you mastery over the other three elements as well. Excluding the element of your current form, you gain the following bonuses to air, earth, fire, and water as long as you are in a Sorcerer's Elemental Apotheosis or Druid Elemental Wild Shape form:}{- +3 caster levels with those elements}{- +3 to max caster level with those elements}{- +20 to spellpower of those elements}{- +2% spell critical chance with those elements.
+Class: Sorcerer 20, Druid 13
+Level: 31
+
 FeatName: Elusive Target
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Martial sphere
@@ -471,8 +724,7 @@ Level: 25
 
 FeatName: Embodiment of Law
 Group: Destiny, Melee, Range
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Weapon and unarmed attacks deal +10 Bane damage vs all targets plus another 20 Law damage vs Chaotic targets. Scales with Melee / Ranged power.
+Descrip: +3 Physical and Magical Resistance Rating. If you are lawful, gain +2 Imbue Dice.
 Level: 28
 
 FeatName: Embolden Spell
@@ -495,6 +747,17 @@ CanCastSpell: 1
 ClassBonus: Artificer, Wizard, Alchemist
 RaceBonus: Human, Purple Dragon Knight
 
+FeatName: Empty Body
+Group: Heroic, Misc
+Descrip: You are able to focus your ki and walk the edge of the Plane of Shadow, mimicking the effects of a Shadow Walk spell. While this effect is active, you move much faster than normal and your outline appears faint and you are harder to hit. Attacking another creature or otherwise interacting with objects shunts you back to the Material Plane.
+Class: Monk 19
+Flags: Unselectable
+
+FeatName: Enhanced Elemental Dice
+Group: Destiny, Misc
+Descrip: +1 bonus Imbue Dice
+Level: 31
+
 FeatName: Energy Absorption
 Group: Heroic, Defense
 WikiName: Favored_Soul#Energy_Resistance
@@ -512,18 +775,17 @@ CanCastSpell: 1
 ClassBonus: Artificer, Wizard, Alchemist
 RaceBonus: Human, Purple Dragon Knight
 
-FeatName: Epic Skills
-Group: Epic
-WikiName: Epic Skills
-Descrip: As part of your epic training, you gain +1 to all skills. This feat can be taken multiple times.
-Flags: Unselectable
-
-FeatName: Epic Pact Dice
+FeatName: Epic Arcane Eldritch Blast
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats#Arcane sphere
 Descrip: Grants +1 Pact dice, +1 per 2 Epic Levels, for a max +6d4 Pact Dice at level 30.
 Level: 22
-Class: Warlock 12
+
+FeatName: Epic Barbarian Damage Reduction
+Group: Epic, Defense
+Descrip: Your Barbarian Damage Reduction is increased by 1%.}You also gain +5 Physical and Magical Resistance Rating
+Level: 21
+Class: Barbarian 12
 
 FeatName: Epic Damage Reduction
 Group: Epic, Defense
@@ -543,6 +805,12 @@ WikiName: Epic Feats#General Epic passive feats
 Descrip: +2 Fortitude Saving Throws. You don't automatically fail Fortitude saving throws on a roll of 1.
 Level: 27
 
+FeatName: Epic Knowlege
+Group: Epic, Spellcasting
+Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
+Flags: Unselectable
+Level: 22
+
 FeatName: Epic Mage Armor
 Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Arcane sphere
@@ -553,6 +821,12 @@ FeatName: Epic Mental Toughness
 Group: Epic, Spellcasting
 Descrip: +200 maximum spell points. (+410 for all three Mental Toughness feats.) +1% spell critical chance.
 All: Improved Mental Toughness
+Level: 21
+
+FeatName: Epic Power
+Group: Epic, Misc
+Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}-1% to the Spell Point cost of all spells}This feat is automatically given to all characters each time they gain an Epic level.}The spell point cost reduction does not apply to Spell-like abilities.
+Flags: Unselectable
 Level: 21
 
 FeatName: Epic Reflexes
@@ -581,11 +855,11 @@ Descrip: +4 to your caster level check for defeating Spell Resistance.
 All: Spell Penetration, Greater Spell Penetration
 Level: 21
 
-FeatName: Epic Will
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +2 Will Saving Throws. You don't automatically fail Will saving throws on a roll of 1.
-Level: 27
+FeatName: Epic Spell Power
+Group: Destiny, Spellcasting
+Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% all other types of spell critical damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
+Level: 22
+Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
 
 FeatName: Epic Toughness
 Group: Epic, Defense
@@ -593,6 +867,12 @@ Descrip: Increases your maximum hit points by 50.
 Stat: Constitution 21
 All: Toughness
 Level: 21
+
+FeatName: Epic Will
+Group: Epic, Defense
+WikiName: Epic Feats#General Epic passive feats
+Descrip: +2 Will Saving Throws. You don't automatically fail Will saving throws on a roll of 1.
+Level: 27
 
 FeatName: Eschew Materials
 Group: Heroic, Spellcasting
@@ -606,6 +886,12 @@ Group: Misc
 Descrip: When you make a successful Reflex save to avoid damage, you suffer no damage instead of half damage.
 Flags: Unselectable
 Class: Monk 2, Ranger 9, Rogue 2
+
+FeatName: Expanded Clip
+Group: Epic, Range
+Descrip: Your repeating crossbows have 1 extra shot in their clips.
+Level: 21
+Class: Artificer 12
 
 FeatName: Exotic Weapon
 Group: Heroic, Melee, Range
@@ -669,6 +955,18 @@ Descrip: This song fascinates most nearby living enemies, causing them to cease 
 Flags: Unselectable
 Class: Bard 1
 
+FeatName: Fast Movement
+Group: Heroic, Misc
+Descrip: The Fast Movement class feat allows a Barbarian to move 10% faster.
+Flags: Unselectable
+Class: Barbarian 1
+
+FeatName: Fast Movement
+Group: Heroic, Misc
+Descrip: A Monk gains a cumulative 5% bonus to run speed while centered for every three Monk levels. This bonus stacks with other run speed bonuses. If the monk would become uncentered (by equipping armor, or wielding non-monk weapons, etc) then the bonuses are temporarily lost.
+Class: Monk 3
+Flags: Unselectable
+
 FeatName: Favored Enemy
 Group: Heroic, Misc
 Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
@@ -678,11 +976,34 @@ ClassOnlyLevel: 1, 5, 10, 15, 20
 Class: Ranger 1
 Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Fey, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
 
+FeatName: Fear Immunity
+Group: Heroic, Misc
+Descrip: A paladin is immune to fear effects.
+Class: Paladin 3
+Flags: Unselectable
+
+FeatName: Feline Agility
+Group: Misc
+Descrip: After standing still for 6 seconds, when you move again you gain a +20% Action Boost bonus to Movement Speed for 6 seconds.
+Race: Required, Tabaxi, Trailblazer
+
+FeatName: Finishing Moves
+Group: Heroic, Misc
+Descrip: Through careful use of their abilities, monks can unlock special finishing moves to perform amazing effects. This button changes into various finishing moves as they become available.
+Class: Monk 1
+Flags: Unselectable
+
 FeatName: First Blood
 Group: Destiny, Melee
 WikiName: Epic Destiny Feats#Martial sphere
 Descrip: Melee weapons and unarmed attacks deal 50-300 extra untyped damage against enemies with 90% or more HP. This extra damage won't trigger twice within three seconds.
 Level: 25
+
+FeatName: Flurry of Blows
+Group: Heroic, Misc
+Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
+Class: Monk 1
+Flags: Unselectable
 
 FeatName: Follower of
 Group: Heroic, Misc
@@ -730,6 +1051,16 @@ SelectorName: The Blood of Vol
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 
+FeatName: Follower of the Path of Light
+Group: Heroic, Misc
+WikiName: Deity feats#Deity Based Feats
+Descrip: This deity feat line grants the following:}{- Proficiency with Handwraps as a favored weapon.
+Class: Paladin 1
+Flags: Deity, ClassOnly
+ClassOnlyClass: Paladin
+ClassOnlyLevel: 1
+Flags: Unselectable
+
 FeatName: Force of Personality
 Group: Heroic, Defense, Misc
 Descrip: Use your Charisma modifier for Will Saves instead of Wisdom.
@@ -746,6 +1077,12 @@ Group: Destiny, Defense
 WikiName: Epic Destiny Feats#Multiple spheres
 Descrip: +20 Healing Amp and Positive Spell Power.
 Level: 28
+
+FeatName: Goodberry
+Group: Heroic, Misc
+Descrip: Transmutes natural matter around you into Goodberries. Goodberries are infused with primal magic, and provide a full meal's nourishment. If eaten in a tavern, they act as tavern food and drink, refilling your health and spell points. When cast, Goodberries appear in your inventory. The higher the caster level, the more nourishing the Goodberries are.
+Class: Druid 1
+Flags: Unselectable
 
 FeatName: Grace of Battle
 Group: Heroic, Melee, Misc
@@ -765,9 +1102,9 @@ Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 FeatName: Great Cleave
 SortName: Cleave2
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +2[W] damage.
+Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +4[W] damage.
 BAB: 4
-All: Cleave
+All: Cleave, Power Attack
 ClassBonus: Fighter
 
 FeatName: Great Fortitude
@@ -775,6 +1112,20 @@ Group: Heroic, Defense
 Descrip: +2 bonus to all Fortitude saving throws.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
+
+FeatName: Greater Pact Attunement
+SortName: Pact Attunement2
+Group: Heroic, Misc
+Descrip: Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 12, but any character with at least one Warlock Acolyte of the Skin level and 12 character levels can select this feat at levelup as a normal feat.
+Class: Acolyte 1
+Level: 12
+All: Pact Attunement
+
+FeatName: Greater Rage
+Group: Heroic, Misc
+Descrip: The bonuses of the barbarian's rage increase to a total of +6 strength, +6 constitution and +3 to will saving throws but the barbarian still incurs a reduction of its Armor Class by 2. Fatigue penalties remain the same as regular Rage. Enhances the regular Barbarian Rage feat. +10 Physical Resistance Rating when wearing Medium armor. +10 Melee Power while the rage is active.
+Flags: Unselectable
+Class: Barbarian 11
 
 FeatName: Greater Ruin
 Group: Epic, Spellcasting
@@ -882,62 +1233,66 @@ Descrip: Half-Elves are able to dabble in the abilities of a class other than th
 Race: Required, Half-Elf
 RaceBonus: Half-Elf
 Flags: RaceOnly
-Selector: Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
+Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
+SelectorName: Alchemist
+WikiName: Half-Elf Dilettante#Alchemist
+Descrip: You have +10 Universal Spell Power.}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Stat: Charisma 13
 SelectorName: Artificer
 WikiName: Half-Elf Dilettante#Artificer
-Descrip: You are proficient with all crossbows and gain +2 UMD for scrolls. You are considered a level 1 artificer for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: You gain proficiency with all crossbows, and Artificer Knowledge: Scrolls (You gain a +2 bonus to Use Magical Device checks when using scrolls, and their Caster Level is increased by one - this Caster Level increase is capped by your Intelligence modifier.)}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Intelligence 13
 SelectorName: Barbarian
 WikiName: Half-Elf Dilettante#Barbarian
-Descrip: DR 1/- (does not stack with Barbarian DR). You can gain further bonuses with enhancements.
+Descrip: DR 1/- (does not stack with Barbarian DR).}For item purposes, you count as a level one Barbarian in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Constitution 13
 SelectorName: Bard
 WikiName: Half-Elf Dilettante#Bard
-Descrip: You can Fascinate 3x/rest with a Will DC based on a Perform check (or 1d20 + Cha Mod if untrained) to negate. You are considered a level 1 bard for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: You can Fascinate 3x per rest with a Will DC based on a Perform check (or 1d20 + Cha Mod if untrained) to negate.}For item purposes, you count as a level one Bard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Cleric
 WikiName: Half-Elf Dilettante#Cleric
-Descrip: You are considered a level 1 cleric for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: For item purposes, you count as a level one Cleric in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Wisdom 13
 SelectorName: Druid
 WikiName: Half-Elf Dilettante#Druid
-Descrip: You are considered a level 1 druid for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: For item purposes, you count as a level one Druid in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Wisdom 13
 SelectorName: Favored Soul
 WikiName: Half-Elf Dilettante#Favored Soul
-Descrip: You are considered a level 1 favored soul for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: For item purposes, you count as a level one Favored Soul in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Fighter
 WikiName: Half-Elf Dilettante#Fighter
-Descrip: You are proficient with all martial weapons. You can gain further bonuses with enhancements.
+Descrip: You are proficient with all martial weapons.}For item purposes, you count as a level one Fighter in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Strength 13
 SelectorName: Monk
 WikiName: Half-Elf Dilettante#Monk
-Descrip: You are proficient with quarterstaff, kama and shuriken. You gain up to +2 AC from your Wisdom modifier while centered. You can improve these bonuses with enhancements.
+Descrip: You are proficient with quarterstaff, kama and shuriken. You gain up to +2 AC from your Wisdom modifier while centered.}For item purposes, you count as a level one Monk in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Wisdom 13
 SelectorName: Paladin
 WikiName: Half-Elf Dilettante#Paladin
-Descrip: You gain up to +2 saves from your Charisma modifier. You can improve these bonuses with enhancements.
+Descrip: Can add up to 2 points of your Charisma bonus to all saves (does not stack with the Divine Grace ability).}For item purposes, you count as a level one Paladin in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Ranger
 WikiName: Half-Elf Dilettante#Ranger
-Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows. You are considered a level 1 ranger for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows.}For item purposes, you count as a level one Ranger in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Dexterity 13
 SelectorName: Rogue
 WikiName: Half-Elf Dilettante#Rogue
-Descrip: +1d6 Sneak Attack damage (does not stack with Rogue Sneak Attack). You can gain further bonuses with enhancements.
+Descrip: +1d6 Sneak Attack damage (does not stack with Rogue Sneak Attack).}For item purposes, you count as a level one Rogue in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Dexterity 13
 SelectorName: Sorcerer
 WikiName: Half-Elf Dilettante#Sorcerer
-Descrip: You are considered a level 1 sorcerer for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: For item purposes, you count as a level one Sorcerer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Wizard
 WikiName: Half-Elf Dilettante#Wizard
-Descrip: You are considered a level 1 wizard for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: For item purposes, you count as a level one Wizard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Intelligence 13
 SelectorName: Warlock
 WikiName: Half-Elf Dilettante#Warlock
-Descrip: Toggle: You deal 1d4 extra Fire damage with attacks and spells, at most once every two seconds. This toggle is exclusive with Warlock Pact toggles. You are considered a level 1 warlock for scrolls and wands, and can further improve these bonuses with enhancements.
+Descrip: Toggle: Imbue Toggle: You deal 1d4 extra Fire damage with attacks and spells. This triggers at most once every 2 seconds.}For item purposes, you count as a level one Warlock in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 
 FeatName: Hamstring
@@ -950,7 +1305,7 @@ Class: Rogue 1
 FeatName: Harbinger of Chaos
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Weapon and unarmed attacks deal 1d20 Bane damage vs all targets plus another 2d20 Chaos damage vs Lawful targets. Scales with Melee / Ranged power.
+Descrip: +2% Doublestrike and Doubleshot. If you are Chaotic, gain +2 Imbue Dice.
 Level: 28
 
 FeatName: Healing Hands
@@ -997,6 +1352,12 @@ Group: Destiny, Spellcasting
 Descrip: Hellball (45 spell points, 6 second cooldown): Deal 3d20+15 acid, electric, fire, and sonic damage to enemies in an area. Reflex save for half, but not subject to Evasion. Metamagics can be applied but are not free.
 Level: 25
 
+FeatName: Hide in Plain Sight
+Group: Heroic, Misc
+Descrip: You are a master when it comes to hiding in places others think impossible. You gain +1 Hide and +1 Move Silently for every three seconds you stand still, up to +5. While you are sneaking and standing still (for 3 seconds), enemies don't gain Spot bonuses until they get much closer to you, and the bonuses are smaller.
+Class: Ranger 17
+Flags: Unselectable
+
 FeatName: Holy Strike
 Group: Destiny, Melee, Range
 WikiName: Epic Destiny Feats#Divine sphere
@@ -1009,6 +1370,12 @@ WikiName: Epic Feats#Epic Spellcasting passive feats
 Descrip: +140 Maximum Spell Points}Your summoned creatures gain:}{ +8 to all ability scores}{ +10% Dodge}{ +100 Maximum Hit Points
 Level: 24
 All: Augment Summoning
+
+FeatName: Improved Bardic Music
+Group: Heroic, Misc
+Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
+Class: Bard 12
+Skill: Perform 15
 
 FeatName: Improved Critical
 Group: Heroic, Melee, Range
@@ -1043,6 +1410,12 @@ Flags: ClassOnly
 ClassOnlyClass: Rogue
 ClassOnlyLevel: 10, 13, 16, 19
 Class: Rogue 10
+
+FeatName: Improved Inspire Courage
+Group: Heroic, Misc
+Descrip: Gives a +2 (total) morale bonus to attack rolls, damage rolls, and saving throws versus fear. At Bard level 14, these bonuses rise to +3, and at Bard level 20 they rise to +4.
+Class: Bard 8
+Flags: Unselectable
 
 FeatName: Improved Feint
 Group: Heroic, Melee
@@ -1155,29 +1528,51 @@ Stat: Dexterity 17
 All: Two Weapon Fighting
 ClassBonus: Fighter
 
+FeatName: Improved Uncanny Dodge
+Group: Heroic, Misc
+Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
+Class: Barbarian 8, Rogue 8
+
+FeatName: Improved Wild Empathy
+Group: Heroic, Misc
+Descrip: This feat allows a ranger to charm an animal (similar to the Charm monster spell) for 5 minutes. It can be used 3 times / rest period with a 60 second cool down.}{-Target: Animal, Magical Beast{-Save: Will
+Class: Druid 7, Ranger 7
+Flags: Unselectable
+
+FeatName: Indomitable Will
+Group: Heroic, Misc
+Descrip: While in a Barbarian rage, a barbarian of 14th level or higher gains a +4 bonus on Will saves to resist enchantment spells. This bonus stacks with all other modifiers, including the morale bonus on Will saves he also receives during his rage.
+Flags: Unselectable
+Class: Barbarian 14
+
+FeatName: Inscribe Alchemy Recipe
+Group: Heroic, Spellcasting
+Descrip: You are able to inscribe alchemy spells from scrolls into your spellbook. This action will destroy the scroll.
+Class: Alchemist 1
+Flags: Unselectable
+
+FeatName: Inscribe Artificer Scroll
+Group: Heroic, Spellcasting
+Descrip: You are able to inscribe artificer spells from scrolls into your spellbook. This action will destroy the scroll.
+Class: Artificer 1
+Flags: Unselectable
+
+FeatName: Inscribe Scroll
+Group: Heroic, Spellcasting
+Descrip: You are able to inscribe spells from scrolls into your spellbook. This action will destroy the scroll.
+Class: Wizard 1
+Flags: Unselectable
+
 FeatName: Insightful Reflexes
 Group: Heroic, Defense, Misc
 Descrip: Use your Intelligence modifier for Reflex Saves instead of Dexterity.
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Inspire Courage
-Group: Heroic, Misc
+Group: Misc
 Descrip: Gives a +1 music bonus to attack rolls, damage rolls, and saving throws versus fear, as well as +3 universal Spell Power.
-Class: Bard 12
+Class: Bard 1
 Skill: Perform 3
-
-FeatName: Inspire Greatness
-Group: Heroic, Misc
-Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
-Class: Bard 9
-Skill: Perform 15
-
-FeatName: Improved Inspire Courage
-Group: Heroic, Misc
-Descrip: Gives a +2 (total) morale bonus to attack rolls, damage rolls, and saving throws versus fear. At Bard level 14, these bonuses rise to +3, and at Bard level 20 they rise to +4.
-Class: Bard 8
-Skill: Perform 3
-All: Inspire Courage
 
 FeatName: Inspire Excellence
 Group: Epic, Misc
@@ -1188,10 +1583,16 @@ Level: 21
 All: Inspire Heroics
 
 FeatName: Inspire Heroics
-Group: Misc
-Descrip: Song that grants a +4 morale bonus to saves and +4% dodge.
-Flags: Unselectable
+Group: Heroic, Misc
+Descrip: Adds the effects of Inspire Heroics to your Bardic Inspiration. Other Bard abilities may modify the effects of Inspire Heroics. Inspire Heroics - Gives a +4 Music Bonus to Armor Class, +4% Music Bonus to Dodge, and a +4 Music bonus to all saves.
 Class: Bard 15
+Flags: Unselectable
+
+FeatName: Inspire Greatness
+Group: Heroic, Misc
+Descrip: Adds the effects of Inspire Greatness to your Bardic Ballad. Other Bard abilities may modify the effects of Inspire Greatness. Inspire Greatness - Allies and yourself benefit from +20 Temporary Hit Points, +3 Physical Resistance Rating, an +10 Healing Amplification as long as your are not incapacitated and they are within the Ballad.
+Class: Bard 9
+Flags: Unselectable
 
 FeatName: Intensify Spell
 Group: Epic, Spellcasting
@@ -1204,6 +1605,24 @@ Group: Heroic, Defense
 Descrip: +2 bonus to Will Saves.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
+
+FeatName: Ki Strike
+Group: Heroic, Misc
+Descrip: Ki Strike
+Flags: Unselectable
+Selector: Magic, Lawful, Adamantine
+SelectorName: Magic
+Descrip: All of your unarmed melee attacks are empowered with ki and are considered magical for damage reduction purposes.
+Class: Monk 4
+WikiName: Ki Strike: Magic
+SelectorName: Lawful
+Descrip: All your unarmed melee attacks are considered Lawful for purposes of bypassing Damage Reduction.
+Class: Monk 10
+WikiName: Ki Strike: Lawful
+SelectorName: Adamantine
+Descrip: All your unarmed melee attacks are considered Adamantine for purposes of bypassing Damage Reduction.
+Class: Monk 16
+WikiName: Ki Strike: Adamantine
 
 FeatName: Knight's Training
 Group: Heroic, Melee
@@ -1265,11 +1684,48 @@ SelectorName: Warding
 Descrip: +2 bonus to Search skill. Available SLAs:}{-Neutralize Poison}{-Spell Resistance}{-Radiant Forcefield
 Race: Required, Dwarf
 
+FeatName: Legendary Aim
+Group: Destiny, Range
+Descrip: While using a Ranged Weapon, +10 to Attack, +5% Dodge bypass.
+Level: 31
+
+FeatName: Legendary Toughness
+Group: Destiny, Defense
+Descrip: +100 maximum hit points. This can be taken multiple times.
+Stat: Constitution 21
+Level: 31
+Repeat: 99
+
+FeatName: Lesser Pact Attunement
+Group: Heroic, Misc
+Descrip: You gain 2d8 Eldritch Blast base damage and 2d6 Eldritch Blast Pact Dice.
+Class: Acolyte 1
+Flags: Unselectable
+
 FeatName: Lightning Reflexes
 Group: Heroic, Defense
 Descrip: +2 bonus to Reflex saves.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
+
+FeatName: Liquid Courage
+Group: Heroic, Alchemy
+Descrip: You can use Intelligence for Will saves. Mutually exclusive with Tough Tincture.
+Class: Alchemist 8
+ClassBonus: Alchemist
+None: Tough Tincture
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 8, 12, 16, 20
+
+FeatName: Liquid Luck
+Group: Heroic, Alchemy
+Descrip: Gain Evasion.
+Class: Alchemist 12
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 12, 16, 20
 
 FeatName: Luck of Heroes
 Group: Heroic, Defense
@@ -1299,6 +1755,13 @@ SelectorName: Composite Shortbow
 Hide: True
 SelectorName: All
 Descrip: Grants proficiency with all martial weapons. Barbarians, Fighters, Paladins and Rangers receive this feat for free. All other classes must train individual martial weapons they want to use, one feat per weapon.
+
+FeatName: Mass Suggestion Song
+Group: Heroic, Misc
+Descrip: This song charms multiple foes that are currently under the effects of the bardic Fascinate song.
+Class: Bard 18
+Flags: Unselectable
+WikiName: Mass_Suggesion_(song)
 
 FeatName: Master of
 Group: Epic, Spellcasting
@@ -1350,12 +1813,24 @@ CanCastSpell: 1
 ClassBonus: Artificer, Wizard, Alchemist
 RaceBonus: Human, Purple Dragon Knight
 
+FeatName: Meditation
+Group: Heroic, Misc
+Descrip: Two times per rest, a monk can meditate to rapidly regain ki. Meditation stabilizes when it reaches over three times his Concentration skill.
+Class: Monk 2
+Flags: Unselectable
+
 FeatName: Mental Toughness
 Group: Heroic, Spellcasting
 Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20.) +1% spell critical chance.
 CanCastSpell: 1
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Wizard, Alchemist
+
+FeatName: Mighty Rage
+Group: Heroic, Misc
+Descrip: The bonuses of the barbarian's rage increase to a total of +10 strength, +10 constitution and +5 to will saving throws but the barbarian still incurs a reduction of his Armor Class by 2. No longer has any fatigue penalties, as they were removed at level17 with Tireless Rage. Enhances the regular Barbarian Rage feat.
+Flags: Unselectable
+Class: Barbarian 20
 
 FeatName: Mithral Body
 Group: Heroic, Defense
@@ -1385,6 +1860,12 @@ All: Dodge
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Alchemist
 
+FeatName: Monk Stance
+Group: Heroic, Misc
+Descrip: Monk Stances are toggled stances available to monks, or monk multiclasses, as long as they are centered.
+Class: Monk 1
+Flags: Unselectable
+
 FeatName: Multitude of Missiles
 Group: Heroic, Range
 Descrip: For the next 20 seconds, while wielding a Simple Thrown Weapon add 100 to your Doubleshot and 2x your Base Attack Bonus to Ranged Power. Shares a cooldown with Manyshot.
@@ -1410,7 +1891,7 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Offhand Versatility
 Group: Heroic, Melee
-Descrip: Your offhand item modifies your main hand:}{ Runearms and Orbs now grant: when you vorpal strike, your next spell automatically crits. This has an internal cooldown of 20 seconds and lasts for 20 seconds.}{ Nothing in your offhand increases your ability score modifier to damage by 25%.
+Descrip: You gain special bonuses for fighting with specific things in your offhand while Single Weapon Fighting.} }If you have nothing in your offhand, you ability score modifier contributes 25% more to your melee damage.}If you have an Orb or Rune Arm in your Offhand, you gain +1 bonus Imbue Dice.
 BAB: 8
 All: Single Weapon Fighting
 ClassBonus: Fighter
@@ -1466,6 +1947,12 @@ Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
 SelectorName: Carceri Storm
 Descrip: Cold Damage}Targets Reflex saves}2: Merfolk's Blessing}5: Gust of Wind}6: Frozen Footsteps (+10% Cold Absorption)}9: Sleet Storm}14: Ice Storm}15: Absolute Zero (Lock single enemy in ice)}17: Mass Suggestion}19: Greater Creeping Cold
 NotClass: Monk
+
+FeatName: Pact Attunement
+Group: Heroic, Misc
+Descrip: Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 6, but any character with at least one Warlock Acolyte of the Skin level and 6 character levels can select this feat at levelup as a normal feat.
+Class: Acolyte 1
+Level: 6
 
 FeatName: Past Life
 Group: Heroic, Misc
@@ -1544,6 +2031,12 @@ Descrip: If in Bear form, your Two-Handed ability mod increases by .25, and your
 All: Natural Fighting
 Level: 22
 
+FeatName: Perfect Self
+Group: Heroic, Misc
+Descrip: You have transcended your former race and are now considered a Lawful Outsider. You have gained Damage Reduction 10 / Epic. Warforged retain most living construct traits.
+Class: Monk 20
+Flags: Unselectable
+
 FeatName: Perfect Shield Mastery
 Abbreviation: Perfect SM
 Group: Destiny, Melee
@@ -1558,10 +2051,24 @@ Descrip: While Single Weapon Fighting, your vorpal threat range is increased by 
 All: Single Weapon Fighting
 Level: 22
 
+FeatName: Perfect Slow Fall
+Group: Heroic, Misc
+Descrip: You have perfected the ability to recover from a fall unharmed. You never take damage from falling no matter how far you fall.
+Class: Monk 20
+Flags: Unselectable
+
 FeatName: Perfect Two Handed Fighting
 Abbreviation: Perfect THF
 Group: Destiny, Melee
 Descrip: While Two Handed Fighting: Gain 30% Strikethrough Chance, and a +10 Combat Style bonus to Melee Power. Two Handed Weapons add 25% more of your ability score modifier to their base damage.
+All: Two Handed Fighting
+Level: 22
+
+FeatName: Perfect Two Weapon Fighting
+Abbreviation: Perfect TWF
+Group: Destiny, Melee
+Descrip: Your offhand attacks now doublestrike at 65% of the rate of your main hand, versus the base 50%, up to a maximum of 65%.
+All: Two Weapon Fighting
 Level: 22
 
 FeatName: Pierce Damage Reduction
@@ -1582,6 +2089,12 @@ Descrip: Your equipped weapons are considered Cold Iron for bypassing DR.
 SelectorName: Silver
 WikiName: Pierce Silver
 Descrip: Your equipped weapons are considered Silver for bypassing DR.
+
+FeatName: Poisonblood
+Group: Heroic, Misc
+Descrip: You are immune to Natural Poisons.
+Class: Alchemist 7
+Flags: Unselectable
 
 FeatName: Point Blank Shot
 Group: Heroic, Range
@@ -1618,6 +2131,12 @@ Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk, Alchemist
 
+FeatName: Purity of Body
+Group: Heroic, Misc
+Descrip: You have gained control over your body's immune system and are now unaffected by all natural diseases.
+Class: Monk 5
+Flags: Unselectable
+
 FeatName: Purity of Heart
 Group: Heroic, Spellcasting, Misc
 Descrip: Gain 20 spell points per Favored Soul level and 30 per Epic level.
@@ -1641,39 +2160,15 @@ ClassBonus: Artificer, Wizard
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Wizard
 
+FeatName: Quivering Palm
+Group: Heroic, Misc
+Descrip: The monk delivers a fatal attack by sending waves of vibrations through the target with an open hand strike. The attack costs 30 Ki, and if it hits the victim must pass a Fortitude save (DC 10 + monk level/2 + Wisdom modifier) or die.
+Class: Monk 15
+Flags: Unselectable
+
 FeatName: Rage
 Group: Heroic, Misc
 Descrip: A Barbarian can fly into a Rage several times per rest. Rages grants bonuses to Strength, Constitution and Will saves, but incurs penalties to AC and prevents casting spells or using a variety of clicky abilities.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Greater Rage
-Group: Heroic, Misc
-Descrip: The bonuses of the barbarian's rage increase to a total of +6 strength, +6 constitution and +3 to will saving throws but the barbarian still incurs a reduction of its Armor Class by 2. Fatigue penalties remain the same as regular Rage. Enhances the regular Barbarian Rage feat. +10 Physical Resistance Rating when wearing Medium armor. +10 Melee Power while the rage is active.
-Flags: Unselectable
-Class: Barbarian 11
-
-FeatName: Tireless Rage
-Group: Heroic, Misc
-Descrip: Upon reaching level 17, a barbarian is no longer fatigued after raging. Also, gain a stacking +2 Strength and Constitution Bonus along with a +1 Morale Bonus to Will Saving Throws while raging.
-Flags: Unselectable
-Class: Barbarian 17
-
-FeatName: Mighty Rage
-Group: Heroic, Misc
-Descrip: The bonuses of the barbarian's rage increase to a total of +10 strength, +10 constitution and +5 to will saving throws but the barbarian still incurs a reduction of his Armor Class by 2. No longer has any fatigue penalties, as they were removed at level17 with Tireless Rage. Enhances the regular Barbarian Rage feat.
-Flags: Unselectable
-Class: Barbarian 20
-
-FeatName: Barbarian Damage Reduction
-Group: Heroic, Misc
-Descrip: A barbarian can resist incoming attacks, shrugging off 3% of all damage. This increases by 1% at 5th level and every three barbarian levels thereafter.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Dismiss Rage
-Group: Misc
-Descrip: Activate this barbarian ability to prematurely end your rage.
 Flags: Unselectable
 Class: Barbarian 1
 
@@ -1691,6 +2186,31 @@ All: Point Blank Shot
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Alchemist
 
+FeatName: Razorclaw Shifter
+Group: Heroic, Misc
+Descrip: Passive: +1 STR. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Strength and Dexterity, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Strength. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+Race: Required, Razorclaw
+RaceBonus: Razorclaw
+Flags: RaceOnly
+
+FeatName: Reanimate Construct
+Group: Heroic, Misc
+Descrip: Allows an Artificer to revive their Iron Defender minion three times per rest.
+Class: Artificer 1
+Flags: Unselectable
+
+FeatName: Religious Lore
+Group: Heroic, Spellcasting
+Descrip: This feat grants represents your knowledge of the Religion. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
+Class: Cleric 1, Favored Soul 1, Paladin 1, Bard 1
+Flags: Unselectable
+
+FeatName: Remove Disease
+Group: Heroic, Misc
+Descrip: Cures all diseases on an ally.
+Class: Paladin 3
+Flags: Unselectable
+
 FeatName: Resilience
 Group: Heroic, Defense
 Descrip: Combat Stance: +4 to all saves, but spells have 3x their normal cooldown.
@@ -1703,6 +2223,12 @@ FeatName: Resist Poison
 Group: Heroic, Defense
 Descrip: +4 bonus to saves vs Poison.
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Retain Essence
+Group: Heroic, Spellcasting
+Descrip: Whenever an Artificer uses a rod, staff, or wand, the character has a chance to not expend a charge. The percentage chance is equal to (Artificer Level)/2 + Int Modifier + Enhancement Modifier + Effect Modifier.
+Class: Artificer 5
+Flags: Unselectable
 
 FeatName: Ruin
 Group: Epic, Spellcasting
@@ -1728,31 +2254,31 @@ Level: 30
 Descrip: Legendary feats pull their power from different planes.
 Selector: Arborea, Astral Plane, Celestia, Elysium, Ethereal Plane, Feywild, Limbo, Mechanus, Plane of Air, Plane of Earth, Plane of Fire, Plane of Water, Shadowfell
 SelectorName: Arborea
-Descrip: +20 Melee and Ranged Power}+20 Force Spell Power}+20 stacking Universal Spell Power}+2 Enhancement Bonus to your weapon}+4 Fortitude Saves
+Descrip: +20 Melee and Ranged Power}+20 Force Spell Power}+20 Universal Spell Power}+2 to the Enhancement Bonus to your weapon}+4 Fortitude Saves}+1 bonus Imbue Dice
 SelectorName: Astral Plane
 Descrip: +4 tactical feat and Assassinate DCs}+4% Doublestrike and Doubleshot (+8% if centered)}+4% Dodge and +4 Dodge Cap}+4 Reflex Saves
 SelectorName: Celestia
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+20 Positive, Light and Alignment Spell Power}+20 stacking Universal Spell Power}+25% Crit Damage with Positive, Light and Alignment spells}+10% Crit Damage for all others}+150 Maximum Hit Points}+4 Will Saves
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+20 Positive, Light and Alignment Spell Power}+20 Universal Spell Power}+25% Crit Damage with Positive, Light and Alignment spells}+10% Crit Damage for all others}+150 Maximum Hit Points}+4 Will Saves
 SelectorName: Elysium
-Descrip: Summoned creatures gain:}{ +25 PRR and MRR}{ +20 Melee Power, Range Power, and Universal Spell Power}{ +100% Fortification}{ 5% chance to ignore incoming damage. Does not affect any incoming Positive, Negative, or Repair effects.
+Descrip: Summoned creatures gain:}{- +25 PRR and MRR}{- +20 Melee Power, Range Power, and Universal Spell Power}{- +100% Fortification}{- 5% chance to ignore incoming damage. Does not affect any incoming Positive, Negative, or Repair effects.
 SelectorName: Ethereal Plane
-Descrip: Permanent Displacement and Ghost Touch}Permanent Invisibility Guard}+6d6 Sneak Attack Dice} +5 Melee and Ranged Power}+4 to all skills
+Descrip: Permanent Displacement and Ghost Touch}+6d6 Sneak Attack Dice}+5 Melee and Ranged Power}+4 to all skills}Permanent Invisibility Guard, as per the item effect}
 SelectorName: Feywild
-Descrip: +4 Enchantment and Illusion DCs, +2 DCs to other schools}+10 Sonic and Force Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Sonic and Force spells}+10% Crit Damage for all others}+20 Healing Amp}+2d20 Sonic damage with weapons and unarmed (scales with Spell Power)
+Descrip: +4 Enchantment and Illusion DCs, +2 DCs to other schools}+10 Sonic and Force Spell Power}+30 Universal Spell Power}+25% Crit Damage with Sonic and Force spells}+10% Crit Damage for all others}+20 Healing Amp}+3 bonus Imbue Dice
 SelectorName: Limbo
-Descrip: +2 Determination Bonus to all saves}Passive buff that randomly cycles each minute between 8 varieties:}{ 1) +40 Melee and Ranged Power, +80 Universal Spell Power}{ 2) +16% Doublestrike and Doubleshot, +20% Spell Critical damage}{ 3) +30 PRR and MRR}{ 4) +20% Dodge and +40 Healing Amp}{ 5) +20 DR/Law}{ 6) +1d20 Chaos Damage for weapons and unarmed}{ 7) 5% change to ignore incoming damage}{ 8) Confetti explodes around your shoulders. Festive!
+Descrip: +2 Determination Bonus to all saves}Passive buff that randomly cycles each minute between 8 varieties:}{ - +40 Melee and Ranged Power, +80 Universal Spell Power}{ - +16% Doublestrike and Doubleshot, +20% Spell Critical damage}{ - +30 PRR and MRR}{ - +20% Dodge and +40 Healing Amp}{ - +20 DR/Law}{ - +1d20 Chaos Damage for weapons and unarmed}{ - 5% change to ignore incoming damage}{ - Confetti explodes around your shoulders. Festive!
 SelectorName: Mechanus
-Descrip: +20 Repair and Rust Spell Power}+20 stacking Universal Spell Power}+25% Crit Damage with Repair and Rust spells}+10% Crit Damage for all others}+20 Repair Amp}+10% Fortification bypass}Gain: Master Reconstruction, shares cooldown with Communion of Scribing
+Descrip: +20 Repair and Rust Spell Power}+20 Universal Spell Power}+25% Crit Damage with Repair and Rust spells}+10% Crit Damage for all others}+20 Repair Amp}+10% Fortification bypass on weapon and unarmed attacks}Gain: Master Reconstruction, shares cooldown with Communion of Scribing
 SelectorName: Plane of Air
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Electric Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Electric spells}+10% Crit Damage for all others}+4% Dodge and Dodge Cap}+2d20 Electric damage with weapons and unarmed (scales with Spell Power)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Electric Spell Power}+30 Universal Spell Power}+25% Crit Damage with Electric spells}+10% Crit Damage for all others}+4% Dodge and +4 Dodge Cap}+3 bonus Imbue Dice
 SelectorName: Plane of Earth
-Descrip: +4 Conjuration DCs, +2 DCs to other schools}+10 Acid and Poison Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Acid and Poison spells}+10% Crit Damage for all others}+20 PRR}+2d20 Acid damage with weapons and unarmed (scales with Spell Power)
+Descrip: +4 Conjuration and Transmutation DCs, +2 DCs to other schools}+10 Acid and Poison Spell Power}+30 Universal Spell Power}+25% Crit Damage with Acid and Poison spells}+10% Crit Damage for all others}+20 PRR}+3 bonus Imbue Dice
 SelectorName: Plane of Fire
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Fire Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Fire spells}+10% Crit Damage for all others}+10 PRR, +10 MRR}+2d20 Fire damage with weapons and unarmed (scales with Spell Power)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Fire Spell Power}+30 Universal Spell Power}+25% Crit Damage with Fire spells}+10% Crit Damage for all others}+10 PRR, +10 MRR}+3 bonus Imbue Dice
 SelectorName: Plane of Water
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Cold spells}+10% Crit Damage for all others}+20 MRR}+200 Maximum Spell Points}+2d20 Cold damage with weapons and unarmed (scales with Spell Power)
+Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 Universal Spell Power}+25% Crit Damage with Cold spells}+10% Crit Damage for all others}+20 MRR}+200 Maximum Spell Points}+3 bonus Imbue Dice
 SelectorName: Shadowfell
-Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 stacking Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
+Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
 
 FeatName: Self Sufficient
 Group: Heroic, Misc
@@ -1773,11 +2299,37 @@ All: Shield Proficiency
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter
 
+FeatName: Shield Mastery Specialty
+Group: Destiny, Defense
+Descrip: While wielding a shield, you gain +10% doublestrike and a +9 Combat Style bonus to Melee Power. You gain +10 Physical Resistance Rating while using a buckler or small shield. If you are using a large shield, this bonus increases to +15. If you are using a tower shield, this bonus increases to +20.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.} }Bug: This feat does not currently grant the PRR bonus when a Shield is equipped. It does grant Doublestrike.
+One: Greater Two Handed Fighting, Greater Two Weapon Fighting, Greater Single Weapon Fighting
+None: Greater Shield Mastery
+Level: 31
+
 FeatName: Shield Proficiency
 Group: Heroic, Defense
 Descrip: Grants proficiency with Bucklers, Small Shields and Large Shields:}{-Basic (AML1)}{-Darkwood (AML4)}{-Densewood (AML4)}{-Spiritcraft (AML10)}{-Celestial (AML22)
 WikiName: Shield Proficiency (General)
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Shifter
+Group: Heroic, Misc
+WikiName: Shifter:Racial_traits
+Descrip: Subrace Selector. (Like Aasimar, Shifters select their subrace at level 1, which grants them some specific bonuses and informs which selections they can make in their tree).
+Race: Required, Shifter
+RaceBonus: Shifter
+Flags: RaceOnly
+Selector: Beasthide Shifter, Wildhunt Shifter
+SelectorName: Beasthide Shifter
+Descrip: Passive: +1 CON. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Armor Class and Constitution, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Constitution. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+SelectorName: Wildhunt Shifter
+Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Wisdom and Dexterity, a +2 Morale bonus to Will saves, and a -2 penalty to Strength. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Wisdom. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
+
+FeatName: Shining Star
+Group: Heroic, Misc
+Descrip: Finishing Move: Any Way of Earth attack → any Way of Air attack → any Way of Fire attack → Finishing Move activator.}You use the combined power of Earth, Wind, and Fire to set up harmonic vibrations within your enemy that force them to dance.}A successful Will save negates this effect (DC 10 + Monk level + Wisdom modifier + Stunning Bonuses).
+Class: Monk 20
+Flags: Unselectable
 
 FeatName: Shot on the Run
 Group: Heroic, Range
@@ -1795,6 +2347,12 @@ One: Exotic Weapon: Shuriken, Half-Elf Dilettante: Monk
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
 
+FeatName: Simple Thrown Expertise
+Group: Heroic, Alchemy
+Descrip: You are skilled with the use of the simple thrown weapons, and have a chance to throw an additional one per throw. Percent chance to throw an additional projectile is equal to your Dexterity.
+Stat: Dexterity 13
+ClassBonus: Alchemist
+
 FeatName: Simple Weapons
 Group: Heroic, Melee, Range
 Descrip: Most classes are natively proficient with all simple weapons. The exceptions are Monk, Druid and Wizard, who are only proficient with some. Selecting this feat once grants them proficiency with all remaining simple weapons.
@@ -1809,6 +2367,13 @@ Skill: Balance 2
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Monk
 None: Two Handed Fighting, Two Weapon Fighting
+
+FeatName: Single Weapon Specialty
+Group: Destiny, Melee
+Descrip: While Single Weapon Fighting (fighting with a single one-handed weapon, and wielding only an orb, rune arm, or nothing in your offhand) you gain a +30% Combat Style bonus to attack speed, +6 Combat Style bonus to Melee Power, and +50% more of your appropriate ability score to your damage.}For the bastard sword and dwarven waraxe, this adds to their existing 10% bonus. If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
+One: Greater Two Handed Fighting, Greater Two Weapon Fighting, Greater Shield Mastery
+None: Greater Single Weapon Fighting
+Level: 31
 
 FeatName: Skill Focus
 Group: Heroic, Misc
@@ -1846,6 +2411,12 @@ ClassOnlyClass: Rogue
 ClassOnlyLevel: 10, 13, 16, 19
 Class: Rogue 10
 
+FeatName: Slow Fall
+Group: Heroic, Misc
+Descrip: A monk's focus allows him to reduce gravity's effects. This feat can be turned off should he desire normal gravity. The Monk must be centered to use this ability, and its ability to reduce falling damage increases every two levels. In practice, even when this feat is turned off, a monk falls more slowly than he would normally.
+Class: Monk 4
+Flags: Unselectable
+
 FeatName: Smite Evil
 Group: Misc
 Descrip: Melee special attack (Cooldown: 6 seconds): Deal 3 * Paladin level + 7 extra damage to evil creatures. Enhancements can improved the crit profile (up to +2 range and multiplier) and reduce the cooldown. Limited uses per rest.
@@ -1863,6 +2434,27 @@ Descrip: All your melee and range attacks deal extra sneak attack damage to any 
 Flags: Unselectable
 Class: Rogue 1
 
+FeatName: Song of Freedom
+Group: Heroic, Misc
+Descrip: This ability is equivalent to the Break Enchantment spell on one ally.
+Class: Bard 12
+Flags: Unselectable
+
+FeatName: Soothing Song
+Group: Heroic, Misc
+Descrip: Sing a song to apply a small positive energy heal to your target and nearby party members. In addition, your Inspire Courage now gives an additional +1 bonus to attack, damage, and fear saves, and +3 Universal Spell Power.
+Class: Bard 8
+Flags: Unselectable
+
+FeatName: Spiked Chain Attack
+Group: Heroic, Misc
+Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
+Race: Required, Shadar-Kai
+RaceBonus: Shadar-Kai
+Flags: RaceOnly
+Descrip: Spiked Chain Attack
+WikiName: Spiked Chain Attack
+
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
 Descrip: +1 to the DCs of your spells from a chosen school.
@@ -1878,6 +2470,27 @@ Group: Heroic, Spellcasting
 Descrip: +2 to your caster level check for defeating Spell Resistance.
 CanCastSpell: 1
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Spell Specialty
+Group: Destiny, Spellcasting
+Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.}It requires Epic Spell Focus for a different spell school.}You cannot have the basic Spell Focus feat for the spell school.
+All: Epic Spell Focus
+Level: 31
+Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
+SelectorName: Abjuration
+None: Spell Focus: Abjuration
+SelectorName: Conjuration
+None: Spell Focus: Conjuration
+SelectorName: Enchantment
+None: Spell Focus: Enchantment
+SelectorName: Evocation
+None: Spell Focus: Evocation
+SelectorName: Illusion
+None: Spell Focus: Illusion
+SelectorName: Necromancy
+None: Spell Focus: Necromancy
+SelectorName: Transmutation
+None: Spell Focus: Transmutation
 
 FeatName: Spirit Blades
 Group: Destiny, Spellcasting
@@ -1897,6 +2510,12 @@ FeatName: Stealthy
 Group: Heroic, Misc
 Descrip: +2 bonus to Hide and Move Silently.
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Still Mind
+Group: Heroic, Misc
+Descrip: Your training and meditation improve your resistance to mind-affecting attacks, granting you a +2 bonus on saving throws against enchantments.
+Class: Monk 3
+Flags: Unselectable
 
 FeatName: Stout of Heart
 Group: Heroic, Defense, Misc
@@ -1919,6 +2538,13 @@ Class: Monk 1
 ClassBonus: Monk
 RaceBonus: Human
 
+FeatName: Suggestion Song
+Group: Heroic, Misc
+Descrip: This song charms a single foe that is currently under the effects of the bardic Fascinate song.
+Class: Bard 6
+Flags: Unselectable
+WikiName: Suggesion_(song)
+
 FeatName: Superior Weapon Focus
 Abbreviation: Sup Weapon Focus
 SortName: Weapon Focus3
@@ -1931,7 +2557,7 @@ SharedSelector: Greater Weapon Focus
 
 FeatName: Swords to Plowshares
 Group: Heroic, Melee
-Descrip: You are an expert with the usage of traditionally nonviolent weapons in impressive ways. When wielding one of the following weapons, you are granted the following:}{Quarterstaves, Kamas, and Sickles you wield gain a +1 Morale bonus to Critical Threat Range.
+Descrip: You are an expert with the usage of traditionally nonviolent weapons in impressive ways. When wielding one of the these weapons, you are granted the following:}{Handwraps, Kamas, and Sickles you wield gain a +1 Morale bonus to Critical Threat Range.}{Quarterstaves you wield gain a +2 Morale bonus to Critical Threat Range.
 BAB: 4
 ClassBonus: Monk
 
@@ -1975,6 +2601,28 @@ Stat: Dexterity 13
 Class: Monk 6
 ClassBonus: Monk
 
+FeatName: Timeless Body
+Group: Heroic, Misc
+Descrip: Your soul is balanced. No corrupt influences can possess your body after death - you are immune to the spawn effect of most undead.
+Class: Monk 17
+Flags: Unselectable
+
+FeatName: Tireless Rage
+Group: Heroic, Misc
+Descrip: Upon reaching level 17, a barbarian is no longer fatigued after raging. Also, gain a stacking +2 Strength and Constitution Bonus along with a +1 Morale Bonus to Will Saving Throws while raging.
+Flags: Unselectable
+Class: Barbarian 17
+
+FeatName: Tough Tincture
+Group: Heroic, Alchemy
+Descrip: You can use Intelligence for Fortitude saves. Mutually exclusive with Liquid Courage.
+Class: Alchemist 8
+ClassBonus: Alchemist
+None: Liquid Courage
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 8, 12, 16, 20
+
 FeatName: Toughness
 Group: Heroic, Defense, Destiny
 Descrip: +3 HP at level 1, +1 HP each additional level up to a max of 32 HP at level 30. This feat can be taken multiple times.
@@ -1987,6 +2635,42 @@ Group: Heroic, Defense
 Descrip: Grants proficiency with Tower Shields:}{-Basic (AML1)}{-Battle (AML4)}{-Magecraft (AML10)}{-Mountain (AML16)}{-Planeforged (AML22)
 All: Shield Proficiency
 RaceBonus: Human, Purple Dragon Knight
+
+FeatName: Toxic Tonic
+Group: Heroic, Alchemy
+Descrip: You are immune to Poison damage and get bonus saves versus poisons.
+Class: Alchemist 12
+ClassBonus: Alchemist
+Flags: ClassOnly
+ClassOnlyClass: Alchemist
+ClassOnlyLevel: 12, 16, 20
+
+FeatName: Trap Sense
+Group: Heroic, Misc
+Descrip: This class feat of Barbarians and Rogues grants the following bonuses:}{-+1 on reflex saving throws vs. traps{-+1 Armor Class vs. trap attacks.}The bonuses increase every 3 levels by +1.
+Class: Barbarian 3, Rogue 3
+Flags: Unselectable
+ClassBonus: Barbarian, Rogue
+
+FeatName: Trapfinding
+Group: Heroic, Misc
+Descrip: Only Rogues and Artificers can use the Spot and Search skills to detect and locate traps (and their related control panels) when the task has a Difficulty Class (DC) higher than 20.
+Class: Artificer 1, Rogue 1
+Flags: Unselectable
+
+FeatName: Trapmaking
+Group: Heroic, Misc
+Descrip: Benefit: You have learned enough about traps to be able to scavenge parts from them, and with the help of the Free Agents, can craft your own.
+Class: Artificer 4, Rogue 4
+Flags: Unselectable
+
+FeatName: True Fiend Pact
+Group: Heroic, Spellcasting, Misc
+WikiName: Warlock#Pact Choices
+Descrip: Your Pact applies the following bonuses:}Fire Damage}Targets Fortitude saves}1:Lesser Pact Attunement}6: Pact Attunement}6: Fiendskin: Your skin has been grafted with demon skin, granting you some of its inherent defenses. You gain a +1 profane bonus to Fire Resistance per Warlock Level.}12: Greater Pact Attunement}15: Hurl through Hell}18: Ultimate Pact Attunement
+Flags: Pact
+Flags: Unselectable
+Class: Acolyte 1
 
 FeatName: Turn Undead
 Group: Misc
@@ -2001,6 +2685,13 @@ Stat: Strength 15
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk
 None: Single Weapon Fighting
+
+FeatName: Two Handed Specialty
+Group: Destiny, Melee
+Descrip: While Two-Handed Fighting you gain +120% Strikethrough Chance and a +6 Combat Style bonus to Melee Power.}For the purpose of this feat, you are considered to be Two-Handed Fighting while:}{ - using a Two-Handed Melee Weapon (not including Handwraps){ - using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.}In addition, while using a Two-Handed Weapon you now apply 75% more of your appropriate ability score modifier to damage (This adds to their existing 50% base bonus). When using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand you now apply +50% more of your appropriate ability score to your damage. (This adds to the existing 10% bonus for wielding a Hand-and-a-Half weapon.}If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
+One: Greater Two Weapon Fighting, Greater Single Weapon Fighting, Greater Shield Mastery
+None: Greater Two Handed Fighting
+Level: 31
 
 FeatName: Two Weapon Defense
 SortName: Two Weapon Fighting4
@@ -2017,6 +2708,44 @@ Stat: Dexterity 15
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk
 None: Single Weapon Fighting
+
+FeatName: Two Weapon Specialty
+Group: Destiny, Melee
+Descrip: Reduces the penalty for fighting with two weapons. You gain +60% offhand strike chance.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
+One: Greater Two Handed Fighting, Greater Single Weapon Fighting, Greater Shield Mastery
+None: Greater Two Weapon Fighting
+Level: 31
+
+FeatName: Ultimate Pact Attunement
+SortName: Pact Attunement3
+Group: Heroic, Misc
+Descrip:Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 18, but any character with at least one Warlock Acolyte of the Skin level and 18 character levels can select this feat at levelup as a normal feat.
+Class: Acolyte 1
+Level: 18
+All: Greater Pact Attunement
+
+FeatName: Unarmed Strike
+Group: Heroic, Misc
+Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
+Class: Monk 1
+Flags: Unselectable
+
+FeatName: Uncanny Dodge
+Group: Heroic, Misc
+Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
+Class: Barbarian 4, Rogue 4
+
+FeatName: Unleash Iron Defender
+Group: Heroic, Misc
+Descrip: This feat allows an Artificer to summon a Iron Defender Homunculus
+Class: Artificer 1
+Flags: Unselectable
+
+FeatName: Venom Immunity
+Group: Heroic, Misc
+Descrip: You are immune to ability score damage from natural poisons. (This has no effect on magical or supernatural poisons.)
+Class: Druid 9
+Flags: Unselectable
 
 FeatName: Vorpal Strikes
 Group: Epic, Melee
@@ -2084,10 +2813,28 @@ ClassBonus: Fighter, Monk
 
 FeatName: Whirlwind Attack
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Attack all enemies in a 360 degree arc around the character. This attack deals +4[W] damage. (Bugged; see wiki.)
+Descrip: Tactical Melee Cleave: Activate this ability to attack all enemies in a 360 degree arc around you twice. This attack deals +2[W] damage. Note that it now hits the same number of times in all melee combat styles.
 BAB: 4
-All: Dodge, Mobility, Spring Attack, Combat Expertise
+All: Dodge, Mobility
 ClassBonus: Fighter
+
+FeatName: Wholeness of Body
+Group: Heroic, Misc
+Descrip: This feat allows Monks expend 10 Ki to heal some hit points over time in a meditative state. The exact number regained is (Monk level)/2 + Wisdom modifier (rounded up) every two seconds for thirty seconds. This ability is not suitable for use in combat, as the Monk may neither move nor act while regenerating.
+Class: Monk 7
+Flags: Unselectable
+
+FeatName: Wild Empathy
+Group: Heroic, Misc
+Descrip: Activate this ability to lower an animal's or beast's aggression, effectively mesmerizing them.
+Class: Druid 1, Ranger 1
+Flags: Unselectable
+
+FeatName: Wild Force
+Group: Destiny, Melee
+Descrip: While in Druid Wild Shape, you gain some of the aspects of the form you aren't in.}{- While in wolf or winter wolf form, you gain bear form's +10% exceptional bonus to maximum hit points.}{- While in bear or dire bear form, you gain wolf form's +10% movement speed.
+Class: Druid 2
+Level: 31
 
 FeatName: Wild Shape 1
 Group: Heroic, Misc
@@ -2099,25 +2846,70 @@ ClassOnlyClass: Druid
 ClassOnlyLevel: 2, 5
 Selector: Bear, Wolf
 
+FeatName: Blightcaster Wild Shape 1
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 1 a Blightcaster may use their 'Wild Shape' feat to change into a Plague Wolf.
+Class: Blightcaster 2
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 2
+Selector: Plague Wolf
+
 FeatName: Wild Shape 2
 Group: Heroic, Misc
 WikiName: Wild Shape#Magical Beast Forms
 Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
 Class: Druid 8
 Flags: ClassOnly
-ClassOnlyClass: Druid
+ClassOnlyClass: Druid, Blightcaster
 ClassOnlyLevel: 8, 11
-Selector: Dire Bear, Winter Wolf
+Selector: Dire Bear, Winter Wolf 
+
+FeatName: Blightcaster Wild Shape 2
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change into a Blighted Wolf.
+Class: Blightcaster 11
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 11
+Selector: Blighted Wolf
+
+FeatName: Minor Elemental Kin Form
+Group: Heroic, Misc
+WikiName: Wild Shape#Magical Beast Forms
+Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
+Class: Blightcaster 4
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 4, 8
+Selector: Hive Keeper, Thorn Kin
 
 FeatName: Wild Shape 3
 Group: Heroic, Misc
 WikiName: Wild Shape#Elemental Forms
-Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental.
+Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental.}Elemental Form: Transform into a [Fire/Water] Elemental. While in this form, you have +3 bonus to caster level and max caster level for your element's spells, but the opposite spells have a -3 penalty to caster level and max caster level. You also gain 65% absorption for your element, but take 15% more damage form the opposite element. You also gain +3 bonus Imbue Dice. While in this Elemental form you gain access to a number of spells that require it.}You are considered an Elemental. You gain a +10 racial bonus to your saving throws against magical poisons, and racial immunity to natural poisons, sleep, paralysis, and stun, and a 100% bonus to fortification. If you are a Warforged, you are no longer considered a Living Construct, and can now be healed normally by positive energy spells, and you become immune to repair spells.}You also gain the following:}[Fire/Water] Elemental Imbue: Imbue Toggle: Wreathe your weapons in elemental energy, dealing 1d6 [Fire/Water] damage on hit, scaling with Spell Power. Only applies  in [Fire/Water] Elemental Form.
 Class: Druid 13
 Flags: ClassOnly
 ClassOnlyClass: Druid
 ClassOnlyLevel: 13, 17
 Selector: Fire Elemental, Water Elemental
+
+FeatName: Advanced Elemental Kin Form
+Group: Heroic, Misc
+Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental form.}{-Thorn Knight: A more advanced form of Thorn Kin, you are now also plant kind beneath your thorny armor. You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water. +3 bonus to caster level and max caster level of Physical and Poison spells. You gain 10% absorption against piercing damage and 5% absorb against blunt damage. You gain +2 imbue dice. 10% exceptional bonus to armor class and 100% fortification. 15% vulnerability to fire damage.}{-Hive Master: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm. You are considered vermin for the purposes of immunities and are immune to mind effects and knock down. +3 bonus to caster level and max caster level of Poison and Acid Spells. You are ethereal to monsters while tumbling. You gain 50% concealment as displacement and Improved Evasion. You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10). 15% vulnerability to cold and -15 on diplomacy checks.
+Class: Blightcaster 13
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 13, 17
+Selector: Thorn Knight, Hive Master
+
+FeatName: Wilderness Lore
+Group: Heroic, Misc
+Descrip: This feat grants represents your knowledge of the wilderness. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
+Class: Barbarian 1, Druid 1, Ranger 1, Bard 1
+Flags: Unselectable
 
 FeatName: Wind through the Trees
 Group: Destiny, Defense
@@ -2132,668 +2924,3 @@ BAB: 1
 Stat: Wisdom 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Monk
-
-FeatName: Alchemy on the Run
-Group: Alchemy
-Descrip: You can now move while drinking potions.
-Flags: Unselectable
-Class: Alchemist 3
-
-FeatName: Alchemical Studies - Pyrite
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Alchemical Studies - Verudite
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Alchemical Studies - Orchidium
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Battalion Brew
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for to hit and damage rolls with simple weapons.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 8, 12, 16, 20
-
-FeatName: Liquid Courage
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for Will saves. Mutually exclusive with Tough Tincture.
-Class: Alchemist 8
-ClassBonus: Alchemist
-None: Tough Tincture
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 8, 12, 16, 20
-
-FeatName: Liquid Luck
-Group: Heroic, Alchemy
-Descrip: Gain Evasion.
-Class: Alchemist 12
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 12, 16, 20
-
-FeatName: Tough Tincture
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for Fortitude saves. Mutually exclusive with Liquid Courage.
-Class: Alchemist 8
-ClassBonus: Alchemist
-None: Liquid Courage
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 8, 12, 16, 20
-
-FeatName: Toxic Tonic
-Group: Heroic, Alchemy
-Descrip: You are immune to Poison damage and get bonus saves versus poisons.
-Class: Alchemist 12
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 12, 16, 20
-
-FeatName: Simple Thrown Expertise
-Group: Heroic, Alchemy
-Descrip: You are skilled with the use of the simple thrown weapons, and have a chance to throw an additional one per throw. Percent chance to throw an additional projectile is equal to your Dexterity.
-Stat: Dexterity 13
-ClassBonus: Alchemist
-
-FeatName: Accelerate Spell
-Group: Heroic, Spellcasting
-Descrip: While this Metamagic feat is active, the projectiles of spells affected by Accelerate Spell fly faster and with less of an arc, but consume 5 additional spell points.
-CanCastSpell: 1
-ClassBonus: Artificer, Alchemist
-Class: Alchemist 8, Artificer 8
-
-FeatName: Shifter
-Group: Heroic, Misc
-WikiName: Shifter:Racial_traits
-Descrip: Subrace Selector. (Like Aasimar, Shifters select their subrace at level 1, which grants them some specific bonuses and informs which selections they can make in their tree).
-Race: Required, Shifter
-RaceBonus: Shifter
-Flags: RaceOnly
-Selector: Beasthide Shifter, Wildhunt Shifter
-SelectorName: Beasthide Shifter
-Descrip: Passive: +1 CON. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Armor Class and Constitution, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Constitution. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-SelectorName: Wildhunt Shifter
-Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Wisdom and Dexterity, a +2 Morale bonus to Will saves, and a -2 penalty to Strength. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Wisdom. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-
-FeatName: Razorclaw Shifter
-Group: Heroic, Misc
-Descrip: Passive: +1 STR. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Strength and Dexterity, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Strength. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-Race: Required, Razorclaw
-RaceBonus: Razorclaw
-Flags: RaceOnly
-
-FeatName: Spiked Chain Attack
-Group: Heroic, Misc
-Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
-Race: Required, Shadar-Kai
-RaceBonus: Shadar-Kai
-Flags: RaceOnly
-Descrip: Spiked Chain Attack
-WikiName: Spiked Chain Attack
-
-FeatName: Eldritch Blast
-Group: Heroic, Misc
-Descrip: This is a toggle feat. When you toggle it on, your basic attack, regardless of weapons held(except for wands), becomes a ranged magical attack that hits a single enemy. It does not cost spell points or hit points; only time, much like swinging a weapon.
-Class: Warlock 1
-ClassBonus: Warlock
-Flags: ClassOnly, Unselectable
-
-FeatName: Artificer Knowlege
-Group: Heroic, Misc
-Descrip: This feat grants you benefits based on your Artificer or Alchemist level.
-Selector: Scrolls, Potions, Wands, Arms and Armor, Wounderous Items
-SelectorName: Scrolls
-Descrip: Grants a +2 to UMD checks related to scroll use, and all scrolls used by the Artificer have their caster levels increased by 1
-SelectorName: Potions
-Descrip: Grants a +2 to UMD checks related to potion use, if any, and all potions used by the Artificer/Alchemist have their caster levels increased by 1
-SelectorName: Wands
-Descrip: Grants a +2 to UMD checks related to wand use, and all wands used by the Artificer have their caster levels increased by 1
-SelectorName: Arms and Armor
-Descrip: Grants a +2 to UMD checks related to weapons, armor, and staves. Any activated abilities on weapons and armor ("clickies") used by the Artificer are cast at a +1 caster level.
-SelectorName: Wounderous Items
-Descrip: Grants a +2 to UMD checks related to clothing, jewelry, and trinkets. Any activated abilities on these items ("clickies") used by the Artificer are cast at a +1 caster level.
-Class: Alchemist 2, Artificer 1
-
-FeatName: PoisonBlood
-Group: Heroic, Misc
-Descrip: You are immune to Natural Poisons.
-Class: Alchemist 7
-Flags: Unselectable
-
-FeatName: Alchemical Spellcasting
-Group: Heroic, Spellcasting
-Descrip: Alchemical Spellcasting
-Class: Alchemist 1
-Flags: Unselectable
-
-FeatName: Inscribe Alchemy Recipe
-Group: Heroic, Spellcasting
-Descrip: Inscribe Alchemy Recipe
-Class: Alchemist 1
-Flags: Unselectable
-
-FeatName: Arcane Lore
-Group: Heroic, Spellcasting
-Descrip: This feat represents your knowledge of the Arcane.
-Class: Artificer 1, Alchemist 1, Bard 1, Sorcerer 1, Wizard 1, Warlock 1
-Flags: Unselectable
-
-FeatName: Religious Lore
-Group: Heroic, Spellcasting
-Descrip: This feat grants represents your knowledge of the Religion. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Cleric 1, Favored Soul 1, Paladin 1, Bard 1
-Flags: Unselectable
-
-
-FeatName: Inscribe Artificer Scroll
-Group: Heroic, Spellcasting
-Descrip: You are able to inscribe artificer spells from scrolls into your spellbook. This action will destroy the scroll.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Artificer Construct Mastery
-Group: Heroic, Spellcasting
-Descrip: This feat allows an Artificer to spontaneously cast any single-target Repair Damage or Inflict Damage spell they have inscribed in their spellbook. These spells will appear in bonus spell slots once inscribed.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Artificer Craft Mastery
-Group: Heroic, Misc
-Descrip: This feat grants you a +1 bonus to all of your Crafting Levels for every second (even) Artificer level you posses.
-Class: Artificer 2
-Flags: Unselectable
-
-FeatName: Artificer Skill Mastery
-Group: Heroic, Misc
-Descrip: This feat grants you a +1 bonus to all skills.
-Class: Artificer 13
-Flags: Unselectable
-
-FeatName: Retain Essence
-Group: Heroic, Spellcasting
-Descrip: Whenever an Artificer uses a rod, staff, or wand, the character has a chance to not expend a charge. The percentage chance is equal to (Artificer Level)/2 + Int Modifier + Enhancement Modifier + Effect Modifier.
-Class: Artificer 5
-Flags: Unselectable
-
-
-FeatName: Unleash Iron Defender
-Group: Heroic, Misc
-Descrip: This feat allows an Artificer to summon a Iron Defender Homunculus
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Reanimate Construct
-Group: Heroic, Misc
-Descrip: Allows an Artificer to revive their Iron Defender minion three times per rest.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Trapfinding
-Group: Heroic, Misc
-Descrip: Only Rogues and Artificers can use the Spot and Search skills to detect and locate traps (and their related control panels) when the task has a Difficulty Class (DC) higher than 20.
-Class: Artificer 1, Rogue 1
-Flags: Unselectable
-
-FeatName: Trapmaking
-Group: Heroic, Misc
-Descrip: Benefit: You have learned enough about traps to be able to scavenge parts from them, and with the help of the Free Agents, can craft your own.
-Class: Artificer 4, Rogue 4
-Flags: Unselectable
-
-FeatName: Trap Sense
-Group: Heroic, Misc
-Descrip: This class feat of Barbarians and Rogues grants the following bonuses:}{-+1 on reflex saving throws vs. traps{-+1 Armor Class vs. trap attacks.}The bonuses increase every 3 levels by +1.
-Class: Barbarian 3, Rogue 3
-Flags: Unselectable
-ClassBonus: Barbarian, Rogue
-
-FeatName: Fast Movement
-Group: Heroic, Misc
-Descrip: The Fast Movement class feat allows a Barbarian to move 10% faster.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Indomitable Will
-Group: Heroic, Misc
-Descrip: While in a Barbarian rage, a barbarian of 14th level or higher gains a +4 bonus on Will saves to resist enchantment spells. This bonus stacks with all other modifiers, including the morale bonus on Will saves he also receives during his rage.
-Flags: Unselectable
-Class: Barbarian 14
-
-FeatName: Uncanny Dodge
-Group: Heroic, Misc
-Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
-Class: Barbarian 4, Rogue 4
-
-FeatName: Improved Uncanny Dodge
-Group: Heroic, Misc
-Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
-Class: Barbarian 8, Rogue 8
-
-
-FeatName: Bardic Inspiration
-Group: Heroic, Misc
-Descrip: Activate this ability to Inspire a single target ally or yourself. Gaining more effective Bard levels will increase the duration. The following additional abilities add to the effect of Bardic Inspiration.
-Class: Bard 3
-Flags: Unselectable
-
-FeatName: Suggestion 
-Group: Heroic, Misc
-Descrip: This song charms a single foe that is currently under the effects of the bardic Fascinate song.
-Class: Bard 6
-Flags: Unselectable
-WikiName: Suggestion_(song)
-
-FeatName: Soothing Song
-Group: Heroic, Misc
-Descrip: Sing a song to apply a small positive energy heal to your target and nearby party members. In addition, your Inspire Courage now gives an additional +1 bonus to attack, damage, and fear saves, and +3 Universal Spell Power.
-Class: Bard 8
-Flags: Unselectable
-
-
-FeatName: Song of Freedom
-Group: Heroic, Misc
-Descrip:  This ability is equivalent to the Break Enchantment spell on one ally.
-Class: Bard 12
-Flags: Unselectable
-
-FeatName: Inspire Heroics
-Group: Heroic, Misc
-Descrip:  Gives a +4 Music Bonus to Armor Class, +4% Music Bonus to Dodge, and a +4 Music bonus to all saves.
-Class: Bard 15
-Flags: Unselectable
-
-FeatName: Mass Suggestion 
-Group: Heroic, Misc
-Descrip: This song charms multiple foes that are currently under the effects of the bardic Fascinate song.
-Class: Bard 18
-Flags: Unselectable
-WikiName: Mass_Suggestion_(song)
-
-FeatName: Call Wolf Companion
-Group: Heroic, Misc
-Descrip:  Activate this ability to summon your Wolf Companion
-Class: Druid 1
-Flags: Unselectable
-
-FeatName: Druidic Oath
-Group: Heroic, Misc
-Descrip: All druids take an oath that prohibits them from wearing metal armor, using metal shields or orbs, and using rune arms. Doing so suppresses your druidic abilities. Warforged druids are forbidden from taking armor feats other than Composite Plating.
-Class: Druid 1
-Flags: Unselectable
-
-FeatName: Goodberry
-Group: Heroic, Misc
-Descrip: Transmutes natural matter around you into Goodberries. Goodberries are infused with primal magic, and provide a full meal's nourishment. If eaten in a tavern, they act as tavern food and drink, refilling your health and spell points. When cast, Goodberries appear in your inventory. The higher the caster level, the more nourishing the Goodberries are.
-Class: Druid 1
-Flags: Unselectable
-
-FeatName: Wild Empathy
-Group: Heroic, Misc
-Descrip: Activate this ability to lower an animal's or beast's aggression, effectively mesmerizing them.
-Class: Druid 1, Ranger 1
-Flags: Unselectable
-
-FeatName: Improved Wild Empathy
-Group: Heroic, Misc
-Descrip: This feat allows a ranger to charm an animal (similar to the Charm monster spell) for 5 minutes. It can be used 3 times / rest period with a 60 second cool down.}{-Target: Animal, Magical Beast{-Save: Will
-Class: Druid 7, Ranger 7
-Flags: Unselectable
-
-FeatName: Druid - Spontaneous Casting
-Group: Heroic, Misc
-Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
-Class: Druid 1
-Flags: Unselectable
-WikiName: Druid:_Spontaneous_Casting
-
-FeatName: Venom Immunity
-Group: Heroic, Misc
-Descrip: You are immune to ability score damage from natural poisons. (This has no effect on magical or supernatural poisons.)
-Class: Druid 9
-Flags: Unselectable
-
-
-FeatName: Flurry of Blows
-Group: Heroic, Misc
-Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Armor Class Bonus
-Group: Heroic, Misc
-Descrip: Monks get a stacking bonus to their AC:}{-A passive Wisdom bonus equal to their Wisdom modifier, while unarmored and not using a shield.{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Unarmed Strike
-Group: Heroic, Misc
-Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Monk Stance
-Group: Heroic, Misc
-Descrip: Monk Stances are toggled stances available to monks, or monk multiclasses, as long as they are centered.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Finishing Moves
-Group: Heroic, Misc
-Descrip: Through careful use of their abilities, monks can unlock special finishing moves to perform amazing effects. This button changes into various finishing moves as they become available.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Meditation
-Group: Heroic, Misc
-Descrip: Two times per rest, a monk can meditate to rapidly regain ki. Meditation stabilizes when it reaches over three times his Concentration skill.
-Class: Monk 2
-Flags: Unselectable
-
-FeatName: Still Mind
-Group: Heroic, Misc
-Descrip: Your training and meditation improve your resistance to mind-affecting attacks, granting you a +2 bonus on saving throws against enchantments.
-Class: Monk 3
-Flags: Unselectable
-
-FeatName: Fast Movement
-Group: Heroic, Misc
-Descrip: A Monk gains a cumulative 5% bonus to run speed while centered for every three Monk levels. This bonus stacks with other run speed bonuses. If the monk would become uncentered (by equipping armor, or wielding non-monk weapons, etc) then the bonuses are temporarily lost.
-Class: Monk 3
-Flags: Unselectable
-WikiName:  Fast_Movement_(monk)
-
-FeatName: Slow Fall
-Group: Heroic, Misc
-Descrip: A monk's focus allows him to reduce gravity's effects. This feat can be turned off should he desire normal gravity. The Monk must be centered to use this ability, and its ability to reduce falling damage increases every two levels. In practice, even when this feat is turned off, a monk falls more slowly than he would normally.
-Class: Monk 4
-Flags: Unselectable
-
-FeatName: Purity of Body
-Group: Heroic, Misc
-Descrip: You have gained control over your body's immune system and are now unaffected by all natural diseases.
-Class: Monk 5
-Flags: Unselectable
-
-FeatName: Wholeness of Body
-Group: Heroic, Misc
-Descrip: This feat allows Monks expend 10 Ki to heal some hit points over time in a meditative state. The exact number regained is (Monk level)/2 + Wisdom modifier (rounded up) every two seconds for thirty seconds. This ability is not suitable for use in combat, as the Monk may neither move nor act while regenerating.
-Class: Monk 7
-Flags: Unselectable
-
-FeatName: Diamond Body
-Group: Heroic, Misc
-Descrip: You have firm control over your metabolism and are now immune to ability score damage from natural poison. You gain a +10 racial bonus to saving throws against magical poisons, and do not fail saving rolls against them on a roll of natural 1. (Note, since Update 14, poisons and disease have natural, magical and supernatural qualities. Diamond Body does not protect against unnatural poisons. Also you are not immune to the health damage of natural poison.)
-Class: Monk 11
-Flags: Unselectable
-
-FeatName: Abundant Step
-Group: Heroic, Misc
-Descrip: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk.
-Class: Monk 12
-Flags: Unselectable
-
-FeatName: Diamond Soul
-Group: Heroic, Misc
-Descrip: You gain a racial bonus to Spell Resistance (SR) equal to your Monk level + 10. This stacks with Racial Spell Resistance granted to Drow and Deep Gnomes.
-Class: Monk 13
-Flags: Unselectable
-
-FeatName: Quivering Palm
-Group: Heroic, Misc
-Descrip: The monk delivers a fatal attack by sending waves of vibrations through the target with an open hand strike. The attack costs 30 Ki, and if it hits the victim must pass a Fortitude save (DC 10 + monk level/2 + Wisdom modifier) or die.
-Class: Monk 15
-Flags: Unselectable
-
-FeatName: Timeless Body
-Group: Heroic, Misc
-Descrip: Your soul is balanced. No corrupt influences can possess your body after death - you are immune to the spawn effect of most undead.
-Class: Monk 17
-Flags: Unselectable
-
-FeatName: Empty Body
-Group: Heroic, Misc
-Descrip: You are able to focus your ki and walk the edge of the Plane of Shadow, mimicking the effects of a Shadow Walk spell. While this effect is active, you move much faster than normal and your outline appears faint and you are harder to hit. Attacking another creature or otherwise interacting with objects shunts you back to the Material Plane.
-Class: Monk 19
-Flags: Unselectable
-
-FeatName: Perfect Self
-Group: Heroic, Misc
-Descrip: You have transcended your former race and are now considered a Lawful Outsider. You have gained Damage Reduction 10 / Epic. Warforged retain most living construct traits.
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Perfect Slow Fall
-Group: Heroic, Misc
-Descrip: You have perfected the ability to recover from a fall unharmed. You never take damage from falling no matter how far you fall.
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Shining Star
-Group: Heroic, Misc
-Descrip: Finishing Move: Any Way of Earth attack → any Way of Air attack → any Way of Fire attack → Finishing Move activator.}You use the combined power of Earth, Wind, and Fire to set up harmonic vibrations within your enemy that force them to dance.}A successful Will save negates this effect (DC 10 + Monk level + Wisdom modifier + Stunning Bonuses).
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Ki Strike
-Group: Heroic, Misc
-Descrip: Ki Strike
-Flags: Unselectable
-Selector: Magic, Lawful, Adamantine
-SelectorName: Magic
-Descrip: All of your unarmed melee attacks are empowered with ki and are considered magical for damage reduction purposes.
-Class: Monk 4
-WikiName: Ki Strike: Magic
-SelectorName: Lawful
-Descrip: All your unarmed melee attacks are considered Lawful for purposes of bypassing Damage Reduction.
-Class: Monk 10
-WikiName: Ki Strike: Lawful
-SelectorName: Adamantine
-Descrip: All your unarmed melee attacks are considered Adamantine for purposes of bypassing Damage Reduction.
-Class: Monk 16
-WikiName: Ki Strike: Adamantine
-
-FeatName: Aura of Good
-Group: Heroic, Misc
-Descrip: This Paladin class feature grants a +1 bonus to AC and saving throws to all allies within range.
-Class: Paladin 1
-Flags: Unselectable
-
-FeatName: Aura of Good
-Group: Heroic, Misc
-Descrip: This Paladin class feature grants a +1 bonus to AC and saving throws to all allies within range.
-Class: Paladin 1
-Flags: Unselectable
-
-FeatName: Divine Grace
-Group: Heroic, Misc
-Descrip: At 2nd level, a Paladin gains a bonus equal to his or her Charisma modifier (if not negative) on all saving throws.{Divine Grace is capped at 2+(3 x paladin level). For multiclassing, this means 2 levels of Paladin would at best grant a max of +8 to saves (2 + (3x2)).
-Class: Paladin 2
-Flags: Unselectable
-
-FeatName: Aura of Courage
-Group: Heroic, Misc
-Descrip: Beginning at 3rd level, a Paladin is immune to fear (magical or otherwise).}Each ally within 10 feet of the paladin gains a +4 morale bonus on saving throws against fear effects for 9 seconds. This ability functions while the paladin is conscious, but not if she is unconscious or dead.
-Class: Paladin 3
-Flags: Unselectable
-
-FeatName: Divine Health
-Group: Heroic, Misc
-Descrip: This class feature makes the Paladin immune to all diseases.}As of Update 14, this feat makes the Paladin immune to natural, magical, and supernatural diseases.
-Class: Paladin 3
-Flags: Unselectable
-
-FeatName: Fear Immunity
-Group: Heroic, Misc
-Descrip: A paladin is immune to fear effects.
-Class: Paladin 3
-Flags: Unselectable
-
-FeatName: Remove Disease
-Group: Heroic, Misc
-Descrip: Cures all diseases on an ally.
-Class: Paladin 3
-Flags: Unselectable
-
-FeatName: Wilderness Lore
-Group: Heroic, Misc
-Descrip: This feat grants represents your knowledge of the wilderness. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Barbarian 1, Druid 1, Ranger 1, Bard 1
-Flags: Unselectable
-
-FeatName: Hide in Plain Sight
-Group: Heroic, Misc
-Descrip: You are a master when it comes to hiding in places others think impossible. You gain +1 Hide and +1 Move Silently for every three seconds you stand still, up to +5. While you are sneaking and standing still (for 3 seconds), enemies don't gain Spot bonuses until they get much closer to you, and the bonuses are smaller.
-Class: Ranger 17
-Flags: Unselectable
-
-FeatName: Dismiss Charm
-Group: Heroic, Spellcasting
-Descrip: Activate this short-ranged ability while targeting a charmed, commanded, controlled, or dominated enemy that is under your control to dispel the controlling effect.
-Class: Wizard 1, Sorcerer 1, Warlock 1, Bard 1, Ranger 1, Druid 1, Cleric 1, Favored Soul 1, Artificer 1, Alchemist 1
-Flags: Unselectable
-
-FeatName: Inscribe Scroll
-Group: Heroic, Spellcasting
-Descrip: You are able to inscribe spells from scrolls into your spellbook. This action will destroy the scroll.
-Class: Wizard 1, Sorcerer 1, Warlock 1, Bard 1, Ranger 1, Druid 1, Cleric 1, Favored Soul 1, Artificer 1, Alchemist 1
-Flags: Unselectable
-
-FeatName: Expanded Clip
-Group: Epic, Range
-Descrip: Your repeating crossbows have 1 extra shot in their clips.
-Level: 21
-Class: Artificer 12
-
-FeatName: Epic Barbarian Damage Reduction
-Group: Epic, Defense
-Descrip: Your Barbarian Damage Reduction is increased by 1%.}You also gain +5 Physical and Magical Resistance Rating
-Level: 21
-Class: Barbarian 12
-
-FeatName: Perfect Two Weapon Fighting
-Abbreviation: Perfect TWF
-Group: Destiny, Melee
-Descrip: Your offhand attacks now doublestrike at 65% of the rate of your main hand, versus the base 50%, up to a maximum of 65%.
-Level: 22
-All: Two Weapon Fighting
-
-FeatName: Doublestrike
-Group: Destiny, Melee
-WikiName: Doublestrike_(epic_destiny_feat)
-Descrip: +5% Doublestrike.
-Level: 22
-
-FeatName: Crush Weakness
-Group: Destiny, Melee
-Descrip: +15% damage versus the Helpless
-Level: 25
-
-FeatName: Epic Spell Power
-Group: Destiny, Spellcasting
-Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% all other types of spell critical damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
-Level: 22
-Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
-
-FeatName: Epic Power
-Group: Epic, Misc
-Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}-1% to the Spell Point cost of all spells}This feat is automatically given to all characters each time they gain an Epic level.}The spell point cost reduction does not apply to Spell-like abilities.
-Flags: Unselectable
-Level: 21
-
-FeatName: Epic Knowlege
-Group: Epic, Spellcasting
-Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
-Flags: Unselectable
-Level: 22
-
-FeatName: Feline Agility
-Group: Misc
-Descrip: After standing still for 6 seconds, when you move again you gain a +20% Action Boost bonus to Movement Speed for 6 seconds.
-Race: Required, Tabaxi, Trailblazer
-
-FeatName: Disease Immunity
-Group: Misc
-Class: Blightcaster 1
-Flags: Unselectable
-
-FeatName: Venom Immunity
-Group: Misc
-Class: Blightcaster 5
-Flags: Unselectable
-
-
-FeatName: Blightcaster Wild Shape
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 2 and 5 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
-Class: Blightcaster 2
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 2
-Selector: Plague Wolf
-
-FeatName: Blightcaster Wild Shape 2
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 11 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
-Class: Blightcaster 11
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 11
-Selector: Blighted Wolf
-
-FeatName: Blightcaster Elemental Kin 1
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 4 and 8 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
-Class: Blightcaster 4
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 4, 8
-Selector: Thorn-Kin, Hive Keeper
-SelectorName: Thorn-Kin
-Descrip: You create a suit of living thorny wood around your body armoring you from harm. Note: Note this will be gearset over-ride instead of an animal form so the player will fight with their regular weapons. Basically you become a knight in plate mail made of wood and thorns.}{-+1 bonus to caster level and max caster level of Physical and Poison spells}{-10% exceptional bonus to armor class and 50% fortification.}{-You gain access to the thorn imbue.}{-10% vulnerability to fire damage
-SelectorName: Hive Keeper
-Descrip: You give part of yourself to the hive, gaining insect like reflexes and senses. Your bodily fluids become poisonous to others, and the swarm is always close.}{-+1 bonus to caster level and max caster level of Poison and Acid Spells}{-You gain 25% concealment and Evasion.}{-Your reflex saves are increased by 1 for every 3 druid levels.}{-10% vulnerability to cold. Your diplomacy checks are reduced by 5 (Jeff Goldblum early in The Fly)
-
-
-FeatName: Blightcaster Elemental Kin 2
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 13 and 17 a Blightcaster may use their 'Wild Shape' feat to change into an animal.
-Class: Blightcaster 13
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 13, 17
-Selector: Thorn Knight, Hive Master
-SelectorName: Thorn Knight
-Descrip: A more advanced version of Thorn Kin where you actually become a plant under the armor.}{-You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water.}{-+3 bonus to caster level and max caster level of Physical and Poison spells}{-You gain 10% absorption against piercing damage and 5% absorb against blunt damage.}{-You gain +2 imbue dice}{-10% exceptional bonus to armor class and 100% fortification.}{-15% vulnerability to fire damage
-SelectorName: Hive Master
-Descrip: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm.}{-You are considered vermin for the purposes of immunities and are immune to mind effects and knock down.}{-+3 bonus to caster level and max caster level of Poison and Acid Spells}{-You are ethereal to monsters while tumbling.}{-You gain 50% concealment as displacement and Improved Evasion.}{-You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10)}{-15% vulnerability to cold and -15 on diplomacy checks (Yeah Jeff is just pretty creepy now).

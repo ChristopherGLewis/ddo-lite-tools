@@ -376,7 +376,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":465C
+         DragIcon        =   "frmOverview.frx":4E5C
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -394,7 +394,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":4F26
+         DragIcon        =   "frmOverview.frx":5726
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -412,7 +412,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":57F0
+         DragIcon        =   "frmOverview.frx":5FF0
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -430,7 +430,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":60BA
+         DragIcon        =   "frmOverview.frx":68BA
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -448,7 +448,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":6984
+         DragIcon        =   "frmOverview.frx":7184
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -466,7 +466,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":724E
+         DragIcon        =   "frmOverview.frx":7A4E
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -484,7 +484,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":7B18
+         DragIcon        =   "frmOverview.frx":8318
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -502,7 +502,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":83E2
+         DragIcon        =   "frmOverview.frx":8BE2
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -520,7 +520,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":8CAC
+         DragIcon        =   "frmOverview.frx":94AC
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -538,7 +538,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":9576
+         DragIcon        =   "frmOverview.frx":9D76
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -556,7 +556,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":9E40
+         DragIcon        =   "frmOverview.frx":A640
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -574,7 +574,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":A70A
+         DragIcon        =   "frmOverview.frx":AF0A
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -592,7 +592,7 @@ Begin VB.Form frmOverview
          AutoRedraw      =   -1  'True
          BackColor       =   &H80000005&
          BorderStyle     =   0  'None
-         DragIcon        =   "frmOverview.frx":AFD4
+         DragIcon        =   "frmOverview.frx":B7D4
          DragMode        =   1  'Automatic
          ForeColor       =   &H80000008&
          Height          =   624
@@ -1768,6 +1768,10 @@ Private Sub DrawIcons()
         End If
         With Me.picClass(i)
             Me.picClass(i).PaintPicture LoadResPicture(strResource, vbResBitmap), 0, 0, .Width, .Height
+            'Me.picClass(i).Picture LoadResPicture(strResource, vbResBitmap)
+            'copy the pic to the drag icon
+            ' Me.picClass(i).Refresh
+            'Me.picClass(i).DragIcon = Me.picClass(i).Picture
         End With
         If enClassState = cseDisabled Then
             GrayScale Me.picClass(i)

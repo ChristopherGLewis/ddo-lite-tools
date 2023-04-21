@@ -220,7 +220,7 @@ SpellName: Chain Missiles
 Descrip: A missile of magical energy darts forth and unerringly strikes its target inflicting 1d2+3 force damage. For every 2 caster levels beyond first you gain an additional missile, up to 10 missiles. (At level 19.) After striking your target, the missiles explode outwards, striking other creatures near the primary target.
 
 SpellName: Chaos Hammer
-Descrip: This spell deals 1d6+8 points of chaotic damage per caster level to lawful creatures and slows them for 6d6 seconds. A successful Will save reduces the damage by half and negates the slow effect. This spell deals only half damage to creatures who are Neutral, and are not slowed. This spell deals no damage to Chaotic creatures, and cannot be cast by Lawful casters.
+Descrip: This spell deals 1d6+4 points of chaotic damage per caster level to lawful creatures and slows them for 6d6 seconds. A successful Will save reduces the damage by half and negates the slow effect. This spell deals only half damage to creatures who are Neutral, and are not slowed. This spell deals no damage to Chaotic creatures, and cannot be cast by Lawful casters.
 
 SpellName: Charm Animal
 Descrip: Charms a hostile Animal, Magical Beast or Vermin which will fight as a trusted friend and ally. Charmed animals get an additional save every 15 to 30 seconds. A successful Will save negates this effect. Mindless targets cannot save, but the duration is halved.
@@ -481,7 +481,7 @@ SpellName: Elemental Toughness
 Descrip: Valid Forms: Fire Elemental, Water Elemental. Draw elemental matter into your form, toughening your body and gaining 1 PRR per Druid level. Lasts 30 seconds per Druid level. Can be Quickened and Extended.
 
 SpellName: Elemental Weapons
-Descrip: Multi selector: Your target's currently equipped weapons gain Hit Effect: 1d6 elemental damage of your choice. An item can have only one temporary item enchantment at a time.
+Descrip: Your target gains +1 bonus Imbue Dice. An item can have only one temporary item enchantment at a time.
 
 SpellName: Empty Bottle
 Descrip: 1d6+2 Bludgeoning damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
@@ -672,7 +672,7 @@ SpellName: Greater Dispel Magic
 Descrip: Removes ongoing spells that have been cast on a target. You must make a caster level check of 1d20+your caster level (Maximum caster level 20.) of DC 11+spell's caster level to remove an effect. In addition, this spell can be used to sever the connection between a summoner and his or her summoned monster, causing the summoned creature to attack unpredictably, possibly turning on its summoner.If cast on a spell ward trap, this spell will reduce the level of the trap by 1 to 4 (1d4 levels). If the level of the trap is reduced to 0, the trap is disabled.
 
 SpellName: Greater Elemental Weapons
-Descrip: Multi selector: Your target's currently equipped weapons gain Hit Effect: 3d6 elemental damage of your choice. An item can have only one temporary item enchantment at a time.
+Descrip: Your target gains +2 bonus Imbue Dice. An item can have only one temporary item enchantment at a time.
 
 SpellName: Greater Evolution
 Descrip: Multi selector: Grant +4 Alchemical Bonus to your select ability score. You may only have one Alchemical Mutation at a time. This lasts for 1 minute per Caster Level
@@ -768,7 +768,7 @@ SpellName: Holy Aura
 Descrip: Wards creatures allies with +4 deflection bonuses to AC, +4 resistance bonuses to saves, and immunity to enchantment and charm spells.
 
 SpellName: Holy Smite
-Descrip: Damages targets with holy power. Deals 1d6+8 holy damage per caster level to Evil creatures and are Blinded for 6 seconds. This spell has no affect on Good targets, and Neutral targets take half damage. Will save for half damage and to negate the Blinded condition. This spell can only be cast by Good or Neutral casters, it has no effect when cast by an Evil caster.
+Descrip: Damages targets with holy power. Deals 1d6+4 holy damage per caster level to Evil creatures and are Blinded for 6 seconds. This spell has no affect on Good targets, and Neutral targets take half damage. Will save for half damage and to negate the Blinded condition. This spell can only be cast by Good or Neutral casters, it has no effect when cast by an Evil caster.
 
 SpellName: Holy Sword
 Descrip: While you are enchanted with Holy Sword, any weapons in your hands gain +1 to their Enhancement bonus and +1 Competence bonus to Critical Threat Range and Critical Damage Multiplier. This does not apply to shields, orbs, or Rune Arms.
@@ -805,6 +805,9 @@ Descrip: You create a destructive resonance field around yourself, causing nearb
 SpellName: Incendiary Cloud
 Descrip: A cloud of roiling smoke and white-hot embers, obscuring the sight of all targets within its effect and dealing 2d4 + 1 per caster level of fire damage every 2 seconds. Creatures entering the cloud must save vs reflex or become blinded until they leave the cloud.
 Flags: Rare
+
+SpellName: Incinerating Wave
+Descrip: Creates an incinerating wave of ki fire. This effect does 1d6+3 fire and force damage per caster level. This damage scales with 200% Melee Power.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
 
 SpellName: Inflict Critical Damage
 Descrip: Deals 4d6+8 damage plus 1d4 per caster level (Maximum caster level 20.) to a construct.
@@ -858,6 +861,12 @@ SpellName: Jump
 WikiName: Jump (spell)
 Descrip: Gives an allied creature a +10 enhancement bonus to Jump skill for 1 minute per caster level. This bonus increases to +20 at 5th level, and +30 at 9th level. However creatures will see no improvement after obtaining a Jump skill of 40.
 
+SpellName: Ki Bolt
+Descrip: You fire a ki blast that deals 1d6 fire and 1d4 force damage per caster level to an opponent. This damage scales with 300% Melee Power. This ability has double normal spell range.}{Possessing levels in Sacred Fist adds an additional 1d6+? light damage per caster level. This includes the Henshin Mystic SLA, although obviously caster levels will not carry over.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
+
+SpellName: Ki Explosion
+Descrip: Waves of fire emanate from your body, dealing 1d6+3 fire and force damage per caster level to enemies in your vicinity, scaling with 300% Melee Power. For 20 seconds after you cast this spell, you benefit from Fire Shield: Hot, which prevents 50% of your incoming Cold damage and deals a small amount of Fire damage to attackers that strike you in melee.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
+
 SpellName: Knock
 Descrip: Unlocks locked doors and chests as if a Rogue with a Open Lock skill of caster level+casting ability modifier (Intelligence for Wizards, and Charisma for Sorcerers) was attempting to pick the lock.
 
@@ -867,7 +876,6 @@ Flags: Rare
 
 SpellName: Lesser Evolution
 Descrip: Spell selector - pick an animal from the 6 animal stat/types (bull for str, cat for dex, etc) and gain +1 Alchemical bonus to this stat. You can only have one Alchemical Mutation at a time regardless of tier. Self only spell.
-
 
 SpellName: Liquid Courage
 Descrip: Drink a personal vial of glowing golden liquid that grants incredible courage. This potion grants the effect of the Heroism spell: A +2 morale bonus on attack rolls, saving throws, and skill checks. This lasts for 1 minute per Caster Level.
@@ -987,6 +995,10 @@ SpellName: Mass Fox's Cunning
 WikiName: Fox's Cunning, Mass
 Descrip: Casts Fox's Cunning on multiple targets, giving a +4 enhancement bonus to Intelligence to each of them for 1 minute per caster level.
 
+SpellName: Mass Freedom of Movement
+WikiName: Freedom of Movement, Mass
+Descrip: Casts Freedom of Movement on multiple targets. This spell enables an ally to move and attack normally for the duration of the spell, even under the influence of magic or conditions that normally impedes movement, such as Entangled, Paralyzed, or Solid Fog. (Note - Earthgrab is no longer a Paralyzed effect, so is no longer cured or prevented by Freedom of Movement).
+
 SpellName: Mass Greater Vigor
 WikiName: Greater Vigor, Mass
 Descrip: Casts Greater Vigor on multiple targets. A positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +13 at caster level 39), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
@@ -1097,6 +1109,10 @@ SpellName: Mass Suggestion
 WikiName: Suggestion, Mass (spell)
 Descrip: Casts Suggestion on multiple enemies. The actions of affected enemies are influenced by you, allowing you to suggest that they fight as your allies for 6 seconds per caster level. A successful Will save negates this effect.
 
+SpellName: Mass True Seeing
+WikiName: True Seeing, Mass
+Descrip: Casts True Seeing on multiple targets. This allows the target to find secret doors that have a Search DC of 30 or less, see the exact location of creatures hidden by Blur or Displacement effects, and see Invisible creatures or objects normally.
+
 SpellName: Mass Vigor
 WikiName: Vigor, Mass
 Descrip: Casts Vigor on multiple targets. A positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +11 at level 33), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
@@ -1180,7 +1196,7 @@ SpellName: Ooze Puppet
 Descrip: Telekinetically controls the actions of an enemy Ooze, forcing it to change sides. The target is slowed by this spell, but gains additional Fortitude saves every 60 seconds to break free. While under the effect of this spell, the Ooze can't split.
 
 SpellName: Order's Wrath
-Descrip: Lawful power smites your targets. Only Chaotic and Neutral creatures are harmed by the spell. The spell deals 1d6+8 points of damage per caster level to a Chaotic creature and causes it to be Dazed for 6 seconds. A successful Will save reduces damage to half and negates the Dazed. The spell deals only half damage to creatures who are neither Lawful nor Chaotic, and they are not Dazed. This spell can only be cast by Lawful or Neutral casters, it has no effect when cast by a Chaotic caster.
+Descrip: Lawful power smites your targets. Only Chaotic and Neutral creatures are harmed by the spell. The spell deals 1d6+4 points of damage per caster level to a Chaotic creature and causes it to be Dazed for 6 seconds. A successful Will save reduces damage to half and negates the Dazed. The spell deals only half damage to creatures who are neither Lawful nor Chaotic, and they are not Dazed. This spell can only be cast by Lawful or Neutral casters, it has no effect when cast by a Chaotic caster.
 
 SpellName: Otiluke's Freezing Sphere
 Descrip: A frigid globe of cold energy streaks towards a target. On impact it explodes, causing 1d6+6 cold damage per caster level (Maximum caster level 20) to targets in the area. A successful Reflex save reduces the damage by half.
@@ -1366,6 +1382,9 @@ Descrip: Valid Forms: Bear, Dire Bear. With each blow, your fury rises. For the 
 SpellName: Roar
 WikiName: Roar (spell)
 Descrip: Valid Forms: Bear, Dire Bear. An Animal becomes Paralyzed and freezes in place. It is aware, but it can take no actions for a maximum of 6 seconds per caster level. A successful Will save negates. The Animal may attempt to make a new Will save every 3 seconds.
+
+SpellName: Sacred Fist Empowerment
+Descrip: Grants you +3 Imbue dice and allows your critical hits to deal 1d20 Bane damage per Imbue dice, scaling with 100% of your Melee Power.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
 
 SpellName: Salt Crystals
 Descrip: Smash a bottle beneath your feet that rapidly crystallizes, trapping nearby enemies that fail a Fortitude save in brittle salt. They are considered Dazed for 6 seconds, and any damage will remove the salt.

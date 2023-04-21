@@ -490,7 +490,7 @@ Private Sub InitGrantedFeats()
     Dim lngClassLevel As Long
     Dim lngLevel As Long
     Dim lngGranted As Long
-    Dim lngClassLevels(1 To 20)  As Long
+    Dim lngClassLevels(1 To MAX_CLASSES)  As Long  'not 20 heroic,
     Dim blnDwarvenAxe As Boolean
     
     If build.Class(1) = ceAny Then Exit Sub

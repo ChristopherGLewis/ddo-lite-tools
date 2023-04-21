@@ -91,12 +91,39 @@ IconicClass: Fighter
 Stats: 8, 8, 8, 8, 8, 8
 Flags: BonusFeat, BonusSkill
 
+RaceName: Razorclaw Shifter
+Abbreviation: Razorclaw
+Type: Iconic
+IconicClass: Barbarian
+Stats: 10, 8, 8, 6, 8, 8
+Flags: BonusFeat
+GrantedFeats1: Exotic Weapon: Handwraps
+GrantedFeats1: Dismiss Rage
+
 RaceName: Shadar-kai
 Abbreviation: Shadar
 Type: Iconic
 IconicClass: Rogue
 Stats: 8, 10, 8, 8, 8, 6
 GrantedFeats1: Spiked Chain Attack
+
+RaceName: Shifter
+Type: Premium
+Stats: 8, 10, 8, 6, 8, 8
+Flags: BonusFeat
+GrantedFeats1: Dismiss Rage
+
+RaceName: Tabaxi
+Type: Premium
+Stats: 8, 10, 8, 8, 8, 8
+GrantedFeats1: Feline Agility
+
+RaceName: Tabaxi Trailblazer
+Abbreviation: Trailblazer
+Type: Iconic
+IconicClass: Monk
+Stats: 8, 10, 8, 8, 8, 8
+GrantedFeats1: Feline Agility
 
 RaceName: Tiefling
 Abbreviation: Tief
@@ -122,27 +149,3 @@ Type: Free
 Stats: 8, 10, 8, 6, 8, 8
 GrantedFeats1: Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Longbow, Martial Weapon: Shortbow
 Trees: Elf-Arcane Archer
-
-RaceName: Shifter
-Type: Premium
-Stats: 8, 10, 8, 6, 8, 8
-Flags: BonusFeat
-
-RaceName: Razorclaw Shifter
-Abbreviation: Razorclaw
-Type: Iconic
-IconicClass: Barbarian
-Stats: 10, 8, 8, 6, 8, 8
-Flags: BonusFeat
-GrantedFeats1: Exotic Weapon: Handwraps
-
-RaceName: Tabaxi
-Type: Premium
-Stats: 8, 10, 8, 8, 8, 8
-GrantedFeats1: Feline Agility
-
-RaceName: Tabaxi Trailblazer
-Abbreviation: Trailblazer
-Type: Iconic
-Stats: 8, 10, 8, 8, 8, 8
-GrantedFeats1: Feline Agility

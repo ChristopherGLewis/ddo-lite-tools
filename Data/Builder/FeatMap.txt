@@ -108,7 +108,6 @@ Energy Absorption: Electricity	Energy Resistance: Electricity	Energy Absorption:
 Energy Absorption: Fire	Energy Resistance: Fire	Energy Absorption: Fire
 Energy Absorption: Sonic	Energy Resistance: Sonic	Energy Absorption: Sonic
 Enlarge Spell	Enlarge Spell	Enlarge Spell
-Epic Pact Dice	Arcane Sphere: Epic Arcane Eldritch Blast	Epic Arcane Eldritch Blast
 Epic Damage Reduction	Epic: Epic Damage Reduction	Epic Damage Reduction
 Epic Eldritch Blast	Epic: Epic Eldritch Blast	Epic Eldritch Blast
 Epic Fortitude	Epic: Epic Fortitude	Epic Fortitude

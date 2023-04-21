@@ -9,12 +9,12 @@ GrantedFeats1: Magical Training, Inscribe Alchemy Recipe, Arcane Lore, Alchemica
 GrantedFeats2: Insightful Reflexes
 GrantedFeats2: Artificer Knowlege: Potions
 GrantedFeats3: Alchemy on the Run
-GrantedFeats5:  Artificer Knowlege: Potions
+GrantedFeats5: Artificer Knowlege: Potions
 GrantedFeats6: Multitude of Missiles
-GrantedFeats7: PoisonBlood
-GrantedFeats8:  Artificer Knowlege: Potions
-GrantedFeats11:  Artificer Knowlege: Potions
-GrantedFeats14:  Artificer Knowlege: Potions
+GrantedFeats7: Poisonblood
+GrantedFeats8: Artificer Knowlege: Potions
+GrantedFeats11: Artificer Knowlege: Potions
+GrantedFeats14: Artificer Knowlege: Potions
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
@@ -120,17 +120,17 @@ Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Hide, Jump, Listen, Mo
 GrantedFeats1: Armor Proficiency: Light, Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Shortsword, Martial Weapon: Shortbow
 GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore
-GrantedFeats1: Inspire Courage, Dismiss Charm
+GrantedFeats1: Bardic Ballad, Inspire Courage, Dismiss Charm
 GrantedFeats3: Bardic Inspiration
-GrantedFeats6: Suggestion
-GrantedFeats9: Inspire Greatness
+GrantedFeats6: Suggestion Song
 GrantedFeats8: Soothing Song, Improved Inspire Courage
+GrantedFeats9: Inspire Greatness
 GrantedFeats12: Song of Freedom
 GrantedFeats14: Improved Inspire Courage
 GrantedFeats15: Inspire Heroics
-GrantedFeats18: Mass Suggestion
+GrantedFeats18: Mass Suggestion Song
 GrantedFeats20: Improved Inspire Courage
-Trees: Swashbuckler, Warchanter, Spellsinger
+Trees: Warchanter, Spellsinger, Swashbuckler
 HealingSpell: 1
 MaxSpellLevel: 6
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -149,7 +149,7 @@ SpellList6: Greater Shout, Heroes' Feast, Mass Cat's Grace, Mass Charm Monster, 
 
 ClassName: Cleric
 Initial: C, Cl, Cleric, Clr
-DisallowedClasses: DarkApostate
+DisallowedClasses: Dark Apostate
 Color: Yellow
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
@@ -157,7 +157,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Turn Undead,Religious Lore
+GrantedFeats1: Magical Training, Turn Undead, Religious Lore
 ClassFeat: 1, 2, 6
 Trees: Divine Disciple, Radiant Servant, Warpriest
 HealingSpell: 1
@@ -178,13 +178,14 @@ SpellList3: Bestow Curse, Blindness, Contagion, Cure Serious Wounds, Dispel Magi
 SpellList4: Chaos Hammer, Cure Critical Wounds, Death Ward, Dismissal, Divine Power, Freedom of Movement, Holy Smite, Inflict Critical Wounds, Mass Shield of Faith, Neutralize Poison, Order's Wrath, Panacea, Poison, Recitation, Restoration, Summon Monster IV, Symbol of Flame, Unholy Blight
 SpellList5: Break Enchantment, Divine Punishment, Flame Strike, Greater Command, Mass Cure Light Wounds, Mass Inflict Light Wounds, Protection from Elements, Raise Dead, Slay Living, Spell Resistance, Stalwart Pact, Summon Monster V, Symbol of Pain, True Seeing
 SpellList6: Banishment, Blade Barrier, Cometfall, Create Undead, Greater Dispel Magic, Greater Glyph of Warding, Harm, Heal, Heroes' Feast, Mass Bear's Endurance, Mass Bull's Strength, Mass Cure Moderate Wounds, Mass Eagle's Splendor, Mass Inflict Moderate Wounds, Mass Owl's Wisdom, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Undeath to Death, Word of Recall
-SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
-SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Summon Monster VIII, Symbol of Death
+SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Freedom of Movement, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
+SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Mass True Seeing, Summon Monster VIII, Symbol of Death
 SpellList9: Celestial Bombardment, Divine Wrath, Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
 MandatorySpells: Cure Light Wounds, Cure Moderate Wounds, Cure Serious Wounds, Cure Critical Wounds, Mass Cure Light Wounds, Mass Cure Moderate Wounds, Mass Cure Serious Wounds, Mass Cure Critical Wounds
 
 ClassName: Druid
 Initial: D, Dr, Druid, Dru
+DisallowedClasses: Blightcaster
 Color: Green
 Alignment: Lawful Neutral, Chaotic Neutral, True Neutral, Neutral Good
 BAB: 0.75
@@ -192,7 +193,7 @@ SkillPoints: 4
 Skills: Concentration, Diplomacy, Heal, Intimidate, Listen, Spellcraft, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Martial Weapon: Scimitar
-GrantedFeats1: Magical Training, Call Wolf Companion, Druidic Oath, Goodberry, Wild Empathy, Druid - Spontaneous Casting
+GrantedFeats1: Magical Training, Call Wolf Companion, Druidic Oath, Goodberry, Wild Empathy, Druid Spontaneous Casting
 GrantedFeats1: Wilderness Lore
 GrantedFeats7: Improved Wild Empathy
 GrantedFeats9: Venom Immunity
@@ -217,7 +218,7 @@ SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Domin
 SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Lesser Vigor, Mass Longstrider, Rising Fury, Summon Nature's Ally IV
 SpellList5: Animal Growth, Call Lightning Storm, Cold Breath, Cure Critical Wounds, Death Ward, Greater Vigor, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Wall of Fire
 SpellList6: Fire Seeds, Fire Shield, Frostbite, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Vigor, Summon Nature's Ally VI, Tenacious Pack, Tremor, Word of Balance
-SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Insidious Spores, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
+SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Insidious Spores, Mass Freedom of Movement, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
 SpellList8: Earthquake, Finger of Death, Fires of Purity, Heal, Howl of Terror, Ice Flowers, Stormrage, Summon Nature's Ally VIII, Sunburst, Unstoppable
 SpellList9: Anger of the Noonday Sun, Mantle of the Icy Soul, Mass Regenerate, Snowslide, Storm of Vengeance, Summon Nature's Ally IX, Tsunami
 FreeSpells: Summon Nature's Ally I, Summon Nature's Ally II, Summon Nature's Ally III, Summon Nature's Ally IV, Summon Nature's Ally V, Summon Nature's Ally VI, Summon Nature's Ally VII, Summon Nature's Ally VIII, Summon Nature's Ally IX
@@ -253,8 +254,8 @@ SpellList3: Bestow Curse, Blindness, Contagion, Cure Serious Wounds, Dispel Magi
 SpellList4: Chaos Hammer, Cure Critical Wounds, Death Ward, Dismissal, Divine Power, Freedom of Movement, Holy Smite, Inflict Critical Wounds, Mass Shield of Faith, Neutralize Poison, Order's Wrath, Panacea, Poison, Recitation, Restoration, Summon Monster IV, Symbol of Flame, Unholy Blight
 SpellList5: Break Enchantment, Divine Punishment, Flame Strike, Greater Command, Mass Cure Light Wounds, Mass Inflict Light Wounds, Protection from Elements, Raise Dead, Slay Living, Spell Resistance, Stalwart Pact, Summon Monster V, Symbol of Pain, True Seeing
 SpellList6: Banishment, Blade Barrier, Cometfall, Create Undead, Greater Dispel Magic, Greater Glyph of Warding, Harm, Heal, Heroes' Feast, Mass Bear's Endurance, Mass Bull's Strength, Mass Cure Moderate Wounds, Mass Eagle's Splendor, Mass Inflict Moderate Wounds, Mass Owl's Wisdom, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Undeath to Death, Word of Recall
-SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
-SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Summon Monster VIII, Symbol of Death
+SpellList7: Destruction, Greater Restoration, Mass Cure Serious Wounds, Mass Freedom of Movement, Mass Inflict Serious Wounds, Mass Protection from Elements, Mass Restoration, Mass Spell Resistance, Resurrection, Summon Monster VII, Symbol of Stunning, Symbol of Weakness
+SpellList8: Death Pact, Fire Storm, Holy Aura, Mass Cure Critical Wounds, Mass Death Ward, Mass Inflict Critical Wounds, Mass True Seeing, Summon Monster VIII, Symbol of Death
 SpellList9: Celestial Bombardment, Divine Wrath, Energy Drain, Implosion, Mass Heal, Summon Monster IX, True Resurrection
 
 ClassName: Fighter
@@ -281,7 +282,7 @@ GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, 
 GrantedFeats2: Armor Class Bonus, Evasion, Meditation
 GrantedFeats3: Still Mind, Fast Movement
 GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike
-GrantedFeats5:Armor Class Bonus, Purity of Body
+GrantedFeats5: Armor Class Bonus, Purity of Body
 GrantedFeats6: Adept of Forms, Fast Movement, Slow Fall
 GrantedFeats7: Wholeness of Body
 GrantedFeats8: Slow Fall, Unarmed Strike
@@ -392,9 +393,6 @@ GrantedFeats15: Sneak Attack, Trap Sense
 GrantedFeats17: Sneak Attack
 GrantedFeats18: Trap Sense
 GrantedFeats19: Sneak Attack
-
-
-
 ClassFeat: 10, 13, 16, 19
 Trees: Assassin, Mechanic, Thief-Acrobat
 
@@ -431,6 +429,7 @@ SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monste
 
 ClassName: Warlock
 Initial: W, Wa, Warlock, Wlk
+DisallowedClasses: Acolyte
 Color: Purple
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
@@ -464,6 +463,10 @@ SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Mons
 PactSpells: Fey, Obscuring Mist, Blindness, Slow, Greater Dispel Magic, Otto's Sphere of Dancing, Otto's Irresistible Dance
 PactSpells: Fiend, Command, Rage, Fire Shield, Binding Chain, Power Word: Blind, Howl of Terror
 PactSpells: Great Old One, Entangle, Knock, Phantasmal Killer, Dominate Person, Mass Suggestion, Power Word: Kill
+PactSpells: Celestial, Bless, Soundburst, Magic Circle Against Evil, Prayer, Holy Aura, Freedom of Movement
+PactSpells: Abyss, Mage Armor, Spawn Screen, Halt Undead, Death Aura, Symbol of Pain, Rend the Soul
+PactSpells: Carceri Storm, Merfolk's Blessing, Gust of Wind, Creeping Cold, Ice Storm, Niac's Biting Cold, Greater Creeping Cold
+
 
 ClassName: Wizard
 Initial: W, Wz, Wizard, Wiz
@@ -509,11 +512,11 @@ GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier
 GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore
 GrantedFeats1: Inspire Courage, Dismiss Charm, Magical Training
 GrantedFeats3: Bardic Inspiration
-GrantedFeats6: Suggestion
+GrantedFeats6: Suggestion Song
 GrantedFeats8: Soothing Song
 GrantedFeats12: Song of Freedom
 GrantedFeats15: Inspire Heroics
-GrantedFeats18: Mass Suggestion
+GrantedFeats18: Mass Suggestion Song
 Trees: Stormsinger, Warchanter, Spellsinger
 HealingSpell: 1
 MaxSpellLevel: 6
@@ -531,7 +534,7 @@ SpellList4: Break Enchantment, Cure Critical Wounds, Dimension Door, Dominate Pe
 SpellList5: Greater Dispel Magic, Greater Heroism, Mass Cure Light Wounds, Mass Suggestion, Mind Fog, Shadow Walk, Summon Monster V, Chain Lightning
 SpellList6: Greater Shout, Heroes' Feast, Mass Cat's Grace, Mass Charm Monster, Mass Cure Moderate Wounds, Mass Eagle's Splendor, Mass Fox's Cunning, Otto's Irresistible Dance, Summon Monster VI, Thunderstroke
 
-ClassName: DarkApostate
+ClassName: Dark Apostate
 Initial: D, DA, DarkA, Drk
 Color: Yellow
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
@@ -569,6 +572,7 @@ MandatorySpells: Inflict Light Wounds, Inflict Moderate Wounds, Inflict Serious 
 
 ClassName: Blightcaster
 Initial: B, BC, Blight, BLC
+DisallowedClasses: Druid
 Color: Green
 Alignment: Lawful Neutral, Chaotic Neutral, True Neutral, Neutral Good
 BAB: 0.75
@@ -576,8 +580,9 @@ SkillPoints: 4
 Skills: Concentration, Diplomacy, Heal, Intimidate, Listen, Spellcraft, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Martial Weapon: Scimitar
-GrantedFeats1: Magical Training, Druidic Oath, Druid - Spontaneous Casting, Disease Immunity
+GrantedFeats1: Magical Training, Druidic Oath, Druid Spontaneous Casting, Disease Immunity
 GrantedFeats1: Wilderness Lore
+GrantedFeats2: Biting Acid, Biting Poison
 GrantedFeats5: Venom Immunity
 GrantedFeats15: Timeless Body
 ClassFeat: 2, 4, 8, 11, 13, 17
@@ -605,5 +610,108 @@ SpellList8: Earthquake, Finger of Death, Howl of Terror, Stormrage, Black Dragon
 SpellList9: Snowslide, Storm of Vengeance, Tsunami, Acid Well, Wail of the Banshee, Rend the Soul, Blighted Charge
 
 
+ClassName: Sacred Fist
+Initial: S, SF, Sacred Fist, Sac
+Color: Purple
+Alignment: Lawful Good
+BAB: 1
+SkillPoints: 2
+Skills: Concentration, Diplomacy, Heal, Intimidate
+GrantedFeats1: Armor Class Bonus Sacred Fist, Flurry of Blows, Unarmed Strike
+GrantedFeats1: Simple Weapons, Exotic Weapon: Handwraps
+GrantedFeats1: Aura of Good, Smite Evil, Follower of the Path of Light
+GrantedFeats2: Divine Grace, Lay On Hands, Armor Class Bonus Sacred Fist, Evasion
+GrantedFeats4: Aura of Courage, Divine Health, Fear Immunity
+GrantedFeats4: Turn Undead, Unarmed Strike
+GrantedFeats5: Smite Evil, Armor Class Bonus Sacred Fist
+GrantedFeats6: Remove Disease, Divine Dream
+GrantedFeats8: Unarmed Strike
+GrantedFeats9: Remove Disease
+GrantedFeats10: Smite Evil, Armor Class Bonus Sacred Fist
+GrantedFeats12: Remove Disease, Unarmed Strike
+GrantedFeats15: Remove Disease, Smite Evil, Armor Class Bonus Sacred Fist
+GrantedFeats16: Unarmed Strike
+GrantedFeats18: Remove Disease
+GrantedFeats20: Smite Evil, Unarmed Strike, Armor Class Bonus Sacred Fist
+Trees: Sacred Fist, Sacred Defender, Radiant Servant
+HealingSpell: 4
+MaxSpellLevel: 4
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4
+SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4
+SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 4
+SpellList1: Bless, Cure Light Wounds, Divine Favor, Ki Bolt, Lesser Restoration, Lionheart, Protection from Evil, Resistance, Seek Eternal Rest, Virtue
+SpellList2: Angelskin, Bull's Strength, Eagle's Splendor, Owl's Wisdom, Remove Paralysis, Resist Energy, Righteous Command, Sacred Fist Empowerment
+SpellList3: Cure Moderate Wounds, Dispel Magic, Incinerating Wave, Magic Circle Against Evil, Prayer, Remove Blindness, Remove Curse
+SpellList4: Break Enchantment, Cure Serious Wounds, Death Ward, Holy Sword, Ki Explosion, Neutralize Poison, Restoration, Stalwart Pact, Zeal
 
+ClassName: Dark Hunter
+Initial: D, DH, DarkH, DHN
+Color: Green
+Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+BAB: 1
+SkillPoints: 6
+Skills: Concentration, Disable Device, Heal, Hide, Jump, Listen, Move Silently, Open Lock, Search, Spot, Swim
+GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
+GrantedFeats1: Simple Weapons, Martial Weapon: All, Bow Strength
+GrantedFeats1: Wilderness Lore, Wild Empathy, Sneak Attack, Trapfinding
+GrantedFeats2: Rapid Shot, Two Weapon Fighting
+GrantedFeats3: Diehard, Trapmaking, Trap Sense
+GrantedFeats4: Precise Shot
+GrantedFeats5: Sneak Attack
+GrantedFeats6: Manyshot, Improved Two Weapon Fighting, Trap Sense
+GrantedFeats7: Improved Wild Empathy
+GrantedFeats9: Accelerate Spell, Trap Sense
+GrantedFeats10: Sneak Attack
+GrantedFeats11: Improved Precise Shot, Greater Two Weapon Fighting
+GrantedFeats12: Trap Sense
+GrantedFeats15: Sneak Attack, Trap Sense
+GrantedFeats17: Hide in Plain Sight
+GrantedFeats18: Trap Sense
+GrantedFeats20: Sneak Attack
+ClassFeat: 1, 5, 10, 15, 20
+Trees: Dark Hunter, Deepwood Stalker, Tempest
+HealingSpell: 8
+MaxSpellLevel: 4
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4
+SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4
+SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 4
+SpellList1: Admixture: Cure Light Wounds, Camouflage, Charm Animal, Entangle, Jump, Longstrider, Magic Fang, Merfolk's Blessing, Pass Without Trace, Ram's Might, Resist Energy, Summon Nature's Ally I, Tumble
+SpellList2: Admixture: Cure Moderate Wounds, Barkskin, Bear's Endurance, Cat's Grace, Hold Animal, Mass Camouflage, Owl's Wisdom, Protection from Energy, Snare, Spike Growth, Summon Nature's Ally II
+SpellList3: Admixture: Cure Serious Wounds, Neutralize Poison, Remove Disease, Summon Nature's Ally III, Wild Instincts
+SpellList4: Admixture: Cure Critical Wounds, Animal Growth, Freedom of Movement, Mass Longstrider, Summon Nature's Ally IV
 
+ClassName: Acolyte
+Initial: A, AS, Acolyte, AOS
+DisallowedClasses: Warlock
+Color: Purple
+Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+BAB: 0.75
+SkillPoints: 2
+Skills: Bluff, Concentration, Intimidate, Jump, Spellcraft, Use Magic Device
+GrantedFeats1: Armor Proficiency: Light
+GrantedFeats1: Simple Weapons
+GrantedFeats1: Magical Training, Dismiss Charm
+GrantedFeats1: True Fiend Pact
+GrantedFeats1: Lesser Pact Attunement
+GrantedFeats6: Pact Attunement
+GrantedFeats12: Greater Pact Attunement
+GrantedFeats18: Ultimate Pact Attunement
+Trees: Acolyte of the Skin, Soul Eater, Tainted Scholar
+MaxSpellLevel: 6
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+SpellSlots2: 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+SpellSlots3: 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
+SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2
+SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2
+SpellList1: Bane, Cause Fear, Charm Person, Detect Secret Doors, Doom, Expeditious Retreat, False Life, Grease, Hypnotism, Jump, Master's Touch, Nightshield, Ooze Puppet, Otto's Resistible Dance, Ray of Enfeeblement, Resist Energy, See Invisibility, Shield, Sleep, Summon Monster I, Touch of Idiocy
+SpellList2: Blur, Command Undead, Dispel Magic, Fog Cloud, Ghoul Touch, Invisibility, Protection from Energy, Ray of Exhaustion, Scare, Silence Creature, Sleet Storm, Suggestion, Summon Monster III, Water Breathing
+SpellList3: Banishment, Bestow Curse, Charm Monster, Contagion, Dark Discorporation, Deep Slumber, Dimension Door, Displacement, Enervation, Fear, Haste, Stoneskin, Summon Monster IV
+SpellList4: Dismissal, Evard's Black Tentacles, Flesh to Stone, Hold Monster, Lesser Globe of Invulnerability, Protection from Elements, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Teleport, True Seeing, Waves of Fatigue
+SpellList5: Circle of Death, Control Undead, Create Undead, Finger of Death, Globe of Invulnerability, Greater Teleport, Mass Hold Person, Mass Invisibility, Mind Fog, Mass Protection from Elements, Shadow Walk, Summon Monster VIII, Symbol of Stunning, Tenser's Transformation, Undeath to Death, Waves of Exhaustion
+SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Monster, Mordenkainen's Disjunction, Power Word: Stun, Summon Monster IX, Symbol of Death, Trap the Soul, Wail of the Banshee

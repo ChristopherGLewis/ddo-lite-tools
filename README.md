@@ -13,11 +13,22 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.3.0 - U56-U58 Archtype updates
+Changes:
+    Finalized updated for L32
+    Updates for Archtypes in U56 - Dark Apostate, Sacred Fist, Stormsinger
+    Updates for Archtypes in U58 - Blightcaster, Dark Hunter, Acolyte of the Skin
+    Updates for U57 - Imbue updates in Feats, Enhancements, and Destinies
+    Updated for quests in U56-U58 (thanks @SardaofChaos)
+        
+Fixes:
+    Feats/Enhancements/Destines:
+        Thanks to @yhelm123
+
 ### 4.2.0 - U55 Isle of Dread
 Changes:
     Update to Level 32
-    Added L31 feats
-    
+    Added L31 feats    
     
 Fixes:
     Feats:
@@ -25,8 +36,6 @@ Fixes:
         * Epic Arcane Blast renamed to Epic Pact Dice
     Destinies:
         * Updates to Destinies from @yhelm123
-
-
 
 ### 4.1.0 - U54 Tabaxi
 Changes:
