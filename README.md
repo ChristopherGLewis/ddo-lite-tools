@@ -15,15 +15,17 @@ Any issues and input should be filed there.
 
 ### 4.3.0 - U56-U58 Archtype updates
 Changes:
-    Finalized updated for L32
-    Updates for Archtypes in U56 - Dark Apostate, Sacred Fist, Stormsinger
-    Updates for Archtypes in U58 - Blightcaster, Dark Hunter, Acolyte of the Skin
-    Updates for U57 - Imbue updates in Feats, Enhancements, and Destinies
-    Updated for quests in U56-U58 (thanks @SardaofChaos)
+- Finalized updated for L32
+- Updates for Archtypes in U56 - Dark Apostate, Sacred Fist, Stormsinger
+- Updates for Archtypes in U58 - Blightcaster, Dark Hunter, Acolyte of the Skin
+- Updates for U57 - Imbue updates in Feats, Enhancements, and Destinies
         
 Fixes:
-    Feats/Enhancements/Destines:
-        Thanks to @yhelm123
+- Feats/Enhancements/Destines:
+  - Thanks to @yhelm123
+
+Compendium Updates (1.8.0):
+- Updates for U55-U58 from SardaOfChaos
 
 ### 4.2.0 - U55 Isle of Dread
 Changes:
