@@ -68,8 +68,8 @@ Abbreviation: Dread
 Tier: Heroic
 NPC: Yupan the Tale Weaver
 Tome: 1
-Astrals: ?
-XP: ?	?	?	?
+Astrals: 1
+XP: ?	?	?	29
 Quest: Captive of the Hidden God
 Quest: The Curse and the Captive Crustacean
 Quest: Plundering Pirates' Point
@@ -407,7 +407,7 @@ SagaName: Cogs: Epic
 Abbreviation: Cogs
 Tier: Epic
 NPC: Alle Latham
-Tome: ?
+Tome: 3
 Astrals: 1
 XP: 96	147	207	276
 Quest: Smash and Burn
@@ -463,8 +463,8 @@ Abbreviation: Dread
 Tier: Epic
 NPC: Okmak the Tale Weaver
 Tome: 3
-Astrals: ?
-XP: ?	?	?	?
+Astrals: 1
+XP: 96	147	207	276
 Quest: Captive of the Hidden God
 Quest: The Curse and the Captive Crustacean
 Quest: Plundering Pirates' Point
@@ -472,7 +472,7 @@ Quest: Bullywugs and Booby Traps
 Quest: Fall of the Forbidden Temple
 Quest: Wild Thing
 Quest: The Stone Crypt Chronicle
-Quest: All Hail The King
+Quest: All Hail the King
 Quest: Trials of the Triceratops
 Quest: The Trouble with Tar Pits
 Quest: Whispers of Return
