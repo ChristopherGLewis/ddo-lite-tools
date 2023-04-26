@@ -1637,6 +1637,14 @@ Favor: 4
 Level: 7
 Epic: 33
 
+QuestName: Skeletons in the Closet
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 10
+Level: 34
+Epic: 34
+Style: Raid
+
 QuestName: Slave Pits of the Undercity
 Pack: Against the Slave Lords
 Patron: The Gatekeepers
