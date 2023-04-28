@@ -1561,7 +1561,7 @@ Pack: The Isle of Dread
 Patron: The Gatekeepers
 Favor: 4
 Level: 7
-Epic: 32
+Epic: 33
 
 QuestName: The Curse and the Captive Crustacean
 Pack: The Isle of Dread
