@@ -459,16 +459,19 @@ QuestName: Diplomatic Impunity
 Patron: The Coin Lords
 Favor: 6
 Level: 12
+Epic: 34
 
 QuestName: Frame Work
 Patron: The Coin Lords
 Favor: 5
 Level: 12
+Epic: 34
 
 QuestName: Eyes of Stone
 Patron: The Coin Lords
 Favor: 6
 Level: 12
+Epic: 34
 
 QuestName: Invaders!
 Patron: The Coin Lords
@@ -2162,24 +2165,28 @@ Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Blockade Buster
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Undermine
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Siegebreaker
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 6
 Level: 13
+Epic: 34
 
 QuestName: Feast or Famine
 Pack: Ruins of Gianthold
