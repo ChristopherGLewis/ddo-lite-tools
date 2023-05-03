@@ -1,7 +1,7 @@
 Table: Heroic
 Title: Experience Points to Level by Life
 Columns: 4
-Width: Level	9,999,999	9,999,999	9,999,999
+Width: Level	99,999,999	9,999,999	9,999,999
 Rows: 20
 Group: 4
 Header: Level	Champion	Hero	Legend
@@ -28,8 +28,8 @@ Row: 20	1900000	2850000	3800000
 
 Table: Epic
 Columns: 2
-Width: Level	9,999,999
-Rows: 10
+Width: Level	99,999,999
+Rows: 12
 Group: 10
 Row: 21	600000
 Row: 22	1250000
@@ -41,45 +41,16 @@ Row: 27	5250000
 Row: 28	6200000
 Row: 29	7200000
 Row: 30	8250000
+Row: 31	1600000
+Row: 32	3600000
 
-Table: Destiny
-Title: Epic Destinies
-Columns: 3
-Width: Level	9,999,999	999
-Style: TextCenter	Numeric	TextRight
-Rows: 30
-Group: 5
-Header: Level	XP	AP
-Row: 	36000	1
-Row: 	72000	2
-Row: 	108000	3
-Row: 	144000	4
-Row: 1	180000	
-Row: 	228000	5
-Row: 	276000	6
-Row: 	324000	7
-Row: 	372000	8
-Row: 2	420000	
-Row: 	480000	9
-Row: 	540000	10
-Row: 	600000	11
-Row: 	660000	12
-Row: 3	720000	
-Row: 	792000	13
-Row: 	864000	14
-Row: 	936000	15
-Row: 	1008000	16
-Row: 4	1080000	
-Row: 	1164000	17
-Row: 	1248000	18
-Row: 	1332000	19
-Row: 	1416000	20
-Row: 5	1500000	
-Row: 	1596000	21
-Row: 	1692000	22
-Row: 	1788000	23
-Row: 	1884000	24
-Row: Max	1980000	
+Table: Legendary
+Columns: 2
+Width: Level    99,999,999
+Rows: 2
+Group: 2
+Row: 31 1,600,000
+Row: 32 3,600,000
 
 Table: Fred
 Title: Feat Respec with Fred

@@ -459,16 +459,19 @@ QuestName: Diplomatic Impunity
 Patron: The Coin Lords
 Favor: 6
 Level: 12
+Epic: 34
 
 QuestName: Frame Work
 Patron: The Coin Lords
 Favor: 5
 Level: 12
+Epic: 34
 
 QuestName: Eyes of Stone
 Patron: The Coin Lords
 Favor: 6
 Level: 12
+Epic: 34
 
 QuestName: Invaders!
 Patron: The Coin Lords
@@ -1558,7 +1561,7 @@ Pack: The Isle of Dread
 Patron: The Gatekeepers
 Favor: 4
 Level: 7
-Epic: 32
+Epic: 33
 
 QuestName: The Curse and the Captive Crustacean
 Pack: The Isle of Dread
@@ -1636,6 +1639,14 @@ Patron: The Gatekeepers
 Favor: 4
 Level: 7
 Epic: 33
+
+QuestName: Skeletons in the Closet
+Pack: The Isle of Dread
+Patron: The Gatekeepers
+Favor: 10
+Level: 34
+Epic: 34
+Style: Raid
 
 QuestName: Slave Pits of the Undercity
 Pack: Against the Slave Lords
@@ -2154,24 +2165,28 @@ Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Blockade Buster
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Undermine
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 5
 Level: 13
+Epic: 34
 
 QuestName: Siegebreaker
 Pack: Attack on Stormreach
 Patron: The Coin Lords
 Favor: 6
 Level: 13
+Epic: 34
 
 QuestName: Feast or Famine
 Pack: Ruins of Gianthold
