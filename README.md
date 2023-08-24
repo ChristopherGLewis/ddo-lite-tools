@@ -13,6 +13,16 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.4.0 - Updates for U60/U61
+Changes:
+- Updates to many enhancements with U61 updates (thanks as always to Yhelm!)
+- Addition of he Macrotechnic epic destiny
+- Additional Universal tome point
+        
+Fixes:
+- Fixed issue with Archtypes and trapping skills.
+- Fixed issue with Archtypes and deity feats.  Cleaned Deity feats up to work correctly with FS and others
+
 ### 4.3.1 - Fixes
 Changes:
 - Various fixes

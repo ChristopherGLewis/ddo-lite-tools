@@ -125,12 +125,10 @@ Cost: 2
 AbilityName: Bring Down Wrath
 Descrip: Your shield is now considered a Favored Weapon for the purposes of your Divine Crusader Destiny Mantle, and now Doublestrikes at 50% of the rate of your main hand Doublestrike as if it were an offhand weapon.
 Tier: 5
-Cost: 1
 
 AbilityName: Law of the Divine
 Descrip: You gain the Embodiment of Law feat. If you already had it, it instead enhances the feat to deal 1d6 Law damage per Epic Level scaling with 200% Melee or Ranged Power, and apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application)
 Tier: 5
-Cost: 1
 
 AbilityName: Blessed Blades
 Descrip: While using a Favored Weapon, +1 Critical Multiplier on a roll of 19-20.
@@ -230,19 +228,7 @@ Cost: 2
 AbilityName: Arcane Spellsword
 Descrip: +[1/2/3] bonus Imbue Dice
 Tier: 3
-Selector: Black, Blue, Green, Red, Shadow, White
-SelectorName: Black
-All: Tier 0: Draconic Bloodline: Black
-SelectorName: Blue
-All: Tier 0: Draconic Bloodline: Blue
-SelectorName: Green
-All: Tier 0: Draconic Bloodline: Green
-SelectorName: Red
-All: Tier 0: Draconic Bloodline: Red
-SelectorName: Shadow
-All: Tier 0: Draconic Bloodline: Shadow
-SelectorName: White
-All: Tier 0: Draconic Bloodline: White
+Ranks: 3
 
 AbilityName: Draconic Spell Focus
 Descrip: (Multiselector, choose 1) +[1/2/3] Evocation, Conjuration, Necromancy, or Transmutation DCs. Note: Exclusive with the T3 DC bonuses in other Epic Destiny caster trees, but the bonus may be taken for different schools in different trees.
@@ -343,12 +329,12 @@ SelectorName: Heavenly Blessing
 Descrip: When you finish an Angelic Charge or Leap of Faith, you and allies near you take 1d6+2 plus 1 per caster level Positive Healing. This healing scales with Spell Power.
 
 AbilityName: Subtle Flame
-Descrip: You gain +[3/6/10] Universal Spell Power. Rank 3: If you have Fascinate it now gains the power to mesmerize Vermin and if you have Bardic Inspiration it now applies Neutralize Poison. Mesmerized Vermin are not susceptible to suggestion.
+Descrip: -[10/20/30]% spell threat. Rank 3: +5 Fire, Light, Positive, Alignment, and Universal Spell Power.
 Tier: 1
 Ranks: 3
 
 AbilityName: Born By Flame
-Descrip: +[1/2/3] bonus to all Skills. Rank 3: If you have the Inspire Bardic Ability it now also grants +3 Skills to those you inspire.
+Descrip: +[5/10/15] resist Fire and Light, +5% Fire absorption and Light absorption
 Tier: 1
 Ranks: 3
 
@@ -395,7 +381,6 @@ AbilityName: Endless Turning
 Descrip: Turn Undead regenerates [10/20/30]% faster. Rank 3: When you Turn Undead, you apply Restoration to allies in the Turn.
 Tier: 2
 Ranks: 3
-All: Tier 1: Bane of Undeath
 
 AbilityName: Angelic Spell Focus
 Descrip: Multiselector: Enchantment, Evocation, Cojuration, Necromancy.
@@ -1222,6 +1207,197 @@ AbilityName: Action Hero
 Descrip: Epic Moment: For 40 seconds, you gain the following Bonuses: This ability is counted as an Action Boost, and triggers everything that a normal Action Boost does for the duration. This ability has a 5 minute cooldown, which is not shared with other Action Boosts.}{-+8 Action Boost Bonus to Attack{-+30 Action Boost Bonus to Melee and Ranged Power{-+30% Action Boost Bonus to Attack Speed{-+30% Action Boost Bonus to Doublestrike and Doubleshot{-+50% Action Boost Bonus to Movement Speed{-+15 Action Boost Bonus to Armor Class and Physical Resistance Rating{-+15% Action Boost Bonus to Dodge. This bonus ignores your Dodge Cap.{-+9 Action Boost bonus to Sunder, Trip, and Stun DCs.{-+6 Action Boost Bonus to Saving Throws{-+6 Action Boost Bonus to Skills
 Tier: 5
 
+DestinyName: Macrotechnic
+Abbreviation: Macro
+Type: Destiny
+
+AbilityName: Armored Augmentation I
+Descrip: You gain the Magical Training feat. Each Core ability in this tree, including this one, grants the following:}{-+1 Epic bonus to all Spell DCs}{-+5 Melee Power}{-+4 Ranged Power}{-+15 Maximum Hit Points}{-+25 Maximum Spell points}{-+5 Electric, Sonic, Rust, Repair Spell Power, and Universal Spell Power
+Tier: 0
+
+AbilityName: Armored Augmentation II
+Descrip: +15% Fortification and +3 to each Healing Amplification. Your Rune Arms now benefit from the Maximize, Empower, and Intensify Spell Metamagics if you own those feats. This does not cost Spell Points, and you do not need the Feats toggled on to gain their effects on Rune Arms.
+Tier: 0
+
+AbilityName: Armored Augmentation III
+Descrip: +15% Fortification and +3 to each Healing Amplification. Your Ablative Armor spell now blocks 20 points of damage per caster level with no cap.
+Tier: 0
+
+AbilityName: Armored Augmentation IV
+Descrip: +15% Fortification and +3 to each Healing Amplification. +15% Exceptional Bonus to Armor Class. Your Rune Arm caster levels now factor in bonuses from your Epic and Legendary Knowledge feats.
+Tier: 0
+
+AbilityName: Sprockets
+Descrip: +[5/10/15] Repair Amplification. If you have the Construct Exemplar feat, you gain +10 Physical Resistance Rating
+Tier: 1
+Ranks: 3
+
+AbilityName: Solid Footing
+Descrip: +[2/4/6] Armor Class and Physical Resistance Rating.
+Tier: 1
+Ranks: 3
+
+AbilityName: Tinker Tailoring
+Descrip: +[1/2/3] Spellcraft and Use Magic Device. Your Rune Arms charge [5/10/15]% faster.
+Tier: 1
+Ranks: 3
+
+AbilityName: Epic Strike
+Descrip: Multiselector: Galvanic Blast, Mending Burst, Sonic Boom
+Tier: 1
+Cost: 2
+Selector: Galvanic Blast, Mending Burst, Sonic Boom
+SelectorName: Galvanic Blast
+Descrip: Epic Strike: A storm of fearsome Electricity explodes from within you, dealing 1d6+6 Electric damage per caster level to all enemies nearby. The damage has no save, but secondary effects from your drives do. (Cooldown 15 seconds, Costs 20 Spell Points)
+SelectorName: Mending Burst
+Descrip: Epic Strike: A field of magical energy explodes from within you, repairing all allies nearby for 3d6+6 Repair healing +1 per caster level. (Cooldown 6 seconds, costs 20 Spell Points)
+SelectorName: Sonic Boom
+Descrip: Epic Strike: A wave of concussive sound explodes from within you, dealing 1d6+6 Sonic damage per caster level to all enemies nearby. The damage has no save, but secondary effects from your drives do. (Cooldown 15 seconds, Costs 20 Spell Points)
+
+AbilityName: Blast Shields
+Descrip: +[2/4/6] Reflex saves. Rank 3: You no longer automatically fail Reflex saving throws on a roll of 1.
+Tier: 1
+Ranks: 3
+
+AbilityName: Fluidity
+Descrip: Your Armor and/or Body type no longer contributes to Arcane Spell Failure.
+Tier: 2
+Cost: 2
+
+AbilityName: Radiant Prison
+Descrip: Target non-boss foe is sealed away for 8 seconds in an Unbreakable Forcefield with no save. In this Forcefield, they cannot act, but take 95% less damage and healing from all sources (except Untyped). 20 second cooldown.
+Tier: 2
+Cost: 2
+
+AbilityName: Rune Arm Use
+Descrip: You gain the Rune Arm Use feat. Your Caster Level with Rune Arms is now based on the higher of half of your Caster Level versus your Artificer Level. If you already had the Rune Arm Use feat, +1 Stable Charge Tier.
+Tier: 2
+Cost: 2
+
+AbilityName: Hammer Time!
+Descrip: Multiselector: Tonquin's Lightning Hammer, Tonquin's Thunder Hammer
+Tier: 2
+Cost: 2
+Selector: Tonquin's Lightning Hammer, Tonquin's Thunder Hammer
+SelectorName: Tonquin's Lightning Hammer
+Descrip: Form a hammer of pure lightning to strike foes in an area, dealing 1d6+6 Electric damage per caster level.
+SelectorName: Tonquin's Thunder Hammer
+Descrip: Form a hammer of pure thunder to strike foes in an area, dealing 1d6+6 Sonic damage per caster level.
+
+AbilityName: Forcefield Generation
+Descrip: Macrotechnic Destiny Mantle: You create a small animated object that floats with you. While active, you gain +15 Repair Amplification, and you absorb 10% of all Force, Piercing, Bludgeoning, Slashing, Electric, Sonic, and Rust damage you take. This is increased to 15% if you are wearing a Rune Arm.
+Tier: 2
+Cost: 2
+
+AbilityName: Spell Focus
+Descrip: Multiselector: Abjuration, Conjuration, Evocation, Transmutation
+Tier: 3
+Ranks: 3
+Selector: Abjuration, Conjuration, Evocation, Transmutation
+SelectorName: Abjuration
+Descrip: +[1/2/3] Abjuration DCs
+SelectorName: Conjuration
+Descrip: +[1/2/3] Conjuration DCs
+SelectorName: Evocation
+Descrip: +[1/2/3] Evocation DCs
+SelectorName: Transmutation
+Descrip: +[1/2/3] Transmutation DCs
+
+AbilityName: Technique Drive
+Descrip: Multiselector: Speed Drive, Efficiency Drive, Flash Drive
+Tier: 3
+Ranks: 3
+Selector: Efficiency Drive, Flash Drive, Speed Drive
+SelectorName: Efficiency Drive
+Descrip: +[3/6/10]% Spell Cost Reduction
+SelectorName: Flash Drive
+Descrip: +[150/300/450]% Threat Generation
+SelectorName: Speed Drive
+Descrip: +[2/4/6]% Doublestrike and Doubleshot
+
+AbilityName: Storm Core
+Descrip: +[1/2/3] Rune Arm DCs. Rank 3: +5 Electric, Sonic, Rust, Repair, and Universal Spell Power
+Tier: 3
+Ranks: 3
+
+AbilityName: Arcane Imbuement
+Descrip: +[1/2/3] bonus Imbue Dice 
+Tier: 3
+Ranks: 3
+
+AbilityName: Improved Aegis
+Descrip: Destiny Mantle Improvement: While using you Macrotechnic Destiny Mantle, you gain +5 Physical and Magical Resistance Rating. If you are wearing a Rune Arm, gain +10 PRR/MRR instead.
+Tier: 3
+Cost: 2
+All: Tier 2: Forcefield Generation
+
+AbilityName: Galvanic Attunement
+Descrip: +10 Sonic, Electric, Repair, and Rust Spell Power. +10 Universal Spell Power.
+Tier: 4
+Cost: 2
+
+AbilityName: Strike Drive
+Descrip: Multiselector: Blast Drive, Dissonance Drive, Ruin Drive
+Tier: 4
+Cost: 2
+Selector: Blast Drive, Dissonance Drive, Ruin Drive
+SelectorName: Blast Drive
+Descrip: Your Macrotechnic Epic Strike now Stuns enemies struck for 3 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs). If you are using the Galvanic Blast Epic Strike, this also Supercharges you.}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
+SelectorName: Dissonance Drive
+Descrip: Your Macrotechnic Epic Strike now Confuses enemies struck for 6 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs). If you are using the Sonic Boom Epic Strike, they also take 3 stacks of Vulnerability and 3 stacks of Armor Destruction.
+SelectorName: Ruin Drive
+Descrip: Your Macrotechnic Epic Strike now disassembles enemy constructs, dealing 1d6+6 Rust damage per caster level. If you are using the Mending Burst Epic Strike, this also Supercharges you.}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
+
+AbilityName: Boost Drive
+Descrip: Multiselector: Echo Drive, Spark Drive
+Tier: 4
+Cost: 2
+Selector: Echo Drive, Spark Drive
+SelectorName: Echo Drive
+Descrip: Once per second, an enemy hit by your Rune Arm spells take an additional 1d4 bonus Sonic damage per caster level. This scales with Spell Power.
+SelectorName: Spark Drive
+Descrip: Once per second, an enemy hit by your Rune Arm spells take an additional 1d4 bonus Electric damage per caster level. This scales with Spell Power.
+
+AbilityName: Epic Improved Metamagics
+Descrip: Multiselector: Empower, Intensify, Maximize
+Tier: 4
+Ranks: 3
+Selector: Empower, Intensify, Maximize
+SelectorName: Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
+SelectorName: Intensify
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
+SelectorName: Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
+
+AbilityName: Magical Recoil
+Descrip: Destiny Mantle Improvement: +5 Electric, Sonic, Rust, Repair, and Universal Spell Power. While using your Macrotechnic Destiny Mantle, firing a Rune Arm grants you spell resistance equal to your character level for 10 seconds.
+Tier: 4
+Cost: 2
+All: Tier 3: Improved Aegis
+
+AbilityName: Machrotechnic Spell DCs
+Descrip: +[1/2/3] to all Spell DCs.
+Tier: 5
+Ranks: 3
+
+AbilityName: Critical Connection
+Descrip: +1 Critical Multiplier on a roll of 19-20 with weapons while wearing a Rune Arm.
+Tier: 5
+
+AbilityName: Armor of Legends
+Descrip: The Epic Mage Armor feat's bonus is now untyped and grants you +1 AC per character level. You also gain a bonus based on your installed drives:}{-Speed Drive: +5% Action boost bonus to Attack Speed}{-Efficiency Drive: +5% Action boost bonus to Movement Speed}{-Flash Drive: +10 Action boost bonus to Physical and Magical Resistance Rating{-Ruin Drive: +10 Action boost bonus to Spell Power}{-Blast Drive: +3 Action boost bonus to Saves}{-Dissonance Drive: +3 Action boost bonus to Tactics DCs}{-Spark Drive: +10 Action boost bonus to Energy Resistance}{-Echo Drive: +1 Action Boost bonus to Imbue Dice
+Tier: 5
+
+AbilityName: Maximum Overdrive
+Descrip: Epic Moment: Shift into MAXIMUM OVERDRIVE. This grants you a 100% boost to Rune Arm Charge Speed and Cooldown Speed, a 50% reduction in Spell Cooldowns, a 30% Action Boost bonus to Attack Speed, and a 50% Action Boost bonus to Movement Speed for 30 seconds. (Cooldown: 5 minutes)
+Tier: 5
+
+AbilityName: Forcefield Generator
+Descrip: Destiny Mantle Improvement: While using your Macrotechnic Destiny Mantle, you gain +10% Insight bonus to Maximum Hit Points. While you have a Rune Arm equipped, increase this bonus to 20%.
+Tier: 5
+All: Tier 4: Magical Recoil
+
 DestinyName: Magus of the Eclipse
 Abbreviation: Magus 
 Type: Destiny
@@ -1444,7 +1620,7 @@ Descrip: When your spell points drop below 5% of max you immediate restore 500 S
 Tier: 0
 
 AbilityName: Seeking Balance
-Descrip: You gain +[1/2/3] Reflex Saving Throws, +[2/4/6] Tumble, and +[2/4/6] Balance. Rank 3: If you’re using a quarterstaff gain +1 Damage and +5 Universal Spell Power.
+Descrip: You gain +[1/2/3] Reflex Saving Throws, +[2/4/6] Tumble, and +[2/4/6] Balance. Rank 3: If you're using a quarterstaff gain +1 Damage and +5 Universal Spell Power.
 Tier: 1
 Ranks: 3
 
@@ -1472,7 +1648,7 @@ AbilityName: Nature's Friend
 Descrip: When you sit to rest at a rest shrine your selected friend of nature visits you briefly and offers comfort. You and your party are granting a buff that lasts until the end of your current quest.
 Tier: 1
 Cost: 2
-Selector: Bat of Echoes, Bird of Wind, Fox of Flame, Frog of the Lake, Squirrel of Luck, Spider of the Deep
+Selector: Bat of Echoes, Bird of Wind, Fox of Flame, Frog of the Lake, Squirrel of Luck, Spider of the Deeps
 SelectorName: Bat of Echoes
 Descrip: +10 Sonic Spell Power, +15 Sonic Absorption and +3 Listen
 SelectorName: Bird of Wind

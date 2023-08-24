@@ -2888,7 +2888,9 @@ Private Function CheckAbilityReq(ptypReqList As ReqListType, penReq As ReqGroupE
                             If Len(strTaken) = 0 Then strTaken = PointerDisplay(ptypReqList.Req(i), True, .Tree)
                             lngMatches = lngMatches + 1
                         Else
-                            If Len(strMissing) = 0 Then strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                            If Len(strMissing) = 0 Then
+                                strMissing = PointerDisplay(ptypReqList.Req(i), True, .Tree)
+                            End If
                         End If
                     End If
                 Case peEnhancement
