@@ -2177,7 +2177,7 @@ Epic: 34
 QuestName: Undermine
 Pack: Attack on Stormreach
 Patron: The Coin Lords
-Favor: 5
+Favor: 6
 Level: 13
 Epic: 34
 

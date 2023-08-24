@@ -217,10 +217,10 @@ FeatName: Beloved of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Paladin 12
-Repeat: 1
+Class: Cleric 12, Favored Soul 12, Paladin 12, Sacred Fist 12
+Flags: Deity
 All: Child of
-SharedSelector: Child of
+SharedSelector: Follower of
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
 WikiName: Beloved of Amaunator
@@ -341,9 +341,8 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
 All: Follower of
-Class: Cleric 3, Paladin 3
-GrantedBy: Favored Soul 3
-Repeat: 1
+Class: Cleric 3, Favored Soul 3, Paladin 3, Sacred Fist 3
+Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
@@ -413,7 +412,7 @@ ClassBonus: Fighter, Monk, Artificer
 FeatName: Completionist
 Group: Heroic, Misc
 Descrip: You win DDO! +2 bonus to all skills and ability scores.
-Level: 3
+Level: 1
 Flags: Unselectable
 
 FeatName: Composite Plating
@@ -452,9 +451,10 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Gain DR 10, bypassed by named material.
 Class: Favored Soul 20
-ClassBonus: Favored Soul
-Flags: Deity
-Repeat: 1
+Flags: Deity, ClassOnly
+ClassOnlyClass: Favored Soul
+ClassOnlyLevel: 20
+All: Deity Ability
 Selector: Adamantine, Cold Iron, Silver, Good
 SelectorName: Adamantine
 WikiName: Damage Reduction: Adamantine
@@ -499,10 +499,8 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Your faith has been rewarded with an active ability.
 All: Follower of
-Flags: Deity, ClassOnly, SelectorOnly
-Class: Cleric 6, Favored Soul 6, Paladin 6
-ClassOnlyClass: Cleric, Favored Soul, Paladin
-ClassOnlyLevel: 6
+Class: Cleric 6, Favored Soul 6, Paladin 6, Sacred Fist 6
+Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
 SelectorName: Amaunator's Flames
@@ -1009,9 +1007,9 @@ FeatName: Follower of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Cleric 1, Favored Soul 1, Paladin 1
+Class: Cleric 1, Favored Soul 1, Paladin 1, Sacred Fist 1
 Flags: Deity, ClassOnly
-ClassOnlyClass: Cleric, Favored Soul, Paladin
+ClassOnlyClass: Cleric, Favored Soul, Paladin, Sacred Fist
 ClassOnlyLevel: 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
@@ -1055,9 +1053,9 @@ FeatName: Follower of the Path of Light
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: This deity feat line grants the following:}{- Proficiency with Handwraps as a favored weapon.
-Class: Paladin 1
+Class: Sacred Fist 1
 Flags: Deity, ClassOnly
-ClassOnlyClass: Paladin
+ClassOnlyClass: Sacred Fist
 ClassOnlyLevel: 1
 Flags: Unselectable
 

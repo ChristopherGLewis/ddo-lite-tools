@@ -136,16 +136,31 @@ Public Sub ExportFileRon()
     AddLine "ALIGNMENT: " & GetRonAlignID() & ";"
     AddLine "CLASSRECORD: "
     For i = 1 To 20
-        If build.Class(i) = ceAny Then AddLine "None," Else AddLine GetClassName(build.Class(i)) & ","
+        If build.Class(i) = ceAny Then
+            AddLine "None,"
+        Else
+            AddLine GetClassName(build.Class(i)) & ","
+        End If
     Next
     For i = 1 To 10
-        If build.Class(1) = ceAny Then AddLine "None," Else AddLine GetClassName(build.Class(1)) & ","
+        If build.Class(1) = ceAny Then
+            AddLine "None,"
+        Else
+            AddLine GetClassName(build.Class(1)) & ","
+        End If
     Next
     AddLine ";"
-    If build.BuildPoints = beChampion And build.Race <> reDrow Then AddLine "ABILITYFAVORBONUS: ;"
+    If build.BuildPoints = beChampion And build.Race <> reDrow Then
+        AddLine "ABILITYFAVORBONUS: ;"
+    End If
     AddLine AbilityRaiseLine()
-    For i = 1 To 7
-        If build.Levelups(i) = aeAny Then AddLine "ABILITY" & i * 4 & ": 0;" Else AddLine "ABILITY" & i * 4 & ": " & build.Levelups(i) - 1 & ";"
+    For i = 1 To MAX_LEVELUPS
+        If build.Levelups(i) = aeAny Then
+            AddLine "ABILITY" & i * 4 & ": 0;"
+        Else
+            AddLine "ABILITY" & i * 4 & ": " & build.Levelups(i) - 1 & ";"
+        End If
+            
     Next
     AddLine "TOMERAISE: "
     For i = 1 To 6
@@ -498,7 +513,7 @@ Private Sub IdentifyLevelups()
     Dim blnMixed As Boolean
     Dim i As Long
     
-    For i = 1 To 7
+    For i = 1 To MAX_LEVELUPS
         strValue = FindValue("ABILITY" & i * 4 & ":")
         enStat = val(strValue) + 1
         build.Levelups(i) = enStat

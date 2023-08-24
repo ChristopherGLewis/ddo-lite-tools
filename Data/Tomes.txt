@@ -3,7 +3,7 @@ Skill: 5, 1, 1, 3, 7, 11
 RacialAPMax: 2
 PowerMax: 4
 PRR/MRRMax: 4
-UniversalAPMax: 1
+UniversalAPMax: 2
 PermDestinyPointMax: 32
 PermDestinyPointMin: 12
 DestinyTomeMax: 3 

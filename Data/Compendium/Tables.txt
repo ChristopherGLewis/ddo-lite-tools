@@ -29,7 +29,7 @@ Row: 20	1900000	2850000	3800000
 Table: Epic
 Columns: 2
 Width: Level	99,999,999
-Rows: 12
+Rows: 10
 Group: 10
 Row: 21	600000
 Row: 22	1250000
@@ -41,16 +41,14 @@ Row: 27	5250000
 Row: 28	6200000
 Row: 29	7200000
 Row: 30	8250000
-Row: 31	1600000
-Row: 32	3600000
 
 Table: Legendary
 Columns: 2
-Width: Level    99,999,999
+Width: Level	99,999,999
 Rows: 2
 Group: 2
-Row: 31 1,600,000
-Row: 32 3,600,000
+Row: 31	1600000
+Row: 32	3600000
 
 Table: Fred
 Title: Feat Respec with Fred

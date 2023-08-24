@@ -4,10 +4,10 @@ Begin VB.Form frmCharacter
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Characters"
-   ClientHeight    =   8805
+   ClientHeight    =   8775
    ClientLeft      =   30
    ClientTop       =   390
-   ClientWidth     =   10425
+   ClientWidth     =   12405
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,9 +21,2407 @@ Begin VB.Form frmCharacter
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8805
-   ScaleWidth      =   10425
+   ScaleHeight     =   8775
+   ScaleWidth      =   12405
    ShowInTaskbar   =   0   'False
+   Begin VB.PictureBox picTab 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00FFC0C0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   3975
+      Index           =   2
+      Left            =   120
+      ScaleHeight     =   3975
+      ScaleWidth      =   11895
+      TabIndex        =   115
+      TabStop         =   0   'False
+      Tag             =   "ctl"
+      Top             =   4680
+      Visible         =   0   'False
+      Width           =   11895
+      Begin VB.Frame fraPastLives 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0FFC0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   3735
+         Left            =   120
+         TabIndex        =   116
+         Tag             =   "ctl"
+         Top             =   120
+         Width           =   4335
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   12
+            Left            =   1080
+            TabIndex        =   106
+            Top             =   240
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   1
+            Left            =   1080
+            TabIndex        =   119
+            Top             =   480
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   2
+            Left            =   1080
+            TabIndex        =   121
+            Top             =   720
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   3
+            Left            =   1080
+            TabIndex        =   123
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   13
+            Left            =   1080
+            TabIndex        =   125
+            Top             =   1200
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   11
+            Left            =   1080
+            TabIndex        =   127
+            Top             =   1440
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   4
+            Left            =   1080
+            TabIndex        =   129
+            Top             =   1680
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   10
+            Left            =   1080
+            TabIndex        =   131
+            Top             =   1920
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   5
+            Left            =   1080
+            TabIndex        =   133
+            Top             =   2160
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   6
+            Left            =   1080
+            TabIndex        =   135
+            Top             =   2400
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   7
+            Left            =   1080
+            TabIndex        =   137
+            Top             =   2640
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   8
+            Left            =   1080
+            TabIndex        =   139
+            Top             =   2880
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   14
+            Left            =   1080
+            TabIndex        =   141
+            Top             =   3120
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   9
+            Left            =   1080
+            TabIndex        =   143
+            Top             =   3360
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   15
+            Left            =   1080
+            TabIndex        =   105
+            Top             =   0
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   16
+            Left            =   3480
+            TabIndex        =   248
+            Top             =   720
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   17
+            Left            =   3480
+            TabIndex        =   250
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   18
+            Left            =   3480
+            TabIndex        =   252
+            Top             =   1200
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   19
+            Left            =   3480
+            TabIndex        =   254
+            Top             =   2160
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   20
+            Left            =   3480
+            TabIndex        =   256
+            Top             =   2400
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   21
+            Left            =   3480
+            TabIndex        =   258
+            Top             =   3120
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Acolyte"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   112
+            Left            =   2070
+            TabIndex        =   259
+            Tag             =   "ctl"
+            Top             =   3135
+            Width           =   1275
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Dark Hunter"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   111
+            Left            =   2175
+            TabIndex        =   257
+            Tag             =   "ctl"
+            Top             =   2400
+            Width           =   1185
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Sacred Fist"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   110
+            Left            =   2160
+            TabIndex        =   255
+            Tag             =   "ctl"
+            Top             =   2160
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Blightcaster"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   109
+            Left            =   1920
+            TabIndex        =   253
+            Tag             =   "ctl"
+            Top             =   1215
+            Width           =   1440
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Dark Apostate"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   108
+            Left            =   1920
+            TabIndex        =   251
+            Tag             =   "ctl"
+            Top             =   975
+            Width           =   1440
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Stormsinger"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   107
+            Left            =   1920
+            TabIndex        =   249
+            Tag             =   "ctl"
+            Top             =   720
+            Width           =   1440
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Alchemist"
+            ForeColor       =   &H80000008&
+            Height          =   255
+            Index           =   93
+            Left            =   0
+            TabIndex        =   242
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Wizard"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   50
+            Left            =   0
+            TabIndex        =   142
+            Tag             =   "ctl"
+            Top             =   3375
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Warlock"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   49
+            Left            =   0
+            TabIndex        =   140
+            Tag             =   "ctl"
+            Top             =   3135
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Sorcerer"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   48
+            Left            =   0
+            TabIndex        =   138
+            Tag             =   "ctl"
+            Top             =   2895
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Rogue"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   47
+            Left            =   0
+            TabIndex        =   136
+            Tag             =   "ctl"
+            Top             =   2655
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Ranger"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   46
+            Left            =   0
+            TabIndex        =   134
+            Tag             =   "ctl"
+            Top             =   2415
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Paladin"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   45
+            Left            =   0
+            TabIndex        =   132
+            Tag             =   "ctl"
+            Top             =   2175
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Monk"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   44
+            Left            =   0
+            TabIndex        =   130
+            Tag             =   "ctl"
+            Top             =   1935
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Fighter"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   43
+            Left            =   0
+            TabIndex        =   128
+            Tag             =   "ctl"
+            Top             =   1695
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Fav Soul"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   42
+            Left            =   0
+            TabIndex        =   126
+            Tag             =   "ctl"
+            Top             =   1455
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Druid"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   41
+            Left            =   0
+            TabIndex        =   124
+            Tag             =   "ctl"
+            Top             =   1215
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Cleric"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   40
+            Left            =   0
+            TabIndex        =   122
+            Tag             =   "ctl"
+            Top             =   975
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Bard"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   39
+            Left            =   0
+            TabIndex        =   120
+            Tag             =   "ctl"
+            Top             =   735
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Barbarian"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   38
+            Left            =   0
+            TabIndex        =   118
+            Tag             =   "ctl"
+            Top             =   495
+            Width           =   960
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Artificer"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   37
+            Left            =   0
+            TabIndex        =   117
+            Tag             =   "ctl"
+            Top             =   255
+            Width           =   960
+         End
+      End
+      Begin VB.Frame fraEpic 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFFFC0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   1455
+         Index           =   3
+         Left            =   6960
+         TabIndex        =   189
+         Tag             =   "ctl"
+         Top             =   2400
+         Width           =   2352
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   1
+            Left            =   1380
+            TabIndex        =   193
+            Top             =   240
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   2
+            Left            =   1380
+            TabIndex        =   195
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   3
+            Left            =   1380
+            TabIndex        =   197
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   13
+            Left            =   1380
+            TabIndex        =   199
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   17
+            Left            =   1380
+            TabIndex        =   201
+            Top             =   1200
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Eclipse"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   102
+            Left            =   0
+            TabIndex        =   243
+            Tag             =   "ctl"
+            Top             =   1200
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Knowlege"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   96
+            Left            =   0
+            TabIndex        =   198
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   2  'Center
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Arcane"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   68
+            Left            =   1380
+            TabIndex        =   191
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   840
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Alacrity"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   69
+            Left            =   0
+            TabIndex        =   192
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Criticals"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   70
+            Left            =   0
+            TabIndex        =   194
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Enchant"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   71
+            Left            =   0
+            TabIndex        =   196
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1260
+         End
+      End
+      Begin VB.Frame fraEpic 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFFFC0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   1215
+         Index           =   2
+         Left            =   9360
+         TabIndex        =   221
+         Tag             =   "ctl"
+         Top             =   2700
+         Width           =   2352
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   10
+            Left            =   1380
+            TabIndex        =   224
+            Top             =   240
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   11
+            Left            =   1380
+            TabIndex        =   226
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   12
+            Left            =   1380
+            TabIndex        =   228
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   16
+            Left            =   1380
+            TabIndex        =   230
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Power"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   99
+            Left            =   0
+            TabIndex        =   229
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   2  'Center
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Primal"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   80
+            Left            =   1380
+            TabIndex        =   222
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   840
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Doubleshot"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   81
+            Left            =   0
+            TabIndex        =   223
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Fast Healing"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   82
+            Left            =   0
+            TabIndex        =   225
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Queen"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   83
+            Left            =   0
+            TabIndex        =   227
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1260
+         End
+      End
+      Begin VB.Frame fraEpic 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFFFC0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   1215
+         Index           =   1
+         Left            =   9360
+         TabIndex        =   211
+         Tag             =   "ctl"
+         Top             =   1440
+         Width           =   2352
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   7
+            Left            =   1380
+            TabIndex        =   214
+            Top             =   240
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   8
+            Left            =   1380
+            TabIndex        =   216
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   9
+            Left            =   1380
+            TabIndex        =   218
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   15
+            Left            =   1380
+            TabIndex        =   220
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Tactics"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   98
+            Left            =   0
+            TabIndex        =   219
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   2  'Center
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Martial"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   76
+            Left            =   1380
+            TabIndex        =   212
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   840
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Doublestrike"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   77
+            Left            =   0
+            TabIndex        =   213
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Fortification"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   78
+            Left            =   0
+            TabIndex        =   215
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Skill Mastery"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   79
+            Left            =   0
+            TabIndex        =   217
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1260
+         End
+      End
+      Begin VB.Frame fraEpic 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFFFC0&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   1215
+         Index           =   0
+         Left            =   9360
+         TabIndex        =   200
+         Tag             =   "ctl"
+         Top             =   180
+         Width           =   2352
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   4
+            Left            =   1380
+            TabIndex        =   204
+            Top             =   240
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   5
+            Left            =   1380
+            TabIndex        =   206
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   252
+            Index           =   6
+            Left            =   1380
+            TabIndex        =   208
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   14
+            Left            =   1380
+            TabIndex        =   210
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Blessings"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   97
+            Left            =   0
+            TabIndex        =   209
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Block Energy"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   75
+            Left            =   0
+            TabIndex        =   207
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Life/Death"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   74
+            Left            =   0
+            TabIndex        =   205
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Brace"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   73
+            Left            =   0
+            TabIndex        =   203
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   2  'Center
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Divine"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   72
+            Left            =   1380
+            TabIndex        =   202
+            Tag             =   "ctl"
+            Top             =   0
+            Width           =   840
+         End
+      End
+      Begin VB.Frame fraIconic 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00FFC0FF&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   2235
+         Left            =   6960
+         TabIndex        =   171
+         Tag             =   "ctl"
+         Top             =   180
+         Width           =   2352
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   252
+            Index           =   1
+            Left            =   1380
+            TabIndex        =   174
+            Top             =   0
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   252
+            Index           =   2
+            Left            =   1380
+            TabIndex        =   176
+            Top             =   240
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   252
+            Index           =   3
+            Left            =   1380
+            TabIndex        =   178
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   252
+            Index           =   4
+            Left            =   1380
+            TabIndex        =   180
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   255
+            Index           =   5
+            Left            =   1380
+            TabIndex        =   184
+            Top             =   1200
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   255
+            Index           =   6
+            Left            =   1380
+            TabIndex        =   186
+            Top             =   1440
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   255
+            Index           =   7
+            Left            =   1380
+            TabIndex        =   188
+            Top             =   1680
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   255
+            Index           =   8
+            Left            =   1380
+            TabIndex        =   182
+            Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnIconic 
+            Height          =   255
+            Index           =   9
+            Left            =   1380
+            TabIndex        =   190
+            Top             =   1920
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Trailblazer"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   104
+            Left            =   0
+            TabIndex        =   245
+            Tag             =   "ctl"
+            Top             =   1920
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Scoundrel"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   101
+            Left            =   0
+            TabIndex        =   181
+            Tag             =   "ctl"
+            Top             =   960
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Razorclaw"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   95
+            Left            =   0
+            TabIndex        =   187
+            Tag             =   "ctl"
+            Top             =   1680
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Shadar-kai"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   67
+            Left            =   0
+            TabIndex        =   185
+            Tag             =   "ctl"
+            Top             =   1455
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Scourge"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   66
+            Left            =   0
+            TabIndex        =   183
+            Tag             =   "ctl"
+            Top             =   1215
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "PDK"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   65
+            Left            =   0
+            TabIndex        =   179
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Morninglord"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   64
+            Left            =   0
+            TabIndex        =   177
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Deep Gnome"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   63
+            Left            =   0
+            TabIndex        =   175
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Bladeforged"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   62
+            Left            =   0
+            TabIndex        =   173
+            Tag             =   "ctl"
+            Top             =   12
+            Width           =   1260
+         End
+      End
+      Begin VB.Frame fraRacial 
+         Appearance      =   0  'Flat
+         BackColor       =   &H00C0FFFF&
+         BorderStyle     =   0  'None
+         ForeColor       =   &H80000008&
+         Height          =   3432
+         Left            =   4560
+         TabIndex        =   144
+         Tag             =   "ctl"
+         Top             =   180
+         Width           =   2292
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   1
+            Left            =   1320
+            TabIndex        =   146
+            Top             =   0
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   1
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   2
+            Left            =   1320
+            TabIndex        =   148
+            Top             =   240
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   3
+            Left            =   1320
+            TabIndex        =   150
+            Top             =   480
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   4
+            Left            =   1320
+            TabIndex        =   152
+            Top             =   720
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   5
+            Left            =   1320
+            TabIndex        =   154
+            Top             =   960
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   6
+            Left            =   1320
+            TabIndex        =   156
+            Top             =   1200
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   7
+            Left            =   1320
+            TabIndex        =   158
+            Top             =   1440
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   8
+            Left            =   1320
+            TabIndex        =   160
+            Top             =   1680
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   9
+            Left            =   1320
+            TabIndex        =   162
+            Top             =   1920
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   252
+            Index           =   10
+            Left            =   1320
+            TabIndex        =   164
+            Top             =   2160
+            Width           =   852
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   255
+            Index           =   11
+            Left            =   1320
+            TabIndex        =   168
+            Top             =   2640
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   255
+            Index           =   12
+            Left            =   1320
+            TabIndex        =   170
+            Top             =   2880
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   255
+            Index           =   13
+            Left            =   1320
+            TabIndex        =   166
+            Top             =   2400
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnRace 
+            Height          =   255
+            Index           =   14
+            Left            =   1320
+            TabIndex        =   172
+            Top             =   3120
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   3
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Tabaxi"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   103
+            Left            =   0
+            TabIndex        =   244
+            Tag             =   "ctl"
+            Top             =   3120
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Tiefling"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   100
+            Left            =   0
+            TabIndex        =   165
+            Tag             =   "ctl"
+            Top             =   2400
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Shifter"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   94
+            Left            =   0
+            TabIndex        =   169
+            Tag             =   "ctl"
+            Top             =   2880
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Warforged"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   61
+            Left            =   0
+            TabIndex        =   167
+            Tag             =   "ctl"
+            Top             =   2655
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Human"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   60
+            Left            =   0
+            TabIndex        =   163
+            Tag             =   "ctl"
+            Top             =   2172
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Half-Orc"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   59
+            Left            =   0
+            TabIndex        =   161
+            Tag             =   "ctl"
+            Top             =   1932
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Half-Elf"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   58
+            Left            =   0
+            TabIndex        =   159
+            Tag             =   "ctl"
+            Top             =   1692
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Halfling"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   57
+            Left            =   0
+            TabIndex        =   157
+            Tag             =   "ctl"
+            Top             =   1452
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Gnome"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   56
+            Left            =   0
+            TabIndex        =   155
+            Tag             =   "ctl"
+            Top             =   1212
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Elf"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   55
+            Left            =   0
+            TabIndex        =   153
+            Tag             =   "ctl"
+            Top             =   972
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Dwarf"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   54
+            Left            =   0
+            TabIndex        =   151
+            Tag             =   "ctl"
+            Top             =   732
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Drow"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   53
+            Left            =   0
+            TabIndex        =   149
+            Tag             =   "ctl"
+            Top             =   492
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Dragonborn"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   52
+            Left            =   0
+            TabIndex        =   147
+            Tag             =   "ctl"
+            Top             =   252
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Aasimar"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   51
+            Left            =   0
+            TabIndex        =   145
+            Tag             =   "ctl"
+            Top             =   12
+            Width           =   1200
+         End
+      End
+      Begin VB.Shape shpTab 
+         Height          =   975
+         Index           =   2
+         Left            =   11160
+         Top             =   60
+         Width           =   675
+      End
+   End
+   Begin VB.PictureBox picTab 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00FFFFC0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   3855
+      Index           =   0
+      Left            =   360
+      ScaleHeight     =   3855
+      ScaleWidth      =   9735
+      TabIndex        =   31
+      TabStop         =   0   'False
+      Tag             =   "ctl"
+      Top             =   4740
+      Width           =   9732
+      Begin VB.TextBox txtNotes 
+         Appearance      =   0  'Flat
+         BorderStyle     =   0  'None
+         Height          =   1692
+         Left            =   1080
+         MultiLine       =   -1  'True
+         ScrollBars      =   2  'Vertical
+         TabIndex        =   32
+         Top             =   600
+         Width           =   4572
+      End
+      Begin VB.Shape shpTab 
+         Height          =   2352
+         Index           =   0
+         Left            =   360
+         Top             =   300
+         Width           =   5892
+      End
+   End
    Begin VB.Frame fraImport 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
@@ -1947,2188 +4345,6 @@ Begin VB.Form frmCharacter
          Left            =   8220
          Top             =   120
          Width           =   1392
-      End
-   End
-   Begin VB.PictureBox picTab 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFC0C0&
-      BorderStyle     =   0  'None
-      ForeColor       =   &H80000008&
-      Height          =   3975
-      Index           =   2
-      Left            =   360
-      ScaleHeight     =   3975
-      ScaleWidth      =   9735
-      TabIndex        =   115
-      TabStop         =   0   'False
-      Tag             =   "ctl"
-      Top             =   4740
-      Visible         =   0   'False
-      Width           =   9732
-      Begin VB.Frame fraPastLives 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00C0FFC0&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   3675
-         Left            =   120
-         TabIndex        =   116
-         Tag             =   "ctl"
-         Top             =   120
-         Width           =   2055
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   12
-            Left            =   1080
-            TabIndex        =   106
-            Top             =   240
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   1
-            Left            =   1080
-            TabIndex        =   119
-            Top             =   480
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   2
-            Left            =   1080
-            TabIndex        =   121
-            Top             =   720
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   3
-            Left            =   1080
-            TabIndex        =   123
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   13
-            Left            =   1080
-            TabIndex        =   125
-            Top             =   1200
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   11
-            Left            =   1080
-            TabIndex        =   127
-            Top             =   1440
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   4
-            Left            =   1080
-            TabIndex        =   129
-            Top             =   1680
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   10
-            Left            =   1080
-            TabIndex        =   131
-            Top             =   1920
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   5
-            Left            =   1080
-            TabIndex        =   133
-            Top             =   2160
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   6
-            Left            =   1080
-            TabIndex        =   135
-            Top             =   2400
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   7
-            Left            =   1080
-            TabIndex        =   137
-            Top             =   2640
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   8
-            Left            =   1080
-            TabIndex        =   139
-            Top             =   2880
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   14
-            Left            =   1080
-            TabIndex        =   141
-            Top             =   3120
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   9
-            Left            =   1080
-            TabIndex        =   143
-            Top             =   3360
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnClass 
-            Height          =   255
-            Index           =   15
-            Left            =   1080
-            TabIndex        =   105
-            Top             =   0
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Alchemist"
-            ForeColor       =   &H80000008&
-            Height          =   255
-            Index           =   93
-            Left            =   0
-            TabIndex        =   242
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Wizard"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   50
-            Left            =   0
-            TabIndex        =   142
-            Tag             =   "ctl"
-            Top             =   3375
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Warlock"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   49
-            Left            =   0
-            TabIndex        =   140
-            Tag             =   "ctl"
-            Top             =   3135
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Sorcerer"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   48
-            Left            =   0
-            TabIndex        =   138
-            Tag             =   "ctl"
-            Top             =   2895
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Rogue"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   47
-            Left            =   0
-            TabIndex        =   136
-            Tag             =   "ctl"
-            Top             =   2655
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Ranger"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   46
-            Left            =   0
-            TabIndex        =   134
-            Tag             =   "ctl"
-            Top             =   2415
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Paladin"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   45
-            Left            =   0
-            TabIndex        =   132
-            Tag             =   "ctl"
-            Top             =   2175
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Monk"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   44
-            Left            =   0
-            TabIndex        =   130
-            Tag             =   "ctl"
-            Top             =   1935
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Fighter"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   43
-            Left            =   0
-            TabIndex        =   128
-            Tag             =   "ctl"
-            Top             =   1695
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Fav Soul"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   42
-            Left            =   0
-            TabIndex        =   126
-            Tag             =   "ctl"
-            Top             =   1455
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Druid"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   41
-            Left            =   0
-            TabIndex        =   124
-            Tag             =   "ctl"
-            Top             =   1215
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Cleric"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   40
-            Left            =   0
-            TabIndex        =   122
-            Tag             =   "ctl"
-            Top             =   975
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Bard"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   39
-            Left            =   0
-            TabIndex        =   120
-            Tag             =   "ctl"
-            Top             =   735
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Barbarian"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   38
-            Left            =   0
-            TabIndex        =   118
-            Tag             =   "ctl"
-            Top             =   495
-            Width           =   960
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Artificer"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   37
-            Left            =   0
-            TabIndex        =   117
-            Tag             =   "ctl"
-            Top             =   255
-            Width           =   960
-         End
-      End
-      Begin VB.Frame fraEpic 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFC0&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   1455
-         Index           =   3
-         Left            =   4680
-         TabIndex        =   189
-         Tag             =   "ctl"
-         Top             =   2460
-         Width           =   2352
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   1
-            Left            =   1380
-            TabIndex        =   193
-            Top             =   240
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   2
-            Left            =   1380
-            TabIndex        =   195
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   3
-            Left            =   1380
-            TabIndex        =   197
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   13
-            Left            =   1380
-            TabIndex        =   199
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   17
-            Left            =   1380
-            TabIndex        =   201
-            Top             =   1200
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Eclipse"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   102
-            Left            =   0
-            TabIndex        =   243
-            Tag             =   "ctl"
-            Top             =   1200
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Knowlege"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   96
-            Left            =   0
-            TabIndex        =   198
-            Tag             =   "ctl"
-            Top             =   960
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Arcane"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   68
-            Left            =   1380
-            TabIndex        =   191
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   840
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Alacrity"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   69
-            Left            =   0
-            TabIndex        =   192
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Criticals"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   70
-            Left            =   0
-            TabIndex        =   194
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Enchant"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   71
-            Left            =   0
-            TabIndex        =   196
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1260
-         End
-      End
-      Begin VB.Frame fraEpic 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFC0&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   1215
-         Index           =   2
-         Left            =   7200
-         TabIndex        =   221
-         Tag             =   "ctl"
-         Top             =   2700
-         Width           =   2352
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   10
-            Left            =   1380
-            TabIndex        =   224
-            Top             =   240
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   11
-            Left            =   1380
-            TabIndex        =   226
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   12
-            Left            =   1380
-            TabIndex        =   228
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   16
-            Left            =   1380
-            TabIndex        =   230
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Power"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   99
-            Left            =   0
-            TabIndex        =   229
-            Tag             =   "ctl"
-            Top             =   960
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Primal"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   80
-            Left            =   1380
-            TabIndex        =   222
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   840
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Doubleshot"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   81
-            Left            =   0
-            TabIndex        =   223
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Fast Healing"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   82
-            Left            =   0
-            TabIndex        =   225
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Queen"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   83
-            Left            =   0
-            TabIndex        =   227
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1260
-         End
-      End
-      Begin VB.Frame fraEpic 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFC0&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   1215
-         Index           =   1
-         Left            =   7200
-         TabIndex        =   211
-         Tag             =   "ctl"
-         Top             =   1440
-         Width           =   2352
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   7
-            Left            =   1380
-            TabIndex        =   214
-            Top             =   240
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   8
-            Left            =   1380
-            TabIndex        =   216
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   9
-            Left            =   1380
-            TabIndex        =   218
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   15
-            Left            =   1380
-            TabIndex        =   220
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Tactics"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   98
-            Left            =   0
-            TabIndex        =   219
-            Tag             =   "ctl"
-            Top             =   960
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Martial"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   76
-            Left            =   1380
-            TabIndex        =   212
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   840
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Doublestrike"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   77
-            Left            =   0
-            TabIndex        =   213
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Fortification"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   78
-            Left            =   0
-            TabIndex        =   215
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Skill Mastery"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   79
-            Left            =   0
-            TabIndex        =   217
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1260
-         End
-      End
-      Begin VB.Frame fraEpic 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFFFC0&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   1215
-         Index           =   0
-         Left            =   7200
-         TabIndex        =   200
-         Tag             =   "ctl"
-         Top             =   180
-         Width           =   2352
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   4
-            Left            =   1380
-            TabIndex        =   204
-            Top             =   240
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   5
-            Left            =   1380
-            TabIndex        =   206
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   252
-            Index           =   6
-            Left            =   1380
-            TabIndex        =   208
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnEpic 
-            Height          =   255
-            Index           =   14
-            Left            =   1380
-            TabIndex        =   210
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Blessings"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   97
-            Left            =   0
-            TabIndex        =   209
-            Tag             =   "ctl"
-            Top             =   960
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Block Energy"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   75
-            Left            =   0
-            TabIndex        =   207
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Life/Death"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   74
-            Left            =   0
-            TabIndex        =   205
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Brace"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   73
-            Left            =   0
-            TabIndex        =   203
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   2  'Center
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Divine"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   72
-            Left            =   1380
-            TabIndex        =   202
-            Tag             =   "ctl"
-            Top             =   0
-            Width           =   840
-         End
-      End
-      Begin VB.Frame fraIconic 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00FFC0FF&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   2235
-         Left            =   4680
-         TabIndex        =   171
-         Tag             =   "ctl"
-         Top             =   180
-         Width           =   2352
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   252
-            Index           =   1
-            Left            =   1380
-            TabIndex        =   174
-            Top             =   0
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   252
-            Index           =   2
-            Left            =   1380
-            TabIndex        =   176
-            Top             =   240
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   252
-            Index           =   3
-            Left            =   1380
-            TabIndex        =   178
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   252
-            Index           =   4
-            Left            =   1380
-            TabIndex        =   180
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   255
-            Index           =   5
-            Left            =   1380
-            TabIndex        =   184
-            Top             =   1200
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   255
-            Index           =   6
-            Left            =   1380
-            TabIndex        =   186
-            Top             =   1440
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   255
-            Index           =   7
-            Left            =   1380
-            TabIndex        =   188
-            Top             =   1680
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   255
-            Index           =   8
-            Left            =   1380
-            TabIndex        =   182
-            Top             =   960
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnIconic 
-            Height          =   255
-            Index           =   9
-            Left            =   1380
-            TabIndex        =   190
-            Top             =   1920
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Trailblazer"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   104
-            Left            =   0
-            TabIndex        =   245
-            Tag             =   "ctl"
-            Top             =   1920
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Scoundrel"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   101
-            Left            =   0
-            TabIndex        =   181
-            Tag             =   "ctl"
-            Top             =   960
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Razorclaw"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   95
-            Left            =   0
-            TabIndex        =   187
-            Tag             =   "ctl"
-            Top             =   1680
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Shadar-kai"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   67
-            Left            =   0
-            TabIndex        =   185
-            Tag             =   "ctl"
-            Top             =   1455
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Scourge"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   66
-            Left            =   0
-            TabIndex        =   183
-            Tag             =   "ctl"
-            Top             =   1215
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "PDK"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   65
-            Left            =   0
-            TabIndex        =   179
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Morninglord"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   64
-            Left            =   0
-            TabIndex        =   177
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Deep Gnome"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   63
-            Left            =   0
-            TabIndex        =   175
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1260
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Bladeforged"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   62
-            Left            =   0
-            TabIndex        =   173
-            Tag             =   "ctl"
-            Top             =   12
-            Width           =   1260
-         End
-      End
-      Begin VB.Frame fraRacial 
-         Appearance      =   0  'Flat
-         BackColor       =   &H00C0FFFF&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   3432
-         Left            =   2280
-         TabIndex        =   144
-         Tag             =   "ctl"
-         Top             =   180
-         Width           =   2292
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   1
-            Left            =   1320
-            TabIndex        =   146
-            Top             =   0
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   1
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   2
-            Left            =   1320
-            TabIndex        =   148
-            Top             =   240
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   3
-            Left            =   1320
-            TabIndex        =   150
-            Top             =   480
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   4
-            Left            =   1320
-            TabIndex        =   152
-            Top             =   720
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   5
-            Left            =   1320
-            TabIndex        =   154
-            Top             =   960
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   6
-            Left            =   1320
-            TabIndex        =   156
-            Top             =   1200
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   7
-            Left            =   1320
-            TabIndex        =   158
-            Top             =   1440
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   8
-            Left            =   1320
-            TabIndex        =   160
-            Top             =   1680
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   9
-            Left            =   1320
-            TabIndex        =   162
-            Top             =   1920
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   252
-            Index           =   10
-            Left            =   1320
-            TabIndex        =   164
-            Top             =   2160
-            Width           =   852
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   255
-            Index           =   11
-            Left            =   1320
-            TabIndex        =   168
-            Top             =   2640
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   255
-            Index           =   12
-            Left            =   1320
-            TabIndex        =   170
-            Top             =   2880
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   255
-            Index           =   13
-            Left            =   1320
-            TabIndex        =   166
-            Top             =   2400
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   2
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin Compendium.userSpinner usrspnRace 
-            Height          =   255
-            Index           =   14
-            Left            =   1320
-            TabIndex        =   172
-            Top             =   3120
-            Width           =   855
-            _ExtentX        =   1508
-            _ExtentY        =   450
-            Min             =   0
-            Max             =   3
-            Value           =   0
-            StepLarge       =   3
-            ShowZero        =   0   'False
-            ForeColor       =   -2147483640
-            BackColor       =   -2147483643
-            BorderColor     =   0
-            BorderInterior  =   -2147483631
-            Position        =   3
-            Enabled         =   -1  'True
-            DisabledColor   =   -2147483631
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Tabaxi"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   103
-            Left            =   0
-            TabIndex        =   244
-            Tag             =   "ctl"
-            Top             =   3120
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Tiefling"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   100
-            Left            =   0
-            TabIndex        =   165
-            Tag             =   "ctl"
-            Top             =   2400
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Shifter"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   94
-            Left            =   0
-            TabIndex        =   169
-            Tag             =   "ctl"
-            Top             =   2880
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Warforged"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   61
-            Left            =   0
-            TabIndex        =   167
-            Tag             =   "ctl"
-            Top             =   2655
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Human"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   60
-            Left            =   0
-            TabIndex        =   163
-            Tag             =   "ctl"
-            Top             =   2172
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Half-Orc"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   59
-            Left            =   0
-            TabIndex        =   161
-            Tag             =   "ctl"
-            Top             =   1932
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Half-Elf"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   58
-            Left            =   0
-            TabIndex        =   159
-            Tag             =   "ctl"
-            Top             =   1692
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Halfling"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   57
-            Left            =   0
-            TabIndex        =   157
-            Tag             =   "ctl"
-            Top             =   1452
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Gnome"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   56
-            Left            =   0
-            TabIndex        =   155
-            Tag             =   "ctl"
-            Top             =   1212
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Elf"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   55
-            Left            =   0
-            TabIndex        =   153
-            Tag             =   "ctl"
-            Top             =   972
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Dwarf"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   54
-            Left            =   0
-            TabIndex        =   151
-            Tag             =   "ctl"
-            Top             =   732
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Drow"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   53
-            Left            =   0
-            TabIndex        =   149
-            Tag             =   "ctl"
-            Top             =   492
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Dragonborn"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   52
-            Left            =   0
-            TabIndex        =   147
-            Tag             =   "ctl"
-            Top             =   252
-            Width           =   1200
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Aasimar"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   51
-            Left            =   0
-            TabIndex        =   145
-            Tag             =   "ctl"
-            Top             =   12
-            Width           =   1200
-         End
-      End
-      Begin VB.Shape shpTab 
-         Height          =   972
-         Index           =   2
-         Left            =   8940
-         Top             =   60
-         Width           =   672
-      End
-   End
-   Begin VB.PictureBox picTab 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00FFFFC0&
-      BorderStyle     =   0  'None
-      ForeColor       =   &H80000008&
-      Height          =   3855
-      Index           =   0
-      Left            =   360
-      ScaleHeight     =   3855
-      ScaleWidth      =   9735
-      TabIndex        =   31
-      TabStop         =   0   'False
-      Tag             =   "ctl"
-      Top             =   4740
-      Width           =   9732
-      Begin VB.TextBox txtNotes 
-         Appearance      =   0  'Flat
-         BorderStyle     =   0  'None
-         Height          =   1692
-         Left            =   1080
-         MultiLine       =   -1  'True
-         ScrollBars      =   2  'Vertical
-         TabIndex        =   32
-         Top             =   600
-         Width           =   4572
-      End
-      Begin VB.Shape shpTab 
-         Height          =   2352
-         Index           =   0
-         Left            =   360
-         Top             =   300
-         Width           =   5892
       End
    End
    Begin VB.Label lblTab 

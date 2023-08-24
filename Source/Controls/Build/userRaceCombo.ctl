@@ -3,10 +3,10 @@ Begin VB.UserControl userRaceCombo
    Appearance      =   0  'Flat
    AutoRedraw      =   -1  'True
    BackColor       =   &H80000005&
-   ClientHeight    =   2412
+   ClientHeight    =   2415
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   5496
+   ClientWidth     =   5490
    FillStyle       =   0  'Solid
    BeginProperty Font 
       Name            =   "Verdana"
@@ -17,8 +17,8 @@ Begin VB.UserControl userRaceCombo
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   2412
-   ScaleWidth      =   5496
+   ScaleHeight     =   2415
+   ScaleWidth      =   5490
 End
 Attribute VB_Name = "userRaceCombo"
 Attribute VB_GlobalNameSpace = False
@@ -31,7 +31,7 @@ Public Event Click(Race As Long)
 
 Private Type RowType
     Race As RaceEnum
-    Stats(1 To 6) As Long
+    Stats(1 To MAX_STATS) As Long
     Class As String
     Caption As String
 End Type

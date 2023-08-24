@@ -434,7 +434,7 @@ Private Sub FinishBuild()
     
     ' All Levelups
     build.Levelups(0) = build.Levelups(1)
-    For i = 2 To 7
+    For i = 2 To MAX_LEVELUPS
         If build.Levelups(i) <> build.Levelups(0) Then
             build.Levelups(0) = aeAny
             Exit For

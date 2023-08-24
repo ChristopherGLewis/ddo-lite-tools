@@ -118,11 +118,12 @@ End Function
 'Return the number of Epic levels
 Public Function EpicLevels() As Long
     If build.MaxLevels > 20 Then
-        If build.MaxLevels < 30 Then
-            EpicLevels = build.MaxLevels - 20
-        Else
-            EpicLevels = 10
-        End If
+        'If build.MaxLevels < MAX_LEVEL Then
+        '    EpicLevels = build.MaxLevels - 20
+        'Else
+        '    EpicLevels = 10
+        'End If
+        EpicLevels = build.MaxLevels - 20
     Else
         EpicLevels = 0
     End If
@@ -401,7 +402,6 @@ Public Sub InitBuildSkills()
     Dim lngClasses As Long
     Dim strInitial() As String
     Dim lngColor() As Long
-    Dim blnThief As Boolean
     Dim i As Long
     
     ' Initialize array
@@ -426,8 +426,12 @@ Public Sub InitBuildSkills()
             .Class = build.Class(lngLevel)
             .Initial = strInitial(.Class)
             .Color = lngColor(.Class)
-            If .Class = ceRogue Or .Class = ceArtificer Then blnThief = True
-            .Thief = blnThief
+            .Trapper = db.Class(.Class).Trapper
+            'If .Class = ceRogue Or .Class = ceArtificer Then
+            '    .Trapper = True
+            'Else
+            '    .Trapper = False
+            'End If
         End With
     Next
     ' Calculate max ranks for each interior cell
@@ -816,25 +820,40 @@ Private Function InitDeityFeats()
         enClass = build.Class(lngLevel)
         If enClass <> ceAny Then lngClassLevels(enClass) = lngClassLevels(enClass) + 1
         Select Case enClass
-            Case ceCleric, ceFavoredSoul, cePaladin
+            'Classes with Diety Feats - should probably be a flag in the classes.txt
+            Case ceCleric, cePaladin, ceSacredFist
                 Select Case lngClassLevels(enClass)
-                    Case 1
-                        If Not blnOne Then
-'                            lngCount = lngCount + 1
+                    Case 1, 6
+                        'If Not blnOne Then
                             InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
-                            blnOne = True
-                        End If
-                    Case 6
-                        If Not blnSix Then
-'                            lngCount = lngCount + 1
+                        '    blnOne = True
+                        'End If
+                    'Case 6
+                    '    If Not blnSix Then
+                    '       InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
+                    '       blnSix = True
+                    '    End If
+                    'Case 20 ' 3, 12, 20
+                    '    If enClass = ceFavoredSoul Then
+                    '        InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
+                    '    End If
+                End Select
+            Case ceFavoredSoul
+                Select Case lngClassLevels(enClass)
+                    Case 1, 3, 6, 12, 20
+                        'If Not blnOne Then
                             InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
-                            blnSix = True
-                        End If
-                    Case 20 ' 3, 12, 20
-                        If enClass = ceFavoredSoul Then
-'                            lngCount = lngCount + 1
-                            InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
-                        End If
+                        '    blnOne = True
+                        'End If
+                    'Case 6
+                    '    If Not blnSix Then
+                    '       InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
+                    '       blnSix = True
+                    '    End If
+                    'Case 20 ' 3, 12, 20
+                    '    If enClass = ceFavoredSoul Then
+                    '        InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
+                    '    End If
                 End Select
         End Select
     Next

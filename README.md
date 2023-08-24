@@ -13,6 +13,16 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.3.1 - Fixes
+Changes:
+- Various fixes
+        
+Fixes:
+- Ability raises now support level 32 on display and exports
+- Destiny Points work through level 32
+- Compendium was mis-rounding casual down, rather than up
+
+
 ### 4.3.0 - U56-U58 Archtype updates
 Changes:
 - Finalized updated for L32

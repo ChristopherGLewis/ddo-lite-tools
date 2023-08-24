@@ -37,6 +37,7 @@ Initial: A, Ar, Arti, Art
 Color: Blue
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
+Trapper: true
 SkillPoints: 4
 Skills: Concentration, Disable Device, Haggle, Open Lock, Repair, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Simple Weapons, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Exotic Weapon: Great Crossbow, Exotic Weapon: Rpt Lt Crossbow, Exotic Weapon: Rpt Hvy Crossbow
@@ -374,6 +375,7 @@ Color: Red
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
 SkillPoints: 8
+Trapper: true
 Skills: Balance, Bluff, Diplomacy, Disable Device, Haggle, Hide, Intimidate, Jump, Listen, Move Silently, Open Lock, Repair, Search, Spot, Swim, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light
 GrantedFeats1: Simple Weapons, Martial Weapon: Rapier, Martial Weapon: Shortbow, Martial Weapon: Shortsword
@@ -651,6 +653,7 @@ Initial: D, DH, DarkH, DHN
 Color: Green
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 1
+Trapper: true
 SkillPoints: 6
 Skills: Concentration, Disable Device, Heal, Hide, Jump, Listen, Move Silently, Open Lock, Search, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency

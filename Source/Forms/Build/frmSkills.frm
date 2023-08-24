@@ -4,10 +4,10 @@ Begin VB.Form frmSkills
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Skills"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   3924
-   ClientWidth     =   12216
+   ClientHeight    =   7755
+   ClientLeft      =   30
+   ClientTop       =   3930
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,8 +22,8 @@ Begin VB.Form frmSkills
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7755
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
       Left            =   0
@@ -31,8 +31,8 @@ Begin VB.Form frmSkills
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -47,8 +47,8 @@ Begin VB.Form frmSkills
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Skill Ranks;Skill Tomes"
@@ -76,8 +76,8 @@ Begin VB.Form frmSkills
       ForeColor       =   &H80000008&
       Height          =   6804
       Left            =   180
-      ScaleHeight     =   6804
-      ScaleWidth      =   11892
+      ScaleHeight     =   6810
+      ScaleWidth      =   11895
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   480
@@ -93,8 +93,8 @@ Begin VB.Form frmSkills
       ForeColor       =   &H80000008&
       Height          =   6804
       Left            =   180
-      ScaleHeight     =   6804
-      ScaleWidth      =   11892
+      ScaleHeight     =   6810
+      ScaleWidth      =   11895
       TabIndex        =   2
       TabStop         =   0   'False
       Top             =   480
@@ -124,8 +124,8 @@ Begin VB.Form frmSkills
             TabIndex        =   28
             Top             =   840
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -146,8 +146,8 @@ Begin VB.Form frmSkills
             TabIndex        =   30
             Top             =   1080
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -168,8 +168,8 @@ Begin VB.Form frmSkills
             TabIndex        =   26
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -190,8 +190,8 @@ Begin VB.Form frmSkills
             TabIndex        =   24
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -300,8 +300,8 @@ Begin VB.Form frmSkills
             TabIndex        =   56
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -322,8 +322,8 @@ Begin VB.Form frmSkills
             TabIndex        =   54
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -404,8 +404,8 @@ Begin VB.Form frmSkills
             TabIndex        =   6
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -426,8 +426,8 @@ Begin VB.Form frmSkills
             TabIndex        =   8
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -448,8 +448,8 @@ Begin VB.Form frmSkills
             TabIndex        =   10
             Top             =   840
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -470,8 +470,8 @@ Begin VB.Form frmSkills
             TabIndex        =   12
             Top             =   1080
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -580,8 +580,8 @@ Begin VB.Form frmSkills
             TabIndex        =   16
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -602,8 +602,8 @@ Begin VB.Form frmSkills
             TabIndex        =   18
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -624,8 +624,8 @@ Begin VB.Form frmSkills
             TabIndex        =   20
             Top             =   840
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -720,8 +720,8 @@ Begin VB.Form frmSkills
             TabIndex        =   48
             Top             =   840
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -742,8 +742,8 @@ Begin VB.Form frmSkills
             TabIndex        =   50
             Top             =   1080
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -764,8 +764,8 @@ Begin VB.Form frmSkills
             TabIndex        =   44
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -786,8 +786,8 @@ Begin VB.Form frmSkills
             TabIndex        =   46
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -896,8 +896,8 @@ Begin VB.Form frmSkills
             TabIndex        =   34
             Top             =   360
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -918,8 +918,8 @@ Begin VB.Form frmSkills
             TabIndex        =   38
             Top             =   840
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -940,8 +940,8 @@ Begin VB.Form frmSkills
             TabIndex        =   40
             Top             =   1080
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -962,8 +962,8 @@ Begin VB.Form frmSkills
             TabIndex        =   36
             Top             =   600
             Width           =   972
-            _ExtentX        =   1715
-            _ExtentY        =   445
+            _ExtentX        =   1720
+            _ExtentY        =   450
             Min             =   0
             Max             =   5
             Value           =   0
@@ -1784,16 +1784,28 @@ Private Sub Increment()
     Dim lngCumulative As Long
     Dim lngRanks As Long
     Dim i As Long
+    Dim anyTrapper As Boolean
     
-    ' Is this a thief skill, and are we a thief?
+    anyTrapper = False
+    ' Is this a Trapper skill, and have we taken a trapper level?
     If Skill.Map(mlngRow).Skill = seDisableDevice Or Skill.Map(mlngRow).Skill = seOpenLock Then
-        If Not Skill.Col(mlngCol).Thief Then Exit Sub
+        For i = 1 To mlngCol
+            'Have we taken a trapper level yet
+            If Skill.Col(i).Trapper Then
+                anyTrapper = True
+            End If
+        Next
+        If Not anyTrapper Then
+            Exit Sub
+        End If
     End If
     ' Do we have points left to spend this level?
     If Skill.Col(mlngCol).Points >= Skill.Col(mlngCol).MaxPoints Then Exit Sub
     ' Add point if we can fit it into the Level+3 cap
     With Skill.grid(Skill.Map(mlngRow).Skill, mlngCol)
-        If CumulativeRanks(mlngRow, mlngCol) + .Native <= .MaxRanks Then AddPoint 1
+        If CumulativeRanks(mlngRow, mlngCol) + .Native <= .MaxRanks Then
+            AddPoint 1
+        End If
     End With
 End Sub
 
@@ -1927,11 +1939,23 @@ Private Sub SkillMaxFullRanks()
     Dim lngSkill As Long
     
     lngSkill = Skill.Map(mlngRow).Skill
+    'Loop through columns from FirstLevel() to 20
     For lngCol = FirstLevel() To 20
         With Skill.grid(lngSkill, lngCol)
             .Ranks = .MaxRanks - lngCumulative
-            If .Ranks Mod 2 = 1 Then .Ranks = .Ranks - 1
-            If .Native = 0 Then build.Skills(lngSkill, lngCol) = 0 Else build.Skills(lngSkill, lngCol) = .Ranks \ .Native
+            If .Ranks Mod 2 = 1 Then
+                .Ranks = .Ranks - 1
+            End If
+            If .Native = 0 Then
+                build.Skills(lngSkill, lngCol) = 0
+            Else
+                'max this out to max for cell
+                'If (.Ranks \ .Native) > 4 Then
+                '    build.Skills(lngSkill, lngCol) = 4 '.Ranks \ .Native
+                'Else
+                    build.Skills(lngSkill, lngCol) = .Ranks \ .Native
+                'End If
+            End If
             lngCumulative = lngCumulative + .Ranks
         End With
         DrawCell mlngRow, lngCol
@@ -1967,6 +1991,7 @@ Private Sub SkillMaxEvenLevels()
     SkillsChanged
 End Sub
 
+''All skills should have a first level of 1 other than DD and OL
 Private Function FirstLevel() As Long
     Dim enSkill As Long
     Dim lngFirst As Long
@@ -1974,7 +1999,7 @@ Private Function FirstLevel() As Long
     enSkill = Skill.Map(mlngRow).Skill
     If enSkill = seDisableDevice Or enSkill = seOpenLock Then
         For lngFirst = 1 To 20
-            If Skill.Col(lngFirst).Thief Then Exit For
+            If Skill.Col(lngFirst).Trapper Then Exit For
         Next
     Else
         lngFirst = 1

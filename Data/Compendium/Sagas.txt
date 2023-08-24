@@ -77,7 +77,7 @@ Quest: Bullywugs and Booby Traps
 Quest: Fall of the Forbidden Temple
 Quest: Wild Thing
 Quest: The Stone Crypt Chronicle
-Quest: All Hail The King
+Quest: All Hail the King
 Quest: Trials of the Triceratops
 Quest: The Trouble with Tar Pits
 Quest: Whispers of Return

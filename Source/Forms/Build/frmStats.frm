@@ -26,7 +26,7 @@ Begin VB.Form frmStats
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
       Left            =   0
-      TabIndex        =   56
+      TabIndex        =   57
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
@@ -68,7 +68,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   0
          Left            =   1920
-         TabIndex        =   31
+         TabIndex        =   32
          Top             =   480
          Width           =   972
          _ExtentX        =   1720
@@ -90,7 +90,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   1
          Left            =   1920
-         TabIndex        =   33
+         TabIndex        =   34
          Top             =   960
          Width           =   972
          _ExtentX        =   1720
@@ -112,7 +112,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   2
          Left            =   1920
-         TabIndex        =   35
+         TabIndex        =   36
          Top             =   1200
          Width           =   972
          _ExtentX        =   1720
@@ -134,7 +134,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   3
          Left            =   1920
-         TabIndex        =   37
+         TabIndex        =   38
          Top             =   1440
          Width           =   972
          _ExtentX        =   1720
@@ -156,7 +156,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   4
          Left            =   1920
-         TabIndex        =   39
+         TabIndex        =   40
          Top             =   1680
          Width           =   972
          _ExtentX        =   1720
@@ -178,7 +178,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   5
          Left            =   1920
-         TabIndex        =   41
+         TabIndex        =   42
          Top             =   1920
          Width           =   972
          _ExtentX        =   1720
@@ -200,7 +200,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   6
          Left            =   1920
-         TabIndex        =   43
+         TabIndex        =   44
          Top             =   2160
          Width           =   972
          _ExtentX        =   1720
@@ -223,7 +223,7 @@ Begin VB.Form frmStats
          Caption         =   "Tomes locked to max level"
          Height          =   255
          Left            =   360
-         TabIndex        =   59
+         TabIndex        =   60
          Top             =   2500
          Width           =   2655
       End
@@ -236,7 +236,7 @@ Begin VB.Form frmStats
          Height          =   216
          Index           =   2
          Left            =   120
-         TabIndex        =   29
+         TabIndex        =   30
          Top             =   0
          Width           =   612
       End
@@ -248,7 +248,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   1
          Left            =   360
-         TabIndex        =   32
+         TabIndex        =   33
          Top             =   960
          Width           =   1332
       End
@@ -260,7 +260,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   2
          Left            =   360
-         TabIndex        =   34
+         TabIndex        =   35
          Top             =   1200
          Width           =   1332
       End
@@ -272,7 +272,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   3
          Left            =   360
-         TabIndex        =   36
+         TabIndex        =   37
          Top             =   1440
          Width           =   1332
       End
@@ -284,7 +284,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   4
          Left            =   360
-         TabIndex        =   38
+         TabIndex        =   39
          Top             =   1680
          Width           =   1332
       End
@@ -296,7 +296,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   5
          Left            =   360
-         TabIndex        =   40
+         TabIndex        =   41
          Top             =   1920
          Width           =   1332
       End
@@ -308,7 +308,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   6
          Left            =   360
-         TabIndex        =   42
+         TabIndex        =   43
          Top             =   2160
          Width           =   1332
       End
@@ -320,7 +320,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   0
          Left            =   360
-         TabIndex        =   30
+         TabIndex        =   31
          Top             =   480
          Width           =   1332
       End
@@ -443,7 +443,7 @@ Begin VB.Form frmStats
       Height          =   2772
       Index           =   3
       Left            =   3960
-      TabIndex        =   44
+      TabIndex        =   45
       Top             =   4440
       Width           =   7932
       Begin VB.CheckBox chkTemplate 
@@ -455,7 +455,7 @@ Begin VB.Form frmStats
          Index           =   3
          Left            =   420
          Style           =   1  'Graphical
-         TabIndex        =   53
+         TabIndex        =   54
          Top             =   2040
          Visible         =   0   'False
          Width           =   1332
@@ -469,7 +469,7 @@ Begin VB.Form frmStats
          Index           =   1
          Left            =   420
          Style           =   1  'Graphical
-         TabIndex        =   49
+         TabIndex        =   50
          Top             =   960
          Visible         =   0   'False
          Width           =   1332
@@ -483,7 +483,7 @@ Begin VB.Form frmStats
          Index           =   2
          Left            =   420
          Style           =   1  'Graphical
-         TabIndex        =   51
+         TabIndex        =   52
          Top             =   1500
          Visible         =   0   'False
          Width           =   1332
@@ -497,7 +497,7 @@ Begin VB.Form frmStats
          Index           =   0
          Left            =   420
          Style           =   1  'Graphical
-         TabIndex        =   47
+         TabIndex        =   48
          Top             =   420
          Visible         =   0   'False
          Width           =   1332
@@ -523,7 +523,7 @@ Begin VB.Form frmStats
          ForeColor       =   &H00FF0000&
          Height          =   216
          Left            =   6804
-         TabIndex        =   57
+         TabIndex        =   58
          Top             =   0
          Width           =   960
       End
@@ -534,7 +534,7 @@ Begin VB.Form frmStats
          ForeColor       =   &H80000008&
          Height          =   732
          Left            =   5220
-         TabIndex        =   54
+         TabIndex        =   55
          Top             =   600
          Visible         =   0   'False
          Width           =   2352
@@ -546,7 +546,7 @@ Begin VB.Form frmStats
          ForeColor       =   &H80000008&
          Height          =   732
          Left            =   5280
-         TabIndex        =   55
+         TabIndex        =   56
          Top             =   1680
          Visible         =   0   'False
          Width           =   2292
@@ -559,7 +559,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   3
          Left            =   1920
-         TabIndex        =   52
+         TabIndex        =   53
          Top             =   2160
          UseMnemonic     =   0   'False
          Visible         =   0   'False
@@ -573,7 +573,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   2
          Left            =   1920
-         TabIndex        =   50
+         TabIndex        =   51
          Top             =   1620
          UseMnemonic     =   0   'False
          Visible         =   0   'False
@@ -587,7 +587,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   1
          Left            =   1920
-         TabIndex        =   48
+         TabIndex        =   49
          Top             =   1080
          UseMnemonic     =   0   'False
          Visible         =   0   'False
@@ -601,7 +601,7 @@ Begin VB.Form frmStats
          Height          =   252
          Index           =   0
          Left            =   1920
-         TabIndex        =   46
+         TabIndex        =   47
          Top             =   540
          UseMnemonic     =   0   'False
          Visible         =   0   'False
@@ -615,7 +615,7 @@ Begin VB.Form frmStats
          ForeColor       =   &H00FF0000&
          Height          =   216
          Left            =   120
-         TabIndex        =   45
+         TabIndex        =   46
          Top             =   0
          Visible         =   0   'False
          Width           =   924
@@ -640,76 +640,101 @@ Begin VB.Form frmStats
       Top             =   600
       Width           =   3492
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
-         Index           =   7
+         Height          =   330
+         Index           =   8
+         ItemData        =   "frmStats.frx":0010
          Left            =   1200
+         List            =   "frmStats.frx":0012
          Style           =   2  'Dropdown List
-         TabIndex        =   27
-         Top             =   3120
+         TabIndex        =   29
+         Top             =   3360
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
+         Index           =   7
+         ItemData        =   "frmStats.frx":0014
+         Left            =   1200
+         List            =   "frmStats.frx":0016
+         Style           =   2  'Dropdown List
+         TabIndex        =   27
+         Top             =   3000
+         Width           =   1932
+      End
+      Begin VB.ComboBox cboLevelup 
+         Height          =   330
          Index           =   6
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   25
-         Top             =   2760
+         Top             =   2640
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   5
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   23
-         Top             =   2400
+         Top             =   2280
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   4
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   21
-         Top             =   2040
+         Top             =   1920
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   3
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   19
-         Top             =   1680
+         Top             =   1560
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   2
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   17
-         Top             =   1320
+         Top             =   1200
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   1
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   15
-         Top             =   960
+         Top             =   840
          Width           =   1932
       End
       Begin VB.ComboBox cboLevelup 
-         Height          =   312
+         Height          =   330
          Index           =   0
          Left            =   1200
          Style           =   2  'Dropdown List
          TabIndex        =   13
          Top             =   480
          Width           =   1932
+      End
+      Begin VB.Label lblLevelup 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Level 32:"
+         ForeColor       =   &H80000008&
+         Height          =   255
+         Index           =   8
+         Left            =   240
+         TabIndex        =   61
+         Top             =   3390
+         Width           =   1095
       End
       Begin VB.Label lblGroup 
          Appearance      =   0  'Flat
@@ -729,84 +754,84 @@ Begin VB.Form frmStats
          BackColor       =   &H80000005&
          Caption         =   "Level 28:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   7
          Left            =   240
          TabIndex        =   26
-         Top             =   3156
-         Width           =   1092
+         Top             =   3030
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 24:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   6
          Left            =   240
          TabIndex        =   24
-         Top             =   2796
-         Width           =   1092
+         Top             =   2670
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 20:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   5
          Left            =   240
          TabIndex        =   22
-         Top             =   2436
-         Width           =   1092
+         Top             =   2310
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 16:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   4
          Left            =   240
          TabIndex        =   20
-         Top             =   2076
-         Width           =   1092
+         Top             =   1950
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 12:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   3
          Left            =   240
          TabIndex        =   18
-         Top             =   1716
-         Width           =   1092
+         Top             =   1590
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 8:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   2
          Left            =   240
          TabIndex        =   16
-         Top             =   1356
-         Width           =   1092
+         Top             =   1230
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
          BackColor       =   &H80000005&
          Caption         =   "Level 4:"
          ForeColor       =   &H80000008&
-         Height          =   252
+         Height          =   255
          Index           =   1
          Left            =   240
          TabIndex        =   14
-         Top             =   996
-         Width           =   1092
+         Top             =   870
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
@@ -838,7 +863,7 @@ Begin VB.Form frmStats
       Left            =   120
       ScaleHeight     =   6795
       ScaleWidth      =   11955
-      TabIndex        =   58
+      TabIndex        =   59
       Top             =   480
       Visible         =   0   'False
       Width           =   11952
@@ -937,6 +962,8 @@ Private Sub StatsChanged()
     CascadeChanges cceStats
     SetDirty
 End Sub
+
+
 
 
 ' ************* NAVIGATION *************
@@ -1046,9 +1073,9 @@ On Error GoTo LoadDataErr
         End With
     Next
     ' Levelups
-    For lngIndex = 0 To 7
+    For lngIndex = 0 To MAX_LEVELUPS
         ComboClear Me.cboLevelup(lngIndex)
-        For i = 0 To 6
+        For i = 0 To MAX_STATS
             ComboAddItem Me.cboLevelup(lngIndex), GetStatName(i), i
         Next
         ComboSetValue Me.cboLevelup(lngIndex), build.Levelups(lngIndex)
@@ -1087,7 +1114,7 @@ Private Sub EnforceLevelMax()
         Me.usrSpinner(i).Visible = blnVisible
     Next
     ' Levelups
-    For i = 1 To 7
+    For i = 1 To MAX_LEVELUPS
         blnVisible = (build.MaxLevels >= i * 4)
         Me.lblLevelup(i).Visible = blnVisible
         Me.cboLevelup(i).Visible = blnVisible
@@ -1159,14 +1186,14 @@ Private Sub cboLevelup_Click(Index As Integer)
     build.Levelups(Index) = ComboGetValue(Me.cboLevelup(Index))
     ' Propagate "All Levels" to all the levels
     If Index = 0 Then
-        For i = 1 To 7
+        For i = 1 To MAX_LEVELUPS
             build.Levelups(i) = build.Levelups(0)
             ComboSetValue Me.cboLevelup(i), build.Levelups(i)
         Next
     Else ' Set "All Levels" if all levels are the same, or unset if not
         enStat = build.Levelups(1)
         blnUniform = True
-        For i = 2 To 7
+        For i = 2 To MAX_LEVELUPS
             If build.Levelups(i) <> enStat Then blnUniform = False
         Next
         If Not blnUniform Then enStat = aeAny
@@ -1256,8 +1283,9 @@ End Sub
 Private Function IsTrapper() As Boolean
     Dim i As Long
     
+    'Trapper check - this should probably be a flag in the CLASS.TXT
     For i = 1 To 20
-        If build.Class(i) = ceRogue Or build.Class(i) = ceArtificer Then
+        If db.Class(build.Class(i)).Trapper Then
             IsTrapper = True
             Exit Function
         End If
@@ -1282,7 +1310,7 @@ Private Sub ShowWarning(Index As Integer)
     Me.tmrWarning.Enabled = False
     lngColor = cfg.GetColor(cgeWorkspace, cveText)
     For i = 0 To 3
-        lngTemplate = Val(Me.chkTemplate(i).Tag)
+        lngTemplate = val(Me.chkTemplate(i).Tag)
         If lngTemplate Then
             With Me.lblTemplate(i)
                 If .Caption <> db.Template(lngTemplate).Descrip Then .Caption = db.Template(lngTemplate).Descrip
@@ -1291,7 +1319,7 @@ Private Sub ShowWarning(Index As Integer)
         End If
     Next
     If Index = -1 Then Exit Sub
-    lngTemplate = Val(Me.chkTemplate(Index).Tag)
+    lngTemplate = val(Me.chkTemplate(Index).Tag)
     If lngTemplate = 0 Then Exit Sub
     If Len(db.Template(lngTemplate).Warning) = 0 Then Exit Sub
     With Me.lblTemplate(Index)
@@ -1323,7 +1351,7 @@ Private Sub ApplyTemplate(plngIndex As Long)
         ApplyStats plngIndex, 3, 2
         ApplyStats plngIndex, 4, 3
     End If
-    For i = 0 To 7
+    For i = 0 To MAX_LEVELUPS
         build.Levelups(i) = db.Template(plngIndex).Levelups
     Next
     LoadData
@@ -1334,7 +1362,7 @@ End Sub
 Private Sub ApplyStats(plngIndex As Long, plngTemp As Long, plngBuild As Long)
     Dim i As Long
     
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         build.StatPoints(plngBuild, i) = db.Template(plngIndex).StatPoints(plngTemp, i)
         build.StatPoints(plngBuild, 0) = build.StatPoints(plngBuild, 0) + build.StatPoints(plngBuild, i)
     Next
@@ -1568,19 +1596,27 @@ Private Sub DrawLevelupRow(penStat As StatEnum, plngTop As Long)
     Dim lngColor As Long
     Dim i As Long
     
-    For i = 1 To 7
+    For i = 1 To MAX_LEVELUPS
         If build.Levelups(i) = penStat Then Exit For
     Next
-    If i > 7 Then Exit Sub
+    If i > MAX_LEVELUPS Then Exit Sub
     lngTop = plngTop + grid.OffsetY
     Me.picSchedule.CurrentX = 0
     Me.picSchedule.CurrentY = lngTop
     Me.picSchedule.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
     Me.picSchedule.Print "Levelups"
-    For i = 0 To 30
+    For i = 0 To MAX_LEVEL
         lngValue = CalculateLevelup(penStat, i)
-        If lngValue <> lngOldValue Then lngColor = cfg.GetColor(cgeWorkspace, cveText) Else lngColor = cfg.GetColor(cgeWorkspace, cveTextDim)
-        If lngValue < 10 Then lngLeft = grid.CellLeft(i) + grid.OffsetX1 Else lngLeft = grid.CellLeft(i) + grid.OffsetX2
+        If lngValue <> lngOldValue Then
+            lngColor = cfg.GetColor(cgeWorkspace, cveText)
+        Else
+            lngColor = cfg.GetColor(cgeWorkspace, cveTextDim)
+        End If
+        If lngValue < 10 Then
+            lngLeft = grid.CellLeft(i) + grid.OffsetX1
+        Else
+            lngLeft = grid.CellLeft(i) + grid.OffsetX2
+        End If
         Me.picSchedule.CurrentX = lngLeft
         Me.picSchedule.CurrentY = lngTop
         Me.picSchedule.ForeColor = lngColor

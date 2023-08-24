@@ -218,7 +218,11 @@ Private Sub LoadClasses()
     strRaw = xp.File.LoadToString(strFile)
     strClass = Split(strRaw, "ClassName: ")
     For i = 1 To UBound(strClass)
-        If InStr(strClass(i), "BAB: ") Then LoadClass strClass(i) Else ErrorLoading strClass(i)
+        If InStr(strClass(i), "BAB: ") Then
+            LoadClass strClass(i)
+        Else
+            ErrorLoading strClass(i)
+        End If
     Next
 End Sub
 
@@ -257,6 +261,7 @@ Private Sub LoadClass(ByVal pstrRaw As String)
         ReDim .Initial(0)
         .Initial(0) = Left$(.ClassName, 1)
         log.LoadItem = .ClassName
+        .Trapper = False
         ' Process lines
         For lngLine = 1 To UBound(strLine)
             log.HasError = False
@@ -265,6 +270,8 @@ Private Sub LoadClass(ByVal pstrRaw As String)
                 Select Case strField
                     Case "abbreviation"
                         .Abbreviation = strItem
+                    Case "trapper"
+                        .Trapper = CBool(strItem)
                     Case "initial"
                         If lngListMax = 3 Then .Initial = strList Else LogError
                     Case "color"

@@ -286,11 +286,17 @@ Public Function QuestFavor(plngQuest As Long, ByVal penDifficulty As ProgressEnu
         Case qeSolo: If penDifficulty <> peNone Then penDifficulty = peSolo
     End Select
     Select Case penDifficulty
-        Case peElite: QuestFavor = db.Quest(plngQuest).Favor * 3
-        Case peNone: QuestFavor = 0
-        Case peSolo, peNormal: QuestFavor = db.Quest(plngQuest).Favor
-        Case peHard: QuestFavor = db.Quest(plngQuest).Favor * 2
-        Case peCasual: QuestFavor = db.Quest(plngQuest).Favor \ 2
+        Case peElite:
+            QuestFavor = db.Quest(plngQuest).Favor * 3
+        Case peNone:
+            QuestFavor = 0
+        Case peSolo, peNormal:
+            QuestFavor = db.Quest(plngQuest).Favor
+        Case peHard:
+            QuestFavor = db.Quest(plngQuest).Favor * 2
+        Case peCasual:
+            'This needs to be rounded up
+            QuestFavor = Int((db.Quest(plngQuest).Favor / 2) * 2 + 1) \ 2
     End Select
 End Function
 
@@ -323,7 +329,7 @@ Public Sub Reincarnate(plngCharacter As Long)
     End With
     If GetForm(frm, "frmCharacter") Then frm.FavorTotals
     If GetForm(frm, "frmChallenges") Then frm.ReQueryData plngCharacter
-    If GetForm(frm, "frmPatrons") Then frm.RedrawForm
+    If GetForm(frm, "frmPatrons") Then frm.ReDrawForm
     If GetForm(frm, "frmSagas") Then frm.Redraw
     frmCompendium.RedrawQuests
     frmCompendium.FavorChange plngCharacter

@@ -2581,7 +2581,11 @@ Private Sub ShowGuideAvailable(pblnPreserveTopIndex As Boolean)
         For i = 1 To Guide.Trees
             If ActiveTree(i) Then
                 With Guide.Tree(i)
-                    If .Duplicate Then strDisplay = .TreeName & " (" & db.Class(.Class).Initial(3) & ")" Else strDisplay = .TreeName
+                    If .Duplicate Then
+                        strDisplay = .TreeName & " (" & db.Class(.Class).Initial(3) & ")"
+                    Else
+                        strDisplay = .TreeName
+                    End If
                     ListboxAddItem Me.lstGuideAbility, "Reset " & strDisplay, 100 + Guide.Tree(i).BuildGuideTreeID
                 End With
                 blnResetAll = True
@@ -2610,7 +2614,7 @@ Private Sub ShowGuideAvailable(pblnPreserveTopIndex As Boolean)
                         typCheck.Rank = lngRank
                         If GuideAbilityTaken(typCheck) Then Exit Do
                         If Not GuideSelected(typCheck) Then Exit Do
-                        If Not (enGuideFilter = gfeAllSelected Or enGuideFilter = gfeAllEnhancements) Then
+                        If Not (enGuideFilter = gfeAllSelected Or enGuideFilter = gfeAllEnhancements Or enGuideFilter = gfeSelectedAvailable) Then
                             If GuideAbilityML(mlngGuideTree, lngTier, lngAbility, typCheck.Selector, lngRank) > mlngGuideLevel Then Exit Do
                             If CheckGuideAvailable(db.Tree(lngTree), Guide.Tree(mlngGuideTree).BuildTree, typCheck, lngSpent) Then Exit Do
                         End If
@@ -2629,7 +2633,11 @@ Private Sub ShowGuideAvailable(pblnPreserveTopIndex As Boolean)
 End Sub
 
 Private Function GuideFilter() As GuideFilterEnum
-    If Me.cboGuideAbility.ListIndex = -1 Then GuideFilter = gfeUnknown Else GuideFilter = Me.cboGuideAbility.ListIndex
+    If Me.cboGuideAbility.ListIndex = -1 Then
+        GuideFilter = gfeUnknown
+    Else
+        GuideFilter = Me.cboGuideAbility.ListIndex
+    End If
 End Function
 
 Private Function GuideBuildAbilityDisplay(plngTree As Long, ptypAbility As BuildAbilityType) As String
@@ -2662,7 +2670,10 @@ Private Function GuideAbilityTaken(ptypAbility As BuildAbilityType) As Boolean
             With .Enhancement(i)
                 Select Case .ID
                     Case 100, 100 + Guide.Tree(mlngGuideTree).BuildGuideTreeID: blnTaken = False
-                    Case Guide.Tree(mlngGuideTree).BuildGuideTreeID: If .Tier = ptypAbility.Tier And .Ability = ptypAbility.Ability And .Rank = ptypAbility.Rank Then blnTaken = True
+                    Case Guide.Tree(mlngGuideTree).BuildGuideTreeID:
+                        If .Tier = ptypAbility.Tier And .Ability = ptypAbility.Ability And .Rank = ptypAbility.Rank Then
+                            blnTaken = True
+                        End If
                 End Select
             End With
         Next
@@ -2676,7 +2687,7 @@ Private Function GuideSelected(ptypAbility As BuildAbilityType) As Boolean
     Dim i As Long
 
     Select Case GuideFilter()
-        Case gfeAllAvailable, gfeAllEnhancements
+        Case gfeAllAvailable, gfeAllEnhancements, gfeSelectedAvailable
             GuideSelected = True
             Exit Function
     End Select

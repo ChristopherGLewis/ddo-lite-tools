@@ -125,12 +125,12 @@ Cost: 2
 AbilityName: Bring Down Wrath
 Descrip: Your shield is now considered a Favored Weapon for the purposes of your Divine Crusader Destiny Mantle, and now Doublestrikes at 50% of the rate of your main hand Doublestrike as if it were an offhand weapon.
 Tier: 5
-Cost: 2
+Cost: 1
 
 AbilityName: Law of the Divine
 Descrip: You gain the Embodiment of Law feat. If you already had it, it instead enhances the feat to deal 1d6 Law damage per Epic Level scaling with 200% Melee or Ranged Power, and apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application)
 Tier: 5
-Cost: 2
+Cost: 1
 
 AbilityName: Blessed Blades
 Descrip: While using a Favored Weapon, +1 Critical Multiplier on a roll of 19-20.

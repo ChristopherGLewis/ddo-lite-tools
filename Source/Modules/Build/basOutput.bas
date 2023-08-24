@@ -416,26 +416,25 @@ Private Sub OutputStats()
     Dim lngPoints As Long
     Dim strText As String
     Dim strItem As String
-    Dim blnLevelup28 As Boolean
     Dim lngColumns As Long
     Dim i As Long
     
     If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeStats) Then Exit Sub
     If Not ValidStats() Then Exit Sub
-    If build.Levelups(7) <> aeAny And build.MaxLevels >= 28 Then blnLevelup28 = True
+
     For i = 0 To 3
         blnShow(i) = (build.IncludePoints(i) = 1 And build.StatPoints(i, 0) = GetBuildPoints(i))
 '        If build.RacialAP > 0 And i < 3 Then blnShow(i) = False
         If blnShow(i) Then lngColumns = lngColumns + 1
     Next
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         If CapTome(build.Tome(i)) > 0 Then
             blnShow(4) = True
             lngColumns = lngColumns + 1
             Exit For
         End If
     Next
-    For i = 1 To 7
+    For i = 1 To MAX_LEVELUPS
         If build.Levelups(i) <> aeAny Then
             If CapLevelup(i * 4) > 0 Then
                 blnShow(5) = True
@@ -468,7 +467,7 @@ Private Sub OutputStats()
     If blnShow(5) Then OutputText "--------", False
     OutputText vbNullString
     ' Body
-    For lngStat = 1 To 6
+    For lngStat = 1 To MAX_STATS
         OutputText Left$(GetStatName(lngStat) & Space$(15), 15), False
         ' Build Points
         For lngPoints = 0 To 3
@@ -491,10 +490,15 @@ Private Sub OutputStats()
             OutputText AlignText(strItem, 7, vbRightJustify), False, LevelupColor(lngStat)
         End If
         ' Output this line
-        If lngStat = 6 And Not blnLevelup28 Then OutputText vbNullString, , , sceCourierEnd Else OutputText vbNullString
+        'If lngStat = 6 And Not blnShowMoreLevelups Then
+        '    OutputText vbNullString, , , sceCourierEnd
+        'Else
+            OutputText vbNullString
+        'End If
+            
     Next
-    ' Level 28 levelup (extends one line below the main grid)
-    If blnLevelup28 Then
+    'Loop for 25+ to get additional level ups
+    For i = 28 To build.MaxLevels Step 4
         ' Even though this line is all blanks (dots), process it the same as the previous lines.
         ' This is because when displaying, bold text is (annoyingly) wider than regular text
         ' despite Courier being a fixed-width font. Fixed width? Lies!!!!!
@@ -504,12 +508,11 @@ Private Sub OutputStats()
                 OutputText Space(9), False, , , (build.BuildPoints = lngStat)
             End If
         Next
-        strText = "28: " & UCase$(GetStatName(build.Levelups(7), True))
-        OutputText strText, , LevelupColor(7), sceCourierEnd
-        BlankLine
-    Else
-        BlankLine 2
-    End If
+        strText = i & ": " & UCase$(GetStatName(build.Levelups(i / 4), True))
+        OutputText strText, , LevelupColor(i / 4) ' , sceCourierEnd
+        
+    Next
+    BlankLine
 End Sub
 
 Private Sub OutputStatsReddit(pblnShow() As Boolean, plngColumns As Long)
@@ -562,7 +565,11 @@ Private Sub OutputStatsReddit(pblnShow() As Boolean, plngColumns As Long)
         ' Levelups
         If pblnShow(5) Then
             If build.Levelups(lngStat) <> aeAny And build.MaxLevels >= lngStat * 4 Then
-                If build.Levelups(lngStat) = lngMainStat Then strBold = vbNullString Else strBold = "**"
+                If build.Levelups(lngStat) = lngMainStat Then
+                    strBold = vbNullString
+                Else
+                    strBold = "**"
+                End If
                 strText = strText & strBold & lngStat * 4 & ": " & UCase$(GetStatName(build.Levelups(lngStat), True)) & strBold
             End If
             strText = strText & "|"
@@ -570,24 +577,30 @@ Private Sub OutputStatsReddit(pblnShow() As Boolean, plngColumns As Long)
         ' Output this line
         OutputText strText
     Next
-    If build.Levelups(7) <> aeAny And build.MaxLevels >= 28 Then
-        If build.Levelups(7) = lngMainStat Then strBold = vbNullString Else strBold = "**"
-        strText = strBold & lngStat * 4 & ": " & UCase$(GetStatName(build.Levelups(7), True)) & strBold
+    ' output levelups more that stats
+    'Loop for 25+ to get additional level ups
+    For i = 28 To build.MaxLevels Step 4
+        If build.Levelups(i / 4) = lngMainStat Then
+            strBold = vbNullString
+        Else
+            strBold = "**"
+        End If
+        strText = strBold & i & ": " & UCase$(GetStatName(build.Levelups(i / 4), True)) & strBold
         OutputText Left$("||||||||", plngColumns - 1) & strText & "|"
-    End If
+    Next
     BlankLine
 End Sub
 
 Private Function IdentifyMainStat() As Long
-    Dim lngStat(6) As Long
+    Dim lngStat(MAX_STATS) As Long
     Dim lngHigh As Long
     Dim lngMain As Long
     Dim i As Long
     
-    For i = 1 To 7
+    For i = 1 To MAX_LEVELUPS
         lngStat(build.Levelups(i)) = lngStat(build.Levelups(i)) + 1
     Next
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         If lngHigh < lngStat(i) Then
             lngHigh = lngStat(i)
             lngMain = i

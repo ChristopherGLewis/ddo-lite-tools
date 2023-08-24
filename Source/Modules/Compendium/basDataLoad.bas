@@ -480,10 +480,10 @@ Private Sub SortQuests(Optional ByVal plngLeft As Long, Optional ByVal plngRight
     lngLast = plngRight
     strMid = db.Quest((plngLeft + plngRight) \ 2).ID
     Do
-        Do While db.Quest(lngFirst).ID < strMid And lngFirst < plngRight
+        Do While UCase(db.Quest(lngFirst).ID) < UCase(strMid) And lngFirst < plngRight
             lngFirst = lngFirst + 1
         Loop
-        Do While strMid < db.Quest(lngLast).ID And lngLast > plngLeft
+        Do While UCase(strMid) < UCase(db.Quest(lngLast).ID) And lngLast > plngLeft
             lngLast = lngLast - 1
         Loop
         If lngFirst <= lngLast Then
@@ -507,7 +507,7 @@ Public Function SeekQuest(pstrID As String) As Long
     lngLast = db.Quests
     Do While lngFirst <= lngLast
         lngMid = (lngFirst + lngLast) \ 2
-        If db.Quest(lngMid).ID > pstrID Then
+        If UCase(db.Quest(lngMid).ID) > UCase(pstrID) Then 'Case insensitive compare
             lngLast = lngMid - 1
         ElseIf db.Quest(lngMid).ID < pstrID Then
             lngFirst = lngMid + 1

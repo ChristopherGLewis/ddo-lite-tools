@@ -221,7 +221,7 @@ Private Sub SaveStatsLite()
     lngLines = mlngLines
     AddLine ";    Advn  Chmp  Hero  Lgnd  Tome"
     AddLine ";    ----  ----  ----  ----  ----"
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         AddLine MakeStatLine(i, False, blnInclude)
     Next
     AddLine ";    ----  ----  ----  ----"
@@ -230,7 +230,7 @@ Private Sub SaveStatsLite()
     ' Levelups
     lngLines = mlngLines
     blnInclude = False
-    For i = 0 To 7
+    For i = 0 To MAX_LEVELUPS
         AddLine "Levelup: " & i * 4 & vbTab & GetStatName(build.Levelups(i))
         If build.Levelups(i) <> aeAny Then blnInclude = True
     Next
@@ -846,7 +846,9 @@ Private Sub LoadStatsText()
         Case "levelup"
             If mlngListMax = 1 Then
                 i = val(mstrList(0)) \ 4
-                If i >= 0 And i <= 7 Then build.Levelups(i) = GetStatID(mstrList(1))
+                If i >= 0 And i <= MAX_LEVELUPS Then
+                    build.Levelups(i) = GetStatID(mstrList(1))
+                End If
             End If
         Case Else
             ' Include Build points
@@ -857,7 +859,7 @@ Private Sub LoadStatsText()
                 End If
             Next
             ' Stats and Tomes
-            For i = 1 To 6
+            For i = 1 To MAX_STATS
                 If mstrField = LCase$(GetStatName(i, True)) Then
                     ParseStatLine i
                     Exit Sub
@@ -879,7 +881,7 @@ Private Sub ParseStatLine(penStat As StatEnum)
     Dim i As Long
     
     For i = 0 To 3
-        build.StatPoints(i, penStat) = val(Trim$(Mid$(mstrValue, (i * 6) + 1, 4)))
+        build.StatPoints(i, penStat) = val(Trim$(Mid$(mstrValue, (i * MAX_STATS) + 1, 4)))
         build.StatPoints(i, 0) = build.StatPoints(i, 0) + build.StatPoints(i, penStat)
     Next
     build.Tome(penStat) = val(Trim$(Mid$(mstrValue, 25, 4)))

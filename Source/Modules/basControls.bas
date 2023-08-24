@@ -34,12 +34,12 @@ Private Const WM_USER As Long = &H400
 Private Const SB_GETRECT As Long = (WM_USER + 10)
 
 ' API
-Private Declare Function GetWindowRect Lib "user32" (ByVal Hwnd As Long, lpRect As RECT) As Long
-Private Declare Function MoveWindow Lib "user32" (ByVal Hwnd As Long, ByVal X As Long, ByVal Y As Long, ByVal nWidth As Long, ByVal nHeight As Long, ByVal bRepaint As Long) As Long
+Private Declare Function GetWindowRect Lib "user32" (ByVal hwnd As Long, lpRect As RECT) As Long
+Private Declare Function MoveWindow Lib "user32" (ByVal hwnd As Long, ByVal X As Long, ByVal Y As Long, ByVal nWidth As Long, ByVal nHeight As Long, ByVal bRepaint As Long) As Long
 Private Declare Function SetParent Lib "user32" (ByVal hWndChild As Long, ByVal hWndNewParent As Long) As Long
-Private Declare Function ScreenToClient Lib "user32" (ByVal Hwnd As Long, lpPoint As POINTAPI) As Long
-Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal Hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
-Private Declare Function SendMessageAny Lib "user32" Alias "SendMessageA" (ByVal Hwnd As Long, ByVal Msg As Long, ByVal wParam As Long, lParam As Any) As Long
+Private Declare Function ScreenToClient Lib "user32" (ByVal hwnd As Long, lpPoint As POINTAPI) As Long
+Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
+Private Declare Function SendMessageAny Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal Msg As Long, ByVal wParam As Long, lParam As Any) As Long
 
 
 ' ************* GENERAL *************
@@ -76,7 +76,7 @@ Public Function ComboContainsText(pcbo As ComboBox, pstrText As String) As Boole
 End Function
 
 Public Sub ComboDropDown(cbo As ComboBox, Optional blnShow As Boolean = True)
-    SendMessage cbo.Hwnd, CB_SHOWDROPDOWN, blnShow, ByVal 0&
+    SendMessage cbo.hwnd, CB_SHOWDROPDOWN, blnShow, ByVal 0&
 End Sub
 
 Public Function ComboExpand(pcbo As ComboBox, ByRef pblnOverride As Boolean) As Boolean
@@ -107,11 +107,15 @@ Public Function ComboGetText(pcbo As ComboBox) As String
 End Function
 
 Public Function ComboGetValue(pcbo As ComboBox) As Long
-    If pcbo.ListIndex = -1 Then ComboGetValue = -1 Else ComboGetValue = pcbo.ItemData(pcbo.ListIndex)
+    If pcbo.ListIndex = -1 Then
+        ComboGetValue = -1
+    Else
+        ComboGetValue = pcbo.ItemData(pcbo.ListIndex)
+    End If
 End Function
 
 Public Function ComboIsOpen(pcbo As ComboBox) As Boolean
-    ComboIsOpen = SendMessage(pcbo.Hwnd, CB_GETDROPPEDSTATE, 0, ByVal 0&)
+    ComboIsOpen = SendMessage(pcbo.hwnd, CB_GETDROPPEDSTATE, 0, ByVal 0&)
 End Function
 
 ' Return Values:
@@ -163,13 +167,13 @@ Public Sub ComboListHeight(pcbo As ComboBox, plngDropDownRows As Long)
    
    enScaleMode = pcbo.Parent.ScaleMode
    pcbo.Parent.ScaleMode = vbPixels
-   lngItemHeight = SendMessage(pcbo.Hwnd, CB_GETITEMHEIGHT, 0, ByVal 0)
+   lngItemHeight = SendMessage(pcbo.hwnd, CB_GETITEMHEIGHT, 0, ByVal 0)
    lngHeight = lngItemHeight * (plngDropDownRows + 2)
-   GetWindowRect pcbo.Hwnd, typRect
+   GetWindowRect pcbo.hwnd, typRect
    typPoint.X = typRect.Left
    typPoint.Y = typRect.Top
-   ScreenToClient pcbo.Parent.Hwnd, typPoint
-   MoveWindow pcbo.Hwnd, typPoint.X, typPoint.Y, pcbo.Width, lngHeight, True
+   ScreenToClient pcbo.Parent.hwnd, typPoint
+   MoveWindow pcbo.hwnd, typPoint.X, typPoint.Y, pcbo.Width, lngHeight, True
    pcbo.Parent.ScaleMode = enScaleMode
 End Sub
 
@@ -184,18 +188,18 @@ Public Sub ComboListHeightChild(pcbo As ComboBox, plngDropDownRows As Long, pfrm
    
    enScaleMode = pfrm.ScaleMode
    pfrm.ScaleMode = vbPixels
-   lngItemHeight = SendMessage(pcbo.Hwnd, CB_GETITEMHEIGHT, 0, ByVal 0)
+   lngItemHeight = SendMessage(pcbo.hwnd, CB_GETITEMHEIGHT, 0, ByVal 0)
    lngHeight = lngItemHeight * (plngDropDownRows + 2)
-   GetWindowRect pcbo.Hwnd, typRect
+   GetWindowRect pcbo.hwnd, typRect
    typPoint.X = typRect.Left
    typPoint.Y = typRect.Top
-   ScreenToClient pfrm.Hwnd, typPoint
-   MoveWindow pcbo.Hwnd, typPoint.X, typPoint.Y, pcbo.Width, lngHeight, True
+   ScreenToClient pfrm.hwnd, typPoint
+   MoveWindow pcbo.hwnd, typPoint.X, typPoint.Y, pcbo.Width, lngHeight, True
    pfrm.ScaleMode = enScaleMode
 End Sub
 
 Public Sub ComboSetMaxLength(pcbo As ComboBox, ByVal plngMaxLength As Long)
-    SendMessage pcbo.Hwnd, CB_LIMITTEXT, plngMaxLength, ByVal 0&
+    SendMessage pcbo.hwnd, CB_LIMITTEXT, plngMaxLength, ByVal 0&
 End Sub
 
 Public Sub ComboSetText(pcbo As ComboBox, pstrText As String)
@@ -306,7 +310,7 @@ Public Function ListboxTabStops(plst As ListBox, plngTabs() As Long)
     Dim lngElements As Long
     
     lngElements = UBound(plngTabs) - LBound(plngTabs) + 1
-    SendMessage plst.Hwnd, LB_SETTABSTOPS, lngElements, plngTabs(LBound(plngTabs))
+    SendMessage plst.hwnd, LB_SETTABSTOPS, lngElements, plngTabs(LBound(plngTabs))
 End Function
 
 
@@ -334,7 +338,7 @@ End Sub
 Sub TextBoxGetRect(ptxt As TextBox, Left As Long, Top As Long, Right As Long, Bottom As Long)
     Dim RECT As RECT
     
-    SendMessage ptxt.Hwnd, EM_GETRECT, 0, RECT
+    SendMessage ptxt.hwnd, EM_GETRECT, 0, RECT
     With RECT
         Left = .Left
         Top = .Top
@@ -353,7 +357,7 @@ Sub TextBoxSetRect(ptxt As TextBox, ByVal Left As Long, ByVal Top As Long, ByVal
         .Right = Right
         .Bottom = Bottom
     End With
-    SendMessage ptxt.Hwnd, EM_SETRECT, 0, RECT
+    SendMessage ptxt.hwnd, EM_SETRECT, 0, RECT
 End Sub
 
 

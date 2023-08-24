@@ -86,6 +86,7 @@ Public Type ClassType
     DisallowedClasses As Long
     DisallowedClass() As String
     DisallowedClassID() As Long
+    Trapper As Boolean
 End Type
 
 Public Type ReqListType

@@ -117,8 +117,12 @@ Public Sub ExportFileBuilder()
     CloseTag
     AddPastLives
     NullTag "ActiveStances"
-    For i = 1 To 7
-        If build.Levelups(i) = aeAny Then strValue = "Strength" Else strValue = GetStatName(build.Levelups(i))
+    For i = 1 To MAX_LEVELUPS
+        If build.Levelups(i) = aeAny Then
+            strValue = "Strength"
+        Else
+            strValue = GetStatName(build.Levelups(i))
+        End If
         TagValue "Level" & i * 4, strValue
     Next
     For i = 0 To 2
@@ -173,12 +177,12 @@ Private Sub AddStatTags()
     End Select
     OpenTag "AbilitySpend"
     TagValue "AvailableSpend", lngPoints
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         TagValue GetStatName(i, True) & "Spend", GetExportStatRaise(i)
     Next
     CloseTag
     TagValue "GuildLevel", 0
-    For i = 1 To 6
+    For i = 1 To MAX_STATS
         TagValue GetStatName(i, True) & "Tome", build.Tome(i)
     Next
 End Sub
@@ -513,7 +517,8 @@ Private Sub ProcessFeat(ptypFeat As LevelFeatType)
     Select Case ptypFeat.FeatType
         Case "Standard", "EpicFeat", "EpicDestinyFeat": enType = bftStandard
         Case "Legendary": enType = bftLegend
-        Case "FollowerOf", "ChildOf", "Deity", "BelovedOf", "DamageReduction": enType = bftDeity
+        Case "FollowerOf", "ChildOf", "Deity", "BelovedOf", "DamageReduction"
+            enType = bftDeity
         Case "HumanBonus", "Dilettante", "PDKBonus", "DragonbornRacial", "AasimarBond": enType = bftRace
         Case "ArtificerBonus": enType = GetClassType(ceArtificer)
         Case "DruidWildShape": enType = GetClassType(ceDruid)

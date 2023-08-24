@@ -36,7 +36,7 @@ Public Type SkillColType
     Class As Long
     Initial As String
     Color As Long
-    Thief As Boolean
+    Trapper As Boolean
     Points As Long
     MaxPoints As Long
 End Type
@@ -407,7 +407,7 @@ Public Type BuildType6
     StatPoints(3, 6) As Byte ' 28/32/34/36 versions, stored as Points Spent
     BuildPoints As Byte ' Which version is the "main"? (BuildPointsEnum; 0=28pt)
     IncludePoints(3) As Byte ' Which build point versions to include in display/export
-    Levelups(8) As Byte  'This should be based off maxlevel\4
+    Levelups(MAX_LEVELUPS) As Byte  'This should be based off maxlevel\4
     Tome(6) As Byte
     Skills(1 To 21, 1 To 20) As Byte
     SkillTome(1 To 21) As Byte
@@ -735,7 +735,7 @@ Public Sub Version5To6(ptyp5 As BuildType5, ptyp6 As BuildType6)
         For i = 0 To 3
             .IncludePoints(i) = ptyp5.IncludePoints(i)
         Next
-        For i = 0 To 7
+        For i = 0 To MAX_LEVELUPS
             .Levelups(i) = ptyp5.Levelups(i)
         Next
         For i = 0 To 6
