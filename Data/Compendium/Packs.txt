@@ -367,3 +367,12 @@ HeroicHigh: 16
 EpicLow: 33
 EpicHigh: 33
 Link Named Items	Link	https://ddowiki.com/page/Update_57_named_items
+
+PackName: Vecna Unleashed
+Abbreviation: Vecna Unleashed
+Cost: ??
+HeroicLow: 18
+HeroicHigh: 18
+EpicLow: 34
+EpicHigh: 34
+Link Named Items	Link	https://ddowiki.com/page/Update_61_named_items

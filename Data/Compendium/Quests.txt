@@ -3362,3 +3362,96 @@ Level: 30
 Epic: 30
 Style: Raid
 Map: The Ruins of Thunderholme
+
+QuestName: Enemy of My Enemy
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Grand Theft Aureon
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Law and Order
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Paper Trail
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Party 101
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 5
+Level: 18
+Epic: 34
+
+QuestName: Taken in Hand
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: The Bark and the Blade
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: The Devils to Pay
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: The Evil We Know
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Turn the Page
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Vecna Denied
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Vecna Unleashed
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: What Dreams May Come
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+
