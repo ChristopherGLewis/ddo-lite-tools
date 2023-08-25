@@ -2272,7 +2272,6 @@ AbilityName: Efficient Metamagic II
 Descrip: Select a Metamagic Feat to enhance.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 Tier: 3
 Ranks: 3
-Cost: 2
 All: Tier 2: Efficient Metamagic
 Flags: SelectorOnly
 Parent: Tier 2: Efficient Metamagic
@@ -2298,6 +2297,7 @@ All: Tier 2: Spell Critical - Elemental and Poison II
 AbilityName: Spell Like Ability, Smoke Bomb
 Descrip: SLA: Smoke Bomb}Metamagic: Extend, Quicken, Eschew Materials}Spell Point Cost: 25/20/15}Cooldown 12 seconds}Primer Element: Gildleaf (Yellow),}Throw a bottle beneath you  that explodes into a cloud of smoke and leaves you Invisible and Displaced for 12 seconds.
 Tier: 4
+Ranks: 3
 
 AbilityName: Efficient Heighten
 Descrip: Using the Heighten Spell Metamagic costs you [1/2] fewer Spell Point per heightened level.
@@ -2320,6 +2320,7 @@ All: Tier 3: Spell Critical - Elemental and Poison III
 AbilityName: Elemental Obliteration
 Descrip: Select an Element for an explosive spell.}{-SLA: Caustic Obliteration}{-SLA: Fiery Obliteration}{-SLA: Frost Obliteration}{-SLA: Poison Obliteration}{-SLA: Voltaic Obliteration}Spell Like Ability: Elemental Obliteration}Metamagic: Empower, Maximize, Quicken, Heighten}Spell Point Cost: 12/8/6}Cooldown 12/8/6 seconds}Primer Element: Crimsonite (Red),}Throw a vial that explodes with <element> on impact, dealing 1d6+3 <element> damage per Caster Level to all enemies nearby. (Max Caster Level 10)
 Tier: 5
+Ranks: 3
 Selector: Caustic Obliteration, Fiery Obliteration, Frost Obliteration, Poison Obliteration, Voltaic Obliteration
 
 AbilityName: Augmentation
@@ -4890,7 +4891,7 @@ Descrip: You have studied Illusion to the point where you can craft more permane
 Tier: 1
 Cost: 2
 
-AbilityName: Enhanced Invisibility
+AbilityName: Reality Bulwark
 Descrip: +[1/2/3] to all Saving Throws}Rank 3: You are immune to Fear
 Tier: 2
 Ranks: 3
@@ -4962,7 +4963,7 @@ Descrip: +1 Illusion DCs. The feats Augment Summoning and Improved Augment Summo
 Tier: 5
 Cost: 2
 
-AbilityName: Displacement
+AbilityName: Permanent Displacement
 Descrip: You are Displaced, as if you had cast the spell Displacement
 Tier: 5
 Cost: 2

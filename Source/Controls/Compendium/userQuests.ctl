@@ -586,7 +586,8 @@ End Sub
 Private Function IncludeQuest(plngQuest As Long) As Boolean
 '    If db.Quest(plngQuest).Hidden Then Exit Function
     Select Case cfg.CompendiumOrder
-        Case coeEpic: IncludeQuest = (db.Quest(plngQuest).EpicLevel >= 20)
+        ' This is causing issues with favor not counting if sorted by epic
+         Case coeEpic: IncludeQuest = (db.Quest(plngQuest).EpicLevel >= 20)
         Case coeStyle: IncludeQuest = (db.Quest(plngQuest).Style = qeRaid)
         Case Else: IncludeQuest = True
     End Select
@@ -1100,8 +1101,6 @@ Private Sub ShowFavorTotals()
     Dim lngRowHeight As Long
     Dim i As Long
     
-    'Fix for totals hiding when EP sorting
-    'If mlngRows <> db.Quests Or db.Characters = 0 Then
     If db.Characters = 0 Then
         UserControl.picTotals.Visible = False
         Exit Sub
@@ -1139,7 +1138,8 @@ Private Sub ShowFavorTotals()
 End Sub
 
 Public Sub FavorChange(plngCharacter As Long)
-    If mlngRows <> db.Quests Or db.Characters = 0 Then Exit Sub
+    'If mlngRows <> db.Quests Or db.Characters = 0 Then Exit Sub
+    If db.Characters = 0 Then Exit Sub
     With UserControl
         .lnkChallengeFavor(plngCharacter).Caption = db.Character(plngCharacter).ChallengeFavor & "  "
         .lnkTotalFavor(plngCharacter).Caption = db.Character(plngCharacter).TotalFavor & "  "

@@ -1706,7 +1706,7 @@ Descrip: +2 bonus to Reflex saves.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Monk
 
-FeatName: Liquid Courage
+FeatName: Insightful Courage
 Group: Heroic, Alchemy
 Descrip: You can use Intelligence for Will saves. Mutually exclusive with Tough Tincture.
 Class: Alchemist 8

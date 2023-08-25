@@ -27,9 +27,9 @@ Begin VB.Form frmCompendium
       Top             =   0
       Visible         =   0   'False
       Width           =   8772
-      _ExtentX        =   15478
-      _ExtentY        =   661
-      Captions        =   "Home,XP,Wilderness,Notes,Links"
+      _extentx        =   15478
+      _extenty        =   661
+      captions        =   "Home,XP,Wilderness,Notes,Links"
    End
    Begin Compendium.userLinkLists usrLinks 
       Height          =   2352
@@ -38,8 +38,8 @@ Begin VB.Form frmCompendium
       Top             =   3180
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6165
-      _ExtentY        =   4154
+      _extentx        =   6165
+      _extenty        =   4154
    End
    Begin Compendium.userTextbox usrtxtNotes 
       Height          =   2352
@@ -48,8 +48,8 @@ Begin VB.Form frmCompendium
       Top             =   2580
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6165
-      _ExtentY        =   4154
+      _extentx        =   6165
+      _extenty        =   4154
    End
    Begin VB.Timer tmrLoad 
       Enabled         =   0   'False
@@ -64,8 +64,8 @@ Begin VB.Form frmCompendium
       Top             =   1980
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6165
-      _ExtentY        =   4154
+      _extentx        =   6165
+      _extenty        =   4154
    End
    Begin Compendium.userTables usrXP 
       Height          =   2352
@@ -74,8 +74,8 @@ Begin VB.Form frmCompendium
       Top             =   1380
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6165
-      _ExtentY        =   4154
+      _extentx        =   6165
+      _extenty        =   4154
    End
    Begin Compendium.userOverview usrOverview 
       Height          =   2352
@@ -84,8 +84,8 @@ Begin VB.Form frmCompendium
       Top             =   780
       Visible         =   0   'False
       Width           =   3492
-      _ExtentX        =   6165
-      _ExtentY        =   4154
+      _extentx        =   6165
+      _extenty        =   4154
    End
    Begin VB.Timer tmrAutoSave 
       Enabled         =   0   'False
@@ -100,8 +100,8 @@ Begin VB.Form frmCompendium
       Top             =   1080
       Visible         =   0   'False
       Width           =   4332
-      _ExtentX        =   7646
-      _ExtentY        =   6588
+      _extentx        =   7646
+      _extenty        =   6588
    End
    Begin VB.Menu mnuMain 
       Caption         =   "LinkContext"
@@ -444,6 +444,8 @@ Private Function TabColor(pstrCaption As String) As Long
         Case Else: TabColor = cfg.GetColor(cgeControls, cveBackground)
     End Select
 End Function
+
+
 
 Private Sub usrToolbar_TabClick(Caption As String)
     Dim lngColor As Long
