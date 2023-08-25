@@ -2616,7 +2616,7 @@ Group: Heroic, Alchemy
 Descrip: You can use Intelligence for Fortitude saves. Mutually exclusive with Liquid Courage.
 Class: Alchemist 8
 ClassBonus: Alchemist
-None: Liquid Courage
+None: Insightful Courage
 Flags: ClassOnly
 ClassOnlyClass: Alchemist
 ClassOnlyLevel: 8, 12, 16, 20
