@@ -16,7 +16,7 @@ Any issues and input should be filed there.
 ### 4.4.0 - Updates for U60/U61
 Changes:
 - Updates to many enhancements with U61 updates (thanks as always to Yhelm!)
-- Addition of he Macrotechnic epic destiny
+- Addition of the Macrotechnic epic destiny
 - Additional Universal tome point
         
 Fixes:
