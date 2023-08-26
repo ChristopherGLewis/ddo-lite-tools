@@ -23,7 +23,7 @@ Fixes:
 - Fixed issue with Archtypes and trapping skills.
 - Fixed issue with Archtypes and deity feats.  Cleaned Deity feats up to work correctly with FS and others
 - Rounding Error in Compendium casual favor
-- Fix for Compendium not counting favor is sorted by Epic
+- Fix for Compendium not counting favor when sorted by Epic
 
 ### 4.3.1 - Fixes
 Changes:
