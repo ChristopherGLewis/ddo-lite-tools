@@ -3,6 +3,8 @@ DDO Character Builder Lite is a very simple to use Character Builder, Adventure 
 
 The builder is lovingly maintained by a dedicated group who prefer the look and feel of it versus the more graphically intense DDO Character Planner that @Maetrims maintains.
 
+* Current Release: [2023-08-25_DDOLiteTools.zip](https://github.com/ChristopherGLewis/ddo-lite-tools/releases/download/v4.4.0/2023-08-25_DDOLiteTools.zip)
+
 ## Contributors
 Originally created by @EllisDee37.
 
@@ -14,7 +16,7 @@ Current Contributors: @Yhelm, @SardaofChaos, @Psiandron and many more!
 The simplest way to use the tools is to download the current release located here:[ddo-lite-tools/releases](https://github.com/ChristopherGLewis/ddo-lite-tools/releases)
 and selecting the latest release.
 
-Once you download that file, unblock it (right click, properties and uncheck the "unblock" checkbox) and unzip it to any directory.  If you save it to a protected directory such as `C:\Windows` or `C:\Program Files`, you will need to run it as Administrator.  I suggest using `C:\DDOCharLite`.
+Once you download that file, unblock it (right-click, properties and uncheck the "unblock" checkbox) and unzip it to any directory.  If you save it to a protected directory such as `C:\Windows` or `C:\Program Files`, you will need to run it as Administrator.  I suggest using `C:\DDOCharLite`.
 
 ## Compatibility (from @Yhelm)
 
@@ -39,8 +41,8 @@ You can collaborate in the project in a number of ways.
    1. Create a pull request back to this repository
    1. I will verify the changes work with the current program and any releases I have planned and I will merge the changes into master
 
-1. Using the DDO Forums
-   1. The offically thread is located here: [OFFICAL: Character Builder Lite](https://forums.ddo.com/index.php?threads/offical-character-builder-lite.97/) in the build section
+2. Using the DDO Forums
+   1. The official thread is located here: [OFFICIAL: Character Builder Lite](https://forums.ddo.com/index.php?threads/official-character-builder-lite.97/) in the build section
    2. @Yhelm also has a thread started here: [DDO Character Builder Lite](https://forums.ddo.com/index.php?threads/ddo-character-builder-lite.138/) in the Player Guides section.
    3. I will try to periodically check the various threads for any posts and apply the changes when I can.
 
