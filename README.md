@@ -21,7 +21,7 @@ Changes:
 
 Fixes:
 - Set Max Crafting Level to 32
-- Fixed issue in compendium with case insensitive sorting resulting issues with "Lost..." quests et al. (Thanks MIvanIsten)
+- Fixed issue in compendium with case insensitive sorting resulting in issues with "Lost..." quests et al. (Thanks MIvanIsten)
 
 ### 4.4.0 - Updates for U60/U61
 Changes:
