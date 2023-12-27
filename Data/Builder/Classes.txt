@@ -40,6 +40,7 @@ BAB: 0.75
 Trapper: true
 SkillPoints: 4
 Skills: Concentration, Disable Device, Haggle, Open Lock, Repair, Search, Spellcraft, Spot, Use Magic Device
+GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency, Artificer Craft Mastery
 GrantedFeats1: Simple Weapons, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Exotic Weapon: Great Crossbow, Exotic Weapon: Rpt Lt Crossbow, Exotic Weapon: Rpt Hvy Crossbow
 GrantedFeats1: Magical Training, Rapid Reload, Arcane Lore, Inscribe Artificer Scroll, Trapfinding
 GrantedFeats1: Unleash Iron Defender, Reanimate Construct
@@ -49,7 +50,6 @@ GrantedFeats2: Artificer Knowlege: Potions
 GrantedFeats3: Artificer Knowlege: Wands
 GrantedFeats4: Artificer Knowlege: Scrolls, Trapmaking, Artificer Craft Mastery
 GrantedFeats5: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Retain Essence
-GrantedFeats6: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency, Artificer Craft Mastery
 GrantedFeats6: Artificer Knowlege: Wands
 GrantedFeats7: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls
 GrantedFeats8: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Artificer Craft Mastery
@@ -213,14 +213,14 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 5
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 5
-SpellList1: Charm Animal, Entangle, Faerie Fire, Jump, Lesser Vigor, Longstrider, Magic Fang, Maul, Merfolk's Blessing, Pass Without Trace, Produce Flame, Ram's Might, Shillelagh, Summon Nature's Ally I, Takedown
+SpellList1: Charm Animal, Entangle, Faerie Fire, Jump, Lesser Vigor, Longstrider, Magic Fang, Maul, Merfolk's Blessing, Pass Without Trace, Produce Flame, Ram's Might, Shillelagh, Summon Nature's Ally I, Takedown, Thorn Strike
 SpellList2: Align Fang, Animal Trance, Barkskin, Bear's Endurance, Bull's Strength, Cat's Grace, Creeping Cold, Cure Light Wounds, Eagle's Splendor, Fire Trap, Flame Blade, Flaming Sphere, Fog Cloud, Fox's Cunning, Gust of Wind, Hold Animal, Lesser Restoration, Owl's Wisdom, Pack Presence, Resist Energy, Roar, Splinterbolt, Summon Nature's Ally II
-SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Dominate Animal, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Shred, Sleet Storm, Snare, Spiderskin, Spike Growth, Summon Nature's Ally III, Vigor, Water Breathing
+SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Dominate Animal, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Shred, Sleet Storm, Snare, Spiderskin, Spike Growth, Summon Nature's Ally III, Thorn Bloom, Vigor, Water Breathing
 SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Lesser Vigor, Mass Longstrider, Rising Fury, Summon Nature's Ally IV
-SpellList5: Animal Growth, Call Lightning Storm, Cold Breath, Cure Critical Wounds, Death Ward, Greater Vigor, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Wall of Fire
-SpellList6: Fire Seeds, Fire Shield, Frostbite, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Vigor, Summon Nature's Ally VI, Tenacious Pack, Tremor, Word of Balance
+SpellList5: Animal Growth, Call Lightning Storm, Cold Breath, Cure Critical Wounds, Death Ward, Greater Vigor, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Thorn Wave, Wall of Fire
+SpellList6: Fire Seeds, Fire Shield, Frostbite, Grasping Thorns, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Vigor, Summon Nature's Ally VI, Tenacious Pack, Tremor, Word of Balance
 SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Insidious Spores, Mass Freedom of Movement, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
-SpellList8: Earthquake, Finger of Death, Fires of Purity, Heal, Howl of Terror, Ice Flowers, Stormrage, Summon Nature's Ally VIII, Sunburst, Unstoppable
+SpellList8: Earthquake, Finger of Death, Fires of Purity, Heal, Howl of Terror, Ice Flowers, Stormrage, Summon Nature's Ally VIII, Sunburst, Thorn Lance, Unstoppable
 SpellList9: Anger of the Noonday Sun, Mantle of the Icy Soul, Mass Regenerate, Snowslide, Storm of Vengeance, Summon Nature's Ally IX, Tsunami
 FreeSpells: Summon Nature's Ally I, Summon Nature's Ally II, Summon Nature's Ally III, Summon Nature's Ally IV, Summon Nature's Ally V, Summon Nature's Ally VI, Summon Nature's Ally VII, Summon Nature's Ally VIII, Summon Nature's Ally IX
 
@@ -548,7 +548,7 @@ GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Profic
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Turn Undead,Religious Lore
 ClassFeat: 1, 2, 6
-Trees: Dark Apostate, Radiant Servant, Warpriest
+Trees: Dark Apostate, Divine Disciple, Warpriest
 HealingSpell: 1
 MaxSpellLevel: 9
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -601,16 +601,15 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 5
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 5
-SpellList1: Charm Animal, Entangle, Faerie Fire, Jump, Longstrider, Magic Fang, Merfolk's Blessing, Pass Without Trace, Produce Flame, Ram's Might, Shillelagh, Takedown, Nightshield, Thorn Strike, Chill Touch, Acid Spray
-SpellList2: Align Fang, Animal Trance, Barkskin, Bear's Endurance, Bull's Strength, Cat's Grace, Contagion, Creeping Cold, Eagle's Splendor, Fire Trap, Flame Blade, Flaming Sphere, Fog Cloud, Fox's Cunning, Gust of Wind, Hold Animal, Lesser Restoration, Owl's Wisdom, Pack Presence, Resist Energy, Splinterbolt, Melf's Acid Arrow, Web, Lesser Vigor
-SpellList3: Baiting Bite, Call Lightning,  Dominate Animal, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Sleet Storm, Snare, Spiderskin, Spike Growth, Water Breathing, Acid Blast, Thorn Bloom, Stinking Cloud
-SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Longstrider, Fear, Acid Rain, Plant Growth, Waves of Fatigue, Vigor
-SpellList5: Animal Growth, Call Lightning Storm, Cold Breath,  Death Ward, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Wall of Fire, Negative Energy Burst, Blighted Breath, Cloudkill, Mass Lesser Vigor
-SpellList6: Fire Seeds, Frostbite, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Tenacious Pack, Word of Balance, Necrotic Ray, Jaws of Doom, Blighted Bite, Thorn Wave, Greater Vigor
-SpellList7: Creeping Doom, Fire Storm, Insidious Spores, Regenerate, True Seeing, Acid Fog, Waves of Exhaustion, Horrid Wilting, Mass Vigor
-SpellList8: Earthquake, Finger of Death, Howl of Terror, Stormrage, Black Dragon Bolt, Thorn Lance, Mass Greater Vigor
-SpellList9: Snowslide, Storm of Vengeance, Tsunami, Acid Well, Wail of the Banshee, Rend the Soul, Blighted Charge
-
+SpellList1: Acid Spray, Chill Touch, Entangle, Faerie Fire, Jump, Longstrider, Merfolk's Blessing, Nightshield, Pass Without Trace, Ram's Might, Shillelagh, Takedown, Thorn Strike
+SpellList2: Align Fang, Animal Trance, Barkskin, Bear's Endurance, Bull's Strength, Cat's Grace, Contagion, Creeping Cold, Eagle's Splendor, Fog Cloud, Fox's Cunning, Gust of Wind, Hold Animal, Lesser Restoration, Lesser Vigor, Melf's Acid Arrow, Owl's Wisdom, Resist Energy, Splinterbolt, Thorn Blade, Web
+SpellList3: Acid Blast, Baiting Bite, Call Lightning, Dominate Animal, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Sleet Storm, Snare, Spiderskin, Spike Growth, Stinking Cloud, Thorn Bloom, Water Breathing
+SpellList4: Acid Rain, Dispel Magic, Enveloping Swarm, Fear, Freedom of Movement, Ice Storm, Mass Longstrider, Vigor, Waves of Fatigue
+SpellList5: Blighted Breath, Call Lightning Storm, Cloudkill, Death Ward, Mass Lesser Vigor, Negative Energy Burst, Panacea, Plant Growth, Reincarnate, Stoneskin, Thorn Wave
+SpellList6: Blighted Bite, Fire Shield Cold, Grasping Thorns, Greater Creeping Cold, Greater Dispel Magic, Greater Vigor, Jaws of Doom, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Necrotic Ray, Word of Balance
+SpellList7: Acid Fog, Creeping Doom, Finger of Death, Horrid Wilting, Insidious Spores, Mass Freedom of Movement, Mass Protection from Elements, Mass Vigor, True Seeing, Waves of Exhaustion
+SpellList8: Black Dragon Bolt, Earthquake, Howl of Terror, Mass Greater Vigor, Regenerate, Stormrage, Thorn Lance
+SpellList9: Acid Well, Blighted Charge, Rend the Soul, Storm of Vengeance, Tsunami, Wail of the Banshee
 
 ClassName: Sacred Fist
 Initial: S, SF, Sacred Fist, Sac

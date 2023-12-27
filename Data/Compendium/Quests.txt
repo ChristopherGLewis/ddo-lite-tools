@@ -2593,6 +2593,7 @@ Pack: Vale of Twilight
 Patron: The Twelve
 Favor: 12
 Level: 32
+Epic: 32
 Style: Raid
 Map: The Subterrane - Central
 
@@ -3454,4 +3455,42 @@ Favor: 6
 Level: 18
 Epic: 34
 
+QuestName: Pilgrims' Peril
+Patron: The Twelve
+Level: 34
+Epic: 34
+Favor: 9
 
+QuestName: Stolen Power
+Patron: The Twelve
+Level: 34
+Epic: 34
+Favor: 9
+
+QuestName: Horde of the Illithid Controller
+Patron: The Twelve
+Level: 34
+Epic: 34
+Favor: 9
+
+QuestName: Astral Ambush
+Patron: The Twelve
+Level: 34
+Epic: 34
+Favor: 9
+
+QuestName: Legendary Chronoscope
+Wiki: The Chronoscope (Legendary)
+Pack: Devil Assault
+Patron: The Coin Lords
+Favor: 10
+Level: 32
+Epic: 32
+Style: Raid
+
+QuestName: Catastrophe
+Wiki:  Catastrophe
+Patron: Agents of Argonnessen
+Favor: 3
+Level: 4
+Epic: 34

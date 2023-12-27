@@ -1204,26 +1204,26 @@ Descrip: While in Dread Mantle, striking with weapons now has a chance to regene
 Tier: 5
 
 AbilityName: Action Hero
-Descrip: Epic Moment: For 40 seconds, you gain the following Bonuses: This ability is counted as an Action Boost, and triggers everything that a normal Action Boost does for the duration. This ability has a 5 minute cooldown, which is not shared with other Action Boosts.}{-+8 Action Boost Bonus to Attack{-+30 Action Boost Bonus to Melee and Ranged Power{-+30% Action Boost Bonus to Attack Speed{-+30% Action Boost Bonus to Doublestrike and Doubleshot{-+50% Action Boost Bonus to Movement Speed{-+15 Action Boost Bonus to Armor Class and Physical Resistance Rating{-+15% Action Boost Bonus to Dodge. This bonus ignores your Dodge Cap.{-+9 Action Boost bonus to Sunder, Trip, and Stun DCs.{-+6 Action Boost Bonus to Saving Throws{-+6 Action Boost Bonus to Skills
+Descrip: Epic Moment: For 40 seconds, you gain the following Bonuses: This ability is counted as an Action Boost, and triggers everything that a normal Action Boost does for the duration. This ability has a 5 minute cooldown, which is not shared with other Action Boosts.}{-+8 Action Boost Bonus to Attack}{-+30 Action Boost Bonus to Melee and Ranged Power}{-+30% Action Boost Bonus to Attack Speed}{-+30% Action Boost Bonus to Doublestrike and Doubleshot}{-+50% Action Boost Bonus to Movement Speed}{-+15 Action Boost Bonus to Armor Class and Physical Resistance Rating}{-+15% Action Boost Bonus to Dodge. This bonus ignores your Dodge Cap.}{-+9 Action Boost bonus to Sunder, Trip, and Stun DCs.}{-+6 Action Boost Bonus to Saving Throws}{-+6 Action Boost Bonus to Skills
 Tier: 5
 
 DestinyName: Macrotechnic
 Abbreviation: Macro
 Type: Destiny
 
-AbilityName: Armored Augmentation I
+AbilityName: Maker's Touch
 Descrip: You gain the Magical Training feat. Each Core ability in this tree, including this one, grants the following:}{-+1 Epic bonus to all Spell DCs}{-+5 Melee Power}{-+4 Ranged Power}{-+15 Maximum Hit Points}{-+25 Maximum Spell points}{-+5 Electric, Sonic, Rust, Repair Spell Power, and Universal Spell Power
 Tier: 0
 
-AbilityName: Armored Augmentation II
+AbilityName: Metamagic Capacitors
 Descrip: +15% Fortification and +3 to each Healing Amplification. Your Rune Arms now benefit from the Maximize, Empower, and Intensify Spell Metamagics if you own those feats. This does not cost Spell Points, and you do not need the Feats toggled on to gain their effects on Rune Arms.
 Tier: 0
 
-AbilityName: Armored Augmentation III
+AbilityName: Warding Inscriptions
 Descrip: +15% Fortification and +3 to each Healing Amplification. Your Ablative Armor spell now blocks 20 points of damage per caster level with no cap.
 Tier: 0
 
-AbilityName: Armored Augmentation IV
+AbilityName: Armored Augmentation
 Descrip: +15% Fortification and +3 to each Healing Amplification. +15% Exceptional Bonus to Armor Class. Your Rune Arm caster levels now factor in bonuses from your Epic and Legendary Knowledge feats.
 Tier: 0
 
@@ -1304,7 +1304,7 @@ SelectorName: Transmutation
 Descrip: +[1/2/3] Transmutation DCs
 
 AbilityName: Technique Drive
-Descrip: Multiselector: Speed Drive, Efficiency Drive, Flash Drive
+Descrip: Multiselector: Efficiency Drive, Flash Drive, Speed Drive
 Tier: 3
 Ranks: 3
 Selector: Efficiency Drive, Flash Drive, Speed Drive
@@ -1342,11 +1342,11 @@ Tier: 4
 Cost: 2
 Selector: Blast Drive, Dissonance Drive, Ruin Drive
 SelectorName: Blast Drive
-Descrip: Your Macrotechnic Epic Strike now Stuns enemies struck for 3 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs). If you are using the Galvanic Blast Epic Strike, this also Supercharges you.}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
+Descrip: Your Macrotechnic Epic Strike now Stuns enemies struck for 3 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs). If you are using the Galvanic Blast Epic Strike, this also Supercharges you.}{}{Supercharge: +30% Action boost bonus to Movement Speed. Duration 5 seconds. Duration: 5 seconds.
 SelectorName: Dissonance Drive
 Descrip: Your Macrotechnic Epic Strike now Confuses enemies struck for 6 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs). If you are using the Sonic Boom Epic Strike, they also take 3 stacks of Vulnerability and 3 stacks of Armor Destruction.
 SelectorName: Ruin Drive
-Descrip: Your Macrotechnic Epic Strike now disassembles enemy constructs, dealing 1d6+6 Rust damage per caster level. If you are using the Mending Burst Epic Strike, this also Supercharges you.}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
+Descrip: Your Macrotechnic Epic Strike now disassembles enemy constructs, dealing 1d6+6 Rust damage per caster level. If you are using the Mending Burst Epic Strike, this also Supercharges you.} }Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
 
 AbilityName: Boost Drive
 Descrip: Multiselector: Echo Drive, Spark Drive
@@ -1366,7 +1366,7 @@ Selector: Empower, Intensify, Maximize
 SelectorName: Empower
 Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 SelectorName: Intensify
-Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
+Descrip: Using the Intensify Spell Metamagic costs you [2/4/6] fewer Spell Points.
 SelectorName: Maximize
 Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 

@@ -4,10 +4,10 @@ Begin VB.Form frmShard
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Shards"
-   ClientHeight    =   9024
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   12384
+   ClientHeight    =   9015
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   12390
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmShard
    LinkTopic       =   "Form2"
    LockControls    =   -1  'True
    MaxButton       =   0   'False
-   ScaleHeight     =   9024
-   ScaleWidth      =   12384
+   ScaleHeight     =   9015
+   ScaleWidth      =   12390
    StartUpPosition =   3  'Windows Default
    Begin CannithCrafting.userInfo usrInfo 
       Height          =   7812
@@ -32,8 +32,8 @@ Begin VB.Form frmShard
       Top             =   600
       Visible         =   0   'False
       Width           =   6612
-      _ExtentX        =   11663
-      _ExtentY        =   13780
+      _ExtentX        =   11668
+      _ExtentY        =   13785
    End
    Begin VB.PictureBox picML 
       Appearance      =   0  'Flat
@@ -43,8 +43,8 @@ Begin VB.Form frmShard
       ForeColor       =   &H80000008&
       Height          =   7392
       Left            =   10920
-      ScaleHeight     =   7392
-      ScaleWidth      =   1332
+      ScaleHeight     =   7395
+      ScaleWidth      =   1335
       TabIndex        =   10
       TabStop         =   0   'False
       Top             =   1020
@@ -76,7 +76,7 @@ Begin VB.Form frmShard
    End
    Begin VB.ListBox lstShard 
       Appearance      =   0  'Flat
-      Height          =   6504
+      Height          =   6330
       Left            =   300
       TabIndex        =   3
       Top             =   1020
@@ -89,8 +89,8 @@ Begin VB.Form frmShard
       TabStop         =   0   'False
       Top             =   8640
       Width           =   12384
-      _ExtentX        =   21844
-      _ExtentY        =   677
+      _ExtentX        =   21855
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -104,8 +104,8 @@ Begin VB.Form frmShard
       TabStop         =   0   'False
       Top             =   0
       Width           =   12384
-      _ExtentX        =   21844
-      _ExtentY        =   677
+      _ExtentX        =   21855
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       RightLinks      =   "Help"
@@ -404,10 +404,22 @@ Private Sub ShardDetails()
         If .ScaleName <> "None" Then lngScale = SeekScaling(.ScaleName)
         If lngScale Then
             lngPos = Me.picML.TextWidth("ML30:  ")
-            For i = 1 To 34
-                If i < .ML Then strPower = vbNullString Else strPower = db.Scaling(lngScale).Table(i)
-                If strPower <> strOldPower Then Me.picML.ForeColor = cfg.GetColor(cgeWorkspace, cveText) Else Me.picML.ForeColor = cfg.GetColor(cgeWorkspace, cveTextDim)
-                If i > 30 Then strText = "PL" & i & ":  " Else strText = "ML" & i & ":  "
+            For i = 1 To MAX_CRAFTING_LEVEL
+                If i < .ML Then
+                    strPower = vbNullString
+                Else
+                    strPower = db.Scaling(lngScale).Table(i)
+                End If
+                If strPower <> strOldPower Then
+                    Me.picML.ForeColor = cfg.GetColor(cgeWorkspace, cveText)
+                Else
+                    Me.picML.ForeColor = cfg.GetColor(cgeWorkspace, cveTextDim)
+                End If
+                If i > 30 Then
+                    strText = "PL" & i & ":  "
+                Else
+                    strText = "ML" & i & ":  "
+                End If
                 Me.picML.CurrentX = lngPos - Me.picML.TextWidth(strText)
                 Me.picML.Print strText & strPower
                 strOldPower = strPower

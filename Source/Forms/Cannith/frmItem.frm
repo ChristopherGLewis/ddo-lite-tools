@@ -4,10 +4,10 @@ Begin VB.Form frmItem
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Cannith Crafting Item Planner"
-   ClientHeight    =   9024
+   ClientHeight    =   9030
    ClientLeft      =   120
-   ClientTop       =   468
-   ClientWidth     =   13548
+   ClientTop       =   465
+   ClientWidth     =   13545
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmItem
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
    MaxButton       =   0   'False
-   ScaleHeight     =   9024
-   ScaleWidth      =   13548
+   ScaleHeight     =   9030
+   ScaleWidth      =   13545
    StartUpPosition =   3  'Windows Default
    Begin CannithCrafting.userHeader usrFooter 
       Height          =   384
@@ -31,8 +31,8 @@ Begin VB.Form frmItem
       TabStop         =   0   'False
       Top             =   8640
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -46,8 +46,8 @@ Begin VB.Form frmItem
       TabStop         =   0   'False
       Top             =   0
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Effects;Review"
@@ -61,8 +61,8 @@ Begin VB.Form frmItem
       Height          =   8112
       Index           =   0
       Left            =   120
-      ScaleHeight     =   8112
-      ScaleWidth      =   13332
+      ScaleHeight     =   8115
+      ScaleWidth      =   13335
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   480
@@ -74,8 +74,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   6180
          Width           =   2412
-         _ExtentX        =   4255
-         _ExtentY        =   3196
+         _ExtentX        =   4260
+         _ExtentY        =   3201
          TitleSize       =   2
          TitleIcon       =   0   'False
          CanScroll       =   0   'False
@@ -87,15 +87,15 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   5640
          Width           =   3072
-         _ExtentX        =   5419
-         _ExtentY        =   4149
+         _ExtentX        =   5424
+         _ExtentY        =   4154
          TitleSize       =   1
          TitleText       =   "Level:"
          CanScroll       =   0   'False
       End
       Begin VB.ListBox lstGear 
          Appearance      =   0  'Flat
-         Height          =   4560
+         Height          =   4440
          ItemData        =   "frmItem.frx":08CA
          Left            =   300
          List            =   "frmItem.frx":090D
@@ -105,7 +105,7 @@ Begin VB.Form frmItem
       End
       Begin VB.ListBox lstPrefix 
          Appearance      =   0  'Flat
-         Height          =   4560
+         Height          =   4440
          Left            =   3060
          TabIndex        =   26
          Top             =   960
@@ -113,7 +113,7 @@ Begin VB.Form frmItem
       End
       Begin VB.ListBox lstSuffix 
          Appearance      =   0  'Flat
-         Height          =   4560
+         Height          =   4440
          Left            =   6420
          TabIndex        =   28
          Top             =   960
@@ -121,7 +121,7 @@ Begin VB.Form frmItem
       End
       Begin VB.ListBox lstExtra 
          Appearance      =   0  'Flat
-         Height          =   4560
+         Height          =   4440
          Left            =   9780
          TabIndex        =   30
          Top             =   960
@@ -133,8 +133,8 @@ Begin VB.Form frmItem
          TabIndex        =   32
          Top             =   5700
          Width           =   852
-         _ExtentX        =   1503
-         _ExtentY        =   550
+         _ExtentX        =   1508
+         _ExtentY        =   556
          Max             =   34
          Value           =   34
          StepLarge       =   3
@@ -153,8 +153,8 @@ Begin VB.Form frmItem
          TabIndex        =   33
          Top             =   5712
          Width           =   1152
-         _ExtentX        =   2032
-         _ExtentY        =   445
+         _ExtentX        =   2037
+         _ExtentY        =   450
          Caption         =   "Bound"
       End
       Begin CannithCrafting.userInfo usrinfoSuffix 
@@ -164,8 +164,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   5640
          Width           =   3072
-         _ExtentX        =   5419
-         _ExtentY        =   4149
+         _ExtentX        =   5424
+         _ExtentY        =   4154
          TitleSize       =   1
          TitleText       =   "Level:"
          CanScroll       =   0   'False
@@ -177,8 +177,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   5640
          Width           =   3252
-         _ExtentX        =   5736
-         _ExtentY        =   4149
+         _ExtentX        =   5741
+         _ExtentY        =   4154
          TitleSize       =   1
          TitleText       =   "Level:"
          CanScroll       =   0   'False
@@ -191,8 +191,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -202,8 +202,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -213,8 +213,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -224,8 +224,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -235,8 +235,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -246,8 +246,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -257,8 +257,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -268,8 +268,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -279,8 +279,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -290,8 +290,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -301,8 +301,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -312,8 +312,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -323,8 +323,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -334,8 +334,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -345,8 +345,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -356,8 +356,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -367,8 +367,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -378,8 +378,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -389,8 +389,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -400,8 +400,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin CannithCrafting.userIcon usrIcon 
          Height          =   408
@@ -411,8 +411,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   120
          Width           =   408
-         _ExtentX        =   720
-         _ExtentY        =   720
+         _ExtentX        =   714
+         _ExtentY        =   714
       End
       Begin VB.Label lblLabel 
          Appearance      =   0  'Flat
@@ -484,8 +484,8 @@ Begin VB.Form frmItem
       Height          =   7872
       Index           =   1
       Left            =   120
-      ScaleHeight     =   7872
-      ScaleWidth      =   13332
+      ScaleHeight     =   7875
+      ScaleWidth      =   13335
       TabIndex        =   38
       TabStop         =   0   'False
       Top             =   540
@@ -497,8 +497,8 @@ Begin VB.Form frmItem
          TabIndex        =   41
          Top             =   360
          Width           =   1212
-         _ExtentX        =   3196
-         _ExtentY        =   445
+         _ExtentX        =   3201
+         _ExtentY        =   450
          Caption         =   "Bound"
          CheckPosition   =   1
       End
@@ -509,8 +509,8 @@ Begin VB.Form frmItem
          TabStop         =   0   'False
          Top             =   300
          Width           =   6372
-         _ExtentX        =   11240
-         _ExtentY        =   10499
+         _ExtentX        =   11245
+         _ExtentY        =   10504
          TitleText       =   "Gear Slot"
       End
    End
@@ -559,6 +559,10 @@ Private Sub InitControls()
         Me.lstGear.AddItem GetGearName(i, False)
         Me.usrIcon(i).Init i, uiseToggle, (i <> ge2hMelee)
     Next
+    
+    'Set max crafting level
+    usrspnML.Max = MAX_CRAFTING_LEVEL
+    usrspnML.Value = MAX_CRAFTING_LEVEL
     mblnOverride = False
 End Sub
 
@@ -980,7 +984,7 @@ Private Function Scaling(plngScale As Long, plngShard As Long) As String
             If .Table(i) <> .Table(lngML) Then Exit For
             lngFirst = i
         Next
-        For i = lngML + 1 To 34
+        For i = lngML + 1 To MAX_CRAFTING_LEVEL
             If .Table(i) <> .Table(lngML) Then Exit For
             lngLast = i
         Next

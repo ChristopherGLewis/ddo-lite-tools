@@ -3,10 +3,10 @@ Begin VB.Form frmScaling
    Appearance      =   0  'Flat
    BackColor       =   &H00FFFFFF&
    Caption         =   "Scaling"
-   ClientHeight    =   7716
-   ClientLeft      =   48
-   ClientTop       =   396
-   ClientWidth     =   12168
+   ClientHeight    =   7725
+   ClientLeft      =   45
+   ClientTop       =   390
+   ClientWidth     =   12165
    FillStyle       =   0  'Solid
    BeginProperty Font 
       Name            =   "Verdana"
@@ -22,16 +22,16 @@ Begin VB.Form frmScaling
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form2"
    LockControls    =   -1  'True
-   ScaleHeight     =   7716
-   ScaleWidth      =   12168
+   ScaleHeight     =   7725
+   ScaleWidth      =   12165
    Begin CannithCrafting.userCheckBox usrchkDarker 
       Height          =   252
       Left            =   1620
       TabIndex        =   7
       Top             =   0
       Width           =   1332
-      _ExtentX        =   2350
-      _ExtentY        =   445
+      _ExtentX        =   2355
+      _ExtentY        =   450
       Value           =   0   'False
       Caption         =   "Gamma"
    End
@@ -45,8 +45,8 @@ Begin VB.Form frmScaling
       ForeColor       =   &H80000008&
       Height          =   1092
       Left            =   240
-      ScaleHeight     =   1092
-      ScaleWidth      =   1032
+      ScaleHeight     =   1095
+      ScaleWidth      =   1035
       TabIndex        =   3
       Top             =   1260
       Width           =   1032
@@ -61,8 +61,8 @@ Begin VB.Form frmScaling
       ForeColor       =   &H80000008&
       Height          =   432
       Left            =   2040
-      ScaleHeight     =   432
-      ScaleWidth      =   1692
+      ScaleHeight     =   435
+      ScaleWidth      =   1695
       TabIndex        =   2
       Top             =   240
       Width           =   1692
@@ -74,8 +74,8 @@ Begin VB.Form frmScaling
       ForeColor       =   &H80000008&
       Height          =   2352
       Left            =   1740
-      ScaleHeight     =   2352
-      ScaleWidth      =   2892
+      ScaleHeight     =   2355
+      ScaleWidth      =   2895
       TabIndex        =   4
       Top             =   1020
       Width           =   2892
@@ -89,8 +89,8 @@ Begin VB.Form frmScaling
          ForeColor       =   &H80000008&
          Height          =   1152
          Left            =   0
-         ScaleHeight     =   1152
-         ScaleWidth      =   1692
+         ScaleHeight     =   1155
+         ScaleWidth      =   1695
          TabIndex        =   5
          Top             =   0
          Width           =   1692
@@ -341,7 +341,7 @@ Private Sub InitFormSize()
         mlngCols = 10
     Else
         mlngRows = db.Scales
-        mlngCols = 34
+        mlngCols = MAX_CRAFTING_LEVEL
     End If
     ReDim mblnColSelected(1 To mlngCols)
     xp.GetDesktop lngLeft, lngTop, lngWidth, lngHeight

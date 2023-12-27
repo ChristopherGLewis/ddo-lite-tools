@@ -4,10 +4,10 @@ Begin VB.Form frmGearset
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "New Gearset"
-   ClientHeight    =   9024
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   13548
+   ClientHeight    =   9015
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   13560
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmGearset
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   9024
-   ScaleWidth      =   13548
+   ScaleHeight     =   9015
+   ScaleWidth      =   13560
    StartUpPosition =   3  'Windows Default
    Begin CannithCrafting.userAugment usrAugPicker 
       Height          =   4512
@@ -31,8 +31,8 @@ Begin VB.Form frmGearset
       Top             =   2400
       Visible         =   0   'False
       Width           =   2832
-      _ExtentX        =   4995
-      _ExtentY        =   7959
+      _ExtentX        =   5001
+      _ExtentY        =   7779
       VariantOnly     =   -1  'True
    End
    Begin CannithCrafting.userAugSlots usrAugSlot 
@@ -42,8 +42,8 @@ Begin VB.Form frmGearset
       Top             =   3900
       Visible         =   0   'False
       Width           =   2952
-      _ExtentX        =   5207
-      _ExtentY        =   4572
+      _ExtentX        =   5212
+      _ExtentY        =   4577
    End
    Begin CannithCrafting.userCheckBox usrchkFiltered 
       Height          =   252
@@ -53,8 +53,8 @@ Begin VB.Form frmGearset
       Top             =   60
       Visible         =   0   'False
       Width           =   1092
-      _ExtentX        =   1926
-      _ExtentY        =   445
+      _ExtentX        =   1931
+      _ExtentY        =   450
       Caption         =   "Filtered"
    End
    Begin CannithCrafting.userHeader usrFooter 
@@ -64,8 +64,8 @@ Begin VB.Form frmGearset
       TabStop         =   0   'False
       Top             =   8640
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -78,8 +78,8 @@ Begin VB.Form frmGearset
       TabIndex        =   0
       Top             =   0
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       LeftLinks       =   "Items;Effects;Slotting;Review"
@@ -93,8 +93,8 @@ Begin VB.Form frmGearset
       Height          =   8052
       Index           =   0
       Left            =   120
-      ScaleHeight     =   8052
-      ScaleWidth      =   13272
+      ScaleHeight     =   8055
+      ScaleWidth      =   13275
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   480
@@ -106,8 +106,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000017&
          Height          =   252
          Left            =   6660
-         ScaleHeight     =   228
-         ScaleWidth      =   1128
+         ScaleHeight     =   225
+         ScaleWidth      =   1125
          TabIndex        =   85
          Tag             =   "tip"
          Top             =   240
@@ -197,8 +197,8 @@ Begin VB.Form frmGearset
             TabIndex        =   11
             Top             =   360
             Width           =   852
-            _ExtentX        =   1503
-            _ExtentY        =   550
+            _ExtentX        =   1508
+            _ExtentY        =   556
             Max             =   34
             Value           =   34
             ShowZero        =   0   'False
@@ -335,8 +335,8 @@ Begin VB.Form frmGearset
             TabIndex        =   73
             Top             =   720
             Width           =   7032
-            _ExtentX        =   12404
-            _ExtentY        =   10308
+            _ExtentX        =   12409
+            _ExtentY        =   10663
          End
          Begin VB.Label lblHeader 
             Appearance      =   0  'Flat
@@ -451,8 +451,8 @@ Begin VB.Form frmGearset
       Height          =   8052
       Index           =   1
       Left            =   120
-      ScaleHeight     =   8052
-      ScaleWidth      =   13272
+      ScaleHeight     =   8055
+      ScaleWidth      =   13275
       TabIndex        =   15
       TabStop         =   0   'False
       Top             =   480
@@ -465,8 +465,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   972
          Left            =   120
-         ScaleHeight     =   972
-         ScaleWidth      =   12972
+         ScaleHeight     =   975
+         ScaleWidth      =   12975
          TabIndex        =   71
          Top             =   6960
          Width           =   12972
@@ -479,8 +479,8 @@ Begin VB.Form frmGearset
             ForeColor       =   &H8000000D&
             Height          =   192
             Left            =   4380
-            ScaleHeight     =   168
-            ScaleWidth      =   8388
+            ScaleHeight     =   165
+            ScaleWidth      =   8385
             TabIndex        =   35
             TabStop         =   0   'False
             Top             =   600
@@ -530,8 +530,8 @@ Begin VB.Form frmGearset
             TabIndex        =   30
             Top             =   36
             Width           =   852
-            _ExtentX        =   1503
-            _ExtentY        =   550
+            _ExtentX        =   1508
+            _ExtentY        =   556
             Max             =   34
             Value           =   34
             StepLarge       =   3
@@ -616,8 +616,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   6732
          Left            =   120
-         ScaleHeight     =   6732
-         ScaleWidth      =   12972
+         ScaleHeight     =   6735
+         ScaleWidth      =   12975
          TabIndex        =   16
          TabStop         =   0   'False
          Top             =   240
@@ -629,8 +629,8 @@ Begin VB.Form frmGearset
             TabStop         =   0   'False
             Top             =   3720
             Width           =   3192
-            _ExtentX        =   5630
-            _ExtentY        =   4890
+            _ExtentX        =   5636
+            _ExtentY        =   4895
             TitleSize       =   2
          End
          Begin VB.TextBox txtSearch 
@@ -643,7 +643,7 @@ Begin VB.Form frmGearset
          End
          Begin VB.ListBox lstChosen 
             Appearance      =   0  'Flat
-            Height          =   6072
+            Height          =   5910
             Left            =   5760
             TabIndex        =   25
             Top             =   420
@@ -651,7 +651,7 @@ Begin VB.Form frmGearset
          End
          Begin VB.ListBox lstAvailable 
             Appearance      =   0  'Flat
-            Height          =   6072
+            Height          =   5910
             Left            =   2100
             TabIndex        =   22
             Top             =   420
@@ -659,7 +659,7 @@ Begin VB.Form frmGearset
          End
          Begin VB.ListBox lstGroup 
             Appearance      =   0  'Flat
-            Height          =   6072
+            Height          =   5910
             Left            =   240
             TabIndex        =   18
             Top             =   420
@@ -672,8 +672,8 @@ Begin VB.Form frmGearset
             TabStop         =   0   'False
             Top             =   420
             Width           =   3192
-            _ExtentX        =   5630
-            _ExtentY        =   4890
+            _ExtentX        =   5636
+            _ExtentY        =   4895
             TitleSize       =   2
          End
          Begin VB.Image imgArrow 
@@ -798,8 +798,8 @@ Begin VB.Form frmGearset
       Height          =   8052
       Index           =   2
       Left            =   120
-      ScaleHeight     =   8052
-      ScaleWidth      =   13272
+      ScaleHeight     =   8055
+      ScaleWidth      =   13275
       TabIndex        =   37
       TabStop         =   0   'False
       Top             =   480
@@ -813,8 +813,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   552
          Left            =   420
-         ScaleHeight     =   552
-         ScaleWidth      =   7572
+         ScaleHeight     =   555
+         ScaleWidth      =   7575
          TabIndex        =   39
          TabStop         =   0   'False
          Top             =   360
@@ -828,8 +828,8 @@ Begin VB.Form frmGearset
             Top             =   60
             Visible         =   0   'False
             Width           =   408
-            _ExtentX        =   720
-            _ExtentY        =   720
+            _ExtentX        =   714
+            _ExtentY        =   714
             Style           =   1
          End
          Begin VB.CheckBox chkQuickMatch 
@@ -861,8 +861,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   5412
          Left            =   1200
-         ScaleHeight     =   5412
-         ScaleWidth      =   8472
+         ScaleHeight     =   5415
+         ScaleWidth      =   8475
          TabIndex        =   41
          TabStop         =   0   'False
          Top             =   1680
@@ -875,8 +875,8 @@ Begin VB.Form frmGearset
             ForeColor       =   &H80000008&
             Height          =   4452
             Left            =   360
-            ScaleHeight     =   4452
-            ScaleWidth      =   6912
+            ScaleHeight     =   4455
+            ScaleWidth      =   6915
             TabIndex        =   42
             TabStop         =   0   'False
             Top             =   540
@@ -892,8 +892,8 @@ Begin VB.Form frmGearset
       Height          =   8052
       Index           =   3
       Left            =   120
-      ScaleHeight     =   8052
-      ScaleWidth      =   13272
+      ScaleHeight     =   8055
+      ScaleWidth      =   13275
       TabIndex        =   44
       TabStop         =   0   'False
       Top             =   480
@@ -1028,8 +1028,8 @@ Begin VB.Form frmGearset
             TabIndex        =   52
             Top             =   1440
             Width           =   1332
-            _ExtentX        =   2350
-            _ExtentY        =   445
+            _ExtentX        =   2355
+            _ExtentY        =   450
             Caption         =   "Bound"
             Enabled         =   0   'False
          End
@@ -1096,8 +1096,8 @@ Begin VB.Form frmGearset
             TabIndex        =   47
             Top             =   420
             Width           =   852
-            _ExtentX        =   1503
-            _ExtentY        =   550
+            _ExtentX        =   1508
+            _ExtentY        =   556
             Max             =   34
             Value           =   34
             StepLarge       =   3
@@ -1136,8 +1136,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   7704
          Left            =   2100
-         ScaleHeight     =   7704
-         ScaleWidth      =   11172
+         ScaleHeight     =   7710
+         ScaleWidth      =   11175
          TabIndex        =   61
          TabStop         =   0   'False
          Top             =   180
@@ -1159,8 +1159,8 @@ Begin VB.Form frmGearset
             ForeColor       =   &H80000008&
             Height          =   7704
             Left            =   180
-            ScaleHeight     =   7704
-            ScaleWidth      =   10752
+            ScaleHeight     =   7710
+            ScaleWidth      =   10755
             TabIndex        =   62
             TabStop         =   0   'False
             Top             =   0
@@ -1174,7 +1174,7 @@ Begin VB.Form frmGearset
                Top             =   0
                Width           =   10740
                _ExtentX        =   18944
-               _ExtentY        =   1757
+               _ExtentY        =   1746
             End
          End
       End
@@ -1185,8 +1185,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   7992
          Left            =   2100
-         ScaleHeight     =   7992
-         ScaleWidth      =   11172
+         ScaleHeight     =   7995
+         ScaleWidth      =   11175
          TabIndex        =   68
          TabStop         =   0   'False
          Top             =   0
@@ -1199,8 +1199,8 @@ Begin VB.Form frmGearset
             TabStop         =   0   'False
             Top             =   180
             Width           =   10932
-            _ExtentX        =   19283
-            _ExtentY        =   13589
+            _ExtentX        =   19288
+            _ExtentY        =   13600
             TitleSize       =   2
             TitleIcon       =   0   'False
             CanScroll       =   0   'False
@@ -1213,8 +1213,8 @@ Begin VB.Form frmGearset
          ForeColor       =   &H80000008&
          Height          =   7992
          Left            =   2100
-         ScaleHeight     =   7992
-         ScaleWidth      =   11172
+         ScaleHeight     =   7995
+         ScaleWidth      =   11175
          TabIndex        =   65
          Top             =   0
          Visible         =   0   'False
@@ -1236,8 +1236,8 @@ Begin VB.Form frmGearset
             TabStop         =   0   'False
             Top             =   180
             Width           =   7152
-            _ExtentX        =   12615
-            _ExtentY        =   13589
+            _ExtentX        =   12621
+            _ExtentY        =   13600
             TitleSize       =   2
             TitleIcon       =   0   'False
          End
@@ -1414,7 +1414,7 @@ Public Property Let BaseLevel(ByVal plngML As Long)
     Dim i As Long
     
     If plngML < 1 Then plngML = 1
-    If plngML > 34 Then plngML = 34
+    If plngML > MAX_CRAFTING_LEVEL Then plngML = MAX_CRAFTING_LEVEL
     If gs.BaseLevel = plngML Then Exit Property
     gs.BaseLevel = plngML
     mblnOverride = True
@@ -1582,7 +1582,7 @@ Private Sub DefaultGearset()
     For i = seHelmet To seArmor
         gs.Item(i).Crafted = True
     Next
-    Me.BaseLevel = 34
+    Me.BaseLevel = MAX_CRAFTING_LEVEL
     LoadItemList cfg.CraftingPath & "\Default." & ItemListExt, gs
     ShowGearsetSlots
     MapSlotsToGear gs
@@ -3331,7 +3331,7 @@ End Sub
 
 ' All ML shards
 Private Sub ShowIngredientsML()
-    Dim lngML(1 To 34) As Long
+    Dim lngML(1 To MAX_CRAFTING_LEVEL) As Long
     Dim blnShow As Boolean
     Dim lngPadding As Long
     Dim strPlural As String
@@ -3352,11 +3352,11 @@ Private Sub ShowIngredientsML()
     If Not blnShow Then Exit Sub
     ' Formatting
     lngPadding = 1
-    For i = 1 To 34
+    For i = 1 To MAX_CRAFTING_LEVEL
         If lngML(i) > 9 Then lngPadding = 2
     Next
     ' ML Shards
-    For i = 1 To 34
+    For i = 1 To MAX_CRAFTING_LEVEL
         If lngML(i) <> 0 Then
             Me.usrReviewIngredients.AddNumber lngML(i), lngPadding
             If lngML(i) = 1 Then strPlural = vbNullString Else strPlural = "s"

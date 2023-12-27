@@ -480,9 +480,11 @@ Private Sub SortQuests(Optional ByVal plngLeft As Long, Optional ByVal plngRight
     lngLast = plngRight
     strMid = db.Quest((plngLeft + plngRight) \ 2).ID
     Do
+        'case insensitive compare
         Do While UCase(db.Quest(lngFirst).ID) < UCase(strMid) And lngFirst < plngRight
             lngFirst = lngFirst + 1
         Loop
+        'case insensitive compare
         Do While UCase(strMid) < UCase(db.Quest(lngLast).ID) And lngLast > plngLeft
             lngLast = lngLast - 1
         Loop
@@ -507,9 +509,11 @@ Public Function SeekQuest(pstrID As String) As Long
     lngLast = db.Quests
     Do While lngFirst <= lngLast
         lngMid = (lngFirst + lngLast) \ 2
+        'case insensitive compare
         If UCase(db.Quest(lngMid).ID) > UCase(pstrID) Then 'Case insensitive compare
             lngLast = lngMid - 1
-        ElseIf db.Quest(lngMid).ID < pstrID Then
+        'case insensitive compare
+        ElseIf UCase(db.Quest(lngMid).ID) < UCase(pstrID) Then
             lngFirst = lngMid + 1
         Else
             SeekQuest = lngMid
@@ -989,9 +993,10 @@ Public Function SeekChallenge(pstrID As String) As Long
     lngLast = db.Challenges
     Do While lngFirst <= lngLast
         lngMid = (lngFirst + lngLast) \ 2
-        If db.Challenge(lngMid).ID > pstrID Then
+        'case insensitive compare
+        If UCase(db.Challenge(lngMid).ID) > UCase(pstrID) Then
             lngLast = lngMid - 1
-        ElseIf db.Challenge(lngMid).ID < pstrID Then
+        ElseIf UCase(db.Challenge(lngMid).ID) < UCase(pstrID) Then
             lngFirst = lngMid + 1
         Else
             SeekChallenge = lngMid

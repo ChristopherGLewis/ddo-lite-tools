@@ -138,6 +138,15 @@ Descrip: A blast of electricity bursts from your outstretched hand, dealing 1d6+
 SpellName: Bless
 Descrip: Multiple targets are filled with courage, granting a +1 morale bonus on to-hit rolls and saves versus fear. Bless counters and dispels Bane.
 
+SpellName: Blighted Bite
+Descrip: You gain +2 Imbue dice while in any wolf form for 20 minutes.
+
+SpellName: Blighted Breath
+Descrip: Sends out a breath of poisonous gas in a frontal cone dealing 1d8+2 points of Poison damage per caster level (up to a maximum of 45 to 150 damage at caster level 15) with a Reflex save for half damage. They must also make a Fortitude save or be Blinded for 10 seconds. If you are using the Biting Acid Imbue this damage is converted into 1d6+2 Acid damage per caster level (up to a maximum of 45 to 120 damage at caster level 15).
+
+SpellName: Blighted Charge
+Descrip: You leap forward with the speed and ferocity spewing blight around you as you pass. You attack enemies in your path, dealing an extra 5(W), with a +1 bonus to critical threat & multiplier, and targets caught in your wake are Blinded and Helpless for 8 seconds. A successful reflex save negates this effect. For 10 seconds after the charge you gain +3 Imbue Dice. Stun vs Reflex (DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses)
+
 SpellName: Blindness
 WikiName: Blindness (spell)
 Descrip: Renders an enemy blinded. A successful Fortitude save negates this effect.
@@ -551,6 +560,9 @@ Descrip: Flings three burning acorns at your target, where they explode into fla
 SpellName: Fire Shield
 Descrip: Wreaths the caster in hot or cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) damage. The Fire version of this spell deals fire damage and reduces damage the caster takes from cold by half. The cold version of this spell deals cold damage and reduces damage the caster takes from fire by half. The flame from the fire version will burn away any webs that attempt to entangle you.
 
+SpellName: Fire Shield Cold
+Descrip: Wreaths the caster in cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) cold damage. This spell reduces damage the caster takes from fire by half.
+
 SpellName: Fire Storm
 Descrip: Deals 1d6+8 fire damage per caster level for targets in the storm area.
 
@@ -636,7 +648,7 @@ SpellName: Ghoul Touch
 Descrip: This spell imbues your hand with negative energy, allowing you to paralyze 1 living Humanoid that you touch. A successful Fortitude save negates. Humanoids include Kobolds, Goblinoids, player Races except for Warforged, Troglodytes, and more.
 
 SpellName: Gills Extract
-Descrip: This potion will mutate you, granting you gills and increased ability to swim underwater. This grants the effects of theWater BreathingandMerfolk's Blessingspells: You gain the ability to breathe underwater and +10 Enhancement bonus to Swim, plus 1 for every 2 caster levels beyond the first. These effects last for 30 seconds +6 seconds per Caster Level.
+Descrip: This potion will mutate you, granting you gills and increased ability to swim underwater. This grants the effects of the Water Breathing and Merfolk's Blessing spells: You gain the ability to breathe underwater and +10 Enhancement bonus to Swim, plus 1 for every 2 caster levels beyond the first. These effects last for 30 seconds +6 seconds per Caster Level.
 
 SpellName: Glitterdust
 Descrip: A cloud of golden particles covers everything in an area, causing targets to become Blinded and outlining Invisible creatures. (-40 to Hide checks, and visually affects party members.) A successful Will save negates Blinded.
@@ -658,6 +670,9 @@ Descrip: Turn your skin to metallic, magical gold. Gain a resistance to physical
 
 SpellName: Good Hope
 Descrip: This area of effect spell instills powerful hope to the recipient, granting a +2 morale bonus to attack rolls, saving throws, skill checks, and weapon damage rolls.
+
+SpellName: Grasping Thorns
+Descrip: Powerful thorny vines rip out of the ground seizing all enemies in the area. Enemies save vs Reflex or become entangled, with a re-occuring Strength save to break free. Targets also take 1d6 in piercing damage every 2 seconds. All enemy movement through the area is slowed by 30%, no save. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
 
 SpellName: Grease
 Descrip: Covers the ground with a 10 ft. square layer of slippery grease, forcing targets to make a Reflex save or fall. (Affects party members.) Sometimes it deals 2d6 fire damage per 2 caster levels  to all enemies of the caster in the grease every few seconds, as well as the caster of the Grease spell. A successful Reflex save will reduce this damage by half.
@@ -854,6 +869,9 @@ Descrip: This shadowy liquid will turn you invisible for a time, granting the ef
 SpellName: Iron Shavings
 Descrip: Smash a bottle at your feet to spread Flametouched Iron shavings into the air around you, causing nearby Incorporeal foes that fail a Fortitude save to become Corporeal for 6 seconds, plus 1 second per Caster Level.
 
+SpellName: Jaws of Doom
+Descrip:  As your jaws close over your enemies, they feel their life end. This attack deals an extra 10(W), +1 bonus to critical threat and multiplier, and your foe must save vs Fortitude or dies as if slayed by a vorpal weapon (Does not affect Oozes, Undead, Constructs or Elementals). Death vs Fortitude DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses.
+
 SpellName: Jaws of Winter
 Descrip: Valid Forms: Winter Wolf. As your jaws close over your enemies, they feel the deep cold of winter's heart close around them. This attack has +1 crit range and multiplier and deals an extra 6[W], and if it counts as a sneak attack, your foe is frozen solid for 30 seconds. Frozen creatures gain DR 5/Adamantine, but are considered helpless. Fortitude save negates, and the creature gets an additional save attempt every two seconds. (DC 17 + higher of STR/WIS mod + Druid level + Stun bonuses.)
 
@@ -918,7 +936,7 @@ WikiName: Lionheart (spell)
 Descrip: Imbues a single ally with great bravery, making him immune to fear for 1 minute per caster level.
 
 SpellName: Longstrider
-Descrip: Longstrider increases the caster's base run speed by 15%. This is a self buff, and cannot be cast on others.
+Descrip: You gain a +15% enhancement bonus to run speed and ignore the effects of shallow water. This is a self buff, and cannot be cast on others.
 
 SpellName: Lucky Cape
 Descrip: Your targets cloak grants a +1 luck bonus to saving throws. An item can have only one temporary item enchantment at a time.
@@ -1061,7 +1079,7 @@ Descrip: Casts Lesser Vigor on multiple targets. A positive energy conjuration t
 
 SpellName: Mass Longstrider
 WikiName: Longstrider, Mass
-Descrip: Casts Longstrider on multiple targets, increasing base run speed of allies by +15%.
+Descrip: Casts Longstrider on multiple targets, giving a +15% enhancement bonus to run speed and ignore the effects of shallow water.
 
 SpellName: Mass Owl's Wisdom
 WikiName: Owl's Wisdom, Mass
@@ -1230,6 +1248,9 @@ Descrip: Your feet touch the ground, but leave no trace. Gives an ally +5 enhanc
 SpellName: Phantasmal Killer
 Descrip: A target who fails a Will saving throw followed by a failed Fortitude saving throw dies from fear. A successful Fortitude save still results in 1d3 + 1 damage per caster level. A Will save disbelieves the spell and negates ill effects.
 
+SpellName: Plant Growth
+Descrip: Grants any Plant or Plant-like creature a +4 Size bonus to Strength, +4 Size bonus to Constitution, and a -2 penalty to Dexterity.} }Tip: Blightcaster in plant form (thorn) is eligible for Plant Growth.
+
 SpellName: Poison
 WikiName: Poison (spell)
 Descrip: Calls upon the venomous powers of natural predators to infect the enemy with a horrible Poison. Deals 1d10 temporary Constitution damage, and another 1d10 temporary Constitution damage 1 minute later. Each instance of damage can be negated by a Fortitude save.
@@ -1343,6 +1364,9 @@ Descrip: Instills courage in an ally, granting a +4 morale bonus against fear ef
 
 SpellName: Remove Paralysis
 Descrip: This spell frees an ally from the condition Paralyzed, and the effects of a Slow spell.
+
+SpellName: Rend the Soul
+Descrip: Twists unholy energies around a single foe, causing it significant negative damage over time. Deals 5 to 10 damage every two seconds for 10 seconds for every caster level up to 20. A successful fortitude save reduces the damage by half.
 
 SpellName: Repair Critical Damage
 Descrip: Transmutes the structure of a living Construct ally to repair 4d6+8 Hit Points plus 1 per caster level. (Maximum caster level 20.)
@@ -1642,6 +1666,21 @@ Descrip: Forms a link between a leader and his or her pack, granting all of the 
 SpellName: Tenser's Transformation
 Descrip: Causes the caster to become a virtual fighting machine becoming stronger, tougher, faster, and more skilled in combat. You gain a +4 alchemical bonus to Strength, Dexterity, and Constitution, a +6 alchemical bonus to Armor Class, and proficiency with all simple and martial weapons. Your base attack bonus equals your character level. Your spellcasting ability is reduced, resulting in a -2 penalty to all spell DCs, -2 to your rolls to bypass enemy Spell Resistance, and doubling the cooldown of your spells.
 
+SpellName: Thorn Blade
+Descrip: Summons a scimitar of blight that does a mix of acid and poison damage instead of slashing damage, and uses the wielder's Wisdom instead of Strength for determining attack and damage bonuses. The user can choose to summon one-handed or two-handed versions, and the swords are automatically equipped when created. At caster level 1, it has a +1 enhancement bonus and the Acidic effect. Every five caster levels the summoned swords improve. Because they are an extension of the caster's will, monks may use these weapons without becoming uncentered. The thorn blade is not a physical weapon, but rather pure nature shaped by the caster's will; because of this, it withers away if unequipped.}{-This spell functions in a very similar way to Flame Blade.}{-Effects that increase your caster level with Thorn spells, such as being in Thorn Kin or Thorn Knight form, allow you to summon a more potent, high-level blade.
+
+SpellName: Thorn Bloom
+Descrip: Thorns blast out from your body inflicting 5 to 10 points of Piercing damage per caster level (up to a maximum of 50 to 100 damage at caster level 10) to all nearby foes. Reflex save for half.
+
+SpellName: Thorn Lance
+Descrip: You hurl a great thorn lance at your target dealing 9 to 14 points of Piercing damage per caster level (up to a maximum of 180 to 280 damage at caster level 20). The lance will damage all enemies in front or behind the target.
+
+SpellName: Thorn Strike
+Descrip: You hurl a magical thorn at your target dealing 5 to 7 points of Piercing damage per caster level (up to a maximum of 50 to 70 damage at caster level 10).
+
+SpellName: Thorn Wave
+Descrip: You hurl a wave of magical thorns in front of you dealing to all targets in front of you for 6 to 11 points of Piercing damage per caster level (up to a maximum of 90 to 165 damage at caster level 15). Reflex save for half.
+
 SpellName: Thundering Armor
 Descrip: Your target's currently equipped armor gains Retributive Hit Effect: Attacker takes 1d6 sonic damage and has a 5% chance to take an additional 8d6 sonic damage (Fortitude DC: 25 save for half damage). An item can have only one temporary item enchantment at a time.
 Flags: Rare
@@ -1775,36 +1814,3 @@ Descrip: Teleports you to the Temple of the Sovereign Host in House Deneith.
 
 SpellName: Zeal
 Descrip: Grants the caster a +10% sacred bonus to doublestrike.
-
-SpellName: Rend the Soul
-Descrip: Twists unholy energies around a single foe, causing it significant negative damage over time. Deals 5 to 10 damage every two seconds for 10 seconds for every caster level up to 20. A successful fortitude save reduces the damage by half.
-
-SpellName: Thorn Strike
-Descrip: You hurl a magical thorn at your target dealing 5 to 7 points of Piercing damage per caster level (up to a maximum of 50 to 70 damage at caster level 10).
-
-SpellName: Thorn Bloom
-Descrip: Thorns blast out from your body inflicting 5 to 10 points of Piercing damage per caster level (up to a maximum of 50 to 100 damage at caster level 10) to all nearby foes. Reflex save for half.
-
-SpellName: Plant Growth
-Descrip: copy of Animal Growth for plants
-
-SpellName: Thorn Wave
-Descrip: You hurl a wave of magical thorns in front of you dealing to all targets in front of you for 6 to 11 points of Piercing damage per caster level (up to a maximum of 90 to 165 damage at caster level 15). Reflex save for half.
-
-SpellName: Grasping Roots
-Descrip:  Powerful thorny vines rip out of the ground seizing all enemies in the area. Enemies save vs Reflex or become entangled, with a re-occuring Strength save to break free. Targets also take 1d6 in piercing damage every 2 seconds. All enemy movement through the area is slowed by 30%, no save. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
-
-SpellName: Thorn Lance
-Descrip: You hurl a great thorn lance at your target dealing 9 to 14 points of Piercing damage per caster level (up to a maximum of 180 to 280 damage at caster level 20). The lance will damage all enemies in front or behind the target.
-
-SpellName: Blighted Breath
-Descrip: Sends out a breath of poisonous gas in a frontal cone dealing 1d8+2 points of Poison damage per caster level (up to a maximum of 45 to 150 damage at caster level 15) with a Reflex save for half damage. They must also make a Fortitude save or be Blinded for 10 seconds. If you are using the Biting Acid Imbue this damage is converted into 1d6+2 Acid damage per caster level (up to a maximum of 45 to 120 damage at caster level 15).
-
-SpellName: Blighted Charge
-Descrip: ou leap forward with the speed and ferocity spewing blight around you as you pass. You attack enemies in your path, dealing an extra 5(W), with a +1 bonus to critical threat & multiplier, and targets caught in your wake are Blinded and Helpless for 8 seconds. A successful reflex save negates this effect. For 10 seconds after the charge you gain +3 Imbue Dice. Stun vs Reflex DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses."
-
-SpellName: Jaws of Doom
-Descrip:  As your jaws close over your enemies, they feel their life end. This attack deals an extra 10(W), +1 bonus to critical threat and multiplier, and your foe must save vs Fortitude or dies as if slayed by a vorpal weapon (Does not affect Oozes, Undead, Constructs or Elementals). Death vs Fortitude DC: 10 + Druid Level + Highest of Wisdom, Dexterity or Strength + Necromancy Bonuses.
-
-SpellName: Blighted Bite
-Descrip: You gain +2 Imbue dice while in any wolf form for 20 minutes.

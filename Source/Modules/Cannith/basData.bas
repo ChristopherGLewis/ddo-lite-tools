@@ -1,6 +1,9 @@
 Attribute VB_Name = "basData"
 Option Explicit
 
+Public Const MAX_CRAFTING_LEVEL = 32
+
+
 Public Sub InitData()
     Dim typBlank As DatabaseType
     
@@ -67,7 +70,7 @@ Private Sub LoadGeneral()
                 Select Case strField
                     Case "frequency": SetGeneral db.Frequency, strItem
                     Case "any": SetGeneral db.Backpack, strItem
-                    Case "essencerate": db.EssenceRate = Val(strItem)
+                    Case "essencerate": db.EssenceRate = val(strItem)
                     Case "demand": SetDemandStyle LCase$(strItem)
                     Case "demandvalue": SetGeneral db.DemandValue, LCase$(strItem)
                     Case "demandweights": SetGeneral db.DemandWeight, strItem
@@ -114,7 +117,7 @@ Private Sub SetGeneral(pvarArray As Variant, pstrList As String)
     If InStr(pstrList, " ") Then pstrList = Replace(pstrList, " ", vbNullString)
     strToken = Split(pstrList, ",")
     For i = 0 To UBound(strToken)
-        pvarArray(i + 1) = Val(strToken(i))
+        pvarArray(i + 1) = val(strToken(i))
     Next
 End Sub
 
@@ -126,7 +129,7 @@ Private Sub SetDemandStyle(pstrStyle As String)
             db.DemandStyle = dseWeighted
         Case Else
             If Left$(pstrStyle, 3) = "top" Then
-                db.DemandTop = Val(Trim$(Mid$(pstrStyle, 4)))
+                db.DemandTop = val(Trim$(Mid$(pstrStyle, 4)))
                 If db.DemandTop = 0 Then Debug.Print "Invalid demand style in General.txt:" & vbNewLine & pstrStyle
             Else
                 Debug.Print "Invalid demand style in General.txt:" & vbNewLine & pstrStyle
@@ -473,7 +476,7 @@ End Function
 
 ' Limited functionality; only supports 0:00 to 9:59 because I'm lazy
 Private Function TimeToSeconds(pstrTime As String) As Long
-    TimeToSeconds = (Val(Left$(pstrTime, 1)) * 60) + Val(Right$(pstrTime, 2))
+    TimeToSeconds = (val(Left$(pstrTime, 1)) * 60) + val(Right$(pstrTime, 2))
 End Function
 
 Public Function SecondsToTime(plngSeconds As Long) As String
@@ -525,7 +528,7 @@ Private Function ParseSchool(ByVal pstrRaw As String, penSchool As SchoolEnum, p
     lngPos = InStr(pstrRaw, ": ")
     If lngPos = 0 Then Exit Function
     penSchool = GetSchoolID(Left$(pstrRaw, lngPos - 3))
-    plngTier = Val(Mid$(pstrRaw, lngPos - 1, 1))
+    plngTier = val(Mid$(pstrRaw, lngPos - 1, 1))
     pstrFarm = Mid$(pstrRaw, lngPos + 2)
     lngPos = InStrRev(pstrFarm, ": ")
     If lngPos = 0 Then
@@ -569,8 +572,8 @@ Private Sub LoadScaling()
                     With .Scaling(.Scales)
                         .Group = strScale(0)
                         .ScaleName = strScale(1)
-                        ReDim .Table(1 To 34)
-                        For j = 1 To 34
+                        ReDim .Table(1 To MAX_CRAFTING_LEVEL)
+                        For j = 1 To MAX_CRAFTING_LEVEL
                             .Table(j) = strScale(j + 1)
                         Next
                     End With
@@ -795,7 +798,7 @@ Private Sub ParseIngredients(ptypRecipe As RecipeType, pstrList() As String, pln
             If lngPos = 0 Then
                 Debug.Print "Error parsing: " & pstrList(i - 1) & vbNewLine
             Else
-                lngCount = Val(Left$(pstrList(i - 1), lngPos - 1))
+                lngCount = val(Left$(pstrList(i - 1), lngPos - 1))
                 strMaterial = Mid$(pstrList(i - 1), lngPos + 1)
                 If lngCount = 0 Or Len(strMaterial) = 0 Then
                     Debug.Print "Error parsing: " & pstrList(i - 1) & vbNewLine
@@ -1637,7 +1640,7 @@ Private Sub ParseAugmentScale(ptypScale As AugmentScaleType, plngVariants As Lon
     CleanText pstrRaw
     strLine = Split(pstrRaw, vbNewLine)
     With ptypScale
-        .ML = Val(strLine(0))
+        .ML = val(strLine(0))
         ReDim .Prefix(1 To plngVariants)
         ' Process lines
         For lngLine = 0 To UBound(strLine)
@@ -1944,11 +1947,11 @@ Private Function ParseLine(ByVal pstrLine As String, pstrField As String, pstrIt
         strValue = Mid$(pstrLine, lngPos + 1)
         If IsNumeric(strValue) Then
             pstrItem = Left$(pstrLine, lngPos - 1)
-            plngValue = Val(strValue)
+            plngValue = val(strValue)
         End If
     Else
         ' If only a single value, and it's numeric, return it in Value also
-        If IsNumeric(pstrItem) And InStr(pstrItem, "d") = 0 Then plngValue = Val(pstrItem)
+        If IsNumeric(pstrItem) And InStr(pstrItem, "d") = 0 Then plngValue = val(pstrItem)
     End If
     ' Return single item in list form as well
     plngListMax = 0

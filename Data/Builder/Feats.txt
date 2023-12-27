@@ -285,10 +285,10 @@ Descrip: These are toggled on to get their bonuses, have visual effects, are mut
 Race: Required, Aasimar
 RaceBonus: Aasimar
 Flags: RaceOnly
-Selector: Bond of the Fallen, Bond of the Protector
-SelectorName: Bond of the Fallen
-Descrip: You connection to your Celestial patron causes you to guard the weak and stand vigilant against the darkness. While this Protector Bond is toggled on, you tap into that connection, gaining glowing eyes, +1 Charisma and +1 to Will Saving Throws.
+Selector: Bond of the Protector, Bond of the Fallen
 SelectorName: Bond of the Protector
+Descrip: You connection to your Celestial patron causes you to guard the weak and stand vigilant against the darkness. While this Protector Bond is toggled on, you tap into that connection, gaining glowing eyes, +1 Charisma and +1 to Will Saving Throws.
+SelectorName: Bond of the Fallen
 Descrip: Twisted by dark powers in your youth, your connection to your Celestial patron is unusual, but powerful. While this Fallen Bond is toggled on, you tap into that connection, gaining darkened eyes, +1 Strength and +1 to Reflex Saving Throws.
 
 FeatName: Bond of the Scourge
@@ -384,7 +384,7 @@ Descrip: +2 to attack and damage rolls with daggers.
 
 FeatName: Cleave
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Make a sweeping weapon attack against all nearby enemies for +1[W] damage.
+Descrip: Melee special attack (Cooldown: 5 seconds): Make a sweeping weapon attack against all nearby enemies for +20% damage.
 All: Power Attack
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter
@@ -974,6 +974,15 @@ ClassOnlyLevel: 1, 5, 10, 15, 20
 Class: Ranger 1
 Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Fey, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
 
+FeatName: Favored Enemy (DH)
+Group: Heroic, Misc
+Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
+Flags: ClassOnly
+ClassOnlyClass: Dark Hunter
+ClassOnlyLevel: 1, 5, 10, 15, 20
+Class: Dark Hunter 1
+Selector: Aberration, Animal, Elf, Human, Monstrous Humanoid, Vermin
+
 FeatName: Fear Immunity
 Group: Heroic, Misc
 Descrip: A paladin is immune to fear effects.
@@ -1100,7 +1109,7 @@ Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 FeatName: Great Cleave
 SortName: Cleave2
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +4[W] damage.
+Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +40% damage.
 BAB: 4
 All: Cleave, Power Attack
 ClassBonus: Fighter
@@ -1234,7 +1243,7 @@ Flags: RaceOnly
 Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
 SelectorName: Alchemist
 WikiName: Half-Elf Dilettante#Alchemist
-Descrip: You have +10 Universal Spell Power.}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You have +10 Universal Spell Power. For item use purposes, you count as a level one Alchemist in addition to any other classes you possess. This feat is not recommended for characters with actual Alchemist levels.
 Stat: Charisma 13
 SelectorName: Artificer
 WikiName: Half-Elf Dilettante#Artificer
@@ -1431,7 +1440,7 @@ ClassBonus: Artificer
 
 FeatName: Improved Martial Arts
 Group: Epic, Melee
-Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using weapons you are centered with.
+Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using ki weapons such as kamas, quarterstaves, and shuriken. Works with all weapons that you are centered with.
 Class: Monk 12
 Level: 21
 
@@ -1766,7 +1775,7 @@ Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Spellcasting passive feats
 Descrip: +140 Maximum Spell Points}+10 Maximum Caster Level for selected spells and SLAs
 Level: 24
-Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, Poisons, Shadowblades, Spellvials, the Dead, the Wilds, Water
+Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, Poisons, Shadowblades, Spellvials, the Dead, the Wilds, Thorns, Water
 SelectorName: Air
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shocking Grasp}{-Electric Loop}{-Lightning Bolt
 SelectorName: Alignment
@@ -1786,13 +1795,15 @@ Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater S
 SelectorName: Poisons
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
 SelectorName: Shadowblades
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-All Shadowblade Spells
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Illusory Weaponry}{-Fan of Shadowblades}{-Ring of Shadowblades
 SelectorName: Spellvials
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Elemental Obliteration
 SelectorName: the Dead
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
 SelectorName: the Wilds
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Produce Flame}{-Creeping Cold}{-Call Lightning}{-Word of Balance}{-Salt Ray
+SelectorName: Thorns
+Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Thorn Strike}{-Splinter Bolt}{-Thorn Bloom
 SelectorName: Water
 Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Niac's Cold Ray}{-Snowball Swarm}{-Niac's Biting Cold
 
@@ -1884,7 +1895,7 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Nimble Fingers
 Group: Heroic, Misc
 Descrip: +2 bonus to the Disable Device and Open Lock skills.
-Class: Rogue 1, Artificer 1
+Class: Rogue 1, Artificer 1, Dark Hunter 1
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Offhand Versatility
@@ -2096,7 +2107,7 @@ Flags: Unselectable
 
 FeatName: Point Blank Shot
 Group: Heroic, Range
-Descrip: +1[W] damage with ranged weapons. Also +1 to-hit within 45 feet. When using a Longbow or Shortbow, you gain +1 Critical Threat Range.
+Descrip: +1[W] with ranged weapons. Also +1 to-hit within 45 feet. When using a Longbow or Shortbow, you gain +1 Critical Threat Range.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Alchemist
 
@@ -2160,7 +2171,7 @@ ClassBonus: Wizard
 
 FeatName: Quivering Palm
 Group: Heroic, Misc
-Descrip: The monk delivers a fatal attack by sending waves of vibrations through the target with an open hand strike. The attack costs 30 Ki, and if it hits the victim must pass a Fortitude save (DC 10 + monk level/2 + Wisdom modifier) or die.
+Descrip: The monk delivers a fatal attack by sending waves of vibrations through the target with an open hand strike. The attack costs 30 Ki, and if it hits the victim must pass a Fortitude save (DC 10 + monk level + highest of DEX or WIS modifier + assassinate bonuses) or die.
 Class: Monk 15
 Flags: Unselectable
 
@@ -2811,7 +2822,7 @@ ClassBonus: Fighter, Monk
 
 FeatName: Whirlwind Attack
 Group: Heroic, Melee
-Descrip: Tactical Melee Cleave: Activate this ability to attack all enemies in a 360 degree arc around you twice. This attack deals +2[W] damage. Note that it now hits the same number of times in all melee combat styles.
+Descrip: Tactical Melee Cleave: Activate this ability to attack all enemies in a 360 degree arc around you twice. This attack deals +20% damage. Note that it now hits the same number of times in all melee combat styles.
 BAB: 4
 All: Dodge, Mobility
 ClassBonus: Fighter
