@@ -1616,7 +1616,8 @@ Private Sub ParseAugment(ptypAugment As AugmentType, pstrRaw As String)
                                 Case "static": .Static = True
                                 Case "prefixnotvalue": .PrefixNotValue = True
                                 Case "named": .Named = True
-                                Case Else: Debug.Print "Unknown flag for Augment " & .AugmentName & ": " & strList(i)
+                                Case Else
+                                    Debug.Print "Unknown flag for Augment " & .AugmentName & ": " & strList(i)
                             End Select
                         Next
                     Case Else
@@ -1669,7 +1670,8 @@ Private Sub ParseAugmentScale(ptypScale As AugmentScaleType, plngVariants As Lon
                         For i = 0 To lngListMax
                             Select Case LCase$(strList(i))
                                 Case "remnantsbonusdays": .RemnantsBonusDays = True
-                                Case Else: Debug.Print "Unknown flag for Scale" & .ML & ": " & strList(i)
+                                Case Else:
+                                  Debug.Print "Unknown flag for Scale " & .ML & ": " & strList(i)
                             End Select
                         Next
                     Case Else

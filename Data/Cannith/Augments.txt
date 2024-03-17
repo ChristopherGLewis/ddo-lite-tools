@@ -834,123 +834,123 @@ ML: 6
 Augment: Iron Hand
 Variants: Ruby of the Iron Hand
 Color: 	Red
-ML: 1
-Flags: Static; Named
 Descrip: Cold Iron
 Notes: Snowpeaks Festival, Flurry trade-in
+Flags: Static; Named
+ML: 1
 
 Augment: Snowpeaks
 Variants: Ruby of the Snowpeaks
 Color: Red
 Flags: Static; Named
-ML: 4
 Descrip: 1 to 8 Cold Damage. 
 Descrip:Occasionally lock targets in frozen ice (see Freezing Ice.)
 Notes: Snowpeaks Festival, Flurry trade-in
+ML: 4
 
 Augment: Snowpeaks Speed 
 Variants: Sapphire of Snowpeaks Speed 
 Color: Blue
 Flags: Static; Named
-ML: 8
 Descrip: Striding +30 
 Notes: Snowpeaks Festival, Flurry trade-in
+ML: 8
 
 Augment: Adamantine Blessing 
 Variants: Ruby of the Adamantine Blessing 
 Color: Red
 Flags: Static; Named
-ML: 1
 Descrip: Adamantine
 Notes: Treasure of Crystal Cove, Euphonia's Barter Box trade-in
+ML: 1
 
 Augment: Surging Tide 
 Variants: Ruby of the Surging Tide 
 Color: Red
 Flags: Static; Named
-ML: 1
 Descrip: Tidal Burst 
 Notes: Treasure of Crystal Cove, Euphonia's Barter Box trade-in
+ML: 1
 
 Augment: Quick Movements
 Variants: Topaz of Quick Movements
 Color: Yellow
-ML: 06
 Flags: Static; Named
 Descrip: Feat: Quick Draw
 Notes: The Feywild, rare encounter chests
+ML: 6
 
 Augment: Heroism
 Variants: Sapphire of Heroism
 Color: Blue
-ML: 6
 Flags: Static; Named
 Descrip: Heroism
 Notes: Immortality Lessons
+ML: 6
 
 Augment: Greater Heroism
 Variants: Sapphire of Greater Heroism
 Color: Blue
-ML: 28
 Flags: Static; Named
 Descrip: Greater Heroism (no temporary hit points and immunity to fear)
 Notes: Immortality Lessons
+ML: 28
 
 Augment: Scourge of the Outsiders
 Color: Orange
-ML: 28
 Flags: Static; Named
 Descrip: Banishing 
 Notes: The Thornwright
+ML: 28
 
 Augment: Storm's Bulwark
 Color: Green
-ML: 28
 Flags: Static; Named
 Descrip: Whirlwind Ward
 Notes: The Knight Who Cried Windmill
+ML: 28
 
 Augment: Augmented Summoning
 Variants: Topaz of Augmented Summoning
 Color: Yellow
-ML: 28 
 Flags: Static; Named
 Descrip: Augment Summoning
 Notes: The Feywild, rare encounter chests
+ML: 28 
 
 Augment: Bitter Wounds
 Variants: Emerald of Bitter Wounds
 Color: Green
-ML: 28
 Flags: Static; Named
 Descrip: Greater Boon of Undeath
 Notes: The Dryad and the Demigod
+ML: 28
 
 Augment: Lifetaker
 Color: Purple
-ML: 28
 Flags: Static; Named
 Descrip: Slay Living (2.5% for a DC 30 Slay Living) 
 Notes: Witch HuntFables of the Feywild
+ML: 28
 
 Augment: Feareater
 Color: Purple
-ML: 28
 Flags: Static; Named
 Descrip: Sovereign Nightmares 
-Nootes: The Dryad and the Demigod
+Notes: The Dryad and the Demigod
+ML: 28
 
 Augment: Dismagicka
 Color: Orange
-ML: 28
 Flags: Static; Named
 Descrip: Improved Shattermantle 
 Notes: The Dryad and the Demigod
+ML: 28
 
 Augment: Disintegration 
 Variants: Ruby of Disintegration 
 Color: Red
-ML: 28
 Flags: Static; Named
 Descrip: Disintegration (2% for 15d20+300 untyped damage)
 Notes: Wake Me Up Inside
+ML: 28
