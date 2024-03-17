@@ -13,6 +13,15 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.6.0 - Updates for U66 
+Changes:
+- Addition to DragonLord (thanks as always to Yhelm!)
+- Updates to Epic Destinies
+
+Fixes:
+- Set Max Crafting Level to 32
+- Fixed issue in compendium with case insensitive sorting resulting in issues with "Lost..." quests et al. (Thanks MIvanIsten)
+
 ### 4.5.0 - Updates for U62/U63/U64/U65
 Changes:
 - Updates to many enhancements/destinies/spells with U62-U65 updates (thanks as always to Yhelm!)

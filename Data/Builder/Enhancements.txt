@@ -784,7 +784,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Soothing Poultices
-Descrip: While your Reaction is Verdanite, when you cast spells on yourself or allies you grant temporary hitpoints equal to third/half/full Intelligence. These last for three minutes.
+Descrip: While your Reaction is Verdanite, when you cast spells on yourself or allies you grant temporary Hit Points equal to third/half/full Intelligence. These last for three minutes.
 Tier: 1
 Ranks: 3
 
@@ -908,7 +908,7 @@ Descrip: Arcane Archer Secondary Imbue Toggle: +5% Doubleshot chance with bows. 
 Tier: 0
 
 AbilityName: Mystical Archer
-Descrip: +4 Dexterity, +20% Doubleshot
+Descrip: You gain +4 Dexterity and +20% Doubleshot chance.
 Tier: 0
 
 AbilityName: Conjure Arrows
@@ -918,7 +918,7 @@ Cost: 2
 None: Half-Elf Tier 2: Dilettante Special Ability: Conjure Arrows
 
 AbilityName: True Strike
-Descrip: Ranged Archery Attack: Perform a ranged attack with +20 to-hit with a +4 Insight bonus to hit for 12 seconds. Activation cost: 2 spell points. Cooldown: 3 seconds.
+Descrip: Ranged Archery Attack: Perform a ranged attack with +20 to-hit. You receive a +4 Insight bonus to hit for 12 seconds. Activation cost: 2 spell points. Cooldown: 3 seconds.
 Tier: 1
 Cost: 2
 
@@ -950,8 +950,8 @@ Descrip: (Activation Cost: 20 SP. Cooldown: 10 Seconds) Imbue Toggle: You imbue 
 Tier: 2
 Cost: 2
 
-AbilityName: Inferno Shot
-Descrip: Ranged Archery Attack: Performs a ranged attack with +20% damage. On Hit: Target gains 1 stack of Inferno (target takes 1d6 fire damage every 2 second for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.) (Activation cost: 6 SP. Cooldown 3 seconds)
+AbilityName: Elemental Inferno
+Descrip: AOE Ranged Archery Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where the shot hits with magical flames that can change their element. Affected enemies take 1 stack of Elemental Inferno. (Target takes 1d6 damage every 2 second for 6 seconds. This is Fire damage, unless you have Corrosive, Frost, Shock or Force Arrows active, in which case the damage type is the type of your Imbue. Elemental Inferno's damage scales with the relevant Spell Power. This effect can stack 20 times, and loses one stack on expiration.)(Activation cost: 6 SP. Cooldown 3 seconds)
 Tier: 2
 Cost: 2
 
@@ -993,7 +993,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Soul Magic
-Descrip: Every time you strike an enemy with your bow, you have a 15% chance to gain 10 temporary spell points that last for one minute.+10 Universal Spell Power.
+Descrip: Every time you strike an enemy with your bow, you have a 15% chance to gain 10 temporary spell points that last for one minute. +10 Universal Spell Power.
 Tier: 3
 One: Feat: Magical Training, Tier 1: Energy of the Wild Rank 3, Spellsinger Tier 1: Studies: Magical Rank 3
 
@@ -1057,12 +1057,12 @@ Tier: 5
 Cost: 2
 
 AbilityName: Arrow of Slaying
-Descrip: Ranged Archery Attack: Performs a ranged attack with +250 damage. (This damage can be multiplied by critical hits.) (Cost: 20 spell points. Cooldown: 20 seconds.)
+Descrip: Ranged Archery Attack: Performs a ranged attack with +250% Damage and +25 flat damage. (This damage can be multiplied by critical hits.) (Cost: 20 spell points. Cooldown: 20 seconds.)
 Tier: 5
 Cost: 2
 
-AbilityName: Final Strike
-Descrip: Ranged Archery Attack: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage that scales with Ranged Power. More injured enemies receive increased damage. (Cost: 5 spell points. Cooldown: 18 seconds.)
+AbilityName: Opening Volley
+Descrip: AOE Ranged Archery Attack: Fire a single shot with +20% Damage, hitting every enemy in an area around where this shot hits. Enemies hit take 7 stacks of Vulnerability. (Cost: 5 spell points. Cooldown: 18 seconds.)
 Tier: 5
 Cost: 2
 
@@ -1681,7 +1681,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Shatter Defenses
-Descrip: Pick a Melee or Ranged version of this attack.}{-Shatter Defense (Crossbow): Tactical Ranged Crossbow Attack: +[10/20/30]% damage. On Hit: Reduces the target's Armor Class by 5 and lowers fortification by 10%. A successful Fortitude save negates this effect. (DC 10 + INT mod + half Artificer level + Sunder Bonuses). Regardless of saving throw result target will suffer the Trauma effect, -3 penalty to fortitude saves due to shock, stacks 5 times. Lasts 24 seconds. This ability shares a cooldown with Sunder.}{-Shatter Defense (Melee): Tactical Melee Attack: +[10/20/30]% damage: On Hit: Reduces the target's Armor Class by 5 and lowers fortification by 10%. A successful Fortitude save negates this effect. (DC 10 + INT mod + half Artificer level + Sunder Bonuses). Regardless of saving throw result target will suffer the Trauma effect, -3 penalty to fortitude saves due to shock, stacks 5 times. Lasts 24 seconds. This ability shares a cooldown with Sunder.
+Descrip: Pick a Melee or Ranged version of this attack.}{-Shatter Defenses (Crossbow): AOE Tactical Ranged Crossbow Attack: Deals +[10/20/30]% Damage. Fire your Crossbow, hitting every enemy in an area around where the shot hits. This attack can fire as many shots as you Crossbow fires normally. On Hit: Reduces the target's Armor Class by 5 and lowers fortification by 10%. A successful Fortitude save negates this effect. (DC 10 + INT mod + half Artificer level + Sunder Bonuses). Regardless of saving throw result target will suffer the Trauma effect, -3 penalty to Fortitude saves due to shock, stacks 5 times. Lasts 24 seconds. This ability shares a cooldown with Sunder.}{-Shatter Defense (Melee): Tactical Melee Attack: +[10/20/30]% damage: On Hit: Reduces the target's Armor Class by 5 and lowers fortification by 10%. A successful Fortitude save negates this effect. (DC 10 + INT mod + half Artificer level + Sunder Bonuses). Regardless of saving throw result target will suffer the Trauma effect, -3 penalty to fortitude saves due to shock, stacks 5 times. Lasts 24 seconds. This ability shares a cooldown with Sunder.
 Tier: 3
 Ranks: 3
 All: Tier 2: Caustic Strike
@@ -1729,7 +1729,7 @@ One: Feat: Construct Essence, Feat: Warforged Traits
 None: Warforged Tier 4: Weapon Attachment, Bladeforged Tier 4: Weapon Attachment
 
 AbilityName: Thunder-Shock Weapon
-Descrip: Pick a Melee or Ranged version of this attack.}{-Thunder-Shock Weapon (Crossbow):Tactical Ranged Crossbow Attack +30% damage. On Damage: Deals 6d6 extra Electric damage that scales with 200% Ranged Power, and Trips the target. A successful Strength save negates the Trip effect. (DC 14 + INT mod + half Artificer level + Sunder Bonuses). 12 seconds cooldown, shares a cooldown with Trip.}{-Thunder-Shock Weapon (Melee):Tactical Melee Attack +30% damage: On Damage: Deals 6d6 extra Electric damage that scales with 200% Melee Power, and Trips the target. A successful Strength save negates the Trip effect. (DC 14 + INT mod + half Artificer level + Sunder Bonuses). 12 seconds cooldown, shares a cooldown with Trip.
+Descrip: Pick a Melee or Ranged version of this attack.}{-Thunder-Shock Weapon (Crossbow): AOE Tactical Ranged Crossbow Attack: +30% damage. Fire your Crossbow, hitting every enemy in an area around where the shot hits. This attack can fire as many shots as you Crossbow fires normally. On Damage: Deals 6d6 extra Electric damage that scales with 200% Ranged Power, and Trips the target. A successful Strength save negates the Trip effect. (DC 14 + INT mod + half Artificer level + Sunder Bonuses). 12 seconds cooldown, shares a cooldown with Trip.}{-Thunder-Shock Weapon (Melee):Tactical Melee Attack +30% damage: On Damage: Deals 6d6 extra Electric damage that scales with 200% Melee Power, and Trips the target. A successful Strength save negates the Trip effect. (DC 14 + INT mod + half Artificer level + Sunder Bonuses). 12 seconds cooldown, shares a cooldown with Trip.
 Tier: 5
 All: Tier 3: Shatter Defenses
 Flags: SelectorOnly
@@ -2270,7 +2270,7 @@ Cost: 2
 All: Tier 1: Spell Critical - Elemental and Poison I
 
 AbilityName: Elemental Defenses
-Descrip: When enemy spells deal elemental damage against you, there's a 25% chance you'll gain [10/20/30] temporary hitpoints for 30 seconds. This can trigger up to once every 12 seconds.}(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)
+Descrip: When enemy spells deal elemental damage against you, there's a 25% chance you'll gain [10/20/30] temporary Hit Points for 30 seconds. This can trigger up to once every 12 seconds.}(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)
 Tier: 2
 Ranks: 3
 
@@ -2391,7 +2391,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Shadowy Bulwark
-Descrip: +[5/10/15] Maximum Hitpoints
+Descrip: +[5/10/15] Maximum Hit Points
 Tier: 1
 Ranks: 3
 
@@ -2961,8 +2961,8 @@ Descrip: You gain +10% Doublestrike and +20% Doubleshot
 Tier: 5
 Cost: 2
 
-AbilityName: Head Shot
-Descrip: Ranged Attack. +50% damage attack that is automatically considered a critical threat. On hit, blinds the opponent for 6 seconds. (Fortitude save negates, 14 + Ranger level + Dexterity Mod + Tactical Feat DCs) Cooldown: 12 seconds.}{-Taking this ability also grants Head Strike, a Melee version of the exact same ability.}Bug:  Doesn't seem to give a save against the blind.
+AbilityName: Devastating Shot
+Descrip: AOE Ranged Attack. Fire a single shot with +25% damage, hitting every enemy in an area around where the shot hits. Every hit is automatically considered a Critical threat. On hit, blinds the opponent for 6 seconds (Fortitude save negates, 14 + Ranger Level + Dexterity Mod + Sunder DCs).}(Taking this ability also grants Critical Strike, a Melee attack.)
 Tier: 5
 Cost: 2
 
@@ -3287,6 +3287,295 @@ AbilityName: Divine Empowerment
 Descrip: You gain +1 DC with Necromancy and Evocation spells.
 Tier: 5
 Cost: 2
+
+TreeName: Dragon Lord
+Type: Class
+Initial: DRL
+Color: Red
+Stats: Strength, Charisma
+
+AbilityName: Draconic Soul
+Descrip: Select a Draconic Soul, whose element will determine your power in the rest of this tree. Passive: +1 to Tactical Feat DCs.}{-Black: You have chosen to commune with Black Dragon's soul, granting the power of Acid to abilities in this tree.}{-Blue: You have chosen to commune with Blue Dragon's soul, granting the power of Electricity to abilities in this tree.}{-Green: You have chosen to commune with Green Dragon's soul, granting the power of Poison to abilities in this tree.}{-Red: You have chosen to commune with Red Dragon's soul, granting the power of Fire to abilities in this tree.}{-White: You have chosen to commune with White Dragon's soul, granting the power of Cold to abilities in this tree.
+Tier: 0
+Selector: Black, Blue, Green, Red, White
+
+AbilityName: Draconic Arms
+Descrip: Imbue Toggle: Your Draconic Soul emboldens your weapon strikes, which deal 1d6 damage on each hit in the element of your Draconic Soul. This damage scales with 200% of the higher of Melee and Ranged Power.}Passive: The bonus of each of your Draconic Auras is increased by 1.
+Tier: 0
+
+AbilityName: Reckless Devotion
+Descrip: Activate: Target Ally gains a Morale bonus to Critical Confirmation and Critical Hit Damage equal to 1 + a quarter of your Dragon Lord level for 20 seconds. Cooldown: 20 seconds.}Passive: +1 Imbue Die, +5 Melee and Ranged Power, +3 to Critical Confirmation and Critical Hit Damage. The bonus of each of your Draconic Auras is increased by 1.
+Tier: 0
+
+AbilityName: Conqueror's Command
+Descrip: When you use Reckless Devotion, the power of your Draconic command grants that ally the effects of the Panacea spell, curing many afflictions and healing that ally for 1d6+2 Hit Points plus 1 per Dragon Lord level. This healing scales with 200% Melee Power.}Passive: +1 Imbue Die. The bonus of each of your Draconic Auras is increased by 1.
+Tier: 0
+
+AbilityName: Dragon's Defense
+Descrip: While you have any Draconic Aura active, you and nearby allies gain a +3 Morale Bonus to Resistance and +5% Morale Bonus to Absorption of the element of your Draconic Soul.}Passive: +2 Imbue Dice. +10 Melee and Ranged Power.
+Tier: 0
+
+AbilityName: Sunder Soul
+Descrip: Attack: +50% Damage, Cooldown 20 seconds. Sundered enemies in a small area in front of you must make a Will saving throw (DC 10 + Highest of STR and CHA mod + Sunder bonuses) or have their Soul sundered, killing them instantly.}Passive: +2 Strength, +2 Charisma, +10 Melee and Ranged Power, +1 Imbue Die. The bonus of all your Draconic Auras increases by 2.
+Tier: 0
+
+AbilityName: Dragon's Protection I
+Descrip: You gain +3 Resistance to the element of your Draconic Soul.
+Tier: 1
+
+AbilityName: Battlefield Tactician I
+Descrip: +1 to Tactical Feat DCs
+Tier: 1
+
+AbilityName: Unbreakable Will
+Descrip: +[1/2/3] to Will Saving Throws
+Tier: 1
+Ranks: 3
+
+AbilityName: Field Skills
+Descrip: +[1/2/3] to Intimidate, Jump, and Haggle. Rank 3: You gain +2 to Attack.
+Tier: 1
+Ranks: 3
+
+AbilityName: Martial Superiority
+Descrip: Select an advantage with weapons.}{-+[3/6/10]% Offhand Strike Chance}{-+[5/10/20]% Strikethrough}{-+[2/4/6]% Doubleshot}{-+[2/4/6]% Doublestrike
+Tier: 1
+Ranks: 3
+Selector: Offhand Strike Chance, Strikethrough, Doubleshot, Doublestrike
+
+AbilityName: Dragon's Protection II
+Descrip: You gain an additional +3 Resistance to the element of your Draconic Soul.
+Tier: 2
+All: Tier 1: Dragon's Protection I
+
+AbilityName: Battlefield Technician II
+Descrip: +1 to Tactical Feat DCs 
+Tier: 2
+All: Tier 1: Battlefield Technician I
+
+AbilityName: Draconic Resilience
+Descrip: +[2/4/6] Natural Armor
+Tier: 2
+
+AbilityName: Action Boost
+Descrip: Choose one:}{-Haste: Activate to gain +[10/20/30]% Action Boost bonus to attack speed for 20 seconds}{-Tactics: Activate to gain a +[3/6/9] Action Boost Bonus to Tactical DCs for 20 seconds.
+Tier: 2
+Ranks: 3
+Flags: SelectorOnly
+Selector: Haste Boost, Tactics Boost
+
+AbilityName: Dragonslayer
+Descrip: You have chosen to assert your dominance over Dragons, despite sharing in their power. You gain Favored Enemy: Dragon. When fighting a Favored Enemy, you gain +2 Damage for each Favored Enemy feat you have. If you have more than one Favored Enemy feat that applies to a particular Enemy, the damage applies for each type that matches a Favored Enemy feat you have.
+Tier: 2
+None: Feat: Favored Enemy: Dragon
+
+AbilityName: Dragon's Protection III
+Descrip: You gain an additional +3 Resistance and +5 Absorption to the element of your Draconic Soul.
+Tier: 3
+All: Tier 2: Dragon's Protection II
+
+AbilityName: Battlefield Technician III
+Descrip: +1 to Tactical Feat DCs and Breath Weapon DCs. When you attack with Trip or Sunder (or their Improved variants), you deal 1d4 additional damage per Character Level of the Element of your Draconic Soul. This damage scales with 200% Melee or Ranged Power. 
+Tier: 3
+Cost: 2
+All: Tier 2: Battlefield Technician II
+
+AbilityName: Dragon's Roar
+Descrip: Tactical Feat: Enemies in a cone ahead of you must make a Will Saving Throw (DC 10 + Highest of STR and CHA mod + Stunning bonuses + Breath Weapon DC bonuses) or be Dazed. Affected enemies have a 25% chance to be broken out of the Daze on damage. 20 second cooldown.
+Tier: 3
+Cost: 2
+
+AbilityName: Might or Outburst
+Descrip: Select a Trance:}{-Draconic Might: Battle Trance: Cannot be used while Raged. You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to half of your Strength modifier for [30/60/120] seconds. Each time you successfully use Trip, Sunder, Stunning Blow, or Dragon's Roar (or their Improved variants), you have a chance to restore 1 charge.}{-Draconic Outburst: Battle Trance: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to half of your Charisma modifier for [30/60/120] seconds. Each time you successfully use Trip, Sunder, Stunning Blow, or Dragon's Roar (or their Improved variants), you have a chance to restore 1 charge.
+Tier: 3
+Ranks: 3
+Flags: SelectorOnly
+Selector: Draconic Might, Draconic Outburst
+
+AbilityName: Dragon's Protection IV
+Descrip: You gain an additional +3 Resistance and +5 Absorption to the element of your Draconic Soul.
+Tier: 4
+All: Tier 3: Dragon's Protection III
+
+AbilityName: Battlefield Technician IV
+Descrip: +1 to Tactical Feat DCs and Breath Weapon DCs. When you Sunder enemies, it makes them vulnerable to the element of your Draconic Soul for 10 seconds. Additionally, if you successfully Sunder (or Improved Sunder) a target under the effects of Trip (or Improved Trip), that target takes an additional 1d6 damage per Character Level of the Element you selected for your Draconic Soul. This damage scales with 200% Melee or Ranged Power.
+Tier: 4
+Cost: 2
+All: Tier 3: Battlefield Technician III
+
+AbilityName: Untouchable Soul
+Descrip: You have Displacement, giving opponents a 50% chance to miss you due to concealment. This cannot be dispelled.
+Tier: 4
+Cost: 2
+
+AbilityName: Lead the Charge
+Descrip: Melee Rush Attack: [20/30/50]% Damage. Cooldown: 12 seconds. Rush forward up to 30 feet to your selected opponent and deliver a mighty strike. Shares cooldown with Shield Charge.
+Tier: 4
+Ranks: 3
+
+AbilityName: Soul Scales
+Descrip: You gain +15 Magical Resistance Rating. +25% Competence Bonus to Max HP, and you have a 5% chance to ignore damage of the element of your Draconic Soul.
+Tier: 5
+All: Tier 4: Dragon's Protection IV
+
+AbilityName: Tactical Commander
+Descrip: The cooldown of your Trip, Sunder, Stunning Blow, and Dragon's Roar (and their Improved versions) are reduced by 33%. +2 to Breath Weapon DCs.
+Tier: 5
+All: Tier 4: Battlefield Technician IV
+
+AbilityName: Greater Roar
+Descrip: Your Dragon's Roar now Cowers enemies instead of Dazing them. In addition, when you use Dragon's Roar, you gain a +20% Morale bonus to damage versus Helpless targets for 20 seconds.
+Tier: 5
+
+AbilityName: Flight of Kings
+Descrip: Memories of flight lie within you. You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventure balk. Cooldown: 15 seconds. When you use Flight of Kings, you have a +20% Action Boost bonus to movement speed for 6 seconds.
+Tier: 5
+
+AbilityName: Conqueror
+Descrip: +[1/2] Competence Bonus to Critical Multiplier with All Weapons.
+Tier: 5
+Ranks: 2
+
+TreeName: Dragon Lord-Ravager
+Type: Class
+Initial: DLR
+Color: Green
+Stats: Strength, Constitution
+Lockout: Ravager
+
+AbilityName: Furious Rage
+Descrip: When you miss your attack by rolling 1, you gain Fury for six seconds.}Fury: +1 Rage bonus to attack and damage. This effect stacks up to 6 times and one stack fades every six seconds.
+Tier: 0
+None: Ravager Tier 0: Furious Rage
+
+AbilityName: Pain Touch
+Descrip: Passive: +5 Melee Power. You gain +5 Positive Healing Amplification. 
+Tier: 0
+
+AbilityName: Demoralizing Success
+Descrip: Passive: You gain +15 hit points and +5 healing amplification. When you score a vorpal hit in melee, you inflict Crushing Despair on nearby enemies for 30 seconds on a failed DC 20 Will saving throw. You then inflict Vulnerable Will for 15 seconds, regardless of the Crushing Despair saving throw.
+Tier: 0
+
+AbilityName: Pain Touch II
+Descrip: Passive: +5 Melee Power. You gain +30 Maximum Hit Points, +2 Intimidate, and +10 Positive Healing Amplification.
+Tier: 0
+
+AbilityName: Subsiding Fury
+Descrip: When you use Second Wind, you gain 3 stacks of Fury.}Fury: +1 Rage bonus to Attack and Damage. This effect stacks and one stack fades every 12 seconds.}Passive: You gain +50 Maximum Hit Points, +2 Intimidate, and +10 Positive Healing Amplification.
+Tier: 0
+
+AbilityName: Visage of Terror
+Descrip: Terrorize up to six enemies, killing them with fear if they fail a Will Saving Throw (1d20 + your Intimidate score). Enemies who make their saving throw are paralyzed with Fear for six seconds instead.}Doesn't affect bosses, Raid Bosses, or monsters immune to Fear or Paralysis. (Cooldown: 30 seconds)}Passive: +4 Constitution, +75 Maximum Hit Points, +2 Intimidate, +20 Positive Healing Amplification.
+Tier: 0
+
+AbilityName: Ritual Scarring
+Descrip: +[1/2/3] Intimidate, Haggle and Physical Resistance.
+Tier: 1
+Ranks: 3
+
+AbilityName: Hate
+Descrip: Melee Attack: Deals +[10/20/30]% damage and generate extra threat. (Cooldown: 6 seconds)
+Tier: 1
+Ranks: 3
+
+AbilityName: Do You Like Pain?
+Descrip: When you are hit: [20/40/60]% chance attacker loses 10 AC.
+Tier: 1
+Ranks: 3
+
+AbilityName: Dragon Lord Power Attack
+Descrip: Your Power Attack feat does [1/2/3] additional point of bonus damage.}{ Note: Stacks with Improved Power Attack. Damage is doubled when Two Handed Fighting.
+Tier: 1
+Ranks: 3
+All: Feat: Power Attack
+
+AbilityName: Extra Action Boost
+Descrip: +[1/2/3] Extra Action Boost(s).
+Tier: 1
+Ranks: 3
+
+AbilityName: Fear Me!
+Descrip: When you intimidate, affected enemies are Shaken for 6 seconds.
+Tier: 2
+Cost: 2
+All: Dragon Lord-Ravager Tier 1: Ritual Scarring
+
+AbilityName: Mutilate
+Descrip: Hate additionally deals 1d[4/6/8] Charisma damage and 1d[4/6/8] Bane damage. The bane damage scales with 200% Melee Power. Mutilate has a 10 second cooldown per monster on proccing its Charisma damage.
+Tier: 2
+Ranks: 3
+All: Dragon Lord-Ravager Tier 1: Hate
+
+AbilityName: I Like Pain
+Descrip: When you are hit: Small chance to gain [50/100/150] Temporary HP. This gain scales with 100% Melee Power
+Tier: 2
+Ranks: 3
+All: Dragon Lord-Ravager Tier 1: Do You Like Pain?
+
+AbilityName: Cruel Cut
+Descrip: Melee Attack: Deals [1/2/3]d6 extra Constitution damage as long as you damage your target (6 second cooldown).}Rank 3: +1d6 of additional Constitution Damage for every 2 Character Levels you have. 
+Tier: 2
+Ranks: 3
+
+AbilityName: Melee Power Boost
+Descrip: Activate this ability to receive a +[10/20/30] Action Boost bonus to both Melee and Ranged Power for 20 seconds. (Cooldown: 30 seconds)
+Tier: 2
+Ranks: 3
+
+AbilityName: Aura of Fear
+Descrip: Nearby enemies receive a -2 penalty to Strength and Charisma.}{-Rank 2: Nearby enemies receive a -2 penalty to Strength, Charisma, Dexterity and Wisdom.}{-Rank 3: Nearby enemies receive a -2 penalty to all ability scores.
+Tier: 3
+Ranks: 3
+
+AbilityName: Slaughter
+Descrip: Melee Attack: Deals +[50/80/100]% damage. (Cooldown: 12 seconds)
+Tier: 3
+Ranks: 3
+
+AbilityName: Festering Wound
+Descrip: Cruel Cut additionally inflicts [1/2/3] stacks of Festering Wound. Each stack deals 1d6 Poison damage that scales with 200% Melee Power every 2 seconds, to a maximum of 10 stacks. In addition, enemies hit by Cruel Cut have their Positive Energy healing reduced by 50% for 5 seconds.}Rank 3: Festering Wound becomes Greater Festering Wound and gains an additional 1d6 Poison Damage for every 10 Character Levels you have.
+Tier: 3
+Ranks: 3
+All: Dragon Lord-Ravager Tier 2: Cruel Cut
+
+AbilityName: Laughter
+Descrip: When Slaughter damages an enemy, you gain three stacks of Fury. When Slaughter scores a critical hit on an enemy , you gain three more Fury (for a total of six) and gain 10 Melee Power for 15 seconds.}For many Ravagers, there's no Laughter without Slaughter.
+Tier: 4
+Cost: 2
+All: Dragon Lord-Ravager Tier 3: Slaughter
+
+AbilityName: I Hit Back!
+Descrip: When you are hit: 20% chance to deal [2/4/6]d8 bane damage to attacker. This damage scales with 100% Melee Power.
+Tier: 4
+Ranks: 3
+All: Dragon Lord-Ravager Tier 2: I Like Pain
+
+AbilityName: Dismember
+Descrip: When you use Cruel Cut, you gain +5 Melee Power for 10 seconds. In addition, targets hit by Cruel Cut take 6[d4/d6/d8] Slashing damage which scales with 200% Melee Power and have their movement speed reduced by 50% for 5 seconds. Rank 3: +1d8 additional Slashing damage for every 2 Character Levels you have.
+Tier: 4
+Ranks: 3
+All: Dragon Lord-Ravager Tier 3: Festering Wound
+
+AbilityName: Blood Strength
+Descrip: Each time you land a hit there is a 12% chance you heal positive damage equal to half your Barbarian level. Each time you kill an opponent you are healed for 20 hit points. This healing scales with 100% Melee Power. Blood Strength has a one-second cooldown when you kill an enemy.
+Tier: 5
+Cost: 2
+
+AbilityName: Bully
+Descrip: You deal +[5/10/15]% damage to helpless enemies.
+Tier: 5
+Ranks: 3
+All: Dragon Lord-Ravager Tier 4: I Hit Back!
+
+AbilityName: Uncanny Balance
+Descrip: You are immune to most knockdowns and slippery surfaces.
+Tier: 5
+Cost: 2
+
+AbilityName: Critical Rage
+Descrip: Increases your critical threat range by +[1/2] (competence bonus). Does not require rage.
+Tier: 5
+Ranks: 2
 
 TreeName: Dragonborn
 Type: Race
@@ -4328,7 +4617,7 @@ Stats: Dexterity, Wisdom
 Lockout: Arcane Archer
 
 AbilityName: Arcane Archer
-Descrip: Any bow you equip gains a +1 Enhancement bonus for each arcane archer core ability you possess. All bows are treated as Implements in your hands.
+Descrip: Equipped bows gain a +1 Enhancement bonus for each Arcane Archer core ability you possess. All bows are treated as Implements in your hands, granting Spell Power.
 Tier: 0
 One: Elf Tier 3: Arcane Archer, Half-Elf Tier 3: Arcane Archer, Morninglord Tier 3: Arcane Archer, Wood Elf Tier 3: Arcane Archer
 None: Arcane Archer Tier 0: Arcane Archer
@@ -4365,7 +4654,7 @@ Tier: 1
 Cost: 2
 
 AbilityName: Energy of the Wild
-Descrip: +[30/60/100] maximum spell points. Rank 3: You gain the Magical Training feat.
+Descrip: +[30/60/100] maximum spell points. Rank 3: You gain the Magical Training feat.}Antirequisite: Cannot take Rank 3 if you already have the Magical Training feat.
 Tier: 1
 Ranks: 3
 Rank3None: Feat: Magical Training
@@ -4392,10 +4681,10 @@ Descrip: (Activation Cost: 20 SP. Cooldown: 10 Seconds) Imbue Toggle: You imbue 
 Tier: 2
 Cost: 2
 
-AbilityName: Inferno Shot
-Descrip: Ranged Archery Attack: Performs a ranged attack with +[0/10/20]% damage. On Hit: Target gain 1 stack of Inferno (target takes 1d6 fire damage every 2 second for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.) (Activation cost: 6 SP. Cooldown 3 seconds)
+AbilityName: Elemental Inferno
+Descrip: AOE Ranged Archery Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where this shot hits. On Hit: Target gains 1 stack of Inferno (target takes 1d6 fire damage every 2 second for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.) (Activation cost: 6 SP. Cooldown 3 seconds)
 Tier: 2
-Ranks: 3
+Cost: 2
 
 AbilityName: Elemental Arrows
 Descrip: Select one of four elemental arrow imbues not previously chosen and +1 bonus Imbue Dice, or Elemental Damage: +2 bonus Imbue Dice}Passive: +5 Universal Spell Power
@@ -4435,9 +4724,9 @@ Tier: 3
 Cost: 2
 
 AbilityName: Soul Magic
-Descrip: Every time you strike an enemy with your bow, you have a 15% chance to gain 10 temporary spell points.+10 Universal Spell Power.
+Descrip: Every time you strike an enemy with your bow, you have a 15% chance to gain 10 temporary spell points that last for one minute. +10 Universal Spell Power.
 Tier: 3
-One: Feat: Magical Training, Tier 1: Energy of the Wild, Spellsinger Tier 1: Studies: Magical
+One: Feat: Magical Training, Tier 1: Energy of the Wild Rank 3, Spellsinger Tier 1: Studies: Magical Rank 3
 
 AbilityName: Elemental Arrows
 Descrip: Select one of four elemental arrow imbues not previously chosen and +1 bonus Imbue Dice, or Elemental Damage: +2 bonus Imbue Dice}Passive: +5 Universal Spell Power
@@ -4499,12 +4788,12 @@ Tier: 5
 Cost: 2
 
 AbilityName: Arrow of Slaying
-Descrip: Ranged Archery Attack: Performs a ranged attack with +250 damage. (This damage can be multiplied by critical hits.) (Cost: 20 spell points. Cooldown: 20 seconds.)
+Descrip: Ranged Archery Attack: Performs a ranged attack with +250% Damage and +25 flat damage. (This damage can be multiplied by critical hits.) (Cost: 20 spell points. Cooldown: 20 seconds.)
 Tier: 5
 Cost: 2
 
-AbilityName: Final Strike
-Descrip: The first enemy hit triggers an area attack that inflicts Vulnerability and deals damage. More injured enemies receive increased damage.
+AbilityName: Opening Volley
+Descrip: AOE Ranged Archery Attack: Fire a single shot with +20% Damage, hitting every enemy in an area around where this shot hits. Enemies hit take 7 stacks of Vulnerability. (Cost: 5 spell points. Cooldown: 18 seconds.)
 Tier: 5
 Cost: 2
 
@@ -4560,7 +4849,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Spiritual Defense
-Descrip: While your Eldritch Aura is active, you and nearby allies get a +[1/2/3] bonus to AC. You personally receive +[5/10/15] Maximum Hitpoints (while Aura is active).
+Descrip: While your Eldritch Aura is active, you and nearby allies get a +[1/2/3] bonus to AC. You personally receive +[5/10/15] Maximum Hit Points (while Aura is active).
 Tier: 1
 Ranks: 3
 
@@ -4641,7 +4930,7 @@ Cost: 2
 All: Tier 3: Spiritual Ward
 
 AbilityName: Brilliance
-Descrip: Your Eldritch Aura, when active, provides you and nearby allies with a Determination bonus to Temporary Hitpoints equal to your Constitution score. Level 20+ characters receive twice as many hitpoints.
+Descrip: Your Eldritch Aura, when active, provides you and nearby allies with a Determination bonus to Temporary Hit Points equal to your Constitution score. Level 20+ characters receive twice as many Hit Points.
 Tier: 4
 
 AbilityName: Imbue Summons
@@ -4661,7 +4950,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Shining Through
-Descrip: Gain a Sacred bonus to Temporary Hitpoints equal to 8x your Constitution Score that lasts for up to 10 minutes. For 20 seconds, you gain +25 Sacred bonus to Healing Amplification. (Cooldown: 30 sec. SP Cost: 8).
+Descrip: Gain a Sacred bonus to Temporary Hit Points equal to 8x your Constitution Score that lasts for up to 10 minutes. For 20 seconds, you gain +25 Sacred bonus to Healing Amplification. (Cooldown: 30 sec. SP Cost: 8).
 Tier: 5
 Cost: 2
 
@@ -5205,7 +5494,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Die Harder
-Descrip: Your range of unconsciousness extends +[5/10/15] HP. When you drop below 1 health, you gain 10/20/30 temp hitpoints. This can only trigger once every five minutes.
+Descrip: Your range of unconsciousness extends +[5/10/15] HP. When you drop below 1 health, you gain [10/20/30] temp Hit Points. This can only trigger once every five minutes.
 Tier: 1
 Ranks: 3
 
@@ -5232,7 +5521,7 @@ Ranks: 3
 All: Tier 1: Cracking Attack
 
 AbilityName: Blood Tribute
-Descrip: Gain +50/+100/+150 Temporary Health for one minute. Each epic level adds +25 temporary hitpoints. You have a stacking -1 penalty to constitution until you rest or die. (Cooldown: 3 seconds)
+Descrip: Gain +[50/100/150] Temporary Health for one minute. Each epic level adds +25 temporary Hit Points. You have a stacking -1 penalty to constitution until you rest or die. (Cooldown: 3 seconds)
 Tier: 2
 Ranks: 3
 
@@ -5242,7 +5531,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Sprint Boost
-Descrip: +35%/40%/50% Action Boost bonus to movement speed for 20 seconds. Cooldown: 30 seconds.
+Descrip: +[35/40/50]% Action Boost bonus to movement speed for 20 seconds. Cooldown: 30 seconds.
 Tier: 2
 Ranks: 3
 
@@ -5253,13 +5542,13 @@ Ranks: 3
 All: Feat: Greater Two Handed Fighting, Tier 2: Angry Arms
 
 AbilityName: Blood Trail
-Descrip: Supreme Cleave costs 3/6/10 fewer hitpoints to activate. Rank 3: Supreme Cleave gives +1 Temp HP per hit, up to +10. (Hidden Effect)
+Descrip: Supreme Cleave costs [3/6/10] fewer Hit Points to activate. Rank 3: Supreme Cleave gives +1 Temp HP per hit, up to +10. (Hidden Effect)
 Tier: 3
 Ranks: 3
 All: Tier 2: Blood Tribute, Tier 3: Supreme Cleave
 
 AbilityName: Supreme Cleave
-Descrip: Tactical Melee Cleave: Attack enemies all around you. (Activation Cost: 10 Hit Points. Cooldown: 9/6/3 seconds)
+Descrip: Tactical Melee Cleave: Attack enemies all around you. (Activation Cost: 10 Hit Points. Cooldown: [9/6/3] seconds)
 Tier: 3
 Ranks: 3
 
@@ -5930,7 +6219,7 @@ Color: Purple
 Stats: Dexterity, Intelligence
 
 AbilityName: Agent of Good I
-Descrip: +1 to hit and damage, +1 to hit vs. Evil, +1 Universal Spell Power.
+Descrip: +1 to hit and damage, +5 to hit vs. Evil, +1 Universal Spell Power.
 Tier: 0
 
 AbilityName: Ability Score
@@ -5940,7 +6229,7 @@ Cost: 2
 Selector: Charisma, Dexterity, Intelligence
 
 AbilityName: Agent of Good II
-Descrip: +1 to hit and damage, +2 to hit and damage, +5 Universal Spell Power.
+Descrip: +1 to hit and damage, +2 to hit vs. Evil, +5 Universal Spell Power.
 Tier: 0
 
 AbilityName: Ability Score II
@@ -5950,7 +6239,7 @@ Cost: 2
 Selector: Charisma, Dexterity, Intelligence
 
 AbilityName: Agent of Good III
-Descrip: +1 to hit and damage, +3 to hit and damage. +10 Universal Spell Power.
+Descrip: +1 to hit and damage, +3 to hit vs. Evil. +10 Universal Spell Power.
 Tier: 0
 
 AbilityName: Harper's Freedom
@@ -6311,7 +6600,7 @@ Descrip: +1 to Attack and +1 to Damage with Longbows and Shortbows.
 Tier: 2
 
 AbilityName: Take the Opening
-Descrip: If Opening Shot hits a creature that is at 100% of their hitpoints, it deals an extra 1d10 Force damage for every 2 Character levels you have. This damage scales with Ranged Power. Additionally, your Force damage from Opening Shot is now applied twice when used against Marked Targets.
+Descrip: If Opening Shot hits a creature that is at 100% of their Hit Points, it deals an extra 1d10 Force damage for every 2 Character levels you have. This damage scales with Ranged Power. Additionally, your Force damage from Opening Shot is now applied twice when used against Marked Targets.
 Tier: 2
 Cost: 2
 
@@ -6366,7 +6655,7 @@ Descrip: You and targeted ally gain Evasion, Improved Evasion and +5 to Saving T
 Tier: 4
 
 AbilityName: Scattershot
-Descrip: Ranged Bow Attack: Expend one charge to randomly select up to three different enemies at close range and shoot one arrow at each of them. Each of these shots can Doubleshot. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Scattershot or Manyshot. (Requires a Longbow or Shortbow to use). Shares Charges and a Cooldown with Manyshot.
+Descrip: AOE Ranged Bow Attack: Expend one charge to take a shot with +1 Critical Threat Range and Critical Multiplier that shatters on impact, dealing your attack damage to all enemies in a small area around the enemy hit (2 second cooldown). This feat gives 3 charges; you regain 1 charge every 12 seconds you don't use Scattershot or Manyshot. Requires a Longbow or Shortbow to use. Shares Charges and a Cooldown with Manyshot.
 Tier: 4
 Cost: 2
 
@@ -6463,7 +6752,7 @@ Tier: 1
 Cost: 2
 
 AbilityName: Don't Count Me Out
-Descrip: Your range of unconsciousness extends by [5/10/20] hitpoints, and you gain a +[3/6/10] bonus to Physical Resistance Rating while you are under 50% health.
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points, and you gain a +[3/6/10] bonus to Physical Resistance Rating while you are under 50% health.
 Tier: 1
 Ranks: 3
 
@@ -6490,7 +6779,7 @@ All: Tier 1: Action Surge
 Parent: Tier 1: Action Surge
 
 AbilityName: Fighting Style
-Descrip: Humans are adept at many different fighting styles.}Choose one:}{-Ambidexterity: You gain +1 to hit when dual-wielding or fighting unarmed. Rank 2: Also gains +1% Dodge. Rank 3: Also gains +1 damage.}{-Requires Two Weapon Fighting. 1 AP per rank.}{-Great Weapon Aptitude: +[5/10/20]% Strikethrough chance.}{-Requires Two Handed Fighting. 1 AP per rank}{-Shield Mastery: +[5/10/15]% Shield Armor Class and +[1/2/3] Tower Shield Maximum Dexterity Bonus.}{-1 AP per rank}{-Sniper: You gain +[1/2/3]d6 Ranged Sneak Attack and +[2/4/6] Point Blank Shot distance.}{-Requires Point Blank Shot. 1 AP per rank}{-Traditionalist Caster: +[3/6/10] Universal Spell Power when wielding an Orb or Staff.}{-Requires Magical Training. 1 AP per rank
+Descrip: Humans are adept at many different fighting styles.}Choose one:}{-Ambidexterity: You gain +1 to hit when dual-wielding or fighting unarmed. Rank 2: Also gains +1% Dodge. Rank 3: Also gains +1 damage. Requires Two Weapon Fighting}{-Great Weapon Aptitude: +[5/10/20]% Strikethrough chance. Requires Two Handed Fighting}{-Shield Mastery: +[5/10/15]% Shield Armor Class and +[1/2/3] Tower Shield Maximum Dexterity Bonus.}{-Sniper: You gain +[1/2/3]d6 Ranged Sneak Attack and +[2/4/6] Point Blank Shot distance. -Requires Point Blank Shot}{-Traditionalist Caster: +[3/6/10] Universal Spell Power when wielding an Orb or Staff.}{-Requires Magical Training
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
@@ -7016,7 +7305,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Divine Might
-Descrip: Battle Trance: Battle Trance: You now gain an Insight bonus to Attack, Damage, and the DC of tactical feats equal to half your Charisma modifier for 30/60/120 seconds for 21/18/15 sp. Cooldown: 20 seconds. Anti-requisite: cannot be trained if you have any other Battle Trance abilities (Know the Angles, Falconry Deadly Instinct, etc.).
+Descrip: Battle Trance: Battle Trance: You now gain an Insight bonus to Attack, Damage, and the DC of tactical feats equal to half your Charisma modifier for [30/60/120] seconds for [21/18/15] sp. Cooldown: 20 seconds. Anti-requisite: cannot be trained if you have any other Battle Trance abilities (Know the Angles, Falconry Deadly Instinct, etc.).
 Tier: 2
 Ranks: 3
 None: Beacon of Hope Tier 2: Might's Reward, Falconry Tier 4: Deadly Instinct, Harper Agent Tier 2: Know the Angles, War Soul Tier 1: Divine Might, Warpriest Tier 1: Divine Might
@@ -7026,14 +7315,14 @@ Descrip: +[1/2/3] to confirm critical hits and critical hit damage (before weapo
 Tier: 2
 Ranks: 3
 
-AbilityName: Exalted Cleave
-Descrip: Multiselector: Make a sweeping melee or ranged  attack against all nearby enemies for +30% damage. Shares its cooldown with the Cleave feat.}{-Take a powerful shot for +30% damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{-Make a sweeping attack against all nearby enemies for +30% damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{ Note: Only does 3[1d6] with handwraps. DDO Forums
+AbilityName: Exalted Attack
+Descrip: Multiselector: Choose a Melee Cleave or AOE Ranged Attack}{-Exalted Cleave: Melee Cleave Attack: Make a sweeping attack against all nearby enemies for +20% damage. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds}{-Exalted Shot: AOE Ranged Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where this shot hits. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds
 Tier: 2
 Cost: 2
-Selector: Melee, Ranged
+Selector: Exalted Cleave, Exalted Shot
 
 AbilityName: Action Boost
-Descrip: Choose between Action Boost: Attack and Action Boost: Power}{-Action Boost: Power Activate to gain a +10/20/30 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{-Attack Boost Activate this ability to gain a +[4/6/8] Action Boost bonus to your attack rolls for 20 seconds.
+Descrip: Choose between Action Boost: Attack and Action Boost: Power}{-Action Boost: Power Activate to gain a +[10/20/30] Action Boost bonus to Melee and Ranged Power for 20 seconds.}{-Attack Boost Activate this ability to gain a +[4/6/8] Action Boost bonus to your attack rolls for 20 seconds.
 Tier: 2
 Ranks: 3
 Selector: Attack, Power
@@ -7055,7 +7344,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Exalted Smite
-Descrip: Multiselector: An improved smite that adds +[1/1/2] to your weapon's critical damage multiplier and +[0/1/2] to your weapon's critical threat range. Smite evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds. In addition, your Smite Evil and Exalted Smite abilities increase Melee and Ranged {ower by 5 for 10 seconds.}{-Exalted Smite (Melee)}{-Exalted Smite (Ranged)}{-Exalted Smite (Melee)}{-Exalted Shot (Ranged)
+Descrip: Multiselector: An improved Smite Evil that adds +[1/1/2] to your weapon's critical damage multiplier and +[0/1/2] to your weapon's critical threat range. Smite evil: Using this attack, you call on the paladin's ability to strike down evil creatures, gaining twice your Charisma bonus to your attack roll, and a damage bonus based on your paladin level. Smites return at a rate of one every 90 seconds. In addition, your Smite Evil and Exalted Smite abilities increase Melee and Ranged Power by 5 for 10 seconds.}{-Exalted Smite (Melee)}{-Exalted Smite (Ranged)
 Tier: 3
 Ranks: 3
 Cost: 2
@@ -7097,10 +7386,11 @@ Cost: 2
 All: Tier 4: Vigor of Life
 
 AbilityName: Avenging Cleave
-Descrip: Multiselector}{-Avenging Cleave: Make a sweeping weapon attack against all nearby enemies for +50% damage. Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.}{-Avenging Shot: Take a sweeping weapon attack against all nearby enemies for +50% damage. Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
+Descrip: Multiselector:}{-Avenging Cleave: Melee Cleave Attack: Make a sweeping weapon attack against all nearby enemies for +50% damage. Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.}{-Avenging Shot: AOE Ranged Attack: Fire a single shot with +20% damage, hitting every enemy in an area around where the shot hits.  Damaged enemies gains one stack of Vulnerability. Shares its cooldown with the Great Cleave feat. Vulnerability: You take 1% more damage for 3 seconds. This effect stacks up to 20 times, and loses one stack on expiration.
 Tier: 5
 Cost: 2
-Selector: Melee, Ranged
+Flags: SelectorOnly
+Selector: Avenging Cleave, Avenging Shot
 
 AbilityName: Holy Retribution
 Descrip: Multiselector}{-Holy Retribution: Melee Attack: Executes a powerful holy cleave against nearby targets that deals +50% damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for 10 seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed.}{-Holy Retribution Shot: Ranged Attack: Executes a powerful holy cleave against nearby targets that deals +50% damage, 100 extra holy damage that scales with 200% Melee or Ranged Power, -6 to all ability scores for 10 seconds, and recharges one Smite Evil charge to you. On Damage: Evil creatures may be forced to make a Will save (DC 10 + Paladin Level + Charisma Mod + Sunder Bonuses) or be destroyed.}Evil creatures with under 1000 HP must always make this save or die.}Evil creatures with between 1000 and 5000 HP have a 50% chance to be forced to}make this save or die.}Evil creatures with more than 5000 have a 33% chance to be forced to make this}save or die.}Cooldown: 30 seconds}Bug:  Extra holy damage doesn't appear to scale with MP/RP, and it doesn't proc every time.
@@ -7561,7 +7851,7 @@ Color: Red
 Stats: Strength, Wisdom
 
 AbilityName: Natural Adept
-Descrip: Passive:}{-You gain 8 hitpoints, +1 to hit and damage in Wolf and Bear Forms for this and every (all) other core in the tree.}{-In Wolf Form also gain 1 sneak attack die for this and every (all) other core taken.
+Descrip: Passive:}{-You gain 8 Hit Points, +1 to hit and damage in Wolf and Bear Forms for this and every (all) other core in the tree.}{-In Wolf Form also gain 1 sneak attack die for this and every (all) other core taken.
 Tier: 0
 
 AbilityName: Nature's Senses
@@ -7873,7 +8163,7 @@ Tier: 0
 None: Half-Elf Tier 2: Dilettante Special Ability: Improved Damage Reduction, Half-Elf Tier 4: Dilettante Special Ability: Improved Damage Reduction
 
 AbilityName: Elemental Defense
-Descrip: When enemy spells deal elemental damage to you, there's a 25% chance you'll gain 25 temporary hitpoints for 30 seconds. This can trigger up to once every 12 seconds.(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)Improve your Barbarian Damage Reduction by +1%.}+30 Hit Points}+20 Healing Amplification
+Descrip: When enemy spells deal elemental damage to you, there's a 25% chance you'll gain 25 temporary Hit Points for 30 seconds. This can trigger up to once every 12 seconds.(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)Improve your Barbarian Damage Reduction by +1%.}+30 Hit Points}+20 Healing Amplification
 Tier: 0
 
 AbilityName: Blank Thoughts
@@ -7978,7 +8268,7 @@ Cost: 2
 All: Tier 3: Bond of Retribution
 
 AbilityName: Vampiric Bond
-Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary hitpoints when you damage an enemy. These Temporary Hit Points scale with 200% Melee Power. This can trigger at most once every 12/9/6 seconds.
+Descrip: At Weapon Bond 100+, your weapon provides you 20 temporary Hit Points when you damage an enemy. These Temporary Hit Points scale with 200% Melee Power. This can trigger at most once every 12/9/6 seconds.
 Tier: 5
 Ranks: 3
 
@@ -8014,7 +8304,7 @@ Flags: SelectorOnly
 Selector: Shroud of the Zombie, Shroud of the Vampire, Shroud of the Wraith, Shroud of the Lich
 
 AbilityName: Undead Augmentation
-Descrip: Enhance your Undead Forms.}Passive: While in a Shroud, you can breathe underwater. +1 Spell Penetration.}Pick one of the following abilities that applies while in a Pale Shroud.}{-Deathly Tough - +25 Maximum Hitpoints, +5 PRR}{-Deathly Resistance - +15 Magical Resistance Rating, +2 to all Saves}{-Inflict Weariness - Your attacks inflict 2-9 (1d8+1) points of Negative Energy damage to a living target. This scales with 100% Spell Power. Your Vorpal Melee Hits cause Energy Drain, inflicting 1 Negative Level on victims. Bug:  Neg levels apply on crit instead of on vorpal.}{-Haunting in the Dark - +2 Assassinate DCs, +1 Sneak Attack Dice}{-Ghost in the Wind - +10% Incorporeal Miss Chance. If you are in Wraith Form, this increases your total to 20%.}{-Deathly Power - +10 to Negative Energy Spellpower.}{-+2 Necromancy DC}{-+2 Enchantment DC}{-Undead Chill - +15% bonus to Cold Absorption. You no longer take extra damage from Light. Bug:  You do take double damage from sunburst and possibly other abilities.}{-Undead Shock - +15% bonus to Electric Absorption. You no longer take extra damage from Light. Bug:  You do take double damage from sunburst and possibly other abilities.}{-Unhallowed Touch - You gain Ghost Touch on all attacks, +5 Hide and Move Silently
+Descrip: Enhance your Undead Forms.}Passive: While in a Shroud, you can breathe underwater. +1 Spell Penetration.}Pick one of the following abilities that applies while in a Pale Shroud.}{-Deathly Tough - +25 Maximum Hit Points, +5 PRR}{-Deathly Resistance - +15 Magical Resistance Rating, +2 to all Saves}{-Inflict Weariness - Your attacks inflict 2-9 (1d8+1) points of Negative Energy damage to a living target. This scales with 100% Spell Power. Your Vorpal Melee Hits cause Energy Drain, inflicting 1 Negative Level on victims. Bug:  Neg levels apply on crit instead of on vorpal.}{-Haunting in the Dark - +2 Assassinate DCs, +1 Sneak Attack Dice}{-Ghost in the Wind - +10% Incorporeal Miss Chance. If you are in Wraith Form, this increases your total to 20%.}{-Deathly Power - +10 to Negative Energy Spellpower.}{-+2 Necromancy DC}{-+2 Enchantment DC}{-Undead Chill - +15% bonus to Cold Absorption. You no longer take extra damage from Light. Bug:  You do take double damage from sunburst and possibly other abilities.}{-Undead Shock - +15% bonus to Electric Absorption. You no longer take extra damage from Light. Bug:  You do take double damage from sunburst and possibly other abilities.}{-Unhallowed Touch - You gain Ghost Touch on all attacks, +5 Hide and Move Silently
 Tier: 0
 Flags: SelectorOnly
 Selector: Deathly Touch, Deathly Resistance, Inflict Weariness, Haunting in the Dark, Ghost in the Wind, Deathly Power, +2 Necromancy DC, +2 Enchantment DC, Undead Chill, Undead Shock, Unhallowed Touch
@@ -8223,7 +8513,7 @@ Tier: 1
 Cost: 2
 
 AbilityName: Don't Count Me Out
-Descrip: Your range of unconsciousness extends by [5/10/20] hitpoints, and you gain a +[3/6/10] bonus to Physical Resistance Rating while you are under 50% health.
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points, and you gain a +[3/6/10] bonus to Physical Resistance Rating while you are under 50% health.
 Tier: 1
 Ranks: 3
 
@@ -8473,29 +8763,31 @@ Type: Class
 Initial: Rav
 Color: Green
 Stats: Strength, Constitution
+Lockout: Dragon Lord-Ravager
 
 AbilityName: Furious Rage
-Descrip: When you are raging and miss your attack by rolling 1, you gain Fury for six seconds.}Fury: +1 Rage bonus to attack and damage. This effect stacks and one stack fades every six seconds.
+Descrip: When you are raging and miss your attack by rolling 1, you gain Fury for six seconds.}Fury: +1 Rage bonus to Attack and Damage. This effect stacks up to six times and one stack fades every six seconds.
 Tier: 0
+None: Dragon Lord-Ravager Tier 0: Furious Rage
 
 AbilityName: Pain Touch
-Descrip: Your melee attacks deal 1d6 extra damage. This damage scales with 100% Melee Power.Passive: +10 Healing Amplification
+Descrip: Passive: +5 Melee Power. You gain +10 Positive Healing Amplification. 
 Tier: 0
 
 AbilityName: Demoralizing Success
-Descrip: Passive: You gain +30 hit points and +10 healing amplification. When you score a vorpal hit in melee, you inflict Crushing Despair on nearby enemies for 30 seconds on a failed DC 20 Will saving throw. You then inflict Vulnerable Will for 15 seconds, regardless of the Crushing Despair saving throw.
+Descrip: Passive: You gain +30 hit points and +10 Positive Healing Amplification. When you score a Vorpal hit in melee, you inflict Crushing Despair on nearby enemies for 30 seconds on a failed DC 20 Will saving throw. You then inflict Vulnerable Will for 15 seconds, regardless of the Crushing Despair saving throw.
 Tier: 0
 
 AbilityName: Pain Touch II
-Descrip: Upgrades Pain Touch so your melee attacks deal 2d6 extra damage. This damage scales with 100% Melee Power. Passive: You gain +60 hitpoints and +20 healing amplification
+Descrip: Passive: +5 Melee Power. You gain +60 Maximum Hit Points, +2 Intimidate, and +10 Positive Healing Amplification.
 Tier: 0
 
 AbilityName: Subsiding Fury
-Descrip: When you use Barbarian Rage, you gain 3 stacks of Fury. Passive: You gain +100 hitpoints and +20 healing amplification
+Descrip: When you use Barbarian Rage, you gain 3 stacks of Fury.}Fury: +1 Rage bonus to Attack and Damage. This effect stacks and one stack fades every 12 seconds.}Passive: You gain +100 Maximum Hit Points, +2 Intimidate, and +20 Positive Healing Amplification.
 Tier: 0
 
 AbilityName: Visage of Terror
-Descrip: Terrorize up to six enemies, killing them with fear if they fail a Will save vs 10 + Constitution modifier + half barbarian level. Enemies who make their saving throw are paralyzed with Fear for six seconds instead. Doesn't affect bosses. (Cost 1 Rage. Cooldown: 30 seconds)}Passive: +4 Constitution, +150 hitpoints, +40 healing amplification
+Descrip: Terrorize up to six enemies, killing them with fear if they fail a Will Saving Throw (1d20 + your Intimidate skill). Enemies who make their saving throw are paralyzed with Fear for six seconds instead.}Doesn't affect Bosses, Raid Bosses, or monsters immune to Fear or Paralysis. (Cooldown: 30 seconds)}Passive: +4 Constitution, +150 Maximum Hit Points, +2 Intimidate, +40 Positive Healing Amplification.
 Tier: 0
 
 AbilityName: Ritual Scarring
@@ -8543,7 +8835,7 @@ Ranks: 3
 All: Tier 1: Do You Like Pain?
 
 AbilityName: Cruel Cut
-Descrip: Melee Attack: Deals [1/2/3]d6 extra constitution damage as long as you damage your target. (30 second cooldown)
+Descrip: Melee Attack: Deals [1/2/3]d6 extra Constitution damage as long as you damage your target (6 second cooldown).}Rank 3: +1d6 of additional Constitution Damage for every 2 Character Levels you have. 
 Tier: 2
 Ranks: 3
 
@@ -8563,7 +8855,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Festering Wound
-Descrip: Cruel Cut additionally inflicts [1/2/3] 5-seconds stacks of 1d6 Poison damage every 2 seconds and that monster's positive energy healing is reduced by 50% for [5/10/15] seconds. Damage stacks fade one at a time. Also affects bosses
+Descrip: Cruel Cut additionally inflicts [1/2/3] stacks of Festering Wound. Each stack deals 1d6 Poison damage that scales with 200% Melee Power every 2 seconds, to a maximum of 10 stacks. In addition, enemies hit by Cruel Cut have their Positive Energy healing reduced by 50% for 5 seconds.}Rank 3: Festering Wound becomes Greater Festering Wound and gains an additional 1d6 Poison Damage for every 10 Character Levels you have.
 Tier: 3
 Ranks: 3
 All: Tier 2: Cruel Cut
@@ -8581,7 +8873,7 @@ Ranks: 3
 All: Tier 2: I Like Pain
 
 AbilityName: Dismember
-Descrip: Cruel Cut increases Melee Power by 5 for 10 seconds. Cruel Cut additional slows enemy movement speed, or slows attack speed, or deals 2d[4/6/8] bane damage, or deals 6d[4/6/8] bane damage. This bane damage scales with 200% Melee Power (movement and attack speed debuffs last for 5 seconds each and affect bosses)
+Descrip: When you use Cruel Cut, you gain +5 Melee Power for 10 seconds. In addition, targets hit by Cruel Cut take 6[d4/d6/d8] Slashing damage which scales with 200% Melee Power and have their movement speed reduced by 50% for 5 seconds. Rank 3: +1d8 additional Slashing damage for every 2 Character Levels you have.
 Tier: 4
 Ranks: 3
 All: Tier 3: Festering Wound
@@ -8888,7 +9180,7 @@ Descrip: +25 Healing Amp, +3 Lay on Hands charges,  +10% Sacred Bonus to Max HP,
 Tier: 0
 
 AbilityName: Eternal Defender
-Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating, +100% Melee Threat and your range of unconsciousness extends by 250 hitpoints.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.
+Descrip: Passive: You gain +2 Charisma, +2 Constitution, + 10 to Physical and Magical Resistance Rating, +100% Melee Threat and your range of unconsciousness extends by 250 Hit Points.Toggle: While Eternal Defender is active, if you drop below 0 hit points but are not killed, two uses of Turn Undead are immediately expended and you receive a reactive heal for 250 points of Positive Energy healing.
 Tier: 0
 
 AbilityName: Item Defense
@@ -9356,7 +9648,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Winter's Heart
-Descrip: Activation: Gain 8 times your Wisdom in temporary hitpoints for 30 seconds.(Cost: 12 SP, Cooldown: 1 minute)
+Descrip: Activation: Gain 8 times your Wisdom in temporary Hit Points for 30 seconds.(Cost: 12 SP, Cooldown: 1 minute)
 Tier: 5
 Cost: 2
 
@@ -10517,7 +10809,7 @@ All: Feat: Rune Arm Use
 AbilityName: Resonant Arms
 Descrip: Imbue Toggle: While Swashbuckling, the Finesseable or Thrown weapon in your main hand deals an additional 1d8 Sonic Damage. This Sonic damage scales with 75% Spell Power.}{Note: Mutually exclusive with all Imbues.
 Tier: 3
-Cost: 2
+Cost: 1
 
 AbilityName: Different Tack
 Descrip: Choose One:}{-Smooth Flourishes: You get Charisma to Damage with weapon attacks while swashbuckling.}{-Swift Strikes: You get Dexterity to Damage with weapon attacks while swashbuckling.}{-Two Steps Ahead: You get Intelligence to Damage with weapon attacks while swashbuckling.}{-Note: Applies to orbs as well.
@@ -10531,7 +10823,7 @@ AbilityName: On the Mark
 Descrip: Passive +[1/2/3] to attack rolls to confirm critical hits and damage on critical hits (before weapon multipliers)
 Tier: 4
 Ranks: 3
-Cost: 2
+Cost: 1
 
 AbilityName: Swashbuckling Style II
 Descrip: Improve your Swashbuckling Style:}{-Loud & Clear: Passive: While Swashbuckling with an Orb in your off hand, +20 Sonic Spell Power.}{ Bug:  Loud and Clear is turned off if you toggle swashbuckling off/on and sometimes on logout.  To fix un-equip and re-equip your orb.  You will see a buff icon if it's working.}{-Low Blow: While Swashbuckling and wielding a Buckler in your off hand, activate to perform a shield bash with +2 Critical Threat Range and Multiplier. On hit, knock down affected enemy for three seconds (Perform + d20 saves for the Knockdown). 18 second cooldown. Costs 10 Spell Points.}{-Music Box: Passive: While Swashbuckling with a Rune Arm in your off hand, you gain +1 bonus Imbue dice.}{-Slap in the Face: While Swashbuckling and wielding nothing in your off hand, activate to deal 1 Bludgeon damage. Damaged enemies can't cast spells for 6 seconds and are stunned for three seconds (Perform + d20 saves for the Stun). 18 second cooldown. Costs 10 Spell Points.
@@ -10562,7 +10854,7 @@ AbilityName: Second Skin
 Descrip: While Swashbuckling, +[2/4/6] to your Reflex Saves and +[2/4/6] to the Max Dex Bonus of your Armor.
 Tier: 5
 Ranks: 3
-Cost: 2
+Cost: 1
 
 AbilityName: Exploit Weakness
 Descrip: While Swashbuckling, every time you damage an enemy but do not critically hit, you gain a stacking +1 Insight Bonus to Critical Threat Range until you successfully critically hit.
@@ -10829,7 +11121,7 @@ Descrip: }{-+10% Spell Critical Damage}{-+1 Spell Penetration}{-+10 maximum Depr
 Tier: 0
 
 AbilityName: Stanch
-Descrip: Activate for 7 Depravity: Gain temporary hitpoints equal to 50% of your maximum hitpoints. These last for 1 minute. You have -3% maximum hitpoints until you rest, which stacks up to 33 times.}+10 maximum Depravity}Crushing Despair is added to your known Warlock Spells at level 3.
+Descrip: Activate for 7 Depravity: Gain temporary Hit Points equal to 50% of your maximum Hit Points. These last for 1 minute. You have -3% maximum Hit Points until you rest, which stacks up to 33 times.}+10 maximum Depravity}Crushing Despair is added to your known Warlock Spells at level 3.
 Tier: 0
 
 AbilityName: Tainted Lore II
@@ -10850,7 +11142,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Feigned Health
-Descrip: When you cast spells on yourself or allies, you grant temporary hitpoints equal to [33/66/100]% of your Charisma. These last for three minutes. (Note: Using a spell with Extend on it will double the duration of the temporary hit points as well. It will proc on most monk finishers but not Grasp of the Earth Dragon. Has a weird interaction with Globe of Invulnerability and its lesser version.)
+Descrip: When you cast spells on yourself or allies, you grant temporary Hit Points equal to [33/66/100]% of your Charisma. These last for three minutes. (Note: Using a spell with Extend on it will double the duration of the temporary hit points as well. It will proc on most monk finishers but not Grasp of the Earth Dragon. Has a weird interaction with Globe of Invulnerability and its lesser version.)
 Tier: 1
 Ranks: 3
 
@@ -11997,7 +12289,7 @@ Descrip: Haste is added to your spellbook as a level 3 spell.}Passive:}{-+1 Comp
 Tier: 0
 
 AbilityName: Implacable Foe
-Descrip: Choose between Strength, Wisdom, and Charisma variants of a temporary buff that grants temporary hitpoints and additional damage}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Strength}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Wisdom}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Charisma}Passive:}{-Divine Vessel now triggers on reaching 20 stacks of Divine Conduit, instead of 25.}{-+2 Armor Class}{-+5 Fire Spell Power}{-+5 Light Spell Power
+Descrip: Choose between Strength, Wisdom, and Charisma variants of a temporary buff that grants temporary Hit Points and additional damage}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Strength}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Wisdom}{-Implacable Foe: Activate: You and nearby allies gain 100 Temporary Hit Points and their attacks will deal 10% additional damage. For the next 18 seconds, these bonuses will refresh every 3 seconds on you and each ally that remains in range. These effects will expire 5 seconds after they are no longer refreshed. (Cooldown: 3 minutes)Passive: +4 Charisma}Passive:}{-Divine Vessel now triggers on reaching 20 stacks of Divine Conduit, instead of 25.}{-+2 Armor Class}{-+5 Fire Spell Power}{-+5 Light Spell Power
 Tier: 0
 Selector: Strength, Wisdom, Charisma
 
@@ -12046,7 +12338,7 @@ Cost: 2
 All: Tier 1: Righteous Weapons
 
 AbilityName: Inflame
-Descrip: You and your nearby allies gain a +2/+3/+4 Action Boost bonus to Armor Class, Attack Rolls, and Damage Rolls. (Duration: 30 seconds. Cooldown: 1 minute 30 seconds)
+Descrip: You and your nearby allies gain a +[2/3/4] Action Boost bonus to Armor Class, Attack Rolls, and Damage Rolls. (Duration: 30 seconds. Cooldown: 1 minute 30 seconds)
 Tier: 2
 Ranks: 3
 
@@ -12106,7 +12398,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Divine Vessel
-Descrip: Choose between Melee and Ranged attacks:}{-Divine Vessel (Melee Attack): Melee Favored Weapon Cleave Attack: Make a sweeping weapon attack against all nearby enemies for +50% damage. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power)}{-Divine Vessel (Ranged Attack): Ranged Favored Weapon Attack: Fire a ranged projectile, dealing +50% damage. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power)}Shares its cooldown with the Great Cleave feat.
+Descrip: Choose between Melee and Ranged attacks:}{-Divine Vessel (Melee Attack): Melee Favored Weapon Cleave Attack: Make a sweeping weapon attack against all nearby enemies for +50% damage. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power)}{-Divine Vessel (Ranged Attack): AOE Ranged Favored Weapon Attack: Fire a single shot with +50% Damage, hitting every enemy in an area around where this shot hits. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power)}Shares its cooldown with the Great Cleave feat.
 Tier: 5
 Selector: Melee, Ranged
 
@@ -12547,9 +12839,9 @@ Descrip: Your god has imbued you with power and skill in combat, granting a +6 S
 Tier: 5
 
 AbilityName: Divine Vessel
-Descrip: Your attacks generate a stack of Divine Conduit. When Divine Conduit reaches 25, all stacks are cleared and you gain one charge of this attack. (Max uses: 1. You cannot gain stacks of Divine Conduit while you have any uses of this attack.)}Choose between Melee and Ranged attacks:}{-Divine Vessel (Melee Attack): Active: Melee Favored Weapon Cleave Attack: Expend 1 charge.  Make a sweeping weapon attack against all nearby enemies for +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}{-Divine Vessel (Ranged Attack): Active: Ranged Favored Weapon Attack: Expend 1 charge.  Take a shot with your bow, dealing +5(W) damage.  Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light Damage per character level.  (Damage from the meteor is affected by Fire and Light Spellpower.)}Shares its cooldown with the Great Cleave feat.}You may only gain a stack of Divine Conduit once every second.}If you have Implacable Foe, Divine Vessel will trigger upon reaching 20 stacks of Divine Conduit, instead of 25.}One stack decays every 6 seconds (gaining a stack resets the timer).
+Descrip: Choose between Melee and Ranged attacks:}{-Divine Vessel (Melee Attack): Melee Favored Weapon Cleave Attack: Make a sweeping weapon attack against all nearby enemies for +30% damage. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power). Cooldown: 5 seconds.}{-Divine Vessel (Ranged Attack): AOE Ranged Favored Weapon Attack: Fire a single shot with +20% Damage, hitting every enemy in an area around where the shot hits. Each affected enemy is hit by a meteor, taking 1 to 4 Fire and 1 to 4 Light damage per character level. (Damage from the meteor is affected by Fire and Light Spell Power). Cooldown: 5 seconds.}Shares its cooldown with the Great Cleave feat.
 Tier: 5
-Selector: Cleave, Ranged
+Selector: Melee, Ranged
 
 AbilityName: Wrathful Weapons
 Descrip: When wielding your religion's favored weapon in your main hand, you gain +3 to hit and damage, and +9 Universal Spell Power. When you score a Vorpal Hit with your religion's favored weapon, you gain +3 bonus Imbue Dice for the next 12 seconds, and your Fires of Fury Imbue Toggle changes its damage type from Fire to Light.

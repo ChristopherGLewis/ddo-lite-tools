@@ -3416,7 +3416,7 @@ Epic: 34
 QuestName: The Devils to Pay
 Pack: Vecna Unleashed
 Patron: Morgrave University
-Favor: 6
+Favor: 5
 Level: 18
 Epic: 34
 
@@ -3451,7 +3451,7 @@ Epic: 34
 QuestName: What Dreams May Come
 Pack: Vecna Unleashed
 Patron: Morgrave University
-Favor: 6
+Favor: 5
 Level: 18
 Epic: 34
 
@@ -3494,3 +3494,11 @@ Patron: Agents of Argonnessen
 Favor: 3
 Level: 4
 Epic: 34
+
+QuestName: Fire Over Morgrave
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 9
+Level: 34
+Epic: 34
+Style: Raid

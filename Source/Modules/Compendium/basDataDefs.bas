@@ -231,7 +231,7 @@ Public Type TomeType
 End Type
 
 'TODO Remove hard coding
-Public Const maxClassCount = 15
+Public Const maxClassCount = 22  '2024.03.17 DragonLord => 15 classes + 7 Archtypes
 Public Const maxRaceCount = 14 ' 2022.04.29 Tabaxi
 Public Const maxIconicCount = 9 ' 2022.04.29 Tabaxi Trailblazer
 Public Const maxEpicCount = 17 ' 2022.04.29 Added Eclispe Power

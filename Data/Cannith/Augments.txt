@@ -698,8 +698,8 @@ Augment: Festive Stat
 Color: Clear
 Descrip: Grants a festival bonus to stat, which stacks with all other bonuses.
 Notes: Farmable from the {url=https://ddowiki.com/page/Night_revels#Reward_items}Night_Revels event
-Variants: Festive Intelligence; Festive Wisdom
-Links: Diamond of Festive Intelligence +2; Diamond of Festive Wisdom +2
+Variants: Festive Intelligence; Festive Wisdom; Festive Constitution; Festive Strength; Festive Charisma; Festive Dexterity
+Links: Diamond of Festive Intelligence +2; Diamond of Festive Wisdom +2; Festive Constitution +2; Diamond of Festive Strength +2; Diamond of Festive Charisma +2; Diamond of Festive Dexterity +2
 Flags: Named
 ML: 22
 Value: +2
@@ -822,3 +822,52 @@ Descrip:
 Descrip: Once every three seconds when you take physical damage you get Psionic Potency +8. This can stack up to three times (up to Psionic Potency +24) and each stack lasts for 20 seconds.
 Notes: Drops in {url=https://ddowiki.com/page/Fire_on_Thunder_Peak}Fire_on_Thunder_Peak warded chest
 ML: 28
+
+Augment: Fey Bane
+Color: Red
+Flags: Static; Named
+Descrip: Additional 2d8 Bane Damage to Fey creatures on hit.
+Notes: crops in Wake Me Up Inside
+Variants: Ruby of Fey Bane
+ML: 6
+
+Augment: Iron Hand
+Variants: Ruby of the Iron Hand
+Color: 	Red
+ML: 1
+Flags: Static; Named
+Descrip: Cold Iron
+Notes: Snowpeaks Festival, Flurry trade-in
+
+Augment: Snowpeaks
+Variants: Ruby of the Snowpeaks
+Color: Red
+Flags: Static; Named
+ML: 4
+Descrip: 1 to 8 Cold Damage. 
+Descrip:Occasionally lock targets in frozen ice (see Freezing Ice.)
+Notes: Snowpeaks Festival, Flurry trade-in
+
+Augment: Snowpeaks Speed 
+Variants: Sapphire of Snowpeaks Speed 
+Color: Blue
+Flags: Static; Named
+ML: 8
+Descrip: Striding +30 
+Notes: Snowpeaks Festival, Flurry trade-in
+
+Augment: Adamantine Blessing 
+Variants: Ruby of the Adamantine Blessing 
+Color: Red
+Flags: Static; Named
+ML: 1
+Descrip: Adamantine
+Notes: Treasure of Crystal Cove, Euphonia's Barter Box trade-in
+
+Augment: Surging Tide 
+Variants: Ruby of the Surging Tide 
+Color: Red
+Flags: Static; Named
+ML: 1
+Descrip: Tidal Burst 
+Notes: Treasure of Crystal Cove, Euphonia's Barter Box trade-in

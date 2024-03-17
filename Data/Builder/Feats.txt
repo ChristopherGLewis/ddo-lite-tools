@@ -304,7 +304,7 @@ Descrip: Add your Strength modifier to bow damage. Bows normally get no damage b
 BAB: 4
 All: Point Blank Shot, Weapon Focus: Ranged
 One: Weapon Specialization: Ranged, Power Attack, Combat Expertise, Zen Archery
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Brutal Throw
 Group: Heroic, Range
@@ -312,7 +312,7 @@ Descrip: Use your Strength bonus instead of Dexterity to determine your bonus to
 BAB: 1
 Stat: Strength 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Bullheaded
 Group: Heroic, Misc, Defense
@@ -387,7 +387,7 @@ Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 5 seconds): Make a sweeping weapon attack against all nearby enemies for +20% damage.
 All: Power Attack
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Combat Archery
 Group: Epic, Range
@@ -407,7 +407,7 @@ Group: Heroic, Melee
 Descrip: Combat Stance: Gain +10% feat bonus to AC, but suffer -5 to attack rolls and spells have 3x normal cooldowns. (Doesn't apply to SLAs.)
 Stat: Intelligence 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk, Artificer
+ClassBonus: Fighter, Dragon Lord, Monk, Artificer
 
 FeatName: Completionist
 Group: Heroic, Misc
@@ -604,7 +604,7 @@ Group: Heroic, Defense
 Descrip: +3% Dodge.
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 
 FeatName: Domain
 Group: Heroic, Misc
@@ -666,6 +666,33 @@ Group: Destiny, Melee
 WikiName: Doublestrike_(epic_destiny_feat)
 Descrip: +5% Doublestrike.
 Level: 22
+
+FeatName: Draconic Aura 1
+Group: Heroic, Misc
+Descrip: Choose one Basic Aura:}{-Nevalarich's Hunger: You and allies close to you get a +2 Morale Bonus to Attack Rolls}{-Aussircaex's Defiance: You and allies close to you get a +2 Morale Bonus to Saving Throws}{-Thraxata's Instinct: You and allies close to you get a +2 Morale Bonus to Tactical Feat DCs
+Class: Dragon Lord 1
+Flags: ClassOnly
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 1
+Selector: Nevalarich's Hunger, Aussircaex's Defiance, Thraxata's Instinct
+
+FeatName: Draconic Aura 2
+Group: Heroic, Misc
+Descrip: Choose one Secondary Aura:}{-Velah's Fury: You and allies close to you get a +3 Morale Bonus to Damage Rolls}{-Sinvala's Toughness: You and allies close to you get a +3 Morale Bonus to PRR}{-Eternity's Ward: You and allies close to you get a +3 Morale Bonus to MRR
+Class: Dragon Lord 8
+Flags: ClassOnly
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 8
+Selector: Velah's Fury, Sinvala's Toughness, Eternity's Ward
+
+FeatName: Draconic Aura 3
+Group: Heroic, Misc
+Descrip: Choose one Basic Aura:}{-The Truthful One's Might: You and allies close to you get a +4 Morale Bonus to Melee Power}{-Aurgloroasa's Ascended Wrath: You and allies close to you get a +4 Morale Bonus to Ranged Power}{-Kor Kaza's Forbidden Power: You and allies close to you get a +4 Morale Bonus to Universal Spell Power
+Class: Dragon Lord 16
+Flags: ClassOnly
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 16
+Selector: The Truthful One's Might, Aurgloroasa's Ascended Wrath, Kor Kaza's Forbidden Power
 
 FeatName: Draconic Ancestry
 Group: Heroic, Misc
@@ -911,28 +938,28 @@ Stat: Strength 13
 ClassBonus: Artificer, Fighter
 SelectorName: Kama
 WikiName: Proficiency: Kama
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Khopesh
 WikiName: Proficiency: Khopesh
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Great Crossbow
 WikiName: Proficiency: Great Crossbow
 Descrip: Grant proficiency with Great Crossbows, which now knock opponents to the ground for 6 seconds on a natural 20 (no save). Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Rpt Lt Crossbow
 WikiName: Proficiency: Repeating Light Crossbow
 Descrip: Grant proficiency with Repeating Light Crossbows, which now fire 3 bolts per shot instead of 1. Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Rpt Hvy Crossbow
 WikiName: Proficiency: Repeating Heavy Crossbow
 Descrip: Grant proficiency with Repeating Heavy Crossbows, which now fire 3 bolts per shot instead of 1. Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Shuriken
 WikiName: Proficiency: Shuriken
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Handwraps
 WikiName: Proficiency: Handwraps
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Extend Spell
 Group: Heroic, Spellcasting
@@ -1112,7 +1139,7 @@ Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +40% damage.
 BAB: 4
 All: Cleave, Power Attack
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Great Fortitude
 Group: Heroic, Defense
@@ -1147,7 +1174,7 @@ Group: Heroic, Melee, Defense
 Descrip: Net effect including Shield Mastery: +10 Combat Style bonus to Melee Power and +10% doublestrike when using a shield. +10/15/20 PRR when using small (or buckler)/large/tower shields.
 BAB: 13
 All: Improved Shield Mastery
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Greater Single Weapon Fighting
 Abbreviation: Greater SWF
@@ -1158,7 +1185,7 @@ BAB: 11
 Flags: SkillTome
 Skill: Balance 7
 All: Single Weapon Fighting, Improved Single Weapon Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Greater Spell Focus
 SortName: Spell Focus2
@@ -1186,7 +1213,7 @@ Descrip: 30% additional Strikethrough Chance. Your THF Combat Style bonus increa
 BAB: 11
 Stat: Strength 17
 All: Two Handed Fighting, Improved Two Handed Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Greater Two Weapon Fighting
 Abbreviation: Greater TWF
@@ -1196,7 +1223,7 @@ Descrip: Your chance to proc off-hand attacks increases to 80%.
 BAB: 11
 Stat: Dexterity 17
 All: Two Weapon Fighting, Improved Two Weapon Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Greater Weapon Focus
 Abbreviation: Gtr Weapon Focus
@@ -1205,7 +1232,7 @@ Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
 Class: Fighter 8
 All: Weapon Focus
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Focus
 
 FeatName: Greater Weapon Specialization
@@ -1215,7 +1242,7 @@ Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
 Class: Fighter 12
 All: Weapon Focus, Weapon Specialization
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Specialization
 
 FeatName: Guardian Angel
@@ -1306,7 +1333,7 @@ FeatName: Hamstring
 Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 15 seconds): On hit, target's movement rate is reduced by 50% for 12 seconds. No save.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 Class: Rogue 1
 
 FeatName: Harbinger of Chaos
@@ -1326,27 +1353,27 @@ SortName: Heavy Armor Training4
 Group: Heroic, Defense
 Descrip: +12 PRR and MRR while wearing heavy armor.
 Class: Fighter 14
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Combatant
 SortName: Heavy Armor Training2
 Group: Heroic, Defense
 Descrip: +6 PRR and MRR while wearing heavy armor.
 Class: Fighter 6
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Master
 SortName: Heavy Armor Training3
 Group: Heroic, Defense
 Descrip: +9 PRR and MRR while wearing heavy armor.
 Class: Fighter 10
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Training
 Group: Heroic, Defense
 Descrip: +3 PRR and MRR while wearing heavy armor.
 Class: Fighter 2
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heighten Spell
 Group: Heroic, Spellcasting
@@ -1391,9 +1418,9 @@ BAB: 8
 ClassBonus: Artificer, Fighter
 Selector: Bludgeoning, Piercing, Ranged, Slashing, Thrown
 SelectorName: Piercing
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Thrown
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Construct Essence
 SortName: Construct Essence2
@@ -1429,7 +1456,7 @@ Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 8 seconds): Bluffs the enemy, enabling Sneak attacks for a short period of time. Bugged; see wiki.
 One: Sneak Attack, Half-Elf Dilettante: Rogue
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Fortification
 Group: Heroic, Defense
@@ -1441,7 +1468,7 @@ ClassBonus: Artificer
 FeatName: Improved Martial Arts
 Group: Epic, Melee
 Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using ki weapons such as kamas, quarterstaves, and shuriken. Works with all weapons that you are centered with.
-Class: Monk 12
+Class: Monk 12, Sacred Fist 12
 Level: 21
 
 FeatName: Improved Mental Toughness
@@ -1467,7 +1494,7 @@ Group: Heroic, Melee
 Descrip: +20% chance to proc an automatic shield bash when attacking with a one-handed weapon and shield.
 All: Shield Proficiency
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Shield Mastery
 SortName: Shield Mastery2
@@ -1475,7 +1502,7 @@ Group: Heroic, Melee, Defense
 Descrip: Net effect including Shield Mastery: +6 Combat Style bonus to Melee Power and +8% doublestrike when using a shield. +5/10/15 PRR when using small (or buckler)/large/tower shields.
 BAB: 8
 All: Shield Mastery
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Single Weapon Fighting
 Abbreviation: Improved SWF
@@ -1486,7 +1513,7 @@ BAB: 6
 Flags: SkillTome
 Skill: Balance 4
 All: Single Weapon Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Sneak Attack
 Group: Epic, Melee, Range
@@ -1500,14 +1527,14 @@ Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 10 seconds): Reduce the target's AC by 5 and Fortification by 10% for 24 seconds. Fortitude save (DC 14 + Str mod) negates. Additionally, apply a -3 Fortitude Saving Throw penalty that lasts for 24 seconds and stacks up to 5 times.
 All: Power Attack
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Improved Trip
 Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 10 seconds): Replaces Trip as an action and improves on it with +4 DC, double duration and shorter cooldown.
 All: Combat Expertise
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Improved Turning
 Group: Heroic, Misc
@@ -1523,7 +1550,7 @@ Descrip: +30% additional Strikethrough chance while two-handed fighting. Your TH
 BAB: 6
 Stat: Strength 17
 All: Two Handed Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Two Weapon Fighting
 Abbreviation: Improved TWF
@@ -1533,7 +1560,7 @@ Descrip: Your chance to proc off-hand attacks increases to 60%.
 BAB: 6
 Stat: Dexterity 17
 All: Two Weapon Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Uncanny Dodge
 Group: Heroic, Misc
@@ -1635,7 +1662,7 @@ FeatName: Knight's Training
 Group: Heroic, Melee
 Descrip: Morale bonus to crit profile for certain weapons:}{ +1 crit multiplier for Long Swords}{ +1 crit range for Battle Axes (+2 w/Improved Critical: Slashing)}{ +1 crit range for War Hammers, Heavy Maces and Morningstars
 BAB: 4
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Knowledge of Battle
 Group: Heroic, Melee, Misc
@@ -1676,7 +1703,7 @@ SelectorName: Passage
 Descrip: +2 bonus to Balance skill. Available SLAs:}{-Expeditious Retreat}{-Dimension Door}{-Teleport
 Race: Required, Human
 SelectorName: Scribing
-Descrip: +2 bonus to UMD skill. Available SLAs:}{-Enchant Weapons}{-Symbol of Flame}{-Symbol of Stunning
+Descrip: +2 bonus to UMD skill. Available SLAs:}{-Shield}{-Symbol of Flame}{-Symbol of Stunning
 Race: Required, Gnome
 SelectorName: Sentinel
 Descrip: +2 bonus to Intimidate skill. Available SLAs:}{-Shield of Faith}{-Protection from Energy}{-Globe of Invulnerability
@@ -1750,7 +1777,7 @@ Descrip: Bow Attack: Ranged Bow Attack: Expend one charge to fire three arrows i
 BAB: 6
 Stat: Dexterity 17
 All: Point Blank Shot, Rapid Shot
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Martial Weapon
 Group: Heroic, Melee, Range
@@ -1867,7 +1894,7 @@ Descrip: +2% dodge, +2 MDB to armor and tower shields.
 Stat: Dexterity 13
 All: Dodge
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 
 FeatName: Monk Stance
 Group: Heroic, Misc
@@ -1903,7 +1930,7 @@ Group: Heroic, Melee
 Descrip: You gain special bonuses for fighting with specific things in your offhand while Single Weapon Fighting.} }If you have nothing in your offhand, you ability score modifier contributes 25% more to your melee damage.}If you have an Orb or Rune Arm in your Offhand, you gain +1 bonus Imbue Dice.
 BAB: 8
 All: Single Weapon Fighting
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Opportunist
 Group: Heroic, Melee
@@ -1921,7 +1948,7 @@ Descrip: When wielding an offhand weapon that isn't a light weapon, OTWF reduces
 Stat: Strength 12
 All: Two Weapon Fighting
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Overwhelming Critical
 Group: Epic, Melee, Range
@@ -2116,14 +2143,14 @@ Group: Heroic, Melee
 Descrip: Combat Stance: Gain up to +5 damage at the cost of up to -5 to-hit penalty, both capped by your BAB. Two handed weapons gain double the damage bonus.
 Stat: Strength 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Power Critical
 Group: Heroic, Melee
 Descrip: +2 Seeker.
 BAB: 4
 All: Weapon Focus
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Precise Shot
 Group: Heroic, Range
@@ -2138,7 +2165,7 @@ Descrip: Combat Stance: Bypass 25% fortification and gain +5% chance to-hit.
 BAB: 1
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 
 FeatName: Purity of Body
 Group: Heroic, Misc
@@ -2159,7 +2186,7 @@ Group: Heroic, Range
 Descrip: Increases the rate of fire of thrown weapons, but not bows or crossbows. Stacks with Rapid Shot. Switching weapons and armor is also faster.
 BAB: 1
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Alchemist
+ClassBonus: Fighter, Dragon Lord, Alchemist
 
 FeatName: Quicken Spell
 Group: Heroic, Spellcasting
@@ -2185,7 +2212,7 @@ FeatName: Rapid Reload
 Group: Heroic, Range
 Descrip: Allows crossbows (including repeating) to be reloaded significantly faster. Stacks with Rapid Shot.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Rapid Shot
 Group: Heroic, Range
@@ -2226,7 +2253,7 @@ Descrip: Combat Stance: +4 to all saves, but spells have 3x their normal cooldow
 BAB: 1
 Stat: Constitution 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Resist Poison
 Group: Heroic, Defense
@@ -2254,7 +2281,7 @@ FeatName: Sap
 Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 15 seconds): Daze target for 18 seconds normally, or 30 second if from sneak attack. No save. Effect is removed when the target takes damage.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Scion of
 Group: Legend, Melee, Range, Spellcasting, Defense, Misc
@@ -2289,6 +2316,11 @@ Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 Univ
 SelectorName: Shadowfell
 Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
 
+FeatName: Second Wind
+Group: Heroic, Defense
+Descrip: Activate this ability to regain 50% of your maximum hit points.}You can use this once per rest. Gain additional charges at Fighter levels 4, 8, 12, 16, and 20.}Can be used while crowd-controlled.}At level 8 in addition to the heal the following effects are cured: Ability damage, Blind, Confusion, Dazed, Dazzled, Deafend, Diseased, Exhausted, Fatigued, Feebleminded, Nauseated, Poisoned, or Stunned.
+Class: Fighter 2, Dragon Lord 2
+
 FeatName: Self Sufficient
 Group: Heroic, Misc
 Descrip: +2 bonus to Heal and Repair.
@@ -2299,14 +2331,14 @@ Group: Heroic, Defense
 Descrip: Chance to ignore energy damage while actively shield blocking depending on shield type:}{-Buckler: 20%}{-Small Shield: 25%}{-Large Shield: 30%}{-Tower Shield: 40%
 BAB: 8
 All: Shield Proficiency
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Shield Mastery
 Group: Heroic, Melee, Defense
 Descrip: +3 Combat Style bonus to Melee Power and +3% doublestrike when using a shield. +3/5/10 PRR when using small (or buckler)/large/tower shields.
 All: Shield Proficiency
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Shield Mastery Specialty
 Group: Destiny, Defense
@@ -2410,7 +2442,7 @@ FeatName: Slicing Blow
 Group: Heroic, Melee
 Descrip: Tactical Melee Attack: Using this attack, you deal one point of [[Constitution]] damage to your target, and deal 1 to 6 additional damage every 2 seconds for 18 seconds. The target suffers an additional 1 to 6 damage per tick for every three Character Levels. This damage scales with 100% Melee Power, and can stack up to three times. Some creatures may be immune to the bleeding or wounding effect.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Slippery Mind
 Group: Heroic, Defense
@@ -2512,7 +2544,7 @@ Group: Heroic, Melee, Defense
 Descrip: +2% Dodge. You no longer incur to-hit penalties for melee while moving.
 BAB: 4
 All: Dodge, Mobility
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 ClassBonusLevel: Monk 6
 
 FeatName: Stealthy
@@ -2538,7 +2570,7 @@ FeatName: Stunning Blow
 Group: Heroic, Melee
 Descrip: Melee special attack (Cooldown: 15 seconds): Stun target for 6 seconds, fortitude save 10 + Strength modifier + other bonuses.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Stunning Fist
 Group: Heroic, Melee
@@ -2561,7 +2593,7 @@ Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
 Class: Fighter 16
 All: Weapon Focus, Greater Weapon Focus
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SharedSelector: Greater Weapon Focus
 
 FeatName: Swords to Plowshares
@@ -2575,27 +2607,27 @@ SortName: Tactical Training2
 Group: Heroic, Melee
 Descrip: +4 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
 Class: Fighter 8
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Mastery
 SortName: Tactical Training3
 Group: Heroic, Melee
 Descrip: +6 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
 Class: Fighter 12
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Supremacy
 SortName: Tactical Training4
 Group: Heroic, Melee
 Descrip: +8 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
 Class: Fighter 16
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Training
 Group: Heroic, Melee
 Descrip: +2 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
 Class: Fighter 4
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactician
 Group: Destiny, Melee
@@ -2692,7 +2724,7 @@ Group: Heroic, Melee
 Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Bastard Sword or Dwarven axe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
 Stat: Strength 15
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 None: Single Weapon Fighting
 
 FeatName: Two Handed Specialty
@@ -2708,14 +2740,14 @@ Group: Heroic, Melee, Defense
 Descrip: +5 PRR and +1 AC while wielding two weapons, +2 DR while actively blocking with two weapons, and +10 Magical Resistance Rating Cap.
 All: Two Weapon Fighting
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Two Weapon Fighting
 Group: Heroic, Melee
 Descrip: While Two Weapon Fighting, you now have 40% chance to proc offhand attacks (normally 20%) and your to-hit penalty improves to -4/-4 (normally -6/-10). If wielding a light weapon in your off hand, these penalties reduce to -2/-2 (normally -4/-8).
 Stat: Dexterity 15
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 None: Single Weapon Fighting
 
 FeatName: Two Weapon Specialty
@@ -2760,7 +2792,7 @@ FeatName: Vorpal Strikes
 Group: Epic, Melee
 Descrip: Your unarmed strikes are now considered vorpal and slashing.
 Stat: Wisdom 23
-Class: Monk 12
+Class: Monk 12, Sacred Fist 12
 Level: 21
 All: Improved Critical: Bludgeoning
 
@@ -2773,7 +2805,7 @@ Race: Required, Warforged, Bladeforged
 FeatName: Watchful Eye
 Group: Epic, Misc
 WikiName: Epic Feats#General Epic passive feats
-Descrip: If you pass within 5 feet of a trap, make a Spot check to reveal it as if actively Searching. (Requires 1 Rogue or Artificer level to reveal high level traps.)
+Descrip: If you pass within 5 feet of a trap, make a Spot check to reveal it as if actively Searching. (Requires 1 Rogue, Artificer, or Dark Hunter level to reveal high level traps.)
 Level: 27
 
 FeatName: Weapon Finesse
@@ -2782,7 +2814,7 @@ Descrip: Use your Dexterity modifier instead of Strength for to-hit with light w
 BAB: 1
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Weapon Focus
 Group: Heroic, Melee, Range
@@ -2792,18 +2824,18 @@ RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter
 Selector: Bludgeoning, Piercing, Ranged, Slashing, Thrown
 SelectorName: Bludgeoning
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Piercing
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SelectorName: Thrown
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Weapon Specialization
 Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
 Class: Fighter 4
 All: Weapon Focus
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Focus
 
 FeatName: Wellspring of Power
@@ -2818,14 +2850,14 @@ Descrip: You treat longswords as if they were monk weapons, remaining centered w
 Class: Monk 1
 All: Weapon Focus: Slashing
 One: Martial Weapon: Longsword, Follower of: Sovereign Host, Half-Elf Dilettante: Fighter
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk
 
 FeatName: Whirlwind Attack
 Group: Heroic, Melee
 Descrip: Tactical Melee Cleave: Activate this ability to attack all enemies in a 360 degree arc around you twice. This attack deals +20% damage. Note that it now hits the same number of times in all melee combat styles.
 BAB: 4
 All: Dodge, Mobility
-ClassBonus: Fighter
+ClassBonus: Fighter, Dragon Lord
 
 FeatName: Wholeness of Body
 Group: Heroic, Misc
@@ -2932,4 +2964,4 @@ Descrip: You can use Wisdom instead of Dexterity for to-hit with ranged missile 
 BAB: 1
 Stat: Wisdom 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Monk
+ClassBonus: Fighter, Dragon Lord, Monk

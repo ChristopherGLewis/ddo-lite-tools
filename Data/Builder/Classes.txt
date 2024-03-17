@@ -1,3 +1,4 @@
+
 ClassName: Alchemist
 Initial: A, Al, Alchemist, Alc
 Color: Blue
@@ -268,6 +269,7 @@ SkillPoints: 2
 Skills: Intimidate, Jump, Repair, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency, Tower Shield Proficiency
 GrantedFeats1: Simple Weapons, Martial Weapon: All
+GrantedFeats2: Second Wind
 BonusFeat: 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
 Trees: Kensei, Stalwart Defender, Vanguard
 
@@ -717,3 +719,17 @@ SpellList3: Banishment, Bestow Curse, Charm Monster, Contagion, Dark Discorporat
 SpellList4: Dismissal, Evard's Black Tentacles, Flesh to Stone, Hold Monster, Lesser Globe of Invulnerability, Protection from Elements, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Teleport, True Seeing, Waves of Fatigue
 SpellList5: Circle of Death, Control Undead, Create Undead, Finger of Death, Globe of Invulnerability, Greater Teleport, Mass Hold Person, Mass Invisibility, Mind Fog, Mass Protection from Elements, Shadow Walk, Summon Monster VIII, Symbol of Stunning, Tenser's Transformation, Undeath to Death, Waves of Exhaustion
 SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Monster, Mordenkainen's Disjunction, Power Word: Stun, Summon Monster IX, Symbol of Death, Trap the Soul, Wail of the Banshee
+
+ClassName: Dragon Lord
+Initial: D, DL, DrgLord, DRL
+Color: Orange
+Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+BAB: 1
+SkillPoints: 2
+Skills: Intimidate, Jump, Repair, Swim
+GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy
+GrantedFeats1: Simple Weapons, Martial Weapon: All
+GrantedFeats2: Second Wind
+BonusFeat: 2, 4, 6, 10, 12, 14, 18, 20
+ClassFeat: 1, 8, 16
+Trees: Dragon Lord, Stalwart Defender, Dragon Lord-Ravager

@@ -84,6 +84,7 @@ Public Enum ClassEnum
     ceSacredFist
     ceDarkHunter
     ceAcolyte
+    ceDragonLord
     ceClasses
     ceEmpty
 End Enum
@@ -398,7 +399,7 @@ Public Function GetClassID(ByVal pstrClass As String) As ClassEnum
         Case "sacred fist": GetClassID = ceSacredFist
         Case "dark hunter": GetClassID = ceDarkHunter
         Case "acolyte": GetClassID = ceAcolyte
-      
+        Case "dragon lord": GetClassID = ceDragonLord
     End Select
 End Function
 
@@ -425,6 +426,7 @@ Public Function GetClassName(ByVal penClass As ClassEnum, Optional pblnAbbreviat
         Case ceSacredFist: GetClassName = "Sacred Fist"
         Case ceDarkHunter: GetClassName = "Dark Hunter"
         Case ceAcolyte: GetClassName = "Acolyte"
+        Case ceDragonLord: GetClassName = "Dragon Lord"
        
     End Select
 End Function
@@ -460,6 +462,7 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         Case ceSacredFist: GetClassResourceID = "CLSPALADIN"
         Case ceDarkHunter: GetClassResourceID = "CLSRANGER"
         Case ceAcolyte: GetClassResourceID = "CLSWARLOCK"
+        Case ceDragonLord: GetClassResourceID = "CLSFIGHTER"
     
     End Select
 End Function
