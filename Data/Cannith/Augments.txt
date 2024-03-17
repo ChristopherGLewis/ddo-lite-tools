@@ -871,3 +871,86 @@ Flags: Static; Named
 ML: 1
 Descrip: Tidal Burst 
 Notes: Treasure of Crystal Cove, Euphonia's Barter Box trade-in
+
+Augment: Quick Movements
+Variants: Topaz of Quick Movements
+Color: Yellow
+ML: 06
+Flags: Static; Named
+Descrip: Feat: Quick Draw
+Notes: The Feywild, rare encounter chests
+
+Augment: Heroism
+Variants: Sapphire of Heroism
+Color: Blue
+ML: 6
+Flags: Static; Named
+Descrip: Heroism
+Notes: Immortality Lessons
+
+Augment: Greater Heroism
+Variants: Sapphire of Greater Heroism
+Color: Blue
+ML: 28
+Flags: Static; Named
+Descrip: Greater Heroism (no temporary hit points and immunity to fear)
+Notes: Immortality Lessons
+
+Augment: Scourge of the Outsiders
+Color: Orange
+ML: 28
+Flags: Static; Named
+Descrip: Banishing 
+Notes: The Thornwright
+
+Augment: Storm's Bulwark
+Color: Green
+ML: 28
+Flags: Static; Named
+Descrip: Whirlwind Ward
+Notes: The Knight Who Cried Windmill
+
+Augment: Augmented Summoning
+Variants: Topaz of Augmented Summoning
+Color: Yellow
+ML: 28 
+Flags: Static; Named
+Descrip: Augment Summoning
+Notes: The Feywild, rare encounter chests
+
+Augment: Bitter Wounds
+Variants: Emerald of Bitter Wounds
+Color: Green
+ML: 28
+Flags: Static; Named
+Descrip: Greater Boon of Undeath
+Notes: The Dryad and the Demigod
+
+Augment: Lifetaker
+Color: Purple
+ML: 28
+Flags: Static; Named
+Descrip: Slay Living (2.5% for a DC 30 Slay Living) 
+Notes: Witch HuntFables of the Feywild
+
+Augment: Feareater
+Color: Purple
+ML: 28
+Flags: Static; Named
+Descrip: Sovereign Nightmares 
+Nootes: The Dryad and the Demigod
+
+Augment: Dismagicka
+Color: Orange
+ML: 28
+Flags: Static; Named
+Descrip: Improved Shattermantle 
+Notes: The Dryad and the Demigod
+
+Augment: Disintegration 
+Variants: Ruby of Disintegration 
+Color: Red
+ML: 28
+Flags: Static; Named
+Descrip: Disintegration (2% for 15d20+300 untyped damage)
+Notes: Wake Me Up Inside
