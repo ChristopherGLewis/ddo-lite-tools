@@ -1230,7 +1230,7 @@ Abbreviation: Gtr Weapon Focus
 SortName: Weapon Focus2
 Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
-Class: Fighter 8
+Class: Fighter 8, Dragon Lord 8
 All: Weapon Focus
 ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Focus
@@ -1240,7 +1240,7 @@ Abbreviation: Gtr Weapon Spec
 SortName: Weapon Specialization2
 Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
-Class: Fighter 12
+Class: Fighter 12, Dragon Lord 12
 All: Weapon Focus, Weapon Specialization
 ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Specialization
@@ -1352,27 +1352,27 @@ FeatName: Heavy Armor Champion
 SortName: Heavy Armor Training4
 Group: Heroic, Defense
 Descrip: +12 PRR and MRR while wearing heavy armor.
-Class: Fighter 14
+Class: Fighter 14, Dragon Lord 14
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Combatant
 SortName: Heavy Armor Training2
 Group: Heroic, Defense
 Descrip: +6 PRR and MRR while wearing heavy armor.
-Class: Fighter 6
+Class: Fighter 6, Dragon Lord 6
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Master
 SortName: Heavy Armor Training3
 Group: Heroic, Defense
 Descrip: +9 PRR and MRR while wearing heavy armor.
-Class: Fighter 10
+Class: Fighter 10, Dragon Lord 10
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heavy Armor Training
 Group: Heroic, Defense
 Descrip: +3 PRR and MRR while wearing heavy armor.
-Class: Fighter 2
+Class: Fighter 2, Dragon Lord 2
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Heighten Spell
@@ -2591,7 +2591,7 @@ Abbreviation: Sup Weapon Focus
 SortName: Weapon Focus3
 Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
-Class: Fighter 16
+Class: Fighter 16, Dragon Lord 16
 All: Weapon Focus, Greater Weapon Focus
 ClassBonus: Fighter, Dragon Lord
 SharedSelector: Greater Weapon Focus
@@ -2606,7 +2606,7 @@ FeatName: Tactical Combatant
 SortName: Tactical Training2
 Group: Heroic, Melee
 Descrip: +4 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 8
+Class: Fighter 8, Dragon Lord 8
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Mastery
@@ -2620,13 +2620,13 @@ FeatName: Tactical Supremacy
 SortName: Tactical Training4
 Group: Heroic, Melee
 Descrip: +8 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 16
+Class: Fighter 16, Dragon Lord 16
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Training
 Group: Heroic, Melee
 Descrip: +2 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 4
+Class: Fighter 4, Dragon Lord 4
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactician
@@ -2833,7 +2833,7 @@ ClassBonus: Fighter, Dragon Lord
 FeatName: Weapon Specialization
 Group: Heroic, Melee, Range
 Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
-Class: Fighter 4
+Class: Fighter 4, Dragon Lord 4
 All: Weapon Focus
 ClassBonus: Fighter, Dragon Lord
 SharedSelector: Weapon Focus

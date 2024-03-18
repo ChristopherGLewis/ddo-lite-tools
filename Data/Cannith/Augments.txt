@@ -514,6 +514,7 @@ Vendors: Lahar
 
 Augment: Good Luck
 Color: Blue
+Notes: The Haunting of Saltmarsh
 ML: 12
 Value: +1
 Store: 95
@@ -522,6 +523,8 @@ ML: 20
 Value: +2
 Store: 175
 Vendors: Gianthold; Lahar
+ML: 28
+Value: +3
 
 Augment: Spell Power
 Color: Red
@@ -954,3 +957,398 @@ Flags: Static; Named
 Descrip: Disintegration (2% for 15d20+300 untyped damage)
 Notes: Wake Me Up Inside
 ML: 28
+
+Augment: Clearwater Diamond
+Color: Colorless
+Flags: Static; Named
+Descrip: 1 Positive Healing per minute.
+Notes: Under the Cover of Darkness
+ML: 1
+
+Augment: Diamond of the Magi
+Color: Colorless
+Flags: Static; Named
+Descrip: Insightful Wizardry +100
+Notes: Under the Cover of Darkness	
+ML: 28
+
+Augment: Topaz of Lesser Dragonmarks
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Lesser Dragonmark charges.
+Notes: The Final Enemy
+ML: 4
+
+Augment: Citrene of Greater Dragonmarks
+Color: Orange
+Flags: Static; Named
+Descrip: Grants +1 Greater Dragonmark charges.
+Notes: The Final Enemy
+ML: 28
+
+Augment: Topaz of Minor Rage
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Rage charges.
+Notes: Swim at Your Own Risk
+ML: 4
+
+Augment: Emerald of Greater Rage
+Color: Green
+Flags: Static; Named
+Descrip: Grants +3 Rage charges.
+Notes: Swim at Your Own Risk
+ML: 28
+
+Augment: Topaz of Minor Smiting
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Smite Evil charges.
+Notes: Danger at Dunwater
+ML: 4
+
+Augment: Emerald of Greater Smiting
+Color: Green
+Flags: Static; Named
+Descrip: Grants +3 Smite Evil charges.
+Notes: Danger at Dunwater
+ML: 28
+
+Augment: Power
+Variants: Abjuration; Conjured; Enchanted; Evocation; Illusory; Necromantic; Transmuted
+Color: Yellow
+Flags: Static; Named
+Descrip: +6 spell focus
+Notes: The Isle of Dread, any chest
+ML: 30
+
+Augment: Arrowbound Topaz
+Color: Yellow
+Flags: Static; Named
+Descrip: Doubleshot 3%
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +3%
+ML: 30
+value: +8%
+Prefix: Legendary
+
+Augment: Brightbane Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Command 
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +4
+ML: 30
+Value: +7
+Prefix: Legendary
+
+Augment: Coalescent Ruby
+Color: Red
+Flags: Static; Named
+Descrip: Potency
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +41
+ML: 30
+Value: +100
+Prefix: Legendary
+
+Augment: Demonheart Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Demonic Shield
+Notes: The Isle of Dread, any chest
+ML: 8
+ML: 30
+Value: Improved
+Prefix: Legendary
+
+Augment: Silvertongue Sapphire
+Color: Blue
+Flags: Static; Named
+Descrip: Linguistics
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: 10%
+ML: 30
+Value: 15%
+Prefix: Legendary
+
+Augment: Swordcrossed Topaz
+Color: Yellow
+Flags: Static; Named
+Descrip: Doublestrike
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: 6%
+ML: 30
+Value: 15%
+Prefix: Legendary
+
+Augment: Undying Sapphire
+Color: Blue
+Flags: Static; Named
+Descrip: Undying
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +65
+ML: 30
+Value: +225
+Prefix: Legendary
+
+Augment: Wraithborn Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Ethereal
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: Ethereal
+ML: 30
+Value: Ghostly
+Prefix: Legendary
+
+Augment: Power
+Variants: Abjuration; Conjured; Enchanted; Evocation; Illusory; Necromantic; Transmuted
+Color: Yellow
+Flags: Static; Named
+Descrip: +6 spell focus
+Notes: The Isle of Dread, any chest
+ML: 30
+
+Augment: Blast
+Color: Red
+Variants: Acid; Flaming; Icy; Shocking; 
+Flags: Static; Named
+Descrip: A  blast weapon is sheathed in the appropriate element. 
+Descrip: Critical hits with this weapon deal an additional 1 to 10  damage for weapons with a x2 critical multiplier, 
+Descrip: 2 to 20 for a x3 critical multiplier, and 3 to 30 for a x4 multiplier. 
+Descrip: Additionally, if you roll a 20 when attacking and confirm the critical hit, the weapon blasts your target, doing 4 to 24 more elemental damage.
+ML: 8
+ML: 30
+Value: Greater
+Prefix: Legendary
+
+Augment: Implement's
+Color: Red
+Variants: Acid; Flame; Frost; Wind; 
+Flags: Static; Named
+Descrip: An implement adds to the elements spell power. 
+Descrip: Additionally, the item becomes a Spellcasting Implement
+ML: 8
+Value: 70
+ML: 30
+Value: 146
+Prefix: Legendary
+
+Augment: Maiming
+Color: Red
+Flags: Static; Named
+Descrip: This weapon has a twisted haft or grip and spikes along its blade, head, or point. 
+Descrip: Whenever you score a critical hit with this weapon it deals an amount of extra untyped damage depending on its critical multiplier: 
+Descrip: x2 - 1 to 6, x3 - 2 to 12, x4 - 3 to 18.
+ML: 8
+ML: 30
+Value: Greater
+Prefix: Legendary
+
+Augment: Riposte
+Color: Blue
+Flags: Static; Named
+Descrip: Riposte
+ML: 8
+Value: 2
+ML: 30
+Value: 6
+Prefix: Legendary
+
+Augment: The Eye of Daanvi
+Color: Red
+Flags: Static; Named
+Descrip: This weapon becomes Lawfully aligned, and on each hit, deals 10d6 extra Law damage to all non-Lawful enemies.
+Notes: Order in the Court!, end chest
+ML: 30
+
+Augment: The Eye of Dolurrh
+Color: Red
+Flags: Static; Named
+Descrip: This weapon gains Ghost Touch, and on each hit, deals 10d6 Evil damage.
+Notes: The Hand and the Eyes, end chest
+ML: 30
+
+Augment: The Eye of Lamannia
+Color: Red
+Flags: Static; Named
+Descrip: This weapon becomes an Implement. +146 Equipment bonus to Positive and Force Spellpower.
+Notes: Growing Pains, end chest
+ML: 30
+
+Augment: The Eye of Mabar
+Color: Red
+Flags: Static; Named
+Descrip: This weapon becomes Evil aligned. You heal 5d2 damage per strike, and when you slay an enemy, you gain 15 Temporary HP. If you are Undead, this healing becomes Negative.
+Notes: Army of Eternal Night, end chest
+ML: 30
+
+Augment: The Eye of Shavarath
+Color: Red
+Flags: Static; Named
+Descrip: You are immune to Fear. On a Critical Hit, this weapon applies the Shaken debuff.
+Notes: Three Paths to Battle, end chest
+ML: 30
+
+Augment: History of Draconic Interference
+Color: Red
+Flags: Static; Named
+Descrip: Dragon Bane
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: 4
+Prefix: A
+ML: 32
+Value: 6
+Prefix: A Legendary
+
+Augment: Bestiary of the Planes
+Color: Red
+Flags: Static; Named
+Descrip: Magical Beast Bane
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: 4
+ML: 32
+Value: 6
+Prefix: Legendary
+
+Augment: Encyclopedia of the Dead
+Color: Red
+Flags: Static; Named
+Descrip: Undead Bane, Ghost Touch
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: 4
+Prefix: Vol 1 - 
+ML: 32
+Value: 6
+Prefix: Vol 3 - 
+
+Augment: Guide to Animal Handling
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants to Wild Empathy charges.
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: +1
+ML: 32
+Value: 3
+Prefix: Legendary
+
+Augment: How To Cast Fast
+Color: Blue
+Flags: Static; Named
+Descrip: Efficient Metamagic - Quicken
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: I
+ML: 32
+Value: III
+Prefix: Legendary
+
+Augment: Moment to Moment
+Color: Yellow
+Flags: Static; Named
+Descrip:  Action Boost Enhancement
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: Minor
+ML: 32
+Prefix: Legendary
+
+Augment: Ravil's Book of Recipes
+Flags: Static; Named
+Descrip: Colorless
+Flags: Static; Named
+Descrip: Vitality 
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: +29
+ML: 32
+Value: +48
+Prefix: Legendary
+
+Augment: The Art of Persuasion
+Color: Yellow
+Flags: Static; Named
+Descrip: Assassinate 
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: +10
+Prefix: Vol. 1 -
+ML: 32
+Value: +16
+Prefix: Vol. 3 -
+
+Augment: The Art of Sabotage
+Color: Yellow
+Flags: Static; Named
+Descrip: Armor-Piercing - 14%
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: 14%
+Prefix: Vol. 1 -
+ML: 32
+Value: 22%
+Prefix: Vol. 3 -
+
+Augment: Book of Defense
+variant: Fortitude; Reflexes; Willpower
+Color: Blue
+Flags: Static; Named
+Descrip: Save
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: +8
+Prefix: The 
+ML: 32
+Value: 12
+Prefix: The Legendary
+
+Augment: Limits of Construction
+Color: Red
+Flags: Static; Named
+Descrip: Construct Bane 4
+Notes: Vecna Unleashed, any chest
+ML: 18
+Value: 4
+Prefix: The Finite
+ML: 32
+Value: 6
+Prefix: The Infinite
+
+Augment: A Treatise on Battle
+Flags: Static; Named
+Descrip: Orange
+Flags: Static; Named
+Descrip: Combat Mastery +11
+Descrip: Immunity to Fear
+Notes: Fire Over Morgrave
+ML: 32
+
+Augment: The Blackstone Liturgy
+Color: Purple
+Flags: Static; Named
+Descrip: Nullification +153
+Descrip: Item becomes a Spellcasting Implement
+Flags: Static; Named
+Descrip: Fire Over Morgrave
+ML: 32
+
+Augment: Weaverwisp Melody
+Color: Green
+Flags: Static; Named
+Descrip: Your Inspire Greatness grants your allies an additional +3 Physical Resistance Rating.
+Flags: Static; Named
+Descrip: Fire Over Morgrave
+ML: 32
+

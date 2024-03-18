@@ -16,11 +16,11 @@ Any issues and input should be filed there.
 ### 4.6.0 - Updates for U66 
 Changes:
 - Addition to DragonLord (thanks as always to Yhelm!)
-- Updates to Epic Destinies
+- Updates to Epic Destinies (thanks as always to Yhelm!)
 
 Fixes:
-- Set Max Crafting Level to 32
-- Fixed issue in compendium with case insensitive sorting resulting in issues with "Lost..." quests et al. (Thanks MIvanIsten)
+- Set Cannith Crafting Max Augment level to 32
+- Added Augments from newer releases
 
 ### 4.5.0 - Updates for U62/U63/U64/U65
 Changes:

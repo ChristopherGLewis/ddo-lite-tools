@@ -4,10 +4,10 @@ Begin VB.Form frmAugments
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Augments"
-   ClientHeight    =   9024
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   13548
+   ClientHeight    =   9015
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   13560
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -21,8 +21,8 @@ Begin VB.Form frmAugments
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
    MaxButton       =   0   'False
-   ScaleHeight     =   9024
-   ScaleWidth      =   13548
+   ScaleHeight     =   9015
+   ScaleWidth      =   13560
    StartUpPosition =   3  'Windows Default
    Begin VB.CheckBox chkScaling 
       Appearance      =   0  'Flat
@@ -44,8 +44,8 @@ Begin VB.Form frmAugments
       Tag             =   "Scaling"
       Top             =   6540
       Width           =   2832
-      _ExtentX        =   4995
-      _ExtentY        =   3302
+      _ExtentX        =   5001
+      _ExtentY        =   3307
       TitleSize       =   2
       CanScroll       =   0   'False
    End
@@ -56,8 +56,8 @@ Begin VB.Form frmAugments
       ForeColor       =   &H80000008&
       Height          =   252
       Left            =   3240
-      ScaleHeight     =   252
-      ScaleWidth      =   9972
+      ScaleHeight     =   255
+      ScaleWidth      =   9975
       TabIndex        =   11
       Top             =   480
       Width           =   9972
@@ -141,8 +141,8 @@ Begin VB.Form frmAugments
       TabIndex        =   2
       Top             =   540
       Width           =   2832
-      _ExtentX        =   4995
-      _ExtentY        =   10245
+      _ExtentX        =   5001
+      _ExtentY        =   10001
    End
    Begin CannithCrafting.userHeader usrFooter 
       Height          =   384
@@ -151,8 +151,8 @@ Begin VB.Form frmAugments
       TabStop         =   0   'False
       Top             =   8640
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -166,8 +166,8 @@ Begin VB.Form frmAugments
       TabStop         =   0   'False
       Top             =   0
       Width           =   13548
-      _ExtentX        =   23897
-      _ExtentY        =   677
+      _ExtentX        =   23892
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -180,8 +180,8 @@ Begin VB.Form frmAugments
       Top             =   720
       Visible         =   0   'False
       Width           =   6852
-      _ExtentX        =   12086
-      _ExtentY        =   13568
+      _ExtentX        =   12091
+      _ExtentY        =   13573
    End
    Begin VB.PictureBox picContainer 
       Appearance      =   0  'Flat
@@ -190,8 +190,8 @@ Begin VB.Form frmAugments
       ForeColor       =   &H80000008&
       Height          =   7812
       Left            =   3240
-      ScaleHeight     =   7812
-      ScaleWidth      =   9972
+      ScaleHeight     =   7815
+      ScaleWidth      =   9975
       TabIndex        =   3
       Top             =   780
       Width           =   9972
@@ -203,8 +203,8 @@ Begin VB.Form frmAugments
          ForeColor       =   &H80000008&
          Height          =   1392
          Left            =   0
-         ScaleHeight     =   1392
-         ScaleWidth      =   7092
+         ScaleHeight     =   1395
+         ScaleWidth      =   7095
          TabIndex        =   5
          Tag             =   "ctl"
          Top             =   0
@@ -305,7 +305,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Private Const MaxLevel As Long = 30
+Private Const MaxLevel As Long = 32
 
 Private Type LinkType
     AugmentName As String
@@ -1154,8 +1154,8 @@ Private Sub ClickLink(pstrTag As String)
     Dim i As Long
     
     strSplit = Split(pstrTag, "|")
-    mlngAugment = Val(strSplit(0))
-    mlngScale = Val(strSplit(1))
+    mlngAugment = val(strSplit(0))
+    mlngScale = val(strSplit(1))
     If db.Augment(mlngAugment).Variations = 1 Then
         mlngVariant = 1
         Me.usrAugment.SetSelected mlngAugment, mlngVariant, mlngScale
@@ -1187,7 +1187,7 @@ Private Sub ClickLink(pstrTag As String)
 End Sub
 
 Private Sub mnuContext_Click(Index As Integer)
-    mlngVariant = Val(Me.mnuContext(Index).Tag)
+    mlngVariant = val(Me.mnuContext(Index).Tag)
     If mlngVariant = 0 Then
         mlngAugment = 0
         mlngScale = 0

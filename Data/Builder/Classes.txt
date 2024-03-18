@@ -1,4 +1,3 @@
-
 ClassName: Alchemist
 Initial: A, Al, Alchemist, Alc
 Color: Blue
@@ -262,6 +261,7 @@ SpellList9: Celestial Bombardment, Divine Wrath, Energy Drain, Implosion, Mass H
 
 ClassName: Fighter
 Initial: F, Fi, Fighter, Ftr
+DisallowedClasses: Dragon Lord
 Color: Orange
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 1
@@ -722,6 +722,7 @@ SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Mons
 
 ClassName: Dragon Lord
 Initial: D, DL, DrgLord, DRL
+DisallowedClasses: Fighter
 Color: Orange
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 1
