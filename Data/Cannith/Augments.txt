@@ -518,10 +518,14 @@ ML: 12
 Value: +1
 Store: 95
 Vendors: Gianthold
+Notes: The Haunting of Saltmarsh
 ML: 20
 Value: +2
 Store: 175
 Vendors: Gianthold; Lahar
+ML: 28
+Notes: The Haunting of Saltmarsh
+Value: +3
 
 Augment: Spell Power
 Color: Red
@@ -954,3 +958,166 @@ Flags: Static; Named
 Descrip: Disintegration (2% for 15d20+300 untyped damage)
 Notes: Wake Me Up Inside
 ML: 28
+
+Augment: Clearwater Diamond
+Color: Colorless
+Flags: Static; Named
+Descrip: 1 Positive Healing per minute.
+Notes: Under the Cover of Darkness
+ML: 1
+
+Augment: Diamond of the Magi
+Color: Colorless
+Flags: Static; Named
+Descrip: Insightful Wizardry +100
+Notes: Under the Cover of Darkness	
+ML: 28
+
+Augment: Topaz of Lesser Dragonmarks
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Lesser Dragonmark charges.
+Notes: The Final Enemy
+ML: 4
+
+Augment: Citrene of Greater Dragonmarks
+Color: Orange
+Flags: Static; Named
+Descrip: Grants +1 Greater Dragonmark charges.
+Notes: The Final Enemy
+ML: 28
+
+Augment: Topaz of Minor Rage
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Rage charges.
+Notes: Swim at Your Own Risk
+ML: 4
+
+Augment: Emerald of Greater Rage
+Color: Green
+Flags: Static; Named
+Descrip: Grants +3 Rage charges.
+Notes: Swim at Your Own Risk
+ML: 28
+
+Augment: Topaz of Minor Smiting
+Color: Yellow
+Flags: Static; Named
+Descrip: Grants +1 Smite Evil charges.
+Notes: Danger at Dunwater
+ML: 4
+
+Augment: Emerald of Greater Smiting
+Color: Green
+Flags: Static; Named
+Descrip: Grants +3 Smite Evil charges.
+Notes: Danger at Dunwater
+ML: 28
+
+Augment: Power
+Variants: Abjuration; Conjured; Enchanted; Evocation; Illusory; Necromantic; Transmuted
+Color: Yellow
+Flags: Static; Named
+Descrip: +6 spell focus
+Notes: The Isle of Dread, any chest
+ML: 30
+
+Augment: Arrowbound Topaz
+Color: Yellow
+Flags: Static; Named
+Descrip: Doubleshot 3%
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +3%
+ML: 30
+value: +8%
+Prefix: Legendary
+
+Augment: Brightbane Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Command 
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +4
+ML: 30
+Value: +7
+Prefix: Legendary
+
+Augment: Coalescent Ruby
+Color: Red
+Flags: Static; Named
+Descrip: Potency
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +41
+ML: 30
+Value: +100
+Prefix: Legendary
+
+Augment: Demonheart Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Demonic Shield
+Notes: The Isle of Dread, any chest
+ML: 8
+ML: 30
+Value: Improved
+Prefix: Legendary
+
+Augment: Silvertongue Sapphire
+Color: Blue
+Flags: Static; Named
+Descrip: Linguistics
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: 10%
+ML: 30
+Value: 15%
+Prefix: Legendary
+
+Augment: Swordcrossed Topaz
+Color: Yellow
+Flags: Static; Named
+Descrip: Doublestrike
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: 6%
+ML: 30
+Value: 15%
+Prefix: Legendary
+
+Augment: Undying Sapphire
+Color: Blue
+Flags: Static; Named
+Descrip: Undying
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: +65
+ML: 30
+Value: +225
+Prefix: Legendary
+
+Augment: Wraithborn Emerald
+Color: Green
+Flags: Static; Named
+Descrip: Ethereal
+Notes: The Isle of Dread, any chest
+ML: 8
+Value: Ethereal
+ML: 30
+Value: Ghostly
+Prefix: Legendary
+
+Augment: Power
+Variants: Abjuration; Conjured; Enchanted; Evocation; Illusory; Necromantic; Transmuted
+Color: Yellow
+Flags: Static; Named
+Descrip: +6 spell focus
+Notes: The Isle of Dread, any chest
+ML: 30
+
+
+
+
