@@ -108,7 +108,7 @@ Flags: Unselectable
 FeatName: Armor Class Bonus Sacred Fist
 Group: Heroic, Misc
 Descrip: Sacred Fist Paladins get a stacking bonus to their AC:}{-A passive Charisma bonus equal to their Charisma modifier, while unarmored and not using a shield.}{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
-Class: Paladin 1
+Class: Sacred Fist 1
 Flags: Unselectable
 
 FeatName: Armor Proficiency
@@ -177,13 +177,13 @@ ClassBonus: Artificer, Wizard
 FeatName: Aura of Courage
 Group: Heroic, Misc
 Descrip: Beginning at 3rd level, a Paladin is immune to fear (magical or otherwise).}Each ally within 10 feet of the paladin gains a +4 morale bonus on saving throws against fear effects for 9 seconds. This ability functions while the paladin is conscious, but not if she is unconscious or dead.
-Class: Paladin 3
+Class: Paladin 3, Sacred Fist 3
 Flags: Unselectable
 
 FeatName: Aura of Good
 Group: Heroic, Misc
 Descrip: This Paladin class feature grants a +1 bonus to AC and saving throws to all allies within range.
-Class: Paladin 1
+Class: Paladin 1, Sacred Fist 1
 Flags: Unselectable
 
 FeatName: Barbarian Damage Reduction
@@ -204,20 +204,20 @@ ClassOnlyLevel: 4, 8, 12, 16, 20
 FeatName: Bardic Ballad
 Group: Heroic, Misc
 Descrip: You are constantly surrounded by a faint aura of Bardic Music, and it benefits you and your nearby allies in combat. You and all nearby allies receive the benefits of Inspire Courage as long as you are alive and not incapacitated. Certain Bard feats and abilities can alter or increased the benefits of your Ballad.
-Class: Bard 1
+Class: Bard 1, Stormsinger 1
 Flags: Unselectable
 
 FeatName: Bardic Inspiration
 Group: Heroic, Misc
 Descrip: Activate this ability to Inspire a single target ally or yourself. Gaining more effective Bard levels will increase the duration. The following additional abilities add to the effect of Bardic Inspiration.
-Class: Bard 3
+Class: Bard 3, Stormsinger 3
 Flags: Unselectable
 
 FeatName: Beloved of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Favored Soul 12, Paladin 12, Sacred Fist 12
+Class: Cleric 12, Dark Apostate 12, Favored Soul 12, Paladin 12
 Flags: Deity
 All: Child of
 SharedSelector: Follower of
@@ -262,15 +262,14 @@ Descrip: +3 to attack and damage rolls with daggers.
 FeatName: Biting Acid
 Group: Heroic, Melee
 Descrip: 1d6 acid damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
-Class: Druid 2
+Class: Druid 2, Blightcaster 2
 Flags: Unselectable
 
 FeatName: Biting Poison
 Group: Heroic, Melee
 Descrip: 1d8 poison damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
-Class: Druid 2
+Class: Druid 2, Blightcaster 2
 Flags: Unselectable
-
 
 FeatName: Blinding Speed
 Group: Epic, Melee, Range
@@ -341,7 +340,7 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
 All: Follower of
-Class: Cleric 3, Favored Soul 3, Paladin 3, Sacred Fist 3
+Class: Cleric 3, Dark Apostate 3, Favored Soul 3, Paladin 3
 Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
@@ -499,7 +498,7 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Your faith has been rewarded with an active ability.
 All: Follower of
-Class: Cleric 6, Favored Soul 6, Paladin 6, Sacred Fist 6
+Class: Cleric 6, Dark Apostate 6, Favored Soul 6, Paladin 6
 Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
@@ -584,19 +583,19 @@ Flags: Unselectable
 FeatName: Divine Dream
 Group: Heroic, Misc
 Descrip: While centered, you may use your Charisma score for attack and damage with weapons. In addition, while centered, you qualify for the bonuses from the Greater Sacred Defense enhancements, regardless of equipped armor.
-Class: Paladin 6
+Class: Paladin 6, Sacred Fist 6 
 Flags: Unselectable
 
 FeatName: Divine Grace
 Group: Heroic, Misc
 Descrip: At 2nd level, a Paladin gains a bonus equal to his or her Charisma modifier (if not negative) on all saving throws.{Divine Grace is capped at 2+(3 x paladin level). For multiclassing, this means 2 levels of Paladin would at best grant a max of +8 to saves (2 + (3x2)).
-Class: Paladin 2
+Class: Paladin 2, Sacred Fist 2
 Flags: Unselectable
 
 FeatName: Divine Health
 Group: Heroic, Misc
 Descrip: This class feature makes the Paladin immune to all diseases (natural, magical, and supernatural).
-Class: Paladin 3
+Class: Paladin 3, Sacred Fist 3
 Flags: Unselectable
 
 FeatName: Dodge
@@ -609,9 +608,9 @@ ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 FeatName: Domain
 Group: Heroic, Misc
 Descrip: Cleric Domains offer bonuses or spell-like abilities at levels 2, 5, 9 and 14.
-Class: Cleric 2
+Class: Cleric 2, Dark Apostate 2
 Flags: ClassOnly, SelectorOnly, Domain
-ClassOnlyClass: Cleric
+ClassOnlyClass: Cleric, Dark Apostate
 ClassOnlyLevel: 2
 Selector: Air Domain, Animal Domain, Chaos Domain, Death Domain, Destruction Domain, Earth Domain, Fire Domain, Good Domain, Healing Domain, Knowledge Domain, Law Domain, Luck Domain, Magic Domain, Protection Domain, Strength Domain, Sun Domain, Trickery Domain, War Domain, Water Domain
 SelectorName: Air Domain
@@ -719,19 +718,19 @@ Level: 28
 FeatName: Druid Spontaneous Casting
 Group: Heroic, Misc
 Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
-Class: Druid 1
+Class: Druid 1, Blightcaster 1
 Flags: Unselectable
 
 FeatName: Druidic Oath
 Group: Heroic, Misc
 Descrip: All druids take an oath that prohibits them from wearing metal armor, using metal shields or orbs, and using rune arms. Doing so suppresses your druidic abilities. Warforged druids are forbidden from taking armor feats other than Composite Plating.
-Class: Druid 1
+Class: Druid 1, Blightcaster 1
 Flags: Unselectable
 
 FeatName: Eldritch Blast
 Group: Heroic, Misc
 Descrip: This is a toggle feat. When you toggle it on, your basic attack, regardless of weapons held (except for wands), becomes a ranged magical attack that hits a single enemy. It does not cost spell points or hit points; only time, much like swinging a weapon.
-Class: Warlock 1
+Class: Warlock 1, Acolyte 1
 ClassBonus: Warlock
 Flags: ClassOnly, Unselectable
 
@@ -822,7 +821,7 @@ FeatName: Epic Eldritch Blast
 Group: Epic, Spellcasting
 Descrip: +2d6 Blast Dice, +1 per 2 Epic levels, max +7d6 dice at level 30.
 Level: 21
-Class: Warlock 12
+Class: Warlock 12, Acolyte 12
 
 FeatName: Epic Fortitude
 Group: Epic, Defense
@@ -910,7 +909,7 @@ FeatName: Evasion
 Group: Misc
 Descrip: When you make a successful Reflex save to avoid damage, you suffer no damage instead of half damage.
 Flags: Unselectable
-Class: Monk 2, Ranger 9, Rogue 2
+Class: Monk 2, Ranger 9, Rogue 2, Sacred Fist 2
 
 FeatName: Expanded Clip
 Group: Epic, Range
@@ -972,13 +971,13 @@ FeatName: Extra Turning
 Group: Heroic, Misc
 Descrip: +4 Turns per rest.
 RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Paladin 4
+Class: Cleric 1, Dark Apostate 1, Paladin 4
 
 FeatName: Fascinate
 Group: Misc
 Descrip: This song fascinates most nearby living enemies, causing them to cease their activities until they're damaged or the effect ends.
 Flags: Unselectable
-Class: Bard 1
+Class: Bard 1, Stormsinger 1
 
 FeatName: Fast Movement
 Group: Heroic, Misc
@@ -996,24 +995,63 @@ FeatName: Favored Enemy
 Group: Heroic, Misc
 Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
 Flags: ClassOnly
-ClassOnlyClass: Ranger
+ClassOnlyClass: Ranger, Dark Hunter
 ClassOnlyLevel: 1, 5, 10, 15, 20
-Class: Ranger 1
+Class: Ranger 1, Dark Hunter 1
 Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Fey, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
-
-FeatName: Favored Enemy (DH)
-Group: Heroic, Misc
-Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
-Flags: ClassOnly
-ClassOnlyClass: Dark Hunter
-ClassOnlyLevel: 1, 5, 10, 15, 20
-Class: Dark Hunter 1
-Selector: Aberration, Animal, Elf, Human, Monstrous Humanoid, Vermin
+SelectorName: Aberration
+Class: Ranger 1, Dark Hunter 1
+SelectorName: Animal
+Class: Ranger 1, Dark Hunter 1
+SelectorName: Chaotic Outsider
+Class: Ranger 1
+SelectorName: Construct
+Class: Ranger 1
+SelectorName: Dragon
+Class: Ranger 1
+SelectorName: Dwarf
+Class: Ranger 1
+SelectorName: Elemental
+Class: Ranger 1
+SelectorName: Elf
+Class: Ranger 1, Dark Hunter 1
+SelectorName: Evil Outsider
+Class: Ranger 1
+SelectorName: Fey
+Class: Ranger 1
+SelectorName: Giant
+Class: Ranger 1
+SelectorName: Gnoll
+Class: Ranger 1
+SelectorName: Goblinoid
+Class: Ranger 1
+SelectorName: Halfling
+Class: Ranger 1
+SelectorName: Human
+Class: Ranger 1, Dark Hunter 1
+SelectorName: Lawful Outsider
+Class: Ranger 1
+SelectorName: Magical Beast
+Class: Ranger 1
+SelectorName: Monstrous Humanoid
+Class: Ranger 1, Dark Hunter 1
+SelectorName: Ooze
+Class: Ranger 1
+SelectorName: Orc
+Class: Ranger 1
+SelectorName: Plant
+Class: Ranger 1
+SelectorName: Reptilian
+Class: Ranger 1
+SelectorName: Undead
+Class: Ranger 1
+SelectorName: Vermin
+Class: Ranger 1, Dark Hunter 1
 
 FeatName: Fear Immunity
 Group: Heroic, Misc
 Descrip: A paladin is immune to fear effects.
-Class: Paladin 3
+Class: Paladin 3, Sacred Fist 3
 Flags: Unselectable
 
 FeatName: Feline Agility
@@ -1036,16 +1074,16 @@ Level: 25
 FeatName: Flurry of Blows
 Group: Heroic, Misc
 Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
-Class: Monk 1
+Class: Monk 1, Sacred Fist 1
 Flags: Unselectable
 
 FeatName: Follower of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Cleric 1, Favored Soul 1, Paladin 1, Sacred Fist 1
+Class: Cleric 1, Dark Apostate 1, Favored Soul 1, Paladin 1
 Flags: Deity, ClassOnly
-ClassOnlyClass: Cleric, Favored Soul, Paladin, Sacred Fist
+ClassOnlyClass: Cleric, Dark Apostate, Favored Soul, Paladin
 ClassOnlyLevel: 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
@@ -1408,7 +1446,7 @@ All: Augment Summoning
 FeatName: Improved Bardic Music
 Group: Heroic, Misc
 Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
-Class: Bard 12
+Class: Bard 12, Stormsinger 12
 Skill: Perform 15
 
 FeatName: Improved Critical
@@ -1540,7 +1578,7 @@ FeatName: Improved Turning
 Group: Heroic, Misc
 Descrip: Gives you the ability to turn undead as if you were one cleric level higher.
 RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Paladin 4
+Class: Cleric 1, Dark Apostate 1, Paladin 4
 
 FeatName: Improved Two Handed Fighting
 Abbreviation: Improved THF
@@ -1605,13 +1643,13 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Inspire Courage
 Group: Misc
 Descrip: Gives a +1 music bonus to attack rolls, damage rolls, and saving throws versus fear, as well as +3 universal Spell Power.
-Class: Bard 1
+Class: Bard 1, Stormsinger 1
 Skill: Perform 3
 
 FeatName: Inspire Excellence
 Group: Epic, Misc
 Descrip: Song that grants a +2 competence bonus to all ability scores to yourself and nearby allies. Same duration as Inspire Courage.
-Class: Bard 15
+Class: Bard 15, Stormsinger 15
 Skill: Perform 20
 Level: 21
 All: Inspire Heroics
@@ -1681,7 +1719,7 @@ FeatName: Lay On Hands
 Group: Misc
 Descrip: Heal yourself or ally for (10 + Paladin level) x Charisma modifier hit points, or deals that much damage to an undead target. Warforged do not suffer a penalty in amount healed.
 Flags: Unselectable
-Class: Paladin 2
+Class: Paladin 2, Sacred Fist 2
 
 FeatName: Least Dragonmark
 Group: Heroic, Misc
@@ -1793,7 +1831,7 @@ Descrip: Grants proficiency with all martial weapons. Barbarians, Fighters, Pala
 FeatName: Mass Suggestion Song
 Group: Heroic, Misc
 Descrip: This song charms multiple foes that are currently under the effects of the bardic Fascinate song.
-Class: Bard 18
+Class: Bard 18, Stormsinger 18
 Flags: Unselectable
 WikiName: Mass_Suggesion_(song)
 
@@ -1911,7 +1949,7 @@ All: Point Blank Shot
 FeatName: Natural Fighting
 Group: Heroic, Melee
 Descrip: +4 Melee Power, PRR and Doublestrike while in a druid animal form.}{ In bear form: Increase the ability score modifier to damage while using a two-handed weapon to 2.0/2.5/3.0. Gain 60/30/30% Strikethrough chance.}{ This may be taken up to 3 times.
-Class: Druid 3
+Class: Druid 3, Blightcaster 3
 Repeat: 3
 
 FeatName: Negotiator
@@ -1961,7 +1999,7 @@ Group: Heroic, Spellcasting, Misc
 WikiName: Warlock#Pact Choices
 Descrip: Your Pact applies extra damage to your Eldritch Blast, adds spells to your spell list and grants special abilities. Some Pacts carry alignment restrictions.
 Flags: Pact
-Class: Warlock 1
+Class: Warlock 1, Acolyte 1
 Flags: ClassOnly
 ClassOnlyClass: Warlock
 ClassOnlyLevel: 1
@@ -2238,13 +2276,13 @@ Flags: Unselectable
 FeatName: Religious Lore
 Group: Heroic, Spellcasting
 Descrip: This feat grants represents your knowledge of the Religion. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Cleric 1, Favored Soul 1, Paladin 1, Bard 1
+Class: Cleric 1, Dark Apostate 1, Favored Soul 1, Paladin 1, Bard 1, Sacred Fist 1
 Flags: Unselectable
 
 FeatName: Remove Disease
 Group: Heroic, Misc
 Descrip: Cures all diseases on an ally.
-Class: Paladin 3
+Class: Paladin 6, Sacred Fist 6
 Flags: Unselectable
 
 FeatName: Resilience
@@ -2427,7 +2465,7 @@ Class: Rogue 1, Artificer 1
 SelectorName: Open Lock
 Class: Rogue 1, Artificer 1
 SelectorName: Perform
-Class: Bard 1
+Class: Bard 1, Stormsinger 1
 
 FeatName: Skill Mastery
 Group: Heroic, Misc
@@ -2462,7 +2500,7 @@ FeatName: Smite Evil
 Group: Misc
 Descrip: Melee special attack (Cooldown: 6 seconds): Deal 3 * Paladin level + 7 extra damage to evil creatures. Enhancements can improved the crit profile (up to +2 range and multiplier) and reduce the cooldown. Limited uses per rest.
 Flags: Unselectable
-Class: Paladin 1
+Class: Paladin 1, Sacred Fist 1
 
 FeatName: Snake Blood
 Group: Heroic, Defense
@@ -2478,7 +2516,7 @@ Class: Rogue 1
 FeatName: Song of Freedom
 Group: Heroic, Misc
 Descrip: This ability is equivalent to the Break Enchantment spell on one ally.
-Class: Bard 12
+Class: Bard 12, Stormsinger 12
 Flags: Unselectable
 
 FeatName: Soothing Song
@@ -2575,14 +2613,14 @@ ClassBonus: Fighter, Dragon Lord
 FeatName: Stunning Fist
 Group: Heroic, Melee
 Descrip: Unarmed special attack: (Cooldown: 6 seconds, 15 Ki): Stun target for 6 seconds, fortitude save 10 + 1/2 character level + Wisdom modifier + other bonuses. Requires handwraps.
-Class: Monk 1
+Class: Monk 1, Sacred Fist 1
 ClassBonus: Monk
 RaceBonus: Human
 
 FeatName: Suggestion Song
 Group: Heroic, Misc
 Descrip: This song charms a single foe that is currently under the effects of the bardic Fascinate song.
-Class: Bard 6
+Class: Bard 6, Stormsinger 6
 Flags: Unselectable
 WikiName: Suggesion_(song)
 
@@ -2613,7 +2651,7 @@ FeatName: Tactical Mastery
 SortName: Tactical Training3
 Group: Heroic, Melee
 Descrip: +6 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 12
+Class: Fighter 12, Dragon Lord 12
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Tactical Supremacy
@@ -2716,7 +2754,7 @@ Class: Acolyte 1
 FeatName: Turn Undead
 Group: Misc
 Descrip: Cause undead to freeze in place, run away, or explode. Large area of effect, limited uses per rest.
-Class: Cleric 1, Paladin 4
+Class: Cleric 1, Dark Apostate 1, Paladin 4, Sacred Fist 4
 Flags: Unselectable
 
 FeatName: Two Handed Fighting
@@ -2768,7 +2806,7 @@ All: Greater Pact Attunement
 FeatName: Unarmed Strike
 Group: Heroic, Misc
 Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
-Class: Monk 1
+Class: Monk 1, Sacred Fist 1
 Flags: Unselectable
 
 FeatName: Uncanny Dodge
@@ -2785,7 +2823,7 @@ Flags: Unselectable
 FeatName: Venom Immunity
 Group: Heroic, Misc
 Descrip: You are immune to ability score damage from natural poisons. (This has no effect on magical or supernatural poisons.)
-Class: Druid 9
+Class: Blightcaster 9
 Flags: Unselectable
 
 FeatName: Vorpal Strikes
