@@ -837,7 +837,7 @@ ML: 6
 
 Augment: Iron Hand
 Variants: Ruby of the Iron Hand
-Color: 	Red
+Color: Red
 Descrip: Cold Iron
 Notes: Snowpeaks Festival, Flurry trade-in
 Flags: Static; Named
@@ -1110,13 +1110,7 @@ ML: 30
 Value: Ghostly
 Prefix: Legendary
 
-Augment: Power
-Variants: Abjuration; Conjured; Enchanted; Evocation; Illusory; Necromantic; Transmuted
-Color: Yellow
-Flags: Static; Named
-Descrip: +6 spell focus
-Notes: The Isle of Dread, any chest
-ML: 30
+
 
 Augment: Blast
 Color: Red
@@ -1242,7 +1236,7 @@ Notes: Vecna Unleashed, any chest
 ML: 18
 Value: +1
 ML: 32
-Value: 3
+Value: +3
 Prefix: Legendary
 
 Augment: How To Cast Fast
@@ -1268,7 +1262,7 @@ Prefix: Legendary
 
 Augment: Ravil's Book of Recipes
 Flags: Static; Named
-Descrip: Colorless
+Color: Colorless
 Flags: Static; Named
 Descrip: Vitality 
 Notes: Vecna Unleashed, any chest
@@ -1329,7 +1323,7 @@ Prefix: The Infinite
 
 Augment: A Treatise on Battle
 Flags: Static; Named
-Descrip: Orange
+Color: Orange
 Flags: Static; Named
 Descrip: Combat Mastery +11
 Descrip: Immunity to Fear
@@ -1337,7 +1331,7 @@ Notes: Fire Over Morgrave
 ML: 32
 
 Augment: The Blackstone Liturgy
-Color Purple
+Color: Purple
 Flags: Static; Named
 Descrip: Nullification +153
 Descrip: Item becomes a Spellcasting Implement
