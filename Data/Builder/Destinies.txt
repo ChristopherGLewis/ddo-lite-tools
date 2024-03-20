@@ -899,7 +899,7 @@ AbilityName: Force Selector II
 Descrip: Multiselector: Enhance your Epic Strike or yourself.
 Tier: 4
 Ranks: 3
-All: Tier 3: Force Selector I
+All: Tier 3: Fury Selector I
 Flags: SelectorOnly
 Selector: Overwelming Force, Primal Force
 SelectorName: Overwelming Force
