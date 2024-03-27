@@ -150,7 +150,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Bring Down Wrath
-Descrip: Your weapon attacks now apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application). Your shield is now considered a Favored Weapon for the purposes of your Divine Crusader Destiny Mantle, and now Doublestrikes as if it were an offhand weapon (i.e. 50% of your mainhand).
+Descrip: Your weapon attacks now apply a stack of Vulnerability and Armor Destruction on Critical Hits. (1 second cooldown on the debuff application). Your shield is now considered a Favored Weapon for the purposes of your Divine Crusader Destiny Mantle, and now Doublestrikes as if it were an offhand weapon (i.e. 50% of your main hand).
 Tier: 5
 
 AbilityName: Law of the Divine
@@ -198,7 +198,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Dragon Breath
-Descrip: Epic Strike: This is a Breath Attack spell. Deals 1d6+5 damage per Character level of the element of your choice to all enemies caught within a in a cone in front of you. DC: 20 + Highest of INT/WIS/CHA Mod + Conjuration/Evocation/Transmutation/Necromancy DC (dependant of type) + Breath Weapon DCs. (Cost: 25 SP, Cooldown: 12 seconds)}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
+Descrip: Epic Strike: This is a Breath Attack spell. Deals 1d6+5 damage per Character level of the element of your choice to all enemies caught within a in a cone in front of you. DC: 20 + Highest of INT/WIS/CHA Mod + Conjuration/Evocation/Transmutation/Necromancy DC (dependent of type) + Breath Weapon DCs. (Cost: 25 SP, Cooldown: 12 seconds)}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
 Tier: 1
 Cost: 2
 
@@ -233,7 +233,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Conduit
-Descrip: Double the implement bonus of quarterstaves you wield.
+Descrip: Double the implement bonus of Quarterstaves you wield.
 Tier: 2
 Cost: 2
 
@@ -540,7 +540,7 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Ascendance
-Descrip: Epic Moment: Your single-target Cure Wound spells and Healing Pillar Epic Strike you cast on any target now instead apply to all allies, regardless of distance. These spells cannot crit. Raise Dead and Resurrection spells also raise your target to full HP like True Resurrection does. Finally, your Turn Undead may now turn any type of creature instead of just Undead, will destroy anything it Turns, and you gain +3 Turn Undead Effective Level, Maximum Hit Dice, and HIt Dice per Religious Lore feat you have. (Cooldown: 5 mins)
+Descrip: Epic Moment: Your single-target Cure Wound spells and Healing Pillar Epic Strike you cast on any target now instead apply to all allies, regardless of distance. These spells cannot crit. Raise Dead and Resurrection spells also raise your target to full HP like True Resurrection does. Finally, your Turn Undead may now turn any type of creature instead of just Undead, will destroy anything it Turns, and you gain +3 Turn Undead Effective Level, Maximum Hit Dice, and Hit Dice per Religious Lore feat you have. (Cooldown: 5 mins)
 Tier: 5
 Cost: 2
 
@@ -628,7 +628,7 @@ Cost: 2
 Flags: SelectorOnly
 Selector: Arrow of Discord, Blade of Discord, Echoes of Discord
 SelectorName: Arrow of Discord
-Descrip: AOE Ranged Attack: +20% Damage, +2 Critical Threat Range. Consumes all Chords of Fate. Fires a single discordant shot, hitting every enemy in an area around where the shot hits. Enemies myst make a Fortitude Save vs (DC 20 + Highest Ability Score mod + Stunning Bonuses) or be stunned for 1 second per Chord of Fate consumed. Releasing 3 Chords of Fate Restores 10 Spell Points. (Cooldown: 15 seconds)
+Descrip: AOE Ranged Attack: +20% Damage, +2 Critical Threat Range. Consumes all Chords of Fate. Fires a single discordant shot, hitting every enemy in an area around where the shot hits. Enemies must make a Fortitude Save vs (DC 20 + Highest Ability Score mod + Stunning Bonuses) or be stunned for 1 second per Chord of Fate consumed. Releasing 3 Chords of Fate Restores 10 Spell Points. (Cooldown: 15 seconds)
 All: Tier 1: Epic Strike: The Pluck of a String
 SelectorName: Blade of Discord
 Descrip: Melee Cleave Attack: +30% Damage, +2 to Critical Threat Range. Consumes all Chords of Fate. You cleave your enemies with the power of music. Enemies must make a Fortitude Save vs (DC 20 + Highest Ability Score mod + Stunning Bonuses) or be stunned for 1 second per Chord of Fate consumed. Releasing 3 Chords of Fate Restores 10 Spell Points. (Cooldown: 15 seconds)
@@ -752,7 +752,7 @@ AbilityName: Cut the Strings
 Descrip: SLA: Strike a note to reveal the chords of fate so you might cut them. All monsters within a wide radius around you are forced to dance (Will vs DC:20 + Highest Ability Score Mod + Enchantment bonuses) pulled by the strings of fate for 10 seconds. In addition, for 10 seconds your character gains the ability to cut their strings with any weapon strike or spell at a rate of once per second, instantly killing them. Bosses if they fail their save do not dance but will take an additional 300 Sonic damage that scales with Spell Power when struck for the duration of the effect. Cooldown: 60 seconds.
 Tier: 5
 
-DestinyName: Fury of the wild
+DestinyName: Fury of the Wild
 Abbreviation: Fury
 Type: Destiny
 
@@ -856,7 +856,7 @@ Descrip: If you are not Raging and are currently out of Rage charges, you have a
 Tier: 3
 Ranks: 3
 
-AbilityName: Fury Selector I
+AbilityName: Fury Selector
 Descrip: Multiselector: Enhance your Epic Strike or yourself.
 Tier: 3
 Ranks: 3
@@ -895,14 +895,14 @@ Descrip:  Doubles the damage and stat bonuses of your Primal Scream. If Adrenali
 Tier: 4
 Cost: 2
 
-AbilityName: Force Selector II
+AbilityName: Force Selector
 Descrip: Multiselector: Enhance your Epic Strike or yourself.
 Tier: 4
 Ranks: 3
-All: Tier 3: Fury Selector I
+All: Tier 3: Fury Selector
 Flags: SelectorOnly
-Selector: Overwelming Force, Primal Force
-SelectorName: Overwelming Force
+Selector: Overwhelming Force, Primal Force
+SelectorName: Overwhelming Force
 Descrip: Adrenaline now grants an additional +[25/50/75]% to damage. Rank 3: Foes struck by your Adrenaline attacks are now knocked down for 4 seconds.
 SelectorName: Primal Force
 Descrip: +[1/2/4] Attack bonus and +[2/4/6]% Fortification Bypass. Rank 3: While Two Weapon Fighting or in Animal Form, gain +2% damage with all attacks.
@@ -918,7 +918,7 @@ Tier: 5
 Cost: 2
 
 AbilityName: Scarred by Chaos
-Descrip: Gain +50 Maximum Hit Points and 10 Physical Resistance Rating. Double these bonuses if you have the Harbringer of Chaos Feat.
+Descrip: Gain +50 Maximum Hit Points and 10 Physical Resistance Rating. Double these bonuses if you have the Harbinger of Chaos Feat.
 Tier: 5
 Cost: 2
 
@@ -995,7 +995,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Serenity
-Descrip: Grandmaster of Flowers Destiny Mantle: You may now fight with the Unarmed combat style as if you were a Monk, and may be Centered and use Ki. When you attack with Handwraps or begin falling, you will use the Monk class' animations instead of your own. You gain a +15% Action Boost bonus to movement speed, and no longer take damage from falling. Finally, you are unbothered by the physical restraints of the world: you may tumble through enemies, and are immune to slippery surfaces and most forms of knockdown. You also gain 10 Ki for training this enhancement.
+Descrip: Grandmaster of Flowers Destiny Mantle: You may now fight with the Unarmed combat style as if you were a Monk, and may be Centered and use Ki. When you attack with Handwraps or begin falling, you will use the Monk class's animations instead of your own. You gain a +15% Action Boost bonus to movement speed, and no longer take damage from falling. Finally, you are unbothered by the physical restraints of the world: you may tumble through enemies, and are immune to slippery surfaces and most forms of knockdown. You also gain 10 Ki for training this enhancement.
 Tier: 1
 Cost: 2
 
@@ -1006,7 +1006,7 @@ Ranks: 3
 Flags: SelectorOnly
 Selector: Inner Focus, Wholeness of Spirit
 SelectorName: Inner Focus
-Descrip: Your soul is like a great garden, and its beauty and perfection depend on how you tend it durning all seasons. You may activate this ability to focus your thoughts and instantly restore 10d12 Ki. Cooldown: [120/160/120] seconds
+Descrip: Your soul is like a great garden, and its beauty and perfection depend on how you tend it during all seasons. You may activate this ability to focus your thoughts and instantly restore 10d12 Ki. Cooldown: [120/160/120] seconds
 SelectorName: Wholeness of Spirit
 Descrip: You may expend 50 Ki to bring your mind, body, and soul into harmonious balance, restoring health as if you were affected by the benefits of a Heal spell, as well as curing all ability damage, negative levels, and other Adverse Conditions that may be affecting you. Cooldown: [180/120/90] seconds.
 
@@ -1191,7 +1191,7 @@ Descrip: Your melee and ranged weapons get the Ghost Touch effect. +1 bonus Imbu
 Tier: 2
 
 AbilityName: Honor or Backstab
-Descrip: Pick a style of aproach to combat!
+Descrip: Pick a style of approach to combat!
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
@@ -1284,7 +1284,7 @@ SelectorName: Ranged
 Descrip: AOE Ranged Attack: +40% Damage, +2 Critical Multiplier, +100 Critical Threat Range. Fire a single shot, hitting every enemy in an area around where the shot hits. Can be used while Crowd Controlled, and clears all Crowd Control effects on you when used. (If used while Crowd Controlled, it will fire an arrow at your hard-targeted foe). Cooldown: 30 seconds
 
 AbilityName: Sundering Swings
-Descrip: Creatures affected by your Improved Trip are also made Helpless. This supercedes other Improved Trip effects.}}Creatures affected by your Improved Sunder take -75% Fortification instead of the usual -25%. This supercedes other Improved Sunder effects.
+Descrip: Creatures affected by your Improved Trip are also made Helpless. This supersedes other Improved Trip effects.}}Creatures affected by your Improved Sunder take -75% Fortification instead of the usual -25%. This supersedes other Improved Sunder effects.
 Tier: 5
 
 AbilityName: Dusk Surge
@@ -1295,7 +1295,7 @@ AbilityName: Action Hero
 Descrip: Epic Moment: This ability is counted as an Action Boost, and triggers everything that a normal Action Boost triggers for the duration, but does not place other Action Boosts on cooldown. For 30 seconds, you gain the following Bonuses:}}+8 Action Boost Bonus to Attack}+30 Action Boost Bonus to Melee and Ranged Power}+30% Action Boost Bonus to Attack Speed}+30% Action Boost Bonus to Doublestrike and Doubleshot}+50% Action Boost Bonus to Movement Speed}+15 Action Boost Bonus to AC and Physical Resistance Rating}+15% Action Boost Bonus to Dodge (This bonus ignores your Dodge Cap)}+9 Action Boost bonus to Sunder, Trip, and Stun DCs.}+6 Action Boost Bonus to Saving Throws}+6 Action Boost Bonus to Skills
 Tier: 5
 
-DestinyName: Macrotechnic
+DestinyName: Machrotechnic
 Abbreviation: Macro
 Type: Destiny
 
@@ -1375,11 +1375,11 @@ SelectorName: Tonquin's Thunder Hammer
 Descrip: Form a hammer of pure thunder to strike foes in an area, dealing 1d6+6 Sonic damage per caster level. (Costs: 12 SP, Cooldown: 15 seconds)
 
 AbilityName: Forcefield Generation
-Descrip: Macrotechnic Destiny Mantle: You create a small animated object that floats with you. While active, you gain +15 Repair Amplification, and you absorb 10% of all Force, Piercing, Bludgeoning, Slashing, Electric, Sonic, and Rust damage you take. This is increased to 15% if you are wearing a Rune Arm.
+Descrip: Machrotechnic Destiny Mantle: You create a small animated object that floats with you. While active, you gain +15 Repair Amplification, and you absorb 10% of all Force, Piercing, Bludgeoning, Slashing, Electric, Sonic, and Rust damage you take. This is increased to 15% if you are wearing a Rune Arm.
 Tier: 2
 Cost: 2
 
-AbilityName: Macrotechnic Spell Focus
+AbilityName: Machrotechnic Spell Focus
 Descrip: Multiselector: Select a Spell School to enhance.
 Tier: 3
 Ranks: 3
@@ -1417,7 +1417,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Improved Aegis
-Descrip: While using you Macrotechnic Destiny Mantle, you gain +5 Physical and Magical Resistance Rating. If you are wearing a Rune Arm, gain +10 instead.
+Descrip: While using you Machrotechnic Destiny Mantle, you gain +5 Physical and Magical Resistance Rating. If you are wearing a Rune Arm, gain +10 instead.
 Tier: 3
 Cost: 2
 All: Tier 2: Forcefield Generation
@@ -1434,11 +1434,11 @@ Cost: 2
 Flags: SelectorOnly
 Selector: Blast Drive, Dissonance Drive, Ruin Drive
 SelectorName: Blast Drive
-Descrip: Your Macrotechnic Epic Strike now Stuns enemies struck for 3 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs).}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Electric Epic Strike, this also Supercharges you.}}{Supercharge: +30% Action boost bonus to Movement Speed. Duration: 5 seconds.
+Descrip: Your Machrotechnic Epic Strike now Stuns enemies struck for 3 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs).}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Electric Epic Strike, this also Supercharges you.}}{Supercharge: +30% Action boost bonus to Movement Speed. Duration: 5 seconds.
 SelectorName: Dissonance Drive
-Descrip: Your Macrotechnic Epic Strike now Confuses enemies struck for 6 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs).}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Sonic Epic Strike, they also take 3 stacks of Vulnerability and 3 stacks of Armor Destruction.
+Descrip: Your Machrotechnic Epic Strike now Confuses enemies struck for 6 seconds, assuming they fail a Fortitude save (DC 20 + Highest of INT/WIS/CHA mod + Evocation DCs + bonus Run Arm DCs).}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Sonic Epic Strike, they also take 3 stacks of Vulnerability and 3 stacks of Armor Destruction.
 SelectorName: Ruin Drive
-Descrip: Your Macrotechnic Epic Strike now disassembles enemy constructs, dealing 1d6+6 bonus Rust damage per caster level.}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Repair Epic Strike, this also Supercharges you.}}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
+Descrip: Your Machrotechnic Epic Strike now disassembles enemy constructs, dealing 1d6+6 bonus Rust damage per caster level.}}{If you are using the Electric or Sonic Epic Strikes, their damage is increased to 1d6+8 per caster level.}}{If you are using the Repair Epic Strike, this also Supercharges you.}}{Supercharge: -1 to each of your Metamagic costs. Duration: 5 seconds.
 
 AbilityName: Boost Drive
 Descrip: Multiselector: Install a Drive to enhance your Rune Arm blasts.
@@ -1468,7 +1468,7 @@ Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points
 All: Feat: Maximize Spell
 
 AbilityName: Magical Recoil
-Descrip: Destiny Mantle Improvement: +5 Electric, Sonic, Rust, Repair, and Universal Spell Power. While using your Macrotechnic Destiny Mantle, firing a Rune Arm grants you spell resistance equal to your character level for 10 seconds.
+Descrip: Destiny Mantle Improvement: +5 Electric, Sonic, Rust, Repair, and Universal Spell Power. While using your Machrotechnic Destiny Mantle, firing a Rune Arm grants you spell resistance equal to your character level for 10 seconds.
 Tier: 4
 Cost: 2
 All: Tier 3: Improved Aegis
@@ -1491,7 +1491,7 @@ Descrip: Epic Moment: Shift into MAXIMUM OVERDRIVE. You gain a 100% boost to Run
 Tier: 5
 
 AbilityName: Forcefield Generator
-Descrip: While using your Macrotechnic Destiny Mantle, you gain +10% Insight bonus to Maximum Hit Points. While you have a Rune Arm equipped, increase this bonus to 20%.
+Descrip: While using your Machrotechnic Destiny Mantle, you gain +10% Insight bonus to Maximum Hit Points. While you have a Rune Arm equipped, increase this bonus to 20%.
 Tier: 5
 All: Tier 4: Magical Recoil
 
@@ -1550,7 +1550,7 @@ Selector: Great Summoner, Impregnable Mind
 SelectorName: Great Summoner
 Descrip: You summons, pets, and hirelings gain +4 to all ability scores, increased health, 100% Fortification, and a 40% increase to movement speed. (Note: This only has one rank.)
 SelectorName: Impregnable Mind
-Descrip: +[2/4/6] Will saves and concentration. Rank 3: you no longer fail Will saves on a 1. (Note: This has three ranks, but they currently only show as 1 in the game.)
+Descrip: +[2/4/6] Will Saves and Concentration. Rank 3: you no longer fail Will saves on a 1. (Note: This has three ranks, but they currently only show as the first rank's increase in the game.)
 
 AbilityName: Moontouched
 Descrip: +[1/2/3] Fear Spell DCs
@@ -1598,7 +1598,7 @@ SelectorName: Chill Aura
 Descrip: While in your Magus of the Eclipse Destiny Mantle, enemies within melee range take 1d6+6 Cold damage per caster level and 1d6+6 Negative damage per caster level every 6 seconds. If an enemy would heal from either of these effects, they do not take the damage.
 Cost: 2
 SelectorName: Flash of the Eclipse
-Descrip: While in your Magus of the Eclipse Destiny Mantle. your Colde and Negative spells have a chance to blast your target for an additional 1d6+6 damage per character level a=of the same type as teh spell used, as well as applying one stack of Shattermantle. Each element and the Shattermantle application can only strike once every 5 seconds, tracked separately.
+Descrip: While in your Magus of the Eclipse Destiny Mantle, your Cold and Negative spells have a chance to blast your target for an additional 1d6+6 damage per character level of the same type as the spell used, as well as applying one stack of Shattermantle. Each element and the Shattermantle application can only strike once every 5 seconds, tracked separately.
 Cost: 1
 
 AbilityName: Lunar Insight
@@ -1733,17 +1733,17 @@ Descrip: Multiselector: Choose a second path to follow beyond your first.
 Tier: 0
 Selector: Heart, Sky, Thorn
 SelectorName: Heart
-Descrip: You gain a minor affinity for Heart. You gain the following for each COre Ability you take in this tree, including this one:}}+3 Fire, Light, and Positive Spell Power
+Descrip: You gain a minor affinity for Heart. You gain the following for each Core Ability you take in this tree, including this one:}}+3 Fire, Light, and Positive Spell Power
 None: Tier 0: This is Your Nature: Heart
 SelectorName: Sky
-Descrip: You gain a minor affinity for Sky. You gain the following for each COre Ability you take in this tree, including this one:}}+3 Electric, Cold, and Sonic Spell Power
+Descrip: You gain a minor affinity for Sky. You gain the following for each Core Ability you take in this tree, including this one:}}+3 Electric, Cold, and Sonic Spell Power
 None: Tier 0: This is Your Nature: Sky
 SelectorName: Thorn
-Descrip: You gain a minor affinity for Thorn. You gain the following for each COre Ability you take in this tree, including this one:}}+3 Acid, Force, and Poison Spell Power
+Descrip: You gain a minor affinity for Thorn. You gain the following for each Core Ability you take in this tree, including this one:}}+3 Acid, Force, and Poison Spell Power
 None: Tier 0: This is Your Nature: Thorn
 
 AbilityName: Weathering the Elements
-Descrip: +15% Absorption against Fire, Cold, Acid, Electric, and Poison Damage. Whenever you cast any Protection from Element spell it, grants you 25 points per caster level instead of 12 with no level cap.
+Descrip: +15% Absorption against Fire, Cold, Acid, Electric, and Poison Damage. Your Protection from Element spells now apply 25 points of Energy Protection per Caster Level and no longer have a Max Caster Level.
 Tier: 0
 
 AbilityName: Regrowth
@@ -1965,13 +1965,13 @@ Tier: 5
 Cost: 2
 Selector: Heart of Flame, Sky Rager, Thorn Cloud
 SelectorName: Heart of Flame
-Descrip: Become like a summer fire for 20 seconds and gain:}}25% Action Boost bonus to movement speed}Ethereality to enemies, allowing you to pass through them.}25% Uncapped Dodge}Immunity to Fire damage, Light damage, and most Crowd Control effects}You deal 1d6+6 Fire damage per Character Level (Max Caster Level 20) to enemies close to you and heal allies with Positive energy for 1d6 Hit Points every 2 seconds. 
+Descrip: Become like a summer fire for 20 seconds and gain:}}{25% Action Boost bonus to movement speed}{Ethereality to enemies, allowing you to pass through them.}{25% Uncapped Dodge}{Immunity to Fire damage, Light damage, and most Crowd Control effects}{You deal 1d6+6 Fire damage per Character Level (Max Caster Level 20) to enemies close to you and heal allies with Positive energy for 1d6 Hit Points every 2 seconds. 
 All: Tier 0: This is Your Nature: Heart
 SelectorName: Sky Rager
-Descrip: Become like a Raging Storm for 20 seconds and gain:}}25% Action Boost bonus to movement speed}Ethereality to enemies, allowing you to pass through them.}50% Incorporeality}Immunity to Cold damage, Electric damage, and most Crowd Control effects}You deal 1d6+2 Cold damage per Character Level (Max Caster Level 20) to enemies close to you every 2 seconds, and slow those enemies. Random nearby enemies will be struck by lightning for 1d6+12 Electric damage per Character Level (Max Caster Level 20) and will be knocked down with no saving throw.
+Descrip: Become like a Raging Storm for 20 seconds and gain:}}{25% Action Boost bonus to movement speed}{Ethereality to enemies, allowing you to pass through them.}{50% Incorporeality}{Immunity to Cold damage, Electric damage, and most Crowd Control effects}{You deal 1d6+2 Cold damage per Character Level (Max Caster Level 20) to enemies close to you every 2 seconds, and slow those enemies. Random nearby enemies will be struck by lightning for 1d6+12 Electric damage per Character Level (Max Caster Level 20) and will be knocked down with no saving throw.
 All: Tier 0: This is Your Nature: Sky
 SelectorName: Thorn Cloud
-Descrip: Become like a cloud of thorns for 20 seconds and gain:}}25% Action Boost bonus to movement speed}Ethereality to enemies, allowing you to pass through them.}50% Incorporeality}Immunity to Poison damage, Acid damage, and most Crowd Control effects}You deal 1d6+3 Acid and 1d6+3 Poison damage per Character Level (Max Caster Level 20) to enemies close to you every 2 seconds. Nearby enemies also have a 50% chance to become confused for 6 seconds with no saving throw.
+Descrip: Become like a cloud of thorns for 20 seconds and gain:}}{25% Action Boost bonus to movement speed}{Ethereality to enemies, allowing you to pass through them.}{50% Incorporeality}{Immunity to Poison damage, Acid damage, and most Crowd Control effects}{You deal 1d6+3 Acid and 1d6+3 Poison damage per Character Level (Max Caster Level 20) to enemies close to you every 2 seconds. Nearby enemies also have a 50% chance to become confused for 6 seconds with no saving throw.
 All: Tier 0: This is Your Nature: Thorn
 
 AbilityName: Epic Improve Intensify Spell
@@ -2041,7 +2041,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Lithe
-Descrip: +[2/4/6] reflex saves, AC and light armor Max Dex Bonus. Rank 3: +5 Force and Universal Spell Power.
+Descrip: +[2/4/6] reflex saves, AC and light armor Max DEX Bonus. Rank 3: +5 Force and Universal Spell Power.
 Tier: 2
 Ranks: 3
 
@@ -2136,8 +2136,8 @@ AbilityName: Epic Strike Upgrade
 Descrip: Select an upgrade for your Epic Strike
 Tier: 4
 Flags: SelectorOnly
-Selector: Improved Imbument, Improved Meld, Improved Paranoia
-SelectorName: Improved Imbument
+Selector: Improved Imbuement, Improved Meld, Improved Paranoia
+SelectorName: Improved Imbuement
 Descrip: Your Epic Strike upgrade now increases your melee range.
 One: Tier 3: Epic Strike Upgrade: Dark Imbuement, Tier 3: Epic Strike Upgrade: Meld into Darkness, Tier 3: Epic Strike Upgrade: Paranoia
 SelectorName: Improved Meld
@@ -2297,12 +2297,12 @@ AbilityName: Strike Upgrade I
 Descrip: Multiselector: Upgrade Pin or Fey Lights
 Tier: 3
 Flags: SelectorOnly
-Selector: Fey Flash, Queen's Diplomacy
+Selector: Fey Flash, Otto's Whistler
 SelectorName: Fey Flash
 Descrip: Fey Lights now additionally affects Undead, Plants, Constructs, and Oozes, who would normally be immune to such effects.
 All: Tier 1: Shiradi Strike: Fey Lights 
-SelectorName: Queen's Diplomacy
-Descrip: Deals +30% damage. If enemies hit by Pin are not moving, they are Immobilized for 6 seconds. If enemies hit by Pin are moving, they Dance for 6 seconds. (Note: Pretty sure this is a typo and this skill should be called "Otto's Whistler's". Will update if that gets fixed.)
+SelectorName: Otto's Whistler
+Descrip: Deals +30% damage. If enemies hit by Pin are not moving, they are Immobilized for 6 seconds. If enemies hit by Pin are moving, they Dance for 6 seconds.
 All: Tier 1: Shiradi Strike: Pin
 
 AbilityName: Shiradi Champion Spell Focus
@@ -2329,7 +2329,7 @@ Descrip: Dealing damage to enemies with spells or ranged attacks reduces their S
 Tier: 4
 
 AbilityName: Queen's Diplomacy
-Descrip: You generate -15% less Threat from all sources.
+Descrip: You generate -30% less Threat from all sources.
 Tier: 4
 
 AbilityName: Strike Upgrade II
@@ -2343,7 +2343,7 @@ Descrip: The Daze portion of Fey Lights is now a Stun instead.
 All: Tier 3: Strike Upgrade I: Fey Flash
 SelectorName: Overwhelming Force
 Descrip: Pin now automatically applies 10 stacks of Track to enemies.
-All: Tier 3: Strike Upgrade I: Queen's Diplomacy
+All: Tier 3: Strike Upgrade I: Otto's Whistler
 
 AbilityName: Crooked Touch
 Descrip: Multiselector: Choose between attack speed or Imbue dice.

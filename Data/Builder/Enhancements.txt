@@ -915,7 +915,7 @@ AbilityName: Conjure Arrows
 Descrip: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out for an extended period of time.
 Tier: 1
 Cost: 2
-None: Half-Elf Tier 2: Dilettante Special Ability: Conjure Arrows
+None: Half-Elf Tier 2: Dilettante Special Ability: Ranger
 
 AbilityName: True Strike
 Descrip: Ranged Archery Attack: Perform a ranged attack with +20 to-hit. You receive a +4 Insight bonus to hit for 12 seconds. Activation cost: 2 spell points. Cooldown: 3 seconds.
@@ -3348,14 +3348,15 @@ Descrip: You gain an additional +3 Resistance to the element of your Draconic So
 Tier: 2
 All: Tier 1: Dragon's Protection I
 
-AbilityName: Battlefield Technician II
+AbilityName: Battlefield Tactician II
 Descrip: +1 to Tactical Feat DCs 
 Tier: 2
-All: Tier 1: Battlefield Technician I
+All: Tier 1: Battlefield Tactician I
 
 AbilityName: Draconic Resilience
 Descrip: +[2/4/6] Natural Armor
 Tier: 2
+Ranks: 3
 
 AbilityName: Action Boost
 Descrip: Choose one:}{-Haste: Activate to gain +[10/20/30]% Action Boost bonus to attack speed for 20 seconds}{-Tactics: Activate to gain a +[3/6/9] Action Boost Bonus to Tactical DCs for 20 seconds.
@@ -3367,18 +3368,17 @@ Selector: Haste Boost, Tactics Boost
 AbilityName: Dragonslayer
 Descrip: You have chosen to assert your dominance over Dragons, despite sharing in their power. You gain Favored Enemy: Dragon. When fighting a Favored Enemy, you gain +2 Damage for each Favored Enemy feat you have. If you have more than one Favored Enemy feat that applies to a particular Enemy, the damage applies for each type that matches a Favored Enemy feat you have.
 Tier: 2
-None: Feat: Favored Enemy: Dragon
 
 AbilityName: Dragon's Protection III
 Descrip: You gain an additional +3 Resistance and +5 Absorption to the element of your Draconic Soul.
 Tier: 3
 All: Tier 2: Dragon's Protection II
 
-AbilityName: Battlefield Technician III
+AbilityName: Battlefield Tactician III
 Descrip: +1 to Tactical Feat DCs and Breath Weapon DCs. When you attack with Trip or Sunder (or their Improved variants), you deal 1d4 additional damage per Character Level of the Element of your Draconic Soul. This damage scales with 200% Melee or Ranged Power. 
 Tier: 3
 Cost: 2
-All: Tier 2: Battlefield Technician II
+All: Tier 2: Battlefield Tactician II
 
 AbilityName: Dragon's Roar
 Descrip: Tactical Feat: Enemies in a cone ahead of you must make a Will Saving Throw (DC 10 + Highest of STR and CHA mod + Stunning bonuses + Breath Weapon DC bonuses) or be Dazed. Affected enemies have a 25% chance to be broken out of the Daze on damage. 20 second cooldown.
@@ -3397,11 +3397,11 @@ Descrip: You gain an additional +3 Resistance and +5 Absorption to the element o
 Tier: 4
 All: Tier 3: Dragon's Protection III
 
-AbilityName: Battlefield Technician IV
+AbilityName: Battlefield Tactician IV
 Descrip: +1 to Tactical Feat DCs and Breath Weapon DCs. When you Sunder enemies, it makes them vulnerable to the element of your Draconic Soul for 10 seconds. Additionally, if you successfully Sunder (or Improved Sunder) a target under the effects of Trip (or Improved Trip), that target takes an additional 1d6 damage per Character Level of the Element you selected for your Draconic Soul. This damage scales with 200% Melee or Ranged Power.
 Tier: 4
 Cost: 2
-All: Tier 3: Battlefield Technician III
+All: Tier 3: Battlefield Tactician III
 
 AbilityName: Untouchable Soul
 Descrip: You have Displacement, giving opponents a 50% chance to miss you due to concealment. This cannot be dispelled.
@@ -3421,7 +3421,7 @@ All: Tier 4: Dragon's Protection IV
 AbilityName: Tactical Commander
 Descrip: The cooldown of your Trip, Sunder, Stunning Blow, and Dragon's Roar (and their Improved versions) are reduced by 33%. +2 to Breath Weapon DCs.
 Tier: 5
-All: Tier 4: Battlefield Technician IV
+All: Tier 4: Battlefield Tactician IV
 
 AbilityName: Greater Roar
 Descrip: Your Dragon's Roar now Cowers enemies instead of Dazing them. In addition, when you use Dragon's Roar, you gain a +20% Morale bonus to damage versus Helpless targets for 20 seconds.
@@ -4646,7 +4646,7 @@ AbilityName: Conjure Arrows
 Descrip: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out for an extended period of time.
 Tier: 1
 Cost: 2
-None: Half-Elf Tier 2: Dilettante Special Ability: Conjure Arrows
+None: Half-Elf Tier 2: Dilettante Special Ability: Ranger
 
 AbilityName: True Strike
 Descrip: Ranged Archery Attack: Perform a ranged attack with +20 to-hit. You receive a +4 Insight bonus to hit for 12 seconds. Activation cost: 2 spell points. Cooldown: 3 seconds.
@@ -5720,93 +5720,93 @@ AbilityName: Versatile Nature
 Descrip: As a Half-Elf you can choose which heritage you take after, giving you the choice of Human or Elven Core Abilities as you progress through the tree. Your Point Blank Shot and Ranged Sneak Attack range is increased by 2 meters for every Elven Core Ability you select.
 Tier: 0
 
-AbilityName: Dexterity / Adaptability
-Descrip: Select an ability score increase, choosing whether to be more elven or human. Your selection here will affect your selection at level 11.}Choose Heritage:}{-Elven Dexterity: +1 Dexterity}or}Human Adaptability: Choose one of:}{-+1 Strength}{-+1 Dexterity}{-+1 Constitution}{-+1 Intelligence}{-+1 Wisdom}{-+1 Charisma
+AbilityName: Dexterity or Adaptability
+Descrip: Select an ability score increase, choosing whether to be more elven or human. Your selection here will affect your selection at level 11. Choose Heritage:}}Elven Dexterity: +1 Dexterity}}or}}Human Adaptability: Choose one of:}{-+1 Strength}{-+1 Dexterity}{-+1 Constitution}{-+1 Intelligence}{-+1 Wisdom}{-+1 Charisma
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
 Selector: Elven Dexterity, Human Strength, Human Dexterity, Human Constitution, Human Intelligence, Human Wisdom, Human Charisma
 
-AbilityName: Accuracy / Versatility
-Descrip: Choose a racial ability, and whether to be more elven or human. Your selection here will affect your selection at level 16.}Choose Heritage:}{-Elven Accuracy: You gain +2% to hit with all attacks.}or}Human Versatility: Choose one:}{-Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{-Defense Boost: Activate to gain a +10 Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds.}{-Melee & Ranged Power Boost: Activate to gain a +20 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{-Saves Boost: Activate to gain a +4 Action Boost bonus to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{-Skill Boost: Activate to gain a +4 Action Boost bonus to all skills for 20 seconds.}{-Spell Power Boost: Activate to gain a +20 Action Boost bonus to Universal Spell Power for 20 seconds.
+AbilityName: Accuracy or Versatility
+Descrip: Choose a racial ability, and whether to be more elven or human. Your selection here will affect your selection at level 16. Choose Heritage:}}{Elven Accuracy: You gain +2% to hit with all attacks.}}or}}Human Versatility: Choose one:}{-Attack Boost: Activate to gain a +6 Action Boost bonus to hit for 20 seconds.}{-Defense Boost: Activate to gain a +10 Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds.}{-Melee & Ranged Power Boost: Activate to gain a +20 Action Boost bonus to Melee and Ranged Power for 20 seconds.}{-Saves Boost: Activate to gain a +4 Action Boost bonus to all Saving Throws for 20 seconds. While under this effect you do not automatically fail Saving Throws on a roll of a Natural 1.}{-Skill Boost: Activate to gain a +4 Action Boost bonus to all skills for 20 seconds.}{-Spell Power Boost: Activate to gain a +20 Action Boost bonus to Universal Spell Power for 20 seconds.
 Tier: 0
 Flags: SelectorOnly
 Selector: Elven Accuracy, Human Attack Boost, Human Damage Boost, Human Defense Boost, Human Saves Boost, Human Skill Boost, Human Spell Power Boost
 SelectorName: Elven Accuracy
-All: Tier 0: Dexterity / Adaptability: Elven Dexterity
-None: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
+All: Tier 0: Dexterity or Adaptability: Elven Dexterity
+None: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
 SelectorName: Human Attack Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 SelectorName: Human Damage Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 SelectorName: Human Defense Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 SelectorName: Human Saves Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 SelectorName: Human Skill Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 SelectorName: Human Spell Power Boost
-One: Tier 0: Dexterity / Adaptability: Human Strength, Tier 0: Dexterity / Adaptability: Human Dexterity, Tier 0: Dexterity / Adaptability: Human Constitution, Tier 0: Dexterity / Adaptability: Human Intelligence, Tier 0: Dexterity / Adaptability: Human Wisdom, Tier 0: Dexterity / Adaptability: Human Charisma
-None: Tier 0: Dexterity / Adaptability: Elven Dexterity
+One: Tier 0: Dexterity or Adaptability: Human Strength, Tier 0: Dexterity or Adaptability: Human Dexterity, Tier 0: Dexterity or Adaptability: Human Constitution, Tier 0: Dexterity or Adaptability: Human Intelligence, Tier 0: Dexterity or Adaptability: Human Wisdom, Tier 0: Dexterity or Adaptability: Human Charisma
+None: Tier 0: Dexterity or Adaptability: Elven Dexterity
 
-AbilityName: Dexterity / Adaptability II
+AbilityName: Dexterity or Adaptability II
 Descrip: Choose an ability score. Your elven or human decisions at level 4 will restrict this choice. (As if you were an Elf or an Human)
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
 Selector: Elven Dexterity, Human Strength, Human Dexterity, Human Constitution, Human Intelligence, Human Wisdom, Human Charisma
 SelectorName: Elven Dexterity
-All: Tier 0: Accuracy / Versatility: Elven Accuracy
+All: Tier 0: Accuracy or Versatility: Elven Accuracy
 SelectorName: Human Strength
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Strength
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Strength
 SelectorName: Human Dexterity
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Dexterity
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Dexterity
 SelectorName: Human Constitution
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Constitution
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Constitution
 SelectorName: Human Intelligence
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Intelligence
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Intelligence
 SelectorName: Human Wisdom
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Wisdom
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Wisdom
 SelectorName: Human Charisma
-One: Tier 0: Accuracy / Versatility: Human Attack Boost, Tier 0: Accuracy / Versatility: Human Damage Boost, Tier 0: Accuracy / Versatility: Human Defense Boost, Tier 0: Accuracy / Versatility: Human Saves Boost, Tier 0: Accuracy / Versatility: Human Skill Boost, Tier 0: Accuracy / Versatility: Human Spell Power Boost
-None: Tier 0: Accuracy / Versatility: Elven Accuracy, Tier 0: Dexterity / Adaptability: Human Charisma
+One: Tier 0: Accuracy or Versatility: Human Attack Boost, Tier 0: Accuracy or Versatility: Human Damage Boost, Tier 0: Accuracy or Versatility: Human Defense Boost, Tier 0: Accuracy or Versatility: Human Saves Boost, Tier 0: Accuracy or Versatility: Human Skill Boost, Tier 0: Accuracy or Versatility: Human Spell Power Boost
+None: Tier 0: Accuracy or Versatility: Elven Accuracy, Tier 0: Dexterity or Adaptability: Human Charisma
 
-AbilityName: Accuracy / Versatility II
+AbilityName: Accuracy or Versatility II
 Descrip: Choose a racial ability. Your elven or human decisions at level 7 will restrict this choice. (As if you were an Elf or an Human)
 Tier: 0
 Flags: SelectorOnly
 Selector: Elven Accuracy, Human Attack Boost, Human Damage Boost, Human Defense Boost, Human Saves Boost, Human Skill Boost, Human Spell Power Boost
 SelectorName: Elven Accuracy
-All: Tier 0: Dexterity / Adaptability II: Elven Dexterity
-None: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
+All: Tier 0: Dexterity or Adaptability II: Elven Dexterity
+None: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
 SelectorName: Human Attack Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Attack Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Attack Boost
 SelectorName: Human Damage Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Damage Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Damage Boost
 SelectorName: Human Defense Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Defense Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Defense Boost
 SelectorName: Human Saves Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Saves Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Saves Boost
 SelectorName: Human Skill Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Skill Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Skill Boost
 SelectorName: Human Spell Power Boost
-One: Tier 0: Dexterity / Adaptability II: Human Strength, Tier 0: Dexterity / Adaptability II: Human Dexterity, Tier 0: Dexterity / Adaptability II: Human Constitution, Tier 0: Dexterity / Adaptability II: Human Intelligence, Tier 0: Dexterity / Adaptability II: Human Wisdom, Tier 0: Dexterity / Adaptability II: Human Charisma
-None: Tier 0: Dexterity / Adaptability II: Elven Dexterity, Tier 0: Accuracy / Versatility: Human Spell Power Boost
+One: Tier 0: Dexterity or Adaptability II: Human Strength, Tier 0: Dexterity or Adaptability II: Human Dexterity, Tier 0: Dexterity or Adaptability II: Human Constitution, Tier 0: Dexterity or Adaptability II: Human Intelligence, Tier 0: Dexterity or Adaptability II: Human Wisdom, Tier 0: Dexterity or Adaptability II: Human Charisma
+None: Tier 0: Dexterity or Adaptability II: Elven Dexterity, Tier 0: Accuracy or Versatility: Human Spell Power Boost
 
 AbilityName: Lyrandar Dragonmark Focus
 Descrip: +[1/2/3] dragonmark uses per day, +[1/2/3] Balance.
@@ -5826,7 +5826,7 @@ Ranks: 3
 Selector: Athletic, Awareness, Focused, Negotiator, Nimble Fingers, Self Sufficient, Stealthy
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a third level Alchemist (or your total character level, whichever is lower.) . +30 Spell Points.}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}{-Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher are able to add up to 4 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
+Descrip: Improves your Dilettante feat.}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a third level Alchemist (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to potions. For item purposes you are now treated as a second level Artificer (or your character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Barbarian: You become more resilient and gain +10 Hit Points.}}{-Improved Dilettante: Bard: For item use purposes you are now treated as a third level Bard (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a third level Cleric (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Druid: For item use purposes you are now treated as a third level Druid (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a third level Favored Soul (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 to hit and +1 weapon damage.}}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 2 or higher you are able to add up to 3 points of your Wisdom bonus to your armor class.}}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 2 or higher you may add up to 3 points of your charisma bonus to your saves. For item use purposes you are now treated as a second level Paladin (or your total character level, whichever is lower)}}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 2 or higher are able to add up to 4 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a second level Ranger (or your total character level, whichever is lower)}}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +2 to hit with Sneak Attacks}}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a third level Sorcerer (or your total character level, whichever is lower.)}}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a third level Warlock (or your total character level, whichever is lower). +30 Spell Points.}}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a third level Wizard (or your total character level, whichever is lower). +30 Spell Points.
 Tier: 1
 All: Feat: Half-Elf Dilettante
 SharedSelector: Feat: Half-Elf Dilettante
@@ -5848,44 +5848,17 @@ Tier: 2
 Cost: 2
 
 AbilityName: Dilettante Special Ability
-Descrip: Gain abilities from your Dilettante Class Enhancements}{-Armor Mastery: +2 Armor Class and +2 Maximum Dexterity Bonus when wearing Armor. This enhancement cannot be taken if you possess the Armor Mastery enhancement from the Stalwart Defender tree.}{-Requires Half-Elf Dilettante: Fighter}{-Conjure Arrows: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out. This enhancement cannot be taken if you possess the Conjure Arrows enhancement from the Arcane Archer tree.}{-Requires Half-Elf Dilettante: Ranger}{-Improved Damage Reduction I: Your Barbarian damage reduction is increased by 1. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{-Improved Recovery I: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{-Improved Spellcasting I: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{-Lesser Divine Health: You are immune to Natural diseases, and gain +4 to saving throws against Magical disease and do not automatically fail saving throws against them on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{-Sly Flourish: Melee Attack: Deals +10% damage with +1 critical threat range, and reduces your threat with nearby enemies by 100. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stack 5 times.) This enhancement cannot be taken if you possess the Sly Flourish enhancement from the Thief-Acrobat tree. (Cooldown: 12 seconds)}{-Requires Half-Elf Dilettante: Rogue
+Descrip: Gain abilities from your Dilettante Class Enhancements.}}Requires Half-Elf Dilettante: Barbarian}{-Improved Damage Reduction I: Your Barbarian damage reduction is increased by 1. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}}Requires Half-Elf Dilettante: Fighter}{-Armor Mastery: +2 Armor Class and +2 Maximum Dexterity Bonus when wearing Armor. This enhancement cannot be taken if you possess the Armor Mastery enhancement from the Stalwart Defender tree.}}Requires Half-Elf Dilettante: Monk}{-Improved Recovery I: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}}Requires Half-Elf Dilettante: Paladin}{-Lesser Divine Health: You are immune to Natural diseases, and gain +4 to saving throws against Magical disease and do not automatically fail saving throws against them on a roll of a natural 1.}}Requires Half-Elf Dilettante: Ranger}{-Conjure Arrows: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out. This enhancement cannot be taken if you possess the Conjure Arrows enhancement from the Arcane Archer tree.}}Requires Half-Elf Dilettante: Rogue}{-Sly Flourish: Melee Attack: Deals +10% damage with +1 critical threat range, and reduces your threat with nearby enemies by 100. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stack 5 times.) This enhancement cannot be taken if you possess the Sly Flourish enhancement from the Thief-Acrobat tree. (Cooldown: 12 seconds)}}Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{-Improved Spellcasting I: +5 Universal Spellpower.
 Tier: 2
 Cost: 2
 All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-Flags: SelectorOnly
-Selector: Armor Mastery, Conjure Arrows, Improved Damage Reduction, Improved Recovery, Improved Spellcasting, Lesser Divine Health, Sly Flourish
-SelectorName: Armor Mastery
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Fighter
-None: Stalwart Defender Tier 1: Stalwart Defensive Mastery
-SelectorName: Conjure Arrows
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Ranger
-None: Arcane Archer Tier 1: Conjure Arrows, Elf-Arcane Archer Tier 1: Conjure Arrows
-SelectorName: Improved Damage Reduction
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Barbarian
-None: Occult Slayer Tier 0: Resistance
-SelectorName: Improved Recovery
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Monk
-None: Shintao Tier 0: Bastion of Purity
-SelectorName: Improved Spellcasting
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Artificer, Feat: Half-Elf Dilettante: Bard, Feat: Half-Elf Dilettante: Cleric, Feat: Half-Elf Dilettante: Druid, Feat: Half-Elf Dilettante: Favored Soul, Feat: Half-Elf Dilettante: Sorcerer, Feat: Half-Elf Dilettante: Warlock, Feat: Half-Elf Dilettante: Wizard
-SelectorName: Lesser Divine Health
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Paladin
-SelectorName: Sly Flourish
-All: Feat: Half-Elf Dilettante, Tier 2: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Rogue
-None: Thief-Acrobat Tier 1: Sly Flourish
+SharedSelector: Feat: Half-Elf Dilettante
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a sixth level Alchemist (or your total character level, whichever is lower.) +30 Spell Points}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}{-Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{-Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}{-Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever is lower.)}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 3 or higher are able to add up to 6 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
+Descrip: Improves your Dilettante feat.}}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a sixth level Alchemist (or your total character level, whichever is lower.) +30 Spell Points}}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to wands. For item purposes you are now treated as a third level Artificer (or your total character level, whichever is lower.)}}{-Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}}{-Improved Dilettante: Bard: For item use purposes you are now treated as a sixth level Bard (or your total character level, whichever is lower.)}}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a sixth level Cleric (or your total character level, whichever is lower.)}}{-Improved Dilettante: Druid: For item use purposes you are now treated as a sixth level Druid (or your total character level, whichever is lower.)}}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a sixth level Favored Soul (or your total character level, whichever i}{-s lower.)}}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 3 or higher you are able to add up to 4 points of your Wisdom bonus to your armor class.}}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 3 or higher you may add up to 4 points of your charisma bonus to your saves. For item use purposes you are now treated as a third level Paladin (or your total character level, whichever is lower)}}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 3 or higher are able to add up to 6 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a third level Ranger (or your total character level, whichever is lower)}}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a sixth level Sorcerer (or your total character level, whichever is lower.)}}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a sixth level Warlock (or your total character level, whichever is lower.)}}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a sixth level Wizard (or your total character level, whichever is lower.)
 Tier: 2
 All: Tier 1: Improved Dilettante
-SharedSelector: Tier 1: Improved Dilettante
+SharedSelector: Feat: Half-Elf Dilettante
 
 AbilityName: Arcanum
 Descrip: +[25/50/100] spell points and +[1/2/3] spell penetration.
@@ -5906,12 +5879,29 @@ Ranks: 3
 Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 
 AbilityName: Dilettante Ability Score
-Descrip: +1 to an Ability based on your Dilettante feat.}{-+1 Strength}{-Requires one of Half-Elf Dilettante: Barbarian, Fighter, Paladin, or Ranger}{-+1 Dexterity}{-Requires one of Half-Elf Dilettante: Artificer, Bard, Monk, Ranger, or Rogue}{-+1 Constitution}{-Requires one of Half-Elf Dilettante: Barbarian, Druid, or Fighter}{-+1 Intelligence}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Rogue, or Wizard}{-+1 Wisdom}{-Requires one of Half-Elf Dilettante: Cleric, Druid, Favored Soul, or Monk}{-+1 Charisma}{-Requires one of Half-Elf Dilettante: Bard, Cleric, Favored Soul, Paladin, Sorcerer, or Warlock.
+Descrip: +1 to an Ability based on your Dilettante feat:}}{-Alchemist: +1 Intelligence}{-Artificer: +1 Dexterity or +1 Intelligence}{-Barbarian: +1 Strength or +1 Constitution}{-Bard: +1 Dexterity or +1 Charisma}{-Cleric: +1 Wisdom or +1 Charisma}{-Druid: +1 Constitution or +1 Wisdom}{-Favored Soul: +1 Wisdom or +1 Charisma}{-Fighter: +1 Strength or +1 Constitution}{-Monk: +1 Dexterity or +1 Wisdom}{-Paladin: +1 Strength or +1 Charisma}{-Ranger: +1 Strength or +1 Dexterity}{-Rogue: +1 Dexterity or +1 Intelligence}{-Sorcerer: +1 Charisma}{-Warlock: +1 Charisma}{-Wizard: +1 Intelligence
 Tier: 3
 Cost: 2
 All: Tier 2: Improved Dilettante
-Flags: SelectorOnly
 Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
+SelectorName: Strength
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Barbarian, Feat: Half-Elf Dilettante: Fighter, Feat: Half-Elf Dilettante: Paladin, Feat: Half-Elf Dilettante: Ranger
+SelectorName: Dexterity
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Artificer, Feat: Half-Elf Dilettante: Bard, Feat: Half-Elf Dilettante: Monk, Feat: Half-Elf Dilettante: Ranger, Feat: Half-Elf Dilettante: Rogue
+SelectorName: Constitution
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Barbarian, Feat: Half-Elf Dilettante: Druid, Feat: Half-Elf Dilettante: Fighter
+SelectorName: Intelligence
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Alchemist, Feat: Half-Elf Dilettante: Artificer, Feat: Half-Elf Dilettante: Rogue, Feat: Half-Elf Dilettante: Wizard
+SelectorName: Wisdom
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Cleric, Feat: Half-Elf Dilettante: Druid, Feat: Half-Elf Dilettante: Favored Soul, Feat: Half-Elf Dilettante: Monk
+SelectorName: Charisma
+All: Tier 2: Improved Dilettante
+One: Feat: Half-Elf Dilettante: Bard, Feat: Half-Elf Dilettante: Cleric, Feat: Half-Elf Dilettante: Favored Soul, Feat: Half-Elf Dilettante: Paladin, Feat: Half-Elf Dilettante: Sorcerer, Feat: Half-Elf Dilettante: Warlock
 
 AbilityName: Arcane Archer
 Descrip: You gain access to the Arcane Archer enhancement tree. (The Elf: Arcane Archer tree uses your total character level instead of Ranger level, but advances Core Abilities at a slower rate. You cannot spend action points in both the Ranger: Arcane Archer and Elf: Arcane Archer trees.)You need to click the Accept button before you can select the Arcane Archer (Elf) tree
@@ -5930,45 +5920,18 @@ Cost: 2
 All: Tier 2: Improved Recovery
 
 AbilityName: Dilettante Special Ability
-Descrip: Gain abilities from your Dilettante Class Enhancements}{-Improved Damage Reduction II: Your Barbarian damage reduction is increased by 1. +10 Hit Points. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}{-Requires Half-Elf Dilettante: Barbarian}{-Improved Recovery II: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}{-Requires Half-Elf Dilettante: Monk}{-Improved Spellcasting II: +5 Universal Spellpower.}{-Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{-Lesser Courage: You gain +4 to saving throws against fear and do not automatically fail saving throws against fear on a roll of a natural 1.}{-Requires Half-Elf Dilettante: Paladin}{-Master Tactics: +2 to the DC's of your Tactical abilities. This enhancement cannot be taken if you possess the Tactics enhancement from the Kensei tree.}{-Requires Half-Elf Dilettante: Fighter}{-Tanglefoot: Alchemical Trap Activate: Throws a cask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies within the area of the goo puddle take 4d6 acid damage every 2 seconds and are slowed (Reflex DC 10 + Half Character Level + Intelligence Modifier Half). (Cooldown: 30 seconds.)  This enhancement cannot be taken if you possess the Tanglefoot enhancement from the Mechanic tree.}{-Requires Half-Elf Dilettante: Rogue}{-Tempest: You gain +10% chance to make off-hand attacks when dual wielding. This enhancement cannot be taken if you possess the Tempest enhancement from the Tempest tree.}{-Requires Half-Elf Dilettante: Ranger
+Descrip: Gain abilities from your Dilettante Class Enhancements.}}Requires Half-Elf Dilettante: Barbarian}{-Improved Damage Reduction II: Your Barbarian damage reduction is increased by 1. +10 Hit Points. This enhancement cannot be taken if you possess the Resistance enhancement from Occult Slayer tree.}}Requires Half-Elf Dilettante: Fighter}{-Master Tactics: +2 to the DC's of your Tactical abilities. This enhancement cannot be taken if you possess the Tactics enhancement from the Kensei tree.}}Requires Half-Elf Dilettante: Monk}{-Improved Recovery II: +10% Positive Energy Healing. This enhancement cannot be taken if you possess the Bastion of Purity enhancement from the Shintao Monk tree.}}Requires Half-Elf Dilettante: Paladin}{-Lesser Courage: You gain +4 to saving throws against fear and do not automatically fail saving throws against fear on a roll of a natural 1.}}Requires Half-Elf Dilettante: Ranger}{-Tempest: You gain +10% chance to make off-hand attacks when dual wielding. This enhancement cannot be taken if you possess the Tempest enhancement from the Tempest tree.}}Requires Half-Elf Dilettante: Rogue}{-Tanglefoot: Alchemical Trap Activate: Throws a cask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies within the area of the goo puddle take 4d6 acid damage every 2 seconds and are slowed (Reflex DC 10 + Half Character Level + Intelligence Modifier Half). (Cooldown: 30 seconds.)  This enhancement cannot be taken if you possess the Tanglefoot enhancement from the Mechanic tree.}}Requires one of Half-Elf Dilettante: Alchemist, Artificer, Bard, Cleric, Druid, Favored Soul, Sorcerer, Warlock, or Wizard.}{-Improved Spellcasting II: +5 Universal Spellpower.
 Tier: 4
 Cost: 2
 All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-Flags: SelectorOnly
-Selector: Improved Damage Reduction, Improved Recovery, Improved Spellcasting, Lesser Courage, Master Tactics, Tanglefoot, Tempest
-SelectorName: Improved Damage Reduction
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Barbarian
-None: Occult Slayer Tier 0: Resistance
-SelectorName: Improved Recovery
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Monk
-None: Shintao Tier 0: Bastion of Purity
-SelectorName: Improved Spellcasting
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Artificer, Feat: Half-Elf Dilettante: Bard, Feat: Half-Elf Dilettante: Cleric, Feat: Half-Elf Dilettante: Druid, Feat: Half-Elf Dilettante: Favored Soul, Feat: Half-Elf Dilettante: Sorcerer, Feat: Half-Elf Dilettante: Warlock, Feat: Half-Elf Dilettante: Wizard
-SelectorName: Lesser Courage
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Paladin
-SelectorName: Master Tactics
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Fighter
-None: Kensei Tier 2: Tactics
-SelectorName: Tanglefoot
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Rogue
-None: Mechanic Tier 0: Tanglefoot
-SelectorName: Tempest
-All: Feat: Half-Elf Dilettante, Tier 4: Improved Dilettante
-One: Feat: Half-Elf Dilettante: Ranger
-None: Tempest Tier 0: Tempest
+SharedSelector: Feat: Half-Elf Dilettante
 
 AbilityName: Improved Dilettante
-Descrip: Improves your Dilettante feat.}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a tenth level Alchemist (or your total character level, whichever is lower.)}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to magical arms and armor. For item purposes you are now treated as a fourth level Artificer (or your total character level, whichever is lower.)}{-Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}{-Improved Dilettante: Bard: For item use purposes you are now treated as a tenth level Bard (or your total character level, whichever is lower.)}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a tenth level Cleric (or your total character level, whichever is lower.)}{-Improved Dilettante: Druid: For item use purposes you are now treated as a tenth level Druid (or your total character level, whichever is lower.)}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a tenth level Favored Soul (or your total character level, whichever is lower.)}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 4 or higher you are able to add up to 5 points of your Wisdom bonus to your armor class.}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 4 or higher you may add up to 5 points of your charisma bonus to your saves. For item use purposes you are now treated as a fourth level Paladin (or your total character level, whichever is lower)}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 4 or higher are able to add up to 8 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a fourth level Ranger (or your total character level, whichever is lower)}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a tenth level Sorcerer (or your total character level, whichever is lower.)}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a tenth level Warlock (or your total character level, whichever is lower.)}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a tenth level Wizard (or your total character level, whichever is lower.)
+Descrip: Improves your Dilettante feat.}}{-Improved Dilettante: Alchemist: For item use purposes you are now treated as a tenth level Alchemist (or your total character level, whichever is lower.)}}{-Improved Dilettante: Artificer: Your knowledge of magical items has improved, and now extends to magical arms and armor. For item purposes you are now treated as a fourth level Artificer (or your total character level, whichever is lower.)}}{-Improved Dilettante: Barbarian: You become more resilient and gain +5 hp.}}{-Improved Dilettante: Bard: For item use purposes you are now treated as a tenth level Bard (or your total character level, whichever is lower.)}}{-Improved Dilettante: Cleric: For item use purposes you are now treated as a tenth level Cleric (or your total character level, whichever is lower.)}}{-Improved Dilettante: Druid: For item use purposes you are now treated as a tenth level Druid (or your total character level, whichever is lower.)}}{-Improved Dilettante: Favored Soul: For item use purposes you are now treated as a tenth level Favored Soul (or your total character level, whichever is lower.)}}{-Improved Dilettante: Fighter: Your skill with arms is improved and you gain +1 weapon damage.}}{-Improved Dilettante: Monk: Your defensive skills have improved, and at level 4 or higher you are able to add up to 5 points of your Wisdom bonus to your armor class.}}{-Improved Dilettante: Paladin: Your Lesser Divine Grace has improved and at level 4 or higher you may add up to 5 points of your charisma bonus to your saves. For item use purposes you are now treated as a fourth level Paladin (or your total character level, whichever is lower)}}{-Improved Dilettante: Ranger: Your Lesser Bow Strength has improved and at level 4 or higher are able to add up to 8 points of your strength bonus to attacks with bows. For item use purposes you are now treated as a fourth level Ranger (or your total character level, whichever is lower)}}{-Improved Dilettante: Rogue: You practice stealthy attacks and gain +1d6 Sneak Attack.}}{-Improved Dilettante: Sorcerer: For item use purposes you are now treated as a tenth level Sorcerer (or your total character level, whichever is lower.)}}{-Improved Dilettante: Warlock: For item use purposes you are now treated as a tenth level Warlock (or your total character level, whichever is lower.)}}{-Improved Dilettante: Wizard: For item use purposes you are now treated as a tenth level Wizard (or your total character level, whichever is lower.)
 Tier: 4
 Cost: 2
 All: Tier 3: Dilettante Ability Score
-SharedSelector: Tier 2: Improved Dilettante
+SharedSelector: Feat: Half-Elf Dilettante
 
 TreeName: Half-Orc
 Type: Race
@@ -7092,7 +7055,7 @@ AbilityName: Tactics
 Descrip: +[1/2/3] to the DC's of your Tactical abilities.
 Tier: 2
 Ranks: 3
-None: Half-Elf Tier 4: Dilettante Special Ability: Master Tactics
+None: Half-Elf Tier 4: Dilettante Special Ability: Fighter
 
 AbilityName: Weapon Group Specialization
 Descrip: You gain +1 to hit and +2 damage with one handed weapons, bows and repeating crossbows. You gain +1 to hit and +3 damage with two handed weapons and non-repeating crossbows. These bonuses only apply to weapons in your focus group.
@@ -7410,7 +7373,7 @@ Tier: 0
 AbilityName: Tanglefoot
 Descrip: Cooldown: 30 seconds. Spell Resistance: No}{-Alchemical Trap Activate: Throws a flask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies caught within by the goo puddle take: 4d6 acid damage every 2 seconds, Reflex DC (10 + Rogue Level + Intelligence Modifier) halves, and are slowed (does not affect bosses), Reflex (DC 10 + Rogue Level + Intelligence Modifier) negates. This damage scales with 200% Ranged Power.
 Tier: 0
-None: Half-Elf Tier 4: Dilettante Special Ability: Tanglefoot
+None: Half-Elf Tier 4: Dilettante Special Ability: Rogue
 
 AbilityName: Targeting Sights
 Descrip: You can now use your Intelligence modifier for damage with all crossbows and thrown weapons. You also gain proficiency with light repeating crossbows.
@@ -8160,7 +8123,7 @@ Tier: 0
 AbilityName: Resistance
 Descrip: +1 to all saving throws.}Improve your Barbarian Damage Reduction by +1%.}+10 Hit Points
 Tier: 0
-None: Half-Elf Tier 2: Dilettante Special Ability: Improved Damage Reduction, Half-Elf Tier 4: Dilettante Special Ability: Improved Damage Reduction
+None: Half-Elf Tier 2: Dilettante Special Ability: Barbarian, Half-Elf Tier 4: Dilettante Special Ability: Barbarian
 
 AbilityName: Elemental Defense
 Descrip: When enemy spells deal elemental damage to you, there's a 25% chance you'll gain 25 temporary Hit Points for 30 seconds. This can trigger up to once every 12 seconds.(Elemental Damage includes Acid, Cold, Electric, Fire, Sonic.)Improve your Barbarian Damage Reduction by +1%.}+30 Hit Points}+20 Healing Amplification
@@ -9927,7 +9890,7 @@ Stats: Constitution, Wisdom
 AbilityName: Bastion of Purity
 Descrip: For each Core Ability you claim in this tree, you gain 10 Positive Energy Spell Power, which affects your monk finishing moves and spell-like abilities. Your Positive Healing Amplification is also increased by 10% for each Shintao Monk Core Ability you possess.
 Tier: 0
-None: Half-Elf Tier 2: Dilettante Special Ability: Improved Recovery, Half-Elf Tier 4: Dilettante Special Ability: Improved Recovery
+None: Half-Elf Tier 2: Dilettante Special Ability: Barbarian, Half-Elf Tier 4: Dilettante Special Ability: Barbarian
 
 AbilityName: Protection from Tainted Creatures
 Descrip: You gain a +1 bonus to Armor Class and a +1 bonus to saving throws. These bonuses stack with all other bonuses to armor class and saving throws. Your unarmed attacks and attacks with Handwraps now bypass Byeshk damage reduction.
@@ -10434,7 +10397,7 @@ AbilityName: Stalwart Defensive Mastery
 Descrip: +[1/2/3] Armor Class and Armor Maximum Dexterity Bonus.
 Tier: 1
 Ranks: 3
-None: Half-Elf Tier 2: Dilettante Special Ability: Armor Mastery
+None: Half-Elf Tier 2: Dilettante Special Ability: Fighter
 
 AbilityName: Defense Boost
 Descrip: Activate to gain a +[5/10/15] Action Boost bonus to Armor Class and Physical Resistance Rating for 20 seconds. (Cooldown: 30 seconds.)
@@ -10826,11 +10789,10 @@ Ranks: 3
 Cost: 1
 
 AbilityName: Swashbuckling Style II
-Descrip: Improve your Swashbuckling Style:}{-Loud & Clear: Passive: While Swashbuckling with an Orb in your off hand, +20 Sonic Spell Power.}{ Bug:  Loud and Clear is turned off if you toggle swashbuckling off/on and sometimes on logout.  To fix un-equip and re-equip your orb.  You will see a buff icon if it's working.}{-Low Blow: While Swashbuckling and wielding a Buckler in your off hand, activate to perform a shield bash with +2 Critical Threat Range and Multiplier. On hit, knock down affected enemy for three seconds (Perform + d20 saves for the Knockdown). 18 second cooldown. Costs 10 Spell Points.}{-Music Box: Passive: While Swashbuckling with a Rune Arm in your off hand, you gain +1 bonus Imbue dice.}{-Slap in the Face: While Swashbuckling and wielding nothing in your off hand, activate to deal 1 Bludgeon damage. Damaged enemies can't cast spells for 6 seconds and are stunned for three seconds (Perform + d20 saves for the Stun). 18 second cooldown. Costs 10 Spell Points.
+Descrip: Improve your Swashbuckling Style:}{-Loud & Clear: Passive: While Swashbuckling with an Orb in your off hand, +20 Sonic Spell Power. Bug: Loud and Clear is turned off if you toggle swashbuckling off/on and sometimes on logout. To fix un-equip and re-equip your orb. You will see a buff icon if it's working.}{-Low Blow: While Swashbuckling and wielding a Buckler in your off hand, activate to perform a shield bash with +2 Critical Threat Range and Multiplier. On hit, knock down affected enemy for three seconds (Perform + d20 saves for the Knockdown). (Costs: 10 SP, Cooldown: 18 seconds)}{-Music Box: Passive: While Swashbuckling with a Rune Arm in your off hand, you gain +1 bonus Imbue dice.}{-Slap in the Face: While Swashbuckling and wielding nothing in your off hand, activate to deal 1 Bludgeon damage. Damaged enemies can't cast spells for 6 seconds and are stunned for three seconds (Perform + d20 saves for the Stun). (Costs: 10 SP, Cooldown: 18 seconds)
 Tier: 4
 All: Tier 3: Swashbuckling Style
 Flags: SelectorOnly
-SharedSelector: Tier 3: Swashbuckling Style
 Selector: Loud & Clear, Music Box, Slap in the Face, Low Blow
 
 AbilityName: Battering Barrage
@@ -10875,22 +10837,22 @@ Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor. You gain Dexterit
 Tier: 0
 
 AbilityName: Ability Score Increase
-Descrip: +1 Charmisma/+1 Dexterity
+Descrip: +1 Charisma or +1 Dexterity
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
-Selector: Dexterity, Charisma
+Selector: Charisma, Dexterity
 
 AbilityName: Nimble Cat II
 Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor
 Tier: 0
 
 AbilityName: Ability Score Increase II
-Descrip: +1 Charmisma/+1 Dexterity
+Descrip: +1 Charisma or +1 Dexterity
 Tier: 0
 Cost: 2
 Flags: SelectorOnly
-Selector: Dexterity, Charisma
+Selector: Charisma, Dexterity
 
 AbilityName: Nimble Cat III
 Descrip: +1% Dodge and Dodge Cap. +1 Maximum Dexterity Bonus in Light Armor
@@ -10902,7 +10864,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Cat Scratch
-Descrip: Active: +20% damage. Melee Attack: Strike all nearby foes in front of you.  6 second cooldown.
+Descrip: Melee Attack: +20% damage. Strike all nearby foes in front of you.  (6 second cooldown)
 Tier: 1
 
 AbilityName: Acrobatic
@@ -10918,15 +10880,16 @@ AbilityName: Sneaky Strikes
 Descrip: +1 Sneak Attack Die
 Tier: 1
 
-AbilityName: Hunt Down
-Descrip: Your Cat Scratch now Hamstrings opponents for 3 seconds, reducing their movement rate by 50%. Some creatures are immune to the Hamstring effect.
-Tier: 2
-All: Tier 1: Sharp Claws
-
 AbilityName: Surprise Claws
 Descrip: +[1/2/3] to Attack while Flanking.
 Tier: 2
 Ranks: 3
+All: Tier 1: Sharp Claws
+
+AbilityName: Hunt Down
+Descrip: Your Cat Scratch now Hamstrings opponents for 3 seconds, reducing their movement rate by 50%. Some creatures are immune to the Hamstring effect.
+Tier: 2
+All: Tier 1: Cat Scratch
 
 AbilityName: High Places
 Descrip: After falling for at least 1.5 seconds, when you land you gain +2 Critical Hit Confirmation, +2 Critical Hit Damage, and +25% Armor Piercing for 20 seconds.
@@ -10937,22 +10900,22 @@ Descrip: You gain the benefits of the Deflect Arrows feat, knocking aside one in
 Tier: 2
 
 AbilityName: Slip Out of Danger
-Descrip: +[2/4/6] Saves vs. Traps.}Rank 3: You gain +1 to Reflex Saves.
+Descrip: +[2/4/6] Saves vs. Traps. Rank 3: You gain +1 to Reflex Saves.
 Tier: 2
 Ranks: 3
 
-AbilityName: Stabby Claws
-Descrip: +[1/2/3]% Dodge Bypass} (Bug: Currently has a multiselector where both options are the same +[1/2/3]% Dodge Bypass)
+AbilityName: Sharp Claws II
+Descrip: +[1/2/3] to Damage
 Tier: 3
 Ranks: 3
 
 AbilityName: Corner
-Descrip: +[1/2/3] to Melee Damage.
+Descrip: +[1/2/3]% to Dodge Bypass.
 Tier: 3
 Ranks: 3
 
 AbilityName: Improved Nimble Cat
-Descrip: You gain Dexterity to Damage with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.}        (Bug: Doesn't work. Known issue and fixed in an upcoming patch as of 4/28)
+Descrip: You gain Dexterity to Damage with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
 Tier: 3
 
 AbilityName: Focused Agility
@@ -10964,15 +10927,15 @@ Descrip: +1 Sneak Attack Die
 Tier: 3
 
 AbilityName: Feline Versatility
-Descrip: Choose one of the following.}{-Lash Out: +5% Offhand Strike Chance if using a Light Melee Weapon or Rapier in both hands.}{-Rapid Scratch: +3% Doublestrike while Single Weapon Fighting}{-Quick Paw: +3% Doubleshot with Thrown Weapons}{-Vigor: Vigor SLA
+Descrip: Choose one of the following:}}{-Lash Out: +5% Offhand Strike Chance if using a Light Melee Weapon or Rapier in both hands.}{-Quick Paw: +3% Doubleshot with Thrown Weapons}{-Rapid Scratch: +3% Doublestrike while Single Weapon Fighting}{-Vigor: Vigor SLA (as per the Druid spell)
 Tier: 4
-Selector: Lash Out, Rapid Scratch, Quick Paw, Vigor
+Selector: Lash Out, Quick Paw, Rapid Scratch, Vigor
 
 AbilityName: Deep Scratches
 Descrip: Your Cat Scratch now deals Bane damage to targets it hits that are vulnerable to Bleed. This damage is equal to 1d4 damage per Character Level, and scales with Melee Power.
 Tier: 4
 
-AbilityName: 9 Lives
+AbilityName: Nine Lives
 Descrip: You gain Rogue's Defensive Roll feat. (While below 20% HP, there's a chance equal to your Reflex save that attacks do half damage and have their effects negated.)
 Tier: 4
 
@@ -10984,7 +10947,6 @@ All: Tier 3: Focused Agility
 AbilityName: Lucky Cat
 Descrip: You gain Evasion.
 Tier: 4
-All: Tier 4: 9 Lives
 
 TreeName: Tabaxi Trailblazer
 Type: Race
@@ -11273,7 +11235,7 @@ Tier: 0
 AbilityName: Tempest
 Descrip: +10% Offhand Strike Chance (the chance to make off-hand attacks when Dual Wielding Melee weapons). You now treat Scimitars as if they were light Melee weapons. While you are Dual Wielding light Melee weapons, you can use your Dexterity modifier to hit.}{ Note: Does not work with handwraps.
 Tier: 0
-None: Half-Elf Tier 4: Dilettante Special Ability: Tempest
+None: Half-Elf Tier 4: Dilettante Special Ability: Ranger
 
 AbilityName: Graceful Death
 Descrip: While you are Dual Wielding light Melee weapons, you can use your Dexterity modifier for damage.}{ Note: Does not work with handwraps.
@@ -11469,7 +11431,7 @@ AbilityName: Sly Flourish
 Descrip: Melee Attack: +[10/20/30]% damage with +[1/2/3] critical threat range. On Sneak Attack: Intelligent target also gains a -1 penalty to Balance, Reflex, and Will saves for 20 seconds. (Stacks 5 times.) (Cooldown: 8 seconds)}{ Passively provides: [5/10/15]% threat reduction (Note: only reduces melee threat).
 Tier: 1
 Ranks: 3
-None: Half-Elf Tier 2: Dilettante Special Ability: Sly Flourish
+None: Half-Elf Tier 2: Dilettante Special Ability: Rogue
 
 AbilityName: Fast Movement
 Descrip: You run 1% faster for each of your Rogue levels if you are wearing cloth or light armor.

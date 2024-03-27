@@ -217,7 +217,7 @@ FeatName: Beloved of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Dark Apostate 12, Favored Soul 12, Paladin 12
+Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12, Sacred Fist 12
 Flags: Deity
 All: Child of
 SharedSelector: Follower of
@@ -258,18 +258,6 @@ Descrip: +2 to attack and damage rolls with mauls.
 SelectorName: The Blood of Vol
 WikiName: Deity feats
 Descrip: +3 to attack and damage rolls with daggers.
-
-FeatName: Biting Acid
-Group: Heroic, Melee
-Descrip: 1d6 acid damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
-Class: Druid 2, Blightcaster 2
-Flags: Unselectable
-
-FeatName: Biting Poison
-Group: Heroic, Melee
-Descrip: 1d8 poison damage with all melee attacks. Scales with spell power. This can only be used in Wolf or Hive forms.
-Class: Druid 2, Blightcaster 2
-Flags: Unselectable
 
 FeatName: Blinding Speed
 Group: Epic, Melee, Range
@@ -340,7 +328,7 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
 All: Follower of
-Class: Cleric 3, Dark Apostate 3, Favored Soul 3, Paladin 3
+Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3, Sacred Fist 3
 Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
@@ -498,7 +486,7 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Your faith has been rewarded with an active ability.
 All: Follower of
-Class: Cleric 6, Dark Apostate 6, Favored Soul 6, Paladin 6
+Class: Cleric 6, Favored Soul 6, Paladin 6, Dark Apostate 6, Sacred Fist 6
 Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
@@ -971,7 +959,7 @@ FeatName: Extra Turning
 Group: Heroic, Misc
 Descrip: +4 Turns per rest.
 RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Dark Apostate 1, Paladin 4
+Class: Cleric 1, Paladin 4, Dark Apostate 1
 
 FeatName: Fascinate
 Group: Misc
@@ -1081,7 +1069,7 @@ FeatName: Follower of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Cleric 1, Dark Apostate 1, Favored Soul 1, Paladin 1
+Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1, Sacred Fist 1
 Flags: Deity, ClassOnly
 ClassOnlyClass: Cleric, Dark Apostate, Favored Soul, Paladin
 ClassOnlyLevel: 1
@@ -1309,7 +1297,7 @@ Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fi
 SelectorName: Alchemist
 WikiName: Half-Elf Dilettante#Alchemist
 Descrip: You have +10 Universal Spell Power. For item use purposes, you count as a level one Alchemist in addition to any other classes you possess. This feat is not recommended for characters with actual Alchemist levels.
-Stat: Charisma 13
+Stat: Intelligence 13
 SelectorName: Artificer
 WikiName: Half-Elf Dilettante#Artificer
 Descrip: You gain proficiency with all crossbows, and Artificer Knowledge: Scrolls (You gain a +2 bonus to Use Magical Device checks when using scrolls, and their Caster Level is increased by one - this Caster Level increase is capped by your Intelligence modifier.)}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
@@ -1578,7 +1566,7 @@ FeatName: Improved Turning
 Group: Heroic, Misc
 Descrip: Gives you the ability to turn undead as if you were one cleric level higher.
 RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Dark Apostate 1, Paladin 4
+Class: Cleric 1, Paladin 4, Dark Apostate 1
 
 FeatName: Improved Two Handed Fighting
 Abbreviation: Improved THF
@@ -2276,7 +2264,7 @@ Flags: Unselectable
 FeatName: Religious Lore
 Group: Heroic, Spellcasting
 Descrip: This feat grants represents your knowledge of the Religion. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Cleric 1, Dark Apostate 1, Favored Soul 1, Paladin 1, Bard 1, Sacred Fist 1
+Class: Cleric 1, Favored Soul 1, Paladin 1, Bard 1, Sacred Fist 1, Dark Apostate 1
 Flags: Unselectable
 
 FeatName: Remove Disease
@@ -2754,7 +2742,7 @@ Class: Acolyte 1
 FeatName: Turn Undead
 Group: Misc
 Descrip: Cause undead to freeze in place, run away, or explode. Large area of effect, limited uses per rest.
-Class: Cleric 1, Dark Apostate 1, Paladin 4, Sacred Fist 4
+Class: Cleric 1, Paladin 4, Dark Apostate 1, Sacred Fist 4
 Flags: Unselectable
 
 FeatName: Two Handed Fighting
@@ -2919,21 +2907,11 @@ FeatName: Wild Shape 1
 Group: Heroic, Misc
 WikiName: Wild Shape#Animal Forms
 Descrip: At levels 2 and 5 a druid may use their 'Wild Shape' feat to change into an animal.
-Class: Druid 2
+Class: Druid 2, Blightcaster 2
 Flags: ClassOnly
 ClassOnlyClass: Druid
 ClassOnlyLevel: 2, 5
 Selector: Bear, Wolf
-
-FeatName: Blightcaster Wild Shape 1
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 1 a Blightcaster may use their 'Wild Shape' feat to change into a Plague Wolf.
-Class: Blightcaster 2
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 2
-Selector: Plague Wolf
 
 FeatName: Wild Shape 2
 Group: Heroic, Misc
@@ -2945,26 +2923,6 @@ ClassOnlyClass: Druid, Blightcaster
 ClassOnlyLevel: 8, 11
 Selector: Dire Bear, Winter Wolf 
 
-FeatName: Blightcaster Wild Shape 2
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change into a Blighted Wolf.
-Class: Blightcaster 11
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 11
-Selector: Blighted Wolf
-
-FeatName: Minor Elemental Kin Form
-Group: Heroic, Misc
-WikiName: Wild Shape#Magical Beast Forms
-Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
-Class: Blightcaster 4
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 4, 8
-Selector: Hive Keeper, Thorn Kin
-
 FeatName: Wild Shape 3
 Group: Heroic, Misc
 WikiName: Wild Shape#Elemental Forms
@@ -2975,6 +2933,42 @@ ClassOnlyClass: Druid
 ClassOnlyLevel: 13, 17
 Selector: Fire Elemental, Water Elemental
 
+FeatName: Wild Shape Plague Wolf
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At level 2 a Blightcaster may use their 'Wild Shape' feat to change into a Plague Wolf.
+Class: Blightcaster 2
+Flags: Unselectable
+
+FeatName: Wild Shape Blighted Wolf
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change into a Blighted Wolf.
+Class: Blightcaster 11
+Flags: Unselectable
+
+FeatName: Blightcaster Wild Imbue
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 2 and 11 a Blightcaster receives an Imbue that can only be used in Wolf or Hive form.}}Biting Acid: Imbue Toggle: 1d6 acid damage with all melee attacks. Scales with spell power.}}Biting Poison: Imbue Toggle: 1d8 poison damage with all melee attacks. Scales with spell power.
+Class: Blightcaster 2
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 2, 11
+Flags: SelectorOnly
+Selector: Biting Acid Imbue, Biting Poison Imbue
+
+FeatName: Minor Elemental Kin Form
+Group: Heroic, Misc
+WikiName: Wild Shape#Magical Beast Forms
+Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
+Class: Blightcaster 4
+Flags: ClassOnly
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 4, 8
+Flags: SelectorOnly
+Selector: Hive Keeper, Thorn Kin
+
 FeatName: Advanced Elemental Kin Form
 Group: Heroic, Misc
 Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental form.}{-Thorn Knight: A more advanced form of Thorn Kin, you are now also plant kind beneath your thorny armor. You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water. +3 bonus to caster level and max caster level of Physical and Poison spells. You gain 10% absorption against piercing damage and 5% absorb against blunt damage. You gain +2 imbue dice. 10% exceptional bonus to armor class and 100% fortification. 15% vulnerability to fire damage.}{-Hive Master: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm. You are considered vermin for the purposes of immunities and are immune to mind effects and knock down. +3 bonus to caster level and max caster level of Poison and Acid Spells. You are ethereal to monsters while tumbling. You gain 50% concealment as displacement and Improved Evasion. You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10). 15% vulnerability to cold and -15 on diplomacy checks.
@@ -2982,6 +2976,7 @@ Class: Blightcaster 13
 Flags: ClassOnly
 ClassOnlyClass: Blightcaster
 ClassOnlyLevel: 13, 17
+Flags: SelectorOnly
 Selector: Thorn Knight, Hive Master
 
 FeatName: Wilderness Lore

@@ -307,6 +307,7 @@ Trees: Shintao, Henshin Mystic, Ninja Spy
 
 ClassName: Paladin
 Initial: P, Pa, Paladin, Pal
+DisallowedClasses: Sacred Fist
 Color: Purple
 Alignment: Lawful Good
 BAB: 1
@@ -341,6 +342,7 @@ SpellList4: Break Enchantment, Cure Serious Wounds, Death Ward, Holy Sword, Neut
 
 ClassName: Ranger
 Initial: R, Rn, Ranger, Rgr
+DisallowedClasses: Dark Hunter
 Color: Green
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 1
@@ -471,7 +473,6 @@ PactSpells: Celestial, Bless, Soundburst, Magic Circle Against Evil, Prayer, Hol
 PactSpells: Abyss, Mage Armor, Spawn Screen, Halt Undead, Death Aura, Symbol of Pain, Rend the Soul
 PactSpells: Carceri Storm, Merfolk's Blessing, Gust of Wind, Creeping Cold, Ice Storm, Niac's Biting Cold, Greater Creeping Cold
 
-
 ClassName: Wizard
 Initial: W, Wz, Wizard, Wiz
 Color: Blue
@@ -505,6 +506,7 @@ SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monste
 
 ClassName: Stormsinger
 Initial: S, SS, Storm, Stm
+DisallowedClasses: Bard
 Color: Purple
 Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 DisallowedClasses: Bard
@@ -540,6 +542,7 @@ SpellList6: Greater Shout, Heroes' Feast, Mass Cat's Grace, Mass Charm Monster, 
 
 ClassName: Dark Apostate
 Initial: D, DA, DarkA, Drk
+DisallowedClasses: Cleric
 Color: Yellow
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 DisallowedClasses: Cleric
@@ -586,8 +589,9 @@ GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Profi
 GrantedFeats1: Martial Weapon: Scimitar
 GrantedFeats1: Magical Training, Druidic Oath, Druid Spontaneous Casting, Disease Immunity
 GrantedFeats1: Wilderness Lore
-GrantedFeats2: Biting Acid, Biting Poison
+GrantedFeats2: Wild Shape Plague Wolf
 GrantedFeats5: Venom Immunity
+GrantedFeats11: Wild Shape Blighted Wolf
 GrantedFeats15: Timeless Body
 ClassFeat: 2, 4, 8, 11, 13, 17
 Trees: Nature's Warrior, Blightcaster, Season's Herald
@@ -615,6 +619,7 @@ SpellList9: Acid Well, Blighted Charge, Rend the Soul, Storm of Vengeance, Tsuna
 
 ClassName: Sacred Fist
 Initial: S, SF, Sacred Fist, Sac
+DisallowedClasses: Paladin
 Color: Purple
 Alignment: Lawful Good
 BAB: 1
@@ -651,6 +656,7 @@ SpellList4: Break Enchantment, Cure Serious Wounds, Death Ward, Holy Sword, Ki E
 
 ClassName: Dark Hunter
 Initial: D, DH, DarkH, DHN
+DisallowedClasses: Ranger
 Color: Green
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 1
