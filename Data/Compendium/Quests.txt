@@ -130,12 +130,12 @@ Level: 2
 QuestName: Missing in Action
 Patron: The Coin Lords
 Favor: 3
-Level: 2
+Level: 3
 
 QuestName: The Sunken Sewer
 Patron: The Coin Lords
 Favor: 3
-Level: 2
+Level: 3
 
 QuestName: Redfang the Unruled
 Patron: The Free Agents
@@ -156,8 +156,7 @@ Style: Solo
 QuestName: An Explosive Situation
 Patron: The Coin Lords
 Favor: 2
-Level: 3
-Style: Solo
+Level: 4
 
 QuestName: Kobold Assault
 Patron: The Coin Lords
@@ -217,6 +216,12 @@ QuestName: Freshen the Air
 Patron: The Free Agents
 Favor: 3
 Level: 4
+
+QuestName: Catastrophe
+Patron: Agents of Argonnessen
+Favor: 3
+Level: 4
+Epic: 34
 
 QuestName: Rest for the Restless
 Patron: House Phiarlan
@@ -1286,6 +1291,15 @@ Patron: The Coin Lords
 Favor: 5
 Level: 6
 Epic: 21
+Style: Raid
+
+QuestName: Chronoscope (Legendary)
+Wiki: The Chronoscope (Legendary)
+Pack: Devil Assault
+Patron: The Coin Lords
+Favor: 5
+Level: 32
+Epic: 32
 Style: Raid
 
 QuestName: Kind of a Big Deal
@@ -3008,6 +3022,125 @@ Favor: 7
 Level: 18
 Epic: 26
 
+QuestName: Turn the Page
+Wiki: Turn the Page (quest)
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Grand Theft Aureon
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Vecna Unleashed
+Wiki: Vecna Unleashed (quest)
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: The Bark and the Blade
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Enemy of My Enemy
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: The Evil We Know
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Law and Order
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Taken in Hand
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Vecna Denied
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 7
+Level: 18
+Epic: 34
+
+QuestName: Paper Trail
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Party 101
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 5
+Level: 18
+Epic: 34
+
+QuestName: The Devils to Pay
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 5
+Level: 18
+Epic: 34
+
+QuestName: What Dreams May Come
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 5
+Level: 18
+Epic: 34
+
+QuestName: Fire Over Morgrave
+Pack: Vecna Unleashed
+Patron: Morgrave University
+Favor: 9
+Level: 34
+Epic: 34
+Style: Raid
+
+QuestName: Fred's First Date
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+
+QuestName: This Old Haunt
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+
+QuestName: Too Many Cooks
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+
 QuestName: Finding the Path
 Pack: Path of Inspiration
 Patron: The Coin Lords
@@ -3364,141 +3497,26 @@ Epic: 30
 Style: Raid
 Map: The Ruins of Thunderholme
 
-QuestName: Enemy of My Enemy
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: Grand Theft Aureon
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 7
-Level: 18
-Epic: 34
-
-QuestName: Law and Order
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 7
-Level: 18
-Epic: 34
-
-QuestName: Paper Trail
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: Party 101
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 5
-Level: 18
-Epic: 34
-
-QuestName: Taken in Hand
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: The Bark and the Blade
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 7
-Level: 18
-Epic: 34
-
-QuestName: The Devils to Pay
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 5
-Level: 18
-Epic: 34
-
-QuestName: The Evil We Know
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: Turn the Page
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: Vecna Denied
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 7
-Level: 18
-Epic: 34
-
-QuestName: Vecna Unleashed
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 6
-Level: 18
-Epic: 34
-
-QuestName: What Dreams May Come
-Pack: Vecna Unleashed
-Patron: Morgrave University
-Favor: 5
-Level: 18
-Epic: 34
-
 QuestName: Pilgrims' Peril
 Patron: The Twelve
+Favor: 9
 Level: 34
 Epic: 34
-Favor: 9
 
 QuestName: Stolen Power
 Patron: The Twelve
+Favor: 9
 Level: 34
 Epic: 34
-Favor: 9
 
 QuestName: Horde of the Illithid Controller
 Patron: The Twelve
+Favor: 9
 Level: 34
 Epic: 34
-Favor: 9
 
 QuestName: Astral Ambush
 Patron: The Twelve
-Level: 34
-Epic: 34
-Favor: 9
-
-QuestName: Legendary Chronoscope
-Wiki: The Chronoscope (Legendary)
-Pack: Devil Assault
-Patron: The Coin Lords
-Favor: 10
-Level: 32
-Epic: 32
-Style: Raid
-
-QuestName: Catastrophe
-Wiki:  Catastrophe
-Patron: Agents of Argonnessen
-Favor: 3
-Level: 4
-Epic: 34
-
-QuestName: Fire Over Morgrave
-Pack: Vecna Unleashed
-Patron: Morgrave University
 Favor: 9
 Level: 34
 Epic: 34
-Style: Raid
