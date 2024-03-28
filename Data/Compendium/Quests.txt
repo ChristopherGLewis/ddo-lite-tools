@@ -1293,7 +1293,7 @@ Level: 6
 Epic: 21
 Style: Raid
 
-QuestName: Chronoscope (Legendary)
+QuestName: Legendary Chronoscope
 Wiki: The Chronoscope (Legendary)
 Pack: Devil Assault
 Patron: The Coin Lords
