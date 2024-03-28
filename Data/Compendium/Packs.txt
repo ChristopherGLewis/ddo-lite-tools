@@ -370,9 +370,18 @@ Link Named Items	Link	https://ddowiki.com/page/Update_57_named_items
 
 PackName: Vecna Unleashed
 Abbreviation: Vecna Unleashed
-Cost: ??
+Cost: 1999
 HeroicLow: 18
 HeroicHigh: 18
 EpicLow: 34
 EpicHigh: 34
 Link Named Items	Link	https://ddowiki.com/page/Update_61_named_items
+
+PackName: Slice of Life
+Abbreviation: Slice of Life
+Cost: ??
+HeroicLow: 18
+HeroicHigh: 18
+EpicLow: 34
+EpicHigh: 34
+Link Named Items	Link	https://ddowiki.com/page/Update_67_named_items
