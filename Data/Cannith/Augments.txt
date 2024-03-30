@@ -1324,7 +1324,6 @@ Prefix: The Infinite
 Augment: A Treatise on Battle
 Flags: Static; Named
 Color: Orange
-Flags: Static; Named
 Descrip: Combat Mastery +11
 Descrip: Immunity to Fear
 Notes: Fire Over Morgrave
@@ -1335,7 +1334,6 @@ Color: Purple
 Flags: Static; Named
 Descrip: Nullification +153
 Descrip: Item becomes a Spellcasting Implement
-Flags: Static; Named
 Descrip: Fire Over Morgrave
 ML: 32
 
@@ -1343,7 +1341,34 @@ Augment: Weaverwisp Melody
 Color: Green
 Flags: Static; Named
 Descrip: Your Inspire Greatness grants your allies an additional +3 Physical Resistance Rating.
-Flags: Static; Named
 Descrip: Fire Over Morgrave
 ML: 32
 
+Augment: Facet of Coalesced Impacts
+Color: Purple
+Flags: Static; Named
+Descrip: Greater Reinforced Fists
+Descrip: Illithid Invasion, any end chest
+ML: 32
+
+Augment: Facet of Condensed Power
+Color: Green
+Flags: Static; Named
+Descrip: Power Store
+Descrip: Illithid Invasion, any end chest
+ML: 32
+
+Augment: Facet of Psionic Intrusion
+Color: Orange
+Flags: Static; Named
+Descrip: Impulse +153
+Descrip: Item becomes a Spellcasting Implement
+Descrip: You gain immunity to Mind-Altering Enchantments, as per Protection from Evil
+Descrip: Illithid Invasion, any end chest
+ML: 32
+
+Augment: Globe of Cursed Blood
+Color: Clear
+Flags: Static; Named
+Descrip: +8 Enhancement bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
+ML: 32
