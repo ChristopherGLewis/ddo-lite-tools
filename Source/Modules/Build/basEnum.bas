@@ -456,6 +456,7 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         'Case ceSacredFist: GetClassResourceID = "CLSSACREDFIST"
         'Case ceDarkHunter: GetClassResourceID = "CLSDARKHUNTER"
         'Case ceAcolyte: GetClassResourceID = "CLSACOLYTE"
+        'Case ceDragonLord: GetClassResourceID = "CLSDRAGONLORD"
         Case ceStormsinger: GetClassResourceID = "CLSBARD"
         Case ceDarkApostate: GetClassResourceID = "CLSCLERIC"
         Case ceBlightcaster: GetClassResourceID = "CLSDRUID"

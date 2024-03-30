@@ -187,8 +187,8 @@ Begin VB.Form frmOverview
       Top             =   1350
       Visible         =   0   'False
       Width           =   2955
-      _ExtentX        =   5212
-      _ExtentY        =   344
+      _extentx        =   5212
+      _extenty        =   344
    End
    Begin VB.ComboBox cboRace 
       Height          =   330
@@ -240,7 +240,7 @@ Begin VB.Form frmOverview
          Left            =   5520
          ScaleHeight     =   630
          ScaleWidth      =   630
-         TabIndex        =   68
+         TabIndex        =   69
          TabStop         =   0   'False
          Top             =   3360
          Width           =   624
@@ -633,7 +633,7 @@ Begin VB.Form frmOverview
          Height          =   420
          Index           =   22
          Left            =   5442
-         TabIndex        =   69
+         TabIndex        =   68
          Top             =   3960
          Width           =   780
          WordWrap        =   -1  'True
@@ -1802,8 +1802,9 @@ Private Sub DrawIcons()
         With Me.picClass(i)
             Me.picClass(i).PaintPicture LoadResPicture(strResource, vbResBitmap), 0, 0, .Width, .Height
             'Me.picClass(i).Picture LoadResPicture(strResource, vbResBitmap)
-            'copy the pic to the drag icon
-            ' Me.picClass(i).Refresh
+            'copy the pic to the drag icon  - BUT you can't because they're different formats
+            '  See CreateIconFromResourceEx API
+            'Me.picClass(i).Refresh
             'Me.picClass(i).DragIcon = Me.picClass(i).Picture
         End With
         If enClassState = cseDisabled Then

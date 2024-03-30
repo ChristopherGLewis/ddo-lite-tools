@@ -162,7 +162,7 @@ Public Enum SlotEnum
     seTrinket
     seArmor
     seMainHand
-    seOffHand
+    seOffhand
     seSlotCount
 End Enum
 
