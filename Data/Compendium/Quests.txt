@@ -3502,3 +3502,27 @@ Favor: 9
 Level: 34
 Epic: 34
 Style: Raid
+
+QuestName: Fred's First Date
+Wiki: Fred's First Date
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: This Old Haunt
+Wiki: This Old Haunt
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34
+
+QuestName: Too Many Cooks
+Wiki: Too Many Cooks
+Pack: Slice of Life
+Patron: Morgrave University
+Favor: 6
+Level: 18
+Epic: 34

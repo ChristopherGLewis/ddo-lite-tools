@@ -13,6 +13,15 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.6.1 - Updates for U66.1, U67 quests 
+Changes:
+- Many updates to Destinies and Enhancements (thanks as always to Yhelm!)
+- U67 Quests
+- More Augments
+
+Fixes:
+- Icon for Dragonlord now correct when dragging.
+
 ### 4.6.0 - Updates for U66 
 Changes:
 - Addition to DragonLord (thanks as always to Yhelm!)
