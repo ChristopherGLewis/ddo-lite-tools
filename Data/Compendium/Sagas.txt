@@ -477,3 +477,46 @@ Quest: Trials of the Triceratops
 Quest: The Trouble with Tar Pits
 Quest: Whispers of Return
 Quest: Spiders and Flies
+
+SagaName: Vecna Unleashed (Epic)
+Abbreviation: Vecna
+Tier: Epic
+NPC: Orm the Trail-blazer
+Tome: 3
+Astrals: 1
+XP: 96	147	207	276
+Quest: Turn the Page
+Quest: Grand Theft Aureon
+Quest: Vecna Unleashed
+Quest: The Bark and the Blade
+Quest: Enemy of My Enemy
+Quest: The Evil We Know
+Quest: Law and Order
+Quest: Taken in Hand
+Quest: Vecna Denied
+Quest: Paper Trail
+Quest: Party 101
+Quest: The Devils to Pay
+Quest: What Dreams May Come
+
+SagaName: Vecna Unleashed (Heroic)
+Abbreviation: Vecna
+Tier: Heroic
+NPC: Orm the Trail-blazer
+Tome: 2
+Astrals: 1
+XP: 21	29	45	59
+Quest: Turn the Page
+Quest: Grand Theft Aureon
+Quest: Vecna Unleashed
+Quest: The Bark and the Blade
+Quest: Enemy of My Enemy
+Quest: The Evil We Know
+Quest: Law and Order
+Quest: Taken in Hand
+Quest: Vecna Denied
+Quest: Paper Trail
+Quest: Party 101
+Quest: The Devils to Pay
+Quest: What Dreams May Come
+

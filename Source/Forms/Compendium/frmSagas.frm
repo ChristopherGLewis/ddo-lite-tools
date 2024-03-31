@@ -353,9 +353,9 @@ Private mlngSagaMenu As Long
 
 Private Sub chkFontSize_Click()
     If Me.chkFontSize.Value = vbChecked Then
-        Me.picClient.FontSize = 8
-        Me.picContainer.FontSize = 8
-        Me.picHeader.FontSize = 8
+        Me.picClient.FontSize = 6
+        Me.picContainer.FontSize = 6
+        Me.picHeader.FontSize = 6
     Else
         Me.picClient.FontSize = 10
         Me.picContainer.FontSize = 10
@@ -426,7 +426,7 @@ Private Sub ShowScrollbar()
             .LargeChange = Me.picContainer.Height \ mlngRowHeight
             .Visible = True
         Else
-            .Visible = False
+            .Visible = True
         End If
     End With
     

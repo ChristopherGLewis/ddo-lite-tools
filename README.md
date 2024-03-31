@@ -13,6 +13,13 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.6.2 - Added missing Vecna Saga
+Changes:
+- Added Vecna Saga to Compendium
+
+Fixes:
+- Font selection for Compendium
+
 ### 4.6.1 - Updates for U66.1, U67 quests 
 Changes:
 - Many updates to Destinies and Enhancements (thanks as always to Yhelm!)

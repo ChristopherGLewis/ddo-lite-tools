@@ -24,45 +24,6 @@ Begin VB.Form frmTools
    ScaleHeight     =   6870
    ScaleWidth      =   9135
    ShowInTaskbar   =   0   'False
-   Begin VB.CheckBox chkHelp 
-      Appearance      =   0  'Flat
-      BackColor       =   &H80000005&
-      Caption         =   "Help"
-      ForeColor       =   &H80000008&
-      Height          =   372
-      Left            =   8160
-      Style           =   1  'Graphical
-      TabIndex        =   51
-      Top             =   0
-      Width           =   972
-   End
-   Begin Compendium.userTab usrTab 
-      Height          =   372
-      Left            =   0
-      TabIndex        =   0
-      TabStop         =   0   'False
-      Top             =   0
-      Width           =   4512
-      _ExtentX        =   7964
-      _ExtentY        =   661
-      Captions        =   "Tools,Options"
-   End
-   Begin VB.ComboBox cboSize 
-      Height          =   312
-      Left            =   7260
-      Style           =   2  'Dropdown List
-      TabIndex        =   63
-      Top             =   1260
-      Width           =   912
-   End
-   Begin VB.ComboBox cboFont 
-      Height          =   312
-      Left            =   5160
-      Style           =   2  'Dropdown List
-      TabIndex        =   64
-      Top             =   1260
-      Width           =   1992
-   End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
       BackColor       =   &H00C0FFC0&
@@ -70,7 +31,7 @@ Begin VB.Form frmTools
       ForeColor       =   &H80000008&
       Height          =   6492
       Index           =   1
-      Left            =   0
+      Left            =   240
       ScaleHeight     =   6492
       ScaleMode       =   0  'User
       ScaleWidth      =   9132
@@ -124,6 +85,22 @@ Begin VB.Form frmTools
          Tag             =   "ctl"
          Top             =   240
          Width           =   4092
+         Begin VB.ComboBox cboFont 
+            Height          =   330
+            Left            =   480
+            Style           =   2  'Dropdown List
+            TabIndex        =   65
+            Top             =   720
+            Width           =   1992
+         End
+         Begin VB.ComboBox cboSize 
+            Height          =   330
+            Left            =   2580
+            Style           =   2  'Dropdown List
+            TabIndex        =   64
+            Top             =   720
+            Width           =   912
+         End
          Begin VB.PictureBox picFont 
             Appearance      =   0  'Flat
             BackColor       =   &H80000005&
@@ -247,7 +224,7 @@ Begin VB.Form frmTools
             ForeColor       =   &H00FF0000&
             Height          =   216
             Left            =   3300
-            TabIndex        =   65
+            TabIndex        =   63
             Tag             =   "ctl"
             Top             =   0
             Width           =   624
@@ -960,6 +937,29 @@ Begin VB.Form frmTools
          Width           =   900
       End
    End
+   Begin VB.CheckBox chkHelp 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      Caption         =   "Help"
+      ForeColor       =   &H80000008&
+      Height          =   372
+      Left            =   8160
+      Style           =   1  'Graphical
+      TabIndex        =   51
+      Top             =   0
+      Width           =   972
+   End
+   Begin Compendium.userTab usrTab 
+      Height          =   372
+      Left            =   0
+      TabIndex        =   0
+      TabStop         =   0   'False
+      Top             =   0
+      Width           =   4512
+      _ExtentX        =   7964
+      _ExtentY        =   661
+      Captions        =   "Tools,Options"
+   End
 End
 Attribute VB_Name = "frmTools"
 Attribute VB_GlobalNameSpace = False
@@ -1088,8 +1088,8 @@ Private Sub LoadData()
     Me.txtPlay.Text = cfg.PlayEXE
     Me.txtSavePath.Text = cfg.CompendiumPath
     ' Font
-    ComboListHeightChild Me.cboFont, 20, Me
-    ComboListHeightChild Me.cboSize, 20, Me
+    'ComboListHeightChild Me.cboFont, 20, Me
+    'ComboListHeightChild Me.cboSize, 20, Me
     frmCompendium.GetQuestsFont strFontName, dblFontSize
     ComboClear Me.cboFont
     strFont = GetFontList(Me.picFont)
