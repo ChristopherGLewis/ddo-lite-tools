@@ -953,7 +953,7 @@ Cost: 2
 AbilityName: Elemental Inferno
 Descrip: AOE Ranged Archery Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where the shot hits with magical flames that can change their element. Affected enemies take 1 stack of Elemental Inferno. (Target takes 1d6 damage every 2 second for 6 seconds. This is Fire damage, unless you have Corrosive, Frost, Shock or Force Arrows active, in which case the damage type is the type of your Imbue. Elemental Inferno's damage scales with the relevant Spell Power. This effect can stack 20 times, and loses one stack on expiration.)(Activation cost: 6 SP. Cooldown 3 seconds)
 Tier: 2
-Cost: 2
+Cost: 1
 
 AbilityName: Elemental Arrows
 Descrip: Select one of four elemental arrow imbues not previously chosen and +1 bonus Imbue Dice, or Elemental Damage: +2 bonus Imbue Dice}Passive: +5 Universal Spell Power
@@ -4684,7 +4684,7 @@ Cost: 2
 AbilityName: Elemental Inferno
 Descrip: AOE Ranged Archery Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where this shot hits. On Hit: Target gains 1 stack of Inferno (target takes 1d6 fire damage every 2 second for 6 seconds. This effect can stack 20 times, and loses one stack on expiration.) (Activation cost: 6 SP. Cooldown 3 seconds)
 Tier: 2
-Cost: 2
+Cost: 1
 
 AbilityName: Elemental Arrows
 Descrip: Select one of four elemental arrow imbues not previously chosen and +1 bonus Imbue Dice, or Elemental Damage: +2 bonus Imbue Dice}Passive: +5 Universal Spell Power
