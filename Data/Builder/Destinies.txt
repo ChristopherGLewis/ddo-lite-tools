@@ -1849,7 +1849,7 @@ Tier: 2
 Selector: Body, Mind
 SelectorName: Body
 Descrip: Gain +[1/2] Strength, Dexterity, Constitution
-SelectorName: Bind
+SelectorName: Mind
 Descrip: Gain +[1/2] Intelligence, Wisdom, Charisma
 
 AbilityName: Evergreen
