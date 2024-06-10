@@ -814,13 +814,14 @@ Private Function InitDeityFeats()
     Dim lngCount As Long
     Dim enClass As ClassEnum
     
+    'This now understands FAV Deity levels
     CompactDeityFeats
     ReDim lngClassLevels(1 To ceClasses - 1)
     For lngLevel = 1 To 20
         enClass = build.Class(lngLevel)
         If enClass <> ceAny Then lngClassLevels(enClass) = lngClassLevels(enClass) + 1
         Select Case enClass
-            'Classes with Diety Feats - should probably be a flag in the classes.txt
+            'Classes with Deity Feats - should probably be a flag in the classes.txt
             Case ceCleric, cePaladin, ceSacredFist
                 Select Case lngClassLevels(enClass)
                     Case 1, 6
@@ -879,7 +880,10 @@ Private Sub CompactDeityFeats()
     
     With build.Feat(bftDeity)
         For i = 1 To .Feats
-            If .Feat(i).ClassLevel = 3 Or .Feat(i).ClassLevel = 12 Then .Feat(i).Level = 0
+            'this adds the FVS deity feats.
+            If .Feat(i).ClassLevel = 3 Or .Feat(i).ClassLevel = 6 Or .Feat(i).ClassLevel = 12 Or .Feat(i).ClassLevel = 20 Then
+                .Feat(i).Level = 0
+            End If
         Next
         For i = 1 To .Feats
             If j = 0 And .Feat(i).Level = 0 Then

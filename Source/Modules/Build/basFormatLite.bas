@@ -746,6 +746,7 @@ Private Function ParseLine(pstrRaw As String) As Boolean
     End Select
 End Function
 
+'Splits a combo by space
 Private Function SplitCombo(pstrCombo As String, pstrText As String, plngNumber As Long) As Boolean
     Dim lngPos As Long
     Dim strNumber As String
@@ -929,7 +930,12 @@ Private Sub LoadFeatsText()
         Select Case mstrField
             Case "alternate": enType = bftAlternate
             Case "exchange": enType = bftExchange
-            Case Else: If Not IdentifySlot(mstrList(0), enType, lngIndex) Then Exit Sub Else Exit Do
+            Case Else
+                If Not IdentifySlot(mstrList(0), enType, lngIndex) Then
+                    Exit Sub
+                Else
+                    Exit Do
+                End If
         End Select
         ' Identify effective type for alternates and echanges
         If Not IdentifySlot(mstrList(0), enChildType, lngChildIndex) Then Exit Sub
@@ -953,6 +959,7 @@ Private Sub LoadFeatsText()
             DeprecateFeat enType, lngIndex, strFeat, strSelector, enChildType, lngChildIndex
             Exit Sub
     End Select
+    'Add this feat to this type/slot
     build.Feat(enType).Feat(lngIndex).FeatName = strFeat
     build.Feat(enType).Feat(lngIndex).Selector = lngSelector
 End Sub
@@ -978,6 +985,7 @@ Private Function FindFeat(pstrRaw As String, pstrFeat As String, pstrSelector As
         pstrFeat = db.Feat(lngFeat).FeatName
         With db.Feat(lngFeat)
             For plngSelector = .Selectors To 1 Step -1
+                'Find this feat using a LCase match
                 If LCase$(.Selector(plngSelector).SelectorName) = LCase$(pstrSelector) Then Exit For
             Next
             If plngSelector = 0 And .Selectors > 0 Then FindFeat = 2 Else FindFeat = 1
@@ -992,6 +1000,7 @@ Private Function IdentifySlot(pstrRaw As String, penType As BuildFeatTypeEnum, p
     
     If Not SplitCombo(pstrRaw, strText, lngNumber) Then Exit Function
     penType = IdentifySlotType(strText)
+    'What kind of feat?
     Select Case penType
         Case bftUnknown
             Exit Function
@@ -1001,12 +1010,22 @@ Private Function IdentifySlot(pstrRaw As String, penType As BuildFeatTypeEnum, p
             For plngIndex = 1 To build.Feat(penType).Feats
                 If build.Feat(penType).Feat(plngIndex).ClassLevel = lngNumber Then Exit For
             Next
+        Case bftDeity
+            'Deity feats are based on class level, except sarcred fist
+            For plngIndex = 1 To build.Feat(penType).Feats
+                If build.Feat(penType).Feat(plngIndex).ClassLevel = lngNumber Then Exit For
+            Next
         Case Else
+            'Find out where this feat belongs.
             For plngIndex = 1 To build.Feat(penType).Feats
                 If build.Feat(penType).Feat(plngIndex).Level = lngNumber Then Exit For
             Next
     End Select
-    If plngIndex > build.Feat(penType).Feats Then penType = bftUnknown Else IdentifySlot = True
+    If plngIndex > build.Feat(penType).Feats Then
+        penType = bftUnknown
+    Else
+        IdentifySlot = True
+    End If
 End Function
 
 Private Function IdentifySlotType(pstrText As String) As BuildFeatTypeEnum

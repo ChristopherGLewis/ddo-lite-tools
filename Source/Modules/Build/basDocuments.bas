@@ -51,7 +51,9 @@ Public Sub BuildOpen(Optional pstrFile As String = vbNullString)
     Else
         mstrFile = OpenDialog(peLite)
     End If
-    If Len(mstrFile) Then LoadBuild mstrFile, True
+    If Len(mstrFile) Then
+        LoadBuild mstrFile, True
+    End If
 End Sub
 
 Public Function OpenDialog(penPlanner As PlannerEnum) As String
