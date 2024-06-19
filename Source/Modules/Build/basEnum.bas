@@ -51,6 +51,8 @@ Public Enum RaceEnum
     reRazorclaw
     reTabaxi
     reTrailblazer
+    reEladrin
+    reChaosmancer
     reRaces
 End Enum
 
@@ -85,6 +87,7 @@ Public Enum ClassEnum
     ceDarkHunter
     ceAcolyte
     ceDragonLord
+    ceWildMage
     ceClasses
     ceEmpty
 End Enum
@@ -328,6 +331,8 @@ Public Function GetRaceID(pstrRace As String) As RaceEnum
         Case "razorclaw", "razorclaw shifter": GetRaceID = reRazorclaw
         Case "tabaxi": GetRaceID = reTabaxi
         Case "trailblazer", "tabaxi trailblazer": GetRaceID = reTrailblazer
+        Case "eladrin": GetRaceID = reEladrin
+        Case "chaosmancer", "eladrin chaosmancer": GetRaceID = reChaosmancer
     End Select
 End Function
 
@@ -357,6 +362,8 @@ Public Function GetRaceName(ByVal penRace As RaceEnum) As String
         Case reRazorclaw: GetRaceName = "Razorclaw Shifter"
         Case reTabaxi: GetRaceName = "Tabaxi"
         Case reTrailblazer: GetRaceName = "Tabaxi Trailblazer"
+        Case reEladrin: GetRaceName = "Eladrin"
+        Case reChaosmancer: GetRaceName = "Eladrin Chaosmancer"
     End Select
 End Function
 
@@ -400,6 +407,7 @@ Public Function GetClassID(ByVal pstrClass As String) As ClassEnum
         Case "dark hunter": GetClassID = ceDarkHunter
         Case "acolyte": GetClassID = ceAcolyte
         Case "dragon lord": GetClassID = ceDragonLord
+        Case "wild mage": GetClassID = ceWildMage
     End Select
 End Function
 
@@ -427,7 +435,7 @@ Public Function GetClassName(ByVal penClass As ClassEnum, Optional pblnAbbreviat
         Case ceDarkHunter: GetClassName = "Dark Hunter"
         Case ceAcolyte: GetClassName = "Acolyte"
         Case ceDragonLord: GetClassName = "Dragon Lord"
-       
+        Case ceWildMage: GetClassName = "Wild Mage"
     End Select
 End Function
 
@@ -457,6 +465,7 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         'Case ceDarkHunter: GetClassResourceID = "CLSDARKHUNTER"
         'Case ceAcolyte: GetClassResourceID = "CLSACOLYTE"
         'Case ceDragonLord: GetClassResourceID = "CLSDRAGONLORD"
+        'Case ceWildMage: GetClassResourceID = "CLSWILDMAGE"
         Case ceStormsinger: GetClassResourceID = "CLSBARD"
         Case ceDarkApostate: GetClassResourceID = "CLSCLERIC"
         Case ceBlightcaster: GetClassResourceID = "CLSDRUID"
@@ -464,6 +473,7 @@ Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
         Case ceDarkHunter: GetClassResourceID = "CLSRANGER"
         Case ceAcolyte: GetClassResourceID = "CLSWARLOCK"
         Case ceDragonLord: GetClassResourceID = "CLSFIGHTER"
+        Case ceWildMage: GetClassResourceID = "CLSSORCERER"
     
     End Select
 End Function

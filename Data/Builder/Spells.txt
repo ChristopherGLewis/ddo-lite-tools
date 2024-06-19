@@ -228,8 +228,14 @@ Descrip: An electrical discharge strikes a primary target for 1d6+6 per caster l
 SpellName: Chain Missiles
 Descrip: A missile of magical energy darts forth and unerringly strikes its target inflicting 1d2+3 force damage. For every 2 caster levels beyond first you gain an additional missile, up to 10 missiles. (At level 19.) After striking your target, the missiles explode outwards, striking other creatures near the primary target.
 
+SpellName: Chaos Bolt
+Descrip: Fires a small orb of chaotic energy at a target, doing 1d6+2 Chaos Damage for every caster level (up to a max of 10d6+20 at caster level 10).
+
 SpellName: Chaos Hammer
 Descrip: This spell deals 1d6+4 points of chaotic damage per caster level to lawful creatures and slows them for 6d6 seconds. A successful Will save reduces the damage by half and negates the slow effect. This spell deals only half damage to creatures who are Neutral, and are not slowed. This spell deals no damage to Chaotic creatures, and cannot be cast by Lawful casters.
+
+SpellName: Chaos Sphere
+Descrip: A sphere of chaos bursts from your outstretched hand, dealing 1d6+3 Chaos Damage per caster level (up to a max of 10d6+30 at caster level 10) to targets in its path. A successful Reflex save reduces the damage by half.
 
 SpellName: Charm Animal
 Descrip: Charms a hostile Animal, Magical Beast or Vermin which will fight as a trusted friend and ally. Charmed animals get an additional save every 15 to 30 seconds. A successful Will save negates this effect. Mindless targets cannot save, but the duration is halved.
@@ -423,7 +429,7 @@ SpellName: Dispel Magic
 Descrip: Removes ongoing spells that have been cast on a target, on a successful caster level check 1d20+caster level (Maximum caster level 10.) of DC 11+spell's caster level. In addition, this spell can be used to sever the connection between a summoner and his or her summoned monster, causing the summoned creature to attack unpredictably, possibly turning on its summoner.
 
 SpellName: Displacement
-Descrip: An ally creature's outline becomes blurred, giving enemies a 50% miss chance when attacking.
+Descrip: Your appearance becomes extremely blurred, giving enemies a 50% miss chance when attacking for 6 seconds per Caster Level.
 
 SpellName: Displacement Draught
 Descrip: Drink a potion with the effects of the Displacement spell. Your appearance becomes extremely blurred, giving enemies a 50% miss chance when attacking for 6 seconds per Caster Level.
@@ -561,7 +567,7 @@ SpellName: Fire Shield
 Descrip: Wreaths the caster in hot or cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) damage. The Fire version of this spell deals fire damage and reduces damage the caster takes from cold by half. The cold version of this spell deals cold damage and reduces damage the caster takes from fire by half. The flame from the fire version will burn away any webs that attempt to entangle you.
 
 SpellName: Fire Shield Cold
-Descrip: Wreaths the caster in cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) cold damage. This spell reduces damage the caster takes from fire by half.
+Descrip: Wreaths the caster in cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15) cold damage. This spell reduces damage the caster takes from fire by half.
 
 SpellName: Fire Storm
 Descrip: Deals 1d6+8 fire damage per caster level for targets in the storm area.
@@ -676,6 +682,9 @@ Descrip: Powerful thorny vines rip out of the ground seizing all enemies in the 
 
 SpellName: Grease
 Descrip: Covers the ground with a 10 ft. square layer of slippery grease, forcing targets to make a Reflex save or fall. (Affects party members.) Sometimes it deals 2d6 fire damage per 2 caster levels  to all enemies of the caster in the grease every few seconds, as well as the caster of the Grease spell. A successful Reflex save will reduce this damage by half.
+
+SpellName: Greater Color Spray
+Descrip: Enemies are sprayed with illusions of color, and must make a Will save or be Dazed, Blinded, and/or Silenced. The target must make a saving throw for each effect.
 
 SpellName: Greater Command
 Descrip: The caster commands multiple living enemies (Affects 1 living enemy per caster level.) to fall to the ground and lie Prone. A successful Will save negates.

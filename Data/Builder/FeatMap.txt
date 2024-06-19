@@ -126,7 +126,7 @@ Epic Spell Power: Fire	Arcane Sphere: Epic Spell Power: Fire	Epic Spell Power: F
 Epic Spell Power: Fire	Divine Sphere: Epic Spell Power: Fire	Epic Spell Power: Fire
 Epic Spell Power: Fire	Primal Sphere: Epic Spell Power: Fire	Epic Spell Power: Fire
 Epic Spell Power: Force	Arcane Sphere: Epic Spell Power: Force	Epic Spell Power: Force
-Epic Spell Power: Light	Divine Sphere: Epic Spell Power: Light	Epic Spell Power: Light
+Epic Spell Power: Light and Alignment	Divine Sphere: Epic Spell Power: Light	Epic Spell Power: Light
 Epic Spell Power: Negative	Divine Sphere: Epic Spell Power: Negative	Epic Spell Power: Negative
 Epic Spell Power: Positive	Primal Sphere: Epic Spell Power: Positive	Epic Spell Power: Positive
 Epic Spell Power: Repair	Arcane Sphere: Epic Spell Power: Repair	Epic Spell Power: Repair

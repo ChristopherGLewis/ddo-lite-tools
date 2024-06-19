@@ -217,7 +217,7 @@ FeatName: Beloved of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12, Sacred Fist 12
+Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12
 Flags: Deity
 All: Child of
 SharedSelector: Follower of
@@ -258,6 +258,11 @@ Descrip: +2 to attack and damage rolls with mauls.
 SelectorName: The Blood of Vol
 WikiName: Deity feats
 Descrip: +3 to attack and damage rolls with daggers.
+
+FeatName: Beloved of the Divine
+Group: Heroic, Misc
+Descrip: +2 Bonus to Attack and Damage with Simple Favored Weapons. +2 Bonus to Attack and Damage with Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
+Class: Sacred Fist 12
 
 FeatName: Blinding Speed
 Group: Epic, Melee, Range
@@ -328,7 +333,7 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Bonus to attack and damage rolls with your favored weapon.
 All: Follower of
-Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3, Sacred Fist 3
+Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3
 Flags: Deity
 SharedSelector: Follower of
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
@@ -368,6 +373,11 @@ Descrip: +2 to attack and damage rolls with mauls.
 SelectorName: The Blood of Vol
 WikiName: Deity feats
 Descrip: +2 to attack and damage rolls with daggers.
+
+FeatName: Child of Faith
+Group: Heroic, Misc
+Descrip: +2 Bonus to Attack and Damage with Simple and Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
+Class: Sacred Fist 3
 
 FeatName: Cleave
 Group: Heroic, Melee
@@ -486,9 +496,54 @@ Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Your faith has been rewarded with an active ability.
 All: Follower of
-Class: Cleric 6, Favored Soul 6, Paladin 6, Dark Apostate 6, Sacred Fist 6
+Class: Cleric 6, Favored Soul 6, Paladin 6, Dark Apostate 6
 Flags: Deity
 SharedSelector: Follower of
+Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
+SelectorName: Amaunator's Flames
+WikiName: Amaunator's Flames
+Descrip: Activate this ability to turn on your Fire Shield (Hot). 
+SelectorName: Bladesworn Transformation
+WikiName: Bladesworn Transformation
+Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Profane bonus to Strength, +4 natural armor bonus to AC, +4 profane bonus on damage rolls, +10 enhancement bonus to Will saves against mind affecting magic, and proficiency in all simple and martial weapons. Your BAB equals your level. You lose your spellcasting ability. You have immunity to critical hits and sneak attacks, but cannot be healed by healing spells.
+SelectorName: Silver Flame Exorcism
+WikiName: Silver Flame Exorcism
+Descrip: Banish an extraplanar creature, save DC 10 + Cleric Level + Charisma modifier.
+SelectorName: Unyielding Sovereignty
+WikiName: Unyielding Sovereignty
+Descrip: Heal self or ally to full health and remove virtually all negative effects, including death penalties.
+SelectorName: Undying Call
+WikiName: Undying Call
+Descrip: Raise Dead. Acts as True Resurrection if targeting an elf.
+SelectorName: Vulkoor's Avatar
+WikiName: Vulkoor's Avatar
+Descrip: Summon a servant of Vulkoor to destroy your enemies.
+SelectorName: Aureon's Instruction
+WikiName: Deity feats
+Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Wisdom, +3 Spell Penetration, and when Turning Undead you gain +4 effective level, +4 maximum Hit Dice and +4 total Hit Dice affected.
+SelectorName: Ever Watchful
+WikiName: Deity feats
+Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain True Seeing, +5 Sacred bonus to Spot and Search, +4 Wisdom, +5 to Fortitude Saves, and PRR equal to the number of Religous Lore feats you have.
+SelectorName: Luck of Olladra
+WikiName: Deity feats
+Descrip: Heal self or ally to full health and bestow a +1d6 Luck bonus to each ability score, lasting 24 seconds plus 6 seconds per Religious Lore feat you have.
+SelectorName: Onatar's Forge
+WikiName: Deity feats
+Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +3 to Tactical feats, +10 Melee Power, and +10 Repair, Rust and Fire Spell Power. If you benefit from Repair, gain +30 Repair Amplification.
+SelectorName: Blessing of Silvanus
+WikiName: Deity feats
+Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Natural Armor and +2 critical threat range with Mauls. This stacks with other sources.
+SelectorName: The Blood is The Life
+WikiName: Deity feats
+Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Constitution, 100% Fortification, +10 to Fortitude Saves, and PRR and MRR equal to the number of Religious Lore feats you have. Your attacks with Daggers also gain Vampirism, stacking with other sources of Vampirism.
+
+FeatName: Sacred Fist Deity Ability
+Group: Heroic, Misc
+WikiName: Deity feats#Deity Based Feats
+Descrip: Your faith has been rewarded with an active ability.
+All: Sacred Fist Follower of
+Class: Sacred Fist 6
+SharedSelector: Sacred Fist Follower of
 Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
 SelectorName: Amaunator's Flames
 WikiName: Amaunator's Flames
@@ -869,9 +924,9 @@ Level: 21
 
 FeatName: Epic Spell Power
 Group: Destiny, Spellcasting
-Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% all other types of spell critical damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
+Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light and Alignment, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% Universal Spell Critical Damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
 Level: 22
-Selector: Acid, Cold, Electricity, Fire, Force, Light, Negative, Poison, Positive, Repair, Sonic
+Selector: Acid, Cold, Electricity, Fire, Force, Light and Alignment, Negative, Poison, Positive, Repair, Sonic
 
 FeatName: Epic Toughness
 Group: Epic, Defense
@@ -1069,7 +1124,7 @@ FeatName: Follower of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1, Sacred Fist 1
+Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1
 Flags: Deity, ClassOnly
 ClassOnlyClass: Cleric, Dark Apostate, Favored Soul, Paladin
 ClassOnlyLevel: 1
@@ -1120,6 +1175,61 @@ Flags: Deity, ClassOnly
 ClassOnlyClass: Sacred Fist
 ClassOnlyLevel: 1
 Flags: Unselectable
+
+FeatName: Sacred Fist Follower of
+Group: Heroic, Misc
+WikiName: Deity feats#Deity Based Feats
+Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
+Class: Sacred Fist 1
+Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
+SelectorName: Amaunator
+None: Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+SelectorName: Lord of Blades
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
+Race: Required, Bladeforged, Warforged
+SelectorName: Silver Flame
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Sovereign Host
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Undying Court
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
+Race: Required, Elf, Half-Elf, Wood Elf
+SelectorName: Vulkoor
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
+Race: Required, Drow
+SelectorName: Aureon
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Helm
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+SelectorName: Olladra
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Onatar
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Silvanus
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: The Blood of Vol
+Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+SelectorName: The Blood of Vol
+None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus
+Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 
 FeatName: Force of Personality
 Group: Heroic, Defense, Misc
@@ -1736,7 +1846,7 @@ Descrip: +2 bonus to Intimidate skill. Available SLAs:}{-Shield of Faith}{-Prote
 Race: Required, Human
 SelectorName: Shadow
 Descrip: +2 bonus to Hide skill. Available SLAs:}{-Invisibility}{-Shadow Walk}{-Displacement
-Race: Required, Elf
+Race: Required, Elf, Eladrin
 SelectorName: Storm
 Descrip: +2 bonus to Balance skill. Available SLAs:}{-Gust of Wind}{-Electric Loop}{-Call Lightning Storm
 Race: Required, Half-Elf
@@ -2342,6 +2452,12 @@ Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 Univ
 SelectorName: Shadowfell
 Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
 
+FeatName: Seasonal Affinity
+Group: Heroic, Misc
+Descrip: Toggle: Choose between Autumn, Spring, Summer, and Winter:}{-Autumn: You are attuned to the magic of autumn. You gain +1 Wisdom.}{-Spring: You are attuned to the magic of spring. You gain +1 Charisma.}{-Summer: You are attuned to the magic of summer. You gain +1 Strength.}{-Winter: You are attuned to the magic of winter. You gain +1 Intelligence.
+Race: Required, Eladrin, Eladrin Chaosmancer
+Flags: RaceOnly
+
 FeatName: Second Wind
 Group: Heroic, Defense
 Descrip: Activate this ability to regain 50% of your maximum hit points.}You can use this once per rest. Gain additional charges at Fighter levels 4, 8, 12, 16, and 20.}Can be used while crowd-controlled.}At level 8 in addition to the heal the following effects are cured: Ability damage, Blind, Confusion, Dazed, Dazzled, Deafend, Diseased, Exhausted, Fatigued, Feebleminded, Nauseated, Poisoned, or Stunned.
@@ -2903,6 +3019,12 @@ Descrip: While in Druid Wild Shape, you gain some of the aspects of the form you
 Class: Druid 2
 Level: 31
 
+FeatName: Wild Magic
+Group: Heroic, Spellcasting
+Descrip: When you cast spells, you have a small chance to have additional strange effects occur around you. These effects very greatly from helpful, dangerous to just silly. Grants a +5% chance of gaining a Wild Surge every time you cast a spell. Wild Surges will also manifest over time passively. Wild Surges do not occur in public spaces.
+Class: Wild Mage 1
+Flags: Unselectable
+
 FeatName: Wild Shape 1
 Group: Heroic, Misc
 WikiName: Wild Shape#Animal Forms
@@ -2978,6 +3100,12 @@ ClassOnlyClass: Blightcaster
 ClassOnlyLevel: 13, 17
 Flags: SelectorOnly
 Selector: Thorn Knight, Hive Master
+
+FeatName: Wild Magic
+Group: Heroic, Spellcasting
+Descrip: When you cast spells, you have a small chance to have additional strange effects occur around you. These effects cary greatly from helpful, dangerous to just silly. Grants a +5% chance of gaining a Wild Surge every time you cast a spell. Wild Surges will also manifest over time passively. Wild Surges do not occur in public spaces. 
+Class: Wild Mage 1
+Flags: Unselectable
 
 FeatName: Wilderness Lore
 Group: Heroic, Misc

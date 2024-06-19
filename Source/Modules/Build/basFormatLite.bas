@@ -171,6 +171,7 @@ Private Sub SaveOverviewLite()
     For i = 0 To 2
         If build.BuildClass(i) <> ceAny Then AddLine "Class: " & GetClassName(build.BuildClass(i))
     Next
+    
     SaveClassLevelsLite
 End Sub
 
@@ -483,6 +484,7 @@ Private Sub SaveEnhancementsLite()
             AddLine "Tree: " & .TreeName
             AddLine "Type: " & GetTreeStyleName(.TreeType)
             If .Source <> 0 Then AddLine "Source: " & GetClassName(.Source)
+            'not sure what class levels has to do with trees...
             If .ClassLevels <> 0 Then AddLine "ClassLevels: " & .ClassLevels
             AddAbilityLite build.Tree(i), peEnhancement
             BlankLine
@@ -1121,6 +1123,7 @@ Private Sub LoadEnhancementsText()
         Case "source"
             If build.Trees <> 0 Then build.Tree(build.Trees).Source = GetClassID(mstrValue)
         Case "classlevels"
+            '???
             If build.Trees <> 0 Then build.Tree(build.Trees).ClassLevels = val(mstrValue)
         Case "ability"
             If build.Trees <> 0 Then AddTreeAbility mstrValue, build.Tree(build.Trees), peEnhancement

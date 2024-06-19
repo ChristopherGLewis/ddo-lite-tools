@@ -43,6 +43,16 @@ RaceName: Dwarf
 Type: Free
 Stats: 8, 8, 10, 8, 8, 6
 
+RaceName: Eladrin
+Type: Premium
+Stats: 8, 10, 8, 8, 8, 8
+GrantedFeats1: Seasonal Affinity
+
+RaceName: Eladrin Chaosmancer
+Type: Iconic
+Stats: 8, 8, 8, 8, 8, 10
+GrantedFeats1: Seasonal Affinity
+
 RaceName: Elf
 Type: Free
 Stats: 8, 10, 6, 8, 8, 8

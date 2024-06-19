@@ -1459,7 +1459,9 @@ Private Sub LoadAbility(ByVal pstrRaw As String, ptypTree As TreeType)
                     Case "tier"
                         lngTier = lngValue
                         If Not ValidTier(ptypTree.TreeType, lngTier) Then lngTier = log.Tier
-                        If log.Tier > lngTier Then LoadError log.LoadTree & " Tier " & lngTier & "(" & log.Tier & "?): " & strAbility & " not in Tier order"
+                        If log.Tier > lngTier Then
+                            LoadError log.LoadTree & " Tier " & lngTier & "(" & log.Tier & "?): " & strAbility & " not in Tier order"
+                        End If
                         log.Tier = lngTier
                     Case "ranks"
                         .Ranks = lngValue  'Note this doesn't init the rank array

@@ -473,3 +473,14 @@ MUST BE SORTED!
 
 Flags: Rare
 Include the rare flag for rare scroll wizard and artificer spells.
+
+
+
+HOWTO
+-----
+
+New Race
+  basEnum
+New Class
+New iconic
+New archtype
