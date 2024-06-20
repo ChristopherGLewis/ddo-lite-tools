@@ -1551,12 +1551,8 @@ FeatName: Improved Critical
 Group: Heroic, Melee, Range
 Descrip: Doubles the threat range of the chosen weapon type. Can be taken multiple times, though each time must be for a different type.
 BAB: 8
-ClassBonus: Artificer, Fighter
+ClassBonus: Artificer, Fighter, Dragon Lord
 Selector: Bludgeoning, Piercing, Ranged, Slashing, Thrown
-SelectorName: Piercing
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Thrown
-ClassBonus: Fighter, Dragon Lord
 
 FeatName: Improved Construct Essence
 SortName: Construct Essence2
