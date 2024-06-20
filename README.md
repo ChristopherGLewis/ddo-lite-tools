@@ -14,14 +14,15 @@ Any issues and input should be filed there.
 ## Release Notes
 
 ### 4.7.0 - Updates for U68
-Updates:
-- Eladrin Race
-- Eladrin Chaosmacer Iconic
-- Wild Mage Archtype
-- Racial tomes to +3
+Changes:
+- Added Eladrin Race
+- Added Eladrin Chaosmacer Iconic
+- Added Wild Mage Archtype
+- Racial tomes can now go to +3
 
 Fixes:
 - Deity feats for FSV should now work over class level 6
+- Fixed Improve Critical feat
 
 ### 4.6.2 - Added missing Vecna Saga
 Changes:
