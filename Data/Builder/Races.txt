@@ -50,6 +50,7 @@ GrantedFeats1: Seasonal Affinity
 
 RaceName: Eladrin Chaosmancer
 Type: Iconic
+IconicClass: Wild Mage
 Stats: 8, 8, 8, 8, 8, 10
 GrantedFeats1: Seasonal Affinity
 

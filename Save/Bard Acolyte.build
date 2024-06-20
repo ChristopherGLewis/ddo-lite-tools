@@ -1,0 +1,139 @@
+[Overview]
+
+Name: New Build
+Race: Tiefling Scoundrel
+MaxLevels: 32
+MaxLevels: 32
+
+Class: Bard
+Class: Acolyte
+
+Level: 1	Bard
+Level: 2	Bard
+Level: 3	Bard
+Level: 4	Bard
+Level: 5	Bard
+Level: 6	Bard
+Level: 7	Bard
+Level: 8	Bard
+Level: 9	Bard
+Level: 10	Bard
+Level: 11	Bard
+Level: 12	Bard
+Level: 13	Bard
+Level: 14	Acolyte
+Level: 15	Acolyte
+Level: 16	Acolyte
+Level: 17	Acolyte
+Level: 18	Acolyte
+Level: 19	Acolyte
+Level: 20	Acolyte
+
+
+[Stats]
+
+Preferred: Legend
+
+Adventurer: No
+Champion: No
+Hero: No
+;    Advn  Chmp  Hero  Lgnd  Tome
+;    ----  ----  ----  ----  ----
+STR:                           8
+DEX:   2           2     2     8
+CON:  10    16    16    16     8
+INT:                     2     8
+WIS:                           8
+CHA:  16    16    16    16     8
+;    ----  ----  ----  ----
+;     28    32    34    36   
+
+Levelup: 0	Charisma
+Levelup: 4	Charisma
+Levelup: 8	Charisma
+Levelup: 12	Charisma
+Levelup: 16	Charisma
+Levelup: 20	Charisma
+Levelup: 24	Charisma
+Levelup: 28	Charisma
+Levelup: 32	Charisma
+
+
+[Feats]
+
+Standard: Heroic 1	Quicken Spell
+Standard: Heroic 3	Spell Focus: Enchantment
+Standard: Heroic 6	Mental Toughness
+Standard: Heroic 9	Empower Spell
+Standard: Heroic 12	Maximize Spell
+Standard: Heroic 15	Greater Spell Focus: Enchantment
+Standard: Heroic 18	Improved Mental Toughness
+
+
+[Enhancements]
+
+Tier5: Acolyte of the Skin
+RacialAP: 18
+
+Tree: Tiefling Scoundrel
+Type: Race
+ClassLevels: 32
+Ability: Tier 0: Bloodsong I
+Ability: Tier 0: Charisma I
+Ability: Tier 0: Bloodsong II
+Ability: Tier 0: Charisma II
+Ability: Tier 0: Bloodsong III
+Ability: Tier 1: Hellish Rebuke
+Ability: Tier 1: Obscuring Darkness
+Ability: Tier 2: Hellish Reverberation
+Ability: Tier 2: Lasting Darkness
+Ability: Tier 3: Ash Imprisonment
+Ability: Tier 3: Dance in the Darkness
+Ability: Tier 4: Magic of Melodies
+Ability: Tier 4: Sonata of Darkness
+
+Tree: Acolyte of the Skin
+Type: Class
+Source: Acolyte
+ClassLevels: 7
+Ability: Tier 0: Fiendish Form I
+Ability: Tier 0: Fiendish Form II
+Ability: Tier 0: Fiendish Form III
+Ability: Tier 1: Resilience of Body (Rank 3)
+Ability: Tier 1: Guarded Mind
+Ability: Tier 1: Power of the Fiend - Fire (Rank 3)
+Ability: Tier 1: Resilience of Soul (Rank 3)
+Ability: Tier 2: Mindwrack
+Ability: Tier 2: Power of the Fiend - Fire (Rank 3)
+Ability: Tier 2: Nightshield
+Ability: Tier 2: Hellfire (Rank 3)
+Ability: Tier 3: Beam Concentration
+Ability: Tier 3: Devil's Bulwark I
+Ability: Tier 3: Power of the Fiend - Fire (Rank 3)
+Ability: Tier 3: Fiendish Glare
+Ability: Tier 3: Charisma
+Ability: Tier 4: Drink Their Fear
+Ability: Tier 4: Skin Adaptation
+Ability: Tier 4: Luck of the Gambler (Rank 3)
+Ability: Tier 4: Charisma
+Ability: Tier 5: Fiendish Symbiosis
+Ability: Tier 5: Glare of the Pit
+Ability: Tier 5: Dark Lore (Rank 3)
+
+Tree: Spellsinger
+Type: Class
+Source: Bard
+ClassLevels: 13
+Ability: Tier 0: Spellsinger
+Ability: Tier 1: Studies: Musical (Rank 3)
+Ability: Tier 1: Lingering Songs (Rank 3)
+Ability: Tier 1: Spell-Like Ability I: Sonic Blast (Rank 3)
+Ability: Tier 2: Spell-Like Ability II: Reverberate (Rank 3)
+Ability: Tier 2: Marigold Crown: Yellow
+Ability: Tier 3: Enthrallment
+Ability: Tier 3: Spell-Like Ability III: Shout (Rank 3)
+Ability: Tier 3: Charisma
+Ability: Tier 4: Sustaining Song
+Ability: Tier 4: Frolic
+Ability: Tier 4: Charisma
+

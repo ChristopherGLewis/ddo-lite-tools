@@ -35,6 +35,7 @@ Levelup: 16	Charisma
 Levelup: 20	Charisma
 Levelup: 24	Charisma
 Levelup: 28	Charisma
+Levelup: 32	
 
 
 [Skills]
@@ -89,8 +90,8 @@ Class: Warlock 1	Pact: Fiend
 [Enhancements]
 
 Tier5: Soul Eater
-RacialAP: 16
-UniversalAP: 1
+RacialAP: 18
+UniversalAP: 2
 
 Tree: Soul Eater
 Type: Class
@@ -152,6 +153,7 @@ Tree: Feydark Illusionist
 Type: Global
 ClassLevels: 30
 Ability: Tier 0: Find Familiar: Fox
+Ability: Tier 1: Study the Arcane (Rank 1)
 
 Tree: Tabaxi
 Type: Race
@@ -161,11 +163,11 @@ Ability: Tier 0: Ability Score Increase: Charisma
 Ability: Tier 0: Nimble Cat II
 Ability: Tier 0: Ability Score Increase II: Charisma
 Ability: Tier 0: Nimble Cat III
+Ability: Tier 1: Sharp Claws (Rank 3)
 Ability: Tier 1: Land On Your Feet
 Ability: Tier 2: Deflect Arrows
 Ability: Tier 2: Slip Out of Danger (Rank 3)
 Ability: Tier 3: Corner (Rank 3)
-Ability: Tier 4: 9 Lives
 
 
 [Destiny]

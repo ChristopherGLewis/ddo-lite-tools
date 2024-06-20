@@ -404,6 +404,7 @@ Trees: Assassin, Mechanic, Thief-Acrobat
 
 ClassName: Sorcerer
 Initial: S, Sr, Sorc, Sor
+DisallowedClasses: Wild Mage
 Color: Red
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.5
@@ -742,7 +743,7 @@ ClassFeat: 1, 8, 16
 Trees: Dragon Lord, Stalwart Defender, Dragon Lord-Ravager
 
 ClassName: Wild Mage
-Initial: W,WM, WMage, WLD
+Initial: W, WM, WMage, WLD
 DisallowedClasses: Sorcerer
 Color: Red
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good

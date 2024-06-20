@@ -4,10 +4,10 @@ Begin VB.Form frmOverview
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Overview"
-   ClientHeight    =   8775
+   ClientHeight    =   7920
    ClientLeft      =   30
    ClientTop       =   405
-   ClientWidth     =   13050
+   ClientWidth     =   12990
    DrawStyle       =   5  'Transparent
    BeginProperty Font 
       Name            =   "Verdana"
@@ -23,8 +23,8 @@ Begin VB.Form frmOverview
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   8775
-   ScaleWidth      =   13050
+   ScaleHeight     =   7920
+   ScaleWidth      =   12990
    Begin VB.PictureBox picGrid 
       Appearance      =   0  'Flat
       AutoRedraw      =   -1  'True
@@ -96,7 +96,7 @@ Begin VB.Form frmOverview
       Left            =   0
       TabIndex        =   49
       TabStop         =   0   'False
-      Top             =   8400
+      Top             =   7560
       Width           =   13050
       _ExtentX        =   23019
       _ExtentY        =   688
@@ -218,9 +218,9 @@ Begin VB.Form frmOverview
       BackColor       =   &H00C0FFFF&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   4455
+      Height          =   3735
       Left            =   240
-      ScaleHeight     =   4455
+      ScaleHeight     =   3735
       ScaleWidth      =   7575
       TabIndex        =   17
       TabStop         =   0   'False
@@ -242,7 +242,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   70
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -260,7 +260,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   69
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -278,7 +278,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   67
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -296,7 +296,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   65
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -314,7 +314,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   63
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -332,7 +332,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   61
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -350,7 +350,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   59
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -368,7 +368,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   57
          TabStop         =   0   'False
-         Top             =   3360
+         Top             =   2520
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -404,7 +404,7 @@ Begin VB.Form frmOverview
          ScaleWidth      =   630
          TabIndex        =   53
          TabStop         =   0   'False
-         Top             =   1200
+         Top             =   1140
          Width           =   624
       End
       Begin VB.PictureBox picClass 
@@ -489,7 +489,7 @@ Begin VB.Form frmOverview
          ForeColor       =   &H80000008&
          Height          =   624
          Index           =   9
-         Left            =   195
+         Left            =   270
          ScaleHeight     =   630
          ScaleWidth      =   630
          TabIndex        =   34
@@ -652,7 +652,7 @@ Begin VB.Form frmOverview
          Index           =   23
          Left            =   6840
          TabIndex        =   71
-         Top             =   4020
+         Top             =   3180
          Width           =   675
          WordWrap        =   -1  'True
       End
@@ -667,7 +667,7 @@ Begin VB.Form frmOverview
          Index           =   22
          Left            =   6000
          TabIndex        =   68
-         Top             =   4020
+         Top             =   3180
          Width           =   780
          WordWrap        =   -1  'True
       End
@@ -682,7 +682,7 @@ Begin VB.Form frmOverview
          Index           =   21
          Left            =   5130
          TabIndex        =   66
-         Top             =   4020
+         Top             =   3180
          Width           =   780
          WordWrap        =   -1  'True
       End
@@ -695,9 +695,9 @@ Begin VB.Form frmOverview
          ForeColor       =   &H80000008&
          Height          =   420
          Index           =   20
-         Left            =   4227
+         Left            =   4230
          TabIndex        =   64
-         Top             =   4020
+         Top             =   3180
          Width           =   780
          WordWrap        =   -1  'True
       End
@@ -712,7 +712,7 @@ Begin VB.Form frmOverview
          Index           =   19
          Left            =   3300
          TabIndex        =   62
-         Top             =   4020
+         Top             =   3180
          Width           =   780
          WordWrap        =   -1  'True
       End
@@ -727,7 +727,7 @@ Begin VB.Form frmOverview
          Index           =   18
          Left            =   2070
          TabIndex        =   60
-         Top             =   4020
+         Top             =   3180
          Width           =   1140
          WordWrap        =   -1  'True
       End
@@ -740,9 +740,9 @@ Begin VB.Form frmOverview
          ForeColor       =   &H80000008&
          Height          =   450
          Index           =   17
-         Left            =   1152
+         Left            =   1155
          TabIndex        =   58
-         Top             =   4020
+         Top             =   3180
          Width           =   870
          WordWrap        =   -1  'True
       End
@@ -757,7 +757,7 @@ Begin VB.Form frmOverview
          Index           =   16
          Left            =   15
          TabIndex        =   55
-         Top             =   4020
+         Top             =   3180
          Width           =   1140
       End
       Begin VB.Label lblClass 
@@ -853,7 +853,7 @@ Begin VB.Form frmOverview
          ForeColor       =   &H80000008&
          Height          =   210
          Index           =   9
-         Left            =   150
+         Left            =   267
          TabIndex        =   35
          Top             =   1800
          Width           =   630
@@ -1092,7 +1092,7 @@ Begin VB.Form frmOverview
       Width           =   1335
    End
    Begin VB.Shape shpLeft 
-      Height          =   7635
+      Height          =   7035
       Left            =   120
       Top             =   480
       Width           =   7815
