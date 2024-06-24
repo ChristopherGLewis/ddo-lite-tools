@@ -1823,3 +1823,9 @@ Descrip: Teleports you to the Temple of the Sovereign Host in House Deneith.
 
 SpellName: Zeal
 Descrip: Grants the caster a +10% sacred bonus to doublestrike.
+
+SpellName: Wildstrike
+Descrip: Surround target adversary with rainbows, dealing 1d6+10 Chaos Damage per caster level (Maximum damage 10d6+60). They take a random (but powerful) effect, and every 2 seconds, they take another random effect. A successful Will save reduces the damage by half and negates the additional effects.
+
+SpellName: Prismatic Strike
+Descrip: A brilliant ray of multicolored light projects from your finger. Ray spell. Enemy takes 1d6 per caster level in two of three elements (Fire, Force, or Electric) chosen randomly each time. The enemy is also subject to 2 of 3 CC effects chosen randomly each time:{-Knock the target prone; a successful Fortitude save halves the damage and negates the knockdown.{-Daze the target; a successful Reflex save halves the damage and negates the daze.{-Reduce the target's melee and ranged damage by 25%; a successful Will save halves the damage and negates the penalty to attack damage.This spell has double range.}Note:{-Bonuses to Fire, Force, and Electricity spell types apply to this spell; each component is boosted by specific spell power (Combustion / Impulse / Magnetism).

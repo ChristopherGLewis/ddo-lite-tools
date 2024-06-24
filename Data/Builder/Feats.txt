@@ -1137,10 +1137,10 @@ Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{
 Race: Required, Bladeforged, Warforged
 SelectorName: Silver Flame
 Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Sovereign Host
 Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Undying Court
 Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
 Race: Required, Elf, Half-Elf, Wood Elf
@@ -1149,22 +1149,22 @@ Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon C
 Race: Required, Drow
 SelectorName: Aureon
 Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Helm
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Olladra
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Onatar
 Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Silvanus
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: The Blood of Vol
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 
 FeatName: Follower of the Path of Light
 Group: Heroic, Misc

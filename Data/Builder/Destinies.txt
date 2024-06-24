@@ -1825,7 +1825,6 @@ Tier: 2
 Cost: 2
 All: Tier 1: Primal Spell Selection I
 
-
 AbilityName: Primal Spell
 Descrip: Select a Primal Spell.
 Tier: 2
@@ -1978,7 +1977,7 @@ AbilityName: Epic Improve Intensify Spell
 Descrip: Reduces the cost of Intensify Spell Metamagic by [2/4/6] Spell Points.
 Tier: 5
 Ranks: 3
-All: Feat: Intensify
+All: Feat: Intensify Spell
 
 DestinyName: Shadowdancer
 Abbreviation: Shadowdancer
