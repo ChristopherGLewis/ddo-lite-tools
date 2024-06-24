@@ -157,7 +157,6 @@ QuestName: An Explosive Situation
 Patron: The Coin Lords
 Favor: 2
 Level: 3
-Style: Solo
 
 QuestName: Kobold Assault
 Patron: The Coin Lords
