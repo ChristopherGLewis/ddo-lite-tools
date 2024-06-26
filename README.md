@@ -20,6 +20,7 @@ Fixes:
 - Fixed Primal's Intensify Spell in Enhanced Metamagics II
 - Fixed Eladrin/Eladrin Chaosmancer deity feats
 - Fixed issue with MachroTechnic Destiny being spelled 'MacroTechnic' in 4.4 releases
+- Fixed issue with skill table not displaying fully on zoomed displays
 
 ### 4.7.0 - Updates for U68
 Changes:

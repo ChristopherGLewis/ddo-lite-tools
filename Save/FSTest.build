@@ -53,3 +53,11 @@ Tree: Human
 Type: Race
 ClassLevels: 32
 
+
+[Destiny]
+
+PermDestinyPoints: 12
+Destiny: Macrotechnic
+Type: Destiny
+Ability: Tier 0: Maker's Touch
+

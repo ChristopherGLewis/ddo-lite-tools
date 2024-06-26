@@ -1139,6 +1139,10 @@ Private Sub LoadDestinyText()
         Case "destiny"
             build.Destinies = build.Destinies + 1
             ReDim Preserve build.Destiny(1 To build.Destinies)
+            'Fix Macrotechnic vs Machrotechnic from 4.4
+            If LCase(mstrValue) = "macrotechnic" Then
+                mstrValue = "Machrotechnic"
+            End If
             build.Destiny(build.Destinies).TreeName = mstrValue
             build.Destiny(build.Destinies).TreeType = tseDestiny
         Case "ability"

@@ -7,7 +7,7 @@ Begin VB.Form frmSkills
    ClientHeight    =   7755
    ClientLeft      =   30
    ClientTop       =   3930
-   ClientWidth     =   12225
+   ClientWidth     =   13050
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -19,19 +19,18 @@ Begin VB.Form frmSkills
    EndProperty
    Icon            =   "frmSkills.frx":0000
    LinkTopic       =   "Form1"
-   LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   7755
-   ScaleWidth      =   12225
+   ScaleWidth      =   13050
    Begin CharacterBuilderLite.userHeader usrFooter 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   58
       TabStop         =   0   'False
       Top             =   7380
-      Width           =   12216
-      _ExtentX        =   21537
+      Width           =   13050
+      _ExtentX        =   23019
       _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
@@ -41,13 +40,13 @@ Begin VB.Form frmSkills
       RightLinks      =   "Feats >"
    End
    Begin CharacterBuilderLite.userHeader usrHeader 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   0
-      Width           =   12216
-      _ExtentX        =   21537
+      Width           =   13050
+      _ExtentX        =   23019
       _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
@@ -77,11 +76,11 @@ Begin VB.Form frmSkills
       Height          =   6804
       Left            =   180
       ScaleHeight     =   6810
-      ScaleWidth      =   11895
+      ScaleWidth      =   12855
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   480
-      Width           =   11892
+      Width           =   12855
    End
    Begin VB.PictureBox picTomes 
       Appearance      =   0  'Flat
@@ -1313,6 +1312,7 @@ Private Sub InitGrid()
     Dim lngFudge As Long ' True centering looks uneven because the total ranks colum on the right won't normally have ½ ranks
     
     With Me.picGrid
+        .FontSize = 10 ' make everything fit
         .FontBold = True
         mlngLeft = .TextWidth("Use Magic Device  ")
         mlngWidth = .TextWidth("10½")
@@ -1323,6 +1323,12 @@ Private Sub InitGrid()
         mlngIconOffset = (mlngWidth - mlngIconWidth) \ 2
         mlngIconHeight = .ScaleY(.ScaleX(mlngIconWidth, vbTwips, vbPixels), vbPixels, vbTwips)
         lngWidth = mlngLeft + mlngWidth * 21 '+ PixelX
+        ' Added to handle grid being too wide - ED 6/22/24
+        If lngWidth + lngFudge > Me.ScaleWidth Then
+          mlngLeft = Me.ScaleWidth - ((mlngWidth * 21) + lngFudge)
+          lngWidth = mlngLeft + mlngWidth * 21 '+ PixelX
+        End If
+        
         If mblnClassRow Then
             If cfg.UseIcons And cfg.IconSkills Then
                 mlngHeight = (Me.usrFooter.Top - Me.usrHeader.Height - mlngIconHeight) \ 25
@@ -1354,7 +1360,9 @@ Private Sub InitGrid()
     Me.picGrid.FontBold = True
     For lngRow = 1 To 21
         With Skill.Map(lngRow)
-            If Me.picGrid.TextWidth(.SkillName) > mlngLeft Then .SkillName = GetSkillName(.Skill, True)
+            If Me.picGrid.TextWidth(.SkillName) > mlngLeft Then
+                .SkillName = GetSkillName(.Skill, True)
+            End If
         End With
     Next
     Me.picGrid.FontBold = False
