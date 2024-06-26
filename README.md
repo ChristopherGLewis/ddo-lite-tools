@@ -13,6 +13,14 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.7.1 - Minor fixes
+Fixes:
+- Added missing Wild Mage spells
+- Fixed Explosive Situation quest
+- Fixed Primal's Intensify Spell in Enhanced Metamagics II
+- Fixed Eladrin/Eladrin Chaosmancer deity feats
+- Fixed issue with MachroTechnic Destiny being spelled 'MacroTechnic' in 4.4 releases
+
 ### 4.7.0 - Updates for U68
 Changes:
 - Added Eladrin Race
