@@ -51,3 +51,6 @@ Abbreviation: Morgrave
 
 PatronName: The Summer Court
 Abbreviation: Summer
+
+PatronName: Cormanthor Elves
+Abbreviation: Cormanthor Elves

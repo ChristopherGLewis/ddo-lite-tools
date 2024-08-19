@@ -13,6 +13,22 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+
+### 4.8.0 - Updates for U69
+Changes:
+Character Builder
+- Set Max level to 34
+- Added new feats
+Compendium
+- Added Cormanthor Elves Favor
+- Added Myth Drannor quests
+- Added Myth Drannor Wilderness area
+- Added Myth Drannor Sagas
+
+Notes:
+- New augments have not been added to the crafter yet
+- I'm planning on working on scrollbars for the sagas in the compendium
+
 ### 4.7.1 - Minor fixes
 Fixes:
 - Added missing Wild Mage spells

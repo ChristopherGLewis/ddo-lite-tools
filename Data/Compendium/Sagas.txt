@@ -520,3 +520,44 @@ Quest: Party 101
 Quest: The Devils to Pay
 Quest: What Dreams May Come
 
+SagaName: Myth Drannor (Heroic)
+Abbreviation: Myth Drannor
+Tier: Heroic
+NPC: Hinnia Fernshadow
+Tome: 2
+Astrals: 1
+XP: 21	29	45	59
+Quest: The Safehold
+Quest: Death Hosts This Banquet
+Quest: Ogmha's Song
+Quest: The Key to the Mythal
+Quest: Secrets of the Red Wizards
+Quest: Voices of the Dead
+Quest: The House of Gems
+Quest: Times Long Past
+Quest: The Zulkir's Plan
+Quest: Book Burning
+Quest: Ettercap Incursion
+Quest: Seeds of Decay
+Quest: Portal to Below
+
+SagaName: Myth Drannor (Epic)
+Abbreviation: Myth Drannor
+Tier: Epic
+NPC: Lorthas Vinewall
+Tome: 3
+Astrals: 1
+XP: 21	29	45	59
+Quest: The Safehold
+Quest: Death Hosts This Banquet
+Quest: Ogmha's Song
+Quest: The Key to the Mythal
+Quest: Secrets of the Red Wizards
+Quest: Voices of the Dead
+Quest: The House of Gems
+Quest: Times Long Past
+Quest: The Zulkir's Plan
+Quest: Book Burning
+Quest: Ettercap Incursion
+Quest: Seeds of Decay
+Quest: Portal to Below

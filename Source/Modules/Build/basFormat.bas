@@ -195,16 +195,16 @@ End Function
 
 ' ************* FEATS *************
 
-
+'Updated 2024.08.14 for U69
 Public Sub InitExportFeats()
     Dim lngLevel As Long
     Dim i As Long
     
     SortFeatMap peLite
     ' NEED TO DEAL WITH LEGENDARY HERE
-    ReDim Export(1 To 30)  'S/B MAXLEVEL
+    ReDim Export(1 To MAX_LEVEL)  'S/B MAXLEVEL
     TransposeFeats
-    For lngLevel = 1 To 30 'S/B MAXLEVEL
+    For lngLevel = 1 To MAX_LEVEL 'S/B MAXLEVEL
         For i = 1 To Export(lngLevel).Feats
             IdentifyChannels Export(lngLevel).Feat(i)
             With Export(lngLevel)
@@ -270,6 +270,7 @@ Private Sub TransposeFeats()
     Next
 End Sub
 
+'Updated 2024.08.14 for U69
 Private Sub IdentifyChannels(ptypFeat As ExportFeatType)
     With ptypFeat
         Select Case .Type
@@ -279,10 +280,10 @@ Private Sub IdentifyChannels(ptypFeat As ExportFeatType)
                     Case 1, 3, 6, 9, 12, 15, 18
                         .BuilderType = "Standard"
                         .RonType = rseStandard
-                    Case 21, 24, 27, 30
+                    Case 21, 24, 27, 30, 33
                         .BuilderType = "EpicFeat"
                         .RonType = rseStandard
-                    Case 26, 28, 29
+                    Case 22, 25, 28, 31, 34
                         .BuilderType = "EpicDestinyFeat"
                         .RonType = rseDestiny
                 End Select

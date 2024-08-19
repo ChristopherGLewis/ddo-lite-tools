@@ -461,8 +461,13 @@ Private Sub LoadQuest(ByVal pstrRaw As String)
     db.Quest(db.Quests) = typNew
 End Sub
 
+'This remvoes "The " from the start of names for sorting
 Private Function MakeSortName(pstrName As String) As String
-    If Left$(pstrName, 4) = "The " Then MakeSortName = Mid$(pstrName, 5) Else MakeSortName = pstrName
+    If Left$(pstrName, 4) = "The " Then
+        MakeSortName = Mid$(pstrName, 5)
+    Else
+        MakeSortName = pstrName
+    End If
 End Function
 
 ' Omit plngLeft & plngRight; they are used internally during recursion

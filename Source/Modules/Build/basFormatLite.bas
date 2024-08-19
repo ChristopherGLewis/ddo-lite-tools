@@ -398,6 +398,7 @@ Private Function GetBuildFeatGroup(penType As BuildFeatTypeEnum) As String
     GetBuildFeatGroup = strReturn
 End Function
 
+'Updated 2024.08.14 for U69
 Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
     Dim strReturn As String
     
@@ -410,8 +411,8 @@ Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
                 Select Case .Level
                     ' TODO Need to fix this for MAX Levels
                     Case Is < 20: strReturn = "Heroic " & .Level
-                    Case 21, 24, 27, 30: strReturn = "Epic " & .Level
-                    Case 22, 25, 28, 31: strReturn = "Destiny " & .Level
+                    Case 21, 24, 27, 30, 33: strReturn = "Epic " & .Level
+                    Case 22, 25, 28, 31, 34: strReturn = "Destiny " & .Level
                 End Select
             Case bftLegend: strReturn = "Legend " & .Level
             Case bftRace: strReturn = GetRaceName(build.Race) & " " & .Level

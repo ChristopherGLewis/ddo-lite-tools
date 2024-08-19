@@ -3,6 +3,7 @@ Attribute VB_Name = "basBuild"
 ' These are public functions used by the dialogs, the output routine and the import screen
 Option Explicit
 
+'This is set to minimize array re-sizing
 Public Const MAX_FEATS = 128
 
 ' Used for enhancement/destiny trees
@@ -594,13 +595,18 @@ Private Sub GrantDwarvenAxe(plngLevel As Long, pbytIndex As Byte)
 End Sub
 
 'Updated 2021.11.10 for U51
+'Updated 2024.08.14 for U69
 Private Sub InitStandardFeats()
     Dim lngIndex As Long
     
+    '** LEVEL CHANGE
     'TODO When MAX level increases, Standard Feats needs to increase
+    Const ALLOCATED_FEATS = 18
     
-    'Allocate 16 slots for all listed below
-    AllocateFeatSlots bftStandard, 16
+    'Allocate 18 slots for all listed below
+    AllocateFeatSlots bftStandard, ALLOCATED_FEATS
+    
+    'Set the slot types for each of the above allocated 18 feats
     
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 1
     InitBuildFeatSlot bftStandard, bfsHeroic, lngIndex, 3
@@ -626,6 +632,10 @@ Private Sub InitStandardFeats()
     ' Feats +30 Legendary/Destiny
     InitBuildFeatSlot bftLegend, bfsLegend, lngIndex, 30    'Legendary
     InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 31 'Dest4
+   
+   ' Feats +32 - Update ALLOCATED_FEATS to 18
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 33    'Epic 5
+    InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 34 'Dest5
 
 
 End Sub
@@ -635,6 +645,8 @@ Private Sub InitLegendFeats()
     ' NEED TO DEAL WITH LEGENDARY HERE
     InitBuildFeatSlot bftStandard, bfsLegend, 0, 30
     InitBuildFeatSlot bftStandard, bfsDestiny, 0, 31
+    InitBuildFeatSlot bftStandard, bfsDestiny, 0, 34
+
 End Sub
 
 Private Sub AllocateFeatSlots(penType As BuildFeatTypeEnum, plngFeats As Long, Optional pblnEraseFirst As Boolean = False)

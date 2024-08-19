@@ -376,3 +376,11 @@ HeroicHigh: 18
 EpicLow: 34
 EpicHigh: 34
 Link Named Items	Link	https://ddowiki.com/page/Update_61_named_items
+
+PackName: Magic of Myth Drannor
+Abbreviation: Myth Drannor
+HericLow: 13
+HeroicHigh: 13
+EpicLow: 35
+EpicHigh: 35
+

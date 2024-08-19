@@ -3122,3 +3122,82 @@ BAB: 1
 Stat: Wisdom 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord, Monk
+
+
+FeatName: Wind through the Trees
+Group: Destiny, Defense
+WikiName: Epic Destiny Feats#Primal sphere
+Descrip: 5% chance to knock down enemies that attack you (hit or miss), no save. 12 second cooldown.
+Level: 28
+
+FeatName: Patience
+Group: Epic, Melee
+WikiName: Patience
+Descrip: Your attack speed is reduced by 10%, but you gain +1 Critical Multiplier with all weapons.
+Level: 21
+
+FeatName: Eerie Aim
+Group: Epic, Melee
+WikiName: Eerie Aim
+Descrip: You gain +5% Dodge Bypass, +5% Deflection Bypass, and +10 to Attack.
+Level: 21
+ 
+FeatName: Paranoid
+Group: Epic, Defense
+WikiName: Eerie Aim
+Descrip: You take 10% less damage from Traps, and you automatically Spot almost all traps as you approach them. 
+Level: 21
+
+FeatName: Inspiring Bond
+Group: Epic, Defense
+WikiName: Inspiring Bond
+Descrip: When your Hirelings or Pets die, after 2.5 seconds they are automatically resurrected and heal to full health. This can occur only once for each creature every 3 minutes. In addition, your Hirelings, Pets, and Summons gain +25 Physical Resistance Rating and Magical Resistance Rating.
+Level: 21
+
+FeatName: Defensive Tumble
+Group: Epic, Defense
+WikiName: Defensive Tumble
+Descrip: When you Tumble, for the next 3 seconds you take 20% less damage from all sources (except Bane). In addition, your Tumble charges recharge .5 seconds faster, and the bonus to Reflex Saving Throws you receive while actively Tumbling is now also applied to Fortitude and Will saving throws while Tumbling.
+Level: 21
+
+FeatName: Trick Shot
+Group: Epic, Melee
+WikiName: Trick Shot
+Descrip: When you Tumble, you gain +40 Ranged Power for 4 seconds. In addition, your Tumble charges recharge .5 seconds faster.
+Level: 21
+
+FeatName: Titan's Blood
+Group: Destiny, Defense
+WikiName: Titan's Blood
+Descrip: You gain a +10% Legendary Bonus to Maximum Hit Points.
+Level: 34
+
+FeatName: Guarded Actions
+Group: Destiny, Defense
+WikiName: Guarded Actions
+Descrip: Whenever you use an Action Boost, you take 20% less damage for 6 seconds.
+Level: 21
+
+FeatName: Arcane Actions
+Group: Destiny, spellcasting
+WikiName: Arcane Actions
+Descrip: Whenever you use an Action Boost, you gain a +100 Competence Bonus to Universal Spell Power and +2 to Imbue Dice for 6 seconds.
+Level: 21
+
+FeatName: Channel Power
+Group: Destiny, spellcasting
+WikiName: Channel Power
+Descrip: After blocking with an Orb or Staff for at least three seconds, get a +100 Competence Bonus to Universal Spell Power and a +4 to all Spell DCs for three seconds.
+Level: 21
+
+FeatName: Reverberating Shout
+Group: Destiny, spellcasting
+WikiName: Reverberating Shout
+Descrip: Activate to shout at all nearby creatures, Intimidating them unless they make a Will Saving Throw (DC equal to your Intimidate skill). This works on all creature types, including those normally immune to Intimidate.
+Level: 21
+
+FeatName: Face Me
+Group: Destiny, Melee
+WikiName: Face Me
+Descrip: Whenever you use an Action Boost, your threat generation is increased by 200% for 6 seconds.
+Level: 21

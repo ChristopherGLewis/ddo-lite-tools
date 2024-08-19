@@ -3525,3 +3525,107 @@ Patron: Morgrave University
 Favor: 6
 Level: 18
 Epic: 34
+
+QuestName: The Safehold
+Wiki: The Safehold
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Death Hosts This Banquet
+Wiki: Death Hosts This Banquet
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Ogmha's Song
+Wiki: Ogmha's Song
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: The Key to the Mythal
+Wiki: The Key to the Mythal
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 7
+Level: 13
+Epic: 35
+
+QuestName: Secrets of the Red Wizards
+Wiki: Secrets of the Red Wizards
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: The House of Gems
+Wiki: The House of Gems
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Voices of the Dead
+Wiki: Voices of the Dead
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Times Long Past
+Wiki: Times Long Past
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 7
+Level: 13
+Epic: 35
+
+QuestName: The Zulkir's Plan
+Wiki: The Zulkir's Plan
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 7
+Level: 13
+Epic: 35
+
+QuestName: Ettercap Incursion
+Wiki: Ettercap Incursion
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Book Burning
+Wiki: Book Burning
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 4
+Level: 13
+Epic: 35
+
+QuestName: Portal to Below
+Wiki: Portal to Below
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35
+
+QuestName: Seeds of Decay
+Wiki: Seeds of Decay
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 5
+Level: 13
+Epic: 35

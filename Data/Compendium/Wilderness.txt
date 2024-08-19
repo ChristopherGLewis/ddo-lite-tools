@@ -120,6 +120,14 @@ High: 18
 Explorer: 10000
 Pack: Ruins of Gianthold
 
+Area: Outskirts of Myth Drannor
+Wiki: Outskirts of Myth Drannor (wilderness)
+Map: Map-of-Isle-of-Dread.jpg
+Low: 10
+High: 18
+Explorer: ???
+Pack: Magic of Myth Drannor
+
 Area: Orchard of the Macabre
 Map: Orchard_of_the_Macabre_(map).jpg
 Wiki: Orchard of the Macabre (heroic)
@@ -289,6 +297,7 @@ High: 28
 Explorer: 73404
 Pack: Ruins of Gianthold
 
+
 Area: Three-Barrel Cove (epic)
 Map: ThreeBarrelCoveEpic.jpg
 Low: 20
@@ -367,3 +376,11 @@ Low: 20
 High: 36
 Explorer: 61250
 Pack: The Isle of Dread
+
+Area: Outskirts of Myth Drannor (legendary)
+Wiki: Outskirts of Myth Drannor (wilderness)
+Map: Map-of-Isle-of-Dread.jpg
+Low: 20
+High: 37
+Explorer: ???
+Pack: Magic of Myth Drannor

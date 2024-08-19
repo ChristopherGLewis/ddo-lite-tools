@@ -1,7 +1,15 @@
 Attribute VB_Name = "basCONST"
 Option Explicit
 
-Public Const MAX_LEVEL As Long = 32
+'Updated 2024.08.14 for U69
+'** LEVEL CHANGE
+'Also change
+' basBuild->InitStandardFeats()
+' basBuild->InitLegendFeats()
+' basFormat->IdentifyChannels()
+' basFormatLite->GetBuildFeatSlot()
+
+Public Const MAX_LEVEL As Long = 34
 
 Public Const MAX_CLASSES As Long = 23
 
