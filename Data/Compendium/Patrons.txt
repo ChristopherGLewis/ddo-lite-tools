@@ -1,3 +1,6 @@
+PatronName: Cormanthor Elves
+Abbreviation: Cormanthor
+
 PatronName: Agents of Argonnessen
 Abbreviation: Argo
 
@@ -40,6 +43,9 @@ Abbreviation: Coin Lord
 PatronName: The Free Agents
 Abbreviation: F. Agent
 
+PatronName: The Summer Court
+Abbreviation: Summer
+
 PatronName: The Harpers
 Abbreviation: Harper
 
@@ -48,9 +54,3 @@ Abbreviation: Sharn
 
 PatronName: Morgrave University
 Abbreviation: Morgrave
-
-PatronName: The Summer Court
-Abbreviation: Summer
-
-PatronName: Cormanthor Elves
-Abbreviation: Cormanthor Elves

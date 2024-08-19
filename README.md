@@ -24,6 +24,7 @@ Compendium
 - Added Myth Drannor quests
 - Added Myth Drannor Wilderness area
 - Added Myth Drannor Sagas
+- Fixed Patron Order
 
 Notes:
 - New augments have not been added to the crafter yet
