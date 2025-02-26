@@ -801,9 +801,17 @@ GrantedFeats18: Fast Movement, Grandmaster of Forms, Slow Fall
 GrantedFeats20: Armor Class Bonus, Perfect Slow Fall, Shining Star, Unarmed Strike
 BonusFeat: 1, 2, 6
 ClassFeat: 3
-Trees: Shintao, Henshin Mystic, Ninja Spy
-
-
+Trees: Dragon Disciple, Shintao, Ninja Spy
+MaxSpellLevel: 4
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 
+SpellSlots2: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2
+SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poision, Jump, Longstrider, Obscuring Mist, Pass without a Trace, Resist Energies, Shield
+SpellList2: Acolyte's Breath: Black, Acolyte's Breath: Blue, Acolyte's Breath: Green, Acolyte's Breath: Red, Acolyte's Breath: White, Blur, Elemental Weapons, Gust of Wind, Protection from Energy, Water Breathing
+SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electricity, Draconic Burst: Fire, Draconic Burst: Poision, Fear, Greater Elemental Weapons, Haste, Protection from Elements
+SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devistation: Acid, Draconic Devistation: Cold, Draconic Devistation: Electricity, Draconic Devistation: Fire, Draconic Devistation: Poision, Freedom of Movement, Howl of Terror, Poision Breath, Mass Protection from Elements, True Seeing
 
 
 
