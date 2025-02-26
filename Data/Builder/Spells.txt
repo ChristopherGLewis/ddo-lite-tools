@@ -1832,3 +1832,66 @@ Descrip: Surround target adversary with rainbows, dealing 1d6+10 Chaos Damage pe
 
 SpellName: Prismatic Strike
 Descrip: A brilliant ray of multicolored light projects from your finger. Ray spell. Enemy takes 1d6 per caster level in two of three elements (Fire, Force, or Electric) chosen randomly each time. The enemy is also subject to 2 of 3 CC effects chosen randomly each time:{-Knock the target prone; a successful Fortitude save halves the damage and negates the knockdown.{-Daze the target; a successful Reflex save halves the damage and negates the daze.{-Reduce the target's melee and ranged damage by 25%; a successful Will save halves the damage and negates the penalty to attack damage.This spell has double range.}Note:{-Bonuses to Fire, Force, and Electricity spell types apply to this spell; each component is boosted by specific spell power (Combustion / Impulse / Magnetism).
+
+
+SpellName: Lesser Draconic Burst: Acid
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Acid damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Cold
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Cold damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Electricity
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Electrical damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Fire
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Fire damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Poision
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Poison damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Black
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Acid damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Blue
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Electrical damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Green
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Poison damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Red
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Fire damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: White
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Cold damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Acid
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Acid damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Cold
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Cold damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Electricity
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Electrical damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Fire
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Fire damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Poision
+Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Poison damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Devistation: Acid
+Descrip: Cone that deals 1d6+6 Acid damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devistation: Cold
+Descrip: Cone that deals 1d6+6 Cold damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devistation: Electricity
+Descrip: Cone that deals 1d6+6 Electrical damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devistation: Fire
+Descrip: Cone that deals 1d6+6 Fire damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devistation: Poision
+Descrip: Cone that deals 1d6+6 Posion damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+
