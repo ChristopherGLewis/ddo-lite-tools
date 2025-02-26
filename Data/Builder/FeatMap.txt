@@ -265,7 +265,7 @@ Improved Turning	Improved Turning	Improved Turning
 Improved Two Handed Fighting	Improved Two Handed Fighting	Improved Two Handed Fighting
 Improved Two Weapon Fighting	Improved Two Weapon Fighting	Improved Two Weapon Fighting
 Insightful Reflexes	Insightful Reflexes	Insightful Reflexes
-Inspire Excellence	Epic: Inspire Excellence	Inspire Excellence
+Inspiration Melody Excellence	Epic: Inspiration Melody Excellence	Inspiration Melody Excellence
 Intensify Spell	Epic: Intensify Spell	Intensify Spell
 Iron Will	Iron Will	Iron Will
 Knowledge of Battle	Knowledge of Battle	Knowledge of Battle

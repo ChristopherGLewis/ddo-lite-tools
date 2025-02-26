@@ -1,3238 +1,469 @@
-FeatName: Abundant Step
-Group: Heroic, Misc
-Descrip: You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk.
-Class: Monk 12
-Flags: Unselectable
-
-FeatName: Accelerate Spell
-Group: Heroic, Spellcasting
-Descrip: While this Metamagic feat is active, the projectiles of spells affected by Accelerate Spell fly faster and with less of an arc, but consume 5 additional spell points.
-CanCastSpell: 1
-ClassBonus: Artificer, Alchemist
-Class: Alchemist 8, Artificer 8
-
-FeatName: Acrobatic
-Group: Heroic, Misc
-Descrip: +2 bonus to Jump and Tumble. 
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Adamantine Body
-Group: Heroic, Defense
-Descrip: Docents you equip are considered heavy armor in terms of PRR/MRR, gain DR 2/adamantine, carry 35% ASF and have an MDB of 1.
-Race: Required, Warforged, Bladeforged
-ClassBonus: Artificer
-
-FeatName: Adept of Forms
-Group: Heroic, Misc
-Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 6, but any character with at least one Monk level and six character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
-Level: 6
-
-FeatName: Alchemical Spellcasting
-Group: Heroic, Spellcasting
-Descrip: Alchemical Spellcasting
-Class: Alchemist 1
-Flags: Unselectable
-
-FeatName: Alchemical Studies - Pyrite
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Alchemical Studies - Verudite
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Alchemical Studies - Orchidium
-Group: Alchemy
-Descrip: +1 Caster Level with spells matching either of the two colors in your study.}Can be taken a second time with prerequisite Alchemist 16, but increases Max Caster Level by 1.}{-Alchemists may select this feat as one of their alchemist bonus feats.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 16, 20
-Repeat: 2
-
-FeatName: Alchemy on the Run
-Group: Alchemy
-Descrip: You can now move while drinking potions.
-Flags: Unselectable
-Class: Alchemist 3
-
-FeatName: Alertness
-Group: Heroic, Misc
-Descrip: +2 bonus to Listen and Spot.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Arcane Insight
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spellcasting active feats
-Descrip: Passive: +110 Maximum Spell Points}Active: Gain +6 to all spell DCs and +6 Spell Penetration for 30 seconds. 3 minute cooldown.
-Level: 21
-
-FeatName: Arcane Lore
-Group: Heroic, Spellcasting
-Descrip: This feat represents your knowledge of the Arcane.
-Class: Artificer 1, Alchemist 1, Bard 1, Sorcerer 1, Wizard 1, Warlock 1
-Flags: Unselectable
-
-FeatName: Arcane Pulse
-Group: Destiny, Spellcasting
-WikiName: Epic Destiny Feats
-Descrip: Single target DoT: 3d6+6 force damage every 2 seconds for 16 seconds. Can stack up to 5 times. 3 second cooldown.
-Level: 28
-
-FeatName: Arcane Warrior
-Group: Destiny, Melee, Range
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Your weapon and unarmed attacks grant you a stack of Arcane Warrior: Magical (+1 Universal Spell Power). Your offensive spells grant you a stack of Arcane Warrior: Physical (+1 Melee and Ranged power). Each of these stacks to 20 times and each stack lasts for 6 seconds. You may gain a stack of each no more than once per second.
-Level: 28
-
-FeatName: Armor Class Bonus
-Group: Heroic, Misc
-Descrip: Monks get a stacking bonus to their AC:}{-A passive Wisdom bonus equal to their Wisdom modifier, while unarmored and not using a shield.{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Armor Class Bonus Sacred Fist
-Group: Heroic, Misc
-Descrip: Sacred Fist Paladins get a stacking bonus to their AC:}{-A passive Charisma bonus equal to their Charisma modifier, while unarmored and not using a shield.}{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
-Class: Sacred Fist 1
-Flags: Unselectable
-
-FeatName: Armor Proficiency
-Group: Heroic, Defense
-Descrip: Grants proficiency with all armor types within the chosen weight.
-WikiName: Proficient
-RaceBonus: Human, Purple Dragon Knight
-Selector: Light, Medium, Heavy
-SelectorName: Light
-Descrip: Grants proficiency with all light armor. Basic light armor includes Leather and Chainmail:}{-Basic (AML1)}{-Skirmish (AML4)}{-Feycraft (AML10)}{-Spiritcraft (AML16)}{-Celestial (AML22
-WikiName: Light Armor Proficiency
-SelectorName: Medium
-Descrip: Grants proficiency with all medium armor. Basic medium armor includes Scalemail and Breastplate.}Scalemail:}{-Basic (AML1)}{-Skirmish (AML4)}{-Feycraft (AML10)}{-Spiritcraft (AML16)}{-Celestial (AML22)}Breastplate:}{-Basic (AML1)}{-Battle (AML4)}{-Magecraft (AML10)}{-Mountain (AML16)}{-Planeforged (AML22)
-WikiName: Medium Armor Proficiency
-All: Armor Proficiency: Light
-SelectorName: Heavy
-Descrip: Grants proficiency with all heavy armor. Basic heavy armor includes Half Plate and Full Plate:}{-Basic (AML1)}{-Battle (AML4)}{-Magecraft (AML10)}{-Mountain (AML16)}{-Planeforged (AML22)
-WikiName: Heavy Armor Proficiency
-All: Armor Proficiency: Medium
-
-FeatName: Artificer Craft Mastery
-Group: Heroic, Misc
-Descrip: This feat grants you a +1 bonus to all of your Crafting Levels for every second (even) Artificer level you posses.
-Class: Artificer 2
-Flags: Unselectable
-
-FeatName: Artificer Construct Mastery
-Group: Heroic, Spellcasting
-Descrip: This feat allows an Artificer to spontaneously cast any single-target Repair Damage or Inflict Damage spell they have inscribed in their spellbook. These spells will appear in bonus spell slots once inscribed.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Artificer Knowledge
-Group: Heroic, Misc
-Descrip: This feat grants you benefits based on your Artificer or Alchemist level.
-Selector: Scrolls, Potions, Wands, Arms and Armor, Wounderous Items
-SelectorName: Scrolls
-Descrip: Grants a +2 to UMD checks related to scroll use, and all scrolls used by the Artificer have their caster levels increased by 1
-SelectorName: Potions
-Descrip: Grants a +2 to UMD checks related to potion use, if any, and all potions used by the Artificer/Alchemist have their caster levels increased by 1
-SelectorName: Wands
-Descrip: Grants a +2 to UMD checks related to wand use, and all wands used by the Artificer have their caster levels increased by 1
-SelectorName: Arms and Armor
-Descrip: Grants a +2 to UMD checks related to weapons, armor, and staves. Any activated abilities on weapons and armor ("clickies") used by the Artificer are cast at a +1 caster level.
-SelectorName: Wounderous Items
-Descrip: Grants a +2 to UMD checks related to clothing, jewelry, and trinkets. Any activated abilities on these items ("clickies") used by the Artificer are cast at a +1 caster level.
-Class: Alchemist 2, Artificer 1
-
-FeatName: Artificer Skill Mastery
-Group: Heroic, Misc
-Descrip: This feat grants you a +1 bonus to all skills.
-Class: Artificer 13
-Flags: Unselectable
-
-FeatName: Athletic
-Group: Heroic, Misc
-Descrip: +2 bonus to Balance and Swim.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Augment Summoning
-Group: Heroic, Misc
-Descrip: Summons, hirelings, pets and charmed minions have +4 to all ability scores, increased HP, and +50% fortification.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Wizard
-
-FeatName: Aura of Courage
-Group: Heroic, Misc
-Descrip: Beginning at 3rd level, a Paladin is immune to fear (magical or otherwise).}Each ally within 10 feet of the paladin gains a +4 morale bonus on saving throws against fear effects for 9 seconds. This ability functions while the paladin is conscious, but not if she is unconscious or dead.
-Class: Paladin 3, Sacred Fist 3
-Flags: Unselectable
-
-FeatName: Aura of Good
-Group: Heroic, Misc
-Descrip: This Paladin class feature grants a +1 bonus to AC and saving throws to all allies within range.
-Class: Paladin 1, Sacred Fist 1
-Flags: Unselectable
-
-FeatName: Barbarian Damage Reduction
-Group: Heroic, Misc
-Descrip: A barbarian can resist incoming attacks, shrugging off 3% of all damage. This increases by 1% at 5th level and every three barbarian levels thereafter.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Battalion Brew
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for to hit and damage rolls with simple weapons.
-Class: Alchemist 4
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 4, 8, 12, 16, 20
-
-FeatName: Bardic Ballad
-Group: Heroic, Misc
-Descrip: You are constantly surrounded by a faint aura of Bardic Music, and it benefits you and your nearby allies in combat. You and all nearby allies receive the benefits of Inspire Courage as long as you are alive and not incapacitated. Certain Bard feats and abilities can alter or increased the benefits of your Ballad.
-Class: Bard 1, Stormsinger 1
-Flags: Unselectable
-
-FeatName: Bardic Inspiration
-Group: Heroic, Misc
-Descrip: Activate this ability to Inspire a single target ally or yourself. Gaining more effective Bard levels will increase the duration. The following additional abilities add to the effect of Bardic Inspiration.
-Class: Bard 3, Stormsinger 3
-Flags: Unselectable
-
-FeatName: Beloved of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12
-Flags: Deity
-All: Child of
-SharedSelector: Follower of
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-WikiName: Beloved of Amaunator
-Descrip: +3 to attack and damage rolls with heavy maces.
-SelectorName: Lord of Blades
-WikiName: Beloved of the Lord of Blades
-Descrip: +2 to attack and damage rolls with greatswords.
-SelectorName: Silver Flame
-WikiName: Beloved of the Silver Flame
-Descrip: +2 to attack and damage rolls with longbows.
-SelectorName: Sovereign Host
-WikiName: Beloved of the Sovereign Host
-Descrip: +2 to attack and damage rolls with longswords.
-SelectorName: Undying Court
-WikiName: Beloved of the Undying Court
-Descrip: +2 to attack and damage rolls with scimitars.
-SelectorName: Vulkoor
-WikiName: Beloved of Vulkoor
-Descrip: +2 to attack and damage rolls with shortswords.
-SelectorName: Aureon
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with quarterstaffs.
-SelectorName: Helm
-WikiName: Deity feats
-Descrip: +1 to attack and damage rolls with bastard swords.
-SelectorName: Olladra
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with sickles.
-SelectorName: Onatar
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with warhammers.
-SelectorName: Silvanus
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with mauls.
-SelectorName: The Blood of Vol
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with daggers.
-
-FeatName: Beloved of the Divine
-Group: Heroic, Misc
-Descrip: +2 Bonus to Attack and Damage with Simple Favored Weapons. +2 Bonus to Attack and Damage with Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
-Class: Sacred Fist 12
-
-FeatName: Blinding Speed
-Group: Epic, Melee, Range
-WikiName: Epic Feats#Overview
-Descrip: You are permanently Hasted.
-Level: 27
-
-FeatName: Bond
-Group: Heroic, Misc
-WikiName: Bond#Aasimar_Bond
-Descrip: These are toggled on to get their bonuses, have visual effects, are mutually exclusive with Warlock Pacts and the Half-Elf Dilettante: Warlock feat. (Bear in mind that these ability scores don't apply to Feat Prereqs or anything.)
-Race: Required, Aasimar
-RaceBonus: Aasimar
-Flags: RaceOnly
-Selector: Bond of the Protector, Bond of the Fallen
-SelectorName: Bond of the Protector
-Descrip: You connection to your Celestial patron causes you to guard the weak and stand vigilant against the darkness. While this Protector Bond is toggled on, you tap into that connection, gaining glowing eyes, +1 Charisma and +1 to Will Saving Throws.
-SelectorName: Bond of the Fallen
-Descrip: Twisted by dark powers in your youth, your connection to your Celestial patron is unusual, but powerful. While this Fallen Bond is toggled on, you tap into that connection, gaining darkened eyes, +1 Strength and +1 to Reflex Saving Throws.
-
-FeatName: Bond of the Scourge
-Group: Heroic, Misc
-Descrip: +1 Constitution and Fortitude Saving Throws. }This is toggled on to get its bonuses, has visual effects, and is mutually exclusive with Warlock Pacts.
-Race: Required, Scourge
-RaceBonus: Scourge
-Flags: RaceOnly
-
-FeatName: Bow Strength
-Group: Heroic, Range
-Descrip: Add your Strength modifier to bow damage. Bows normally get no damage bonus at all.
-BAB: 4
-All: Point Blank Shot, Weapon Focus: Ranged
-One: Weapon Specialization: Ranged, Power Attack, Combat Expertise, Zen Archery
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Brutal Throw
-Group: Heroic, Range
-Descrip: Use your Strength bonus instead of Dexterity to determine your bonus to-hit with Thrown weapons, if strength is higher.
-BAB: 1
-Stat: Strength 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Bullheaded
-Group: Heroic, Misc, Defense
-Descrip: +2 bonus to Intimidate and +1 Will saves. 
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Bulwark of Defense
-Group: Epic, Defense
-Descrip: When in a defensive stance, you gain +2 saves and +4 AC. 
-Level: 21
-
-FeatName: Burst of Glacial Wrath
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spell feats
-Descrip: Passive: +140 Maximum Spell Points}Active: Cone spell (35 spell points, 10 second cooldown): Deals 30d6 Cold damage, Fortitude save (20 + highest of Int/Wis/Cha mod + Evocation bonuses) or be frozen.
-Level: 24
-
-FeatName: Call Wolf Companion
-Group: Heroic, Misc
-Descrip:  Activate this ability to summon your Wolf Companion.
-Class: Druid 1
-Flags: Unselectable
-
-FeatName: Child of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Bonus to attack and damage rolls with your favored weapon.
-All: Follower of
-Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3
-Flags: Deity
-SharedSelector: Follower of
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-WikiName: Child of Amaunator
-Descrip: +2 to attack and damage rolls with heavy maces.
-SelectorName: Lord of Blades
-WikiName: Child of the Lord of Blades
-Descrip: +2 to attack and damage rolls with greatswords.
-SelectorName: Silver Flame
-WikiName: Child of the Silver Flame
-Descrip: +2 to attack and damage rolls with longbows.
-SelectorName: Sovereign Host
-WikiName: Child of the Sovereign Host
-Descrip: +2 to attack and damage rolls with longswords.
-SelectorName: Undying Court
-WikiName: Child of the Undying Court
-Descrip: +2 to attack and damage rolls with scimitars.
-SelectorName: Vulkoor
-WikiName: Child of Vulkoor
-Descrip: +2 to attack and damage rolls with shortswords.
-SelectorName: Aureon
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with quarterstaffs.
-SelectorName: Helm
-WikiName: Deity feats
-Descrip: +1 to attack and damage rolls with bastard swords.
-SelectorName: Olladra
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with sickles.
-SelectorName: Onatar
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with warhammers.
-SelectorName: Silvanus
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with mauls.
-SelectorName: The Blood of Vol
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with daggers.
-
-FeatName: Child of Faith
-Group: Heroic, Misc
-Descrip: +2 Bonus to Attack and Damage with Simple and Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
-Class: Sacred Fist 3
-
-FeatName: Cleave
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Make a sweeping weapon attack against all nearby enemies for +20% damage.
-All: Power Attack
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Combat Archery
-Group: Epic, Range
-Descrip: Your ranged damage is increased by +1[W]. You also gain 2% dodge bonus when using a ranged weapon. Grants +1 Critical Multiplier with Longbows and Shortbows.
-Stat: Dexterity 17
-Level: 21
-All: Point Blank Shot
-
-FeatName: Combat Casting
-Group: Heroic, Spellcasting, Misc
-Descrip: Grants +4 to Concentration skill checks when casting spells.
-CanCastSpell: 1
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Combat Expertise
-Group: Heroic, Melee
-Descrip: Combat Stance: Gain +10% feat bonus to AC, but suffer -5 to attack rolls and spells have 3x normal cooldowns. (Doesn't apply to SLAs.)
-Stat: Intelligence 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Artificer
-
-FeatName: Completionist
-Group: Heroic, Misc
-Descrip: You win DDO! +2 bonus to all skills and ability scores.
-Level: 1
-Flags: Unselectable
-
-FeatName: Composite Plating
-Group: Heroic
-Descrip: You are not considered to be wearing armor. You have a 5% arcane spell failure chance.
-Level: 1
-Race: Required, Warforged, Bladeforged 
-
-FeatName: Construct Essence
-Group: Heroic, Defense
-Descrip: Gain 50% healing from Repair spells but suffer a -25% penalty to positive energy healing. Also take 50% damage from rust effects.
-Race: NotAllowed, Warforged, Bladeforged
-Class: Artificer 3
-ClassBonus: Artificer
-
-FeatName: Construct Exemplar
-Group: Epic, Defense
-Descrip: +20 Repair Amplification and +10 MRR
-Level: 21
-
-FeatName: Crippling Strike
-Group: Heroic, Melee, Range
-Descrip: Sneak attacks deal 2 points of Strength damage, cumulative.
-Flags: ClassOnly
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Crush Weakness
-Group: Destiny, Melee
-Descrip: +15% damage versus the Helpless
-Level: 25
-
-FeatName: Damage Reduction
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Gain DR 10, bypassed by named material.
-Class: Favored Soul 20
-Flags: Deity, ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 20
-All: Deity Ability
-Selector: Adamantine, Cold Iron, Silver, Good
-SelectorName: Adamantine
-WikiName: Damage Reduction: Adamantine
-Descrip: Gain DR 10/adamantine, or improve your existing DR by 10/adamantine. 
-One: Follower of: Lord of Blades, Follower of: Helm
-SelectorName: Cold Iron
-WikiName: Damage Reduction: Cold Iron
-Descrip: Gain DR 10/cold iron.
-One: Follower of: Sovereign Host, Follower of: Undying Court, Follower of: Aureon, Follower of: Olladra, Follower of: Onatar
-SelectorName: Silver
-WikiName: Damage Reduction: Silver
-Descrip: Gain DR 10/silver.
-One: Follower of: Silver Flame, Follower of: Sovereign Host, Follower of: Amaunator, Follower of: Silvanus
-SelectorName: Good
-WikiName: Damage Reduction: Good
-Descrip: Gain DR 10/good.
-One: Follower of: Vulkoor, Follower of: The Blood of Vol
-
-FeatName: Defensive Roll
-Group: Heroic, Defense
-Descrip: If you are below 20% health, you have a % chance equal to your Reflex save to take half damage from all attacks.
-Flags: ClassOnly
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Deflect Arrows
-Group: Heroic, Defense
-Descrip: You knock aside one incoming projectile that would have struck you every 6 seconds.
-Class: Monk 1
-ClassBonus: Monk
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Deific Warding
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Divine sphere
-Descrip: +10 PRR and MRR. When you take damage, add one stack of Deific Warding: +2 PRR and MRR per stack, maximum 10 stacks, one stack removed every 3 seconds.
-Level: 28
-
-FeatName: Deity Ability
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Your faith has been rewarded with an active ability.
-All: Follower of
-Class: Cleric 6, Favored Soul 6, Paladin 6, Dark Apostate 6
-Flags: Deity
-SharedSelector: Follower of
-Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
-SelectorName: Amaunator's Flames
-WikiName: Amaunator's Flames
-Descrip: Activate this ability to turn on your Fire Shield (Hot). 
-SelectorName: Bladesworn Transformation
-WikiName: Bladesworn Transformation
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Profane bonus to Strength, +4 natural armor bonus to AC, +4 profane bonus on damage rolls, +10 enhancement bonus to Will saves against mind affecting magic, and proficiency in all simple and martial weapons. Your BAB equals your level. You lose your spellcasting ability. You have immunity to critical hits and sneak attacks, but cannot be healed by healing spells.
-SelectorName: Silver Flame Exorcism
-WikiName: Silver Flame Exorcism
-Descrip: Banish an extraplanar creature, save DC 10 + Cleric Level + Charisma modifier.
-SelectorName: Unyielding Sovereignty
-WikiName: Unyielding Sovereignty
-Descrip: Heal self or ally to full health and remove virtually all negative effects, including death penalties.
-SelectorName: Undying Call
-WikiName: Undying Call
-Descrip: Raise Dead. Acts as True Resurrection if targeting an elf.
-SelectorName: Vulkoor's Avatar
-WikiName: Vulkoor's Avatar
-Descrip: Summon a servant of Vulkoor to destroy your enemies.
-SelectorName: Aureon's Instruction
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Wisdom, +3 Spell Penetration, and when Turning Undead you gain +4 effective level, +4 maximum Hit Dice and +4 total Hit Dice affected.
-SelectorName: Ever Watchful
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain True Seeing, +5 Sacred bonus to Spot and Search, +4 Wisdom, +5 to Fortitude Saves, and PRR equal to the number of Religous Lore feats you have.
-SelectorName: Luck of Olladra
-WikiName: Deity feats
-Descrip: Heal self or ally to full health and bestow a +1d6 Luck bonus to each ability score, lasting 24 seconds plus 6 seconds per Religious Lore feat you have.
-SelectorName: Onatar's Forge
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +3 to Tactical feats, +10 Melee Power, and +10 Repair, Rust and Fire Spell Power. If you benefit from Repair, gain +30 Repair Amplification.
-SelectorName: Blessing of Silvanus
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Natural Armor and +2 critical threat range with Mauls. This stacks with other sources.
-SelectorName: The Blood is The Life
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Constitution, 100% Fortification, +10 to Fortitude Saves, and PRR and MRR equal to the number of Religious Lore feats you have. Your attacks with Daggers also gain Vampirism, stacking with other sources of Vampirism.
-
-FeatName: Sacred Fist Deity Ability
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Your faith has been rewarded with an active ability.
-All: Sacred Fist Follower of
-Class: Sacred Fist 6
-SharedSelector: Sacred Fist Follower of
-Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
-SelectorName: Amaunator's Flames
-WikiName: Amaunator's Flames
-Descrip: Activate this ability to turn on your Fire Shield (Hot). 
-SelectorName: Bladesworn Transformation
-WikiName: Bladesworn Transformation
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Profane bonus to Strength, +4 natural armor bonus to AC, +4 profane bonus on damage rolls, +10 enhancement bonus to Will saves against mind affecting magic, and proficiency in all simple and martial weapons. Your BAB equals your level. You lose your spellcasting ability. You have immunity to critical hits and sneak attacks, but cannot be healed by healing spells.
-SelectorName: Silver Flame Exorcism
-WikiName: Silver Flame Exorcism
-Descrip: Banish an extraplanar creature, save DC 10 + Cleric Level + Charisma modifier.
-SelectorName: Unyielding Sovereignty
-WikiName: Unyielding Sovereignty
-Descrip: Heal self or ally to full health and remove virtually all negative effects, including death penalties.
-SelectorName: Undying Call
-WikiName: Undying Call
-Descrip: Raise Dead. Acts as True Resurrection if targeting an elf.
-SelectorName: Vulkoor's Avatar
-WikiName: Vulkoor's Avatar
-Descrip: Summon a servant of Vulkoor to destroy your enemies.
-SelectorName: Aureon's Instruction
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +4 Wisdom, +3 Spell Penetration, and when Turning Undead you gain +4 effective level, +4 maximum Hit Dice and +4 total Hit Dice affected.
-SelectorName: Ever Watchful
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain True Seeing, +5 Sacred bonus to Spot and Search, +4 Wisdom, +5 to Fortitude Saves, and PRR equal to the number of Religous Lore feats you have.
-SelectorName: Luck of Olladra
-WikiName: Deity feats
-Descrip: Heal self or ally to full health and bestow a +1d6 Luck bonus to each ability score, lasting 24 seconds plus 6 seconds per Religious Lore feat you have.
-SelectorName: Onatar's Forge
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religious Lore feat you gain +3 to Tactical feats, +10 Melee Power, and +10 Repair, Rust and Fire Spell Power. If you benefit from Repair, gain +30 Repair Amplification.
-SelectorName: Blessing of Silvanus
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Natural Armor and +2 critical threat range with Mauls. This stacks with other sources.
-SelectorName: The Blood is The Life
-WikiName: Deity feats
-Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Constitution, 100% Fortification, +10 to Fortitude Saves, and PRR and MRR equal to the number of Religious Lore feats you have. Your attacks with Daggers also gain Vampirism, stacking with other sources of Vampirism.
-
-FeatName: Diamond Body
-Group: Heroic, Misc
-Descrip: You have firm control over your metabolism and are now immune to ability score damage from natural poison. You gain a +10 racial bonus to saving throws against magical poisons, and do not fail saving rolls against them on a roll of natural 1. (Note, since Update 14, poisons and disease have natural, magical and supernatural qualities. Diamond Body does not protect against unnatural poisons. Also you are not immune to the health damage of natural poison.)
-Class: Monk 11
-Flags: Unselectable
-
-FeatName: Diamond Soul
-Group: Heroic, Misc
-Descrip: You gain a racial bonus to Spell Resistance (SR) equal to your Monk level + 10. This stacks with Racial Spell Resistance granted to Drow and Deep Gnomes.
-Class: Monk 13
-Flags: Unselectable
-
-FeatName: Diehard
-Group: Heroic, Defense
-Descrip: You automatically stabilize when you become unconscious from damage.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Discipline
-Group: Heroic, Misc, Defense
-Descrip: +2 bonus to Concentration skill checks, and +1 to Will saves.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Disease Immunity
-Group: Heroic, Misc
-Descrip: You are immune to Natural Diseases.
-Class: Blightcaster 1
-Flags: Unselectable
-
-FeatName: Dismiss Charm
-Group: Heroic, Spellcasting
-Descrip: Activate this short-ranged ability while targeting a charmed, commanded, controlled, or dominated enemy that is under your control to dispel the controlling effect.
-Class: Wizard 1, Sorcerer 1, Warlock 1, Bard 1, Ranger 1, Druid 1, Cleric 1, Favored Soul 1, Artificer 1, Alchemist 1
-Flags: Unselectable
-
-FeatName: Dismiss Rage
-Group: Misc
-Descrip: Activate this ability to prematurely end your rage.
-Flags: Unselectable
-
-FeatName: Divine Dream
-Group: Heroic, Misc
-Descrip: While centered, you may use your Charisma score for attack and damage with weapons. In addition, while centered, you qualify for the bonuses from the Greater Sacred Defense enhancements, regardless of equipped armor.
-Class: Paladin 6, Sacred Fist 6 
-Flags: Unselectable
-
-FeatName: Divine Grace
-Group: Heroic, Misc
-Descrip: At 2nd level, a Paladin gains a bonus equal to his or her Charisma modifier (if not negative) on all saving throws.{Divine Grace is capped at 2+(3 x paladin level). For multiclassing, this means 2 levels of Paladin would at best grant a max of +8 to saves (2 + (3x2)).
-Class: Paladin 2, Sacred Fist 2
-Flags: Unselectable
-
-FeatName: Divine Health
-Group: Heroic, Misc
-Descrip: This class feature makes the Paladin immune to all diseases (natural, magical, and supernatural).
-Class: Paladin 3, Sacred Fist 3
-Flags: Unselectable
-
-FeatName: Dodge
-Group: Heroic, Defense
-Descrip: +3% Dodge.
-Stat: Dexterity 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
-
-FeatName: Domain
-Group: Heroic, Misc
-Descrip: Cleric Domains offer bonuses or spell-like abilities at levels 2, 5, 9 and 14.
-Class: Cleric 2, Dark Apostate 2
-Flags: ClassOnly, SelectorOnly, Domain
-ClassOnlyClass: Cleric, Dark Apostate
-ClassOnlyLevel: 2
-Selector: Air Domain, Animal Domain, Chaos Domain, Death Domain, Destruction Domain, Earth Domain, Fire Domain, Good Domain, Healing Domain, Knowledge Domain, Law Domain, Luck Domain, Magic Domain, Protection Domain, Strength Domain, Sun Domain, Trickery Domain, War Domain, Water Domain
-SelectorName: Air Domain
-Descrip: Base Bonuses:}{-Evocation DCs}{-Use higher of electricty/light spell power for both}{-Turn elementals}{-Turn Boost: Reflex saves}5: Shocking Grasp SLA}9: Lightning Bolt SLA}14: Chain Lightning SLA
-SelectorName: Animal Domain
-Descrip: Base Bonuses:}{-Reflex saves, spot, listen}{-Turn animals}{-Turn Boost: Constitution}5: +10 HPs per Cleric/epic level}9: +15% fort bypass}14: Feral charge
-SelectorName: Chaos Domain
-Descrip: Base Bonuses:}{-Will saves}{-Turn Boost: Spell power, Melee/Ranged Power, PRR/MRR}5: Chaos Hammer SLA}9: +3% spell critical chance}14: Prismatic Spray SLA
-Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
-NotClass: Monk
-SelectorName: Death Domain
-Descrip: Base Bonuses:}{-Necromancy DCs}{-Turning level and hit dice}5: Necrotic Ray SLA}9: Immune to Energy Drain}14: Destruction SLA
-SelectorName: Destruction Domain
-Descrip: Base Bonuses:}{-Melee/Ranged Power}{-Can cast while raging}{-Turn Boost: Melee/Ranged Power}5: -75% item wear}9: +2 to hit and damage}14: Improved Destruction on hit
-SelectorName: Earth Domain
-Descrip: Base Bonuses:}{-Acid spell power}{-Use higher of acid/light spell power for both}{-Turn elementals}{-Turn Boost: Fortitude saves}5: Melf's Acid Arrow SLA}9: Stoneskin SLA}14: Earthquake SLA
-SelectorName: Fire Domain
-Descrip: Base Bonuses:}{-Fire spell power}{-Use higher of fire/light spell power for both}{-Turn elementals}{-Turn Boost: Fire Resistance}5: Scorching Ray SLA}9: Wall of Fire SLA}14: Firestorm SLA
-SelectorName: Good Domain
-Descrip: Base Bonuses:}{-Light spell power, Heal (skill)}{-Turn Boost: Temporary HP}5: Deific Vengeance SLA}9: Blade Barrier SLA}14: +3 to hit, damage, AC, Saves vs evil creatures
-SelectorName: Healing Domain
-Descrip: Base Bonuses:}{-Positive spell power}{-Turn Boost: Healing Amp}5: Cure Moderate SLA}9: Panacea SLA}14: Healing spells empowered for free
-SelectorName: Knowledge Domain
-Descrip: Base Bonuses:}{-+2 to all skills}{-Turn Boost: Intelligence}5: Suggestion SLA}9: Feeblemind SLA}14: +2 Spell DCs, +4 Spell Pen
-SelectorName: Law Domain
-Descrip: Base Bonuses:}{-Enchantment DCs}{-Turn Boost: All saves}5: Order's Wrath SLA}9: Greater Command SLA}14: +3 to hit, damage, AC, Saves vs chaotic creatures
-Alignment: Lawful Neutral, Lawful Good, True Neutral, Neutral Good
-SelectorName: Luck Domain
-Descrip: Base Bonuses:}{-All saves}{-Turn Boost: All saves}5: Displacement SLA}9: +2 spell DCs}14: Saves no longer auto-fail on a 1
-SelectorName: Magic Domain
-Descrip: Base Bonuses:}{-Evocation DCs}{-Turn Boost: Universal spell power}5: Chain Missiles SLA}9: +10 spell points per Cleric/epic level}14: Universal spell power
-SelectorName: Protection Domain
-Descrip: Base Bonuses:}{-AC, PRR/MRR}{-Turn Boost: PRR/MRR}5: Shield SLA}9: Radiant Forcefield SLA}14: AC and PRR
-SelectorName: Strength Domain
-Descrip: Base Bonuses:}{-+2 Strength}{-Ability damage restored every 6 seconds}{-Turn Boost: Strength}5: Use strength for reflex saves}9: Immune to knock down}14: Immune to stun
-SelectorName: Sun Domain
-Descrip: Base Bonuses:}{-Fire and Light spell power}{-Turn Boost: True Seeing, Ghost Touch}5: Searing Light SLA}9: Sunbeam SLA}14: Sunburst SLA
-SelectorName: Trickery Domain
-Descrip: Base Bonuses:}{-Enchantment DCs}{-Turn Boost: Charisma}5: Invisibility SLA}9: Mind Fog SLA}14: Mass Charm Monster SLA
-SelectorName: War Domain
-Descrip: Base Bonuses:}{-Weapon Damage}{-Turn Boost: Melee/Ranged Power}5: Proficient with all weapons}9: Tactical DCs}14: Holy Sword SLA
-SelectorName: Water Domain
-Descrip: Base Bonuses:}{-Water Breathing, Swim}{-Cold Spell power}{-Use higher of Cold/Positive spell power for both}{-Turn elementals}{-Turn Boost: Will saves}5: Solid Fog SLA}9: Cone of Cold SLA}14: Greater Creeping Cold SLA
-
-FeatName: Doubleshot
-Group: Destiny, Range
-Descrip: +10% Doubleshot.
-Level: 25
-
-FeatName: Doublestrike
-Group: Destiny, Melee
-WikiName: Doublestrike_(epic_destiny_feat)
-Descrip: +5% Doublestrike.
-Level: 22
-
-FeatName: Draconic Aura 1
-Group: Heroic, Misc
-Descrip: Choose one Basic Aura:}{-Nevalarich's Hunger: You and allies close to you get a +2 Morale Bonus to Attack Rolls}{-Aussircaex's Defiance: You and allies close to you get a +2 Morale Bonus to Saving Throws}{-Thraxata's Instinct: You and allies close to you get a +2 Morale Bonus to Tactical Feat DCs
-Class: Dragon Lord 1
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 1
-Selector: Nevalarich's Hunger, Aussircaex's Defiance, Thraxata's Instinct
-
-FeatName: Draconic Aura 2
-Group: Heroic, Misc
-Descrip: Choose one Secondary Aura:}{-Velah's Fury: You and allies close to you get a +3 Morale Bonus to Damage Rolls}{-Sinvala's Toughness: You and allies close to you get a +3 Morale Bonus to PRR}{-Eternity's Ward: You and allies close to you get a +3 Morale Bonus to MRR
-Class: Dragon Lord 8
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 8
-Selector: Velah's Fury, Sinvala's Toughness, Eternity's Ward
-
-FeatName: Draconic Aura 3
-Group: Heroic, Misc
-Descrip: Choose one Basic Aura:}{-The Truthful One's Might: You and allies close to you get a +4 Morale Bonus to Melee Power}{-Aurgloroasa's Ascended Wrath: You and allies close to you get a +4 Morale Bonus to Ranged Power}{-Kor Kaza's Forbidden Power: You and allies close to you get a +4 Morale Bonus to Universal Spell Power
-Class: Dragon Lord 16
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 16
-Selector: The Truthful One's Might, Aurgloroasa's Ascended Wrath, Kor Kaza's Forbidden Power
-
-FeatName: Draconic Ancestry
-Group: Heroic, Misc
-Descrip: Choose an element to gain stacking resistance equal to your character level. Enhancements can increase spell power and unlock a breath weapon for that element.
-Race: Required, Dragonborn
-RaceBonus: Dragonborn
-Flags: RaceOnly
-Selector: Black, Blue, Red, White
-SelectorName: Black
-Descrip: You gain stacking Acid resistance. Enhancements can increase Acid spell power and unlock an Acid breath weapon.
-SelectorName: Blue
-Descrip: You gain stacking Electric resistance. Enhancements can increase Electric spell power and unlock an Electric breath weapon.
-SelectorName: Red
-Descrip: You gain stacking Fire resistance. Enhancements can increase Fire spell power and unlock a Fire breath weapon.
-SelectorName: White
-Descrip: You gain stacking Cold resistance. Enhancements can increase Cold spell power and unlock a Cold breath weapon.
-
-FeatName: Dreamscape
-Group: Destiny, Misc
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Activate to disappear to the land of dreams for 5 seconds (become invisible and invulnerable), return with a random 30-second buff, 1 minute cooldown. 9 possible buffs:}{ 1) +30 Melee/Ranged Power, +60 Universal Spell Power}{ 2) +15 AC/PRR/MRR}{ 3) +6 to all skills}{ 4) DR 18/-}{ 5) +15 Energy Resistance}{ 6) Sprint Boost}{ 7) +6 Fortitude saves}{ 8) +6 Reflex saves}{ 9) +6 Will saves
-Level: 28
-
-FeatName: Druid Spontaneous Casting
-Group: Heroic, Misc
-Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
-Class: Druid 1, Blightcaster 1
-Flags: Unselectable
-
-FeatName: Druidic Oath
-Group: Heroic, Misc
-Descrip: All druids take an oath that prohibits them from wearing metal armor, using metal shields or orbs, and using rune arms. Doing so suppresses your druidic abilities. Warforged druids are forbidden from taking armor feats other than Composite Plating.
-Class: Druid 1, Blightcaster 1
-Flags: Unselectable
-
-FeatName: Eldritch Blast
-Group: Heroic, Misc
-Descrip: This is a toggle feat. When you toggle it on, your basic attack, regardless of weapons held (except for wands), becomes a ranged magical attack that hits a single enemy. It does not cost spell points or hit points; only time, much like swinging a weapon.
-Class: Warlock 1, Acolyte 1
-ClassBonus: Warlock
-Flags: ClassOnly, Unselectable
-
-FeatName: Elemental Form Specialty
-Group: Destiny, Spellcasting
-Descrip: Your elemental forms grant you mastery over the other three elements as well. Excluding the element of your current form, you gain the following bonuses to air, earth, fire, and water as long as you are in a Sorcerer's Elemental Apotheosis or Druid Elemental Wild Shape form:}{- +3 caster levels with those elements}{- +3 to max caster level with those elements}{- +20 to spellpower of those elements}{- +2% spell critical chance with those elements.
-Class: Sorcerer 20, Druid 13
-Level: 31
-
-FeatName: Elusive Target
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Martial sphere
-Descrip: 5% chance to ignore any given damage, both physical and magical.
-Level: 25
-
-FeatName: Embodiment of Law
-Group: Destiny, Melee, Range
-Descrip: +3 Physical and Magical Resistance Rating. If you are lawful, gain +2 Imbue Dice.
-Level: 28
-
-FeatName: Embolden Spell
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Metamagic Feats
-Descrip: +140 Maximum Spell Points}Metamagic: +2 spell DCs, spells cost +10 more mana to cast.
-Level: 24
-
-FeatName: Empower Healing Spell
-Group: Heroic, Spellcasting
-Descrip: Positive Energy spells gain +75 Spell Power, but cost +10 more mana.
-CanCastSpell: 0
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer
-
-FeatName: Empower Spell
-Group: Heroic, Spellcasting
-Descrip: +75 universal Spell Power, spells cost +15 more mana to cast.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Empty Body
-Group: Heroic, Misc
-Descrip: You are able to focus your ki and walk the edge of the Plane of Shadow, mimicking the effects of a Shadow Walk spell. While this effect is active, you move much faster than normal and your outline appears faint and you are harder to hit. Attacking another creature or otherwise interacting with objects shunts you back to the Material Plane.
-Class: Monk 19
-Flags: Unselectable
-
-FeatName: Enhanced Elemental Dice
-Group: Destiny, Misc
-Descrip: +1 bonus Imbue Dice
-Level: 31
-
-FeatName: Energy Absorption
-Group: Heroic, Defense
-WikiName: Favored_Soul#Energy_Resistance
-Descrip: At level 5, 10 and 15 a Favored Soul selects one type of Energy Absorption. Each grants stacking energy absorption 10 and can only be taken once.
-Class: Favored Soul 5
-Flags: ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 5, 10, 15
-Selector: Acid, Cold, Electricity, Fire, Sonic
-
-FeatName: Enlarge Spell
-Group: Heroic, Spellcasting
-Descrip: Double spell range for the cost of +10 more mana per cast.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Epic Arcane Eldritch Blast
-Group: Destiny, Spellcasting
-WikiName: Epic Destiny Feats#Arcane sphere
-Descrip: Grants +1 Pact dice, +1 per 2 Epic Levels, for a max +6d4 Pact Dice at level 30.
-Level: 22
-
-FeatName: Epic Barbarian Damage Reduction
-Group: Epic, Defense
-Descrip: Your Barbarian Damage Reduction is increased by 1%.}You also gain +5 Physical and Magical Resistance Rating
-Level: 21
-Class: Barbarian 12
-
-FeatName: Epic Damage Reduction
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +10 PRR.
-Level: 27
-
-FeatName: Epic Eldritch Blast
-Group: Epic, Spellcasting
-Descrip: +2d6 Blast Dice, +1 per 2 Epic levels, max +7d6 dice at level 30.
-Level: 21
-Class: Warlock 12, Acolyte 12
-
-FeatName: Epic Fortitude
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +2 Fortitude Saving Throws. You don't automatically fail Fortitude saving throws on a roll of 1.
-Level: 27
-
-FeatName: Epic Knowledge
-Group: Epic, Spellcasting
-Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
-Flags: Unselectable
-Level: 22
-
-FeatName: Epic Mage Armor
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Arcane sphere
-Descrip: Spell Point Cost: 5. Target: Friend, Self. +20 Armor bonus to AC.
-Level: 22
-
-FeatName: Epic Mental Toughness
-Group: Epic, Spellcasting
-Descrip: +200 maximum spell points. (+410 for all three Mental Toughness feats.) +1% spell critical chance.
-All: Improved Mental Toughness
-Level: 21
-
-FeatName: Epic Power
-Group: Epic, Misc
-Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}-1% to the Spell Point cost of all spells}This feat is automatically given to all characters each time they gain an Epic level.}The spell point cost reduction does not apply to Spell-like abilities.
-Flags: Unselectable
-Level: 21
-
-FeatName: Epic Reflexes
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +2 Reflex Saving Throws. You don't automatically fail Reflex saving throws on a roll of 1.
-Level: 27
-
-FeatName: Epic Reputation
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +5 Bluff, Diplomacy, Haggle, Intimidate, and Perform.
-Level: 27
-
-FeatName: Epic Spell Focus
-Group: Epic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
-CanCastSpell: 6
-All: Spell Focus, Greater Spell Focus
-Level: 21
-SharedSelector: Greater Spell Focus
-
-FeatName: Epic Spell Penetration
-Group: Epic, Spellcasting
-Descrip: +4 to your caster level check for defeating Spell Resistance.
-All: Spell Penetration, Greater Spell Penetration
-Level: 21
-
-FeatName: Epic Spell Power
-Group: Destiny, Spellcasting
-Descrip: This feat has multiple variants: Acid, Cold, Electricity, Fire, Force, Light and Alignment, Negative, Poison, Positive, Repair, and Sonic.}{- +20 Spell Power of the selected type.}{- +15% spell critical damage with the selected type.}{- +5% Universal Spell Critical Damage.}This feat can be taken multiple times, though each time must be for a different type. Critical damage bonuses from multiple feats stack.
-Level: 22
-Selector: Acid, Cold, Electricity, Fire, Force, Light and Alignment, Negative, Poison, Positive, Repair, Sonic
-
-FeatName: Epic Toughness
-Group: Epic, Defense
-Descrip: Increases your maximum hit points by 50. 
-Stat: Constitution 21
-All: Toughness
-Level: 21
-
-FeatName: Epic Will
-Group: Epic, Defense
-WikiName: Epic Feats#General Epic passive feats
-Descrip: +2 Will Saving Throws. You don't automatically fail Will saving throws on a roll of 1.
-Level: 27
-
-FeatName: Eschew Materials
-Group: Heroic, Spellcasting
-Descrip: Your spells cost 2 more spellpoints and removes need for normal material components. Especially expensive material components, such as for Stoneskin and Trap the Soul, are still required.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Evasion
-Group: Misc
-Descrip: When you make a successful Reflex save to avoid damage, you suffer no damage instead of half damage.
-Flags: Unselectable
-Class: Monk 2, Ranger 9, Rogue 2, Sacred Fist 2
-
-FeatName: Expanded Clip
-Group: Epic, Range
-Descrip: Your repeating crossbows have 1 extra shot in their clips.
-Level: 21
-Class: Artificer 12
-
-FeatName: Exotic Weapon
-Group: Heroic, Melee, Range
-WikiName: Exotic Weapon Proficiency
-Descrip: Grant proficiency with the chosen exotic weapon. Proficiency grants +20% bonus to-hit compared to not being proficient.
-BAB: 1
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter
-Selector: Bastard Sword, Dwarven Axe, Kama, Khopesh, Great Crossbow, Rpt Lt Crossbow, Rpt Hvy Crossbow, Shuriken, Handwraps
-SelectorName: Bastard Sword
-WikiName: Proficiency: Bastard Sword
-Descrip: Grant proficiency with Bastard Swords, which now deal glancing blows. Proficiency grants +20% bonus to-hit compared to not being proficient.
-Stat: Strength 13
-ClassBonus: Artificer, Fighter
-SelectorName: Dwarven Axe
-WikiName: Proficiency: Dwarven Waraxe
-Descrip: Grant proficiency with Dwarven Axes, which now deal glancing blows. Proficiency grants +20% bonus to-hit compared to not being proficient.
-Stat: Strength 13
-ClassBonus: Artificer, Fighter
-SelectorName: Kama
-WikiName: Proficiency: Kama
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Khopesh
-WikiName: Proficiency: Khopesh
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Great Crossbow
-WikiName: Proficiency: Great Crossbow
-Descrip: Grant proficiency with Great Crossbows, which now knock opponents to the ground for 6 seconds on a natural 20 (no save). Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Rpt Lt Crossbow
-WikiName: Proficiency: Repeating Light Crossbow
-Descrip: Grant proficiency with Repeating Light Crossbows, which now fire 3 bolts per shot instead of 1. Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Rpt Hvy Crossbow
-WikiName: Proficiency: Repeating Heavy Crossbow
-Descrip: Grant proficiency with Repeating Heavy Crossbows, which now fire 3 bolts per shot instead of 1. Proficiency grants +20% bonus to-hit compared to not being proficient.
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Shuriken
-WikiName: Proficiency: Shuriken
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Handwraps
-WikiName: Proficiency: Handwraps
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Extend Spell
-Group: Heroic, Spellcasting
-Descrip: Doubles the duration of a spell at the cost of +10 spell points per cast.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Extra Turning
-Group: Heroic, Misc
-Descrip: +4 Turns per rest.
-RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Paladin 4, Dark Apostate 1
-
-FeatName: Fascinate
-Group: Misc
-Descrip: This song fascinates most nearby living enemies, causing them to cease their activities until they're damaged or the effect ends.
-Flags: Unselectable
-Class: Bard 1, Stormsinger 1
-
-FeatName: Fast Movement
-Group: Heroic, Misc
-Descrip: The Fast Movement class feat allows a Barbarian to move 10% faster.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Fast Movement
-Group: Heroic, Misc
-Descrip: A Monk gains a cumulative 5% bonus to run speed while centered for every three Monk levels. This bonus stacks with other run speed bonuses. If the monk would become uncentered (by equipping armor, or wielding non-monk weapons, etc) then the bonuses are temporarily lost.
-Class: Monk 3
-Flags: Unselectable
-
-FeatName: Favored Enemy
-Group: Heroic, Misc
-Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
-Flags: ClassOnly
-ClassOnlyClass: Ranger, Dark Hunter
-ClassOnlyLevel: 1, 5, 10, 15, 20
-Class: Ranger 1, Dark Hunter 1
-Selector: Aberration, Animal, Chaotic Outsider, Construct, Dragon, Dwarf, Elemental, Elf, Evil Outsider, Fey, Giant, Gnoll, Goblinoid, Halfling, Human, Lawful Outsider, Magical Beast, Monstrous Humanoid, Ooze, Orc, Plant, Reptilian, Undead, Vermin
-SelectorName: Aberration
-Class: Ranger 1, Dark Hunter 1
-SelectorName: Animal
-Class: Ranger 1, Dark Hunter 1
-SelectorName: Chaotic Outsider
-Class: Ranger 1
-SelectorName: Construct
-Class: Ranger 1
-SelectorName: Dragon
-Class: Ranger 1
-SelectorName: Dwarf
-Class: Ranger 1
-SelectorName: Elemental
-Class: Ranger 1
-SelectorName: Elf
-Class: Ranger 1, Dark Hunter 1
-SelectorName: Evil Outsider
-Class: Ranger 1
-SelectorName: Fey
-Class: Ranger 1
-SelectorName: Giant
-Class: Ranger 1
-SelectorName: Gnoll
-Class: Ranger 1
-SelectorName: Goblinoid
-Class: Ranger 1
-SelectorName: Halfling
-Class: Ranger 1
-SelectorName: Human
-Class: Ranger 1, Dark Hunter 1
-SelectorName: Lawful Outsider
-Class: Ranger 1
-SelectorName: Magical Beast
-Class: Ranger 1
-SelectorName: Monstrous Humanoid
-Class: Ranger 1, Dark Hunter 1
-SelectorName: Ooze
-Class: Ranger 1
-SelectorName: Orc
-Class: Ranger 1
-SelectorName: Plant
-Class: Ranger 1
-SelectorName: Reptilian
-Class: Ranger 1
-SelectorName: Undead
-Class: Ranger 1
-SelectorName: Vermin
-Class: Ranger 1, Dark Hunter 1
-
-FeatName: Fear Immunity
-Group: Heroic, Misc
-Descrip: A paladin is immune to fear effects.
-Class: Paladin 3, Sacred Fist 3
-Flags: Unselectable
-
-FeatName: Feline Agility
-Group: Misc
-Descrip: After standing still for 6 seconds, when you move again you gain a +20% Action Boost bonus to Movement Speed for 6 seconds.
-Race: Required, Tabaxi, Trailblazer
-
-FeatName: Finishing Moves
-Group: Heroic, Misc
-Descrip: Through careful use of their abilities, monks can unlock special finishing moves to perform amazing effects. This button changes into various finishing moves as they become available.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: First Blood
-Group: Destiny, Melee
-WikiName: Epic Destiny Feats#Martial sphere
-Descrip: Melee weapons and unarmed attacks deal 50-300 extra untyped damage against enemies with 90% or more HP. This extra damage won't trigger twice within three seconds.
-Level: 25
-
-FeatName: Flurry of Blows
-Group: Heroic, Misc
-Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
-Class: Monk 1, Sacred Fist 1
-Flags: Unselectable
-
-FeatName: Follower of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1
-Flags: Deity, ClassOnly
-ClassOnlyClass: Cleric, Dark Apostate, Favored Soul, Paladin
-ClassOnlyLevel: 1
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: Lord of Blades
-Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Bladeforged, Warforged
-SelectorName: Silver Flame
-Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Sovereign Host
-Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Undying Court
-Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
-Race: Required, Elf, Half-Elf, Wood Elf
-SelectorName: Vulkoor
-Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
-Race: Required, Drow
-SelectorName: Aureon
-Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Helm
-Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: Olladra
-Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Onatar
-Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Silvanus
-Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: The Blood of Vol
-Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-
-FeatName: Follower of the Path of Light
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: This deity feat line grants the following:}{- Proficiency with Handwraps as a favored weapon.
-Class: Sacred Fist 1
-Flags: Deity, ClassOnly
-ClassOnlyClass: Sacred Fist
-ClassOnlyLevel: 1
-Flags: Unselectable
-
-FeatName: Sacred Fist Follower of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
-Class: Sacred Fist 1
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-None: Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: Lord of Blades
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Bladeforged, Warforged
-SelectorName: Silver Flame
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Sovereign Host
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Undying Court
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
-Race: Required, Elf, Half-Elf, Wood Elf
-SelectorName: Vulkoor
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
-Race: Required, Drow
-SelectorName: Aureon
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Helm
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: Olladra
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Onatar
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Silvanus
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: The Blood of Vol
-Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: The Blood of Vol
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus
-Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-
-FeatName: Force of Personality
-Group: Heroic, Defense, Misc
-Descrip: Use your Charisma modifier for Will Saves instead of Wisdom.
-Stat: Charisma 13
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Forced Escape
-Group: Destiny, Defense
-Descrip: You radiate destruction, dealing 20d20 sonic damage to enemies around you. Enemies succeeding a Fortitude saving throw vs. (20 + Wisdom modifier) take half damage. This dispels crowd control effects such as stuns on you, and can be used when stunned or otherwise incapacitated (but still conscious).
-Level: 25
-
-FeatName: Fount of Life
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: +20 Healing Amp and Positive Spell Power.
-Level: 28
-
-FeatName: Goodberry
-Group: Heroic, Misc
-Descrip: Transmutes natural matter around you into Goodberries. Goodberries are infused with primal magic, and provide a full meal's nourishment. If eaten in a tavern, they act as tavern food and drink, refilling your health and spell points. When cast, Goodberries appear in your inventory. The higher the caster level, the more nourishing the Goodberries are.
-Class: Druid 1
-Flags: Unselectable
-
-FeatName: Grace of Battle
-Group: Heroic, Melee, Misc
-Descrip: Deity weapons use Charisma or Strength (whichever is higher) for attack and damage, but only if at least half your heroic levels are Favored Soul.
-Class: Favored Soul 2
-Flags: ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 2
-
-FeatName: Great Ability
-Group: Epic, Misc
-Descrip: +1 to the selected ability score. This feat can be taken multiple times.
-Repeat: 99
-Level: 21
-Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
-
-FeatName: Great Cleave
-SortName: Cleave2
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +40% damage.
-BAB: 4
-All: Cleave, Power Attack
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Great Fortitude
-Group: Heroic, Defense
-Descrip: +2 bonus to all Fortitude saving throws.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Greater Pact Attunement
-SortName: Pact Attunement2
-Group: Heroic, Misc
-Descrip: Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 12, but any character with at least one Warlock Acolyte of the Skin level and 12 character levels can select this feat at levelup as a normal feat.
-Class: Acolyte 1
-Level: 12
-All: Pact Attunement
-
-FeatName: Greater Rage
-Group: Heroic, Misc
-Descrip: The bonuses of the barbarian's rage increase to a total of +6 strength, +6 constitution and +3 to will saving throws but the barbarian still incurs a reduction of its Armor Class by 2. Fatigue penalties remain the same as regular Rage. Enhances the regular Barbarian Rage feat. +10 Physical Resistance Rating when wearing Medium armor. +10 Melee Power while the rage is active.
-Flags: Unselectable
-Class: Barbarian 11
-
-FeatName: Greater Ruin
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spell feats
-Descrip: Greater Ruin (150 SP): Deal 1000 untyped damage to a single enemy. No save. Metamagics can be applied but are not free.
-Level: 30
-All: Ruin
-
-FeatName: Greater Shield Mastery
-SortName: Shield Mastery3
-Group: Heroic, Melee, Defense
-Descrip: Net effect including Shield Mastery: +10 Combat Style bonus to Melee Power and +10% doublestrike when using a shield. +10/15/20 PRR when using small (or buckler)/large/tower shields.
-BAB: 13
-All: Improved Shield Mastery
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Greater Single Weapon Fighting
-Abbreviation: Greater SWF
-SortName: Single Weapon Fighting3
-Descrip: Your SWF Combat Style bonuses increase to +30% attack speed and +6 Melee Power. You now apply 50% more of your appropriate ability score to your damage.
-Group: Heroic, Melee
-BAB: 11
-Flags: SkillTome
-Skill: Balance 7
-All: Single Weapon Fighting, Improved Single Weapon Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Greater Spell Focus
-SortName: Spell Focus2
-Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
-CanCastSpell: 1
-All: Spell Focus
-RaceBonus: Human, Purple Dragon Knight
-SharedSelector: Spell Focus
-
-FeatName: Greater Spell Penetration
-Abbreviation: Greater Spell Pen
-SortName: Spell Penetration2
-Group: Heroic, Spellcasting
-Descrip: +2 to your caster level check for defeating Spell Resistance.
-CanCastSpell: 1
-All: Spell Penetration
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Greater Two Handed Fighting
-Abbreviation: Greater THF
-SortName: Two Handed Fighting3
-Group: Heroic, Melee
-Descrip: 30% additional Strikethrough Chance. Your THF Combat Style bonus increases to +6 Melee Power. In addition, while using a two-handed weapon, your Ability Score bonus to damage improves to 2.25x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.6x instead.
-BAB: 11
-Stat: Strength 17
-All: Two Handed Fighting, Improved Two Handed Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Greater Two Weapon Fighting
-Abbreviation: Greater TWF
-SortName: Two Weapon Fighting3
-Group: Heroic, Melee
-Descrip: Your chance to proc off-hand attacks increases to 80%.
-BAB: 11
-Stat: Dexterity 17
-All: Two Weapon Fighting, Improved Two Weapon Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Greater Weapon Focus
-Abbreviation: Gtr Weapon Focus
-SortName: Weapon Focus2
-Group: Heroic, Melee, Range
-Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
-Class: Fighter 8, Dragon Lord 8
-All: Weapon Focus
-ClassBonus: Fighter, Dragon Lord
-SharedSelector: Weapon Focus
-
-FeatName: Greater Weapon Specialization
-Abbreviation: Gtr Weapon Spec
-SortName: Weapon Specialization2
-Group: Heroic, Melee, Range
-Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
-Class: Fighter 12, Dragon Lord 12
-All: Weapon Focus, Weapon Specialization
-ClassBonus: Fighter, Dragon Lord
-SharedSelector: Weapon Specialization
-
-FeatName: Guardian Angel
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Divine sphere
-Descrip: When you drop below 50% HP, for 30 seconds you gain PRR equal to your Wisdom and saving throws equal to your epic level. This won't trigger again for three minutes.
-Level: 22
-
-FeatName: Grandmaster of Forms
-SortName: Adept of Forms3
-Group: Heroic, Misc
-Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 18, but any character with at least one Monk level and 18 character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
-Level: 18
-All: Master of Forms
-
-FeatName: Half-Elf Dilettante
-Abbreviation: Dilettante
-SortName: Dilettante
-Group: Heroic, Misc
-Descrip: Half-Elves are able to dabble in the abilities of a class other than the class they have chosen. You count as level 1 of your dilettante class for scrolls and wands, gain various bonuses related to that class, and can further improve these bonuses with enhancements.
-Race: Required, Half-Elf
-RaceBonus: Half-Elf
-Flags: RaceOnly
-Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
-SelectorName: Alchemist
-WikiName: Half-Elf Dilettante#Alchemist
-Descrip: You have +10 Universal Spell Power. For item use purposes, you count as a level one Alchemist in addition to any other classes you possess. This feat is not recommended for characters with actual Alchemist levels.
-Stat: Intelligence 13
-SelectorName: Artificer
-WikiName: Half-Elf Dilettante#Artificer
-Descrip: You gain proficiency with all crossbows, and Artificer Knowledge: Scrolls (You gain a +2 bonus to Use Magical Device checks when using scrolls, and their Caster Level is increased by one - this Caster Level increase is capped by your Intelligence modifier.)}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Intelligence 13
-SelectorName: Barbarian
-WikiName: Half-Elf Dilettante#Barbarian
-Descrip: DR 1/- (does not stack with Barbarian DR).}For item purposes, you count as a level one Barbarian in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Constitution 13
-SelectorName: Bard
-WikiName: Half-Elf Dilettante#Bard
-Descrip: You can Fascinate 3x per rest with a Will DC based on a Perform check (or 1d20 + Cha Mod if untrained) to negate.}For item purposes, you count as a level one Bard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
-SelectorName: Cleric
-WikiName: Half-Elf Dilettante#Cleric
-Descrip: For item purposes, you count as a level one Cleric in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Wisdom 13
-SelectorName: Druid
-WikiName: Half-Elf Dilettante#Druid
-Descrip: For item purposes, you count as a level one Druid in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Wisdom 13
-SelectorName: Favored Soul
-WikiName: Half-Elf Dilettante#Favored Soul
-Descrip: For item purposes, you count as a level one Favored Soul in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
-SelectorName: Fighter
-WikiName: Half-Elf Dilettante#Fighter
-Descrip: You are proficient with all martial weapons.}For item purposes, you count as a level one Fighter in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Strength 13
-SelectorName: Monk
-WikiName: Half-Elf Dilettante#Monk
-Descrip: You are proficient with quarterstaff, kama and shuriken. You gain up to +2 AC from your Wisdom modifier while centered.}For item purposes, you count as a level one Monk in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Wisdom 13
-SelectorName: Paladin
-WikiName: Half-Elf Dilettante#Paladin
-Descrip: Can add up to 2 points of your Charisma bonus to all saves (does not stack with the Divine Grace ability).}For item purposes, you count as a level one Paladin in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
-SelectorName: Ranger
-WikiName: Half-Elf Dilettante#Ranger
-Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows.}For item purposes, you count as a level one Ranger in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Dexterity 13
-SelectorName: Rogue
-WikiName: Half-Elf Dilettante#Rogue
-Descrip: +1d6 Sneak Attack damage (does not stack with Rogue Sneak Attack).}For item purposes, you count as a level one Rogue in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Dexterity 13
-SelectorName: Sorcerer
-WikiName: Half-Elf Dilettante#Sorcerer
-Descrip: For item purposes, you count as a level one Sorcerer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
-SelectorName: Wizard
-WikiName: Half-Elf Dilettante#Wizard
-Descrip: For item purposes, you count as a level one Wizard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Intelligence 13
-SelectorName: Warlock
-WikiName: Half-Elf Dilettante#Warlock
-Descrip: Toggle: Imbue Toggle: You deal 1d4 extra Fire damage with attacks and spells. This triggers at most once every 2 seconds.}For item purposes, you count as a level one Warlock in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
-
-FeatName: Hamstring
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): On hit, target's movement rate is reduced by 50% for 12 seconds. No save.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-Class: Rogue 1
-
-FeatName: Harbinger of Chaos
-Group: Destiny, Melee, Range
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: +2% Doublestrike and Doubleshot. If you are Chaotic, gain +2 Imbue Dice.
-Level: 28
-
-FeatName: Healing Hands
-Group: Misc
-Descrip: Heal yourself or ally for (10 + Character level) x Wisdom modifier hit points, or deals that much damage to an undead target.
-Flags: Unselectable
-Race: Required, Aasimar, Aasimar Scourge
-
-FeatName: Heavy Armor Champion
-SortName: Heavy Armor Training4
-Group: Heroic, Defense
-Descrip: +12 PRR and MRR while wearing heavy armor.
-Class: Fighter 14, Dragon Lord 14
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Heavy Armor Combatant
-SortName: Heavy Armor Training2
-Group: Heroic, Defense
-Descrip: +6 PRR and MRR while wearing heavy armor.
-Class: Fighter 6, Dragon Lord 6
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Heavy Armor Master
-SortName: Heavy Armor Training3
-Group: Heroic, Defense
-Descrip: +9 PRR and MRR while wearing heavy armor.
-Class: Fighter 10, Dragon Lord 10
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Heavy Armor Training
-Group: Heroic, Defense
-Descrip: +3 PRR and MRR while wearing heavy armor.
-Class: Fighter 2, Dragon Lord 2
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Heighten Spell
-Group: Heroic, Spellcasting
-Descrip: Spells are raised to the highest spell level your character can cast, but cost 5 more spell points per level raised.
-CanCastSpell: 2
-ClassBonus: Artificer, Wizard, Alchemist
-
-FeatName: Hellball
-Group: Destiny, Spellcasting
-Descrip: Hellball (45 spell points, 6 second cooldown): Deal 3d20+15 acid, electric, fire, and sonic damage to enemies in an area. Reflex save for half, but not subject to Evasion. Metamagics can be applied but are not free.
-Level: 25
-
-FeatName: Hide in Plain Sight
-Group: Heroic, Misc
-Descrip: You are a master when it comes to hiding in places others think impossible. You gain +1 Hide and +1 Move Silently for every three seconds you stand still, up to +5. While you are sneaking and standing still (for 3 seconds), enemies don't gain Spot bonuses until they get much closer to you, and the bonuses are smaller.
-Class: Ranger 17
-Flags: Unselectable
-
-FeatName: Holy Strike
-Group: Destiny, Melee, Range
-WikiName: Epic Destiny Feats#Divine sphere
-Descrip: Your weapons gain Ghost Touch, and your vorpal strikes deal 10d6 untyped damage vs. Evil enemies. (Works with melee, unarmed, and ranged attacks.)
-Level: 22
-
-FeatName: Improved Augment Summoning
-Group: Epic, Spellcasting, Misc
-WikiName: Epic Feats#Epic Spellcasting passive feats
-Descrip: +140 Maximum Spell Points}Your summoned creatures gain:}{ +8 to all ability scores}{ +10% Dodge}{ +100 Maximum Hit Points
-Level: 24
-All: Augment Summoning
-
-FeatName: Improved Bardic Music
-Group: Heroic, Misc
-Descrip: Inspire Greatness adds +1 to all skills. Inspire Heroics adds +1 AC, Dodge and all saves. +2 Bard Level to Bardic Inspiration.
-Class: Bard 12, Stormsinger 12
-Skill: Perform 15
-
-FeatName: Improved Critical
-Group: Heroic, Melee, Range
-Descrip: Doubles the threat range of the chosen weapon type. Can be taken multiple times, though each time must be for a different type.
-BAB: 8
-ClassBonus: Artificer, Fighter, Dragon Lord
-Selector: Bludgeoning, Piercing, Ranged, Slashing, Thrown
-
-FeatName: Improved Construct Essence
-SortName: Construct Essence2
-Group: Heroic, Defense
-Descrip: Your are now considered a Living Construct:}{-100% base healing from Repair spells}{-100% Rust damage}{-Immunity to Sleep, Hold Person, Energy Drain, Nauseated, Exhausted, and Paralyzing}{-Immunity to stat damage from natural poisons and diseases}{-+10 Racial bonus to saving throws against magical poisons, and no longer auto-fail on a 1}{-Do not need to breathe while underwater}{-Shrine recovery based on Repair instead of Heal
-Race: NotAllowed, Warforged, Bladeforged
-Class: Artificer 12
-ClassBonus: Artificer
-All: Construct Essence
-
-FeatName: Improved Damage Reduction
-Group: Heroic, Defense
-Descrip: Gain DR 1/adamantine, or improve your existing DR by 1/adamantine.
-Race: Required, Warforged, Bladeforged
-Repeat: 99
-
-FeatName: Improved Evasion
-Group: Heroic, Defense
-Descrip:  When you attempt a Reflex save against an effect that normally does half damage when saved against, you suffer no damage if you successfully save and half damage even if you fail.
-Flags: ClassOnly
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Improved Inspire Courage
-Group: Heroic, Misc
-Descrip: Gives a +2 (total) morale bonus to attack rolls, damage rolls, and saving throws versus fear. At Bard level 14, these bonuses rise to +3, and at Bard level 20 they rise to +4.
-Class: Bard 8
-Flags: Unselectable
-
-FeatName: Improved Feint
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 8 seconds): Bluffs the enemy, enabling Sneak attacks for a short period of time. Bugged; see wiki.
-One: Sneak Attack, Half-Elf Dilettante: Rogue
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Fortification
-Group: Heroic, Defense
-Descrip: Improves your warforged fortification to 100%, but you lose the ability to be healed by cure spells.
-BAB: 6
-Race: Required, Warforged, Bladeforged
-ClassBonus: Artificer
-
-FeatName: Improved Martial Arts
-Group: Epic, Melee
-Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using ki weapons such as kamas, quarterstaves, and shuriken. Works with all weapons that you are centered with.
-Class: Monk 12, Sacred Fist 12
-Level: 21
-
-FeatName: Improved Mental Toughness
-SortName: Mental Toughness2
-Group: Heroic, Spellcasting
-Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20, +210 counting regular mental toughness.) +1% spell critical chance.
-CanCastSpell: 3
-All: Mental Toughness
-ClassBonus: Wizard, Alchemist
-
-FeatName: Improved Precise Shot
-SortName: Precise Shot2
-Group: Heroic, Range
-Descrip: Your ranged attacks pass through and potentially damage all foes in the projectile's path.
-BAB: 11
-Stat: Dexterity 19
-All: Point Blank Shot, Precise Shot
-ClassBonus: Artificer, Fighter
-
-FeatName: Improved Shield Bash
-SortName: Shield Bash2
-Group: Heroic, Melee
-Descrip: +20% chance to proc an automatic shield bash when attacking with a one-handed weapon and shield.
-All: Shield Proficiency
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Shield Mastery
-SortName: Shield Mastery2
-Group: Heroic, Melee, Defense
-Descrip: Net effect including Shield Mastery: +6 Combat Style bonus to Melee Power and +8% doublestrike when using a shield. +5/10/15 PRR when using small (or buckler)/large/tower shields.
-BAB: 8
-All: Shield Mastery
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Single Weapon Fighting
-Abbreviation: Improved SWF
-SortName: Single Weapon Fighting2
-Group: Heroic, Melee
-Descrip: Your SWF Combat Style bonuses increase to +20% attack speed and +4 Melee Power. You now apply 25% more of your appropriate ability score to your damage.
-BAB: 6
-Flags: SkillTome
-Skill: Balance 4
-All: Single Weapon Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Sneak Attack
-Group: Epic, Melee, Range
-Descrip: +3d6 Sneak Attack damage.
-Level: 21
-Class: Rogue 12
-Stat: Dexterity 21
-
-FeatName: Improved Sunder
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 10 seconds): Reduce the target's AC by 5 and Fortification by 10% for 24 seconds. Fortitude save (DC 14 + Str mod) negates. Additionally, apply a -3 Fortitude Saving Throw penalty that lasts for 24 seconds and stacks up to 5 times.
-All: Power Attack
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Improved Trip
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 10 seconds): Replaces Trip as an action and improves on it with +4 DC, double duration and shorter cooldown.
-All: Combat Expertise
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Improved Turning
-Group: Heroic, Misc
-Descrip: Gives you the ability to turn undead as if you were one cleric level higher.
-RaceBonus: Human, Purple Dragon Knight
-Class: Cleric 1, Paladin 4, Dark Apostate 1
-
-FeatName: Improved Two Handed Fighting
-Abbreviation: Improved THF
-SortName: Two Handed Fighting2
-Group: Heroic, Melee
-Descrip: +30% additional Strikethrough chance while two-handed fighting. Your THF Combat Style bonus increases to +4 Melee Power. While using a two-handed weapon, your Ability Score bonus to damage improves to 2x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.35x instead.
-BAB: 6
-Stat: Strength 17
-All: Two Handed Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Two Weapon Fighting
-Abbreviation: Improved TWF
-SortName: Two Weapon Fighting2
-Group: Heroic, Melee
-Descrip: Your chance to proc off-hand attacks increases to 60%.
-BAB: 6
-Stat: Dexterity 17
-All: Two Weapon Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Improved Uncanny Dodge
-Group: Heroic, Misc
-Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
-Class: Barbarian 8, Rogue 8
-
-FeatName: Improved Wild Empathy
-Group: Heroic, Misc
-Descrip: This feat allows a ranger to charm an animal (similar to the Charm monster spell) for 5 minutes. It can be used 3 times / rest period with a 60 second cool down.}{-Target: Animal, Magical Beast{-Save: Will
-Class: Druid 7, Ranger 7
-Flags: Unselectable
-
-FeatName: Indomitable Will
-Group: Heroic, Misc
-Descrip: While in a Barbarian rage, a barbarian of 14th level or higher gains a +4 bonus on Will saves to resist enchantment spells. This bonus stacks with all other modifiers, including the morale bonus on Will saves he also receives during his rage.
-Flags: Unselectable
-Class: Barbarian 14
-
-FeatName: Inscribe Alchemy Recipe
-Group: Heroic, Spellcasting
-Descrip: You are able to inscribe alchemy spells from scrolls into your spellbook. This action will destroy the scroll.
-Class: Alchemist 1
-Flags: Unselectable
-
-FeatName: Inscribe Artificer Scroll
-Group: Heroic, Spellcasting
-Descrip: You are able to inscribe artificer spells from scrolls into your spellbook. This action will destroy the scroll.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Inscribe Scroll
-Group: Heroic, Spellcasting
-Descrip: You are able to inscribe spells from scrolls into your spellbook. This action will destroy the scroll.
-Class: Wizard 1
-Flags: Unselectable
-
-FeatName: Insightful Reflexes
-Group: Heroic, Defense, Misc
-Descrip: Use your Intelligence modifier for Reflex Saves instead of Dexterity.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Inspire Courage
-Group: Misc
-Descrip: Gives a +1 music bonus to attack rolls, damage rolls, and saving throws versus fear, as well as +3 universal Spell Power.
-Class: Bard 1, Stormsinger 1
-Skill: Perform 3
-
-FeatName: Inspire Excellence
-Group: Epic, Misc
-Descrip: Song that grants a +2 competence bonus to all ability scores to yourself and nearby allies. Same duration as Inspire Courage.
-Class: Bard 15, Stormsinger 15
-Skill: Perform 20
-Level: 21
-All: Inspire Heroics
-
-FeatName: Inspire Heroics
-Group: Heroic, Misc
-Descrip: Adds the effects of Inspire Heroics to your Bardic Inspiration. Other Bard abilities may modify the effects of Inspire Heroics. Inspire Heroics - Gives a +4 Music Bonus to Armor Class, +4% Music Bonus to Dodge, and a +4 Music bonus to all saves.
-Class: Bard 15
-Flags: Unselectable
-
-FeatName: Inspire Greatness
-Group: Heroic, Misc
-Descrip: Adds the effects of Inspire Greatness to your Bardic Ballad. Other Bard abilities may modify the effects of Inspire Greatness. Inspire Greatness - Allies and yourself benefit from +20 Temporary Hit Points, +3 Physical Resistance Rating, an +10 Healing Amplification as long as your are not incapacitated and they are within the Ballad.
-Class: Bard 9
-Flags: Unselectable
-
-FeatName: Intensify Spell
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Metamagic Feats
-Descrip: +140 Maximum Spell Points}Metamagic: +75 Spell Power, spells cost +15 more mana to cast.
-Level: 24
-
-FeatName: Iron Will
-Group: Heroic, Defense
-Descrip: +2 bonus to Will Saves.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Ki Strike
-Group: Heroic, Misc
-Descrip: Ki Strike
-Flags: Unselectable
-Selector: Magic, Lawful, Adamantine
-SelectorName: Magic
-Descrip: All of your unarmed melee attacks are empowered with ki and are considered magical for damage reduction purposes.
-Class: Monk 4
-WikiName: Ki Strike: Magic
-SelectorName: Lawful
-Descrip: All your unarmed melee attacks are considered Lawful for purposes of bypassing Damage Reduction.
-Class: Monk 10
-WikiName: Ki Strike: Lawful
-SelectorName: Adamantine
-Descrip: All your unarmed melee attacks are considered Adamantine for purposes of bypassing Damage Reduction.
-Class: Monk 16
-WikiName: Ki Strike: Adamantine
-
-FeatName: Knight's Training
-Group: Heroic, Melee
-Descrip: Morale bonus to crit profile for certain weapons:}{ +1 crit multiplier for Long Swords}{ +1 crit range for Battle Axes (+2 w/Improved Critical: Slashing)}{ +1 crit range for War Hammers, Heavy Maces and Morningstars
-BAB: 4
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Knowledge of Battle
-Group: Heroic, Melee, Misc
-Descrip: Deity weapons use Wisdom or Strength (whichever is higher) for attack and damage, but only if at least half your heroic levels are Favored Soul.
-Class: Favored Soul 2
-Flags: ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 2
-
-FeatName: Lasting Inspiration
-Group: Destiny, Misc
-Descrip: +3 songs/rest and +50% song duration. Duration also applies to Fascinate. 
-Level: 22
-
-FeatName: Lay On Hands
-Group: Misc
-Descrip: Heal yourself or ally for (10 + Paladin level) x Charisma modifier hit points, or deals that much damage to an undead target. Warforged do not suffer a penalty in amount healed.
-Flags: Unselectable
-Class: Paladin 2, Sacred Fist 2
-
-FeatName: Least Dragonmark
-Group: Heroic, Misc
-WikiName: Dragonmarks
-Descrip: +2 bonus to a skill plus an active SLA ability 3x/rest. Enhancements grant additonal SLAs (up to three total) and uses per rest. You may only take one dragonmark.
-RaceBonus: Human
-Repeat: 1
-Selector: Finding, Healing, Making, Passage, Sentinel, Shadow, Storm, Warding, Scribing
-SelectorName: Finding
-Descrip: +2 bonus to Search skill. Available SLAs:}{-Locate Objects}{-Knock}{-Treasure Finding
-Race: Required, Half-Orc, Human
-SelectorName: Healing
-Descrip: +2 bonus to Heal skill. Available SLAs:}{-Cure Light Wounds}{-Cure Serious Wounds}{-Heal
-Race: Required, Halfling
-SelectorName: Making
-Descrip: +2 bonus to Repair skill and +3/6/10 Cannith Crafting levels. Available SLAs:}{-Repair Light Damage}{-Repair Serious Damage}{-Reconstruct
-Race: Required, Human
-SelectorName: Passage
-Descrip: +2 bonus to Balance skill. Available SLAs:}{-Expeditious Retreat}{-Dimension Door}{-Teleport
-Race: Required, Human
-SelectorName: Scribing
-Descrip: +2 bonus to UMD skill. Available SLAs:}{-Shield}{-Symbol of Flame}{-Symbol of Stunning
-Race: Required, Gnome
-SelectorName: Sentinel
-Descrip: +2 bonus to Intimidate skill. Available SLAs:}{-Shield of Faith}{-Protection from Energy}{-Globe of Invulnerability
-Race: Required, Human
-SelectorName: Shadow
-Descrip: +2 bonus to Hide skill. Available SLAs:}{-Invisibility}{-Shadow Walk}{-Displacement
-Race: Required, Elf, Eladrin
-SelectorName: Storm
-Descrip: +2 bonus to Balance skill. Available SLAs:}{-Gust of Wind}{-Electric Loop}{-Call Lightning Storm
-Race: Required, Half-Elf
-SelectorName: Warding
-Descrip: +2 bonus to Search skill. Available SLAs:}{-Neutralize Poison}{-Spell Resistance}{-Radiant Forcefield
-Race: Required, Dwarf
-
-FeatName: Legendary Aim
-Group: Destiny, Range
-Descrip: While using a Ranged Weapon, +10 to Attack, +5% Dodge bypass.
-Level: 31
-
-FeatName: Legendary Toughness
-Group: Destiny, Defense
-Descrip: +100 maximum hit points. This can be taken multiple times.
-Stat: Constitution 21
-Level: 31
-Repeat: 99
-
-FeatName: Lesser Pact Attunement
-Group: Heroic, Misc
-Descrip: You gain 2d8 Eldritch Blast base damage and 2d6 Eldritch Blast Pact Dice.
-Class: Acolyte 1
-Flags: Unselectable
-
-FeatName: Lightning Reflexes
-Group: Heroic, Defense
-Descrip: +2 bonus to Reflex saves.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Insightful Courage
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for Will saves. Mutually exclusive with Tough Tincture.
-Class: Alchemist 8
-ClassBonus: Alchemist
-None: Tough Tincture
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 8, 12, 16, 20
-
-FeatName: Liquid Luck
-Group: Heroic, Alchemy
-Descrip: Gain Evasion.
-Class: Alchemist 12
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 12, 16, 20
-
-FeatName: Luck of Heroes
-Group: Heroic, Defense
-Descrip: +1 bonus to all saves.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Magical Training
-Group: Heroic, Spellcasting
-Descrip: Grants +80 spell points, Echoes of Power, +5% spell critical chance and proficiency with Orbs.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Manyshot
-Group: Heroic, Range
-Descrip: Bow Attack: Ranged Bow Attack: Expend one charge to fire three arrows in quick succession. You have +1 Critical Threat Range and Critical Multiplier with these shots. Each of these shots can Doubleshot. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Manyshot (Requires a Longbow or Shortbow to use). Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows.
-BAB: 6
-Stat: Dexterity 17
-All: Point Blank Shot, Rapid Shot
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Martial Weapon
-Group: Heroic, Melee, Range
-Descrip: Grants proficiency with the chosen weapon. Barbarians, Fighters, Paladins and Rangers are granted proficiency with all martial weapons.
-WikiName: Martial Weapon Proficiency
-RaceBonus: Human, Purple Dragon Knight
-Selector: All, Battleaxe, Falchion, Greataxe, Greatclub, Greatsword, Handaxe, Heavy Pick, Kukri, Light Hammer, Light Pick, Longbow, Longsword, Maul, Rapier, Scimitar, Shortsword, Shortbow, Composite Shortbow, Throwing Axe, Throwing Hammer, Warhammer
-SelectorName: Composite Shortbow
-Hide: True
-SelectorName: All
-Descrip: Grants proficiency with all martial weapons. Barbarians, Fighters, Paladins and Rangers receive this feat for free. All other classes must train individual martial weapons they want to use, one feat per weapon.
-
-FeatName: Mass Suggestion Song
-Group: Heroic, Misc
-Descrip: This song charms multiple foes that are currently under the effects of the bardic Fascinate song.
-Class: Bard 18, Stormsinger 18
-Flags: Unselectable
-WikiName: Mass_Suggesion_(song)
-
-FeatName: Master of
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spellcasting passive feats
-Descrip: +140 Maximum Spell Points}+10 Maximum Caster Level for selected spells and SLAs
-Level: 24
-Selector: Air, Alignment, Artifice, Earth, Fire, Knowledge, Light, Music, Poisons, Shadowblades, Spellvials, the Dead, the Wilds, Thorns, Water
-SelectorName: Air
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shocking Grasp}{-Electric Loop}{-Lightning Bolt
-SelectorName: Alignment
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Holy Smite}{-Deific Vengeance}{-Unholy Blight}{-Chaos Hammer}{-Order's Wrath
-SelectorName: Artifice
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Static Shock}{-Lightning Sphere}{-Blast Rod}{-Lightning Motes
-SelectorName: Earth
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Acid Spray}{-Melf's Acid Arrow}{-Acid Blast
-SelectorName: Fire
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Burning Hands}{-Scorch}{-Fireball
-SelectorName: Knowledge
-Descrip: +140 Maximum Spell Points}The Archmage SLAs Arcane Bolt and Blast now grant 1 stack of Mental Honing: +3 Universal Spell Power, +2% Spell Critical damage. Stacks up to 30 times, lose 1 stack every 6 seconds.
-SelectorName: Light
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Sun Bolt}{-Searing Light}{-Divine Punishment
-SelectorName: Music
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater Shout}{-Sonic Blast}{-Reverberate
-SelectorName: Poisons
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
-SelectorName: Shadowblades
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Illusory Weaponry}{-Fan of Shadowblades}{-Ring of Shadowblades
-SelectorName: Spellvials
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Elemental Obliteration
-SelectorName: the Dead
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
-SelectorName: the Wilds
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Produce Flame}{-Creeping Cold}{-Call Lightning}{-Word of Balance}{-Salt Ray
-SelectorName: Thorns
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Thorn Strike}{-Splinter Bolt}{-Thorn Bloom
-SelectorName: Water
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Niac's Cold Ray}{-Snowball Swarm}{-Niac's Biting Cold
-
-FeatName: Master of Forms
-SortName: Adept of Forms2
-Group: Heroic, Misc
-Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 12, but any character with at least one Monk level and 12 character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
-Level: 12
-All: Adept of Forms
-
-FeatName: Maximize Spell
-Group: Heroic, Spellcasting
-Descrip: +150 universal Spell Power, spells cost +25 more mana to cast.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Meditation
-Group: Heroic, Misc
-Descrip: Two times per rest, a monk can meditate to rapidly regain ki. Meditation stabilizes when it reaches over three times his Concentration skill.
-Class: Monk 2
-Flags: Unselectable
-
-FeatName: Mental Toughness
-Group: Heroic, Spellcasting
-Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20.) +1% spell critical chance.
-CanCastSpell: 1
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Wizard, Alchemist
-
-FeatName: Mighty Rage
-Group: Heroic, Misc
-Descrip: The bonuses of the barbarian's rage increase to a total of +10 strength, +10 constitution and +5 to will saving throws but the barbarian still incurs a reduction of his Armor Class by 2. No longer has any fatigue penalties, as they were removed at level17 with Tireless Rage. Enhances the regular Barbarian Rage feat.
-Flags: Unselectable
-Class: Barbarian 20
-
-FeatName: Mithral Body
-Group: Heroic, Defense
-Descrip: Docents you equip are considered light armor in terms of PRR/MRR, carry 15% ASF and have an MDB of 5.
-Race: Required, Warforged, Bladeforged
-ClassBonus: Artificer
-
-FeatName: Mithral Fluidity
-Group: Heroic, Defense
-Descrip: +1 MDB, and armor check penalty is decreased by 1. 
-All: Mithral Body
-Race: Required, Warforged, Bladeforged
-ClassBonus: Artificer
-
-FeatName: Mobile Spellcasting
-Group: Heroic, Spellcasting, Misc
-Descrip: Move at full speed while casting spells.
-Stat: Dexterity 13
-All: Combat Casting
-CanCastSpell: 2
-
-FeatName: Mobility
-Group: Heroic, Defense
-Descrip: +2% dodge, +2 MDB to armor and tower shields.
-Stat: Dexterity 13
-All: Dodge
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
-
-FeatName: Monk Stance
-Group: Heroic, Misc
-Descrip: Monk Stances are toggled stances available to monks, or monk multiclasses, as long as they are centered.
-Class: Monk 1
-Flags: Unselectable
-
-FeatName: Multitude of Missiles
-Group: Heroic, Range
-Descrip: For the next 20 seconds, while wielding a Simple Thrown Weapon add 100 to your Doubleshot and 2x your Base Attack Bonus to Ranged Power. Shares a cooldown with Manyshot.
-BAB: 6
-All: Point Blank Shot
-
-FeatName: Natural Fighting
-Group: Heroic, Melee
-Descrip: +4 Melee Power, PRR and Doublestrike while in a druid animal form.}{ In bear form: Increase the ability score modifier to damage while using a two-handed weapon to 2.0/2.5/3.0. Gain 60/30/30% Strikethrough chance.}{ This may be taken up to 3 times.
-Class: Druid 3, Blightcaster 3
-Repeat: 3
-
-FeatName: Negotiator
-Group: Heroic, Misc
-Descrip: +2 bonus to Diplomacy and Haggle skills.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Nimble Fingers
-Group: Heroic, Misc
-Descrip: +2 bonus to the Disable Device and Open Lock skills.
-Class: Rogue 1, Artificer 1, Dark Hunter 1
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Offhand Versatility
-Group: Heroic, Melee
-Descrip: You gain special bonuses for fighting with specific things in your offhand while Single Weapon Fighting.} }If you have nothing in your offhand, you ability score modifier contributes 25% more to your melee damage.}If you have an Orb or Rune Arm in your Offhand, you gain +1 bonus Imbue Dice.
-BAB: 8
-All: Single Weapon Fighting
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Opportunist
-Group: Heroic, Melee
-Descrip: Gain 3% doublestrike with melee weapons and bypass 10% fortification. 
-Flags: ClassOnly
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Oversized Two Weapon Fighting
-Abbreviation: Oversized TWF
-SortName: Two Weapon Fighting5
-Group: Heroic, Melee
-Descrip: When wielding an offhand weapon that isn't a light weapon, OTWF reduces your to-hit penalty from -4/-4 to -2/-2.
-Stat: Strength 12
-All: Two Weapon Fighting
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Overwhelming Critical
-Group: Epic, Melee, Range
-Descrip: +1 critical multiplier when rolling a 19 or 20.
-All: Improved Critical
-Level: 21
-
-FeatName: Pact
-Group: Heroic, Spellcasting, Misc
-WikiName: Warlock#Pact Choices
-Descrip: Your Pact applies extra damage to your Eldritch Blast, adds spells to your spell list and grants special abilities. Some Pacts carry alignment restrictions.
-Flags: Pact
-Class: Warlock 1, Acolyte 1
-Flags: ClassOnly
-ClassOnlyClass: Warlock
-ClassOnlyLevel: 1
-Selector: Fey, Fiend, Great Old One, Celestial, Abyss, Carceri Storm
-SelectorName: Fey
-Descrip: Sonic Damage}Targets Reflex saves}2: Obscuring Mist}5: Blindness}6: Daze Monster}9: Slow}14: Greater Dispel Magic}15: Abundant Step}17: Otto's Sphere of Dancing}19: Otto's Irresistible Dance
-SelectorName: Fiend
-Descrip: Fire Damage}Targets Fortitude saves}2: Command}5: Rage}6: +2 all saves}9: Fire Shield}14: Binding Chain}15: Hurl through Hell}17: Power Word: Blind}19: Howl of Terror
-Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
-SelectorName: Great Old One
-Descrip: Acid Damage}Targets Will saves}2: Entangle}5: Knock}6: +5 MRR, +25% Fort}9: Phantasmal Killer}14: Dominate Person}15: Charm Monster}17: Mass Suggestion}19: Power Word: Kill
-Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
-SelectorName: Celestial
-Descrip: Electric Damage}Targets Will saves}2: Bless}5: Soundburst}6: Celestial Attunement (+5 PRR and +1 to all Saves)}9: Magic Circle Against Evil}14: Prayer}15: Ameliorate (Obliterate undead)}17: Holy Aura}19: Freedom of Movement
-Alignment: Lawful Good, Chaotic Good, Neutral Good
-SelectorName: Abyss
-Descrip: Negative Damage}Targets Fortitude saves}2: Mage Armor}5: Spawn Screen}6: Unhallowed Flesh:(+5 PRR and +5 MRR) }9: Halt Undead}14: Death Aura}15: Channel the Abyss (Undead benefits)}17: Symbol of Pain}19: Rend the Soul
-Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
-SelectorName: Carceri Storm
-Descrip: Cold Damage}Targets Reflex saves}2: Merfolk's Blessing}5: Gust of Wind}6: Frozen Footsteps (+10% Cold Absorption)}9: Sleet Storm}14: Ice Storm}15: Absolute Zero (Lock single enemy in ice)}17: Mass Suggestion}19: Greater Creeping Cold
-NotClass: Monk
-
-FeatName: Pact Attunement
-Group: Heroic, Misc
-Descrip: Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 6, but any character with at least one Warlock Acolyte of the Skin level and 6 character levels can select this feat at levelup as a normal feat.
-Class: Acolyte 1
-Level: 6
-
-FeatName: Past Life
-Group: Heroic, Misc
-WikiName: Past life#Purchased Past Life Feats
-Descrip: After Heroic True Reincarnation, you can select an active Past Life feat for the dominant class in your previous life.
-Level: 3
-Flags: PastLife
-Selector: Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
-SelectorName: Artificer
-WikiName: Past Life: Student of Artifice
-Descrip: Passive: Using a rod, staff, or wand has a 15% chance to not cost a charge.}Active: Cast Enchant Weapons or Enchant Armor 10x per rest.
-SelectorName: Barbarian
-WikiName: Past Life: Berserker's Fury
-Descrip: Passive: +20 HP, +2 Intimidate, +1 Barbarian Rage per rest.}Active: Enter a basic rage 1x per rest even if you have no rage abilities.
-SelectorName: Bard
-WikiName: Past Life: Bardic Dilettante
-Descrip: Passive: +1 Charisma skills, +1 DC to your Enchantment spells.}Active: Inspire Courage 3x per rest.
-SelectorName: Cleric
-WikiName: Past Life: Initiate of the Faith
-Descrip: Passive: +2 bonus to Heal skill.}Active: Healing Word 5x per rest. (Heals 1d4, plus 1d4 per two caster levels.)
-SelectorName: Druid
-WikiName: Past Life: Harbinger of Nature's Wrath
-Descrip: Passive: +2 elemental resistances.}Active: Flame Blade 3x per rest.
-SelectorName: Favored Soul
-WikiName: Past Life: Acolyte of Divine Secrets
-Descrip: Passive: +2 Diplomacy.}Active: Avenging Light 10x per rest.
-SelectorName: Fighter
-WikiName: Past Life: Student of the Sword
-Descrip: Passive: +2 Intimidate, +1 MDB to armor and shields.}Active: 3x per rest you can increase your BAB to your level and gain +4 to-hit, 1 minute duration.
-SelectorName: Monk
-WikiName: Past Life: Disciple of the Fist
-Descrip: Passive: +2 Concentration, +1 die step for unarmed damage.}Active: Gain evasion for 20 seconds, 1x per rest.
-SelectorName: Paladin
-WikiName: Past Life: Soldier of the Faith
-Descrip: Passive: +2 bonus to Heal skill.}Active: Divine Favor 3x per rest.
-SelectorName: Ranger
-WikiName: Past Life: Warrior of the Wild
-Descrip: Passive: +2 Spot.}Active: Barkskin 3x per rest.
-SelectorName: Rogue
-WikiName: Past Life: Sneak of Shadows
-Descrip: Passive: +1 to all skills.}Active: 3x per rest you gain +1 sneak to-hit per 4 character levels, +1 sneak damage per 2 character levels, and bonuses to Hide and Move Silently equal to your level. 1 minute duration.
-SelectorName: Sorcerer
-WikiName: Past Life: Arcane Prodigy
-Descrip: Passive: +10 spell points at level 1, +5 for each additional level.}Active: 10x per rest produce random elemental damage spells.
-SelectorName: Wizard
-WikiName: Past Life: Arcane Initiate
-Descrip: Passive: +1 to all spell DCs.}Active: Magic Missile 10x per rest.
-SelectorName: Warlock
-WikiName: Past Life: Delver of the Forbidden
-Descrip: Passive: +3 Spellcraft.}Active: Confuse an enemy for 12 seconds, no save, 10x per rest.
-
-FeatName: Path of Harmonious Balance
-Abbreviation: Fists of Light
-SortName: Fists of Light
-Group: Heroic, Misc
-Descrip: The lightside path offers healing and party buffs.
-Flags: ClassOnly
-ClassOnlyClass: Monk
-ClassOnlyLevel: 3
-Class: Monk 3
-
-FeatName: Path of Inevitable Dominion
-Abbreviation: Fists of Darkness
-SortName: Fists of Darkness
-Group: Heroic, Misc
-Descrip: The darkside path offers DPS and enemy debuffs.
-Flags: ClassOnly
-ClassOnlyClass: Monk
-ClassOnlyLevel: 3
-Class: Monk 3
-
-FeatName: Perfect Natural Fighting
-Abbreviation: Perfect NF
-Group: Destiny, Melee
-Descrip: If in Bear form, your Two-Handed ability mod increases by .25, and your Bear form's bonus to Armor Class is increased by 5%. If in Wolf form, +15% competence bonus to maximum hit points, and you gain +2d6 sneak attack dice.
-All: Natural Fighting
-Level: 22
-
-FeatName: Perfect Self
-Group: Heroic, Misc
-Descrip: You have transcended your former race and are now considered a Lawful Outsider. You have gained Damage Reduction 10 / Epic. Warforged retain most living construct traits.
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Perfect Shield Mastery
-Abbreviation: Perfect SM
-Group: Destiny, Melee
-Descrip: Your shield gains +1W, and you gain +20% Shield Armor Class and +5 Physical Resistance Rating.
-All: Shield Mastery
-Level: 22
-
-FeatName: Perfect Single Weapon Fighting
-Abbreviation: Perfect SWF
-Group: Destiny, Melee
-Descrip: While Single Weapon Fighting, your vorpal threat range is increased by 1. (19-20 instead of natural 20.) Your ability score modifier to damage increases by 25%. +10 combat style bonus to Melee Power.
-All: Single Weapon Fighting
-Level: 22
-
-FeatName: Perfect Slow Fall
-Group: Heroic, Misc
-Descrip: You have perfected the ability to recover from a fall unharmed. You never take damage from falling no matter how far you fall.
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Perfect Two Handed Fighting
-Abbreviation: Perfect THF
-Group: Destiny, Melee
-Descrip: While Two Handed Fighting: Gain 30% Strikethrough Chance, and a +10 Combat Style bonus to Melee Power. Two Handed Weapons add 25% more of your ability score modifier to their base damage.
-All: Two Handed Fighting
-Level: 22
-
-FeatName: Perfect Two Weapon Fighting
-Abbreviation: Perfect TWF
-Group: Destiny, Melee
-Descrip: Your offhand attacks now doublestrike at 65% of the rate of your main hand, versus the base 50%, up to a maximum of 65%.
-All: Two Weapon Fighting
-Level: 22
-
-FeatName: Pierce Damage Reduction
-Group: Destiny, Melee
-WikiName: Epic Destiny Feats#Martial sphere
-Descrip: Your equipped weapons are considered the selected metal type for bypassing DR.
-Level: 22
-Selector: Adamantine, Byeshk, Cold Iron, Silver
-SelectorName: Adamantine
-WikiName: Pierce Adamantine
-Descrip: Your equipped weapons are considered Adamantine for bypassing DR.
-SelectorName: Byeshk
-WikiName: Pierce Byeshk
-Descrip: Your equipped weapons are considered Byeshk for bypassing DR.
-SelectorName: Cold Iron
-WikiName: Pierce Cold Iron
-Descrip: Your equipped weapons are considered Cold Iron for bypassing DR.
-SelectorName: Silver
-WikiName: Pierce Silver
-Descrip: Your equipped weapons are considered Silver for bypassing DR.
-
-FeatName: Poisonblood
-Group: Heroic, Misc
-Descrip: You are immune to Natural Poisons.
-Class: Alchemist 7
-Flags: Unselectable
-
-FeatName: Point Blank Shot
-Group: Heroic, Range
-Descrip: +1[W] with ranged weapons. Also +1 to-hit within 45 feet. When using a Longbow or Shortbow, you gain +1 Critical Threat Range.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter, Alchemist
-
-FeatName: Power Attack
-Group: Heroic, Melee
-Descrip: Combat Stance: Gain up to +5 damage at the cost of up to -5 to-hit penalty, both capped by your BAB. Two handed weapons gain double the damage bonus.
-Stat: Strength 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Power Critical
-Group: Heroic, Melee
-Descrip: +2 Seeker.
-BAB: 4
-All: Weapon Focus
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Precise Shot
-Group: Heroic, Range
-Descrip: Targeted range attacks pass through friend and foe alike to strike your target. (Only your target will be damaged.) Also grants Archer's Focus stance, which deals progressively more damage while not moving.
-All: Point Blank Shot
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter, Alchemist
-
-FeatName: Precision
-Group: Heroic, Melee, Range
-Descrip: Combat Stance: Bypass 25% fortification and gain +5% chance to-hit.
-BAB: 1
-Stat: Dexterity 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
-
-FeatName: Purity of Body
-Group: Heroic, Misc
-Descrip: You have gained control over your body's immune system and are now unaffected by all natural diseases.
-Class: Monk 5
-Flags: Unselectable
-
-FeatName: Purity of Heart
-Group: Heroic, Spellcasting, Misc
-Descrip: Gain 20 spell points per Favored Soul level and 30 per Epic level.
-Class: Favored Soul 7
-Flags: ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 7
-
-FeatName: Quick Draw
-Group: Heroic, Range
-Descrip: Increases the rate of fire of thrown weapons, but not bows or crossbows. Stacks with Rapid Shot. Switching weapons and armor is also faster.
-BAB: 1
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Alchemist
-
-FeatName: Quicken Spell
-Group: Heroic, Spellcasting
-Descrip: Spells cannot be interrupted and cast twice as fast, but cost +10 more mana to cast.
-CanCastSpell: 1
-ClassBonus: Artificer, Wizard
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Wizard
-
-FeatName: Quivering Palm
-Group: Heroic, Misc
-Descrip: The monk delivers a fatal attack by sending waves of vibrations through the target with an open hand strike. The attack costs 30 Ki, and if it hits the victim must pass a Fortitude save (DC 10 + monk level + highest of DEX or WIS modifier + assassinate bonuses) or die.
-Class: Monk 15
-Flags: Unselectable
-
-FeatName: Rage
-Group: Heroic, Misc
-Descrip: A Barbarian can fly into a Rage several times per rest. Rages grants bonuses to Strength, Constitution and Will saves, but incurs penalties to AC and prevents casting spells or using a variety of clicky abilities.
-Flags: Unselectable
-Class: Barbarian 1
-
-FeatName: Rapid Reload
-Group: Heroic, Range
-Descrip: Allows crossbows (including repeating) to be reloaded significantly faster. Stacks with Rapid Shot.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Rapid Shot
-Group: Heroic, Range
-Descrip: Bows, crossbows and throwers fire and reload about 20% faster. Stacks with Rapid Reload and Quick Draw. You gain Ranged Power equal to 1.5x your BAB with longbows and shortbows.
-Stat: Dexterity 13
-All: Point Blank Shot
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter, Alchemist
-
-FeatName: Razorclaw Shifter
-Group: Heroic, Misc
-Descrip: Passive: +1 STR. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Strength and Dexterity, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Strength. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-Race: Required, Razorclaw
-RaceBonus: Razorclaw
-Flags: RaceOnly
-
-FeatName: Reanimate Construct
-Group: Heroic, Misc
-Descrip: Allows an Artificer to revive their Iron Defender minion three times per rest.
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Religious Lore
-Group: Heroic, Spellcasting
-Descrip: This feat grants represents your knowledge of the Religion. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Cleric 1, Favored Soul 1, Paladin 1, Bard 1, Sacred Fist 1, Dark Apostate 1
-Flags: Unselectable
-
-FeatName: Remove Disease
-Group: Heroic, Misc
-Descrip: Cures all diseases on an ally.
-Class: Paladin 6, Sacred Fist 6
-Flags: Unselectable
-
-FeatName: Resilience
-Group: Heroic, Defense
-Descrip: Combat Stance: +4 to all saves, but spells have 3x their normal cooldown.
-BAB: 1
-Stat: Constitution 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Resist Poison
-Group: Heroic, Defense
-Descrip: +4 bonus to saves vs Poison.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Retain Essence
-Group: Heroic, Spellcasting
-Descrip: Whenever an Artificer uses a rod, staff, or wand, the character has a chance to not expend a charge. The percentage chance is equal to (Artificer Level)/2 + Int Modifier + Enhancement Modifier + Effect Modifier.
-Class: Artificer 5
-Flags: Unselectable
-
-FeatName: Ruin
-Group: Epic, Spellcasting
-Descrip: Ruin (75 spell points, 15 second cooldown): Deal 500 untyped damage to a single enemy. No save. Metamagics can be applied but are not free.
-Level: 27
-
-FeatName: Rune Arm Use
-Group: Misc
-Descrip: Required feat to use rune arms. Only available as a granted class feat from having two levels of artificer.
-Flags: Unselectable
-Class: Artificer 2
-
-FeatName: Sap
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): Daze target for 18 seconds normally, or 30 second if from sneak attack. No save. Effect is removed when the target takes damage.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Scion of
-Group: Legend, Melee, Range, Spellcasting, Defense, Misc
-WikiName: Legendary Feats
-Level: 30
-Descrip: Legendary feats pull their power from different planes.
-Selector: Arborea, Astral Plane, Celestia, Elysium, Ethereal Plane, Feywild, Limbo, Mechanus, Plane of Air, Plane of Earth, Plane of Fire, Plane of Water, Shadowfell
-SelectorName: Arborea
-Descrip: +20 Melee and Ranged Power}+20 Force Spell Power}+20 Universal Spell Power}+2 to the Enhancement Bonus to your weapon}+4 Fortitude Saves}+1 bonus Imbue Dice
-SelectorName: Astral Plane
-Descrip: +4 tactical feat and Assassinate DCs}+4% Doublestrike and Doubleshot (+8% if centered)}+4% Dodge and +4 Dodge Cap}+4 Reflex Saves
-SelectorName: Celestia
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+20 Positive, Light and Alignment Spell Power}+20 Universal Spell Power}+25% Crit Damage with Positive, Light and Alignment spells}+10% Crit Damage for all others}+150 Maximum Hit Points}+4 Will Saves
-SelectorName: Elysium
-Descrip: Summoned creatures gain:}{- +25 PRR and MRR}{- +20 Melee Power, Range Power, and Universal Spell Power}{- +100% Fortification}{- 5% chance to ignore incoming damage. Does not affect any incoming Positive, Negative, or Repair effects.
-SelectorName: Ethereal Plane
-Descrip: Permanent Displacement and Ghost Touch}+6d6 Sneak Attack Dice}+5 Melee and Ranged Power}+4 to all skills}Permanent Invisibility Guard, as per the item effect}
-SelectorName: Feywild
-Descrip: +4 Enchantment and Illusion DCs, +2 DCs to other schools}+10 Sonic and Force Spell Power}+30 Universal Spell Power}+25% Crit Damage with Sonic and Force spells}+10% Crit Damage for all others}+20 Healing Amp}+3 bonus Imbue Dice
-SelectorName: Limbo
-Descrip: +2 Determination Bonus to all saves}Passive buff that randomly cycles each minute between 8 varieties:}{ - +40 Melee and Ranged Power, +80 Universal Spell Power}{ - +16% Doublestrike and Doubleshot, +20% Spell Critical damage}{ - +30 PRR and MRR}{ - +20% Dodge and +40 Healing Amp}{ - +20 DR/Law}{ - +1d20 Chaos Damage for weapons and unarmed}{ - 5% change to ignore incoming damage}{ - Confetti explodes around your shoulders. Festive!
-SelectorName: Mechanus
-Descrip: +20 Repair and Rust Spell Power}+20 Universal Spell Power}+25% Crit Damage with Repair and Rust spells}+10% Crit Damage for all others}+20 Repair Amp}+10% Fortification bypass on weapon and unarmed attacks}Gain: Master Reconstruction, shares cooldown with Communion of Scribing
-SelectorName: Plane of Air
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Electric Spell Power}+30 Universal Spell Power}+25% Crit Damage with Electric spells}+10% Crit Damage for all others}+4% Dodge and +4 Dodge Cap}+3 bonus Imbue Dice
-SelectorName: Plane of Earth
-Descrip: +4 Conjuration and Transmutation DCs, +2 DCs to other schools}+10 Acid and Poison Spell Power}+30 Universal Spell Power}+25% Crit Damage with Acid and Poison spells}+10% Crit Damage for all others}+20 PRR}+3 bonus Imbue Dice
-SelectorName: Plane of Fire
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Fire Spell Power}+30 Universal Spell Power}+25% Crit Damage with Fire spells}+10% Crit Damage for all others}+10 PRR, +10 MRR}+3 bonus Imbue Dice
-SelectorName: Plane of Water
-Descrip: +4 Evocation DCs, +2 DCs to other schools}+10 Cold Spell Power}+30 Universal Spell Power}+25% Crit Damage with Cold spells}+10% Crit Damage for all others}+20 MRR}+200 Maximum Spell Points}+3 bonus Imbue Dice
-SelectorName: Shadowfell
-Descrip: +4 Necromancy DCs, +2 DCs to other schools}+10 Negitive Spell Power}+30 Universal Spell Power}+25% Crit Damage with Negitive spells}+10% Crit Damage for all others}+20 Negative Amp}Weapon and Unarmed attacks heal you for 1d6 Positive damage, or 1d6 Negative damage if you are Undead.
-
-FeatName: Seasonal Affinity
-Group: Heroic, Misc
-Descrip: Toggle: Choose between Autumn, Spring, Summer, and Winter:}{-Autumn: You are attuned to the magic of autumn. You gain +1 Wisdom.}{-Spring: You are attuned to the magic of spring. You gain +1 Charisma.}{-Summer: You are attuned to the magic of summer. You gain +1 Strength.}{-Winter: You are attuned to the magic of winter. You gain +1 Intelligence.
-Race: Required, Eladrin, Eladrin Chaosmancer
-Flags: RaceOnly
-
-FeatName: Second Wind
-Group: Heroic, Defense
-Descrip: Activate this ability to regain 50% of your maximum hit points.}You can use this once per rest. Gain additional charges at Fighter levels 4, 8, 12, 16, and 20.}Can be used while crowd-controlled.}At level 8 in addition to the heal the following effects are cured: Ability damage, Blind, Confusion, Dazed, Dazzled, Deafend, Diseased, Exhausted, Fatigued, Feebleminded, Nauseated, Poisoned, or Stunned.
-Class: Fighter 2, Dragon Lord 2
-
-FeatName: Self Sufficient
-Group: Heroic, Misc
-Descrip: +2 bonus to Heal and Repair.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Shield Deflection
-Group: Heroic, Defense
-Descrip: Chance to ignore energy damage while actively shield blocking depending on shield type:}{-Buckler: 20%}{-Small Shield: 25%}{-Large Shield: 30%}{-Tower Shield: 40%
-BAB: 8
-All: Shield Proficiency
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Shield Mastery
-Group: Heroic, Melee, Defense
-Descrip: +3 Combat Style bonus to Melee Power and +3% doublestrike when using a shield. +3/5/10 PRR when using small (or buckler)/large/tower shields.
-All: Shield Proficiency
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Shield Mastery Specialty
-Group: Destiny, Defense
-Descrip: While wielding a shield, you gain +10% doublestrike and a +9 Combat Style bonus to Melee Power. You gain +10 Physical Resistance Rating while using a buckler or small shield. If you are using a large shield, this bonus increases to +15. If you are using a tower shield, this bonus increases to +20.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.} }Bug: This feat does not currently grant the PRR bonus when a Shield is equipped. It does grant Doublestrike.
-One: Greater Two Handed Fighting, Greater Two Weapon Fighting, Greater Single Weapon Fighting
-None: Greater Shield Mastery
-Level: 31
-
-FeatName: Shield Proficiency
-Group: Heroic, Defense
-Descrip: Grants proficiency with Bucklers, Small Shields and Large Shields:}{-Basic (AML1)}{-Darkwood (AML4)}{-Densewood (AML4)}{-Spiritcraft (AML10)}{-Celestial (AML22)
-WikiName: Shield Proficiency (General)
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Shifter
-Group: Heroic, Misc
-WikiName: Shifter:Racial_traits
-Descrip: Subrace Selector. (Like Aasimar, Shifters select their subrace at level 1, which grants them some specific bonuses and informs which selections they can make in their tree).
-Race: Required, Shifter
-RaceBonus: Shifter
-Flags: RaceOnly
-Selector: Beasthide Shifter, Wildhunt Shifter
-SelectorName: Beasthide Shifter
-Descrip: Passive: +1 CON. Active: Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Armor Class and Constitution, a +2 Morale bonus to Fortitude saves, and a -2 penalty to Wisdom. When the form ends, however, you will lose the hit points granted to you by increased Constitution and become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Constitution. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-SelectorName: Wildhunt Shifter
-Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, granting you a +4 Rage bonus to Wisdom and Dexterity, a +2 Morale bonus to Will saves, and a -2 penalty to Strength. When the form ends, however, you will become fatigued. Your form will last for 30 seconds plus an additional amount of time based on your Wisdom. You can prematurely end your form by using the Dismiss Rage feat. This shares charges with Barbarian's Rage feat, and anything that grants bonuses while Raging will grant bonuses with this. Shifting your form in this way prevents Spellcasting.
-
-FeatName: Shining Star
-Group: Heroic, Misc
-Descrip: Finishing Move: Any Way of Earth attack → any Way of Air attack → any Way of Fire attack → Finishing Move activator.}You use the combined power of Earth, Wind, and Fire to set up harmonic vibrations within your enemy that force them to dance.}A successful Will save negates this effect (DC 10 + Monk level + Wisdom modifier + Stunning Bonuses).
-Class: Monk 20
-Flags: Unselectable
-
-FeatName: Shot on the Run
-Group: Heroic, Range
-Descrip: +6 Ranged Power. You no longer incur to-hit penalties from moving while firing range (and thrown) weapons.
-BAB: 4
-Stat: Dexterity 13
-All: Point Blank Shot, Dodge, Mobility
-ClassBonus: Artificer, Fighter, Alchemist
-
-FeatName: Shuriken Expertise
-Group: Heroic, Range
-Descrip: Chance to throw an additional shuriken per attack equal to your dexterity.
-Stat: Dexterity 13
-One: Exotic Weapon: Shuriken, Half-Elf Dilettante: Monk
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-
-FeatName: Simple Thrown Expertise
-Group: Heroic, Alchemy
-Descrip: You are skilled with the use of the simple thrown weapons, and have a chance to throw an additional one per throw. Percent chance to throw an additional projectile is equal to your Dexterity.
-Stat: Dexterity 13
-ClassBonus: Alchemist
-
-FeatName: Simple Weapons
-Group: Heroic, Melee, Range
-Descrip: Most classes are natively proficient with all simple weapons. The exceptions are Monk, Druid and Wizard, who are only proficient with some. Selecting this feat once grants them proficiency with all remaining simple weapons.
-WikiName: Simple Weapon Proficiency
-RaceBonus: Human, Purple Dragon Knight
-Selector: All, Club, Dagger, Light Mace, Heavy Mace, Morningstar, Quarterstaff, Sickle, Unarmed, Dart, Light Crossbow, Heavy Crossbow, Throwing Dagger
-SelectorName: All
-Descrip: This feat negates the -4 penalty to attack rolls from using simple weapons untrained.
-SelectorName: Club
-Hide: True
-SelectorName: Dagger
-Hide: True
-SelectorName: Light Mace
-Hide: True
-SelectorName: Heavy Mace
-Hide: True
-SelectorName: Morningstar
-Hide: True
-SelectorName: Quarterstaff
-Hide: True
-SelectorName: Sickle
-Hide: True
-SelectorName: Unarmed
-Hide: True
-SelectorName: Dart
-Hide: True
-SelectorName: Light Crossbow
-Hide: True
-SelectorName: Heavy Crossbow
-Hide: True
-SelectorName: Throwing Dagger
-Hide: True
-
-
-FeatName: Single Weapon Fighting
-Group: Heroic, Melee
-Descrip: While single weapon fighting, gain a Combat Style bonus of +20% attack speed and +2 Melee Power.
-Flags: SkillTome
-Skill: Balance 2
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter, Monk
-None: Two Handed Fighting, Two Weapon Fighting
-
-FeatName: Single Weapon Specialty
-Group: Destiny, Melee
-Descrip: While Single Weapon Fighting (fighting with a single one-handed weapon, and wielding only an orb, rune arm, or nothing in your offhand) you gain a +30% Combat Style bonus to attack speed, +6 Combat Style bonus to Melee Power, and +50% more of your appropriate ability score to your damage.}For the bastard sword and dwarven waraxe, this adds to their existing 10% bonus. If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
-One: Greater Two Handed Fighting, Greater Two Weapon Fighting, Greater Shield Mastery
-None: Greater Single Weapon Fighting
-Level: 31
-
-FeatName: Skill Focus
-Group: Heroic, Misc
-Descrip: +3 bonus to the chosen skill.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer
-Selector: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Hide, Intimidate, Jump, Listen, Move Silently, Open Lock, Perform, Repair, Search, Spot, Swim, Tumble, Use Magic Device, Spellcraft, Heal
-SelectorName: Disable Device
-Class: Rogue 1, Artificer 1
-SelectorName: Open Lock
-Class: Rogue 1, Artificer 1
-SelectorName: Perform
-Class: Bard 1, Stormsinger 1
-
-FeatName: Skill Mastery
-Group: Heroic, Misc
-Descrip: +1 to all skills. This feat can be taken multiple times.
-Flags: ClassOnly
-Repeat: 99
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Slicing Blow
-Group: Heroic, Melee
-Descrip: Tactical Melee Attack: Using this attack, you deal one point of [[Constitution]] damage to your target, and deal 1 to 6 additional damage every 2 seconds for 18 seconds. The target suffers an additional 1 to 6 damage per tick for every three Character Levels. This damage scales with 100% Melee Power, and can stack up to three times. Some creatures may be immune to the bleeding or wounding effect.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Slippery Mind
-Group: Heroic, Defense
-Descrip: You gain a second saving throw versus enchantments.
-Flags: ClassOnly
-ClassOnlyClass: Rogue
-ClassOnlyLevel: 10, 13, 16, 19
-Class: Rogue 10
-
-FeatName: Slow Fall
-Group: Heroic, Misc
-Descrip: A monk's focus allows him to reduce gravity's effects. This feat can be turned off should he desire normal gravity. The Monk must be centered to use this ability, and its ability to reduce falling damage increases every two levels. In practice, even when this feat is turned off, a monk falls more slowly than he would normally.
-Class: Monk 4
-Flags: Unselectable
-
-FeatName: Smite Evil
-Group: Misc
-Descrip: Melee special attack (Cooldown: 6 seconds): Deal 3 * Paladin level + 7 extra damage to evil creatures. Enhancements can improved the crit profile (up to +2 range and multiplier) and reduce the cooldown. Limited uses per rest.
-Flags: Unselectable
-Class: Paladin 1, Sacred Fist 1
-
-FeatName: Snake Blood
-Group: Heroic, Defense
-Descrip: +1 bonus to Reflex Saves and +2 bonus to saves vs. poison.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Sneak Attack
-Group: Misc
-Descrip: All your melee and range attacks deal extra sneak attack damage to any target that isn't attacking you. Fortification blocks sneak attack.
-Flags: Unselectable
-Class: Rogue 1
-
-FeatName: Song of Freedom
-Group: Heroic, Misc
-Descrip: This ability is equivalent to the Break Enchantment spell on one ally.
-Class: Bard 12, Stormsinger 12
-Flags: Unselectable
-
-FeatName: Soothing Song
-Group: Heroic, Misc
-Descrip: Sing a song to apply a small positive energy heal to your target and nearby party members. In addition, your Inspire Courage now gives an additional +1 bonus to attack, damage, and fear saves, and +3 Universal Spell Power.
-Class: Bard 8
-Flags: Unselectable
-
-FeatName: Spiked Chain Attack
-Group: Heroic, Misc
-Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
-Race: Required, Shadar-Kai
-RaceBonus: Shadar-Kai
-Flags: RaceOnly
-Descrip: Spiked Chain Attack
-WikiName: Spiked Chain Attack
-
-FeatName: Spell Focus
-Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
-ClassBonus: Wizard
-RaceBonus: Human, Purple Dragon Knight
-CanCastSpell: 1
-Selector: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
-SelectorName: Divination
-Hide: True
-
-FeatName: Spell Penetration
-Group: Heroic, Spellcasting
-Descrip: +2 to your caster level check for defeating Spell Resistance.
-CanCastSpell: 1
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Spell Specialty
-Group: Destiny, Spellcasting
-Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.}It requires Epic Spell Focus for a different spell school.}You cannot have the basic Spell Focus feat for the spell school.
-All: Epic Spell Focus
-Level: 31
-Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
-SelectorName: Abjuration
-None: Spell Focus: Abjuration
-SelectorName: Conjuration
-None: Spell Focus: Conjuration
-SelectorName: Enchantment
-None: Spell Focus: Enchantment
-SelectorName: Evocation
-None: Spell Focus: Evocation
-SelectorName: Illusion
-None: Spell Focus: Illusion
-SelectorName: Necromancy
-None: Spell Focus: Necromancy
-SelectorName: Transmutation
-None: Spell Focus: Transmutation
-
-FeatName: Spirit Blades
-Group: Destiny, Spellcasting
-WikiName: Epic Destiny Feats#Multiple spheres
-Descrip: Shoot 5 blades at a nearby target, 10d6 Piercing + 5d6 Force damage each.
-Level: 28
-
-FeatName: Spring Attack
-Group: Heroic, Melee, Defense
-Descrip: +2% Dodge. You no longer incur to-hit penalties for melee while moving.
-BAB: 4
-All: Dodge, Mobility
-ClassBonus: Fighter, Dragon Lord, Monk
-ClassBonusLevel: Monk 6
-
-FeatName: Stealthy
-Group: Heroic, Misc
-Descrip: +2 bonus to Hide and Move Silently.
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Still Mind
-Group: Heroic, Misc
-Descrip: Your training and meditation improve your resistance to mind-affecting attacks, granting you a +2 bonus on saving throws against enchantments.
-Class: Monk 3
-Flags: Unselectable
-
-FeatName: Stout of Heart
-Group: Heroic, Defense, Misc
-Descrip: Gain 10 hit points per Favored Soul or Epic level.
-Class: Favored Soul 7
-Flags: ClassOnly
-ClassOnlyClass: Favored Soul
-ClassOnlyLevel: 7
-
-FeatName: Stunning Blow
-Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): Stun target for 6 seconds, fortitude save 10 + Strength modifier + other bonuses.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Stunning Fist
-Group: Heroic, Melee
-Descrip: Unarmed special attack: (Cooldown: 6 seconds, 15 Ki): Stun target for 6 seconds, fortitude save 10 + 1/2 character level + Wisdom modifier + other bonuses. Requires handwraps.
-Class: Monk 1, Sacred Fist 1
-ClassBonus: Monk
-RaceBonus: Human
-
-FeatName: Suggestion Song
-Group: Heroic, Misc
-Descrip: This song charms a single foe that is currently under the effects of the bardic Fascinate song.
-Class: Bard 6, Stormsinger 6
-Flags: Unselectable
-WikiName: Suggesion_(song)
-
-FeatName: Superior Weapon Focus
-Abbreviation: Sup Weapon Focus
-SortName: Weapon Focus3
-Group: Heroic, Melee, Range
-Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
-Class: Fighter 16, Dragon Lord 16
-All: Weapon Focus, Greater Weapon Focus
-ClassBonus: Fighter, Dragon Lord
-SharedSelector: Greater Weapon Focus
-
-FeatName: Swords to Plowshares
-Group: Heroic, Melee
-Descrip: You are an expert with the usage of traditionally nonviolent weapons in impressive ways. When wielding one of the these weapons, you are granted the following:}{Handwraps, Kamas, and Sickles you wield gain a +1 Morale bonus to Critical Threat Range.}{Quarterstaves you wield gain a +2 Morale bonus to Critical Threat Range.
-BAB: 4
-ClassBonus: Monk
-
-FeatName: Tactical Combatant
-SortName: Tactical Training2
-Group: Heroic, Melee
-Descrip: +4 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 8, Dragon Lord 8
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Tactical Mastery
-SortName: Tactical Training3
-Group: Heroic, Melee
-Descrip: +6 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 12, Dragon Lord 12
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Tactical Supremacy
-SortName: Tactical Training4
-Group: Heroic, Melee
-Descrip: +8 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 16, Dragon Lord 16
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Tactical Training
-Group: Heroic, Melee
-Descrip: +2 to Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Class: Fighter 4, Dragon Lord 4
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Tactician
-Group: Destiny, Melee
-WikiName: Epic Destiny Feats#Martial sphere
-Descrip: +2 Tactical feat DCs. (Stunning Blow, Trip, etc...)
-Level: 22
-
-FeatName: Ten Thousand Stars
-Group: Heroic, Range
-Descrip: Descrip: Chance based on Wisdom modifier to throw multiple shuriken at a time for 30 seconds.
-Stat: Dexterity 13
-Class: Monk 6
-ClassBonus: Monk
-
-FeatName: Timeless Body
-Group: Heroic, Misc
-Descrip: Your soul is balanced. No corrupt influences can possess your body after death - you are immune to the spawn effect of most undead.
-Class: Monk 17
-Flags: Unselectable
-
-FeatName: Tireless Rage
-Group: Heroic, Misc
-Descrip: Upon reaching level 17, a barbarian is no longer fatigued after raging. Also, gain a stacking +2 Strength and Constitution Bonus along with a +1 Morale Bonus to Will Saving Throws while raging.
-Flags: Unselectable
-Class: Barbarian 17
-
-FeatName: Tough Tincture
-Group: Heroic, Alchemy
-Descrip: You can use Intelligence for Fortitude saves. Mutually exclusive with Liquid Courage.
-Class: Alchemist 8
-ClassBonus: Alchemist
-None: Insightful Courage
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 8, 12, 16, 20
-
-FeatName: Toughness
-Group: Heroic, Defense, Destiny
-Descrip: +3 HP at level 1, +1 HP each additional level up to a max of 32 HP at level 30. This feat can be taken multiple times.
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
-Repeat: 99
-
-FeatName: Tower Shield Proficiency
-Group: Heroic, Defense
-Descrip: Grants proficiency with Tower Shields:}{-Basic (AML1)}{-Battle (AML4)}{-Magecraft (AML10)}{-Mountain (AML16)}{-Planeforged (AML22)
-All: Shield Proficiency
-RaceBonus: Human, Purple Dragon Knight
-
-FeatName: Toxic Tonic
-Group: Heroic, Alchemy
-Descrip: You are immune to Poison damage and get bonus saves versus poisons.
-Class: Alchemist 12
-ClassBonus: Alchemist
-Flags: ClassOnly
-ClassOnlyClass: Alchemist
-ClassOnlyLevel: 12, 16, 20
-
-FeatName: Trap Sense
-Group: Heroic, Misc
-Descrip: This class feat of Barbarians and Rogues grants the following bonuses:}{-+1 on reflex saving throws vs. traps{-+1 Armor Class vs. trap attacks.}The bonuses increase every 3 levels by +1.
-Class: Barbarian 3, Rogue 3
-Flags: Unselectable
-ClassBonus: Barbarian, Rogue
-
-FeatName: Trapfinding
-Group: Heroic, Misc
-Descrip: Only Rogues and Artificers can use the Spot and Search skills to detect and locate traps (and their related control panels) when the task has a Difficulty Class (DC) higher than 20.
-Class: Artificer 1, Rogue 1
-Flags: Unselectable
-
-FeatName: Trapmaking
-Group: Heroic, Misc
-Descrip: Benefit: You have learned enough about traps to be able to scavenge parts from them, and with the help of the Free Agents, can craft your own.
-Class: Artificer 4, Rogue 4
-Flags: Unselectable
-
-FeatName: True Fiend Pact
-Group: Heroic, Spellcasting, Misc
-WikiName: Warlock#Pact Choices
-Descrip: Your Pact applies the following bonuses:}Fire Damage}Targets Fortitude saves}1:Lesser Pact Attunement}6: Pact Attunement}6: Fiendskin: Your skin has been grafted with demon skin, granting you some of its inherent defenses. You gain a +1 profane bonus to Fire Resistance per Warlock Level.}12: Greater Pact Attunement}15: Hurl through Hell}18: Ultimate Pact Attunement
-Flags: Pact
-Flags: Unselectable
-Class: Acolyte 1
-
-FeatName: Turn Undead
-Group: Misc
-Descrip: Cause undead to freeze in place, run away, or explode. Large area of effect, limited uses per rest.
-Class: Cleric 1, Paladin 4, Dark Apostate 1, Sacred Fist 4
-Flags: Unselectable
-
-FeatName: Two Handed Fighting
-Group: Heroic, Melee
-Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Bastard Sword or Dwarven axe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
-Stat: Strength 15
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-None: Single Weapon Fighting
-
-FeatName: Two Handed Specialty
-Group: Destiny, Melee
-Descrip: While Two-Handed Fighting you gain +120% Strikethrough Chance and a +6 Combat Style bonus to Melee Power.}For the purpose of this feat, you are considered to be Two-Handed Fighting while:}{ - using a Two-Handed Melee Weapon (not including Handwraps){ - using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.}In addition, while using a Two-Handed Weapon you now apply 75% more of your appropriate ability score modifier to damage (This adds to their existing 50% base bonus). When using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand you now apply +50% more of your appropriate ability score to your damage. (This adds to the existing 10% bonus for wielding a Hand-and-a-Half weapon.}If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
-One: Greater Two Weapon Fighting, Greater Single Weapon Fighting, Greater Shield Mastery
-None: Greater Two Handed Fighting
-Level: 31
-
-FeatName: Two Weapon Defense
-SortName: Two Weapon Fighting4
-Group: Heroic, Melee, Defense
-Descrip: +5 PRR and +1 AC while wielding two weapons, +2 DR while actively blocking with two weapons, and +10 Magical Resistance Rating Cap.
-All: Two Weapon Fighting
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Two Weapon Fighting
-Group: Heroic, Melee
-Descrip: While Two Weapon Fighting, you now have 40% chance to proc offhand attacks (normally 20%) and your to-hit penalty improves to -4/-4 (normally -6/-10). If wielding a light weapon in your off hand, these penalties reduce to -2/-2 (normally -4/-8).
-Stat: Dexterity 15
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-None: Single Weapon Fighting
-
-FeatName: Two Weapon Specialty
-Group: Destiny, Melee
-Descrip: Reduces the penalty for fighting with two weapons. You gain +60% offhand strike chance.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
-One: Greater Two Handed Fighting, Greater Single Weapon Fighting, Greater Shield Mastery
-None: Greater Two Weapon Fighting
-Level: 31
-
-FeatName: Ultimate Pact Attunement
-SortName: Pact Attunement3
-Group: Heroic, Misc
-Descrip:Improve your Pact Attunement. +2d8 Blast Dice, +2d6 Pact Dice.} }Automatically granted to Warlock Acolyte of the Skin at level 18, but any character with at least one Warlock Acolyte of the Skin level and 18 character levels can select this feat at levelup as a normal feat.
-Class: Acolyte 1
-Level: 18
-All: Greater Pact Attunement
-
-FeatName: Unarmed Strike
-Group: Heroic, Misc
-Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
-Class: Monk 1, Sacred Fist 1
-Flags: Unselectable
-
-FeatName: Uncanny Dodge
-Group: Heroic, Misc
-Descrip: This feat grants you a 1% passive bonus to Dodge at levels 4, 6, 8, 12, 16, and 20.
-Class: Barbarian 4, Rogue 4
-
-FeatName: Unleash Iron Defender
-Group: Heroic, Misc
-Descrip: This feat allows an Artificer to summon a Iron Defender Homunculus
-Class: Artificer 1
-Flags: Unselectable
-
-FeatName: Venom Immunity
-Group: Heroic, Misc
-Descrip: You are immune to ability score damage from natural poisons. (This has no effect on magical or supernatural poisons.)
-Class: Blightcaster 9
-Flags: Unselectable
-
-FeatName: Vorpal Strikes
-Group: Epic, Melee
-Descrip: Your unarmed strikes are now considered vorpal and slashing.
-Stat: Wisdom 23
-Class: Monk 12, Sacred Fist 12
-Level: 21
-All: Improved Critical: Bludgeoning
-
-FeatName: Warforged Traits
-Group: Misc
-Descrip: Warforged are naturally immune to Sleep, Level Drain, Nausea, Sickness, Exhaustion, and Paralyzing effects. Warforged are also resistant to poison.
-Flags: Unselectable
-Race: Required, Warforged, Bladeforged
-
-FeatName: Watchful Eye
-Group: Epic, Misc
-WikiName: Epic Feats#General Epic passive feats
-Descrip: If you pass within 5 feet of a trap, make a Spot check to reveal it as if actively Searching. (Requires 1 Rogue, Artificer, or Dark Hunter level to reveal high level traps.)
-Level: 27
-
-FeatName: Weapon Finesse
-Group: Heroic, Melee
-Descrip: Use your Dexterity modifier instead of Strength for to-hit with light weapons, rapiers and unarmed strikes, if it is higher.
-BAB: 1
-Stat: Dexterity 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Weapon Focus
-Group: Heroic, Melee, Range
-Descrip: +2 stacking Melee Power or Range Power. +1 to-hit with the chosen weapons.
-BAB: 1
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter
-Selector: Bludgeoning, Piercing, Ranged, Slashing, Thrown
-SelectorName: Bludgeoning
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Piercing
-ClassBonus: Fighter, Dragon Lord
-SelectorName: Thrown
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Weapon Specialization
-Group: Heroic, Melee, Range
-Descrip: +2 stacking Melee Power or Range Power. +2 damage with the chosen weapons.
-Class: Fighter 4, Dragon Lord 4
-All: Weapon Focus
-ClassBonus: Fighter, Dragon Lord
-SharedSelector: Weapon Focus
-
-FeatName: Wellspring of Power
-Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spellcasting active feats
-Descrip: Passive: +110 Maximum Spell Points}Active: Gain +150 Universal Spell Power and +20% Spell Critical damage for 30 seconds. 3 minute cooldown.
-Level: 21
-
-FeatName: Whirling Steel Strike
-Group: Heroic, Melee
-Descrip: You treat longswords as if they were monk weapons, remaining centered when you wield them.
-Class: Monk 1
-All: Weapon Focus: Slashing
-One: Martial Weapon: Longsword, Follower of: Sovereign Host, Half-Elf Dilettante: Fighter
-ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Whirlwind Attack
-Group: Heroic, Melee
-Descrip: Tactical Melee Cleave: Activate this ability to attack all enemies in a 360 degree arc around you twice. This attack deals +20% damage. Note that it now hits the same number of times in all melee combat styles.
-BAB: 4
-All: Dodge, Mobility
-ClassBonus: Fighter, Dragon Lord
-
-FeatName: Wholeness of Body
-Group: Heroic, Misc
-Descrip: This feat allows Monks expend 10 Ki to heal some hit points over time in a meditative state. The exact number regained is (Monk level)/2 + Wisdom modifier (rounded up) every two seconds for thirty seconds. This ability is not suitable for use in combat, as the Monk may neither move nor act while regenerating.
-Class: Monk 7
-Flags: Unselectable
-
-FeatName: Wild Empathy
-Group: Heroic, Misc
-Descrip: Activate this ability to lower an animal's or beast's aggression, effectively mesmerizing them.
-Class: Druid 1, Ranger 1
-Flags: Unselectable
-
-FeatName: Wild Force
-Group: Destiny, Melee
-Descrip: While in Druid Wild Shape, you gain some of the aspects of the form you aren't in.}{- While in wolf or winter wolf form, you gain bear form's +10% exceptional bonus to maximum hit points.}{- While in bear or dire bear form, you gain wolf form's +10% movement speed.
-Class: Druid 2
-Level: 31
-
-FeatName: Wild Magic
-Group: Heroic, Spellcasting
-Descrip: When you cast spells, you have a small chance to have additional strange effects occur around you. These effects very greatly from helpful, dangerous to just silly. Grants a +5% chance of gaining a Wild Surge every time you cast a spell. Wild Surges will also manifest over time passively. Wild Surges do not occur in public spaces.
-Class: Wild Mage 1
-Flags: Unselectable
-
-FeatName: Wild Shape 1
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 2 and 5 a druid may use their 'Wild Shape' feat to change into an animal.
-Class: Druid 2, Blightcaster 2
-Flags: ClassOnly
-ClassOnlyClass: Druid
-ClassOnlyLevel: 2, 5
-Selector: Bear, Wolf
-
-FeatName: Wild Shape 2
-Group: Heroic, Misc
-WikiName: Wild Shape#Magical Beast Forms
-Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
-Class: Druid 8
-Flags: ClassOnly
-ClassOnlyClass: Druid, Blightcaster
-ClassOnlyLevel: 8, 11
-Selector: Dire Bear, Winter Wolf 
-
-FeatName: Wild Shape 3
-Group: Heroic, Misc
-WikiName: Wild Shape#Elemental Forms
-Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental.}Elemental Form: Transform into a [Fire/Water] Elemental. While in this form, you have +3 bonus to caster level and max caster level for your element's spells, but the opposite spells have a -3 penalty to caster level and max caster level. You also gain 65% absorption for your element, but take 15% more damage form the opposite element. You also gain +3 bonus Imbue Dice. While in this Elemental form you gain access to a number of spells that require it.}You are considered an Elemental. You gain a +10 racial bonus to your saving throws against magical poisons, and racial immunity to natural poisons, sleep, paralysis, and stun, and a 100% bonus to fortification. If you are a Warforged, you are no longer considered a Living Construct, and can now be healed normally by positive energy spells, and you become immune to repair spells.}You also gain the following:}[Fire/Water] Elemental Imbue: Imbue Toggle: Wreathe your weapons in elemental energy, dealing 1d6 [Fire/Water] damage on hit, scaling with Spell Power. Only applies  in [Fire/Water] Elemental Form.
-Class: Druid 13
-Flags: ClassOnly
-ClassOnlyClass: Druid
-ClassOnlyLevel: 13, 17
-Selector: Fire Elemental, Water Elemental
-
-FeatName: Wild Shape Plague Wolf
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At level 2 a Blightcaster may use their 'Wild Shape' feat to change into a Plague Wolf.
-Class: Blightcaster 2
-Flags: Unselectable
-
-FeatName: Wild Shape Blighted Wolf
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change into a Blighted Wolf.
-Class: Blightcaster 11
-Flags: Unselectable
-
-FeatName: Blightcaster Wild Imbue
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 2 and 11 a Blightcaster receives an Imbue that can only be used in Wolf or Hive form.}}Biting Acid: Imbue Toggle: 1d6 acid damage with all melee attacks. Scales with spell power.}}Biting Poison: Imbue Toggle: 1d8 poison damage with all melee attacks. Scales with spell power.
-Class: Blightcaster 2
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 2, 11
-Flags: SelectorOnly
-Selector: Biting Acid Imbue, Biting Poison Imbue
-
-FeatName: Minor Elemental Kin Form
-Group: Heroic, Misc
-WikiName: Wild Shape#Magical Beast Forms
-Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
-Class: Blightcaster 4
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 4, 8
-Flags: SelectorOnly
-Selector: Hive Keeper, Thorn Kin
-
-FeatName: Advanced Elemental Kin Form
-Group: Heroic, Misc
-Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental form.}{-Thorn Knight: A more advanced form of Thorn Kin, you are now also plant kind beneath your thorny armor. You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water. +3 bonus to caster level and max caster level of Physical and Poison spells. You gain 10% absorption against piercing damage and 5% absorb against blunt damage. You gain +2 imbue dice. 10% exceptional bonus to armor class and 100% fortification. 15% vulnerability to fire damage.}{-Hive Master: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm. You are considered vermin for the purposes of immunities and are immune to mind effects and knock down. +3 bonus to caster level and max caster level of Poison and Acid Spells. You are ethereal to monsters while tumbling. You gain 50% concealment as displacement and Improved Evasion. You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10). 15% vulnerability to cold and -15 on diplomacy checks.
-Class: Blightcaster 13
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 13, 17
-Flags: SelectorOnly
-Selector: Thorn Knight, Hive Master
-
-FeatName: Wild Magic
-Group: Heroic, Spellcasting
-Descrip: When you cast spells, you have a small chance to have additional strange effects occur around you. These effects cary greatly from helpful, dangerous to just silly. Grants a +5% chance of gaining a Wild Surge every time you cast a spell. Wild Surges will also manifest over time passively. Wild Surges do not occur in public spaces. 
-Class: Wild Mage 1
-Flags: Unselectable
-
-FeatName: Wilderness Lore
-Group: Heroic, Misc
-Descrip: This feat grants represents your knowledge of the wilderness. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
-Class: Barbarian 1, Druid 1, Ranger 1, Bard 1
-Flags: Unselectable
-
-FeatName: Wind through the Trees
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Primal sphere
-Descrip: 5% chance to knock down enemies that attack you (hit or miss), no save. 12 second cooldown.
-Level: 28
-
-FeatName: Zen Archery
-Group: Heroic, Range
-Descrip: You can use Wisdom instead of Dexterity for to-hit with ranged missile weapons. Also allows bows to work with Ten Thousand Stars.
-BAB: 1
-Stat: Wisdom 13
-RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
-
-
-FeatName: Wind through the Trees
-Group: Destiny, Defense
-WikiName: Epic Destiny Feats#Primal sphere
-Descrip: 5% chance to knock down enemies that attack you (hit or miss), no save. 12 second cooldown.
-Level: 28
-
-FeatName: Patience
-Group: Epic, Melee
-WikiName: Patience
-Descrip: Your attack speed is reduced by 10%, but you gain +1 Critical Multiplier with all weapons.
-Level: 21
-
-FeatName: Eerie Aim
-Group: Epic, Melee
-WikiName: Eerie Aim
-Descrip: You gain +5% Dodge Bypass, +5% Deflection Bypass, and +10 to Attack.
-Level: 21
- 
-FeatName: Paranoid
-Group: Epic, Defense
-WikiName: Eerie Aim
-Descrip: You take 10% less damage from Traps, and you automatically Spot almost all traps as you approach them. 
-Level: 21
-
-FeatName: Inspiring Bond
-Group: Epic, Defense
-WikiName: Inspiring Bond
-Descrip: When your Hirelings or Pets die, after 2.5 seconds they are automatically resurrected and heal to full health. This can occur only once for each creature every 3 minutes. In addition, your Hirelings, Pets, and Summons gain +25 Physical Resistance Rating and Magical Resistance Rating.
-Level: 21
-
-FeatName: Defensive Tumble
-Group: Epic, Defense
-WikiName: Defensive Tumble
-Descrip: When you Tumble, for the next 3 seconds you take 20% less damage from all sources (except Bane). In addition, your Tumble charges recharge .5 seconds faster, and the bonus to Reflex Saving Throws you receive while actively Tumbling is now also applied to Fortitude and Will saving throws while Tumbling.
-Level: 21
-
-FeatName: Trick Shot
-Group: Epic, Melee
-WikiName: Trick Shot
-Descrip: When you Tumble, you gain +40 Ranged Power for 4 seconds. In addition, your Tumble charges recharge .5 seconds faster.
-Level: 21
-
-FeatName: Titan's Blood
-Group: Destiny, Defense
-WikiName: Titan's Blood
-Descrip: You gain a +10% Legendary Bonus to Maximum Hit Points.
-Level: 34
-
-FeatName: Guarded Actions
-Group: Destiny, Defense
-WikiName: Guarded Actions
-Descrip: Whenever you use an Action Boost, you take 20% less damage for 6 seconds.
-Level: 21
-
-FeatName: Arcane Actions
-Group: Destiny, spellcasting
-WikiName: Arcane Actions
-Descrip: Whenever you use an Action Boost, you gain a +100 Competence Bonus to Universal Spell Power and +2 to Imbue Dice for 6 seconds.
-Level: 21
-
-FeatName: Channel Power
-Group: Destiny, spellcasting
-WikiName: Channel Power
-Descrip: After blocking with an Orb or Staff for at least three seconds, get a +100 Competence Bonus to Universal Spell Power and a +4 to all Spell DCs for three seconds.
-Level: 21
-
-FeatName: Reverberating Shout
-Group: Destiny, spellcasting
-WikiName: Reverberating Shout
-Descrip: Activate to shout at all nearby creatures, Intimidating them unless they make a Will Saving Throw (DC equal to your Intimidate skill). This works on all creature types, including those normally immune to Intimidate.
-Level: 21
-
-FeatName: Face Me
-Group: Destiny, Melee
-WikiName: Face Me
-Descrip: Whenever you use an Action Boost, your threat generation is increased by 200% for 6 seconds.
-Level: 21
-
-FeatName: Flight of Kings
-Group: Heroic, Misc
-Descrip: Memories of flight lie within you. You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk. Cooldown 15 seconds.  %20 Action boost bonus to movement speed for 6 seconds.
-Class: Dragon Disciple 12
-Flags: Unselectable
-
+Character Builder Lite	Ron's Character Planner	DDO Builder
+Acrobatic	Acrobatic	Acrobatic
+Adamantine Body	Adamantine Body	Adamantine Body
+Adept of Forms	Monk Feats: Adept of Forms	
+Alertness	Alertness	Alertness
+Arcane Insight	Epic: Arcane Insight	Arcane Insight
+Arcane Pulse	Arcane Sphere: Arcane Pulse	Arcane Pulse
+Arcane Warrior	Multiple Spheres: Arcane Warrior	Arcane Warrior
+Armor Proficiency: Heavy	Heavy Armor Proficiency	Heavy Armor Proficiency
+Armor Proficiency: Light	Light Armor Proficiency	Light Armor Proficiency
+Armor Proficiency: Medium	Medium Armor Proficiency	Medium Armor Proficiency
+Athletic	Athletic	Athletic
+Augment Summoning	Augment Summoning	Augment Summoning
+Beloved of: Amaunator	Beloved of Amaunator	Beloved of Amaunator
+Beloved of: Aureon	Beloved of Aureon	
+Beloved of: Helm	Beloved of Helm	
+Beloved of: Lord of Blades	Beloved of the Lord of Blades	Beloved of the Lord of Blades
+Beloved of: Olladra	Beloved of Olladra	
+Beloved of: Onatar	Beloved of Onatar	
+Beloved of: Silvanus	Beloved of Silvanus	
+Beloved of: Silver Flame	Beloved of the Silver Flame	Beloved of the Silver Flame
+Beloved of: Sovereign Host	Beloved of the Sovereign Host	Beloved of the Sovereign Host
+Beloved of: The Blood of Vol	Beloved of the Blood of Vol	
+Beloved of: Undying Court	Beloved of the Undying Court	Beloved of the Undying Court
+Beloved of: Vulkoor	Beloved of Vulkoor	Beloved of Vulkoor
+Blinding Speed	Epic: Blinding Speed	Blinding Speed
+Bond: Bond of the Fallen	Aasimar: Bond: Protector	Bond of the Fallen
+Bond: Bond of the Protector	Aasimar: Bond: Fallen	Bond of the Protector
+Bow Strength	Bow Strength	Bow Strength
+Brutal Throw	Brutal Throw	Brutal Throw
+Bullheaded	Bullheaded	Bullheaded
+Bulwark of Defense	Epic: Bulwark of Defense	Bulwark of Defense
+Burst of Glacial Wrath	Epic: Burst of Glacial Wrath	Burst of Glacial Wrath
+Child of: Amaunator	Child of Amaunator	Child of Amaunator
+Child of: Aureon	Child of Aureon	Child of Aureon
+Child of: Helm	Child of Helm	Child of Helm
+Child of: Lord of Blades	Child of the Lord of Blades	Child of the Lord of Blades
+Child of: Olladra	Child of Olladra	Child of Olladra
+Child of: Onatar	Child of Onatar	Child of Onatar
+Child of: Silvanus	Child of Silvanus	Child of Silvanus
+Child of: Silver Flame	Child of the Silver Flame	Child of the Silver Flame
+Child of: Sovereign Host	Child of the Sovereign Host	Child of the Sovereign Host
+Child of: The Blood of Vol	Child of the Blood of Vol	Child of the Blood of Vol
+Child of: Undying Court	Child of the Undying Court	Child of the Undying Court
+Child of: Vulkoor	Child of Vulkoor	Child of Vulkoor
+Cleave	Cleave	Cleave
+Combat Archery	Epic: Combat Archery	Combat Archery
+Combat Casting	Combat Casting	Combat Casting
+Combat Expertise	Combat Expertise	Combat Expertise
+Construct Essence	Construct Essence	Construct Essence
+Construct Exemplar	Epic: Construct Exemplar	Construct Exemplar
+Crippling Strike	Crippling Strike	Crippling Strike
+Damage Reduction: Adamantine	Favored Soul Damage Reduction: Adamantine	Favored Soul Damage Reduction: Adamantine
+Damage Reduction: Cold Iron	Favored Soul Damage Reduction: Cold Iron	Favored Soul Damage Reduction: Cold Iron
+Damage Reduction: Good	Favored Soul Damage Reduction: Good	Favored Soul Damage Reduction: Good
+Damage Reduction: Silver	Favored Soul Damage Reduction: Silver	Favored Soul Damage Reduction: Silver
+Defensive Roll	Defensive Roll	Defensive Roll
+Deflect Arrows	Deflect Arrows	Deflect Arrows
+Deific Warding	Divine Sphere: Deific Warding	Deific Warding
+Deity Ability: Amaunator's Flames	Amaunator's Brilliance	Amaunator's Brilliance
+Deity Ability: Aureon's Instruction	Aureon's Instruction	Aureon's Instruction
+Deity Ability: Bladesworn Transformation	Bladesworn Transformation	Bladesworn Transformation
+Deity Ability: Blessing of Silvanus	Blessing of Silvanus	Blessing of Silvanus
+Deity Ability: Ever Watchful	Ever Watchful	Ever Watchful
+Deity Ability: Luck of Olladra	Luck of Olladra	Luck of Olladra
+Deity Ability: Onatar's Forge	Ontar's Forge	Onatar's Forge
+Deity Ability: Silver Flame Exorcism	Silver Flame Exorcism	Silver Flame Exorcism
+Deity Ability: The Blood is The Life	The Blood is The Life	The Blood is The Life
+Deity Ability: Undying Call	Undying Call	Undying Call
+Deity Ability: Unyielding Sovereignty	Unyielding Sovereignty	Unyielding Sovereignty
+Deity Ability: Vulkoor's Avatar	Vulkoor's Avatar	Vulkoor's Avatar
+Diehard	Diehard	Diehard
+Discipline	Discipline	Discipline
+Dodge	Dodge	Dodge
+Domain: Air Domain	Domain: Air Domain	Air Domain Tier I
+Domain: Animal Domain	Domain: Animal Domain	Animal Domain Tier I
+Domain: Chaos Domain	Domain: Chaos Domain	Chaos Domain Tier I
+Domain: Death Domain	Domain: Death Domain	Death Domain Tier I
+Domain: Destruction Domain	Domain: Destruction Domain	Desctruction Domain Tier I
+Domain: Earth Domain	Domain: Earth Domain	Earth Domain Tier I
+Domain: Fire Domain	Domain: Fire Domain	Fire Domain Tier I
+Domain: Good Domain	Domain: Good Domain	Good Domain Tier I
+Domain: Healing Domain	Domain: Healing Domain	Healing Domain Tier I
+Domain: Knowledge Domain	Domain: Knowledge Domain	Knowledge Domain Tier I
+Domain: Law Domain	Domain: Law Domain	Law Domain Tier I
+Domain: Luck Domain	Domain: Luck Domain	Luck Domain Tier I
+Domain: Magic Domain	Domain: Magic Domain	Magic Domain Tier I
+Domain: Protection Domain	Domain: Protection Domain	Protection Domain Tier I
+Domain: Strength Domain	Domain: Strength Domain	Strength Domain Tier I
+Domain: Sun Domain	Domain: Sun Domain	Sun Domain Tier I
+Domain: Trickery Domain	Domain: Trickery Domain	Trickery Domain Tier I
+Domain: War Domain	Domain: War Domain	War Domain Tier I
+Domain: Water Domain	Domain: Water Domain	Water Domain Tier I
+Doubleshot	Primal Sphere: Doubleshot	Doubleshot
+Draconic Ancestry: Black	Draconic Ancestry: Black	Draconic Ancestry: Black
+Draconic Ancestry: Blue	Draconic Ancestry: Blue	Draconic Ancestry: Blue
+Draconic Ancestry: Red	Draconic Ancestry: Red	Draconic Ancestry: Red
+Draconic Ancestry: White	Draconic Ancestry: White	Draconic Ancestry: White
+Dreamscape	Multiple Spheres: Dreamscape	Dreamscape
+Elusive Target	Martial Sphere: Elusive Target	Elusive Target
+Embodiment of Law	Multiple Spheres: Embodiment of Order	Embodiment of Law
+Embolden Spell	Epic: Embolden Spell	Embolden Spell
+Empower Healing Spell	Empower Healing Spell	Empower Healing Spell
+Empower Spell	Empower Spell	Empower Spell
+Energy Absorption: Acid	Energy Resistance: Acid	Energy Absorption: Acid
+Energy Absorption: Cold	Energy Resistance: Cold	Energy Absorption: Cold
+Energy Absorption: Electricity	Energy Resistance: Electricity	Energy Absorption: Electricity
+Energy Absorption: Fire	Energy Resistance: Fire	Energy Absorption: Fire
+Energy Absorption: Sonic	Energy Resistance: Sonic	Energy Absorption: Sonic
+Enlarge Spell	Enlarge Spell	Enlarge Spell
+Epic Damage Reduction	Epic: Epic Damage Reduction	Epic Damage Reduction
+Epic Eldritch Blast	Epic: Epic Eldritch Blast	Epic Eldritch Blast
+Epic Fortitude	Epic: Epic Fortitude	Epic Fortitude
+Epic Mage Armor	Arcane Sphere: Epic Mage Armor	Epic Mage Armor
+Epic Mental Toughness	Epic: Epic Mental Toughness	Epic Mental Toughness
+Epic Reflexes	Epic: Epic Reflexes	Epic Reflexes
+Epic Reputation	Epic: Epic Reputation	Epic Reputation
+Epic Spell Penetration	Epic: Epic Spell Penetration	Epic Spell Penetration
+Epic Spell Power: Acid	Arcane Sphere: Epic Spell Power: Acid	Epic Spell Power: Acid
+Epic Spell Power: Acid	Primal Sphere: Epic Spell Power: Acid	Epic Spell Power: Acid
+Epic Spell Power: Cold	Arcane Sphere: Epic Spell Power: Cold	Epic Spell Power: Cold
+Epic Spell Power: Cold	Primal Sphere: Epic Spell Power: Cold	Epic Spell Power: Cold
+Epic Spell Power: Electricity	Arcane Sphere: Epic Spell Power: Electricity	Epic Spell Power: Electricity
+Epic Spell Power: Electricity	Primal Sphere: Epic Spell Power: Electricity	Epic Spell Power: Electricity
+Epic Spell Power: Fire	Arcane Sphere: Epic Spell Power: Fire	Epic Spell Power: Fire
+Epic Spell Power: Fire	Divine Sphere: Epic Spell Power: Fire	Epic Spell Power: Fire
+Epic Spell Power: Fire	Primal Sphere: Epic Spell Power: Fire	Epic Spell Power: Fire
+Epic Spell Power: Force	Arcane Sphere: Epic Spell Power: Force	Epic Spell Power: Force
+Epic Spell Power: Light and Alignment	Divine Sphere: Epic Spell Power: Light	Epic Spell Power: Light
+Epic Spell Power: Negative	Divine Sphere: Epic Spell Power: Negative	Epic Spell Power: Negative
+Epic Spell Power: Positive	Primal Sphere: Epic Spell Power: Positive	Epic Spell Power: Positive
+Epic Spell Power: Repair	Arcane Sphere: Epic Spell Power: Repair	Epic Spell Power: Repair
+Epic Spell Power: Sonic	Arcane Sphere: Epic Spell Power: Sonic	Epic Spell Power: Sonic
+Epic Spell Power: Sonic	Primal Sphere: Epic Spell Power: Sonic	Epic Spell Power: Sonic
+Epic Toughness	Epic: Epic Toughness	Epic Toughness
+Epic Will	Epic: Epic Will	Epic Will
+Eschew Materials	Eschew Materials	Eschew Materials
+Exotic Weapon: Bastard Sword	Exotic Weapon Proficiency: Bastard Sword	Exotic Weapon Proficiency: Bastard Sword
+Exotic Weapon: Dwarven Axe	Exotic Weapon Proficiency: Dwarven Waraxe	Exotic Weapon Proficiency: Dwarven Axe
+Exotic Weapon: Great Crossbow	Exotic Weapon Proficiency: Great Crossbow	Exotic Weapon Proficiency: Great Crossbow
+Exotic Weapon: Handwraps	Exotic Weapon Proficiency: Handwrap	
+Exotic Weapon: Kama	Exotic Weapon Proficiency: Kama	Exotic Weapon Proficiency: Kama
+Exotic Weapon: Khopesh	Exotic Weapon Proficiency: Khopesh	Exotic Weapon Proficiency: Khopesh
+Exotic Weapon: Rpt Hvy Crossbow	Exotic Weapon Proficiency: Repeating Heavy Crossbow	Exotic Weapon Proficiency: Repeating Heavy Crossbow
+Exotic Weapon: Rpt Lt Crossbow	Exotic Weapon Proficiency: Repeating Light Crossbow	Exotic Weapon Proficiency: Repeating Light Crossbow
+Exotic Weapon: Shuriken	Exotic Weapon Proficiency: Shuriken	Exotic Weapon Proficiency: Shuriken
+Extend Spell	Extend Spell	Extend Spell
+Extra Turning	Extra Turning	Extra Turning
+Favored Enemy: Aberration	Favored Enemy: Aberration	Favored enemy: Aberration
+Favored Enemy: Animal	Favored Enemy: Animal	Favored enemy: Animal
+Favored Enemy: Chaotic Outsider	Favored Enemy: Chaotic Outsider	Favored enemy: Chaotic Outsider
+Favored Enemy: Construct	Favored Enemy: Construct	Favored enemy: Construct
+Favored Enemy: Dragon	Favored Enemy: Dragon	Favored enemy: Dragon
+Favored Enemy: Dwarf	Favored Enemy: Dwarf	Favored enemy: Dwarf
+Favored Enemy: Elemental	Favored Enemy: Elemental	Favored enemy: Elemental
+Favored Enemy: Elf	Favored Enemy: Elf	Favored enemy: Elf
+Favored Enemy: Evil Outsider	Favored Enemy: Evil Outsider	Favored enemy: Evil Outsider
+Favored Enemy: Giant	Favored Enemy: Giant	Favored enemy: Giant
+Favored Enemy: Gnoll	Favored Enemy: Gnoll	Favored enemy: Gnoll
+Favored Enemy: Goblinoid	Favored Enemy: Goblinoid	Favored enemy: Goblinoid
+Favored Enemy: Halfling	Favored Enemy: Halfling	Favored enemy: Halfling
+Favored Enemy: Human	Favored Enemy: Human	Favored enemy: Human
+Favored Enemy: Lawful Outsider	Favored Enemy: Lawful Outsider	Favored enemy: Lawful Outsider
+Favored Enemy: Magical Beast	Favored Enemy: Magical Beast	Favored enemy: Magical Beast
+Favored Enemy: Monstrous Humanoid	Favored Enemy: Monstrous Humanoid	Favored enemy: Monstrous Humanoid
+Favored Enemy: Ooze	Favored Enemy: Ooze	Favored enemy: Ooze
+Favored Enemy: Orc	Favored Enemy: Orc	Favored enemy: Orc
+Favored Enemy: Plant	Favored Enemy: Plant	Favored enemy: Plant
+Favored Enemy: Reptilian	Favored Enemy: Reptillian	Favored enemy: Reptilian
+Favored Enemy: Undead	Favored Enemy: Undead	Favored enemy: Undead
+Favored Enemy: Vermin	Favored Enemy: Vermin	Favored enemy: Vermin
+First Blood	Martial Sphere: First Blood	First Blood
+Follower of: Amaunator	Favored by Amaunator	Favored by Amaunator
+Follower of: Aureon	Follower of Aureon	Follower of Aureon
+Follower of: Helm	Favored by Helm	Favored by Helm
+Follower of: Lord of Blades	Follower of the Lord of Blades	Follower of the Lord of Blades
+Follower of: Olladra	Follower of Olladra	Follower of Olladra
+Follower of: Onatar	Follower of Onatar	Follower of Onatar
+Follower of: Silvanus	Favored by Silvanus	Favored by Silvanus
+Follower of: Silver Flame	Follower of the Silver Flame	Follower of the Silver Flame
+Follower of: Sovereign Host	Follower of the Sovereign Host	Follower of the Sovereign Host
+Follower of: The Blood of Vol	Follower the Blood of Vol	Follower of the Blood of Vol
+Follower of: Undying Court	Follower of the Undying Court	Follower of the Undying Court
+Follower of: Vulkoor	Follower of Vulkoor	Follower of Vulkoor
+Force of Personality	Force of Personality	Force of Personality
+Forced Escape	Divine Sphere: Forced Escape	Forced Escape
+Fount of Life	Multiple Spheres: Fount of Life	Fount of Life
+Grace of Battle	Grace of Battle	Grace of Battle
+Grandmaster of Forms	Monk Feats: Grandmaster of Forms	Grandmaster of Forms
+Great Ability: Charisma	Epic: Great Charisma	Great Charisma
+Great Ability: Constitution	Epic: Great Constitution	Great Constitution
+Great Ability: Dexterity	Epic: Great Dexterity	Great Dexterity
+Great Ability: Intelligence	Epic: Great Intelligence	Great Intelligence
+Great Ability: Strength	Epic: Great Strength	Great Strength
+Great Ability: Wisdom	Epic: Great Wisdom	Great Wisdom
+Great Cleave	Great Cleave	Great Cleave
+Great Fortitude	Great Fortitude	Great Fortitude
+Greater Ruin	Epic: Greater Ruin	Greater Ruin
+Greater Single Weapon Fighting	Greater Single Weapon Fighting	Greater Single Weapon Fighting
+Greater Spell Focus: Abjuration	Greater Spell Focus: Abjuration	Greater Spell Focus: Abjuration
+Greater Spell Focus: Conjuration	Greater Spell Focus: Conjuration	Greater Spell Focus: Conjuration
+Greater Spell Focus: Enchantment	Greater Spell Focus: Enchantment	Greater Spell Focus: Enchantment
+Greater Spell Focus: Evocation	Greater Spell Focus: Evocation	Greater Spell Focus: Evocation
+Greater Spell Focus: Illusion	Greater Spell Focus: Illusion	Greater Spell Focus: Illusion
+Greater Spell Focus: Necromancy	Greater Spell Focus: Necromancy	Greater Spell Focus: Necromancy
+Greater Spell Focus: Transmutation	Greater Spell Focus: Transmutation	Greater Spell Focus: Transmutation
+Greater Spell Penetration	Greater Spell Penetration	Greater Spell Penetration
+Greater Two Handed Fighting	Greater Two Handed Fighting	Greater Two Handed Fighting
+Greater Two Weapon Fighting	Greater Two Weapon Fighting	Greater Two Weapon Fighting
+Greater Weapon Focus: Bludgeoning	Greater Weapon Focus: Bludgeoning Weapons	Greater Weapon Focus: Bludgeoning Weapons
+Greater Weapon Focus: Piercing	Greater Weapon Focus: Piercing Weapons	Greater Weapon Focus: Piercing Weapons
+Greater Weapon Focus: Ranged	Greater Weapon Focus: Ranged Weapons	Greater Weapon Focus: Ranged Weapons
+Greater Weapon Focus: Slashing	Greater Weapon Focus: Slashing Weapons	Greater Weapon Focus: Slashing Weapons
+Greater Weapon Focus: Thrown	Greater Weapon Focus: Thrown Weapons	Greater Weapon Focus: Thrown Weapons
+Greater Weapon Specialization: Bludgeoning	Greater Weapon Specialization: Bludgeoning Weapons	Greater Weapon Specialization: Bludgeoning Weapons
+Greater Weapon Specialization: Piercing	Greater Weapon Specialization: Piercing Weapons	Greater Weapon Specialization: Piercing Weapons
+Greater Weapon Specialization: Ranged	Greater Weapon Specialization: Ranged Weapons	Greater Weapon Specialization: Ranged Weapons
+Greater Weapon Specialization: Slashing	Greater Weapon Specialization: Slashing Weapons	Greater Weapon Specialization: Slashing Weapons
+Greater Weapon Specialization: Thrown	Greater Weapon Specialization: Thrown Weapons	Greater Weapon Specialization: Thrown Weapons
+Guardian Angel	Divine Sphere: Guardian Angel	Guardian Angel
+Half-Elf Dilettante: Artificer	Half-Elf Dilettante: Artificer	Half-Elf Dilettante: Artificer
+Half-Elf Dilettante: Barbarian	Half-Elf Dilettante: Barbarian	Half-Elf Dilettante: Barbarian
+Half-Elf Dilettante: Bard	Half-Elf Dilettante: Bard	Half-Elf Dilettante: Bard
+Half-Elf Dilettante: Cleric	Half-Elf Dilettante: Cleric	Half-Elf Dilettante: Cleric
+Half-Elf Dilettante: Druid	Half-Elf Dilettante: Druid	Half-Elf Dilettante: Druid
+Half-Elf Dilettante: Favored Soul	Half-Elf Dilettante: Favored Soul	Half-Elf Dilettante: Favored Soul
+Half-Elf Dilettante: Fighter	Half-Elf Dilettante: Fighter	Half-Elf Dilettante: Fighter
+Half-Elf Dilettante: Monk	Half-Elf Dilettante: Monk	Half-Elf Dilettante: Monk
+Half-Elf Dilettante: Paladin	Half-Elf Dilettante: Paladin	Half-Elf Dilettante: Paladin
+Half-Elf Dilettante: Ranger	Half-Elf Dilettante: Ranger	Half-Elf Dilettante: Ranger
+Half-Elf Dilettante: Rogue	Half-Elf Dilettante: Rogue	Half-Elf Dilettante: Rogue
+Half-Elf Dilettante: Sorcerer	Half-Elf Dilettante: Sorcerer	Half-Elf Dilettante: Sorcerer
+Half-Elf Dilettante: Warlock	Half-Elf Dilettante: Warlock	Half-Elf Dilettante: Wizard
+Half-Elf Dilettante: Wizard	Half-Elf Dilettante: Wizard	Half-Elf Dilettante: Wizard
+Hamstring	Hamstring	Hamstring
+Harbinger of Chaos	Multiple Spheres: Harbinger of Chaos	Harbinger of Chaos
+Heavy Armor Champion	Heavy Armor Champion	Heavy Armor Champion
+Heavy Armor Combatant	Heavy Armor Combatant	Heavy Armor Combatant
+Heavy Armor Master	Heavy Armor Master	Heavy Armor Master
+Heavy Armor Training	Heavy Armor Training	Heavy Armor Training
+Heighten Spell	Heighten Spell	Heighten
+Hellball	Arcane Sphere: Hellball	Hellball
+Holy Strike	Divine Sphere: Holy Strike	Holy Strike
+Improved Augment Summoning	Epic: Improved Augment Summoning	Improved Augment Summoning
+Improved Construct Essence	Improved Construct Essence	Improved Construct Essence
+Improved Critical: Bludgeoning	Improved Critical: Bludgeoning Weapons	Improved Critical: Bludgeoning Weapons
+Improved Critical: Piercing	Improved Critical: Piercing Weapons	Improved Critical: Piercing Weapons
+Improved Critical: Ranged	Improved Critical: Ranged Weapons	Improved Critical: Ranged Weapons
+Improved Critical: Slashing	Improved Critical: Slashing Weapons	Improved Critical: Slashing Weapons
+Improved Critical: Thrown	Improved Critical: Thrown Weapons	Improved Critical: Thrown Weapons
+Improved Damage Reduction	Improved Damage Reduction	Improved Damage Reduction
+Improved Evasion	Improved Evasion	Improved Evasion
+Improved Feint	Improved Feint	Improved Feint
+Improved Fortification	Improved Fortification	Improved Fortification
+Improved Martial Arts	Epic: Improved Martial Arts	Improved Martial Arts
+Improved Mental Toughness	Improved Mental Toughness	Improved Mental Toughness
+Improved Precise Shot	Improved Precise Shot	Improved Precise Shot
+Improved Shield Bash	Improved Shield Bash	Improved Shield Bash
+Improved Shield Mastery	Improved Shield Mastery	Improved Shield Mastery
+Improved Single Weapon Fighting	Improved Single Weapon Fighting	Improved Single Weapon Fighting
+Improved Sneak Attack	Epic: Improved Sneak Attack	Improved Sneak Attack
+Improved Sunder	Improved Sunder	Improved Sunder
+Improved Trip	Improved Trip	Improved Trip
+Improved Turning	Improved Turning	Improved Turning
+Improved Two Handed Fighting	Improved Two Handed Fighting	Improved Two Handed Fighting
+Improved Two Weapon Fighting	Improved Two Weapon Fighting	Improved Two Weapon Fighting
+Insightful Reflexes	Insightful Reflexes	Insightful Reflexes
+Inspiration Melody Excellence	Epic: Inspiration Melody Excellence	Inspiration Melody Excellence
+Intensify Spell	Epic: Intensify Spell	Intensify Spell
+Iron Will	Iron Will	Iron Will
+Knowledge of Battle	Knowledge of Battle	Knowledge of Battle
+Lasting Inspiration	Arcane Sphere: Lasting Inspiration	Lasting Inspiration
+Least Dragonmark: Finding	Least Dragonmark of Finding	Least Dragonmark of Finding
+Least Dragonmark: Healing	Least Dragonmark of Healing	Least Dragonmark of Healing
+Least Dragonmark: Making	Least Dragonmark of Making	Least Dragonmark of Making
+Least Dragonmark: Passage	Least Dragonmark of Passage	Least Dragonmark of Passage
+Least Dragonmark: Scribing	Least Dragonmark of Scribing	Least Dragonmark of Scribing
+Least Dragonmark: Sentinel	Least Dragonmark of Sentinel	Least Dragonmark of Sentinel
+Least Dragonmark: Shadow	Least Dragonmark of Shadow	Least Dragonmark of Shadow
+Least Dragonmark: Storm	Least Dragonmark of Storm	Least Dragonmark of Storm
+Least Dragonmark: Warding	Least Dragonmark of Warding	Least Dragonmark of Warding
+Lightning Reflexes	Lightning Reflexes	Lightning Reflexes
+Luck of Heroes	Luck of Heroes	Luck Of Heroes
+Magical Training	Magical Training	Magical Training
+Manyshot	Manyshot	Manyshot
+Martial Weapon: Battleaxe	Martial Weapon Proficiency: Battleaxe	Martial Weapon Proficiency: Battle Axe
+Martial Weapon: Falchion	Martial Weapon Proficiency: Falchion	Martial Weapon Proficiency: Falchion
+Martial Weapon: Greataxe	Martial Weapon Proficiency: Greataxe	Martial Weapon Proficiency: Great Axe
+Martial Weapon: Greatclub	Martial Weapon Proficiency: Greatclub	Martial Weapon Proficiency: Great Club
+Martial Weapon: Greatsword	Martial Weapon Proficiency: Greatsword	Martial Weapon Proficiency: Greatsword
+Martial Weapon: Handaxe	Martial Weapon Proficiency: Handaxe	Martial Weapon Proficiency: Hand Axe
+Martial Weapon: Heavy Pick	Martial Weapon Proficiency: Heavy Pick	Martial Weapon Proficiency: Heavy Pick
+Martial Weapon: Kukri	Martial Weapon Proficiency: Kukri	Martial Weapon Proficiency: Kukri
+Martial Weapon: Light Hammer	Martial Weapon Proficiency: Light Hammer	Martial Weapon Proficiency: Light Hammer
+Martial Weapon: Light Pick	Martial Weapon Proficiency: Light Pick	Martial Weapon Proficiency: Light Pick
+Martial Weapon: Longbow	Martial Weapon Proficiency: Longbow	Martial Weapon Proficiency: Longbow
+Martial Weapon: Longsword	Martial Weapon Proficiency: Longsword	Martial Weapon Proficiency: Longsword
+Martial Weapon: Maul	Martial Weapon Proficiency: Maul	Martial Weapon Proficiency: Maul
+Martial Weapon: Rapier	Martial Weapon Proficiency: Rapier	Martial Weapon Proficiency: Rapier
+Martial Weapon: Scimitar	Martial Weapon Proficiency: Scimitar	Martial Weapon Proficiency: Scimitar
+Martial Weapon: Shortbow	Martial Weapon Proficiency: Shortbow	Martial Weapon Proficiency: Shortbow
+Martial Weapon: Shortsword	Martial Weapon Proficiency: Shortsword	Martial Weapon Proficiency: Shortsword
+Martial Weapon: Throwing Axe	Martial Weapon Proficiency: Throwing Axe	Martial Weapon Proficiency: Throwing Axe
+Martial Weapon: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer
+Martial Weapon: Warhammer	Martial Weapon Proficiency: Warhammer	Martial Weapon Proficiency: Warhammer
+Master of Forms	Monk Feats: Master of Forms	Master of Forms
+Master of: Air	Epic: Master of Air	Master of Air
+Master of: Alignment	Epic: Master of Alignment	Master of Alignment
+Master of: Artifice	Epic: Master of Artifice	Master of Artifice
+Master of: Earth	Epic: Master of Earth	Master of Earth
+Master of: Fire	Epic: Master of Fire	Master of Fire
+Master of: Knowledge	Epic: Master of Knowledge	Master of Knowledge
+Master of: Light	Epic: Master of Light	Master of Light
+Master of: Music	Epic: Master of Music	Master of Music
+Master of: the Dead	Epic: Master of the Dead	Master of the Dead
+Master of: the Wilds	Epic: Master of the Wilds	Master of the Wilds
+Master of: Water	Epic: Master of Water	Master of Water
+Maximize Spell	Maximize Spell	Maximize
+Mental Toughness	Mental Toughness	Mental Toughness
+Mithral Body	Mithral Body	Mithral Body
+Mithral Fluidity	Mithral Fluidity	Mithral Fluidity
+Mobile Spellcasting	Mobile Spellcasting	Mobile Spellcasting
+Mobility	Mobility	Mobility
+Natural Fighting	Natural Fighting	Natural Fighting
+Negotiator	Negotiator	Negotiator
+Nimble Fingers	Nimble Fingers	Nimble Fingers
+Opportunist	Opportunist	Opportunist
+Oversized Two Weapon Fighting	Oversized Two Weapon Fighting	Oversized Two Weapon Fighting
+Overwhelming Critical	Epic: Overwhelming Critical	Overwhelming Critical
+Pact: Fey	Warlock: Pact: Fey	Warlock: Pact Magic: Fey
+Pact: Fiend	Warlock: Pact: Fiend	Warlock: Pact Magic: Fiend
+Pact: Great Old One	Warlock: Pact: Great Old One	Warlock: Pact Magic: Great Old One
+Past Life: Artificer	Past Life: Student of Artifice	Past Life: Student of Artifice
+Past Life: Barbarian	Past Life: Berserker's Fury	Past Life: Berserker's Fury
+Past Life: Bard	Past Life: Bardic Dilettante	Past Life: Bardic Dilettante
+Past Life: Cleric	Past Life: Initiate of the Faith	Past Life: Initiate of the Faith
+Past Life: Druid	Past Life: Harbinger of Nature's Wrath	Past Life: Harbinger of Nature's Wrath
+Past Life: Favored Soul	Past Life: Acolyte of Divine Secrets	Past Life: Acolyte of Divine Secrets
+Past Life: Fighter	Past Life: Student of the Sword	Past Life: Student of the Sword
+Past Life: Monk	Past Life: Disciple of the Fist	Past Life: Disciple of the Fist
+Past Life: Paladin	Past Life: Soldier of the Faith	Past Life: Soldier of the Faith
+Past Life: Ranger	Past Life: Warrior of the Wild	Past Life: Warrior of the Wild
+Past Life: Rogue	Past Life: Sneak of Shadows	Past Life: Sneak of Shadows
+Past Life: Sorcerer	Past Life: Arcane Prodigy	Past Life: Arcane Prodigy
+Past Life: Warlock	Past Life: Delver of the Forbidden	Past Life: Delver of the Forbidden
+Past Life: Wizard	Past Life: Arcane Initiate	Past Life: Arcane Initiate
+Path of Harmonious Balance	Path of Harmonious Balance: Fists of Light	Path of Harmonious Balance: Fists of Light
+Path of Inevitable Dominion	Path of Inevitable Dominion: Fists of Darkness	Path of Inevitable Dominion: Fists of Darkness
+Perfect Single Weapon Fighting	Martial Sphere: Perfect Single Weapon Fighting	Perfect Single Weapon Fighting
+Perfect Two Handed Fighting	Primal Sphere: Perfect Two Handed Fighting	Perfect Two Handed Fighting
+Perfect Two Weapon Fighting	Primal Sphere: Perfect Two Weapon Fighting	Perfect Two Weapon Fighting
+Pierce Damage Reduction: Adamantine	Martial Sphere: Pierce Adamantine	Pierce Adamantine
+Pierce Damage Reduction: Byeshk	Martial Sphere: Pierce Byeshk	Pierce Byeshk
+Pierce Damage Reduction: Cold Iron	Martial Sphere: Pierce Cold Iron	Pierce Cold Iron
+Pierce Damage Reduction: Silver	Martial Sphere: Pierce Silver	Pierce Silver
+Point Blank Shot	Point Blank Shot	Point Blank Shot
+Power Attack	Power Attack	Power Attack
+Power Critical	Power Critical	Power Critical
+Precise Shot	Precise Shot	Precise Shot
+Precision	Precision	Precision
+Purity of Heart	Purity of Heart	Purity of Heart
+Quick Draw	Quick Draw	Quick Draw
+Quicken Spell	Quicken Spell	Quicken
+Rapid Reload	Rapid Reload	Rapid Reload
+Rapid Shot	Rapid Shot	Rapid Shot
+Resilience	Resilience	Resilience
+Resist Poison	Resist Poison	Resist Poison
+Ruin	Epic: Ruin	Ruin
+Sap	Sap	Sap
+Scion of: Arborea	Scion of Arborea	Scion of Arborea
+Scion of: Astral Plane	Scion of the Astral Plane	Scion of the Astral Plane
+Scion of: Celestia	Scion of Celestia	Scion of Celestia
+Scion of: Elysium	Scion of Elysium	Scion of Elysium
+Scion of: Ethereal Plane	Scion of the Ethereal Plane	Scion of the Ethereal Plane
+Scion of: Feywild	Scion of the Feywild	Scion of the Feywild
+Scion of: Limbo	Scion of Limbo	Scion of Limbo
+Scion of: Mechanus	Scion of Mechanus	Scion of Mechanus
+Scion of: Plane of Air	Scion of the Plane of Air	Scion of the Plane of Air
+Scion of: Plane of Earth	Scion of the Plane of Earth	Scion of the Plane of Earth
+Scion of: Plane of Fire	Scion of the Plane of Fire	Scion of the Plane of Fire
+Scion of: Plane of Water	Scion of the Plane of Water	Scion of the Plane of Water
+Scion of: Shadowfell	Scion of the Shadowfell	Scion of the Shadowfell
+Self Sufficient	Self Sufficient	Self Sufficient
+Shield Deflection	Shield Deflection	Shield Deflection
+Shield Mastery	Shield Mastery	Shield Mastery
+Shield Proficiency	Shield Proficiency (General)	Shield Proficiency (General)
+Shot on the Run	Shot on the Run	Shot on the Run
+Shuriken Expertise	Shuriken Expertise	Shuriken Expertise
+Simple Weapons	Simple Weapon Proficiency	
+Single Weapon Fighting	Single Weapon Fighting	Single Weapon Fighting
+Skill Focus: Balance	Skill Focus: Balance	Skill Focus: Balance
+Skill Focus: Bluff	Skill Focus: Bluff	Skill Focus: Bluff
+Skill Focus: Concentration	Skill Focus: Concentration	Skill Focus: Concentration
+Skill Focus: Diplomacy	Skill Focus: Diplomacy	Skill Focus: Diplomacy
+Skill Focus: Disable Device	Skill Focus: Disable Device	Skill Focus: Disable Device
+Skill Focus: Haggle	Skill Focus: Haggle	Skill Focus: Haggle
+Skill Focus: Heal	Skill Focus: Heal	Skill Focus: Heal
+Skill Focus: Hide	Skill Focus: Hide	Skill Focus: Hide
+Skill Focus: Intimidate	Skill Focus: Intimidate	Skill Focus: Intimidate
+Skill Focus: Jump	Skill Focus: Jump	Skill Focus: Jump
+Skill Focus: Listen	Skill Focus: Listen	Skill Focus: Listen
+Skill Focus: Move Silently	Skill Focus: Move Silently	Skill Focus: Move Silently
+Skill Focus: Open Lock	Skill Focus: Open Lock	Skill Focus: Open Lock
+Skill Focus: Perform	Skill Focus: Perform	Skill Focus: Perform
+Skill Focus: Repair	Skill Focus: Repair	Skill Focus: Repair
+Skill Focus: Search	Skill Focus: Search	Skill Focus: Search
+Skill Focus: Spellcraft	Skill Focus: Spellcraft	Skill Focus: Spellcraft
+Skill Focus: Spot	Skill Focus: Spot	Skill Focus: Spot
+Skill Focus: Swim	Skill Focus: Swim	Skill Focus: Swim
+Skill Focus: Tumble	Skill Focus: Tumble	Skill Focus: Tumble
+Skill Focus: Use Magic Device	Skill Focus: Use Magic Device	Skill Focus: Use Magic Device
+Skill Mastery	Skill Mastery	Skill Mastery
+Slicing Blow	Slicing Blow	Slicing Blow
+Slippery Mind	Slippery Mind	Slippery Mind
+Snake Blood	Snake Blood	Snake Blood
+Spell Focus: Abjuration	Spell Focus: Abjuration	Spell Focus: Abjuration
+Spell Focus: Conjuration	Spell Focus: Conjuration	Spell Focus: Conjuration
+Spell Focus: Enchantment	Spell Focus: Enchantment	Spell Focus: Enchantment
+Spell Focus: Evocation	Spell Focus: Evocation	Spell Focus: Evocation
+Spell Focus: Illusion	Spell Focus: Illusion	Spell Focus: Illusion
+Spell Focus: Necromancy	Spell Focus: Necromancy	Spell Focus: Necromancy
+Spell Focus: Transmutation	Spell Focus: Transmutation	Spell Focus: Transmutation
+Spell Penetration	Spell Penetration	Spell Penetration
+Spirit Blades	Multiple Spheres: Spirit Blades	Spirit Blades
+Spring Attack	Spring Attack	Spring Attack
+Stealthy	Stealthy	Stealthy
+Stout of Heart	Stout of Heart	Stout of Heart
+Stunning Blow	Stunning Blow	Stunning Blow
+Stunning Fist	Stunning Fist	Stunning Fist
+Superior Weapon Focus: Bludgeoning	Superior Weapon Focus: Bludgeoning Weapons	Superior Weapon Focus: Bludgeoning Weapons
+Superior Weapon Focus: Piercing	Superior Weapon Focus: Piercing Weapons	Superior Weapon Focus: Piercing Weapons
+Superior Weapon Focus: Ranged	Superior Weapon Focus: Ranged Weapons	Superior Weapon Focus: Ranged Weapons
+Superior Weapon Focus: Slashing	Superior Weapon Focus: Slashing Weapons	Superior Weapon Focus: Slashing Weapons
+Superior Weapon Focus: Thrown	Superior Weapon Focus: Thrown Weapons	Superior Weapon Focus: Thrown Weapons
+Tactical Combatant	Tacticle Combatant	Tactical Combatant
+Tactical Mastery	Tacticle Master	Tactical Mastery
+Tactical Supremacy	Tacticle Supremacy	Tactical Supremacy
+Tactical Training	Tacticle Training	Tactical Training
+Tactician	Martial Sphere: Tactician	Tactician
+Ten Thousand Stars	Ten Thousand Stars	Ten Thousand Stars
+Toughness	Toughness	Toughness
+Tower Shield Proficiency	Tower Shield Proficiency	Tower Shield Proficiency
+Two Handed Fighting	Two Handed Fighting	Two Handed Fighting
+Two Weapon Defense	Two Weapon Defense	Two Weapon Defense
+Two Weapon Fighting	Two Weapon Fighting	Two Weapon Fighting
+Vorpal Strikes	Epic: Vorpal Strikes	Vorpal Strikes
+Watchful Eye	Epic: Watchful Eye	Watchful Eye
+Weapon Finesse	Weapon Finesse	Weapon Finesse
+Weapon Focus: Bludgeoning	Weapon Focus: Bludgeoning Weapons	Weapon Focus: Bludgeoning Weapons
+Weapon Focus: Piercing	Weapon Focus: Piercing Weapons	Weapon Focus: Piercing Weapons
+Weapon Focus: Ranged	Weapon Focus: Ranged Weapons	Weapon Focus: Ranged Weapons
+Weapon Focus: Slashing	Weapon Focus: Slashing Weapons	Weapon Focus: Slashing Weapons
+Weapon Focus: Thrown	Weapon Focus: Thrown Weapons	Weapon Focus: Thrown Weapons
+Weapon Specialization: Bludgeoning	Weapon Specialization: Bludgeoning Weapons	Weapon Specialization: Bludgeoning Weapons
+Weapon Specialization: Piercing	Weapon Specialization: Piercing Weapons	Weapon Specialization: Piercing Weapons
+Weapon Specialization: Ranged	Weapon Specialization: Ranged Weapons	Weapon Specialization: Ranged Weapons
+Weapon Specialization: Slashing	Weapon Specialization: Slashing Weapons	Weapon Specialization: Slashing Weapons
+Weapon Specialization: Thrown	Weapon Specialization: Thrown Weapons	Weapon Specialization: Thrown Weapons
+Wellspring of Power	Epic: Wellspring of Power	Wellspring of Power
+Whirling Steel Strike	Whirling Steel Strike	Whirling Steel Strike
+Whirlwind Attack	Whirlwind Attack	Whirlwind Attack
+Wild Shape 1: Bear	Wild Shape: Bear	Wild Shape: Bear
+Wild Shape 1: Wolf	Wild Shape: Wolf	Wild Shape: Wolf
+Wild Shape 2: Dire Bear	Wild Shape: Dire Bear	Wild Shape: Dire Bear
+Wild Shape 2: Winter Wolf	Wild Shape: Winter Wolf	Wild Shape: Winter Wolf
+Wild Shape 3: Fire Elemental	Wild Shape: Fire Elemental	Wild Shape: Fire Elemental
+Wild Shape 3: Water Elemental	Wild Shape: Water Elemental	Wild Shape: Water Elemental
+Wind through the Trees	Wind through the Trees	
+Zen Archery	Zen Archery	Zen Archery
