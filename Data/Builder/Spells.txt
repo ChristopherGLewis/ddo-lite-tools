@@ -275,6 +275,9 @@ Flags: Rare
 SpellName: Cold Spike
 Descrip: Lob a vial of freezing liquid at a single foe that deals heavy damage and slows the movement of whatever it strikes. Deals 1d4+4 Cold damage per caster level, max caster level 10, to a single foe, and reduces their movement speed by 30% and damage by 4 for 15 seconds +2 seconds per Caster Level.
 
+SpellName: Color Spray
+Descrip: Enemies are sprayed with illusions of color, and must make a Will save or be Dazed, Blinded, and/or Silenced. The target must make a saving throw for each effect.
+
 SpellName: Cometfall
 Descrip: You conjure a bright, glowing comet, which appears in midair above your target, then strikes the ground with tremendous force. This area of effect spell does 1d6+3 points of bludgeon damage per caster level. A successful Reflex save reduces the damage by half. The force of this comet can knock some creatures prone. Another successful Reflex save negates the knockdown portion.
 

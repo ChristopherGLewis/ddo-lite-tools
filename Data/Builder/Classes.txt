@@ -141,7 +141,7 @@ SpellSlots3: 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5
 SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 4, 5
 SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4
-SpellList1: Cause Fear, Charm Person, Cure Light Wounds, Detect Secret Doors, Expeditious Retreat, Feather Fall, Focusing Chant, Grease, Hypnotism, Master's Touch, Merfolk's Blessing, Otto's Resistible Dance, Remove Fear, Sleep, Sonic Blast, Summon Monster I
+SpellList1: Cause Fear, Charm Person, Color Spray, Cure Light Wounds, Detect Secret Doors, Expeditious Retreat, Feather Fall, Focusing Chant, Grease, Hypnotism, Master's Touch, Merfolk's Blessing, Otto's Resistible Dance, Remove Fear, Sleep, Sonic Blast, Summon Monster I
 SpellList2: Blur, Blindness, Cat's Grace, Cure Moderate Wounds, Daze Monster, Eagle's Splendor, Fox's Cunning, Glitterdust, Heroism, Hold Person, Hypnotic Pattern, Invisibility, Rage, Scare, Soundburst, Suggestion, Summon Monster II
 SpellList3: Charm Monster, Crushing Despair, Cure Serious Wounds, Deep Slumber, Dispel Magic, Displacement, Fear, Good Hope, Haste, Remove Curse, See Invisibility, Slow, Summon Monster III
 SpellList4: Break Enchantment, Cure Critical Wounds, Dimension Door, Dominate Person, Freedom of Movement, Hold Monster, Neutralize Poison, Otto's Sphere of Dancing, Shout, Summon Monster IV
