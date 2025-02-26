@@ -911,11 +911,14 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                     Case "selector"
                         If .SelectorStyle = sseNone Then .SelectorStyle = sseRoot
                         .Selectors = lngListMax + 1
+                        'Maybe hard code an exception here for Simple Weapons?
                         ReDim .Selector(1 To .Selectors)
                         For i = 0 To lngListMax
                             ReDim .Selector(i + 1).Class(ceClasses - 1)
                             ReDim .Selector(i + 1).ClassLevel(ceClasses - 1)
                             .Selector(i + 1).SelectorName = strList(i)
+                            'The "all" selector handles the Simple, Martial ALL's, but we
+                            'have to add "All Simple" since we can do this
                             If strList(i) = "All" Then .Selector(i + 1).All = True
                             .Selector(i + 1).ClassBonus = .ClassBonus
                             .Selector(i + 1).Race = .Race

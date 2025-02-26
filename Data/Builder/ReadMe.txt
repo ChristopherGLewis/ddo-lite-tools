@@ -21,7 +21,7 @@ Most fields are optional. The data file structure philosophy is "less is more", 
 less data we need to put in the file the better.
 
 Capitalization matters. "Hello" and "hello" are considered different, so be mindful of 
-captialization inconsistencies.
+capitalization inconsistencies.
 
 Name:
 Required. Full name. This is used when pointing to it as a prereq for something else.
@@ -202,6 +202,11 @@ exclusive. If included on a shared/exclusive selector, the names are taken as ov
 Swashbuckler Style is an example, where taking the II version requires the same choice as 
 I, but both the I and II selector names are different and meaningful.
 NOTE: Selector: should be the last line of an entry, only followed by SelectorName: lists.
+NOTE: "all" is a special item in the selector list for granted feats such as martial for 
+      Fighter types, but allow for specific selections (M: Bastard Swords)
+      This breaks with Simple Weapons, so we add a "All Simple" category, and hide all Other
+      selectors
+
 
 SharedSelector:
 Points to the ability that has the root selector list. Shared means all subsequent 
@@ -278,6 +283,8 @@ Selector-specific requirements can include:
  - All/One/None requirements lists (eg: Swashbuckling Style I)
  - Rank#All/Rank#One/Rank#None requirements lists (eg: Swashbuckling Style II)
  - Alignments (eg: Warlock Pacts and Cleric Domains)
+ - Hide: True - hide this selector - used for SF: Divination and Martial: Composite SB
+   since these are not valid options in the game
 
 You can also specify other selector-specific data, including:
   - WikiName

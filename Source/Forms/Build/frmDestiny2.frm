@@ -727,7 +727,8 @@ Private Sub LoadData()
     ' Destiny Trees
     With Me.usrTree
         .DefineDimensions 1, 4, 2
-        .DefineColumn 1, vbLeftJustify, "Destiny", "Divine Crusader"  'TODO set to longest Dest
+        'TODO set to longest Dest in consts
+        .DefineColumn 1, vbLeftJustify, "Destiny", MAX_DESTINY_NAME
         .DefineColumn 2, vbCenter, "Tree"
         .DefineColumn 3, vbCenter, "Tier", "Tier"
         .DefineColumn 4, vbCenter, "AP", "AP"

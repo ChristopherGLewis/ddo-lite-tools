@@ -2537,8 +2537,8 @@ Group: Heroic, Melee, Range
 Descrip: Most classes are natively proficient with all simple weapons. The exceptions are Monk, Druid and Wizard, who are only proficient with some. Selecting this feat once grants them proficiency with all remaining simple weapons.
 WikiName: Simple Weapon Proficiency
 RaceBonus: Human, Purple Dragon Knight
-Selector: All, All Simple, Club, Dagger, Light Mace, Heavy Mace, Morningstar, Quarterstaff, Sickle, Unarmed, Dart, Light Crossbow, Heavy Crossbow, Throwing Dagger
-SelectorName: All Simple
+Selector: All, Club, Dagger, Light Mace, Heavy Mace, Morningstar, Quarterstaff, Sickle, Unarmed, Dart, Light Crossbow, Heavy Crossbow, Throwing Dagger
+SelectorName: All
 Descrip: This feat negates the -4 penalty to attack rolls from using simple weapons untrained.
 SelectorName: Club
 Hide: True

@@ -483,7 +483,8 @@ Private Sub ShowGrantedFeats()
     With Me.usrList
         .Clear
         .DefineDimensions Feat.ChannelCount(menChannel), 3, 2
-        .DefineColumn 1, vbLeftJustify, "Source", "Favored Soul"
+        'TODO New Class - check max name
+        .DefineColumn 1, vbLeftJustify, "Source", MAX_CLASS_NAME
         .DefineColumn 2, vbCenter, "Granted Feat"
         .DefineColumn 3, vbRightJustify, "Level", "20"
         .Refresh
@@ -1096,6 +1097,8 @@ Private Sub ShowSelectors()
     ValidSelectors db.Feat(lngFeat), build.MaxLevels, blnSelector
     For i = 1 To db.Feat(lngFeat).Selectors
         If blnSelector(i) Then
+            'Hide this selector - currently only needed for composite shortbows (no idea why)
+            'and Divination, which has no spell focus feat.
             If Not db.Feat(lngFeat).Selector(i).Hide Then
                 ListboxAddItem Me.lstSub, db.Feat(lngFeat).Selector(i).SelectorName, i
             End If

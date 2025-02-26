@@ -1164,7 +1164,8 @@ Private Sub LoadData()
     ' Trees
     With Me.usrTree
         .DefineDimensions 1, 4, 2
-        .DefineColumn 1, vbLeftJustify, "Class", "Favored Soul"
+        'TODO New Class - check this
+        .DefineColumn 1, vbLeftJustify, "Class", MAX_CLASS_NAME
         .DefineColumn 2, vbCenter, "Tree"
         .DefineColumn 3, vbCenter, "Tier", "Tier"
         .DefineColumn 4, vbCenter, "AP", "AP"

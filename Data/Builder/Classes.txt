@@ -7,14 +7,14 @@ SkillPoints: 4
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Magical Training, Inscribe Alchemy Recipe, Arcane Lore, Alchemical Spellcasting
 GrantedFeats2: Insightful Reflexes
-GrantedFeats2: Artificer Knowlege: Potions
+GrantedFeats2: Artificer Knowledge: Potions
 GrantedFeats3: Alchemy on the Run
-GrantedFeats5: Artificer Knowlege: Potions
+GrantedFeats5: Artificer Knowledge: Potions
 GrantedFeats6: Multitude of Missiles
 GrantedFeats7: Poisonblood
-GrantedFeats8: Artificer Knowlege: Potions
-GrantedFeats11: Artificer Knowlege: Potions
-GrantedFeats14: Artificer Knowlege: Potions
+GrantedFeats8: Artificer Knowledge: Potions
+GrantedFeats11: Artificer Knowledge: Potions
+GrantedFeats14: Artificer Knowledge: Potions
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
 MaxSpellLevel: 6
@@ -44,26 +44,26 @@ GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Profi
 GrantedFeats1: Simple Weapons, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Exotic Weapon: Great Crossbow, Exotic Weapon: Rpt Lt Crossbow, Exotic Weapon: Rpt Hvy Crossbow
 GrantedFeats1: Magical Training, Rapid Reload, Arcane Lore, Inscribe Artificer Scroll, Trapfinding
 GrantedFeats1: Unleash Iron Defender, Reanimate Construct
-GrantedFeats2: Artificer Knowlege: Scrolls
+GrantedFeats2: Artificer Knowledge: Scrolls
 GrantedFeats2: Rune Arm Use, Artificer Craft Mastery
-GrantedFeats2: Artificer Knowlege: Potions
-GrantedFeats3: Artificer Knowlege: Wands
-GrantedFeats4: Artificer Knowlege: Scrolls, Trapmaking, Artificer Craft Mastery
-GrantedFeats5: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Retain Essence
-GrantedFeats6: Artificer Knowlege: Wands
-GrantedFeats7: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls
-GrantedFeats8: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Artificer Craft Mastery
-GrantedFeats9: Artificer Knowlege: Wands
-GrantedFeats10: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls, Artificer Craft Mastery
-GrantedFeats11: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions
-GrantedFeats12: Artificer Knowlege: Wands, Artificer Craft Mastery
-GrantedFeats13: Artificer Knowlege: Wounderous Items, Artificer Knowlege: Scrolls
-GrantedFeats14: Artificer Knowlege: Arms and Armor, Artificer Knowlege: Potions, Artificer Craft Mastery, Artificer Skill Mastery
-GrantedFeats15: Artificer Knowlege: Wands
-GrantedFeats16: Artificer Knowlege: Wounderous Items, Artificer Craft Mastery
-GrantedFeats17: Artificer Knowlege: Arms and Armor
+GrantedFeats2: Artificer Knowledge: Potions
+GrantedFeats3: Artificer Knowledge: Wands
+GrantedFeats4: Artificer Knowledge: Scrolls, Trapmaking, Artificer Craft Mastery
+GrantedFeats5: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Retain Essence
+GrantedFeats6: Artificer Knowledge: Wands
+GrantedFeats7: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls
+GrantedFeats8: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Artificer Craft Mastery
+GrantedFeats9: Artificer Knowledge: Wands
+GrantedFeats10: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls, Artificer Craft Mastery
+GrantedFeats11: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions
+GrantedFeats12: Artificer Knowledge: Wands, Artificer Craft Mastery
+GrantedFeats13: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls
+GrantedFeats14: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Artificer Craft Mastery, Artificer Skill Mastery
+GrantedFeats15: Artificer Knowledge: Wands
+GrantedFeats16: Artificer Knowledge: Wounderous Items, Artificer Craft Mastery
+GrantedFeats17: Artificer Knowledge: Arms and Armor
 GrantedFeats18: Artificer Craft Mastery
-GrantedFeats19: Artificer Knowlege: Wounderous Items
+GrantedFeats19: Artificer Knowledge: Wounderous Items
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Arcanotechnician, Battle Engineer, Renegade Mastermaker
 HealingSpell: 1
@@ -268,7 +268,7 @@ BAB: 1
 SkillPoints: 2
 Skills: Intimidate, Jump, Repair, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency, Tower Shield Proficiency
-GrantedFeats1: Simple Weapons, Martial Weapon: All
+GrantedFeats1: Simple Weapons: All, Martial Weapon: All
 GrantedFeats2: Second Wind
 BonusFeat: 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
 Trees: Kensei, Stalwart Defender, Vanguard
@@ -481,7 +481,7 @@ Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neut
 BAB: 0.5
 SkillPoints: 2
 Skills: Concentration, Repair, Spellcraft
-GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Inscribe Scroll
+GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Inscribe Scroll, Simple Weapons: Club, Simple Weapons: Dagger, Simple Weapons: Quarterstaff, Simple Weapons: Heavy Crossbow, Simple Weapons: Light Crossbow, Simple Weapons: Throwing Dagger
 BonusFeat: 1, 5, 10, 15, 20
 Trees: Archmage, Pale Master, Eldritch Knight (Wizard)
 MaxSpellLevel: 9
@@ -773,3 +773,37 @@ SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegr
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
 SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
 SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
+
+ClassName: Dragon Disciple
+Initial: D, DD, DrDisc, DD
+Color: Yellow
+Alignment: Lawful Neutral, Lawful Good
+BAB: 0.75
+SkillPoints: 4
+Skills: Balance, Concentration, Diplomacy, Hide, Jump, Listen, Move Silently, Spellcraft, Swim, Tumble
+GrantedFeats1: Magical Training, Martial Weapon: Handaxe, Exotic Weapon: Handwraps, Exotic Weapon: Kama, Exotic Weapon: Shuriken
+GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, Finishing Moves
+GrantedFeats2: Armor Class Bonus, Evasion, Meditation
+GrantedFeats3: Still Mind, Fast Movement
+GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Martial Weapon: Battleaxe, Simple Weapons: Sickle
+GrantedFeats5: Armor Class Bonus, Purity of Body
+GrantedFeats6: Adept of Forms, Fast Movement, Slow Fall
+GrantedFeats7: Wholeness of Body
+GrantedFeats8: Slow Fall, Unarmed Strike
+GrantedFeats9: Improved Evasion, Fast Movement
+GrantedFeats10: Armor Class Bonus, Ki Strike: Lawful, Slow Fall
+GrantedFeats12: Flight of Kings, Fast Movement, Master of Forms, Slow Fall, Unarmed Strike
+GrantedFeats14: Slow Fall
+GrantedFeats15: Armor Class Bonus, Fast Movement
+GrantedFeats16: Ki Strike: Adamantine, Slow Fall, Unarmed Strike
+GrantedFeats17: Timeless Body
+GrantedFeats18: Fast Movement, Grandmaster of Forms, Slow Fall
+GrantedFeats20: Armor Class Bonus, Perfect Slow Fall, Shining Star, Unarmed Strike
+BonusFeat: 1, 2, 6
+ClassFeat: 3
+Trees: Shintao, Henshin Mystic, Ninja Spy
+
+
+
+
+
