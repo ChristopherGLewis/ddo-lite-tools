@@ -51,19 +51,19 @@ GrantedFeats3: Artificer Knowledge: Wands
 GrantedFeats4: Artificer Knowledge: Scrolls, Trapmaking, Artificer Craft Mastery
 GrantedFeats5: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Retain Essence
 GrantedFeats6: Artificer Knowledge: Wands
-GrantedFeats7: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls
+GrantedFeats7: Artificer Knowledge: Wondrous Items, Artificer Knowledge: Scrolls
 GrantedFeats8: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Artificer Craft Mastery
 GrantedFeats9: Artificer Knowledge: Wands
-GrantedFeats10: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls, Artificer Craft Mastery
+GrantedFeats10: Artificer Knowledge: Wondrous Items, Artificer Knowledge: Scrolls, Artificer Craft Mastery
 GrantedFeats11: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions
 GrantedFeats12: Artificer Knowledge: Wands, Artificer Craft Mastery
-GrantedFeats13: Artificer Knowledge: Wounderous Items, Artificer Knowledge: Scrolls
+GrantedFeats13: Artificer Knowledge: Wondrous Items, Artificer Knowledge: Scrolls
 GrantedFeats14: Artificer Knowledge: Arms and Armor, Artificer Knowledge: Potions, Artificer Craft Mastery, Artificer Skill Mastery
 GrantedFeats15: Artificer Knowledge: Wands
-GrantedFeats16: Artificer Knowledge: Wounderous Items, Artificer Craft Mastery
+GrantedFeats16: Artificer Knowledge: Wondrous Items, Artificer Craft Mastery
 GrantedFeats17: Artificer Knowledge: Arms and Armor
 GrantedFeats18: Artificer Craft Mastery
-GrantedFeats19: Artificer Knowledge: Wounderous Items
+GrantedFeats19: Artificer Knowledge: Wondrous Items
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Arcanotechnician, Battle Engineer, Renegade Mastermaker
 HealingSpell: 1
@@ -808,10 +808,10 @@ SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots2: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2
-SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poision, Jump, Longstrider, Obscuring Mist, Pass without a Trace, Resist Energies, Shield
+SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poision, Jump, Longstrider, Obscuring Mist, Pass Without Trace, Resist Energy, Shield
 SpellList2: Acolyte's Breath: Black, Acolyte's Breath: Blue, Acolyte's Breath: Green, Acolyte's Breath: Red, Acolyte's Breath: White, Blur, Elemental Weapons, Gust of Wind, Protection from Energy, Water Breathing
 SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electricity, Draconic Burst: Fire, Draconic Burst: Poision, Fear, Greater Elemental Weapons, Haste, Protection from Elements
-SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devistation: Acid, Draconic Devistation: Cold, Draconic Devistation: Electricity, Draconic Devistation: Fire, Draconic Devistation: Poision, Freedom of Movement, Howl of Terror, Poision Breath, Mass Protection from Elements, True Seeing
+SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devistation: Acid, Draconic Devistation: Cold, Draconic Devistation: Electricity, Draconic Devistation: Fire, Draconic Devistation: Poision, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
 
 
 
