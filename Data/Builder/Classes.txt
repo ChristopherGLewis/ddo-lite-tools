@@ -276,6 +276,7 @@ Trees: Kensei, Stalwart Defender, Vanguard
 ClassName: Monk
 Initial: M, Mo, Monk, Mnk
 Color: Yellow
+DisallowedClasses: Dragon Disciple
 Alignment: Lawful Neutral, Lawful Good
 BAB: 0.75
 SkillPoints: 4
@@ -777,6 +778,7 @@ SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monste
 ClassName: Dragon Disciple
 Initial: D, DD, DrgDisc, DRD
 Color: Yellow
+DisallowedClasses: Monk
 Alignment: Lawful Neutral, Lawful Good
 BAB: 0.75
 SkillPoints: 4
