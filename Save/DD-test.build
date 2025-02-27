@@ -1,0 +1,82 @@
+[Overview]
+
+Name: New Build
+Race: Human
+Alignment: Lawful Neutral
+MaxLevels: 34
+MaxLevels: 34
+
+Class: Monk
+
+
+[Stats]
+
+Preferred: Legend
+
+Adventurer: No
+Champion: No
+Hero: No
+;    Advn  Chmp  Hero  Lgnd  Tome
+;    ----  ----  ----  ----  ----
+STR:   6     6     6     2     8
+DEX:  10    10    10     2     8
+CON:  10    10    10    16     8
+INT:                           8
+WIS:   2     2     2    16     8
+CHA:                           8
+;    ----  ----  ----  ----
+;     28    28    28    36   
+
+Levelup: 0	Wisdom
+Levelup: 4	Wisdom
+Levelup: 8	Wisdom
+Levelup: 12	Wisdom
+Levelup: 16	Wisdom
+Levelup: 20	Wisdom
+Levelup: 24	Wisdom
+Levelup: 28	Wisdom
+Levelup: 32	Wisdom
+
+
+[Skills]
+
+;         1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  Tome
+;        ------------------------------------------------------------------------------------
+Balance:  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Bluff  :                                                                                    
+Concent:  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Diplo  :                                                                                    
+Disable:                                                                                    
+Haggle :                                                                                    
+Heal   :                                                                                    
+Hide   :                                                                                    
+Intim  :                                                                                    
+Jump   :  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Listen :                                          1   1   1   1   2   2   2   2   2   2     
+Move Si:                                                                                    
+Open Lo:                                                                                    
+Perform:                                                                                    
+Repair :                                                                                    
+Search :                                                                                    
+Spellcr:  4   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1     
+Spot   :                                                                                    
+Swim   :                                                                                    
+Tumble :      1   1   1   1   1   2   2   2   2   1   1   1   1   1   1   1   1   1   1     
+UMD    :                                                                                    
+
+
+[Feats]
+
+Standard: Heroic 1	Stunning Blow
+Standard: Heroic 3	Weapon Focus: Bludgeoning
+Standard: Heroic 6	Power Attack
+
+Race: Human 1	Stunning Fist
+
+
+[Enhancements]
+
+Tree: Human
+Type: Race
+ClassLevels: 34
+

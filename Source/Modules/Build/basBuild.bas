@@ -108,6 +108,7 @@ End Function
 ' ************* CALCULATIONS *************
 
 'Return the number of Heroic levels, either 20 or Max
+'TODO this makes no sense,  s/b either maxlevels if < 20 or 20
 Public Function HeroicLevels() As Long
     If build.MaxLevels > 19 Then
         HeroicLevels = 20
@@ -3051,7 +3052,7 @@ Private Sub InitGuideTrees()
             End With
         End If
     Next
-    ' Add racial class tree(s)
+    ' Add ADDITIONAL racial class tree(s) for elves (elf, half-elf, sunelf, woodelf)
     With db.Race(build.Race)
         For i = 1 To .Trees
             AddGuideTree .Tree(i), ceAny, build.MaxLevels
@@ -3059,7 +3060,9 @@ Private Sub InitGuideTrees()
     End With
     ' Add global tree(s)
     For i = 1 To db.Trees
-        If db.Tree(i).TreeType = tseGlobal Then AddGuideTree db.Tree(i).TreeName, ceAny, build.MaxLevels
+        If db.Tree(i).TreeType = tseGlobal Then
+          AddGuideTree db.Tree(i).TreeName, ceAny, build.MaxLevels
+        End If
     Next
     ' Create lookup
     If build.Guide.Trees = 0 Then

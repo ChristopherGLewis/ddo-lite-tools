@@ -500,7 +500,7 @@ FeatName: Deflect Arrows
 Group: Heroic, Defense
 Descrip: You knock aside one incoming projectile that would have struck you every 6 seconds.
 Class: Monk 1, Dragon Disciple 1
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Deific Warding
@@ -618,13 +618,13 @@ FeatName: Diehard
 Group: Heroic, Defense
 Descrip: You automatically stabilize when you become unconscious from damage.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Discipline
 Group: Heroic, Misc, Defense
 Descrip: +2 bonus to Concentration skill checks, and +1 to Will saves.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Disease Immunity
 Group: Heroic, Misc
@@ -1324,7 +1324,7 @@ FeatName: Great Fortitude
 Group: Heroic, Defense
 Descrip: +2 bonus to all Fortitude saving throws.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Greater Pact Attunement
 SortName: Pact Attunement2
@@ -1816,7 +1816,7 @@ FeatName: Iron Will
 Group: Heroic, Defense
 Descrip: +2 bonus to Will Saves.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Ki Strike
 Group: Heroic, Misc
@@ -1918,7 +1918,7 @@ FeatName: Lightning Reflexes
 Group: Heroic, Defense
 Descrip: +2 bonus to Reflex saves.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Insightful Courage
 Group: Heroic, Alchemy
@@ -2587,7 +2587,7 @@ Descrip: Chance to throw an additional shuriken per attack equal to your dexteri
 Stat: Dexterity 13
 One: Exotic Weapon: Shuriken, Half-Elf Dilettante: Monk
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Simple Thrown Expertise
 Group: Heroic, Alchemy
@@ -2829,7 +2829,7 @@ FeatName: Swords to Plowshares
 Group: Heroic, Melee
 Descrip: You are an expert with the usage of traditionally nonviolent weapons in impressive ways. When wielding one of the these weapons, you are granted the following:}{-Handwraps, Kamas, and Sickles you wield gain a +1 Morale bonus to Critical Threat Range.}{-Quarterstaves you wield gain a +2 Morale bonus to Critical Threat Range.
 BAB: 4
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Tactical Combatant
 SortName: Tactical Training2
@@ -2869,7 +2869,7 @@ Group: Heroic, Range
 Descrip: Descrip: Chance based on Wisdom modifier to throw multiple shuriken at a time for 30 seconds.
 Stat: Dexterity 13
 Class: Monk 6
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 
 FeatName: Timeless Body
 Group: Heroic, Misc
@@ -2903,7 +2903,7 @@ FeatName: Toughness
 Group: Heroic, Defense, Destiny
 Descrip: +3 HP at level 1, +1 HP each additional level up to a max of 32 HP at level 30. This feat can be taken multiple times.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk
+ClassBonus: Monk, Dragon Disciple
 Repeat: 99
 
 FeatName: Tower Shield Proficiency

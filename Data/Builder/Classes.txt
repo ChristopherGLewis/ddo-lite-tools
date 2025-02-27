@@ -776,7 +776,7 @@ SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, In
 SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Dragon Disciple
-Initial: D, DD, DrgDisc, DRD
+Initial: D, DD, DrgDspl, DRD
 Color: Yellow
 DisallowedClasses: Monk
 Alignment: Lawful Neutral, Lawful Good
