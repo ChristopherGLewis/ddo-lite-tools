@@ -3299,6 +3299,302 @@ Descrip: You gain +1 DC with Necromancy and Evocation spells.
 Tier: 5
 Cost: 2
 
+TreeName: Dragon Disciple
+Abbreviation: DrgDisc
+Type: Class
+Initial: DRD
+Color: Blue
+Stats: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
+
+AbilityName: Draconic Studies
+Descrip: While you are centered, you can use your Wisdom modifier to hit. You are centered with one-handed Clubs and Sceptres. Each core ability in this tree grants you:}{-+3 Melee Power}{-+4 Universal Spell Power}{-+3 MRR}
+Tier: 0
+
+AbilityName: Way of the Mighty Dragon
+Descrip: Like a Dragon, your power is undeniable. You gain +2 to your Spellcraft skill and +2 to Attack. At Dragon Disciple levels 9 and 15 these bonuses increase by +1. While you are Centered, you can use your Wisdom modifier to damage.
+Tier: 0
+
+AbilityName: Way of the Mighty Dragon II
+Descrip: Your Way of the Mighty Dragon now includes +2% Doublestrike. At Dragon Disciple levels 9 and 15 this bonus increases by +1%. You gain True Seeing.
+Tier: 0
+
+AbilityName: Fist of the Dragon
+Descrip: Centered Melee Attack: Channel Draconic strength and the power of your weapons into your fist, hitting enemies in a small area. If you have a Power in Practice Imbue enabled, you deal 1d6 + 1d6 per Character Level damage of that imbue's element. This scales with 100% Spell Power.
+Tier: 0
+
+AbilityName: Way of the Mighty Dragon III
+Descrip: Your Way of the Mighty Dragon now includes a +3 Critical Confirmation and Critical Damage and +3 Imbue Dice. +5 Maximum Caster Level with Lesser Draconic Burst.
+Tier: 0
+
+AbilityName: Draconic Apotheosis
+Descrip: On Activation: For 20 seconds, you take 50% less damage from Fire, Cold, Electric, Acid, and Poison, +2 to all Ability Scores, immunity to Sleep and Paralysis, +1 Critical Threat Range with all weapons, +5% Spell Critical Damage, and Acolyte's Breath and Devastation both deal double Damage. 2 minute cooldown. Cost: 100 Ki.}Passive:}{-+4 Wisdom}{-+3 Imbue Dice}{-+12 Melee Power (in addition to the +3 you get for each Core, for a total of +15)}{-+12 Universal Spell Power}{-+10 Maximum Caster Level with Lesser Draconic Burst and Draconic Burst.}
+Tier: 0
+
+AbilityName: Lesser Draconic Burst
+Descrip: Taking this Enhancement grands you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All five share a single cooldown. Centered Ki Breath Attack SLA: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 damage of the relevant element per caster level. A successful reflex save reduces damage by half, DC 10 + WIS mod + (Evocation, Conjuration, or Transmutation depending on element) + Breath Weapon bonuses.
+Tier: 1
+Cost: 2
+
+AbilityName: Power in Practice
+Descrip: Taking this Enhancement grants you five Imbue Toggles, in Fire, Cold, Electric, Acid, and Poison. imbue Toggle: While you are Centered, your Draconic Studies embolden you r weapon strikes, which deal 1d6 damage of the relevant element on each hit. This damage scales with 100% Spell Power.
+Tier: 1
+
+AbilityName: Study of Scales
+Descrip: +1/+2/+3 Fortitude Saves.
+Tier: 1
+Ranks: 3
+
+AbilityName: Draconic Devotion I
+Descrip: While Centered, you gain +8 Universal Spell Power.
+Tier: 1
+
+AbilityName: Heart of the Dragon
+Descrip: +1/+2/+3 Spellcraft, Heal, and Listen. Rank 3: You also gain +3 Magical Resistance Rating.
+Tier: 1
+Ranks: 3
+
+AbilityName: Acolyte's Breath
+Descrip: Taking this Enhancement grants you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All five share a shingle cooldown. Centered Ki Breath Attack SLA: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 damage of the relevant element per caster level. A successful reflex save reduces damage by half, DC 10 + WIS mod + (Evocation, Conjuration, or Transmutation depending on element) + Breath Weapon bonuses.
+Tier: 2
+Cost: 2
+All: Tier 1: Lesser Draconic Burst
+
+AbilityName: Power Begets Power
+Descrip: Your melee strike with weapons generate +2 Ki.
+Tier: 2
+
+AbilityName: Discipleship I
+Descrip: +1 Imbue Die
+Tier: 2
+
+AbilityName: Innate Arcana
+Descrip: +30/+60/+90 Maximum Spell points.
+Tier: 2
+Ranks: 3
+
+AbilityName: Action Boost: Doublestrike
+Descrip: You gain a +[10/20/30]% Action Boost bonus to Doublestrike for 20 seconds. Usable 5 times per rest.
+Tier: 2
+Ranks: 3
+
+AbilityName: Draconic Burst
+Descrip: Taking this Enhancement grants you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All give share a single cooldown. Centered Ki Breath Attack SLA: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close yo you. Deals 1d6+3 damage of the relevant element per caster level. A successful reflex save reduces damage by half, DC 10 + WIS mod + (Evocation, Conjuration or Transmutation depending on element) + Breath Weapon bonuses.
+Tier: 3
+Cost: 2
+All: Tier 1: Acolyte's Breath
+
+AbilityName: Way of the Dragon
+Descrip: Multiselector
+Tier: 3
+Cost: 2
+Flags: SelectorOnly
+Selector: Light Path: Channel the Enlightened Dragon, Dark Path: Channel the Raging Dragon
+SelectorName: Light Path: Channel the Enlightened Dragon
+All: Feat: Path of Harmonious Balance
+Descrip: You and nearby allies become immune to daze, stun, and sleep for 60 seconds. Requires Path of Harmonious Balance.
+SelectorName: Dark Path: Channel the Raging Dragon
+Descrip: Nearby allies gain a +2 stacking bonus to Attack, Saving Throws, and Skills for 60 seconds. Requires Path of Inevitable Dominion.
+All: Feat: Path of Inevitable Dominion
+
+AbilityName: Clear Your Mind
+Descrip: Battle Trance: While Centered, you gain an Insight bonus to Attack, Damage and the DC of Tactical feats equal to 1/2 of your Wisdom modifier for 30/60/120 seconds. Cooldown 20 seconds. Cost: 30 ki. The effects of this Trance are dispelled if you are no longer Centered.
+Tier: 3
+Ranks: 3
+
+AbilityName: Draconic Devotion II
+Descrip: While Centered, +8 Universal Spell power and +1% Universal Spell Critical Chance. Your Breath Attacks apply Shaken to affected enemies for 6 seconds.
+Tier: 3
+
+AbilityName: Secret Power
+Descrip: Your Lesser Draconic Bursts now apply 2 stacks of Vulnerability to affected targets. Your Draconic Bursts now apply a stack of Weakened Will, Feeble Fortitude and Reduced Reflexes to affected targets.
+Tier: 4
+
+AbilityName: Tranquility in Strife
+Descrip: Multiselector
+Tier: 4
+Cost: 2
+Flags: SelectorOnly
+Selector: Dragon's Claw,  Dragon's Tail, Tranquility in Strife
+SelectorName: Dragon's Claw
+Descrip:  You are now Centered with Handaxes, Battle Axes, and Sickles.
+SelectorName: Dragon's Tail
+Descrip: You are now Centered with Light Hammers and Warhammers.
+SelectorName: Tranquility in Strife
+Descrip: You are now Centered with Light and Heavy Picks.
+
+AbilityName: Discipleship II
+Descrip: +2 Imbue Die and +3 to Breath Weapon DCs.
+Tier: 4
+
+AbilityName: Draconic Devotion III
+Descrip: While Centered, +8 Universal Spell power and +2% Universal Spell Critical Chance.
+Tier: 4
+Cost: 2
+AbilityName: Draconic Devastation
+Descrip: Taking this Enhancement grants you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All five share a single cooldown. Centered Ki Breath Attack SLA: Cone that deals 1d6+6 damage of the relevant element per caster level. A successful reflex save reduces damage by half, DC 10 + WIS mod + (Evocation, Conjuration, or Transmutation depending on element) + Breath Weapon bonuses. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+Tier: 5
+
+AbilityName: Peace in Destruction
+Descrip: While Centered, you gain +1 Competence Bonus to Critical Threat Range and Critical Multiplier. Passive: You gain a +25% Competence bonus to Maximum Hit Points.
+Tier: 5
+
+AbilityName: Perfect Disciple
+Descrip: +2 Breath Weapon DCs, +2 Evocation, Conjuration, and Transmutation DCs.
+Tier: 5
+
+AbilityName: Shining Scales
+Descrip: You gain +30 MRR cap.
+Tier: 5
+
+AbilityName: Flawless Breathing
+Descrip: +4% Universal Spell Critical Chance. Your Acolyte's Breath and Draconic Devastation have their cooldown reduced by 33%.
+Tier: 5
+
+
+
+TreeName: Horizon Walker
+Abbreviation: Horizon
+Type: Global
+Initial: HZW
+Color: Green
+Stats: Dexterity, Wisdom
+
+AbilityName: Mark Target
+Descrip: +1 to Spot and Listen. You gain the ability to Mark one target at a time. Targets you Mark have -2 AC. (Debuffs to Marked Targets from these Core abilites do not stack with other players' Marks - Only the highest set of debuffs will apply.)}Cooldown: 4 Seconds.
+Tier: 0
+
+AbilityName: Improved Marking
+Descrip: Your Marked Targets get -10% Fortification. The AC penalty your Marked Targets take increases to -4. You also gain +3 to Maximum Dexterity Bonus while wearing Light armor.
+Tier: 0
+
+AbilityName: Greater Marking
+Descrip: Your Marked Targets get -2 to Saving Throws. Their Fortification penalty increases to -20%, and AC penalty increases to -6. In addition you gain Haste as a Spell-Like Ability: 0 SP cost, 2 minute cooldown.
+Tier: 0
+
+AbilityName: Dauntless Marking
+Descrip: Your Marked Target's Saving Throw penalty increases to -4, Fortification penalty increases to -25%, and AC penalty increases to -10. You gain +3 Maximum Dodge.
+Tier: 0
+
+AbilityName: Dimension Door
+Descrip: Once per rest, you can cast Dimension Door as a Spell-Like Ability. (Cooldown: 10 Minutes)}}Passive: Your Marked Targets get -20% to movement speed.
+Tier: 0
+
+AbilityName: Horizon
+Descrip: +2 to all Ability Scores. You gain +2 Maximum Manyshot charges. You gain Favored Enemy: Marked Target: You always consider Marked Targets to be Favored Enemies, and deal extra damage against them.
+Tier: 0
+
+AbilityName: Eye for Accuracy
+Descrip: +[1/2/3] to Attack with Weapons.
+Tier: 1
+Ranks: 3
+
+AbilityName: Opening Shot
+Descrip: +[10/20/30]% damage Bow Attack. Adds [1/2/3]d6 Force damage on hit. This damage scales with Ranged Power. (Cooldown: 6 seconds)
+Tier: 1
+Ranks: 3
+
+AbilityName: Planar Dodge
+Descrip: +[1/2/3] to Dodge.
+Tier: 1
+Ranks: 3
+
+AbilityName: Skills
+Descrip: +[1/2/3] to Tumble, Spot and Listen.
+Tier: 1
+Ranks: 3
+
+AbilityName: Conjure Arrow
+Descrip: Activate to create a stack of returning +1 arrows. These arrows are destroyed when you log out for an extended period of time.
+Tier: 1
+Cost: 2
+
+AbilityName: Walker Training I
+Descrip: +1 to Attack and +1 to Damage with Longbows and Shortbows.
+Tier: 2
+
+AbilityName: Take the Opening
+Descrip: If Opening Shot hits a creature that is at 100% of their Hit Points, it deals an extra 1d10 Force damage for every 2 Character levels you have. This damage scales with Ranged Power. Additionally, your Force damage from Opening Shot is now applied twice when used against Marked Targets.
+Tier: 2
+Cost: 2
+
+AbilityName: Protection from Evil and Good
+Descrip: Rank 1: You permanently gain +2 deflection bonus to Armor Class and a +2 resistance bonus to saves versus attacks from Evil creatures. Rank 2: You permanently gain this for Good creatures as well. Rank 3 (2AP): You are also warded from magical mental control and compulsions from both Evil and Good creatures.
+Tier: 2
+Ranks: 3
+
+AbilityName: Skilled Navigator
+Descrip: +[2/4/6] to Saving Throws vs. Traps
+Tier: 2
+Ranks: 3
+
+AbilityName: Favored Enemy
+Descrip: Evil Outsider Feat
+Tier: 2
+Selector: Evil Outsider
+SelectorName: Evil Outsider
+None: Feat: Favored Enemy: Evil Outsider
+
+AbilityName: No Step Missed
+Descrip: Battle Trance: Expend 1 Charge: You gain an Insight bonus to damage and the DC of tactical feats equal to 1/2 of your Dexterity modifier for [30/60/120] seconds. 5 Charges per rest. On a Vorpal weapon hit, have a chance to restore 1 Charge. (Cooldown: 20 seconds)}}Antirequisite: This ability can not be trained if you have any other Battle Trance ability.
+Tier: 3
+Ranks: 3
+None: Beacon of Hope Tier 2: Might's Reward, Harper Agent Tier 2: Know the Angles, Knight of the Chalice Tier 2: Divine Might, War Soul Tier 1: Divine Might, Warpriest Tier 1: Divine Might, Falconry Tier 4: Deadly Instinct, Dragon Lord Tier 3: Might or Outburst
+
+AbilityName: Two Places At Once
+Descrip: When you use Manyshot or Scattershot, you gain Displacement for 12 seconds.
+Tier: 3
+Cost: 2
+
+AbilityName: Hunter's Focus
+Descrip: If Archer's Focus is enabled, remaining stationary for 6 seconds grants you 1d4+4 stacks of Archer's Focus. This can trigger once per time you remain stationary.
+Tier: 3
+
+AbilityName: Tenacious Hunter
+Descrip: Against Extraplanar creatures and Marked Targets (regardless of whether or not they are extraplanar), you deal an additional +[2/4/6] damage with Longbows and Shortbows.
+Tier: 3
+Ranks: 3
+
+AbilityName: Walker Training II
+Descrip: +1 to Attack and +1 to Damage with Longbows and Shortbows.
+Tier: 4
+All: Tier 2: Walker Training I
+
+AbilityName: Corner the Quarry
+Descrip: +[20/30/40]% damage Bow Attack. If this is used against your Marked Target, they must make a Reflex Save (d20+your Listen skill) or be immobilized for 12 seconds. On a Vorpal hit, the target is also Stunned with no save (20sec cooldown). On bosses, this does not immobilize or stun.
+Tier: 4
+Ranks: 3
+
+AbilityName: Walker's Guidance
+Descrip: You and targeted ally gain Evasion, Improved Evasion and +5 to Saving Throws vs. Traps for 12 seconds. (Cooldown: 60 seconds)
+Tier: 4
+
+AbilityName: Scattershot
+Descrip: AOE Ranged Bow Attack: Expend one charge to take a shot with +1 Critical Threat Range and Critical Multiplier that shatters on impact, dealing your attack damage to all enemies in a small area around the enemy hit (Cooldown: 2 seconds). This feat gives 3 charges; you regain 1 charge every 12 seconds you don't use Scattershot or Manyshot. Requires a Longbow or Shortbow to use. Shares Charges and a Cooldown with Manyshot.
+Tier: 4
+Cost: 2
+
+AbilityName: Feywild Attunement
+Descrip: +1 Competence Bonus to Threat Range and Multiplier with Longbows and Shortbows. You have Base Attack Bonus equal to your Character Level while using Longbows and Shortbows.
+Tier: 5
+
+AbilityName: Banish the Quarry
+Descrip: If Corner the Quarry is used against a Marked Target, they take an additional 1d6 Force Damage per Character Level. This damage scales with Ranged Power. If the creature is Extraplanar, it must make a Will Save (d20+your Listen skill) or be Banished. (Bosses cannot be banished).
+Tier: 5
+All: Tier 4: Corner the Quarry
+
+AbilityName: Misty Step
+Descrip: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). Additionally, when you tumble or use Misty Step, you gain Ranged Power equal to your Character Level for 12 seconds. (Cooldown: 12 seconds)
+Tier: 5
+
+AbilityName: Powershot
+Descrip: Whenever you Critically Hit an enemy with Manyshot or Scattershot, that enemy takes 1d10 Force damage per Character Level that scales with 200% of Ranged Power.
+Tier: 5
+
+AbilityName: Improved Archer's Focus
+Descrip: Your Archer's Focus stance can now stack up to 25 times instead of 15. Passive: +10% Doubleshot.
+Tier: 5
+Cost: 2
+
 TreeName: Dragon Lord
 Type: Class
 Initial: DRL
@@ -13584,3 +13880,7 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
+
+
+
+

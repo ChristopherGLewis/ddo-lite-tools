@@ -25,7 +25,7 @@ ClassBonus: Artificer
 FeatName: Adept of Forms
 Group: Heroic, Misc
 Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 6, but any character with at least one Monk level and six character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Level: 6
 
 FeatName: Alchemical Spellcasting
@@ -108,7 +108,7 @@ Level: 28
 FeatName: Armor Class Bonus
 Group: Heroic, Misc
 Descrip: Monks get a stacking bonus to their AC:}{-A passive Wisdom bonus equal to their Wisdom modifier, while unarmored and not using a shield.{-Centered bonus at levels 2, 5, 10, 15 and 20 (3, 6, 9, 12 and 15 AC) unarmored, wielding ki weapons and not encumbered.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Flags: Unselectable
 
 FeatName: Armor Class Bonus Sacred Fist
@@ -499,7 +499,7 @@ Level: 21
 FeatName: Deflect Arrows
 Group: Heroic, Defense
 Descrip: You knock aside one incoming projectile that would have struck you every 6 seconds.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 ClassBonus: Monk
 RaceBonus: Human, Purple Dragon Knight
 
@@ -981,7 +981,7 @@ FeatName: Evasion
 Group: Misc
 Descrip: When you make a successful Reflex save to avoid damage, you suffer no damage instead of half damage.
 Flags: Unselectable
-Class: Monk 2, Ranger 9, Rogue 2, Sacred Fist 2
+Class: Monk 2, Ranger 9, Rogue 2, Sacred Fist 2, Dragon Disciple 2
 
 FeatName: Expanded Clip
 Group: Epic, Range
@@ -1066,7 +1066,7 @@ Class: Barbarian 1
 FeatName: Fast Movement
 Group: Heroic, Misc
 Descrip: A Monk gains a cumulative 5% bonus to run speed while centered for every three Monk levels. This bonus stacks with other run speed bonuses. If the monk would become uncentered (by equipping armor, or wielding non-monk weapons, etc) then the bonuses are temporarily lost.
-Class: Monk 3
+Class: Monk 3, Dragon Disciple 3
 Flags: Unselectable
 
 FeatName: Favored Enemy
@@ -1140,7 +1140,7 @@ Race: Required, Tabaxi, Trailblazer
 FeatName: Finishing Moves
 Group: Heroic, Misc
 Descrip: Through careful use of their abilities, monks can unlock special finishing moves to perform amazing effects. This button changes into various finishing moves as they become available.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Flags: Unselectable
 
 FeatName: First Blood
@@ -1152,7 +1152,7 @@ Level: 25
 FeatName: Flurry of Blows
 Group: Heroic, Misc
 Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
-Class: Monk 1, Sacred Fist 1
+Class: Monk 1, Sacred Fist 1, Dragon Disciple 1
 Flags: Unselectable
 
 FeatName: Follower of
@@ -1301,7 +1301,7 @@ FeatName: Grandmaster of Forms
 SortName: Adept of Forms3
 Group: Heroic, Misc
 Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 18, but any character with at least one Monk level and 18 character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Level: 18
 All: Master of Forms
 
@@ -1641,7 +1641,7 @@ ClassBonus: Artificer
 FeatName: Improved Martial Arts
 Group: Epic, Melee
 Descrip: You deal +1[W] when fighting unarmed, and +0.5[W] when using ki weapons such as kamas, quarterstaves, and shuriken. Works with all weapons that you are centered with.
-Class: Monk 12, Sacred Fist 12
+Class: Monk 12, Sacred Fist 12, Dragon Disciple 12
 Level: 21
 
 FeatName: Improved Mental Toughness
@@ -1825,15 +1825,15 @@ Flags: Unselectable
 Selector: Magic, Lawful, Adamantine
 SelectorName: Magic
 Descrip: All of your unarmed melee attacks are empowered with ki and are considered magical for damage reduction purposes.
-Class: Monk 4
+Class: Monk 4, Dragon Disciple 4
 WikiName: Ki Strike: Magic
 SelectorName: Lawful
 Descrip: All your unarmed melee attacks are considered Lawful for purposes of bypassing Damage Reduction.
-Class: Monk 10
+Class: Monk 10, Dragon Disciple 10
 WikiName: Ki Strike: Lawful
 SelectorName: Adamantine
 Descrip: All your unarmed melee attacks are considered Adamantine for purposes of bypassing Damage Reduction.
-Class: Monk 16
+Class: Monk 16, Dragon Disciple 16
 WikiName: Ki Strike: Adamantine
 
 FeatName: Knight's Training
@@ -2018,7 +2018,7 @@ FeatName: Master of Forms
 SortName: Adept of Forms2
 Group: Heroic, Misc
 Descrip: Improve your monk stances and elemental strikes. Automatically granted at Monk level 12, but any character with at least one Monk level and 12 character levels can select this feat at levelup as a normal feat.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Level: 12
 All: Adept of Forms
 
@@ -2032,7 +2032,7 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Meditation
 Group: Heroic, Misc
 Descrip: Two times per rest, a monk can meditate to rapidly regain ki. Meditation stabilizes when it reaches over three times his Concentration skill.
-Class: Monk 2
+Class: Monk 2, Dragon Disciple 2
 Flags: Unselectable
 
 FeatName: Mental Toughness
@@ -2079,7 +2079,7 @@ ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 FeatName: Monk Stance
 Group: Heroic, Misc
 Descrip: Monk Stances are toggled stances available to monks, or monk multiclasses, as long as they are centered.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 Flags: Unselectable
 
 FeatName: Multitude of Missiles
@@ -2232,9 +2232,9 @@ SortName: Fists of Light
 Group: Heroic, Misc
 Descrip: The lightside path offers healing and party buffs.
 Flags: ClassOnly
-ClassOnlyClass: Monk
+ClassOnlyClass: Monk, Dragon Disciple
 ClassOnlyLevel: 3
-Class: Monk 3
+Class: Monk 3, Dragon Disciple 3
 
 FeatName: Path of Inevitable Dominion
 Abbreviation: Fists of Darkness
@@ -2242,9 +2242,9 @@ SortName: Fists of Darkness
 Group: Heroic, Misc
 Descrip: The darkside path offers DPS and enemy debuffs.
 Flags: ClassOnly
-ClassOnlyClass: Monk
+ClassOnlyClass: Monk, Dragon Disciple
 ClassOnlyLevel: 3
-Class: Monk 3
+Class: Monk 3, Dragon Disciple 3
 
 FeatName: Patience
 Group: Epic, Melee
@@ -2282,7 +2282,7 @@ Level: 22
 FeatName: Perfect Slow Fall
 Group: Heroic, Misc
 Descrip: You have perfected the ability to recover from a fall unharmed. You never take damage from falling no matter how far you fall.
-Class: Monk 20
+Class: Monk 20, Dragon Disciple 20
 Flags: Unselectable
 
 FeatName: Perfect Two Handed Fighting
@@ -2361,7 +2361,7 @@ ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
 FeatName: Purity of Body
 Group: Heroic, Misc
 Descrip: You have gained control over your body's immune system and are now unaffected by all natural diseases.
-Class: Monk 5
+Class: Monk 5, Dragon Disciple 5
 Flags: Unselectable
 
 FeatName: Purity of Heart
@@ -2570,7 +2570,7 @@ Descrip: Passive: +1 WIS. Activate this Shifter ability to shift your form, gran
 FeatName: Shining Star
 Group: Heroic, Misc
 Descrip: Finishing Move: Any Way of Earth attack -> any Way of Air attack -> any Way of Fire attack -> Finishing Move activator.}}You use the combined power of Earth, Wind, and Fire to set up harmonic vibrations within your enemy that force them to dance.}}A successful Will save negates this effect (DC 10 + Monk level + Wisdom modifier + Stunning Bonuses).
-Class: Monk 20
+Class: Monk 20, Dragon Disciple 20
 Flags: Unselectable
 
 FeatName: Shot on the Run
@@ -2684,7 +2684,7 @@ Class: Rogue 10
 FeatName: Slow Fall
 Group: Heroic, Misc
 Descrip: A monk's focus allows him to reduce gravity's effects. This feat can be turned off should he desire normal gravity. The Monk must be centered to use this ability, and its ability to reduce falling damage increases every two levels. In practice, even when this feat is turned off, a monk falls more slowly than he would normally.
-Class: Monk 4
+Class: Monk 4, Dragon Disciple 4
 Flags: Unselectable
 
 FeatName: Smite Evil
@@ -2784,7 +2784,7 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Still Mind
 Group: Heroic, Misc
 Descrip: Your training and meditation improve your resistance to mind-affecting attacks, granting you a +2 bonus on saving throws against enchantments.
-Class: Monk 3
+Class: Monk 3, Dragon Disciple 3
 Flags: Unselectable
 
 FeatName: Stout of Heart
@@ -2804,8 +2804,8 @@ ClassBonus: Fighter, Dragon Lord
 FeatName: Stunning Fist
 Group: Heroic, Melee
 Descrip: Unarmed special attack: (Cooldown: 6 seconds, 15 Ki): Stun target for 6 seconds, fortitude save 10 + 1/2 character level + Wisdom modifier + other bonuses. Requires handwraps.
-Class: Monk 1, Sacred Fist 1
-ClassBonus: Monk
+Class: Monk 1, Sacred Fist 1, Dragon Disciple 1
+ClassBonus: Monk, Dragon Disciple
 RaceBonus: Human
 
 FeatName: Suggestion Song
@@ -2874,7 +2874,7 @@ ClassBonus: Monk
 FeatName: Timeless Body
 Group: Heroic, Misc
 Descrip: Your soul is balanced. No corrupt influences can possess your body after death - you are immune to the spawn effect of most undead.
-Class: Monk 17
+Class: Monk 17, Dragon Disciple 17
 Flags: Unselectable
 
 FeatName: Tireless Rage
@@ -3009,7 +3009,7 @@ All: Greater Pact Attunement
 FeatName: Unarmed Strike
 Group: Heroic, Misc
 Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
-Class: Monk 1, Sacred Fist 1
+Class: Monk 1, Sacred Fist 1, Dragon Disciple 1
 Flags: Unselectable
 
 FeatName: Uncanny Dodge
@@ -3033,7 +3033,7 @@ FeatName: Vorpal Strikes
 Group: Epic, Melee
 Descrip: Your unarmed strikes are now considered vorpal and slashing.
 Stat: Wisdom 23
-Class: Monk 12, Sacred Fist 12
+Class: Monk 12, Sacred Fist 12, Dragon Disciple 12
 Level: 21
 All: Improved Critical: Bludgeoning
 
@@ -3088,7 +3088,7 @@ Level: 21
 FeatName: Whirling Steel Strike
 Group: Heroic, Melee
 Descrip: You treat longswords as if they were monk weapons, remaining centered when you wield them.
-Class: Monk 1
+Class: Monk 1, Dragon Disciple 1
 All: Weapon Focus: Slashing
 One: Martial Weapon: Longsword, Follower of: Sovereign Host, Half-Elf Dilettante: Fighter
 ClassBonus: Fighter, Dragon Lord, Monk
@@ -3103,7 +3103,7 @@ ClassBonus: Fighter, Dragon Lord
 FeatName: Wholeness of Body
 Group: Heroic, Misc
 Descrip: This feat allows Monks expend 10 Ki to heal some hit points over time in a meditative state. The exact number regained is (Monk level)/2 + Wisdom modifier (rounded up) every two seconds for thirty seconds. This ability is not suitable for use in combat, as the Monk may neither move nor act while regenerating.
-Class: Monk 7
+Class: Monk 7, Dragon Disciple 7
 Flags: Unselectable
 
 FeatName: Wild Empathy
