@@ -74,22 +74,26 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Divine Purpose
-Descrip: Gain an active ability with one charge per rest. Must have your Bond Feat active to use.}{-Protector: You sprout ethereal wings, the mark of the Protector. For one minute, you gain a Determination Bonus to Healing Amplification and Positive Spell Power equal to your Character Level. You must have Bond of the Protector active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.}{-Fallen: You sprout strange wings, the mark of the Fallen. For one minute, you gain a +2 Primal bonus to Strength and +5% Primal bonus to Doublestrike. You must have Bond of the Fallen active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.
+Descrip: Gain an active ability with one charge per rest. Must have your Bond Feat active to use.
 Tier: 2
 Selector: Protector, Fallen
 SelectorName: Protector
+Descrip: You sprout ethereal wings, the mark of the Protector. For one minute, you gain a Determination Bonus to Healing Amplification and Positive Spell Power equal to your Character Level. You must have Bond of the Protector active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.
 All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen
+Descrip: You sprout strange wings, the mark of the Fallen. For one minute, you gain a +2 Primal bonus to Strength and +5% Primal bonus to Doublestrike. You must have Bond of the Fallen active in order to use this skill. You may use this once per rest, and an extra time for every Divine Charge you have.
 All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Divine Resolve
-Descrip: Select one:}{-Protector: +[1/2/3] CHA while your Divine Purpose is active.}{-Fallen: +[1/2/3] STR while your Divine Purpose is active.
+Descrip: Select one
 Tier: 2
 Ranks: 3
 Selector: Charisma, Strength
 SelectorName: Charisma
+Descrip: +[1/2/3] CHA while your Divine Purpose is active.
 All: Feat: Bond: Bond of the Protector
 SelectorName: Strength
+Descrip:+[1/2/3] STR while your Divine Purpose is active.
 All: Feat: Bond: Bond of the Fallen
 
 AbilityName: Fight the Wicked
@@ -121,13 +125,15 @@ Flags: SelectorOnly
 Selector: Tower Shield, Bastard Sword, Magical Training, Quick Draw
 
 AbilityName: Ascendant Bond
-Descrip: Toggle: Toggles off on rest. Must have your Bond Feat active to use. Mutually exclusive with Form feats (PM, Druid, etc).}{-Protector: You gain +3 stacking bonus to all Saving Throws, +5% Sacred bonus to maximum hit points, and a +10 Determination Bonus to PRR and MRR.}{-Fallen: You gain immunity to Fear, a +10 Determination bonus to Melee Power and Ranged Power, and your melee weapon attacks add a stack of Vulnerability once per second.}{-Bug: You may lose the benefits of this toggle upon death, resting, or zoning into some instances. Turn the ability off and back on to reapply.
+Descrip: Toggle: Toggles off on rest. Must have your Bond Feat active to use. Mutually exclusive with Form feats (PM, Druid, etc).
 Tier: 4
 Selector: Protector, Fallen
 SelectorName: Protector
+Descrip: You gain +3 stacking bonus to all Saving Throws, +5% Sacred bonus to maximum hit points, and a +10 Determination Bonus to PRR and MRR.
 All: Feat: Bond: Bond of the Protector
 SelectorName: Fallen
 All: Feat: Bond: Bond of the Fallen
+Descrip:  You gain immunity to Fear, a +10 Determination bonus to Melee Power and Ranged Power, and your melee weapon attacks add a stack of Vulnerability once per second.}{-Bug: You may lose the benefits of this toggle upon death, resting, or zoning into some instances. Turn the ability off and back on to reapply. 
 
 AbilityName: Aasimar Improved Recovery
 Descrip: +20 Healing Amplification
@@ -6724,7 +6730,7 @@ Descrip: Multiselector: You gain a new Favored Enemy feat, dealing extra damage 
 Tier: 3
 Cost: 2
 Selector: Aberration, Construct, Dragon, Evil Outsider, Giant, Monstrous Humanoid, Undead
-SelectorName: Aberratio
+SelectorName: Aberration
 Descrip:  You gain a new Favored Enemy feat, dealing extra damage against Aberrations
 None: Feat: Favored Enemy: Aberration
 SelectorName: Construct
@@ -7751,10 +7757,15 @@ SelectorName: Exalted Shot
 Descrip: AOE Ranged Attack: Fire a single shot with +10% Damage, hitting every enemy in an area around where this shot hits. Shares a cooldown with the Cleave feat. Cooldown: 5 seconds
 
 AbilityName: Action Boost
-Descrip: Choose between Action Boost: Attack and Action Boost: Power}{-Action Boost: Power Activate to gain a +[10/20/30] Action Boost bonus to Melee and Ranged Power for 20 seconds.}{-Attack Boost Activate this ability to gain a +[4/6/8] Action Boost bonus to your attack rolls for 20 seconds.
+Descrip: Multiselector: Choose between Action Boost: Attack and Action Boost: Power
 Tier: 2
 Ranks: 3
 Selector: Attack, Power
+SelectorName: Attack
+Descrip: Activate this ability to gain a +[4/6/8] Action Boost bonus to your attack rolls for 20 seconds.
+SelectorName: Power
+Descrip: Activate to gain a +[10/20/30] Action Boost bonus to Melee and Ranged Power for 20 seconds.
+
 
 AbilityName: Holy Combatant
 Descrip: +2 to Attack and Damage with Favored Weapons. You gain Greatsword as a Favored Weapon.
@@ -13771,7 +13782,7 @@ SelectorName: Like a Leaf
 Descrip: +2 to hit and damage while Single Weapon Fighting.
 SelectorName: Through the Branches
 Descrip: +3% Doubleshot with Longbows and Shortbows.
-SelectorName:Vigor SLA
+SelectorName: Vigor SLA
 Descrip: A positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +3 at caster level 9), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended. (Cost: 10 SP, Cooldown: 20 seconds
 
 AbilityName: Forest's Finesse

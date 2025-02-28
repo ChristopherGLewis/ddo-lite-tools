@@ -1796,6 +1796,7 @@ Private Sub ShowDetails(ByVal plngTier As Long, ByVal plngAbility As Long, ByVal
         'Check for Selector Desc
         If plngSelector > 0 Then
             If Len(.Selector(plngSelector).Descrip) Then
+                Me.usrDetails.AddDescrip .Selector(plngSelector).SelectorName, ""
                 'See what wiki to use
                 If Len(.Selector(plngSelector).Wiki) Then
                     Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(.Selector(plngSelector).Wiki) & TierLink(plngTier)

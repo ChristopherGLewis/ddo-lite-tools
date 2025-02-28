@@ -2294,8 +2294,18 @@ Private Sub ShowDetails(ByVal plngTier As Long, ByVal plngAbility As Long, ByVal
         If Len(.Descrip) Then Me.usrDetails.AddDescrip .Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
         'Add in any selector .Descrip
         If plngSelector <> 0 Then
-            Me.usrDetails.AddDescrip .Selector(plngSelector).SelectorName, ""
-            Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, ""
+       'Check for Selector Desc
+        If plngSelector > 0 Then
+            If Len(.Selector(plngSelector).Descrip) Then
+                Me.usrDetails.AddDescrip .Selector(plngSelector).SelectorName, ""
+                'See what wiki to use
+                If Len(.Selector(plngSelector).Wiki) Then
+                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(.Selector(plngSelector).Wiki) & TierLink(plngTier)
+                Else
+                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(db.Destiny(mlngDestiny).Wiki) & TierLink(plngTier)
+                End If
+            End If
+        End If
         End If
         
 '        ' Class

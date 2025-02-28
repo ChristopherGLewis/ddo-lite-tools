@@ -92,9 +92,9 @@ SelectorName: Helm's Blessing
 Descrip: You may use a Bastard Sword as your Favored Weapon.
 SelectorName: Olladra's Blessing 
 Descrip: You may use a Sickle as your Favored Weapon.
-SelectorName: Onatar's Blessing: 
+SelectorName: Onatar's Blessing
 Descrip: You may use a Warhammer as your Favored Weapon.
-SelectorName: Silvanus' Blessing: 
+SelectorName: Silvanus' Blessing
 Descrip: You may use a Maul as your Favored Weapon.
 SelectorName: The Blood of Vol's Blessing 
 Descrip: You may use a Dagger as your Favored Weapon.
