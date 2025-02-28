@@ -6,7 +6,7 @@ Alignment: Lawful Neutral
 MaxLevels: 34
 MaxLevels: 34
 
-Class: Monk
+Class: Dragon Disciple
 
 
 [Stats]
@@ -73,10 +73,52 @@ Standard: Heroic 6	Power Attack
 
 Race: Human 1	Stunning Fist
 
+Class: Dragon Disciple 1	Deflect Arrows
+Class: Dragon Disciple 2	Toughness
+Class: Dragon Disciple 3	Path of Harmonious Balance
+Class: Dragon Disciple 6	Shuriken Expertise
+
+
+[Spells]
+
+Spell: Dragon Disciple 1	Lesser Draconic Burst: Acid
+Spell: Dragon Disciple 1	Lesser Draconic Burst: Poision
+
+Spell: Dragon Disciple 2	Acolyte's Breath: Black
+Spell: Dragon Disciple 2	Acolyte's Breath: Green
+
+Spell: Dragon Disciple 3	Draconic Burst: Acid
+Spell: Dragon Disciple 3	Draconic Burst: Poision
+
+Spell: Dragon Disciple 4	Draconic Devistation: Acid
+Spell: Dragon Disciple 4	Draconic Devistation: Poision
+
 
 [Enhancements]
 
 Tree: Human
 Type: Race
 ClassLevels: 34
+Ability: Tier 0: Human Versatility: Spell Power Boost
+
+Tree: Dragon Disciple
+Type: Class
+Source: Dragon Disciple
+ClassLevels: 20
+Ability: Tier 0: Draconic Studies
+Ability: Tier 0: Way of the Mighty Dragon
+Ability: Tier 0: Way of the Mighty Dragon II
+Ability: Tier 0: Fist of the Dragon
+Ability: Tier 1: Lesser Draconic Burst
+Ability: Tier 1: Power in Practice
+Ability: Tier 1: Draconic Devotion I
+Ability: Tier 2: Acolyte's Breath
+Ability: Tier 2: Power Begets Power
+Ability: Tier 2: Discipleship I
+Ability: Tier 3: Draconic Burst
+Ability: Tier 3: Way of the Dragon: Light Path: Channel the Enlightened Dragon
+Ability: Tier 3: Clear Your Mind (Rank 3)
+Ability: Tier 3: Draconic Devotion II
+Ability: Tier 3: Stat: Wisdom
+Ability: Tier 4: Secret Power
 

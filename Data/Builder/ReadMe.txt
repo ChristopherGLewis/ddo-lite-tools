@@ -288,7 +288,7 @@ Selector-specific requirements can include:
 
 You can also specify other selector-specific data, including:
   - WikiName
-  - Descrip
+  - Descrip - Fixed in v4.9
 
 
 
