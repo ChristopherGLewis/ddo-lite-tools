@@ -179,6 +179,18 @@ and abilities. (Though feats can only point to other feats.)
 
 Note: Tier 0 prereqs are not required, but this requires the Dest/Enh.txt to be in the proper order
 
+Note: current Battle Trances - 
+ - Beacon of Hope Tier 2: Might's Reward
+ - Dragon Lord Tier 3: Might or Outburst
+ - Falconry Tier 4: Deadly Instinct 
+ - Harper Agent Tier 2: Know the Angles
+ - Henshin Mystic Tier 3: Clear Your Mind
+ - Horizon Walker Tier 3: No Step Missed
+ - Knight of the Chalice Tier 2: Divine Might
+ - War Soul Tier 1: Divine Might
+ - Warpriest Tier 1: Divine Might
+ 
+
 
 Rank#All:
 Rank#One:
