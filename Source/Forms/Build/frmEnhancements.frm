@@ -4,7 +4,7 @@ Begin VB.Form frmEnhancements
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Enhancements"
-   ClientHeight    =   7770
+   ClientHeight    =   8325
    ClientLeft      =   30
    ClientTop       =   405
    ClientWidth     =   12225
@@ -21,17 +21,264 @@ Begin VB.Form frmEnhancements
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7770
+   ScaleHeight     =   8325
    ScaleWidth      =   12225
+   Begin CharacterBuilderLite.userHeader usrFooter 
+      Height          =   390
+      Left            =   0
+      TabIndex        =   56
+      TabStop         =   0   'False
+      Top             =   7920
+      Width           =   12210
+      _ExtentX        =   21537
+      _ExtentY        =   688
+      Spacing         =   264
+      UseTabs         =   0   'False
+      BorderColor     =   -2147483640
+      LeftLinks       =   "< Previous"
+      RightLinks      =   "Destiny >"
+   End
+   Begin CharacterBuilderLite.userHeader usrHeader 
+      Height          =   384
+      Left            =   0
+      TabIndex        =   0
+      TabStop         =   0   'False
+      Top             =   0
+      Width           =   12216
+      _ExtentX        =   21537
+      _ExtentY        =   688
+      Spacing         =   264
+      BorderColor     =   -2147483640
+      LeftLinks       =   "Trees;Enhancements;Leveling Guide"
+      RightLinks      =   "Help"
+   End
+   Begin VB.PictureBox picTab 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00C0FFFF&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   7425
+      Index           =   1
+      Left            =   0
+      ScaleHeight     =   7425
+      ScaleWidth      =   12015
+      TabIndex        =   14
+      TabStop         =   0   'False
+      Top             =   480
+      Visible         =   0   'False
+      Width           =   12012
+      Begin VB.ComboBox cboTree 
+         Height          =   312
+         Left            =   5520
+         Style           =   2  'Dropdown List
+         TabIndex        =   19
+         Top             =   360
+         Width           =   3492
+      End
+      Begin VB.ListBox lstAbility 
+         Appearance      =   0  'Flat
+         Height          =   3012
+         IntegralHeight  =   0   'False
+         ItemData        =   "frmEnhancements.frx":000C
+         Left            =   5520
+         List            =   "frmEnhancements.frx":000E
+         TabIndex        =   24
+         Top             =   1080
+         Width           =   3492
+      End
+      Begin VB.ListBox lstSub 
+         Appearance      =   0  'Flat
+         Height          =   3012
+         IntegralHeight  =   0   'False
+         ItemData        =   "frmEnhancements.frx":0010
+         Left            =   9240
+         List            =   "frmEnhancements.frx":0012
+         TabIndex        =   26
+         Top             =   1080
+         Width           =   2652
+      End
+      Begin CharacterBuilderLite.userList usrList 
+         Height          =   7095
+         Left            =   360
+         TabIndex        =   15
+         Top             =   0
+         Width           =   4935
+         _ExtentX        =   8705
+         _ExtentY        =   12515
+      End
+      Begin CharacterBuilderLite.userDetails usrDetails 
+         Height          =   2640
+         Left            =   5520
+         TabIndex        =   29
+         TabStop         =   0   'False
+         Top             =   4455
+         Width           =   6375
+         _ExtentX        =   11245
+         _ExtentY        =   4657
+      End
+      Begin CharacterBuilderLite.userCheckBox usrchkShowAll 
+         Height          =   252
+         Left            =   7200
+         TabIndex        =   23
+         Top             =   816
+         Width           =   1812
+         _ExtentX        =   3201
+         _ExtentY        =   450
+         Value           =   0   'False
+         Caption         =   "Show All"
+         CheckPosition   =   1
+      End
+      Begin VB.Label lblTier5 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Tier 5"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   9240
+         TabIndex        =   21
+         Top             =   406
+         Visible         =   0   'False
+         Width           =   504
+      End
+      Begin VB.Label lblTier5Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Tier 5 Tree"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   9240
+         TabIndex        =   20
+         Top             =   132
+         Visible         =   0   'False
+         Width           =   960
+      End
+      Begin VB.Label lblCost 
+         Alignment       =   2  'Center
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Cost: 2 AP per rank"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   8040
+         TabIndex        =   31
+         Top             =   7140
+         Visible         =   0   'False
+         Width           =   1785
+      End
+      Begin VB.Label lblRanks 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Ranks: 3"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   6960
+         TabIndex        =   30
+         Top             =   7140
+         Visible         =   0   'False
+         Width           =   810
+      End
+      Begin VB.Label lblProg 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "12 AP spent in tree"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   10080
+         TabIndex        =   32
+         Top             =   7140
+         Visible         =   0   'False
+         Width           =   1710
+      End
+      Begin VB.Label lblTree 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Tree"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Index           =   0
+         Left            =   5520
+         TabIndex        =   18
+         Top             =   132
+         Width           =   396
+      End
+      Begin VB.Label lblSpent 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Spent in Tree: 24 AP"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   4560
+         TabIndex        =   17
+         Top             =   7140
+         Visible         =   0   'False
+         Width           =   1845
+      End
+      Begin VB.Label lblTotal 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "0 / 80 AP"
+         ForeColor       =   &H80000008&
+         Height          =   210
+         Left            =   480
+         TabIndex        =   16
+         Top             =   7140
+         Width           =   855
+      End
+      Begin VB.Label lblAbilities 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Abilities"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   5520
+         TabIndex        =   22
+         Top             =   840
+         Width           =   648
+      End
+      Begin VB.Label lblSelectors 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         Caption         =   "Selectors"
+         ForeColor       =   &H80000008&
+         Height          =   216
+         Left            =   9240
+         TabIndex        =   25
+         Top             =   840
+         Width           =   828
+      End
+      Begin VB.Label lblDetails 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Details"
+         ForeColor       =   &H80000008&
+         Height          =   252
+         Left            =   5520
+         TabIndex        =   27
+         Top             =   4212
+         Width           =   6372
+      End
+   End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
       BackColor       =   &H00FFFFC0&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   6492
+      Height          =   7215
       Index           =   0
       Left            =   600
-      ScaleHeight     =   6495
+      ScaleHeight     =   7215
       ScaleWidth      =   12015
       TabIndex        =   1
       TabStop         =   0   'False
@@ -234,9 +481,9 @@ Begin VB.Form frmEnhancements
             Appearance      =   0  'Flat
             Height          =   2652
             IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":000C
+            ItemData        =   "frmEnhancements.frx":0014
             Left            =   5880
-            List            =   "frmEnhancements.frx":002E
+            List            =   "frmEnhancements.frx":0036
             TabIndex        =   6
             Top             =   360
             Width           =   4575
@@ -277,44 +524,15 @@ Begin VB.Form frmEnhancements
          End
       End
    End
-   Begin CharacterBuilderLite.userHeader usrFooter 
-      Height          =   384
-      Left            =   0
-      TabIndex        =   56
-      TabStop         =   0   'False
-      Top             =   7380
-      Width           =   12216
-      _ExtentX        =   21537
-      _ExtentY        =   688
-      Spacing         =   264
-      UseTabs         =   0   'False
-      BorderColor     =   -2147483640
-      LeftLinks       =   "< Previous"
-      RightLinks      =   "Destiny >"
-   End
-   Begin CharacterBuilderLite.userHeader usrHeader 
-      Height          =   384
-      Left            =   0
-      TabIndex        =   0
-      TabStop         =   0   'False
-      Top             =   0
-      Width           =   12216
-      _ExtentX        =   21537
-      _ExtentY        =   688
-      Spacing         =   264
-      BorderColor     =   -2147483640
-      LeftLinks       =   "Trees;Enhancements;Leveling Guide"
-      RightLinks      =   "Help"
-   End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
       BackColor       =   &H00C0FFC0&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   6828
+      Height          =   7305
       Index           =   2
       Left            =   0
-      ScaleHeight     =   6825
+      ScaleHeight     =   7305
       ScaleWidth      =   12015
       TabIndex        =   33
       TabStop         =   0   'False
@@ -323,32 +541,32 @@ Begin VB.Form frmEnhancements
       Width           =   12012
       Begin VB.ComboBox cboGuideAbility 
          Height          =   312
-         ItemData        =   "frmEnhancements.frx":007B
+         ItemData        =   "frmEnhancements.frx":0083
          Left            =   2340
-         List            =   "frmEnhancements.frx":008B
+         List            =   "frmEnhancements.frx":0093
          Style           =   2  'Dropdown List
          TabIndex        =   37
          Top             =   180
          Width           =   3432
       End
       Begin CharacterBuilderLite.userDetails usrdetGuide 
-         Height          =   2040
+         Height          =   2520
          Left            =   240
          TabIndex        =   40
          TabStop         =   0   'False
-         Top             =   4452
-         Width           =   5532
+         Top             =   4440
+         Width           =   5535
          _ExtentX        =   9763
-         _ExtentY        =   3598
+         _ExtentY        =   4445
       End
       Begin VB.PictureBox picContainer 
          Appearance      =   0  'Flat
          BackColor       =   &H00C0FFFF&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   6132
+         Height          =   6615
          Left            =   6000
-         ScaleHeight     =   6135
+         ScaleHeight     =   6615
          ScaleWidth      =   5970
          TabIndex        =   50
          TabStop         =   0   'False
@@ -399,9 +617,9 @@ Begin VB.Form frmEnhancements
          Appearance      =   0  'Flat
          Height          =   3552
          IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":00CA
+         ItemData        =   "frmEnhancements.frx":00D2
          Left            =   2340
-         List            =   "frmEnhancements.frx":00CC
+         List            =   "frmEnhancements.frx":00D4
          TabIndex        =   38
          Top             =   540
          Width           =   3432
@@ -423,9 +641,9 @@ Begin VB.Form frmEnhancements
             Appearance      =   0  'Flat
             Height          =   3552
             IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":00CE
+            ItemData        =   "frmEnhancements.frx":00D6
             Left            =   0
-            List            =   "frmEnhancements.frx":00D0
+            List            =   "frmEnhancements.frx":00D8
             TabIndex        =   36
             Top             =   300
             Width           =   1872
@@ -471,9 +689,9 @@ Begin VB.Form frmEnhancements
             Appearance      =   0  'Flat
             Height          =   3072
             IntegralHeight  =   0   'False
-            ItemData        =   "frmEnhancements.frx":00D2
+            ItemData        =   "frmEnhancements.frx":00DA
             Left            =   0
-            List            =   "frmEnhancements.frx":00D9
+            List            =   "frmEnhancements.frx":00E1
             TabIndex        =   58
             Top             =   300
             Width           =   1872
@@ -487,9 +705,9 @@ Begin VB.Form frmEnhancements
          Caption         =   "Available: 4 AP"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   7800
+         Left            =   7860
          TabIndex        =   54
-         Top             =   6540
+         Top             =   7020
          Width           =   1335
       End
       Begin VB.Label lblGuide 
@@ -513,9 +731,9 @@ Begin VB.Form frmEnhancements
          Caption         =   "Spent: 80 AP"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   10080
+         Left            =   10140
          TabIndex        =   55
-         Top             =   6540
+         Top             =   7020
          Width           =   1185
       End
       Begin VB.Label lblGuide 
@@ -549,12 +767,12 @@ Begin VB.Form frmEnhancements
          BackColor       =   &H80000005&
          Caption         =   "12 AP spent in tree"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   2184
+         Height          =   210
+         Left            =   2250
          TabIndex        =   42
-         Top             =   6540
+         Top             =   7020
          Visible         =   0   'False
-         Width           =   1716
+         Width           =   1710
       End
       Begin VB.Label lblGuideCost 
          Appearance      =   0  'Flat
@@ -562,12 +780,12 @@ Begin VB.Form frmEnhancements
          BackColor       =   &H80000005&
          Caption         =   "Cost: 2 AP"
          ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   300
+         Height          =   210
+         Left            =   360
          TabIndex        =   41
-         Top             =   6540
+         Top             =   7020
          Visible         =   0   'False
-         Width           =   972
+         Width           =   975
       End
       Begin VB.Label lblGuideLevels 
          Alignment       =   1  'Right Justify
@@ -577,9 +795,9 @@ Begin VB.Form frmEnhancements
          Caption         =   "Levels: 20"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   4560
+         Left            =   4620
          TabIndex        =   43
-         Top             =   6540
+         Top             =   7020
          Visible         =   0   'False
          Width           =   930
       End
@@ -642,228 +860,10 @@ Begin VB.Form frmEnhancements
          Caption         =   "Current Level: 1"
          ForeColor       =   &H80000008&
          Height          =   210
-         Left            =   5760
+         Left            =   5820
          TabIndex        =   53
-         Top             =   6540
+         Top             =   7020
          Width           =   1455
-      End
-   End
-   Begin VB.PictureBox picTab 
-      Appearance      =   0  'Flat
-      BackColor       =   &H00C0FFFF&
-      BorderStyle     =   0  'None
-      ForeColor       =   &H80000008&
-      Height          =   6828
-      Index           =   1
-      Left            =   0
-      ScaleHeight     =   6825
-      ScaleWidth      =   12015
-      TabIndex        =   14
-      TabStop         =   0   'False
-      Top             =   480
-      Visible         =   0   'False
-      Width           =   12012
-      Begin VB.ComboBox cboTree 
-         Height          =   312
-         Left            =   5520
-         Style           =   2  'Dropdown List
-         TabIndex        =   19
-         Top             =   360
-         Width           =   3492
-      End
-      Begin VB.ListBox lstAbility 
-         Appearance      =   0  'Flat
-         Height          =   3012
-         IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":00EA
-         Left            =   5520
-         List            =   "frmEnhancements.frx":00EC
-         TabIndex        =   24
-         Top             =   1080
-         Width           =   3492
-      End
-      Begin VB.ListBox lstSub 
-         Appearance      =   0  'Flat
-         Height          =   3012
-         IntegralHeight  =   0   'False
-         ItemData        =   "frmEnhancements.frx":00EE
-         Left            =   9240
-         List            =   "frmEnhancements.frx":00F0
-         TabIndex        =   26
-         Top             =   1080
-         Width           =   2652
-      End
-      Begin CharacterBuilderLite.userList usrList 
-         Height          =   6492
-         Left            =   360
-         TabIndex        =   15
-         Top             =   0
-         Width           =   4932
-         _ExtentX        =   8705
-         _ExtentY        =   11456
-      End
-      Begin CharacterBuilderLite.userDetails usrDetails 
-         Height          =   2040
-         Left            =   5520
-         TabIndex        =   29
-         TabStop         =   0   'False
-         Top             =   4452
-         Width           =   6372
-         _ExtentX        =   7011
-         _ExtentY        =   3598
-      End
-      Begin CharacterBuilderLite.userCheckBox usrchkShowAll 
-         Height          =   252
-         Left            =   7200
-         TabIndex        =   23
-         Top             =   816
-         Width           =   1812
-         _ExtentX        =   3201
-         _ExtentY        =   450
-         Value           =   0   'False
-         Caption         =   "Show All"
-         CheckPosition   =   1
-      End
-      Begin VB.Label lblTier5 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Tier 5"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   9240
-         TabIndex        =   21
-         Top             =   406
-         Visible         =   0   'False
-         Width           =   504
-      End
-      Begin VB.Label lblTier5Label 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Tier 5 Tree"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   9240
-         TabIndex        =   20
-         Top             =   132
-         Visible         =   0   'False
-         Width           =   960
-      End
-      Begin VB.Label lblCost 
-         Alignment       =   2  'Center
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Cost: 2 AP per rank"
-         ForeColor       =   &H80000008&
-         Height          =   210
-         Left            =   8040
-         TabIndex        =   31
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   1785
-      End
-      Begin VB.Label lblRanks 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Ranks: 3"
-         ForeColor       =   &H80000008&
-         Height          =   210
-         Left            =   6960
-         TabIndex        =   30
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   810
-      End
-      Begin VB.Label lblProg 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "12 AP spent in tree"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   10080
-         TabIndex        =   32
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   1704
-      End
-      Begin VB.Label lblTree 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Tree"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Index           =   0
-         Left            =   5520
-         TabIndex        =   18
-         Top             =   132
-         Width           =   396
-      End
-      Begin VB.Label lblSpent 
-         Alignment       =   1  'Right Justify
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Spent in Tree: 24 AP"
-         ForeColor       =   &H80000008&
-         Height          =   210
-         Left            =   4560
-         TabIndex        =   17
-         Top             =   6540
-         Visible         =   0   'False
-         Width           =   1845
-      End
-      Begin VB.Label lblTotal 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "0 / 80 AP"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   480
-         TabIndex        =   16
-         Top             =   6540
-         Width           =   852
-      End
-      Begin VB.Label lblAbilities 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Abilities"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   5520
-         TabIndex        =   22
-         Top             =   840
-         Width           =   648
-      End
-      Begin VB.Label lblSelectors 
-         Appearance      =   0  'Flat
-         AutoSize        =   -1  'True
-         BackColor       =   &H80000005&
-         Caption         =   "Selectors"
-         ForeColor       =   &H80000008&
-         Height          =   216
-         Left            =   9240
-         TabIndex        =   25
-         Top             =   840
-         Width           =   828
-      End
-      Begin VB.Label lblDetails 
-         Appearance      =   0  'Flat
-         BackColor       =   &H80000005&
-         Caption         =   "Details"
-         ForeColor       =   &H80000008&
-         Height          =   252
-         Left            =   5520
-         TabIndex        =   27
-         Top             =   4212
-         Width           =   6372
       End
    End
    Begin VB.Menu mnuMain 
@@ -1112,7 +1112,11 @@ Private Sub ShowTab()
     Dim i As Long
     
     xp.LockWindow Me.hwnd
-    If mlngTab = 2 Then Me.usrHeader.RightLinks = "Export;Help" Else Me.usrHeader.RightLinks = "Help"
+    If mlngTab = 2 Then
+        Me.usrHeader.RightLinks = "Export;Help"
+    Else
+        Me.usrHeader.RightLinks = "Help"
+    End If
     Select Case mlngTab
         Case 0 ' Trees
             ShowTrees False, False
@@ -2302,7 +2306,7 @@ Private Sub ShowDetails(ByVal plngTier As Long, ByVal plngAbility As Long, ByVal
                 If Len(.Selector(plngSelector).Wiki) Then
                     Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(.Selector(plngSelector).Wiki) & TierLink(plngTier)
                 Else
-                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(db.Destiny(mlngDestiny).Wiki) & TierLink(plngTier)
+                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
                 End If
             End If
         End If

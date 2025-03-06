@@ -6833,8 +6833,7 @@ Descrip: The cooldown timer on Cauldron of Flames is now halved. You may now mov
 Tier: 0
 
 AbilityName: Serenity
-Descrip: Your understanding of things has evolved to a level that defies description.}
-Passive:}{-+4 Wisdom}{-+10 Concentration}{-+1 Passive Ki Generation}{-+12 Melee Power (in addition to the +3 you get for each Core, for a total of _15)}{-While wielding a quarterstaff inside your Cauldron of Flame, you gain +5 to Attack and Damage, +1 Critical Multiplier.
+Descrip: Your understanding of things has evolved to a level that defies description.}Passive:}{-+4 Wisdom}{-+10 Concentration}{-+1 Passive Ki Generation}{-+12 Melee Power (in addition to the +3 you get for each Core, for a total of _15)}{-While wielding a quarterstaff inside your Cauldron of Flame, you gain +5 to Attack and Damage, +1 Critical Multiplier.
 Tier: 0
 
 AbilityName: Porous Soul
@@ -6845,6 +6844,7 @@ AbilityName: Henshin Training
 Descrip: +1 to Attack and +2 to Damage while Centered.
 Tier: 1
 Cost: 2
+None: Ninja Spy Tier 1: Ninjutsu, Shintao Tier 1: Shintao Studies
 
 AbilityName: Ki Shout
 Descrip: Ki Activate: Intimidate nearby enemies, encouraging them to attack y ou. This ability uses your Concentration skill, and shares a cooldown with the Intimidate skill.
@@ -6911,10 +6911,10 @@ Cost: 2
 Flags: SelectorOnly
 Selector: Kata of Ice, Kata of Wind
 SelectorName: Kata of Ice
-Descrip: You perform a Melee attack that encases a tainted target in ice on a failed Will save for 10 seconds (DC = 10 + STR/DEX/WIS modifier + Monk level + Stunning DC boosts). Costs 20 ki, 12 second cooldown.
+Descrip: You perform a Melee attack that encases a tainted target in ice on a failed Will save for 10 seconds (DC = 10 + STR/DEX/WIS modifier + Monk level + Stunning DC boosts).}Activate: 20 ki}Cooldown: 12 second
 All: Feat: Path of Harmonious Balance
 SelectorName:  Kata of Wind
-Descrip: Activate to grant you and nearby allies 20% Concealment for 60 seconds. (90 second cooldown, costs 10 ki)
+Descrip: Activate to grant you and nearby allies 20% Concealment for 60 seconds.}Activate: 20 ki}Cooldown: 12 second
 All: Feat: Path of Inevitable Dominion
 
 AbilityName: Henshin Training
@@ -6928,7 +6928,7 @@ Descrip: +[1/2/3] Concentration and Fortitude saves, +[5/10/15] HP.
 Tier: 3
 
 AbilityName: Clear Your Mind
-Descrip: Battle Trance: While Centered, you gain an Insight bonus to Attack, Damage and the DC of Tactical feats equal to 1/2 your Wisdom modifier for [30/60/12] seconds.  Cooldown: 20 secods. The effects of this Trance are dispelled if you are no longer Centered.}{Antirequisite This ability cannot be trained if you have any other Battle Trance ability (e.g. Know the Angles)}
+Descrip: Battle Trance: While Centered, you gain an Insight bonus to Attack, Damage and the DC of Tactical feats equal to 1/2 your Wisdom modifier for [30/60/12] seconds.   The effects of this Trance are dispelled if you are no longer Centered.}Cooldown: 20 seconds.}Antirequisite This ability cannot be trained if you have any other Battle Trance ability (e.g. Know the Angles)
 Tier: 3
 Ranks: 3
 None: Beacon of Hope Tier 2: Might's Reward, Dragon Lord Tier 3: Might or Outburst, Falconry Tier 4: Deadly Instinct , Harper Agent Tier 2: Know the Angles, Horizon Walker Tier 3: No Step Missed, Knight of the Chalice Tier 2: Divine Might, War Soul Tier 1: Divine Might, Warpriest Tier 1: Divine Might
@@ -6954,7 +6954,7 @@ All: Tier 3: Henshin Training
 AbilityName: Mantra of Soul
 Descrip: +[5/10/20] Magical Resistance rating
 Tier: 4
-Rank: 3
+Ranks: 3
 
 AbilityName: Focus
 Descrip: While centered, you and nearby party members gain a +10 Exceptional bonus to Universal Spell Power, a +5 Exceptional bonus to hit, and a +5 Exceptional bonus to Melee and Range Power.
@@ -10462,7 +10462,7 @@ Tier: 0
 AbilityName: Shintao Studies
 Descrip: Passive: +1 to Hit and Damage while Centered.
 Tier: 1
-None: Ninja Spy Tier 1: Ninjutsu , Henshin Mystic Tier 1: Elemental Words
+None: Ninja Spy Tier 1: Ninjutsu, Henshin Mystic Tier 1: Henshin Training
 
 AbilityName: Reed in the Wind
 Descrip: Ki Melee Attack: If you successfully damage your target you gain a +[3/6/9]% Insight bonus to Dodge for 6 seconds.}} Deals +[10/20/30]% Damage}Cooldown: 15 seconds
@@ -10479,7 +10479,6 @@ SelectorName: Deft Strikes
 Descrip: You gain +[3/6/10]% chance to make offhand attacks while centered and wielding two weapons or fighting unarmed.
 SelectorName: Improved Second Strikes
 Descrip: +[5/10/20]% Strikethrough
-
 
 AbilityName: Fast Hands
 Descrip: Multiselector
@@ -10518,7 +10517,7 @@ Cost: 2
 Selector: Eagle Claw Attack, Fists of Iron, Knock on the Sky, Unbalancing Strike
 Flags: SelectorOnly
 SelectorName: Eagle Claw Attack
-Descrip: Ki Melee Attack: Your attacks can shatter objects. You strike at weak points in your opponent's armor or hide, applying 4 stacks of Armor Destriction (Each stack reduces Armor Class by 1 and Fortification by 1% for 20 seconds. This effect can stack up to 15 times.)}}+20% damage}Activation: 5 Ki]Cooldown: 3 seconds
+Descrip: Ki Melee Attack: Your attacks can shatter objects. You strike at weak points in your opponent's armor or hide, applying 4 stacks of Armor Destriction (Each stack reduces Armor Class by 1 and Fortification by 1% for 20 seconds. This effect can stack up to 15 times.)}}+20% damage}Activation: 5 Ki}Cooldown: 3 seconds
 SelectorName: Fists of Iron
 Descrip: Ki Melee Attack: You have imbued your attacks with extra force.}}+30% damage}+1 Critical Multiplier}+1 Critical Threat Range.}Activation: 5 Ki}Cooldown: 3 seconds
 SelectorName: Knock on the Sky
@@ -10587,12 +10586,10 @@ SelectorName: Greater Hand of Healing
 Descrip: Your Hand of Healing now applies a Lesser Restoration effect and removes Blindness, Curses, and Diseases.
 All: Feat: Path of Harmonious Balance, Tier 3: Hands of Mercy
 
-
 AbilityName: Instinctive Defence
 Descrip: You take [5/10/15]% less extra damange when struck while helpless.  (Additional damage while helpless varies by difficult setting from 5% to 25%.)
-Tier: 5
-Rank: 3
-
+Tier: 4
+Ranks: 3
 
 AbilityName: Empty Hand Mastery
 Descrip: While you are Centered, you gain a +1 Competence bonus to Critical Threat Range and Multiplier.}}Passive: You gain a +25% Competence bonus to Max Hit Points.
@@ -12845,7 +12842,7 @@ AbilityName: Divine Might
 Descrip: Choose a Battle Trance:}{-Divine Might: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to 1/2 of your Charisma modifier for [30/60/120] seconds. (Cost: [21/18/15] SP, Cooldown: 20 seconds)}{-Divine Will: You gain an Insight bonus to Attack, Damage and the DC of tactical feats equal to 1/2 of your Wisdom modifier for [30/60/120] seconds. (Cost: [21/18/15] SP, Cooldown: 20 seconds)}}Antirequisite: This ability can not be trained if you have any other Battle Trance ability.
 Tier: 1
 Ranks: 3
-None: Beacon of Hope Tier 2: Might's Reward, Dragon Lord Tier 3: Might or Outburst, Falconry Tier 4: Deadly Instinct , Harper Agent Tier 2: Know the Angles, Henshin Mystic Tier 3: Clear Your Mind, Horizon Walker Tier 3: No Step Missed, Knight of the Chalice Tier 2: Divine Might, Warpriest Tier 1: Divine MightWarpriest Tier 1: DivineBeacon of Hope Tier 2: Might's Reward, Dragon Lord Tier 3: Might or Outburst, Falconry Tier 4: Deadly Instinct , Harper Agent Tier 2: Know the Angles, Henshin Mystic Tier 3: Clear Your Mind, Horizon Walker Tier 3: No Step Missed, Knight of the Chalice Tier 2: Divine Might, Warpriest Tier 1: Divine Might
+None: Beacon of Hope Tier 2: Might's Reward, Dragon Lord Tier 3: Might or Outburst, Falconry Tier 4: Deadly Instinct , Harper Agent Tier 2: Know the Angles, Henshin Mystic Tier 3: Clear Your Mind, Horizon Walker Tier 3: No Step Missed, Knight of the Chalice Tier 2: Divine Might, Warpriest Tier 1: Divine Might
 Flags: SelectorOnly
 Selector: Divine Might, Divine Presence, Divine Will
 
