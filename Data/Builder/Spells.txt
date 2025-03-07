@@ -22,6 +22,21 @@ SpellName: Acid Well
 Descrip: Acid bursts forth from the ground in an area of effect. This area Conjuration spell does 1d6+18 damage per Caster Level, Reflex saving throw for half damage. Maximum Caster Level of 20. Costs 40 spell points. 9 second cooldown for Wizards, 6 second cooldown for Sorcerers.
 Flags: Rare
 
+SpellName: Acolyte's Breath: Blue
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 Electric damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Black
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 Acid damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Green
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 Poison damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: Red
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 Fire damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
+SpellName: Acolyte's Breath: White
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth Draconic power in a small burst, hitting all enemies very close to you. Deals 1d6+3 Cold damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
+
 SpellName: Adamantine Weapons
 Descrip: Your target's currently equipped weapons gain the ability to bypass Adamantine damage reduction. An item can have only one temporary item enchantment at a time.
 
@@ -426,7 +441,7 @@ SpellName: Disintegrate
 Descrip: A sickly green ray emanates forth, doing 2d3+6 damage per caster level to the target. (Maximum damage 40d3+120.) Anything reduced to 0 hit points is disintegrated. A successful Fortitude save reduces this damage to 6d3+12.
 
 SpellName: Dismissal
-Descrip: This spell forces an extraplanar creature back to its proper plane if it fails a special Will save. (DC= spell’s save DC-creature’s Hit Die+your caster level.) If the spell is successful, then the creature is instantly whisked away sending the subject to his plane. Even on a successful save the target still suffers 1d3 +3 per caster level, damage.
+Descrip: This spell forces an extraplanar creature back to its proper plane if it fails a special Will save (DC=spell's save DC - creature's Hit Die + your caster level). If the spell is successful, then the creature is instantly whisked away sending the subject to his plane. Even on a successful save the target still suffers 1d3 +3 per caster level, damage.
 
 SpellName: Dispel Magic
 Descrip: Removes ongoing spells that have been cast on a target, on a successful caster level check 1d20+caster level (Maximum caster level 10.) of DC 11+spell's caster level. In addition, this spell can be used to sever the connection between a summoner and his or her summoned monster, causing the summoned creature to attack unpredictably, possibly turning on its summoner.
@@ -462,10 +477,40 @@ Descrip: Telepathically controls the actions of a living enemy that fails its Wi
 Flags: Rare
 
 SpellName: Dominate Person
-Descrip: You can control the actions of any humanoid creature that fails its Will save through a telepathic link that you establish with the subject’s mind. Dominate acts like Charm Person, with additional Will saves every 15 to 30 seconds, but the creature will follow you throughout the dungeon.
+Descrip: You can control the actions of any humanoid creature that fails its Will save through a telepathic link that you establish with the subject's mind. Dominate acts like Charm Person, with additional Will saves every 15 to 30 seconds, but the creature will follow you throughout the dungeon.
 
 SpellName: Doom
 Descrip: This spell fills a single living creature with a feeling of horrible dread that causes it to become shaken, penalizing all saves, attack rolls, and skill rolls by -2. A successful Will save negates this effect. This is a fear effect.
+
+SpellName: Draconic Burst: Acid
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close to you. Deals 1d6+3 Acid damage per caster level (max 20d6+60 at caster level 20). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Cold
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close to you. Deals 1d6+3 Cold damage per caster level (max 20d6+60 at caster level 20). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Electric
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close to you. Deals 1d6+3 Electric damage per caster level (max 20d6+60 at caster level 20). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Fire
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close to you. Deals 1d6+3 Fire damage per caster level (max 20d6+60 at caster level 20). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Burst: Poison
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies close to you. Deals 1d6+3 Poison damage per caster level (max 20d6+60 at caster level 20). A successful reflex save reduces damage by half.
+
+SpellName: Draconic Devastation: Blue
+Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Electric damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devastation: Black
+Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Acid damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devastation: Green
+Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Poison damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devastation: Red
+Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Fire damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
+
+SpellName: Draconic Devastation: White
+Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Cold damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
 
 SpellName: Dust of Confusion
 Descrip: Scatter dust around you that causes enemies around you to begin to vividly hallucinate. On a failed Will save, they become Confused, attacking and able to be attacked by friend and foe alike. This effect lasts for 15 seconds +2 per Caster Level, and enemies make a recurring save once every 24 seconds.
@@ -552,7 +597,7 @@ SpellName: Feathers Extract
 Descrip: This potion will mutate you, granting your bones slightly less dense and causing small feathers to grow from your skin. Grans the effects of theFeather FallandJumpspells: You gain Feather Falling and a +10 Enhancement bonus to Jump. This bonus increases to +20 and 5th level and +30 at 9th level. These effects last for 30 seconds + 6 seconds per Caster Level.
 
 SpellName: Feeblemind
-Descrip: Creature’s Intelligence and Charisma drops to 1. A successful Will saving throw negates this effect.
+Descrip: Creature's Intelligence and Charisma drops to 1. A successful Will saving throw negates this effect.
 
 SpellName: Find Traps
 Descrip: Grants the caster the ability to find traps much like a skilled Rogue. The caster gains an insight bonus of caster level/2 to the Search Skill.
@@ -904,6 +949,21 @@ SpellName: Lesser Death Aura
 Descrip: Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 1d4 negative damage every 2 seconds as long as they remain within it. Undead are instead healed by the aura.
 Flags: Rare
 
+SpellName: Lesser Draconic Burst: Acid
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Acid damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Cold
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Cold damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Electric
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Electric damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Fire
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Fire damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
+SpellName: Lesser Draconic Burst: Poison
+Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Poison damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
+
 SpellName: Lesser Evolution
 Descrip: Spell selector - pick an animal from the 6 animal stat/types (bull for str, cat for dex, etc) and gain +1 Alchemical bonus to this stat. You can only have one Alchemical Mutation at a time regardless of tier. Self only spell.
 
@@ -920,7 +980,7 @@ SpellName: Lesser Ice Chill Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the speed from your enemies on contact. On Hit: -1 Reflex Save (does not stack). On Crit: 1d6 Dexterity Damage. An item can have only one temporary item enchantment at a time.
 
 SpellName: Lesser Restoration
-Descrip: Dispels magical effects reducing 1 of an ally’s Ability scores, it also eliminates the condition Fatigued suffered by the creature, and improves the Exhausted condition to Fatigued.
+Descrip: Dispels magical effects reducing 1 of an ally's Ability scores, it also eliminates the condition Fatigued suffered by the creature, and improves the Exhausted condition to Fatigued.
 
 SpellName: Lesser Restorative Draught
 Descrip: Throw a small vial of magical liquid at a single target that provides the effects of the Lesser Restoration spell: Dispels magical effects reducing your ability scores, eliminates fatigue, and improves exhaustion to fatigue.
@@ -1286,7 +1346,7 @@ Descrip: A single word causes the death of a single enemy with no saving throw a
 Flags: Rare
 
 SpellName: Power Word: Stun
-Descrip: You utter a single word of power that instantly causes one creature of your choice to become Stunned, whether the creature can hear the word or not. The duration of the spell depends on the target’s current Hit Points.
+Descrip: You utter a single word of power that instantly causes one creature of your choice to become Stunned, whether the creature can hear the word or not. The duration of the spell depends on the target's current Hit Points.
 Flags: Rare
 
 SpellName: Prayer
@@ -1810,7 +1870,7 @@ SpellName: Waves of Exhaustion
 Descrip: Waves of negative energy cause all living creatures to become Exhausted. Exhausted creatures take a -25% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble.
 
 SpellName: Waves of Fatigue
-Descrip: Waves of negative energy render all living creatures in the spell’s area fatigued. A fatigued creature takes a -2 penalty to Strength and Dexterity, and suffers a -10% penalty to movement speed.
+Descrip: Waves of negative energy render all living creatures in the spell's area fatigued. A fatigued creature takes a -2 penalty to Strength and Dexterity, and suffers a -10% penalty to movement speed.
 
 SpellName: Web
 Descrip: Creates a many-layered mass of strong, sticky strands that entangle targets within them. A successful Reflex save negates this effect. Entangled creatures may attempt to make a Strength check every 2 seconds to escape. Area of effect fire spells will destroy these webs and free any entangled creatures. Incorporeal creatures, oozes, and spiders are naturally immune. Fire elementals and other fire creatures are immune because they burn through the webs. The duration is a fixed 30 seconds.
@@ -1832,66 +1892,3 @@ Descrip: Surround target adversary with rainbows, dealing 1d6+10 Chaos Damage pe
 
 SpellName: Prismatic Strike
 Descrip: A brilliant ray of multicolored light projects from your finger. Ray spell. Enemy takes 1d6 per caster level in two of three elements (Fire, Force, or Electric) chosen randomly each time. The enemy is also subject to 2 of 3 CC effects chosen randomly each time:{-Knock the target prone; a successful Fortitude save halves the damage and negates the knockdown.{-Daze the target; a successful Reflex save halves the damage and negates the daze.{-Reduce the target's melee and ranged damage by 25%; a successful Will save halves the damage and negates the penalty to attack damage.This spell has double range.}Note:{-Bonuses to Fire, Force, and Electricity spell types apply to this spell; each component is boosted by specific spell power (Combustion / Impulse / Magnetism).
-
-
-SpellName: Lesser Draconic Burst: Acid
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Acid damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
-
-SpellName: Lesser Draconic Burst: Cold
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Cold damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
-
-SpellName: Lesser Draconic Burst: Electricity
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Electrical damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
-
-SpellName: Lesser Draconic Burst: Fire
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Fire damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
-
-SpellName: Lesser Draconic Burst: Poision
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Poison damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
-
-SpellName: Acolyte's Breath: Black
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Acid damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Acolyte's Breath: Blue
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Electrical damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Acolyte's Breath: Green
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Poison damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Acolyte's Breath: Red
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Fire damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Acolyte's Breath: White
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Cold damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Burst: Acid
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Acid damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Burst: Cold
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Cold damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Burst: Electricity
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Electrical damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Burst: Fire
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Fire damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Burst: Poision
-Descrip: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+3 Poison damage per caster level (max 30d6+90 at caster level 30). A successful reflex save reduces damage by half.
-
-SpellName: Draconic Devistation: Acid
-Descrip: Cone that deals 1d6+6 Acid damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
-
-SpellName: Draconic Devistation: Cold
-Descrip: Cone that deals 1d6+6 Cold damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
-
-SpellName: Draconic Devistation: Electricity
-Descrip: Cone that deals 1d6+6 Electrical damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
-
-SpellName: Draconic Devistation: Fire
-Descrip: Cone that deals 1d6+6 Fire damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
-
-SpellName: Draconic Devistation: Poision
-Descrip: Cone that deals 1d6+6 Posion damage per caster level (max 30d6+180 at caster level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
-
-

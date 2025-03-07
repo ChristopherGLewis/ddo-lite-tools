@@ -972,17 +972,14 @@ Descrip: Your weapons now bypass Good damage reduction. You gain + 5 Magical Res
 SelectorName: Lawful
 Descrip: Your weapons now bypass Lawful damage reduction. You gain + 5 Magical Resistance Rating, or +10 if you have the Discipline feat.
 
-
-AbilityName: Master of Philosophy
+AbilityName: Disciple of Philosophy
 Descrip: Select a Philosophy to embody with your strikes.
 Tier: 0
-Selector: Dark, Light, Void
-SelectorName: Dark
-Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating cap. Your Stunning Blow and Stunning Fist feats are now Dark building attacks for your Monk Finishing Moves. (Note: these appear as separate feats in your feat list so that you may continue to use their original versions without building attack elemental affiliations if you so desire.)
+Selector: Light, Dark
 SelectorName: Light
-Descrip: +3% Dodge bypass, +10 Magical Resistance Rating cap. Your Stunning Blow and Stunning Fist feats are now considered Light building attacks for your Monk Finishing Moves. (Note: these appear as separate feats in your feat list so that you may continue to use their original versions without building attack elemental affiliations if you so desire.)
-SelectorName: Void
-Descrip: +3% Dodge bypass, +10 Magical Resistance Rating cap. Your Stunning Blow and Stunning Fist feats are now considered Void building attacks for your Monk Finishing Moves. (Note: these appear as separate feats in your feat list so that you may continue to use their original versions without building attack elemental affiliations if you so desire.)
+Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Light damage on hit that scales with 200% Melee Power. (Note: these appear as separate feats in your feat list.) You may take Monk enhancements that require Fists of Light.
+SelectorName: Dark
+Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Poison damage on hit that scales with 200% Melee Power. (Note: these appear as separate feats in your feat list.) You may take Monk enhancements that require Fists of Darkness.
 
 AbilityName: Strike with Poise
 Descrip: +[2/4/6] Stunning DCs
@@ -1006,7 +1003,7 @@ Ranks: 3
 Flags: SelectorOnly
 Selector: Inner Focus, Wholeness of Spirit
 SelectorName: Inner Focus
-Descrip: Your soul is like a great garden, and its beauty and perfection depend on how you tend it during all seasons. You may activate this ability to focus your thoughts and instantly restore 10d12 Ki. Cooldown: [120/160/120] seconds
+Descrip: Your soul is like a great garden, and its beauty and perfection depend on how you tend it during all seasons. You may activate this ability to focus your thoughts and instantly restore 10d12 Ki. Cooldown: [120/90/60] seconds
 SelectorName: Wholeness of Spirit
 Descrip: You may expend 50 Ki to bring your mind, body, and soul into harmonious balance, restoring health as if you were affected by the benefits of a Heal spell, as well as curing all ability damage, negative levels, and other Adverse Conditions that may be affecting you. Cooldown: [180/120/90] seconds.
 
@@ -1092,11 +1089,17 @@ Descrip: +[1/2/3] Saves vs Enchantments, Curses, and Illusions, and +[2/4/6] Mag
 Tier: 4
 Ranks: 3
 
-AbilityName: Lotus Bloom
-Descrip: Drifting Lotus and Orchid Blossom now attempt to Stun all enemies struck. Stun DC: 20 + Highest Ability Score Mod + Stunning Bonuses. This stun lasts 4 seconds for Drifting Lotus and 2 seconds for Orchid Blossom.
+AbilityName: Epic Strikes Upgrade
+Descrip: (Multiselector)
 Tier: 4
 Cost: 2
-One: Tier 2: Grandmaster Strikes: Drifting Lotus, Tier 2: Grandmaster Strikes: Orchid Blossom
+Selector: Lotus Bloom, Blossoming Peace
+SelectorName: Lotus Bloom
+Descrip: Drifting Lotus now attempt to Stun all enemies struck. Stun DC: 20 + Highest Ability Score Mod + Stunning Bonuses. This stun lasts 4 seconds.
+All: Tier 2: Grandmaster Strikes: Drifting Lotus
+SelectorName: Blossoming Peace
+Descrip: Orchid Blossom now attempt to Stun all enemies struck. Stun DC: 20 + Highest Ability Score Mod + Stunning Bonuses. This stun lasts 2 seconds.
+All: Tier 2: Grandmaster Strikes: Orchid Blossom
 
 AbilityName: The Delight of Chaos
 Descrip: +[1/2/3] Critical Hit Confirmation and Critical Hit Damage. Rank 3: +15% Chaos Absorption
@@ -2180,7 +2183,7 @@ Abbreviation: Shiradi
 Type: Destiny
 
 AbilityName: Fey Favor
-Descrip: You gain the Magical Training Feat. Each Core in this tree, including this one, grants the following:}}+1 Epic bonus to all Spell DCs}+15 Maximum Hit Points}+25 Spell Points}+5 Ranged Power}+5 Force and Universal Spell Power
+Descrip: You gain the Magical Training Feat. Each Core in this tree, including this one, grants the following:}}+1 Epic bonus to all Spell DCs}+15 Maximum Hit Points}+25 Spell Points}+5 Ranged Power}+5 Force, Chaos and Universal Spell Power
 Tier: 0
 
 AbilityName: Vision
@@ -2260,7 +2263,7 @@ SelectorName: Enemy of My Own
 Descrip: You gain the Favored Enemy: Fey feat.
 None: Feat: Favored Enemy: Fey
 SelectorName: Fey Form
-Descrip: You gain DR 10/Cold Iron, and +5 Force and Universal Spell Power, and you main hand weapon becomes an Implement.
+Descrip: You gain DR 10/Cold Iron, and +5 Force, Chaos, and Universal Spell Power, and you main hand weapon becomes an Implement.
 
 AbilityName: Healing Spring
 Descrip: Casts Greater Vigor on multiple targets. A positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +13 at cater level 39), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. (Cost: 1 Wild Empathy Charge, Cooldown: 30 seconds)}}Passive: +1 Wild Empathy Charge}}Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
@@ -2371,7 +2374,7 @@ Descrip: Ranged Weapons gain +1 Critical Damage Multiplier on rolls of 19-20.
 Tier: 5
 
 AbilityName: Feywild Attunement
-Descrip: Every 4 Wilderness Lore feats grant you +1% Dodge.}}You are always considered to be in Point Blank Shot range.}}You have Base Attack Bonus equal to your Character Level.}}+10 Force and Universal Spell Power.
+Descrip: Every 4 Wilderness Lore feats grant you +1% Dodge.}}You are always considered to be in Point Blank Shot range.}}You have Base Attack Bonus equal to your Character Level.}}+10 Force, Chaos, and Universal Spell Power.
 Tier: 5
 
 AbilityName: Epic Moment
@@ -2382,7 +2385,7 @@ Selector: Inexorable Advance, Mass Chaos
 SelectorName: Inexorable Advance
 Descrip: Epic Moment: For 30 seconds, you gain +30 Ranged Power, you can move while still gaining Archer's Focus stacks, and you do not take the normal 20% damage penalty while using Improved Precise Shot. You also gain 30% Action Boost bonus to Movement Speed for the duration. In addition, your Ranged attacks have a 30% chance to deal 3d100+180 Cold damage and 3d100+180 Light damage which scale with 200% Ranged Power. Finally, your Ranged attacks in this state have a 100% chance to proc Double Rainbow effects. (Cooldown: 5 minutes)
 SelectorName: Mass Chaos
-Descrip: Epic Moment: Enemies in an area are Confused with no save for 30 seconds, gain 1 stack of Fey Chaos, and apply a stack of Fey Chaos on hitting non-Player, non-Hireling targets while Confused. (Cooldown: 5 minutes)}}Fey Chaos: This creature takes 5% more damage from all sources for 10 seconds. This effect can stack up to 10 times, and all stacks expire after not gaining new ones for 10 seconds.
+Descrip: Epic Moment: Enemies in an area are Confused with no save for 30 seconds, gain 1 stack of Fey Chaos, and apply a stack of Fey Chaos on hitting non-Player, non-Hireling targets while Confused. (Cooldown: 5 minutes)}}Fey Chaos: This creature takes 5% more damage from all sources for 10 seconds. This effect can stack up to 10 times, and all stacks expire after not gaining new ones for 10 seconds. This effect works on Bosses and Raid Bosses.
 
 DestinyName: Unyielding Sentinel
 Abbreviation: Unyielding

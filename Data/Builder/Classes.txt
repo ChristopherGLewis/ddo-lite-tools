@@ -282,7 +282,7 @@ BAB: 0.75
 SkillPoints: 4
 Skills: Balance, Concentration, Diplomacy, Hide, Jump, Listen, Move Silently, Spot, Swim, Tumble
 GrantedFeats1: Martial Weapon: Handaxe, Exotic Weapon: Handwraps, Exotic Weapon: Kama, Exotic Weapon: Shuriken
-GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, Finishing Moves
+GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance
 GrantedFeats2: Armor Class Bonus, Evasion, Meditation
 GrantedFeats3: Still Mind, Fast Movement
 GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike
@@ -301,7 +301,7 @@ GrantedFeats16: Ki Strike: Adamantine, Slow Fall, Unarmed Strike
 GrantedFeats17: Timeless Body
 GrantedFeats18: Fast Movement, Grandmaster of Forms, Slow Fall
 GrantedFeats19: Empty Body
-GrantedFeats20: Armor Class Bonus, Perfect Self, Perfect Slow Fall, Shining Star, Unarmed Strike
+GrantedFeats20: Armor Class Bonus, Perfect Self, Perfect Slow Fall, Unarmed Strike
 BonusFeat: 1, 2, 6
 ClassFeat: 3
 Trees: Shintao, Henshin Mystic, Ninja Spy
@@ -553,7 +553,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Turn Undead,Religious Lore
+GrantedFeats1: Magical Training, Turn Undead, Religious Lore
 ClassFeat: 1, 2, 6
 Trees: Dark Apostate, Divine Disciple, Warpriest
 HealingSpell: 1
@@ -776,18 +776,18 @@ SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, In
 SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Dragon Disciple
-Initial: D, DD, DrgDspl, DRD
+Initial: D, DD, DrgDis, DRD
 Color: Yellow
 DisallowedClasses: Monk
 Alignment: Lawful Neutral, Lawful Good
 BAB: 0.75
 SkillPoints: 4
 Skills: Balance, Concentration, Diplomacy, Hide, Jump, Listen, Move Silently, Spellcraft, Swim, Tumble
-GrantedFeats1: Magical Training, Martial Weapon: Handaxe, Exotic Weapon: Handwraps, Exotic Weapon: Kama, Exotic Weapon: Shuriken
-GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, Finishing Moves
+GrantedFeats1: Martial Weapon: Handaxe, Exotic Weapon: Handwraps, Exotic Weapon: Kama, Exotic Weapon: Shuriken
+GrantedFeats1: Armor Class Bonus, Flurry of Blows, Unarmed Strike, Monk Stance, Magical Training
 GrantedFeats2: Armor Class Bonus, Evasion, Meditation
 GrantedFeats3: Still Mind, Fast Movement
-GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Martial Weapon: Battleaxe, Simple Weapons: Sickle
+GrantedFeats4: Ki Strike: Magic, Slow Fall, Unarmed Strike, Martial Weapon: Light Pick, Martial Weapon: Heavy Pick, Martial Weapon: Warhammer, Martial Weapon: Battleaxe
 GrantedFeats5: Armor Class Bonus, Purity of Body
 GrantedFeats6: Adept of Forms, Fast Movement, Slow Fall
 GrantedFeats7: Wholeness of Body
@@ -800,13 +800,13 @@ GrantedFeats15: Armor Class Bonus, Fast Movement
 GrantedFeats16: Ki Strike: Adamantine, Slow Fall, Unarmed Strike
 GrantedFeats17: Timeless Body
 GrantedFeats18: Fast Movement, Grandmaster of Forms, Slow Fall
-GrantedFeats20: Armor Class Bonus, Perfect Slow Fall, Shining Star, Unarmed Strike
+GrantedFeats20: Armor Class Bonus, Perfect Slow Fall, Unarmed Strike
 BonusFeat: 1, 2, 6
 ClassFeat: 3
 Trees: Dragon Disciple, Shintao, Ninja Spy
 MaxSpellLevel: 4
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
-SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 
+SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots2: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2

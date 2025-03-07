@@ -181,6 +181,7 @@ Note: Tier 0 prereqs are not required, but this requires the Dest/Enh.txt to be 
 
 Note: current Battle Trances - 
  - Beacon of Hope Tier 2: Might's Reward
+ - Dragon Disciple Tier 3: Clear Your Mind
  - Dragon Lord Tier 3: Might or Outburst
  - Falconry Tier 4: Deadly Instinct 
  - Harper Agent Tier 2: Know the Angles
