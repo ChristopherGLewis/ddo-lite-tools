@@ -461,19 +461,23 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Pierce Electric Resistance
@@ -631,19 +635,23 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Smiting
@@ -865,7 +873,7 @@ Tier: 4
 Cost: 2
 
 AbilityName: Curative Admixture II
-Descript: Choose one
+Descrip: Choose one
 Tier: 5
 SelectorName: Cure Light Wounds
 Descrip: Infuses a Cure/Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive/negative energy damage to nearby living allies and enemy undead.}}Metamagic: Empower, Empower Heal, Maximize, Intensify}Spell Point Cost: [4/3/2]}Cooldown [12/8/4] seconds}Primer Element: Gildleaf
@@ -1158,15 +1166,17 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Imbue Defender
@@ -1328,22 +1338,26 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose another Metamagic feat. Reduce the spell point cost of using that Metamagic.
+Descrip: Choose a Metamagic feat. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Efficient Metamagic 2
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose another Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 All: Tier 2: Efficient Metamagic
@@ -1352,12 +1366,16 @@ Parent: Tier 2: Efficient Metamagic
 Siblings: Tier 2: Efficient Metamagic 3
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Efficient Metamagic 3
@@ -1370,12 +1388,16 @@ Parent: Tier 2: Efficient Metamagic
 Siblings: Tier 2: Efficient Metamagic 2
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Spell Critical
@@ -2102,17 +2124,23 @@ Tier: 2
 Cost: 2
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
+SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
+All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Thorn or Bile II
@@ -2276,17 +2304,20 @@ Flags: SelectorOnly
 Parent: Tier 1: Spellvial Selection I
 
 AbilityName: Efficient Metamagic
-Descrip: Select a Metamagic Feat to enhance.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Select a Metamagic Feat to enhance.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Stone of the Savant
@@ -2314,7 +2345,7 @@ Flags: SelectorOnly
 Parent: Tier 2: Spellvial Selection II
 
 AbilityName: Efficient Metamagic II
-Descrip: Select a Metamagic Feat to enhance.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Select a Metamagic Feat to enhance.
 Tier: 3
 Ranks: 3
 All: Tier 2: Efficient Metamagic
@@ -2322,10 +2353,13 @@ Flags: SelectorOnly
 Parent: Tier 2: Efficient Metamagic
 Selector: Efficient Empower, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Holistic Ambition
@@ -3173,19 +3207,23 @@ Ranks: 3
 Cost: 2
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Smiting II
@@ -3227,12 +3265,16 @@ Flags: SelectorOnly
 Parent: Tier 2: Efficient Metamagic
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Smiting III
@@ -4244,19 +4286,23 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Pierce Acid Resistance
@@ -4288,12 +4334,16 @@ Flags: SelectorOnly
 Parent: Tier 2: Efficient Metamagic
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Spell Penetration
@@ -5824,19 +5874,23 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Pierce Fire Resistance
@@ -5868,12 +5922,16 @@ Flags: SelectorOnly
 Parent: Tier 2: Efficient Metamagic
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Spell Penetration
@@ -6972,7 +7030,7 @@ Selector: Kata of Dark Stars, Kata of Deep Magic
 SelectorName: Kata of Dark Stars
 Descrip: You use the power of the stars to set up  harmonic vibrations within your enemy that force them to dance for 12 seconds. (DC = 10 + STR/DEX/WIS modifier + Monk level + Stunning DC boosts)
 All: Feat: Path of Harmonious Balance
-SelectorName:  Dark Path: Kata of Deep Magic
+SelectorName: Kata of Deep Magic
 Descrip: When you use Kata of Wind, you grant you and other allies a 25% reduction in Spell Point Cost for 60 seconds.
 All: Feat: Path of Inevitable Dominion
 
@@ -8550,7 +8608,7 @@ AbilityName: Ninjutsu
 Descrip: +1 to Attack and Damage while Centered.
 Tier: 1
 Cost: 2
-None: Tier 1: Shintao Studies, Tier 1: Henshin Training
+None: Shintao Tier 1: Shintao Studies, Henshin Mystic Tier 1: Henshin Training
 
 AbilityName: Stealthy
 Descrip: +[1/2/3] Hide and Move Silently. +[20/35/50]% movement speed while sneaking. Rank 3: While centered and Sneaking, your passive ki regeneration is increased by 1.
@@ -8646,12 +8704,14 @@ AbilityName: Shadow Arts
 Descrip: Upgrade the Light or Dark Path Ability
 Tier: 4
 Cost: 2
-All: Tier 3: Shadow Furry
+All: Tier 3: Shadow Arts
 Selector: Cloak of Shadows, Poison Exploit
 SelectorName: Cloak of Shadows
 Descrip: After using Flash Bang, you become Invisible for 3 seconds which is not broken by actions.
+All: Feat: Path of Harmonious Balance
 SelectorName: Poison Exploit
 Descrip: On a failed saving throw, your Shadow Flurry purges an enemy of Ninja Poison, dealing 1d20 + 20 poison damage per stack of Ninja Poison removed. Scales with higher of Melee/Ranged Power.
+All: Feat: Path of Inevitable Dominion
 
 AbilityName: Sneak Attack Training
 Descrip: Grants +1 Sneak Attack die and +1 to hit when performing Sneak Attacks.
@@ -8925,19 +8985,23 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Necrotic Bolt
@@ -10098,22 +10162,26 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 None: Tier 2: Efficient Metamagic II: Efficient Empower
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 None: Tier 2: Efficient Metamagic II: Efficient Enlarge
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 None: Tier 2: Efficient Metamagic II: Efficient Maximize
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 None: Tier 2: Efficient Metamagic II: Efficient Quicken
 
@@ -10125,15 +10193,19 @@ Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 None: Tier 2: Efficient Metamagic: Efficient Empower
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 None: Tier 2: Efficient Metamagic: Efficient Enlarge
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 None: Tier 2: Efficient Metamagic: Efficient Maximize
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 None: Tier 2: Efficient Metamagic: Efficient Quicken
 
@@ -10887,11 +10959,15 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Spell-Like Ability I
-Descrip: Choose either Cure Light Wounds or Sonic Blast:}{-Cure Light Wounds: Positive energy heals an ally for 1d6+2 plus 1 per caster level (Maximum caster level 5) hit points, or deals the same amount of damage to an Undead creature. A successful Will save takes half damage (undead only). (Cost: [6/5/4] SP, Cooldown: [12/8/4] seconds)}{-Sonic Blast: Blasts an enemy with loud high-pitched sounds, dealing 1d6+1 Sonic damage per caster level (Maximum sonic damage 8d6+8). The target must make a successful Will save to avoid being dazed for 2 to 6 seconds, or until they take damage. This spell has double range. (Cost: [6/5/4] SP, Cooldown: [12/8/4] seconds) Note: Sonic Blast is a single target spell but it continues to destroy breakables in an AoE.
+Descrip: Choose one of the following
 Tier: 1
 Ranks: 3
 Flags: SelectorOnly
 Selector: Cure Light Wounds, Sonic Blast
+SelectorName: Cure Light Wounds
+Descrip:  Positive energy heals an ally for 1d6+2 plus 1 per caster level (Maximum caster level 5) hit points, or deals the same amount of damage to an Undead creature. A successful Will save takes half damage (undead only).}}(Cost: [6/5/4] SP}Cooldown: [12/8/4] seconds
+SelectorName: Sonic Blast
+Descrip: Blasts an enemy with loud high-pitched sounds, dealing 1d6+1 Sonic damage per caster level (Maximum sonic damage 8d6+8). The target must make a successful Will save to avoid being dazed for 2 to 6 seconds, or until they take damage. This spell has double range.}}Cost: [6/5/4] SP}Cooldown: [12/8/4] seconds}}Note: Sonic Blast is a single target spell but it continues to destroy breakables in an AoE.
 
 AbilityName: Charlatan
 Descrip: +[1/2/3] Concentration, Haggle, and Perform
@@ -10904,18 +10980,26 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Flicker or Willful
-Descrip: Choose either Flicker or Willful to protect you:}{-Flicker: When you are damaged you have a 5% chance of turning invisible for [2/4/6] seconds.}{-Willful: +[1/2/3] Will Saving Throws.
+Descrip: Choose one of the following:
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
 Selector: Flicker, Willful
+SelectorName: Flicker
+Descrip: When you are damaged you have a 5% chance of turning invisible for [2/4/6] seconds.
+SelectorName: Willful
+Descrip: +[1/2/3] Will Saving Throws.
 
 AbilityName: Spell-Like Ability II
-Descrip: Spell-Like Ability: Choose either Reverberate or Suggestion:}{-Reverberate: Wrack the target's body with internal sonic booms, dealing 1 to 10 sonic damage +1 per three caster levels (up to caster level 18) every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to three times, increasing the damage with each stack. (Cost: [20/15/10], Cooldown: 9 seconds)}{-Suggestion: Influences the actions of an enemy, allowing you to suggest it to fight as your ally for 30+2 seconds per caster level. A successful will save negates this effect.}{ The creature will be unable to be attacked by Player Characters for the duration of the spell. Only creatures that know at least one language can be affected by Suggestion. Examples of creatures that know no languages are all Oozes, all Animals, and all non-living Constructs.}{ Creatures affected in this way will attack other hostile creatures in the immediate vicinity. The charmed creature will remain stationary if there are no enemies nearby, and will not follow the caster around. Unlike the Charm Monster spell, Suggestion does not allow periodic additional saves. Because of this, the creature will remain charmed until the duration expires or the caster leaves the instance. (Cost: [13/11/9], Cooldown: [20/15/10] seconds)
+Descrip: Spell-Like Ability: Choose one of the following
 Tier: 2
 Ranks: 3
 Flags: SelectorOnly
 Selector: Reverberate, Suggestion
+SelectorName: Reverberate
+Descrip: Wrack the target's body with internal sonic booms, dealing 1 to 10 sonic damage +1 per three caster levels (up to caster level 18) every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to three times, increasing the damage with each stack.}}Cost: [20/15/10]}Cooldown: 9 seconds
+SelectorName: Suggestion
+Descrip: Influences the actions of an enemy, allowing you to suggest it to fight as your ally for 30+2 seconds per caster level. A successful will save negates this effect.}{The creature will be unable to be attacked by Player Characters for the duration of the spell. Only creatures that know at least one language can be affected by Suggestion. Examples of creatures that know no languages are all Oozes, all Animals, and all non-living Constructs.}{Creatures affected in this way will attack other hostile creatures in the immediate vicinity. The charmed creature will remain stationary if there are no enemies nearby, and will not follow the caster around. Unlike the Charm Monster spell, Suggestion does not allow periodic additional saves. Because of this, the creature will remain charmed until the duration expires or the caster leaves the instance.}}Cost: [13/11/9]}Cooldown: [20/15/10] seconds
 
 AbilityName: Wand and Scroll Mastery
 Descrip: +[25/50/75]% to the effectiveness of your wands, scrolls, and other items that cast spells, and +[1/2/3] to the DCs of your offensive wands. Taking Wand and Scroll Mastery in one enhancement tree will block its availability in other enhancement trees.
@@ -11219,15 +11303,17 @@ Flags: SelectorOnly
 Selector: Niac's Biting Cold, Reverberate
 
 AbilityName: Efficient Metamagic
-Descrip: Enhance a Metamagic by reducing its cost.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
+Descrip: Enhance a Metamagic by reducing its cost.
 Tier: 2
 Cost: 2
 Ranks: 3
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Maximize
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 
 AbilityName: Stormsong II
@@ -11254,7 +11340,7 @@ Flags: SelectorOnly
 Selector: Shout, Snowball Swarm
 
 AbilityName: Efficient Metamagic II
-Descrip: Enhance a Metamagic by reducing its cost.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
+Descrip: Enhance a Metamagic by reducing its cost.
 Tier: 3
 Cost: 2
 Ranks: 3
@@ -13549,19 +13635,23 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}{-Efficient Empower: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.}{-Efficient Enlarge: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.}{-Efficient Maximize: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.}{-Efficient Quicken: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
+Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
+Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
 SelectorName: Efficient Enlarge
+Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
 SelectorName: Efficient Maximize
+Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
 SelectorName: Efficient Quicken
+Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
 
 AbilityName: Pierce Cold Resistance

@@ -955,7 +955,7 @@ Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's 
 SpellName: Lesser Draconic Burst: Cold
 Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Cold damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
 
-SpellName: Lesser Draconic Burst: Electric
+SpellName: Lesser Draconic Burst: Electricity
 Descrip: Centered Ki Breath Attack: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 Electric damage per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half.
 
 SpellName: Lesser Draconic Burst: Fire

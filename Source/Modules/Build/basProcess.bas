@@ -285,8 +285,12 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                     .Selectors = db.Feat(lngParent).Selectors
                                     ReDim .Selector(1 To .Selectors)
                                     For lngSelector = 1 To .Selectors
+                                         'Add selector child attributes
                                         .Selector(lngSelector).SelectorName = db.Feat(lngParent).Selector(lngSelector).SelectorName
+                                        .Selector(lngSelector).Descrip = db.Feat(lngParent).Selector(lngSelector).Descrip
                                         .Selector(lngSelector).Req = db.Feat(lngParent).Selector(lngSelector).Req
+                                        'TODO this should be the COST of the selector, not the root.  This would
+                                        'allow us to start have selectors have different costs
                                         .Selector(lngSelector).Cost = .Cost
                                     Next
                                 End If
@@ -307,8 +311,13 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                     If .Selectors > 0 Then
                                         ReDim .Selector(1 To .Selectors)
                                         For lngSelector = 1 To .Selectors
+                                            'Add selector child attributes
                                             .Selector(lngSelector).SelectorName = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).SelectorName
-                                            .Selector(lngSelector).Req = .Req
+                                            .Selector(lngSelector).Descrip = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).Descrip
+                                            '.Selector(lngSelector).Req = .Req
+                                            .Selector(lngSelector).Req = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).Req
+                                            'TODO this should be the COST of the selector, not the root.  This would
+                                            'allow us to start have selectors have different costs
                                             .Selector(lngSelector).Cost = .Cost
                                         Next
                                     End If

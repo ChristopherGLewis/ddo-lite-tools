@@ -1660,7 +1660,7 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pt
     
     'This function loads SelectorName: and a couple of lines after.
     'SelectorName: should be used whenever you want all/none per selector
-    'vs all/non per all
+    'vs all/none per all
     CleanText pstrRaw
     strLine = Split(pstrRaw, vbNewLine)
     strSelector = Trim$(strLine(0))
@@ -1682,6 +1682,8 @@ Private Sub LoadSelector(ptypAbility As AbilityType, ByVal pstrRaw As String, pt
                         ' 20200908
                         .Descrip = strItem
                     Case "cost"
+                        ' This allows for adding different costs per selector, but
+                        ' none of the cost calculators process this.
                         .Cost = lngValue
                         If .Cost < 1 Or .Cost > 2 Then LogError
                     Case "all", "one", "none"

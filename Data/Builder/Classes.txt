@@ -810,10 +810,10 @@ SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots2: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2
-SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poision, Jump, Longstrider, Obscuring Mist, Pass Without Trace, Resist Energy, Shield
+SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poison, Jump, Longstrider, Obscuring Mist, Pass Without Trace, Resist Energy, Shield
 SpellList2: Acolyte's Breath: Black, Acolyte's Breath: Blue, Acolyte's Breath: Green, Acolyte's Breath: Red, Acolyte's Breath: White, Blur, Elemental Weapons, Gust of Wind, Protection from Energy, Water Breathing
-SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electricity, Draconic Burst: Fire, Draconic Burst: Poision, Fear, Greater Elemental Weapons, Haste, Protection from Elements
-SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devistation: Acid, Draconic Devistation: Cold, Draconic Devistation: Electricity, Draconic Devistation: Fire, Draconic Devistation: Poision, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
+SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electric, Draconic Burst: Fire, Draconic Burst: Poison, Fear, Greater Elemental Weapons, Haste, Protection from Elements
+SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devastation: Black, Draconic Devastation: Blue, Draconic Devastation: Green, Draconic Devastation: Red, Draconic Devastation: White, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
 
 
 

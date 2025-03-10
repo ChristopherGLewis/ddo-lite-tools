@@ -4,7 +4,7 @@ Columns: 4
 Width: Level	99,999,999	9,999,999	9,999,999
 Rows: 20
 Group: 4
-Header: Level	Champion	Hero	Legend
+Header: Level	1st Life	5/6/7th	8th+
 Row: 1 	0	0	0
 Row: 2	4000	6000	8000
 Row: 3	16000	24000	32000

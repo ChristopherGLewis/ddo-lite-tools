@@ -1648,6 +1648,11 @@ Private Sub ShowAbilities()
             End If
         Next
     End If
+    'TODO Fix issues w/ add/remove class not clearing build???
+    If (UBound(build.Tree) < mlngBuildTree) Then
+    mlngBuildTree = 1
+    End If
+    
     GetSpentInTree db.Tree(mlngTree), build.Tree(mlngBuildTree), lngSpent, lngTotal
     For i = 1 To build.Tree(mlngBuildTree).Abilities
         If build.Tree(mlngBuildTree).Ability(i).Ability = 0 Then
@@ -2290,26 +2295,35 @@ Private Sub ShowDetails(ByVal plngTier As Long, ByVal plngAbility As Long, ByVal
     Dim lngProg As Long
     Dim i As Long
     
+    'Because of some magic in the usrDetails control, we can have only one (Wiki) link in
+    'the details.
+    
     ClearDetails False
     With db.Tree(mlngTree).Tier(plngTier).Ability(plngAbility)
         ' Caption
         Me.lblDetails.Caption = "Tier " & plngTier & ": " & .AbilityName
         ' Description
-        If Len(.Descrip) Then Me.usrDetails.AddDescrip .Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
+        If Len(.Descrip) Then
+            'Add the description to usrDetails.  the WIKI field is going to get screwed
+            'here if we have a wiki on the selector, so always take it off
+            Me.usrDetails.AddDescrip .Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
+        End If
         'Add in any selector .Descrip
         If plngSelector <> 0 Then
-       'Check for Selector Desc
-        If plngSelector > 0 Then
-            If Len(.Selector(plngSelector).Descrip) Then
-                Me.usrDetails.AddDescrip .Selector(plngSelector).SelectorName, ""
-                'See what wiki to use
-                If Len(.Selector(plngSelector).Wiki) Then
-                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(.Selector(plngSelector).Wiki) & TierLink(plngTier)
-                Else
-                    Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
+            'Check for Selector Desc
+            If plngSelector > 0 Then
+                If Len(.Selector(plngSelector).Descrip) Then
+                    Me.usrDetails.AddDescrip .Selector(plngSelector).SelectorName, ""
+                    'See what wiki to use
+                    If Len(.Selector(plngSelector).Wiki) Then
+                        'Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(.Selector(plngSelector).Wiki) & TierLink(plngTier)
+                        Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, ""
+                    Else
+                        'Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, MakeWiki(db.Tree(mlngTree).Wiki) & TierLink(plngTier)
+                        Me.usrDetails.AddDescrip .Selector(plngSelector).Descrip, ""
+                    End If
                 End If
             End If
-        End If
         End If
         
 '        ' Class

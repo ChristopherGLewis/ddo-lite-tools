@@ -33,8 +33,8 @@ Begin VB.UserControl userDetails
       ForeColor       =   &H80000008&
       Height          =   2772
       Left            =   0
-      ScaleHeight     =   2772
-      ScaleWidth      =   2292
+      ScaleHeight     =   2775
+      ScaleWidth      =   2295
       TabIndex        =   0
       Top             =   0
       Width           =   2292
@@ -103,7 +103,7 @@ Private Sub UserControl_Resize()
     DrawText
 End Sub
 
-Private Sub lblLink_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+Private Sub lblLink_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
     xp.SetMouseCursor mcHand
 End Sub
 
@@ -117,8 +117,8 @@ End Sub
 ' ************* METHODS *************
 
 
-Public Property Get hWnd() As Long
-    hWnd = UserControl.hWnd
+Public Property Get hwnd() As Long
+    hwnd = UserControl.hwnd
 End Property
 
 Public Sub AddText(pstrText As String)
@@ -149,6 +149,7 @@ Public Sub AddDescrip(ByVal pstrDescrip As String, pstrLink As String)
         lngPos = InStr(strLine(i), "{")
         If lngPos Then strLine(i) = " " & Mid$(strLine(i), lngPos + 1, 1) & " " & Trim$(Mid$(strLine(i), lngPos + 2))
         If Len(pstrLink) And i = lngLines Then
+            'Add wiki link
             strLine(i) = strLine(i) & " (Wiki)"
             mlngLinkIndex = mlngDetails
         End If
@@ -257,6 +258,8 @@ Private Sub DrawText()
             If mtypLine(i).HasError Then .picClient.ForeColor = cfg.GetColor(cgeControls, cveTextError)
             UserControl.picClient.Print mtypLine(i).Text;
             If mtypLine(i).HasError Then .picClient.ForeColor = cfg.GetColor(cgeControls, cveText)
+            'Move the WIKI link lable ON TOP OF the '(Wiki)' text in the desc.
+            'This means that we can have only one link...
             If i = mlngWikiLine Then
                 .lblLink.Move .picClient.CurrentX - .picClient.TextWidth("Wiki)"), .picClient.CurrentY
                 .lblLink.Visible = True

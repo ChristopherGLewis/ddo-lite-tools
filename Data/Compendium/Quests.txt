@@ -3562,7 +3562,7 @@ QuestName: Secrets of the Red Wizards
 Wiki: Secrets of the Red Wizards
 Pack: Magic of Myth Drannor
 Patron: Cormanthor Elves
-Favor: 5
+Favor: 6
 Level: 13
 Epic: 35
 
@@ -3594,7 +3594,7 @@ QuestName: The Zulkir's Plan
 Wiki: The Zulkir's Plan
 Pack: Magic of Myth Drannor
 Patron: Cormanthor Elves
-Favor: 7
+Favor: 6
 Level: 13
 Epic: 35
 
@@ -3628,4 +3628,36 @@ Pack: Magic of Myth Drannor
 Patron: Cormanthor Elves
 Favor: 5
 Level: 13
+Epic: 35
+
+QuestName: Rats in a Cage
+Wiki: Rats in a Cage
+Pack: Fall of the Night Brigade
+Patron: The Harpers
+Favor: 3
+Level: 4
+Epic: 34
+
+QuestName: The Wizard's Labyrinth
+Wiki: The Wizard's Labyrinth
+Pack: Fall of the Night Brigade
+Patron: The Harpers
+Favor: 3
+Level: 4
+Epic: 34
+
+QuestName: The Knife's Edge
+Wiki: The Knife's Edge
+Pack: Fall of the Night Brigade
+Patron: The Harpers
+Favor: 3
+Level: 4
+Epic: 34
+
+QuestName: The Darkness and the Light
+Wiki: The Darkness and the Light
+Pack: Fall of the Night Brigade
+Patron: The Harpers
+Favor: 4
+Level: 4
 Epic: 35

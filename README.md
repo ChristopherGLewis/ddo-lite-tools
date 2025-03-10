@@ -13,6 +13,23 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.9.0 - Updates for U72 - Balance the Scales
+Changes:
+Added Dragon Disciple Monk archetype
+Updated Monk Feats and Enhancements
+Updated Destinies (GMOF) to support above changes
+Character Builder
+- Added Descrip: field processing to Enhancements with secondary selectors
+- Updated many secondary selectors to use the Descrip: field
+- Fixed abilities with parent flag not copying Desc and Req from parent 
+- Resizes Enhancements screen
+- Minor spelling fixes to Feats/Enhancements/Spells
+- Added Color Spray for Bards
+Compendium
+- Added U71 quests
+- Updated XP headers
+
+As always, thanks to Yhelm
 
 ### 4.8.0 - Updates for U69
 Changes:
