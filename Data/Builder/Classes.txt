@@ -433,7 +433,7 @@ SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic
 SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
 SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
-SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
+SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Rend the Soul, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Warlock
 Initial: W, Wa, Warlock, Wlk
@@ -504,7 +504,7 @@ SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic
 SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
 SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
-SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
+SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Rend the Soul, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Stormsinger
 Initial: S, SS, Storm, Stm
@@ -773,7 +773,7 @@ SpellList5: Ball Lightning, Break Enchantment, Cloudkill, Cone of Cold, Cyclonic
 SpellList6: Acid Fog, Chain Lightning, Circle of Death, Create Undead, Disintegrate, Flesh to Stone, Globe of Invulnerability, Greater Dispel Magic, Greater Heroism, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Repair Moderate Damage, Mass Suggestion, Necrotic Ray, Otiluke's Freezing Sphere, Prismatic Strike, Reconstruct, Shadow Walk, Stone to Flesh, Summon Monster VI, Symbol of Fear, Symbol of Persuasion, Tenser's Transformation, True Seeing, Undeath to Death
 SpellList7: Banishment, Control Undead, Delayed Blast Fireball, Finger of Death, Greater Teleport, Mass Hold Person, Mass Invisibility, Mass Protection from Elements, Mass Repair Serious Damage, Otto's Sphere of Dancing, Power Word: Blind, Prismatic Spray, Summon Monster VII, Symbol of Stunning, Symbol of Weakness, Waves of Exhaustion
 SpellList8: Arcane Tempest, Black Dragon Bolt, Greater Shout, Horrid Wilting, Incendiary Cloud, Mass Charm Monster, Mass Repair Critical Damage, Otto's Irresistible Dance, Polar Ray, Power Word: Stun, Summon Monster VIII, Sunburst, Symbol of Death, Trap the Soul
-SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Summon Monster IX, Thunderstroke, Wail of the Banshee
+SpellList9: Acid Well, Dominate Monster, Energy Drain, Iceberg, Mass Hold Monster, Meteor Swarm, Mordenkainen's Disjunction, Power Word: Kill, Rend the Soul, Summon Monster IX, Thunderstroke, Wail of the Banshee
 
 ClassName: Dragon Disciple
 Initial: D, DD, DrgDis, DRD
