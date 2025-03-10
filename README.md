@@ -27,6 +27,7 @@ Character Builder
 - Added Color Spray for Bards
 Compendium
 - Added U71 quests
+- Fixed some Myth favors
 - Updated XP headers
 
 As always, thanks to Yhelm
