@@ -18,14 +18,19 @@ Changes:
 Added Dragon Disciple Monk archetype
 Updated Monk Feats and Enhancements
 Updated Destinies (GMOF) to support above changes
-Character Builder
+
+#### Character Builder
 - Added Descrip: field processing to Enhancements with secondary selectors
 - Updated many secondary selectors to use the Descrip: field
 - Fixed abilities with parent flag not copying Desc and Req from parent 
 - Resizes Enhancements screen
 - Minor spelling fixes to Feats/Enhancements/Spells
 - Added Color Spray for Bards
-Compendium
+- Added Rend the Soul to appropriate classes
+- Fixed BAB above 20
+
+#### Compendium
+- Added Dragon Disciple PL
 - Added U71 quests
 - Fixed some Myth favors
 - Updated XP headers

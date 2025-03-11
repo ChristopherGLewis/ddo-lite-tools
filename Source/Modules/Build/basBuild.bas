@@ -372,7 +372,7 @@ Public Sub CalculateBAB()
     For i = 21 To MAX_LEVEL
         If GetBAB(enBAB, i) Then lngBAB = lngBAB + 1
         'Cap at 25 (U56)
-        If lngBAB < 25 Then lngBAB = 25
+        If lngBAB > 25 Then lngBAB = 25
         build.BAB(i) = lngBAB
     Next
 End Sub
