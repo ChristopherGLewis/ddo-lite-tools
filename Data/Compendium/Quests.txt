@@ -1413,24 +1413,6 @@ Favor: 4
 Level: 10
 Map: Sorrowdusk Isle
 
-QuestName: (Old) Temple of Elemental Evil Part 1
-Wiki: Temple of Elemental Evil Part One
-Pack: Temple of Elemental Evil
-Patron: The Gatekeepers
-Favor: 5
-Level: 7
-Epic: 30
-Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
-
-QuestName: (Old) Temple of Elemental Evil Part 2
-Wiki: Temple of Elemental Evil Part Two
-Pack: Temple of Elemental Evil
-Patron: The Gatekeepers
-Favor: 5
-Level: 7
-Epic: 30
-Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
-
 QuestName: ToEE: First Level and Earth Temple
 Wiki: ToEE: First Level and Earth Temple
 Pack: Temple of Elemental Evil
@@ -3661,6 +3643,16 @@ Patron: The Harpers
 Favor: 4
 Level: 4
 Epic: 35
+
+QuestName: Threats Old and New
+Wiki: Threats Old and New
+Pack: Magic of Myth Drannor
+Patron: Cormanthor Elves
+Favor: 9
+Level: 35
+Epic: 35
+Style: Raid
+
 
 QuestName: Den of Vipers
 Patron: The Free Agents

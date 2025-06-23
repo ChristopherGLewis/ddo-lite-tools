@@ -32,6 +32,7 @@ Dark Gifts Feat
 - Added U72 & U73 quests and raids
 - Fixed sorting on Pack
 - Reordered display of iconics to alphabetical
+- Removed old TOEE quests since they no longer grant favor
 
 ### 4.9.0 - Updates for U72 - Balance the Scales
 Changes:
