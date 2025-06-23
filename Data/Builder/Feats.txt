@@ -410,6 +410,7 @@ Group: Heroic, Spellcasting, Misc
 Descrip: Grants +4 to Concentration skill checks when casting spells.
 CanCastSpell: 1
 RaceBonus: Human, Purple Dragon Knight
+ClassBonus: Dragon Disciple
 
 FeatName: Combat Expertise
 Group: Heroic, Melee
@@ -624,7 +625,7 @@ FeatName: Discipline
 Group: Heroic, Misc, Defense
 Descrip: +2 bonus to Concentration skill checks, and +1 to Will saves.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk, Dragon Disciple
+ClassBonus: Monk
 
 FeatName: Disease Immunity
 Group: Heroic, Misc
@@ -666,7 +667,7 @@ Group: Heroic, Defense
 Descrip: +3% Dodge.
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist, Dragon Disciple
 
 FeatName: Domain
 Group: Heroic, Misc
@@ -1324,7 +1325,7 @@ FeatName: Great Fortitude
 Group: Heroic, Defense
 Descrip: +2 bonus to all Fortitude saving throws.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk, Dragon Disciple
+ClassBonus: Monk
 
 FeatName: Greater Pact Attunement
 SortName: Pact Attunement2
@@ -1816,7 +1817,7 @@ FeatName: Iron Will
 Group: Heroic, Defense
 Descrip: +2 bonus to Will Saves.
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk, Dragon Disciple
+ClassBonus: Monk
 
 FeatName: Ki Strike
 Group: Heroic, Misc
@@ -2067,6 +2068,7 @@ Descrip: Move at full speed while casting spells.
 Stat: Dexterity 13
 All: Combat Casting
 CanCastSpell: 2
+ClassBonus: Dragon Disciple
 
 FeatName: Mobility
 Group: Heroic, Defense
@@ -2074,7 +2076,7 @@ Descrip: +2% dodge, +2 MDB to armor and tower shields.
 Stat: Dexterity 13
 All: Dodge
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist, Dragon Disciple
 
 FeatName: Monk Stance
 Group: Heroic, Misc
@@ -2145,24 +2147,43 @@ Class: Warlock 1, Acolyte 1
 Flags: ClassOnly
 ClassOnlyClass: Warlock
 ClassOnlyLevel: 1
-Selector: Fey, Fiend, Great Old One, Celestial, Abyss, Carceri Storm
+Selector: Fey, Fiend, Fiend (Acolyte), Great Old One, Celestial, Abyss, Carceri Storm, Dark Powers
 SelectorName: Fey
 Descrip: Sonic Damage}Targets Reflex saves}2: Obscuring Mist}5: Blindness}6: Daze Monster}9: Slow}14: Greater Dispel Magic}15: Abundant Step}17: Otto's Sphere of Dancing}19: Otto's Irresistible Dance
+NotRace: Dark Bargainer
+NotClass: Acolyte
 SelectorName: Fiend
 Descrip: Fire Damage}Targets Fortitude saves}2: Command}5: Rage}6: +2 all saves}9: Fire Shield}14: Binding Chain}15: Hurl through Hell}17: Power Word: Blind}19: Howl of Terror
 Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+NotRace: Dark Bargainer
+NotClass: Acolyte
+SelectorName: Fiend (Acolyte)
+Descrip: Fire Damage}Targets Fortitude saves}6: Fiendskin: +1 1 Profane Bonus to Fire Resistance Per Acolyte Level
+Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+ClassOnly: Acolyte
 SelectorName: Great Old One
 Descrip: Acid Damage}Targets Will saves}2: Entangle}5: Knock}6: +5 MRR, +25% Fort}9: Phantasmal Killer}14: Dominate Person}15: Charm Monster}17: Mass Suggestion}19: Power Word: Kill
 Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+NotClass: Monk
+NotRace: Dark Bargainer
+NotClass: Acolyte
 SelectorName: Celestial
 Descrip: Electric Damage}Targets Will saves}2: Bless}5: Soundburst}6: Celestial Attunement (+5 PRR and +1 to all Saves)}9: Magic Circle Against Evil}14: Prayer}15: Ameliorate (Obliterate undead)}17: Holy Aura}19: Freedom of Movement
 Alignment: Lawful Good, Lawful Neutral, Neutral Good, True Neutral
+NotRace: Dark Bargainer
+NotClass: Acolyte
 SelectorName: Abyss
 Descrip: Negative Damage}Targets Fortitude saves}2: Mage Armor}5: Spawn Screen}6: Unhallowed Flesh:(+5 PRR and +5 MRR) }9: Halt Undead}14: Death Aura}15: Channel the Abyss (Undead benefits)}17: Symbol of Pain}19: Rend the Soul
 Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+NotRace: Dark Bargainer
+NotClass: Acolyte
 SelectorName: Carceri Storm
 Descrip: Cold Damage}Targets Reflex saves}2: Merfolk's Blessing}5: Gust of Wind}6: Frozen Footsteps (+10% Cold Absorption)}9: Sleet Storm}14: Ice Storm}15: Absolute Zero (Lock single enemy in ice)}17: Mass Suggestion}19: Greater Creeping Cold
-NotClass: Monk
+NotRace: Dark Bargainer
+NotClass: Acolyte
+SelectorName: Dark Powers
+Descrip: Evil Damage}Targets Will saves}2: Dread Mist}5: Leser Death Aura}6: Mist Favored (Your Dread Mists' damage changes to 1d3 per Caster Level. This increases to 1d4 at Character Level 12.)}9: Negative Energy Burst}14: Death Aura}15: 	Call on the Mists(Enemies in a small area who are currently affected by Dread Mist must make a saving throw (DC 15 + highest of INT or CHA mod + Necromancy Bonuses) or die, being consumed by the mists. 20 Spell Points, 25 second cooldown.)}17:  Dust to Dust: (This is Disintegrate. But Necromancy-schooled.)}19: Greater Death Aura
+RaceOnly: Dark Bargainer
 
 FeatName: Pact Attunement
 Group: Heroic, Misc
@@ -2334,7 +2355,7 @@ Group: Heroic, Melee
 Descrip: Combat Stance: Gain up to +5 damage at the cost of up to -5 to-hit penalty, both capped by your BAB. Two handed weapons gain double the damage bonus.
 Stat: Strength 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 
 FeatName: Power Critical
 Group: Heroic, Melee
@@ -2356,7 +2377,7 @@ Descrip: Combat Stance: Bypass 25% fortification and gain +5% chance to-hit.
 BAB: 1
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk, Alchemist
+ClassBonus: Fighter, Dragon Lord, Monk, Alchemist, Dragon Disciple
 
 FeatName: Purity of Body
 Group: Heroic, Misc
@@ -2587,7 +2608,7 @@ Descrip: Chance to throw an additional shuriken per attack equal to your dexteri
 Stat: Dexterity 13
 One: Exotic Weapon: Shuriken, Half-Elf Dilettante: Monk
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Monk, Dragon Disciple
+ClassBonus: Monk
 
 FeatName: Simple Thrown Expertise
 Group: Heroic, Alchemy
@@ -2635,7 +2656,7 @@ Descrip: While single weapon fighting, gain a Combat Style bonus of +20% attack 
 Flags: SkillTome
 Skill: Balance 2
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Artificer, Fighter, Monk
+ClassBonus: Artificer, Fighter, Monk, Dragon Disciple
 None: Two Handed Fighting, Two Weapon Fighting
 
 FeatName: Single Weapon Specialty
@@ -2727,13 +2748,25 @@ WikiName: Spiked Chain Attack
 
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
-ClassBonus: Wizard
+Descrip: +1 to the DCs of your spells from a chosen school.}}{Note:Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.
+ClassBonus: Wizard, Dragon Disciple
 RaceBonus: Human, Purple Dragon Knight
 CanCastSpell: 1
-Selector: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
-SelectorName: Divination
-Hide: True
+Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
+SelectorName: Abjuration
+ClassBonus: Wizard
+SelectorName: Conjuration
+ClassBonus: Wizard, Dragon Disciple
+SelectorName: Enchantment
+ClassBonus: Wizard
+SelectorName: Evocation
+ClassBonus: Wizard, Dragon Disciple
+SelectorName: Illusion
+ClassBonus: Wizard
+SelectorName: Necromancy
+ClassBonus: Wizard
+SelectorName: Transmutation
+ClassBonus: Wizard, Dragon Disciple
 
 FeatName: Spell Penetration
 Group: Heroic, Spellcasting
@@ -2748,19 +2781,18 @@ All: Epic Spell Focus
 Level: 31
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 SelectorName: Abjuration
-None: Epic Spell Focus: Abjuration
+One: Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
 SelectorName: Conjuration
-None: Epic Spell Focus: Conjuration
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
 SelectorName: Enchantment
-None: Epic Spell Focus: Enchantment
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
 SelectorName: Evocation
-None: Epic Spell Focus: Evocation
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
 SelectorName: Illusion
-None: Epic Spell Focus: Illusion
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
 SelectorName: Necromancy
-None: Epic Spell Focus: Necromancy
-SelectorName: Transmutation
-None: Epic Spell Focus: Transmutation
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Transmutation
+One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy
 
 FeatName: Spirit Blades
 Group: Destiny, Spellcasting
@@ -2773,8 +2805,7 @@ Group: Heroic, Melee, Defense
 Descrip: +2% Dodge. You no longer incur to-hit penalties for melee while moving.
 BAB: 4
 All: Dodge, Mobility
-ClassBonus: Fighter, Dragon Lord, Monk
-ClassBonusLevel: Monk 6
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 
 FeatName: Stealthy
 Group: Heroic, Misc
@@ -2965,7 +2996,7 @@ Group: Heroic, Melee
 Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Bastard Sword or Dwarven axe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
 Stat: Strength 15
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 None: Single Weapon Fighting
 
 FeatName: Two Handed Specialty
@@ -2988,7 +3019,7 @@ Group: Heroic, Melee
 Descrip: While Two Weapon Fighting, you now have 40% chance to proc offhand attacks (normally 20%) and your to-hit penalty improves to -4/-4 (normally -6/-10). If wielding a light weapon in your off hand, these penalties reduce to -2/-2 (normally -4/-8).
 Stat: Dexterity 15
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 None: Single Weapon Fighting
 
 FeatName: Two Weapon Specialty
@@ -3008,7 +3039,7 @@ All: Greater Pact Attunement
 
 FeatName: Unarmed Strike
 Group: Heroic, Misc
-Descrip: While centered, your fists and feet are lethal weapons. Your attack with handwraps is increased by 1 every time you acquire this feat.
+Descrip: While centered, your fists and feet are lethal weapons. Each stack grants +5 Melee Power while your character is Centered and equipped with Handwraps.
 Class: Monk 1, Sacred Fist 1, Dragon Disciple 1
 Flags: Unselectable
 
@@ -3055,7 +3086,7 @@ Descrip: Use your Dexterity modifier instead of Strength for to-hit with light w
 BAB: 1
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Fighter, Dragon Lord, Monk
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 
 FeatName: Weapon Focus
 Group: Heroic, Melee, Range
@@ -3091,7 +3122,7 @@ Descrip: You treat longswords as if they were monk weapons, remaining centered w
 Class: Monk 1, Dragon Disciple 1
 All: Weapon Focus: Slashing
 One: Martial Weapon: Longsword, Follower of: Sovereign Host, Half-Elf Dilettante: Fighter
-ClassBonus: Fighter, Dragon Lord, Monk
+ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
 
 FeatName: Whirlwind Attack
 Group: Heroic, Melee
@@ -3231,3 +3262,43 @@ Group: Heroic, Misc
 Descrip: Memories of flight lie within you. You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk. Cooldown 15 seconds.  %20 Action boost bonus to movement speed for 6 seconds.
 Class: Dragon Disciple 12
 Flags: Unselectable
+
+FeatName: Vampiric Bite
+Group: Heroic, Melee
+Descrip: Single Target Action: You bite target creature at touch range, dealing 1d4 Piercing Damage per Character Level. This scales with 200% Melee or Ranged Power (though is not a weapon attack and cannot crit). If that creature is a living and corporeal creature, you heal for 20 + (Total Character Level x Constitution Modifier) number of Hit Points from Positive energy. (15 second cooldown).
+Race: Required, Dhampir, Dark Bargainer
+Flags: RaceOnly
+
+FeatName: Dark Gifts
+Group: Heroic, Misc
+Descrip: Represent a bargain you've made with the Dark Powers and are intentionally stronger or more flexible than many standard feats. However, being a pact with the Dark Powers, each of them comes with a relatively unavoidable and significant cost.
+RaceBonus: Dark Bargainer
+Selector: Echoing Soul,Living Shadow,Mist Walker, Touch of Death, Form of Pain, Webtouched Wretch,  Minion of the Eldritch
+
+SelectorName: Echoing Soul
+Descrip: Your soul is fractured, shifted, or connected to another in some way. Perhaps your past or future is affecting your present soul, or perhaps some other entity is inextricably linked with you. In any case, it manifests in knowledge and fears that aren't your own.}{-+3 to all Skills plus an additional 1 for every 2 Character Levels you have.}{-+1 to all Saving Throws, plus an additional 1 for every 3 Character Levels you have.}{-When you get hit with Melee or Ranged attacks, there is a very small chance your Echoing Soul will cause you to become Afraid, Blinded, or Immobilized for six seconds with no save. Immunities to these conditions do not apply to this effect. Your echoes will grow louder before this happens giving you some warning.
+None: Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Living Shadow
+Descrip: Your Shadow extends your reach, acting out your dark impulses.}Your basic Melee attacks have extended range, hitting further in front of you.}Whenever you land a Critical Hit, there is a small chance your shadow exerts its will, causing your damage to be reduced by 15% for 6 seconds. This can only occur once every 30 seconds.}{-This is the same extension effect that Shadowdancer grants, and does not stack with that skill.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Mist Walker
+Descrip: You have learned how to navigate the Mists with time and a little luck.}You gain Misty Step: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 15 second cooldown.}When you use this Misty Step, there is a chance the Mists catch up with you and you gain Exhaustion for 6 seconds (-50% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble). This exhaustion cannot be warded or removed by effects that remove Exhaustion.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Touch of Death
+Descrip: Your every touch is pain, but you can use that to deliver death to enemies.}{-+3 Negative Spell Power per Character Level{-+3 Negative Healing Amplification per Character Level{--5 Positive Spell Power per Character Level{--5 Positive Healing Amplification per Character Level
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Form of Pain
+Descrip: Your body is cursed to be prone to all manner of damage, but with the ability to withstand it.}Passively grants +5 PRR/MRR}When you take damage your body changes and you gain the Form of Pain effect which grants +2 Physical Resistance Rating/Magical Resistance Rating but also reduces movement speed and increases spell costs by 1% as the pain distracts you. This can stack 10 times, with one stack being removed every 5 seconds.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Webtouched Wretch
+Descrip: You've become entwined with a great cosmic web, which occasionally becomes coterminous with reality.}Your offensive spells, melee and ranged attacks attacks occasionally cause strange spectral webs coat your enemies either slowing them or entangling them for up to six seconds with no save.}This does not work on bosses, raid bosses, or oozes but will work on incorporal or fiery creatures which are normally immune to web, including monsters or Champions protected by Freedom of Movement.}When you get hit with Melee or Ranged attacks, there is a small chance the webs turn on you, applying a slow effect which lasts 6 seconds. Spells/Immunities like Freedom of Movement do not prevent this.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Minion of the Eldritch
+
+SelectorName: Minion of the Eldritch
+Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch

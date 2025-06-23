@@ -79,8 +79,12 @@ Private Sub LoadRaces()
     strRaw = xp.File.LoadToString(strFile)
     strRace = Split(strRaw, "RaceName: ")
     For i = 1 To UBound(strRace)
-        If InStr(strRace(i), "Stats: ") Then LoadRace strRace(i) Else ErrorLoading strRace(i)
-    Next
+        If InStr(strRace(i), "Stats: ") Then
+            LoadRace strRace(i)
+        Else
+            ErrorLoading strRace(i)
+        End If
+     Next
 End Sub
 
 Private Sub LoadRace(ByVal pstrRaw As String)
@@ -130,8 +134,9 @@ Private Sub LoadRace(ByVal pstrRaw As String)
                         Else
                             For i = 0 To 5
                                 .Stats(i + 1) = val(strList(i))
+                                ' CHeck valid stats - Dark B. added 9s
                                 Select Case .Stats(i + 1)
-                                    Case 6, 8, 10
+                                    Case 6, 8, 9, 10
                                     Case Else: blnError = True
                                 End Select
                             Next
@@ -1053,6 +1058,20 @@ Private Sub LoadFeatSelector(ptypFeat As FeatType, ByVal pstrRaw As String)
                     Case "notclass"
                         .NotClass = GetClassID(strItem)
                         If .NotClass = ceAny Then LogError
+                        
+                    Case "classonly"
+                        .ClassOnly = GetClassID(strItem)
+                        If .ClassOnly = ceAny Then LogError
+                    Case "raceonly"
+                        .RaceOnly = GetRaceID(strItem)
+                        If .RaceOnly = reAny Then LogError
+                    Case "notrace"
+                        .NotRace(0) = True
+                        For i = 0 To lngListMax
+                            lngID = GetRaceID(strList(i))
+                            If lngID <> reAny Then .NotRace(lngID) = True Else LogError
+                        Next
+                    
                     Case Else
                         LogError
                 End Select
@@ -1112,9 +1131,12 @@ Private Sub IndexFeatLookup()
     End With
 End Sub
 
+'Feat Display is a list of all the feats in order with hidden feats removed
+'This is used to populate the frmfeat lists
 Public Sub IndexFeatDisplay()
     Dim i As Long
     Dim j As Long
+    Dim d As Long
     Dim typSwap As FeatIndexType
     
     With db
@@ -1122,17 +1144,29 @@ Public Sub IndexFeatDisplay()
         ReDim .FeatDisplay(1 To .Feats)
         For i = 1 To .Feats
             .FeatDisplay(i).FeatIndex = i
-            If cfg.FeatOrder = foeAlphabetical Then .FeatDisplay(i).FeatName = .Feat(i).Abbreviation Else .FeatDisplay(i).FeatName = .Feat(i).SortName
+            If cfg.FeatOrder = foeAlphabetical Then
+                .FeatDisplay(i).FeatName = .Feat(i).Abbreviation
+            Else
+                .FeatDisplay(i).FeatName = .Feat(i).SortName
+            End If
         Next
         ' Sort index
         For i = 2 To db.Feats
             typSwap = db.FeatDisplay(i)
             For j = i To 2 Step -1
-                If typSwap.FeatName < db.FeatDisplay(j - 1).FeatName Then db.FeatDisplay(j) = db.FeatDisplay(j - 1) Else Exit For
+                If typSwap.FeatName < db.FeatDisplay(j - 1).FeatName Then
+                    db.FeatDisplay(j) = db.FeatDisplay(j - 1)
+                Else
+                    Exit For
+                End If
             Next j
             db.FeatDisplay(j) = typSwap
         Next
     End With
+    'Update .Feat with the .FeatDisplay index
+    For d = 1 To UBound(db.FeatDisplay)
+        db.Feat(db.FeatDisplay(d).FeatIndex).FeatDisplayIndex = d
+    Next
 End Sub
 
 ' Simple binary search

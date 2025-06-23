@@ -335,6 +335,9 @@ Descrip: Summons a cloud of voracious insects and unleashes them on your enemies
 SpellName: Crushing Despair
 Descrip: An invisible cone of despair gives the targets -2 penalties to attack, saving throws, skill checks and weapon damage. A successful Will save negates this effect. This spell also applies a Weaken Will effect on all targets (-5 to will save for 15 seconds) whether they succeed or fail their saving throw.
 
+SpellName: Crushing Dread
+Descrip: Target enemy at touch range takes 1d6+8 Evil Damage per Caster Level (max 30d6+240 at Caster Level 30). Additionally, if the target is inside a Dread Mist zone it deals 1d20 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect.
+
 SpellName: Curative Admixture: Cure Critical Wounds
 Descrip: Infuse a Cure Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive energy damage to nearby living allies and enemy undead (who may make a Will save for half damage).
 
@@ -512,8 +515,14 @@ Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Fire damage per caster
 SpellName: Draconic Devastation: White
 Descrip: Centered Ki Breath Attack: Cone that deals 1d6+6 Cold damage per caster level (max 30d6+180 at level 30). A successful reflex save reduces damage by half. Affected enemies who are Shaken become Afraid and have their movement speed reduced by 90% for 6 seconds.
 
+SpellName: Dread Mist
+Descrip: Create a small area of Mist that lasts for 20 seconds. Enemies inside the mist have their movement slowed by 20%, -2 to Will Saving Throws, and take 1d2 Evil Damage per Caster Level (max 20d2 at Caster Level 20) every 2 seconds.
+
 SpellName: Dust of Confusion
 Descrip: Scatter dust around you that causes enemies around you to begin to vividly hallucinate. On a failed Will save, they become Confused, attacking and able to be attacked by friend and foe alike. This effect lasts for 15 seconds +2 per Caster Level, and enemies make a recurring save once every 24 seconds.
+
+SpellName: Dust to Dust
+Descrip: Disintegrate, but Necromancy-schooled
 
 SpellName: Eagle's Splendor
 Descrip: An ally gains a +4 enhancement bonus to Charisma for 1 minute per caster level.
@@ -739,6 +748,9 @@ Descrip: The caster commands multiple living enemies (Affects 1 living enemy per
 
 SpellName: Greater Creeping Cold
 Descrip: Deals ongoing cold damage to the target every 2 seconds for 12 seconds. The damage starts small, and grows larger as the spell continues. Each phase lasts 4 seconds. First phase: 2d4 damage +4 per 2 caster levels (max +40 at caster level 20). Second phase: 4d4 damage + 6 per 2 caster levels (max +60 at caster level 20). Third Phase: 6d4 damage +8 per 2 caster levels (max +80 at caster level 20).
+
+SpellName: Greater Death Aura
+Descrip: Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 3 to 12 negative energy damage plus 1 additional point per caster level (max 10) every three seconds as long as they remain within it. A successful Fortitude save reduces the damage by half. Undead are instead healed by the aura.}{-This can be cast simultaneously with Lesser Death Aura and Death Aura. Effects that increase caster or maximum caster level only increase duration.{-This spell is supposed to receive +10 maximum caster level from the Master of the Dead epic feat, but is currently bugged and is not receiving a bonus.
 
 SpellName: Greater Dispel Magic
 Descrip: Removes ongoing spells that have been cast on a target. You must make a caster level check of 1d20+your caster level (Maximum caster level 20.) of DC 11+spell's caster level to remove an effect. In addition, this spell can be used to sever the connection between a summoner and his or her summoned monster, causing the summoned creature to attack unpredictably, possibly turning on its summoner.If cast on a spell ward trap, this spell will reduce the level of the trap by 1 to 4 (1d4 levels). If the level of the trap is reduced to 0, the trap is disabled.
@@ -1351,6 +1363,9 @@ Flags: Rare
 
 SpellName: Prayer
 Descrip: Gives special favor to multiple Party targets and disfavor to enemy targets, giving a +1 luck bonus to allies' Attack rolls, weapon Damage rolls, saves, and Skill checks, and a -1 penalty to enemies for the same rolls.
+
+SpellName: Prey on Fear
+Descrip: Target enemy at touch range takes 1d6+2 Evil Damage per Caster Level (max 30d6+60 at Caster Level 30). Additionally, if the target is inside a Dread Mist zone it deals 1d4 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect.
 
 SpellName: Prismatic Ray
 Descrip: A shining ray of multicolored light blinds creatures with 8 Hit Die or less for 12 to 48 seconds, and does 1 of 7 harmful effects at random to one target, with a 12.5% of inflicting a second different effect from that 7. For Complete Description

@@ -3661,3 +3661,37 @@ Patron: The Harpers
 Favor: 4
 Level: 4
 Epic: 35
+
+QuestName: Den of Vipers
+Patron: The Free Agents
+Favor: 11
+Level: 36
+Epic: 36
+Style: Raid
+
+QuestName: Dinosaur Crisis
+Patron: The Free Agents
+Favor: 5
+Level: 13
+Epic: 28
+
+QuestName: Toil and Trouble
+Pack: Tavern Tales
+Patron: The Harpers
+Favor: 3
+Level: 5
+Epic: 28
+
+QuestName: The Covered Culvert
+Pack: Tavern Tales
+Patron: The Harpers
+Favor: 3
+Level: 4
+Epic: 35
+
+QuestName: Sleeping with the Fishes
+Pack: Tavern Tales
+Patron: The Harpers
+Favor: 4
+Level: 3
+Epic: 35

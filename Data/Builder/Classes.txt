@@ -469,11 +469,13 @@ SpellList4: Dismissal, Evard's Black Tentacles, Flesh to Stone, Hold Monster, Le
 SpellList5: Circle of Death, Control Undead, Create Undead, Finger of Death, Globe of Invulnerability, Greater Teleport, Mass Hold Person, Mass Invisibility, Mind Fog, Mass Protection from Elements, Shadow Walk, Summon Monster VIII, Symbol of Stunning, Tenser's Transformation, Undeath to Death, Waves of Exhaustion
 SpellList6: Arcane Tempest, Mass Charm Monster, Dominate Monster, Mass Hold Monster, Mordenkainen's Disjunction, Power Word: Stun, Summon Monster IX, Symbol of Death, Trap the Soul, Wail of the Banshee
 PactSpells: Fey, Obscuring Mist, Blindness, Slow, Greater Dispel Magic, Otto's Sphere of Dancing, Otto's Irresistible Dance
+PactSpells: Fey, Obscuring Mist, Blindness, Slow, Greater Dispel Magic, Otto's Sphere of Dancing, Otto's Irresistible Dance
 PactSpells: Fiend, Command, Rage, Fire Shield, Binding Chain, Power Word: Blind, Howl of Terror
 PactSpells: Great Old One, Entangle, Knock, Phantasmal Killer, Dominate Person, Mass Suggestion, Power Word: Kill
 PactSpells: Celestial, Bless, Soundburst, Magic Circle Against Evil, Prayer, Holy Aura, Freedom of Movement
 PactSpells: Abyss, Mage Armor, Spawn Screen, Halt Undead, Death Aura, Symbol of Pain, Rend the Soul
 PactSpells: Carceri Storm, Merfolk's Blessing, Gust of Wind, Creeping Cold, Ice Storm, Niac's Biting Cold, Greater Creeping Cold
+PactSpells: Dark Powers, Dread Mist, Lesser Death Aura, Negative Energy Burst, Death Aura, Dust to Dust, Greater Death Aura
 
 ClassName: Wizard
 Initial: W, Wz, Wizard, Wiz
@@ -709,6 +711,7 @@ GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Dismiss Charm
 GrantedFeats1: True Fiend Pact
 GrantedFeats1: Lesser Pact Attunement
+GrantedFeats1: Pact: Fiend (Acolyte)
 GrantedFeats6: Pact Attunement
 GrantedFeats12: Greater Pact Attunement
 GrantedFeats18: Ultimate Pact Attunement
@@ -765,7 +768,7 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3, 3, 3
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3
-SpellList1: Acid Spray, Burning Hands, Charm Person, Chaos Bolt, Cause Fear, Caustic Bolt, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Flaming Bolt, Freezing Bolt, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Bolt, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
+SpellList1: Acid Spray, Burning Hands, Cause Fear, Caustic Bolt, Chaos Bolt, Charm Person, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Flaming Bolt, Freezing Bolt, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Bolt, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
 SpellList2: Bear's Endurance, Blindness, Blur, Bull's Strength, Cat's Grace, Command Undead, Daze Monster, Eagle's Splendor, Electric Loop, False Life, Flaming Sphere, Fog Cloud, Fox's Cunning, Ghoul Touch, Glitterdust, Gust of Wind, Hypnotic Pattern, Invisibility, Knock, Lesser Death Aura, Melf's Acid Arrow, Ooze Puppet, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scare, Scorch, Scorching Ray, See Invisibility, Snowball Swarm, Spawn Screen, Summon Monster II, Touch of Idiocy, Web
 SpellList3: Acid Blast, Chain Missiles, Chaos Sphere, Deep Slumber, Dispel Magic, Displacement, Fireball, Flame Arrow, Frost Lance, Halt Undead, Haste, Heroism, Hold Person, Lightning Bolt, Magic Circle Against Evil, Protection from Energy, Rage, Ray of Exhaustion, Repair Serious Damage, Sleet Storm, Slow, Stinking Cloud, Suggestion, Summon Monster III, Water Breathing
 SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Chaos Hammer, Contagion, Crushing Despair, Death Aura, Dimension Door, Enervation, Fear, Fire Shield, Fire Trap, Force Missiles, Ice Storm, Lesser Globe of Invulnerability, Negative Energy Burst, Phantasmal Killer, Remove Curse, Repair Critical Damage, Shout, Solid Fog, Stoneskin, Summon Monster IV, Symbol of Flame, Wall of Fire
@@ -810,10 +813,10 @@ SpellSlots1: 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots2: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2
-SpellList1: Cause Fear, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poison, Jump, Longstrider, Obscuring Mist, Pass Without Trace, Resist Energy, Shield
+SpellList1: Cause Fear, Jump, Lesser Draconic Burst: Acid, Lesser Draconic Burst: Cold, Lesser Draconic Burst: Electricity, Lesser Draconic Burst: Fire, Lesser Draconic Burst: Poison, Longstrider, Obscuring Mist, Pass Without Trace, Resist Energy, Shield
 SpellList2: Acolyte's Breath: Black, Acolyte's Breath: Blue, Acolyte's Breath: Green, Acolyte's Breath: Red, Acolyte's Breath: White, Blur, Elemental Weapons, Gust of Wind, Protection from Energy, Water Breathing
 SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electric, Draconic Burst: Fire, Draconic Burst: Poison, Fear, Greater Elemental Weapons, Haste, Protection from Elements
-SpellList4: Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devastation: Black, Draconic Devastation: Blue, Draconic Devastation: Green, Draconic Devastation: Red, Draconic Devastation: White, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
+SpellList4: Black Dragon Bolt, Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devastation: Black, Draconic Devastation: Blue, Draconic Devastation: Green, Draconic Devastation: Red, Draconic Devastation: White, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
 
 
 

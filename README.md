@@ -13,6 +13,26 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.10.0 - Updates for U74
+Changes:
+Dhampir Race
+Dhampir Dark Bargainer Iconic
+Dark Gifts Feat
+
+#### Character Builder
+- Added Dhampir Race
+- Added Dhampir Dark Bargainer Iconic
+- Added Dark Gift feats
+- Added new Dhampir spells
+- Added new ClassOnly, RaceOnly and NotRace as selector options
+- Fixed an issue with SelectorOnly not being applied
+
+#### Compendium
+- Added Dhampir and Dark Bargainer past lives
+- Added U72 & U73 quests and raids
+- Fixed sorting on Pack
+- Reordered display of iconics to alphabetical
+
 ### 4.9.0 - Updates for U72 - Balance the Scales
 Changes:
 Added Dragon Disciple Monk archetype

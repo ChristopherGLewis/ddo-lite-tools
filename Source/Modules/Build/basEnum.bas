@@ -53,6 +53,8 @@ Public Enum RaceEnum
     reTrailblazer
     reEladrin
     reChaosmancer
+    reDhampir
+    reDarkBargainer
     reRaces
 End Enum
 
@@ -335,6 +337,8 @@ Public Function GetRaceID(pstrRace As String) As RaceEnum
         Case "trailblazer", "tabaxi trailblazer": GetRaceID = reTrailblazer
         Case "eladrin": GetRaceID = reEladrin
         Case "chaosmancer", "eladrin chaosmancer": GetRaceID = reChaosmancer
+        Case "dhampir": GetRaceID = reDhampir
+        Case "darkbargainer", "dark bargainer": GetRaceID = reDarkBargainer
     End Select
 End Function
 
@@ -366,6 +370,8 @@ Public Function GetRaceName(ByVal penRace As RaceEnum) As String
         Case reTrailblazer: GetRaceName = "Tabaxi Trailblazer"
         Case reEladrin: GetRaceName = "Eladrin"
         Case reChaosmancer: GetRaceName = "Eladrin Chaosmancer"
+        Case reDhampir: GetRaceName = "Dhampir"
+        Case reDarkBargainer: GetRaceName = "Dark Bargainer"
     End Select
 End Function
 
@@ -445,7 +451,7 @@ Public Function GetClassName(ByVal penClass As ClassEnum, Optional pblnAbbreviat
     End Select
 End Function
 
-'TODO New Class
+'TODO New Class/Archtype
 Public Function GetClassResourceID(ByVal penClass As ClassEnum) As String
     Select Case penClass
         Case ceArtificer: GetClassResourceID = "CLSARTIFICER"

@@ -160,3 +160,17 @@ Type: Free
 Stats: 8, 10, 8, 6, 8, 8
 GrantedFeats1: Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Longbow, Martial Weapon: Shortbow
 Trees: Elf-Arcane Archer
+
+RaceName: Dhampir
+Abbreviation: Dhamp
+Type: Free
+Stats: 10, 8, 8, 8, 8, 8
+GrantedFeats1: Vampiric Bite
+
+RaceName: Dark Bargainer
+Abbreviation: DarkB
+Type: Iconic
+IconicClass: Warlock
+Stats: 9, 8, 8, 9, 8, 9
+GrantedFeats1: Vampiric Bite
+Flags: BonusFeat

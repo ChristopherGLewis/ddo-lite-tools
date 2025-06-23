@@ -1265,6 +1265,7 @@ Public Function CheckFeatSlot(ptypFeat As FeatType, ptypSlot As BuildFeatType, O
     Dim typSlot As BuildFeatType
     Dim lngActualLevel As Long
     Dim enClass As ClassEnum
+    Dim enRace As RaceEnum
     Dim blnFred As Boolean
     Dim s As Long
     Dim i As Long
@@ -1513,7 +1514,7 @@ Public Function CheckFeatSlot(ptypFeat As FeatType, ptypSlot As BuildFeatType, O
     If blnSelector Then
         enClass = ptypFeat.Selector(s).NotClass
         If enClass <> ceAny Then
-            For i = 1 To 20
+            For i = 1 To 20 'levels
                 If build.Class(i) = enClass Then Exit For
             Next
             If i <= 20 Then
@@ -1522,6 +1523,47 @@ Public Function CheckFeatSlot(ptypFeat As FeatType, ptypSlot As BuildFeatType, O
                 Exit Function
             End If
         End If
+    End If
+    'ClassOnly
+    If blnSelector Then
+        Dim bClassOK As Boolean
+        bClassOK = False
+        enClass = ptypFeat.Selector(s).ClassOnly
+        If enClass <> ceAny Then
+            For i = 1 To 20 'levels
+                If build.Class(i) = enClass Then
+                    bClassOK = True
+                    Exit For
+                End If
+            Next
+            If Not bClassOK Then
+                gstrError = "Must be taken by characters with " & db.Class(enClass).ClassName & " levels."
+                CheckFeatSlot = dsCanDropError
+                Exit Function
+            End If
+        End If
+    End If
+    'RaceOnly
+    If blnSelector Then
+        enRace = ptypFeat.Selector(s).RaceOnly
+        If enRace <> reAny Then
+            If Not (build.Race = enRace) Then
+                gstrError = "Must be taken by characters with " & db.Race(enRace).RaceName & "."
+                CheckFeatSlot = dsCanDropError
+                Exit Function
+            End If
+        End If
+    End If
+    'Not Race
+    If blnSelector Then
+        If ptypFeat.Selector(s).NotRace(0) Then
+            If ptypFeat.Selector(s).NotRace(build.Race) Then
+                gstrError = "Incompatible Race."
+                CheckFeatSlot = dsCanDropError
+                Exit Function
+            End If
+        End If
+        
     End If
 End Function
 

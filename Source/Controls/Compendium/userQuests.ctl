@@ -680,7 +680,15 @@ Private Function CompareRows(ptypLeft As RowType, ptypRight As RowType) As Long
                     Exit Do
                 End If
             Case coePack
-                Exit Do
+                If ptypLeft.Pack < ptypRight.Pack Then
+                    CompareRows = -1
+                ElseIf ptypLeft.Pack > ptypRight.Pack Then
+                    CompareRows = 1
+                Else
+                    Exit Do
+                End If
+            
+
             Case coePatron
                 If ptypLeft.Patron < ptypRight.Patron Then
                     CompareRows = -1

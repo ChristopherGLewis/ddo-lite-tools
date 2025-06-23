@@ -977,9 +977,11 @@ Descrip: Select a Philosophy to embody with your strikes.
 Tier: 0
 Selector: Light, Dark
 SelectorName: Light
-Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Light damage on hit that scales with 200% Melee Power. (Note: these appear as separate feats in your feat list.) You may take Monk enhancements that require Fists of Light.
+Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Light damage per character level on hit that scales with 200% Melee Power. You must have the Stunning Blow or Stunning Fist feats to take this upgraded version. You may take Monk enhancements that require Fists of Light.
+One: Feat: Stunning Blow, Feat: Stunning Fist
 SelectorName: Dark
-Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Poison damage on hit that scales with 200% Melee Power. (Note: these appear as separate feats in your feat list.) You may take Monk enhancements that require Fists of Darkness.
+Descrip: +3% Dodge Bypass, +10 Magical Resistance Rating Cap. You gain special versions of the Stunning Blow and Stunning Fist feats, which deal 1d10 Poison per character level damage on hit that scales with 200% Melee Power. (Note: these appear as separate feats in your feat list.) You may take Monk enhancements that require Fists of Darkness.
+One: Feat: Stunning Blow, Feat: Stunning Fist
 
 AbilityName: Strike with Poise
 Descrip: +[2/4/6] Stunning DCs

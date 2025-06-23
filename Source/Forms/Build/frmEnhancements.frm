@@ -1701,7 +1701,12 @@ Private Sub ShowDropSlots()
                         .Selector = lngSelector
                         .Rank = 1
                     End With
-                    If CheckErrors(db.Tree(mlngTree), typCheck, lngSpent) Then enDropState = dsCanDropError Else enDropState = dsCanDrop
+                    If CheckErrors(db.Tree(mlngTree), typCheck, lngSpent) Then
+                        enDropState = dsCanDropError
+                    Else
+                        enDropState = dsCanDrop
+                    End If
+                    
                 End If
                 Me.usrList.SetDropState i, enDropState
                 Me.usrList.ForceActive i
@@ -1733,7 +1738,7 @@ Private Sub GetSlotInfo(ptypTree As TreeType, ptypAbility As BuildAbilityType, p
                     pstrCaption = .Abbreviation & ": " & .Selector(ptypAbility.Selector).SelectorName
                 End If
                 'TODO Fix display of Ability/Selector
-                pstrCaption = .Abbreviation & ": " & .Selector(ptypAbility.Selector).SelectorName
+                'pstrCaption = .Abbreviation & ": " & .Selector(ptypAbility.Selector).SelectorName
                 plngCost = .Selector(ptypAbility.Selector).Cost
             End If
             If plngRanks <> 0 Then plngCost = plngCost * plngRanks

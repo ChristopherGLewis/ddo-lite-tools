@@ -1224,6 +1224,7 @@ End Sub
 
 Private Sub ShowAvailable()
     Dim typTaken() As FeatTakenType
+    'FeatID of the feat grabbed from FeatDisplay
     Dim lngFeat As Long
     Dim enType As BuildFeatTypeEnum
     Dim lngIndex As Long
@@ -1237,8 +1238,11 @@ Private Sub ShowAvailable()
     FeatListTitle
     ' Create list of taken feats now to speed up loop
     IdentifyTakenFeats typTaken, build.MaxLevels
+    
     ' Add all feats that meet prereqs
+    'This loop iterates FeatDisplay (the sorted feats)
     For i = 1 To db.Feats
+        'lngFeat is the feat id
         lngFeat = db.FeatDisplay(i).FeatIndex
         Do
             ' Wrong channel?
@@ -1278,6 +1282,7 @@ Private Sub ShowAvailable()
             Else
                 strPrefix = vbNullString
             End If
+            'This loads the feat
             ListboxAddItem Me.lstFeat, strPrefix & db.Feat(lngFeat).Abbreviation, lngFeat
         Loop Until True
     Next

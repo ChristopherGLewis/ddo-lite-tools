@@ -40,7 +40,7 @@ Races
 
 Stats: #, #, #, #, #, #
 Base stat list in standard order: Str, Dex, Con, Int, Wis, Cha
-Legal values are 6, 8, 10
+Legal values are 6, 8, 9, 10
 
 Type: 
 Legal values are Free, Premium, Iconic
@@ -191,14 +191,11 @@ Note: current Battle Trances -
  - War Soul Tier 1: Divine Might
  - Warpriest Tier 1: Divine Might
  
-
-
 Rank#All:
 Rank#One:
 Rank#None:
   - Rank-specific All/One/None requirements; all the same rules and options apply
   - Only Rank2... and Rank3... are valid options (Rank1 reqs are the ability reqs)
-
 
 Selectors
 ---------
@@ -326,7 +323,6 @@ for each:
    easily categorized elsewhere. (eg: Turn Undead stuff, songs, ki, etc...) 
  - Alchemy is a new grouping for Alchemists 
  - Bard Song is for bard songs
-
 
 Stat: 
 Ability score required. Use the format "Ability #"
@@ -501,6 +497,12 @@ HOWTO
 
 New Race
   basEnum
+  Add Race to RaceEnum, GetRaceID/GetRaceName
+  Races.txt, Enhancements.txt
 New Class
 New iconic
+  basEnum
+  Add Race to RaceEnum, GetRaceID/GetRaceName
+  Races.txt, Enhancements.txt
+
 New archtype

@@ -383,4 +383,13 @@ HericLow: 13
 HeroicHigh: 13
 EpicLow: 35
 EpicHigh: 35
+Link Named Items	Link	https://ddowiki.com/page/Update_69_named_items
+
+PackName: Tavern Tales
+Abbreviation: Tavern Tales
+HericLow: 3
+HeroicHigh: 5
+EpicLow: 28
+EpicHigh: 35
+Link Named Items	Link	https://ddowiki.com/page/Update_73_named_items
 

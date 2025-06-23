@@ -232,8 +232,8 @@ End Type
 
 'TODO Remove hard coding
 Public Const maxClassCount = 24  '2025.03.11 DragnDisciple=> 15 classes + 7 Archtypes
-Public Const maxRaceCount = 15 ' 2022.06.17 Eladrin
-Public Const maxIconicCount = 10 ' 2024.06.17 Eladrin Chaosmancer
+Public Const maxRaceCount = 16 ' 2026.06.21 Dhampir
+Public Const maxIconicCount = 11 ' 2026.06.21 Dhampir Dark Bargainer
 Public Const maxEpicCount = 17 ' 2022.04.29 Added Eclispe Power
 
 Public Type PastLifeType

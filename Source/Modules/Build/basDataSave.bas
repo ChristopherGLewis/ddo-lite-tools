@@ -153,7 +153,9 @@ Private Function SaveAbilities(ptypTree As TreeType) As String
                             If Len(strRankReqs) Then strRaw(i) = strRaw(i) & strRankReqs
                         End If
                         ' Selectors
-                        If .SelectorOnly Then strRaw(i) = strRaw(i) & "Flags: SelectorOnly" & vbNewLine
+                        If .SelectorOnly Then
+                            strRaw(i) = strRaw(i) & "Flags: SelectorOnly" & vbNewLine
+                        End If
                         If .SelectorStyle <> sseNone Then strRaw(i) = strRaw(i) & GetTreeSelectors(ptypTree.TreeID, ptypTree.Tier(lngTier).Ability(lngAbility))
                     End With
                 Next

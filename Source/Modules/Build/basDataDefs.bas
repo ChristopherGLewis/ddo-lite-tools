@@ -136,10 +136,15 @@ Public Type SelectorType
     Race() As Long
     ' Disable invalid
     Hide As Boolean
+    NotRace(reRaces) As Boolean ' bool array for List of races/iconics
+    RaceOnly As RaceEnum
+    ClassOnly As ClassEnum ' added for Acolyte
+
 End Type
 
 Public Type FeatType
     FeatIndex As Long ' Useful for functions that receive a type structure instead of an index
+    FeatDisplayIndex As Long ' FeatDisplay index
     FeatName As String
     Abbreviation As String
     SortName As String
