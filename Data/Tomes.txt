@@ -4,7 +4,7 @@ RacialAPMax: 3
 PowerMax: 4
 PRR/MRRMax: 4
 UniversalAPMax: 2
-PermDestinyPointMax: 32
+PermDestinyPointMax: 27
 PermDestinyPointMin: 12
 DestinyTomeMax: 3 
 FateTomeMax: 3 

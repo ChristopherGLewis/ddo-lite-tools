@@ -172,5 +172,5 @@ Abbreviation: DarkB
 Type: Iconic
 IconicClass: Warlock
 Stats: 9, 8, 8, 9, 8, 9
-GrantedFeats1: Vampiric Bite
+GrantedFeats1: Vampiric Bite, Spell Focus: Evocation
 Flags: BonusFeat
