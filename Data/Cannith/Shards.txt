@@ -60,18 +60,6 @@ UnboundEssences: 400
 UnboundIngredients: 30 Phoenix Tavern Purchase Order; 10 Powdered Blood; 2 Shamanic Totem; 2 Purified Eberron Dragonshard
 Demand: Rarely Used
 
-ShardName: Acid Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Amber Vial; 5 Vial of Pure Water
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Amber Vial; 10 Vial of Pure Water; 5 Vial of Contagion; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
 ShardName: Acid Lore
 Group: Spell Lore
 Scaling: Spell Lore (one type)
@@ -825,18 +813,6 @@ UnboundEssences: 500
 UnboundIngredients: 30 Amulet of the Lost Empire; 10 Charred Soarwood; 2 Lightning-Split Soarwood; 2 Purified Eberron Dragonshard
 Demand: Niche
 
-ShardName: Evil Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Page Torn from a Research Notebook; 5 Small Wooden Idol
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Page Torn from a Research Notebook; 10 Small Wooden Idol; 5 Pale Creeper; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
 ShardName: Evil Outsider Bane
 ShortName: Evil Out Bane
 Group: Bane
@@ -924,18 +900,6 @@ BoundIngredients: 15 Withered Cryptmoss; 5 Mark of the Keeper
 UnboundLevel: 200
 UnboundEssences: 400
 UnboundIngredients: 30 Withered Cryptmoss; 10 Mark of the Keeper; 2 Tome: Stormreach Imports and Exports, 857 YK; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
-ShardName: Fire Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Amber Vial; 5 Deadly Feverblanch
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Amber Vial; 10 Deadly Feverblanch; 5 Icon of Khyber; 2 Purified Eberron Dragonshard
 Demand: Rarely Used
 
 ShardName: Fire Lore
@@ -1090,18 +1054,6 @@ UnboundEssences: 500
 UnboundIngredients: 30 Lodestone; 10 Glass Phial; 2 Stellar Orb; 2 Purified Eberron Dragonshard
 Demand: Uncommon
 
-ShardName: Good Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Page Torn from a Research Notebook; 5 Khyber Prayer Pamphlet
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Page Torn from a Research Notebook; 10 Khyber Prayer Pamphlet; 5 Icon of Khyber; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
 ShardName: Haggle
 Group: Skill
 Scaling: Skill
@@ -1174,18 +1126,6 @@ BoundIngredients: 15 Phoenix Tavern Purchase Order; 1 Soul Gem: Human
 UnboundLevel: 200
 UnboundEssences: 400
 UnboundIngredients: 30 Phoenix Tavern Purchase Order; 1 Soul Gem: Strong Human; 2 Shamanic Totem; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
-ShardName: Ice Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Amber Vial; 5 Khyber Prayer Pamphlet
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Amber Vial; 10 Khyber Prayer Pamphlet; 5 Pale Creeper; 2 Purified Eberron Dragonshard
 Demand: Rarely Used
 
 ShardName: Illusion Focus
@@ -2426,18 +2366,6 @@ UnboundEssences: 300
 UnboundIngredients: 30 String of Prayer Beads; 10 Small Wooden Idol; 5 Icon of Khyber; 2 Purified Eberron Dragonshard
 Demand: Niche
 
-ShardName: Lightning Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Amber Vial; 5 Small Wooden Idol
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Amber Vial; 10 Small Wooden Idol; 5 Tome: Prophecies of Khyber; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
 ShardName: Listen
 Group: Skill
 Scaling: Skill
@@ -2701,18 +2629,6 @@ UnboundLevel: 200
 UnboundEssences: 400
 UnboundIngredients: 30 Glittering Dust; 10 Cryptmoss; 2 Intact Fingerbone; 2 Purified Eberron Dragonshard
 Demand: Uncommon
-
-ShardName: Piercing Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Sweet Whitecap; 5 Khyber Prayer Pamphlet
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Sweet Whitecap; 10 Khyber Prayer Pamphlet; 5 Pale Creeper; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
 
 ShardName: Plant Bane
 Group: Bane
@@ -3058,18 +2974,6 @@ UnboundEssences: 400
 UnboundIngredients: 30 Caravan Logbook; 10 Sparkling Dust; 2 Necromantic Gem; 2 Purified Eberron Dragonshard
 Demand: Uncommon
 
-ShardName: Solar Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Sweet Whitecap; 5 Deadly Feverblanch
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Sweet Whitecap; 10 Deadly Feverblanch; 5 Vial of Contagion; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
 ShardName: Songblade
 Group: Static
 Scaling: None
@@ -3107,18 +3011,6 @@ BoundIngredients: 15 Cryptmoss Worm Larva; 5 Signet of the Devourer
 UnboundLevel: 200
 UnboundEssences: 400
 UnboundIngredients: 30 Cryptmoss Worm Larva; 10 Signet of the Devourer; 2 Tome: Myths of Old Xen'drik; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
-
-ShardName: Sonic Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Sweet Whitecap; 5 Vial of Pure Water
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Sweet Whitecap; 10 Vial of Pure Water; 5 Icon of Khyber; 2 Purified Eberron Dragonshard
 Demand: Rarely Used
 
 ShardName: Sonic Lore
@@ -3388,18 +3280,6 @@ UnboundLevel: 200
 UnboundEssences: 400
 UnboundIngredients: 30 Glittering Dust; 1 Soul Gem: Strong Undead; 2 Intact Fingerbone; 2 Purified Eberron Dragonshard
 Demand: Niche
-
-ShardName: Undead Guard
-Group: Guard
-Scaling: Guard
-Suffix: Boots; Trinket; Shield; Orb; Metal Armor; Leather Armor; Cloth Armor; Docent
-BoundLevel: 1
-BoundEssences: 10
-BoundIngredients: 15 Sweet Whitecap; 5 Small Wooden Idol
-UnboundLevel: 150
-UnboundEssences: 300
-UnboundIngredients: 30 Sweet Whitecap; 10 Small Wooden Idol; 5 Tome: Prophecies of Khyber; 2 Purified Eberron Dragonshard
-Demand: Rarely Used
 
 ShardName: Underwater Action
 ShortName: Waterbreathing
