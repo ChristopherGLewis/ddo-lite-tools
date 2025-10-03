@@ -3676,14 +3676,14 @@ Epic: 28
 
 QuestName: The Covered Culvert
 Pack: Tavern Tales
-Patron: The Harpers
+Patron: The Free Agents
 Favor: 3
 Level: 4
 Epic: 35
 
 QuestName: Sleeping with the Fishes
 Pack: Tavern Tales
-Patron: The Harpers
+Patron: The Free Agents
 Favor: 4
 Level: 3
 Epic: 35
