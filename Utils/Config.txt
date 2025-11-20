@@ -1,0 +1,2 @@
+ADQ1Coords=435,274
+SolverCoords=928,0

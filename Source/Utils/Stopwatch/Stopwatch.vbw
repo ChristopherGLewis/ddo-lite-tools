@@ -1,0 +1,7 @@
+frmStopwatch = 160, 160, 1252, 662, C, 32, 32, 1124, 534, C
+basMain = 64, 64, 1156, 566, C
+clsConfig = 96, 96, 1188, 598, C
+basLibrary = 224, 224, 1316, 726, C
+basStopwatch = 224, 224, 1316, 726, C
+basMouseWheel = 0, 0, 0, 0, C
+userSpinner = 0, 0, 0, 0, C, 32, 32, 1124, 534, C

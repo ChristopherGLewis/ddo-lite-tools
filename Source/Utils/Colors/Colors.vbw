@@ -1,0 +1,17 @@
+frmColor = 128, 128, 1222, 632, C, 64, 64, 1158, 568, C
+frmColorFile = 160, 160, 1254, 664, C, 0, 0, 1094, 504, C
+frmColors = 0, 0, 1094, 504, C, 96, 96, 1190, 600, C
+userSpinner = 0, 0, 0, 0, C, 32, 32, 1126, 536, C
+clsConfig = 128, 128, 1222, 632, C
+clsWindowsXP = 32, 32, 1133, 527, C
+clsFile = 0, 0, 0, 0, C
+clsFolder = 0, 0, 0, 0, C
+basMain = 192, 192, 1286, 696, C
+clsMaterialColor = 0, 0, 0, 0, C
+basMouseWheel = 0, 0, 0, 0, C
+basControls = 0, 0, 0, 0, C
+userCheckBox = 128, 128, 1229, 623, C, 64, 64, 1158, 568, C
+basUtils = 0, 0, 0, 0, C
+basHelp = 64, 64, 1158, 568, C
+frmHelp = 160, 160, 1251, 662, C, 96, 96, 1190, 600, C
+basAutomation = 192, 192, 1286, 696, C

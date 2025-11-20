@@ -1,0 +1,159 @@
+' Define help topics with the following format:
+'
+' HelpTopic: <Topic Name>
+'
+' All text between "HelpTopic" identifiers is considered part of that help topic.
+'
+' Help text can include a small variety of special codes to handle formatting. These
+' codes are limited to a single word. You can force multiple words to share a single
+' code by separating the words with underscores (_) instead of spaces ( ). Underscores 
+' in special codes are replaced by spaces when displayed.
+' 
+' Special codes are surrounded by curly braces "{}" and always begin the word they
+' apply to. There are no closing tags, which is why they can only apply to a single
+' word.
+' 
+' Basic formatting special codes are b for bold, i for italics and u for underline.
+' You can use any one, two, or all three in a single code. Order doesn't matter. eg:
+' {ub}This_text_is_bold_and_underlined
+'
+' You can also specify a link, of which there are several types:
+'
+' Open {url=https://www.google.com/}Google in default browser
+' Open {run=\Settings.txt}Settings.txt in Notepad
+' Run the {run=\GearPlanner.exe}Gear_Planner
+' Open the {frm=frmOptions}Options form
+' See {hlp=Spinners}Spinners for tips on using spinner controls.
+'
+' - Internally, opening a document {run=\Settings.txt} is handled the same way as
+'   running a program {run=\GearPlanner.exe}
+' - Add a backslash (\) character to the start of the file or program to run to 
+'   specify the application folder. eg: {run=\Settings.txt}
+' - URLs are opened in the default browser. 
+' - Opening a form requires that you know the internal form name. Generally speaking,
+'   form names are "frm" plus the form's title. eg: frmEnhancements. This is not always
+'   the case, though. (Output Format is frmFormat, for example.)
+'
+' All codes and identifiers are case-sensitive. Special codes must be lower case.
+
+HelpTopic: Lights_Out
+
+Lights Out Solver v1.2 - Written by Ellis Dee
+
+Choose Play to practice your puzzle solving skills, or Edit to match an in-game puzzle to get the solution.
+
+Shuffle will always generate solvable puzzles.
+
+Clicking the puzzle size links not only sets the board dimensions, but also lights all tiles. Use these to light all tiles even when not changing dimensions.
+
+The solver defaults to the top right corner of the screen, set to Always On Top for easy access as an in-game solver. 
+
+If you normally run in Full Screen mode you'll need to switch to Full Screen (Windowed) so the solver can overlay the game client.
+
+
+See also this forum thread:
+
+{url=https://www.ddo.com/forums/showthread.php/228976}HOWTO:_Solve_the_vale_puzzle_yourself 
+
+
+HelpTopic: ADQ
+
+ADQ Riddle Solver v1.1 - Written by Ellis Dee
+
+Click the term for the first available blank. Some additional terms may auto-fill. Continue clicking terms until all are placed.
+
+Once you have the terms in the correct order, click Accept. This will copy the solution to the clipboard for pasting into party chat, as well as open a small window displaying the solution for easy reference.
+
+In the solutions window, click the "eye" button next to the close button to re-copy the solution to the clipboard as needed.
+
+Move the solutions window by dragging anywhere on the form itself.
+
+If you normally run in Full Screen mode you'll need to switch to Full Screen (Windowed) so the solver can overlay the game client.
+
+
+HelpTopic: Colors
+
+There are 90 different customizable colors used by the program: 72 screen colors and 18 output colors. Output colors are saved separately from screen colors to simplify changing your working colors without messing up your forum output.
+
+In order to keep things manageable, there are a variety of ways to customize these colors.
+
+The {b}Saved tab offers two simple lists of all your saved screen and output colors. Click any list item to apply those colors.
+
+The {b}Palette tab provides a simple interface to apply any of the Google Material Design {url=https://www.google.com/design/spec/style/color.html}color_palettes. Choosing or adjusting Material Palettes updates all 72 screen colors, applying a "best guess" algorithm to try and make all the various colors work together. This makes a passable interface, but you'll probably want to fine tune your palette in the Customize tab. Any further changes on the Palette tab will overwrite your customized colors.
+
+
+{b}Custom_Colors
+
+Click any color box to edit a color. You can edit colors with html codes, RGB values, choose a Material color, or even select a Windows system color.
+
+Text and Background colors are not paired with each other, but instead can be matched in any combination. You could see Error Text on Normal background, Dim Text on Highlight Background, etc... 
+
+For all possible combinations, all four text colors should be clearly legible when paired with all four background colors. Click the background color links to preview them.
+
+Literal colors apply to text for output, and also for augment text in the crafting planner. Try to keep them as legible as possible.
+
+
+{b}Output_Background
+
+Match the color scheme of the forums where you post your builds. 
+
+There are three distinct background colors to consider for the Official DDO Forums:
+RGB: 51, 51, 51 -- Default post background.
+RGB: 102,102,102 -- Default code tags background.
+RGB: 17, 17, 17 -- {url=https://www.ddo.com/forums/showthread.php/415713-Forums-Stylebot-Changes}JJ's_Stylish background for both posts and code tags.
+
+{b}Default background color (RGB:34,34,34) is the average of JJ's Stylish (RGB:17,17,17) and the official DDO forums (RGB:51,51,51).
+
+{b}Code_Tags background color is only for previewing literal colors for text. Dots aren't needed inside code tags, but colored text is so be sure that the text for all literal colors is clearly legible with the code tags background color.
+
+For forums that alternate colors every other post, it's recommended to use the average of the two colors by averaging the individual red, green and blue (RGB) values of both colors. The easiest way to identify RGB values is to use a freeware utility like {url=http://colorcop.net/download/}ColorCop.
+
+
+{b}Files
+
+Importing and exporting is set up to allow easy copy & pasting to and from forums. You can manually trim out codes you don't want included.
+
+When you Import/Export/Save/Load colors, either screen or output colors are included depending on which area you have selected. 
+
+
+{b}Literal_Colors
+
+Literal colors are the seven augment colors found on gear. In the character builder, these seven colors are used in output to differentiate classes, stats and enhancement trees.
+
+Orange is the color of Strength, Barbarian and Fighter
+Red is the color of Dexterity, Rogue and Sorcerer
+Green is the color of Constitution, Ranger and Druid
+Blue is the color of Intelligence, Wizard and Artificer
+Yellow is the color of Wisdom, Monk, Cleric and Favored Soul
+Purple is the color of Charisma, Paladin, Bard and Warlock
+
+Enhancement tree colors are only used if you set up a Leveling Guide. For most classes, all of their trees will default to one of the following four colors:
+
+Red: Melee (basic), Evil, Fire 
+Blue: Magic, Defense, Water
+Green: Melee (flavor), Nature, Earth
+Yellow: Health, Electricity
+Grey: All racial trees
+
+Using Bards as an example, Warchanter is red, Swashbuckler is green, Spellsinger is blue. For multiclass builds, the trees with more points spent get their preferred colors, with lower priority trees settling for complementary colors. Purple and Orange are generally only used as a last resort.
+
+
+HelpTopic: Import Colors
+
+Importing colors is designed to allow easy sharing of color values via forums. It also allows you to pick and choose which colors you want to import.
+
+Fill the text area with color data by pasting from clipboard, or by loading from a file.
+
+You can manually delete any color data from the text area you don't want to import. For example, after setting up a new color scheme, you could import the default output colors for consistency.
+
+Once you have the desired color data, click {b}Apply_Colors to commit these colors.
+
+
+HelpTopic: Export Colors
+
+Exporting colors is designed to allow easy sharing of color values via forums. It also allows you to pick and choose which colors you want to export.
+
+The text area starts off with all your current color data. You can manually delete any color data from the text area you don't want to export. 
+
+Once you have the desired color data, you can copy it to clipboard for sharing on forums, or save it to a file.
+

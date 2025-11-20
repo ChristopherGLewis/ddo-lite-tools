@@ -302,7 +302,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   119
             Left            =   240
-            TabIndex        =   273
+            TabIndex        =   270
             Tag             =   "ctl"
             Top             =   480
             Width           =   1500
@@ -316,7 +316,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   116
             Left            =   360
-            TabIndex        =   270
+            TabIndex        =   268
             Tag             =   "ctl"
             Top             =   240
             Width           =   1380
@@ -330,7 +330,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   104
             Left            =   480
-            TabIndex        =   259
+            TabIndex        =   260
             Tag             =   "ctl"
             Top             =   2400
             Width           =   1260
@@ -991,12 +991,26 @@ Begin VB.Form frmCharacter
             Alignment       =   1  'Right Justify
             Appearance      =   0  'Flat
             BackColor       =   &H80000005&
+            Caption         =   "Sacred Fist"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   110
+            Left            =   2235
+            TabIndex        =   275
+            Tag             =   "ctl"
+            Top             =   2160
+            Width           =   1200
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
             Caption         =   "Dragon Disciple"
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   117
             Left            =   1920
-            TabIndex        =   271
+            TabIndex        =   274
             Tag             =   "ctl"
             Top             =   1920
             Width           =   1515
@@ -1005,15 +1019,15 @@ Begin VB.Form frmCharacter
             Alignment       =   1  'Right Justify
             Appearance      =   0  'Flat
             BackColor       =   &H80000005&
-            Caption         =   "Wild Mage"
+            Caption         =   "Dark Hunter"
             ForeColor       =   &H80000008&
             Height          =   240
-            Index           =   114
-            Left            =   2160
-            TabIndex        =   269
+            Index           =   111
+            Left            =   2250
+            TabIndex        =   273
             Tag             =   "ctl"
-            Top             =   2880
-            Width           =   1275
+            Top             =   2400
+            Width           =   1185
          End
          Begin VB.Label lblLabel 
             Alignment       =   1  'Right Justify
@@ -1024,9 +1038,23 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   113
             Left            =   2160
-            TabIndex        =   268
+            TabIndex        =   272
             Tag             =   "ctl"
             Top             =   1680
+            Width           =   1275
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Wild Mage"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   114
+            Left            =   2160
+            TabIndex        =   267
+            Tag             =   "ctl"
+            Top             =   2880
             Width           =   1275
          End
          Begin VB.Label lblLabel 
@@ -1037,39 +1065,11 @@ Begin VB.Form frmCharacter
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   112
-            Left            =   2070
-            TabIndex        =   267
-            Tag             =   "ctl"
-            Top             =   3135
-            Width           =   1275
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Dark Hunter"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   111
-            Left            =   2175
+            Left            =   2160
             TabIndex        =   266
             Tag             =   "ctl"
-            Top             =   2400
-            Width           =   1185
-         End
-         Begin VB.Label lblLabel 
-            Alignment       =   1  'Right Justify
-            Appearance      =   0  'Flat
-            BackColor       =   &H80000005&
-            Caption         =   "Sacred Fist"
-            ForeColor       =   &H80000008&
-            Height          =   240
-            Index           =   110
-            Left            =   2160
-            TabIndex        =   265
-            Tag             =   "ctl"
-            Top             =   2160
-            Width           =   1200
+            Top             =   3120
+            Width           =   1275
          End
          Begin VB.Label lblLabel 
             Alignment       =   1  'Right Justify
@@ -1079,8 +1079,8 @@ Begin VB.Form frmCharacter
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   109
-            Left            =   1920
-            TabIndex        =   264
+            Left            =   1995
+            TabIndex        =   265
             Tag             =   "ctl"
             Top             =   1215
             Width           =   1440
@@ -1093,8 +1093,8 @@ Begin VB.Form frmCharacter
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   108
-            Left            =   1920
-            TabIndex        =   263
+            Left            =   1995
+            TabIndex        =   264
             Tag             =   "ctl"
             Top             =   975
             Width           =   1440
@@ -1107,8 +1107,8 @@ Begin VB.Form frmCharacter
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   107
-            Left            =   1920
-            TabIndex        =   262
+            Left            =   1995
+            TabIndex        =   263
             Tag             =   "ctl"
             Top             =   720
             Width           =   1440
@@ -1122,7 +1122,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   93
             Left            =   0
-            TabIndex        =   256
+            TabIndex        =   257
             Tag             =   "ctl"
             Top             =   0
             Width           =   960
@@ -1455,7 +1455,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   102
             Left            =   0
-            TabIndex        =   257
+            TabIndex        =   258
             Tag             =   "ctl"
             Top             =   1200
             Width           =   1260
@@ -1539,15 +1539,15 @@ Begin VB.Form frmCharacter
          Height          =   1215
          Index           =   2
          Left            =   9840
-         TabIndex        =   235
+         TabIndex        =   236
          Tag             =   "ctl"
-         Top             =   2640
+         Top             =   3000
          Width           =   2352
          Begin Compendium.userSpinner usrspnEpic 
             Height          =   252
             Index           =   10
             Left            =   1380
-            TabIndex        =   238
+            TabIndex        =   239
             Top             =   240
             Width           =   852
             _ExtentX        =   1508
@@ -1569,7 +1569,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   11
             Left            =   1380
-            TabIndex        =   240
+            TabIndex        =   241
             Top             =   480
             Width           =   852
             _ExtentX        =   1508
@@ -1591,7 +1591,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   12
             Left            =   1380
-            TabIndex        =   242
+            TabIndex        =   243
             Top             =   720
             Width           =   852
             _ExtentX        =   1508
@@ -1613,7 +1613,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   16
             Left            =   1380
-            TabIndex        =   244
+            TabIndex        =   245
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -1640,7 +1640,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   99
             Left            =   0
-            TabIndex        =   243
+            TabIndex        =   244
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -1654,7 +1654,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   80
             Left            =   1380
-            TabIndex        =   236
+            TabIndex        =   237
             Tag             =   "ctl"
             Top             =   0
             Width           =   840
@@ -1668,7 +1668,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   81
             Left            =   0
-            TabIndex        =   237
+            TabIndex        =   238
             Tag             =   "ctl"
             Top             =   252
             Width           =   1260
@@ -1682,7 +1682,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   82
             Left            =   0
-            TabIndex        =   239
+            TabIndex        =   240
             Tag             =   "ctl"
             Top             =   492
             Width           =   1260
@@ -1696,7 +1696,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   83
             Left            =   0
-            TabIndex        =   241
+            TabIndex        =   242
             Tag             =   "ctl"
             Top             =   732
             Width           =   1260
@@ -1707,7 +1707,7 @@ Begin VB.Form frmCharacter
          BackColor       =   &H00FFFFC0&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   1215
+         Height          =   1575
          Index           =   1
          Left            =   9840
          TabIndex        =   225
@@ -1784,8 +1784,30 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   15
             Left            =   1380
-            TabIndex        =   234
+            TabIndex        =   233
             Top             =   960
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin Compendium.userSpinner usrspnEpic 
+            Height          =   255
+            Index           =   18
+            Left            =   1380
+            TabIndex        =   234
+            Top             =   1200
             Width           =   855
             _ExtentX        =   1508
             _ExtentY        =   450
@@ -1806,12 +1828,26 @@ Begin VB.Form frmCharacter
             Alignment       =   1  'Right Justify
             Appearance      =   0  'Flat
             BackColor       =   &H80000005&
+            Caption         =   "Trap Damage"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   120
+            Left            =   0
+            TabIndex        =   271
+            Tag             =   "ctl"
+            Top             =   1200
+            Width           =   1260
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
             Caption         =   "Tactics"
             ForeColor       =   &H80000008&
             Height          =   240
             Index           =   98
             Left            =   0
-            TabIndex        =   233
+            TabIndex        =   235
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -2416,7 +2452,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   118
             Left            =   0
-            TabIndex        =   272
+            TabIndex        =   269
             Tag             =   "ctl"
             Top             =   255
             Width           =   1200
@@ -2444,7 +2480,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   103
             Left            =   0
-            TabIndex        =   258
+            TabIndex        =   259
             Tag             =   "ctl"
             Top             =   3120
             Width           =   1200
@@ -2681,7 +2717,7 @@ Begin VB.Form frmCharacter
       ForeColor       =   &H80000008&
       Height          =   3972
       Left            =   2640
-      TabIndex        =   251
+      TabIndex        =   252
       Top             =   240
       Visible         =   0   'False
       Width           =   2712
@@ -2694,7 +2730,7 @@ Begin VB.Form frmCharacter
          Index           =   1
          Left            =   720
          Style           =   1  'Graphical
-         TabIndex        =   255
+         TabIndex        =   256
          Top             =   3300
          Width           =   1332
       End
@@ -2707,7 +2743,7 @@ Begin VB.Form frmCharacter
          Index           =   0
          Left            =   720
          Style           =   1  'Graphical
-         TabIndex        =   254
+         TabIndex        =   255
          Top             =   2820
          Width           =   1332
       End
@@ -2716,7 +2752,7 @@ Begin VB.Form frmCharacter
          ItemData        =   "frmCharacter.frx":000C
          Left            =   600
          List            =   "frmCharacter.frx":000E
-         TabIndex        =   252
+         TabIndex        =   253
          Top             =   420
          Width           =   1572
       End
@@ -2728,7 +2764,7 @@ Begin VB.Form frmCharacter
          ForeColor       =   &H80000008&
          Height          =   216
          Left            =   120
-         TabIndex        =   253
+         TabIndex        =   254
          Top             =   0
          Width           =   1548
       End
@@ -2772,9 +2808,9 @@ Begin VB.Form frmCharacter
       TabStop         =   0   'False
       Top             =   4440
       Width           =   3552
-      _ExtentX        =   6271
-      _ExtentY        =   556
-      Captions        =   "Notes,Tomes,Past Lives"
+      _extentx        =   6271
+      _extenty        =   556
+      captions        =   "Notes,Tomes,Past Lives"
    End
    Begin VB.CheckBox chkButton 
       Appearance      =   0  'Flat
@@ -2785,7 +2821,7 @@ Begin VB.Form frmCharacter
       Index           =   6
       Left            =   8700
       Style           =   1  'Graphical
-      TabIndex        =   249
+      TabIndex        =   250
       Top             =   3300
       Width           =   1452
    End
@@ -2798,7 +2834,7 @@ Begin VB.Form frmCharacter
       Index           =   5
       Left            =   8700
       Style           =   1  'Graphical
-      TabIndex        =   250
+      TabIndex        =   251
       Top             =   3780
       Width           =   1452
    End
@@ -2811,7 +2847,7 @@ Begin VB.Form frmCharacter
       Index           =   4
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   248
+      TabIndex        =   249
       Top             =   1920
       Width           =   1212
    End
@@ -2825,7 +2861,7 @@ Begin VB.Form frmCharacter
       Index           =   3
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   247
+      TabIndex        =   248
       Top             =   1320
       Width           =   1212
    End
@@ -2838,7 +2874,7 @@ Begin VB.Form frmCharacter
       Index           =   2
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   246
+      TabIndex        =   247
       Top             =   840
       Width           =   1212
    End
@@ -2851,7 +2887,7 @@ Begin VB.Form frmCharacter
       Index           =   1
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   245
+      TabIndex        =   246
       Top             =   360
       Width           =   1212
    End
@@ -2871,10 +2907,10 @@ Begin VB.Form frmCharacter
          TabIndex        =   24
          Top             =   960
          Width           =   1992
-         _ExtentX        =   3519
-         _ExtentY        =   450
-         Value           =   0   'False
-         Caption         =   "Custom Colors"
+         _extentx        =   3519
+         _extenty        =   450
+         value           =   0   'False
+         caption         =   "Custom Colors"
       End
       Begin VB.ComboBox cboColor 
          Height          =   312
@@ -3423,7 +3459,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   106
             Left            =   0
-            TabIndex        =   261
+            TabIndex        =   262
             Tag             =   "ctl"
             Top             =   960
             Width           =   1140
@@ -3437,7 +3473,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   105
             Left            =   0
-            TabIndex        =   260
+            TabIndex        =   261
             Tag             =   "ctl"
             Top             =   240
             Width           =   1140

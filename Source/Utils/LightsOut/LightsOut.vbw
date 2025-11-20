@@ -1,0 +1,8 @@
+userCheckBox = 224, 224, 1313, 728, C, 96, 96, 1185, 600, C
+clsConfig = 96, 96, 1185, 600, C
+frmHelp = 64, 64, 1153, 568, C, 128, 128, 1217, 632, C
+basHelp = 32, 32, 1422, 536, C
+frmLightsOut = 32, 32, 1121, 536, C, 64, 64, 1153, 568, C
+basLightsOut = 32, 32, 1121, 536, C
+basMouseWheel = 160, 160, 1249, 664, C
+basLibrary = 192, 192, 1281, 696, C

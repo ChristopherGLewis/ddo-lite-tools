@@ -60,7 +60,7 @@ End Sub
 Private Sub SetDefaults()
     Dim typBlank As TomesType
     
-    ' Set defaults
+    ' Set defaults, then change with tomes.txt
     tomes = typBlank
     With tomes
         ParseTomeSchedule .Stat, "8, 1, 1, 3, 7, 11, 15, 19, 22"

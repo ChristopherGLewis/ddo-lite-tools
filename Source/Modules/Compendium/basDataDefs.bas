@@ -234,7 +234,7 @@ End Type
 Public Const maxClassCount = 24  '2025.03.11 DragnDisciple=> 15 classes + 7 Archtypes
 Public Const maxRaceCount = 16 ' 2026.06.21 Dhampir
 Public Const maxIconicCount = 11 ' 2026.06.21 Dhampir Dark Bargainer
-Public Const maxEpicCount = 17 ' 2022.04.29 Added Eclispe Power
+Public Const maxEpicCount = 18 ' 2025.11.20 Added missed Trap Damage
 
 Public Type PastLifeType
     Class(1 To maxClassCount) As Long
