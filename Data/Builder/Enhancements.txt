@@ -1785,7 +1785,7 @@ All: Tier 4: Agility Engine
 AbilityName: Tactical Mobility
 Descrip: 10% Action Boost bonus to Movement Speed while wearing a Rune Arm.
 Tier: 5
-Cost: 2
+Cost: 1
 
 TreeName: Beacon of Hope
 Abbreviation: Beacon
@@ -5480,7 +5480,7 @@ Ranks: 3
 AbilityName: Beacon
 Descrip: While your Eldritch Aura is active, you gain +10 Healing Amplification. In addition, you and nearby allies get a +10 Determination bonus to Healing Amplification.
 Tier: 5
-Cost: 2
+Cost: 1
 
 AbilityName: Shining Through
 Descrip: Gain a Sacred bonus to Temporary Hit Points equal to 8x your Constitution Score that lasts for up to 10 minutes. For 20 seconds, you gain +25 Sacred bonus to Healing Amplification.}}Cooldown: 30 sec}SP Cost: 8
@@ -5495,7 +5495,7 @@ All: Tier 4: Imbue Summons
 AbilityName: Displacement
 Descrip: Spell-Like Ability: Your appearance becomes extremely blurred, giving enemies a 50% concealment miss chance when attacking. (Cost: 6 SP, Cooldown: 3 seconds)
 Tier: 5
-Cost: 2
+Cost: 1
 
 TreeName: Falconry
 Type: Global
@@ -7413,11 +7413,11 @@ Descrip: You permanently gain the effects of the True Seeing spell. You gain +1 
 Tier: 0
 
 AbilityName: Undaunted
-Descrip: +10 Ranged Power, +3 to all Saving Throws, +4 to the Max Dex Bonus of equipped armor. You gain the Slippery Mind feat (you can wriggle free from magical effects that would otherwise control or compel you. You gain a second saving throw versus enchantments). In addition, you gain +1 bonus Imbue Dice.
+Descrip: +3 to all Saving Throws, +4 to the Max Dex Bonus of equipped armor. You gain the Slippery Mind feat (you can wriggle free from magical effects that would otherwise control or compel you. You gain a second saving throw versus enchantments). In addition, you gain +1 bonus Imbue Dice.
 Tier: 0
 
 AbilityName: Master Inquisitive
-Descrip: +2 to all Ability Scores. +10 Ranged Power. While wielding a Light or Heavy (non-repeating) Crossbow, your Vorpal hits will knock down targets hit on a natural 20 + confirmation for 6 seconds without a saving throw, as a Great Crossbow. In addition, you gain +1 bonus Imbue Dice.
+Descrip: +2 to all Ability Scores. +5 Ranged Power. While wielding a Light or Heavy (non-repeating) Crossbow, your Vorpal hits will knock down targets hit on a natural 20 + confirmation for 6 seconds without a saving throw, as a Great Crossbow. In addition, you gain +1 bonus Imbue Dice.
 Tier: 0
 
 AbilityName: Dual Shooter
@@ -7550,7 +7550,7 @@ Descrip: Grants the Improved Uncanny Dodge feat. Activate this ability to gain a
 Tier: 5
 
 AbilityName: Inquisitor's Path
-Descrip: Which path will you follow?}{Gain +10 Ranged Power, +15% Attack Speed and +15% Doubleshot with non-Repeating, non-Great Crossbows, plus one of the following:
+Descrip: Which path will you follow?}{Gain +15% Attack Speed and +15% Doubleshot with non-Repeating, non-Great Crossbows, plus one of the following:
 Tier: 5
 All: Tier 4: Greater Law
 Selector: Jaded, Optimistic, Vigilante
@@ -8000,8 +8000,8 @@ AbilityName: Improved Detection
 Descrip: You can detect traps and search from 50% further away. You gain proficiency with heavy repeating crossbows. You gain +1 to-hit and damage, and 1 extra Sneak Attack die with bows, crossbows, and thrown weapons.
 Tier: 0
 
-AbilityName: Expert Builder
-Descrip: You gain a +1 Competence Bonus to Critical Multiplier with bows, crossbows & thrown weapons. Great Crossbows instead gain +2 Competence Bonus to Critical Multiplier. Cooldowns of Alchemical Trap attacks are reduced by 20%.
+AbilityName: Sniper
+Descrip: You gain 1 extra Sneak Attack die with bows, crossbows, and thrown weapons. Non-repeating crossbows increase this to 3 Sneak Attack dice and also gain +20% damage. Great Crossbows now vorpal on a 19-20.
 Tier: 0
 
 AbilityName: Hip Flask
@@ -8099,8 +8099,8 @@ Descrip: You are skilled at enhancing, salvaging, and re-purposing your arrows, 
 Tier: 4
 Ranks: 3
 
-AbilityName: Leg Shot
-Descrip: Ranged Attack: +20% damage. On Damage: Slow your enemy's movement by 50% for 10 seconds. (Cooldown: 10 seconds, also affects bosses)
+AbilityName: Line Up and Sit Down
+Descrip:  Ranged attack. 250% damage mod. Knocks down target for 2 seconds no save. (Cooldown: 6 seconds)
 Tier: 4
 Cost: 2
 
@@ -8120,8 +8120,8 @@ Descrip: Cooldown: 20 seconds. Spell Resistance: No}{ Alchemical Trap Attack: Qu
 Tier: 5
 Ranks: 3
 
-AbilityName: Sniper
-Descrip: You gain 1 extra Sneak Attack die with bows, crossbows, and thrown weapons. Non-repeating crossbows increase this to 3 Sneak Attack dice and also gain +20% damage. Great Crossbows now vorpal on a 19-20.
+AbilityName: Expert Builder
+Descrip: You gain a +1 Competence Bonus to Critical Multiplier with bows, crossbows & thrown weapons. Great Crossbows instead gain +2 Competence Bonus to Critical Multiplier. Cooldowns of Alchemical Trap attacks are reduced by 20%.
 Tier: 5
 Cost: 2
 
@@ -9293,7 +9293,7 @@ AbilityName: Efficient Empower Healing
 Descrip: Healing spells cast while the Empower Healing Spell feat is activated cost [1/2/4] fewer spell points.
 Tier: 2
 Ranks: 3
-Cost: 2
+Cost: 1
 All: Feat: Empower Healing Spell
 
 AbilityName: Purge Dark Magics
@@ -10891,13 +10891,13 @@ Cost: 2
 AbilityName: Supreme Hunger
 Descrip: Your Consume damage over time is increased by 2d10. Your Stricken damage is increased by 4d6.
 Tier: 5
-Cost: 2
+Cost: 1
 All: Tier 4: Greater Hunger
 
 AbilityName: Feed on Magic
 Descrip: Attacking with melee, ranged, and Eldritch Blast gives a 10% chance to gain 10 temporary Spell Points +1 per Warlock level. Spell Points last 1 minute.
 Tier: 5
-Cost: 2
+Cost: 1
 
 AbilityName: Spell Tearing
 Descrip: You gain +3% chance to critically hit with your spells and Eldritch Blast
@@ -11934,9 +11934,9 @@ Cost: 2
 All: Tier 3: Strong Pact
 
 AbilityName: Eldritch Power
-Descrip: Your Eldritch Blast deals +1d6 damage.
+Descrip: Your Eldritch Blast deals +2d6 damage.
 Tier: 5
-Cost: 2
+Cost: 1
 
 AbilityName: Eldritch Ball
 Descrip: Spell-Like Ability: Project your terror at a distance, exploding in an area, dealing Eldritch Blast damage and effects to nearby enemies. The damage scales with 150% spell power. Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Intensify. Spell Resistance: No. (Cost: [12/8/4] Depravity, Cooldown: 6 seconds)
@@ -11952,13 +11952,13 @@ All: Tier 4: Bewitching Blast
 AbilityName: Spell Focus
 Descrip: Select one:}{-Spell Focus: Conjuration: You gain +2 bonus to your spell DCs of this spell school.}{-Spell Focus: Enchantment: You gain +2 bonus to your spell DCs of this spell school.}{-Spell Focus: Evocation: You gain +2 bonus to your spell DCs of this spell school.}{-Spell Focus: Illusion: You gain +2 bonus to your spell DCs of this spell school.}{-Spell Focus: Transmutation: You gain +2 bonus to your spell DCs of this spell school.
 Tier: 5
-Cost: 3
+Cost: 2
 Selector: Conjuration, Enchantment, Evocation, Illusion, Transmutation
 
 AbilityName: Planar Focus
 Descrip: +1 to all Spell DCs
 Tier: 5
-Cost: 2
+Cost: 1
 
 TreeName: Tempest
 Type: Class
@@ -13609,7 +13609,7 @@ Descrip:
 Tier: 0
 
 AbilityName: Niac's Cold Ray
-Descrip: Spell-Like Ability: Niac's Cold Ray A ray of freezing ice and air projects from your finger dealing 1d5+5 cold damage per caster level (Maximum damage 5d5+25 at caster level 5). This ray has double spell range. A successful Reflex save negates damage.}}[4/3/2] SP}Cooldown: [12/8/4] seconds
+Descrip: Spell-Like Ability: Niac's Cold Ray A ray of freezing ice and air projects from your finger dealing 1d5+5 cold damage per caster level (Maximum damage 5d5+25 at caster level 5). This ray has double spell range. A successful Reflex save negates damage. (Cost: [4/3/2] SP, Cooldown: [12/8/4] seconds)
 Tier: 1
 Ranks: 3
 
@@ -13705,7 +13705,7 @@ AbilityName: Snowball Swarm
 Descrip: Spell-Like Ability: A flurry of magical snowballs erupt near your target, dealing 1d6+2 cold damage per caster level. Maximum damage 10d6+20 at caster level 10. A successful Reflex save reduces the damage by half. (Cost: [8/6/4] SP, Cooldown: [15/10/5] seconds)
 Tier: 4
 Ranks: 3
-All: Tier 1: Cold Ray
+All: Tier 1: Niac's Cold Ray
 
 AbilityName: Efficient Heighten
 Descrip: Using the Heighten Spell Metamagic costs you [1/2] fewer Spell Points per heightened level.
@@ -14084,7 +14084,7 @@ Descrip: Your Vampiric Bite now applies 1 Negative Level. This increases by 1 fo
 Tier: 1
 
 AbilityName: Skills
-Descrip: +1/2/3 to Hide, Move Silently, and Jump
+Descrip: +[1/2/3] to Hide, Move Silently, and Jump
 Tier: 1
 Ranks: 3
 
@@ -14098,21 +14098,22 @@ SelectorName: Drink in Death
 Descrip: +20 Negative Amplification
 
 AbilityName: Tenuous Relationship With Death
-Descrip: Your range of unconsciousness extends by 5/10/20 Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
 Tier: 1
 Ranks: 3
 
 AbilityName: Innate Protection
-Descrip: +1/2/3 to Saves vs Spells
+Descrip: +[1/2/3] to Saves vs Spells
 Tier: 1
 Ranks: 3
 
 AbilityName: Lifeblood
-Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +1/2/3 to all Ability Scores for 60 seconds.
+Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +[1/2/3] to all Ability Scores for 60 seconds.
 Tier: 2
+Ranks: 3
 
 AbilityName: Dominate Animal SLA
-Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of INT/WIS/CHA Mod + Enchantment Bonuses)
+Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of [INT/WIS/CHA] Mod + Enchantment Bonuses)
 Tier: 2
 
 AbilityName: Embrace Death
@@ -14125,16 +14126,16 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Cloak of Undeath
-Descrip: +2/+4/+6 MRR. Rank 3: +6 MRR Cap.
+Descrip: +[2/+4/+6] MRR. Rank 3: +6 MRR Cap.
 Tier: 2
 Ranks: 3
 
 AbilityName: Fearsome Countenance
-Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of STR/CON/CHA Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
+Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of [STR/CON/CHA] Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
 Tier: 3
 
 AbilityName: Stunning Visage
-Descrip: +2/3/4 to Stun DCs.
+Descrip: +[2/3/4] to Stun DCs.
 Tier: 3
 Ranks: 3
 
@@ -14147,20 +14148,20 @@ Descrip: Enemies in a small area around where you finish your Rush of Bats take 
 Tier: 3
 
 AbilityName: Improved Dodge
-Descrip: +1%/+2%/+3% Dodge when wearing light or no armor.
+Descrip: +[1/2/3]% Dodge when wearing light or no armor.
 Tier: 3
 
 AbilityName: Ascendant Bite
-Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of STR/CON/CHA Mod + Stunning Bonuses + Enchantment Bonuses) or die.
+Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of [STR/CON/CHA] Mod + Stunning Bonuses + Enchantment Bonuses) or die.
 Tier: 4
 
 AbilityName: Vampiric Persuasion
-Descrip: +1/2/3 Enchantment DCs
+Descrip: +[1/2/3] Enchantment DCs
 Tier: 4
 Ranks: 3
 
 AbilityName: Dominate Person SLA
-Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of INT/WIS/CHA Mod + Enchantment Bonuses)
+Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of [INT/WIS/CHA] Mod + Enchantment Bonuses)
 Tier: 4
 
 AbilityName: Biting Swarm
@@ -14214,12 +14215,12 @@ SelectorName: Drink in Death
 Descrip: +20 Negative Amplification
 
 AbilityName: Tenuous Relationship With Death
-Descrip: Your range of unconsciousness extends by 5/10/20 Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
 Tier: 1
 Ranks: 3
 
 AbilityName: Dread Mist
-Descrip: SLA. 4 Spell Points. 12 second cooldown. (See below, in the Pact.)Innate Protection
+Descrip: SLA. 4 Spell Points. 12 second cooldown. (See below, in the Pact.) Innate Protection
 Tier: 1
 
 AbilityName: Lifeblood
@@ -14240,12 +14241,12 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Cloak of Undeath
-Descrip: +2/+4/+6 MRR. Rank 3: +6 MRR Cap.
+Descrip: +[2/4/6] MRR. Rank 3: +6 MRR Cap.
 Tier: 2
 Ranks: 3
 
 AbilityName: Fearsome Countenance
-Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of STR/CON/CHA Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
+Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of [STR/CON/CHA] Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
 Tier: 3
 
 AbilityName: Vampiric Blast
@@ -14261,11 +14262,11 @@ Descrip: Enemies in a small area around where you finish your Rush of Bats take 
 Tier: 3
 
 AbilityName: Improved Dodge
-Descrip: +1%/+2%/+3% Dodge when wearing light or no armor.
+Descrip: +[1/2/3]% Dodge when wearing light or no armor.
 Tier: 3
 
 AbilityName: Dark Ascendant Bite
-Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of STR/CON/CHA Mod + Stunning Bonuses + Necromancy Bonuses) or die.
+Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of [STR/CON/CHA] Mod + Stunning Bonuses + Necromancy Bonuses) or die.
 Tier: 4
 
 AbilityName: Crushing Dread SLA

@@ -171,6 +171,6 @@ RaceName: Dark Bargainer
 Abbreviation: DarkB
 Type: Iconic
 IconicClass: Warlock
-Stats: 9, 8, 8, 9, 8, 9
+Stats: 8, 8, 8, 9, 8, 9
 GrantedFeats1: Vampiric Bite, Spell Focus: Evocation
 Flags: BonusFeat

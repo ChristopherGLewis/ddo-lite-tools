@@ -1609,6 +1609,7 @@ Cost: 1
 AbilityName: Lunar Insight
 Descrip: Multiselector: Select an Ability Score to boost Arcane Insight with.
 Tier: 2
+All: Feat: Arcane Insight
 Selector: Charisma, Intelligence, Wisdom
 SelectorName: Charisma
 Descrip: When you use the Arcane Insight Epic Feat, the cooldowns of your Words of Power spell reset, and you gain 200% of your Charisma in Temporary Spell points that last 60 seconds.

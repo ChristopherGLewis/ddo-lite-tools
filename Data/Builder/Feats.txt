@@ -500,6 +500,7 @@ Level: 21
 FeatName: Deflect Arrows
 Group: Heroic, Defense
 Descrip: You knock aside one incoming projectile that would have struck you every 6 seconds.
+Stat: Dexterity 13
 Class: Monk 1, Dragon Disciple 1
 ClassBonus: Monk, Dragon Disciple
 RaceBonus: Human, Purple Dragon Knight
@@ -1210,12 +1211,12 @@ Class: Sacred Fist 1
 Flags: Deity, ClassOnly
 ClassOnlyClass: Sacred Fist
 ClassOnlyLevel: 1
-Flags: Unselectable
 
 FeatName: Sacred Fist Follower of
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
+RaceBonus: Human
 Class: Sacred Fist 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
