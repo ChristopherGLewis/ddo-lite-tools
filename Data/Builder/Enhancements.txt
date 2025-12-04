@@ -743,7 +743,7 @@ Ranks: 3
 All: Tier 4: Intense Faith
 
 AbilityName: Archon's Fury
-Descrip: Your Lantern Archon attacks will add a stack of Archon's Fury. (Archon's Fury: 1d6+1 Fire damage every 2 seconds for 10 seconds, stacks up to 20 times.) While toggled on, every shot from your Archon costs 12 spell points.
+Descrip: Your Lantern Archon attacks will add a stack of Archon's Fury. Archon's Fury: 2d6+1 Fire damage every 2 seconds for 10 seconds. Stacks up to 10 times.
 Tier: 5
 All: Tier 0: Summon Archon
 
@@ -1279,7 +1279,7 @@ Color: Blue
 Stats: Intelligence
 
 AbilityName: Archmage Specialization
-Descrip: Choose a school to specialize in, gaining a Spell-Like Ability from that school. In addition, each enhancement point spent in the Archmage tree grants +1 Spell Power to all spells and +2 to your Maximum Spell points.}{-Abjuration I: Shield: Spell-Like Ability: Shield (Cost: 1 SP, Cooldown: 6 seconds)}{-Conjuration I: Grease: Spell-Like Ability: Grease (Cost: 1 SP, Cooldown: 6 seconds)}{-Enchantment I: Hypnotism: Spell-Like Ability: Hypnotism (Cost: 1 SP, Cooldown: 6 seconds)}{-Evocation I: Magic Missile: Spell-Like Ability: Magic Missile (Cost: 2 SP, Cooldown: 6 seconds)}{-Illusion I: Invisibility: Spell-Like Ability: Invisibility (Cost: 1 SP, Cooldown: 6 seconds)}{-Necromancy I: Chill Touch: Spell-Like Ability: Chill Touch (Cost: 2 SP, Cooldown: 6 seconds)}}Note: Does not share a cooldown with the Divine Disciple's Chill Touch SLA.}{-Transmutation I: Jump: Spell-Like Ability: Jump (Cost: 1 SP, Cooldown: 6 seconds)
+Descrip: Choose a school to specialize in, gaining a Spell-Like Ability from that school. In addition, each enhancement point spent in the Archmage tree grants +1 Universal Spell Power and +2 to your Maximum Spell points. Each core ability grants +5 Universal Spell Power.}{-Abjuration I: Shield: Spell-Like Ability: Shield (Cost: 1 SP, Cooldown: 6 seconds)}{-Conjuration I: Grease: Spell-Like Ability: Grease (Cost: 1 SP, Cooldown: 6 seconds)}{-Enchantment I: Hypnotism: Spell-Like Ability: Hypnotism (Cost: 1 SP, Cooldown: 6 seconds)}{-Evocation I: Magic Missile: Spell-Like Ability: Magic Missile (Cost: 2 SP, Cooldown: 6 seconds)}{-Illusion I: Invisibility: Spell-Like Ability: Invisibility (Cost: 1 SP, Cooldown: 6 seconds)}{-Necromancy I: Chill Touch: Spell-Like Ability: Chill Touch (Cost: 2 SP, Cooldown: 6 seconds)}}Note: Does not share a cooldown with the Divine Disciple's Chill Touch SLA.}{-Transmutation I: Jump: Spell-Like Ability: Jump (Cost: 1 SP, Cooldown: 6 seconds)
 Tier: 0
 Flags: SelectorOnly
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
@@ -1429,7 +1429,7 @@ Ranks: 2
 All: Feat: Heighten Spell, Tier 2: Efficient Metamagic
 
 AbilityName: School Mastery
-Descrip: You have attained mastery in the school of magic that you specialize in. The DC of spells you cast from that school are increased by 1.}{-Primary Spell Focus: Abjuration: You have trained extensively in Abjuration magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Conjuration: You have trained extensively in Conjuration magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Enchantment: You have trained extensively in Enchantment magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Evocation: You have trained extensively in Evocation magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Illusion: You have trained extensively in Illusion magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Necromancy: You have trained extensively in Necromancy magic, granting a +1 bonus to your spell DCs of that school.}{-Primary Spell Focus: Transmutation: You have trained extensively in Transmutation magic, granting a +1 bonus to your spell DCs of that school.
+Descrip: You have attained mastery in the school of magic that you specialize in. The DC of spells you cast from that school are increased by 1.
 Tier: 4
 Cost: 2
 SharedSelector: Tier 0: Archmage Specialization
@@ -1451,19 +1451,19 @@ Descrip: Your offensive spells gain a 10% chance to trigger Arcane Supremacy.}{ 
 Tier: 5
 Cost: 2
 
-AbilityName: School Mastery
-Descrip: You have attained new levels of mastery in the school of magic that you specialize in. The DC of spells you cast from that school are increased by an additional 1.}{-Primary Spell Focus: Abjuration: You have trained extensively in Abjuration magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Conjuration: You have trained extensively in Conjuration magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Enchantment: You have trained extensively in Enchantment magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Evocation: You have trained extensively in Evocation magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Illusion: You have trained extensively in Illusion magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Necromancy: You have trained extensively in Necromancy magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).}{-Primary Spell Focus: Transmutation: You have trained extensively in Transmutation magic, granting an additional +1 bonus to your spell DCs of that school (for a total of +2).
+AbilityName: School Mastery II
+Descrip: You have attained new levels of mastery in the school of magic that you specialize in. The DC of spells you cast from that school are increased by an additional +2 (for a total of +3).
 Tier: 5
 Cost: 2
 All: Tier 4: School Mastery
 SharedSelector: Tier 4: School Mastery
 
 AbilityName: Secondary School Mastery
-Descrip: Select one of the spell schools you are not specialized in. The DC of spells you cast from that school are increased by 1.}{-Secondary Spell Focus: Abjuration: You have trained extensively in Abjuration magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Conjuration: You have trained extensively in Conjuration magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Enchantment: You have trained extensively in Enchantment magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Evocation: You have trained extensively in Evocation magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Illusion: You have trained extensively in Illusion magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Necromancy: You have trained extensively in Necromancy magic, granting a +1 bonus to your spell DCs of that school.}{-Secondary Spell Focus: Transmutation: You have trained extensively in Transmutation magic, granting a +1 bonus to your spell DCs of that school.
+Descrip: Select one of the spell schools you are not specialized in. The DC of spells you cast from that school are increased by 1.
 Tier: 5
 Cost: 2
-All: Tier 5: School Mastery
-Parent: Tier 5: School Mastery
+All: Tier 5: School Mastery II
+Parent: Tier 5: School Mastery II
 
 TreeName: Assassin
 Type: Class
@@ -1472,11 +1472,11 @@ Color: Red
 Stats: Dexterity, Intelligence
 
 AbilityName: Knife in the Darkness
-Descrip: You gain proficiency with Kukris. You can also use your Dexterity modifier to hit with Daggers and Kukris
+Descrip: You gain proficiency with Kukris.
 Tier: 0
 
 AbilityName: Dagger in the Back
-Descrip: You can now use your Dexterity for damage with Daggers and Kukris. If you possess the Weapon Finesse feat, this also applies to melee weapons with which you can use your Dexterity modifier to hit. This enhancement does not work with handwraps or unarmed attacks.
+Descrip: You gain +1 damage and 10% Fortification Bypass.
 Tier: 0
 
 AbilityName: Assassin's Trick
@@ -1785,7 +1785,6 @@ All: Tier 4: Agility Engine
 AbilityName: Tactical Mobility
 Descrip: 10% Action Boost bonus to Movement Speed while wearing a Rune Arm.
 Tier: 5
-Cost: 1
 
 TreeName: Beacon of Hope
 Abbreviation: Beacon
@@ -1807,7 +1806,7 @@ Descrip: Whenever you cast one of your Beacons, or use Flight of Glory, you and 
 Tier: 0
 
 AbilityName: Beacon of Hope
-Descrip: Cost 30 Spell Points. You and allies ahead of you take the dispelling effects of a Panacea, Restoration, and Remove Paralysis spell, and heal for 5 points of Positive Energy per Favored Soul level. Undead enemies ahead of you take the same amount of damage (Will save for half damage). Both scale with your Positive Spell Power. (Cooldown: 30 seconds) This ability is considered a 5th level Favored Soul spell of the Conjuration school.}(Metamagic: Empower Healing, Quicken, Heighten, Embolden.)
+Descrip: Cost 30 Spell Points. You and allies ahead of you take the dispelling effects of a Panacea, Restoration, and Remove Paralysis spell, and heal for 5 points of Positive Energy per Favored Soul level. Undead enemies ahead of you take the same amount of damage (Will save for hal+2f damage). Both scale with your Positive Spell Power. (Cooldown: 30 seconds) This ability is considered a 5th level Favored Soul spell of the Conjuration school.}(Metamagic: Empower Healing, Quicken, Heighten, Embolden.)
 Tier: 0
 
 AbilityName: Flight of Glory
@@ -2934,7 +2933,7 @@ Cost: 2
 All: Tier 1: Increased Empathy
 
 AbilityName: Improved Weapon Finesse
-Descrip: You can use your Dexterity modifier for damage when wielding thrown weapons, and melee weapons with which you can use your Dexterity modifier to hit. (Longbows and Shortbows use your Dexterity modifier by default).}{ The Weapon Finesse feat is NOT required to take this enhancement.}{ Does not apply to crossbows. Does not apply to handwraps when using weapon finesse but will work when used with Basic Ninja Training.}{ Applies to Weapon Finesse weapons if you have that feat, as well as weapons (including handwraps and unarmed) with which you gain Dexterity to hit via enhancements.
+Descrip: You gain +3 To hit and +15% Fortification Bypass.
 Tier: 2
 
 AbilityName: Action Boost
@@ -5121,8 +5120,8 @@ Descrip: Greater Dragonmark Spell: Dark shadows wrap around an enemy, slowing it
 Tier: 4
 All: Tier 3: Greater Dragonmark of Shadow
 
-AbilityName: Grace
-Descrip: You may use Dexterity to damage with your chosen set of weapons.}Choose one:}{-Aerenal Grace: You may use Dexterity to determine the damage you deal with Longswords, Rapiers, and Longbows.}}Note: Overrides Bow Strength}{-Valenar Grace: You may use Dexterity to determine the damage you deal with Scimitars, Falchions, and Shortbows.
+AbilityName: Elven Grace
+Descrip: You may use your Dexterity modifier to determine To Hit and Damage on all weapons.
 Tier: 4
 All: Tier 4: Elven Weapon Training
 Flags: SelectorOnly
@@ -5480,7 +5479,6 @@ Ranks: 3
 AbilityName: Beacon
 Descrip: While your Eldritch Aura is active, you gain +10 Healing Amplification. In addition, you and nearby allies get a +10 Determination bonus to Healing Amplification.
 Tier: 5
-Cost: 1
 
 AbilityName: Shining Through
 Descrip: Gain a Sacred bonus to Temporary Hit Points equal to 8x your Constitution Score that lasts for up to 10 minutes. For 20 seconds, you gain +25 Sacred bonus to Healing Amplification.}}Cooldown: 30 sec}SP Cost: 8
@@ -5495,7 +5493,6 @@ All: Tier 4: Imbue Summons
 AbilityName: Displacement
 Descrip: Spell-Like Ability: Your appearance becomes extremely blurred, giving enemies a 50% concealment miss chance when attacking. (Cost: 6 SP, Cooldown: 3 seconds)
 Tier: 5
-Cost: 1
 
 TreeName: Falconry
 Type: Global
@@ -6690,7 +6687,7 @@ Cost: 2
 All: Tier 2: Lesser Dragonmark of Healing
 
 AbilityName: Skillful Thrower
-Descrip: You can use your Dexterity modifier for damage with returning thrown weapons.
+Descrip: You gain +2 To Hit and Damage when using a Thrown Weapon.
 Tier: 3
 Cost: 2
 
@@ -7550,11 +7547,11 @@ Descrip: Grants the Improved Uncanny Dodge feat. Activate this ability to gain a
 Tier: 5
 
 AbilityName: Inquisitor's Path
-Descrip: Which path will you follow?}{Gain +15% Attack Speed and +15% Doubleshot with non-Repeating, non-Great Crossbows, plus one of the following:
+Descrip: Which path will you follow?}{Gain +15% Attack Speed and +15% Doubleshot with Light and Heavy (non-Repeating) Crossbows, plus one of the following:
 Tier: 5
 All: Tier 4: Greater Law
 Selector: Jaded, Optimistic, Vigilante
-SelectorName: Jaded, Optimistic
+SelectorName: Jaded
 Descrip: +1 bonus Imbue Dice. Damage from Law on your Side is now 1d10 Law damage and now applies to all creatures.
 SelectorName: Optimistic
 Descrip: +2 bonus Imbue Dice.
@@ -7646,10 +7643,9 @@ Ranks: 3
 Selector: Attack Boost, Haste Boost
 
 AbilityName: Reed in the Wind
-Descrip: Focus Melee Attack: Deals +[10/20/30]% damage. If you successfully damage your target you gain a +3%/6%/9% Insight bonus to Dodge for 6 seconds. (Cooldown: 15 seconds)
+Descrip: Focus Melee Attack: Deals +[20/40/60]% damage. On damage, you gain a stack of Battle Guard: PRR and MRR are increased by 10 points for 12 seconds. Stacks up to 5 times. If the player blocks for more than 3 seconds all stacks are removed. (Cooldown: 8 seconds)
 Tier: 1
 Ranks: 3
-All: Feat: Dodge
 
 AbilityName: Tactics
 Descrip: +[1/2/3] to the DC's of your Tactical abilities.
@@ -7734,7 +7730,7 @@ Ranks: 3
 All: Feat: Mobility, Tier 2: Improved Dodge
 
 AbilityName: Shattering Strike
-Descrip: Select a melee or ranged special attack that IF it hits deals extra damage and reduces an opponent's fortification.}Choose one: (Cooldown: 10 seconds)}{-Shattering Shot: Focus Ranged Attack: Deals +[10/20/30]% damage. On Damage: Target loses 15% fortification for 10 seconds. (no save)}{-Shattering Strike: Focus Melee Attack: Deals +[10/20/30]% damage. On Damage: Target loses 15% fortification for 10 seconds. (no save)
+Descrip: Choose one:}{-Shattering Shot: Focus Ranged Attack: Deals +[25/50/100]% damage. On Damage: Target loses 15% fortification for 10 seconds (no save).}{-Shattering Strike: Focus Melee Attack: Deals +[25/50/100]% damage. On Damage: Target loses 15% fortification for 10 seconds (no save).}}(Cooldown: 10 seconds)
 Tier: 3
 Ranks: 3
 Selector: Shattering Shot, Shattering Strike
@@ -7988,7 +7984,7 @@ Descrip: Your ranged sneak attack and Point Blank Shot range increases by 5 mete
 Tier: 0
 
 AbilityName: Tanglefoot
-Descrip: Cooldown: 30 seconds. Spell Resistance: No}{-Alchemical Trap Activate: Throws a flask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies caught within by the goo puddle take: 4d6 acid damage every 2 seconds, Reflex DC (10 + Rogue Level + Intelligence Modifier) halves, and are slowed (does not affect bosses), Reflex (DC 10 + Rogue Level + Intelligence Modifier) negates. This damage scales with 200% Ranged Power.
+Descrip: Alchemical Trap Activate: Throws a flask of caustic liquid at your enemy, which explodes into a sticky mess. Enemies caught within by the goo puddle take: 4d6+1 per Sneak Attack die in acid damage every 2 seconds and are slowed (does not affect bosses). Damage scales with 200% Ranged Power. Reflex DC equal to Disable Device + 1d20 for half damage and to negate slow. (Cooldown: 30 seconds)
 Tier: 0
 None: Half-Elf Tier 4: Dilettante Special Ability: Rogue
 
@@ -8001,11 +7997,11 @@ Descrip: You can detect traps and search from 50% further away. You gain profici
 Tier: 0
 
 AbilityName: Sniper
-Descrip: You gain 1 extra Sneak Attack die with bows, crossbows, and thrown weapons. Non-repeating crossbows increase this to 3 Sneak Attack dice and also gain +20% damage. Great Crossbows now vorpal on a 19-20.
+Descrip: You gain +1 Sneak Attack die with bows, crossbows, and thrown weapons. Non-repeating crossbows instead gain +3 Sneak Attack dice and also gain +2[W]. Great Crossbows now vorpal on a 19-20.
 Tier: 0
 
 AbilityName: Hip Flask
-Descrip: Passive: +2 Dexterity and Intelligence, +1 to hit with all crossbows, +1 damage with all repeating crossbows, +2 damage with non-repeating crossbows, +2 Sneak Attack dice and +2 to hit when performing Sneak AttacksAction Boost: You drink a potion that you've been saving for a special occasion. Heals you for 10d3+30 (scales with 200% Ranged Power) and adds +10 to Dodge and Maximum Dodge for 10 seconds. For the next 60 seconds, you gain +1d6 to all ability scores, and +2d6 to attack and damage.}}Cooldown: 3 minutes}}"A little something of your own creation. Potent stuff, drink sparingly."
+Descrip: Passive: +2 Dexterity and Intelligence, +1 to hit with all crossbows, +1 damage with all repeating crossbows, +2 damage with non-repeating crossbows, +2 Sneak Attack dice and +2 to hit when performing Sneak AttacksAction Boost: You drink a potion that you've been saving for a special occasion. Heals you for 10d3+30 (scales with 200% Ranged Power) and adds +10 to Dodge and Maximum Dodge for 10 seconds. For the next 60 seconds, you gain +1d6 to all ability scores, and +2d6 to attack and damage. (Cooldown: 3 minutes)
 Tier: 0
 
 AbilityName: Sharpshooter
@@ -8019,7 +8015,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Thunderstone
-Descrip: Cooldown: 12 seconds. Spell Resistance: No}{ Alchemical Trap Attack: Throws an alchemical charge at your enemy. Deals 4d6/6d6/8d6 sonic damage and dazes in an area. Fort DC (12/16/20 + Rogue Level + Intelligence Modifier) Negates daze. The damage scales with 200% Ranged Power.}}Note: The daze does not work correctly, targets hit by the daze effect can still move and attack, yet are vulnerable to sneak attacks.)}}Bug: Thunderstone actually blinds targets and damage does not scale with RP. DDO Forums
+Descrip: Alchemical Trap Attack: Throws an alchemical charge at your enemy. Deals 4d6+1d[4/6/8] per Sneak Attack die in sonic damage and dazes in an area. (Damage scales with 200% Ranged Power, Fort DC equal to Disable Device roll for half damage and to negate daze). (Cooldown: 12 Seconds)
 Tier: 1
 Ranks: 3
 
@@ -8040,7 +8036,7 @@ Cost: 2
 All: Tier 1: Sharpshooter
 
 AbilityName: Improved Traps
-Descrip: +[1/2/3] to the save DC's of Alchemical Trap Attacks and Magical Traps. Elemental Traps that you place now have a DC equal to 65%/80%/100% of your Disable Device Skill instead of 50%.}}Note: Appears to scale Magical Trap DC in the same way as Elemental Traps, giving them incredibly high DCs.
+Descrip: +[1/2/3] to Disable Device Skill. Elemental Traps that you place now have a DC equal to [65/80/100]% of your Disable Device Skill instead of 50%.}}Note: Appears to scale Magical Trap DC in the same way as Elemental Traps, giving them incredibly high DCs.
 Tier: 2
 Ranks: 3
 
@@ -8072,7 +8068,7 @@ SelectorName: Wracking Shot
 Descrip: Ranged Attack: +[10/20/30]% damage. On Damage: Deals [3/6/9]d6 extra damage to constructs and living constructs, and applies Wracked: This construct or living construct's fortification is reduced by -10% and loses its inherent immunity to sneak attack. This effect stacks up to five times. Damage scales with 200% ranged power.}}Duration: 20 seconds
 
 AbilityName: Ooze Flask
-Descrip: Cooldown: 12 seconds. Spell Resistance: No}{ Alchemical Trap Attack: You throw a flask at your enemy that contains concentrated grey ooze secretions. Deals [4/8/12]d8 acid damage (scales with 200% Ranged Power), no save, and reduces the Armor Class and PRR of your opponent by [2/4/8] for 30 seconds, Fort DC 10 + Rogue Level + Intelligence Modifier) negates.}}Note: Appears to be subject to Spell Critical
+Descrip: Alchemical Trap Attack: You throw a flask at your enemy that contains concentrated grey ooze secretions. Deals 4d6+1d[6/8/12] per Sneak Attack Die in acid damage and reduces the Physical Resistance and Armor Class of your opponent by 2 for 30 seconds. (Fort DC 10 equal to Disable Device + 1d20 for half damage and to negate the sunder effect) (Cooldown: 12 Seconds)
 Tier: 3
 Ranks: 3
 All: Tier 1: Thunderstone
@@ -8100,7 +8096,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Line Up and Sit Down
-Descrip:  Ranged attack. 250% damage mod. Knocks down target for 2 seconds no save. (Cooldown: 6 seconds)
+Descrip: Ranged Attack: Deals +250% Damage. On Damage: Knocks your enemy down for 2 seconds, no save. (Cooldown: 6 seconds)}}Note: Only fires one bolt from repeating crossbows or while dual shooting.
 Tier: 4
 Cost: 2
 
@@ -8116,12 +8112,12 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Time Bomb
-Descrip: Cooldown: 20 seconds. Spell Resistance: No}{ Alchemical Trap Attack: Quickly creates an alchemical charge at your feet. Deals 10/25/50 sonic and 10/25/50 fire damage per rogue level to all nearby enemies after 2 seconds, and knocks them to the ground.}{-Reflex (DC [10/14/18] + Rogue Level + Intelligence Modifier + Trap Bonus) for half damage.}{-Balance DC (Disable Device check) (Listed Balance DC (10 + Half Rogue Level + Intelligence Modifier + Trap Bonus) to Negate knockdown.}{ Notes:}{-Time Bomb seems to be able to Spell Critical, while not being subject to spell power itself.}{-Severe targeting problems. Some monsters seem to be completely immune (e.g. many tieflings, some zombies), and the damage blast will often fail to hit enemies on sloping or uneven ground.
+Descrip: Alchemical Trap Attack: Creates an alchemical charge at your feet. Deals [10/25/50] sonic and [10/25/50] fire damage per rogue level to all nearby enemies after 2 seconds, and knocks them to the ground. (Scaled with 200% Ranged Power, Reflex DC 10 + Disable Device Skill +1d20 for half damage and to negate knockdown)}}Note:}{-Time Bomb seems to be able to Spell Critical, while not being subject to spell power itself. (New testing required)}{-Severe targeting problems. Some monsters seem to be completely immune (e.g. many tieflings, some zombies), and the damage blast will often fail to hit enemies on sloping or uneven ground.
 Tier: 5
 Ranks: 3
 
 AbilityName: Expert Builder
-Descrip: You gain a +1 Competence Bonus to Critical Multiplier with bows, crossbows & thrown weapons. Great Crossbows instead gain +2 Competence Bonus to Critical Multiplier. Cooldowns of Alchemical Trap attacks are reduced by 20%.
+Descrip: You gain a +1 Competence Bonus to Critical Multiplier with bows, crossbows, and thrown weapons. Great Crossbows instead gain +2 Competence Bonus to Critical Multiplier. Cooldowns of Alchemical Trap attacks are reduced by 20%.
 Tier: 5
 Cost: 2
 
@@ -9258,7 +9254,7 @@ Descrip: You gain +1% Positive Energy Spell Critical Chance. The Empower Healing
 Tier: 0
 
 AbilityName: Positive Energy Shield
-Descrip: You gain +1% Positive Energy Spell Critical Chance.}}Channel Divinity: Your living ally receives temporary hit points equal to your Heal skill. While these hit points remain, your target receives +10% Sacred bonus to healing they receive from positive energy. (Cooldown: 30 seconds)}} "Bug": the actual effect is: while these hit points remain, your target receives +20 Sacred bonus to Healing Amplification. (Visible on buff tooltip and on character sheet. Tested August 2020.)
+Descrip: You gain +1% Positive Energy Spell Critical Chance.}}Channel Divinity: Your living ally receives temporary Hit Points equal to twice your Heal skill (four times your Heal skill if your target is above level 20). While these hit points remain, your target receives +10% Sacred bonus to healing they receive from positive energy. (Cooldown: 30 seconds)
 Tier: 0
 
 AbilityName: Radiant Servant
@@ -9293,7 +9289,6 @@ AbilityName: Efficient Empower Healing
 Descrip: Healing spells cast while the Empower Healing Spell feat is activated cost [1/2/4] fewer spell points.
 Tier: 2
 Ranks: 3
-Cost: 1
 All: Feat: Empower Healing Spell
 
 AbilityName: Purge Dark Magics
@@ -9302,7 +9297,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Divine Healing
-Descrip: Channel Divinity: Your target heals [1/2/4]d4 hp every 2 seconds for 2 seconds per point of Heal skill you possess (no initial tick). (Cooldown: 2 seconds)}}Note: Rank 1 ticks every 2 seconds, while Ranks 2 and 3 both tick every second.}{ This is capable of affecting your targets even if they are blocked by a wall or any other object (verified).}{ This seems to be unaffected by positive spell power and crit chance. However, it is affected by the target's Healing Amplification.
+Descrip: Channel Divinity: Your target heals [1/2/4]d4 hp every 2 seconds for 2 seconds per point of Heal Skill you possess. Scales with 50% Positive Spell Power. Requires line of sight with targets and have double spell range (ray range). (Cooldown: 2 seconds)
 Tier: 2
 Ranks: 3
 
@@ -9370,7 +9365,7 @@ Descrip: All allies in the dungeon (regardless of distance) gain I the effects o
 Tier: 5
 
 AbilityName: Reactive Heal
-Descrip: Channel Divinity: The next time your target falls below half hit points, they receive 250 positive energy healing. A target can only benefit from a Reactive Heal once every 3 minutes (reset by resting). This healing effect is unaffected by spell power. (Cooldown: 6 seconds)
+Descrip: Channel Divinity: The next time your target falls below half hit points, they receive 250 positive energy healing. A target can only benefit from a Reactive Heal once every 3 minutes (reset by resting). Scales with 100% Positive Spell Power. (Cooldown: 6 seconds)
 Tier: 5
 
 AbilityName: Divine Energy Resistance
@@ -9601,7 +9596,7 @@ Tier: 2
 Cost: 2
 
 AbilityName: Magic Fang
-Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging. (Cost: 8 Hit Points, Cooldown: 20 seconds)
+Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels (Max Caster level 20). An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. Equipping a new weapon cancels the effect. Can be cast while Raging. (Cost: 8 Hit Points, Cooldown: 20 seconds)
 Tier: 2
 
 AbilityName: Shred
@@ -10891,13 +10886,11 @@ Cost: 2
 AbilityName: Supreme Hunger
 Descrip: Your Consume damage over time is increased by 2d10. Your Stricken damage is increased by 4d6.
 Tier: 5
-Cost: 1
 All: Tier 4: Greater Hunger
 
 AbilityName: Feed on Magic
 Descrip: Attacking with melee, ranged, and Eldritch Blast gives a 10% chance to gain 10 temporary Spell Points +1 per Warlock level. Spell Points last 1 minute.
 Tier: 5
-Cost: 1
 
 AbilityName: Spell Tearing
 Descrip: You gain +3% chance to critically hit with your spells and Eldritch Blast
@@ -11416,7 +11409,7 @@ Descrip: Passive: +1% Dodge, +1 Reflex Save, and +1 to the Max Dex Bonus of your
 Tier: 0
 
 AbilityName: Swashbuckling
-Descrip: Stance: You gain 1% Doublestrike and Doubleshot as well as +1 to the Enhancement Bonus of the weapon in your main hand. Swashbuckling requires wielding a Finesseable or Thrown weapon in your main hand, wielding a Buckler or nothing in your off hand, and wearing Light Armor or no armor. (Druids cannot Swashbuckle while in animal forms.) (For Warforged and Bladeforged, you must be using either the Composite Plating or Mithral Body feats).}Passive: While Swashbuckling, the following weapons receive Competence bonuses to their critical profiles:}{-Dagger, Shortsword, Throwing Dagger: +1 Threat Range, +1 Multiplier}{-Light Mace, Light Hammer, Kama, Sickle, Dart, Shuriken, Throwing Axe, Throwing Hammer: +2 Threat Range, +1 Multiplier}{-Kukri, Rapier: +1 Multiplier}{-Handaxe: +2 Range}{-Light Pick: +1 Range}{-Light Crossbow, Scimitar: No adjustment to critical profile}}Notes:}{-Critical threat range bonuses are doubled with the appropriate Improved Critical feat, but not with keen or impact}{-Does not great proficiency with weapon type}{-Light Crossbow only works if Inquisitive tier 4 enhancement: Inquisition Style: Dashing Inquisition is taken}{-Scimitar only works if Tempest 2nd core ability: Tempest is taken
+Descrip: Stance: You gain 1% Doublestrike and Doubleshot as well as +1 to the Enhancement Bonus of the weapon in your main hand. Swashbuckling requires wielding a light or Thrown weapon in your main hand, wielding a Buckler or nothing in your off hand, and wearing Light Armor or no armor. (Druids cannot Swashbuckle while in animal forms.) (For Warforged and Bladeforged, you must be using either the Composite Plating or Mithral Body feats).}Passive: While Swashbuckling, the following weapons receive Competence bonuses to their critical profiles:}{-Dagger, Shortsword, Throwing Dagger: +1 Threat Range, +1 Multiplier}{-Light Mace, Light Hammer, Kama, Sickle, Dart, Shuriken, Throwing Axe, Throwing Hammer: +2 Threat Range, +1 Multiplier}{-Kukri, Rapier: +1 Multiplier}{-Handaxe: +2 Range}{-Light Pick: +1 Range}{-Light Crossbow, Scimitar: No adjustment to critical profile}}Notes:}{-Critical threat range bonuses are doubled with the appropriate Improved Critical feat, but not with keen or impact}{-Does not great proficiency with weapon type}{-Light Crossbow only works if Inquisitive tier 4 enhancement: Inquisition Style: Dashing Inquisition is taken}{-Scimitar only works if Tempest 2nd core ability: Tempest is taken
 Tier: 0
 
 AbilityName: Uncanny Dodge
@@ -11497,7 +11490,7 @@ Tier: 3
 Cost: 2
 
 AbilityName: Swashbuckling Style
-Descrip: Choose One:}{-Arcane Marauder: You can now Swashbuckle with an Orb in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{-Cannoneer: You can now Swashbuckle with a Rune Arm in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{-Dashing Scoundrel: While Swashbuckling with nothing in your off hand, you gain +1 Attack Damage per 5 Character levels and 10% Doublestrike and Doubleshot. (Bug: Dashing Scoundrel gives 6 damage regardless of level.)}{-Skirmisher: While Swashbuckling with a Buckler in your off hand, you gain 10% Dodge, and you may use a Buckler and still benefit from the Single Weapon Fighting line of feats. Allows you to benefit from both Single Weapon Fighting and Shield Mastery simultaneously. (Melee Power does not stack, both feat chains grant Combat Style bonus). While using Different Tack your buckler also gets selected modifier to damage (CHA/DEX/INT). Note: Swashbuckling is only required for the 10% Dodge bonus; Single Weapon Fighting & Shield Mastery effects apply while wielding a buckler even without Swashbuckling, or with a non-finesse weapon.
+Descrip: Choose One:}{-Arcane Marauder: You can now Swashbuckle with an Orb in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{-Cannoneer: You can now Swashbuckle with a Rune Arm in your off hand. (Does not count as a Buckler for Buckler-specific abilities).}{-Dashing Scoundrel: While Swashbuckling with nothing in your off hand, you gain +1 Attack Damage per 5 Character levels and 10% Doublestrike and Doubleshot. (Bug: Dashing Scoundrel gives 6 damage regardless of level.)}{-Skirmisher: While Swashbuckling with a Buckler in your off hand, you gain 10% Dodge, and you may use a Buckler and still benefit from the Single Weapon Fighting line of feats. (Note: Allows you to benefit from both Single Weapon Fighting and Shield Mastery simultaneously. Melee Power does not stack, both feat chains grant Combat Style bonus. While using Different Tack your buckler also gets selected modifier to damage (CHA/INT).
 Tier: 3
 Flags: SelectorOnly
 Selector: Arcane Marauder, Cannoneer, Dashing Scoundrel, Skirmisher
@@ -11507,17 +11500,17 @@ SelectorName: Cannoneer
 All: Feat: Rune Arm Use
 
 AbilityName: Resonant Arms
-Descrip: Imbue Toggle: While Swashbuckling, the Finesseable or Thrown weapon in your main hand deals an additional 1d8 Sonic Damage. This Sonic damage scales with 75% Spell Power.}}Note: Mutually exclusive with all Imbues.
+Descrip: Imbue Toggle: While Swashbuckling, the light or Thrown weapon in your main hand deals an additional 1d8 Sonic Damage. This Sonic damage scales with 75% Spell Power.}}Note: Mutually exclusive with all Imbues.
 Tier: 3
 Cost: 1
 
 AbilityName: Different Tack
-Descrip: Choose One:}{-Smooth Flourishes: You get Charisma to Damage with weapon attacks while swashbuckling.}{-Swift Strikes: You get Dexterity to Damage with weapon attacks while swashbuckling.}{-Two Steps Ahead: You get Intelligence to Damage with weapon attacks while swashbuckling.}}Note: Applies to orbs as well.
+Descrip: Choose One:}{-Smooth Flourishes: You get Charisma to Damage with weapon attacks while swashbuckling.}{-Two Steps Ahead: You get Intelligence to Damage with weapon attacks while swashbuckling.}}Note: Applies to orbs as well.
 Tier: 3
 Cost: 2
 All: Feat: Single Weapon Fighting
 Flags: SelectorOnly
-Selector: Smooth Flourishes, Swift Strikes, Two Steps Ahead
+Selector: Smooth Flourishes, Two Steps Ahead
 
 AbilityName: On the Mark
 Descrip: Passive +[1/2/3] to attack rolls to confirm critical hits and damage on critical hits (before weapon multipliers)
@@ -11570,7 +11563,7 @@ Type: Race
 Initial: Tab
 
 AbilityName: Nimble Cat
-Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor. You gain Dexterity to Hit with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor.
 Tier: 0
 
 AbilityName: Ability Score Increase
@@ -11581,7 +11574,7 @@ Flags: SelectorOnly
 Selector: Charisma, Dexterity
 
 AbilityName: Nimble Cat II
-Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor
+Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor.
 Tier: 0
 
 AbilityName: Ability Score Increase II
@@ -11592,7 +11585,7 @@ Flags: SelectorOnly
 Selector: Charisma, Dexterity
 
 AbilityName: Nimble Cat III
-Descrip: +1% Dodge and Dodge Cap. +1 Maximum Dexterity Bonus in Light Armor
+Descrip: +1% Dodge and Dodge Cap. +1 Maximum Dexterity Bonus in Light Armor.
 Tier: 0
 
 AbilityName: Sharp Claws
@@ -11652,10 +11645,6 @@ Descrip: +[1/2/3]% to Dodge Bypass.
 Tier: 3
 Ranks: 3
 
-AbilityName: Improved Nimble Cat
-Descrip: You gain Dexterity to Damage with Dagger, Handaxe, Handwraps, Kama, Kukri, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
-Tier: 3
-
 AbilityName: Focused Agility
 Descrip: Your Feline Agility now only requires you to stand still for 3 seconds, and lasts for 9 seconds.
 Tier: 3
@@ -11691,7 +11680,7 @@ Type: Race
 Initial: Trailblazer
 
 AbilityName: Instinct
-Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor. You gain Dexterity to Hit with Dagger, Handaxe, Handwraps, Kama, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Descrip: +1% Dodge, +1 Maximum Dexterity Bonus in Light Armor. You gain Dexterity to Hit with Quarterstaff.
 Tier: 0
 
 AbilityName: Ability Score Increase
@@ -11772,7 +11761,7 @@ Ranks: 3
 All: Feat: Two Handed Fighting
 
 AbilityName: Improved Instincts
-Descrip: You gain Dexterity to Damage with Dagger, Handaxe, Handwraps, Kama, Light Hammer, Light Mace, Light Pick, Rapier, Short Sword, Sickle, or while Unarmed or in a Druid animal form.
+Descrip: You gain Dexterity to Damage with Quarterstaff.
 Tier: 3
 
 AbilityName: Focused Agility
@@ -11936,7 +11925,6 @@ All: Tier 3: Strong Pact
 AbilityName: Eldritch Power
 Descrip: Your Eldritch Blast deals +2d6 damage.
 Tier: 5
-Cost: 1
 
 AbilityName: Eldritch Ball
 Descrip: Spell-Like Ability: Project your terror at a distance, exploding in an area, dealing Eldritch Blast damage and effects to nearby enemies. The damage scales with 150% spell power. Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Intensify. Spell Resistance: No. (Cost: [12/8/4] Depravity, Cooldown: 6 seconds)
@@ -11958,7 +11946,6 @@ Selector: Conjuration, Enchantment, Evocation, Illusion, Transmutation
 AbilityName: Planar Focus
 Descrip: +1 to all Spell DCs
 Tier: 5
-Cost: 1
 
 TreeName: Tempest
 Type: Class
@@ -11971,12 +11958,12 @@ Descrip: While you are dual wielding weapons, you gain a +2 Shield bonus to Armo
 Tier: 0
 
 AbilityName: Tempest
-Descrip: +10% Offhand Strike Chance (the chance to make off-hand attacks when Dual Wielding Melee weapons). You now treat Scimitars as if they were light Melee weapons. While you are Dual Wielding light Melee weapons, you can use your Dexterity modifier to hit.}}Note: Does not work with handwraps.
+Descrip: +10% Offhand Strike Chance (the chance to make off-hand attacks when Dual Wielding Melee weapons). You can use your Dexterity modifier to hit with all One Handed melee weapons.
 Tier: 0
 None: Half-Elf Tier 4: Dilettante Special Ability: Ranger
 
 AbilityName: Graceful Death
-Descrip: While you are Dual Wielding light Melee weapons, you can use your Dexterity modifier for damage.}{Note: Does not work with handwraps.
+Descrip: You can use your Dexterity modifier for damage on One Handed melee weapons.
 Tier: 0
 
 AbilityName: Deflect Arrows
@@ -12560,7 +12547,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Shield Smash
-Descrip: While shield equipped: Activate: Melee attack with your shield for +[10/20/30]% damage. On damage, PRR and MRR are increased by [2/4/6] points for [3/6/12] seconds. (Cooldown: [12/9/6] seconds)
+Descrip: Shield Attack: Deals +[25/50/75]% damage. On damage, you gain a stack of Battle Guard: PRR and MRR are increased by 10 points for 12 seconds. Stacks up to 5 times. If the player blocks for more than 3 seconds all stacks are removed. (Cooldown: [12/9/6] seconds)
 Tier: 1
 Ranks: 3
 
@@ -12608,7 +12595,7 @@ Cost: 2
 All: Tier 2: Shield Specialization II
 
 AbilityName: Follow Up
-Descrip: When you hit with activated stunning attack (e.g. Stunning Blow or Stunning Shield), your Melee Power increases by [3/6/9] points for 12 seconds, regardless if enemy stunned.
+Descrip: When you hit with activated stunning attack (such as Stunning Blow or Stunning Shield), your Melee Power increases by [5/10/15] points for 30 seconds, whether the stun works or not.
 Tier: 3
 Ranks: 3
 
@@ -12634,7 +12621,7 @@ Tier: 4
 Ranks: 3
 
 AbilityName: Shield Charge
-Descrip: While shield equipped, Activate: Rush forward up to 30 feet to your selected opponent and deliver a +[10/20/30]% damage shield attack that hits enemies around you. (Cooldown: [36/24/12] seconds)}}Note: Also greatly slows the movement speed of enemies struck for about 2 seconds.
+Descrip: Shield Attack: +[10/20/30]% damage. Rush forward up to 30 feet to your selected opponent and deliver a shield attack that hits enemies around you, knocking them down (Fort save DC: 20 + Highest Attribute Modifier + Class Level + Trip bonuses). (Cooldown: [36/24/12] seconds)
 Tier: 4
 Ranks: 3
 
@@ -12655,12 +12642,12 @@ Tier: 5
 Ranks: 3
 
 AbilityName: Shield Rush
-Descrip: While shield equipped, Activate: Rush forward in a line, delivering a shield bash to every creature hit. Each enemy is knocked down for +[20/40/60]% damage. The knockdown is negated on Fortitude saving throw (DC: 20 + highest ability modifier + class level + bonus to trip attacks). (Cooldown: [40/30/20] seconds)
+Descrip: Shield Attack: Rush forward in a line, delivering a shield bash to every creature hit. Each enemy is knocked down for +[20/40/60]% damage. The knockdown is negated on Fortitude saving throw (DC: 20 + highest ability modifier + class level + bonus to trip attacks). (Cooldown: [40/30/20] seconds)
 Tier: 5
 Ranks: 3
 
 AbilityName: Armored Strength
-Descrip: +10 to Melee Power. +10% chance to make a secondary shield bash
+Descrip: +15 to Melee Power. +10% chance to make a secondary shield bash.
 Tier: 5
 Cost: 2
 
@@ -12846,7 +12833,7 @@ Descrip: Passive: You gain +10 Physical Resistance Rating and Magical Resistance
 Tier: 0
 
 AbilityName: Blade Master
-Descrip: You gain +2 to all ability scores. You gain +5% attack speed when using melee and throwing weapons. You gain 20 Melee Power and 20 Ranged Power.
+Descrip: You gain +2 to all ability scores. You gain +5% attack speed when using daggers, or kukris or throwing daggers. You gain 20 Melee Power and 20 Ranged Power.
 Tier: 0
 
 AbilityName: Vistani Knife Training I
@@ -14035,7 +14022,7 @@ SelectorName: Vigor SLA
 Descrip: A positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +3 at caster level 9), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended. (Cost: 10 SP, Cooldown: 20 seconds
 
 AbilityName: Forest's Finesse
-Descrip: You may use Dexterity to damage Longswords, Rapiers, Scimitars, Shortbows, Longbows, and Falchions.[Unverified"You may use Dexterity to damage Longswords, Rapiers, Scimitars, Shortbows, Longbows, and Falchions." has not been verified in-game. Please verify it!]
+Descrip: You may use your Dexterity modifier for To Hit and Damage on all Weapons.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
 

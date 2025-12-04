@@ -306,7 +306,7 @@ ClassBonus: Fighter, Dragon Lord
 
 FeatName: Brutal Throw
 Group: Heroic, Range
-Descrip: Use your Strength bonus instead of Dexterity to determine your bonus to-hit with Thrown weapons, if strength is higher.
+Descrip: Gain +1 damage while using a Throwing Axe or Hammer for every 8 points of Strength.
 BAB: 1
 Stat: Strength 13
 RaceBonus: Human, Purple Dragon Knight
@@ -393,7 +393,7 @@ Class: Sacred Fist 3
 
 FeatName: Cleave
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Make a sweeping weapon attack against all nearby enemies for +20% damage.
+Descrip: +1 Critical Threat Range, +1 Critical Multiplier Bonus, +20% Damage. Melee special attack (Cooldown: 5 seconds): Activate this ability to attack one or more enemies in an arc in front of you.
 All: Power Attack
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
@@ -941,8 +941,8 @@ Level: 27
 
 FeatName: Epic Spell Focus
 Group: Epic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
-CanCastSpell: 6
+Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are available to Dragon Disciples.
+Class: Cleric 11, Dark Apostate 11, Druid 11, Blightcaster 11, Wizard 11, Sorcerer 12, Wild Mage 12, Favored Soul 12, Artificer 15, Alchemist 15, Dragon Disciple 15, Bard 16, Stormsinger 16, Warlock 16, Acolyte 16
 All: Spell Focus, Greater Spell Focus
 Level: 21
 SharedSelector: Greater Spell Focus
@@ -1317,7 +1317,7 @@ Selector: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 FeatName: Great Cleave
 SortName: Cleave2
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 5 seconds): Attacks enemies in a wider arc than Cleave. This attack deals +40% damage.
+Descrip: +1 Critical Threat Range, +2 Critical Multiplier Bonus, +40% Damage. Melee special attack (Cooldown: 5 seconds): Activate this ability to attack one or more enemies in a wide arc in front of you.
 BAB: 4
 All: Cleave, Power Attack
 ClassBonus: Fighter, Dragon Lord
@@ -1510,10 +1510,9 @@ Stat: Charisma 13
 
 FeatName: Hamstring
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): On hit, target's movement rate is reduced by 50% for 12 seconds. No save.
+Descrip: +50% Damage. Melee Tactical Attack: Using this attack, you may reduce the target's movement speed by half for a short period of time. Some creatures may be immune to the Hamstring effect. (Cooldown: 6 seconds)
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
-Class: Rogue 1
 
 FeatName: Harbinger of Chaos
 Group: Destiny, Melee, Range
@@ -1657,7 +1656,7 @@ ClassBonus: Wizard, Alchemist
 FeatName: Improved Precise Shot
 SortName: Precise Shot2
 Group: Heroic, Range
-Descrip: Your ranged attacks pass through and potentially damage all foes in the projectile's path.
+Descrip: Offensive Ranged Stance: Your missile attacks may pass through friend and foe to strike your target. Foes between you and your target might be hit. You deal 20% less damage with ranged attacks while in this stance.}}Passive: While using a Longbow or Shortbow, your Ability Score Modifier bonus to damage improves by a further 50%, for a total of 100%.
 BAB: 11
 Stat: Dexterity 19
 All: Point Blank Shot, Precise Shot
@@ -1699,7 +1698,7 @@ Stat: Dexterity 21
 
 FeatName: Improved Sunder
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 10 seconds): Reduce the target's AC by 5 and Fortification by 10% for 24 seconds. Fortitude save (DC 14 + Str mod) negates. Additionally, apply a -3 Fortitude Saving Throw penalty that lasts for 24 seconds and stacks up to 5 times.
+Descrip: +20 on Attack Roll. Tactical Melee Attack: Using this attack you may reduce the target's AC by 10% and Fortification by 25% for 12 seconds (DC 10 + STR + Sunder Bonuses). Some creatures may be immune to the Sunder effect. Regardless of saving throw result, enemies will suffer the Trauma effect, which is a -3 to Fortitude Saving Throws. Stacks 5 times. Lasts 24 seconds. (Cooldown: 10 seconds)
 All: Power Attack
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord, Monk
@@ -2367,7 +2366,7 @@ ClassBonus: Fighter, Dragon Lord
 
 FeatName: Precise Shot
 Group: Heroic, Range
-Descrip: Targeted range attacks pass through friend and foe alike to strike your target. (Only your target will be damaged.) Also grants Archer's Focus stance, which deals progressively more damage while not moving.
+Descrip: Your missile attacks may pass through other characters and monsters to strike their target. This feat also grants you the Offensive Ranged Stance 'Archer's Focus', which lets you deal progressively more damage with ranged attacks while standing still.}}In addition, while using a Longbow or Shortbow, your Ability Score Modifier bonus to damage improves by a 50%.
 All: Point Blank Shot
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Alchemist
@@ -2496,7 +2495,7 @@ Class: Artificer 2
 
 FeatName: Sap
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): Daze target for 18 seconds normally, or 30 second if from sneak attack. No save. Effect is removed when the target takes damage.
+Descrip: Tactical Melee Attack: Using this attack, you may render the target briefly senseless, though it will become active if damaged again. Some creatures, such as those without intelligence or those immune to stun effects, may be immune or resist the Sap effect, and Sap is more effective when performed as a successful sneak attack (whether or not your character can perform sneak attacks). Successful Saps last up to 18 seconds, or up to 30 seconds off a sneak attack. (Cooldown: 10 Seconds)
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
 
@@ -2650,7 +2649,6 @@ Hide: True
 SelectorName: Throwing Dagger
 Hide: True
 
-
 FeatName: Single Weapon Fighting
 Group: Heroic, Melee
 Descrip: While single weapon fighting, gain a Combat Style bonus of +20% attack speed and +2 Melee Power.
@@ -2691,7 +2689,7 @@ Class: Rogue 10
 
 FeatName: Slicing Blow
 Group: Heroic, Melee
-Descrip: Tactical Melee Attack: Using this attack, you deal one point of [[Constitution]] damage to your target, and deal 1 to 6 additional damage every 2 seconds for 18 seconds. The target suffers an additional 1 to 6 damage per tick for every three Character Levels. This damage scales with 100% Melee Power, and can stack up to three times. Some creatures may be immune to the bleeding or wounding effect.
+Descrip: +40% Damage. Tactical Melee Attack: Using this attack, you deal one point of Constitution damage to your target, and deal 1 to 6 additional damage every 2 seconds for 18 seconds. The target suffers an additional 1 to 6 damage per tick for every three Character Levels. Scales with 100% Melee Power and can stack up to 3 times. Some creatures may be immune to the bleeding or wounding effect. (Cooldown: 6 Seconds)
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
 
@@ -2749,7 +2747,7 @@ WikiName: Spiked Chain Attack
 
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.}}{Note:Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.
+Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.
 ClassBonus: Wizard, Dragon Disciple
 RaceBonus: Human, Purple Dragon Knight
 CanCastSpell: 1
@@ -2777,7 +2775,7 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Spell Specialty
 Group: Destiny, Spellcasting
-Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.}It requires Epic Spell Focus for a different spell school.}You cannot have the basic Spell Focus feat for the spell school.
+Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.
 All: Epic Spell Focus
 Level: 31
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
@@ -2803,7 +2801,7 @@ Level: 28
 
 FeatName: Spring Attack
 Group: Heroic, Melee, Defense
-Descrip: +2% Dodge. You no longer incur to-hit penalties for melee while moving.
+Descrip: +20% Damage. You leap forward striking a target enemy and all those around them. Requires a visible target and that you are holding a melee weapon. (Cooldown: 20 seconds)
 BAB: 4
 All: Dodge, Mobility
 ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
@@ -2829,7 +2827,7 @@ ClassOnlyLevel: 7
 
 FeatName: Stunning Blow
 Group: Heroic, Melee
-Descrip: Melee special attack (Cooldown: 15 seconds): Stun target for 6 seconds, fortitude save 10 + Strength modifier + other bonuses.
+Descrip: Tactical Melee Attack: Using this attack, you may stun the target for a few seconds. A successful Fortitude Save negates this effect (DC: 14 + Strength modifier + Stunning bonuses). (Cooldown: 10 seconds)}} Note: Game text lists DC as 10 + Strength Mod
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
 
@@ -2846,6 +2844,10 @@ Descrip: This song charms a single foe that is currently under the effects of th
 Class: Bard 6, Stormsinger 6
 Flags: Unselectable
 WikiName: Suggesion_(song)
+
+FeatName: Sunder
+Group: Heroic, Melee
+Descrip: +10 on Attack Roll. Tactical Melee Attack: Using this attack, you may reduce the target's AC by 10% and Fortification by 25% for 6 seconds (DC 10 + STR + Sunder Bonuses). Some creatures may be immune to the Sunder effect. (Cooldown: 10 seconds)
 
 FeatName: Superior Weapon Focus
 Abbreviation: Sup Weapon Focus
@@ -3083,7 +3085,7 @@ Level: 27
 
 FeatName: Weapon Finesse
 Group: Heroic, Melee
-Descrip: Use your Dexterity modifier instead of Strength for to-hit with light weapons, rapiers and unarmed strikes, if it is higher.
+Descrip: Provides a +2 bonus on attack rolls and 10% Fortification bypass.
 BAB: 1
 Stat: Dexterity 13
 RaceBonus: Human, Purple Dragon Knight

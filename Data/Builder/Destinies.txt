@@ -786,7 +786,7 @@ Selector: Adrenaline, Quick Cutter
 SelectorName: Adrenaline
 Descrip: Epic Strike: Your next melee attack deals +[25/50/75]% damage, and increases your threat by +16. Requires a melee weapon to use. (Cooldown: 9 seconds) (Note: if you have core 1 from Ravager enhancements, rolling a 1 while under the effect of Adrenaline grants the +1 rage bonus to atk/dmg, even if you are not raging.)}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
 SelectorName: Quick Cutter
-Descrip: Epic Strike: Cleave Melee Attack: +[10/20/30]% Damage and +[1/2/3] Critical Threat Range. This attack strikes all enemies around you twice. When you activate this ability, you gain Quick if you successfully strike a target, and all enemies hit gain Cutter. (Cooldown: 6 seconds)}}Quick: +[2/4/6]% Dodge. Duration: 9 seconds}}Cutter: [1/2/3]d6 Slash damage per Character Level every 2 seconds. Stacks 3 times, scales with 200% Melee Power. Duration: 8 seconds}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
+Descrip: Epic Strike: Cleave Melee Attack: +[10/20/30]% Damage and +[1/2/3] Critical Threat Range. This attack strikes all enemies around you twice. When you activate this ability, you gain Quick if you successfully strike a target, and all enemies hit gain Cutter. (Cooldown: 8 seconds)}}Quick: +[2/4/6]% Dodge. Duration: 9 seconds}}Cutter: 1d6 Slash damage per Character Level every 2 seconds. Stacks 3 times, scales with 200% Melee Power. Duration: 8 seconds}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
 
 AbilityName: Savage Take Down 
 Descrip: +[1/2/3] to Trip DCs. Rank 3: While wearing Medium or Light Armor, +3 additional bonuses to Trip DCs.
@@ -2426,7 +2426,7 @@ Tier: 1
 Cost: 2
 Selector: Celestial Mandate, Guard Up
 SelectorName: Celestial Mandate
-Descrip: Epic Strike: Melee Attack: +75% Damage, +30 to Hit. Adds 3000 Hate to target and slows their movement by 50% for 8 seconds. Grants a +3 buff to Physical and Magical Resistance Ratings for 15 seconds. Double this bonus if using a shield. Stacks 6 times. (Cooldown: 6 seconds)}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown. 
+Descrip: Epic Strike: Melee Attack: +75% Damage, +30 to Hit. Adds 3000 Hate to target and slows their movement by 50% for 8 seconds. Hitting targets grants a stack of Battle Guard. If you are using a shield in combat you gain one extra stack regardless if you hit or miss. Battle Guard: PRR and MRR are increased by 10 points for 12 seconds. Stacks up to 5 times. If the player blocks for more than 3 seconds all stacks are removed. (Cooldown: 6 seconds)}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown.
 SelectorName: Guard Up
 Descrip: Epic Strike: Active: Gain a Sacred bonus to Temporary Hit Points equal to 300% of your Melee Power for 6 seconds. This ability may be used while under the effects of Crowd Control.}}Every Epic Strike Shares a cooldown with every other Epic Strike. Using the ability will put every Epic Strike onto this ability's cooldown. 
 
