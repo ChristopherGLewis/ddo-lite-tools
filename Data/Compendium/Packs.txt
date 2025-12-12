@@ -379,7 +379,7 @@ Link Named Items	Link	https://ddowiki.com/page/Update_61_named_items
 
 PackName: Magic of Myth Drannor
 Abbreviation: Myth Drannor
-HericLow: 13
+HeroicLow: 13
 HeroicHigh: 13
 EpicLow: 35
 EpicHigh: 35
@@ -387,9 +387,16 @@ Link Named Items	Link	https://ddowiki.com/page/Update_69_named_items
 
 PackName: Tavern Tales
 Abbreviation: Tavern Tales
-HericLow: 3
+HeroicLow: 3
 HeroicHigh: 5
 EpicLow: 28
 EpicHigh: 35
 Link Named Items	Link	https://ddowiki.com/page/Update_73_named_items
 
+PackName: The Chill of Ravenloft
+Abbreviation: The Chill of Ravenloft
+HeroicLow: 8
+HeroicHigh: 8
+EpicLow: 36
+EpicHigh: 36
+Link Named Items	Link	https://ddowiki.com/page/Update_77_named_items

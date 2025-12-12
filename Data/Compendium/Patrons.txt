@@ -54,3 +54,6 @@ Abbreviation: Sharn
 
 PatronName: Morgrave University
 Abbreviation: Morgrave
+
+PatronName: Keepers of Lamordia
+Abbreviation: Lamordia

@@ -547,7 +547,7 @@ Tier: Epic
 NPC: Lorthas Vinewall
 Tome: 3
 Astrals: 1
-XP: 21	29	45	59
+XP: 96	147	207	276
 Quest: The Safehold
 Quest: Death Hosts This Banquet
 Quest: Ogmha's Song
@@ -561,3 +561,46 @@ Quest: Book Burning
 Quest: Ettercap Incursion
 Quest: Seeds of Decay
 Quest: Portal to Below
+
+SagaName: The Chill of Ravenloft (Heroic)
+Abbreviation: Chill of Ravenloft
+Tier: Heroic
+NPC: Nadia Erminthal
+Tome: 3
+Astrals: 1
+XP: 21	29	45	59
+Quest: The Body Snatchers
+Quest: The Proper Authorities
+Quest: Ends and Means
+Quest: A Light in the Attic
+Quest: Cold Snap
+Quest: Beneath the City Streets
+Quest: Locked Away (Part One)
+Quest: Snowfall and Sunlight
+Quest: Locked Away (Part Two)
+Quest: A Miner Sacrifice
+Quest: The Wish
+Quest: Special Delivery
+Quest: Zoo Creeper
+
+
+SagaName: The Chill of Ravenloft (Epic)
+Abbreviation: Chill of Ravenloft
+Tier: Epic
+NPC: Bertrand Gustavson
+Tome: 3
+Astrals: 1
+XP: 96	147	207	276
+Quest: The Body Snatchers
+Quest: The Proper Authorities
+Quest: Ends and Means
+Quest: A Light in the Attic
+Quest: Cold Snap
+Quest: Beneath the City Streets
+Quest: Locked Away (Part One)
+Quest: Snowfall and Sunlight
+Quest: Locked Away (Part Two)
+Quest: A Miner Sacrifice
+Quest: The Wish
+Quest: Special Delivery
+Quest: Zoo Creeper

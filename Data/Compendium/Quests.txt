@@ -3687,3 +3687,109 @@ Patron: The Free Agents
 Favor: 4
 Level: 3
 Epic: 35
+
+
+
+QuestName: The Body Snatchers
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: The Proper Authorities
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Ends and Means
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: A Light in the Attic
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Cold Snap
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Beneath the City Streets
+Level: 8
+Epic: 36
+Favor: 5
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Locked Away (Part One)
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Snowfall and Sunlight
+Level: 8
+Epic: 36
+Favor: 5
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Locked Away (Part Two)
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: A Miner Sacrifice
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: The Wish
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Special Delivery
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Zoo Creeper
+Level: 8
+Epic: 36
+Favor: 4
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+
+QuestName: Body and Mind
+Level: 8
+Epic: 36
+Favor: 5
+Patron: Keepers of Lamordia
+
+QuestName: Relentless
+Epic: 36
+Favor: 12
+Pack: The Chill of Ravenloft
+Patron: Keepers of Lamordia
+Style: Raid

@@ -24,6 +24,7 @@ Area: The Waterworks
 Map: WaterworksMap.jpg
 Low: 1
 High: 6
+Explorer: 2055
 
 Area: Saltmarsh
 Map: Map-of-Saltmarsh.jpg
@@ -112,6 +113,14 @@ High: 15
 Explorer: 10937
 Pack: Demon Sands
 
+Area: Land of Lamordia
+Wiki: Land of Lamordia
+Map: Map-of-Land-of-Lamordia.png
+Low: 8
+High: 15
+Explorer: 30728
+Pack: Magic of Myth Drannor
+
 Area: Ruins of Gianthold
 Map: RuinsOfGiantholdMap.jpg
 Wiki: Ruins of Gianthold (heroic)
@@ -120,12 +129,12 @@ High: 18
 Explorer: 10000
 Pack: Ruins of Gianthold
 
-Area: Outskirts of Myth Drannor
-Wiki: Outskirts of Myth Drannor (wilderness)
-Map: Map-of-Isle-of-Dread.jpg
+Area: Ruins of Myth Drannor
+Wiki: Ruins of Myth Drannor
+Map: Map-of-the-Ruins-of-Myth-Drannor.jpg
 Low: 10
 High: 18
-Explorer: ???
+Explorer: 56755
 Pack: Magic of Myth Drannor
 
 Area: Orchard of the Macabre
@@ -377,9 +386,17 @@ High: 36
 Explorer: 61250
 Pack: The Isle of Dread
 
-Area: Outskirts of Myth Drannor (legendary)
-Wiki: Outskirts of Myth Drannor (wilderness)
-Map: Map-of-Isle-of-Dread.jpg
+Area: Ruins of Myth Drannor (legendary)
+Wiki: Ruins of Myth Drannor
+Map: Map-of-the-Ruins-of-Myth-Drannor.jpg
+Low: 20
+High: 37
+Explorer: ???
+Pack: Magic of Myth Drannor
+
+Area: Land of Lamordia (legendary)
+Wiki: Land of Lamordia
+Map: Map-of-Land-of-Lamordia.png
 Low: 20
 High: 37
 Explorer: ???
