@@ -13,7 +13,7 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
-### 4.11.0 - Updates for U76
+### 4.11.0 - Updates for U76 / U77
 Changes:
 Updates for U76 Balance Pass
 Updates to Compendium
