@@ -22,7 +22,7 @@ Bug Fixes
 
 #### Character Builder
 - Version 4.11
-- Update Pass
+- Update Pass - lots of updates by Yhelm
 - Fix to tree processing to allow Siblings to work correctly
 - Ongoing move of enhancements with selectors to use selector descriptions to clean up display
 - Fix destiny Tier 4 point requirements
