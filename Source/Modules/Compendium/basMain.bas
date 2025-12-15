@@ -21,6 +21,7 @@ Sub Main()
     PixelY = Screen.TwipsPerPixelY
     Set xp = New clsWindowsXP
     Set cfg = New clsConfig
+    
     InitData
     frmCompendium.Show
 End Sub
@@ -53,7 +54,11 @@ Public Sub OpenForm(pstrForm As String)
         Case "frmWilderness": Set frm = frmWilderness
         Case Else: Exit Sub
     End Select
-    If cfg.ChildWindows Then frm.Show vbModeless, frmCompendium Else frm.Show
+    If cfg.ChildWindows Then
+        frm.Show vbModeless, frmCompendium
+    Else
+        frm.Show
+    End If
     Set frm = Nothing
 End Sub
 

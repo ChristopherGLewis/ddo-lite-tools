@@ -2,12 +2,11 @@ VERSION 5.00
 Begin VB.Form frmSagas 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   BorderStyle     =   1  'Fixed Single
    Caption         =   "Sagas"
    ClientHeight    =   6945
-   ClientLeft      =   30
-   ClientTop       =   390
-   ClientWidth     =   9345
+   ClientLeft      =   105
+   ClientTop       =   465
+   ClientWidth     =   12120
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -19,20 +18,21 @@ Begin VB.Form frmSagas
    EndProperty
    Icon            =   "frmSagas.frx":0000
    LinkTopic       =   "Form1"
-   MinButton       =   0   'False
    ScaleHeight     =   6945
-   ScaleWidth      =   9345
-   Begin VB.CheckBox chkFontSize 
-      Caption         =   "Small Font Size"
-      Height          =   255
-      Left            =   4680
+   ScaleWidth      =   12120
+   Begin VB.ComboBox cboSaga 
+      Height          =   330
+      ItemData        =   "frmSagas.frx":1782
+      Left            =   5160
+      List            =   "frmSagas.frx":1784
       TabIndex        =   10
+      Text            =   "cboSaga"
       Top             =   0
-      Width           =   1815
+      Width           =   3735
    End
    Begin VB.ComboBox cboCharacter 
       Height          =   330
-      Left            =   2820
+      Left            =   1860
       Style           =   2  'Dropdown List
       TabIndex        =   9
       Tag             =   "nav"
@@ -64,7 +64,7 @@ Begin VB.Form frmSagas
       Enabled         =   0   'False
       ForeColor       =   &H80000008&
       Height          =   372
-      Left            =   6840
+      Left            =   10080
       Style           =   1  'Graphical
       TabIndex        =   2
       Top             =   0
@@ -76,7 +76,7 @@ Begin VB.Form frmSagas
       Caption         =   "Help"
       ForeColor       =   &H80000008&
       Height          =   372
-      Left            =   7860
+      Left            =   11100
       Style           =   1  'Graphical
       TabIndex        =   3
       Top             =   0
@@ -89,7 +89,7 @@ Begin VB.Form frmSagas
       Enabled         =   0   'False
       ForeColor       =   &H80000008&
       Height          =   372
-      Left            =   5760
+      Left            =   9000
       Style           =   1  'Graphical
       TabIndex        =   1
       Top             =   0
@@ -350,32 +350,28 @@ Private mblnFormMoved As Boolean
 Private menSort As SagaSortEnum
 Private mlngSagaMenu As Long
 
+Const MIN_WIDTH = 12360
 
-Private Sub chkFontSize_Click()
-    If Me.chkFontSize.Value = vbChecked Then
-        Me.picClient.FontSize = 6
-        Me.picContainer.FontSize = 6
-        Me.picHeader.FontSize = 6
-    Else
-        Me.picClient.FontSize = 10
-        Me.picContainer.FontSize = 10
-        Me.picHeader.FontSize = 10
-    End If
-    Redraw
+
+Private Sub cboSaga_Click()
+  Redraw
 End Sub
 
 ' ************* FORM *************
-
-
 Private Sub Form_Load()
+    
     If cfg.SagaTier <> steEpic Then
         mblnOverride = True
         Me.usrTab.ActiveTab = "Heroic"
         mblnOverride = False
     End If
+    'Load the sagas
+    InitSagaCombo
+    
     menSort = ssePack
     If mlngCharacter = 0 Then Redraw
     If Not xp.DebugMode Then Call WheelHook(Me.Hwnd)
+    
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
@@ -391,28 +387,51 @@ Private Sub Form_Resize()
     Dim lngWidth As Long
     Dim lngHeight As Long
     
+    'Move "Buttons" - not sure why these are checkboxes
     Me.chkHelp.Move Me.ScaleWidth - Me.chkHelp.Width, 0
     Me.chkRedo.Move Me.chkHelp.Left - Me.chkRedo.Width, 0
     Me.chkUndo.Move Me.chkRedo.Left - Me.chkUndo.Width, 0
-    lngWidth = Me.chkUndo.Left - (Me.usrTab.Left + Me.usrTab.Width)
-    lngLeft = Me.usrTab.Left + Me.usrTab.Width + (lngWidth - Me.cboCharacter.Width) \ 2
-    lngTop = (Me.chkHelp.Height - Me.cboCharacter.Height) \ 2
-    Me.cboCharacter.Move lngLeft, lngTop
-    Me.chkFontSize.Move (Me.cboCharacter.Left + Me.cboCharacter.Width), lngTop
     
+    'find the area btwn the usrTab and Undo button
+    lngWidth = Me.chkUndo.Left - (Me.usrTab.Left + Me.usrTab.Width)
+    
+    'Left side of cbo is width
+    lngLeft = Me.usrTab.Left + Me.usrTab.Width + ((lngWidth / 2) - Me.cboCharacter.Width) \ 2
+    lngTop = (Me.chkHelp.Height - Me.cboCharacter.Height) \ 2
+    
+    'Move Char cbo to
+    Me.cboCharacter.Move lngLeft, lngTop
+    
+    'Move Saga cbo
+    lngLeft = Me.usrTab.Left + Me.usrTab.Width + (lngWidth / 2) + ((lngWidth / 2) - Me.cboSaga.Width) \ 2
+    Me.cboSaga.Move lngLeft, lngTop
+    
+    'Size the picHeader
     With Me.picHeader
         lngLeft = .Left
         lngTop = .Top + .Height - PixelY
         lngWidth = Me.picContainer.Width
     End With
+    
     lngHeight = Me.ScaleHeight - Me.picContainer.Top
-    If lngHeight > Me.picClient.Height Then lngHeight = Me.picClient.Height
+    If lngHeight > Me.picClient.Height Then
+        lngHeight = Me.picClient.Height
+    End If
+    'Fix for saga filtering
+    'If lngHeight < 0 Then lngHeight = 0
     Me.picContainer.Move lngLeft, lngTop, lngWidth, lngHeight
     ShowScrollbar
 End Sub
 
 Private Sub ShowScrollbar()
     Dim lngMax As Long
+    Dim lngLargeChange As Integer
+    'This needs to be fixed for sagas.
+    
+    lngLargeChange = Me.picContainer.Height \ mlngRowHeight
+    If (lngLargeChange < 8) Then
+        lngLargeChange = 8
+    End If
     
     With Me.picContainer
         Me.scrollVertical.Move .Left + .Width, .Top, Me.scrollVertical.Width, .Height
@@ -423,7 +442,7 @@ Private Sub ShowScrollbar()
         .Value = 0
         .Max = lngMax
         If lngMax Then
-            .LargeChange = Me.picContainer.Height \ mlngRowHeight
+            .LargeChange = lngLargeChange
             .Visible = True
         Else
             .Visible = True
@@ -431,7 +450,7 @@ Private Sub ShowScrollbar()
     End With
     
     With Me.scrollHorizontal
-    .Visible = False
+        .Visible = False
     End With
 End Sub
 
@@ -439,15 +458,21 @@ Public Sub Redraw()
     ClearQueue
     cfg.RefreshColors Me
     Me.usrTab.TabActiveColor = cfg.GetColor(cgeDropSlots, cveBackground)
+    
     LoadData
     SizeClient
     SortRows menSort
     ShowScrollbar
-    InitCombo True
+    InitCharCombo True
+    
     If Not mblnFormMoved Then
         cfg.MoveForm Me
         mblnFormMoved = True
     End If
+End Sub
+
+Private Sub cboSaga_Change()
+    Redraw
 End Sub
 
 Public Property Let Character(plngCharacter As Long)
@@ -455,11 +480,11 @@ Public Property Let Character(plngCharacter As Long)
 End Property
 
 Public Sub CharacterListChanged()
-    InitCombo True
+    InitCharCombo True
 End Sub
 
 Public Sub DataFileChanged()
-    InitCombo False
+    InitCharCombo False
 End Sub
 
 ' Thanks to bushmobile of VBForums.com
@@ -496,7 +521,7 @@ Private Sub LoadData()
     CommonProgress
 End Sub
 
-Private Sub InitCombo(pblnFindCharacter As Boolean)
+Private Sub InitCharCombo(pblnFindCharacter As Boolean)
     Dim strCharacter As String
     Dim lngIndex As Long
     Dim i As Long
@@ -515,32 +540,67 @@ Private Sub InitCombo(pblnFindCharacter As Boolean)
     Me.cboCharacter.ListIndex = lngIndex
 End Sub
 
+Private Sub InitSagaCombo()
+    Dim i As Integer
+    'db.Saga
+    cboSaga.Clear
+    For i = 1 To db.Sagas
+        If Me.usrTab.ActiveTab = "Epic" Then
+            If db.Saga(i).Tier = steEpic Then
+                cboSaga.AddItem (db.Saga(i).SagaName)
+            End If
+        Else
+            If db.Saga(i).Tier = steHeroic Then
+                cboSaga.AddItem (db.Saga(i).SagaName)
+            End If
+        End If
+    Next
+    'Select the first saga
+    cboSaga.ListIndex = 0
+
+End Sub
+
 Private Sub GatherColumns()
     Dim lngIndex() As Long
     Dim strHeader As String
     Dim i As Long
     
+    'lngIndex is the list of sagas in "order"
     ReDim lngIndex(1 To db.Sagas)
     For i = 1 To db.Sagas
         lngIndex(db.Saga(i).Order) = i
     Next
-    ReDim mtypCol(1 To 4 + db.Sagas)
+    
+    'We should only now have 4 columns
+    'ReDim mtypCol(1 To 4 + db.Sagas)
+    ReDim mtypCol(1 To 4 + 1)
     InitColumn 1, "Lvl", vbRightJustify
     InitColumn 2, "Quest", vbLeftJustify
     InitColumn 3, "Pack", vbLeftJustify
+    
+    
     If mlngCharacter Then strHeader = db.Character(mlngCharacter).Character
+    'Make column 4 the selected char
     InitColumn 4, strHeader, vbCenter
     mlngColumns = 4
     mlngMaxCols = 0
+    
     For i = 1 To db.Sagas
-        With db.Saga(i)
-            If .Tier = steEpic Then mlngMaxCols = mlngMaxCols + 1
-            If .Tier = cfg.SagaTier Then
-                mlngColumns = mlngColumns + 1
-                InitColumn 4 + .Order, .Abbreviation, vbCenter
-                mtypCol(4 + .Order).Saga = i
-            End If
-        End With
+        'Filter off the Saga Combo
+        If db.Saga(i).SagaName = ComboGetText(cboSaga) Then
+            With db.Saga(i)
+                If .Tier = steEpic Then mlngMaxCols = mlngMaxCols + 1
+                'If .Tier = cfg.SagaTier Then
+                    mlngColumns = mlngColumns + 1  'This should now always be 5
+                    'InitColumn 4 + .Order, .Abbreviation, vbCenter
+                    'mtypCol(4 + .Order).Saga = i
+
+                    'All saga quests are now in col 5
+                    InitColumn 4 + 1, .Abbreviation, vbCenter
+                    mtypCol(4 + 1).Saga = i
+                'End If
+            End With
+        End If
     Next
     ReDim Preserve mtypCol(1 To mlngColumns)
 End Sub
@@ -558,31 +618,40 @@ Private Sub GatherRows()
     Dim s As Long
     Dim q As Long
     
+    'Array of quests
     ReDim lngIndex(1 To db.Quests)
     ReDim mtypRow(1 To db.Quests)
     mlngRows = 0
     mlngMaxRows = 0
+    
+    'Loop through all the sagas
     For s = 1 To db.Sagas
-        For q = 1 To db.Saga(s).Quests
-            If db.Saga(s).Tier = steEpic Then mlngMaxRows = mlngMaxRows + 1
-            If db.Saga(s).Tier = cfg.SagaTier Then
-                lngQuest = db.Saga(s).Quest(q)
-                If lngIndex(lngQuest) = 0 Then
-                    mlngRows = mlngRows + 1
-                    lngIndex(lngQuest) = mlngRows
-                End If
-                With mtypRow(lngIndex(lngQuest))
-                    ReDim Preserve .Saga(1 To db.Sagas)
-                    .Saga(s).Valid = True
-                    .Quest = lngQuest
-                    .Tier = db.Saga(s).Tier
-                    .Group = db.Quest(lngQuest).SagaGroup(.Tier)
-                    .Order = db.Quest(.Quest).SagaOrder(.Tier)
-                    .Level(steHeroic) = db.Quest(lngQuest).BaseLevel
-                    .Level(steEpic) = db.Quest(lngQuest).EpicLevel
-                End With
-            End If
-        Next
+        'Filter off the Saga Combo
+        If db.Saga(s).SagaName = ComboGetText(cboSaga) Then
+            'loop through all the quests
+            For q = 1 To db.Saga(s).Quests
+                'If db.Saga(s).Tier = steEpic Then
+                'Count rows currently displayed
+                mlngMaxRows = mlngMaxRows + 1
+                'If db.Saga(s).Tier = cfg.SagaTier Then
+                    lngQuest = db.Saga(s).Quest(q)
+                    If lngIndex(lngQuest) = 0 Then
+                        mlngRows = mlngRows + 1
+                        lngIndex(lngQuest) = mlngRows
+                    End If
+                    With mtypRow(lngIndex(lngQuest))
+                        ReDim Preserve .Saga(1 To db.Sagas)
+                        .Saga(s).Valid = True
+                        .Quest = lngQuest
+                        .Tier = db.Saga(s).Tier
+                        .Group = db.Quest(lngQuest).SagaGroup(.Tier)
+                        .Order = db.Quest(.Quest).SagaOrder(.Tier)
+                        .Level(steHeroic) = db.Quest(lngQuest).BaseLevel
+                        .Level(steEpic) = db.Quest(lngQuest).EpicLevel
+                    End With
+                'End If
+            Next
+        End If
     Next
     ReDim Preserve mtypRow(1 To mlngRows)
     CommonProgress
@@ -731,12 +800,16 @@ Private Sub SizeClient()
     Dim lngMaxHeight As Long
     Dim strPack As String
     Dim i As Long
+    Dim lngTempWidth As Long
     
+    'Get some margins
     With Me.picClient
         mlngMarginX = .ScaleX(cfg.MarginX, vbPixels, vbTwips)
         mlngMarginY = .ScaleY(cfg.MarginY, vbPixels, vbTwips)
         mlngRowHeight = .TextHeight("Q") + mlngMarginY * 2
     End With
+    
+    'Set our fixed columns
     GrowColumn 1, "Lvl"
     GrowColumn 1, "32"
     For i = 1 To mlngRows
@@ -747,15 +820,19 @@ Private Sub SizeClient()
         End With
     Next
     GrowColumn 2, "Garl's Tomb: Troglodyte's Get"
+    
+    'Set the char column witdth
     For i = 1 To db.Characters
         GrowColumn 4, db.Character(i).Character
     Next
-    For i = peCasual To peVIP
-        GrowColumn 4, GetProgressName(i)
-    Next
+    'For i = peCasual To peVIP
+    '    GrowColumn 4, GetProgressName(i)
+    'Next
     For i = 1 To db.Sagas
         GrowColumn 4, db.Saga(i).Abbreviation
     Next
+    
+    'This is now always 5 columns
     For i = 5 To mlngColumns
         mtypCol(i).Width = mtypCol(4).Width
     Next
@@ -776,21 +853,33 @@ Private Sub SizeClient()
     Next
     mlngCellWidth = mtypCol(4).Width
     lngLeft = Me.scrollVertical.Width
+    
     Me.usrTab.Move lngLeft, PixelY, Me.usrTab.TabsWidth
+    
+    'Move the header
     lngTop = Me.usrTab.Top + Me.usrTab.Height - PixelY
     lngWidth = mtypCol(mlngColumns).Right + PixelX
     Me.picHeader.Move lngLeft, lngTop, lngWidth, mlngRowHeight + PixelY
+    
     lngHeight = mlngRowHeight * mlngRows + PixelY
     Me.picClient.Move 0, 0, lngWidth, lngHeight
     With Me.picHeader
         Me.picContainer.Move .Left, .Top + .Height - PixelY, mtypCol(mlngColumns).Right + PixelX
     End With
+    
     ' Form
     If Me.WindowState <> 2 Then  ' don't move if maximized
-        Me.Width = Me.Width - Me.ScaleWidth + Me.picHeader.Left + mtypCol(mlngColumns).Right + PixelY + Me.scrollVertical.Width
-        lngHeight = Me.Height - Me.ScaleHeight + Me.picHeader.Top + mlngRowHeight * mlngMaxRows
+        lngTempWidth = Me.Width - Me.ScaleWidth + Me.picHeader.Left + mtypCol(mlngColumns).Right + PixelY + Me.scrollVertical.Width
+        If lngTempWidth < MIN_WIDTH Then
+            lngTempWidth = MIN_WIDTH
+        End If
+        
+        Me.Width = lngTempWidth
+        lngHeight = Me.Height - Me.ScaleHeight + Me.picHeader.Top + mlngRowHeight * (mlngMaxRows + 2)
         xp.GetDesktop 0, 0, 0, lngMaxHeight
-        If lngHeight > lngMaxHeight Then lngHeight = lngMaxHeight
+        If lngHeight > lngMaxHeight Then
+            lngHeight = lngMaxHeight
+        End If
         Me.Height = lngHeight
     End If
 End Sub
@@ -958,7 +1047,14 @@ Private Sub usrTab_Click(pstrCaption As String)
     Dim enTier As SagaTierEnum
     
     If mblnOverride Then Exit Sub
-    If pstrCaption = "Epic" Then enTier = steEpic Else enTier = steHeroic
+    If pstrCaption = "Epic" Then
+        enTier = steEpic
+    Else
+        enTier = steHeroic
+    End If
+    'Load the sagas for this tab
+    InitSagaCombo
+    
     If cfg.SagaTier <> enTier Then
         cfg.SagaTier = enTier
         DirtyFlag dfeSettings
