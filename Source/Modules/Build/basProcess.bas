@@ -232,13 +232,16 @@ Private Sub ProcessFeatSelectors()
 End Sub
 
 Private Sub ProcessAbilitySelectors()
+    
     log.Activity = actProcessEnhancementSelectors
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
         ' Debugging a tree
-        'If Left(db.Tree(log.Tree).TreeName, 7) = "Arcane " Then
-        '    Debug.Print db.Tree(log.Tree).TreeName
-        'End If
+        If DEBUG_FLAG Then
+            If Left(db.Tree(log.Tree).TreeName, Len(DEBUG_TREE)) = DEBUG_TREE Then
+                Debug.Print db.Tree(log.Tree).TreeName
+            End If
+        End If
         ProcessTreeSelectors db.Tree(log.Tree)
     Next
     log.Activity = actProcessDestinySelectors
@@ -257,17 +260,21 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
     For iTier = 0 To ptypTree.Tiers
         log.Tier = iTier
         ' Debugging a Tier
-        'If iTier = 2 Then
-        '    Debug.Print iTier
-        'End If
+        If DEBUG_FLAG Then
+            If iTier = DEBUG_TIER Then
+                Debug.Print iTier
+            End If
+        End If
         For iAbility = 1 To ptypTree.Tier(iTier).Abilities
             log.Ability = iAbility
             log.HasError = False
             With ptypTree.Tier(iTier).Ability(iAbility)
                 'Debugging an ability
-                'If Left(.AbilityName, 7) = "Favored" Then
-                '    Debug.Print .AbilityName
-                'End If
+                If DEBUG_FLAG Then
+                    If Left(.AbilityName, Len(DEBUG_ABILITY)) = DEBUG_ABILITY Then
+                        Debug.Print .AbilityName
+                    End If
+                End If
             
                 Select Case .SelectorStyle
                     Case sseShared, sseExclusive
@@ -397,9 +404,12 @@ Private Sub ProcessPointers()
     log.Style = peEnhancement
     For log.Tree = 1 To db.Trees
         ' Debugging a tree's requirement pointers
-        'If Left(db.Tree(log.Tree).TreeName, 7) = "Arcane " Then
-        '    Debug.Print db.Tree(log.Tree).TreeName
-        'End If
+        If DEBUG_FLAG Then
+            If Left(db.Tree(log.Tree).TreeName, Len(DEBUG_TREE)) = DEBUG_TREE Then
+                Debug.Print db.Tree(log.Tree).TreeName
+            End If
+        End If
+        
         ProcessTree db.Tree(log.Tree), peEnhancement
     Next
     ' Destinies
@@ -438,7 +448,7 @@ Private Sub ProcessPointer(ptypPointer As PointerType)
     
     'or TIER
     ' Get tier from rightmost word in strField
-    If strField = "Tier" Then
+    If Left(strField, 4) = "Tier" Then
         lngPos = InStr(strField, "Tier ")
         strValue = Mid$(strField, lngPos + 5)  'Tier Number
         ptypPointer.Tier = val(strValue)
@@ -493,19 +503,22 @@ Private Sub ProcessTree(ptypTree As TreeType, pStype As PointerEnum)
         For iTier = 0 To .Tiers
             log.Tier = iTier
             ' Debugging a Tier
-            'If iTier = 2 Then
-            '    Debug.Print iTier
-            'End If
+            If DEBUG_FLAG Then
+                If iTier = DEBUG_TIER Then
+                    Debug.Print iTier
+                End If
+            End If
             
             'Look at each ability in tier
             For lngAbility = 1 To .Tier(iTier).Abilities
                 log.Ability = lngAbility
                 With .Tier(iTier).Ability(lngAbility) 'db.t/d().tier().Ability
                     ' Debugging an ability
-                    'If Left(.AbilityName, 10) = "Soul Magic" Then
-                    '    Debug.Print .AbilityName
-                    'End If
-                
+                    If DEBUG_FLAG Then
+                        If Left(.AbilityName, Len(DEBUG_ABILITY)) = DEBUG_ABILITY Then
+                            Debug.Print .AbilityName
+                        End If
+                    End If
                     ProcessPointer .Parent
                     For i = 1 To .Siblings
                         ProcessPointer .Sibling(i)

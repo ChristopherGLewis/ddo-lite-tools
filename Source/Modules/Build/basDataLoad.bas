@@ -1136,7 +1136,7 @@ End Sub
 Public Sub IndexFeatDisplay()
     Dim i As Long
     Dim j As Long
-    Dim d As Long
+    Dim D As Long
     Dim typSwap As FeatIndexType
     
     With db
@@ -1164,8 +1164,8 @@ Public Sub IndexFeatDisplay()
         Next
     End With
     'Update .Feat with the .FeatDisplay index
-    For d = 1 To UBound(db.FeatDisplay)
-        db.Feat(db.FeatDisplay(d).FeatIndex).FeatDisplayIndex = d
+    For D = 1 To UBound(db.FeatDisplay)
+        db.Feat(db.FeatDisplay(D).FeatIndex).FeatDisplayIndex = D
     Next
 End Sub
 
@@ -1267,9 +1267,11 @@ Private Sub LoadEnhancements()
     strTree = Split(strRaw, "TreeName: ")
     For i = 1 To UBound(strTree)
         ' Debugging a tree
-        'If Left(strTree(i), 7) = "Air Sav" Then
-        '    Debug.Print strTree(i)
-        'End If
+        If DEBUG_FLAG Then
+            If Left(strTree(i), Len(DEBUG_TREE)) = DEBUG_TREE Then
+                Debug.Print strTree(i)
+            End If
+        End If
         If InStr(strTree(i), "Type: ") Then
             typNew = typBlank
             typNew.TreeID = db.Trees + 1 ' Set our future treeID

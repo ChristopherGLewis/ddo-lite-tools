@@ -2750,7 +2750,8 @@ Public Function GetSpentReq(ByVal penTreeStyle As TreeStyleEnum, ByVal plngTier 
                 Case 0
                     Select Case plngAbility
                         Case 2: GetSpentReq = 5
-                        Case 3: GetSpentReq = 10  'only 3 for now
+                        Case 3: GetSpentReq = 10
+                        Case 4: GetSpentReq = 20  'only 4 for now TODO MAX_LEVEL
                     End Select
                 Case 1: GetSpentReq = 1
                 Case 2: GetSpentReq = 5

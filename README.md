@@ -13,6 +13,25 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.11.0 - Updates for U76
+Changes:
+Updates for U76 Balance Pass
+Update Quests
+Re-added the utils folder to the build
+Bug Fixes
+
+#### Character Builder
+- Update Pass
+- Fix to tree processing to allow Siblings to work correctly
+- Ongoing move of enhancements with selectors to use selector descriptions to clean up display
+- Fix destiny Tier 4 point requirements
+
+#### Compendium
+- Added the Trap Damage epic past life (no idea why this was missed)
+- Quest updates through U76
+- Fixed quest patron for Tavern Tales (Thanks MIvanIsten)
+- Quests, Wilderness and Sagas for U75/U76/U77
+
 ### 4.10.0 - Updates for U74
 Changes:
 Dhampir Race

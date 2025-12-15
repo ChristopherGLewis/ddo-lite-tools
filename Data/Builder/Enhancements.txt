@@ -2244,23 +2244,33 @@ Descrip: All equipped weapons are considered Spellcasting Implements.}While in P
 Tier: 0
 
 AbilityName: Liquid Power I
-Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +3 Caster Level with Acid Spells.}{-Liquid Power Cold: You gain +3 Caster Level with Cold Spells.}{-Liquid Power Electric: You gain +3 Caster Level with Electric Spells.}{-Liquid Power Fire: You gain +3 Caster Level with Fire Spells.}{-Liquid Power Poison: You gain +3 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
+Descrip: Select an Element to specialize in.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
 Tier: 0
 Flags: SelectorOnly
 Selector: Liquid Power Acid, Liquid Power Cold, Liquid Power Electric, Liquid Power Fire, Liquid Power Poison
+SelectorName: Liquid Power Acid
+Descrip: You gain +3 Caster Level with Acid Spells.
+SelectorName: Liquid Power Cold
+Descrip: You gain +3 Caster Level with Cold Spells
+SelectorName: Liquid Power Electric
+Descrip: You gain +3 Caster Level with Electric Spells
+SelectorName: Liquid Power Fire
+Descrip: You gain +3 Caster Level with Fire Spells
+SelectorName: Liquid Power Poison
+Descrip: You gain +3 Caster Level with Poison Spells.
 
 AbilityName: Liquid Power II
-Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +3 Caster Level with Acid Spells.}{-Liquid Power Cold: You gain +3 Caster Level with Cold Spells.}{-Liquid Power Electric: You gain +3 Caster Level with Electric Spells.}{-Liquid Power Fire: You gain +3 Caster Level with Fire Spells.}{-Liquid Power Poison: You gain +3 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
+Descrip: Select an Element to specialize in.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
 Tier: 0
 Flags: SelectorOnly
 Parent: Tier 0: Liquid Power I
 
 AbilityName: Liquid Power III
-Descrip: Select an Element to specialize in.}{-Liquid Power Acid: You gain +3 Caster Level with Acid Spells.}{-Liquid Power Cold: You gain +3 Caster Level with Cold Spells.}{-Liquid Power Electric: You gain +3 Caster Level with Electric Spells.}{-Liquid Power Fire: You gain +3 Caster Level with Fire Spells.}{-Liquid Power Poison: You gain +3 Caster Level with Poison Spells.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
+Descrip: Select an Element to specialize in.}While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}} Note: You cannot choose the same element twice.
 Tier: 0
 Flags: SelectorOnly
-Parent: Tier 0: Liquid Power I
-Siblings: Tier 0: Liquid Power II
+Parent: Tier 0: Liquid Power II
+Siblings: Tier 0: Liquid Power I
 
 AbilityName: Multivial
 Descrip: Spell-Like Ability: Choose from Multivial of Acid, Frost, Sparks, Flame, or Poison. Conjuring many bottles of your chosen element, you throw 4 projectiles that explode on impact, with each dealing 1d4+3 <element> damage per caster level to all nearby foes, max caster level 20. Shares a cooldown with all other Multivial spells. A successful reflex save reduces damage by half. Primer Element: Crimsonite (Red). (Cost: 40 SP, Cooldown: 12 seconds)}}Passive: +4 Intelligence, +2 Conjuration DCs, and 2 extra Burning Ambition Dice. While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}}Bug: Unlike the multivial spells, this ability requires a target.
@@ -13124,9 +13134,13 @@ Color: Red
 Stats: Strength, Charisma
 
 AbilityName: Skaldic
-Descrip: (select one)}{-Skaldic Constitution: +1 Constitution}{-Skaldic Rage: Expend a Song to fly into Rage, granting you a +4 Rage bonus to Strength and -4 penalty to AC. When Skaldic Rage ends you become Fatigued. Requires 4 trained ranks in Perform to use. Skaldic Rage lasts 1 minute per bard level.(Rage bonuses don't stack with Barbarian Rage.)}}Note: Does not prevent spellcasting.
+Descrip: (select one)
 Tier: 0
 Selector: Constitution, Rage
+SelectorName: Constitution
+Descrip: +1 Constitution
+SelectorName: Rage
+Descrip: Expend a Song to fly into Rage, granting you a +4 Rage bonus to Strength and -4 penalty to AC. When Skaldic Rage ends you become Fatigued. Requires 4 trained ranks in Perform to use. Skaldic Rage lasts 1 minute per bard level.(Rage bonuses don't stack with Barbarian Rage.)}}Note: Does not prevent spellcasting.
 
 AbilityName: Weapon Training
 Descrip: You gain martial weapon proficiency, +1 bonus Imbue Dice, and +10 maximum HP. Inspire Courage grants an additional +1 damage. (If you are a dwarf, Dwarven Waraxes are included as part of this Enhancement.)}}Note: This seems to be giving an additional +2 attack and damage to dwarven waraxes and martial weapons. self only. probably a bug

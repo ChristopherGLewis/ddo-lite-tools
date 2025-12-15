@@ -22,4 +22,10 @@ Public Const MAX_DESTINY_NAME As String = "Divine Crusader"
 Public Const MAX_CLASSES As Long = 24
 Public Const MAX_CLASS_NAME As String = "Dragon Disciple"
 
+'General Debug flags for diagnosing load issues with trees
+Public Const DEBUG_FLAG = False
+Public Const DEBUG_TREE = "Bombardier"
+Public Const DEBUG_TIER = 0
+Public Const DEBUG_ABILITY = "Liquid Power II"
+
 
