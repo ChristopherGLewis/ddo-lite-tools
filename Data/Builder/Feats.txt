@@ -839,7 +839,7 @@ FeatName: Empower Spell
 Group: Heroic, Spellcasting
 Descrip: +75 universal Spell Power, spells cost +15 more mana to cast.
 CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
+ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Empty Body
@@ -976,7 +976,7 @@ FeatName: Eschew Materials
 Group: Heroic, Spellcasting
 Descrip: Your spells cost 2 more spellpoints and removes need for normal material components. Especially expensive material components, such as for Stoneskin and Trap the Soul, are still required.
 CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
+ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Evasion
@@ -1038,7 +1038,7 @@ FeatName: Extend Spell
 Group: Heroic, Spellcasting
 Descrip: Doubles the duration of a spell at the cost of +10 spell points per cast.
 CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
+ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Extra Turning
@@ -1557,7 +1557,7 @@ FeatName: Heighten Spell
 Group: Heroic, Spellcasting
 Descrip: Spells are raised to the highest spell level your character can cast, but cost 5 more spell points per level raised.
 CanCastSpell: 2
-ClassBonus: Artificer, Wizard, Alchemist
+ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 
 FeatName: Hellball
 Group: Destiny, Spellcasting
@@ -1651,7 +1651,7 @@ Group: Heroic, Spellcasting
 Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20, +210 counting regular mental toughness.) +1% spell critical chance.
 CanCastSpell: 3
 All: Mental Toughness
-ClassBonus: Wizard, Alchemist
+ClassBonus: Wizard, Alchemist, Arcane Trickster
 
 FeatName: Improved Precise Shot
 SortName: Precise Shot2
@@ -2027,7 +2027,7 @@ FeatName: Maximize Spell
 Group: Heroic, Spellcasting
 Descrip: +150 universal Spell Power, spells cost +25 more mana to cast.
 CanCastSpell: 1
-ClassBonus: Artificer, Wizard, Alchemist
+ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Meditation
@@ -2041,7 +2041,7 @@ Group: Heroic, Spellcasting
 Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20.) +1% spell critical chance.
 CanCastSpell: 1
 RaceBonus: Human, Purple Dragon Knight
-ClassBonus: Wizard, Alchemist
+ClassBonus: Wizard, Alchemist, Arcane Trickster
 
 FeatName: Mighty Rage
 Group: Heroic, Misc
@@ -2404,7 +2404,7 @@ FeatName: Quicken Spell
 Group: Heroic, Spellcasting
 Descrip: Spells cannot be interrupted and cast twice as fast, but cost +10 more mana to cast.
 CanCastSpell: 1
-ClassBonus: Artificer, Wizard
+ClassBonus: Artificer, Wizard, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Wizard
 
@@ -2748,24 +2748,24 @@ WikiName: Spiked Chain Attack
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
 Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.
-ClassBonus: Wizard, Dragon Disciple
+ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 CanCastSpell: 1
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 SelectorName: Abjuration
-ClassBonus: Wizard
-SelectorName: Conjuration
-ClassBonus: Wizard, Dragon Disciple
+ClassBonus: Wizard, Arcane Trickster
+SelectorName: Conjuration 
+ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 SelectorName: Enchantment
-ClassBonus: Wizard
+ClassBonus: Wizard, Arcane Trickster
 SelectorName: Evocation
-ClassBonus: Wizard, Dragon Disciple
+ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 SelectorName: Illusion
-ClassBonus: Wizard
+ClassBonus: Wizard, Arcane Trickster
 SelectorName: Necromancy
-ClassBonus: Wizard
+ClassBonus: Wizard, Arcane Trickster
 SelectorName: Transmutation
-ClassBonus: Wizard, Dragon Disciple
+ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 
 FeatName: Spell Penetration
 Group: Heroic, Spellcasting
@@ -3305,3 +3305,28 @@ None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walk
 SelectorName: Minion of the Eldritch
 Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
 None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch
+
+
+FeatName: Mage Hand - Bluff
+Group: Heroic, Misc
+Descrip: Allows you to attempt to bluff a target with your mage hand.  This uses your intelligence instead of charisma for the bluff check.
+Class: Arcane Trickster 3
+Flags: Unselectable
+
+FeatName: Mage Hand - Disable Traps
+Group: Heroic, Misc
+Descrip: Allows you to attempt to disarm traps at a distance using your mage hand}{-Range is equivalent to a 'standard' spell range.
+Class: Arcane Trickster 3
+Flags: Unselectable
+
+FeatName: Magical Ambush
+Group: Heroic, Misc
+Descrip:  Your offensive instantaneous damaging spells deal additional 1d3 force damage per sneak attack dice you have.}{-Scales with 100% of your Force spell power. This effect scales with Force Critical chance and Critical Damage.}{-Has no internal cooldown. Hits all targets in an AOE, applies to all hits of a multi-strike such as Magic Missile.}{-  Magical Ambush applies once per projectile of a spell, per target hit. Magic Missile, which can have up to 5 projectiles, will apply this effect 5 times. Hellball, which fires a single projectile that deals 4 types of damage, only applies the effect once per target.}{-Applies to Eldritch Blast, but not persistent effects such as DOTs or persistent AOEs such as Wall of Fire.}{-Magical Ambush is effectively a Spell Proc.}{-  As a Spellpower-scaling Spell Proc, the damage inflicted by Magical Ambush is scaled by any Metamagics applied to the 'host' spell. A Maximized spell will apply Magical Ambush as if you had 150 more Force Spell Power.
+Class: Arcane Trickster 8
+Flags: Unselectable
+
+FeatName: Spell Thief
+Group: Heroic, Misc
+Descrip:  Your melee and missile attacks that strike targets who have spells grant spell points. 1d20 spell points on a 5 second cooldown for melee attacks. Ranged is a 10 second cooldown.}{-Amount of SP stolen is effected by Positive Healing Amplification.
+Class: Arcane Trickster 16
+Flags: Unselectable

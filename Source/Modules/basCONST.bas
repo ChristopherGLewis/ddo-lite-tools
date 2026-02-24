@@ -15,12 +15,13 @@ Public Const MAX_LEVELUPS As Integer = 8
 
 Public Const MAX_STATS As Integer = 6
 
+'Longest destinly Name
 Public Const MAX_DESTINY_NAME As String = "Divine Crusader"
 
 
-'TODO New Class, change these
-Public Const MAX_CLASSES As Long = 24
-Public Const MAX_CLASS_NAME As String = "Dragon Disciple"
+'TODO New Class/Archetype, change these, then make the changes in basEnum
+Public Const MAX_CLASSES As Long = 25
+Public Const MAX_CLASS_NAME As String = "Arcane Trickster"
 
 'General Debug flags for diagnosing load issues with trees
 Public Const DEBUG_FLAG = False

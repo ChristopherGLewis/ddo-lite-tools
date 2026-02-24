@@ -14281,3 +14281,167 @@ Tier: 4
 AbilityName: Biting Swarm
 Descrip: Living, corporeal enemies in a small area around where you finish your Rush of Bats are bitten by the bats, causing them to bleed, taking 1d12 damage per Character Level every 2 seconds for 12 seconds. This damage scales with 200% Melee Power.
 Tier: 4
+
+TreeName: Arcane Trickster
+Type: Class
+Initial: ATr
+Color: Red
+Stats: Dexterity, Intelligence, charisma
+
+AbilityName: Trained in Trickery.
+Tier: 0
+
+AbilityName: Stolen Spell I
+Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+Selector: Magic Missile, Cure Light Wounds, Conjure Bolts, Shillelagh, Sonic Blast, Fine Dust 
+SelectorName: Magic Missile
+Descrip: Stolen Magic Missile 2SP 6sec CD (wiz/sorc theft)
+SelectorName: Cure Light Wounds
+Descrip: Stolen Cure Light Wounds 2SP 6sec CD (divine theft)
+SelectorName: Conjure Bolts
+Descrip: Stolen Conjure Bolts 2SP 6sec CD (arty theft)
+SelectorName: Shillelagh
+Descrip: Stolen Shillelagh 2SP 6sec CD (druid theft)
+SelectorName: Sonic Blast
+Descrip: Stolen Sonic Blast 2SP 4sec CD (bard theft)
+SelectorName: Fine Dust 
+Descrip: Stolen Fine Dust 3SP 15sec CD (alchemist theft)
+
+AbilityName: Stolen Spell II
+Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+
+AbilityName: Stolen Spell III
+Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+
+AbilityName: Stolen Spell IV
+Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+
+AbilityName: Master of Trickery
+Descrip: Magical Ambush damage increased to 1d6 Force damage per Sneak Attack die. Spell Thief SP gain increased by 50%. +2 all Attributes, +2 Imbue Dice.
+Tier: 0
+
+AbilityName: Poison Strikes
+Descrip: Select one of three poisonous attacks. These attacks deal +30% damage and apply an "Assassin's Mark" to an opponent for 10 seconds on hit, enabling Weakening Strikes and Deadly Strikes (see below) to affect that opponent. (Cooldown: 6 seconds):}{-Heartseeker Poison: Melee Poison Attack: On damage: -1 fort save (stacks 5 times), On Crit: 1d6 Con damage, On Vorpal: Heartseeker (-5% hit points), Fortitude DC 10 + Rogue level + INT modifier + assassinate bonuses. Targeted Elemental becomes vulnerable to poison.}{-Ice Chill Poison: Melee Poison Attack: On damage: -1 reflex save (stacks 5 times), On Crit: 1d6 Dex damage, On Vorpal: Paralysis, Fortitude DC 10 + Rogue level + INT modifier negates + assassinate bonuses, 25% chance for additional save when the affected creature is damaged. Targeted Undead becomes vulnerable to poison.}{-Soulshatter Poison: Melee Poison Attack: On damage: -1 Will save (stacks 5 times), On Crit: 1d6 Wis damage, On Vorpal: Shattermantle (-100 Spell Resistance for 10 seconds), Will DC 10 + Rogue level + INT modifier + assassinate bonuses. Targeted Outsider becomes vulnerable to poison.
+Tier: 1
+Cost: 2
+Selector: Heartseeker, Ice Chill, Soulshatter
+
+AbilityName: Venomed Blades
+Descrip: Imbue Toggle: On hit: [1d[4/6/8]] Poison damage with weapon attacks, scaling with 200% of the higher of Melee or Ranged Power.}}Note: Mutually exclusive with all Imbues.
+Tier: 1
+Ranks: 3
+
+AbilityName: Shiv
+Descrip: Melee Attack: +[10/20/30]% damage. On hit: Makes a Bluff check, using your Bluff skill, for one second + .25 seconds per Rogue level. On Sneak Attack: Target also gains a -2 Fortitude Save against Poisons for 20 seconds. (Stacks 5 times.) (Cooldown: 12 seconds)}Note: The Bluff effect applies to many creature types that would be immune to the regular Bluff skill, including vermin, undead, constructs and oozes (although they may still be immune to sneak attacks).
+Tier: 1
+Ranks: 3
+
+AbilityName: Sneak Attack Training
+Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks.
+Tier: 1
+Cost: 2
+
+AbilityName: Stealthy
+Descrip: +[1/2/3] Hide and Move Silently. +[25/50/75]% enchantment bonus to movement speed while sneaking.}{-Bug: Actual progression is the lesser +[20/35/50]% of similar enhancements}{-Bug: If you jump or fall down to a different surface while sneaking, your speed may reset to a slower value until you exit and re-enter sneak mode, or switch weapons.
+Tier: 1
+Ranks: 3
+
+AbilityName: Poison Strikes
+Descrip: Select one of three poisonous attacks.
+Tier: 2
+Cost: 2
+Parent: Tier 1: Poison Strikes
+
+AbilityName: Toxin Affinity
+Descrip: +[1/2/3] bonus Imbue Dice}+[1/2/3] Fortitude saves vs. Poisons}+[1/2/3] to the save DC of your Poison attacks.
+Tier: 2
+Ranks: 3
+All: Tier 1: Venomed Blades
+
+AbilityName: Bleed Them Out
+Descrip: Melee Attack: Deal +[10/20/30]% damage and on successful damage causes your opponent to bleed. The bleed effect can stack up to 5 times. (Cooldown: 6 seconds)}}Note: Bleed deals 1d6 damage every 2 seconds for 14 seconds. This damage scales with 200% Melee Power.
+Tier: 2
+Ranks: 3
+
+AbilityName: Sneak Attack Training
+Descrip: Grants +1 Sneak Attack die and +1 to hit when performing Sneak Attacks.
+Tier: 2
+Cost: 2
+All: Tier 1: Sneak Attack Training
+
+AbilityName: Damage Boost
+Descrip: Activate to gain a [10/20/30] Action Boost bonus to Melee Power and Ranged Power for 20 seconds. (Cooldown: 30 seconds)
+Tier: 2
+Ranks: 3
+
+AbilityName: Poison Strikes
+Descrip: Select one of three poisonous attacks.
+Tier: 3
+Cost: 2
+Parent: Tier 1: Poison Strikes
+Siblings: Tier 2: Poison Strikes
+
+AbilityName: Critical Mastery
+Descrip: +[1/2/3] bonus to critical damage and to confirm critical hits.
+Tier: 3
+Ranks: 3
+
+AbilityName: Shadow Dagger
+Descrip: Throw a dagger made of solidified shadows at your enemy. Deals [4/6/8]d8 unholy damage and blinds the target (Fort DC [10/14/18] + Rogue Level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate Negates blindness). This damage scales with 400% Melee Power. (Cooldown: [30/20/10] seconds)}Notes:}{-Slow, non-homing projectile; easy to miss moving targets (it's basically a reskinned Necrotic/Caustic/Shocking/Flaming/Freezing Bolt).}{-The unholy damage affects creatures of all alignments, including undead.}{-Treated like a spell and does not function in an antimagic field.
+Tier: 3
+Ranks: 3
+
+AbilityName: Sneak Attack Training
+Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks
+Tier: 3
+Cost: 2
+All: Tier 2: Sneak Attack Training
+
+AbilityName: Execute
+Descrip: Melee Assassinate attack: +30% damage. If the target is below 30% health, deal 500 damage. This damage scales with 400% Melee Power. (Cooldown: 15 seconds).}Shares a cooldown with A Good Death and Merciful Strike (melee and ranged versions).
+Tier: 4
+Cost: 2
+
+AbilityName: Killer
+Descrip: When you kill a target, gain +5% morale bonus to Doublestrike and Doubleshot for 15 seconds. Weak enemies will not always produce this effect. The killer buff can stack up to [2/3/4] times.
+Tier: 4
+Ranks: 3
+
+AbilityName: Weakening Strikes
+Descrip: Your attacks reduce the Melee and Ranged Power of opponents by (10 + Rogue Level/2) for 10 seconds if you attack an enemy with an "Assassin's Mark." (Applied by Poison Strikes.)
+Tier: 4
+Cost: 2
+
+AbilityName: Sneak Attack Training
+Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks
+Tier: 4
+Cost: 2
+All: Tier 3: Sneak Attack Training
+
+AbilityName: Assassinate
+Descrip: Stealth Melee Assassinate Attack: On Sneak Attack: +10 Sneak Attack dice. Kills a target instantly, Fortitude save (10 + Rogue level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate) negates. (Cooldown: 12 seconds)
+Tier: 5
+
+AbilityName: Measure the Foe
+Descrip: Gain +6 Melee Power, +2 Dodge, +2 Maximum Dodge, +1 to hit and +1 to the DC's of your Assassinate abilities for every [4/2/1] seconds you remain stealthed. This effect stacks up to five times, and lasts 10 seconds after you come out of stealth.
+Tier: 5
+Ranks: 3
+
+AbilityName: Deadly Strikes
+Descrip: +10 damage against enemies with an "Assassin's Mark". (Applied by Poison Strikes.)
+Tier: 5
+Cost: 2
+
+AbilityName: Knife Specialization
+Descrip: You gain a +1 Competence bonus to Critical Damage Multiplier with Daggers and Kukris. Daggers also gain a +1 Competence bonus to Critical Threat Range. If you have Improved Critical: Piercing, this bonus to Threat Range is doubled.
+Tier: 5
+Cost: 2
+
+AbilityName: Light Armor Mastery
+Descrip: Gain [2/4/6] to the Maximum Dexterity Bonus of light armor and gain [2/4/6] Physical Resistance Rating.
+Tier: 5
+Ranks: 3

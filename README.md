@@ -13,6 +13,14 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.12.0 - Updates for U78 
+Changes:
+Updates for U78 - Arcane Trickster
+
+#### Character Builder
+- Version 4.12
+- Added Arcane Trickster
+
 ### 4.11.0 - Updates for U76 / U77
 Changes:
 Updates for U76 Balance Pass

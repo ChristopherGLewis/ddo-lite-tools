@@ -818,5 +818,41 @@ SpellList2: Acolyte's Breath: Black, Acolyte's Breath: Blue, Acolyte's Breath: G
 SpellList3: Cyclonic Blast, Displacement, Draconic Burst: Acid, Draconic Burst: Cold, Draconic Burst: Electric, Draconic Burst: Fire, Draconic Burst: Poison, Fear, Greater Elemental Weapons, Haste, Protection from Elements
 SpellList4: Black Dragon Bolt, Chain Lightning, Cone of Cold, Death Ward, Delayed Blast Fireball, Draconic Devastation: Black, Draconic Devastation: Blue, Draconic Devastation: Green, Draconic Devastation: Red, Draconic Devastation: White, Freedom of Movement, Howl of Terror, Poison Breath, Mass Protection from Elements, True Seeing
 
-
+ClassName: Arcane Trickster
+Initial: A, AT, Trickster, ATr
+Color: Red
+Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+BAB: 0.75
+SkillPoints: 2
+Trapper: true
+Skills: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Hide, Jump, Listen, Move Silently, Open Lock, Repair, Search, Spellcraft, Spot, Tumble, Use Magic Device
+GrantedFeats1: Armor Proficiency: Light
+GrantedFeats1: Simple Weapons, Martial Weapon: Rapier, Martial Weapon: Shortbow, Martial Weapon: Shortsword
+GrantedFeats1: Sneak Attack, Trapfinding
+GrantedFeats2: Evasion
+GrantedFeats3: Sneak Attack, Mage Hand - Bluff, Mage Hand - Disable Traps, Magical Training
+GrantedFeats5: Sneak Attack
+GrantedFeats7: Sneak Attack
+GrantedFeats8: Magical Ambush
+GrantedFeats9: Sneak Attack
+GrantedFeats11: Sneak Attack
+GrantedFeats12: Trap Sense
+GrantedFeats13: Sneak Attack
+GrantedFeats15: Sneak Attack
+GrantedFeats16: Spell Thief
+GrantedFeats17: Sneak Attack
+GrantedFeats18: Trap Sense
+GrantedFeats19: Sneak Attack
+BonusFeat: 6, 12, 18
+MaxSpellLevel: 4
+SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
+SpellSlots1: 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3
+SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1
+SpellList1: Charm Person, Color Spray, Expeditious Retreat, Feather Fall, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Nightshield, Protection from Evil, Repair Light Damage, Sleep, Tumble
+SpellList2: Blur, Cat's Grace,  Daze Monster, Fox's Cunning, Hypnotic Pattern, Invisibility, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scorching Ray, See Invisibility, Touch of Idiocy
+SpellList3: Chain Missiles, Deep Slumber, Displacement,  Frost Lance, Haste, Heroism, Hold Person, Repair Serious Damage, Suggestion, Water Breathing
+SpellList4: Charm Monster, Crushing Despair, Dimension Door, Force Missiles, Phantasmal Killer, Remove Curse, Repair Critical Damage
+Trees: Arcane Trickster, Mechanic, Thief-Acrobat
 
