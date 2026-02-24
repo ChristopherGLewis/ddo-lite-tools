@@ -14311,137 +14311,211 @@ Descrip: Stolen Fine Dust 3SP 15sec CD (alchemist theft)
 AbilityName: Stolen Spell II
 Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
 Tier: 0
+Selector: Chain Missile, Cure Moderate Wounds, Personal Augmentation: Insightful Damage, Sound Burst, Salt Ray, Salt Crystals
+SelectorName: Chain Missile
+Descrip: Stolen Chain Missile 8SP 10sec CD
+SelectorName: Cure Moderate Wounds 4SP 6sec CD
+Descrip: Stolen Cure Moderate Wounds
+SelectorName: Personal Augmentation: Insightful Damage 
+Descrip: Stolen Personal Augmentation: Insightful Damage 8SP 2sec CD
+SelectorName: Sound Burst 
+Descrip: Stolen Sound Burst 8SP 20sec CD
+SelectorName: Salt Ray 
+Descrip: Stolen Salt Ray 4SP 8sec CD
+SelectorName: Salt Crystals
+Descrip: Stolen Salt Crystals 8SP 20sec CD
+
 
 AbilityName: Stolen Spell III
 Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
 Tier: 0
+Selector: Force Missile, Cure Serious Wounds, Radiant Forcefield, Thorn Bloom, Hold Monster, Flash Freeze 
+SelctorName: Force Missile 
+Descrip: Stolen Force Missile 6 SP 6sec CD
+SelctorName: Cure Serious Wounds
+Descrip: Stolen Cure Serious Wounds 6SP 6sec CD
+SelctorName: Radiant Forcefield
+Descrip: Stolen Radiant Forcefield 20SP 180 sec CD
+SelctorName: Thorn Bloom 
+Descrip: Stolen Thorn Bloom 10SP 10sec CD
+SelctorName: Hold Monster
+Descrip: Stolen Hold Monster 8SP 2sec CD
+SelctorName: Flash Freeze
+Descrip: Stolen Flash Freeze 8SP 30sec CD
+
 
 AbilityName: Stolen Spell IV
 Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
 Tier: 0
+Selector: Disintegrate,  Heal ,  Tenser's Transformation ,  Fire Seeds ,  Greater Shout ,  Greater Evolution 
+SelectorName: Disintegrate 
+Descrip: Stolen Disintegrate 8SP 10sec CD
+SelectorName: Heal 
+Descrip: Stolen Heal 20SP 15sec CD
+SelectorName: Tenser's Transformation 
+Descrip: Stolen Tenser's Transformation SP15 30sec CD
+SelectorName: Fire Seeds 
+Descrip: Stolen Fire Seeds 10SP 10sec CD
+SelectorName: Greater Shout
+Descrip: Stolen Greater Shout SP15 10sec CD
+SelectorName: Greater Evolution 
+Descrip: Stolen Greater Evolution SP25 10sec CD
 
-AbilityName: Master of Trickery
-Descrip: Magical Ambush damage increased to 1d6 Force damage per Sneak Attack die. Spell Thief SP gain increased by 50%. +2 all Attributes, +2 Imbue Dice.
-Tier: 0
+AbilityName: Mage Hand: Eye Poke
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with Force spell power. Target must make a reflex save against your Disable Device skill + 1d20, if they fail they become blind for 12 seconds with a recurring saves every 4 seconds. Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.{This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
+Tier: 1
+Cost: 1
 
-AbilityName: Poison Strikes
-Descrip: Select one of three poisonous attacks. These attacks deal +30% damage and apply an "Assassin's Mark" to an opponent for 10 seconds on hit, enabling Weakening Strikes and Deadly Strikes (see below) to affect that opponent. (Cooldown: 6 seconds):}{-Heartseeker Poison: Melee Poison Attack: On damage: -1 fort save (stacks 5 times), On Crit: 1d6 Con damage, On Vorpal: Heartseeker (-5% hit points), Fortitude DC 10 + Rogue level + INT modifier + assassinate bonuses. Targeted Elemental becomes vulnerable to poison.}{-Ice Chill Poison: Melee Poison Attack: On damage: -1 reflex save (stacks 5 times), On Crit: 1d6 Dex damage, On Vorpal: Paralysis, Fortitude DC 10 + Rogue level + INT modifier negates + assassinate bonuses, 25% chance for additional save when the affected creature is damaged. Targeted Undead becomes vulnerable to poison.}{-Soulshatter Poison: Melee Poison Attack: On damage: -1 Will save (stacks 5 times), On Crit: 1d6 Wis damage, On Vorpal: Shattermantle (-100 Spell Resistance for 10 seconds), Will DC 10 + Rogue level + INT modifier + assassinate bonuses. Targeted Outsider becomes vulnerable to poison.
+AbilityName: Magic Fingers
+Descrip: +1/2/3 Open Locks, Disable Device, Concentration
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Keep it Flexible
+Descrip: Gain [5/10/15]% Reduction to Arcane Spell Failure (armor).
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: My Favorite Bauble
+Descrip: Gain 10 Universal spell power while using a staff, dagger or an orb.
 Tier: 1
 Cost: 2
-Selector: Heartseeker, Ice Chill, Soulshatter
 
-AbilityName: Venomed Blades
-Descrip: Imbue Toggle: On hit: [1d[4/6/8]] Poison damage with weapon attacks, scaling with 200% of the higher of Melee or Ranged Power.}}Note: Mutually exclusive with all Imbues.
+AbilityName: I Prefer Subtlety
+Descrip: Reduce Threat from your missile and spell attacks by [10/20/30]%.
+AP Cost: 1	Ranks: 3	Progression: 1
 Tier: 1
+Cost: 1
 Ranks: 3
 
-AbilityName: Shiv
-Descrip: Melee Attack: +[10/20/30]% damage. On hit: Makes a Bluff check, using your Bluff skill, for one second + .25 seconds per Rogue level. On Sneak Attack: Target also gains a -2 Fortitude Save against Poisons for 20 seconds. (Stacks 5 times.) (Cooldown: 12 seconds)}Note: The Bluff effect applies to many creature types that would be immune to the regular Bluff skill, including vermin, undead, constructs and oozes (although they may still be immune to sneak attacks).
-Tier: 1
-Ranks: 3
 
-AbilityName: Sneak Attack Training
-Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks.
-Tier: 1
+AbilityName: Mage Hand: Slap
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with spell power. Target must make a Fortitude save against your Disable Device skill + 1d20, or become stunned for 6 seconds with a recurring saves every 2 seconds. Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.{This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
+All: Tier 1: Mage Hand: Poke
+Tier: 2
 Cost: 2
 
-AbilityName: Stealthy
-Descrip: +[1/2/3] Hide and Move Silently. +[25/50/75]% enchantment bonus to movement speed while sneaking.}{-Bug: Actual progression is the lesser +[20/35/50]% of similar enhancements}{-Bug: If you jump or fall down to a different surface while sneaking, your speed may reset to a slower value until you exit and re-enter sneak mode, or switch weapons.
-Tier: 1
+AbilityName: Protective Gear
+Descrip: 2/4/6 bonus to MRR and MRR Cap
+Tier: 2
+Cost: 1
 Ranks: 3
 
-AbilityName: Poison Strikes
-Descrip: Select one of three poisonous attacks.
+AbilityName: Three Handed Casting
+Descrip: Your Quicken Spell Feat costs [1/2/4] SP less. Stacks with Efficient Quicken from other trees.
+All: Feat: Quicken Spell
 Tier: 2
 Cost: 2
-Parent: Tier 1: Poison Strikes
-
-AbilityName: Toxin Affinity
-Descrip: +[1/2/3] bonus Imbue Dice}+[1/2/3] Fortitude saves vs. Poisons}+[1/2/3] to the save DC of your Poison attacks.
-Tier: 2
-Ranks: 3
-All: Tier 1: Venomed Blades
-
-AbilityName: Bleed Them Out
-Descrip: Melee Attack: Deal +[10/20/30]% damage and on successful damage causes your opponent to bleed. The bleed effect can stack up to 5 times. (Cooldown: 6 seconds)}}Note: Bleed deals 1d6 damage every 2 seconds for 14 seconds. This damage scales with 200% Melee Power.
-Tier: 2
 Ranks: 3
 
-AbilityName: Sneak Attack Training
-Descrip: Grants +1 Sneak Attack die and +1 to hit when performing Sneak Attacks.
+AbilityName: Arms of the Trickster
+Descrip: Choose one:}{-Trickster Trick - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 100% Force spell power. Costs 5 SP to activate.}{- Trickster's Blade - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% melee power. Costs 5 SP to activate.}{- Trickster's Bolt - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
 Tier: 2
-Cost: 2
-All: Tier 1: Sneak Attack Training
+Cost: 1
+Selector: Trickster Trick, Trickster's Blade, Trickster's Bolt
+SelectorName: Trickster Trick
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 100% Force spell power. Costs 5 SP to activate.
+SelectorName: Trickster's Blade 
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% melee power. Costs 5 SP to activate.
+SelectorName: Trickster's Bolt 
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
 
-AbilityName: Damage Boost
-Descrip: Activate to gain a [10/20/30] Action Boost bonus to Melee Power and Ranged Power for 20 seconds. (Cooldown: 30 seconds)
-Tier: 2
-Ranks: 3
 
-AbilityName: Poison Strikes
-Descrip: Select one of three poisonous attacks.
+AbilityName: Mage Hand
+Descrip:: Meddle with Reality: Any creature you target with mage hand Slap or Eye Poke undergoes Meddled Reality; Target is no longer immune to sneak attacks, -25% penalty to fortification & -4 to Will saves. This lasts for 30 seconds.}For Non-Bosses there is an additional effect for 3 seconds where this Creature's type changes to Fey, Magical Beast or something even odder. Passive: Gain 30 Spell Points.}Does not remove race-based damage immunities, but does remove race-based effect immunities, such as allowing Undead to be slain by Death effects.
+All: Tier 2: Mage Hand: Slap
 Tier: 3
 Cost: 2
-Parent: Tier 1: Poison Strikes
-Siblings: Tier 2: Poison Strikes
+Ranks: 1
 
-AbilityName: Critical Mastery
-Descrip: +[1/2/3] bonus to critical damage and to confirm critical hits.
-Tier: 3
-Ranks: 3
-
-AbilityName: Shadow Dagger
-Descrip: Throw a dagger made of solidified shadows at your enemy. Deals [4/6/8]d8 unholy damage and blinds the target (Fort DC [10/14/18] + Rogue Level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate Negates blindness). This damage scales with 400% Melee Power. (Cooldown: [30/20/10] seconds)}Notes:}{-Slow, non-homing projectile; easy to miss moving targets (it's basically a reskinned Necrotic/Caustic/Shocking/Flaming/Freezing Bolt).}{-The unholy damage affects creatures of all alignments, including undead.}{-Treated like a spell and does not function in an antimagic field.
-Tier: 3
-Ranks: 3
-
-AbilityName: Sneak Attack Training
-Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks
+AbilityName: More Magic More Fun
+Descrip: Choose one:}{-Mixed Magics: Your base Caster Level is equal to your Character Level (Maximum 20). This does not change the caster level of Rune Arms, Wands, Scrolls, or other items.}{- Quick Silver: You gain Quick Draw and 5 Universal Spell Power
 Tier: 3
 Cost: 2
-All: Tier 2: Sneak Attack Training
+Ranks: 1 
+Selector:Mixed Magics, Quick Silver
+SelectorName: Mixed Magics
+Descrip: Your base Caster Level is equal to your Character Level (Maximum 20). This does not change the caster level of Rune Arms, Wands, Scrolls, or other items.
+SelectorName: Quick Silver
+Descrip: You gain Quick Draw and 5 Universal Spell Power
 
-AbilityName: Execute
-Descrip: Melee Assassinate attack: +30% damage. If the target is below 30% health, deal 500 damage. This damage scales with 400% Melee Power. (Cooldown: 15 seconds).}Shares a cooldown with A Good Death and Merciful Strike (melee and ranged versions).
+AbilityName: Tricks on Tricks
+Descrip: Your weapon attacks and offensive Evocation spells have a chance of granting you a stack of Tricks on Tricks, which gives a +1 to Illusion and Enchantment DCs. This stacks up to 4 times. The stacks decay at a rate of 1 every 30 seconds.
+Tier: 3
+Cost: 1
+Ranks: 1
+
+AbilityName: Applied Force
+Descrip: Gain +1 Imbue die per 3 rogue levels and +10% to crit damage with Force spells.
+All: Tier 2: Arms of the Trickster
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Mage Hand: Helping Hand
+Descrip: SLA: Removes most crowd control effects from a target, heals them for 50% of their Max Hit points and applies a Restoration effect to the target. Can be used while Crowd Controlled. Cost: 5 SP. 60 CD. Passive: Gain 30 Spell Points. If you're incapacitated for more than 6 seconds and have 5 spell points you will receive the helping hand effect. This cannot occur again until you are out of combat.{Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
+All: Tier 3: Mage Hand: Meddle with Reality
 Tier: 4
 Cost: 2
 
-AbilityName: Killer
-Descrip: When you kill a target, gain +5% morale bonus to Doublestrike and Doubleshot for 15 seconds. Weak enemies will not always produce this effect. The killer buff can stack up to [2/3/4] times.
-Tier: 4
-Ranks: 3
-
-AbilityName: Weakening Strikes
-Descrip: Your attacks reduce the Melee and Ranged Power of opponents by (10 + Rogue Level/2) for 10 seconds if you attack an enemy with an "Assassin's Mark." (Applied by Poison Strikes.)
+AbilityName: Slippery Magic
+Descrip: You have a chance to gain a +5% uncapped bonus to dodge and +1 reflex saves whenever you land an offensive spell on a target. This can stack up to 3 times. 1 stack drops every 15 seconds.}Passive: +3% bonus to dodge.
 Tier: 4
 Cost: 2
 
-AbilityName: Sneak Attack Training
-Descrip: Grants +1 Sneak Attack die and +1 to hit when performing sneak attacks
+AbilityName: Pin Point
+Descrip: +1/2/3 Spell Penetration and +3/6/10% Fortification Bypass.}Rank 3: Your mage hand spells automatically dispels Nightshield and Shield spell effects.
 Tier: 4
-Cost: 2
-All: Tier 3: Sneak Attack Training
-
-AbilityName: Assassinate
-Descrip: Stealth Melee Assassinate Attack: On Sneak Attack: +10 Sneak Attack dice. Kills a target instantly, Fortitude save (10 + Rogue level + the greater of Intelligence or Dexterity bonus + bonuses to Assassinate) negates. (Cooldown: 12 seconds)
-Tier: 5
-
-AbilityName: Measure the Foe
-Descrip: Gain +6 Melee Power, +2 Dodge, +2 Maximum Dodge, +1 to hit and +1 to the DC's of your Assassinate abilities for every [4/2/1] seconds you remain stealthed. This effect stacks up to five times, and lasts 10 seconds after you come out of stealth.
-Tier: 5
+Cost: 1
 Ranks: 3
 
-AbilityName: Deadly Strikes
-Descrip: +10 damage against enemies with an "Assassin's Mark". (Applied by Poison Strikes.)
+AbilityName: Sharp Magic
+Descrip: +1 Sneak Attack dice per Metamagic feat you possess.
+Tier: 4
+Cost: 1
+Ranks: 1
+
+AbilityName: Mage Hand: Presto
+Descrip: SLA: Mage hand snaps it's fingers over a none boss target to make them disappear. We don't know where they go, it's magic! Target gets a Will save to negate the effect with a DC equal to your Disable Device skill. Cost: 10 SP 20 CD. Passive: Gain 80 Spell Points.
+Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
+Blocked by Deathblock, this is an instakill effect
+All: Tier 4: Mage Hand: Helping Hand
 Tier: 5
 Cost: 2
+Ranks: 1
 
-AbilityName: Knife Specialization
-Descrip: You gain a +1 Competence bonus to Critical Damage Multiplier with Daggers and Kukris. Daggers also gain a +1 Competence bonus to Critical Threat Range. If you have Improved Critical: Piercing, this bonus to Threat Range is doubled.
+AbilityName: Extra Hand
+Descrip: All meta magics are reduced in cost by 2. You have a chance when struck by a spell to manifest an extra mage hand which knocks down the opposing caster down.}Bug: Applies to beneficial spells as well. You can knock down both yourself and allies with your beneficial spells.
 Tier: 5
-Cost: 2
+Cost: 1
+Ranks: 1
 
-AbilityName: Light Armor Mastery
-Descrip: Gain [2/4/6] to the Maximum Dexterity Bonus of light armor and gain [2/4/6] Physical Resistance Rating.
+
+AbilityName: Magic is a Tricky Business
+Descrip: You gain a +1/2 bonus to illusion and enchantment DCs.}Rank 2: Tricks on Tricks now also increases to hit and damage with weapons by 1 per stack.
 Tier: 5
+Cost: 1
+Ranks: 2
+
+AbilityName: Good with my Hands
+Descrip: +3/6/10 Melee and Ranged Power.}Rank 3: Passive - Gain 8 MRR cap.
+Tier: 5
+Cost: 1
 Ranks: 3
+
+AbilityName: Not Half Bad...
+Descrip: Choose one:} Not that Bad with a Blade - +1 competence bonus to critical threat range and damage multiplier with melee weapons and 15% Competence bonus to Max Hit Points.} Not that Bad with a Bow - +1 competence bonus to critical threat range and damage multiplier with ranged weapons and a +10% to Dodge Bypass.} Not that Bad with a Spell - +20 Universal spell power, +2 Spell Penetration and +5% crit chance with all spells.
+Tier: 5
+Cost: 2
+Ranks: 1
+Selector: Not that Bad with a Blade, Not that Bad with a Bow, Not that Bad with a Spell
+SelectorName: Not that Bad with a Blade 
+Descrip: +1 competence bonus to critical threat range and damage multiplier with melee weapons and 15% Competence bonus to Max Hit Points.
+SelectorName: Not that Bad with a Bow 
+Descrip: +1 competence bonus to critical threat range and damage multiplier with ranged weapons and a +10% to Dodge Bypass.
+SelectorName: Not that Bad with a Spell 
+Descrip: +20 Universal spell power, +2 Spell Penetration and +5% crit chance with all spells.
+
+
