@@ -377,6 +377,7 @@ SpellList4: Animal Growth, Cure Serious Wounds, Freedom of Movement, Mass Longst
 ClassName: Rogue
 Initial: R, Rg, Rogue, Rog
 Color: Red
+DisallowedClasses: Arcane Trickster
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
 SkillPoints: 8
@@ -824,14 +825,14 @@ Color: Red
 DisallowedClasses: Rogue
 Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
 BAB: 0.75
-SkillPoints: 2
+SkillPoints: 8
 Trapper: true
 Skills: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Hide, Jump, Listen, Move Silently, Open Lock, Repair, Search, Spellcraft, Spot, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light
 GrantedFeats1: Simple Weapons, Martial Weapon: Rapier, Martial Weapon: Shortbow, Martial Weapon: Shortsword
 GrantedFeats1: Sneak Attack, Trapfinding
 GrantedFeats2: Evasion
-GrantedFeats3: Sneak Attack, Mage Hand - Bluff, Mage Hand - Disable Traps, Magical Training
+GrantedFeats3: Sneak Attack, Mage Hand: Bluff, Mage Hand: Disable Traps, Magical Training
 GrantedFeats5: Sneak Attack
 GrantedFeats7: Sneak Attack
 GrantedFeats8: Magical Ambush

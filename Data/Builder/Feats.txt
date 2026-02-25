@@ -1946,7 +1946,7 @@ Descrip: +1 bonus to all saves.
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Mage Hand
-Group: Heroic, Magical
+Group: Heroic, Spellcasting
 Descrip: The magical hand of an Arcane Trickster.
 Class: Arcane Trickster 3
 Flags: Unselectable
@@ -1957,7 +1957,7 @@ SelectorName: Disable Traps
 Descrip: You can disable a device at base spell range. This cannot be enlarged with metamagic feats.
 
 FeatName: Magical Ambush
-Group: Heroic, Magical
+Group: Heroic, Spellcasting
 Descrip: Your offensive instantaneous damaging spells deal additional 1d6 force damage equal to your sneak attack dice. Scales with 50% of force spell power. This proc has no cool down so it works very well with multi missile spells like magic missile. The sneak dice will not function on DOTS, Pale Master Aura, Wall of Fire, etc. 
 Class: Arcane Trickster 8
 Flags: Unselectable
@@ -2753,29 +2753,27 @@ Descrip: Sing a song to apply a small positive energy heal to your target and ne
 Class: Bard 8
 Flags: Unselectable
 
-
-
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.
+Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are bonus Feats for Dragon Disciples.}}Note: Only Enchantment and Illusion schools are bonus Feats for Arcane Tricksters.
 ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
 CanCastSpell: 1
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 SelectorName: Abjuration
-ClassBonus: Wizard, Arcane Trickster
+ClassBonus: Wizard
 SelectorName: Conjuration
-ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
+ClassBonus: Wizard, Dragon Disciple
 SelectorName: Enchantment
 ClassBonus: Wizard, Arcane Trickster
 SelectorName: Evocation
-ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
+ClassBonus: Wizard, Dragon Disciple
 SelectorName: Illusion
 ClassBonus: Wizard, Arcane Trickster
 SelectorName: Necromancy
-ClassBonus: Wizard, Arcane Trickster
+ClassBonus: Wizard
 SelectorName: Transmutation
-ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
+ClassBonus: Wizard, Dragon Disciple
 
 FeatName: Spell Penetration
 Group: Heroic, Spellcasting
@@ -2804,7 +2802,7 @@ One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Foc
 One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy
 
 FeatName: Spell Thief
-Group: Heroic, Magical
+Group: Heroic, Spellcasting
 Descrip: Your melee and missile attacks that strike targets who have spells grant Spell Points. 1d20 Spell Points on a 5 second cooldown for melee attacks. Ranged is a 10 second cooldown.
 Class: Arcane Trickster 16
 Flags: Unselectable

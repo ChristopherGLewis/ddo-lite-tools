@@ -20,6 +20,11 @@ Updates for U78 - Arcane Trickster (massive help from Yhelm)
 #### Character Builder
 - Version 4.12
 - Added Arcane Trickster class and Enhancements
+- Fixed spell focus limits for  Dragon Disciple & Arcane Trickster
+
+#### Compendium 
+- Version 1.19
+- Added Arcane Trickster class 
 
 ### 4.11.0 - Updates for U76 / U77
 Changes:

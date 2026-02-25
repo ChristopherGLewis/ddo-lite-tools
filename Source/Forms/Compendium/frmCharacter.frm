@@ -47,7 +47,7 @@ Begin VB.Form frmCharacter
          ForeColor       =   &H80000008&
          Height          =   2715
          Left            =   6960
-         TabIndex        =   183
+         TabIndex        =   184
          Tag             =   "ctl"
          Top             =   60
          Width           =   2835
@@ -55,7 +55,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   1
             Left            =   1860
-            TabIndex        =   186
+            TabIndex        =   187
             Top             =   0
             Width           =   855
             _ExtentX        =   1508
@@ -77,7 +77,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   2
             Left            =   1860
-            TabIndex        =   189
+            TabIndex        =   190
             Top             =   720
             Width           =   855
             _ExtentX        =   1508
@@ -99,7 +99,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   3
             Left            =   1860
-            TabIndex        =   190
+            TabIndex        =   191
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -121,7 +121,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   4
             Left            =   1860
-            TabIndex        =   191
+            TabIndex        =   192
             Top             =   1200
             Width           =   855
             _ExtentX        =   1508
@@ -143,7 +143,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   5
             Left            =   1860
-            TabIndex        =   194
+            TabIndex        =   195
             Top             =   1920
             Width           =   855
             _ExtentX        =   1508
@@ -165,7 +165,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   6
             Left            =   1860
-            TabIndex        =   195
+            TabIndex        =   196
             Top             =   2160
             Width           =   855
             _ExtentX        =   1508
@@ -187,7 +187,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   7
             Left            =   1860
-            TabIndex        =   192
+            TabIndex        =   193
             Top             =   1440
             Width           =   855
             _ExtentX        =   1508
@@ -209,7 +209,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   8
             Left            =   1860
-            TabIndex        =   193
+            TabIndex        =   194
             Top             =   1680
             Width           =   855
             _ExtentX        =   1508
@@ -231,7 +231,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   9
             Left            =   1860
-            TabIndex        =   196
+            TabIndex        =   197
             Top             =   2400
             Width           =   855
             _ExtentX        =   1508
@@ -253,7 +253,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   10
             Left            =   1860
-            TabIndex        =   187
+            TabIndex        =   188
             Top             =   240
             Width           =   855
             _ExtentX        =   1508
@@ -275,7 +275,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   11
             Left            =   1860
-            TabIndex        =   188
+            TabIndex        =   189
             Top             =   480
             Width           =   855
             _ExtentX        =   1508
@@ -302,7 +302,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   119
             Left            =   240
-            TabIndex        =   270
+            TabIndex        =   271
             Tag             =   "ctl"
             Top             =   480
             Width           =   1500
@@ -316,7 +316,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   116
             Left            =   360
-            TabIndex        =   268
+            TabIndex        =   269
             Tag             =   "ctl"
             Top             =   240
             Width           =   1380
@@ -330,7 +330,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   104
             Left            =   480
-            TabIndex        =   260
+            TabIndex        =   261
             Tag             =   "ctl"
             Top             =   2400
             Width           =   1260
@@ -344,7 +344,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   101
             Left            =   480
-            TabIndex        =   200
+            TabIndex        =   201
             Tag             =   "ctl"
             Top             =   1680
             Width           =   1260
@@ -358,7 +358,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   95
             Left            =   480
-            TabIndex        =   203
+            TabIndex        =   204
             Tag             =   "ctl"
             Top             =   1440
             Width           =   1260
@@ -372,7 +372,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   67
             Left            =   480
-            TabIndex        =   202
+            TabIndex        =   203
             Tag             =   "ctl"
             Top             =   2175
             Width           =   1260
@@ -386,7 +386,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   66
             Left            =   480
-            TabIndex        =   201
+            TabIndex        =   202
             Tag             =   "ctl"
             Top             =   1935
             Width           =   1260
@@ -400,7 +400,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   65
             Left            =   480
-            TabIndex        =   199
+            TabIndex        =   200
             Tag             =   "ctl"
             Top             =   1215
             Width           =   1260
@@ -414,7 +414,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   64
             Left            =   480
-            TabIndex        =   198
+            TabIndex        =   199
             Tag             =   "ctl"
             Top             =   975
             Width           =   1260
@@ -428,7 +428,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   63
             Left            =   480
-            TabIndex        =   197
+            TabIndex        =   198
             Tag             =   "ctl"
             Top             =   735
             Width           =   1260
@@ -442,7 +442,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   62
             Left            =   480
-            TabIndex        =   185
+            TabIndex        =   186
             Tag             =   "ctl"
             Top             =   15
             Width           =   1260
@@ -895,7 +895,7 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
-            Position        =   3
+            Position        =   2
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
          End
@@ -903,7 +903,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   21
             Left            =   3480
-            TabIndex        =   152
+            TabIndex        =   153
             Top             =   3120
             Width           =   855
             _ExtentX        =   1508
@@ -947,7 +947,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   23
             Left            =   3480
-            TabIndex        =   151
+            TabIndex        =   152
             Top             =   2880
             Width           =   855
             _ExtentX        =   1508
@@ -961,7 +961,7 @@ Begin VB.Form frmCharacter
             BackColor       =   -2147483643
             BorderColor     =   0
             BorderInterior  =   -2147483631
-            Position        =   1
+            Position        =   2
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
          End
@@ -987,6 +987,42 @@ Begin VB.Form frmCharacter
             Enabled         =   -1  'True
             DisabledColor   =   -2147483631
          End
+         Begin Compendium.userSpinner usrspnClass 
+            Height          =   255
+            Index           =   25
+            Left            =   3480
+            TabIndex        =   151
+            Top             =   2640
+            Width           =   855
+            _ExtentX        =   1508
+            _ExtentY        =   450
+            Min             =   0
+            Max             =   3
+            Value           =   0
+            StepLarge       =   3
+            ShowZero        =   0   'False
+            ForeColor       =   -2147483640
+            BackColor       =   -2147483643
+            BorderColor     =   0
+            BorderInterior  =   -2147483631
+            Position        =   2
+            Enabled         =   -1  'True
+            DisabledColor   =   -2147483631
+         End
+         Begin VB.Label lblLabel 
+            Alignment       =   1  'Right Justify
+            Appearance      =   0  'Flat
+            BackColor       =   &H80000005&
+            Caption         =   "Arcane Trickster"
+            ForeColor       =   &H80000008&
+            Height          =   240
+            Index           =   121
+            Left            =   1920
+            TabIndex        =   277
+            Tag             =   "ctl"
+            Top             =   2640
+            Width           =   1515
+         End
          Begin VB.Label lblLabel 
             Alignment       =   1  'Right Justify
             Appearance      =   0  'Flat
@@ -996,7 +1032,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   110
             Left            =   2235
-            TabIndex        =   275
+            TabIndex        =   276
             Tag             =   "ctl"
             Top             =   2160
             Width           =   1200
@@ -1010,7 +1046,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   117
             Left            =   1920
-            TabIndex        =   274
+            TabIndex        =   275
             Tag             =   "ctl"
             Top             =   1920
             Width           =   1515
@@ -1024,7 +1060,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   111
             Left            =   2250
-            TabIndex        =   273
+            TabIndex        =   274
             Tag             =   "ctl"
             Top             =   2400
             Width           =   1185
@@ -1038,7 +1074,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   113
             Left            =   2160
-            TabIndex        =   272
+            TabIndex        =   273
             Tag             =   "ctl"
             Top             =   1680
             Width           =   1275
@@ -1052,7 +1088,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   114
             Left            =   2160
-            TabIndex        =   267
+            TabIndex        =   268
             Tag             =   "ctl"
             Top             =   2880
             Width           =   1275
@@ -1066,7 +1102,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   112
             Left            =   2160
-            TabIndex        =   266
+            TabIndex        =   267
             Tag             =   "ctl"
             Top             =   3120
             Width           =   1275
@@ -1080,7 +1116,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   109
             Left            =   1995
-            TabIndex        =   265
+            TabIndex        =   266
             Tag             =   "ctl"
             Top             =   1215
             Width           =   1440
@@ -1094,7 +1130,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   108
             Left            =   1995
-            TabIndex        =   264
+            TabIndex        =   265
             Tag             =   "ctl"
             Top             =   975
             Width           =   1440
@@ -1108,7 +1144,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   107
             Left            =   1995
-            TabIndex        =   263
+            TabIndex        =   264
             Tag             =   "ctl"
             Top             =   720
             Width           =   1440
@@ -1122,7 +1158,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   93
             Left            =   0
-            TabIndex        =   257
+            TabIndex        =   258
             Tag             =   "ctl"
             Top             =   0
             Width           =   960
@@ -1332,7 +1368,7 @@ Begin VB.Form frmCharacter
          Height          =   1455
          Index           =   3
          Left            =   7440
-         TabIndex        =   204
+         TabIndex        =   205
          Tag             =   "ctl"
          Top             =   2760
          Width           =   2352
@@ -1340,7 +1376,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   1
             Left            =   1380
-            TabIndex        =   207
+            TabIndex        =   208
             Top             =   240
             Width           =   855
             _ExtentX        =   1508
@@ -1362,7 +1398,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   2
             Left            =   1380
-            TabIndex        =   209
+            TabIndex        =   210
             Top             =   480
             Width           =   852
             _ExtentX        =   1508
@@ -1384,7 +1420,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   3
             Left            =   1380
-            TabIndex        =   211
+            TabIndex        =   212
             Top             =   720
             Width           =   852
             _ExtentX        =   1508
@@ -1406,7 +1442,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   13
             Left            =   1380
-            TabIndex        =   213
+            TabIndex        =   214
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -1428,7 +1464,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   17
             Left            =   1380
-            TabIndex        =   215
+            TabIndex        =   216
             Top             =   1200
             Width           =   855
             _ExtentX        =   1508
@@ -1455,7 +1491,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   102
             Left            =   0
-            TabIndex        =   258
+            TabIndex        =   259
             Tag             =   "ctl"
             Top             =   1200
             Width           =   1260
@@ -1469,7 +1505,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   96
             Left            =   0
-            TabIndex        =   212
+            TabIndex        =   213
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -1483,7 +1519,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   68
             Left            =   1380
-            TabIndex        =   205
+            TabIndex        =   206
             Tag             =   "ctl"
             Top             =   0
             Width           =   840
@@ -1497,7 +1533,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   69
             Left            =   0
-            TabIndex        =   206
+            TabIndex        =   207
             Tag             =   "ctl"
             Top             =   252
             Width           =   1260
@@ -1511,7 +1547,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   70
             Left            =   0
-            TabIndex        =   208
+            TabIndex        =   209
             Tag             =   "ctl"
             Top             =   492
             Width           =   1260
@@ -1525,7 +1561,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   71
             Left            =   0
-            TabIndex        =   210
+            TabIndex        =   211
             Tag             =   "ctl"
             Top             =   732
             Width           =   1260
@@ -1539,7 +1575,7 @@ Begin VB.Form frmCharacter
          Height          =   1215
          Index           =   2
          Left            =   9840
-         TabIndex        =   236
+         TabIndex        =   237
          Tag             =   "ctl"
          Top             =   3000
          Width           =   2352
@@ -1547,7 +1583,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   10
             Left            =   1380
-            TabIndex        =   239
+            TabIndex        =   240
             Top             =   240
             Width           =   852
             _ExtentX        =   1508
@@ -1569,7 +1605,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   11
             Left            =   1380
-            TabIndex        =   241
+            TabIndex        =   242
             Top             =   480
             Width           =   852
             _ExtentX        =   1508
@@ -1591,7 +1627,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   12
             Left            =   1380
-            TabIndex        =   243
+            TabIndex        =   244
             Top             =   720
             Width           =   852
             _ExtentX        =   1508
@@ -1613,7 +1649,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   16
             Left            =   1380
-            TabIndex        =   245
+            TabIndex        =   246
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -1640,7 +1676,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   99
             Left            =   0
-            TabIndex        =   244
+            TabIndex        =   245
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -1654,7 +1690,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   80
             Left            =   1380
-            TabIndex        =   237
+            TabIndex        =   238
             Tag             =   "ctl"
             Top             =   0
             Width           =   840
@@ -1668,7 +1704,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   81
             Left            =   0
-            TabIndex        =   238
+            TabIndex        =   239
             Tag             =   "ctl"
             Top             =   252
             Width           =   1260
@@ -1682,7 +1718,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   82
             Left            =   0
-            TabIndex        =   240
+            TabIndex        =   241
             Tag             =   "ctl"
             Top             =   492
             Width           =   1260
@@ -1696,7 +1732,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   83
             Left            =   0
-            TabIndex        =   242
+            TabIndex        =   243
             Tag             =   "ctl"
             Top             =   732
             Width           =   1260
@@ -1710,7 +1746,7 @@ Begin VB.Form frmCharacter
          Height          =   1575
          Index           =   1
          Left            =   9840
-         TabIndex        =   225
+         TabIndex        =   226
          Tag             =   "ctl"
          Top             =   1320
          Width           =   2352
@@ -1718,7 +1754,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   7
             Left            =   1380
-            TabIndex        =   228
+            TabIndex        =   229
             Top             =   240
             Width           =   852
             _ExtentX        =   1508
@@ -1740,7 +1776,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   8
             Left            =   1380
-            TabIndex        =   230
+            TabIndex        =   231
             Top             =   480
             Width           =   852
             _ExtentX        =   1508
@@ -1762,7 +1798,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   9
             Left            =   1380
-            TabIndex        =   232
+            TabIndex        =   233
             Top             =   720
             Width           =   852
             _ExtentX        =   1508
@@ -1784,7 +1820,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   15
             Left            =   1380
-            TabIndex        =   233
+            TabIndex        =   234
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -1806,7 +1842,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   18
             Left            =   1380
-            TabIndex        =   234
+            TabIndex        =   235
             Top             =   1200
             Width           =   855
             _ExtentX        =   1508
@@ -1833,7 +1869,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   120
             Left            =   0
-            TabIndex        =   271
+            TabIndex        =   272
             Tag             =   "ctl"
             Top             =   1200
             Width           =   1260
@@ -1847,7 +1883,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   98
             Left            =   0
-            TabIndex        =   235
+            TabIndex        =   236
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -1861,7 +1897,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   76
             Left            =   1380
-            TabIndex        =   226
+            TabIndex        =   227
             Tag             =   "ctl"
             Top             =   0
             Width           =   840
@@ -1875,7 +1911,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   77
             Left            =   0
-            TabIndex        =   227
+            TabIndex        =   228
             Tag             =   "ctl"
             Top             =   252
             Width           =   1260
@@ -1889,7 +1925,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   78
             Left            =   0
-            TabIndex        =   229
+            TabIndex        =   230
             Tag             =   "ctl"
             Top             =   492
             Width           =   1260
@@ -1903,7 +1939,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   79
             Left            =   0
-            TabIndex        =   231
+            TabIndex        =   232
             Tag             =   "ctl"
             Top             =   732
             Width           =   1260
@@ -1917,7 +1953,7 @@ Begin VB.Form frmCharacter
          Height          =   1215
          Index           =   0
          Left            =   9840
-         TabIndex        =   214
+         TabIndex        =   215
          Tag             =   "ctl"
          Top             =   60
          Width           =   2352
@@ -1925,7 +1961,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   4
             Left            =   1380
-            TabIndex        =   218
+            TabIndex        =   219
             Top             =   240
             Width           =   852
             _ExtentX        =   1508
@@ -1947,7 +1983,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   5
             Left            =   1380
-            TabIndex        =   220
+            TabIndex        =   221
             Top             =   480
             Width           =   852
             _ExtentX        =   1508
@@ -1969,7 +2005,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   6
             Left            =   1380
-            TabIndex        =   222
+            TabIndex        =   223
             Top             =   720
             Width           =   852
             _ExtentX        =   1508
@@ -1991,7 +2027,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   14
             Left            =   1380
-            TabIndex        =   224
+            TabIndex        =   225
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -2018,7 +2054,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   97
             Left            =   0
-            TabIndex        =   223
+            TabIndex        =   224
             Tag             =   "ctl"
             Top             =   960
             Width           =   1260
@@ -2032,7 +2068,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   75
             Left            =   0
-            TabIndex        =   221
+            TabIndex        =   222
             Tag             =   "ctl"
             Top             =   732
             Width           =   1260
@@ -2046,7 +2082,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   74
             Left            =   0
-            TabIndex        =   219
+            TabIndex        =   220
             Tag             =   "ctl"
             Top             =   492
             Width           =   1260
@@ -2060,7 +2096,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   73
             Left            =   0
-            TabIndex        =   217
+            TabIndex        =   218
             Tag             =   "ctl"
             Top             =   252
             Width           =   1260
@@ -2074,7 +2110,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   72
             Left            =   1380
-            TabIndex        =   216
+            TabIndex        =   217
             Tag             =   "ctl"
             Top             =   0
             Width           =   840
@@ -2087,7 +2123,7 @@ Begin VB.Form frmCharacter
          ForeColor       =   &H80000008&
          Height          =   4035
          Left            =   4680
-         TabIndex        =   153
+         TabIndex        =   154
          Tag             =   "ctl"
          Top             =   60
          Width           =   2292
@@ -2095,7 +2131,7 @@ Begin VB.Form frmCharacter
             Height          =   252
             Index           =   1
             Left            =   1320
-            TabIndex        =   155
+            TabIndex        =   156
             Top             =   0
             Width           =   852
             _ExtentX        =   1508
@@ -2117,7 +2153,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   2
             Left            =   1320
-            TabIndex        =   158
+            TabIndex        =   159
             Top             =   480
             Width           =   855
             _ExtentX        =   1508
@@ -2139,7 +2175,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   3
             Left            =   1320
-            TabIndex        =   160
+            TabIndex        =   161
             Top             =   720
             Width           =   855
             _ExtentX        =   1508
@@ -2161,7 +2197,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   4
             Left            =   1320
-            TabIndex        =   162
+            TabIndex        =   163
             Top             =   960
             Width           =   855
             _ExtentX        =   1508
@@ -2183,7 +2219,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   5
             Left            =   1320
-            TabIndex        =   166
+            TabIndex        =   167
             Top             =   1440
             Width           =   855
             _ExtentX        =   1508
@@ -2205,7 +2241,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   6
             Left            =   1320
-            TabIndex        =   168
+            TabIndex        =   169
             Top             =   1680
             Width           =   855
             _ExtentX        =   1508
@@ -2227,7 +2263,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   7
             Left            =   1320
-            TabIndex        =   170
+            TabIndex        =   171
             Top             =   1920
             Width           =   855
             _ExtentX        =   1508
@@ -2249,7 +2285,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   8
             Left            =   1320
-            TabIndex        =   172
+            TabIndex        =   173
             Top             =   2160
             Width           =   855
             _ExtentX        =   1508
@@ -2271,7 +2307,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   9
             Left            =   1320
-            TabIndex        =   174
+            TabIndex        =   175
             Top             =   2400
             Width           =   855
             _ExtentX        =   1508
@@ -2293,7 +2329,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   10
             Left            =   1320
-            TabIndex        =   176
+            TabIndex        =   177
             Top             =   2640
             Width           =   855
             _ExtentX        =   1508
@@ -2315,7 +2351,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   11
             Left            =   1320
-            TabIndex        =   184
+            TabIndex        =   185
             Top             =   3600
             Width           =   855
             _ExtentX        =   1508
@@ -2337,7 +2373,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   12
             Left            =   1320
-            TabIndex        =   178
+            TabIndex        =   179
             Top             =   2880
             Width           =   855
             _ExtentX        =   1508
@@ -2359,7 +2395,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   13
             Left            =   1320
-            TabIndex        =   181
+            TabIndex        =   182
             Top             =   3360
             Width           =   855
             _ExtentX        =   1508
@@ -2381,7 +2417,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   14
             Left            =   1320
-            TabIndex        =   179
+            TabIndex        =   180
             Top             =   3120
             Width           =   855
             _ExtentX        =   1508
@@ -2403,7 +2439,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   15
             Left            =   1320
-            TabIndex        =   164
+            TabIndex        =   165
             Top             =   1200
             Width           =   855
             _ExtentX        =   1508
@@ -2425,7 +2461,7 @@ Begin VB.Form frmCharacter
             Height          =   255
             Index           =   16
             Left            =   1320
-            TabIndex        =   156
+            TabIndex        =   157
             Top             =   240
             Width           =   855
             _ExtentX        =   1508
@@ -2452,7 +2488,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   118
             Left            =   0
-            TabIndex        =   269
+            TabIndex        =   270
             Tag             =   "ctl"
             Top             =   255
             Width           =   1200
@@ -2466,7 +2502,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   115
             Left            =   0
-            TabIndex        =   163
+            TabIndex        =   164
             Tag             =   "ctl"
             Top             =   1200
             Width           =   1200
@@ -2480,7 +2516,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   103
             Left            =   0
-            TabIndex        =   259
+            TabIndex        =   260
             Tag             =   "ctl"
             Top             =   3120
             Width           =   1200
@@ -2494,7 +2530,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   100
             Left            =   0
-            TabIndex        =   177
+            TabIndex        =   178
             Tag             =   "ctl"
             Top             =   3360
             Width           =   1200
@@ -2508,7 +2544,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   94
             Left            =   0
-            TabIndex        =   182
+            TabIndex        =   183
             Tag             =   "ctl"
             Top             =   2880
             Width           =   1200
@@ -2522,7 +2558,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   61
             Left            =   0
-            TabIndex        =   180
+            TabIndex        =   181
             Tag             =   "ctl"
             Top             =   3615
             Width           =   1200
@@ -2536,7 +2572,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   60
             Left            =   0
-            TabIndex        =   175
+            TabIndex        =   176
             Tag             =   "ctl"
             Top             =   2655
             Width           =   1200
@@ -2550,7 +2586,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   59
             Left            =   0
-            TabIndex        =   173
+            TabIndex        =   174
             Tag             =   "ctl"
             Top             =   2415
             Width           =   1200
@@ -2564,7 +2600,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   58
             Left            =   0
-            TabIndex        =   171
+            TabIndex        =   172
             Tag             =   "ctl"
             Top             =   2175
             Width           =   1200
@@ -2578,7 +2614,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   57
             Left            =   0
-            TabIndex        =   169
+            TabIndex        =   170
             Tag             =   "ctl"
             Top             =   1935
             Width           =   1200
@@ -2592,7 +2628,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   56
             Left            =   0
-            TabIndex        =   167
+            TabIndex        =   168
             Tag             =   "ctl"
             Top             =   1695
             Width           =   1200
@@ -2606,7 +2642,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   55
             Left            =   0
-            TabIndex        =   165
+            TabIndex        =   166
             Tag             =   "ctl"
             Top             =   1455
             Width           =   1200
@@ -2620,7 +2656,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   54
             Left            =   0
-            TabIndex        =   161
+            TabIndex        =   162
             Tag             =   "ctl"
             Top             =   975
             Width           =   1200
@@ -2634,7 +2670,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   53
             Left            =   0
-            TabIndex        =   159
+            TabIndex        =   160
             Tag             =   "ctl"
             Top             =   735
             Width           =   1200
@@ -2648,7 +2684,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   52
             Left            =   0
-            TabIndex        =   157
+            TabIndex        =   158
             Tag             =   "ctl"
             Top             =   495
             Width           =   1200
@@ -2662,7 +2698,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   51
             Left            =   0
-            TabIndex        =   154
+            TabIndex        =   155
             Tag             =   "ctl"
             Top             =   12
             Width           =   1200
@@ -2717,7 +2753,7 @@ Begin VB.Form frmCharacter
       ForeColor       =   &H80000008&
       Height          =   3972
       Left            =   2640
-      TabIndex        =   252
+      TabIndex        =   253
       Top             =   240
       Visible         =   0   'False
       Width           =   2712
@@ -2730,7 +2766,7 @@ Begin VB.Form frmCharacter
          Index           =   1
          Left            =   720
          Style           =   1  'Graphical
-         TabIndex        =   256
+         TabIndex        =   257
          Top             =   3300
          Width           =   1332
       End
@@ -2743,7 +2779,7 @@ Begin VB.Form frmCharacter
          Index           =   0
          Left            =   720
          Style           =   1  'Graphical
-         TabIndex        =   255
+         TabIndex        =   256
          Top             =   2820
          Width           =   1332
       End
@@ -2752,7 +2788,7 @@ Begin VB.Form frmCharacter
          ItemData        =   "frmCharacter.frx":000C
          Left            =   600
          List            =   "frmCharacter.frx":000E
-         TabIndex        =   253
+         TabIndex        =   254
          Top             =   420
          Width           =   1572
       End
@@ -2764,7 +2800,7 @@ Begin VB.Form frmCharacter
          ForeColor       =   &H80000008&
          Height          =   216
          Left            =   120
-         TabIndex        =   254
+         TabIndex        =   255
          Top             =   0
          Width           =   1548
       End
@@ -2821,7 +2857,7 @@ Begin VB.Form frmCharacter
       Index           =   6
       Left            =   8700
       Style           =   1  'Graphical
-      TabIndex        =   250
+      TabIndex        =   251
       Top             =   3300
       Width           =   1452
    End
@@ -2834,7 +2870,7 @@ Begin VB.Form frmCharacter
       Index           =   5
       Left            =   8700
       Style           =   1  'Graphical
-      TabIndex        =   251
+      TabIndex        =   252
       Top             =   3780
       Width           =   1452
    End
@@ -2847,7 +2883,7 @@ Begin VB.Form frmCharacter
       Index           =   4
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   249
+      TabIndex        =   250
       Top             =   1920
       Width           =   1212
    End
@@ -2861,7 +2897,7 @@ Begin VB.Form frmCharacter
       Index           =   3
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   248
+      TabIndex        =   249
       Top             =   1320
       Width           =   1212
    End
@@ -2874,7 +2910,7 @@ Begin VB.Form frmCharacter
       Index           =   2
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   247
+      TabIndex        =   248
       Top             =   840
       Width           =   1212
    End
@@ -2887,7 +2923,7 @@ Begin VB.Form frmCharacter
       Index           =   1
       Left            =   8820
       Style           =   1  'Graphical
-      TabIndex        =   246
+      TabIndex        =   247
       Top             =   360
       Width           =   1212
    End
@@ -2909,7 +2945,7 @@ Begin VB.Form frmCharacter
          Width           =   1992
          _extentx        =   3519
          _extenty        =   450
-         value           =   0   'False
+         value           =   0
          caption         =   "Custom Colors"
       End
       Begin VB.ComboBox cboColor 
@@ -3459,7 +3495,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   106
             Left            =   0
-            TabIndex        =   262
+            TabIndex        =   263
             Tag             =   "ctl"
             Top             =   960
             Width           =   1140
@@ -3473,7 +3509,7 @@ Begin VB.Form frmCharacter
             Height          =   240
             Index           =   105
             Left            =   0
-            TabIndex        =   261
+            TabIndex        =   262
             Tag             =   "ctl"
             Top             =   240
             Width           =   1140

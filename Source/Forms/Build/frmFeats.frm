@@ -1091,16 +1091,26 @@ Private Sub ShowSelectors()
     Dim lngFeat As Long
     Dim blnSelector() As Boolean
     Dim i As Long
-    
+    'Dim enType As BuildFeatTypeEnum
+    'Dim lngIndex As Long
+
     ListboxClear Me.lstSub
     lngFeat = ListboxGetValue(Me.lstFeat)
+    'Get the valid selectors for this feat and return it in blnSelector
     ValidSelectors db.Feat(lngFeat), build.MaxLevels, blnSelector
     For i = 1 To db.Feat(lngFeat).Selectors
         If blnSelector(i) Then
             'Hide this selector - currently only needed for composite shortbows (no idea why)
             'and Divination, which has no spell focus feat.
             If Not db.Feat(lngFeat).Selector(i).Hide Then
-                ListboxAddItem Me.lstSub, db.Feat(lngFeat).Selector(i).SelectorName, i
+                'Deal with Class bonus limits for Spell Focus & Divine Disciple and Arcane Trickster
+                'enType = Feat.List(Me.lstFeat.ListIndex).ActualType
+                'lngIndex = Feat.List(Me.lstFeat.ListIndex).Index
+                'If CheckFeatSlot(db.Feat(lngFeat).Selector(i), build.Feat(enType).Feat(lngIndex), False) = dsDefault Then
+                    ListboxAddItem Me.lstSub, db.Feat(lngFeat).Selector(i).SelectorName, i
+                'Else
+                'End If
+                
             End If
         End If
     Next
@@ -1112,8 +1122,13 @@ Private Sub ValidSelectors(ptypFeat As FeatType, ByVal plngLevel As Long, pblnSe
     Dim enReqGroup As ReqGroupEnum
     Dim blnAlternate As Boolean
     Dim i As Long
+    Dim iSlotIndex As Integer
     
-    If Me.usrList.Selected > 0 Then blnAlternate = (Feat.List(SlotIndex(Me.usrList.Selected)).ActualType = bftAlternate)
+    'Get the slot index for this feat.
+    iSlotIndex = SlotIndex(Me.usrList.Selected)
+    If Me.usrList.Selected > 0 Then
+        blnAlternate = (Feat.List(iSlotIndex).ActualType = bftAlternate)
+    End If
     With ptypFeat
         ' Initialize list based on which selectors have already been chosen
         IdentifyTakenFeats typTaken, plngLevel
@@ -1151,6 +1166,20 @@ Private Sub ValidSelectors(ptypFeat As FeatType, ByVal plngLevel As Long, pblnSe
                             For enReqGroup = rgeAll To rgeNone
                                 If CheckFeatReq(.Req(enReqGroup), enReqGroup, plngLevel, typTaken) Then Exit Do
                             Next
+                            'Finally check ClassBonus  lists
+                            If (Me.usrList.Selected > 0) Then
+                                Select Case Feat.List(iSlotIndex).ActualType
+                                    'class bonus feats - not sure what 2 and 3 are
+                                    Case bftClass1, bftClass2, bftClass3
+                                        'if this
+                                        'Feat.List(iSlotIndex).Level is the current build level
+                                        'build.Class(Feat.List(iSlotIndex).Level) is the class for this level
+                                        'Check the array for the class bonus for SP/DD and AT.
+                                        If (Not ptypFeat.Selector(i).ClassBonus(build.Class(Feat.List(iSlotIndex).Level))) Then
+                                            Exit Do
+                                        End If
+                                End Select
+                            End If
                             pblnSelector(i) = True
                         Loop Until True
                     End With

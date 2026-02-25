@@ -231,7 +231,7 @@ Public Type TomeType
 End Type
 
 'TODO Remove hard coding
-Public Const maxClassCount = 24  '2025.03.11 DragnDisciple=> 15 classes + 7 Archtypes
+Public Const maxClassCount = 25  '2025.03.11 DragnDisciple=> 15 classes + 7 Archtypes
 Public Const maxRaceCount = 16 ' 2026.06.21 Dhampir
 Public Const maxIconicCount = 11 ' 2026.06.21 Dhampir Dark Bargainer
 Public Const maxEpicCount = 18 ' 2025.11.20 Added missed Trap Damage
