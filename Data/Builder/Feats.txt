@@ -1945,6 +1945,23 @@ Group: Heroic, Defense
 Descrip: +1 bonus to all saves.
 RaceBonus: Human, Purple Dragon Knight
 
+FeatName: Mage Hand
+Group: Heroic, Magical
+Descrip: The magical hand of an Arcane Trickster.
+Class: Arcane Trickster 3
+Flags: Unselectable
+Selector: Bluff, Disable Traps
+SelectorName: Bluff
+Descrip: Bluffs target but has a longer duration than the standard Bluff skill.
+SelectorName: Disable Traps
+Descrip: You can disable a device at base spell range. This cannot be enlarged with metamagic feats.
+
+FeatName: Magical Ambush
+Group: Heroic, Magical
+Descrip: Your offensive instantaneous damaging spells deal additional 1d6 force damage equal to your sneak attack dice. Scales with 50% of force spell power. This proc has no cool down so it works very well with multi missile spells like magic missile. The sneak dice will not function on DOTS, Pale Master Aura, Wall of Fire, etc. 
+Class: Arcane Trickster 8
+Flags: Unselectable
+
 FeatName: Magical Training
 Group: Heroic, Spellcasting
 Descrip: Grants +80 spell points, Echoes of Power, +5% spell critical chance and proficiency with Orbs.
@@ -2736,14 +2753,7 @@ Descrip: Sing a song to apply a small positive energy heal to your target and ne
 Class: Bard 8
 Flags: Unselectable
 
-FeatName: Spiked Chain Attack
-Group: Heroic, Misc
-Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
-Race: Required, Shadar-Kai
-RaceBonus: Shadar-Kai
-Flags: RaceOnly
-Descrip: Spiked Chain Attack
-WikiName: Spiked Chain Attack
+
 
 FeatName: Spell Focus
 Group: Heroic, Spellcasting
@@ -2754,7 +2764,7 @@ CanCastSpell: 1
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 SelectorName: Abjuration
 ClassBonus: Wizard, Arcane Trickster
-SelectorName: Conjuration 
+SelectorName: Conjuration
 ClassBonus: Wizard, Dragon Disciple, Arcane Trickster
 SelectorName: Enchantment
 ClassBonus: Wizard, Arcane Trickster
@@ -2792,6 +2802,21 @@ One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Foc
 SelectorName: Necromancy
 One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Transmutation
 One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy
+
+FeatName: Spell Thief
+Group: Heroic, Magical
+Descrip: Your melee and missile attacks that strike targets who have spells grant Spell Points. 1d20 Spell Points on a 5 second cooldown for melee attacks. Ranged is a 10 second cooldown.
+Class: Arcane Trickster 16
+Flags: Unselectable
+
+FeatName: Spiked Chain Attack
+Group: Heroic, Misc
+Descrip: Light Melee Weapon Attack: Using a Spiked Chain (but the stats from your main-hand weapon), perform 3 AOE melee attacks with +1[W], +1 Critical Threat Range, and +1 Critical Multiplier. Your Shadar-Kai Racial Enhancements may add to this attack. (12 second cooldown)
+Race: Required, Shadar-Kai
+RaceBonus: Shadar-Kai
+Flags: RaceOnly
+Descrip: Spiked Chain Attack
+WikiName: Spiked Chain Attack
 
 FeatName: Spirit Blades
 Group: Destiny, Spellcasting
@@ -3306,27 +3331,3 @@ SelectorName: Minion of the Eldritch
 Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
 None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch
 
-
-FeatName: Mage Hand - Bluff
-Group: Heroic, Misc
-Descrip: Allows you to attempt to bluff a target with your mage hand.  This uses your intelligence instead of charisma for the bluff check.
-Class: Arcane Trickster 3
-Flags: Unselectable
-
-FeatName: Mage Hand - Disable Traps
-Group: Heroic, Misc
-Descrip: Allows you to attempt to disarm traps at a distance using your mage hand}{-Range is equivalent to a 'standard' spell range.
-Class: Arcane Trickster 3
-Flags: Unselectable
-
-FeatName: Magical Ambush
-Group: Heroic, Misc
-Descrip:  Your offensive instantaneous damaging spells deal additional 1d3 force damage per sneak attack dice you have.}{-Scales with 100% of your Force spell power. This effect scales with Force Critical chance and Critical Damage.}{-Has no internal cooldown. Hits all targets in an AOE, applies to all hits of a multi-strike such as Magic Missile.}{-  Magical Ambush applies once per projectile of a spell, per target hit. Magic Missile, which can have up to 5 projectiles, will apply this effect 5 times. Hellball, which fires a single projectile that deals 4 types of damage, only applies the effect once per target.}{-Applies to Eldritch Blast, but not persistent effects such as DOTs or persistent AOEs such as Wall of Fire.}{-Magical Ambush is effectively a Spell Proc.}{-  As a Spellpower-scaling Spell Proc, the damage inflicted by Magical Ambush is scaled by any Metamagics applied to the 'host' spell. A Maximized spell will apply Magical Ambush as if you had 150 more Force Spell Power.
-Class: Arcane Trickster 8
-Flags: Unselectable
-
-FeatName: Spell Thief
-Group: Heroic, Misc
-Descrip:  Your melee and missile attacks that strike targets who have spells grant spell points. 1d20 spell points on a 5 second cooldown for melee attacks. Ranged is a 10 second cooldown.}{-Amount of SP stolen is effected by Positive Healing Amplification.
-Class: Arcane Trickster 16
-Flags: Unselectable

@@ -241,7 +241,7 @@ SpellName: Chain Lightning
 Descrip: An electrical discharge strikes a primary target for 1d6+6 per caster level electrical damage, then arcs to other nearby targets hitting each of them with a similar lightning bolt. A successful Reflex save reduces the damage by half. Maximum caster level 20.
 
 SpellName: Chain Missiles
-Descrip: A missile of magical energy darts forth and unerringly strikes its target inflicting 1d2+3 force damage. For every 2 caster levels beyond first you gain an additional missile, up to 10 missiles. (At level 19.) After striking your target, the missiles explode outwards, striking other creatures near the primary target.
+Descrip: Fires a cluster of three magical energy darts that unerringly strikes its target inflicting 1d2+3 Force Damage. Each missile striking your target explodes outwards, striking other creatures near the primary target in a small radius. Additional missiles increase by 1 every 2 caster levels, with a Max Caster Level of 20.
 
 SpellName: Chaos Bolt
 Descrip: Fires a small orb of chaotic energy at a target, doing 1d6+2 Chaos Damage for every caster level (up to a max of 10d6+20 at caster level 10).
@@ -534,9 +534,6 @@ SpellName: Eladar's Electric Surge
 Descrip: The target's body is wracked with powerful electric shocks, dealing 1 to 6 electric damage + 1 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
 Flags: Rare
 
-SpellName: Shocking Bolt
-Descrip: Fires a single-target bolt that does 1d6+2 electricity damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flaming Bolt, Freezing Bolt) share a cooldown.
-
 SpellName: Electric Loop
 Descrip: Zap one or more targets for 1d3+3 electrical damage per two caster levels (Maximum damage 5d3+15.), then may leap erratically about to other nearby targets hitting each of them with a similar shock. A successful Reflex save reduces the damage by half. On a failed Reflex save, the target must make a successful Will save to avoid be Dazed for a short period of time or until takes damage.
 
@@ -701,7 +698,7 @@ SpellName: Frost Concentration
 Descrip: Deal 1d6 cold damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Reflex save reduces damage by half.
 
 SpellName: Frost Lance
-Descrip: Freezing lances strike a target for 4d5+20 cold damage per lance. (A Fortitude save reduces the damage by half.) 1st lance at 3rd level, a 2nd lance at 7th level, and a 3rd lance at 11th.
+Descrip: Freezing lances strike a target, each doing 9-16 cold damage per two caster levels on impact (Max Level 20). (A Fortitude save reduces the damage by half.) 1st lance at 3rd level, a 2nd lance at 7th level, and a 3rd lance at 11th.
 
 SpellName: Frostbite
 WikiName: Frostbite (spell)
@@ -1035,7 +1032,7 @@ SpellName: Magic Fang
 Descrip: Increases the Enhancement Bonus of the target's natural weapon by 1, plus 1 per five caster levels. An item can have only one temporary item enhancement at a time. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons or Fey.
 
 SpellName: Magic Missile
-Descrip: A missile of magical energy darts forth and unerringly strikes its target inflicting 1d2+3 force damage. For every 2 caster levels beyond first you gain an additional missile, up to a maximum of 5 missiles at 9th level and higher.
+Descrip: A missile of magical energy darts forth and unerringly strikes its target inflicting 1d2+3 force damage. Additional missiles increase by 1 every 2 caster levels, with a Max Caster Level of 20.
 
 SpellName: Mantle of the Icy Soul
 Descrip: Valid Forms: Water Elemental. When your cold spell's damage is reduced by a creature that is immune/resistant/healed by cold, that target is debuffed to take full damage from cold effects that follow. This does not stack with effects that amplify damage beyond 100%.  Target also is debuffed with 10% Attack Speed Slow, 25% Movement Speed Slow, -4 to Fortitude and Reflex Saving Throws.
@@ -1514,7 +1511,7 @@ SpellName: Scorch
 Descrip: A jet of roaring flame bursts from your outstretched hand, dealing 1d6+2 fire damage per caster level (max 10d6+20) to targets in its path. A successful Reflex save reduces the damage by half.
 
 SpellName: Scorching Ray
-Descrip: Blasts a target with fiery rays, each doing 4d3+12 fire damage on impact. You may fire 1 ray, plus 1 additional ray for every 4 caster levels beyond 3rd. (Maximum rays 3.)
+Descrip: Blasts a target with fiery rays, each doing 7-12 fire damage per two caster levels on impact (Max Level 20). You may fire 1 ray, plus 1 additional ray for every 4 caster levels beyond 3rd. (Maximum rays 3.)
 
 SpellName: Searing Light
 Descrip: Focuses divine power like a ray of the sun, causing a blast of light to deal 1d6+6 light damage per caster level.
@@ -1537,6 +1534,9 @@ Descrip: Creates a shimmering, magical field around an ally that averts attacks,
 
 SpellName: Shillelagh
 Descrip: Enchants your wooden melee weapons to do additional base weapon damage, and converts their damage type to bludgeoning. Weapons with this enchantment deal an additional 0.5[W] damage. Quarterstaves with this enchantment deal an additional 1.0[W] damage. A weapon can only have one item enhancement at a time.
+
+SpellName: Shocking Bolt
+Descrip: Fires a single-target bolt that does 1d6+2 electricity damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flaming Bolt, Freezing Bolt) share a cooldown.
 
 SpellName: Shocking Grasp
 Descrip: Delivers a jolt of 1d6+1 electricity damage per caster level (Maximum damage 5d6+5) to any enemy you touch.

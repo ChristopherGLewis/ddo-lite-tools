@@ -1109,6 +1109,245 @@ Descrip: Bows you wield gain an additional +2 enhancement bonus. This is conside
 Tier: 5
 Cost: 2
 
+TreeName: Arcane Trickster
+Type: Class
+Initial: AtTr
+Color: Red
+Stats: Dexterity, Intelligence, Charisma
+
+AbilityName: Novice of Trickery
+Descrip: Each Core grants 5 Universal Spell Power and a +2% bonus to Doublestrike and Doubleshot, including this one.
+Tier: 0
+
+AbilityName: Stolen Spell I
+Descrip: Steal knowledge from another class, gaining it as a Spell-Like Ability.}{-Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+Flags: SelectorOnly
+Selector: Magic Missile, Cure Light Wounds, Conjure Bolts, Shillelagh, Sonic Blast, Fine Dust 
+SelectorName: Magic Missile
+Descrip: Stolen Magic Missile 2SP 6sec CD (wiz/sorc theft)
+SelectorName: Cure Light Wounds
+Descrip: Stolen Cure Light Wounds 2SP 6sec CD (divine theft)
+SelectorName: Conjure Bolts
+Descrip: Stolen Conjure Bolts 2SP 6sec CD (arty theft)
+SelectorName: Shillelagh
+Descrip: Stolen Shillelagh 2SP 6sec CD (druid theft)
+SelectorName: Sonic Blast
+Descrip: Stolen Sonic Blast 2SP 4sec CD (bard theft)
+SelectorName: Fine Dust 
+Descrip: Stolen Fine Dust 3SP 15sec CD (alchemist theft)
+
+AbilityName: Stolen Spell II
+Descrip: Steal knowledge from another class, gaining it as a Spell-Like Ability.}{-Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+Flags: SelectorOnly
+Selector: Chain Missile, Cure Moderate Wounds, Personal Augmentation: Insightful Damage, Sound Burst, Salt Ray, Salt Crystals
+SelectorName: Chain Missile
+Descrip: Stolen Chain Missile 8SP 10sec CD
+SelectorName: Cure Moderate Wounds 4SP 6sec CD
+Descrip: Stolen Cure Moderate Wounds
+SelectorName: Personal Augmentation: Insightful Damage 
+Descrip: Stolen Personal Augmentation: Insightful Damage 8SP 2sec CD
+SelectorName: Sound Burst 
+Descrip: Stolen Sound Burst 8SP 20sec CD
+SelectorName: Salt Ray 
+Descrip: Stolen Salt Ray 4SP 8sec CD
+SelectorName: Salt Crystals
+Descrip: Stolen Salt Crystals 8SP 20sec CD
+
+
+AbilityName: Stolen Spell III
+Descrip: Steal knowledge from another class, gaining it as a Spell-Like Ability.}{-Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+Flags: SelectorOnly
+Selector: Force Missile, Cure Serious Wounds, Radiant Forcefield, Thorn Bloom, Hold Monster, Flash Freeze 
+SelectorName: Force Missile 
+Descrip: Stolen Force Missile 6 SP 6sec CD
+SelectorName: Cure Serious Wounds
+Descrip: Stolen Cure Serious Wounds 6SP 6sec CD
+SelectorName: Radiant Forcefield
+Descrip: Stolen Radiant Forcefield 20SP 180 sec CD
+SelectorName: Thorn Bloom 
+Descrip: Stolen Thorn Bloom 10SP 10sec CD
+SelectorName: Hold Monster
+Descrip: Stolen Hold Monster 8SP 2sec CD
+SelectorName: Flash Freeze
+Descrip: Stolen Flash Freeze 8SP 30sec CD
+
+AbilityName: Stolen Spell IV
+Descrip: Steal knowledge from another class, gaining it as a Spell-Like Ability.}{-Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
+Tier: 0
+Flags: SelectorOnly
+Selector: Disintegrate, Heal, Tenser's Transformation, Fire Seeds, Greater Shout, Greater Evolution
+SelectorName: Disintegrate 
+Descrip: Stolen Disintegrate 8SP 10sec CD
+SelectorName: Heal 
+Descrip: Stolen Heal 20SP 15sec CD
+SelectorName: Tenser's Transformation 
+Descrip: Stolen Tenser's Transformation SP15 30sec CD
+SelectorName: Fire Seeds 
+Descrip: Stolen Fire Seeds 10SP 10sec CD
+SelectorName: Greater Shout
+Descrip: Stolen Greater Shout SP15 10sec CD
+SelectorName: Greater Evolution 
+Descrip: Stolen Greater Evolution SP25 10sec CD
+
+AbilityName: Mage Hand - Eye Poke
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in Force damage that scales with Spell Power. Target must make a Reflex save against your Disable Device skill + 1d20, if they fail they become blind for 12 seconds with a recurring saves every 4 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an Extra Action but shares a 1 second Cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.}}Passive: Gain 30 Spell Points.
+Tier: 1
+Cost: 1
+
+AbilityName: Magic Fingers
+Descrip: +[1/2/3] Open Locks, Disable Device, Concentration 
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Keep it Flexible
+Descrip: Gain [5/10/15]% Reduction to Arcane Spell Failure (armor).
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: My Favorite Bauble
+Descrip: While holding an orb, dagger or staff you gain +10 Universal Spellpower.
+Tier: 1
+Cost: 2
+
+AbilityName: I Prefer Subtlety
+Descrip: You generate -[10/20/30]% less Hate with spells and missile attacks. 
+Tier: 1
+Cost: 1
+Ranks: 3
+
+AbilityName: Mage Hand - Slap
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in Force damage that scales with spell power. Target must make a Fortitude save against your Disable Device skill + 1d20, or become stunned for 6 seconds with a recurring saves every 2 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.}}Passive: Gain 30 Spell Points.
+All: Tier 1: Mage Hand - Eye Poke
+Tier: 2
+Cost: 2
+
+AbilityName: Protective Gear
+Descrip: +[2/4/6] bonus to your Magical Resistance Rating and MRR Cap.
+Tier: 2
+Cost: 1
+Ranks: 3
+
+AbilityName: Three Handed Casting
+Descrip: Your Quicken Spell Feat costs [1/2/4] fewer Spell Points. Stacks with Efficient Quicken from other trees. 
+All: Feat: Quicken Spell
+Tier: 2
+Cost: 2
+Ranks: 3
+
+AbilityName: Catcher Glove
+Descrip: Your Mage Hand will deflect incoming projectiles occasionally granting the Deflect Arrow feat.}}Passive: Gain a +2% bonus to Dodge.
+Tier: 2
+Cost: 2
+
+AbilityName: Arms of the Trickster
+Descrip: Choose one:
+Tier: 2
+Cost: 1
+Selector: Trickster Trick, Trickster's Blade, Trickster's Bolt
+SelectorName: Trickster Trick
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 100% Force spell power. Costs 5 SP to activate.
+SelectorName: Trickster's Blade 
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% melee power. Costs 5 SP to activate.
+SelectorName: Trickster's Bolt 
+Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
+
+
+AbilityName: Mage Hand - Meddle with Reality
+Descrip: Any creature you target with Mage Hand Slap or Eye Poke undergoes Meddled Reality. Target is no longer immune to sneak attacks, their Fortification is reduced by 25% and their Will saves are reduced by 4. The creature type changes to Fey for purposes of immunities. This lasts for 30 seconds. This can apply to bosses.}}Passive: Gain 30 Spell Points.
+All: Tier 2: Mage Hand - Slap
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: More Magic More Fun
+Descrip: Choose one:
+Tier: 3
+Cost: 2
+Ranks: 1 
+Selector:Mixed Magics, Quick Silver
+SelectorName: Mixed Magics
+Descrip: Your base Caster Level is equal to your Character Level (Maximum 20). This does not change the caster level of Rune Arms, Wands, Scrolls, or other items.
+SelectorName: Quick Silver
+Descrip: You gain Quick Draw and 5 Universal Spell Power
+
+AbilityName: Tricks on Tricks
+Descrip: Your weapon attacks and offensive Evocation spells have a chance of granting you a stack of Tricks on Tricks, which gives a +1 to Illusion and Enchantment DCs. This stacks up to 4 times. The stacks decay at a rate of 1 every 30 seconds.
+Tier: 3
+Cost: 1
+Ranks: 1
+
+AbilityName: Applied Force
+Descrip: Gain +1 Imbue Die per 3 Rogue levels and +10% to crit damage with Force spells.
+All: Tier 2: Arms of the Trickster
+Tier: 3
+Cost: 2
+Ranks: 1
+
+AbilityName: Mage Hand - Helping Hand
+Descrip: SLA: Removes most crowd control effects from a target, heals them for 50% of their Max Hit points and applies a Restoration effect to the target. Can be used while Crowd Controlled.}}Cost: 5 SP. 60 CD. Passive: Gain 30 Spell Points. }}If you're incapacitated for more than 6 seconds and have 5 spell points you will receive the helping hand effect. This cannot occur again until you are out of combat.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
+All: Tier 3: Mage Hand - Meddle with Reality
+Tier: 4
+Cost: 2
+
+AbilityName: Sharp Magic
+Descrip: Gain +1 Sneak Attack Dice for every Metamagic Feat you have.
+Tier: 4
+
+AbilityName: Pin Point
+Descrip: +[1/2/3] Spell Penetration, +[3/6/10] Fortification Bypass. Rank 3: Your Mage Hand spells automatically dispel Nightshield and Shield spell effects.
+Tier: 4
+Cost: 1
+Ranks: 3
+
+AbilityName: Slippery Magic
+Descrip: You have a chance to gain a +5% uncapped bonus to Dodge and +1 Reflex saves whenever you land an offensive spell on a target or a melee attack. This can stack up to 3 times. 1 stack drops every 15 seconds.}}Passive: +2% bonus to Dodge.
+Tier: 4
+Cost: 2
+
+AbilityName: Mage Hand - Presto
+Descrip: SLA: Mage Hand snaps its fingers over a non-boss target to make them disappear. We don't know where they go, it's magic! Target gets a Will save to negate the effect with a DC equal to your Disable Device skill.}}Cost: 10 SP, Cooldown: 20 seconds. Passive: Gain 80 Spell Points.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.}}Blocked by Deathblock, this is an instakill effect
+All: Tier 4: Mage Hand - Helping Hand
+Tier: 5
+Cost: 2
+Ranks: 1
+
+AbilityName: An Extra Hand
+Descrip: All Metamagic feats are reduced in cost by 2. You have a chance when struck by a spell to manifest an extra Mage Hand which knocks down the opposing caster down.
+Tier: 5
+Cost: 1
+Ranks: 1
+
+
+AbilityName: Magic is a Tricky Business
+Descrip: You gain a +[1/2] bonus to Illusion and Enchantment DCs. Rank 2: Passive: Tricks on Tricks now also increases to hit and damage with weapons by 1 per stack.
+Tier: 5
+Cost: 1
+Ranks: 2
+
+AbilityName: Good with my Hands
+Descrip: +[3/6/10] Melee and Ranged Power.}Rank 3: Passive - Gain 8 MRR cap.
+Tier: 5
+Cost: 1
+Ranks: 3
+
+AbilityName: Not Half Bad...
+Descrip: Choose one:
+Tier: 5
+Cost: 2
+Ranks: 1
+Selector: Not that Bad with a Blade, Not that Bad with a Bow, Not that Bad with a Spell
+SelectorName: Not that Bad with a Blade 
+Descrip: +1 competence bonus to critical threat range and damage multiplier with melee weapons and 15% Competence bonus to Max Hit Points.
+SelectorName: Not that Bad with a Bow 
+Descrip: +1 competence bonus to critical threat range and damage multiplier with ranged weapons and a +10% to Dodge Bypass.
+SelectorName: Not that Bad with a Spell 
+Descrip: +20 Universal spell power, +2 Spell Penetration and +5% crit chance with all spells.
+
 TreeName: Arcanotechnician
 Abbreviation: Arcanotech
 Type: Class
@@ -2582,6 +2821,120 @@ Descrip: You gain +5% Negative, Light, and Alignment Spell Critical Chance. Pray
 Tier: 5
 Cost: 2
 
+TreeName: Dark Bargainer
+Type: Race
+Initial: DarkB
+
+AbilityName: Dark Past
+Descrip: +1 Attack when performing Sneak Attacks.
+Tier: 0 
+
+AbilityName: Ability I
+Descrip: +1 Constitution, Intelligence, or Charisma
+Tier: 0
+Cost: 2
+Selector: Constitution, Intelligence, Charisma
+
+AbilityName: Dark Present
+Descrip: +2 Attack when performing Sneak Attacks, +1 Sneak Attack Die, and +20 Negative Amplification.
+Tier: 0
+
+AbilityName: Ability II
+Descrip: +1 Constitution, Intelligence, or Charisma
+Tier: 0
+Cost: 2
+Selector: Constitution, Intelligence, Charisma
+
+AbilityName: Dark Future
+Descrip: +3 Attack when performing Sneak Attacks, +2 Sneak Attack Dice, and +20 Negative Amplification.
+Tier: 0
+
+AbilityName: Draining Bite
+Descrip: Your Vampiric Bite now applies 1 Negative Level. This increases by 1 for every 5 Character Levels you have.
+Tier: 1
+
+AbilityName: Manipulate the Mists
+Descrip: +1 Pact Die. When you hit a target who is inside a Dread Mist zone with Eldritch Blast, it gains one stack of Growing Dread. This effect does nothing on its own, can apply to each creature once per second, and can stack up to 30 times. If a creature is outside of Dread Mists for 10 seconds, it loses all stacks of Growing Dread.
+Tier: 1
+
+AbilityName: Energy
+Descrip: (Multiselector)
+Tier: 1
+Selector: Drink in Life, Drink in Death
+SelectorName: Drink in Life
+Descrip: +20 Positive Amplification
+SelectorName: Drink in Death
+Descrip: +20 Negative Amplification
+
+AbilityName: Tenuous Relationship With Death
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious.
+Tier: 1
+Ranks: 3
+
+AbilityName: Dread Mist
+Descrip: SLA: Create a small area of Mist that lasts for 20 seconds. Enemies inside the mist have their movement slowed by 20%, -2 to Will Saving Throws, and take 1d2 Evil Damage per Caster Level (max 20d2 at Caster Level 20) every 2 seconds. (Cost: 4 SP, Cooldown: 6 seconds)
+Tier: 1
+
+AbilityName: Lifeblood
+Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +[1/2/3] to all Ability Scores for 60 seconds.
+Tier: 2
+Ranks: 3
+
+AbilityName: Prey on Fear SLA
+Descrip: Target enemy at touch range takes 1d6+2 Evil Damage per Caster Level. Additionally, if the target is inside a Dread Mist zone it deals 1d4 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect. (Cost: 4 SP, Cooldown: 6 seconds)
+Tier: 2
+
+AbilityName: Embrace Death
+Descrip: Toggle: While Embrace Death is active, you gain 100% critical hit resistance and are able to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. (This replaces your natural vulnerability to Light). You are considered Undead rather than your original type for the purposes of most effects. You gain +2 Intelligence, +2 Charisma, +2 Wisdom, and +3 Perform. Your melee attacks have a 10% chance to heal you for 1d3 with Negative Energy per Character level (max 20). This is a Major Form, and counts as a Shroud for the purpose of Pale Master.
+Tier: 2
+
+AbilityName: Rush of Bats
+Descrip: Turn into a swarm of bats and rush to target foe's position. [36/24/12] second cooldown. (This shares a cooldown with similar rushes, such as Vanguard's Shield Rush).
+Tier: 2
+Ranks: 3
+
+AbilityName: Cloak of Undeath
+Descrip: +[2/4/6] MRR. Rank 3: +6 MRR Cap.
+Tier: 2
+Ranks: 3
+
+AbilityName: Fearsome Countenance
+Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of STR/CON/CHA Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
+Tier: 3
+
+AbilityName: Vampiric Blast
+Descrip: Eldritch Essence Stance: +1 Eldritch Blast Die, +1 Pact Die. While using Focused Blast shape, your Eldritch Blasts heal you for 1d3 Hit Points in Positive Energy. If you have Deathly Bite, this is instead Negative Energy.
+Tier: 3
+
+AbilityName: Deathly Bite
+Descrip: When you are considered Undead (via Embrace Death or any other source), your Vampiric Bite heals you for Negative energy instead of Positive.
+Tier: 3
+
+AbilityName: Harrying Swarm
+Descrip: Enemies in a small area around where you finish your Rush of Bats take -5% Dodge and -5 Attack for 12 seconds.
+Tier: 3
+
+AbilityName: Improved Dodge
+Descrip: +[1/2/3]% Dodge when wearing light or no armor.
+Tier: 3
+Ranks: 3
+
+AbilityName: Dark Ascendant Bite
+Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of STR/CON/INT/CHA Mod + Stunning Bonuses + Enchantment Bonuses) or die.
+Tier: 4
+
+AbilityName: Crushing Dread SLA
+Descrip: Target enemy at touch range takes 1d6+8 Evil Damage per Caster Level. Additionally, if the target is inside a Dread Mist zone it deals 1d20 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect. (Cost: 8 SP, Cooldown: 15 seconds)
+Tier: 4
+
+AbilityName: Form of the Lord Vampire
+Descrip: While you have Embrace Death toggled, you gain +1 Enchantment and Necromancy DC, +10 Negative and Force Spell Power, and +10 Spell Penetration.
+Tier: 4
+
+AbilityName: Biting Swarm
+Descrip: Living, corporeal enemies in a small area around where you finish your Rush of Bats are bitten by the bats, causing them to bleed, taking 1d12 damage per Character Level every 2 seconds for 12 seconds. This damage scales with 200% Melee Power.
+Tier: 4
+
 TreeName: Dark Hunter
 Abbreviation: DkHt
 Type: Class
@@ -3053,6 +3406,124 @@ Descrip: Your Archer's Focus Stance can now stack up to 25 times instead of 15.+
 Tier: 5
 Cost: 2
 All: Feat: Precise Shot
+
+TreeName: Dhampir
+Type: Race
+Initial: Dha
+
+AbilityName: Dark Past
+Descrip: +1 Attack when performing Sneak Attacks.
+Tier: 0 
+
+AbilityName: Ability I
+Descrip: +1 Strength, Constitution, or Charisma
+Tier: 0
+Cost: 2
+Selector: Strength, Constitution, Charisma
+
+AbilityName: Dark Present
+Descrip: +2 Attack when performing Sneak Attacks, +1 Sneak Attack Die, and +20 Negative Amplification.
+Tier: 0
+
+AbilityName: Ability II
+Descrip: +1 Strength, Constitution, or Charisma
+Tier: 0
+Cost: 2
+Selector: Strength, Constitution, Charisma
+
+AbilityName: Dark Future
+Descrip: +3 Attack when performing Sneak Attacks, +2 Sneak Attack Dice, and +20 Negative Amplification.
+Tier: 0
+
+AbilityName: Draining Bite
+Descrip: Your Vampiric Bite now applies 1 Negative Level. This increases by 1 for every 5 Character Levels you have.
+Tier: 1
+
+AbilityName: Skills
+Descrip: +[1/2/3] to Hide, Move Silently, and Jump
+Tier: 1
+Ranks: 3
+
+AbilityName: Energy
+Descrip: (Multiselector)
+Tier: 1
+Selector: Drink in Life, Drink in Death
+SelectorName: Drink in Life
+Descrip: +20 Positive Amplification
+SelectorName: Drink in Death
+Descrip: +20 Negative Amplification
+
+AbilityName: Tenuous Relationship With Death
+Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
+Tier: 1
+Ranks: 3
+
+AbilityName: Innate Protection
+Descrip: +[1/2/3] to Saves vs Spells
+Tier: 1
+Ranks: 3
+
+AbilityName: Lifeblood
+Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +[1/2/3] to all Ability Scores for 60 seconds.
+Tier: 2
+Ranks: 3
+
+AbilityName: Dominate Animal SLA
+Descrip: Telepathically controls the actions of an Animal, Magical Beast, or Vermin, causing it to change sides. Dominate acts like Charm, with additional Will saves every 15 to 30 seconds, but the creature will follow you throughout the dungeon. Mindless targets receive no save, but the duration is halved. DC (15 + Highest of INT/WIS/CHA Mod + Enchantment Bonuses). (Cost: 0 SP, Cooldown: 30 seconds)
+Tier: 2
+
+AbilityName: Embrace Death
+Descrip: Toggle: While Embrace Death is active, you gain 100% critical hit resistance and are able to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. (This replaces your natural vulnerability to Light). You are considered Undead rather than your original type for the purposes of most effects. You gain +2 Intelligence, +2 Charisma, +2 Wisdom, and +3 Perform. Your melee attacks have a 10% chance to heal you for 1d3 with Negative Energy per Character level (max 20). This is a Major Form, and counts as a Shroud for the purpose of Pale Master.
+Tier: 2
+
+AbilityName: Rush of Bats
+Descrip: Turn into a swarm of bats and rush to target foe's position. [36/24/12] second cooldown. (This shares a cooldown with similar rushes, such as Vanguard's Shield Rush).
+Tier: 2
+Ranks: 3
+
+AbilityName: Cloak of Undeath
+Descrip: +[2/+4/+6] MRR. Rank 3: +6 MRR Cap.
+Tier: 2
+Ranks: 3
+
+AbilityName: Fearsome Countenance
+Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of STR/CON/CHA Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. (Cooldown: 12 seconds).
+Tier: 3
+
+AbilityName: Stunning Visage
+Descrip: +[2/3/4] to Stun DCs.
+Tier: 3
+Ranks: 3
+
+AbilityName: Deathly Bite
+Descrip: When you are considered Undead (via Embrace Death or any other source), your Vampiric Bite heals you for Negative energy instead of Positive.
+Tier: 3
+
+AbilityName: Harrying Swarm
+Descrip: Enemies in a small area around where you finish your Rush of Bats take -5% Dodge and -5 Attack for 12 seconds.
+Tier: 3
+
+AbilityName: Improved Dodge
+Descrip: +[1/2/3]% Dodge when wearing light or no armor.
+Tier: 3
+Ranks: 3
+
+AbilityName: Ascendant Bite
+Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of STR/CON/INT/CHA Mod + Stunning Bonuses + Enchantment Bonuses) or die.
+Tier: 4
+
+AbilityName: Vampiric Persuasion
+Descrip: +[1/2/3] Enchantment DCs
+Tier: 4
+Ranks: 3
+
+AbilityName: Dominate Person SLA
+Descrip: Telepathically controls the actions of a humanoid enemy, causing it to change sides. Dominate acts like Charm Person, except the creature will have blue graphic above it's head, and will follow you throughout the dungeon. This spell allows a recurring Will saves every 15 to 30 seconds to break free. DC (15 + Highest of INT/WIS/CHA Mod + Enchantment Bonuses). (Cost: 0 SP, Cooldown: 30 seconds).
+Tier: 4
+
+AbilityName: Biting Swarm
+Descrip: Living, corporeal enemies in a small area around where you finish your Rush of Bats are bitten by the bats, causing them to bleed, taking 1d12 damage per Character Level every 2 seconds for 12 seconds. This damage scales with 200% Melee Power.
+Tier: 4
 
 TreeName: Divine Disciple
 Abbreviation: Disciple
@@ -12216,7 +12687,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Sweeping Strikes
-Descrip: Melee Quarterstaff Trip Cleave Attack: +[10/30/50]% to all nearby enemies and trips them. Listed Save vs Balance (DC: 10 + Rogue Level + Dexterity Modifier Negates trip). Actual save is vs Strength (DC: 10 + Rogue Level + Dexterity Modifier + Trip Bonuses). (Cooldown: [30/25/20] seconds)}}Note: Despite saying "all nearby enemies", the attack hits enemies in a 180 degree arc.
+Descrip: Melee Quarterstaff Trip Cleave Attack: +[10/30/50]% to all nearby enemies and trips them. Listed Save vs Balance (DC: 10 + Rogue Level + STR/DEX/INT Modifier Negates trip). Actual save is vs Strength (DC: 10 + Rogue Level + Dexterity Modifier + Trip Bonuses). (Cooldown: [30/25/20] seconds)}}Note: Despite saying "all nearby enemies", the attack hits enemies in a 180 degree arc.
 Tier: 3
 Ranks: 3
 All: Tier 2: Quick Strike
@@ -14050,469 +14521,4 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
-
-TreeName: Dhampir
-Type: Race
-Initial: Dha
-
-AbilityName: Dark Past
-Descrip: +1 Attack when performing Sneak Attacks.
-Tier: 0 
-
-AbilityName: Ability I
-Descrip: +1 Strength/Constitution/Charisma
-Tier: 0
-Cost: 2
-Selector: Strength, Constitution, Charisma
-
-AbilityName: Dark Present
-Descrip: +2 Attack when performing Sneak Attacks, +1 Sneak Attack Die, and +20 Negative Amplification.
-Tier: 0
-
-AbilityName: Ability II
-Descrip: +1 Strength/Constitution/Charisma
-Tier: 0
-Cost: 2
-Selector: Strength, Constitution, Charisma
-
-AbilityName: Dark Future
-Descrip: +3 Attack when performing Sneak Attacks, +2 Sneak Attack Dice, and +20 Negative Amplification.
-Tier: 0
-
-
-AbilityName: Draining Bite
-Descrip: Your Vampiric Bite now applies 1 Negative Level. This increases by 1 for every 5 Character Levels you have.
-Tier: 1
-
-AbilityName: Skills
-Descrip: +[1/2/3] to Hide, Move Silently, and Jump
-Tier: 1
-Ranks: 3
-
-AbilityName: Energy
-Descrip: (Multiselector)
-Tier: 1
-Selector: Drink in Life, Drink in Death
-SelectorName: Drink in Life
-Descrip: +20 Positive Amplification
-SelectorName: Drink in Death
-Descrip: +20 Negative Amplification
-
-AbilityName: Tenuous Relationship With Death
-Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
-Tier: 1
-Ranks: 3
-
-AbilityName: Innate Protection
-Descrip: +[1/2/3] to Saves vs Spells
-Tier: 1
-Ranks: 3
-
-AbilityName: Lifeblood
-Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +[1/2/3] to all Ability Scores for 60 seconds.
-Tier: 2
-Ranks: 3
-
-AbilityName: Dominate Animal SLA
-Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of [INT/WIS/CHA] Mod + Enchantment Bonuses)
-Tier: 2
-
-AbilityName: Embrace Death
-Descrip: Toggle: While Embrace Death is active, you gain 100% critical hit resistance and are able to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. (This replaces your natural vulnerability to Light). You are considered Undead rather than your original type for the purposes of most effects. You gain +2 Intelligence, +2 Charisma, +2 Wisdom, and +3 Perform. Your melee attacks have a 10% chance to heal you for 1d3 with Negative Energy per Character level (max 20). This is a Major Form, and counts as a Shroud for the purpose of Pale Master.
-Tier: 2
-
-AbilityName: Rush of Bats
-Descrip: Turn into a swarm of bats and rush to target foe's position. [36/24/12] second cooldown. (This shares a cooldown with similar rushes, such as Vanguard's Shield Rush).
-Tier: 2
-Ranks: 3
-
-AbilityName: Cloak of Undeath
-Descrip: +[2/+4/+6] MRR. Rank 3: +6 MRR Cap.
-Tier: 2
-Ranks: 3
-
-AbilityName: Fearsome Countenance
-Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of [STR/CON/CHA] Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
-Tier: 3
-
-AbilityName: Stunning Visage
-Descrip: +[2/3/4] to Stun DCs.
-Tier: 3
-Ranks: 3
-
-AbilityName: Deathly Bite
-Descrip: When you are considered Undead (via Embrace Death or any other source), your Vampiric Bite heals you for Negative energy instead of Positive.
-Tier: 3
-
-AbilityName: Harrying Swarm
-Descrip: Enemies in a small area around where you finish your Rush of Bats take -5% Dodge and -5 Attack for 12 seconds.
-Tier: 3
-
-AbilityName: Improved Dodge
-Descrip: +[1/2/3]% Dodge when wearing light or no armor.
-Tier: 3
-
-AbilityName: Ascendant Bite
-Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of [STR/CON/CHA] Mod + Stunning Bonuses + Enchantment Bonuses) or die.
-Tier: 4
-
-AbilityName: Vampiric Persuasion
-Descrip: +[1/2/3] Enchantment DCs
-Tier: 4
-Ranks: 3
-
-AbilityName: Dominate Person SLA
-Descrip: As per the spell. SP cost: 0, 30 second cooldown, DC (15 + Highest of [INT/WIS/CHA] Mod + Enchantment Bonuses)
-Tier: 4
-
-AbilityName: Biting Swarm
-Descrip: Living, corporeal enemies in a small area around where you finish your Rush of Bats are bitten by the bats, causing them to bleed, taking 1d12 damage per Character Level every 2 seconds for 12 seconds. This damage scales with 200% Melee Power.
-Tier: 4
-
-
-TreeName: Dark Bargainer
-Type: Race
-Initial: DarkB
-
-AbilityName: Dark Past
-Descrip: +1 Attack when performing Sneak Attacks.
-Tier: 0 
-
-AbilityName: Ability I
-Descrip: +1 Constitution/Intelligence/Charisma
-Tier: 0
-Cost: 2
-Selector: Constitution, Intelligence, Charisma
-
-AbilityName: Dark Present
-Descrip: +2 Attack when performing Sneak Attacks, +1 Sneak Attack Die, and +20 Negative Amplification.
-Tier: 0
-
-AbilityName: Ability II
-Descrip: +1 Constitution/Intelligence/Charisma
-Tier: 0
-Cost: 2
-Selector: Constitution, Intelligence, Charisma
-
-AbilityName: Dark Future
-Descrip: +3 Attack when performing Sneak Attacks, +2 Sneak Attack Dice, and +20 Negative Amplification.
-Tier: 0
-
-AbilityName: Draining Bite
-Descrip: Your Vampiric Bite now applies 1 Negative Level. This increases by 1 for every 5 Character Levels you have.
-Tier: 1
-
-AbilityName: Manipulate the Mists
-Descrip: +1 Pact Die. When you hit a target who is inside a Dread Mist zone with Eldritch Blast, it gains one stack of Growing Dread. This effect does nothing on its own, can apply to each creature once per second, and can stack up to 30 times. If a creature is outside of Dread Mists for 10 seconds, it loses all stacks of Growing Dread.
-Tier: 1
-
-AbilityName: Energy
-Descrip: (Multiselector)
-Tier: 1
-Selector: Drink in Life, Drink in Death
-SelectorName: Drink in Life
-Descrip: +20 Positive Amplification
-SelectorName: Drink in Death
-Descrip: +20 Negative Amplification
-
-AbilityName: Tenuous Relationship With Death
-Descrip: Your range of unconsciousness extends by [5/10/20] Hit Points. Rank 3: You automatically stabilize when Unconscious (like Warforged do).
-Tier: 1
-Ranks: 3
-
-AbilityName: Dread Mist
-Descrip: SLA. 4 Spell Points. 12 second cooldown. (See below, in the Pact.) Innate Protection
-Tier: 1
-
-AbilityName: Lifeblood
-Descrip: When you successfully use your Vampiric Bite on a living target in corporeal form, you gain +1/2/3 to all Ability Scores for 60 seconds.
-Tier: 2
-
-AbilityName: Prey on Fear SLA
-Descrip: Target enemy at touch range takes 1d6+2 Evil Damage per Caster Level. Additionally, if the target is inside a Dread Mist zone it deals 1d4 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect. 4 Spell Points. (Lv. 1 Necromancy). 6sec cooldown.
-Tier: 2
-
-AbilityName: Embrace Death
-Descrip: Toggle: While Embrace Death is active, you gain 100% critical hit resistance and are able to be healed by Negative Energy. You take 50% healing from Positive, and double damage from Light. (This replaces your natural vulnerability to Light). You are considered Undead rather than your original type for the purposes of most effects. You gain +2 Intelligence, +2 Charisma, +2 Wisdom, and +3 Perform. Your melee attacks have a 10% chance to heal you for 1d3 with Negative Energy per Character level (max 20). This is a Major Form, and counts as a Shroud for the purpose of Pale Master.
-Tier: 2
-
-AbilityName: Rush of Bats
-Descrip: Turn into a swarm of bats and rush to target foe's position. [36/24/12] second cooldown. (This shares a cooldown with similar rushes, such as Vanguard's Shield Rush).
-Tier: 2
-Ranks: 3
-
-AbilityName: Cloak of Undeath
-Descrip: +[2/4/6] MRR. Rank 3: +6 MRR Cap.
-Tier: 2
-Ranks: 3
-
-AbilityName: Fearsome Countenance
-Descrip: Target enemy must save or be Cowered (Will save vs. DC 10 + Highest of [STR/CON/CHA] Mod + Stunning bonuses + Enchantment DC Bonuses ) for 6 seconds. This is considered a Fear effect. On Save: -10% Movement and Attack Speed for 6 seconds. 12 second cooldown.
-Tier: 3
-
-AbilityName: Vampiric Blast
-Descrip: Eldritch Essence Stance: +1 Eldritch Blast Die, +1 Pact Die. While using Focused Blast shape, your Eldritch Blasts heal you for 1d3 Hit Points in Positive Energy. If you have Deathly Bite, this is instead Negative Energy.
-Tier: 3
-
-AbilityName: Deathly Bite
-Descrip: When you are considered Undead (via Embrace Death or any other source), your Vampiric Bite heals you for Negative energy instead of Positive.
-Tier: 3
-
-AbilityName: Harrying Swarm
-Descrip: Enemies in a small area around where you finish your Rush of Bats take -5% Dodge and -5 Attack for 12 seconds.
-Tier: 3
-
-AbilityName: Improved Dodge
-Descrip: +[1/2/3]% Dodge when wearing light or no armor.
-Tier: 3
-
-AbilityName: Dark Ascendant Bite
-Descrip: Your Vampiric Bite now applies 5 stacks of Vulnerability and deals double the Piercing damage. If the target of your Vampiric Bite is Cowered, living and corporeal they must make a Fortitude Saving Throw (DC 16 + Highest of [STR/CON/CHA] Mod + Stunning Bonuses + Necromancy Bonuses) or die.
-Tier: 4
-
-AbilityName: Crushing Dread SLA
-Descrip: Target enemy at touch range takes 1d6+8 Evil Damage per Caster Level. Additionally, if the target is inside a Dread Mist zone it deals 1d20 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect. (Lv. 4 Necromancy). 8 Spell Points, 15sec cooldown.
-Tier: 4
-
-AbilityName: Form of the Lord Vampire
-Descrip: While you have Embrace Death toggled, you gain +1 Enchantment and Necromancy DC, +10 Negative and Force Spell Power, and +10 Spell Penetration.
-Tier: 4
-
-AbilityName: Biting Swarm
-Descrip: Living, corporeal enemies in a small area around where you finish your Rush of Bats are bitten by the bats, causing them to bleed, taking 1d12 damage per Character Level every 2 seconds for 12 seconds. This damage scales with 200% Melee Power.
-Tier: 4
-
-TreeName: Arcane Trickster
-Type: Class
-Initial: ATr
-Color: Red
-Stats: Dexterity, Intelligence, charisma
-
-AbilityName: Trained in Trickery
-Descrip: Each core grants 5 Universal Spell Power and a +2% bonus to Doublestrike and Doubleshot including this one.}{-Additionally, some of your emotes will generate a mage hand which will emote with you.
-Tier: 0
-
-AbilityName: Stolen Spell I
-Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
-Tier: 0
-Selector: Magic Missile, Cure Light Wounds, Conjure Bolts, Shillelagh, Sonic Blast, Fine Dust 
-SelectorName: Magic Missile
-Descrip: Stolen Magic Missile 2SP 6sec CD (wiz/sorc theft)
-SelectorName: Cure Light Wounds
-Descrip: Stolen Cure Light Wounds 2SP 6sec CD (divine theft)
-SelectorName: Conjure Bolts
-Descrip: Stolen Conjure Bolts 2SP 6sec CD (arty theft)
-SelectorName: Shillelagh
-Descrip: Stolen Shillelagh 2SP 6sec CD (druid theft)
-SelectorName: Sonic Blast
-Descrip: Stolen Sonic Blast 2SP 4sec CD (bard theft)
-SelectorName: Fine Dust 
-Descrip: Stolen Fine Dust 3SP 15sec CD (alchemist theft)
-
-AbilityName: Stolen Spell II
-Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
-Tier: 0
-Selector: Chain Missile, Cure Moderate Wounds, Personal Augmentation: Insightful Damage, Sound Burst, Salt Ray, Salt Crystals
-SelectorName: Chain Missile
-Descrip: Stolen Chain Missile 8SP 10sec CD
-SelectorName: Cure Moderate Wounds 4SP 6sec CD
-Descrip: Stolen Cure Moderate Wounds
-SelectorName: Personal Augmentation: Insightful Damage 
-Descrip: Stolen Personal Augmentation: Insightful Damage 8SP 2sec CD
-SelectorName: Sound Burst 
-Descrip: Stolen Sound Burst 8SP 20sec CD
-SelectorName: Salt Ray 
-Descrip: Stolen Salt Ray 4SP 8sec CD
-SelectorName: Salt Crystals
-Descrip: Stolen Salt Crystals 8SP 20sec CD
-
-
-AbilityName: Stolen Spell III
-Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
-Tier: 0
-Selector: Force Missile, Cure Serious Wounds, Radiant Forcefield, Thorn Bloom, Hold Monster, Flash Freeze 
-SelectorName: Force Missile 
-Descrip: Stolen Force Missile 6 SP 6sec CD
-SelectorName: Cure Serious Wounds
-Descrip: Stolen Cure Serious Wounds 6SP 6sec CD
-SelectorName: Radiant Forcefield
-Descrip: Stolen Radiant Forcefield 20SP 180 sec CD
-SelectorName: Thorn Bloom 
-Descrip: Stolen Thorn Bloom 10SP 10sec CD
-SelectorName: Hold Monster
-Descrip: Stolen Hold Monster 8SP 2sec CD
-SelectorName: Flash Freeze
-Descrip: Stolen Flash Freeze 8SP 30sec CD
-
-
-AbilityName: Stolen Spell IV
-Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
-Tier: 0
-Selector: Disintegrate,  Heal ,  Tenser's Transformation ,  Fire Seeds ,  Greater Shout ,  Greater Evolution 
-SelectorName: Disintegrate 
-Descrip: Stolen Disintegrate 8SP 10sec CD
-SelectorName: Heal 
-Descrip: Stolen Heal 20SP 15sec CD
-SelectorName: Tenser's Transformation 
-Descrip: Stolen Tenser's Transformation SP15 30sec CD
-SelectorName: Fire Seeds 
-Descrip: Stolen Fire Seeds 10SP 10sec CD
-SelectorName: Greater Shout
-Descrip: Stolen Greater Shout SP15 10sec CD
-SelectorName: Greater Evolution 
-Descrip: Stolen Greater Evolution SP25 10sec CD
-
-AbilityName: Mage Hand - Eye Poke
-Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with Force spell power. Target must make a reflex save against your Disable Device skill + 1d20, if they fail they become blind for 12 seconds with a recurring saves every 4 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
-Tier: 1
-Cost: 1
-
-AbilityName: Magic Fingers
-Descrip: +1/2/3 Open Locks, Disable Device, Concentration
-Tier: 1
-Cost: 1
-Ranks: 3
-
-AbilityName: Keep it Flexible
-Descrip: Gain [5/10/15]% Reduction to Arcane Spell Failure (armor).
-Tier: 1
-Cost: 1
-Ranks: 3
-
-AbilityName: My Favorite Bauble
-Descrip: Gain 10 Universal spell power while using a staff, dagger or an orb.
-Tier: 1
-Cost: 2
-
-AbilityName: I Prefer Subtlety
-Descrip: Reduce Threat from your missile and spell attacks by [10/20/30]%.
-Tier: 1
-Cost: 1
-Ranks: 3
-
-AbilityName: Mage Hand - Slap
-Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with spell power. Target must make a Fortitude save against your Disable Device skill + 1d20, or become stunned for 6 seconds with a recurring saves every 2 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
-All: Tier 1: Mage Hand - Eye Poke
-Tier: 2
-Cost: 2
-
-AbilityName: Protective Gear
-Descrip: 2/4/6 bonus to MRR and MRR Cap
-Tier: 2
-Cost: 1
-Ranks: 3
-
-AbilityName: Three Handed Casting
-Descrip: Your Quicken Spell Feat costs [1/2/4] SP less. Stacks with Efficient Quicken from other trees.
-All: Feat: Quicken Spell
-Tier: 2
-Cost: 2
-Ranks: 3
-
-AbilityName: Arms of the Trickster
-Descrip: Choose one:
-Tier: 2
-Cost: 1
-Selector: Trickster Trick, Trickster's Blade, Trickster's Bolt
-SelectorName: Trickster Trick
-Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 100% Force spell power. Costs 5 SP to activate.
-SelectorName: Trickster's Blade 
-Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% melee power. Costs 5 SP to activate.
-SelectorName: Trickster's Bolt 
-Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
-
-
-AbilityName: Mage Hand - Meddle with Reality
-Descrip: Any creature you target with mage hand Slap or Eye Poke undergoes Meddled Reality. Target is no longer immune to sneak attacks, -25% penalty to fortification & -4 to Will saves. This lasts for 30 seconds.}}For Non-Bosses there is an additional effect for 3 seconds where this Creature's type changes to Fey, Magical Beast or something even odder. }}Passive: Gain 30 Spell Points.}}Does not remove race-based damage immunities, but does remove race-based effect immunities, such as allowing Undead to be slain by Death effects.
-All: Tier 2: Mage Hand - Slap
-Tier: 3
-Cost: 2
-Ranks: 1
-
-AbilityName: More Magic More Fun
-Descrip: Choose one:
-Tier: 3
-Cost: 2
-Ranks: 1 
-Selector:Mixed Magics, Quick Silver
-SelectorName: Mixed Magics
-Descrip: Your base Caster Level is equal to your Character Level (Maximum 20). This does not change the caster level of Rune Arms, Wands, Scrolls, or other items.
-SelectorName: Quick Silver
-Descrip: You gain Quick Draw and 5 Universal Spell Power
-
-AbilityName: Tricks on Tricks
-Descrip: Your weapon attacks and offensive Evocation spells have a chance of granting you a stack of Tricks on Tricks, which gives a +1 to Illusion and Enchantment DCs. This stacks up to 4 times. The stacks decay at a rate of 1 every 30 seconds.
-Tier: 3
-Cost: 1
-Ranks: 1
-
-AbilityName: Applied Force
-Descrip: Gain +1 Imbue die per 3 rogue levels and +10% to crit damage with Force spells.
-All: Tier 2: Arms of the Trickster
-Tier: 3
-Cost: 2
-Ranks: 1
-
-AbilityName: Mage Hand - Helping Hand
-Descrip: SLA: Removes most crowd control effects from a target, heals them for 50% of their Max Hit points and applies a Restoration effect to the target. Can be used while Crowd Controlled.}}Cost: 5 SP. 60 CD. Passive: Gain 30 Spell Points. }}If you're incapacitated for more than 6 seconds and have 5 spell points you will receive the helping hand effect. This cannot occur again until you are out of combat.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
-All: Tier 3: Mage Hand - Meddle with Reality
-Tier: 4
-Cost: 2
-
-AbilityName: Slippery Magic
-Descrip: You have a chance to gain a +5% uncapped bonus to dodge and +1 reflex saves whenever you land an offensive spell on a target. This can stack up to 3 times. 1 stack drops every 15 seconds.}Passive: +3% bonus to dodge.
-Tier: 4
-Cost: 2
-
-AbilityName: Pin Point
-Descrip: +1/2/3 Spell Penetration and +3/6/10% Fortification Bypass.}Rank 3: Your mage hand spells automatically dispels Nightshield and Shield spell effects.
-Tier: 4
-Cost: 1
-Ranks: 3
-
-AbilityName: Sharp Magic
-Descrip: +1 Sneak Attack dice per Metamagic feat you possess.
-Tier: 4
-Cost: 1
-Ranks: 1
-
-AbilityName: Mage Hand - Presto
-Descrip: SLA: Mage hand snaps it's fingers over a none boss target to make them disappear. We don't know where they go, it's magic! Target gets a Will save to negate the effect with a DC equal to your Disable Device skill.}}Cost: 10 SP 20 CD. Passive: Gain 80 Spell Points.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.}}Blocked by Deathblock, this is an instakill effect
-All: Tier 4: Mage Hand - Helping Hand
-Tier: 5
-Cost: 2
-Ranks: 1
-
-AbilityName: Extra Hand
-Descrip: All meta magics are reduced in cost by 2. You have a chance when struck by a spell to manifest an extra mage hand which knocks down the opposing caster down.}Bug: Applies to beneficial spells as well. You can knock down both yourself and allies with your beneficial spells.
-Tier: 5
-Cost: 1
-Ranks: 1
-
-
-AbilityName: Magic is a Tricky Business
-Descrip: You gain a +1/2 bonus to illusion and enchantment DCs.}Rank 2: Tricks on Tricks now also increases to hit and damage with weapons by 1 per stack.
-Tier: 5
-Cost: 1
-Ranks: 2
-
-AbilityName: Good with my Hands
-Descrip: +3/6/10 Melee and Ranged Power.}Rank 3: Passive - Gain 8 MRR cap.
-Tier: 5
-Cost: 1
-Ranks: 3
-
-AbilityName: Not Half Bad...
-Descrip: Choose one:
-Tier: 5
-Cost: 2
-Ranks: 1
-Selector: Not that Bad with a Blade, Not that Bad with a Bow, Not that Bad with a Spell
-SelectorName: Not that Bad with a Blade 
-Descrip: +1 competence bonus to critical threat range and damage multiplier with melee weapons and 15% Competence bonus to Max Hit Points.
-SelectorName: Not that Bad with a Bow 
-Descrip: +1 competence bonus to critical threat range and damage multiplier with ranged weapons and a +10% to Dodge Bypass.
-SelectorName: Not that Bad with a Spell 
-Descrip: +20 Universal spell power, +2 Spell Penetration and +5% crit chance with all spells.
-
 

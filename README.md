@@ -1,11 +1,11 @@
 # DDO Character Planner lite
 Originally created by EllisDee37, with input from DDOApps.
 Updates by Chris Lewis (Farog on Khyber, ChicagoChris in the forums)
+Massive contributions by Yhelm (Leader of The Red Scare - Thrane. Sartika • Noalynn • Kenzari • Kreena • Dennis​)
 
 ## Background
 These tools were created by EllisDee37, but stopped being updated in 2018-05-25.  
-I've taken the original VB6 code and added the Alchemist class and will be making minor updates 
-as SSG releases them.
+I've taken the original VB6 code and updated it to be current with all the SSG releases.
 
 ## GitHub Repo
 The code and releases are available at https://github.com/ChristopherGLewis/ddo-lite-tools
@@ -15,11 +15,11 @@ Any issues and input should be filed there.
 
 ### 4.12.0 - Updates for U78 
 Changes:
-Updates for U78 - Arcane Trickster
+Updates for U78 - Arcane Trickster (massive help from Yhelm)
 
 #### Character Builder
 - Version 4.12
-- Added Arcane Trickster
+- Added Arcane Trickster class and Enhancements
 
 ### 4.11.0 - Updates for U76 / U77
 Changes:
