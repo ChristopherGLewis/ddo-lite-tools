@@ -14288,7 +14288,8 @@ Initial: ATr
 Color: Red
 Stats: Dexterity, Intelligence, charisma
 
-AbilityName: Trained in Trickery.
+AbilityName: Trained in Trickery
+Descrip: Each core grants 5 Universal Spell Power and a +2% bonus to Doublestrike and Doubleshot including this one.}{-Additionally, some of your emotes will generate a mage hand which will emote with you.
 Tier: 0
 
 AbilityName: Stolen Spell I
@@ -14330,17 +14331,17 @@ AbilityName: Stolen Spell III
 Descrip: Gain a Stolen Spell. Stolen Spells use your Disable Device score for DCs, rather than their regular DCs.
 Tier: 0
 Selector: Force Missile, Cure Serious Wounds, Radiant Forcefield, Thorn Bloom, Hold Monster, Flash Freeze 
-SelctorName: Force Missile 
+SelectorName: Force Missile 
 Descrip: Stolen Force Missile 6 SP 6sec CD
-SelctorName: Cure Serious Wounds
+SelectorName: Cure Serious Wounds
 Descrip: Stolen Cure Serious Wounds 6SP 6sec CD
-SelctorName: Radiant Forcefield
+SelectorName: Radiant Forcefield
 Descrip: Stolen Radiant Forcefield 20SP 180 sec CD
-SelctorName: Thorn Bloom 
+SelectorName: Thorn Bloom 
 Descrip: Stolen Thorn Bloom 10SP 10sec CD
-SelctorName: Hold Monster
+SelectorName: Hold Monster
 Descrip: Stolen Hold Monster 8SP 2sec CD
-SelctorName: Flash Freeze
+SelectorName: Flash Freeze
 Descrip: Stolen Flash Freeze 8SP 30sec CD
 
 
@@ -14361,8 +14362,8 @@ Descrip: Stolen Greater Shout SP15 10sec CD
 SelectorName: Greater Evolution 
 Descrip: Stolen Greater Evolution SP25 10sec CD
 
-AbilityName: Mage Hand: Eye Poke
-Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with Force spell power. Target must make a reflex save against your Disable Device skill + 1d20, if they fail they become blind for 12 seconds with a recurring saves every 4 seconds. Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.{This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
+AbilityName: Mage Hand - Eye Poke
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with Force spell power. Target must make a reflex save against your Disable Device skill + 1d20, if they fail they become blind for 12 seconds with a recurring saves every 4 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
 Tier: 1
 Cost: 1
 
@@ -14385,15 +14386,13 @@ Cost: 2
 
 AbilityName: I Prefer Subtlety
 Descrip: Reduce Threat from your missile and spell attacks by [10/20/30]%.
-AP Cost: 1	Ranks: 3	Progression: 1
 Tier: 1
 Cost: 1
 Ranks: 3
 
-
-AbilityName: Mage Hand: Slap
-Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with spell power. Target must make a Fortitude save against your Disable Device skill + 1d20, or become stunned for 6 seconds with a recurring saves every 2 seconds. Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.{This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
-All: Tier 1: Mage Hand: Poke
+AbilityName: Mage Hand - Slap
+Descrip: SLA: Target takes 1d6 + 1d6 per Sneak Attack dice in force damage that scales with spell power. Target must make a Fortitude save against your Disable Device skill + 1d20, or become stunned for 6 seconds with a recurring saves every 2 seconds.}}Cost: 2 SP 10 CD. Passive: Gain 30 Spell Points.}}This ability acts like an extra action but shares a 1 second cooldown with other offensive Mage Hand abilities. This is not considered a spell but does apply Magical Ambush.
+All: Tier 1: Mage Hand - Eye Poke
 Tier: 2
 Cost: 2
 
@@ -14411,7 +14410,7 @@ Cost: 2
 Ranks: 3
 
 AbilityName: Arms of the Trickster
-Descrip: Choose one:}{-Trickster Trick - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 100% Force spell power. Costs 5 SP to activate.}{- Trickster's Blade - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% melee power. Costs 5 SP to activate.}{- Trickster's Bolt - Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
+Descrip: Choose one:
 Tier: 2
 Cost: 1
 Selector: Trickster Trick, Trickster's Blade, Trickster's Bolt
@@ -14423,15 +14422,15 @@ SelectorName: Trickster's Bolt
 Descrip: Imbue Toggle: Your weapon attacks do 1d4+1 force damage. Scales with 200% ranged power. Costs 5 SP to activate.
 
 
-AbilityName: Mage Hand
-Descrip:: Meddle with Reality: Any creature you target with mage hand Slap or Eye Poke undergoes Meddled Reality; Target is no longer immune to sneak attacks, -25% penalty to fortification & -4 to Will saves. This lasts for 30 seconds.}For Non-Bosses there is an additional effect for 3 seconds where this Creature's type changes to Fey, Magical Beast or something even odder. Passive: Gain 30 Spell Points.}Does not remove race-based damage immunities, but does remove race-based effect immunities, such as allowing Undead to be slain by Death effects.
-All: Tier 2: Mage Hand: Slap
+AbilityName: Mage Hand - Meddle with Reality
+Descrip: Any creature you target with mage hand Slap or Eye Poke undergoes Meddled Reality. Target is no longer immune to sneak attacks, -25% penalty to fortification & -4 to Will saves. This lasts for 30 seconds.}}For Non-Bosses there is an additional effect for 3 seconds where this Creature's type changes to Fey, Magical Beast or something even odder. }}Passive: Gain 30 Spell Points.}}Does not remove race-based damage immunities, but does remove race-based effect immunities, such as allowing Undead to be slain by Death effects.
+All: Tier 2: Mage Hand - Slap
 Tier: 3
 Cost: 2
 Ranks: 1
 
 AbilityName: More Magic More Fun
-Descrip: Choose one:}{-Mixed Magics: Your base Caster Level is equal to your Character Level (Maximum 20). This does not change the caster level of Rune Arms, Wands, Scrolls, or other items.}{- Quick Silver: You gain Quick Draw and 5 Universal Spell Power
+Descrip: Choose one:
 Tier: 3
 Cost: 2
 Ranks: 1 
@@ -14454,9 +14453,9 @@ Tier: 3
 Cost: 2
 Ranks: 1
 
-AbilityName: Mage Hand: Helping Hand
-Descrip: SLA: Removes most crowd control effects from a target, heals them for 50% of their Max Hit points and applies a Restoration effect to the target. Can be used while Crowd Controlled. Cost: 5 SP. 60 CD. Passive: Gain 30 Spell Points. If you're incapacitated for more than 6 seconds and have 5 spell points you will receive the helping hand effect. This cannot occur again until you are out of combat.{Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
-All: Tier 3: Mage Hand: Meddle with Reality
+AbilityName: Mage Hand - Helping Hand
+Descrip: SLA: Removes most crowd control effects from a target, heals them for 50% of their Max Hit points and applies a Restoration effect to the target. Can be used while Crowd Controlled.}}Cost: 5 SP. 60 CD. Passive: Gain 30 Spell Points. }}If you're incapacitated for more than 6 seconds and have 5 spell points you will receive the helping hand effect. This cannot occur again until you are out of combat.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
+All: Tier 3: Mage Hand - Meddle with Reality
 Tier: 4
 Cost: 2
 
@@ -14477,11 +14476,9 @@ Tier: 4
 Cost: 1
 Ranks: 1
 
-AbilityName: Mage Hand: Presto
-Descrip: SLA: Mage hand snaps it's fingers over a none boss target to make them disappear. We don't know where they go, it's magic! Target gets a Will save to negate the effect with a DC equal to your Disable Device skill. Cost: 10 SP 20 CD. Passive: Gain 80 Spell Points.
-Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.
-Blocked by Deathblock, this is an instakill effect
-All: Tier 4: Mage Hand: Helping Hand
+AbilityName: Mage Hand - Presto
+Descrip: SLA: Mage hand snaps it's fingers over a none boss target to make them disappear. We don't know where they go, it's magic! Target gets a Will save to negate the effect with a DC equal to your Disable Device skill.}}Cost: 10 SP 20 CD. Passive: Gain 80 Spell Points.}}Mage Hand effects count as 'extra effects', do not count as spells, and do not interrupt other actions. All Mage Hand effects share a 1 second cooldown.}}Blocked by Deathblock, this is an instakill effect
+All: Tier 4: Mage Hand - Helping Hand
 Tier: 5
 Cost: 2
 Ranks: 1
@@ -14506,7 +14503,7 @@ Cost: 1
 Ranks: 3
 
 AbilityName: Not Half Bad...
-Descrip: Choose one:} Not that Bad with a Blade - +1 competence bonus to critical threat range and damage multiplier with melee weapons and 15% Competence bonus to Max Hit Points.} Not that Bad with a Bow - +1 competence bonus to critical threat range and damage multiplier with ranged weapons and a +10% to Dodge Bypass.} Not that Bad with a Spell - +20 Universal spell power, +2 Spell Penetration and +5% crit chance with all spells.
+Descrip: Choose one:
 Tier: 5
 Cost: 2
 Ranks: 1

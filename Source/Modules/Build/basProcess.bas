@@ -688,7 +688,6 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
     ParseReqLine = False 'Default to false
     
     If InStr(strRaw, ":") = 0 Then Exit Function
-    
     'Requirements can be in the form
     'tier 0: <ability>  - Same Tree
     '<tree> tier 1: <ability> - different tree
@@ -704,7 +703,7 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
     If InStr(LCase(strRaw), "feat:") Then
         'Feat based: 'Feat: Favored Enemy: Goblinoid'
         strReqParse = Split(strRaw, ":")
-        If UBound(strReqParse) = 2 Then
+        If UBound(strReqParse) = 2 Then ' Handle ':' in feat name
             Req.FeatName = Trim(strReqParse(1))
             Req.FeatID = SeekFeat(Req.FeatName)
             Req.TreeStype = peFeat
@@ -757,7 +756,9 @@ Public Function ParseReqLine(strRaw As String, pReq As PointerType, idTree As Lo
         End If
         'Check if we end in " Rank #"
         Req.Rank = GetAbilityReqRank(Req, strReqParse(1))
+        'Since we special case ':' as the selector separator, we cant use it in the name
         Req.AbilityName = Trim(strReqParse(1))
+        
         If tseStyle = tseDestiny Then
             Req.AbilityID = FindAbilityIdInTree(Req.TierID, Req.AbilityName, db.Destiny(Req.TreeID))
         Else

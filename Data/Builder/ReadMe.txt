@@ -139,6 +139,12 @@ Feats, Enhancements, Destinies, Spells
 NOTE - for the most part, if the feats/enh/destinies/spells are NOT in correct alphabetical order
 BAD things will happen.
 
+AbilityName: 
+FeatName: 
+Name of the feat/ability.  this starts the parsing section.
+Note that these names cannot have a ':' in them since we use that for selectors
+
+
 Descrip:
 Descriptions are pulled all at once from ddowiki before releasing each update. Special codes
 supported include:
