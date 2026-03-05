@@ -846,10 +846,10 @@ GrantedFeats19: Sneak Attack
 BonusFeat: 6, 12, 18
 MaxSpellLevel: 4
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
-SpellSlots1: 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3
-SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
-SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
-SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1
+SpellSlots1: 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4
+SpellSlots2: 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4
+SpellSlots3: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4
+SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 4
 SpellList1: Charm Person, Color Spray, Expeditious Retreat, Feather Fall, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Nightshield, Protection from Evil, Repair Light Damage, Sleep, Tumble
 SpellList2: Blur, Cat's Grace,  Daze Monster, Fox's Cunning, Hypnotic Pattern, Invisibility, Otto's Resistible Dance, Repair Moderate Damage, Resist Energy, Scorching Ray, See Invisibility, Touch of Idiocy
 SpellList3: Chain Missiles, Deep Slumber, Displacement,  Frost Lance, Haste, Heroism, Hold Person, Repair Serious Damage, Suggestion, Water Breathing
