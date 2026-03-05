@@ -556,7 +556,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Turn Undead, Religious Lore
+GrantedFeats1: Magical Training, Turn Undead, Religious Lore, Dark Apostate Spontaneous Casting
 ClassFeat: 1, 2, 6
 Trees: Dark Apostate, Divine Disciple, Warpriest
 HealingSpell: 1

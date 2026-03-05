@@ -13,6 +13,26 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.12.1 - Bug fixes for Arcane Trickster
+Changes:
+Fixes to Arcane Trickster spells and Enhancements
+Fixes for Domain feats
+Fixes for Quests
+
+#### Character Builder
+- Version 4.12.1
+- Fixed Arcane Trickster spell slots
+- Fixed Arcane Trickster Enhancements & Feats
+- Updated some feats to work with Spell Focus limiter, specifically Domain 
+- Minor rework on deities for Dark Apostate, added Dark Apostate spontaneous casting
+- Renamed feat "Scared Fist Follower of" to "Follower of (Sacred Fist)".  
+
+#### Compendium 
+- Version 1.19
+- Updated patrons, packs quests to match current DDO names
+- Fixed favor for "The Wish" and "Snowfall and Sunset"
+- Thanks to MIvanIsten for these updates
+
 ### 4.12.0 - Updates for U78 
 Changes:
 Updates for U78 - Arcane Trickster (massive help from Yhelm)

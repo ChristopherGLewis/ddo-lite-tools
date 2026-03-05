@@ -775,8 +775,9 @@ Private Function IsClassBonusFeat(penClass As ClassEnum, plngClassLevel As Long)
         Case 1, 3, 6, 12, 20
         Case Else: Exit Function
     End Select
+    'DEITY LIST
     Select Case penClass
-        Case ceCleric, ceFavoredSoul, cePaladin: IsClassBonusFeat = False
+        Case ceCleric, ceFavoredSoul, cePaladin, ceDarkApostate: IsClassBonusFeat = False
     End Select
 End Function
 
@@ -835,7 +836,9 @@ Private Function InitDeityFeats()
         If enClass <> ceAny Then lngClassLevels(enClass) = lngClassLevels(enClass) + 1
         Select Case enClass
             'Classes with Deity Feats - should probably be a flag in the classes.txt
-            Case ceCleric, cePaladin, ceSacredFist
+            Case ceSacredFist
+                'special Case - auto granted, so not a Deity slot
+            Case ceCleric, cePaladin, ceDarkApostate
                 Select Case lngClassLevels(enClass)
                     Case 1, 6
                         'If Not blnOne Then

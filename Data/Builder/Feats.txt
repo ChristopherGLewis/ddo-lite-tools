@@ -559,13 +559,13 @@ SelectorName: The Blood is The Life
 WikiName: Deity feats
 Descrip: For 24 seconds plus 6 seconds per Religous Lore feat you gain +4 Constitution, 100% Fortification, +10 to Fortitude Saves, and PRR and MRR equal to the number of Religious Lore feats you have. Your attacks with Daggers also gain Vampirism, stacking with other sources of Vampirism.
 
-FeatName: Sacred Fist Deity Ability
+FeatName: Deity Ability (Sacred Fist)
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: Your faith has been rewarded with an active ability.
-All: Sacred Fist Follower of
+All: Follower of (Sacred Fist)
 Class: Sacred Fist 6
-SharedSelector: Sacred Fist Follower of
+SharedSelector: Follower of (Sacred Fist)
 Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
 SelectorName: Amaunator's Flames
 WikiName: Amaunator's Flames
@@ -675,6 +675,7 @@ Group: Heroic, Misc
 Descrip: Cleric Domains offer bonuses or spell-like abilities at levels 2, 5, 9 and 14.
 Class: Cleric 2, Dark Apostate 2
 Flags: ClassOnly, SelectorOnly, Domain
+ClassBonus: Cleric, Dark Apostate
 ClassOnlyClass: Cleric, Dark Apostate
 ClassOnlyLevel: 2
 Selector: Air Domain, Animal Domain, Chaos Domain, Death Domain, Destruction Domain, Earth Domain, Fire Domain, Good Domain, Healing Domain, Knowledge Domain, Law Domain, Luck Domain, Magic Domain, Protection Domain, Strength Domain, Sun Domain, Trickery Domain, War Domain, Water Domain
@@ -784,6 +785,13 @@ FeatName: Druid Spontaneous Casting
 Group: Heroic, Misc
 Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
 Class: Druid 1, Blightcaster 1
+Flags: Unselectable
+
+
+FeatName: Dark Apostate Spontaneous Casting
+Group: Heroic, Misc
+Descrip: You gain an additional spell preparation slot per spell level to cast an Inflict Wound spell of that level.
+Class: Dark Apostate 1
 Flags: Unselectable
 
 FeatName: Druidic Oath
@@ -1168,7 +1176,7 @@ ClassOnlyLevel: 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Lord of Blades
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
@@ -1212,7 +1220,7 @@ Flags: Deity, ClassOnly
 ClassOnlyClass: Sacred Fist
 ClassOnlyLevel: 1
 
-FeatName: Sacred Fist Follower of
+FeatName: Follower of (Sacred Fist)
 Group: Heroic, Misc
 WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
@@ -1220,51 +1228,51 @@ RaceBonus: Human
 Class: Sacred Fist 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
-None: Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Lord of Blades
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
 SelectorName: Silver Flame
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Sovereign Host
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Undying Court
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
 Race: Required, Elf, Half-Elf, Wood Elf
 SelectorName: Vulkoor
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
 Race: Required, Drow
 SelectorName: Aureon
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Helm
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: Olladra
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Onatar
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Silvanus, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: Silvanus
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: The Blood of Vol
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
 SelectorName: The Blood of Vol
-None: Sacred Fist Follower of: Amaunator, Sacred Fist Follower of: Lord of Blades, Sacred Fist Follower of: Silver Flame, Sacred Fist Follower of: Sovereign Host, Sacred Fist Follower of: Undying Court, Sacred Fist Follower of: Vulkoor, Sacred Fist Follower of: Aureon, Sacred Fist Follower of: Helm, Sacred Fist Follower of: Olladra, Sacred Fist Follower of: Onatar, Sacred Fist Follower of: Silvanus
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 

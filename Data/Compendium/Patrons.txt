@@ -19,7 +19,7 @@ Abbreviation: Phiarlan
 PatronName: House Kundarak
 Abbreviation: Kundarak
 
-PatronName: Keepers of the Feather
+PatronName: Keepers of Barovia
 Abbreviation: Feather
 
 PatronName: House Jorasco
@@ -46,6 +46,9 @@ Abbreviation: F. Agent
 PatronName: The Summer Court
 Abbreviation: Summer
 
+PatronName: Keepers of Lamordia
+Abbreviation: Lamordia
+
 PatronName: The Harpers
 Abbreviation: Harper
 
@@ -55,5 +58,3 @@ Abbreviation: Sharn
 PatronName: Morgrave University
 Abbreviation: Morgrave
 
-PatronName: Keepers of Lamordia
-Abbreviation: Lamordia

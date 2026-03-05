@@ -1893,91 +1893,91 @@ Link: Schism Shard Crafting	Link	https://ddowiki.com/page/Schism_Shard_Crafting
 
 QuestName: Into the Mists
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 3
 Level: 10
 Epic: 31
 
 QuestName: Death House
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 4
 Level: 10
 Epic: 31
 
 QuestName: Fresh-baked Dreams
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 4
 Level: 10
 Epic: 31
 
 QuestName: An Invitation to Dinner
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 10
 Epic: 32
 
 QuestName: Oath of Vengeance
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 11
 Epic: 31
 
 QuestName: A Raven at the Door
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 11
 Epic: 31
 
 QuestName: Mad Tea Party
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 11
 Epic: 31
 
 QuestName: Sealed in Amber
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 11
 Epic: 31
 
 QuestName: The Final Vintage
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 4
 Level: 12
 Epic: 31
 
 QuestName: Wrath of the Earth
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 5
 Level: 12
 Epic: 32
 
 QuestName: Ravens' Bane
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 5
 Level: 12
 Epic: 31
 
 QuestName: Sunrise
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 6
 Level: 12
 Epic: 31
 
 QuestName: The Curse of Strahd
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 10
 Level: 32
 Epic: 32
@@ -1985,7 +1985,7 @@ Style: Raid
 
 QuestName: Old Baba's Hut
 Pack: Mists of Ravenloft
-Patron: Keepers of the Feather
+Patron: Keepers of Barovia
 Favor: 9
 Level: 32
 Epic: 32
@@ -3742,7 +3742,7 @@ Patron: Keepers of Lamordia
 QuestName: Snowfall and Sunlight
 Level: 8
 Epic: 36
-Favor: 5
+Favor: 6
 Pack: The Chill of Ravenloft
 Patron: Keepers of Lamordia
 
@@ -3763,7 +3763,7 @@ Patron: Keepers of Lamordia
 QuestName: The Wish
 Level: 8
 Epic: 36
-Favor: 4
+Favor: 5
 Pack: The Chill of Ravenloft
 Patron: Keepers of Lamordia
 

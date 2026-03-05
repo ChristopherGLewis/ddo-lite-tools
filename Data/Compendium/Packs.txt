@@ -399,4 +399,4 @@ HeroicLow: 8
 HeroicHigh: 8
 EpicLow: 36
 EpicHigh: 36
-Link Named Items	Link	https://ddowiki.com/page/Update_77_named_items
+Link Named Items	Link	https://ddowiki.com/page/Update_75_named_items
