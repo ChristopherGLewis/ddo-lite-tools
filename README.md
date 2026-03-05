@@ -18,12 +18,13 @@ Changes:
 Fixes to Arcane Trickster spells and Enhancements
 Fixes for Domain feats
 Fixes for Quests
+Thanks to Yhelm, MIvanIsten and Peng
 
 #### Character Builder
 - Version 4.12.1
 - Fixed Arcane Trickster spell slots
 - Fixed Arcane Trickster Enhancements & Feats
-- Updated some feats to work with Spell Focus limiter, specifically Domain 
+- Updated some feats to work with Spell Focus limiter, specifically Domain (fixing Peng's issue)
 - Minor rework on deities for Dark Apostate, added Dark Apostate spontaneous casting
 - Renamed feat "Scared Fist Follower of" to "Follower of (Sacred Fist)".  
 
