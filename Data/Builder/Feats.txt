@@ -942,7 +942,7 @@ Level: 27
 FeatName: Epic Spell Focus
 Group: Epic, Spellcasting
 Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are available to Dragon Disciples.
-Class: Cleric 11, Dark Apostate 11, Druid 11, Blightcaster 11, Wizard 11, Sorcerer 12, Wild Mage 12, Favored Soul 12, Artificer 15, Alchemist 15, Dragon Disciple 15, Bard 16, Stormsinger 16, Warlock 16, Acolyte 16
+Class: Cleric 11, Dark Apostate 11, Druid 11, Blightcaster 11, Wizard 11, Sorcerer 12, Wild Mage 12, Favored Soul 12, Arcane Trickster 12, Artificer 15, Alchemist 15, Dragon Disciple 15, Bard 16, Stormsinger 16, Warlock 16, Acolyte 16
 All: Spell Focus, Greater Spell Focus
 Level: 21
 SharedSelector: Greater Spell Focus

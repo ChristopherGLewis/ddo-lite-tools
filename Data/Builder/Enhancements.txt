@@ -1294,15 +1294,16 @@ All: Tier 3: Mage Hand - Meddle with Reality
 Tier: 4
 Cost: 2
 
-AbilityName: Sharp Magic
-Descrip: Gain +1 Sneak Attack Dice for every Metamagic Feat you have.
-Tier: 4
-
 AbilityName: Pin Point
 Descrip: +[1/2/3] Spell Penetration, +[3/6/10] Fortification Bypass. Rank 3: Your Mage Hand spells automatically dispel Nightshield and Shield spell effects.
 Tier: 4
 Cost: 1
 Ranks: 3
+
+AbilityName: Sharp Magic
+Descrip: Gain +1 Sneak Attack Dice for every Metamagic Feat you have.
+All: Tier 3: Applied Force
+Tier: 4
 
 AbilityName: Slippery Magic
 Descrip: You have a chance to gain a +5% uncapped bonus to Dodge and +1 Reflex saves whenever you land an offensive spell on a target or a melee attack. This can stack up to 3 times. 1 stack drops every 15 seconds.}}Passive: +2% bonus to Dodge.
@@ -1321,7 +1322,6 @@ Descrip: All Metamagic feats are reduced in cost by 2. You have a chance when st
 Tier: 5
 Cost: 1
 Ranks: 1
-
 
 AbilityName: Magic is a Tricky Business
 Descrip: You gain a +[1/2] bonus to Illusion and Enchantment DCs. Rank 2: Passive: Tricks on Tricks now also increases to hit and damage with weapons by 1 per stack.
