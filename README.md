@@ -13,6 +13,15 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.12.2 - Enh updates for Arcane Trickster
+Changes:
+Fixes to Arcane Trickster Enhancements
+Thanks to Yhelm
+
+#### Character Builder
+- Version 4.12.2
+- Updated Arcane Trickster Enhancements
+
 ### 4.12.1 - Bug fixes for Arcane Trickster
 Changes:
 Fixes to Arcane Trickster spells and Enhancements
