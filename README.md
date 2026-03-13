@@ -13,7 +13,7 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
-### 4.12.2 - Enh updates for Arcane Trickster
+### 4.12.2 - Enhancements updates for Arcane Trickster
 Changes:
 Fixes to Arcane Trickster Enhancements
 Thanks to Yhelm
