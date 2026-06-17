@@ -17,6 +17,7 @@ GrantedFeats11: Artificer Knowledge: Potions
 GrantedFeats14: Artificer Knowledge: Potions
 BonusFeat: 4, 8, 12, 16, 20
 Trees: Apothecary, Bombardier, Vile Chemist
+HealingSpell: 1
 MaxSpellLevel: 6
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
 SpellSlots1: 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
@@ -235,6 +236,8 @@ Skills: Concentration, Diplomacy, Heal, Jump, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Religious Lore
+GrantedFeats3: Child of Faith
+GrantedFeats12: Beloved of the Divine
 ClassFeat: 1, 2, 5, 6, 7, 10, 15, 20
 Trees: Angel of Vengeance, War Soul, Beacon of Hope
 HealingSpell: 1
@@ -710,9 +713,7 @@ Skills: Bluff, Concentration, Intimidate, Jump, Spellcraft, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Dismiss Charm
-GrantedFeats1: True Fiend Pact
-GrantedFeats1: Lesser Pact Attunement
-GrantedFeats1: Pact: Fiend (Acolyte)
+GrantedFeats1: Pact True Fiend, Lesser Pact Attunement
 GrantedFeats6: Pact Attunement
 GrantedFeats12: Greater Pact Attunement
 GrantedFeats18: Ultimate Pact Attunement
@@ -855,4 +856,3 @@ SpellList2: Blur, Cat's Grace,  Daze Monster, Fox's Cunning, Hypnotic Pattern, I
 SpellList3: Chain Missiles, Deep Slumber, Displacement,  Frost Lance, Haste, Heroism, Hold Person, Repair Serious Damage, Suggestion, Water Breathing
 SpellList4: Charm Monster, Crushing Despair, Dimension Door, Force Missiles, Phantasmal Killer, Remove Curse, Repair Critical Damage
 Trees: Arcane Trickster, Mechanic, Thief-Acrobat
-

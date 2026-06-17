@@ -1240,7 +1240,6 @@ AbilityName: Three Handed Casting
 Descrip: Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.}}Note: Stacks with Efficient Quicken from other trees. 
 All: Feat: Quicken Spell
 Tier: 2
-Cost: 2
 Ranks: 3
 
 AbilityName: Arms of the Trickster
@@ -2513,12 +2512,12 @@ Parent: Tier 0: Liquid Power II
 Siblings: Tier 0: Liquid Power I
 
 AbilityName: Multivial
-Descrip: Spell-Like Ability: Choose from Multivial of Acid, Frost, Sparks, Flame, or Poison. Conjuring many bottles of your chosen element, you throw 4 projectiles that explode on impact, with each dealing 1d4+3 <element> damage per caster level to all nearby foes, max caster level 20. Shares a cooldown with all other Multivial spells. A successful reflex save reduces damage by half. Primer Element: Crimsonite (Red). (Cost: 40 SP, Cooldown: 12 seconds)}}Passive: +4 Intelligence, +2 Conjuration DCs, and 2 extra Burning Ambition Dice. While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}}Bug: Unlike the multivial spells, this ability requires a target.
+Descrip: Spell-Like Ability: Choose from Multivial of Acid, Frost, Sparks, Flame, or Poison. Conjuring many bottles of your chosen element, you throw 4 projectiles that explode on impact, with each dealing 1d4+3  damage per caster level to all nearby foes, max caster level 20. Shares a cooldown with all other Multivial spells. A successful reflex save reduces damage by half. Primer Element: Crimsonite (Red). (Cost: 40 SP, Cooldown: 12 seconds)}}Passive: +4 Intelligence, +2 Conjuration DCs, and 2 extra Burning Ambition Dice. While in Pyrite Reaction, you gain +2% Fire, Cold, Electric, Acid, and Poison Spell Critical Damage.}}Bug: Unlike the multivial spells, this ability requires a target.
 Tier: 0
 Selector: Multivial of Acid, Multivial of Frost, Multivial of Sparks, Multivial of Flame, Multivial of Poison
 
 AbilityName: Spellvial Selection I
-Descrip: Spell-Like Ability: Conjuring a bottle of <element>, you throw a projectile at a single foe that deals 1d6+2 <element> damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom.
+Descrip: Spell-Like Ability: Conjuring a bottle of , you throw a projectile at a single foe that deals 1d6+2  damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom.
 Tier: 1
 Ranks: 3
 Flags: SelectorOnly
@@ -2545,7 +2544,7 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Spellvial Selection II
-Descrip: Spell-Like Ability: Conjuring a bottle of <element>, you throw a projectile at a single foe that deals 1d6+2 <element> damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom. You may not select the same element as you chose in Spellvial Selection I.
+Descrip: Spell-Like Ability: Conjuring a bottle of , you throw a projectile at a single foe that deals 1d6+2  damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom. You may not select the same element as you chose in Spellvial Selection I.
 Tier: 2
 Ranks: 3
 All: Tier 1: Spellvial Selection I
@@ -2586,7 +2585,7 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Spellvial Selection III
-Descrip: Spell-Like Ability: Conjuring a bottle of <element>, you throw a projectile at a single foe that deals 1d6+2 <element> damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom. You may not select the same element as you chose in Spellvial Selection I or II.
+Descrip: Spell-Like Ability: Conjuring a bottle of , you throw a projectile at a single foe that deals 1d6+2  damage per caster level (Max caster level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten, Enlarge, Eschew Materials. (Cost: [4/2/1] SP, Cooldown: [12/8/4] seconds)}}Choose from Vial of Acid, Frost, Sparks, Flame, or Venom. You may not select the same element as you chose in Spellvial Selection I or II.
 Tier: 3
 Ranks: 3
 All: Tier 2: Spellvial Selection II
@@ -2646,7 +2645,7 @@ Cost: 2
 All: Tier 3: Spell Critical - Elemental and Poison III
 
 AbilityName: Elemental Obliteration
-Descrip: Spell-Like Ability: Throw a vial that explodes with <element> on impact, dealing 1d6+3 <element> damage per Caster Level to all enemies nearby (Max Caster Level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten. (Cost: [12/8/6] SP, Cooldown: [12/8/6] seconds)}}Choose from Caustic, Frost, Voltaic, Fiery, or Poison.
+Descrip: Spell-Like Ability: Throw a vial that explodes with  on impact, dealing 1d6+3  damage per Caster Level to all enemies nearby (Max Caster Level 10). Primer Element: Crimsonite (Red). Metamagic: Empower, Maximize, Quicken, Heighten. (Cost: [12/8/6] SP, Cooldown: [12/8/6] seconds)}}Choose from Caustic, Frost, Voltaic, Fiery, or Poison.
 Tier: 5
 Ranks: 3
 Selector: Caustic Obliteration, Fiery Obliteration, Frost Obliteration, Poison Obliteration, Voltaic Obliteration
@@ -3534,27 +3533,35 @@ Color: Blue
 Stats: Wisdom
 
 AbilityName: Emissary
-Descrip: Follow the path of Light or Dark:}{-Emissary of Light: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.}{-Emissary of Darkness: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.}}Note: This tree is not like any other in the game. You can upgrade your Light path from left to right, OR can upgrade your Dark path from right to left, OR can do both! Because of this, upgrades here may show more options then you may actually have access to. There is logic to remind you if an ability can be taken or not, so mind the red text. 
+Descrip: Follow the path of Light or Dark:}}Note: This tree is not like any other in the game. You can upgrade your Light path from left to right, OR can upgrade your Dark path from right to left, OR you can do both! Because of this, upgrades here may show more options then you may actually have access to. There is logic to remind you if an ability can be taken or not, so mind the red text. 
 Tier: 0
 Flags: SelectorOnly
 Selector: Emissary of Light, Emissary of Darkness
+SelectorName: Emissary of Light
+Descrip: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.
+SelectorName: Emissary of Darkness
+Descrip: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.
 
 AbilityName: Sacred Defense
-Descrip: Follow the path of Light or Dark:}{-Empowered by Light: You gain +2 to all Saving Throws and +3 Physical Resistance Rating. (Requires Emissary of Light)}{-Empowered by the Darkness: You gain +2 to all Saving Throws and +3 Magical Resistance Rating. (Requires Emissary of Darkness)}{-Or select the 2nd option from Core 1.
+Descrip: Follow the path of Light or Dark:}}Select the next option on your path or select the 1st option from the other path.
 Tier: 0
 Flags: SelectorOnly
 Selector: Emissary of Light, Empowered by Light, Emissary of Darkness, Empowered by the Darkness
 SelectorName: Emissary of Light
+Descrip: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.
 None: Tier 0: Emissary: Emissary of Light
 SelectorName: Empowered by Light
+Descrip: You gain +2 to all Saving Throws and +3 Physical Resistance Rating.
 All: Tier 0: Emissary: Emissary of Light
 SelectorName: Emissary of Darkness
+Descrip: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.
 None: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Empowered by the Darkness
+Descrip: You gain +2 to all Saving Throws and +3 Magical Resistance Rating.
 All: Tier 0: Emissary: Emissary of Darkness
 
 AbilityName: Spell Knowledge
-Descrip: Add a new spell to your spellbook:}{-Sun Bolt: Your Cleric spellbook gains Sun Bolt as a level 3 spell. (Requires Empowered by Light)}{-Enervation: Your Cleric spellbook gains Enervation as a level 4 spell. (Requires Empowered by Darkness)}{-Or: Select a previous option you qualify for (from Core 1 or 2).
+Descrip: Add a new spell to your spellbook, or select the next (or 1st) option from the other path.
 Tier: 0
 Flags: SelectorOnly
 Selector: Emissary of Light, Empowered by Light, Sun Bolt, Emissary of Darkness, Empowered by the Darkness, Enervation
@@ -3563,101 +3570,134 @@ None: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of L
 SelectorName: Empowered by Light
 One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light
 SelectorName: Sun Bolt
+Descrip: Your Cleric spellbook gains Sun Bolt as a level 3 spell.}}Sun Bolt: A powerful bolt of light deals 1d6+3 light damage per caster level (max 15d6+45 at caster level 15) to targets in its path. A successful Reflex save (DC:	13 + WIS/CHA mod + Evocation DCs) reduces the damage by half.
 All: Tier 0: Sacred Defense: Empowered by Light
 SelectorName: Emissary of Darkness
 None: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness
 SelectorName: Empowered by the Darkness
 One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness
 SelectorName: Enervation
+Descrip: Your Cleric spellbook gains Enervation as a level 4 spell.}}Enervation: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack}}Also applies a Negative Damage Over Time effect. This deals Negative damage equal to 1d6 + 1 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. This can stack up to three times.
 All: Tier 0: Sacred Defense: Empowered by the Darkness
 
 AbilityName: Spell Knowledge II
-Descrip: Add a new spell to your spellbook:}{-Sunbeam: Your Cleric spellbook gains Sunbeam as a level 6 spell. (Requires selection of Core 3 Light spell.)}{-Necrotic Ray: Your Cleric spellbook gains Necrotic Ray as a level 6 spell. (Requires selection of Core 3 Dark spell.)}{-Or: Select a previous option you qualify for (from Core 1, 2, or 3).
+Descrip: Add a new spell to your spellbook, or select the next (or 1st) option from the other path.
 Tier: 0
 Flags: SelectorOnly
 Selector: Emissary of Light, Empowered by Light, Sun Bolt, Sunbeam, Emissary of Darkness, Empowered by the Darkness, Enervation, Necrotic Ray
 SelectorName: Emissary of Light
-None: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light
+Descrip: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Light
 SelectorName: Empowered by Light
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light
+Descrip: You gain +2 to all Saving Throws and +3 Physical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Light
 SelectorName: Sun Bolt
-One: Tier 0: Sacred Defense: Empowered by Light, Tier 0: Spell Knowledge: Empowered by Light
+Descrip: Your Cleric spellbook gains Sun Bolt as a level 3 spell.}}Sun Bolt: A powerful bolt of light deals 1d6+3 light damage per caster level (max 15d6+45 at caster level 15) to targets in its path. A successful Reflex save (DC:	13 + WIS/CHA mod + Evocation DCs) reduces the damage by half.
+All: Tier 0: Sacred Defense: Empowered by Light
 SelectorName: Sunbeam
+Descrip: Your Cleric spellbook gains Sunbeam as a level 6 spell.}}Sunbeam: Deals 1d6+7 light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
 All: Tier 0: Spell Knowledge: Sun Bolt
 SelectorName: Emissary of Darkness
-None: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness
+Descrip: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Empowered by the Darkness
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness
+Descrip: You gain +2 to all Saving Throws and +3 Magical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Enervation
-One: Tier 0: Sacred Defense: Empowered by the Darkness, Tier 0: Spell Knowledge: Empowered by the Darkness
+Descrip: Your Cleric spellbook gains Enervation as a level 4 spell.}}Enervation: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack}}Also applies a Negative Damage Over Time effect. This deals Negative damage equal to 1d6 + 1 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. This can stack up to three times.
+All: Tier 0: Sacred Defense: Empowered by the Darkness
 SelectorName: Necrotic Ray
+Descrip: Your Cleric spellbook gains Necrotic Ray as a level 6 spell.}}Necrotic Ray: A negative energy ray that does 1d6+12 negative damage per caster level to a living enemy. A successful Fortitude save reduces the damage by half. The ray also suppresses the life force of any living creature it strikes, granting it 1 negative level.
 All: Tier 0: Spell Knowledge: Enervation
 
 AbilityName: Spell Knowledge III
-Descrip: Add a new spell to your spellbook:}{-Sunburst: Your Cleric spellbook gains Sunburst as a level 8 spell. (Requires selection of Core 4 Light spell.)}{-Power Word: Stun: Your Cleric spellbook gains Power Word: Stun as a level 8 spell. (Requires selection of Core 4 Dark spell.)}{-Or: Select a previous option you qualify for (from Core 1 or 2).
+Descrip: Add a new spell to your spellbook, or select the next (or 1st) option from the other path.
 Tier: 0
 Flags: SelectorOnly
-Selector: Emissary of Light, Empowered by Light, Sun Bolt, Sunbeam, Sunburst, Emissary of Darkness, Empowered by the Darkness, Enervation, Necrotic Ray, Power Word: Stun
-SelectorName: Emissary of Light
-None: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light
+Selector: Emissary of Light, Empowered by Light, Sun Bolt, Sunbeam, Sunburst, Emissary of Darkness, Empowered by the Darkness, Enervation, Necrotic Ray, Power Word: StunSelectorName: Emissary of Light
+Descrip: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Light
 SelectorName: Empowered by Light
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light
+Descrip: You gain +2 to all Saving Throws and +3 Physical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Light
 SelectorName: Sun Bolt
-One: Tier 0: Sacred Defense: Empowered by Light, Tier 0: Spell Knowledge: Empowered by Light, Tier 0: Spell Knowledge II: Empowered by Light
+Descrip: Your Cleric spellbook gains Sun Bolt as a level 3 spell.}}Sun Bolt: A powerful bolt of light deals 1d6+3 light damage per caster level (max 15d6+45 at caster level 15) to targets in its path. A successful Reflex save (DC:	13 + WIS/CHA mod + Evocation DCs) reduces the damage by half.
+All: Tier 0: Sacred Defense: Empowered by Light
 SelectorName: Sunbeam
-One: Tier 0: Spell Knowledge: Sun Bolt, Tier 0: Spell Knowledge II: Sun Bolt
+Descrip: Your Cleric spellbook gains Sunbeam as a level 6 spell.}}Sunbeam: Deals 1d6+7 light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
+All: Tier 0: Spell Knowledge: Sun Bolt
 SelectorName: Sunburst
+Descrip: Your Cleric spellbook gains Sunburst as a level 8 spell.}}Sunburst: Causes a globe of searing radiance to explode silently from a point you select dealing to all creatures 1d6+4 points of light damage per caster level in addition to blinding them. A successful Reflex save reduces the damage by half and negates the condition Blinded. Light fearing Undead may be instantly destroyed by this spell if it fails its save.
 All: Tier 0: Spell Knowledge II: Sunbeam
 SelectorName: Emissary of Darkness
-None: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness
+Descrip: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Empowered by the Darkness
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness
+Descrip: You gain +2 to all Saving Throws and +3 Magical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Enervation
-One: Tier 0: Sacred Defense: Empowered by the Darkness, Tier 0: Spell Knowledge: Empowered by the Darkness, Tier 0: Spell Knowledge II: Empowered by the Darkness
+Descrip: Your Cleric spellbook gains Enervation as a level 4 spell.}}Enervation: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack}}Also applies a Negative Damage Over Time effect. This deals Negative damage equal to 1d6 + 1 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. This can stack up to three times.
+All: Tier 0: Sacred Defense: Empowered by the Darkness
 SelectorName: Necrotic Ray
-One: Tier 0: Spell Knowledge: Enervation, Tier 0: Spell Knowledge II: Enervation
+Descrip: Your Cleric spellbook gains Necrotic Ray as a level 6 spell.}}Necrotic Ray: A negative energy ray that does 1d6+12 negative damage per caster level to a living enemy. A successful Fortitude save reduces the damage by half. The ray also suppresses the life force of any living creature it strikes, granting it 1 negative level.
+All: Tier 0: Spell Knowledge: Enervation
 SelectorName: Power Word: Stun
+Descrip: Your Cleric spellbook gains Power Word: Stun as a level 8 spell.}}Power Word: Stun: You utter a single word of power that instantly causes one creature of your choice to become Stunned, whether the creature can hear the word or not. The duration of the spell depends on the target's current Hit Points.
 All: Tier 0: Spell Knowledge II: Necrotic Ray
 
 AbilityName: Path of the Endless
-Descrip: Complete your training:}{Priest of Endless Light:}{-+4 Wisdom}{-+2 to all saving throws}{-+10 Light/Alignment Spell Power and positive healing amp.}{-+1 caster level and maximum caster level to Light/Alignment spells.}{-+1 Evocation DCs}(Requires Emissary of Light)}{Deacon of Endless Darkness:}{-+4 Wisdom}{-+2 to all saving throws}{-+10 Negative Spell Power and negative healing amp.}{-+1 caster level and maximum caster level with Negative spells.}{-+1 Necromancy DCs}(Requires Emissary of Darkness}{-Or select the 2nd option from Core 1.
+Descrip: Complete your training, or select the next (or 1st) option from the other path.
 Flags: SelectorOnly
 Selector: Emissary of Light, Empowered by Light, Sun Bolt, Sunbeam, Sunburst, Priest of Endless Light, Emissary of Darkness, Empowered by the Darkness, Enervation, Necrotic Ray, Power Word: Stun, Deacon of Endless Darkness
 SelectorName: Emissary of Light
-None: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light
+Descrip: For each Light Core Ability you take in this tree, you gain +5 Light, Alignment and Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Light
 SelectorName: Empowered by Light
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light
+Descrip: You gain +2 to all Saving Throws and +3 Physical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Light
 SelectorName: Sun Bolt
-One: Tier 0: Sacred Defense: Empowered by Light, Tier 0: Spell Knowledge: Empowered by Light, Tier 0: Spell Knowledge II: Empowered by Light, Tier 0: Spell Knowledge III: Empowered by Light
+Descrip: Your Cleric spellbook gains Sun Bolt as a level 3 spell.}}Sun Bolt: A powerful bolt of light deals 1d6+3 light damage per caster level (max 15d6+45 at caster level 15) to targets in its path. A successful Reflex save (DC:	13 + WIS/CHA mod + Evocation DCs) reduces the damage by half.
+All: Tier 0: Sacred Defense: Empowered by Light
 SelectorName: Sunbeam
-One: Tier 0: Spell Knowledge: Sun Bolt, Tier 0: Spell Knowledge II: Sun Bolt, Tier 0: Spell Knowledge III: Sun Bolt
+Descrip: Your Cleric spellbook gains Sunbeam as a level 6 spell.}}Sunbeam: Deals 1d6+7 light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
+All: Tier 0: Spell Knowledge: Sun Bolt
 SelectorName: Sunburst
-One: Tier 0: Spell Knowledge II: Sunbeam, Tier 0: Spell Knowledge III: Sunbeam
+Descrip: Your Cleric spellbook gains Sunburst as a level 8 spell.}}Sunburst: Causes a globe of searing radiance to explode silently from a point you select dealing to all creatures 1d6+4 points of light damage per caster level in addition to blinding them. A successful Reflex save reduces the damage by half and negates the condition Blinded. Light fearing Undead may be instantly destroyed by this spell if it fails its save.
+All: Tier 0: Spell Knowledge II: Sunbeam
 SelectorName: Priest of Endless Light
+Descrip:}{-+4 Wisdom}{-+2 to all saving throws}{-+10 Light/Alignment Spell Power and positive healing amp.}{-+1 caster level and maximum caster level to Light/Alignment spells.}{-+1 Evocation DCs
 All: Tier 0: Spell Knowledge II: Sunburst
 SelectorName: Emissary of Darkness
-None: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness
+Descrip: For each Dark Core Ability you take in this tree, you gain +5 Negative and +5 Universal Spell Power.
+None: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Empowered by the Darkness
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness
+Descrip: You gain +2 to all Saving Throws and +3 Magical Resistance Rating.
+All: Tier 0: Emissary: Emissary of Darkness
 SelectorName: Enervation
-One: Tier 0: Sacred Defense: Empowered by the Darkness, Tier 0: Spell Knowledge: Empowered by the Darkness, Tier 0: Spell Knowledge II: Empowered by the Darkness, Tier 0: Spell Knowledge III: Empowered by the Darkness
+Descrip: Your Cleric spellbook gains Enervation as a level 4 spell.}}Enervation: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack}}Also applies a Negative Damage Over Time effect. This deals Negative damage equal to 1d6 + 1 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. This can stack up to three times.
+All: Tier 0: Sacred Defense: Empowered by the Darkness
 SelectorName: Necrotic Ray
-One: Tier 0: Spell Knowledge: Enervation, Tier 0: Spell Knowledge II: Enervation, Tier 0: Spell Knowledge III: Enervation
+Descrip: Your Cleric spellbook gains Necrotic Ray as a level 6 spell.}}Necrotic Ray: A negative energy ray that does 1d6+12 negative damage per caster level to a living enemy. A successful Fortitude save reduces the damage by half. The ray also suppresses the life force of any living creature it strikes, granting it 1 negative level.
+All: Tier 0: Spell Knowledge: Enervation
 SelectorName: Power Word: Stun
-One: Tier 0: Spell Knowledge II: Necrotic Ray, Tier 0: Spell Knowledge III: Necrotic Ray
+Descrip: Your Cleric spellbook gains Power Word: Stun as a level 8 spell.}}Power Word: Stun: You utter a single word of power that instantly causes one creature of your choice to become Stunned, whether the creature can hear the word or not. The duration of the spell depends on the target's current Hit Points.
+All: Tier 0: Spell Knowledge II: Necrotic Ray
 SelectorName: Deacon of Endless Darkness
+Descrip: }{-+4 Wisdom}{-+2 to all saving throws}{-+10 Negative Spell Power and negative healing amp.}{-+1 caster level and maximum caster level with Negative spells.}{-+1 Necromancy DCs
 All: Tier 0: Spell Knowledge III: Power Word: Stun
 
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{-Nimbus of Light: (Cost: [4/3/2] SP, Cooldown: [6/5/4] seconds)}{-Inflict Light Wounds: (Cost: [4/3/2] SP, Cooldown: [6/5/4] seconds)
+Descrip: Gain a new Spell-like ability:
 Tier: 1
 Ranks: 3
 Flags: SelectorOnly
 Selector: Nimbus of Light, Inflict Light Wounds
 SelectorName: Nimbus of Light
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+Descrip: SLA: A glittering corona of light coalesces around your outstretched arm, dealing 1d6 points of light damage per caster level (Max Caster Level 15). (Cost: [4/3/2] SP, Cooldown: [6/5/4] seconds)
+All: Tier 0: Emissary: Emissary of Light
 SelectorName: Inflict Light Wounds
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
+Descrip: SLA: Negative energy is channeled through the caster touch to inflict light wounds on the target for 1d6+2 damage per caster level (Maximum caster level 5) or to heal Undead. A successful Will save reduces the damage by half. (Cost: [8/6/4] SP, Cooldown: [10/8/6] seconds)
+All: Tier 0: Emissary: Emissary of Darkness
 
 AbilityName: Defense of the Heart
 Descrip: Gain +[2/4/6] Physical Resistance Rating.
@@ -3665,11 +3705,17 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Smiting I
-Descrip: Choose a type of Smiting to gain:}{-Divine Smiting I: +2% Critical Chance with Light, Negative Energy, and Alignment.}{-Arcane Smiting I: +2% Critical Chance Fire, Cold, Acid, Electric, & Force. (Requires both Light and Dark Core I)
+Descrip: Choose a type of Smiting to gain:
 Tier: 1
 Cost: 2
 Flags: SelectorOnly
 Selector: Divine Smiting I, Arcane Smiting I
+SelectorName: Divine Smiting I
+Descrip: +2% Critical Chance with Light, Negative Energy, and Alignment.
+SelectorName: Arcane Smiting I
+Descrip: +2% Critical Chance Fire, Cold, Acid, Electric, & Force.
+One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
 AbilityName: Defense of the Soul
 Descrip: Gain +[2/4/6] Magical Resistance Rating.
@@ -3708,12 +3754,19 @@ Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points
 All: Feat: Quicken Spell
 
 AbilityName: Smiting II
-Descrip: Choose a type of Smiting to gain:}{-Divine Smiting II: +2% Critical Chance with Light, Negative Energy, and Alignment.}{-Arcane Smiting II: +2% Critical Chance Fire, Cold, Acid, Electric, & Force. (Requires both Light and Dark Core I)
+Descrip: Choose a type of Smiting to gain:
 Tier: 2
 Cost: 2
 Flags: SelectorOnly
 Selector: Divine Smiting II, Arcane Smiting II
+SelectorName: Divine Smiting II
+Descrip: +2% Critical Chance with Light, Negative Energy, and Alignment.
 All: Tier 1: Smiting I
+SelectorName: Arcane Smiting II
+Descrip: +2% Critical Chance Fire, Cold, Acid, Electric, & Force.
+All: Tier 1: Smiting I
+One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
 AbilityName: Shield of Dawn
 Descrip: When struck, attackers are dealt [1/2/3]d6 Light and Negative damage, scaling with your Spell Power. Rank 3: They also have a small chance of being Blinded for 12 seconds.
@@ -3726,15 +3779,17 @@ Tier: 2
 Ranks: 3
 
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{-Searing Light (Cost: [8/6/4] SP, Cooldown: [8/6/4] seconds)}{-Necrotic Bolt (Cost: [12/9/6] SP, Cooldown: [10/8/6] seconds)
+Descrip: Gain a new Spell-like ability:
 Tier: 3
 Ranks: 3
 Flags: SelectorOnly
 Selector: Searing Light, Necrotic Bolt
 SelectorName: Searing Light
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+Descrip: SLA: Focuses divine power like a ray of the sun, causing a blast of light to do 1d6+6 light damage per caster level (max 10d6+60 at caster level 10). Undead creatures take 2d6+12 light damage per caster level (max 20d6+120). Constructs take 1d3+3 light damage per caster level (max 10d3+30). Ray spells have double range. (Cost: [8/6/4] SP, Cooldown: [8/6/4] seconds)
+One: Tier 0: Emissary: Emissary of Light
 SelectorName: Necrotic Bolt
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
+Descrip: SLA: You fire a black bolt of energy from your finger that deals 1d6+3 (4 to 9) hit points of negative energy damage per caster level to a creature. A successful Fortitude save reduces the damage by half. This ability counts as a level 3 Wizard spells. Players are immune to this effect. (Cost: [12/9/6] SP, Cooldown: [10/8/6] seconds)
+One: Tier 0: Emissary: Emissary of Darkness
 
 AbilityName: Efficient Metamagic
 Descrip: Choose another Metamagic feats. Reduce the spell point cost of using that Metamagic.
@@ -3759,34 +3814,46 @@ Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points
 All: Feat: Quicken Spell
 
 AbilityName: Smiting III
-Descrip: Choose a type of Smiting to gain:}{-Divine Smiting III: +2% Critical Chance with Light, Negative Energy, and Alignment.}{-Arcane Smiting III: +2% Critical Chance Fire, Cold, Acid, Electric, & Force. (Requires both Light and Dark Core I)
+Descrip: Choose a type of Smiting to gain:
 Tier: 3
 Cost: 2
 Flags: SelectorOnly
 Selector: Divine Smiting III, Arcane Smiting III
+SelectorName: Divine Smiting III
+Descrip: +2% Critical Chance with Light, Negative Energy, and Alignment.
 All: Tier 2: Smiting II
-
-AbilityName: Disciple of
-Descrip: Choose a path:}{-Disciple of Dawn: +[5/10/15] Positive Healing Amplification. Rank 3: +5 Light and Alignment Spell Power}{-Disciple of Dusk: +[5/10/15] Negative Healing Amplification. Rank 3: +5 Negative Energy Spell Power
-Tier: 3
-Ranks: 3
-Flags: SelectorOnly
-Selector: Dawn, Dusk
-SelectorName: Dawn
+SelectorName: Arcane Smiting III
+Descrip: +2% Critical Chance Fire, Cold, Acid, Electric, & Force.
+All: Tier 2: Smiting II
 One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
-SelectorName: Dusk
 One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
+AbilityName: Disciple of
+Descrip: Choose a path:
+Tier: 3
+Ranks: 3
+Selector: Dawn, Dusk
+SelectorName: Dawn
+Descrip: +[5/10/15] Positive Healing Amplification. Rank 3: +5 Light and Alignment Spell Power
+SelectorName: Dusk
+Descrip: +[5/10/15] Negative Healing Amplification. Rank 3: +5 Negative Energy Spell Power
+
 AbilityName: Prophetic Zenith
-Descrip: Gain a new Spell-like ability:}{-Holy Smite (Cost: [13/10/7] SP, Cooldown: [10/8/6] seconds)}{-Order's Wrath (Cost: [13/10/7] SP, Cooldown: [20/15/12] seconds)}{-Chaos Hammer (Cost: [13/10/7] SP, Cooldown: [20/15/12] seconds)}{-Unholy Blight (Cost: [13/10/7] SP, Cooldown: [10/8/6] seconds)
+Descrip: Gain a new Spell-like ability:
 Tier: 4
 Ranks: 3
 Flags: SelectorOnly
-Selector: Holy Smite, Order's Wrath, Chaos Hammer, Unholy Blight
+Selector: Holy Smite, Chaos Hammer, Order's Wrath, Unholy Blight
 SelectorName: Holy Smite
-One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+Descrip: SLA: Damages targets with holy power. Deals 1d6+4 holy damage per caster level to Evil creatures (maximum damage 10d6+40 at caster level 10), or deals twice that damage to Evil outsiders (maximum damage 20d6+80), leaving them blinded for 6 seconds (Will save negates). This spell has no effect on Good targets, and Neutral targets take half damage, may save to further reduce damage, and are not blinded. This spell can only be cast by Good or Neutral casters; it has no effect when cast by an Evil caster. (Cost: [13/10/7] SP, Cooldown: [10/8/6] seconds)
+One: Tier 0: Emissary: Emissary of Light
+SelectorName: Chaos Hammer
+Descrip: SLA: This spell deals 1d6+4 points of chaotic damage per caster level (Maximum 10d6+40) to lawful creatures, or 2d6+8 points of damage per caster level (Maximum 20d6+80) to lawful outsiders. Additionally, the spell slows lawful creatures for 6d6 seconds. A successful Will save reduces the damage by half and negates the slow effect. This spell deals only half damage to creatures who are neither lawful or chaotic, and they are not slowed. This spell deals no damage to chaotic creatures, and can only be cast by non-lawful casters. (Cost: [13/10/7] SP, Cooldown: [20/15/12] seconds)
 SelectorName: Unholy Blight
-One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
+Descrip: SLA: Unholy power smites your targets. Only Good and Neutral enemies are harmed by the spell. This spell deals 1d6+4 evil damage per caster level (max 10d6+40) to a Good creature (or twice that to a good outsider) and causes it to be sickened for 6d4 seconds. A successful Will save reduces damage by half and negates the Sickened condition. Neutral targets take only 1d3+2 evil damage per caster level (max 10d3+20), and they are not Sickened. This spell has no effect when cast by a Good caster. (Cost: [13/10/7] SP, Cooldown: [10/8/6] seconds)
+One: Tier 0: Emissary: Emissary of Darkness
+SelectorName: Order's Wrath
+Descrip: SLA: Lawful power smites your targets. Only Chaotic and Neutral enemies are harmed by the spell. The spell deals 1d6+4 lawful damage per caster level (max 10d6+40) to a Chaotic creature (or twice that to a Chaotic Outsider), and causes it to be Dazed for 6 seconds. A successful Will save reduces damage by half and negates the Dazed condition. The spell deals only half damage to creatures who are neither Lawful nor Chaotic, and they are not Dazed. This spell has no effect when cast by a Chaotic caster. (Cost: [13/10/7] SP, Cooldown: [20/15/12] seconds)
 
 AbilityName: Efficient Heighten
 Descrip: Using the Heighten Spell Metamagic costs you [1/2] fewer Spell Point per heightened level.
@@ -3801,50 +3868,85 @@ Tier: 4
 Cost: 2
 Flags: SelectorOnly
 Selector: Divine Smiting IV, Arcane Smiting IV
+SelectorName: Divine Smiting IV
+Descrip: +2% Critical Chance with Light, Negative Energy, and Alignment.
 All: Tier 3: Smiting III
+SelectorName: Arcane Smiting IV
+Descrip: +2% Critical Chance Fire, Cold, Acid, Electric, & Force.
+All: Tier 3: Smiting III
+One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
 AbilityName: Disciple of
-Descrip: Gain the path not chosen:}{-Disciple of Dawn: +[5/10/15] Positive Healing Amplification. Rank 3: +5 Light and Alignment Spell Power}{-Disciple of Dusk: +[5/10/15] Negative Healing Amplification. Rank 3: +5 Negative Energy Spell Power
+Descrip: Gain the path not chosen:
 Tier: 4
 Ranks: 3
-Flags: SelectorOnly
-Selector: Dawn, Dusk
 Parent: Tier 3: Disciple of
+Selector: Dawn, Dusk
+SelectorName: Dawn
+Descrip: +[5/10/15] Positive Healing Amplification. Rank 3: +5 Light and Alignment Spell Power
+SelectorName: Dusk
+Descrip: +[5/10/15] Negative Healing Amplification. Rank 3: +5 Negative Energy Spell Power
 
-AbilityName: Power
-Descrip: Enhance your Alignment spells:}{-Holy Power: Your Holy Smite spell now deals full damage to all enemies, regardless of alignment. Requires having only Emissary of Light Cores (and no Darkness Cores.)}{-Unholy Power: Your Unholy Blight spell now deals full damage to all enemies, regardless of alignment. Requires having only Emissary of Darkness Cores (and no Light Cores.)}{-Balance of Power: Order's Wrath and Chaos Hammer spells now deal full damage to all enemies, regardless of alignment. (Requires both Emissary of Light and Darkness)
+AbilityName: Power Balance
+Descrip: Enhance your Alignment spells:
 Tier: 5
 Cost: 2
-Selector: Holy, Unholy, Balance of
-SelectorName: Holy
+Flags: SelectorOnly
+Selector: Holy Power, Unholy Power, Balance of Power
+SelectorName: Holy Power
+Descrip: Your Holy Smite spell now deals full damage to all enemies, regardless of alignment.
+All: Tier 0: Emissary: Emissary of Light
+SelectorName: Unholy Power
+Descrip: Your Unholy Blight spell now deals full damage to all enemies, regardless of alignment.
+ALL: Tier 0: Emissary: Emissary of Darkness
+SelectorName: Balance of Power
+Descrip: Order's Wrath and Chaos Hammer spells now deal full damage to all enemies, regardless of alignment.
 One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
-SelectorName: Unholy
 One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
 AbilityName: Transcend
-Descrip: Transcend your choices:}{-Transcend Darkness: You gain the spells you would have gained from the Path of Darkness core abilities. Requires having only Emissary of Light Cores (and no Darkness Cores).}{-Transcend Light: You gain the spells you would have gained from the Path of Light core abilities. Requires having only Emissary of Darkness Cores (and no Light Cores).}{-Bring Balance: The Word of Balance spell is added to your Spellbook at level 7. (Requires both Emissary of Light and Darkness)
+Descrip: Transcend your choices:
 Tier: 5
 Cost: 2
-Selector: Light, Darkness, Bring Balance
-SelectorName: Darkness
+Flags: SelectorOnly
+Selector: Transcend Light, Transcend Darkness, Bring Balance
+SelectorName: Transcend Darkness
+Descrip: You gain the spells you would have gained from the Path of Darkness core abilities. Requires having only Emissary of Light Cores (and no Darkness Cores).
 None: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
-SelectorName: Light
+SelectorName: Transcend Light
+Descrip: You gain the spells you would have gained from the Path of Light core abilities. Requires having only Emissary of Darkness Cores (and no Light Cores).
 None: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+SelectorName: Bring Balance
+Descrip: The Word of Balance spell is added to your Spellbook at level 7.
+One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
 AbilityName: Smiting V
-Descrip: Choose a type of Smiting to gain:}{-Divine Smiting V: +2% Critical Chance with Light, Negative Energy, and Alignment.}{-Arcane Smiting V: +2% Critical Chance Fire, Cold, Acid, Electric, & Force. (Requires both Light and Dark Core I)
+Descrip: Choose a type of Smiting to gain:
 Tier: 5
 Cost: 2
 Flags: SelectorOnly
 Selector: Divine Smiting V, Arcane Smiting V
+SelectorName: Divine Smiting V
+Descrip: +2% Critical Chance with Light, Negative Energy, and Alignment.
 All: Tier 4: Smiting IV
+SelectorName: Arcane Smiting V
+Descrip: +2% Critical Chance Fire, Cold, Acid, Electric, & Force.
+All: Tier 4: Smiting IV
+One: Tier 0: Emissary: Emissary of Light, Tier 0: Sacred Defense: Emissary of Light, Tier 0: Spell Knowledge: Emissary of Light, Tier 0: Spell Knowledge II: Emissary of Light, Tier 0: Spell Knowledge III: Emissary of Light, Tier 0: Path of the Endless: Emissary of Light
+One: Tier 0: Emissary: Emissary of Darkness, Tier 0: Sacred Defense: Emissary of Darkness, Tier 0: Spell Knowledge: Emissary of Darkness, Tier 0: Spell Knowledge II: Emissary of Darkness, Tier 0: Spell Knowledge III: Emissary of Darkness, Tier 0: Path of the Endless: Emissary of Darkness
 
-AbilityName: Condemn or Accept
-Descrip: Condemn the unusual or accept it as your own.}{-Condemnation: +5% Light, Negative, and Alignment Spell Critical Damage}{-Acceptance: +5% Spell Critical Damage with Fire, Cold, Acid, Electric, and Force Spells.}+2 Caster level and Max Caster Level with with Fire, Cold, Acid, Electric, and Force Spells.
+AbilityName: Condemnation or Acceptance
+Descrip: Condemn the unusual or accept it as your own.
 Tier: 5
 Cost: 2
 Flags: SelectorOnly
 Selector: Condemnation, Acceptance
+SelectorName: Condemnation
+Descrip: +5% Light, Negative, and Alignment Spell Critical Damage
+SelectorName: Acceptance
+Descrip: +5% Spell Critical Damage with Fire, Cold, Acid, Electric, and Force Spells.}+2 Caster level and Max Caster Level with with Fire, Cold, Acid, Electric, and Force Spells.
 
 AbilityName: Divine Empowerment
 Descrip: You gain +1 DC with Necromancy and Evocation spells.
@@ -3883,7 +3985,7 @@ Descrip: On Activation: For 20 seconds, you take 50% less damage from Fire, Cold
 Tier: 0
 
 AbilityName: Lesser Draconic Burst
-Descrip: Taking this Enhancement grants you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All five share a single cooldown.}}Centered Ki Breath Attack SLA: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 damage of the relevant element per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half (DC = 10 + WIS mod + [Evocation, Conjuration, or Transmutation depending on element] + Breath Weapon bonuses).}}Cost: 5 ki}Cooldown: 6 seconds
+Descrip: Taking this Enhancement grants you five SLAs, in Fire, Cold, Electric, Acid, and Poison. All five share a single cooldown.}}Centered Ki Breath Attack SLA: You channel ki to bring forth your Dragon's element in a small burst, hitting all enemies very close to you. Deals 1d6+1 damage of the relevant element per caster level (max 10d6+5 at caster level 10). A successful reflex save reduces damage by half (DC = 10 + WIS mod + [Evocation, Conjuration, or Transmutation depending on element] + Breath Weapon bonuses). (Cost: 5 ki, Cooldown: 6 seconds)
 Tier: 1
 Cost: 2
 

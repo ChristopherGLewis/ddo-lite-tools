@@ -11,18 +11,6 @@ Armor Proficiency: Light	Light Armor Proficiency	Light Armor Proficiency
 Armor Proficiency: Medium	Medium Armor Proficiency	Medium Armor Proficiency
 Athletic	Athletic	Athletic
 Augment Summoning	Augment Summoning	Augment Summoning
-Beloved of: Amaunator	Beloved of Amaunator	Beloved of Amaunator
-Beloved of: Aureon	Beloved of Aureon	
-Beloved of: Helm	Beloved of Helm	
-Beloved of: Lord of Blades	Beloved of the Lord of Blades	Beloved of the Lord of Blades
-Beloved of: Olladra	Beloved of Olladra	
-Beloved of: Onatar	Beloved of Onatar	
-Beloved of: Silvanus	Beloved of Silvanus	
-Beloved of: Silver Flame	Beloved of the Silver Flame	Beloved of the Silver Flame
-Beloved of: Sovereign Host	Beloved of the Sovereign Host	Beloved of the Sovereign Host
-Beloved of: The Blood of Vol	Beloved of the Blood of Vol	
-Beloved of: Undying Court	Beloved of the Undying Court	Beloved of the Undying Court
-Beloved of: Vulkoor	Beloved of Vulkoor	Beloved of Vulkoor
 Blinding Speed	Epic: Blinding Speed	Blinding Speed
 Bond: Bond of the Fallen	Aasimar: Bond: Protector	Bond of the Fallen
 Bond: Bond of the Protector	Aasimar: Bond: Fallen	Bond of the Protector
@@ -31,18 +19,6 @@ Brutal Throw	Brutal Throw	Brutal Throw
 Bullheaded	Bullheaded	Bullheaded
 Bulwark of Defense	Epic: Bulwark of Defense	Bulwark of Defense
 Burst of Glacial Wrath	Epic: Burst of Glacial Wrath	Burst of Glacial Wrath
-Child of: Amaunator	Child of Amaunator	Child of Amaunator
-Child of: Aureon	Child of Aureon	Child of Aureon
-Child of: Helm	Child of Helm	Child of Helm
-Child of: Lord of Blades	Child of the Lord of Blades	Child of the Lord of Blades
-Child of: Olladra	Child of Olladra	Child of Olladra
-Child of: Onatar	Child of Onatar	Child of Onatar
-Child of: Silvanus	Child of Silvanus	Child of Silvanus
-Child of: Silver Flame	Child of the Silver Flame	Child of the Silver Flame
-Child of: Sovereign Host	Child of the Sovereign Host	Child of the Sovereign Host
-Child of: The Blood of Vol	Child of the Blood of Vol	Child of the Blood of Vol
-Child of: Undying Court	Child of the Undying Court	Child of the Undying Court
-Child of: Vulkoor	Child of Vulkoor	Child of Vulkoor
 Cleave	Cleave	Cleave
 Combat Archery	Epic: Combat Archery	Combat Archery
 Combat Casting	Combat Casting	Combat Casting

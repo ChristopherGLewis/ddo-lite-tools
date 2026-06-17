@@ -28,6 +28,21 @@ Descrip: Improve your monk stances and elemental strikes. Automatically granted 
 Class: Monk 1, Dragon Disciple 1
 Level: 6
 
+FeatName: Advanced Elemental Kin Form
+Group: Heroic, Misc
+Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental form.
+Class: Blightcaster 13
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Blightcaster
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 13, 17
+Flags: SelectorOnly
+Selector: Thorn Knight, Hive Master
+SelectorName: Thorn Knight
+Descrip: {-You gain +3 bonus to the caster level and maximum caster level of all Thorn and Poison spells.}{-You take 15% more damage from fire.}{-You are a Plant, instead of your previous race. As a Plant, you have +100% fortification, immunity to sleep, stun, paralysis, poison and mind-affecting abilities.}{-You have a +10% exceptional bonus to AC and 100% fortification and 10% piercing and 5% bludgeoning absorption. The two sources of fortification stack, for a total of +200%.}{-You gain +2 Imbue dice.
+SelectorName: Hive Master
+Descrip: {-You gain a +3 bonus to the caster level and maximum caster level of Poison and Acid spells.}{-You take 15% more damage from cold.}{-You are a Vermin, instead of your previous race. As a swarm of Vermin, you have immunity to most Mind and knockdown effects.}{-You have +50% Concealment, Evasion, and Improved Evasion}{-You gain +2 Imbue dice.}{-You gain +1 Reflex save for every 2 Druid levels.
+
 FeatName: Alchemical Spellcasting
 Group: Heroic, Spellcasting
 Descrip: Alchemical Spellcasting
@@ -219,56 +234,27 @@ Descrip: Activate this ability to Inspire a single target ally or yourself. Gain
 Class: Bard 3, Stormsinger 3
 Flags: Unselectable
 
-FeatName: Beloved of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Bonus to attack and damage rolls with your favored weapon.
-Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12
-Flags: Deity
-All: Child of
-SharedSelector: Follower of
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-WikiName: Beloved of Amaunator
-Descrip: +3 to attack and damage rolls with heavy maces.
-SelectorName: Lord of Blades
-WikiName: Beloved of the Lord of Blades
-Descrip: +2 to attack and damage rolls with greatswords.
-SelectorName: Silver Flame
-WikiName: Beloved of the Silver Flame
-Descrip: +2 to attack and damage rolls with longbows.
-SelectorName: Sovereign Host
-WikiName: Beloved of the Sovereign Host
-Descrip: +2 to attack and damage rolls with longswords.
-SelectorName: Undying Court
-WikiName: Beloved of the Undying Court
-Descrip: +2 to attack and damage rolls with scimitars.
-SelectorName: Vulkoor
-WikiName: Beloved of Vulkoor
-Descrip: +2 to attack and damage rolls with shortswords.
-SelectorName: Aureon
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with quarterstaffs.
-SelectorName: Helm
-WikiName: Deity feats
-Descrip: +1 to attack and damage rolls with bastard swords.
-SelectorName: Olladra
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with sickles.
-SelectorName: Onatar
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with warhammers.
-SelectorName: Silvanus
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with mauls.
-SelectorName: The Blood of Vol
-WikiName: Deity feats
-Descrip: +3 to attack and damage rolls with daggers.
-
 FeatName: Beloved of the Divine
 Group: Heroic, Misc
 Descrip: +2 Bonus to Attack and Damage with Simple Favored Weapons. +2 Bonus to Attack and Damage with Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
-Class: Sacred Fist 12
+All: Child of Faith
+Class: Cleric 12, Favored Soul 12, Paladin 12, Dark Apostate 12, Sacred Fist 12
+
+FeatName: Blightcaster Wild Imbue
+Group: Heroic, Misc
+WikiName: Wild Shape#Animal Forms
+Descrip: At levels 2 and 11 a Blightcaster receives an Imbue that can only be used in Wolf or Hive form.
+Class: Blightcaster 2
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Blightcaster
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 2, 11
+Flags: SelectorOnly
+Selector: Biting Acid Imbue, Biting Poison Imbue
+SelectorName: Biting Acid Imbue
+Descrip: Biting Acid: Imbue Toggle: 1d6 acid damage with all melee attacks. Scales with spell power.
+SelectorName: Biting Poison Imbue
+Descrip: Biting Poison: Imbue Toggle: 1d8 poison damage with all melee attacks. Scales with spell power.
 
 FeatName: Blinding Speed
 Group: Epic, Melee, Range
@@ -340,56 +326,11 @@ WikiName: Channel Power
 Descrip: After blocking with an Orb or Staff for at least three seconds, get a +100 Competence Bonus to Universal Spell Power and a +4 to all Spell DCs for three seconds.
 Level: 21
 
-FeatName: Child of
-Group: Heroic, Misc
-WikiName: Deity feats#Deity Based Feats
-Descrip: Bonus to attack and damage rolls with your favored weapon.
-All: Follower of
-Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3
-Flags: Deity
-SharedSelector: Follower of
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
-SelectorName: Amaunator
-WikiName: Child of Amaunator
-Descrip: +2 to attack and damage rolls with heavy maces.
-SelectorName: Lord of Blades
-WikiName: Child of the Lord of Blades
-Descrip: +2 to attack and damage rolls with greatswords.
-SelectorName: Silver Flame
-WikiName: Child of the Silver Flame
-Descrip: +2 to attack and damage rolls with longbows.
-SelectorName: Sovereign Host
-WikiName: Child of the Sovereign Host
-Descrip: +2 to attack and damage rolls with longswords.
-SelectorName: Undying Court
-WikiName: Child of the Undying Court
-Descrip: +2 to attack and damage rolls with scimitars.
-SelectorName: Vulkoor
-WikiName: Child of Vulkoor
-Descrip: +2 to attack and damage rolls with shortswords.
-SelectorName: Aureon
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with quarterstaffs.
-SelectorName: Helm
-WikiName: Deity feats
-Descrip: +1 to attack and damage rolls with bastard swords.
-SelectorName: Olladra
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with sickles.
-SelectorName: Onatar
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with warhammers.
-SelectorName: Silvanus
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with mauls.
-SelectorName: The Blood of Vol
-WikiName: Deity feats
-Descrip: +2 to attack and damage rolls with daggers.
-
 FeatName: Child of Faith
 Group: Heroic, Misc
 Descrip: +2 Bonus to Attack and Damage with Simple and Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
-Class: Sacred Fist 3
+All: Follower of
+Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3, Sacred Fist 3
 
 FeatName: Cleave
 Group: Heroic, Melee
@@ -482,6 +423,33 @@ SelectorName: Good
 WikiName: Damage Reduction: Good
 Descrip: Gain DR 10/good.
 One: Follower of: Vulkoor, Follower of: The Blood of Vol
+
+FeatName: Dark Gifts
+Group: Heroic, Misc
+Descrip: Represent a bargain you've made with the Dark Powers and are intentionally stronger or more flexible than many standard feats. However, being a pact with the Dark Powers, each of them comes with a relatively unavoidable and significant cost.
+RaceBonus: Dark Bargainer
+Selector: Echoing Soul, Living Shadow, Mist Walker, Touch of Death, Form of Pain, Webtouched Wretch,  Minion of the Eldritch
+SelectorName: Echoing Soul
+Descrip: Your soul is fractured, shifted, or connected to another in some way. Perhaps your past or future is affecting your present soul, or perhaps some other entity is inextricably linked with you. In any case, it manifests in knowledge and fears that aren't your own.}{-+3 to all Skills plus an additional 1 for every 2 Character Levels you have.}{-+1 to all Saving Throws, plus an additional 1 for every 3 Character Levels you have.}{-When you get hit with Melee or Ranged attacks, there is a very small chance your Echoing Soul will cause you to become Afraid, Blinded, or Immobilized for six seconds with no save. Immunities to these conditions do not apply to this effect. Your echoes will grow louder before this happens giving you some warning.
+None: Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+SelectorName: Living Shadow
+Descrip: Your Shadow extends your reach, acting out your dark impulses.}Your basic Melee attacks have extended range, hitting further in front of you.}Whenever you land a Critical Hit, there is a small chance your shadow exerts its will, causing your damage to be reduced by 15% for 6 seconds. This can only occur once every 30 seconds.}{-This is the same extension effect that Shadowdancer grants, and does not stack with that skill.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+SelectorName: Mist Walker
+Descrip: You have learned how to navigate the Mists with time and a little luck.}You gain Misty Step: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 15 second cooldown.}When you use this Misty Step, there is a chance the Mists catch up with you and you gain Exhaustion for 6 seconds (-50% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble). This exhaustion cannot be warded or removed by effects that remove Exhaustion.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+SelectorName: Touch of Death
+Descrip: Your every touch is pain, but you can use that to deliver death to enemies.}{-+3 Negative Spell Power per Character Level{-+3 Negative Healing Amplification per Character Level{--5 Positive Spell Power per Character Level{--5 Positive Healing Amplification per Character Level
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+SelectorName: Form of Pain
+Descrip: Your body is cursed to be prone to all manner of damage, but with the ability to withstand it.}Passively grants +5 PRR/MRR}When you take damage your body changes and you gain the Form of Pain effect which grants +2 Physical Resistance Rating/Magical Resistance Rating but also reduces movement speed and increases spell costs by 1% as the pain distracts you. This can stack 10 times, with one stack being removed every 5 seconds.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
+SelectorName: Webtouched Wretch
+Descrip: You've become entwined with a great cosmic web, which occasionally becomes coterminous with reality.}Your offensive spells, melee and ranged attacks attacks occasionally cause strange spectral webs coat your enemies either slowing them or entangling them for up to six seconds with no save.}This does not work on bosses, raid bosses, or oozes but will work on incorporal or fiery creatures which are normally immune to web, including monsters or Champions protected by Freedom of Movement.}When you get hit with Melee or Ranged attacks, there is a small chance the webs turn on you, applying a slow effect which lasts 6 seconds. Spells/Immunities like Freedom of Movement do not prevent this.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Minion of the Eldritch
+SelectorName: Minion of the Eldritch
+Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
+None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch
 
 FeatName: Defensive Roll
 Group: Heroic, Defense
@@ -732,33 +700,6 @@ WikiName: Doublestrike_(epic_destiny_feat)
 Descrip: +5% Doublestrike.
 Level: 22
 
-FeatName: Draconic Aura 1
-Group: Heroic, Misc
-Descrip: Choose one Basic Aura:}{-Nevalarich's Hunger: You and allies close to you get a +2 Morale Bonus to Attack Rolls}{-Aussircaex's Defiance: You and allies close to you get a +2 Morale Bonus to Saving Throws}{-Thraxata's Instinct: You and allies close to you get a +2 Morale Bonus to Tactical Feat DCs
-Class: Dragon Lord 1
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 1
-Selector: Nevalarich's Hunger, Aussircaex's Defiance, Thraxata's Instinct
-
-FeatName: Draconic Aura 2
-Group: Heroic, Misc
-Descrip: Choose one Secondary Aura:}{-Velah's Fury: You and allies close to you get a +3 Morale Bonus to Damage Rolls}{-Sinvala's Toughness: You and allies close to you get a +3 Morale Bonus to PRR}{-Eternity's Ward: You and allies close to you get a +3 Morale Bonus to MRR
-Class: Dragon Lord 8
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 8
-Selector: Velah's Fury, Sinvala's Toughness, Eternity's Ward
-
-FeatName: Draconic Aura 3
-Group: Heroic, Misc
-Descrip: Choose one Basic Aura:}{-The Truthful One's Might: You and allies close to you get a +4 Morale Bonus to Melee Power}{-Aurgloroasa's Ascended Wrath: You and allies close to you get a +4 Morale Bonus to Ranged Power}{-Kor Kaza's Forbidden Power: You and allies close to you get a +4 Morale Bonus to Universal Spell Power
-Class: Dragon Lord 16
-Flags: ClassOnly
-ClassOnlyClass: Dragon Lord
-ClassOnlyLevel: 16
-Selector: The Truthful One's Might, Aurgloroasa's Ascended Wrath, Kor Kaza's Forbidden Power
-
 FeatName: Draconic Ancestry
 Group: Heroic, Misc
 Descrip: Choose an element to gain stacking resistance equal to your character level. Enhancements can increase spell power and unlock a breath weapon for that element.
@@ -786,7 +727,6 @@ Group: Heroic, Misc
 Descrip: You gain an additional spell preparation slot per spell level to cast Summon Nature's Ally spell of that level.
 Class: Druid 1, Blightcaster 1
 Flags: Unselectable
-
 
 FeatName: Dark Apostate Spontaneous Casting
 Group: Heroic, Misc
@@ -1083,6 +1023,7 @@ FeatName: Favored Enemy
 Group: Heroic, Misc
 Descrip: Each Favored Enemy grants +2 to damage rolls against all chosen favored enemies, cumulative. (Pure rangers get +10 to damage rolls against five different favored enemies.)
 Flags: ClassOnly
+ClassBonus: Ranger, Dark Hunter
 ClassOnlyClass: Ranger, Dark Hunter
 ClassOnlyLevel: 1, 5, 10, 15, 20
 Class: Ranger 1, Dark Hunter 1
@@ -1159,6 +1100,12 @@ WikiName: Epic Destiny Feats
 Descrip: Melee weapons and unarmed attacks deal 50-300 extra untyped damage against enemies with 90% or more HP. This extra damage won't trigger twice within three seconds.
 Level: 25
 
+FeatName: Flight of Kings
+Group: Heroic, Misc
+Descrip: Memories of flight lie within you. You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk (Cooldown: 15 seconds). +20% Action boost bonus to movement speed for 6 seconds.
+Class: Dragon Disciple 12
+Flags: Unselectable
+
 FeatName: Flurry of Blows
 Group: Heroic, Misc
 Descrip: While centered (unarmored, unencumbered, and wielding monk weapons), you get an increase to your attack bonus, and a 2% dodge bonus at monk levels 1, 2, and 3 for a total of 6%. The attack bonus increase starts at +1 (at level 1) and increases by +1 for every four additional monk levels.
@@ -1173,43 +1120,43 @@ Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1
 Flags: Deity, ClassOnly
 ClassOnlyClass: Cleric, Favored Soul, Paladin, Dark Apostate
 ClassOnlyLevel: 1
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
+Selector: Amaunator, Helm, Silvanus, Aureon, The Blood of Vol, Lord of Blades, Olladra, Onatar, Silver Flame, Sovereign Host, Undying Court, Vulkoor
 SelectorName: Amaunator
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
+Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
+SelectorName: Helm
+Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
+Race: Required, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
+SelectorName: Silvanus
+Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
+Race: Required, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
+SelectorName: Aureon
+Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+SelectorName: The Blood of Vol
+Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
 SelectorName: Lord of Blades
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
+SelectorName: Olladra
+Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+SelectorName: Onatar
+Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
 SelectorName: Silver Flame
 Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
 SelectorName: Sovereign Host
 Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
 SelectorName: Undying Court
 Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
-Race: Required, Elf, Half-Elf, Wood Elf
+Race: Required, Elf, Half-Elf, Wood Elf, Eladrin
 SelectorName: Vulkoor
 Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
 Race: Required, Drow
-SelectorName: Aureon
-Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Helm
-Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
-SelectorName: Olladra
-Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Onatar
-Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
-SelectorName: Silvanus
-Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
-SelectorName: The Blood of Vol
-Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 
 FeatName: Follower of the Path of Light
 Group: Heroic, Misc
@@ -1701,7 +1648,7 @@ FeatName: Improved Sneak Attack
 Group: Epic, Melee, Range
 Descrip: +3d6 Sneak Attack damage.
 Level: 21
-Class: Rogue 12
+Class: Rogue 12, Arcane Trickster 12
 Stat: Dexterity 21
 
 FeatName: Improved Sunder
@@ -1975,6 +1922,22 @@ Group: Heroic, Spellcasting
 Descrip: Grants +80 spell points, Echoes of Power, +5% spell critical chance and proficiency with Orbs.
 RaceBonus: Human, Purple Dragon Knight
 
+FeatName: Major Draconic Aura
+Group: Heroic, Misc
+Descrip: Choose one Secondary Aura.
+Class: Dragon Lord 8
+Flags: ClassOnly
+ClassBonus: Dragon Lord
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 8
+Selector: Velah's Fury, Sinvala's Toughness, Eternity's Ward
+SelectorName: Velah's Fury
+Descrip: You and allies close to you get a +3 Morale Bonus to Damage Rolls.
+SelectorName: Sinvala's Toughness
+Descrip: You and allies close to you get a +3 Morale Bonus to PRR.
+SelectorName: Eternity's Ward
+Descrip: You and allies close to you get a +3 Morale Bonus to MRR.
+
 FeatName: Manyshot
 Group: Heroic, Range
 Descrip: Bow Attack: Ranged Bow Attack: Expend one charge to fire three arrows in quick succession. You have +1 Critical Threat Range and Critical Multiplier with these shots. Each of these shots can Doubleshot. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Manyshot (Requires a Longbow or Shortbow to use). Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows.
@@ -2074,6 +2037,38 @@ Descrip: The bonuses of the barbarian's rage increase to a total of +10 strength
 Flags: Unselectable
 Class: Barbarian 20
 
+FeatName: Minor Draconic Aura
+Group: Heroic, Misc
+Descrip: Choose one Basic Aura
+Class: Dragon Lord 1
+Flags: ClassOnly
+ClassBonus: Dragon Lord
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 1
+Selector: Nevalarich's Hunger, Aussircaex's Defiance, Thraxata's Instinct
+SelectorName: Nevalarich's Hunger
+Descrip: You and allies close to you get a +2 Morale Bonus to Attack Rolls.
+SelectorName: Aussircaex's Defiance
+Descrip: You and allies close to you get a +2 Morale Bonus to Saving Throws.
+SelectorName: Thraxata's Instinct
+Descrip: You and allies close to you get a +2 Morale Bonus to Tactical Feat DCs
+
+FeatName: Minor Elemental Kin Form
+Group: Heroic, Misc
+WikiName: Wild Shape#Magical Beast Forms
+Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
+Class: Blightcaster 4
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Blightcaster
+ClassOnlyClass: Blightcaster
+ClassOnlyLevel: 4, 8
+Flags: SelectorOnly
+Selector: Hive Keeper, Thorn Kin
+SelectorName: Hive Keeper
+Descrip: {-You gain a +1 bonus to the caster level and maximum caster level of Poison and Acid spells.}{-You take 10% more damage from cold.}{-You are a Hybrid. You retain your prior Race (Warforged retain the ability to be repaired)}{-You have +25% Concealment and Evasion.}{-You gain +1 Reflex save for every 3 Druid levels.
+SelectorName: Thorn Kin
+Descrip: {-You gain a +1 bonus to the caster level and maximum caster level of all Thorn and Poison spells}{-You take 10% more damage from fire.}{-You are a Hybrid. You retain your prior Race (Warforged retain the ability to be repaired)}{-You have a +10% exceptional bonus to AC and 50% fortification.
+
 FeatName: Mithral Body
 Group: Heroic, Defense
 Descrip: Docents you equip are considered light armor in terms of PRR/MRR, carry 15% ASF and have an MDB of 5.
@@ -2129,7 +2124,7 @@ RaceBonus: Human, Purple Dragon Knight
 FeatName: Nimble Fingers
 Group: Heroic, Misc
 Descrip: +2 bonus to the Disable Device and Open Lock skills.
-Class: Rogue 1, Artificer 1, Dark Hunter 1
+One: Trapfinding
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Offhand Versatility
@@ -2167,36 +2162,12 @@ FeatName: Pact
 Group: Heroic, Spellcasting, Misc
 WikiName: Warlock#Pact Choices
 Descrip: Your Pact applies extra damage to your Eldritch Blast, adds spells to your spell list and grants special abilities. Some Pacts carry alignment restrictions.
-Flags: Pact
-Class: Warlock 1, Acolyte 1
-Flags: ClassOnly
+Flags: Pact, ClassOnly
+Class: Warlock 1
+ClassBonus: Warlock
 ClassOnlyClass: Warlock
 ClassOnlyLevel: 1
-Selector: Fey, Fiend, Fiend (Acolyte), Great Old One, Celestial, Abyss, Carceri Storm, Dark Powers
-SelectorName: Fey
-Descrip: Sonic Damage}Targets Reflex saves}2: Obscuring Mist}5: Blindness}6: Daze Monster}9: Slow}14: Greater Dispel Magic}15: Abundant Step}17: Otto's Sphere of Dancing}19: Otto's Irresistible Dance
-NotRace: Dark Bargainer
-NotClass: Acolyte
-SelectorName: Fiend
-Descrip: Fire Damage}Targets Fortitude saves}2: Command}5: Rage}6: +2 all saves}9: Fire Shield}14: Binding Chain}15: Hurl through Hell}17: Power Word: Blind}19: Howl of Terror
-Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
-NotRace: Dark Bargainer
-NotClass: Acolyte
-SelectorName: Fiend (Acolyte)
-Descrip: Fire Damage}Targets Fortitude saves}6: Fiendskin: +1 1 Profane Bonus to Fire Resistance Per Acolyte Level
-Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
-ClassOnly: Acolyte
-SelectorName: Great Old One
-Descrip: Acid Damage}Targets Will saves}2: Entangle}5: Knock}6: +5 MRR, +25% Fort}9: Phantasmal Killer}14: Dominate Person}15: Charm Monster}17: Mass Suggestion}19: Power Word: Kill
-Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
-NotClass: Monk
-NotRace: Dark Bargainer
-NotClass: Acolyte
-SelectorName: Celestial
-Descrip: Electric Damage}Targets Will saves}2: Bless}5: Soundburst}6: Celestial Attunement (+5 PRR and +1 to all Saves)}9: Magic Circle Against Evil}14: Prayer}15: Ameliorate (Obliterate undead)}17: Holy Aura}19: Freedom of Movement
-Alignment: Lawful Good, Lawful Neutral, Neutral Good, True Neutral
-NotRace: Dark Bargainer
-NotClass: Acolyte
+Selector: Abyss, Carceri Storm, Celestial, Dark Powers, Fey, Fiend, Great Old One
 SelectorName: Abyss
 Descrip: Negative Damage}Targets Fortitude saves}2: Mage Armor}5: Spawn Screen}6: Unhallowed Flesh:(+5 PRR and +5 MRR) }9: Halt Undead}14: Death Aura}15: Channel the Abyss (Undead benefits)}17: Symbol of Pain}19: Rend the Soul
 Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
@@ -2206,9 +2177,36 @@ SelectorName: Carceri Storm
 Descrip: Cold Damage}Targets Reflex saves}2: Merfolk's Blessing}5: Gust of Wind}6: Frozen Footsteps (+10% Cold Absorption)}9: Sleet Storm}14: Ice Storm}15: Absolute Zero (Lock single enemy in ice)}17: Mass Suggestion}19: Greater Creeping Cold
 NotRace: Dark Bargainer
 NotClass: Acolyte
+SelectorName: Celestial
+Descrip: Electric Damage}Targets Will saves}2: Bless}5: Soundburst}6: Celestial Attunement (+5 PRR and +1 to all Saves)}9: Magic Circle Against Evil}14: Prayer}15: Ameliorate (Obliterate undead)}17: Holy Aura}19: Freedom of Movement
+Alignment: Lawful Good, Lawful Neutral, Neutral Good, True Neutral
+NotRace: Dark Bargainer
+NotClass: Acolyte
+SelectorName: Great Old One
+Descrip: Acid Damage}Targets Will saves}2: Entangle}5: Knock}6: +5 MRR, +25% Fort}9: Phantasmal Killer}14: Dominate Person}15: Charm Monster}17: Mass Suggestion}19: Power Word: Kill
+Alignment: Chaotic Neutral, Chaotic Good, True Neutral, Neutral Good
+NotClass: Monk
+NotRace: Dark Bargainer
+NotClass: Acolyte
+SelectorName: Fey
+Descrip: Sonic Damage}Targets Reflex saves}2: Obscuring Mist}5: Blindness}6: Daze Monster}9: Slow}14: Greater Dispel Magic}15: Abundant Step}17: Otto's Sphere of Dancing}19: Otto's Irresistible Dance
+NotRace: Dark Bargainer
+NotClass: Acolyte
+SelectorName: Fiend
+Descrip: Fire Damage}Targets Fortitude saves}2: Command}5: Rage}6: +2 all saves}9: Fire Shield}14: Binding Chain}15: Hurl through Hell}17: Power Word: Blind}19: Howl of Terror
+Alignment: Lawful Neutral, Chaotic Neutral, True Neutral
+NotRace: Dark Bargainer
+NotClass: Acolyte
 SelectorName: Dark Powers
 Descrip: Evil Damage}Targets Will saves}2: Dread Mist}5: Leser Death Aura}6: Mist Favored (Your Dread Mists' damage changes to 1d3 per Caster Level. This increases to 1d4 at Character Level 12.)}9: Negative Energy Burst}14: Death Aura}15: 	Call on the Mists(Enemies in a small area who are currently affected by Dread Mist must make a saving throw (DC 15 + highest of INT or CHA mod + Necromancy Bonuses) or die, being consumed by the mists. 20 Spell Points, 25 second cooldown.)}17:  Dust to Dust: (This is Disintegrate. But Necromancy-schooled.)}19: Greater Death Aura
 RaceOnly: Dark Bargainer
+
+FeatName: Pact True Fiend
+Group: Heroic, Spellcasting, Misc
+WikiName: Warlock#Pact Choices
+Flags: Pact, Unselectable
+Descrip: Your Pact applies extra damage to your Eldritch Blast, adds spells to your spell list and grants special abilities. Some Pacts carry alignment restrictions.}{-Adds Fire Damage}{-Targets Fortitude saves}{-Level 6: Fiendskin: +1 Profane Bonus to Fire Resistance Per Acolyte Level
+Class: Acolyte 1
 
 FeatName: Pact Attunement
 Group: Heroic, Misc
@@ -2697,9 +2695,9 @@ RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer
 Selector: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Hide, Intimidate, Jump, Listen, Move Silently, Open Lock, Perform, Repair, Search, Spot, Swim, Tumble, Use Magic Device, Spellcraft, Heal
 SelectorName: Disable Device
-Class: Rogue 1, Artificer 1
+Class: Rogue 1, Artificer 1, Arcane Trickster 1
 SelectorName: Open Lock
-Class: Rogue 1, Artificer 1
+Class: Rogue 1, Artificer 1, Arcane Trickster 1
 SelectorName: Perform
 Class: Bard 1, Stormsinger 1
 
@@ -2879,6 +2877,22 @@ WikiName: Suggesion_(song)
 FeatName: Sunder
 Group: Heroic, Melee
 Descrip: +10 on Attack Roll. Tactical Melee Attack: Using this attack, you may reduce the target's AC by 10% and Fortification by 25% for 6 seconds (DC 10 + STR + Sunder Bonuses). Some creatures may be immune to the Sunder effect. (Cooldown: 10 seconds)
+
+FeatName: Superior Draconic Aura
+Group: Heroic, Misc
+Descrip: Choose one Basic Aura.
+Class: Dragon Lord 16
+Flags: ClassOnly
+ClassBonus: Dragon Lord
+ClassOnlyClass: Dragon Lord
+ClassOnlyLevel: 16
+Selector: The Truthful One's Might, Aurgloroasa's Ascended Wrath, Kor Kaza's Forbidden Power
+SelectorName: The Truthful One's Might
+Descrip: You and allies close to you get a +4 Morale Bonus to Melee Power.
+SelectorName: Aurgloroasa's Ascended Wrath
+Descrip: You and allies close to you get a +4 Morale Bonus to Ranged Power.
+SelectorName: Kor Kaza's Forbidden Power
+Descrip: You and allies close to you get a +4 Morale Bonus to Universal Spell Power.
 
 FeatName: Superior Weapon Focus
 Abbreviation: Sup Weapon Focus
@@ -3088,6 +3102,12 @@ Descrip: This feat allows an Artificer to summon a Iron Defender Homunculus
 Class: Artificer 1
 Flags: Unselectable
 
+FeatName: Vampiric Bite
+Group: Heroic, Melee
+Descrip: Single Target Action: You bite target creature at touch range, dealing 1d4 Piercing Damage per Character Level. This scales with 200% Melee or Ranged Power (though is not a weapon attack and cannot crit). If that creature is a living and corporeal creature, you heal for 20 + (Total Character Level x Constitution Modifier) number of Hit Points from Positive energy. (15 second cooldown).
+Race: Required, Dhampir, Dark Bargainer
+Flags: RaceOnly
+
 FeatName: Venom Immunity
 Group: Heroic, Misc
 Descrip: You are immune to ability score damage from natural poisons. (This has no effect on magical or supernatural poisons.)
@@ -3111,7 +3131,7 @@ Race: Required, Warforged, Bladeforged
 FeatName: Watchful Eye
 Group: Epic, Misc
 WikiName: Epic Feats#General Epic passive feats
-Descrip: If you pass within 5 feet of a trap, make a Spot check to reveal it as if actively Searching. (Requires 1 Rogue, Artificer, or Dark Hunter level to reveal high level traps.)
+Descrip: If you pass within 5 feet of a trap, make a Spot check to reveal it as if actively Searching. (Requires Trapfinding feat to reveal high level traps.)
 Level: 27
 
 FeatName: Weapon Finesse
@@ -3193,31 +3213,46 @@ FeatName: Wild Shape 1
 Group: Heroic, Misc
 WikiName: Wild Shape#Animal Forms
 Descrip: At levels 2 and 5 a druid may use their 'Wild Shape' feat to change into an animal.
-Class: Druid 2, Blightcaster 2
-Flags: ClassOnly
+Class: Druid 2
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Druid
 ClassOnlyClass: Druid
 ClassOnlyLevel: 2, 5
 Selector: Bear, Wolf
+SelectorName: Bear
+Descrip: While in this form gain +2 racial bonus to constitution, +10% exceptional bonus to AC, and your attacks benefit from Strikethrough as long as you are not in the Defensive Fighting stance. If unarmed, you do 1d8 base damage, x2 critical on 20.
+SelectorName: Wolf
+Descrip: While in this form, you gain a +10% Combat Style bonus to attack speed, +3 to attack while flanking, +1d6 sneak attack damage, and +10% to movement speed. If unarmed, you do 1d6 base damage, x2 critical on 19-20.
 
 FeatName: Wild Shape 2
 Group: Heroic, Misc
 WikiName: Wild Shape#Magical Beast Forms
 Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
 Class: Druid 8
-Flags: ClassOnly
-ClassOnlyClass: Druid, Blightcaster
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Druid
+ClassOnlyClass: Druid
 ClassOnlyLevel: 8, 11
-Selector: Dire Bear, Winter Wolf 
+Selector: Dire Bear, Winter Wolf
+SelectorName: Dire Bear
+Descrip: You gain +4 racial bonus to constitution, and +15% exceptional bonus to AC. Gain 20% Strikethrough chance. Unarmed damage is 1d12, critical profile 20/x3
+SelectorName: Winter Wolf
+Descrip: You gain a +20% combat style bonus to melee attack speed, +5 to attack while flanking, +2d6 sneak attack damage, and +[10+druid level]% to movement speed. If unarmed, you do 1d10, critical profile 19-20/x3.
 
 FeatName: Wild Shape 3
 Group: Heroic, Misc
 WikiName: Wild Shape#Elemental Forms
-Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental.}Elemental Form: Transform into a [Fire/Water] Elemental. While in this form, you have +3 bonus to caster level and max caster level for your element's spells, but the opposite spells have a -3 penalty to caster level and max caster level. You also gain 65% absorption for your element, but take 15% more damage form the opposite element. You also gain +3 bonus Imbue Dice. While in this Elemental form you gain access to a number of spells that require it.}You are considered an Elemental. You gain a +10 racial bonus to your saving throws against magical poisons, and racial immunity to natural poisons, sleep, paralysis, and stun, and a 100% bonus to fortification. If you are a Warforged, you are no longer considered a Living Construct, and can now be healed normally by positive energy spells, and you become immune to repair spells.}You also gain the following:}[Fire/Water] Elemental Imbue: Imbue Toggle: Wreathe your weapons in elemental energy, dealing 1d6 [Fire/Water] damage on hit, scaling with Spell Power. Only applies  in [Fire/Water] Elemental Form.
+Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental.
 Class: Druid 13
-Flags: ClassOnly
+Flags: ClassOnly, SelectorOnly
+ClassBonus: Druid
 ClassOnlyClass: Druid
 ClassOnlyLevel: 13, 17
 Selector: Fire Elemental, Water Elemental
+SelectorName: Fire Elemental
+Descrip: {-You gain a +3 bonus to the caster level and maximum caster level of Fire spells.}{-Your Water spells get a -3 penalty to caster level and max caster level.}{-You gain a +65% bonus to fire absorption (does not stack with Fire Shields or Fire Energy Sheath), and 15% vulnerability to cold.}{-As a Fire Elemental, you take extra damage from specialized effects such as Quench.}{-You gain access to a Fire element Imbue, which applies to Melee or Ranged attacks, and scales with 100% Fire spellpower.
+SelectorName: Water Elemental
+Descrip: {-You gain a +3 bonus to the caster level and maximum caster level of Water and Cold spells}{-Your Fire spells get a -3 penalty to caster level and max caster level.}{-You gain a +65% bonus to cold absorption (does not stack with Fire Shields or Cold Energy Sheath), and 15% vulnerability to fire-based attacks.}{-You gain a bonus of +20 to Swim.}{-As a Water Elemental, you take extra damage from specialized effects such as Horrid Wilting.}{-You gain access to a Cold element Imbue, which applies to Melee or Ranged attacks, and scales with 100% Cold spellpower.
 
 FeatName: Wild Shape Plague Wolf
 Group: Heroic, Misc
@@ -3232,38 +3267,6 @@ WikiName: Wild Shape#Animal Forms
 Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change into a Blighted Wolf.
 Class: Blightcaster 11
 Flags: Unselectable
-
-FeatName: Blightcaster Wild Imbue
-Group: Heroic, Misc
-WikiName: Wild Shape#Animal Forms
-Descrip: At levels 2 and 11 a Blightcaster receives an Imbue that can only be used in Wolf or Hive form.}}Biting Acid: Imbue Toggle: 1d6 acid damage with all melee attacks. Scales with spell power.}}Biting Poison: Imbue Toggle: 1d8 poison damage with all melee attacks. Scales with spell power.
-Class: Blightcaster 2
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 2, 11
-Flags: SelectorOnly
-Selector: Biting Acid Imbue, Biting Poison Imbue
-
-FeatName: Minor Elemental Kin Form
-Group: Heroic, Misc
-WikiName: Wild Shape#Magical Beast Forms
-Descrip: At levels 8 and 11 a druid may use their 'Wild Shape' feat to change into a magical beast.
-Class: Blightcaster 4
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 4, 8
-Flags: SelectorOnly
-Selector: Hive Keeper, Thorn Kin
-
-FeatName: Advanced Elemental Kin Form
-Group: Heroic, Misc
-Descrip: At levels 13 and 17 a druid may use their 'Wild Shape' feat to change into an elemental form.}{-Thorn Knight: A more advanced form of Thorn Kin, you are now also plant kind beneath your thorny armor. You are considered a plant for purposes of most immunities, poison, sleep, paralysis, stun, mind effects. You can no longer drown in water. +3 bonus to caster level and max caster level of Physical and Poison spells. You gain 10% absorption against piercing damage and 5% absorb against blunt damage. You gain +2 imbue dice. 10% exceptional bonus to armor class and 100% fortification. 15% vulnerability to fire damage.}{-Hive Master: You have become one with the swarm. Your body shifts between yourself and a cloud of insects, as you merge in and out of the swarm. You are considered vermin for the purposes of immunities and are immune to mind effects and knock down. +3 bonus to caster level and max caster level of Poison and Acid Spells. You are ethereal to monsters while tumbling. You gain 50% concealment as displacement and Improved Evasion. You gain +2 Imbue Dice and +1 to Reflex saves for every 2 druid levels (Max 10). 15% vulnerability to cold and -15 on diplomacy checks.
-Class: Blightcaster 13
-Flags: ClassOnly
-ClassOnlyClass: Blightcaster
-ClassOnlyLevel: 13, 17
-Flags: SelectorOnly
-Selector: Thorn Knight, Hive Master
 
 FeatName: Wild Magic
 Group: Heroic, Spellcasting
@@ -3290,53 +3293,6 @@ BAB: 1
 Stat: Wisdom 13
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord, Monk
-
-FeatName: Flight of Kings
-Group: Heroic, Misc
-Descrip: Memories of flight lie within you. You are able to leap through the air to bring the fight to your enemies or traverse chasms that make normal adventurers balk. Cooldown 15 seconds.  %20 Action boost bonus to movement speed for 6 seconds.
-Class: Dragon Disciple 12
-Flags: Unselectable
-
-FeatName: Vampiric Bite
-Group: Heroic, Melee
-Descrip: Single Target Action: You bite target creature at touch range, dealing 1d4 Piercing Damage per Character Level. This scales with 200% Melee or Ranged Power (though is not a weapon attack and cannot crit). If that creature is a living and corporeal creature, you heal for 20 + (Total Character Level x Constitution Modifier) number of Hit Points from Positive energy. (15 second cooldown).
-Race: Required, Dhampir, Dark Bargainer
-Flags: RaceOnly
-
-FeatName: Dark Gifts
-Group: Heroic, Misc
-Descrip: Represent a bargain you've made with the Dark Powers and are intentionally stronger or more flexible than many standard feats. However, being a pact with the Dark Powers, each of them comes with a relatively unavoidable and significant cost.
-RaceBonus: Dark Bargainer
-Selector: Echoing Soul,Living Shadow,Mist Walker, Touch of Death, Form of Pain, Webtouched Wretch,  Minion of the Eldritch
-
-SelectorName: Echoing Soul
-Descrip: Your soul is fractured, shifted, or connected to another in some way. Perhaps your past or future is affecting your present soul, or perhaps some other entity is inextricably linked with you. In any case, it manifests in knowledge and fears that aren't your own.}{-+3 to all Skills plus an additional 1 for every 2 Character Levels you have.}{-+1 to all Saving Throws, plus an additional 1 for every 3 Character Levels you have.}{-When you get hit with Melee or Ranged attacks, there is a very small chance your Echoing Soul will cause you to become Afraid, Blinded, or Immobilized for six seconds with no save. Immunities to these conditions do not apply to this effect. Your echoes will grow louder before this happens giving you some warning.
-None: Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Living Shadow
-Descrip: Your Shadow extends your reach, acting out your dark impulses.}Your basic Melee attacks have extended range, hitting further in front of you.}Whenever you land a Critical Hit, there is a small chance your shadow exerts its will, causing your damage to be reduced by 15% for 6 seconds. This can only occur once every 30 seconds.}{-This is the same extension effect that Shadowdancer grants, and does not stack with that skill.
-None: Dark Gifts: Echoing Soul, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Mist Walker
-Descrip: You have learned how to navigate the Mists with time and a little luck.}You gain Misty Step: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 15 second cooldown.}When you use this Misty Step, there is a chance the Mists catch up with you and you gain Exhaustion for 6 seconds (-50% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble). This exhaustion cannot be warded or removed by effects that remove Exhaustion.
-None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Touch of Death
-Descrip: Your every touch is pain, but you can use that to deliver death to enemies.}{-+3 Negative Spell Power per Character Level{-+3 Negative Healing Amplification per Character Level{--5 Positive Spell Power per Character Level{--5 Positive Healing Amplification per Character Level
-None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Form of Pain
-Descrip: Your body is cursed to be prone to all manner of damage, but with the ability to withstand it.}Passively grants +5 PRR/MRR}When you take damage your body changes and you gain the Form of Pain effect which grants +2 Physical Resistance Rating/Magical Resistance Rating but also reduces movement speed and increases spell costs by 1% as the pain distracts you. This can stack 10 times, with one stack being removed every 5 seconds.
-None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Webtouched Wretch
-Descrip: You've become entwined with a great cosmic web, which occasionally becomes coterminous with reality.}Your offensive spells, melee and ranged attacks attacks occasionally cause strange spectral webs coat your enemies either slowing them or entangling them for up to six seconds with no save.}This does not work on bosses, raid bosses, or oozes but will work on incorporal or fiery creatures which are normally immune to web, including monsters or Champions protected by Freedom of Movement.}When you get hit with Melee or Ranged attacks, there is a small chance the webs turn on you, applying a slow effect which lasts 6 seconds. Spells/Immunities like Freedom of Movement do not prevent this.
-None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Minion of the Eldritch
-
-SelectorName: Minion of the Eldritch
-Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
-None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch
-
 
 FeatName: Enlarge Self
 Group: Heroic, Misc
