@@ -4643,7 +4643,6 @@ AbilityName: Child of the Mountain
 Descrip: At Tier 1 and Tier 2, you gain +1 and +2 to Fortitude saves, respectively. At Tier 3, you gain +5% Quality bonus to maximum hit points and +3 to Fortitude saves.
 Tier: 2
 Ranks: 3
-Cost: 2
 
 AbilityName: Dwarven Weapon Training
 Descrip: Choose the same Training from Dwarven Weapon Training, Tier 1:}{-Axe Training: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, and throwing axes. +1 to hit and +2 damage with greataxes. +5% Strikethrough chance while wielding a Dwarven Waraxe.}{-Pick and Hammer Training: +1 to hit and damage with heavy picks, light hammer, light picks, throwing hammers, and warhammers. +1 to hit and +2 damage with mauls.
@@ -4671,7 +4670,7 @@ Tier: 3
 Ranks: 3
 
 AbilityName: Stand Like Stone
-Descrip: Action Boost: For 12/15/20 seconds you gain +[10/20/30] Balance, Physical Resistance Rating, and stacking Energy Resistance, but have a 50% penalty to movement speed, sink in water, and cannot fly. (Cooldown: 3 minutes)
+Descrip: Action Boost: For 12/15/20 seconds you gain +[10/20/30] Balance, Physical Resistance Rating, and stacking Energy Resistance, but have a 20% penalty to movement speed, sink in water, and cannot fly. (Cooldown: 3 minutes)
 Tier: 3
 Ranks: 3
 All: Tier 2: Child of the Mountain
@@ -4684,8 +4683,23 @@ All: Tier 2: Dwarven Weapon Training
 Flags: SelectorOnly
 SharedSelector: Tier 2: Dwarven Weapon Training
 
+AbilityName: Dwarven Favored Enemies
+Descrip: Multiselector
+Tier: 3
+Selector: Giant , Monstrous Humanoid, Vermin
+SelectorName: Giant 
+Descrip: You gain the Favored Enemy: Giant feat, allowing you to consider Giants a Favored Enemy.
+None: Feat: Favored Enemy: Giant, Harper Agent Tier 3: Know Your Foe: Giant, Deepwood Stalker Tier 5: Extra Favored Enemy: Giant
+SelectorName: Monstrous Humanoid 
+Descrip: You gain the Favored Enemy: Monstrous Humanoid feat, allowing you to consider Monstrous Humanoids a Favored Enemy.
+None: Feat: Favored Enemy: Monstrous Humanoid,   Harper Agent Tier 3: Know Your Foe: Monstrous Humanoid, Deepwood Stalker Tier 5: Extra Favored Enemy: Monstrous Humanoid 
+SelectorName: Vermin
+Descrip: You gain the Favored Enemy: Vermin feat, allowing you to consider Vermin a Favored Enemy.
+None: Feat: Favored Enemy: Vermin, Deepwood Stalker Tier 5: Extra Favored Enemy: Vermin
+
+
 AbilityName: Hands of Stone
-Descrip: (Cooldown: 30 seconds. Metamagic: Empower, Maximize. Spell Resistance: No.)}{-Greater Dragonmark Spell: Earthgrab (Target corporeal creature is grabbed by earthen hands and rendered helpless. (10 + Character Level + Constitution modifier + Transmutation Bonuses Negates.))}}Note: Shares charges with Greater Dragonmark of Warding
+Descrip: (Cooldown: 30 seconds. Metamagic: Empower, Maximize. Spell Resistance: No.)}{-Greater Dragonmark Spell: Earthgrab (Target corporeal creature is grabbed by earthen hands and rendered helpless. (14 + Character Level + Constitution modifier + Stun Bonuses Negates.))}}Note: Shares charges with Greater Dragonmark of Warding
 Tier: 4
 All: Tier 3: Greater Dragonmark of Warding
 
@@ -4696,7 +4710,7 @@ Ranks: 3
 All: Tier 3: Stand Like Stone
 
 AbilityName: Dwarven Weapon Training
-Descrip: Choose the same Training from Dwarven Weapon Training, Tier 3:}{-Axe Training: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, and throwing axes. +1 to hit and +2 damage with greataxes. +10% Strikethrough chance while wielding a Dwarven Waraxe.}{-Pick and Hammer Training: +1 to hit and damage with heavy picks, light hammer, light picks, throwing hammers, and warhammers. +1 to hit and +2 damage with mauls.
+Descrip: Choose the same Training from Dwarven Weapon Training, Tier 3:}{-Axe Training: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, and throwing axes. +1 to hit and +2 damage with greataxes. +10% Strikethrough chance while wielding a Dwarven Waraxe.}{-Pick and Hammer Training: +1 to hit and damage with heavy picks, light hammer, light picks, throwing hammers, and warhammers. +1 to hit and +2 damage with mauls, +1 Competence Bonus to Critical Threat Range with Warhammers and Heavy Picks.
 Tier: 4
 Cost: 2
 All: Tier 3: Dwarven Weapon Training
@@ -14522,4 +14536,289 @@ AbilityName: Skill
 Descrip: +3% Doublestrike, +3% Doubleshot, +3% dodge, and bypass 3% of enemy dodge.
 Tier: 4
 All: Tier 4: Elven Weapon Training IV
+
+
+TreeName: Duergar
+Type: Race
+Initial: Due
+
+AbilityName: Underdark Upbringing I
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points
+Tier: 0
+
+AbilityName: Duergar Abilities I
+Descrip: +1 Strength or Constitution
+Tier: 0
+Flags: SelectorOnly
+Selector: Strength, Constitution
+
+AbilityName: Underdark Upbringing II
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points
+Tier: 0
+
+AbilityName: Duergar Abilities II
+Descrip: +1 Strength or Constitution
+Tier: 0
+Flags: SelectorOnly
+Selector: Strength, Constitution
+
+AbilityName: Underdark Upbringing III
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points 
+Tier: 0
+
+AbilityName: Dwarven Weapon Training I
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 1
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape I
+Descrip: While Enlarged, you gain a +3 Psionic Bonus to Attack. While Reduced, you gain +3 Psionic Bonus to Max Dodge and the Max Dex Bonus of your Armor. Your Enlarge and Reduce now last for two minutes.
+Tier: 1
+
+AbilityName: Mental Fortitude
+Descrip: +1/2/3 to Saves vs. Enchantments
+Tier: 1
+
+AbilityName: Dwarven Armor Mastery
+Descrip: +1/2/3 Armor Class and Armor Maximum Dexterity Bonus
+Tier: 1
+Ranks: 3
+
+AbilityName: Forge Apprentice
+Descrip: You gain proficiency with Handaxes, Light Picks, Light Hammers, Throwing Axes, and Throwing Hammers, and consider them Simple Weapons. 
+Tier: 1
+
+AbilityName: Dwarven Weapon Training II
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 2
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape II
+Descrip: While Enlarged, you gain a +3 Psionic Bonus to Damage. While Reduced, you gain a +3% Psionic Bonus to Max Dodge. Your Enlarge and Reduce now last for three minutes.
+Tier: 2
+
+AbilityName: Child of the Mountain
+Descrip: Grants a +[1/2/3] bonus to fortitude saves. Rank 3: Grants a +5% Quality bonus to maximum hit points.
+Tier: 2
+Cost: 2
+
+AbilityName: Arcanum
+Descrip: +[25/50/100], +[1/2/3] Spell Penetration
+Tier: 2
+Ranks: 3
+
+AbilityName: Forge Familiarity
+Descrip: Your Arcane Spell Failure chance from armor is decreased by 15%.
+Tier: 2
+
+AbilityName: Dwarven Weapon Training III
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 3
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape III
+Descrip: While Enlarged, you gain a +5% Psionic Bonus to Fortification Bypass. While Reduced, you gain a +5 Psionic Bonus to Natural Armor. Your Enlarge and Reduce now last for five minutes.
+Tier: 3
+
+AbilityName: Duergar Favored Enemies
+Descrip: Multiselector
+Tier: 3
+Selector: Giant , Monstrous Humanoid, Vermin
+SelectorName: Giant 
+Descrip: You gain the Favored Enemy: Giant feat, allowing you to consider Giants a Favored Enemy.
+None: Feat: Favored Enemy: Giant, Harper Agent Tier 3: Know Your Foe: Giant, Deepwood Stalker Tier 5: Extra Favored Enemy: Giant
+SelectorName: Monstrous Humanoid 
+Descrip: You gain the Favored Enemy: Monstrous Humanoid feat, allowing you to consider Monstrous Humanoids a Favored Enemy.
+None: Feat: Favored Enemy: Monstrous Humanoid,   Harper Agent Tier 3: Know Your Foe: Monstrous Humanoid, Deepwood Stalker Tier 5: Extra Favored Enemy: Monstrous Humanoid 
+SelectorName: Vermin
+Descrip: You gain the Favored Enemy: Vermin feat, allowing you to consider Vermin a Favored Enemy.
+None: Feat: Favored Enemy: Vermin, Deepwood Stalker Tier 5: Extra Favored Enemy: Vermin
+
+
+AbilityName: Underdark Knowledge
+Descrip: You have knowledge of secret Underdark poisons, passed down through generations. +[10/20/30] Poison Spell Power.
+Tier: 3
+Ranks: 3
+
+AbilityName: Forgemaster
+Descrip:  Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
+Tier: 3
+
+AbilityName: Dwarven Weapon Training IV
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 4
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, hand axes, and throwing axes. +1 to hit and +2 damage with Dwarven waraxes and greataxes. While wielding a Dwarven Waraxe, +1 Competence Bonus to Critical Threat Range and +10% Strikethrough chance.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape IV
+Descrip: While Enlarged, you gain a +2 Psionic Bonus to Critical Confirmation and Damage. While Reduced, you gain a +10 Psionic Bonus to MRR. Your Enlarge and Reduce now last until rest or death.
+Tier: 4
+
+AbilityName: Size Mastery
+Descrip:  While Enlarged, your melee attacks deal +20% damage to Helpless opponents. While Reduced, you gain 5% Incoroporeality.
+Tier: 4
+
+AbilityName: Invisibility (SLA)
+Descrip: You gain Invisibility as a SLA (SP Cost: 6, Cooldown: 12 seconds)
+Tier: 4
+
+AbilityName: Deep Magic: Transmutation
+Descrip: +[1/2/3] Transmutation DCs
+Tier: 4
+Ranks: 3
+
+
+TreeName: Duergar Mindcleaver
+Type: Race
+Initial: DMC
+
+AbilityName: Underdark Upbringing I
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points
+Tier: 0
+
+AbilityName: Mindcleaver Abilities I
+Descrip: +1 Strength or Intellegence
+Tier: 0
+Flags: SelectorOnly
+Selector: Strength, Intellegence
+
+AbilityName: Underdark Upbringing II
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points
+Tier: 0
+
+AbilityName: Mindcleaver  Abilities II
+Descrip: +1 Strength or Intellegence
+Tier: 0
+Flags: SelectorOnly
+Selector: Strength, Intellegence
+
+AbilityName: Underdark Upbringing III
+Descrip: +5 Maximum Hit Points, +6 Maximum Spell Points 
+Tier: 0
+
+AbilityName: Dwarven Weapon Training I
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 1
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape I
+Descrip: While Enlarged, you gain a +3 Psionic Bonus to Attack. While Reduced, you gain +3 Psionic Bonus to Max Dodge and the Max Dex Bonus of your Armor. Your Enlarge and Reduce now last for two minutes.
+Tier: 1
+
+AbilityName: Mind Weapons
+Descrip: You can tap into your soul to manifest and empower weapons. This grants both the ability to conjure physical Soul Axes to wield as weapons, as well as the ability to enchant your current weapons to be more powerful.
+Tier: 1
+
+AbilityName: Armor Cleaver
+Descrip: +[1/2/3] Sunder DC's
+Tier: 1
+Ranks: 3
+
+AbilityName: Forge Apprentice
+Descrip: You gain proficiency with Handaxes, Light Picks, Light Hammers, Throwing Axes, and Throwing Hammers, and consider them Simple Weapons. 
+Tier: 1
+
+AbilityName: Dwarven Weapon Training II
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 2
+SharedSelector: Tier 1: Dwarven Weapon Training I
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, and throwing axes.  +1 to hit and +2 damage with greataxes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks,  throwing hammers, and warhammers.  +1 to hit and +2 damage with mauls.
+
+AbilityName: Duergar Shape II
+Descrip: While Enlarged, you gain a +3 Psionic Bonus to Damage. While Reduced, you gain a +3% Psionic Bonus to Max Dodge. Your Enlarge and Reduce now last for three minutes.
+Tier: 2
+
+AbilityName: Unbreakable Spirit
+Descrip: Grants a +[1/2/3] bonus to Will saving throws. 
+Tier: 2
+Cost: 2
+
+AbilityName: Arcanum
+Descrip: +[25/50/100], +[1/2/3] Spell Penetration
+Tier: 2
+Ranks: 3
+
+AbilityName: Forge Familiarity
+Descrip: Your Arcane Spell Failure chance from armor is decreased by 15%.
+Tier: 2
+
+AbilityName: Dwarven Weapon Training III
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 3
+SharedSelector: Tier 2: Dwarven Weapon Training II
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe. Dwarven Waraxe is now your favored weapon.
+SelectorName: Pick and Hammer Training
+Descrip: +1 to hit and damage with heavy picks, light hammer, light picks, mauls, throwing hammers, and warhammers.
+
+AbilityName: Duergar Shape III
+Descrip: While Enlarged, you gain a +5% Psionic Bonus to Fortification Bypass. While Reduced, you gain a +5 Psionic Bonus to Natural Armor. Your Enlarge and Reduce now last for five minutes.
+Tier: 3
+
+
+AbilityName: Mind's Edge
+Descrip: Melee Sunder Attack: You conjure a Mindcleaver and send it hurtling at a target foe, making an Attack roll on that target and dealing damage with your main hand Melee weapon if it hits, plus 1d4 Force Damage per Character Level to that target that scales with 100% Melee Power. In addition, the affected target must make a Will Saving Throw (14 + STR/INT mod + Sunder Bonuses) or be Sundered, losing -10% AC and -25% Fortification for 6 seconds. This ability is considered a Sunder for the purpose of other abilities.
+Tier: 3
+Ranks: 3
+
+AbilityName: Great Weapon Aptitude
+Descrip:  +[5/10/20]% Strikethrough
+Tier: 3
+Ranks: 3
+
+AbilityName: Forgemaster
+Descrip:  Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
+Tier: 3
+
+AbilityName: Dwarven Weapon Training IV
+Descrip: Choose from Axe Training or Pick and Hammer Training
+Tier: 4
+SharedSelector: Tier 3: Dwarven Weapon Training III
+Selector: Axe Training, Pick and Hammer Training
+SelectorName: Axe Training
+Descrip: +1 to hit and damage with battle axes, hand axes, and throwing axes. +1 to hit and +2 damage with Dwarven waraxes and greataxes. While wielding a Dwarven Waraxe, +1 Competence Bonus to Critical Threat Range and +10% Strikethrough chance.
+SelectorName: Pick and Hammer Training
+Descrip:  +1 to hit and damage with heavy picks, light hammer, light picks, throwing hammers, and warhammers. +1 to hit and +2 damage with mauls. While using a Heavy Pick or Warhammer, +1 Competence Bonus to Critical Threat Range.
+
+AbilityName: Duergar Shape IV
+Descrip: While Enlarged, you gain a +2 Psionic Bonus to Critical Confirmation and Damage. While Reduced, you gain a +10 Psionic Bonus to MRR. Your Enlarge and Reduce now last until rest or death.
+Tier: 4
+
+AbilityName: Shattering Mind
+Descrip: Your Mind's Edge now explodes when it hits its target, hitting enemies in a small radius. Affected enemies also suffer the Psychic Trauma effect, which grants -3 to Will Saving Throws. Stacks 5 times. Lasts 24 seconds.
+Tier: 4
+
+AbilityName: Perfect Mindcleavers
+Descrip:  Mindcleavers and weapons that are Empowered with Mind that you wield cause enemies to become Shaken for 6 seconds. This can apply once every 2 seconds.
+Tier: 4
+
+AbilityName: Invisibility (SLA)
+Descrip: You gain Invisibility as a SLA (SP Cost: 6, Cooldown: 12 seconds)
+Tier: 4
+
+
 

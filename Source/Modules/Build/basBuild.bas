@@ -64,6 +64,7 @@ Private Function GetEnhancementDisplay(ptypPointer As PointerType, pblnAbbreviat
         If .Tree <> plngTree Then strTree = db.Tree(.Tree).Abbreviation & " "
         strTier = "Tier " & .Tier & ": "
         With db.Tree(.Tree).Tier(.Tier).Ability(.Ability)
+            ' TODO ptypPointer doesn't have a selector
             If ptypPointer.Selector = 0 Then
                 If pblnAbbreviate Then strAbility = .Abbreviation Else strAbility = .AbilityName
             ElseIf .SelectorOnly Then
@@ -781,6 +782,12 @@ Private Function IsClassBonusFeat(penClass As ClassEnum, plngClassLevel As Long)
     End Select
 End Function
 
+' Build level when we reach that many class levels
+'i.e. a fighter L1,2,3 archTrix 4-20 would show the following:
+' getCharacterLevel(25,1)=>4
+' getCharacterLevel(4,3)=>3
+' getCharacterLevel(4,5)=>99 'never reached
+' getCharacterLevel(25,20)=>99 ' never reached
 Private Function GetCharacterLevel(penClass, plngClassLevel) As Long
     Dim lngLevel As Long
     Dim i As Long
@@ -1199,7 +1206,12 @@ Public Sub GetDisplayNames(ptypDetail As FeatDetailType)
         End If
     End With
 End Sub
-
+'Gets the number of levels this penClass have been taken by this level
+'i.e. a fighter L1,2,3 archTrix 4-20 would show the following:
+' getClassLevel(4,20)=>3
+' getClassLevel(25,20)=>17
+' getClassLevel(4,5)=>3
+' getClassLevel(25,5)=>2
 Private Function GetClassLevel(penClass As ClassEnum, plngLevel As Long) As Long
     Dim lngReturn As Long
     Dim i As Long
@@ -1413,13 +1425,26 @@ Public Function CheckFeatSlot(ptypFeat As FeatType, ptypSlot As BuildFeatType, O
     End If
     ' Can cast spells?
     If ptypFeat.CanCastSpell Then
-        If build.CanCastSpell(ptypFeat.CanCastSpellLevel) = 0 Or build.CanCastSpell(ptypFeat.CanCastSpellLevel) > typSlot.Level Then
-            If ptypFeat.CanCastSpellLevel = 0 Then
-                gstrError = "Can't cast healing spells yet."
-            Else
-                gstrError = "Can't cast Level " & ptypFeat.CanCastSpellLevel & " spells yet."
+        'Special code for Arcane Trickster, who effectively ignore this for
+        ' empower, enlarge, eschew, extend, maximize, quicken, combat casting, Mental Toughness
+        ' Spell Penetration, Spell Focus
+        ' this has to be a standard slot, and first Arch Trickster at this slot
+        'Test with Feat 92 Empower
+        'ptypSlot.Type = bftStandard And (build.BuildClass(0) = ceArcaneTrickster Or build.BuildClass(1) = ceArcaneTrickster Or build.BuildClass(2) = ceArcaneTrickster) And GetCharacterLevel(25, 1) < ptypSlot.Level
+        If ptypSlot.Type = bftStandard And GetCharacterLevel(25, 1) <= ptypSlot.Level Then
+            'Check ptySlot.Level vs first level for Arcane Trickster
+            
+            'ignore
+            CheckFeatSlot = dsDefault
+        Else
+            If build.CanCastSpell(ptypFeat.CanCastSpellLevel) = 0 Or build.CanCastSpell(ptypFeat.CanCastSpellLevel) > typSlot.Level Then
+                If ptypFeat.CanCastSpellLevel = 0 Then
+                    gstrError = "Can't cast healing spells yet."
+                Else
+                    gstrError = "Can't cast Level " & ptypFeat.CanCastSpellLevel & " spells yet."
+                End If
+                Exit Function
             End If
-            Exit Function
         End If
     End If
     ' Class Level (unlike other checks, both the feat and the selector versions should be checked)

@@ -1,0 +1,73 @@
+[Overview]
+
+Name: New Build
+Race: Human
+Alignment: True Neutral
+MaxLevels: 34
+MaxLevels: 34
+
+Class: Fighter
+Class: Arcane Trickster
+
+Level: 1	Fighter
+Level: 2	Fighter
+Level: 3	Fighter
+Level: 4	Fighter
+Level: 5	Fighter
+Level: 6	Arcane Trickster
+Level: 7	Arcane Trickster
+Level: 8	Arcane Trickster
+Level: 9	Arcane Trickster
+Level: 10	Arcane Trickster
+Level: 11	Arcane Trickster
+Level: 12	Arcane Trickster
+Level: 13	Arcane Trickster
+Level: 14	Arcane Trickster
+Level: 15	Arcane Trickster
+Level: 16	Fighter
+Level: 17	Fighter
+Level: 18	Fighter
+Level: 19	Fighter
+Level: 20	Arcane Trickster
+
+
+[Stats]
+
+Preferred: Legend
+
+Adventurer: No
+Champion: No
+Hero: No
+;    Advn  Chmp  Hero  Lgnd  Tome
+;    ----  ----  ----  ----  ----
+STR:   2           2     4     8
+DEX:                           8
+CON:  10    16    16    16     8
+INT:  16    16    16    16     8
+WIS:                           8
+CHA:                           8
+;    ----  ----  ----  ----
+;     28    32    34    36   
+
+Levelup: 0	Intelligence
+Levelup: 4	Intelligence
+Levelup: 8	Intelligence
+Levelup: 12	Intelligence
+Levelup: 16	Intelligence
+Levelup: 20	Intelligence
+Levelup: 24	Intelligence
+Levelup: 28	Intelligence
+Levelup: 32	Intelligence
+
+
+[Feats]
+
+Standard: Heroic 6	Empower Spell
+
+
+[Enhancements]
+
+Tree: Human
+Type: Race
+ClassLevels: 34
+

@@ -13,6 +13,19 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.13.0 - U80 - Duergar and Duegar Mindcleaver Iconic 
+Changes:
+Additions of Duergar and Duegar Mindcleaver Iconic 
+
+#### Character Builder
+- Version 4.13
+- Added Duergar and Duegar Mindcleaver Iconic 
+- Updated Dwarf trees 
+
+#### Compendium 
+- Version 1.20
+- Added Duergar and Duegar Mindcleaver Iconic 
+
 ### 4.12.2 - Enhancements updates for Arcane Trickster
 Changes:
 Fixes to Arcane Trickster Enhancements

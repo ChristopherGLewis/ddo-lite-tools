@@ -12,8 +12,11 @@ Option Explicit
 Public build As BuildType6
 Public Const buildVersion As Byte = 6   'Current Build Version
 
+'List of currently selected skills
 Public Skill As SkillGridType ' Not saved to build file (calculated as needed)
+'List of currently selected Feats
 Public Feat As FeatListType ' Not saved to build file (calculated as needed)
+
 Public Guide As GuideType ' Not saved to build file (calculated as needed)
 
 ' Used when needing to know the current build's class split

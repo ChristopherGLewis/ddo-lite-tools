@@ -174,3 +174,16 @@ IconicClass: Warlock
 Stats: 8, 8, 8, 9, 8, 9
 GrantedFeats1: Vampiric Bite, Spell Focus: Evocation
 Flags: BonusFeat
+
+RaceName: Duergar
+Abbreviation: Duer
+Type: Free
+Stats: 9, 8, 9, 8, 8, 8
+GrantedFeats1: Enlarge Self, Reduce Self, Dwarven Stonecutting, Exotic Weapon: Dwarven Axe
+
+RaceName: Duergar Mindcleaver
+Abbreviation: Mind
+Type: Iconic
+IconicClass: Fighter
+Stats: 9, 8, 8, 9, 8, 8
+GrantedFeats1: Enlarge Self, Reduce Self, Dwarven Stonecutting, Exotic Weapon: Dwarven Axe

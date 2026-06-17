@@ -1176,7 +1176,7 @@ ClassOnlyLevel: 1
 Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
 SelectorName: Amaunator
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai
+Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
 SelectorName: Lord of Blades
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
@@ -1197,7 +1197,7 @@ Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Helm
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
 SelectorName: Olladra
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
@@ -1206,7 +1206,7 @@ Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
 SelectorName: Silvanus
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Duergar, Mindcleaver
 SelectorName: The Blood of Vol
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Eladrin Chaosmancer
@@ -3337,3 +3337,24 @@ SelectorName: Minion of the Eldritch
 Descrip: Your soul has touched something beyond the planes, and a connection has formed there.}Activate: You gain +5 Spell Power per Character Level, and +1% Spell Critical Damage for every 2 Character Levels you have for 12 seconds. 2 minute cooldown.}When you use this ability, there is a chance the Eldritch Being you reach out to will grow tired of your petitions and decide to punish you instead. This chance increases each time you use this ability between rests.}{-Punishment: Activate: You lose 3 Spell Power per Character Level, and 1% Spell Critical Damage for every 2 Character Levels you have for 30 seconds.
 None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch
 
+
+FeatName: Enlarge Self
+Group: Heroic, Misc
+Descrip: Transmutation SLA: For one minute, you grow in size, granting a +5 Psionic Bonus to Physical Resistance Rating. 6 Spell Point cost, 20 second cooldown. This cancels Reduce when applicable.
+Race: Required, Duergar
+RaceBonus: Duergar
+Flags: RaceOnly
+
+FeatName: Reduce Self
+Group: Heroic, Misc
+Descrip: Transmutation SLA: For one minute, you shrink in size, granting you a +3% Psionic Bonus to Dodge. Costs 6 Spell Points, 20 second cooldown. This cancels Enlarge when applicable. 
+Race: Required, Duergar
+RaceBonus: Duergar
+Flags: RaceOnly
+
+FeatName: Dwarven Stonecutting
+Group: Heroic, Misc
+Descrip: Passive.  Duergar are naturally able to find secret doors more frequently, receiving a +2 bonus to their Search skill.
+Race: Required, Duergar
+RaceBonus: Duergar
+Flags: RaceOnly

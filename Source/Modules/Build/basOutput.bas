@@ -369,6 +369,7 @@ Private Sub OutputClassSplit()
     Else
         OutputText vbNullString, False, , sceCourierBegin
     End If
+    ' 4 columns of 5
     For i = 1 To 5
         For j = 0 To 15 Step 5
             lngLevel = i + j
@@ -377,11 +378,17 @@ Private Sub OutputClassSplit()
                     OutputText "|" & lngLevel & ") " & GetClassName(build.Class(lngLevel)), False
                 Else
                     ' Level (always standard color)
-                    If j = 0 Then strText = CStr(lngLevel) Else strText = AlignText(CStr(lngLevel), 2, vbRightJustify)
+                    If j = 0 Then
+                        strText = CStr(lngLevel)
+                    Else
+                        strText = AlignText(CStr(lngLevel), 2, vbRightJustify)
+                    End If
                     OutputText strText & ". ", False
                     ' Class (use class color if splash)
                     strText = GetClassName(build.Class(lngLevel))
-                    If lngLevel + 5 <= lngLastLevel Then strText = AlignText(strText, 15, vbLeftJustify)
+                    If lngLevel + 5 <= lngLastLevel Then
+                        strText = AlignText(strText, Len(MAX_CLASS_NAME) + 1, vbLeftJustify)
+                    End If
                     OutputText strText, False, cfg.GetColor(cgeOutput, lngColor(build.Class(lngLevel)))
                 End If
             End If

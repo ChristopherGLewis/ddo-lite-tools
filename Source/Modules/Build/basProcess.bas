@@ -221,6 +221,7 @@ Private Sub ProcessFeatSelectors()
                             .Selector(lngSelector).SkillValue = .SkillValue
                             .Selector(lngSelector).Stat = .Stat
                             .Selector(lngSelector).StatValue = .StatValue
+
                             ReDim .Selector(lngSelector).Class(ceClasses - 1)
                             ReDim .Selector(lngSelector).ClassLevel(ceClasses - 1)
                         Next
@@ -231,6 +232,7 @@ Private Sub ProcessFeatSelectors()
     Next
 End Sub
 
+'This function processes abilty selectors looking for SharedSelectors etc.
 Private Sub ProcessAbilitySelectors()
     
     log.Activity = actProcessEnhancementSelectors
@@ -262,7 +264,7 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
         ' Debugging a Tier
         If DEBUG_FLAG Then
             If iTier = DEBUG_TIER Then
-                Debug.Print iTier
+                Debug.Print "Tier " & iTier
             End If
         End If
         For iAbility = 1 To ptypTree.Tier(iTier).Abilities
@@ -294,7 +296,10 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                     For lngSelector = 1 To .Selectors
                                          'Add selector child attributes
                                         .Selector(lngSelector).SelectorName = db.Feat(lngParent).Selector(lngSelector).SelectorName
-                                        .Selector(lngSelector).Descrip = db.Feat(lngParent).Selector(lngSelector).Descrip
+                                        'copy descrip from parent if it doesn't exist
+                                        If Len(.Selector(lngSelector).Descrip) = 0 Then
+                                            .Selector(lngSelector).Descrip = db.Feat(lngParent).Selector(lngSelector).Descrip
+                                        End If
                                         .Selector(lngSelector).Req = db.Feat(lngParent).Selector(lngSelector).Req
                                         'TODO this should be the COST of the selector, not the root.  This would
                                         'allow us to start have selectors have different costs
@@ -314,13 +319,20 @@ Private Sub ProcessTreeSelectors(ptypTree As TreeType)
                                 If .Parent.Ability = 0 Then
                                     LogError
                                 Else
-                                    .Selectors = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selectors
-                                    If .Selectors > 0 Then
+                                    'deal with selectors already loaded (for different Desc per tier)
+                                    If ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selectors > 0 And .Selectors = 0 Then
+                                        .Selectors = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selectors
                                         ReDim .Selector(1 To .Selectors)
+                                    End If
+                                    If .Selectors > 0 Then
+                                        'TODO something here to NOT redim this if it has already been loaded.
+                                        'but I can't seem to use IsEmpty or is nothing.  Maybe on error
                                         For lngSelector = 1 To .Selectors
                                             'Add selector child attributes
                                             .Selector(lngSelector).SelectorName = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).SelectorName
-                                            .Selector(lngSelector).Descrip = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).Descrip
+                                            If (Len(.Selector(lngSelector).Descrip) = 0) Then
+                                                .Selector(lngSelector).Descrip = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).Descrip
+                                            End If
                                             '.Selector(lngSelector).Req = .Req
                                             .Selector(lngSelector).Req = ptypTree.Tier(.Parent.Tier).Ability(.Parent.Ability).Selector(lngSelector).Req
                                             'TODO this should be the COST of the selector, not the root.  This would

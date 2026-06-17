@@ -230,10 +230,10 @@ Public Type TomeType
     RR(1 To 2) As Long
 End Type
 
-'TODO Remove hard coding
+'TODO Remove hard coding - this may be hard since VB6 can't use functions to dim arrays
 Public Const maxClassCount = 25  '2025.03.11 DragnDisciple=> 15 classes + 7 Archtypes
-Public Const maxRaceCount = 16 ' 2026.06.21 Dhampir
-Public Const maxIconicCount = 11 ' 2026.06.21 Dhampir Dark Bargainer
+Public Const maxRaceCount = 17 ' 2026.05.28 Duergar
+Public Const maxIconicCount = 12 ' 2026.05.28 Duergar Mindcleaver
 Public Const maxEpicCount = 18 ' 2025.11.20 Added missed Trap Damage
 
 Public Type PastLifeType

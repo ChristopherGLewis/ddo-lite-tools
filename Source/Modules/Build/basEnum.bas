@@ -55,6 +55,8 @@ Public Enum RaceEnum
     reChaosmancer
     reDhampir
     reDarkBargainer
+    reDuergar
+    reMindcleaver
     reRaces
 End Enum
 
@@ -340,6 +342,8 @@ Public Function GetRaceID(pstrRace As String) As RaceEnum
         Case "chaosmancer", "eladrin chaosmancer": GetRaceID = reChaosmancer
         Case "dhampir": GetRaceID = reDhampir
         Case "darkbargainer", "dark bargainer": GetRaceID = reDarkBargainer
+        Case "duergar": GetRaceID = reDuergar
+        Case "duergarmindcleaver", "duergar mindcleaver", "mindcleaver": GetRaceID = reMindcleaver
     End Select
 End Function
 
@@ -373,6 +377,9 @@ Public Function GetRaceName(ByVal penRace As RaceEnum) As String
         Case reChaosmancer: GetRaceName = "Eladrin Chaosmancer"
         Case reDhampir: GetRaceName = "Dhampir"
         Case reDarkBargainer: GetRaceName = "Dark Bargainer"
+        Case reDuergar: GetRaceName = "Duergar"
+        Case reMindcleaver: GetRaceName = "Duergar Mindcleaver"
+        
     End Select
 End Function
 

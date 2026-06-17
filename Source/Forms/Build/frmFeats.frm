@@ -1166,20 +1166,27 @@ Private Sub ValidSelectors(ptypFeat As FeatType, ByVal plngLevel As Long, pblnSe
                             For enReqGroup = rgeAll To rgeNone
                                 If CheckFeatReq(.Req(enReqGroup), enReqGroup, plngLevel, typTaken) Then Exit Do
                             Next
-                            'Finally check ClassBonus  lists
-                            If (Me.usrList.Selected > 0) Then
-                                Select Case Feat.List(iSlotIndex).ActualType
-                                    'class bonus feats - not sure what 2 and 3 are
-                                    Case bftClass1, bftClass2, bftClass3
-                                        'if this
-                                        'Feat.List(iSlotIndex).Level is the current build level
-                                        'build.Class(Feat.List(iSlotIndex).Level) is the class for this level
-                                        'Check the array for the class bonus for SP/DD and AT.
-                                        If (Not ptypFeat.Selector(i).ClassBonus(build.Class(Feat.List(iSlotIndex).Level))) Then
-                                            Exit Do
-                                        End If
-                                End Select
-                            End If
+                            'TODO - this code was something for AT but it broke FavEnemy
+                            '       However, without it AT still works with meta's at L1
+                            'Finally check ClassBonus lists
+                            'If (Me.usrList.Selected > 0) Then
+                            '    Select Case Feat.List(iSlotIndex).ActualType
+                            '        'class bonus feats - not sure what 2 and 3 are
+                            '        Case bftClass1, bftClass2, bftClass3
+                            '            'if this
+                            '            Dim iCurFeatSlotCharLevel As Integer
+                            '            Dim iCurFeatSlotClass As Integer
+                            '
+                            '            iCurFeatSlotCharLevel = Feat.List(iSlotIndex).Level
+                            '            iCurFeatSlotClass = build.Class(Feat.List(iSlotIndex).Level)
+                            '            'Feat.List(iSlotIndex).Level is the current feat slot level
+                            '            'build.Class(Feat.List(iSlotIndex).Level) is the class for this level
+                            '            'Check the array for the class bonus for SP/DD and AT.
+                            '            If (Not ptypFeat.Selector(i).ClassBonus(build.Class(Feat.List(iSlotIndex).Level))) Then
+                            '                Exit Do
+                            '            End If
+                            '    End Select
+                            'End If
                             pblnSelector(i) = True
                         Loop Until True
                     End With
@@ -1271,6 +1278,9 @@ Private Sub ShowAvailable()
     ' Add all feats that meet prereqs
     'This loop iterates FeatDisplay (the sorted feats)
     For i = 1 To db.Feats
+        If i = 129 Then
+            Debug.Print "here"
+        End If
         'lngFeat is the feat id
         lngFeat = db.FeatDisplay(i).FeatIndex
         Do
@@ -1305,7 +1315,7 @@ Private Sub ShowAvailable()
                     If Not FilterFeat(lngFeat) Then Exit Do
                 End If
             End If
-            ' This feat meets all qualifications, so add it to list
+            ' This feat meets all qualifications, so add it to list with a prefix if necessary
             If db.Feat(lngFeat).SortName <> db.Feat(lngFeat).FeatName And IsNumeric(Right$(db.Feat(lngFeat).SortName, 1)) And cfg.FeatOrder = foeGroupRelated Then
                 strPrefix = "  "
             Else
@@ -1368,50 +1378,66 @@ Private Sub lstGroup_Click()
 End Sub
 
 ' Can this feat ever be taken? (race restricted; class levels never taken; spellcasting never achieved; stat, skill or level never reached)
+'The name of this function is wrong - it should be ShowFeatBasedOnFilters and returns true if OK
 Private Function FilterFeat(plngFeat As Long) As Boolean
     Dim lngClassLevels() As Long
     Dim blnClass As Boolean
     Dim i As Long
     
     With db.Feat(plngFeat)
-        Do
-            ' Race
-            If RaceRestricted(.Race) Then Exit Do
-            ' Class levels
-            If .Class(0) Then
+        ' Race
+        If RaceRestricted(.Race) Then Exit Function
+
+        ' Class levels
+        If .Class(0) Then
                 ReDim lngClassLevels(ceClasses - 1)
-                For i = 1 To HeroicLevels()
-                    lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
-                Next
-                For i = 1 To ceClasses - 1
-                    If .Class(i) Then
-                        If lngClassLevels(i) >= .ClassLevel(i) Then
-                            blnClass = True
-                            Exit For
-                        End If
+            For i = 1 To HeroicLevels()
+                lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
+            Next
+            For i = 1 To ceClasses - 1
+                If .Class(i) Then
+                    If lngClassLevels(i) >= .ClassLevel(i) Then
+                        blnClass = True
+                        Exit For
                     End If
-                Next
-                If Not blnClass Then Exit Do
+                End If
+            Next
+            If Not blnClass Then Exit Function
+        End If
+        
+        ' CanCastSpell
+        If .CanCastSpell Then
+            'Special code for Arcane Trickster, who effectively ignore this for
+            ' empower, enlarge, eschew, extend, maximize, quicken, combat casting, Mental Toughness
+            ' Spell Penetration, Spell Focus
+            'Test with Feat 92 Empower
+            If build.BuildClass(0) = ceArcaneTrickster Or build.BuildClass(1) = ceArcaneTrickster Or build.BuildClass(2) = ceArcaneTrickster Then
+                'Ignore can cast spell
+                FilterFeat = True
+            Else
+                If build.CanCastSpell(.CanCastSpellLevel) = 0 Then Exit Function
             End If
-            ' CanCastSpell
-            If .CanCastSpell Then
-                If build.CanCastSpell(.CanCastSpellLevel) = 0 Then Exit Do
-            End If
-            ' Stat
-            If .Stat <> aeAny Then
-                If .StatValue > CalculateStat(.Stat, build.MaxLevels) Then Exit Do
-            End If
-            ' Skill
-            If .Skill <> aeAny Then
-                If .SkillValue > CalculateSkill(.Skill, build.MaxLevels, .SkillTome) Then Exit Do
-            End If
-            ' Past lives
-            If .PastLife And build.BuildPoints < beHero Then Exit Do
-            If .Legend And build.BuildPoints < beLegend Then Exit Do
-            ' Max Level not high enough
-            If .Level > build.MaxLevels Then Exit Do
-            FilterFeat = True
-        Loop Until True
+        End If
+        
+        ' Stat
+        If .Stat <> aeAny Then
+            If .StatValue > CalculateStat(.Stat, build.MaxLevels) Then Exit Function
+        End If
+        
+        ' Skill
+        If .Skill <> aeAny Then
+            If .SkillValue > CalculateSkill(.Skill, build.MaxLevels, .SkillTome) Then Exit Function
+        End If
+        
+        ' Past lives
+        If .PastLife And build.BuildPoints < beHero Then Exit Function
+        
+        'Legendary only feat
+        If .Legend And build.BuildPoints < beLegend Then Exit Function
+        
+        ' Max Level not high enough
+        If .Level > build.MaxLevels Then Exit Function
+        FilterFeat = True
     End With
 End Function
 
