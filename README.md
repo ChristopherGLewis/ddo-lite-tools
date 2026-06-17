@@ -1,6 +1,6 @@
 # DDO Character Planner lite
 Originally created by EllisDee37, with input from DDOApps.
-Updates by Chris Lewis (Farog on Khyber, ChicagoChris in the forums)
+Updates by Chris Lewis (Farog on Shadowdale, ChicagoChris in the forums)
 Massive contributions by Yhelm (Leader of The Red Scare - Thrane. Sartika • Noalynn • Kenzari • Kreena • Dennis​)
 
 ## Background
@@ -13,14 +13,18 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
-### 4.13.0 - U80 - Duergar and Duegar Mindcleaver Iconic 
+### 4.13.0 - U80 - Duergar and Duergar Mindcleaver Iconic 
 Changes:
-Additions of Duergar and Duegar Mindcleaver Iconic 
+Additions of Duergar and Duergar Mindcleaver Iconic 
+Thanks to Yhelm and Peng
 
 #### Character Builder
 - Version 4.13
-- Added Duergar and Duegar Mindcleaver Iconic 
+- Added Duergar and Duergar Mindcleaver Iconic 
 - Updated Dwarf trees 
+- Fixes to borked Favorite Enemy caused by Arcane Trickster code changes
+- Fixes to some AT enhancements 
+- Fixes to Alchemist Empower Healing
 
 #### Compendium 
 - Version 1.20
