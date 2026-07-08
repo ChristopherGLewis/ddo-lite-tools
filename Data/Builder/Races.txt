@@ -107,9 +107,9 @@ Abbreviation: Razorclaw
 Type: Iconic
 IconicClass: Barbarian
 Stats: 10, 8, 8, 6, 8, 8
-Flags: BonusFeat
 GrantedFeats1: Exotic Weapon: Handwraps
 GrantedFeats1: Dismiss Rage
+GrantedFeats1: Razorclaw Shifter
 
 RaceName: Shadar-kai
 Abbreviation: Shadar

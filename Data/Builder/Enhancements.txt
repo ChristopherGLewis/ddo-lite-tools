@@ -14671,6 +14671,7 @@ Tier: 0
 AbilityName: Dwarven Weapon Training I
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 1
+Cost: 2
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
 Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
@@ -14682,11 +14683,12 @@ Descrip: While Enlarged, you gain a +3 Psionic Bonus to Attack. While Reduced, y
 Tier: 1
 
 AbilityName: Mental Fortitude
-Descrip: +1/2/3 to Saves vs. Enchantments
+Descrip: +[1/2/3] to Saves vs. Enchantments
 Tier: 1
+Ranks: 3
 
 AbilityName: Dwarven Armor Mastery
-Descrip: +1/2/3 Armor Class and Armor Maximum Dexterity Bonus
+Descrip: +[1/2/3] Armor Class and Armor Maximum Dexterity Bonus
 Tier: 1
 Ranks: 3
 
@@ -14697,6 +14699,7 @@ Tier: 1
 AbilityName: Dwarven Weapon Training II
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 2
+Cost: 2
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
 Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
@@ -14710,7 +14713,7 @@ Tier: 2
 AbilityName: Child of the Mountain
 Descrip: Grants a +[1/2/3] bonus to fortitude saves. Rank 3: Grants a +5% Quality bonus to maximum hit points.
 Tier: 2
-Cost: 2
+Ranks: 3
 
 AbilityName: Arcanum
 Descrip: +[25/50/100], +[1/2/3] Spell Penetration
@@ -14724,6 +14727,7 @@ Tier: 2
 AbilityName: Dwarven Weapon Training III
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 3
+Cost: 2
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
 Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
@@ -14748,19 +14752,19 @@ SelectorName: Vermin
 Descrip: You gain the Favored Enemy: Vermin feat, allowing you to consider Vermin a Favored Enemy.
 None: Feat: Favored Enemy: Vermin, Deepwood Stalker Tier 5: Extra Favored Enemy: Vermin
 
-
 AbilityName: Underdark Knowledge
 Descrip: You have knowledge of secret Underdark poisons, passed down through generations. +[10/20/30] Poison Spell Power.
 Tier: 3
 Ranks: 3
 
 AbilityName: Forgemaster
-Descrip:  Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
+Descrip: Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
 Tier: 3
 
 AbilityName: Dwarven Weapon Training IV
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 4
+Cost: 2
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
 Descrip: +1 to hit and damage with battle axes, hand axes, and throwing axes. +1 to hit and +2 damage with Dwarven waraxes and greataxes. While wielding a Dwarven Waraxe, +1 Competence Bonus to Critical Threat Range and +10% Strikethrough chance.
@@ -14783,7 +14787,6 @@ AbilityName: Deep Magic: Transmutation
 Descrip: +[1/2/3] Transmutation DCs
 Tier: 4
 Ranks: 3
-
 
 TreeName: Duergar Mindcleaver
 Type: Race
@@ -14816,6 +14819,7 @@ Tier: 0
 AbilityName: Dwarven Weapon Training I
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 1
+Cost: 2
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
 Descrip: +1 to hit and damage with battle axes, dwarven waraxes, hand axes, greataxes, and throwing axes. +5% Strikethrough chance while wielding a Dwarven Waraxe.
@@ -14842,6 +14846,7 @@ Tier: 1
 AbilityName: Dwarven Weapon Training II
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 2
+Cost: 2
 SharedSelector: Tier 1: Dwarven Weapon Training I
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
@@ -14857,6 +14862,7 @@ AbilityName: Unbreakable Spirit
 Descrip: Grants a +[1/2/3] bonus to Will saving throws. 
 Tier: 2
 Cost: 2
+Ranks: 3
 
 AbilityName: Arcanum
 Descrip: +[25/50/100], +[1/2/3] Spell Penetration
@@ -14870,6 +14876,7 @@ Tier: 2
 AbilityName: Dwarven Weapon Training III
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 3
+Cost: 2
 SharedSelector: Tier 2: Dwarven Weapon Training II
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
@@ -14881,24 +14888,23 @@ AbilityName: Duergar Shape III
 Descrip: While Enlarged, you gain a +5% Psionic Bonus to Fortification Bypass. While Reduced, you gain a +5 Psionic Bonus to Natural Armor. Your Enlarge and Reduce now last for five minutes.
 Tier: 3
 
-
 AbilityName: Mind's Edge
 Descrip: Melee Sunder Attack: You conjure a Mindcleaver and send it hurtling at a target foe, making an Attack roll on that target and dealing damage with your main hand Melee weapon if it hits, plus 1d4 Force Damage per Character Level to that target that scales with 100% Melee Power. In addition, the affected target must make a Will Saving Throw (14 + STR/INT mod + Sunder Bonuses) or be Sundered, losing -10% AC and -25% Fortification for 6 seconds. This ability is considered a Sunder for the purpose of other abilities.
 Tier: 3
-Ranks: 3
 
 AbilityName: Great Weapon Aptitude
-Descrip:  +[5/10/20]% Strikethrough
+Descrip: +[5/10/20]% Strikethrough
 Tier: 3
 Ranks: 3
 
 AbilityName: Forgemaster
-Descrip:  Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
+Descrip: Axes, Picks, and Hammers in your hands become Spellcasting Implements, and no longer take item damage.
 Tier: 3
 
 AbilityName: Dwarven Weapon Training IV
 Descrip: Choose from Axe Training or Pick and Hammer Training
 Tier: 4
+Cost: 2
 SharedSelector: Tier 3: Dwarven Weapon Training III
 Selector: Axe Training, Pick and Hammer Training
 SelectorName: Axe Training
@@ -14915,12 +14921,9 @@ Descrip: Your Mind's Edge now explodes when it hits its target, hitting enemies 
 Tier: 4
 
 AbilityName: Perfect Mindcleavers
-Descrip:  Mindcleavers and weapons that are Empowered with Mind that you wield cause enemies to become Shaken for 6 seconds. This can apply once every 2 seconds.
+Descrip: Mindcleavers and weapons that are Empowered with Mind that you wield cause enemies to become Shaken for 6 seconds. This can apply once every 2 seconds.
 Tier: 4
 
 AbilityName: Invisibility (SLA)
 Descrip: You gain Invisibility as a SLA (SP Cost: 6, Cooldown: 12 seconds)
 Tier: 4
-
-
-
