@@ -949,7 +949,7 @@ None: Half-Elf Tier 2: Dilettante Special Ability: Ranger
 AbilityName: True Strike
 Descrip: Ranged Archery Attack: Perform a ranged attack with +20 to-hit. You receive a +4 Insight bonus to hit for 12 seconds. (Cost: 2 SP, Cooldown: 3 seconds)
 Tier: 1
-Cost: 2
+Cost: 1
 
 AbilityName: Energy of the Wild
 Descrip: +[30/60/100] maximum spell points. Rank 3: You gain the Magical Training feat. Antirequisite: Cannot take Rank 3 if you already have the Magical Training feat.
@@ -1013,7 +1013,7 @@ Selector: Attack Boost, Energy Resistance Boost
 AbilityName: Shattermantle Shot
 Descrip: Ranged Archery Attack: Performs a ranged attack with +30% damage. On hit: Target gains 3 stack of Reduced Spell Resistance (-1 Spell Resistance. This effect can stack 100 times) on Vorpal Hit: Shattermantle (-100 spell Resistance for 10 seconds. Will DC 18 + Half Ranger Level + Wisdom Modifier negates.) (Cost: 4 SP, Cooldown: 3 seconds)
 Tier: 3
-Cost: 2
+Cost: 1
 
 AbilityName: Terror Arrows
 Descrip: Imbue Toggle: You imbue your arrows with negative energy. On Hit: Target is feared. (Will save vs. DC: 20 + Wisdom Modifier + Enchantment Spell Bonuses). On Vorpal: Target is subject to a Phantasmal Killer effect. Does not affect bosses. (Cost: 20 SP, Cooldown: 10 Seconds)}}Passive: +1 bonus to DC of Enchantment Spells}}Note: Mutually exclusive with all Imbues.

@@ -13,6 +13,27 @@ Any issues and input should be filed there.
 
 ## Release Notes
 
+### 4.14.0 - U81 - Terror of Demogorgon
+Changes:
+Updates for U81 - Terror of Demogorgon
+
+#### Character Builder
+- Version 4.14
+- Update to Level 35
+- New Legendary Feats
+- Addition of auto-granted feats
+
+#### Compendium 
+- Version 1.21
+- Added U81 quests, new patron, and sagas
+
+#### Crafting
+- Version 3.3.0
+- Updates to max level 36 with new shards
+- Added Solar and Lunar augments for tracking.
+  - Note Lunar is still incomplete.
+
+
 ### 4.13.0 - U80 - Duergar and Duergar Mindcleaver Iconic 
 Changes:
 Additions of Duergar and Duergar Mindcleaver Iconic 
