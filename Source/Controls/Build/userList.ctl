@@ -3,10 +3,10 @@ Begin VB.UserControl userList
    Appearance      =   0  'Flat
    AutoRedraw      =   -1  'True
    BackColor       =   &H80000005&
-   ClientHeight    =   3792
+   ClientHeight    =   3795
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   4032
+   ClientWidth     =   4035
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -16,8 +16,8 @@ Begin VB.UserControl userList
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   3792
-   ScaleWidth      =   4032
+   ScaleHeight     =   3795
+   ScaleWidth      =   4035
    Begin VB.PictureBox picContainer 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
@@ -25,8 +25,8 @@ Begin VB.UserControl userList
       ForeColor       =   &H80000008&
       Height          =   3252
       Left            =   0
-      ScaleHeight     =   3252
-      ScaleWidth      =   3732
+      ScaleHeight     =   3255
+      ScaleWidth      =   3735
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   360
@@ -49,7 +49,7 @@ Begin VB.UserControl userList
          ForeColor       =   &H80000008&
          Height          =   2412
          Left            =   0
-         ScaleHeight     =   2412
+         ScaleHeight     =   2415
          ScaleWidth      =   3480
          TabIndex        =   1
          TabStop         =   0   'False
@@ -64,8 +64,8 @@ Begin VB.UserControl userList
             Top             =   360
             Visible         =   0   'False
             Width           =   2172
-            _ExtentX        =   3831
-            _ExtentY        =   508
+            _ExtentX        =   3836
+            _ExtentY        =   503
          End
       End
    End
@@ -543,7 +543,12 @@ Private Sub ShowScrollbar()
     With UserControl
         If .picClient.Height - mlngMarginY > .picContainer.ScaleHeight Then
             .picClient.Width = .picContainer.ScaleWidth - .scrollVertical.Width
-            .scrollVertical.Max = .picClient.Height - .picContainer.ScaleHeight
+            'TODO fix max scroll
+            If (.picClient.Height - .picContainer.ScaleHeight) < 32767 Then
+                .scrollVertical.Max = .picClient.Height - .picContainer.ScaleHeight
+            Else
+                .scrollVertical.Max = 32767
+            End If
             .scrollVertical.SmallChange = mlngHeight + mlngMarginY
             .scrollVertical.LargeChange = .picContainer.ScaleHeight
             .scrollVertical.Visible = True
@@ -557,7 +562,11 @@ End Sub
 
 Public Property Get ScrollPosition() As Long
     With UserControl.scrollVertical
-        If .Visible Then ScrollPosition = .Value Else ScrollPosition = -1
+        If .Visible Then
+            ScrollPosition = .Value
+        Else
+            ScrollPosition = -1
+        End If
     End With
 End Property
 
@@ -566,7 +575,11 @@ Public Property Let ScrollPosition(ByVal plngScrollPosition As Long)
     
     With UserControl.scrollVertical
         If .Visible And plngScrollPosition <> -1 Then
-            If plngScrollPosition > .Max Then lngValue = .Max Else lngValue = plngScrollPosition
+            If plngScrollPosition > .Max Then
+                lngValue = .Max
+            Else
+                lngValue = plngScrollPosition
+            End If
             .Value = lngValue
         End If
     End With
@@ -595,7 +608,10 @@ Public Sub Scroll(plngValue As Long)
     Dim lngValue As Long
     
     If Not UserControl.scrollVertical.Visible Then Exit Sub
+    
+    'Increment is ???
     lngIncrement = plngValue * (mlngHeight + mlngMarginY)
+    
     With UserControl.scrollVertical
         lngValue = .Value - lngIncrement
         If lngValue < .Min Then lngValue = .Min

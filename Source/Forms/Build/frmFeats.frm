@@ -4,7 +4,7 @@ Begin VB.Form frmFeats
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Feats"
-   ClientHeight    =   7770
+   ClientHeight    =   8895
    ClientLeft      =   30
    ClientTop       =   405
    ClientWidth     =   12225
@@ -21,15 +21,15 @@ Begin VB.Form frmFeats
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7770
+   ScaleHeight     =   8895
    ScaleWidth      =   12225
    Begin CharacterBuilderLite.userCheckBox usrchkChannels 
-      Height          =   252
+      Height          =   255
       Left            =   5520
       TabIndex        =   13
       Tag             =   "nav"
-      Top             =   7440
-      Width           =   1692
+      Top             =   8640
+      Width           =   1695
       _ExtentX        =   2990
       _ExtentY        =   450
       Value           =   0   'False
@@ -37,12 +37,12 @@ Begin VB.Form frmFeats
       Bold            =   -1  'True
    End
    Begin CharacterBuilderLite.userHeader usrFooter 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   14
       TabStop         =   0   'False
-      Top             =   7380
-      Width           =   12216
+      Top             =   8520
+      Width           =   12210
       _ExtentX        =   21537
       _ExtentY        =   688
       Spacing         =   264
@@ -66,30 +66,30 @@ Begin VB.Form frmFeats
       RightLinks      =   "Help"
    End
    Begin CharacterBuilderLite.userDetails usrDetails 
-      Height          =   2232
+      Height          =   2835
       Left            =   6720
       TabIndex        =   9
       TabStop         =   0   'False
-      Top             =   4860
-      Width           =   2772
+      Top             =   5580
+      Width           =   2775
       _ExtentX        =   4895
-      _ExtentY        =   3942
+      _ExtentY        =   5001
    End
    Begin VB.ListBox lstGroup 
       Appearance      =   0  'Flat
-      Height          =   2232
+      Height          =   2955
       IntegralHeight  =   0   'False
       ItemData        =   "frmFeats.frx":000C
       Left            =   9720
       List            =   "frmFeats.frx":002E
       MultiSelect     =   2  'Extended
       TabIndex        =   12
-      Top             =   4860
+      Top             =   5580
       Width           =   2172
    End
    Begin VB.ListBox lstSub 
       Appearance      =   0  'Flat
-      Height          =   3390
+      Height          =   4230
       Left            =   9720
       Sorted          =   -1  'True
       TabIndex        =   6
@@ -98,7 +98,7 @@ Begin VB.Form frmFeats
    End
    Begin VB.ListBox lstFeat 
       Appearance      =   0  'Flat
-      Height          =   3390
+      Height          =   4230
       ItemData        =   "frmFeats.frx":008F
       Left            =   6720
       List            =   "frmFeats.frx":0091
@@ -119,13 +119,13 @@ Begin VB.Form frmFeats
       CheckPosition   =   1
    End
    Begin CharacterBuilderLite.userList usrList 
-      Height          =   6492
+      Height          =   7815
       Left            =   360
       TabIndex        =   1
       Top             =   600
-      Width           =   6132
+      Width           =   6135
       _ExtentX        =   10821
-      _ExtentY        =   11456
+      _ExtentY        =   13785
    End
    Begin VB.Label lblFeats 
       Appearance      =   0  'Flat
@@ -155,11 +155,11 @@ Begin VB.Form frmFeats
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H80000008&
-      Height          =   216
-      Left            =   9168
+      Height          =   210
+      Left            =   9165
       TabIndex        =   8
-      Top             =   4620
-      Width           =   324
+      Top             =   5340
+      Width           =   330
    End
    Begin VB.Label lblRestore 
       Alignment       =   2  'Center
@@ -177,12 +177,12 @@ Begin VB.Form frmFeats
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H80000008&
-      Height          =   216
-      Left            =   11568
+      Height          =   210
+      Left            =   11565
       TabIndex        =   11
-      Top             =   4620
+      Top             =   5340
       Visible         =   0   'False
-      Width           =   324
+      Width           =   330
    End
    Begin VB.Label lblSelectors 
       Appearance      =   0  'Flat
@@ -200,22 +200,22 @@ Begin VB.Form frmFeats
       BackColor       =   &H80000005&
       Caption         =   "Filter"
       ForeColor       =   &H80000008&
-      Height          =   252
+      Height          =   255
       Left            =   9720
       TabIndex        =   10
-      Top             =   4620
-      Width           =   1812
+      Top             =   5340
+      Width           =   1815
    End
    Begin VB.Label lblDetails 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
       Caption         =   "Details"
       ForeColor       =   &H80000008&
-      Height          =   252
+      Height          =   255
       Left            =   6720
       TabIndex        =   7
-      Top             =   4620
-      Width           =   2448
+      Top             =   5340
+      Width           =   2445
    End
    Begin VB.Menu mnuMain 
       Caption         =   "Main"
