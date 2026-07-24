@@ -1,0 +1,37 @@
+GrantedFeats1: Attack, Defensive Fighting, Dismiss Charm, Sneak, Sunder, Trip, Heroic Durability
+GrantedFeats2: Heroic Durability
+GrantedFeats2: Heroic Durability
+GrantedFeats3: Heroic Durability
+GrantedFeats4: Heroic Durability
+GrantedFeats5: Heroic Durability, Improved Heroic Durability
+GrantedFeats6: Heroic Durability
+GrantedFeats7: Heroic Durability
+GrantedFeats8: Heroic Durability
+GrantedFeats9: Heroic Durability
+GrantedFeats10: Heroic Durability, Improved Heroic Durability
+GrantedFeats11: Heroic Durability
+GrantedFeats12: Heroic Durability
+GrantedFeats13: Heroic Durability
+GrantedFeats14: Heroic Durability
+GrantedFeats15: Heroic Durability, Improved Heroic Durability
+GrantedFeats16: Heroic Durability
+GrantedFeats17: Heroic Durability
+GrantedFeats18: Heroic Durability
+GrantedFeats19: Heroic Durability
+GrantedFeats20: Heroic Durability
+GrantedFeats21:  Epic Power
+GrantedFeats22: Epic Skills, Epic Power, Epic Knowledge
+GrantedFeats23: Epic Skills, Epic Power
+GrantedFeats24: Epic Skills, Epic Power, Epic Knowledge
+GrantedFeats25: Epic Skills, Epic Power
+GrantedFeats26: Epic Skills, Epic Power, Epic Knowledge
+GrantedFeats27: Epic Skills, Epic Power
+GrantedFeats28: Epic Skills, Epic Power, Epic Knowledge
+GrantedFeats29: Epic Skills, Epic Power
+GrantedFeats30: Legendary Power
+GrantedFeats31: Legendary Power
+GrantedFeats32: Legendary Power, Legendary Knowledge
+GrantedFeats33: Legendary Power
+GrantedFeats34: Legendary Power, Legendary Knowledge
+GrantedFeats35: Legendary Power
+GrantedFeats36: Legendary Power, Legendary Knowledge

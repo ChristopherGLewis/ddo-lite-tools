@@ -51,7 +51,7 @@ Private Sub CalculateSupply()
     Dim lngSeconds As Long
     
     For lngSchool = 1 To 4
-        For lngTier = 1 To 6
+        For lngTier = 1 To MAX_TIER
             FindFastest lngSchool, db.School(lngSchool).Tier(lngTier)
         Next
     Next

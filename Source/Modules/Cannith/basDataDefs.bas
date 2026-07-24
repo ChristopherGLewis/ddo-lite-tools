@@ -13,6 +13,8 @@ Public Const GearMax As Long = 20
 Public Const SpotKeyMax As Long = 50
 Public Const ItemScales As Long = 4
 
+Public Const MAX_TIER As Long = 7
+
 
 ' ************* ENUMERATIONS *************
 
@@ -234,6 +236,8 @@ Public Enum AugmentColorEnum
     aceGreen
     aceYellow
     aceColorless
+    aceSolar
+    aceLunar
 End Enum
 
 Public Enum AugmentVendorEnum
@@ -330,7 +334,7 @@ Public Type TierType
 End Type
 
 Public Type SchoolType
-    Tier(1 To 6) As TierType
+    Tier(1 To MAX_TIER) As TierType
 End Type
 
 Public Type MaterialType
@@ -340,7 +344,7 @@ Public Type MaterialType
     Frequency As FrequencyEnum
     Supply As Long
     Demand As Long
-    DemandMatrix(1 To 6) As Long
+    DemandMatrix(1 To MAX_TIER) As Long
     Value As Long
     Override As Long
     Eberron As Boolean

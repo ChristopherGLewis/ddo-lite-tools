@@ -47,7 +47,7 @@ Public Sub SetFormIcon(pfrm As Form, ByVal pstrResourceID As String)
     
     ' Doesn't work in IDE, so just use crappy LoadResPicture() and bail
     If (App.LogMode = 0) Then
-        pfrm.Icon = LoadResPicture(pstrResourceID, vbResIcon)
+        pfrm.Icon = LoadResPictureUnknown(pstrResourceID, vbResIcon)
         Exit Sub
     End If
     lnghWnd = pfrm.hwnd
@@ -147,4 +147,23 @@ End Sub
 '    SendMessageLong hWnd, WM_SETICON, ICON_SMALL, hIconSmall
 '
 'End Sub
+
+
+'Wrap the LoadResPicture to default to UNKNOWN
+Public Function LoadResPictureUnknown(pstrResourceID As String, Optional penStyle As LoadResConstants = vbResIcon) As IPictureDisp
+    Const UNKNOWN As String = "UNKNOWN"
+
+    On Error GoTo IconError
+    
+    Set LoadResPictureUnknown = LoadResPicture(pstrResourceID, penStyle)
+
+CleanExit:
+    Exit Function
+    
+IconError:
+    Set LoadResPictureUnknown = LoadResPicture(UNKNOWN, penStyle)
+    Resume CleanExit
+End Function
+
+
 

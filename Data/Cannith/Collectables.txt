@@ -601,3 +601,102 @@ Plural: Zygomycota Fungi
 School: Natural
 Tier: 5
 Frequency: Common
+
+
+Collectable: Forgotten Folio
+School: Natural
+Tier: 7
+Frequency: Common
+
+Collectable: Silver Amulet
+School: Natural
+Tier: 7
+Frequency: Uncommon
+
+Collectable: Envelope of Pyrrhic Pollen
+Plural: Envelopes of Pyrrhic Pollen
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Silver Bell
+School: Natural
+Tier: 7
+Frequency: Common
+
+Collectable: Deciphered Riddle
+School: Natural
+Tier: 7
+Frequency: Uncommon
+
+Collectable: Ornate Scroll Case
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Creeping Vine
+School: Natural
+Tier: 7
+Frequency: Common
+
+Collectable: Etched Bone Shard
+School: Natural
+Tier: 7
+Frequency: Uncommon
+
+Collectable: Annointed Manuscript
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Chunk of Raw Amber
+Plural: Chunks of Raw Amber
+School: Natural
+Tier: 7
+Frequency: Common
+
+Collectable: Poisoned Thorn
+School: Natural
+Tier: 7
+Frequency: Uncommon
+
+Collectable: Packet of Golden Powder
+Plural: Packets of Golden Powder
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Band
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Goblet
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Urn
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Dried Fish
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Vessel
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Plant
+School: Natural
+Tier: 7
+Frequency: Rare
+
+Collectable: Mystical Bottle
+School: Natural
+Tier: 7
+Frequency: Rare

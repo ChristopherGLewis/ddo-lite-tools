@@ -9,9 +9,9 @@ Option Explicit
 ' basFormat->IdentifyChannels()
 ' basFormatLite->GetBuildFeatSlot()
 
-Public Const MAX_LEVEL As Long = 34
+Public Const MAX_LEVEL As Long = 36  ' Search for MAX_LEVEL to see where this needs to be changed
 
-Public Const MAX_LEVELUPS As Integer = 8
+Public Const MAX_LEVELUPS As Integer = 9  ' This should be CINT(MAX_LEVEL \ 4), but you can't
 
 Public Const MAX_STATS As Integer = 6
 

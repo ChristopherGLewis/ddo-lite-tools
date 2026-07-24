@@ -13,6 +13,7 @@ Public Sub InitData()
     LoadClasses
     LoadFeats
     LoadFeatMap
+    LoadAutoGrantedFeats
     LoadEnhancements
     LoadDestinies
     LoadTomeData
@@ -222,6 +223,7 @@ Private Sub LoadClasses()
     If DataFile(strFile, "Classes.txt") Then Exit Sub
     strRaw = xp.File.LoadToString(strFile)
     strClass = Split(strRaw, "ClassName: ")
+    
     For i = 1 To UBound(strClass)
         If InStr(strClass(i), "BAB: ") Then
             LoadClass strClass(i)
@@ -706,7 +708,11 @@ Private Sub LoadFeats()
     strRaw = xp.File.LoadToString(strFile)
     strFeat = Split(strRaw, "FeatName: ")
     For i = 1 To UBound(strFeat)
-        If InStr(strFeat(i), "Group: ") Then LoadFeat strFeat(i) Else ErrorLoading strFeat(i)
+        If InStr(strFeat(i), "Group: ") Then
+            LoadFeat strFeat(i)
+        Else
+            ErrorLoading strFeat(i)
+        End If
     Next
     With db
         If .Feats = 0 Then
@@ -1174,36 +1180,35 @@ Public Function SeekFeat(ByVal pstrFeatName As String, Optional pblnMatchCase As
     Dim lngFirst As Long
     Dim lngMid As Long
     Dim lngLast As Long
+    Dim sFeatName As String
     
     If Len(pstrFeatName) = 0 Then Exit Function
     lngFirst = 1
     lngLast = db.Feats
+    'Case based match
     If pblnMatchCase Then
-        Do While lngFirst <= lngLast
-            lngMid = (lngFirst + lngLast) \ 2
-            If db.FeatLookup(lngMid).FeatName < pstrFeatName Then
-                lngFirst = lngMid + 1
-            ElseIf db.FeatLookup(lngMid).FeatName > pstrFeatName Then
-                lngLast = lngMid - 1
-            Else
-                SeekFeat = db.FeatLookup(lngMid).FeatIndex
-                Exit Function
-            End If
-        Loop
+        pstrFeatName = pstrFeatName
     Else
         pstrFeatName = LCase$(pstrFeatName)
-        Do While lngFirst <= lngLast
-            lngMid = (lngFirst + lngLast) \ 2
-            If LCase$(db.FeatLookup(lngMid).FeatName) < pstrFeatName Then
-                lngFirst = lngMid + 1
-            ElseIf LCase$(db.FeatLookup(lngMid).FeatName) > pstrFeatName Then
-                lngLast = lngMid - 1
-            Else
-                SeekFeat = db.FeatLookup(lngMid).FeatIndex
-                Exit Function
-            End If
-        Loop
     End If
+        
+    'Middle first match
+    Do While lngFirst <= lngLast
+        lngMid = (lngFirst + lngLast) \ 2
+        If (pblnMatchCase) Then
+            sFeatName = db.FeatLookup(lngMid).FeatName
+        Else
+            sFeatName = LCase$(db.FeatLookup(lngMid).FeatName)
+        End If
+        If sFeatName < pstrFeatName Then
+            lngFirst = lngMid + 1
+        ElseIf sFeatName > pstrFeatName Then
+            lngLast = lngMid - 1
+        Else
+            SeekFeat = db.FeatLookup(lngMid).FeatIndex
+            Exit Function
+        End If
+    Loop
 End Function
 
 
@@ -1242,6 +1247,70 @@ Private Sub LoadFeatMap()
             LogError
         End If
     Next
+End Sub
+
+
+
+Private Sub LoadAutoGrantedFeats()
+    Dim strFile As String
+    Dim strRaw As String
+    Dim sAutoGrant() As String
+    Dim i, j As Long
+    Dim sGranted() As String
+    Dim iLevel As Integer
+    Dim sGrantedFeats() As String
+    Dim iFeatIndex As Long
+    
+    
+    Erase db.AutoGrantedFeat
+    db.AutoGrantedFeats = 0
+    
+    If DataFile(strFile, "AutoGrantedFeats.txt") Then Exit Sub
+    ' Allocate enough space that we never have to increase
+    ReDim db.AutoGrantedFeat(128)
+    
+    strRaw = xp.File.LoadToString(strFile)
+    
+    sAutoGrant = Split(strRaw, "GrantedFeats")  'This should be an array of #: Feat, Feat
+    For i = 1 To UBound(sAutoGrant)
+        'Split on ':'
+        If (InStr(sAutoGrant(i), ":")) Then
+        
+            sGranted = Split(sAutoGrant(i), ":")
+            iLevel = CInt(sGranted(0))
+            
+            'Split on ','
+            CleanText sGranted(1)  'Remove trailing CRLF
+            sGrantedFeats() = Split(Trim(sGranted(1)), ", ")
+            For j = 0 To UBound(sGrantedFeats)
+                iFeatIndex = SeekFeat(Trim(sGrantedFeats(j)))
+                If iFeatIndex > 0 Then
+                    'Add this feat
+                    Dim agFeat As AutoGrantedFeatType
+                    agFeat.FeatIndex = iFeatIndex
+                    agFeat.FeatName = sGrantedFeats(j)
+                    agFeat.Level = iLevel
+                    
+                    'Add this to the autoGranted
+                    db.AutoGrantedFeat(db.AutoGrantedFeats + 1) = agFeat
+                    db.AutoGrantedFeats = db.AutoGrantedFeats + 1
+                Else
+                    ErrorLoading sGrantedFeats(j)
+                End If
+            Next
+        Else
+            ErrorLoading sAutoGrant(i)
+        End If
+    Next
+    'Resize
+    With db
+        If .AutoGrantedFeats = 0 Then
+            Erase .AutoGrantedFeat
+        Else
+            ReDim Preserve .AutoGrantedFeat(.AutoGrantedFeats)
+            
+        End If
+    End With
 End Sub
 
 

@@ -177,7 +177,7 @@ Public Enum FilterEnum
     feFilters  'This has to be last
 End Enum
 
-Public Enum BuildFeatSourceEnum ' Source column in feats screen (display only)
+Public Enum BuildFeatSourceEnum ' Source column in feats screen (display only) - but also the index in build.feats()???
     bfsHeroic
     bfsEpic
     bfsDestiny

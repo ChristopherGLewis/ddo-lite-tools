@@ -2,10 +2,10 @@ VERSION 5.00
 Begin VB.UserControl userAugSlots 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   ClientHeight    =   2592
+   ClientHeight    =   2595
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   2928
+   ClientWidth     =   2925
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -17,8 +17,8 @@ Begin VB.UserControl userAugSlots
    EndProperty
    KeyPreview      =   -1  'True
    LockControls    =   -1  'True
-   ScaleHeight     =   2592
-   ScaleWidth      =   2928
+   ScaleHeight     =   2595
+   ScaleWidth      =   2925
    Begin CannithCrafting.userHeader usrHeader 
       Height          =   252
       Left            =   0
@@ -26,8 +26,8 @@ Begin VB.UserControl userAugSlots
       TabStop         =   0   'False
       Top             =   0
       Width           =   2928
-      _ExtentX        =   5165
-      _ExtentY        =   445
+      _ExtentX        =   5159
+      _ExtentY        =   450
       Margin          =   0
       Spacing         =   0
       CaptionTop      =   0
@@ -43,8 +43,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   1
       Left            =   12
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   9
       TabStop         =   0   'False
       Top             =   300
@@ -59,8 +59,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   2
       Left            =   12
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   8
       TabStop         =   0   'False
       Top             =   720
@@ -75,8 +75,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   3
       Left            =   12
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   7
       TabStop         =   0   'False
       Top             =   1140
@@ -91,8 +91,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   1
       Left            =   12
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   6
       TabStop         =   0   'False
       Tag             =   "Red"
@@ -108,8 +108,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   2
       Left            =   432
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   5
       TabStop         =   0   'False
       Tag             =   "Orange"
@@ -125,8 +125,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   3
       Left            =   852
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   4
       TabStop         =   0   'False
       Tag             =   "Purple"
@@ -142,8 +142,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   4
       Left            =   1272
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   3
       TabStop         =   0   'False
       Tag             =   "Blue"
@@ -159,8 +159,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   5
       Left            =   1692
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   2
       TabStop         =   0   'False
       Tag             =   "Green"
@@ -176,8 +176,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   6
       Left            =   2112
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   1
       TabStop         =   0   'False
       Tag             =   "Yellow"
@@ -193,8 +193,8 @@ Begin VB.UserControl userAugSlots
       Height          =   408
       Index           =   7
       Left            =   2532
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   0
       TabStop         =   0   'False
       Tag             =   "Colorless"
@@ -208,8 +208,8 @@ Begin VB.UserControl userAugSlots
       TabStop         =   0   'False
       Top             =   2340
       Width           =   2928
-      _ExtentX        =   5165
-      _ExtentY        =   445
+      _ExtentX        =   5159
+      _ExtentY        =   450
       Margin          =   0
       Spacing         =   0
       CaptionTop      =   0
@@ -463,10 +463,7 @@ Private Sub DrawPicture(ppic As PictureBox, pstrResourceID As String, Optional p
         lngWidth = .ScaleWidth
         lngHeight = .ScaleHeight
         .Cls
-        On Error Resume Next
-        .PaintPicture LoadResPicture(pstrResourceID, vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
-        If Err.Number Then .PaintPicture LoadResPicture("UNKNOWN", vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
-        On Error GoTo 0
+        .PaintPicture LoadResPictureUnknown(pstrResourceID, vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
     End With
     If pblnActive Then DrawBorder ppic
 End Sub

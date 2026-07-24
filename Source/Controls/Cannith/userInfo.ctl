@@ -2,10 +2,10 @@ VERSION 5.00
 Begin VB.UserControl userInfo 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   ClientHeight    =   3072
+   ClientHeight    =   3075
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   4656
+   ClientWidth     =   4650
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -15,16 +15,16 @@ Begin VB.UserControl userInfo
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   3072
-   ScaleWidth      =   4656
+   ScaleHeight     =   3075
+   ScaleWidth      =   4650
    Begin VB.PictureBox picContainer 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
       ForeColor       =   &H80000008&
       Height          =   2652
       Left            =   0
-      ScaleHeight     =   2628
-      ScaleWidth      =   4608
+      ScaleHeight     =   2625
+      ScaleWidth      =   4605
       TabIndex        =   1
       Top             =   420
       Width           =   4632
@@ -44,8 +44,8 @@ Begin VB.UserControl userInfo
          ForeColor       =   &H80000008&
          Height          =   1272
          Left            =   360
-         ScaleHeight     =   1272
-         ScaleWidth      =   3912
+         ScaleHeight     =   1275
+         ScaleWidth      =   3915
          TabIndex        =   2
          Top             =   600
          Width           =   3912
@@ -125,7 +125,7 @@ Begin VB.UserControl userInfo
       Caption         =   "Large Title"
       BeginProperty Font 
          Name            =   "Verdana"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -616,9 +616,10 @@ End Sub
 
 Public Sub SetIcon(pstrResourceID As String, Optional penStyle As LoadResConstants = vbResIcon)
     If mblnTitleIcon And menTitleSize = iteLarge Then
-        UserControl.imgIcon.Picture = LoadResPicture(pstrResourceID, penStyle)
+        UserControl.imgIcon.Picture = LoadResPictureUnknown(pstrResourceID, penStyle)
         UserControl.imgIcon.Visible = True
     End If
+
 End Sub
 
 Private Sub PrintWord(pstrWord As String)
@@ -966,7 +967,7 @@ Private Sub lnkLink_MouseDown(Index As Integer, Button As Integer, Shift As Inte
     
     SetCursor LoadCursor(0, CURSOR_HAND)
     With UserControl.lnkLink(Index)
-        enStyle = Val(Left(.Tag, 1))
+        enStyle = val(Left(.Tag, 1))
         strLink = Mid(.Tag, 2)
     End With
     Select Case enStyle

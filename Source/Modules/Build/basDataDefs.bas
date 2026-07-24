@@ -196,6 +196,7 @@ Public Type FeatType
     Req() As ReqListType ' 1 = All, 2 = One, 3 = None
 End Type
 
+'used for sorted feats
 Public Type FeatIndexType
     FeatIndex As Long
     FeatName As String
@@ -278,9 +279,11 @@ Public Type TemplateType
     StatPoints(4, 6) As Long
 End Type
 
-Public Type EpicGrantedFeatType
+' Type for AutoGrantedFeats
+Public Type AutoGrantedFeatType
     FeatName As String
-    Level() As Long
+    FeatIndex As Integer
+    Level As Long
 End Type
 
 Public Type DatabaseType
@@ -303,9 +306,9 @@ Public Type DatabaseType
     NameChange() As NameChangeType
     Templates As Long
     Template() As TemplateType
-    '2021.11.10 - Epic Granted - TODO
-    EpicGrantedFeats As Long
-    EpicGrantedFeat() As EpicGrantedFeatType
+    '2026.07.10 - Granted Feats
+    AutoGrantedFeats As Long
+    AutoGrantedFeat() As AutoGrantedFeatType
     Loaded As Boolean
 End Type
 

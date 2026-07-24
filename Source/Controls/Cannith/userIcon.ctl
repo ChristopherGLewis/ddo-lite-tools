@@ -2,10 +2,10 @@ VERSION 5.00
 Begin VB.UserControl userIcon 
    Appearance      =   0  'Flat
    BackColor       =   &H00FFFFC0&
-   ClientHeight    =   408
+   ClientHeight    =   405
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   408
+   ClientWidth     =   405
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -15,8 +15,8 @@ Begin VB.UserControl userIcon
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   408
-   ScaleWidth      =   408
+   ScaleHeight     =   405
+   ScaleWidth      =   405
    Begin VB.PictureBox pic 
       Appearance      =   0  'Flat
       AutoRedraw      =   -1  'True
@@ -25,8 +25,8 @@ Begin VB.UserControl userIcon
       ForeColor       =   &H80000008&
       Height          =   408
       Left            =   0
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   0
@@ -221,10 +221,7 @@ Private Sub DrawIcon()
             lngWidth = .ScaleWidth
             lngHeight = .ScaleHeight
             .Cls
-            On Error Resume Next
-            .PaintPicture LoadResPicture(strResourceID, vbResIcon), lngPixelX, lngPixelY, lngWidth - (lngPixelX * 2), lngHeight - (lngPixelY * 2)
-            If Err.Number Then .PaintPicture LoadResPicture("UNKNOWN", vbResIcon), lngPixelX, lngPixelY, lngWidth - (lngPixelX * 2), lngHeight - (lngPixelY * 2)
-            On Error GoTo 0
+            .PaintPicture LoadResPictureUnknown(strResourceID, vbResIcon), lngPixelX, lngPixelY, lngWidth - (lngPixelX * 2), lngHeight - (lngPixelY * 2)
         End With
     End With
     If Not Me.Enabled Then

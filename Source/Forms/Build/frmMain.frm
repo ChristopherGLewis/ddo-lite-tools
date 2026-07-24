@@ -559,8 +559,14 @@ Private Sub Form_Load()
     InitFonts Me.picBuild
     ' If it took longer than 400 milliseconds to load and process data last time program ran, display "Loading Data..."
     If cfg.ProcessTime > 400 Then Me.lblLoading.Visible = True
+    
+    'This timer starts the data load process.  Its in a timer to not block
+    'the UI thread
     Me.tmrData.Enabled = True
-    If Not xp.DebugMode Then Call WheelHook(Me.hwnd)
+    
+    If Not xp.DebugMode Then
+        Call WheelHook(Me.hwnd)
+    End If
 End Sub
 
 Private Sub Form_Resize()
@@ -619,20 +625,24 @@ Public Sub RefreshColors()
     GenerateOutput oeRemember
 End Sub
 
+
+'All the data load stuff is done here - I may want to add a hidden button to force a reload
 Private Sub tmrData_Timer()
     Dim sngStart As Single
     Dim sngStop As Single
     Dim blnVisible As Boolean
     Dim i As Long
     
+    'Turn this off so we only load once.
     Me.tmrData.Enabled = False
+    
     sngStart = Timer
     xp.Mouse = msSystemWait
     ' Load and process data
     ClearLog
     InitHelp
-    InitData
-    ProcessData
+    InitData  'This loads the data from the data\builder directory
+    ProcessData  'This does secondary processing on the data such as dealing with requirements
     blnVisible = CreateErrorLog()
     ClearLog
     ' Show "Error Log" menu option if there were errors

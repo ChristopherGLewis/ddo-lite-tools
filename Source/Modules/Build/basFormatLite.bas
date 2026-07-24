@@ -409,9 +409,9 @@ Private Function GetBuildFeatSlot(ptypBuildFeat As BuildFeatType) As String
             Case bftGranted: strReturn = "Granted"
             Case bftStandard
                 Select Case .Level
-                    ' TODO Need to fix this for MAX Levels
+                    ' TODO Need to fix this for MAX_LEVEL
                     Case Is < 20: strReturn = "Heroic " & .Level
-                    Case 21, 24, 27, 30, 33: strReturn = "Epic " & .Level
+                    Case 21, 24, 27, 30, 33, 36: strReturn = "Epic " & .Level  'Every three levels
                     Case 22, 25, 28, 31, 34: strReturn = "Destiny " & .Level
                 End Select
             Case bftLegend: strReturn = "Legend " & .Level

@@ -77,6 +77,14 @@ High: 11
 Explorer: 17500
 Pack: The Isle of Dread
 
+Area: Land of Lamordia
+Wiki: Land of Lamordia
+Map: Map-of-Land-of-Lamordia.png
+Low: 5
+High: 12
+Explorer: 9560
+Pack: Magic of Myth Drannor
+
 Area: The Red Fens
 Map: RedFensMap.jpg
 Low: 6
@@ -113,13 +121,14 @@ High: 15
 Explorer: 10937
 Pack: Demon Sands
 
-Area: Land of Lamordia
-Wiki: Land of Lamordia
-Map: Map-of-Land-of-Lamordia.png
+
+Area: The Darklake (Heroic)
+Wiki: The Darklake
+Map: Map-of-The-Darklake.jpg
 Low: 8
 High: 15
-Explorer: 30728
-Pack: Magic of Myth Drannor
+Explorer: ??
+Pack: Terror of Demogorgon
 
 Area: Ruins of Gianthold
 Map: RuinsOfGiantholdMap.jpg
@@ -134,7 +143,7 @@ Wiki: Ruins of Myth Drannor
 Map: Map-of-the-Ruins-of-Myth-Drannor.jpg
 Low: 10
 High: 18
-Explorer: 56755
+Explorer: 16800
 Pack: Magic of Myth Drannor
 
 Area: Orchard of the Macabre
@@ -390,14 +399,22 @@ Area: Ruins of Myth Drannor (legendary)
 Wiki: Ruins of Myth Drannor
 Map: Map-of-the-Ruins-of-Myth-Drannor.jpg
 Low: 20
-High: 37
-Explorer: ???
+High: 38
+Explorer: 116550
 Pack: Magic of Myth Drannor
 
 Area: Land of Lamordia (legendary)
 Wiki: Land of Lamordia
 Map: Map-of-Land-of-Lamordia.png
 Low: 20
-High: 37
-Explorer: ???
+High: 38
+Explorer: 99447
 Pack: Magic of Myth Drannor
+
+Area: The Darklake (Legendary)
+Wiki: The Darklake
+Map: Map-of-The-Darklake.jpg
+Low: 20
+High: 38
+Explorer: ??
+Pack: Terror of Demogorgon

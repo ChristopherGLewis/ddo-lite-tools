@@ -2,10 +2,10 @@ VERSION 5.00
 Begin VB.UserControl userItemSlot 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   ClientHeight    =   996
+   ClientHeight    =   990
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   11076
+   ClientWidth     =   11070
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -15,8 +15,8 @@ Begin VB.UserControl userItemSlot
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   996
-   ScaleWidth      =   11076
+   ScaleHeight     =   990
+   ScaleWidth      =   11070
    Begin VB.Timer tmrDeactivate 
       Enabled         =   0   'False
       Interval        =   1000
@@ -31,8 +31,8 @@ Begin VB.UserControl userItemSlot
       ForeColor       =   &H80000008&
       Height          =   384
       Left            =   9492
-      ScaleHeight     =   384
-      ScaleWidth      =   384
+      ScaleHeight     =   390
+      ScaleWidth      =   390
       TabIndex        =   21
       Top             =   252
       Visible         =   0   'False
@@ -44,8 +44,8 @@ Begin VB.UserControl userItemSlot
       TabIndex        =   8
       Top             =   300
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userSpinner usrspnML 
@@ -56,8 +56,8 @@ Begin VB.UserControl userItemSlot
       Top             =   204
       Visible         =   0   'False
       Width           =   852
-      _ExtentX        =   1503
-      _ExtentY        =   550
+      _ExtentX        =   1508
+      _ExtentY        =   556
       Max             =   34
       Value           =   34
       ShowZero        =   0   'False
@@ -76,8 +76,8 @@ Begin VB.UserControl userItemSlot
       Top             =   300
       Visible         =   0   'False
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Value           =   0   'False
       Caption         =   ""
    End
@@ -89,8 +89,8 @@ Begin VB.UserControl userItemSlot
       Top             =   564
       Visible         =   0   'False
       Width           =   912
-      _ExtentX        =   1609
-      _ExtentY        =   445
+      _ExtentX        =   1614
+      _ExtentY        =   450
       Caption         =   "Done"
    End
    Begin CannithCrafting.userCheckBox usrchkEffect 
@@ -101,8 +101,8 @@ Begin VB.UserControl userItemSlot
       Top             =   60
       Visible         =   0   'False
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userCheckBox usrchkEffect 
@@ -113,8 +113,8 @@ Begin VB.UserControl userItemSlot
       Top             =   360
       Visible         =   0   'False
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userCheckBox usrchkEffect 
@@ -125,8 +125,8 @@ Begin VB.UserControl userItemSlot
       Top             =   660
       Visible         =   0   'False
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userIcon usrIcon 
@@ -136,8 +136,8 @@ Begin VB.UserControl userItemSlot
       TabStop         =   0   'False
       Top             =   240
       Width           =   408
-      _ExtentX        =   720
-      _ExtentY        =   720
+      _ExtentX        =   714
+      _ExtentY        =   714
       AllowMenu       =   0   'False
       Style           =   1
    End
@@ -148,8 +148,8 @@ Begin VB.UserControl userItemSlot
       TabIndex        =   5
       Top             =   60
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userCheckBox usrchkAugment 
@@ -159,8 +159,8 @@ Begin VB.UserControl userItemSlot
       TabIndex        =   6
       Top             =   360
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin CannithCrafting.userCheckBox usrchkAugment 
@@ -170,8 +170,8 @@ Begin VB.UserControl userItemSlot
       TabIndex        =   7
       Top             =   660
       Width           =   312
-      _ExtentX        =   550
-      _ExtentY        =   445
+      _ExtentX        =   556
+      _ExtentY        =   450
       Caption         =   ""
    End
    Begin VB.Label lblBaseItem 
@@ -648,7 +648,7 @@ Public Sub Refresh()
         .usrchkEldritch.Visible = blnVisible
         If blnVisible Then .picEldritch.TooltipText = db.Ritual(itm.EldritchRitual).RitualName
         With .picEldritch
-            If blnVisible Then .PaintPicture LoadResPicture("MSCELDRITCH", vbResBitmap), 0, 0, .Width, .Height
+            If blnVisible Then .PaintPicture LoadResPictureUnknown("MSCELDRITCH", vbResBitmap), 0, 0, .Width, .Height
             .Visible = blnVisible
         End With
         ' All Done

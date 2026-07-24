@@ -3,6 +3,8 @@ Attribute VB_Name = "basBuild"
 ' These are public functions used by the dialogs, the output routine and the import screen
 Option Explicit
 
+'This is the MAX feats per SLOT (auto granted, class, racial etc that slot into
+' db.feats(0-x)
 'This is set to minimize array re-sizing
 Public Const MAX_FEATS = 128
 
@@ -110,33 +112,31 @@ End Function
 
 'Return the number of Heroic levels, either 20 or Max
 'TODO this makes no sense,  s/b either maxlevels if < 20 or 20
-Public Function HeroicLevels() As Long
+Public Function GetHeroicLevels() As Long
     If build.MaxLevels > 19 Then
-        HeroicLevels = 20
+        GetHeroicLevels = 20
     Else
-        HeroicLevels = build.MaxLevels
+        GetHeroicLevels = build.MaxLevels
     End If
 End Function
 
 'Return the number of Epic levels
-Public Function EpicLevels() As Long
-    If build.MaxLevels > 20 Then
-        'If build.MaxLevels < MAX_LEVEL Then
-        '    EpicLevels = build.MaxLevels - 20
-        'Else
-        '    EpicLevels = 10
-        'End If
-        EpicLevels = build.MaxLevels - 20
-    Else
-        EpicLevels = 0
+Public Function GetEpicLevels() As Long
+    If build.MaxLevels <= 20 Then
+        GetEpicLevels = 0
+    ElseIf build.MaxLevels < 30 Then
+        GetEpicLevels = build.MaxLevels - 20
+    ElseIf build.MaxLevels > 30 Then
+        GetEpicLevels = 10
     End If
+        
 End Function
 
-Public Function LegendaryLevels() As Long
+Public Function GetLegendaryLevels() As Long
     If build.MaxLevels >= 30 Then
-        LegendaryLevels = build.MaxLevels - 30
+        GetLegendaryLevels = build.MaxLevels - 30
     Else
-        LegendaryLevels = 0
+        GetLegendaryLevels = 0
     End If
 End Function
 
@@ -152,7 +152,7 @@ Public Function GetClassSplit(ptypClassSplit() As ClassSplitType) As Long
     
     ReDim ptypClassSplit(ceClasses - 1)
     ' Count how many levels taken in each class
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         ptypClassSplit(build.Class(i)).Levels = ptypClassSplit(build.Class(i)).Levels + 1
     Next
     ' Move classes taken to front of list
@@ -329,7 +329,7 @@ Public Function CalculateSkill(penSkill As SkillsEnum, ByVal plngLevel As Long, 
     Dim lngTome As Long
     Dim i As Long
     
-    lngMax = HeroicLevels()
+    lngMax = GetHeroicLevels()
     If lngMax > plngLevel Then lngMax = plngLevel
     For i = 1 To lngMax
         lngTotal = lngTotal + build.Skills(penSkill, i) * Skill.grid(penSkill, i).Native
@@ -424,7 +424,7 @@ Public Sub InitBuildSkills()
             If .Color = -1 Then lngColor(.ClassID) = -1 Else lngColor(.ClassID) = cfg.GetColor(cgeOutput, .Color)
         End With
     Next
-    For lngLevel = 1 To HeroicLevels()
+    For lngLevel = 1 To GetHeroicLevels()
         With Skill.Col(lngLevel)
             .Class = build.Class(lngLevel)
             .Initial = strInitial(.Class)
@@ -439,7 +439,7 @@ Public Sub InitBuildSkills()
     Next
     ' Calculate max ranks for each interior cell
     For lngSkill = 1 To 21
-        For lngLevel = 1 To HeroicLevels()
+        For lngLevel = 1 To GetHeroicLevels()
             With Skill.grid(lngSkill, lngLevel)
                 ' Is skill native for this level? Has it ever been native?
                 If db.Class(build.Class(lngLevel)).NativeSkills(lngSkill) Then .Native = 2 Else .Native = 1
@@ -452,7 +452,7 @@ Public Sub InitBuildSkills()
         Next
     Next
     ' Calculate level totals
-    For lngLevel = 1 To HeroicLevels()
+    For lngLevel = 1 To GetHeroicLevels()
         ' Points spent
         Skill.Col(lngLevel).Points = 0
         For lngSkill = 1 To 21
@@ -468,11 +468,11 @@ Public Sub InitBuildSkills()
         With Skill.Row(lngSkill)
             ' Ranks spent
             .Ranks = 0
-            For lngLevel = 1 To HeroicLevels()
+            For lngLevel = 1 To GetHeroicLevels()
                 .Ranks = .Ranks + build.Skills(lngSkill, lngLevel) * Skill.grid(lngSkill, lngLevel).Native
             Next
             ' Max allowed
-            .MaxRanks = HeroicLevels() + 3
+            .MaxRanks = GetHeroicLevels() + 3
             If blnEverNative(lngSkill) Then .MaxRanks = .MaxRanks * 2
         End With
     Next
@@ -499,6 +499,8 @@ Private Sub InitGrantedFeats()
     Dim lngGranted As Long
     Dim lngClassLevels(1 To MAX_CLASSES)  As Long  'not 20 heroic,
     Dim blnDwarvenAxe As Boolean
+    Dim iFeat As Long
+    Dim pPtr As PointerType
     
     If build.Class(1) = ceAny Then Exit Sub
     If build.Race = reDwarf Then blnDwarvenAxe = True
@@ -507,8 +509,21 @@ Private Sub InitGrantedFeats()
         ReDim .Feat(1 To MAX_FEATS)
         .Feats = 0
     End With
+    
+    
     'Loop through our levels
     For lngLevel = 1 To 20
+        'Auto granted heroic feats
+        For lngGranted = 1 To db.AutoGrantedFeats
+            If (lngLevel = db.AutoGrantedFeat(lngGranted).Level) Then
+                'Find this feat
+                pPtr.Raw = "Feat: " + db.AutoGrantedFeat(lngGranted).FeatName
+                pPtr.Style = peFeat
+                pPtr.Feat = db.AutoGrantedFeat(lngGranted).FeatIndex
+                
+                GrantFeat pPtr, db.AutoGrantedFeat(lngGranted).Level, bfsClass, build.Feat(bftGranted).Feats
+            End If
+         Next
         ' Race granted feats
         With db.Race(build.Race)
             For lngGranted = 1 To .GrantedFeats
@@ -538,9 +553,38 @@ Private Sub InitGrantedFeats()
             End Select
         End If
     Next
+    'Add Epic Granted
     For lngLevel = 21 To 30
-      'Add epic Skills
+        'Auto granted Epic feats
+        For lngGranted = 1 To db.AutoGrantedFeats
+            If (lngLevel = db.AutoGrantedFeat(lngGranted).Level) Then
+                'Find this feat
+                pPtr.Raw = "Feat: " + db.AutoGrantedFeat(lngGranted).FeatName
+                pPtr.Style = peFeat
+                pPtr.Feat = db.AutoGrantedFeat(lngGranted).FeatIndex
+                
+                GrantFeat pPtr, db.AutoGrantedFeat(lngGranted).Level, bfsEpic, build.Feat(bftGranted).Feats
+            End If
+         Next
+
     Next
+    
+    'Add Legendary granted
+    For lngLevel = 31 To MAX_LEVEL
+        'Auto granted Legendary feats
+        For lngGranted = 1 To db.AutoGrantedFeats
+            If (lngLevel = db.AutoGrantedFeat(lngGranted).Level) Then
+                'Find this feat
+                pPtr.Raw = "Feat: " + db.AutoGrantedFeat(lngGranted).FeatName
+                pPtr.Style = peFeat
+                pPtr.Feat = db.AutoGrantedFeat(lngGranted).FeatIndex
+                
+                GrantFeat pPtr, db.AutoGrantedFeat(lngGranted).Level, bfsLegend, build.Feat(bftGranted).Feats
+            End If
+         Next
+
+    Next
+    
     With build.Feat(bftGranted)
         If .Feats = 0 Then Erase .Feat Else ReDim Preserve .Feat(1 To .Feats)
     End With
@@ -550,7 +594,7 @@ Private Sub GrantFeat(ptypPointer As PointerType, plngLevel As Long, penSource A
     Dim blnFound As Boolean
     Dim i As Long
     
-    'pbytIndex s/b INT - this is a ref to build.feat(Granted).feat
+    'pbytIndex s/b LONG - this is a ref to build.feat(Granted).feat
     
     If ptypPointer.Feat = 0 Then Exit Sub
     
@@ -602,8 +646,8 @@ Private Sub InitStandardFeats()
     Dim lngIndex As Long
     
     '** LEVEL CHANGE
-    'TODO When MAX level increases, Standard Feats needs to increase
-    Const ALLOCATED_FEATS = 18
+    'TODO When MAX_LEVEL increases, Standard Feats needs to increase
+    Const ALLOCATED_FEATS = 19
     
     'Allocate 18 slots for all listed below
     AllocateFeatSlots bftStandard, ALLOCATED_FEATS
@@ -639,6 +683,9 @@ Private Sub InitStandardFeats()
     InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 33    'Epic 5
     InitBuildFeatSlot bftStandard, bfsDestiny, lngIndex, 34 'Dest5
 
+    ' Feats +36 - Update ALLOCATED_FEATS to 19 for MAX_LEVEL
+    InitBuildFeatSlot bftStandard, bfsEpic, lngIndex, 36    'Epic 5
+   
 
 End Sub
 'No Longer used
@@ -792,7 +839,7 @@ Private Function GetCharacterLevel(penClass, plngClassLevel) As Long
     Dim lngLevel As Long
     Dim i As Long
     
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         If build.Class(i) = penClass Then lngLevel = lngLevel + 1
         If lngLevel = plngClassLevel Then
             GetCharacterLevel = i
@@ -1145,7 +1192,12 @@ Private Function AddFeatToList(penType As BuildFeatTypeEnum, plngIndex As Long, 
                     Case bfsEpic: .SourceForm = "Epic"
                     Case bfsDestiny: .SourceForm = "Destiny"
                     Case bfsRace: .SourceForm = db.Race(build.Race).Abbreviation
-                    Case bfsClass, bfsClassOnly: If penType = bftGranted Then .SourceForm = db.Class(build.Class(.Level)).ClassName Else .SourceForm = db.Class(build.Class(.Level)).Initial(2)
+                    Case bfsClass, bfsClassOnly:
+                        If penType = bftGranted Then
+                            .SourceForm = db.Class(build.Class(.Level)).ClassName
+                        Else
+                            .SourceForm = db.Class(build.Class(.Level)).Initial(2)
+                        End If
                     Case bfsDeity: .SourceForm = "Deity"
                     Case bfsLegend
                         .SourceForm = "Legendary"
@@ -1948,7 +2000,7 @@ Private Sub InitBuildSpellsClassLevels()
         build.Spell(enClass).ClassLevels = 0
         build.Spell(enClass).MaxSpellLevel = 0
     Next
-    For lngLevel = 1 To HeroicLevels()
+    For lngLevel = 1 To GetHeroicLevels()
         enClass = build.Class(lngLevel)
         ' Class levels
         build.Spell(enClass).ClassLevels = build.Spell(enClass).ClassLevels + 1
@@ -2200,7 +2252,7 @@ Public Sub GetPointsSpentAndMax(plngSpentBase As Long, plngSpentRPLBonus As Long
         plngSpentBase = plngSpentBase + plngSpentUniBonus - build.UniversalAP
         plngSpentUniBonus = build.UniversalAP
     End If
-    plngMaxBase = HeroicLevels() * 4
+    plngMaxBase = GetHeroicLevels() * 4
     plngMaxRPLBonus = build.RacialAP
     plngMaxUniBonus = build.UniversalAP
 End Sub
@@ -2238,7 +2290,7 @@ Public Sub InitBuildTrees()
     End If
     ' Count up class levels taken
     ReDim lngClassLevels(ceClasses - 1)
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
     Next
     ' Flag all class trees as valid options
@@ -2294,8 +2346,10 @@ Public Sub GetDestinyPointsSpentAndMax(plngSpentBase As Long, plngSpentPDPBonus 
     
     plngSpentBase = 0
     plngSpentPDPBonus = 0
+    
     'set our max spend
-    plngMaxBase = EpicLevels() * 4
+    plngMaxBase = GetEpicLevels() * 4 + GetLegendaryLevels() * 4
+    
     plngMaxPDPBonus = build.PermDestinyPoints
     
     'evaluate each Destiny
@@ -2670,13 +2724,13 @@ Public Function GetBuildLevelReq(plngLevels As Long, plngClassLevels As Long, pe
     
     ' What build level when we reach class level?
     If plngClassLevels Then
-        For lngBuildLevels = 1 To HeroicLevels()
+        For lngBuildLevels = 1 To GetHeroicLevels()
             If build.Class(lngBuildLevels) = penClass Then
                 lngClassLevels = lngClassLevels + 1
                 If lngClassLevels = plngClassLevels Then Exit For
             End If
         Next
-        If lngBuildLevels > HeroicLevels() Then
+        If lngBuildLevels > GetHeroicLevels() Then
             GetBuildLevelReq = -1
             Exit Function
         End If
@@ -2913,7 +2967,7 @@ Public Function CheckAbilityClassLevels(pblnClass() As Boolean, plngLevel() As L
     
     If Not pblnClass(0) Then Exit Function
     ReDim lngClassLevels(ceClasses - 1)
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
     Next
     For i = 1 To ceClasses - 1
@@ -3111,7 +3165,7 @@ Private Sub InitGuideTrees()
     AddGuideTree db.Race(build.Race).RaceName, ceAny, build.MaxLevels
     ' Add class trees
     ReDim lngClassLevels(ceClasses - 1)
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
     Next
     For i = 1 To ceClasses - 1
@@ -3547,7 +3601,7 @@ Private Sub CheckGuideErrors()
                         ' Update class level counters
                         If lngCurrentLevel < .Level Then
                             For lngCurrentLevel = lngCurrentLevel + 1 To .Level
-                                If lngCurrentLevel <= HeroicLevels() Then lngClassLevel(build.Class(lngCurrentLevel)) = lngClassLevel(build.Class(lngCurrentLevel)) + 1
+                                If lngCurrentLevel <= GetHeroicLevels() Then lngClassLevel(build.Class(lngCurrentLevel)) = lngClassLevel(build.Class(lngCurrentLevel)) + 1
                             Next
                             lngCurrentLevel = .Level ' Remember that For...Next control variables = Max+1 after loop
                         End If

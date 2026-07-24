@@ -360,7 +360,7 @@ Private Sub OutputClassSplit()
     ' Title
     OutputTitle "Level Order"
     BlankLine
-    lngLastLevel = HeroicLevels()
+    lngLastLevel = GetHeroicLevels()
     If mblnReddit Then
         lngColumns = 1 + (build.MaxLevels - 1) \ 5
         If lngColumns > 4 Then lngColumns = 4
@@ -687,7 +687,7 @@ Private Sub OutputSkills()
     If Not mblnDisplay And Not (cfg.OutputSection = oeAll Or cfg.OutputSection = oeSkills) Then Exit Sub
     enValid = ValidSkills(blnClassRow)
     If enValid = veSkip Or enValid = veEmpty Then Exit Sub
-    lngHeroicLevels = HeroicLevels()
+    lngHeroicLevels = GetHeroicLevels()
     strDashLine = "         " & String$(lngHeroicLevels * 3, 45)
     ' Title
     If enValid = veErrors Then strError = "(Errors)"
@@ -842,7 +842,7 @@ Public Function ValidSkills(pblnClassRow As Boolean, Optional pblnImport As Bool
     ' Discard unused skills
     ReDim Preserve Skill.Out(i - 1)
     ' Verify all points spent every level without going over
-    For lngCol = 1 To HeroicLevels()
+    For lngCol = 1 To GetHeroicLevels()
         If Skill.Col(lngCol).Points > Skill.Col(lngCol).MaxPoints Then
             enReturn = veErrors
             Exit For
@@ -854,7 +854,7 @@ Public Function ValidSkills(pblnClassRow As Boolean, Optional pblnImport As Bool
     Do While enReturn <> veErrors
         For lngRow = 1 To 21
             lngRanks = 0
-            For lngCol = 1 To HeroicLevels()
+            For lngCol = 1 To GetHeroicLevels()
                 lngRanks = lngRanks + Skill.grid(lngRow, lngCol).Ranks
                 If lngRanks > Skill.grid(lngRow, lngCol).MaxRanks Then
                     enReturn = veErrors

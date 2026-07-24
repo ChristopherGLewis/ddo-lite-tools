@@ -845,6 +845,7 @@ Private Sub ClearAllSlots()
     build.Feat(bftAlternate).Feats = 0
     Erase build.Feat(bftExchange).Feat
     build.Feat(bftExchange).Feats = 0
+    'Initialize all but granted feats
     For enType = bftStandard To bftDeity
         With build.Feat(enType)
             For lngIndex = 1 To .Feats
@@ -1279,7 +1280,7 @@ Private Sub ShowAvailable()
     'This loop iterates FeatDisplay (the sorted feats)
     For i = 1 To db.Feats
         If i = 129 Then
-            Debug.Print "here"
+            'Debug.Print "here"
         End If
         'lngFeat is the feat id
         lngFeat = db.FeatDisplay(i).FeatIndex
@@ -1391,7 +1392,7 @@ Private Function FilterFeat(plngFeat As Long) As Boolean
         ' Class levels
         If .Class(0) Then
                 ReDim lngClassLevels(ceClasses - 1)
-            For i = 1 To HeroicLevels()
+            For i = 1 To GetHeroicLevels()
                 lngClassLevels(build.Class(i)) = lngClassLevels(build.Class(i)) + 1
             Next
             For i = 1 To ceClasses - 1

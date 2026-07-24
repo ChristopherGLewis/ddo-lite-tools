@@ -280,7 +280,7 @@ Private Sub IdentifyChannels(ptypFeat As ExportFeatType)
                     Case 1, 3, 6, 9, 12, 15, 18
                         .BuilderType = "Standard"
                         .RonType = rseStandard
-                    Case 21, 24, 27, 30, 33
+                    Case 21, 24, 27, 30, 33, 36  ' MAX_LEVEL increse here
                         .BuilderType = "EpicFeat"
                         .RonType = rseStandard
                     Case 22, 25, 28, 31, 34

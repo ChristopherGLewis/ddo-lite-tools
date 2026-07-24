@@ -187,8 +187,8 @@ Begin VB.Form frmOverview
       Top             =   1350
       Visible         =   0   'False
       Width           =   2955
-      _extentx        =   5212
-      _extenty        =   344
+      _ExtentX        =   5212
+      _ExtentY        =   344
    End
    Begin VB.ComboBox cboRace 
       Height          =   330
@@ -2113,7 +2113,7 @@ Private Sub InitGrid()
         mlngBuildClass(build.BuildClass(i)) = i + 1
     Next
     ReDim lngClassLevel(ceClasses - 1)
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         lngClassLevel(build.Class(i)) = lngClassLevel(build.Class(i)) + 1
         grid(i, 0) = i
         grid(i, 1) = ClassText(mlngBuildClass(build.Class(i)) - 1, False)
@@ -2153,7 +2153,7 @@ Private Sub DrawGrid()
     
     With Me.picGrid
         .Cls
-        For lngRow = 0 To HeroicLevels()
+        For lngRow = 0 To GetHeroicLevels()
             For lngCol = 0 To 5
                 DrawCell lngRow, lngCol, (lngRow = 0)
             Next
@@ -2255,7 +2255,7 @@ Private Sub DragClass()
     Dim lngCount As Long
     Dim i As Long
     
-    For i = 1 To HeroicLevels()
+    For i = 1 To GetHeroicLevels()
         If build.Class(i) <> build.Class(mlngRow) Then
             DrawCell i, 1, False, True
             lngCount = lngCount + 1
@@ -2337,7 +2337,7 @@ Private Sub CoordsToCell(X As Single, Y As Single, plngRow As Long, plngCol As L
     Dim i As Long
     
     If Y < mlngTop Then plngRow = 0 Else plngRow = (Y - mlngTop) \ mlngHeight + 1
-    If plngRow < 1 Or plngRow > HeroicLevels() Then plngRow = 0
+    If plngRow < 1 Or plngRow > GetHeroicLevels() Then plngRow = 0
     plngCol = 0
     For i = 1 To 4
         If X >= Col(i).Left And X <= Col(i).Right Then

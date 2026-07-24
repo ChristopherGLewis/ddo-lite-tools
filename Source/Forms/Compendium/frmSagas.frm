@@ -351,7 +351,7 @@ Private menSort As SagaSortEnum
 Private mlngSagaMenu As Long
 
 Const MIN_WIDTH = 12360
-
+Const ALL_SAGAS = " <All>"
 
 Private Sub cboSaga_Click()
   Redraw
@@ -544,6 +544,9 @@ Private Sub InitSagaCombo()
     Dim i As Integer
     'db.Saga
     cboSaga.Clear
+    
+    'TODO add support for ALL
+    ' cboSaga.AddItem ALL_SAGAS
     For i = 1 To db.Sagas
         If Me.usrTab.ActiveTab = "Epic" Then
             If db.Saga(i).Tier = steEpic Then
@@ -555,15 +558,18 @@ Private Sub InitSagaCombo()
             End If
         End If
     Next
+    
     'Select the first saga
     cboSaga.ListIndex = 0
 
 End Sub
 
 Private Sub GatherColumns()
+    Dim sSelected As String
     Dim lngIndex() As Long
     Dim strHeader As String
     Dim i As Long
+    Dim iColumnCount  As Integer
     
     'lngIndex is the list of sagas in "order"
     ReDim lngIndex(1 To db.Sagas)
@@ -571,9 +577,15 @@ Private Sub GatherColumns()
         lngIndex(db.Saga(i).Order) = i
     Next
     
-    'We should only now have 4 columns
+    sSelected = ComboGetText(cboSaga)
+    'We should only now have 4 columns unless all is selected
+    If sSelected = ALL_SAGAS Then
+        iColumnCount = 4  'A lot more!
+    Else
+        iColumnCount = 4
+    End If
     'ReDim mtypCol(1 To 4 + db.Sagas)
-    ReDim mtypCol(1 To 4 + 1)
+    ReDim mtypCol(1 To iColumnCount + 1)
     InitColumn 1, "Lvl", vbRightJustify
     InitColumn 2, "Quest", vbLeftJustify
     InitColumn 3, "Pack", vbLeftJustify
@@ -587,7 +599,7 @@ Private Sub GatherColumns()
     
     For i = 1 To db.Sagas
         'Filter off the Saga Combo
-        If db.Saga(i).SagaName = ComboGetText(cboSaga) Then
+        If sSelected = ALL_SAGAS Or db.Saga(i).SagaName = sSelected Then
             With db.Saga(i)
                 If .Tier = steEpic Then mlngMaxCols = mlngMaxCols + 1
                 'If .Tier = cfg.SagaTier Then
@@ -596,8 +608,8 @@ Private Sub GatherColumns()
                     'mtypCol(4 + .Order).Saga = i
 
                     'All saga quests are now in col 5
-                    InitColumn 4 + 1, .Abbreviation, vbCenter
-                    mtypCol(4 + 1).Saga = i
+                    InitColumn iColumnCount + 1, .Abbreviation, vbCenter
+                    mtypCol(iColumnCount + 1).Saga = i
                 'End If
             End With
         End If
@@ -613,6 +625,7 @@ Private Sub InitColumn(plngCol As Long, pstrHeader As String, penAlign As Alignm
 End Sub
 
 Private Sub GatherRows()
+    Dim sSelected As String
     Dim lngIndex() As Long
     Dim lngQuest As Long
     Dim s As Long
@@ -624,10 +637,11 @@ Private Sub GatherRows()
     mlngRows = 0
     mlngMaxRows = 0
     
+    sSelected = ComboGetText(cboSaga)
     'Loop through all the sagas
     For s = 1 To db.Sagas
         'Filter off the Saga Combo
-        If db.Saga(s).SagaName = ComboGetText(cboSaga) Then
+        If sSelected = ALL_SAGAS Or db.Saga(s).SagaName = sSelected Then
             'loop through all the quests
             For q = 1 To db.Saga(s).Quests
                 'If db.Saga(s).Tier = steEpic Then
@@ -652,6 +666,7 @@ Private Sub GatherRows()
                 'End If
             Next
         End If
+        
     Next
     ReDim Preserve mtypRow(1 To mlngRows)
     CommonProgress
@@ -902,7 +917,11 @@ Private Sub DrawGrid()
     
     mlngColorInvalid = cfg.GetColor(cgeControls, cveBackground)
     If mlngCharacter = 0 Then
-        If cfg.SagaTier = steEpic Then mlngColorValid = GetColorValue(gcePink) Else mlngColorValid = GetColorValue(gceGreen)
+        If cfg.SagaTier = steEpic Then
+            mlngColorValid = GetColorValue(gcePink)
+        Else
+            mlngColorValid = GetColorValue(gceGreen)
+        End If
     Else
         mlngColorValid = db.Character(mlngCharacter).BackColor
     End If
@@ -967,9 +986,21 @@ Private Sub DrawCell(plngRow As Long, plngCol As Long, pblnActive As Boolean)
     lngBottom = lngTop + mlngRowHeight
     ' Background
     Select Case plngCol
-        Case 1 To 3: lngColor = cfg.GetColor(cgeControls, cveBackground)
-        Case 4: If mlngCharacter Then lngColor = mlngColorValid Else lngColor = mlngColorInvalid
-        Case Else: If mtypRow(plngRow).Saga(mtypCol(plngCol).Saga).Valid Then lngColor = mlngColorValid Else lngColor = mlngColorInvalid
+        Case 1 To 3:
+            lngColor = cfg.GetColor(cgeControls, cveBackground)
+        Case 4:
+            If mlngCharacter Then
+                lngColor = mlngColorValid
+            Else
+                lngColor = mlngColorInvalid
+            End If
+        Case Else:
+            If mtypRow(plngRow).Saga(mtypCol(plngCol).Saga).Valid Then
+                lngColor = mlngColorValid
+            Else
+                lngColor = mlngColorInvalid
+            End If
+                
     End Select
     Me.picClient.FillColor = lngColor
     If pblnActive And plngCol > 3 Then lngColor = cfg.GetColor(cgeControls, cveBorderHighlight) Else lngColor = cfg.GetColor(cgeControls, cveBorderInterior)

@@ -305,7 +305,7 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Bulwark of Defense
 Group: Epic, Defense
-Descrip: When in a defensive stance, you gain +2 saves and +4 AC. 
+Descrip: When in a defensive stance, you gain an additional +2 to all saving throws, +5% Armor Class, and +10 Melee Power.}{-This feat now works while in Nature's Protector's stance.
 Level: 21
 
 FeatName: Burst of Glacial Wrath
@@ -436,7 +436,7 @@ SelectorName: Living Shadow
 Descrip: Your Shadow extends your reach, acting out your dark impulses.}Your basic Melee attacks have extended range, hitting further in front of you.}Whenever you land a Critical Hit, there is a small chance your shadow exerts its will, causing your damage to be reduced by 15% for 6 seconds. This can only occur once every 30 seconds.}{-This is the same extension effect that Shadowdancer grants, and does not stack with that skill.
 None: Dark Gifts: Echoing Soul, Dark Gifts: Mist Walker, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
 SelectorName: Mist Walker
-Descrip: You have learned how to navigate the Mists with time and a little luck.}You gain Misty Step: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 15 second cooldown.}When you use this Misty Step, there is a chance the Mists catch up with you and you gain Exhaustion for 6 seconds (-50% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble). This exhaustion cannot be warded or removed by effects that remove Exhaustion.
+Descrip: You have learned how to navigate the Mists with time and a little luck.}You gain Misty Step: As Abundant Step, but you disappear. +5 Reflex Save and 20% stacking incorporeality while Stepping. (Shares a cooldown with other abundant steps). 2 second cooldown.}When you use this Misty Step, there is a chance the Mists catch up with you and you gain Exhaustion for 6 seconds (-50% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble). This exhaustion cannot be warded or removed by effects that remove Exhaustion.
 None: Dark Gifts: Echoing Soul, Dark Gifts: Living Shadow, Dark Gifts: Touch of Death, Dark Gifts: Form of Pain, Dark Gifts: Webtouched Wretch, Dark Gifts: Minion of the Eldritch
 SelectorName: Touch of Death
 Descrip: Your every touch is pain, but you can use that to deliver death to enemies.}{-+3 Negative Spell Power per Character Level{-+3 Negative Healing Amplification per Character Level{--5 Positive Spell Power per Character Level{--5 Positive Healing Amplification per Character Level
@@ -2507,7 +2507,7 @@ Level: 21
 
 FeatName: Ruin
 Group: Epic, Spellcasting
-Descrip: Ruin (75 spell points, 15 second cooldown): Deal 500 untyped damage to a single enemy. No save. Metamagics can be applied but are not free.
+Descrip: Ruin (75 spell points. 2 second cooldown): Deal 500 untyped damage to a single enemy. No save. Metamagics can be applied but are not free.
 Level: 27
 
 FeatName: Rune Arm Use
@@ -3268,12 +3268,6 @@ Descrip: At level 11 a Blightcaster may use their 'Wild Shape' feat to change in
 Class: Blightcaster 11
 Flags: Unselectable
 
-FeatName: Wild Magic
-Group: Heroic, Spellcasting
-Descrip: When you cast spells, you have a small chance to have additional strange effects occur around you. These effects cary greatly from helpful, dangerous to just silly. Grants a +5% chance of gaining a Wild Surge every time you cast a spell. Wild Surges will also manifest over time passively. Wild Surges do not occur in public spaces. 
-Class: Wild Mage 1
-Flags: Unselectable
-
 FeatName: Wilderness Lore
 Group: Heroic, Misc
 Descrip: This feat grants represents your knowledge of the wilderness. Characters with this feat are granted special quest-specific dialog options/object interactions that classes without this feat otherwise could not perform. It may also allow certain skill checks to learn insight into specific situations.
@@ -3314,3 +3308,203 @@ Descrip: Passive.  Duergar are naturally able to find secret doors more frequent
 Race: Required, Duergar
 RaceBonus: Duergar
 Flags: RaceOnly
+
+
+FeatName: Legendary Spell Focus
+Level: 30
+Group: Epic, Spellcasting
+All: Epic Spell Focus
+Descrip: +3 to all Spell DCs
+
+FeatName: Epic Precision
+Level: 21
+Group: Epic, Melee
+All: Precision
+Descrip: Your Precision stance grants an additional +5% to-hit and +15% Fortification Bypass.
+
+FeatName: Epic Resilience
+Level: 21
+Group: Epic, Defense
+All: Resilience
+Descrip: While in Resilience, you gain an additional +4 Saving throws, as well as +10 MRR and +10 MRR cap. In addition, you no longer fail any saves automatically by rolling a Natural 1.
+
+FeatName: Epic Power Attack
+Level: 21
+Group: Epic, Melee
+All: Power Attack
+Descrip: While in Power Attack, you gain an additional +5 damage.
+
+FeatName: Legendary Martial Arts
+Level: 30
+Group: Epic, Melee
+All: Improved Martial Arts
+Descrip: While centered, your weapons gain +1W.
+
+FeatName: Legendary Sneak Attack
+Level: 30
+Group: Epic, Melee
+All: Improved Sneak Attack
+Descrip: +3 Sneak Attack Dice
+
+FeatName: Improved Inspiration Melody Excellence
+Level: 30
+Group: Epic, Misc
+All: Inspiration Melody Excellence
+Descrip: Your Inspire Excellence now grants an additional +2 to all Ability Scores.
+
+FeatName: Legendary Trick Shot
+Level: 30
+Group: Epic, Range
+All: Trick Shot
+Descrip: Your Trick Shot now grants +80 to Ranged Power and +10 to Attack for 4 seconds when you Tumble. In addition, your Tumble charges recharge an additional 0.5 second faster, for a total of 1 second.
+
+FeatName: Strength of Arms
+Level: 20
+Group: Epic, Melee
+Descrip: Your melee strikes grant a temporary HP shield equal to your melee power. Has a 8 second cooldown, Shield lasts 10 seconds, stacks 2 times.
+
+FeatName: Legendary Strength of Arms
+Level: 30
+Group: Epic, Melee
+All: Strength of Arms
+Descrip: Your melee strikes grant a temporary HP shield equal to twice your melee power. Has a 6 second cooldown. Shield lasts 10 seconds, stacks 3 times.
+
+FeatName: Piercing Fire
+Level: 1
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Cold
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Acid
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Electric
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Poison
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Negative Energy
+Group: Heroic, Spellcasting
+All: Magical Training
+Descrip: Activate to apply a debuff to a single target removing all of its ability to resist this element for 15 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Fire
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Fire
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Cold
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Cold
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Electric
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Electric
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Acid
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Acid
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Poison
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Poison
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+FeatName: Piercing Mastery Negative Energy
+Level: 20
+Group: Epic, Spellcasting
+All: Piercing Negative Energy
+Descrip: Activate to applies a debuff to a single target and nearby enemies removing all their resistances to this element for 20 seconds. 2 second cooldown.
+
+
+FeatName: Legendary Power
+Group: Epic, Misc
+Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}This feat is automatically given to all characters each time they gain a Legendary level.
+Flags: Unselectable
+Level: 30
+
+FeatName: Legendary Knowledge
+Group: Epic, Spellcasting
+Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
+Flags: Unselectable
+Level: 30
+
+FeatName: Heroic Durability
+Group: Heroic, Misc
+Descrip: This feat increases the maximum hit points of a starting character by 30.}In addition, for every melee combat style feat you take (up to four), you gain a 25% bonus to the Hit Points gained from your class levels. Epic and Legendary levels count at half value. This bonus can only stack up to 100%.
+Flags: Unselectable
+Level: 1
+
+FeatName: Improved Heroic Durability
+Group: Heroic, Misc
+Descrip: This feat increases the maximum hit points of a character by +5.
+Flags: Unselectable
+Level: 5
+
+FeatName: Attack
+Group: Heroic, Misc
+Descrip: Your basic attack. When activated, you will continue attacking until your target is defeated
+Level: 1
+Flags: Unselectable
+
+FeatName: Defensive Fighting
+Group: Heroic, Misc
+Descrip: Defensive Combat Stance - While using Defensive Fighting mode, you gain a 5% bonus to Armor Class and a -5% penalty to-hit.} This is the standard defensive stance and is granted automatically to all characters. Casting a spell ends this mode.
+Level: 1
+Flags: Unselectable
+
+FeatName: Dismiss Charm
+Group: Heroic, Misc
+Descrip: Activate this short-ranged ability while targeting a charmed, commanded, controlled, or dominated enemy that is under your control to dispel the controlling effect.}Cooldown 1 second
+Level: 1
+Flags: Unselectable
+
+FeatName: Sneak
+Group: Heroic, Misc
+Descrip: Uses your Hide and Move Silently skills to adopt a sneaking stance and avoid detection. Enemies with a Spot and Listen below your Hide and Move Silently skills will not notice you. The longer you stay near an enemy, the larger their bonus to spot you. Using certain objects, such as doors and levers, or being hit will knock you out of the stance.}Cannot be used while Enraged.
+Level: 1
+Flags: Unselectable
+
+FeatName: Sunder
+Group: Heroic, Misc
+Descrip: A sunder attempt is a melee special attack with +10 bonus to attack that, when successful, results in a -10% AC penalty and - 25% Fortification to the target for 6 seconds if it fails a DC (10 + Str mod + Sunder Bonuses) Fortitude save. Some creatures may be immune to the sunder effect.}Cooldown 15  seconds
+Level: 1
+Flags: Unselectable
+
+FeatName: Trip
+Group: Heroic, Misc
+Descrip: This special melee attack has a chance to trip the target rendering it prone for up to 6 seconds. A creature is tripped on a failed Reflex save (DC 10 + Strength modifier + Trip DCs). Some creatures may be immune to this effect. Some large or stronger creatures are less likely to trip. A prone creature who succeeds a Fortitude save (same DC as initial attack) stands up early.}Cooldown 15 seconds
+Level: 1
+Flags: Unselectable
+
+FeatName: Epic Skills
+Group: Epic, Misc
+Descrip: As part of your epic training, you gain +1 to all skills. This feat can be taken multiple times.
+Flags: Unselectable
+Level: 21
+
+FeatName: Epic Knowledge
+Group: Epic, Misc
+Descrip: +1 caster level and +1 maximum caster level with all spells (for a total of +5 to all casting classes at level 30).
+Flags: Unselectable
+Level: 22

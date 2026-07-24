@@ -1403,10 +1403,10 @@ Public Sub DrawGrid()
     
     SetFillColors
     Me.picGrid.Cls
-    For lngCol = 1 To HeroicLevels()
+    For lngCol = 1 To GetHeroicLevels()
         DrawColumnHeader lngCol, False
     Next
-    For lngCol = 1 To HeroicLevels()
+    For lngCol = 1 To GetHeroicLevels()
         DrawColumnFooter lngCol
     Next
     ' Draw skill names
@@ -1415,7 +1415,7 @@ Public Sub DrawGrid()
         DrawRowFooter lngRow
     Next
     ' Draw cells
-    For lngCol = 1 To HeroicLevels()
+    For lngCol = 1 To GetHeroicLevels()
         For lngRow = 1 To 21
             DrawCell lngRow, lngCol
         Next
@@ -1516,7 +1516,7 @@ Private Sub DrawColumnHeader(plngCol As Long, pblnBold As Boolean)
 '    Dim strFile As String
     Dim strResource As String
     
-    If plngCol < 1 Or plngCol > HeroicLevels() Then Exit Sub
+    If plngCol < 1 Or plngCol > GetHeroicLevels() Then Exit Sub
     ' Clear
     lngLeft = mlngLeft + mlngWidth * (plngCol - 1) + PixelX
     lngRight = lngLeft + mlngWidth - PixelX * 2
@@ -1554,7 +1554,7 @@ Private Sub DrawColumnFooter(plngCol As Long)
     Dim lngRight As Long
     Dim lngColor As Long
     
-    If plngCol < 1 Or plngCol > HeroicLevels() Then Exit Sub
+    If plngCol < 1 Or plngCol > GetHeroicLevels() Then Exit Sub
     lngLeft = mlngLeft + mlngWidth * (plngCol - 1)
     lngTop = mlngTop + mlngHeight * 21
     Me.picGrid.Line (lngLeft, lngTop + PixelY)-(lngLeft + mlngWidth, lngTop + mlngHeight * 2), cfg.GetColor(cgeWorkspace, cveBackground), BF
@@ -1577,7 +1577,7 @@ Private Sub DrawCell(plngRow As Long, plngCol As Long, Optional pblnActive As Bo
     Dim lngMaxRanks As Long
     
     If plngRow < 1 Or plngRow > 21 Then Exit Sub
-    If plngCol < 1 Or plngCol > HeroicLevels() Then Exit Sub
+    If plngCol < 1 Or plngCol > GetHeroicLevels() Then Exit Sub
     If Me.picGrid.FontBold Then Me.picGrid.FontBold = False
     ' Get coordinates
     lngLeft = mlngLeft + mlngWidth * (plngCol - 1)
@@ -1593,7 +1593,7 @@ Private Sub DrawCell(plngRow As Long, plngCol As Long, Optional pblnActive As Bo
         If plngRow = 1 Then Me.picGrid.Line (lngLeft, lngTop)-(lngLeft + mlngWidth + PixelX, lngTop), lngColor
         If plngRow = 21 Then Me.picGrid.Line (lngLeft, lngTop + mlngHeight)-(lngLeft + mlngWidth + PixelX, lngTop + mlngHeight), lngColor
         If plngCol = 1 Then Me.picGrid.Line (lngLeft, lngTop)-(lngLeft, lngTop + mlngHeight + PixelY), lngColor
-        If plngCol = HeroicLevels() Then Me.picGrid.Line (lngLeft + mlngWidth, lngTop)-(lngLeft + mlngWidth, lngTop + mlngHeight + PixelY), lngColor
+        If plngCol = GetHeroicLevels() Then Me.picGrid.Line (lngLeft + mlngWidth, lngTop)-(lngLeft + mlngWidth, lngTop + mlngHeight + PixelY), lngColor
     End If
     ' Ranks
     lngRanks = GetRanks(plngRow, plngCol)
@@ -1626,7 +1626,7 @@ Private Function CumulativeRanks(plngRow As Long, plngCol As Long) As Long
     Dim lngLast As Long
     Dim i As Long
     
-    If plngCol > HeroicLevels() Then lngLast = HeroicLevels() Else lngLast = plngCol
+    If plngCol > GetHeroicLevels() Then lngLast = GetHeroicLevels() Else lngLast = plngCol
     For i = 1 To lngLast
         lngRanks = lngRanks + GetRanks(plngRow, i)
     Next
@@ -2034,7 +2034,7 @@ Private Sub RecalculateRow(plngRow As Long)
     lngSkill = Skill.Map(plngRow).Skill
     With Skill.Row(lngSkill)
         .Ranks = 0
-        For lngCol = 1 To HeroicLevels()
+        For lngCol = 1 To GetHeroicLevels()
             .Ranks = .Ranks + Skill.grid(lngSkill, lngCol).Ranks
         Next
     End With

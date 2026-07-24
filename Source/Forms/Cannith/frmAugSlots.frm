@@ -4,10 +4,10 @@ Begin VB.Form frmAugSlots
    BackColor       =   &H80000005&
    BorderStyle     =   4  'Fixed ToolWindow
    Caption         =   "Augment Slots"
-   ClientHeight    =   2292
-   ClientLeft      =   36
-   ClientTop       =   384
-   ClientWidth     =   2928
+   ClientHeight    =   2280
+   ClientLeft      =   30
+   ClientTop       =   390
+   ClientWidth     =   2940
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -20,8 +20,8 @@ Begin VB.Form frmAugSlots
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   2292
-   ScaleWidth      =   2928
+   ScaleHeight     =   2280
+   ScaleWidth      =   2940
    ShowInTaskbar   =   0   'False
    Begin VB.Timer tmrSnap 
       Enabled         =   0   'False
@@ -38,8 +38,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   7
       Left            =   2520
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   10
       TabStop         =   0   'False
       Tag             =   "Colorless"
@@ -55,8 +55,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   6
       Left            =   2100
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   9
       TabStop         =   0   'False
       Tag             =   "Yellow"
@@ -72,8 +72,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   5
       Left            =   1680
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   8
       TabStop         =   0   'False
       Tag             =   "Green"
@@ -89,8 +89,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   4
       Left            =   1260
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   7
       TabStop         =   0   'False
       Tag             =   "Blue"
@@ -106,8 +106,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   3
       Left            =   840
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   6
       TabStop         =   0   'False
       Tag             =   "Purple"
@@ -123,8 +123,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   2
       Left            =   420
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   5
       TabStop         =   0   'False
       Tag             =   "Orange"
@@ -140,8 +140,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   1
       Left            =   0
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   4
       TabStop         =   0   'False
       Tag             =   "Red"
@@ -157,8 +157,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   3
       Left            =   0
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   3
       TabStop         =   0   'False
       Top             =   840
@@ -173,8 +173,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   2
       Left            =   0
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   2
       TabStop         =   0   'False
       Top             =   420
@@ -189,8 +189,8 @@ Begin VB.Form frmAugSlots
       Height          =   408
       Index           =   1
       Left            =   0
-      ScaleHeight     =   408
-      ScaleWidth      =   408
+      ScaleHeight     =   405
+      ScaleWidth      =   405
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   0
@@ -381,10 +381,7 @@ Private Sub DrawPicture(ppic As PictureBox, pstrResourceID As String, Optional p
         lngWidth = .ScaleWidth
         lngHeight = .ScaleHeight
         .Cls
-        On Error Resume Next
-        .PaintPicture LoadResPicture(pstrResourceID, vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
-        If Err.Number Then .PaintPicture LoadResPicture("UNKNOWN", vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
-        On Error GoTo 0
+        .PaintPicture LoadResPictureUnknown(pstrResourceID, vbResIcon), PixelX, PixelY, lngWidth - (PixelX * 2), lngHeight - (PixelY * 2)
     End With
     If pblnActive Then DrawBorder ppic
 End Sub

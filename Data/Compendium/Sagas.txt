@@ -604,3 +604,44 @@ Quest: A Miner Sacrifice
 Quest: The Wish
 Quest: Special Delivery
 Quest: Zoo Creeper
+
+
+SagaName: Terror of Demogorgon (Heroic) 
+Abbreviation: Demogorgon
+Tier: Heroic
+NPC: Haruhak Deepgift
+Tome: 3
+Astrals: 1
+XP: 1	2	3	4
+Quest: Hideous to Behold
+Quest: The Price of an Egg
+Quest: Tower of Vengeance
+Quest: The Fetid Wedding
+Quest: Stealing from Sorcere
+Quest: Back to the Abyss
+Quest: Demon in the Rough
+Quest: If It Wasn't For Bad Luck
+Quest: A Long Way to Mushrooms
+Quest: Flocked Together
+Quest: For Want of a Heart
+Quest: A Blood Pact
+
+SagaName: Terror of Demogorgon (Legendary)
+Abbreviation: Demogorgon
+Tier: Epic
+NPC: Haruhak Deepgift
+Tome: 3
+Astrals: 1
+XP: 1	2	3	4
+Quest: Hideous to Behold
+Quest: The Price of an Egg
+Quest: Tower of Vengeance
+Quest: The Fetid Wedding
+Quest: Stealing from Sorcere
+Quest: Back to the Abyss
+Quest: Demon in the Rough
+Quest: If It Wasn't For Bad Luck
+Quest: A Long Way to Mushrooms
+Quest: Flocked Together
+Quest: For Want of a Heart
+Quest: A Blood Pact

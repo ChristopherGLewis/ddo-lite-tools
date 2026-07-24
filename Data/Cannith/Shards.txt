@@ -3417,3 +3417,1501 @@ UnboundLevel: 150
 UnboundEssences: 300
 UnboundIngredients: 30 Sweet Whitecap; 10 Small Wooden Idol; 2 Icon of Khyber; 2 Purified Eberron Dragonshard
 Demand: Common
+
+ShardName: Airwarded
+ShortName: Airwarded
+Group: Misc
+Scaling: None
+Prefix: Bracers; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Electric Resistance / Electric Absorption
+
+ShardName: Anchored
+ShortName: Anchored
+Group: Misc
+Scaling: None
+Prefix: Necklace; Trinket; Orb
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Constitution / Conjuration Focus
+
+ShardName: Annihilating
+ShortName: Annihilating
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Slay Living / Entropic
+
+ShardName: Arcanist's
+ShortName: Arcanist's
+Group: Misc
+Scaling: None
+Prefix: Goggles; Ring; Orb
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Charisma / Use Magic Device
+
+ShardName: Armor Destroying
+ShortName: Armor Destroying
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Armor Piercing / Destruction
+
+ShardName: Blasphemous
+ShortName: Blasphemous
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Unholy Burst / Anarchic Burst
+
+ShardName: Bullying
+ShortName: Bullying
+Group: Misc
+Scaling: None
+Prefix: Bracers; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Strength / Incite
+
+ShardName: Celebrated
+ShortName: Celebrated
+Group: Misc
+Scaling: None
+Prefix: Belt; Cloak; Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Goblet; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Goblet; 15 Purified Eberron Dragonshard
+Notes: Charisma / Command
+
+ShardName: Champion's
+ShortName: Champion's
+Group: Misc
+Scaling: None
+Prefix: Boots; Orb
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Speed / Combat Mastery
+
+ShardName: Crusading
+ShortName: Crusading
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Holy / Axiomatic Burst
+
+ShardName: Destroying
+ShortName: Destroying
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Unholy / Anarchic Blast
+
+ShardName: Earth Attuned
+ShortName: Earth Attuned
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Earthgrab Guard / Acid Absorption
+
+ShardName: Earthwarded
+ShortName: Earthwarded
+Group: Misc
+Scaling: None
+Prefix: Bracers; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Acid Resistance / Acid Absorption
+
+ShardName: Electrifying
+ShortName: Electrifying
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Lightning Strike / Electrifying
+
+ShardName: Enchanting
+ShortName: Enchanting
+Group: Misc
+Scaling: None
+Prefix: Goggles; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Enchantment Focus / Enchantment Resistance
+
+ShardName: Evasive
+ShortName: Evasive
+Group: Misc
+Scaling: None
+Prefix: Belt; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Dodge / Reflex Save
+
+ShardName: Firewarded
+ShortName: Firewarded
+Group: Misc
+Scaling: None
+Prefix: Bracers; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Fire Resistance / Fire Absorption
+
+ShardName: Flame Attuned
+ShortName: Flame Attuned
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Magma Surge Guard / Fire Absorption
+
+ShardName: Fortifying
+ShortName: Fortifying
+Group: Misc
+Scaling: None
+Prefix: Belt; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Constitution / Fortification
+
+ShardName: Frost Attuned
+ShortName: Frost Attuned
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Freezing Ice Guard / Cold Absorption
+
+ShardName: Frozen
+ShortName: Frozen
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Freezing Ice / Chilling
+
+ShardName: Healthy
+ShortName: Healthy
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Constitution / Vitality
+
+ShardName: Honed
+ShortName: Honed
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Vorpal / Speed
+
+ShardName: Icewarded
+ShortName: Icewarded
+Group: Misc
+Scaling: None
+Prefix: Bracers; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Cold Resistance / Cold Absorption
+
+ShardName: Illusory
+ShortName: Illusory
+Group: Misc
+Scaling: None
+Prefix: Goggles; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Illusion Focus / Illusion Resistance
+
+ShardName: Initiate's
+ShortName: Initiate's
+Group: Misc
+Scaling: None
+Prefix: Gloves; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 5 Mystical Bottle; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 5 Mystical Bottle; 15 Purified Eberron Dragonshard
+Notes: Wizardry / Spell Penetration
+
+ShardName: Irksome
+ShortName: Irksome
+Group: Misc
+Scaling: None
+Prefix: Helmet; Ring; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Incite / Intimidate
+
+ShardName: Meditative
+ShortName: Meditative
+Group: Misc
+Scaling: None
+Prefix: Boots; Ring; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Constitution / Concentration
+
+ShardName: Necromantic
+ShortName: Necromantic
+Group: Misc
+Scaling: None
+Prefix: Goggles; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Necromancy Focus / Deathblock
+
+ShardName: Nightmarish
+ShortName: Nightmarish
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Nightmares / Impactful
+
+ShardName: Plagued
+ShortName: Plagued
+Group: Misc
+Scaling: None
+Prefix: Cloak; Necklace
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Proof Against Disease / Disease Guard
+
+ShardName: Poison-Proof
+ShortName: Poison-Proof
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Proof Against Poison / Poison Absorption
+
+ShardName: Poisonwarded
+ShortName: Poisonwarded
+Group: Misc
+Scaling: None
+Prefix: Cloak; Necklace
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Proof Against Poison / Poison Resistance
+
+ShardName: Protected
+ShortName: Protected
+Group: Misc
+Scaling: None
+Prefix: Bracers; Ring; Trinket
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Protection / Resistance
+
+ShardName: Rebellious
+ShortName: Rebellious
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Anarchic / Holy Blast
+
+ShardName: Reinforced
+ShortName: Reinforced
+Group: Misc
+Scaling: None
+Prefix: Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Protection / Physical Sheltering
+
+ShardName: Riptide
+ShortName: Riptide
+Group: Misc
+Scaling: None
+Prefix: Shield; 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Tidal / Chilling
+
+ShardName: Riveted
+ShortName: Riveted
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Protection / Fortification
+
+ShardName: Sabotaging
+ShortName: Sabotaging
+Group: Misc
+Scaling: None
+Prefix: Gloves; Goggles; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 5 Mystical Urn; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 5 Mystical Urn; 15 Purified Eberron Dragonshard
+Notes: Seeker / Deception
+
+ShardName: Silver Flame
+ShortName: Silver Flame
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Boots; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Dried Fish; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Dried Fish; 15 Purified Eberron Dragonshard
+Notes: Hallowed / Sacred
+
+ShardName: Slaying
+ShortName: Slaying
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Slay Living Guard / Physical Sheltering
+
+ShardName: Soul Capturing
+ShortName: Soul Capturing
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Trap the Soul Guard / Magical Sheltering
+
+ShardName: Soul Stealing
+ShortName: Soul Stealing
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Trap the Soul / Entropic
+
+ShardName: Spellmaster's
+ShortName: Spellmaster's
+Group: Misc
+Scaling: None
+Prefix: Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Spell Focus Mastery / Spell Saves
+
+ShardName: Spellwarded
+ShortName: Spellwarded
+Group: Misc
+Scaling: None
+Prefix: Belt; Bracers; Cloak
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Spell Resistance / Spell Saves
+
+ShardName: Stabilized
+ShortName: Stabilized
+Group: Misc
+Scaling: None
+Prefix: Belt; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Constitution / Lifesealed
+
+ShardName: Stealthy
+ShortName: Stealthy
+Group: Misc
+Scaling: None
+Prefix: Boots
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Hide / Move Silently
+
+ShardName: Swift
+ShortName: Swift
+Group: Misc
+Scaling: None
+Prefix: Cloak; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Speed / Reflex Save
+
+ShardName: Tinkering
+ShortName: Tinkering
+Group: Misc
+Scaling: None
+Prefix: Gloves; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Disable Device / Open Lock
+
+ShardName: Tyrannical
+ShortName: Tyrannical
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Axiomatic / Unholy Blast
+
+ShardName: Warded
+ShortName: Warded
+Group: Misc
+Scaling: None
+Prefix: Helmet; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 5 Mystical Vessel; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 5 Mystical Vessel; 15 Purified Eberron Dragonshard
+Notes: Protection from Evil / Curse Resistance
+
+ShardName: Watchful
+ShortName: Watchful
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Helmet; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Plant; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 5 Mystical Plant; 15 Purified Eberron Dragonshard
+Notes: Heightened Awareness / Dodge
+
+ShardName: Willful
+ShortName: Willful
+Group: Misc
+Scaling: None
+Prefix: Cloak; Orb
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Wisdom / Will Save
+
+ShardName: Windswept
+ShortName: Windswept
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 400
+BoundEssences: 1000
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1500
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Air Guard / Electric Absorption
+
+ShardName: Acid Resistant
+ShortName: Acid Resistant
+Group: Misc
+Scaling: None
+Prefix: Bracers; Cloak
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 45 Purified Eberron Dragonshard
+Notes: Acid Resistance / Resistance
+
+ShardName: Aiming
+ShortName: Aiming
+Group: Misc
+Scaling: None
+Prefix: Belt; Boots; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Accuracy / Doubleshot
+
+ShardName: Artificing
+ShortName: Artificing
+Group: Misc
+Scaling: None
+Prefix: Goggles; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Intelligence / Use Magic Device
+
+ShardName: Assassin's
+ShortName: Assassin's
+Group: Misc
+Scaling: None
+Prefix: Belt; Boots; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Doublestrike / Deception
+
+ShardName: Attuned Banishing
+ShortName: Attuned Banishing
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Banishing / Axiomatic Blast
+
+ShardName: Attuned Disruption
+ShortName: Attuned Disruption
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Disruption / Holy Blast
+
+ShardName: Attuned Smiting
+ShortName: Attuned Smiting
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Smiting / Anarchic Blast
+
+ShardName: Aware
+ShortName: Aware
+Group: Misc
+Scaling: None
+Prefix: Gloves; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Search / Spot
+
+ShardName: Brigand's
+ShortName: Brigand's
+Group: Misc
+Scaling: None
+Prefix: Gloves; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Deadly / Doublestrike
+
+ShardName: Bulwark
+ShortName: Bulwark
+Group: Misc
+Scaling: None
+Prefix: Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Protection / Sheltering
+
+ShardName: Captain's
+ShortName: Captain's
+Group: Misc
+Scaling: None
+Prefix: Boots; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Combat Mastery / Dodge
+
+ShardName: Commander's
+ShortName: Commander's
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Combat Mastery / Spell Resistance
+
+ShardName: Convalescent
+ShortName: Convalescent
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Boots; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Healing Amplification / Repair Amplification
+
+ShardName: Cursed
+ShortName: Cursed
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Cursespewing / Unholy Burst
+
+ShardName: Defensive
+ShortName: Defensive
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Shield; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Fortification / Protection
+
+ShardName: Desert Eclipse
+ShortName: Desert Eclipse
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Flaming Blast / Sirocco
+
+ShardName: Desert Sand
+ShortName: Desert Sand
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Flaming Blast / Speed
+
+ShardName: Divine Light
+ShortName: Divine Light
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Holy / Coruscating
+
+ShardName: Dynamic
+ShortName: Dynamic
+Group: Misc
+Scaling: None
+Prefix: Shield
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Lightning Strike / Electric Blast
+
+ShardName: Earth Absorbing
+ShortName: Earth Absorbing
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Acid Absorption / Poison Absorption
+
+ShardName: Electric Absorbing
+ShortName: Electric Absorbing
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Electric Absorption / Negative Absorption
+
+ShardName: Electric Resistant
+ShortName: Electric Resistant
+Group: Misc
+Scaling: None
+Prefix: Bracers; Cloak
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Electric Resistance / Resistance
+
+ShardName: Equilibrium
+ShortName: Equilibrium
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Boots; Ring; Shield
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Healing Amplification / Negative Healing Amplification
+
+ShardName: Explosive
+ShortName: Explosive
+Group: Misc
+Scaling: None
+Prefix: Goggles; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Evocation Focus / Spellcraft
+
+ShardName: Flame Absorbing
+ShortName: Flame Absorbing
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Fire Absorption / Light Absorption
+
+ShardName: Flame Resistant
+ShortName: Flame Resistant
+Group: Misc
+Scaling: None
+Prefix: Bracers; Cloak
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Fire Resistance / Resistance
+
+ShardName: Fletching
+ShortName: Fletching
+Group: Misc
+Scaling: None
+Prefix: Gloves; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Doubleshot / Ranged Alacrity
+
+ShardName: Flowing
+ShortName: Flowing
+Group: Misc
+Scaling: None
+Prefix: Boots; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Speed / Dodge
+
+ShardName: Frost Absorbing
+ShortName: Frost Absorbing
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Ring; Shield; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Cold Absorption / Force Absorption
+
+ShardName: Frost Resistant
+ShortName: Frost Resistant
+Group: Misc
+Scaling: None
+Prefix: Bracers; Cloak
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Cold Resistance / Resistance
+
+ShardName: Heart's Desire
+ShortName: Heart's Desire
+Group: Misc
+Scaling: None
+Prefix: Goggles; Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Charisma / Spellcraft
+
+ShardName: Keen-Eyed
+ShortName: Keen-Eyed
+Group: Misc
+Scaling: None
+Prefix: Gloves; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Heightened Awareness / Dodge
+
+ShardName: Killer's
+ShortName: Killer's
+Group: Misc
+Scaling: None
+Prefix: Gloves; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Assassinate / Dexterity
+
+ShardName: Limber
+ShortName: Limber
+Group: Misc
+Scaling: None
+Prefix: Boots; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Dexterity / Tumble
+
+ShardName: Lucky
+ShortName: Lucky
+Group: Misc
+Scaling: None
+Prefix: Belt; Boots; Gloves; Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Good Luck / Dodge
+
+ShardName: Magmatic
+ShortName: Magmatic
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Magma Surge / Flaming Blast
+
+ShardName: Mauling
+ShortName: Mauling
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Maiming / Bleeding
+
+ShardName: Mind's Eye
+ShortName: Mind's Eye
+Group: Misc
+Scaling: None
+Prefix: Goggles; Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Intelligence / Concentration
+
+ShardName: Night's Grasp
+ShortName: Night's Grasp
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Negative Blast / Maladroit
+
+ShardName: Outlander's
+ShortName: Outlander's
+Group: Misc
+Scaling: None
+Prefix: Gloves; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Deception / Doubleshot
+
+ShardName: Pandemonium
+ShortName: Pandemonium
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Sonic Blast / Weakening
+
+ShardName: Relentless
+ShortName: Relentless
+Group: Misc
+Scaling: None
+Prefix: Belt; Boots; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Deadly / Deception
+
+ShardName: Resonant
+ShortName: Resonant
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Sonic Blast / Sonic Lore
+
+ShardName: Sapper's
+ShortName: Sapper's
+Group: Misc
+Scaling: None
+Prefix: Gloves; Trinket
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Shatter / Melee Alacrity
+
+ShardName: Sensory
+ShortName: Sensory
+Group: Misc
+Scaling: None
+Prefix: Ring; Orb
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Concentration / Spot
+
+ShardName: Smoke Aligned
+ShortName: Smoke Aligned
+Group: Misc
+Scaling: None
+Prefix: Shield; 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Smoke Screen / Flaming
+
+ShardName: Sneaky
+ShortName: Sneaky
+Group: Misc
+Scaling: None
+Prefix: Metal Armor; Leather Armor; Cloth Armor; Docent; Belt; Cloak; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Hide / Move Silently
+
+ShardName: Soul's Focus
+ShortName: Soul's Focus
+Group: Misc
+Scaling: None
+Prefix: Goggles; Helmet; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Wisdom / Wizardry
+
+ShardName: Sun's Fury
+ShortName: Sun's Fury
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Forgotten Folio; 5 Silver Amulet; 1 Envelope of Pyrrhic Pollen; 15 Purified Eberron Dragonshard
+Notes: Coruscating / Fiery
+
+ShardName: Technical
+ShortName: Technical
+Group: Misc
+Scaling: None
+Prefix: Goggles; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Search / Disable Device
+
+ShardName: Thieving
+ShortName: Thieving
+Group: Misc
+Scaling: None
+Prefix: Gloves; Necklace; Ring
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Creeping Vine; 5 Etched Bone Shard; 1 Annointed Manuscript; 15 Purified Eberron Dragonshard
+Notes: Accuracy / Deception
+
+ShardName: Virulently Poisoned
+ShortName: Virulently Poisoned
+Group: Misc
+Scaling: None
+Prefix: 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Chunk of Raw Amber; 5 Poisoned Thorn; 1 Packet of Golden Powder; 15 Purified Eberron Dragonshard
+Notes: Poison Blast / Wounding
+
+ShardName: Wintry
+ShortName: Wintry
+Group: Misc
+Scaling: None
+Prefix: Shield; 2H Melee; Handwraps; 1H Melee
+Demand: Rarely Used
+BoundLevel: 425
+BoundEssences: 1250
+BoundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 5 Purified Eberron Dragonshard
+UnboundLevel: 450
+UnboundEssences: 1750
+UnboundIngredients: 15 Silver Bell; 5 Deciphered Riddle; 1 Ornate Scroll Case; 15 Purified Eberron Dragonshard
+Notes: Freezing Ice / Cold Blast

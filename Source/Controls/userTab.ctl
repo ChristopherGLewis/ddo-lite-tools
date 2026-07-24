@@ -3,10 +3,10 @@ Begin VB.UserControl userTab
    Appearance      =   0  'Flat
    AutoRedraw      =   -1  'True
    BackColor       =   &H80000005&
-   ClientHeight    =   1932
+   ClientHeight    =   1935
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   5148
+   ClientWidth     =   5145
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -16,8 +16,8 @@ Begin VB.UserControl userTab
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   1932
-   ScaleWidth      =   5148
+   ScaleHeight     =   1935
+   ScaleWidth      =   5145
 End
 Attribute VB_Name = "userTab"
 Attribute VB_GlobalNameSpace = False
@@ -67,7 +67,7 @@ End Sub
 ' The property bag object persists settings in design mode (as opposed to during runtime)
 ' This function only fires once ever per control, when you add it to a form in design mode
 Private Sub UserControl_InitProperties()
-    mstrCaptions = "Tab 1,Tab 2,Tab 3"
+    mstrCaptions = "Tab 1,Tab 2,Tab 3, Tab 4"
     DefineTabs
     mlngActiveTab = 1
     mlngTextActiveColor = vbWindowText
@@ -82,7 +82,7 @@ End Sub
 
 ' In design mode, when you close a form, the developer's property settings are stored to a mysterious "property bag"
 Private Sub UserControl_WriteProperties(PropBag As PropertyBag)
-    PropBag.WriteProperty "Captions", mstrCaptions, "One,Two,Three"
+    PropBag.WriteProperty "Captions", mstrCaptions, "One,Two,Three,Four"
     PropBag.WriteProperty "ActiveTab", mlngActiveTab, 1
     PropBag.WriteProperty "TextActiveColor", mlngTextActiveColor, vbWindowText
     PropBag.WriteProperty "TextInactiveColor", mlngTextInactiveColor, vbWindowText
@@ -96,7 +96,7 @@ End Sub
 
 ' Next time you open the form in design view, each control instance retreives its developer-chosen properties from the property bag
 Private Sub UserControl_ReadProperties(PropBag As PropertyBag)
-    mstrCaptions = PropBag.ReadProperty("Captions", "One,Two,Three")
+    mstrCaptions = PropBag.ReadProperty("Captions", "One,Two,Three,Four")
     DefineTabs
     mlngActiveTab = PropBag.ReadProperty("ActiveTab", 1)
     mlngTextActiveColor = PropBag.ReadProperty("TextActiveColor", vbWindowText)
@@ -291,10 +291,15 @@ Private Sub DrawTabs()
         .BackColor = mlngBackColor
         .Cls
     End With
+    
     For lngTab = 1 To mlngTabs
         With mtypTab(lngTab)
             ' Background
-            If lngTab = mlngActiveTab Then lngColor = mlngTabActiveColor Else lngColor = mlngTabInactiveColor
+            If lngTab = mlngActiveTab Then
+                lngColor = mlngTabActiveColor
+            Else
+                lngColor = mlngTabInactiveColor
+            End If
             UserControl.Line (.Left, mlngTop)-(.Right, lngBottom), lngColor, BF
             ' Black border
             UserControl.Line (.Left, mlngTop + 4 * PixelY)-(.Left, lngBottom + PixelY), mlngBorderColor

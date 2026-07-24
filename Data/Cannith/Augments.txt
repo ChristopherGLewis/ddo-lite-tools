@@ -519,7 +519,6 @@ ML: 12
 Value: +1
 Store: 95
 Vendors: Gianthold
-Notes: The Haunting of Saltmarsh
 ML: 20
 Value: +2
 Store: 175
@@ -1297,7 +1296,7 @@ Value: 22%
 Prefix: Vol. 3 -
 
 Augment: Book of Defense
-variant: Fortitude; Reflexes; Willpower
+Variants: Fortitude; Reflexes; Willpower
 Color: Blue
 Flags: Static; Named
 Descrip: Save
@@ -1372,3 +1371,426 @@ Color: Clear
 Flags: Static; Named
 Descrip: +8 Enhancement bonus to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.
 ML: 32
+
+
+
+Augment: Abjuration
+Flags: Static; Named
+Descrip: Profane Bonus to Abjuration DCs
+ML: 32
+
+Augment: Profane Spell School Focus
+Color: Solar
+Descrip: Profane Bonus to Spell Shool DCs
+Variants: Abjuration Focus; Conjuration Focus; Enchantment Focus; Evocation Focus; Illusion Focus; Necromancy Focus; Transmutation Focus
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+
+Augment: Profane Skill
+Color: Solar
+Descrip: Profane bonus to skills
+Variants: Balance and Tumble; Disable Device and Open Lock;  Haggle and Perform; Heal, Listen and Concentration; Hide and Move Silently;  Jump and Swim; Bluff, Diplomacy and Intimidate; Repair and Use Magic Device
+ML: 1
+Value: +2
+ML: 20
+Value: +4
+ML: 30
+Value: +6
+
+
+Augment: Profane Stat
+Color: Solar
+Descrip: Profane bonus to stat
+Variants: Strength; Dexterity; Constitution; Intelligence; Wisdom; Charisma
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+
+Augment: Profane Accuracy
+Color: Solar
+Descrip: Profane Bonus to Attack Rolls
+ML: 1
+Value: +1
+ML: 20
+Value: +?
+ML: 30
+Value: +4
+
+
+Augment: Profane Blast Dice
+Color: Solar
+Descrip: Profane Bonus to Eldritch Blast Dice
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Profane Amplification
+Color: Solar
+Descrip: Profane Bonus to  Amplification
+Variants: Healing; Negative; Repair
+ML: 1
+Value: +10
+ML: 20
+Value: +20
+ML: 30
+Value: +30
+
+Augment: Profane Magical Protection
+Color: Solar
+Descrip: Profane Bonus to Magical Resistance Rating
+ML: 1
+Value: +10
+ML: 20
+Value: +20
+ML: 30
+Value: +30
+
+Augment: Profane Melee Power
+Color: Solar
+Descrip: Profane Bonus to Melee Power
+ML: 1
+Value: +5
+ML: 20
+Value: +10
+ML: 30
+Value: +15
+
+Augment: Profane Natural Armor
+Color: Solar
+Descrip: Profane Bonus to Natural Armor
+ML: 1
+Value: +5
+ML: 20
+Value: +??
+ML: 30
+Value: +10
+
+Augment: Profane Pact  Dice
+Color: Solar
+Descrip: Profane Bonus to  Pact Dice
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Profane Physical Protection
+Color: Solar
+Descrip: Profane Bonus to Magical Physical Rating
+ML: 1
+Value: +10
+ML: 20
+Value: +20
+ML: 30
+Value: +30
+
+Augment: Profane Ranged Power
+Color: Solar
+Descrip: Profane Bonus to Ranged Power
+ML: 1
+Value: +5
+ML: 20
+Value: +10
+ML: 30
+Value: +15
+
+Augment: Profane Spell Focus
+Color: Solar
+Descrip: Profane Bonus to Spell DCs
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+Augment: Profane Spell Power
+Color: Solar
+Descrip: Profane Bonus to each spell power (i.e., Potency)
+ML: 1
+Value: +15
+ML: 20
+Value: +20
+ML: 30
+Value: +25
+
+Augment: Profane Swift Charging
+Color: Solar
+Descrip: Profane Bonus to Rune Arm Charge Speed
+ML: 1
+Value: +5%
+ML: 20
+Value: +10%
+ML: 30
+Value: +15%
+
+Augment: Artifact Skill
+Color: Lunar
+Descrip: Artifact bonus to skills
+Variants: Balance and Tumble; Disable Device and Open Lock;  Haggle and Perform; Heal, Listen and Concentration; Hide and Move Silently;  Jump and Swim; Bluff, Diplomacy and Intimidate; Repair and Use Magic Device
+ML: 1
+Value: +2
+ML: 20
+Value: +4
+ML: 30
+Value: +6
+
+
+Augment: Artifact Stat
+Color: Lunar
+Descrip: Artifact bonus to stat
+Variants: Strength; Dexterity; Constitution; Intelligence; Wisdom; Charisma
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+Augment: Artifact Attack
+Color: Lunar
+Descrip: Artifact Bonus to Attack Rolls
+ML: 1
+Value: +3
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+Augment: Artifact Armor Layers
+Color: Lunar
+Descrip: Artifact Bonus to Armor Class
+ML: 1
+Value: +5%
+ML: 20
+Value: +10%
+ML: 30
+Value: +15%
+
+Augment: Artifact Blast Dice
+Color: Lunar
+Descrip: Artifact Bonus to Eldritch Blast Dice
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Artifact Critical Confirmation 
+Color: Lunar
+Descrip: Artifact Bonus to Critical Confirmation and Damage
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+Augment: Artifact Cruelty
+Color: Lunar
+Descrip: Artifact Bonus to Damage to Helpless Enemies
+ML: 1
+Value: +5%
+ML: 20
+Value: +10%
+ML: 30
+Value: +15%
+
+Augment: Artifact Damage
+Color: Lunar
+Descrip: Artifact Bonus to Damage Rolls
+ML: 1
+Value: +1
+ML: 20
+Value: +?
+ML: 30
+Value: +4
+
+
+Augment: Artifact Dodge
+Color: Lunar
+Descrip: Artifact Bonus to Dodge
+ML: 1
+Value: +3%
+ML: 20
+Value: +6%
+ML: 30
+Value: +10%
+
+Augment: Artifact Dodge Cap
+Color: Lunar
+Descrip: Artifact Bonus to Dodge Cap
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Artifact Doubleshot
+Color: Lunar
+Descrip: Artifact Bonus to Doubleshot
+ML: 1
+Value: +5%
+ML: 20
+Value: +10%
+ML: 30
+Value: +15%
+
+Augment: Artifact Doublestrike
+Color: Lunar
+Descrip: Artifact Bonus to Doublestrike
+ML: 1
+Value: +5%
+ML: 20
+Value: +10%
+ML: 30
+Value: +15%
+
+Augment: Artifact Elemental Absorption
+Color: Lunar
+Descrip: Artifact Bonus to Fire, Cold, Acid and Electric Absorption
+ML: 1
+Value: +3%
+ML: 20
+Value: +6%
+ML: 30
+Value: +10%
+
+Augment: Artifact Enduring
+Color: Lunar
+Descrip: Legendary Bonus to Maximum Hit Points
+ML: 1
+Value: +5%
+ML: 20
+Value: +?%
+ML: 30
+Value: +10%
+
+Augment: Artifact Force Absorption
+Color: Lunar
+Descrip: Artifact Bonus to Force Absorption
+ML: 1
+Value: +2%
+ML: 20
+Value: +4%
+ML: 30
+Value: +6%
+
+Augment: Artifact Imbuement
+Color: Lunar
+Descrip: Artifact Bonus to Imbue Dice
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Artifact Magical Protection
+Color: Lunar
+Descrip: Artifact Bonus to Magical Resistance Rating
+ML: 1
+Value: +10
+ML: 20
+Value: +20
+ML: 30
+Value: +30
+
+Augment: Artifact Melee Power
+Color: Lunar
+Descrip: Artifact Bonus to Melee Power
+ML: 1
+Value: +5
+ML: 20
+Value: +10
+ML: 30
+Value: +15
+
+Augment: Artifact Natural Armor
+Color: Lunar
+Descrip: Artifact Bonus to Natural Armor
+ML: 1
+Value: +5
+ML: 20
+Value: +??
+ML: 30
+Value: +10
+
+Augment: Artifact Pact  Dice
+Color: Lunar
+Descrip: Artifact Bonus to  Pact Dice
+ML: 1
+Value: +1
+ML: 20
+Value: +2
+ML: 30
+Value: +3
+
+Augment: Artifact Physical Protection
+Color: Lunar
+Descrip: Artifact Bonus to Magical Physical Rating
+ML: 1
+Value: +10
+ML: 20
+Value: +20
+ML: 30
+Value: +30
+
+Augment: Artifact Ranged Power
+Color: Lunar
+Descrip: Artifact Bonus to Ranged Power
+ML: 1
+Value: +5
+ML: 20
+Value: +10
+ML: 30
+Value: +15
+
+Augment: Artifact Spell Focus
+Color: Lunar
+Descrip: Artifact Bonus to Spell DCs
+ML: 1
+Value: +2
+ML: 20
+Value: +3
+ML: 30
+Value: +4
+
+Augment: Artifact Spell Power
+Color: Lunar
+Descrip: Artifact Bonus to each spell power (i.e., Potency)
+ML: 1
+Value: +15
+ML: 20
+Value: +20
+ML: 30
+Value: +25
+
+Augment: Artifact Swift Charging
+Color: Lunar
+Descrip: Artifact Bonus to Rune Arm Charge Speed
+ML: 1
+Value: +5
+ML: 20
+Value: +10
+ML: 30
+Value: +15
+
+
+
+

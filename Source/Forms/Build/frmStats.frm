@@ -4,7 +4,7 @@ Begin VB.Form frmStats
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Stats"
-   ClientHeight    =   7770
+   ClientHeight    =   8235
    ClientLeft      =   30
    ClientTop       =   405
    ClientWidth     =   12225
@@ -21,15 +21,15 @@ Begin VB.Form frmStats
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7770
+   ScaleHeight     =   8235
    ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrFooter 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   57
       TabStop         =   0   'False
-      Top             =   7380
-      Width           =   12216
+      Top             =   7800
+      Width           =   12210
       _ExtentX        =   21537
       _ExtentY        =   688
       Spacing         =   264
@@ -62,7 +62,7 @@ Begin VB.Form frmStats
       Index           =   2
       Left            =   240
       TabIndex        =   28
-      Top             =   4440
+      Top             =   4800
       Width           =   3492
       Begin CharacterBuilderLite.userSpinner usrSpinner 
          Height          =   252
@@ -360,8 +360,8 @@ Begin VB.Form frmStats
          TabIndex        =   6
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3096
-         _ExtentY        =   4048
+         _extentx        =   3096
+         _extenty        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -370,8 +370,8 @@ Begin VB.Form frmStats
          TabIndex        =   7
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3096
-         _ExtentY        =   4048
+         _extentx        =   3096
+         _extenty        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -380,8 +380,8 @@ Begin VB.Form frmStats
          TabIndex        =   8
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3096
-         _ExtentY        =   4048
+         _extentx        =   3096
+         _extenty        =   4048
       End
       Begin CharacterBuilderLite.userStats usrStats 
          Height          =   2292
@@ -390,8 +390,8 @@ Begin VB.Form frmStats
          TabIndex        =   9
          Top             =   1080
          Width           =   1752
-         _ExtentX        =   3096
-         _ExtentY        =   4048
+         _extentx        =   3096
+         _extenty        =   4048
       End
       Begin VB.Label lblGroup 
          Appearance      =   0  'Flat
@@ -444,7 +444,7 @@ Begin VB.Form frmStats
       Index           =   3
       Left            =   3960
       TabIndex        =   45
-      Top             =   4440
+      Top             =   4800
       Width           =   7932
       Begin VB.CheckBox chkTemplate 
          Appearance      =   0  'Flat
@@ -621,11 +621,11 @@ Begin VB.Form frmStats
          Width           =   924
       End
       Begin VB.Shape shpGroup 
-         Height          =   2652
+         Height          =   2655
          Index           =   3
          Left            =   0
          Top             =   120
-         Width           =   7932
+         Width           =   7935
       End
    End
    Begin VB.Frame fraGroup 
@@ -633,7 +633,7 @@ Begin VB.Form frmStats
       BackColor       =   &H80000005&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   3732
+      Height          =   4215
       Index           =   1
       Left            =   8400
       TabIndex        =   10
@@ -641,10 +641,21 @@ Begin VB.Form frmStats
       Width           =   3492
       Begin VB.ComboBox cboLevelup 
          Height          =   330
-         Index           =   8
+         Index           =   9
          ItemData        =   "frmStats.frx":0010
          Left            =   1200
          List            =   "frmStats.frx":0012
+         Style           =   2  'Dropdown List
+         TabIndex        =   62
+         Top             =   3720
+         Width           =   1932
+      End
+      Begin VB.ComboBox cboLevelup 
+         Height          =   330
+         Index           =   8
+         ItemData        =   "frmStats.frx":0014
+         Left            =   1200
+         List            =   "frmStats.frx":0016
          Style           =   2  'Dropdown List
          TabIndex        =   29
          Top             =   3360
@@ -653,9 +664,9 @@ Begin VB.Form frmStats
       Begin VB.ComboBox cboLevelup 
          Height          =   330
          Index           =   7
-         ItemData        =   "frmStats.frx":0014
+         ItemData        =   "frmStats.frx":0018
          Left            =   1200
-         List            =   "frmStats.frx":0016
+         List            =   "frmStats.frx":001A
          Style           =   2  'Dropdown List
          TabIndex        =   27
          Top             =   3000
@@ -723,6 +734,18 @@ Begin VB.Form frmStats
          TabIndex        =   13
          Top             =   480
          Width           =   1932
+      End
+      Begin VB.Label lblLevelup 
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         Caption         =   "Level 36:"
+         ForeColor       =   &H80000008&
+         Height          =   255
+         Index           =   9
+         Left            =   240
+         TabIndex        =   63
+         Top             =   3720
+         Width           =   1095
       End
       Begin VB.Label lblLevelup 
          Appearance      =   0  'Flat
@@ -846,11 +869,11 @@ Begin VB.Form frmStats
          Width           =   1092
       End
       Begin VB.Shape shpGroup 
-         Height          =   3612
+         Height          =   3975
          Index           =   1
          Left            =   0
          Top             =   120
-         Width           =   3492
+         Width           =   3495
       End
    End
    Begin VB.PictureBox picSchedule 
@@ -859,9 +882,9 @@ Begin VB.Form frmStats
       BackColor       =   &H80000005&
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
-      Height          =   6792
+      Height          =   7155
       Left            =   120
-      ScaleHeight     =   6795
+      ScaleHeight     =   7155
       ScaleWidth      =   11955
       TabIndex        =   59
       Top             =   480

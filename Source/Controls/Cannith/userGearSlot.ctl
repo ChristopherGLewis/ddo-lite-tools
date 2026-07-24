@@ -2,7 +2,7 @@ VERSION 5.00
 Begin VB.UserControl userGearSlot 
    Appearance      =   0  'Flat
    BackColor       =   &H00C0FFFF&
-   ClientHeight    =   384
+   ClientHeight    =   390
    ClientLeft      =   0
    ClientTop       =   0
    ClientWidth     =   7740
@@ -15,7 +15,7 @@ Begin VB.UserControl userGearSlot
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   384
+   ScaleHeight     =   390
    ScaleWidth      =   7740
    Begin VB.PictureBox picSwaps 
       Appearance      =   0  'Flat
@@ -25,8 +25,8 @@ Begin VB.UserControl userGearSlot
       ForeColor       =   &H80000008&
       Height          =   384
       Left            =   6900
-      ScaleHeight     =   384
-      ScaleWidth      =   384
+      ScaleHeight     =   390
+      ScaleWidth      =   390
       TabIndex        =   5
       TabStop         =   0   'False
       Top             =   0
@@ -40,8 +40,8 @@ Begin VB.UserControl userGearSlot
       ForeColor       =   &H80000008&
       Height          =   384
       Left            =   6240
-      ScaleHeight     =   384
-      ScaleWidth      =   384
+      ScaleHeight     =   390
+      ScaleWidth      =   390
       TabIndex        =   4
       TabStop         =   0   'False
       Top             =   0
@@ -55,7 +55,7 @@ Begin VB.UserControl userGearSlot
       ForeColor       =   &H80000008&
       Height          =   384
       Left            =   4800
-      ScaleHeight     =   384
+      ScaleHeight     =   390
       ScaleWidth      =   1200
       TabIndex        =   3
       TabStop         =   0   'False
@@ -70,8 +70,8 @@ Begin VB.UserControl userGearSlot
       ForeColor       =   &H80000008&
       Height          =   384
       Left            =   360
-      ScaleHeight     =   384
-      ScaleWidth      =   384
+      ScaleHeight     =   390
+      ScaleWidth      =   390
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   0
@@ -83,8 +83,8 @@ Begin VB.UserControl userGearSlot
       TabIndex        =   0
       Top             =   0
       Width           =   372
-      _ExtentX        =   656
-      _ExtentY        =   677
+      _ExtentX        =   661
+      _ExtentY        =   688
       Caption         =   ""
    End
    Begin VB.PictureBox picEffects 
@@ -94,8 +94,8 @@ Begin VB.UserControl userGearSlot
       ForeColor       =   &H80000008&
       Height          =   276
       Left            =   960
-      ScaleHeight     =   252
-      ScaleWidth      =   3576
+      ScaleHeight     =   240
+      ScaleWidth      =   3570
       TabIndex        =   6
       Top             =   0
       Visible         =   0   'False
@@ -422,7 +422,7 @@ Private Sub DefaultItem(pstrItem As String)
             Case seTrinket: strItem = "Trinket"
             Case seArmor: strItem = "Full Plate"
             Case seMainHand: strItem = db.Melee1H.Default.Choice
-            Case seOffHand: strItem = "Heavy Shield"
+            Case seOffhand: strItem = "Heavy Shield"
         End Select
     End If
     Me.ItemType = strItem
@@ -434,7 +434,7 @@ Private Sub InitMenus()
             InitMenu UserControl.mnuMelee1H, db.Melee1H
             InitMenu UserControl.mnuMelee2H, db.Melee2H
             InitMenu UserControl.mnuRange, db.Range
-        Case seOffHand
+        Case seOffhand
             InitMenu UserControl.mnuTWF, db.Melee1H
     End Select
 End Sub
@@ -470,7 +470,7 @@ Private Sub ShowItem()
     
     strID = GetItemResource(mstrItemType)
     With UserControl.picGear
-        .PaintPicture LoadResPicture(strID, vbResIcon), 0, 0, .Width, .Height
+        .PaintPicture LoadResPictureUnknown(strID, vbResIcon), 0, 0, .Width, .Height
     End With
 End Sub
 
@@ -478,7 +478,7 @@ Private Sub ShowSlot(ppic As PictureBox, penStyle As SlotStyleEnum)
     Dim strID As String
     
     strID = GetSlotResource(menSlot)
-    ppic.PaintPicture LoadResPicture(strID, vbResBitmap), 0, 0, ppic.Width, ppic.Height
+    ppic.PaintPicture LoadResPictureUnknown(strID, vbResBitmap), 0, 0, ppic.Width, ppic.Height
 End Sub
 
 Private Sub ShowEldritch()
@@ -486,7 +486,7 @@ Private Sub ShowEldritch()
     
     With UserControl.picEldritch
         If Len(mstrRitual) Then strID = "MSCELDRITCH" Else strID = "MSCBARTER"
-        .PaintPicture LoadResPicture(strID, vbResBitmap), 0, 0, .Width, .Height
+        .PaintPicture LoadResPictureUnknown(strID, vbResBitmap), 0, 0, .Width, .Height
     End With
 End Sub
 
@@ -661,7 +661,7 @@ End Property
 Public Property Let ItemType(ByVal pstrItemType As String)
     mstrItemType = pstrItemType
     Select Case menSlot
-        Case seArmor, seMainHand, seOffHand: UserControl.picGear.TooltipText = GetSlotName(menSlot) & ": " & mstrItemType
+        Case seArmor, seMainHand, seOffhand: UserControl.picGear.TooltipText = GetSlotName(menSlot) & ": " & mstrItemType
     End Select
     UpdateStatus
     ShowItem
@@ -688,7 +688,7 @@ Private Sub ShowItemTypeMenu()
                 UserControl.mnuRange(i).Checked = (UserControl.mnuRange(i).Caption = mstrItemType)
             Next
             PopupMenu UserControl.mnuContext(1)
-        Case seOffHand
+        Case seOffhand
             For i = 0 To UserControl.mnuOffhand.UBound
                 UserControl.mnuOffhand(i).Checked = (UserControl.mnuOffhand(i).Caption = mstrItemType)
             Next
@@ -893,7 +893,7 @@ Private Sub ShowAugments()
     
     With UserControl.picAugments
         strID = "AUGBACK"
-        .PaintPicture LoadResPicture(strID, vbResBitmap), 0, 0, .Width, .Height
+        .PaintPicture LoadResPictureUnknown(strID, vbResBitmap), 0, 0, .Width, .Height
     End With
     For i = 1 To 7
         If mtypAugment(i).Exists Then
@@ -921,7 +921,7 @@ Private Sub DrawAugment(penColor As AugmentColorEnum, plngSlot As Long)
     strColor = GetAugmentColorName(penColor, True)
     With UserControl.picAugments
         strID = "AUG" & UCase$(strColor)
-        .PaintPicture LoadResPicture(strID, vbResIcon), lngLeft, 0, lngWidth, .Height
+        .PaintPicture LoadResPictureUnknown(strID, vbResIcon), lngLeft, 0, lngWidth, .Height
     End With
 End Sub
 

@@ -1642,7 +1642,7 @@ End Sub
 Private Sub ShowGearsetSlots()
     Dim i As Long
     
-    For i = seHelmet To seOffHand
+    For i = seHelmet To seOffhand
         ShowGearSlot i
     Next
 End Sub
@@ -1704,7 +1704,7 @@ Private Sub usrGearSlots_ItemTypeChange(ByVal Slot As SlotEnum, ByVal ItemType A
             gs.TwoHanded = blnTwoHand
             HideOffhand = blnTwoHand
             blnReset = True
-        Case seOffHand
+        Case seOffhand
             blnReset = ChangeOffhand(GetOffhandStyle(ItemType))
     End Select
     gs.Item(Slot).ItemStyle = ItemType
@@ -1874,9 +1874,9 @@ Private Sub usrAugSlot_Hotkey(Slot As SlotEnum, KeyCode As Integer)
         Case vbKeyUp, vbKeySubtract: enSlot = Slot - 1
         Case vbKeyDown, vbKeyAdd: enSlot = Slot + 1
         Case vbKeyHome, vbKeyPageUp: enSlot = seHelmet
-        Case vbKeyEnd, vbKeyPageDown: enSlot = seOffHand
+        Case vbKeyEnd, vbKeyPageDown: enSlot = seOffhand
     End Select
-    If gs.TwoHanded Or gs.Item(seOffHand).ItemStyle = "Empty" Then enMax = seMainHand Else enMax = seOffHand
+    If gs.TwoHanded Or gs.Item(seOffhand).ItemStyle = "Empty" Then enMax = seMainHand Else enMax = seOffhand
     Select Case enSlot
         Case Is < seHelmet: enSlot = seHelmet
         Case Is > enMax: enSlot = enMax
@@ -2060,7 +2060,7 @@ Private Sub EnableArrow(plngIndex As Long, pblnEnabled As Boolean)
     strID = GetArrowResource(plngIndex, enState)
     If Me.imgArrow(plngIndex).Enabled <> pblnEnabled Then
         Me.imgArrow(plngIndex).Enabled = pblnEnabled
-        Me.imgArrow(plngIndex).Picture = LoadResPicture(strID, vbResBitmap)
+        Me.imgArrow(plngIndex).Picture = LoadResPictureUnknown(strID, vbResBitmap)
     End If
 End Sub
 
@@ -2273,14 +2273,14 @@ Private Sub imgArrow_MouseDown(Index As Integer, Button As Integer, Shift As Int
     Dim strID As String
     
     strID = GetArrowResource(CLng(Index), asePressed)
-    Me.imgArrow(Index).Picture = LoadResPicture(strID, vbResBitmap)
+    Me.imgArrow(Index).Picture = LoadResPictureUnknown(strID, vbResBitmap)
 End Sub
 
 Private Sub imgArrow_MouseUp(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
     Dim strID As String
     
     strID = GetArrowResource(CLng(Index), aseEnabled)
-    Me.imgArrow(Index).Picture = LoadResPicture(strID, vbResBitmap)
+    Me.imgArrow(Index).Picture = LoadResPictureUnknown(strID, vbResBitmap)
 End Sub
 
 Private Sub imgArrow_Click(Index As Integer)
@@ -3742,7 +3742,7 @@ Private Function GetSlotDisplay(penSlot As SlotEnum) As String
         Case seTrinket: strReturn = "Trinket"
         Case seArmor: strReturn = "Body"
         Case seMainHand: strReturn = "Main"
-        Case seOffHand: strReturn = "Off"
+        Case seOffhand: strReturn = "Off"
     End Select
     GetSlotDisplay = strReturn
 End Function
@@ -3751,7 +3751,7 @@ Private Function GetItemDisplay(penSlot As SlotEnum, plngML As Long)
     Dim lngIndex As Long
     
     Select Case penSlot
-        Case seMainHand, seOffHand, seArmor
+        Case seMainHand, seOffhand, seArmor
             GetItemDisplay = gs.Item(penSlot).ItemStyle
             lngIndex = SeekItem(gs.Item(penSlot).ItemStyle)
             If lngIndex = 0 Then Exit Function
@@ -4106,7 +4106,7 @@ Public Sub OpenItem(penSlot As SlotEnum)
         Next
         typOpen.EldritchRitual = .EldritchRitual
         typOpen.Mainhand = gs.Item(seMainHand).ItemStyle
-        typOpen.Offhand = gs.Item(seOffHand).ItemStyle
+        typOpen.Offhand = gs.Item(seOffhand).ItemStyle
         typOpen.Armor = gs.Item(seArmor).ItemStyle
     End With
     gtypOpenItem = typOpen

@@ -4,10 +4,10 @@ Begin VB.Form frmAugments
    BackColor       =   &H80000005&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Augments"
-   ClientHeight    =   9015
+   ClientHeight    =   9105
    ClientLeft      =   30
    ClientTop       =   390
-   ClientWidth     =   13560
+   ClientWidth     =   13830
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -19,10 +19,9 @@ Begin VB.Form frmAugments
    EndProperty
    Icon            =   "frmAugments.frx":0000
    LinkTopic       =   "Form1"
-   LockControls    =   -1  'True
    MaxButton       =   0   'False
-   ScaleHeight     =   9015
-   ScaleWidth      =   13560
+   ScaleHeight     =   9105
+   ScaleWidth      =   13830
    StartUpPosition =   3  'Windows Default
    Begin VB.CheckBox chkScaling 
       Appearance      =   0  'Flat
@@ -68,12 +67,12 @@ Begin VB.Form frmAugments
          BackColor       =   &H80000005&
          Caption         =   "Level"
          ForeColor       =   &H80000008&
-         Height          =   216
+         Height          =   210
          Index           =   0
-         Left            =   -108
+         Left            =   135
          TabIndex        =   16
          Top             =   0
-         Width           =   468
+         Width           =   465
       End
       Begin VB.Label lblHeader 
          Appearance      =   0  'Flat
@@ -81,12 +80,12 @@ Begin VB.Form frmAugments
          BackColor       =   &H80000005&
          Caption         =   "Colorless"
          ForeColor       =   &H80000008&
-         Height          =   216
+         Height          =   210
          Index           =   1
-         Left            =   1140
+         Left            =   1380
          TabIndex        =   15
          Top             =   0
-         Width           =   816
+         Width           =   810
       End
       Begin VB.Label lblHeader 
          Appearance      =   0  'Flat
@@ -94,12 +93,12 @@ Begin VB.Form frmAugments
          BackColor       =   &H80000005&
          Caption         =   "Yellow"
          ForeColor       =   &H80000008&
-         Height          =   216
+         Height          =   210
          Index           =   2
-         Left            =   2580
+         Left            =   2820
          TabIndex        =   14
          Top             =   0
-         Width           =   564
+         Width           =   570
       End
       Begin VB.Label lblHeader 
          Appearance      =   0  'Flat
@@ -107,12 +106,12 @@ Begin VB.Form frmAugments
          BackColor       =   &H80000005&
          Caption         =   "Blue"
          ForeColor       =   &H80000008&
-         Height          =   216
+         Height          =   210
          Index           =   3
-         Left            =   4140
+         Left            =   4380
          TabIndex        =   13
          Top             =   0
-         Width           =   372
+         Width           =   375
       End
       Begin VB.Label lblHeader 
          Appearance      =   0  'Flat
@@ -120,38 +119,38 @@ Begin VB.Form frmAugments
          BackColor       =   &H80000005&
          Caption         =   "Red"
          ForeColor       =   &H80000008&
-         Height          =   216
+         Height          =   210
          Index           =   4
-         Left            =   5400
+         Left            =   5640
          TabIndex        =   12
          Top             =   0
-         Width           =   336
+         Width           =   330
       End
    End
    Begin VB.VScrollBar scrollVertical 
       Height          =   7812
-      Left            =   13260
+      Left            =   13440
       TabIndex        =   4
-      Top             =   780
+      Top             =   720
       Width           =   252
    End
    Begin CannithCrafting.userAugment usrAugment 
-      Height          =   5808
-      Left            =   240
+      Height          =   5790
+      Left            =   0
       TabIndex        =   2
       Top             =   540
-      Width           =   2832
-      _ExtentX        =   5001
-      _ExtentY        =   10001
+      Width           =   3315
+      _ExtentX        =   5847
+      _ExtentY        =   10213
    End
    Begin CannithCrafting.userHeader usrFooter 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   8640
-      Width           =   13548
-      _ExtentX        =   23892
+      Width           =   13785
+      _ExtentX        =   24315
       _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
@@ -160,13 +159,13 @@ Begin VB.Form frmAugments
       RightLinks      =   "Effects;Materials;Scaling"
    End
    Begin CannithCrafting.userHeader usrHeader 
-      Height          =   384
+      Height          =   390
       Left            =   0
       TabIndex        =   1
       TabStop         =   0   'False
       Top             =   0
-      Width           =   13548
-      _ExtentX        =   23892
+      Width           =   13785
+      _ExtentX        =   24315
       _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
@@ -174,12 +173,12 @@ Begin VB.Form frmAugments
       RightLinks      =   "Help"
    End
    Begin CannithCrafting.userInfo usrDetail 
-      Height          =   7692
-      Left            =   3240
+      Height          =   7695
+      Left            =   3360
       TabIndex        =   18
       Top             =   720
       Visible         =   0   'False
-      Width           =   6852
+      Width           =   6855
       _ExtentX        =   12091
       _ExtentY        =   13573
    End
@@ -189,12 +188,12 @@ Begin VB.Form frmAugments
       BorderStyle     =   0  'None
       ForeColor       =   &H80000008&
       Height          =   7812
-      Left            =   3240
+      Left            =   3360
       ScaleHeight     =   7815
-      ScaleWidth      =   9975
+      ScaleWidth      =   10095
       TabIndex        =   3
       Top             =   780
-      Width           =   9972
+      Width           =   10095
       Begin VB.PictureBox picScale 
          Appearance      =   0  'Flat
          AutoRedraw      =   -1  'True
@@ -324,6 +323,12 @@ Private Type LevelType
     Blue() As LinkType
     Reds As Long
     Red() As LinkType
+
+    Solars As Long
+    Solar() As LinkType
+    Lunars As Long
+    Lunar() As LinkType
+
 End Type
 
 Private Type ColorType
@@ -507,6 +512,12 @@ Private Sub LoadData()
                     Case aceGreen
                         lngCount = AddScale(a, s, .Yellow, .Yellows)
                         Me.lblHeader(2).Caption = "Yellow (and Green)"
+                    Case aceSolar
+                        lngCount = AddScale(a, s, .Solar, .Solars)
+                        Me.lblHeader(2).Caption = "Solar"  'TODO
+                    Case aceLunar
+                        lngCount = AddScale(a, s, .Lunar, .Lunars)
+                        Me.lblHeader(2).Caption = "Lunar" 'TODO
                 End Select
                 If .Lines < lngCount Then .Lines = lngCount
             End With
@@ -654,6 +665,9 @@ Private Function AvailableSlots(penColor As AugmentColorEnum) As String
         Case aceBlue: AvailableSlots = "(goes in Blue, Green and Purple slots)"
         Case aceRed: AvailableSlots = "(goes in Red, Orange and Purple slots)"
         Case aceGreen, acePurple, aceOrange: AvailableSlots = "(goes in " & GetAugmentColorName(penColor) & " slots only)"
+        Case aceSolar: AvailableSlots = "(goes in Solar slots)"
+        Case aceLunar: AvailableSlots = "(goes in Lunar slots)"
+    
     End Select
 End Function
 
@@ -854,6 +868,8 @@ Private Sub InitGrid()
     LoadLabels
 End Sub
 
+
+'TODO Add Solar/Lunar
 Private Sub LoadLabels()
     Dim lngIndex As Long
     Dim lngWidth As Long

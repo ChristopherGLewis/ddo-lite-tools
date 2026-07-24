@@ -1596,9 +1596,9 @@ Private Function ClassLevels(penClass As ClassEnum) As Long
     Dim i As Long
     
     If penClass = ceAny Then
-        lngClassLevels = HeroicLevels()
+        lngClassLevels = GetHeroicLevels()
     Else
-        For i = 1 To HeroicLevels()
+        For i = 1 To GetHeroicLevels()
             If build.Class(i) = penClass Then lngClassLevels = lngClassLevels + 1
         Next
     End If
@@ -2555,7 +2555,7 @@ Private Sub GuideTotals()
     'Else
     '    Me.lblGuideSpent.Caption = "Spent: " & lngSpent & " AP"
     'End If
-    If lngSpent > HeroicLevels() * 4 Then
+    If lngSpent > GetHeroicLevels() * 4 Then
         Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveTextError)
     Else
         Me.lblGuideSpent.ForeColor = cfg.GetColor(cgeWorkspace, cveText)

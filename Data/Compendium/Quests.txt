@@ -3793,3 +3793,88 @@ Favor: 12
 Pack: The Chill of Ravenloft
 Patron: Keepers of Lamordia
 Style: Raid
+
+QuestName: Hideous to Behold
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: The Price of an Egg
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: Tower of Vengeance
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: The Fetid Wedding
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: Stealing from Sorcere
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: Back to the Abyss
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: Demon in the Rough
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: If It Wasn't For Bad Luck
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: A Long Way to Mushrooms
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: Flocked Together
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: For Want of a Heart
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+
+QuestName: A Blood Pact
+Level: 11
+Epic: 37
+Favor: 5
+Pack: Terror of Demogorgon
+Patron: Battlehammer Expedition
+

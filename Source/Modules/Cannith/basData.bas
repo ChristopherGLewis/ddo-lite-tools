@@ -278,7 +278,11 @@ Public Function Pluralized(ptypIngredient As IngredientType) As String
         Else
             lngMaterial = SeekMaterial(.Material)
             If lngMaterial Then
-                Pluralized = db.Material(lngMaterial).Plural
+                If (db.Material(lngMaterial).Plural = "") Then
+                    Pluralized = DefaultPlural(.Material)
+                Else
+                    Pluralized = db.Material(lngMaterial).Plural
+                End If
             Else
                 Pluralized = DefaultPlural(.Material)
             End If
@@ -656,11 +660,15 @@ Private Sub LoadShards()
     If UBound(strItem) < 1 Then Exit Sub
     ReDim db.Shard(1 To UBound(strItem))
     For i = 1 To UBound(strItem)
-        If InStr(strItem(i), "Group: ") Then LoadShard strItem(i)
+        If InStr(strItem(i), "Group: ") Then
+            LoadShard strItem(i)
+        End If
     Next
     With db
          If UBound(.Shard) <> .Shards Then ReDim Preserve .Shard(1 To .Shards)
     End With
+    
+    'Sort shards
     SortShards
 End Sub
 
@@ -692,6 +700,7 @@ Private Sub LoadShard(ByVal pstrRaw As String)
         ' Process lines
         For lngLine = 1 To UBound(strLine)
             If ParseLine(strLine(lngLine), strField, strItem, lngValue, strList, lngListMax) Then
+                
                 Select Case strField
                     Case "group"
                         .Group = strItem
@@ -714,7 +723,8 @@ Private Sub LoadShard(ByVal pstrRaw As String)
                     Case "unboundlevel": .Unbound.Level = lngValue
                     Case "unboundessences": .Unbound.Essences = lngValue
                     Case "unboundingredients": ParseIngredients .Unbound, strList, lngListMax
-                    Case "demand": .Demand = GetDemandValue(strItem)
+                    Case "demand":
+                        .Demand = GetDemandValue(strItem)
                     Case "notes": .Notes = strItem
                     Case "descrip": .Descrip = strItem
                     Case "warning": .Warning = strItem
@@ -1990,6 +2000,7 @@ Public Function GetGearName(penGear As GearEnum, Optional pblnDescrip As Boolean
     GetGearName = strReturn
 End Function
 
+'TODO FIX - Ugh - this is hard coded
 Public Function GetGearID(ByVal pstrGear As String) As GearEnum
     Select Case LCase$(pstrGear)
         Case "helmet": GetGearID = geHelmet
@@ -2061,7 +2072,8 @@ Public Function GetDemandValue(pstrDemand As String) As DemandEnum
         Case "Niche": GetDemandValue = deNiche
         Case "Obsolete": GetDemandValue = deObsolete
         Case "Rarely Used": GetDemandValue = deRarelyUsed
-        Case Else: Debug.Print "Invalid Demand Value: " & pstrDemand
+        Case Else:
+            Debug.Print "Invalid Demand Value: " & pstrDemand
     End Select
 End Function
 
@@ -2170,6 +2182,8 @@ Public Function GetAugmentColorName(penColor As AugmentColorEnum, Optional pblnA
         Case aceGreen: strReturn = "Green"
         Case aceYellow: strReturn = "Yellow"
         Case aceColorless: If pblnAbbreviate Then strReturn = "Clear" Else strReturn = "Colorless"
+        Case aceSolar: strReturn = "Solar"
+        Case aceLunar: strReturn = "Lunar"
     End Select
     GetAugmentColorName = strReturn
 End Function
@@ -2185,6 +2199,8 @@ Public Function GetAugmentColorID(pstrColor As String) As AugmentColorEnum
         Case "orange": enReturn = aceOrange
         Case "purple": enReturn = acePurple
         Case "green": enReturn = aceGreen
+        Case "solar": enReturn = aceSolar
+        Case "lunar": enReturn = aceLunar
     End Select
     GetAugmentColorID = enReturn
 End Function

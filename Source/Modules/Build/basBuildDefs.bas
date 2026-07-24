@@ -414,6 +414,7 @@ Public Type BuildType6
     Tome(6) As Byte
     Skills(1 To 21, 1 To 20) As Byte
     SkillTome(1 To 21) As Byte
+    'Feats from each source (granted, class, race, diety etc.)
     Feat() As BuildFeatListType
     CanCastSpell(9) As Byte  ' Index 0 = healing spells; if index 1 = 0, build can't cast spells at all (never gets level 1 spells)
     Spell() As BuildClassSpellType

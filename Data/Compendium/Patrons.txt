@@ -58,3 +58,6 @@ Abbreviation: Sharn
 PatronName: Morgrave University
 Abbreviation: Morgrave
 
+PatronName: Battlehammer Expedition
+Abbreviation: Battlehammer
+

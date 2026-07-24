@@ -2,10 +2,10 @@ VERSION 5.00
 Begin VB.UserControl userAugment 
    Appearance      =   0  'Flat
    BackColor       =   &H80000005&
-   ClientHeight    =   4308
+   ClientHeight    =   4395
    ClientLeft      =   0
    ClientTop       =   0
-   ClientWidth     =   2808
+   ClientWidth     =   3300
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -15,35 +15,35 @@ Begin VB.UserControl userAugment
       Italic          =   0   'False
       Strikethrough   =   0   'False
    EndProperty
-   ScaleHeight     =   4308
-   ScaleWidth      =   2808
+   ScaleHeight     =   4395
+   ScaleWidth      =   3300
    Begin VB.ListBox lstAugment 
       Appearance      =   0  'Flat
-      Height          =   3696
+      Height          =   3600
       Left            =   0
       TabIndex        =   0
-      Top             =   600
-      Width           =   2808
+      Top             =   720
+      Width           =   3285
    End
    Begin CannithCrafting.userTab usrTabLow 
-      Height          =   312
+      Height          =   315
       Left            =   0
       TabIndex        =   1
-      Top             =   300
-      Width           =   2772
-      _ExtentX        =   4890
-      _ExtentY        =   550
-      Captions        =   "All,Colorless,Yellow"
+      Top             =   360
+      Width           =   3255
+      _ExtentX        =   4895
+      _ExtentY        =   556
+      Captions        =   "All,Colorless,Yellow,Blue"
    End
    Begin CannithCrafting.userTab usrTabHigh 
-      Height          =   312
-      Left            =   120
+      Height          =   315
+      Left            =   0
       TabIndex        =   2
       Top             =   0
-      Width           =   2652
-      _ExtentX        =   4678
-      _ExtentY        =   550
-      Captions        =   "Blue,Red,Named"
+      Width           =   3135
+      _ExtentX        =   4683
+      _ExtentY        =   556
+      Captions        =   "Red,Named,Solar,Lunar"
       ActiveTab       =   0
    End
 End
@@ -242,8 +242,8 @@ Private Sub FilterTabs()
     lngTabs = 2
     Select Case menSlotColor
         Case aceAny
-            strHigh = "Blue,Red,Named"
-            strLow = "All,Colorless,Yellow"
+            strHigh = "Red,Named,Solar,Lunar"
+            strLow = "All,Colorless,Yellow,Blue"
         Case aceRed
             strHigh = "Named"
             strLow = "All,Colorless,Red"
@@ -316,6 +316,8 @@ Private Sub ChangeTab(pstrCaption As String)
         Case "Blue": menTab = aceBlue
         Case "Red": menTab = aceRed
         Case "Named": menTab = aceOrange
+        Case "Solar": menTab = aceSolar
+        Case "Lunar": menTab = aceLunar
     End Select
     ShowTopLevel
 End Sub

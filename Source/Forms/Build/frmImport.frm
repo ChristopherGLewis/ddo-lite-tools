@@ -1052,7 +1052,7 @@ Private Sub AddBuildTree(pstrRaw As String)
             If blnFound Then Exit For
         Next
         If blnFound Then
-            For i = 1 To HeroicLevels()
+            For i = 1 To GetHeroicLevels()
                 If build.Class(i) = enClass Then lngLevels = lngLevels + 1
             Next
         End If
