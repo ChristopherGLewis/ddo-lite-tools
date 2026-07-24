@@ -6,7 +6,7 @@ Option Explicit
 'This is the MAX feats per SLOT (auto granted, class, racial etc that slot into
 ' db.feats(0-x)
 'This is set to minimize array re-sizing
-Public Const MAX_FEATS = 128
+Public Const MAX_FEATS = 512
 
 ' Used for enhancement/destiny trees
 Private Type LongType
