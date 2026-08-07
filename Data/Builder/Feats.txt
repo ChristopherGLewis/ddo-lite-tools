@@ -889,15 +889,13 @@ Level: 27
 
 FeatName: Epic Spell Focus
 Group: Epic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.}}Note: Only Conjuration, Evocation, and Transmutation schools are available to Dragon Disciples.
-Class: Cleric 11, Dark Apostate 11, Druid 11, Blightcaster 11, Wizard 11, Sorcerer 12, Wild Mage 12, Favored Soul 12, Arcane Trickster 12, Artificer 15, Alchemist 15, Dragon Disciple 15, Bard 16, Stormsinger 16, Warlock 16, Acolyte 16
-All: Spell Focus, Greater Spell Focus
+Descrip: +2 to the DCs of your spells.
+All: Greater Spell Focus
 Level: 21
-SharedSelector: Greater Spell Focus
 
 FeatName: Epic Spell Penetration
 Group: Epic, Spellcasting
-Descrip: +4 to your caster level check for defeating Spell Resistance.
+Descrip: +6 to your caster level check for defeating Spell Resistance.
 All: Spell Penetration, Greater Spell Penetration
 Level: 21
 
@@ -1326,7 +1324,7 @@ ClassBonus: Fighter, Dragon Lord
 FeatName: Greater Spell Focus
 SortName: Spell Focus2
 Group: Heroic, Spellcasting
-Descrip: +1 to the DCs of your spells from a chosen school.
+Descrip: +2 to the DCs of your spells from a chosen school.
 CanCastSpell: 1
 All: Spell Focus
 RaceBonus: Human, Purple Dragon Knight
@@ -1336,7 +1334,7 @@ FeatName: Greater Spell Penetration
 Abbreviation: Greater Spell Pen
 SortName: Spell Penetration2
 Group: Heroic, Spellcasting
-Descrip: +2 to your caster level check for defeating Spell Resistance.
+Descrip: +4 to your caster level check for defeating Spell Resistance.
 CanCastSpell: 1
 All: Spell Penetration
 RaceBonus: Human, Purple Dragon Knight
@@ -2789,23 +2787,24 @@ RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Spell Specialty
 Group: Destiny, Spellcasting
-Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.
+Descrip: This feat allows you to improve potency (+3 DC) in a secondary school. It has multiple variants.}It requires Epic Spell Focus for a different spell school.}You cannot have the basic Spell Focus feat for the spell school.
 All: Epic Spell Focus
 Level: 31
 Selector: Abjuration, Conjuration, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 SelectorName: Abjuration
-One: Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
+None: Spell Focus: Abjuration
 SelectorName: Conjuration
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
+None: Spell Focus: Conjuration
 SelectorName: Enchantment
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
+None: Spell Focus: Enchantment
 SelectorName: Evocation
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
+None: Spell Focus: Evocation
 SelectorName: Illusion
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Necromancy, Epic Spell Focus: Transmutation
+None: Spell Focus: Illusion
 SelectorName: Necromancy
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Transmutation
-One: Epic Spell Focus: Abjuration, Epic Spell Focus: Conjuration, Epic Spell Focus: Enchantment, Epic Spell Focus: Evocation, Epic Spell Focus: Illusion, Epic Spell Focus: Necromancy
+None: Spell Focus: Necromancy
+SelectorName: Transmutation
+None: Spell Focus: Transmutation
 
 FeatName: Spell Thief
 Group: Heroic, Spellcasting
