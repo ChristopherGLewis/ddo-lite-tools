@@ -84,6 +84,11 @@ Attribute VB_Exposed = False
 ' Written by Ellis Dee
 Option Explicit
 
+'TODO Shift the scroll bar to move one/6 slots rather than a portion of the windo
+Const SCROLL_MULTIPLIER As Long = 350
+Const MAX_ROWS = 21
+
+
 Public Event RankChange(Index As Integer, Ranks As Long)
 Public Event OLECompleteDrag(Index As Integer, Effect As Long)
 Public Event OLEDragDrop(Index As Integer, Data As DataObject)
@@ -137,11 +142,14 @@ Private Sub UserControl_Initialize()
     mlngPixelX = Screen.TwipsPerPixelX
     mlngPixelY = Screen.TwipsPerPixelY
     lngTextHeight = UserControl.TextHeight("X")
-    mlngHeight = lngTextHeight * 4 / 3
-    mlngOffsetY = (mlngHeight - lngTextHeight) \ 2
+    mlngHeight = lngTextHeight * 4 / 3   'Height of each entry
+    mlngOffsetY = (mlngHeight - lngTextHeight) \ 2  'diff
     mlngMarginY = mlngHeight / 4
+    
     mlngMarginX = UserControl.TextWidth("  ")
     mlngTop = 30 * mlngPixelY
+    
+    'Colors
     mlngTextColor = vbWindowText
     mlngBackColor = vbWindowBackground
     mlngClientBack = vbWindowBackground
@@ -194,13 +202,17 @@ End Property
 ' ************* USER INIT *************
 
 
+'Rows, columns, slot cols
 Public Sub DefineDimensions(ByVal plngRows As Long, plngColumns As Long, plngSlotColumn As Long)
     mlngRows = plngRows
     mlngColumns = plngColumns
     mlngSlotColumn = plngSlotColumn
+    
     ReDim mtypColumn(1 To mlngColumns)
     mtypColumn(plngSlotColumn).Slot = True
+    
     ReDim grid(mlngColumns, mlngRows)
+    
     UserControl.picClient.Height = (mlngHeight + mlngMarginY) * mlngRows + mlngMarginY
     ShowScrollbar
 End Sub
@@ -323,9 +335,18 @@ End Sub
 Public Sub ForceVisible(plngRow As Long)
     With UserControl
         If .picClient.Top + .usrSlot(plngRow).Top < 0 Then
-            If plngRow = 1 Then .scrollVertical.Value = 0 Else .scrollVertical.Value = .usrSlot(plngRow).Top
+            If plngRow = 1 Then
+                .scrollVertical.Value = 0
+            Else
+                .scrollVertical.Value = .usrSlot(plngRow).Top \ SCROLL_MULTIPLIER
+            End If
         ElseIf .picClient.Top + .usrSlot(plngRow).Top + mlngHeight > .picContainer.ScaleHeight Then
-            If plngRow = mlngRows Then .scrollVertical.Value = .scrollVertical.Max Else .scrollVertical.Value = .usrSlot(plngRow).Top + mlngHeight - .picContainer.ScaleHeight
+            'TODO
+            If plngRow = mlngRows Then
+                .scrollVertical.Value = .scrollVertical.Max
+            Else
+                .scrollVertical.Value = (.usrSlot(plngRow).Top + mlngHeight - .picContainer.ScaleHeight) \ SCROLL_MULTIPLIER
+            End If
         End If
     End With
 End Sub
@@ -457,6 +478,7 @@ Private Function LoadSlots()
     Dim lngTop As Long
     Dim i As Long
     
+    'Load our slots -
     With UserControl
         For i = .usrSlot.UBound To mlngRows + 1 Step -1
             Unload .usrSlot(i)
@@ -540,19 +562,35 @@ End Function
 
 
 Private Sub ShowScrollbar()
+    Dim lngSpace As Long
     With UserControl
-        If .picClient.Height - mlngMarginY > .picContainer.ScaleHeight Then
+        'If .picClient.Height - mlngMarginY > .picContainer.ScaleHeight Then
+        If mlngRows > MAX_ROWS Then
+            'Resize to make room for scroll bar
             .picClient.Width = .picContainer.ScaleWidth - .scrollVertical.Width
-            'TODO fix max scroll
-            If (.picClient.Height - .picContainer.ScaleHeight) < 32767 Then
-                .scrollVertical.Max = .picClient.Height - .picContainer.ScaleHeight
+            
+            'we use the feat slot count
+            lngSpace = UserControl.usrSlot.UBound
+            
+            'Cap our scroll bar max - but this shouldn't matter any more
+            If mlngRows < 32767 Then
+                'this is set to feat count - 20
+                If (mlngRows - MAX_ROWS + 1) <= 0 Then
+                    .scrollVertical.Max = 1
+                Else
+                    .scrollVertical.Max = mlngRows - (MAX_ROWS - 1)
+                End If
+                
             Else
                 .scrollVertical.Max = 32767
             End If
-            .scrollVertical.SmallChange = mlngHeight + mlngMarginY
-            .scrollVertical.LargeChange = .picContainer.ScaleHeight
+            '.scrollVertical.SmallChange = mlngHeight + mlngMarginY
+            '.scrollVertical.LargeChange = .picContainer.ScaleHeight
+            .scrollVertical.SmallChange = 1 'SCROLL_MULTIPLIER
+            .scrollVertical.LargeChange = 20 ' SCROLL_MULTIPLIER * 10
             .scrollVertical.Visible = True
         Else
+            'hide scroll bar
             .picClient.Width = .picContainer.ScaleWidth
             .scrollVertical.Visible = False
         End If
@@ -599,7 +637,8 @@ End Sub
 
 Private Sub ScrollClient()
     With UserControl
-        .picClient.Top = 0 - .scrollVertical.Value
+        'This now multiplied by the slot height
+       .picClient.Top = 0 - (.scrollVertical.Value * SCROLL_MULTIPLIER)
     End With
 End Sub
 

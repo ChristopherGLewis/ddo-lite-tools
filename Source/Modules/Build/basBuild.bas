@@ -521,7 +521,8 @@ Private Sub InitGrantedFeats()
                 pPtr.Style = peFeat
                 pPtr.Feat = db.AutoGrantedFeat(lngGranted).FeatIndex
                 
-                GrantFeat pPtr, db.AutoGrantedFeat(lngGranted).Level, bfsClass, build.Feat(bftGranted).Feats
+                'Add our heroic granted feats
+                GrantFeat pPtr, db.AutoGrantedFeat(lngGranted).Level, bfsHeroic, build.Feat(bftGranted).Feats
             End If
          Next
         ' Race granted feats
@@ -598,16 +599,6 @@ Private Sub GrantFeat(ptypPointer As PointerType, plngLevel As Long, penSource A
     
     If ptypPointer.Feat = 0 Then Exit Sub
     
-    '2021.08.09 removed this loop - feats can be granted multiple times
-    ' Don't grant feats that are already granted
-    'For i = 1 To pbytIndex - 1  ' Loop through all previous feats minus last one
-    '    With build.Feat(bftGranted).Feat(i)
-    '        If .FeatName = db.Feat(ptypPointer.Feat).FeatName And .Selector = ptypPointer.Selector Then
-    '            blnFound = True
-    '        End If
-    '    End With
-    '    ' If blnFound Then Exit Sub
-    'Next
     
     ' Granted Feats store the level they're granted in Tier
     pbytIndex = pbytIndex + 1
@@ -1178,6 +1169,7 @@ Private Function AddFeatToList(penType As BuildFeatTypeEnum, plngIndex As Long, 
         If Len(.FeatName) Then .FeatID = SeekFeat(.FeatName)
         GetDisplayNames typNew
         lngLevel = typBuild.Level
+        'Set our Feat source
         Select Case penType
             Case bftAlternate
                 .SourceForm = "Alternate"
@@ -1188,7 +1180,7 @@ Private Function AddFeatToList(penType As BuildFeatTypeEnum, plngIndex As Long, 
                 lngLevel = build.Feat(typBuild.ChildType).Feat(typBuild.Child).Level
             Case Else
                 Select Case typBuild.Source
-                    Case bfsHeroic
+                    Case bfsHeroic: .SourceForm = "Heroic"
                     Case bfsEpic: .SourceForm = "Epic"
                     Case bfsDestiny: .SourceForm = "Destiny"
                     Case bfsRace: .SourceForm = db.Race(build.Race).Abbreviation

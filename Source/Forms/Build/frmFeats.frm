@@ -482,7 +482,7 @@ Private Sub ShowGrantedFeats()
     
     With Me.usrList
         .Clear
-        .DefineDimensions Feat.ChannelCount(menChannel), 3, 2
+        .DefineDimensions Feat.ChannelCount(menChannel), 3, 2 'rows, columns, slots
         'TODO New Class - check max name
         .DefineColumn 1, vbLeftJustify, "Source", MAX_CLASS_NAME
         .DefineColumn 2, vbCenter, "Granted Feat"
@@ -506,7 +506,7 @@ Private Sub InitSelectedFeatsList()
     
     With Me.usrList
         .Clear
-        .DefineDimensions Feat.ChannelCount(menChannel), 4, 3
+        .DefineDimensions Feat.ChannelCount(menChannel), 4, 3 'rows, columns, slots
         .DefineColumn 1, vbLeftJustify, "Source", "Legendary"
         .DefineColumn 2, vbRightJustify, "Level", "Level"
         .DefineColumn 3, vbCenter, "Feat"

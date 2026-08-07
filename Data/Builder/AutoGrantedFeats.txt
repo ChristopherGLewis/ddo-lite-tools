@@ -1,6 +1,5 @@
 GrantedFeats1: Attack, Defensive Fighting, Dismiss Charm, Sneak, Sunder, Trip, Heroic Durability
 GrantedFeats2: Heroic Durability
-GrantedFeats2: Heroic Durability
 GrantedFeats3: Heroic Durability
 GrantedFeats4: Heroic Durability
 GrantedFeats5: Heroic Durability, Improved Heroic Durability
