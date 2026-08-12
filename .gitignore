@@ -9,8 +9,16 @@ master
 *.zip
 *.tmp
 
+#Remove temp and testing files
 **/*.bak
 **/Save/TEST_*.*
 **/Save/Notes.txt
 **/Save/main.compendium
 /backup.bld
+
+#Keep the Util exes
+!/Utils/*.exe
+#Keep the graphics zip
+!/Source/Graphics/Graphics.zip
+
+
