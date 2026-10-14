@@ -1134,11 +1134,13 @@ Private Sub ValidSelectors(ptypFeat As FeatType, ByVal plngLevel As Long, pblnSe
         ' Initialize list based on which selectors have already been chosen
         IdentifyTakenFeats typTaken, plngLevel
         ReDim pblnSelector(1 To .Selectors)
+        'Set all selectors opposite of .ALL (set all to true?)
         For i = 1 To .Selectors
             pblnSelector(i) = Not .Selector(i).All
         Next
         If .Times <> 99 Then
             For i = 1 To .Selectors
+                'Remove all ready taken feats
                 If typTaken(.FeatIndex).Selector(i) Then pblnSelector(i) = False
             Next
             If .SelectorStyle = sseShared And Not blnAlternate Then

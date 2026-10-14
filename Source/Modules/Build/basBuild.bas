@@ -3,11 +3,6 @@ Attribute VB_Name = "basBuild"
 ' These are public functions used by the dialogs, the output routine and the import screen
 Option Explicit
 
-'This is the MAX feats per SLOT (auto granted, class, racial etc that slot into
-' db.feats(0-x)
-'This is set to minimize array re-sizing
-Public Const MAX_FEATS = 512
-
 ' Used for enhancement/destiny trees
 Private Type LongType
     Value As Long
@@ -902,7 +897,10 @@ Private Function InitDeityFeats()
                 End Select
             Case ceFavoredSoul
                 Select Case lngClassLevels(enClass)
-                    Case 1, 3, 6, 12, 20
+                    'Case 1, 3, 6, 12, 20
+                    ' This fixes the issue with empty deity slots - 3/12 are populated in the Class:
+                    'GrantedFeats3: Child of Faith & GrantedFeats12: Beloved of the Divine
+                    Case 1, 6, 20
                         'If Not blnOne Then
                             InitBuildFeatSlot bftDeity, bfsDeity, lngCount, lngLevel, lngClassLevels(enClass)
                         '    blnOne = True

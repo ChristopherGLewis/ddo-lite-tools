@@ -704,7 +704,7 @@ Private Sub LoadFeats()
     db.Feats = 0
     If DataFile(strFile, "Feats.txt") Then Exit Sub
     ' Allocate enough space that we never have to increase
-    ReDim db.Feat(511)
+    ReDim db.Feat(MAX_FEATS)
     strRaw = xp.File.LoadToString(strFile)
     strFeat = Split(strRaw, "FeatName: ")
     For i = 1 To UBound(strFeat)
@@ -946,8 +946,8 @@ Private Sub LoadFeat(ByVal pstrRaw As String)
                         log.Activity = actLoadSelector
                         strLine = Split(pstrRaw, "SelectorName: ")
                         For i = 1 To UBound(strLine)
-                            LoadFeatSelector typNew, strLine(i)
-                        Next
+                           LoadFeatSelector typNew, strLine(i)
+                       Next
                         log.Activity = actReadFile
                         Exit For
                     Case Else

@@ -1,7 +1,7 @@
 basControls = 5, 87, 1092, 591, C
 basUtils = 11, 82, 1115, 606, C
 basWiki = 32, 32, 1131, 536, C
-basBuild = 72, 14, 1380, 722, Z
+basBuild = 72, 14, 1380, 722, 
 basBuildDefs = 13, 31, 1112, 535, C
 basDataDefs = 214, 63, 1320, 645, C
 basDataLoad = 16, 123, 1122, 649, C
