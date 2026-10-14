@@ -24,6 +24,12 @@ Public Const MAX_CLASSES As Long = 25
 'Used by basOutput to align the class names
 Public Const MAX_CLASS_NAME As String = "Arcane Trickster"
 
+
+'This is the MAX feats per SLOT (auto granted, class, racial etc that slot into
+' db.feats(0-x)
+'This is set to minimize array re-sizing
+Public Const MAX_FEATS As Integer = 512
+
 'General Debug flags for diagnosing load issues with trees
 Public Const DEBUG_FLAG = False
 Public Const DEBUG_TREE = "Duergar Mindcleaver"
