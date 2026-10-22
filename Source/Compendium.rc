@@ -1,0 +1,15 @@
+// Bitmap resources for this repository.
+// Compile from Source: rc /fo ../Bitmaps.res Bitmaps.rc
+#pragma code_page(65001)
+
+AAA ICON "Graphics/Graphics/Icons/AAA.ico"
+
+ARWDEL        BITMAP "Graphics/Graphics/Bitmaps/Arrows/Delete.bmp"
+ARWDELDIS     BITMAP "Graphics/Graphics/Bitmaps/Arrows/Delete-Disabled.bmp"
+ARWDELPRESS   BITMAP "Graphics/Graphics/Bitmaps/Arrows/Delete-Pressed.bmp"
+ARWDN         BITMAP "Graphics/Graphics/Bitmaps/Arrows/Down.bmp"
+ARWDNDIS      BITMAP "Graphics/Graphics/Bitmaps/Arrows/Down-Disabled.bmp"
+ARWDNPRESS    BITMAP "Graphics/Graphics/Bitmaps/Arrows/Down-Pressed.bmp"
+ARWUP         BITMAP "Graphics/Graphics/Bitmaps/Arrows/Up.bmp"
+ARWUPDIS      BITMAP "Graphics/Graphics/Bitmaps/Arrows/Up-Disabled.bmp"
+ARWUPPRESS    BITMAP "Graphics/Graphics/Bitmaps/Arrows/Up-Pressed.bmp"
