@@ -381,8 +381,8 @@ Level: 21
 FeatName: Child of Faith
 Group: Heroic, Misc
 Descrip: +2 Bonus to Attack and Damage with Simple and Martial Favored Weapons. +1 to Attack and Damage with Exotic Favored Weapons.
-All: Follower of
-Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3, Sacred Fist 3
+One: Follower of, Follower of the Path of Light
+Class: Cleric 3, Favored Soul 3, Paladin 3, Dark Apostate 3, Sacred Fist 1
 
 FeatName: Cleave
 Group: Heroic, Melee

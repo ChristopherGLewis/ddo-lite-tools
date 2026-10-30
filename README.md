@@ -24,7 +24,7 @@ and his initial release of this tool, and its been a pleasure keeping it working
 #### Character Builder
 - Version 4.14
 - All sorts of updates to Enhancements 
-- Addition of Cantrips
+- Addition of Cantrips as auto granted feats
 - Minor fix to the second Deity enhancement selectors to line up to the first Deity enhancement
 - Update to use the new RES file
 - FIX: Dhampir deity issues
