@@ -487,6 +487,7 @@ Private Sub ShowGrantedFeats()
         .DefineColumn 1, vbLeftJustify, "Source", MAX_CLASS_NAME
         .DefineColumn 2, vbCenter, "Granted Feat"
         .DefineColumn 3, vbRightJustify, "Level", "20"
+        .MAX_ROWS = 21
         .Refresh
     End With
     For i = 1 To Feat.Count
@@ -511,6 +512,7 @@ Private Sub InitSelectedFeatsList()
         .DefineColumn 2, vbRightJustify, "Level", "Level"
         .DefineColumn 3, vbCenter, "Feat"
         .DefineColumn 4, vbCenter, "BAB", "BAB"
+        .MAX_ROWS = 21
         .Refresh
     End With
     For i = 1 To Feat.Count
@@ -1281,9 +1283,7 @@ Private Sub ShowAvailable()
     ' Add all feats that meet prereqs
     'This loop iterates FeatDisplay (the sorted feats)
     For i = 1 To db.Feats
-        If i = 129 Then
-            'Debug.Print "here"
-        End If
+
         'lngFeat is the feat id
         lngFeat = db.FeatDisplay(i).FeatIndex
         Do

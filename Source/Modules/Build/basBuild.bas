@@ -1767,7 +1767,7 @@ Public Sub IdentifyTakenFeats(ptypTaken() As FeatTakenType, ByVal plngLevel As L
             End With
         End If
     Next
-    ' Flag all taken feats and selectors
+    ' Flag all taken feats and selectors - Feat.List uses iSlotIndex
     For i = 1 To Feat.Count
         ' We're done if we outleveled the level range
         If Feat.List(i).Level > lngMaxLevel Then Exit Sub

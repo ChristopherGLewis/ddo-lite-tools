@@ -86,8 +86,7 @@ Option Explicit
 
 'TODO Shift the scroll bar to move one/6 slots rather than a portion of the windo
 Const SCROLL_MULTIPLIER As Long = 350
-Const MAX_ROWS = 21
-
+Const DEFAULT_MAX_ROWS As Integer = 21
 
 Public Event RankChange(Index As Integer, Ranks As Long)
 Public Event OLECompleteDrag(Index As Integer, Effect As Long)
@@ -132,12 +131,19 @@ Private mlngPixelY As Long
 
 Private mblnNoFocus As Boolean
 
+'This is the max rows that are displayed before needing a vert Scroll bar.  We probably can calc this
+' but this works for now
+'Shift this from a const (21 for feats) to a parameter
+Public MAX_ROWS As Integer
+
 
 ' ************* INITIALIZE *************
 
 
 Private Sub UserControl_Initialize()
     Dim lngTextHeight As Long
+    
+    MAX_ROWS = DEFAULT_MAX_ROWS
     
     mlngPixelX = Screen.TwipsPerPixelX
     mlngPixelY = Screen.TwipsPerPixelY

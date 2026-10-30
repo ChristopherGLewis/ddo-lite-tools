@@ -719,6 +719,7 @@ Private Sub LoadData()
         .DefineColumn 1, vbCenter, "Tier", "Tier"
         .DefineColumn 2, vbCenter, "Ability"
         .DefineColumn 3, vbCenter, "AP", " 20"
+        .MAX_ROWS = 16
         .Refresh
     End With
     Me.usrDetails.Clear

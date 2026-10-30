@@ -1,7 +1,8 @@
 # DDO Character Planner lite
 Originally created by EllisDee37, with input from DDOApps.
 Updates by Chris Lewis (Farog on Shadowdale, ChicagoChris in the forums)
-Massive contributions by Yhelm (Leader of The Red Scare - Thrane. Sartika • Noalynn • Kenzari • Kreena • Dennis​)
+Massive contributions by Yhelm (Leader of The Red Scare - Thrane. Sartika • Noalynn • Kenzari • Kreena • Dennis​), 
+Peng and a host of other individuals 
 
 ## Background
 These tools were created by EllisDee37, but stopped being updated in 2018-05-25.  
@@ -12,6 +13,35 @@ The code and releases are available at https://github.com/ChristopherGLewis/ddo-
 Any issues and input should be filed there.
 
 ## Release Notes
+
+### 4.15.0 - U81.4/U82 - Enhancement pass
+Changes:
+Updates for U81.4 and U82 Enhancements updates
+Huge & monstrous thanks to Yhelm and Peng for updating the feats and enhancements 
+files and basically keeping this project alive.  It's been over 7 years since I took over for EllisDee376
+and his initial release of this tool, and its been a pleasure keeping it working and adding all the new features.
+
+#### Character Builder
+- Version 4.14
+- All sorts of updates to Enhancements 
+- Addition of Cantrips
+- Minor fix to the second Deity enhancement selectors to line up to the first Deity enhancement
+- Update to use the new RES file
+- FIX: Dhampir deity issues
+
+#### Crafting
+- Version 3.4.0
+- Updates to shards and scaling by Peng including a nice addition of a dual effect grouping
+- Update to use the new RES file
+
+#### Compendium
+- Version 1.21.1
+- Update to use the new RES file
+
+#### General
+- Changed how the RES files are built to work with a compiled RC file.
+  This will allow much easer updates of icons for new crafting ingredients and additions
+  to the solar/lunar gems
 
 ### 4.14.0 - U81 - Terror of Demogorgon
 Changes:

@@ -4,10 +4,10 @@ Begin VB.Form frmSpells
    BackColor       =   &H80000005&
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "Spells"
-   ClientHeight    =   7764
-   ClientLeft      =   36
-   ClientTop       =   408
-   ClientWidth     =   12216
+   ClientHeight    =   7770
+   ClientLeft      =   30
+   ClientTop       =   405
+   ClientWidth     =   12225
    BeginProperty Font 
       Name            =   "Verdana"
       Size            =   9
@@ -22,8 +22,8 @@ Begin VB.Form frmSpells
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7764
-   ScaleWidth      =   12216
+   ScaleHeight     =   7770
+   ScaleWidth      =   12225
    Begin CharacterBuilderLite.userHeader usrFooter 
       Height          =   384
       Left            =   0
@@ -31,8 +31,8 @@ Begin VB.Form frmSpells
       TabStop         =   0   'False
       Top             =   7380
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       UseTabs         =   0   'False
       BorderColor     =   -2147483640
@@ -46,8 +46,8 @@ Begin VB.Form frmSpells
       TabStop         =   0   'False
       Top             =   0
       Width           =   12216
-      _ExtentX        =   21548
-      _ExtentY        =   677
+      _ExtentX        =   21537
+      _ExtentY        =   688
       Spacing         =   264
       BorderColor     =   -2147483640
       RightLinks      =   "Help"
@@ -58,8 +58,8 @@ Begin VB.Form frmSpells
       TabIndex        =   1
       Top             =   840
       Width           =   6132
-      _ExtentX        =   9758
-      _ExtentY        =   5313
+      _ExtentX        =   9763
+      _ExtentY        =   5318
    End
    Begin VB.ComboBox cboClass 
       Height          =   312
@@ -88,8 +88,8 @@ Begin VB.Form frmSpells
       TabStop         =   0   'False
       Top             =   4320
       Width           =   6132
-      _ExtentX        =   10816
-      _ExtentY        =   4255
+      _ExtentX        =   10821
+      _ExtentY        =   4260
    End
    Begin CharacterBuilderLite.userSpinner usrSpinner 
       Height          =   312
@@ -97,8 +97,8 @@ Begin VB.Form frmSpells
       TabIndex        =   6
       Top             =   840
       Width           =   972
-      _ExtentX        =   1715
-      _ExtentY        =   550
+      _ExtentX        =   1720
+      _ExtentY        =   556
       Appearance3D    =   -1  'True
       Max             =   9
       Value           =   1
@@ -264,10 +264,12 @@ Private Sub LoadData(Optional pstrClass As String, Optional plngLevel As Long)
     If blnLockWindow Then xp.LockWindow Me.hwnd
     ' Initialize slots
     mlngSourceIndex = 0
-    Me.usrList.DefineDimensions 1, 2, 2
-    Me.usrList.DefineColumn 1, vbCenter, "Acquired", "Pact @ 19"
-    Me.usrList.DefineColumn 2, vbCenter, "Spells"
-    Me.usrList.Refresh
+    With Me.usrList
+      .DefineDimensions 1, 2, 2
+      .DefineColumn 1, vbCenter, "Acquired", "Pact @ 19"
+      .DefineColumn 2, vbCenter, "Spells"
+      .Refresh
+    End With
     ' Class(es)
     mblnOverride = True
     ComboClear Me.cboClass

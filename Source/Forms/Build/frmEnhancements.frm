@@ -23,35 +23,6 @@ Begin VB.Form frmEnhancements
    MinButton       =   0   'False
    ScaleHeight     =   8325
    ScaleWidth      =   12225
-   Begin CharacterBuilderLite.userHeader usrFooter 
-      Height          =   390
-      Left            =   0
-      TabIndex        =   56
-      TabStop         =   0   'False
-      Top             =   7920
-      Width           =   12210
-      _ExtentX        =   21537
-      _ExtentY        =   688
-      Spacing         =   264
-      UseTabs         =   0   'False
-      BorderColor     =   -2147483640
-      LeftLinks       =   "< Previous"
-      RightLinks      =   "Destiny >"
-   End
-   Begin CharacterBuilderLite.userHeader usrHeader 
-      Height          =   384
-      Left            =   0
-      TabIndex        =   0
-      TabStop         =   0   'False
-      Top             =   0
-      Width           =   12216
-      _ExtentX        =   21537
-      _ExtentY        =   688
-      Spacing         =   264
-      BorderColor     =   -2147483640
-      LeftLinks       =   "Trees;Enhancements;Leveling Guide"
-      RightLinks      =   "Help"
-   End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
       BackColor       =   &H00C0FFFF&
@@ -523,6 +494,35 @@ Begin VB.Form frmEnhancements
             Width           =   2352
          End
       End
+   End
+   Begin CharacterBuilderLite.userHeader usrFooter 
+      Height          =   390
+      Left            =   0
+      TabIndex        =   56
+      TabStop         =   0   'False
+      Top             =   7920
+      Width           =   12210
+      _ExtentX        =   21537
+      _ExtentY        =   688
+      Spacing         =   264
+      UseTabs         =   0   'False
+      BorderColor     =   -2147483640
+      LeftLinks       =   "< Previous"
+      RightLinks      =   "Destiny >"
+   End
+   Begin CharacterBuilderLite.userHeader usrHeader 
+      Height          =   384
+      Left            =   0
+      TabIndex        =   0
+      TabStop         =   0   'False
+      Top             =   0
+      Width           =   12216
+      _ExtentX        =   21537
+      _ExtentY        =   688
+      Spacing         =   264
+      BorderColor     =   -2147483640
+      LeftLinks       =   "Trees;Enhancements;Leveling Guide"
+      RightLinks      =   "Help"
    End
    Begin VB.PictureBox picTab 
       Appearance      =   0  'Flat
@@ -1160,6 +1160,7 @@ Private Sub LoadData()
         .DefineColumn 1, vbCenter, "Tier", "Tier"
         .DefineColumn 2, vbCenter, "Ability"
         .DefineColumn 3, vbCenter, "AP", " 20"
+        .MAX_ROWS = 18
         .Refresh
     End With
     Me.usrDetails.Clear

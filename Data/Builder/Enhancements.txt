@@ -4186,7 +4186,6 @@ AbilityName: Tranquility in Strife
 Descrip: Select an aspect of the Dragon that will unlock new Melee Weapons you can be Centered with
 Tier: 4
 Cost: 2
-Flags: SelectorOnly
 Selector: Dragon's Claw,  Dragon's Tail, Tranquility in Strife
 SelectorName: Dragon's Claw
 Descrip:  You are now Centered with Handaxes, Battle Axes, and Sickles.
@@ -11814,52 +11813,31 @@ Tier: 1
 Ranks: 3
 
 AbilityName: Efficient Metamagic
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}}Notes: Unless stated otherwise, you may only have one trained Efficient Metamagic enhancement for each Metamagic, regardless of tree.
+Descrip: Choose a Metamagic feat. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
-Cost: 2
 Flags: SelectorOnly
 Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
 SelectorName: Efficient Empower
 Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
 All: Feat: Empower Spell
-None: Tier 2: Efficient Metamagic II: Efficient Empower
 SelectorName: Efficient Enlarge
 Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Enlarge Spell
-None: Tier 2: Efficient Metamagic II: Efficient Enlarge
 SelectorName: Efficient Maximize
 Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
 All: Feat: Maximize Spell
-None: Tier 2: Efficient Metamagic II: Efficient Maximize
 SelectorName: Efficient Quicken
 Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
 All: Feat: Quicken Spell
-None: Tier 2: Efficient Metamagic II: Efficient Quicken
 
-AbilityName: Efficient Metamagic II
-Descrip: Choose one of the following Metamagic feats. Reduce the spell point cost of using that Metamagic.}}Notes: Unless stated otherwise, you may only have one trained Efficient Metamagic enhancement for each Metamagic, regardless of tree.
+AbilityName: Efficient Metamagic 2
+Descrip: Choose another Metamagic feats. Reduce the spell point cost of using that Metamagic.
 Tier: 2
 Ranks: 3
-Cost: 2
 Flags: SelectorOnly
-Selector: Efficient Empower, Efficient Enlarge, Efficient Maximize, Efficient Quicken
-SelectorName: Efficient Empower
-Descrip: Using the Empower Spell Metamagic costs you [2/4/6] fewer Spell Points.
-All: Feat: Empower Spell
-None: Tier 2: Efficient Metamagic: Efficient Empower
-SelectorName: Efficient Enlarge
-Descrip: Using the Enlarge Spell Metamagic costs you [1/2/4] fewer Spell Points.
-All: Feat: Enlarge Spell
-None: Tier 2: Efficient Metamagic: Efficient Enlarge
-SelectorName: Efficient Maximize
-Descrip: Using the Maximize Spell Metamagic costs you [3/6/9] fewer Spell Points.
-All: Feat: Maximize Spell
-None: Tier 2: Efficient Metamagic: Efficient Maximize
-SelectorName: Efficient Quicken
-Descrip:  Using the Quicken Spell Metamagic costs you [1/2/4] fewer Spell Points.
-All: Feat: Quicken Spell
-None: Tier 2: Efficient Metamagic: Efficient Quicken
+Parent: Tier 2: Efficient Metamagic
+Siblings: Tier 2: Efficient Metamagic
 
 AbilityName: Creeping Cold
 Descrip: Spell-Like Ability: Deals on-going 1d6 + (1 per caster level) Cold damage to the target every 2 seconds for 16 seconds. The effect can stack 10 times. (Cost: 3 SP, Cooldown: 8 seconds)
