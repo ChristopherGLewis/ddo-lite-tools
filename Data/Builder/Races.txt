@@ -163,7 +163,7 @@ Trees: Elf-Arcane Archer
 
 RaceName: Dhampir
 Abbreviation: Dhamp
-Type: Free
+Type: Premium
 Stats: 10, 8, 8, 8, 8, 8
 GrantedFeats1: Vampiric Bite
 
@@ -177,7 +177,7 @@ Flags: BonusFeat
 
 RaceName: Duergar
 Abbreviation: Duer
-Type: Free
+Type: Premium
 Stats: 9, 8, 9, 8, 8, 8
 GrantedFeats1: Enlarge Self, Reduce Self, Dwarven Stonecutting, Exotic Weapon: Dwarven Axe
 

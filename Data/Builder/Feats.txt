@@ -165,6 +165,8 @@ Flags: Unselectable
 FeatName: Artificer Knowledge
 Group: Heroic, Misc
 Descrip: This feat grants you benefits based on your Artificer or Alchemist level.
+Class: Alchemist 2, Artificer 1
+Flags: Unselectable
 Selector: Scrolls, Potions, Wands, Arms and Armor, Wondrous Items
 SelectorName: Scrolls
 Descrip: Grants a +2 to UMD checks related to scroll use, and all scrolls used by the Artificer have their caster levels increased by 1
@@ -176,7 +178,6 @@ SelectorName: Arms and Armor
 Descrip: Grants a +2 to UMD checks related to weapons, armor, and staves. Any activated abilities on weapons and armor ("clickies") used by the Artificer are cast at a +1 caster level.
 SelectorName: Wondrous Items
 Descrip: Grants a +2 to UMD checks related to clothing, jewelry, and trinkets. Any activated abilities on these items ("clickies") used by the Artificer are cast at a +1 caster level.
-Class: Alchemist 2, Artificer 1
 
 FeatName: Artificer Skill Mastery
 Group: Heroic, Misc
@@ -316,9 +317,60 @@ Level: 24
 
 FeatName: Call Wolf Companion
 Group: Heroic, Misc
-Descrip:  Activate this ability to summon your Wolf Companion.
+Descrip: Activate this ability to summon your Wolf Companion.
 Class: Druid 1
 Flags: Unselectable
+
+FeatName: Cantrip
+Group: Heroic, Spellcasting
+Descrip: See Descriptions.
+Flags: Unselectable
+Selector: Acid Splash, Cut, Disrupt Living, Divine Strike, Empty Bottle, Finger of Fire, Inflict Minor Wounds, Jolt, Ray of Frost, Sharp Whisper, Vial of Acid, Vial of Flame, Vial of Frost, Vial of Sparks, Vial of Venom
+SelectorName: Acid Splash
+Descrip: 1d6 Acid damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Sorcerer 1, Wizard 1, Blightcaster 1, Arcane Trickster 1, Wild Mage 1
+SelectorName: Cut
+Descrip: 1d6 Slashing damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Artificer 1, Sorcerer 1, Wizard 1, Arcane Trickster 1, Wild Mage 1
+SelectorName: Disrupt Living
+Descrip: 1d6 Necrotic damage per Caster Level to a single target. Cannot be used to heal undead.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Sorcerer 1, Wizard 1, Blightcaster 1, Wild Mage 1
+SelectorName: Divine Strike
+Descrip: 1d6 Light damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Cleric 1, Favored Soul 1, Dark Apostate 1
+SelectorName: Empty Bottle
+Descrip: 1d6 Bludgeoning damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
+SelectorName: Finger of Fire
+Descrip: 1d6 Fire damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Artificer 1, Druid 1, Sorcerer 1, Wizard 1, Arcane Trickster 1, Wild Mage 1
+SelectorName: Inflict Minor Wounds
+Descrip: 1d6 Negative damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Dark Apostate 1
+SelectorName: Jolt
+Descrip: 1d6 Electricity damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Artificer 1, Druid 1, Sorcerer 1, Wizard 1, Arcane Trickster 1, Stormsinger 1, Wild Mage 1
+SelectorName: Ray of Frost
+Descrip: 1d6 Cold damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Druid 1, Sorcerer 1, Wizard 1, Arcane Trickster 1, Wild Mage 1
+SelectorName: Sharp Whisper
+Descrip: 1d6 Sonic damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Bard 1, Sorcerer 1, Wizard 1, Arcane Trickster 1, Wild Mage 1
+SelectorName: Vial of Acid
+Descrip: 1d6 Acid damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
+SelectorName: Vial of Flame
+Descrip: 1d6 Fire damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
+SelectorName: Vial of Frost
+Descrip: 1d6 Cold damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
+SelectorName: Vial of Sparks
+Descrip: 1d6 Electricity damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
+SelectorName: Vial of Venom
+Descrip: 1d6 Poison damage per Caster Level to a single target.}}Cantrips are free Spell-Like Ability feats granted at level one for certain classes. They are zero spell points and can have some Metamagics applied. Cantrip's caster level increases for every character level regardless of what classes you take, up to level 20, and scale with 75% of spell power.
+Class: Alchemist 1
 
 FeatName: Channel Power
 Group: Destiny, spellcasting
@@ -341,7 +393,7 @@ ClassBonus: Fighter, Dragon Lord
 
 FeatName: Combat Archery
 Group: Epic, Range
-Descrip: Your ranged damage is increased by +1[W]. You also gain 2% dodge bonus when using a ranged weapon. Grants +1 Critical Multiplier with Longbows and Shortbows.
+Descrip: Your ranged damage is increased by +1[W]. You also gain 2% dodge bonus when using a ranged weapon. Grants +1 Critical Multiplier and Critical Threat Range with Longbows and Shortbows.
 Stat: Dexterity 17
 Level: 21
 All: Point Blank Shot
@@ -428,6 +480,8 @@ FeatName: Dark Gifts
 Group: Heroic, Misc
 Descrip: Represent a bargain you've made with the Dark Powers and are intentionally stronger or more flexible than many standard feats. However, being a pact with the Dark Powers, each of them comes with a relatively unavoidable and significant cost.
 RaceBonus: Dark Bargainer
+Race: Required, Dark Bargainer
+Flags: RaceOnly
 Selector: Echoing Soul, Living Shadow, Mist Walker, Touch of Death, Form of Pain, Webtouched Wretch,  Minion of the Eldritch
 SelectorName: Echoing Soul
 Descrip: Your soul is fractured, shifted, or connected to another in some way. Perhaps your past or future is affecting your present soul, or perhaps some other entity is inextricably linked with you. In any case, it manifests in knowledge and fears that aren't your own.}{-+3 to all Skills plus an additional 1 for every 2 Character Levels you have.}{-+1 to all Saving Throws, plus an additional 1 for every 3 Character Levels you have.}{-When you get hit with Melee or Ranged attacks, there is a very small chance your Echoing Soul will cause you to become Afraid, Blinded, or Immobilized for six seconds with no save. Immunities to these conditions do not apply to this effect. Your echoes will grow louder before this happens giving you some warning.
@@ -489,7 +543,7 @@ Flags: Deity, ClassOnly
 ClassOnlyClass: Cleric, Favored Soul, Paladin, Dark Apostate
 ClassOnlyLevel: 6
 SharedSelector: Follower of
-Selector: Amaunator's Flames, Bladesworn Transformation, Silver Flame Exorcism, Unyielding Sovereignty, Undying Call, Vulkoor's Avatar, Aureon's Instruction, Ever Watchful, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, The Blood is The Life
+Selector: Amaunator's Flames, Aureon's Instruction, Ever Watchful, Bladesworn Transformation, Luck of Olladra, Onatar's Forge, Blessing of Silvanus, Silver Flame Exorcism, Unyielding Sovereignty,  The Blood is The Life, Undying Call, Vulkoor's Avatar
 SelectorName: Amaunator's Flames
 WikiName: Amaunator's Flames
 Descrip: Activate this ability to turn on your Fire Shield (Hot). 
@@ -685,7 +739,7 @@ Descrip: Base Bonuses:}{-Fire and Light spell power}{-Turn Boost: True Seeing, G
 SelectorName: Trickery Domain
 Descrip: Base Bonuses:}{-Enchantment DCs}{-Turn Boost: Charisma}5: Invisibility SLA}9: Mind Fog SLA}14: Mass Charm Monster SLA
 SelectorName: War Domain
-Descrip: Base Bonuses:}{-Weapon Damage}{-Turn Boost: Melee/Ranged Power}5: Proficient with all weapons}9: Tactical DCs}14: Holy Sword SLA
+Descrip: Base Bonuses:}{-Weapon Damage}{-Turn Boost: Melee/Ranged Power}5: Proficient with all weapons}9: Tactical DCs}14: +10 to Melee and Ranged Power and Holy Sword SLA
 SelectorName: Water Domain
 Descrip: Base Bonuses:}{-Water Breathing, Swim}{-Cold Spell power}{-Use higher of Cold/Positive spell power for both}{-Turn elementals}{-Turn Boost: Will saves}5: Solid Fog SLA}9: Cone of Cold SLA}14: Greater Creeping Cold SLA
 
@@ -830,13 +884,6 @@ WikiName: Epic Feats#General Epic passive feats
 Descrip: +10 PRR.
 Level: 27
 
-FeatName: Epic Eldritch Blast
-Group: Epic, Spellcasting
-Descrip: +2d8 Blast Dice, +1 per 2 Epic or Legendary levels, max +9d8 dice at level 34.
-All: Eldritch Blast
-Level: 21
-Class: Warlock 12, Acolyte 12
-
 FeatName: Epic Fortitude
 Group: Epic, Defense
 WikiName: Epic Feats#General Epic passive feats
@@ -857,21 +904,21 @@ Level: 22
 
 FeatName: Epic Mental Toughness
 Group: Epic, Spellcasting
-Descrip: +200 maximum spell points. (+410 for all three Mental Toughness feats.) +1% spell critical chance.
+Descrip: +200 maximum spell points. (+410 for all three Mental Toughness feats.) +1% spell critical chance. Increases your Cantrip die step by 1 (1d10 becomes a 1d12).
 All: Improved Mental Toughness
 Level: 21
 
 FeatName: Epic Pact Dice
 Group: Destiny, Spellcasting
 WikiName: Epic Destiny Feats
-Descrip: Grants +1d6 Pact dice, +1d6 per 2 Epic and Legendary Levels. For example, a level 32 character receives a +6d4 base increase, +5d6 from epic levels and +1d6 from legendary levels.
+Descrip: +1d6 Pact dice, +1d6 per 2 epic levels and legendary levels. You also gain +2 Eldritch Blast dice.
 All: Eldritch Blast
 Level: 22
 Class: Warlock 12, Acolyte 12
 
 FeatName: Epic Power
 Group: Epic, Misc
-Descrip: +6 Melee Power}+6 Ranged Power}+6 Universal Spell Power}-1% to the Spell Point cost of all spells}This feat is automatically given to all characters each time they gain an Epic level.}The spell point cost reduction does not apply to Spell-like abilities.
+Descrip: +6 Melee Power, Ranged Power, and Universal Spell Power. -1% to the Spell Point cost of all spells. This feat is automatically given to all characters each time they gain an Epic level. The spell point cost reduction does not apply to Spell-like abilities.
 Flags: Unselectable
 Level: 21
 
@@ -1118,37 +1165,37 @@ Class: Cleric 1, Favored Soul 1, Paladin 1, Dark Apostate 1
 Flags: Deity, ClassOnly
 ClassOnlyClass: Cleric, Favored Soul, Paladin, Dark Apostate
 ClassOnlyLevel: 1
-Selector: Amaunator, Helm, Silvanus, Aureon, The Blood of Vol, Lord of Blades, Olladra, Onatar, Silver Flame, Sovereign Host, Undying Court, Vulkoor
+Selector: Amaunator, Aureon, Helm, Lord of Blades, Olladra, Onatar, Silvanus, Silver Flame, Sovereign Host, The Blood of Vol, Undying Court, Vulkoor
 SelectorName: Amaunator
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge, Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
+SelectorName: Aureon
+Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
 SelectorName: Helm
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
-SelectorName: Silvanus
-Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
-Race: Required, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
-SelectorName: Aureon
-Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel, Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
-SelectorName: The Blood of Vol
-Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
 SelectorName: Lord of Blades
 Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Bladeforged, Warforged
 SelectorName: Olladra
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
 SelectorName: Onatar
 Descrip: Favored Weapon: Warhammers}{ Unique Ability: Onatar's Forge}{ +10 Melee Power}{ +3 Tactical DCs}{ +10 Repair/Fire/Rust Spell Power}{ +30 Repair Amplification}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
+SelectorName: Silvanus
+Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
+Race: Required, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai, Eladrin Chaosmancer, Dark Bargainer, Duergar, Mindcleaver
 SelectorName: Silver Flame
 Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
 SelectorName: Sovereign Host
 Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
+SelectorName: The Blood of Vol
+Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer, Eladrin, Dhampir
 SelectorName: Undying Court
 Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
 Race: Required, Elf, Half-Elf, Wood Elf, Eladrin
@@ -1171,31 +1218,11 @@ WikiName: Deity feats#Deity Based Feats
 Descrip: The deity feat line grants the following:}{- Proficiency with a favored weapon}{- A unique ability if you have 6 levels of cleric, paladin or favored soul}{- Damage Reduction if you have 20 levels of favored soul
 RaceBonus: Human
 Class: Sacred Fist 1
-Selector: Amaunator, Lord of Blades, Silver Flame, Sovereign Host, Undying Court, Vulkoor, Aureon, Helm, Olladra, Onatar, Silvanus, The Blood of Vol
+Selector: Amaunator, Aureon, Helm, Lord of Blades, Olladra, Onatar, Silvanus, Silver Flame, Sovereign Host, The Blood of Vol, Undying Court, Vulkoor
 SelectorName: Amaunator
 None: Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Heavy Maces}Unique Ability: Amaunator's Flames}{ 1d8 Fire Guard}{ -25% Cold Damage}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
-SelectorName: Lord of Blades
-None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
-Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
-Race: Required, Bladeforged, Warforged
-SelectorName: Silver Flame
-None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
-Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Sovereign Host
-None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
-Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
-Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
-SelectorName: Undying Court
-None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
-Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
-Race: Required, Elf, Half-Elf, Wood Elf
-SelectorName: Vulkoor
-None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
-Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
-Race: Required, Drow
 SelectorName: Aureon
 None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Quarterstaff}Unique Ability: Aureon's Instruction}{ +4 Wisdom}{ +3 Spell Pen}{ +2 Turn level}{ +4 Max Hit Dice turned}{ +4 Total Hit Dice turned}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
@@ -1204,6 +1231,10 @@ SelectorName: Helm
 None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Bastard Swords}Unique Ability: Ever Watchful}{ +4 Wisdom}{ True Seeing}{ +5 Fortitude Saves}{ +5 Spot and Search}{ +PRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+SelectorName: Lord of Blades
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
+Descrip: Favored Weapon: Greatswords}Unique Ability: Bladesworn Transformation}{ +4 Strength}{ +4 Damage}{ +4 AC}{ +10 Will Saves}{ BAB equals your level}{ Can't cast spells}{ Can't be healed by positive energy}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Adamantine
+Race: Required, Bladeforged, Warforged
 SelectorName: Olladra
 None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Sickles}Unique Ability: Luck of Olladra}{ Fully heal yourself or ally}{ +1d6 luck bonus to all stats lasting 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Cold Iron
@@ -1216,10 +1247,26 @@ SelectorName: Silvanus
 None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): The Blood of Vol
 Descrip: Favored Weapon: Mauls}Unique Ability: Blessing of Silvanus}{ +2 Critical Threat Range with Mauls}{ +4 AC}{ Toggle: Permanent}FVS20 DR: Silver
 Race: Required, Morninglord, Aasimar Scourge,  Deep Gnome, Purple Dragon Knight, Shadar-kai
+SelectorName: Silver Flame
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
+Descrip: Favored Weapon: Longbows}Unique Ability: Silver Flame Exorcism}{ Banish extraplanar enemy}{ DC 10 + Class Level + Cha mod}{ Cooldown: 10 minutes}FVS20 DR: Silver
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Sovereign Host
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
+Descrip: Favored Weapon: Longswords}Unique Ability: Unyielding Sovereignty}{ Fully heal yourself or ally}{ Remove negative levels}{ Remove death penalty}{ Remove virtually all debuffs (stat damage, poison, disease, etc...)}{ Cooldown: 10 minutes}FVS20 DR: Choose one:}{ Cold Iron}{ Silver
+Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
 SelectorName: The Blood of Vol
 None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus
 Descrip: Favored Weapon: Daggers}Unique Ability: The Blood Is The Life}{ +4 Constitution}{ +100% Fortification}{ +10 Fortitude Saves}{ Daggers in main hand gain Vampirism}{ +PRR and MRR equal to the number of Religious Lore feats you have}{ Lasts 24 seconds plus 6 seconds per Religious Lore feat you have}FVS20 DR: Good
 Race: Required, Aasimar, Dragonborn, Drow, Dwarf, Elf, Gnome, Half-Elf, Half-Orc, Halfling, Human, Tiefling, Warforged, Wood Elf, Shifter, Tabaxi, Tiefling Scoundrel , Razorclaw Shifter, Tabaxi Trailblazer
+SelectorName: Undying Court
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Vulkoor, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
+Descrip: Favored Weapon: Scimitars}Unique Ability: Undying Call}{ Raise Dead clicky}{ Cooldown: 10 minutes?}FVS20 DR: Cold Iron
+Race: Required, Elf, Half-Elf, Wood Elf
+SelectorName: Vulkoor
+None: Follower of (Sacred Fist): Amaunator, Follower of (Sacred Fist): Lord of Blades, Follower of (Sacred Fist): Silver Flame, Follower of (Sacred Fist): Sovereign Host, Follower of (Sacred Fist): Undying Court, Follower of (Sacred Fist): Aureon, Follower of (Sacred Fist): Helm, Follower of (Sacred Fist): Olladra, Follower of (Sacred Fist): Onatar, Follower of (Sacred Fist): Silvanus, Follower of (Sacred Fist): The Blood of Vol
+Descrip: Favored Weapon: Shortswords}Unique Ability: Vulkoor's Avatar}{ Summon CR10 Drow Scorpion}{ Duration: 10 minutes}FVS20 DR: Good
+Race: Required, Drow
 
 FeatName: Force of Personality
 Group: Heroic, Defense, Misc
@@ -1343,7 +1390,7 @@ FeatName: Greater Two Handed Fighting
 Abbreviation: Greater THF
 SortName: Two Handed Fighting3
 Group: Heroic, Melee
-Descrip: 30% additional Strikethrough Chance. Your THF Combat Style bonus increases to +6 Melee Power. In addition, while using a two-handed weapon, your Ability Score bonus to damage improves to 2.25x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.6x instead.
+Descrip: 30% additional Strikethrough Chance. Your THF Combat Style bonus increases to +6 Melee Power. In addition, while using a two-handed weapon, your Ability Score bonus to damage improves to 2.25x the Ability Score you use for damage. Hand-and-a-Half weapons (Bastard Sword, Dwarven Waraxe, Morningstar or Warhammer) increase to 1.6x instead.
 BAB: 11
 Stat: Strength 17
 All: Two Handed Fighting, Improved Two Handed Fighting
@@ -1399,22 +1446,22 @@ Descrip: Half-Elves are able to dabble in the abilities of a class other than th
 Race: Required, Half-Elf
 RaceBonus: Half-Elf
 Flags: RaceOnly
-Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock
+Selector: Alchemist, Artificer, Barbarian, Bard, Cleric, Druid, Favored Soul, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard
 SelectorName: Alchemist
 WikiName: Half-Elf Dilettante#Alchemist
 Descrip: You have +10 Universal Spell Power. For item use purposes, you count as a level one Alchemist in addition to any other classes you possess. This feat is not recommended for characters with actual Alchemist levels.
 Stat: Intelligence 13
 SelectorName: Artificer
 WikiName: Half-Elf Dilettante#Artificer
-Descrip: You gain proficiency with all crossbows, and Artificer Knowledge: Scrolls (You gain a +2 bonus to Use Magical Device checks when using scrolls, and their Caster Level is increased by one - this Caster Level increase is capped by your Intelligence modifier.)}For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You gain proficiency with all crossbows, and Artificer Knowledge: Scrolls (You gain a +2 bonus to Use Magical Device checks when using scrolls, and their Caster Level is increased by one - this Caster Level increase is capped by your Intelligence modifier.) For item purposes, you count as a level one Artificer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Intelligence 13
 SelectorName: Barbarian
 WikiName: Half-Elf Dilettante#Barbarian
-Descrip: DR 1/- (does not stack with Barbarian DR).}For item purposes, you count as a level one Barbarian in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: DR 1/- (does not stack with Barbarian DR). For item purposes, you count as a level one Barbarian in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Constitution 13
 SelectorName: Bard
 WikiName: Half-Elf Dilettante#Bard
-Descrip: You can Fascinate 3x per rest with a Will DC based on a Perform check (or 1d20 + Cha Mod if untrained) to negate.}For item purposes, you count as a level one Bard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You can Fascinate 3x per rest with a Will DC based on a Perform check (or 1d20 + Cha Mod if untrained) to negate. For item purposes, you count as a level one Bard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Cleric
 WikiName: Half-Elf Dilettante#Cleric
@@ -1430,36 +1477,36 @@ Descrip: For item purposes, you count as a level one Favored Soul in addition to
 Stat: Charisma 13
 SelectorName: Fighter
 WikiName: Half-Elf Dilettante#Fighter
-Descrip: You are proficient with all martial weapons.}For item purposes, you count as a level one Fighter in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You are proficient with all martial weapons. For item purposes, you count as a level one Fighter in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Strength 13
 SelectorName: Monk
 WikiName: Half-Elf Dilettante#Monk
-Descrip: You are proficient with quarterstaff, kama and shuriken. You gain up to +2 AC from your Wisdom modifier while centered.}For item purposes, you count as a level one Monk in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You are proficient with quarterstaff, kama and shuriken. You gain up to +2 AC from your Wisdom modifier while centered. For item purposes, you count as a level one Monk in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Wisdom 13
 SelectorName: Paladin
 WikiName: Half-Elf Dilettante#Paladin
-Descrip: Can add up to 2 points of your Charisma bonus to all saves (does not stack with the Divine Grace ability).}For item purposes, you count as a level one Paladin in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: Can add up to 2 points of your Charisma bonus to all saves (does not stack with the Divine Grace ability). For item purposes, you count as a level one Paladin in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
 SelectorName: Ranger
 WikiName: Half-Elf Dilettante#Ranger
-Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows.}For item purposes, you count as a level one Ranger in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: You are proficient with all martial ranged weapons. +1 to Damage with Longbows and Shortbows. For item purposes, you count as a level one Ranger in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Dexterity 13
 SelectorName: Rogue
 WikiName: Half-Elf Dilettante#Rogue
-Descrip: +1d6 Sneak Attack damage (does not stack with Rogue Sneak Attack).}For item purposes, you count as a level one Rogue in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Descrip: +1d6 Sneak Attack damage (does not stack with Rogue Sneak Attack). For item purposes, you count as a level one Rogue in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Dexterity 13
 SelectorName: Sorcerer
 WikiName: Half-Elf Dilettante#Sorcerer
 Descrip: For item purposes, you count as a level one Sorcerer in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Charisma 13
+SelectorName: Warlock
+WikiName: Half-Elf Dilettante#Warlock
+Descrip: Imbue Toggle: You deal 1d4 extra Fire damage with attacks and spells. This triggers at most once every 2 seconds. For item purposes, you count as a level one Warlock in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
+Stat: Charisma 13
 SelectorName: Wizard
 WikiName: Half-Elf Dilettante#Wizard
 Descrip: For item purposes, you count as a level one Wizard in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
 Stat: Intelligence 13
-SelectorName: Warlock
-WikiName: Half-Elf Dilettante#Warlock
-Descrip: Toggle: Imbue Toggle: You deal 1d4 extra Fire damage with attacks and spells. This triggers at most once every 2 seconds.}For item purposes, you count as a level one Warlock in addition to any other classes you possess. There are also associated enhancement lines to further improve at later levels.
-Stat: Charisma 13
 
 FeatName: Hamstring
 Group: Heroic, Melee
@@ -1601,7 +1648,7 @@ Level: 21
 FeatName: Improved Mental Toughness
 SortName: Mental Toughness2
 Group: Heroic, Spellcasting
-Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20, +210 counting regular mental toughness.) +1% spell critical chance.
+Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20, +210 counting regular Mental Toughness.) +1% spell critical chance. Increases your Cantrip die step by 1 (1d8 becomes a 1d10).
 CanCastSpell: 3
 All: Mental Toughness
 ClassBonus: Wizard, Alchemist, Arcane Trickster
@@ -1673,7 +1720,8 @@ FeatName: Improved Two Handed Fighting
 Abbreviation: Improved THF
 SortName: Two Handed Fighting2
 Group: Heroic, Melee
-Descrip: +30% additional Strikethrough chance while two-handed fighting. Your THF Combat Style bonus increases to +4 Melee Power. While using a two-handed weapon, your Ability Score bonus to damage improves to 2x the Ability Score you use for damage. Bastard Swords and Dwarven Axes increase to 1.35x instead.
+Descrip: +30% additional Strikethrough chance while two-handed fighting. Your THF Combat Style bonus increases to +4 Melee Power. While using a two-handed weapon, your Ability Score bonus to damage improves to 2x the Ability Score you use for damage. Hand-and-a-Half weapons (Bastard Sword, Dwarven Waraxe, Morningstar or Warhammer) increase to 1.35x instead. This feat also grants you the Offensive Melee feat 'Lock In'.}}Lock In: Activate: For 20 seconds, you cannot benefit from Strikethrough. For the duration, you gain Melee Power equal to 50% of your Strikethrough. This effect ends early if you switch to a style or weapons that do not meet the requirements. (60 second cooldown). Requires you to be using a Two Handed Weapon and not be in Animal form to activate. Hand and a Half does not count.
+
 BAB: 6
 Stat: Strength 17
 All: Two Handed Fighting
@@ -1763,7 +1811,7 @@ Level: 21
 FeatName: Intensify Spell
 Group: Epic, Spellcasting
 WikiName: Epic Feats#Epic Metamagic Feats
-Descrip: +140 Maximum Spell Points}Metamagic: +75 Spell Power, spells cost +15 more mana to cast.
+Descrip: Metamagic: +125 Spell Power, spells cost +15 more mana to cast.}}Passive: +140 Maximum Spell Points
 Level: 24
 
 FeatName: Iron Will
@@ -1792,7 +1840,7 @@ WikiName: Ki Strike: Adamantine
 
 FeatName: Knight's Training
 Group: Heroic, Melee
-Descrip: Morale bonus to crit profile for certain weapons:}{ +1 crit multiplier for Long Swords}{ +1 crit range for Battle Axes (+2 w/Improved Critical: Slashing)}{ +1 crit range for War Hammers, Heavy Maces and Morningstars
+Descrip: Morale bonus to crit profile for certain weapons:}{-+1 crit multiplier for Long Swords and Bastard Swords}{-+1 crit range for Battle Axes and Dwarven Waraxes (+2 w/Improved Critical: Slashing)}{-+1 crit range for War Hammers, Heavy Maces and Morningstars
 BAB: 4
 ClassBonus: Fighter, Dragon Lord
 
@@ -1917,7 +1965,7 @@ Flags: Unselectable
 
 FeatName: Magical Training
 Group: Heroic, Spellcasting
-Descrip: Grants +80 spell points, Echoes of Power, +5% spell critical chance and proficiency with Orbs.
+Descrip: Grants +80 spell points, Echoes of Power, +5% spell critical chance, proficiency with Orbs, and the feat Sparks of Magic.}}Sparks of Magic: When you use a Cantrip that strikes a valid target you gain a Spell Point. For every Mental Toughness feat you have, you gain 1 more Spell Point.
 RaceBonus: Human, Purple Dragon Knight
 
 FeatName: Major Draconic Aura
@@ -1928,6 +1976,7 @@ Flags: ClassOnly
 ClassBonus: Dragon Lord
 ClassOnlyClass: Dragon Lord
 ClassOnlyLevel: 8
+Flags: SelectorOnly
 Selector: Velah's Fury, Sinvala's Toughness, Eternity's Ward
 SelectorName: Velah's Fury
 Descrip: You and allies close to you get a +3 Morale Bonus to Damage Rolls.
@@ -1938,7 +1987,7 @@ Descrip: You and allies close to you get a +3 Morale Bonus to MRR.
 
 FeatName: Manyshot
 Group: Heroic, Range
-Descrip: Bow Attack: Ranged Bow Attack: Expend one charge to fire three arrows in quick succession. You have +1 Critical Threat Range and Critical Multiplier with these shots. Each of these shots can Doubleshot. 2 second cooldown. This feat gives 3 charges, you regain 1 charge every 12 seconds you don't use Manyshot (Requires a Longbow or Shortbow to use). Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows.
+Descrip: Bow Attack: Fire three arrows in quick succession. You have +2 Critical Threat Range and Critical Multiplier with these shots (Cooldown: 8 seconds). Each of these shots can Doubleshot.}} Passive: You gain Doubleshot equal to 1.5x your Base Attack Bonus with Longbows and Shortbows.
 BAB: 6
 Stat: Dexterity 17
 All: Point Blank Shot, Rapid Shot
@@ -1962,44 +2011,29 @@ Class: Bard 18, Stormsinger 18
 Flags: Unselectable
 WikiName: Mass_Suggesion_(song)
 
-FeatName: Master of
+FeatName: Master of Alignment
 Group: Epic, Spellcasting
-WikiName: Epic Feats#Epic Spellcasting passive feats
-Descrip: +140 Maximum Spell Points}+10 Maximum Caster Level for selected spells and SLAs
+Descrip: Your Damage Spells and Eldritch Pacts that cause Good, Evil, Law & Chaos Damage deal an additional 1d6+4 damage of that type for each epic or legendary level you have. This can only occur once per cast. This does not apply to persistent spells like clouds, walls or guardians.}}Passive: +150 Maximum Spell Points
 Level: 24
-Selector: Air, Alignment, Artifice, Chaos, Earth, Fire, Knowledge, Light, Music, Poisons, Shadowblades, Spellvials, the Dead, the Wilds, Thorns, Water
-SelectorName: Air
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shocking Grasp}{-Electric Loop}{-Lightning Bolt
-SelectorName: Alignment
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Holy Smite}{-Deific Vengeance}{-Unholy Blight}{-Chaos Hammer}{-Order's Wrath
-SelectorName: Artifice
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Static Shock}{-Lightning Sphere}{-Blast Rod}{-Lightning Motes
-SelectorName: Chaos
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chaos Bolt}{-Chaos Sphere}{-Wildstrike
-SelectorName: Earth
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Acid Spray}{-Melf's Acid Arrow}{-Acid Blast
-SelectorName: Fire
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Burning Hands}{-Scorch}{-Fireball
-SelectorName: Knowledge
-Descrip: +140 Maximum Spell Points}The Archmage SLAs Arcane Bolt and Blast now grant 1 stack of Mental Honing: +3 Universal Spell Power, +2% Spell Critical damage. Stacks up to 30 times, lose 1 stack every 6 seconds.
-SelectorName: Light
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Sun Bolt}{-Searing Light}{-Divine Punishment
-SelectorName: Music
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Shout}{-Greater Shout}{-Sonic Blast}{-Reverberate
-SelectorName: Poisons
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Wave of Poison}{-Greater Wave of Poison
-SelectorName: Shadowblades
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Illusory Weaponry}{-Fan of Shadowblades}{-Ring of Shadowblades
-SelectorName: Spellvials
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Spellvial}{-Elemental Obliteration
-SelectorName: the Dead
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Chill Touch}{-Death Aura}{-Negative Energy Burst
-SelectorName: the Wilds
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Produce Flame}{-Creeping Cold}{-Call Lightning}{-Word of Balance}{-Salt Ray
-SelectorName: Thorns
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Thorn Strike}{-Splinter Bolt}{-Thorn Bloom
-SelectorName: Water
-Descrip: +140 Maximum Spell Points}+10 Max Caster Level for:}{-Niac's Cold Ray}{-Snowball Swarm}{-Niac's Biting Cold
+None: Magical Ambush
+
+FeatName: Master of Decay
+Group: Epic, Spellcasting
+Descrip: Your Damage Spells and Eldritch Pacts that cause Negative, Poison & Sonic Damage deal an additional 1d6+4 damage of that type for each Epic or Legendary level you have. This can only occur once per cast. This does not apply to persistent spells like clouds, walls or guardians.}}Passive: +150 Maximum Spell Points
+Level: 24
+None: Magical Ambush
+
+FeatName: Master of Fire and Light
+Group: Epic, Spellcasting
+Descrip: Your Damage Spells and Eldritch Pacts that cause Fire & Light Damage deal an additional 1d6+4 damage of that type for each Epic or Legendary level you have. This can only occur once per cast. This does not apply to persistent spells like clouds, walls or guardians.}}Passive: +150 Maximum Spell Points
+Level: 24
+None: Magical Ambush
+
+FeatName: Master of Force
+Group: Epic, Spellcasting
+Descrip: Your Damage spells to hostile targets that cause Force, Slashing, Piercing, or Bludgeon damage deal an additional 1d6+4 damage for each Epic or Legendary level you have. Each proc can only occur once per cast per damage type. This does not apply to persistent spells like clouds, walls or guardians.}}Passive: +150 Maximum Spell Points
+Level: 24
+None: Magical Ambush
 
 FeatName: Master of Forms
 SortName: Adept of Forms2
@@ -2009,9 +2043,20 @@ Class: Monk 1, Dragon Disciple 1
 Level: 12
 All: Adept of Forms
 
+FeatName: Master of Knowledge
+Group: Epic, Spellcasting
+Descrip: Your Arcane Bolt and Arcane Blast spells now grant 1 stack of Mental Honing when cast. Stacks up to 15 times, lose 1 stack every 6 seconds.}}Mental Honing: +6 Universal Spell Power and +4% Spell Critical damage.}}Passive: +140 Maximum Spell Points.
+Level: 24
+
+FeatName: Master of the Storm
+Group: Epic, Spellcasting
+Descrip: Your Damage Spells and Eldritch Pacts that cause Electric, Cold, and Sonic damage deal an additional 1d6+4 damage of that type for each Epic or Legendary level you have. This can only occur once per cast. This does not apply to persistent spells like clouds, walls or guardians.}}Passive: +150 Maximum Spell Points
+Level: 24
+None: Magical Ambush
+
 FeatName: Maximize Spell
 Group: Heroic, Spellcasting
-Descrip: +150 universal Spell Power, spells cost +25 more mana to cast.
+Descrip: +100 universal Spell Power, spells cost +20 more mana to cast.
 CanCastSpell: 1
 ClassBonus: Artificer, Wizard, Alchemist, Arcane Trickster
 RaceBonus: Human, Purple Dragon Knight
@@ -2024,7 +2069,7 @@ Flags: Unselectable
 
 FeatName: Mental Toughness
 Group: Heroic, Spellcasting
-Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20.) +1% spell critical chance.
+Descrip: +10 maximum spell points at first level and +5 per additional level. (+105 at level 20.) +1% spell critical chance. Increases your Cantrip die step by 1 (1d6 becomes a 1d8).
 CanCastSpell: 1
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Wizard, Alchemist, Arcane Trickster
@@ -2043,6 +2088,7 @@ Flags: ClassOnly
 ClassBonus: Dragon Lord
 ClassOnlyClass: Dragon Lord
 ClassOnlyLevel: 1
+Flags: SelectorOnly
 Selector: Nevalarich's Hunger, Aussircaex's Defiance, Thraxata's Instinct
 SelectorName: Nevalarich's Hunger
 Descrip: You and allies close to you get a +2 Morale Bonus to Attack Rolls.
@@ -2269,8 +2315,6 @@ WikiName: Past Life: Delver of the Forbidden
 Descrip: Passive: +3 Spellcraft.}Active: Confuse an enemy for 12 seconds, no save, 10x per rest.
 
 FeatName: Path of Harmonious Balance
-Abbreviation: Fists of Light
-SortName: Fists of Light
 Group: Heroic, Misc
 Descrip: The lightside path offers healing and party buffs.
 Flags: ClassOnly
@@ -2279,8 +2323,6 @@ ClassOnlyLevel: 3
 Class: Monk 3, Dragon Disciple 3
 
 FeatName: Path of Inevitable Dominion
-Abbreviation: Fists of Darkness
-SortName: Fists of Darkness
 Group: Heroic, Misc
 Descrip: The darkside path offers DPS and enemy debuffs.
 Flags: ClassOnly
@@ -2387,7 +2429,7 @@ ClassBonus: Fighter, Dragon Lord
 
 FeatName: Precise Shot
 Group: Heroic, Range
-Descrip: Your missile attacks may pass through other characters and monsters to strike their target. This feat also grants you the Offensive Ranged Stance 'Archer's Focus', which lets you deal progressively more damage with ranged attacks while standing still.}}In addition, while using a Longbow or Shortbow, your Ability Score Modifier bonus to damage improves by a 50%.
+Descrip: Your targeted ranged attacks pass through friend and foe alike to strike your target (no damage will be done other than to your target). Your Ability Score Modifier bonus to damage for Longbows and Shortbows improves by 50% (like two-handed weapons). This feat also grants you the Offensive Ranged Stance Archer's Focus, which lets you deal progressively more damage with ranged attacks while standing still.}}Archer's Focus: Offensive Ranged Stance: If you have been stationary for 3 seconds, while you are stationary and wielding ranged or thrown weapons, you gain On Damage: you gain +5 Competence bonus to Ranged Power. This effect can stack up to 15 times.
 All: Point Blank Shot
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Artificer, Fighter, Alchemist
@@ -2443,13 +2485,13 @@ Class: Barbarian 1
 
 FeatName: Rapid Reload
 Group: Heroic, Range
-Descrip: Allows crossbows (including repeating) to be reloaded to be reloaded significantly faster depending on your currently equipped crossbow. Stacks with Rapid Shot.
+Descrip: Allows Crossbows (including repeating) to be reloaded significantly faster depending on your currently equipped Crossbow. Stacks with Rapid Shot.
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord
 
 FeatName: Rapid Shot
 Group: Heroic, Range
-Descrip: Bows, crossbows and throwers fire and reload about 20% faster. Stacks with Rapid Reload and Quick Draw. You gain Ranged Power equal to 1.5x your BAB with longbows and shortbows.
+Descrip: Bows, Crossbows and Throwers fire and reload about 20% faster. Stacks with Rapid Reload and Quick Draw. You gain Ranged Power equal to 1.5x your BAB with Long Bows and Short Bows.
 Stat: Dexterity 13
 All: Point Blank Shot
 RaceBonus: Human, Purple Dragon Knight
@@ -2681,7 +2723,7 @@ None: Two Handed Fighting, Two Weapon Fighting
 
 FeatName: Single Weapon Specialty
 Group: Destiny, Melee
-Descrip: While Single Weapon Fighting (fighting with a single one-handed weapon, and wielding only an orb, rune arm, or nothing in your offhand) you gain a +30% Combat Style bonus to attack speed, +6 Combat Style bonus to Melee Power, and +50% more of your appropriate ability score to your damage.}For the bastard sword and dwarven waraxe, this adds to their existing 10% bonus. If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
+Descrip: While Single Weapon Fighting (fighting with a single one-handed weapon, and wielding only an orb, rune arm, or nothing in your offhand) you gain a +30% Combat Style bonus to attack speed, +6 Combat Style bonus to Melee Power, and +50% more of your appropriate ability score to your damage.}}For Hand-and-a-Half weapons (Bastard Sword, Dwarven Waraxe, Morningstar or Warhammer), this adds to their existing 10% bonus. If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}}This does not work in animal form and does not count as a Combat Fighting Style feat.
 One: Greater Two Handed Fighting, Greater Two Weapon Fighting, Greater Shield Mastery
 None: Greater Single Weapon Fighting
 Level: 31
@@ -2885,6 +2927,7 @@ Flags: ClassOnly
 ClassBonus: Dragon Lord
 ClassOnlyClass: Dragon Lord
 ClassOnlyLevel: 16
+Flags: SelectorOnly
 Selector: The Truthful One's Might, Aurgloroasa's Ascended Wrath, Kor Kaza's Forbidden Power
 SelectorName: The Truthful One's Might
 Descrip: You and allies close to you get a +4 Morale Bonus to Melee Power.
@@ -3040,7 +3083,7 @@ Flags: Unselectable
 
 FeatName: Two Handed Fighting
 Group: Heroic, Melee
-Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Bastard Sword or Dwarven axe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
+Descrip: While Two Handed Fighting, gain a Combat Style bonus of +2 Melee Power and 60% Strikethrough Chance. While using a two-handed weapon, your Ability Score bonus to damage improves by 0.25 (to 1.75x the Ability Score you use for damage). You are also considered to be two-handed fighting while wielding a Hand-and-a-Half weapon (Bastard Sword, Dwarven Waraxe, Morningstar or Warhammer) in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.
 Stat: Strength 15
 RaceBonus: Human, Purple Dragon Knight
 ClassBonus: Fighter, Dragon Lord, Monk, Dragon Disciple
@@ -3048,7 +3091,7 @@ None: Single Weapon Fighting
 
 FeatName: Two Handed Specialty
 Group: Destiny, Melee
-Descrip: While Two-Handed Fighting you gain +120% Strikethrough Chance and a +6 Combat Style bonus to Melee Power.}For the purpose of this feat, you are considered to be Two-Handed Fighting while:}{ - using a Two-Handed Melee Weapon (not including Handwraps){ - using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.}In addition, while using a Two-Handed Weapon you now apply 75% more of your appropriate ability score modifier to damage (This adds to their existing 50% base bonus). When using a Bastard Sword or Dwarven Waraxe in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand you now apply +50% more of your appropriate ability score to your damage. (This adds to the existing 10% bonus for wielding a Hand-and-a-Half weapon.}If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}This does not work in animal form.}This does not count as a Combat Fighting Style feat.
+Descrip: While Two-Handed Fighting you gain +120% Strikethrough Chance and a +6 Combat Style bonus to Melee Power. For the purpose of this feat, you are considered to be Two-Handed Fighting while:}{-using a Two-Handed Melee Weapon (not including Handwraps)}{-using a Hand-and-a-Half weapon (Bastard Sword, Dwarven Waraxe, Morningstar or Warhammer) in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand.}}In addition, while using a Two-Handed Weapon you now apply 75% more of your appropriate ability score modifier to damage (this adds to their existing 50% base bonus). When using a Hand-and-a-Half weapon in your main hand and a Shield, Orb, Rune Arm, or Nothing in your off-hand you now apply +50% more of your appropriate ability score to your damage. (this adds to the existing 10% bonus for wielding a Hand-and-a-Half weapon).}}If you have bonuses to ability score modifier to damage from both Single Weapon Fighting and Two Handed Fighting feats (including this one), and are in a situation where both would apply, only the highest of the two applies.}}Does not work in animal form and does not count as a Combat Fighting Style feat. This feat also grants you the Offensive Melee feat 'Lock In'.}}Lock In: Activate: For 20 seconds, you cannot benefit from Strikethrough. For the duration, you gain Melee Power equal to 50% of your Strikethrough. This effect ends early if you switch to a style or weapons that do not meet the requirements. (60 second cooldown). Requires you to be using a Two Handed Weapon and not be in Animal form to activate. Hand and a Half does not count.
 One: Greater Two Weapon Fighting, Greater Single Weapon Fighting, Greater Shield Mastery
 None: Greater Two Handed Fighting
 Level: 31
@@ -3450,7 +3493,7 @@ Level: 30
 
 FeatName: Heroic Durability
 Group: Heroic, Misc
-Descrip: This feat increases the maximum hit points of a starting character by 30.}In addition, for every melee combat style feat you take (up to four), you gain a 25% bonus to the Hit Points gained from your class levels. Epic and Legendary levels count at half value. This bonus can only stack up to 100%.
+Descrip: This feat increases the maximum hit points of a starting character by 30.}}In addition, for every melee combat style feat you take (up to four), you gain a 25% bonus to the Hit Points gained from your class levels. Epic and Legendary levels count at half value. This bonus can only stack up to 100%.
 Flags: Unselectable
 Level: 1
 

@@ -85,7 +85,6 @@ Energy Absorption: Fire	Energy Resistance: Fire	Energy Absorption: Fire
 Energy Absorption: Sonic	Energy Resistance: Sonic	Energy Absorption: Sonic
 Enlarge Spell	Enlarge Spell	Enlarge Spell
 Epic Damage Reduction	Epic: Epic Damage Reduction	Epic Damage Reduction
-Epic Eldritch Blast	Epic: Epic Eldritch Blast	Epic Eldritch Blast
 Epic Fortitude	Epic: Epic Fortitude	Epic Fortitude
 Epic Mage Armor	Arcane Sphere: Epic Mage Armor	Epic Mage Armor
 Epic Mental Toughness	Epic: Epic Mental Toughness	Epic Mental Toughness
@@ -280,17 +279,12 @@ Martial Weapon: Throwing Axe	Martial Weapon Proficiency: Throwing Axe	Martial We
 Martial Weapon: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer	Martial Weapon Proficiency: Throwing Hammer
 Martial Weapon: Warhammer	Martial Weapon Proficiency: Warhammer	Martial Weapon Proficiency: Warhammer
 Master of Forms	Monk Feats: Master of Forms	Master of Forms
-Master of: Air	Epic: Master of Air	Master of Air
-Master of: Alignment	Epic: Master of Alignment	Master of Alignment
-Master of: Artifice	Epic: Master of Artifice	Master of Artifice
-Master of: Earth	Epic: Master of Earth	Master of Earth
-Master of: Fire	Epic: Master of Fire	Master of Fire
-Master of: Knowledge	Epic: Master of Knowledge	Master of Knowledge
-Master of: Light	Epic: Master of Light	Master of Light
-Master of: Music	Epic: Master of Music	Master of Music
-Master of: the Dead	Epic: Master of the Dead	Master of the Dead
-Master of: the Wilds	Epic: Master of the Wilds	Master of the Wilds
-Master of: Water	Epic: Master of Water	Master of Water
+Master of Alignment	Epic: Master of Alignment	Master of Alignment
+Master of Decay	Epic: Master of Decay	Master of Decay
+Master of Fire and Light	Epic: Master of Fire and Light	Master of Fire and Light
+Master of Force	Epic: Master of Force	Master of Force
+Master of Knowledge	Epic: Master of Knowledge	Master of Knowledge
+Master of the Storm	Epic: Master of the Storm	Master of the Storm
 Maximize Spell	Maximize Spell	Maximize
 Mental Toughness	Mental Toughness	Mental Toughness
 Mithral Body	Mithral Body	Mithral Body

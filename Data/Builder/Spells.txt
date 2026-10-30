@@ -3,20 +3,20 @@ Descrip: Wards an ally against physical damage. Once this infusion has prevented
 
 SpellName: Acid Blast
 WikiName: Acid Blast (spell)
-Descrip: Creates a gout of acid that explodes on impact, dealing 1d6+3 acid damage per caster level (Maximum damage 10d6+30.) acid damage, in 20 feet radius. A successful Reflex save reduces the damage by half.
+Descrip: Creates a gout of acid that explodes on impact, dealing 1d6+3 Acid damage per caster level (Maximum damage 10d6+30.) Acid damage, in 20 feet radius. A successful Reflex save reduces the damage by half.
 
 SpellName: Acid Concentration
-Descrip: Deal 1d6 acid damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Reflex save reduces damage by half.
+Descrip: Deal 1d6 Acid damage + 2 per caster level every 2 seconds for 16 seconds, can stack up to 5 times. Reflex save reduces damage by half.
 
 SpellName: Acid Fog
-Descrip: A billowing mass of misty vapors slows movement, obscures sight, giving all creatures in the fog concealment (Attackers have 20% miss chance.), and causes 2d6 acid damage every 2 seconds to targets within the cloud. Creature entering the cloud also suffers a -4 penalty to their Armor Class.
+Descrip: A billowing mass of misty vapors slows movement, obscures sight, giving all creatures in the fog concealment (Attackers have 20% miss chance.), and causes 2d6 Acid damage every 2 seconds to targets within the cloud. Creature entering the cloud also suffers a -4 penalty to their Armor Class.
 Flags: Rare
 
 SpellName: Acid Rain
-Descrip: You create a storm that sends down a single torrent of caustic rain. Creatures that are hit by the rain take 1d4 acid damage per caster level (up to a maximum of 15 to 60 damage at caster level 15) every 2 seconds for a duration of 8 seconds. Creatures first entering the rain are allowed a reflex save for half damage but any creatures remaining in the rain will take damage with no saving throw.
+Descrip: You create a storm that sends down a single torrent of caustic rain. Creatures that are hit by the rain take 1d4 Acid damage per caster level (up to a maximum of 15 to 60 damage at caster level 15) every 2 seconds for a duration of 8 seconds. Creatures first entering the rain are allowed a reflex save for half damage but any creatures remaining in the rain will take damage with no saving throw.
 
 SpellName: Acid Spray
-Descrip: A harmful cone of burning acid shoots forth, damaging targets in the area of the flames for 1d6+1 acid damage per caster level. (Maximum damage 5d6+5.) A successful Reflex save reduces the damage by half.
+Descrip: A harmful cone of burning acid shoots forth, damaging targets in the area of the flames for 1d6+1 Acid damage per caster level. (Maximum damage 5d6+5.) A successful Reflex save reduces the damage by half.
 
 SpellName: Acid Well
 Descrip: Acid bursts forth from the ground in an area of effect. This area Conjuration spell does 1d6+18 damage per Caster Level, Reflex saving throw for half damage. Maximum Caster Level of 20. Costs 40 spell points. 9 second cooldown for Wizards, 6 second cooldown for Sorcerers.
@@ -42,22 +42,22 @@ Descrip: Your target's currently equipped weapons gain the ability to bypass Ada
 
 SpellName: Admixture: Cure Critical Wounds
 WikiName: Curative Admixture: Cure Serious Wounds
-Descrip: Hurl a Cure Critical Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
+Descrip: Hurl a Cure Critical Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals Positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
 Flags: Rare
 
 SpellName: Admixture: Cure Light Wounds
 WikiName: Curative Admixture: Cure Light Wounds
-Descrip: Hurl a Cure Light Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
+Descrip: Hurl a Cure Light Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals Positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
 Flags: Rare
 
 SpellName: Admixture: Cure Moderate Wounds
 WikiName: Curative Admixture: Cure Moderate Wounds
-Descrip: Hurl a Cure Moderate Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
+Descrip: Hurl a Cure Moderate Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals Positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
 Flags: Rare
 
 SpellName: Admixture: Cure Serious Wounds
 WikiName: Curative Admixture: Cure Serious Wounds
-Descrip: Hurl a Cure Serious Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
+Descrip: Hurl a Cure Serious Wounds potion toward your target in an arc. The potion explodes in a small AOE that deals Positive energy damage to nearby living allies and enemy undead. This infusion is affected by Artificer Knowledge: Potions.
 Flags: Rare
 
 SpellName: Admixture: Remove Curse
@@ -79,7 +79,7 @@ SpellName: Aid
 Descrip: This spell grants the target (An ally creature.) 8 plus 1 per caster level (Maximum caster level 10.) temporary Hit points, and a +1 morale bonus to attack rolls and saves versus fear. Aid will not stack with Bless.
 
 SpellName: Align Fang
-Descrip: Your target's natural weapons gain the ability to bypass alignment based damage reduction of your choice. Lasts 1 minute per caster level. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. An item can have only one temporary item enchantment at a time.
+Descrip: Your target's natural weapons gain the ability to bypass Alignment based damage reduction of your choice. Lasts 1 minute per caster level. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. An item can have only one temporary item enchantment at a time.
 
 SpellName: Align Weapons
 Descrip: Your Targets Currently equipped weapons gain the ability to bypass alignment based damage reduction. An item can have only one temporary item enchantment at a time.
@@ -115,7 +115,7 @@ SpellName: Baiting Bite
 Descrip: Valid Forms: Wolf, Winter Wolf. Your jaws seems to come from every direction. This attack has +1 crit range and multiplier and deals an extra 4[W] damage to the target, and also performs a Bluff check using your Spot score, which may leave your opponent open to sneak attacks and flanking, and temporarily reduces your threat generation by 25%.
 
 SpellName: Ball Lightning
-Descrip: Launches one 3 feet sphere of lightning, dealing 1d6+5 electricity damage per caster level. (Maximum damage 15d6+75.) A successful Reflex save reduces the damage by half.
+Descrip: Launches one 3 feet sphere of lightning, dealing 1d6+5 Electricity damage per caster level. (Maximum damage 15d6+75.) A successful Reflex save reduces the damage by half.
 
 SpellName: Bane
 WikiName: Bane (spell)
@@ -137,10 +137,10 @@ SpellName: Binding Chain
 Descrip: Causes an enemy to move at 50% speed and attack at a 50% slowed rate and have a -1 penalty on attack rolls, AC, and Reflex saves. Does not affect bosses.
 
 SpellName: Bitter Frost Burst
-Descrip: Throw a bottle that shatters among your enemies, causing a huge spike of cold damage. Deals 1d6+3 Cold damage per caster level, max caster level 15, in an area.
+Descrip: Throw a bottle that shatters among your enemies, causing a huge spike of Cold damage. Deals 1d6+3 Cold damage per caster level, max caster level 15, in an area.
 
 SpellName: Black Dragon Bolt
-Descrip: Deals 1 to 3 acid damage per caster level (up to a max of 25 to 75 at caster level 25) every 2 seconds for 6 seconds to an enemy with a powerful bolt of corrosive acid. This spell has double range.
+Descrip: A powerful green bolt of corrosive acid springs from your hand. The bolt deals 2d10 Acid damage per caster level, (Maximum 25d10 at caster level 25). Applies damage and ticks three times again over 8 seconds.
 Flags: Rare
 
 SpellName: Blade Barrier
@@ -170,7 +170,7 @@ SpellName: Blur
 Descrip: An ally's outline becomes slightly blurred, granting a 20% miss chance on attacks against the ally.
 
 SpellName: Body of the Sun
-Descrip: Valid Forms: Fire Elemental. Your body draws on the power of the sun and emanates intense heat, burning nearby enemies. Nearby enemies take 1d6 fire damage per caster level (to a maximum of 20d6 at level 20) every 3 seconds. Fortitude save halves.
+Descrip: Valid Forms: Fire Elemental. Your body draws on the power of the sun and emanates intense heat, burning nearby enemies. Nearby enemies take 1d6 Fire damage per caster level (to a maximum of 20d6 at level 20) every 3 seconds. Fortitude save halves.
 
 SpellName: Bottled Boost: Attack
 Descrip: Drink a potion with the effects of Action Boost: Attack III. You gain +8 Action Boost Bonus to Attack for 20 seconds. In addition to this spell's normal cooldown, this spell puts allAction Boostsand Bottled Boost spells on a 30 second cooldown.
@@ -200,10 +200,10 @@ SpellName: Bull's Strength
 Descrip: An ally gains a +4 enhancement bonus to Strength for 1 minute per caster level.
 
 SpellName: Burning Blood
-Descrip: You taint a living creature's blood with a hot, corrosive infusion, dealing 2d4 + 1 per 2 caster level of acid damage and 2d4 + 1 per 2 caster level of fire damage every 2 seconds for 10 seconds.
+Descrip: You taint a living creature's blood with a hot, corrosive infusion, dealing 1d6 + 1 per caster level of Acid damage and 1d6 + 1 per caster level of Fire damage every 2 seconds for 10 seconds, and can stack up to 5 times.
 
 SpellName: Burning Hands
-Descrip: A harmful cone of searing flame shoots forth, damaging targets in the area of the flames for 1d6+1 fire damage per caster level. (Maximum damage 5d5+5.) A successful Reflex save reduces the damage by half.
+Descrip: A harmful cone of searing flame shoots forth, damaging targets in the area of the flames for 1d6+1 Fire damage per caster level. (Maximum damage 5d5+5.) A successful Reflex save reduces the damage by half.
 
 SpellName: Byeshk Weapons
 Descrip: Your target's currently equipped weapons gain the ability to bypass Byeshk damage reduction. An item can have only one temporary item enchantment at a time.
@@ -224,9 +224,6 @@ Descrip: An ally gains a +4 enhancement bonus to Dexterity for 1 minute per cast
 SpellName: Cause Fear
 Descrip: If the target fails a Will save acquires the condition Cowering, otherwise it becomes Shaken. Creatures with 6 or more Hit Dice are immune to this spell. This spell counters and dispels Remove Fear.
 
-SpellName: Caustic Bolt
-Descrip: Fires a single-target bolt that does 1d6+2 acid damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flaming Bolt, Freezing Bolt) share a cooldown.
-
 SpellName: Caustic Overload
 Descrip: Throw a bottle at a targeted foe that explodes into caustic acid dealing 1d6+4 Acid damage per caster level to enemies struck. In addition, enemies must make a Fortitude saving throw or have their Physical Resistance Rating reduced by 5 for 12 seconds.
 
@@ -234,7 +231,7 @@ SpellName: Caustic Solvent
 Descrip: Toss a bottle of acrid liquid at a group of enemies, causing caustic acid to eat away at their flesh for significant Acid damage. This deals 1d6+3 Acid damage per caster level, max caster level 15, to all affected enemies.
 
 SpellName: Celestial Bombardment
-Descrip: Divine wrath falls from the heavens to smite your foes. This spell calls down three stars at your target, dealing a total of 3d6 fire damage per character level, split into three hits. This damage is affected by fire spell power and may critically hit. In addition, enemies must succeed at three consecutive Reflex saving throws or be knocked prone.
+Descrip: Divine wrath falls from the heavens to smite your foes. This spell calls down three blazing stars at your target, dealing a total of 1d6+3 Fire damage per character level, split into three hits. In addition, enemies must succeed at three consecutive Reflex saving throws or be knocked prone for 4 seconds.
 Flags: Rare
 
 SpellName: Chain Lightning
@@ -262,7 +259,7 @@ SpellName: Charm Person
 Descrip: Charms an enemy humanoid, which will fight as a trusted friend and ally. Charmed humanoids get an additional saving throw every 3d6+12 seconds. A successful Will save negates this effect. Humanoids include kobolds, goblinoids, player races except for warforged, and more creatures
 
 SpellName: Chill Touch
-Descrip: Makes a touch echo with the chill of death causing 1d6+2 per caster level. of negative damage and one point of Strength damage to 1 living creature. A successful Fortitude save negates the Strength damage. Chill Touch causes Undead to become Panicked instead of taking damage. Undead who make a successful Will save negate this Panicked condition.
+Descrip: Makes a touch echo with the chill of death causing 1d10+2 per caster level. of negative damage and one point of Strength damage to 1 living creature. A successful Fortitude save negates the Strength damage. Chill Touch causes Undead to become Panicked instead of taking damage. Undead who make a successful Will save negate this Panicked condition.
 
 SpellName: Choking Smog
 Descrip: Smash a bottle full of a noxious chemical smog that silences and slows enemies caught within unless they make a Fortitude saving throw. This effect lasts for 6 seconds +1 second per Caster Level. Foes that do not breathe or are wearing protective gear are immune to this effect.
@@ -277,11 +274,11 @@ SpellName: Close Wounds
 Descrip: Positive energy is quickly channeled to heal light wounds of your target or damage Undead for 1d3+1 Hit Points plus 1 per caster level. (Maximum caster level 5.) This spell has faster casting speed than normal and minimal cooldown.
 
 SpellName: Cloudkill
-Descrip: Slow moving poisonous cloud dealing 2d6 acid damage plus 1 damage per caster level (Maximum damage 2d6+20.), and slays creatures with 3 or less Hit Dice, creatures with Hit Dice between 4 and 6 must succeed on a Fortitude save or die, creatures with 6 or over Hit Dice take 1d4 Constitution damage. Constitution damage and Acid damage is halved on a successful Fortitude save. This fog obscures sight, giving all creatures in the fog concealment. (Attackers have 20% miss chance.) Creatures immune to poison are undamaged by this spell.
+Descrip: Slow moving poisonous cloud dealing 2d6 Acid damage plus 1 damage per caster level (Maximum damage 2d6+20.), and slays creatures with 3 or less Hit Dice, creatures with Hit Dice between 4 and 6 must succeed on a Fortitude save or die, creatures with 6 or over Hit Dice take 1d4 Constitution damage. Constitution damage and Acid damage is halved on a successful Fortitude save. This fog obscures sight, giving all creatures in the fog concealment. (Attackers have 20% miss chance.) Creatures immune to poison are undamaged by this spell.
 Flags: Rare
 
 SpellName: Cold Breath
-Descrip: Valid Forms: Winter Wolf. Creates an area of extreme cold, originating in front of you and spreaing outward in a cone. It drains heat, dealing 4 to 6 points of cold damage per caster level (up to a maximum of 60 to 90 adage at caster level 15). A successful Reflex save reduces the damage by half. D&D Dice: Deals 1d3+3 cold damage per caster level (max 15d3+45).
+Descrip: Valid Forms: Winter Wolf. Creates an area of extreme cold, originating in front of you and spreaing outward in a cone. It drains heat, dealing 4 to 6 points of Cold damage per caster level (up to a maximum of 60 to 90 adage at caster level 15). A successful Reflex save reduces the damage by half. D&D Dice: Deals 1d3+3 Cold damage per caster level (max 15d3+45).
 
 SpellName: Cold Iron Weapons
 Descrip: Your target's currently equipped weapons gain the ability to bypass Cold Iron damage reduction. An item can have only one temporary item enchantment at a time.
@@ -304,7 +301,7 @@ SpellName: Command Undead
 Descrip: Control is granted over the enemy Undead, forcing it to fight for you. Mindless undead are controlled for 1 to 4 minutes, while other Undead can be controlled for a maximum of 10 minutes but get an additional Will saving throw every 20 seconds.
 
 SpellName: Cone of Cold
-Descrip: Creates an area of extreme cold, originating at your hand and extending outward in a cone. It drains heat, dealing 1d6+5 points of cold damage per caster level. (Maximum damage 15d6+75.) A successful Reflex save reduces the damage by half.
+Descrip: Creates an area of extreme cold, originating at your hand and extending outward in a cone. It drains heat, dealing 1d6+5 points of Cold damage per caster level. (Maximum damage 15d6+75.) A successful Reflex save reduces the damage by half.
 
 SpellName: Conjure Bolts
 Descrip: Conjures a stack of 1000 bolts for use with a crossbow. They are +1 at caster level 1 with +1 more each 4 caster levels. These bolts dissolve into nothingness after logout.}}***** WARNING *****}Inscribing Conjure Bolts from a scroll is bugged and will only ever create +1 bolts. Be sure to learn Conjure Bolts from a trainer during levelup.
@@ -327,7 +324,7 @@ Descrip: This evil spell allows you to create one of three types of undead: a wi
 Flags: Rare
 
 SpellName: Creeping Cold
-Descrip: Deals on-going cold damage to the target every 2 seconds for 12 seconds. The damage starts small, and grows larger as the spell continues. Each phase lasts 4 seconds. First phase: 1d4 damage +2 per 3 caster levels (max +12 at caster level 18). Second phase: 2d4 damage +4 per 3 caster levels (max +24 at caster level 18). Third Phase: 3d4 damage +6 per 3 caster levels (max +36 at caster level 18).
+Descrip: Deals on-going 1d6 + (1 per caster level) Cold damage to the target every 2 seconds for 16 seconds. The effect can stack 10 times.
 
 SpellName: Creeping Doom
 Descrip: Summons a cloud of voracious insects and unleashes them on your enemies. The insect cloud will slowly home on the target, and when it strikes insects will burst outward, affecting every enemy within the area of effect. Enemies hit by the insects take 2 to 20 Acid damage, plus 1 to 10 per 3 caster levels, every 2 seconds for 16 seconds. A successful reflex save halves the damage.
@@ -339,34 +336,34 @@ SpellName: Crushing Dread
 Descrip: Target enemy at touch range takes 1d6+8 Evil Damage per Caster Level (max 30d6+240 at Caster Level 30). Additionally, if the target is inside a Dread Mist zone it deals 1d20 Evil Damage for each stack of Growing Dread that creature has. Will save for half damage on each effect.
 
 SpellName: Curative Admixture: Cure Critical Wounds
-Descrip: Infuse a Cure Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) positive energy damage to nearby living allies and enemy undead (who may make a Will save for half damage).
+Descrip: Infuse a Cure Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) Positive energy damage to nearby living allies and enemy undead (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Cure Light Wounds
-Descrip: Infuse a Cure Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) positive energy damage to nearby living allies and enemy undead.
+Descrip: Infuse a Cure Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) Positive energy damage to nearby living allies and enemy undead.
 
 SpellName: Curative Admixture: Cure Moderate Wounds
-Descrip: Infuse a Cure Moderate Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 2d6+4 plus 1 per caster level (maximum caster level 10) positive energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
+Descrip: Infuse a Cure Moderate Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 2d6+4 plus 1 per caster level (maximum caster level 10) Positive energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Cure Serious Wounds
-Descrip: Infuse a Cure Serious Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 3d6+6 plus 1 per caster level (maximum caster level 15) positive energy damage to nearby living allies and enemy undead (who may make a Will save for half damage).
+Descrip: Infuse a Cure Serious Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 3d6+6 plus 1 per caster level (maximum caster level 15) Positive energy damage to nearby living allies and enemy undead (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Harm
-Descrip: Infuse a harm potion with magical energy, hurling it towards your target in an arc. This channels powerful negative energy into targets to deal 10 negative energy damage per caster level to living targets (up to a max of 150 hit points at caster level 15). Against undead targets, it acts asHeal. Living targets who make a successful Will save reduce the damage by half.
+Descrip: Infuse a harm potion with magical energy, hurling it towards your target in an arc. This channels powerful Negative energy into targets to deal 10 Negative energy damage per caster level to living targets (up to a max of 150 hit points at caster level 15). Against undead targets, it acts asHeal. Living targets who make a successful Will save reduce the damage by half.
 
 SpellName: Curative Admixture: Heal
-Descrip: Infuse a heal potion with magical energy, hurling it towards your target in an arc. This channels powerful positive energy into targets to wipe away injury and afflictions, restore 10 hit points per caster level (up to a max of 150 hit points at caster level 15), and remove ability damage and the conditions blinded, confused, dazed, dazzled, deafened, disease, exhauseted, fatigued, feeblemanded, insanity, nauseated, and poisoned. Against undead this spell acts asHarm. Undead who make a successful Will save reduce the damage by half.
+Descrip: Infuse a heal potion with magical energy, hurling it towards your target in an arc. This channels powerful Positive energy into targets to wipe away injury and afflictions, restore 10 hit points per caster level (up to a max of 150 hit points at caster level 15), and remove ability damage and the conditions blinded, confused, dazed, dazzled, deafened, disease, exhauseted, fatigued, feeblemanded, insanity, nauseated, and poisoned. Against undead this spell acts asHarm. Undead who make a successful Will save reduce the damage by half.
 
 SpellName: Curative Admixture: Inflict Critical Wounds
-Descrip: Infuse a Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) negative energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
+Descrip: Infuse a Inflict Critical Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 4d6+8 plus 1 per caster level (maximum caster level 20) Negative energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Inflict Light Wounds
-Descrip: Infuse an Inflict Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) negative energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
+Descrip: Infuse an Inflict Light Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 1d6+2 plus 1 per caster level (maximum caster level 5) Negative energy damage to nearby undead allies and living enemies. (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Inflict Moderate Wounds
-Descrip: Infuse a Inflict Moderate Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 2d6+4 plus 1 per caster level (maximum caster level 10) negative energy damage to nearby undead allies and living enemies (who may make a Will save for half damage).
+Descrip: Infuse a Inflict Moderate Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 2d6+4 plus 1 per caster level (maximum caster level 10) Negative energy damage to nearby undead allies and living enemies (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Inflict Serious Wounds
-Descrip: Infuses a Inflict Serious Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 3d6+6 plus 1 per caster level (maximum caster level 15) negative energy to nearby undead allies and living enemies. (who may make a Will save for half damage).
+Descrip: Infuses a Inflict Serious Wounds potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that deals 3d6+6 plus 1 per caster level (maximum caster level 15) Negative energy to nearby undead allies and living enemies. (who may make a Will save for half damage).
 
 SpellName: Curative Admixture: Remove Curse
 Descrip: Infuses a Remove Curse potion with magical energy, hurling it towards your target in an arc. The potion explodes in a small AOE that removes curses from everyone hit.
@@ -393,7 +390,7 @@ SpellName: Cure Serious Wounds
 Descrip: Positive energy heals an ally for 3d6+6 plus 1 per caster level (Maximum caster level 15.) hit points, or deals the same amount of damage to an undead creature. (A Will save reduces this damage by half.)
 
 SpellName: Cyclonic Blast
-Descrip: You send a twisting torrent of wind toward your enemies that deals 1d3+3 damage per caster level (Maximum damage 80 to 120 at caster level 20) to targets in its path. A successful Reflex save reduces the damage by half. If the target fails its Reflex save, it must make a Strength check or Dexterity check to negate be knocked Prone. The spell also clears away all lingering effects in its path, such as clouds and Wall of Fire of both friends and foes.
+Descrip: You send a twisting torrent of wind toward your enemies that deals 1d6+5 Bludgeon damage per caster level to targets in its path. A successful Reflex save reduces the damage by half. If the target fails its Reflex save, it must make a Strength check or Dexterity check to negate be knocked Prone. The spell also clears away all lingering effects in its path, such as clouds and Wall of Fire of both friends and foes.
 
 SpellName: Dark Discorporation
 Descrip: You turn into a swarm of batlike shadows. In this form, you gain Invisibility, 25% Incorporeality, and damage from all sources (except for Untyped/Bane damage) is reduced by 50%. Attacking enemies or interacting with objects will revert you to normal form.
@@ -406,14 +403,14 @@ Descrip: Your targets currently equipped weapons deal +1(base weapon damage). (A
 Flags: Rare
 
 SpellName: Death Aura
-Descrip: Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 2d4 damage plus 1 per caster level every 2 seconds as long as they remain within it. Undead are instead healed by the aura, and friendly Undead don't trigger spell resistance.
+Descrip: Envelops the caster in a sickly aura of Negative energy. Living enemies stepping inside the aura take 2d4 damage plus 1 per caster level every 2 seconds as long as they remain within it. Undead are instead healed by the aura, and friendly Undead don't trigger spell resistance.
 Flags: Rare
 
 SpellName: Death Pact
 Descrip: This spell allows you to enter a pact with your deity that brings you back to life after you are slain. While under the effects of this spell, your Constitution is decreased by 2, and cannot be restored until you rest.
 
 SpellName: Death Ward
-Descrip: Grants a friendly creature immunity to death spells and effects, Energy Drained, and 50% absorption against negative energy effects.
+Descrip: Grants a friendly creature immunity to death spells and effects, Energy Drained, and 50% absorption against Negative energy effects.
 
 SpellName: Deconstruct
 Descrip: Greatly damages an enemy construct, dealing 10 damage per caster level (max 150), slows their move and attack speed, reduces fortification by 25%, and inflicts a 25% penalty to Repair effects. Reconstruction will remove this penalty. A successful Will save halves this damage and prevents the debuff portion.
@@ -426,7 +423,7 @@ SpellName: Deific Vengeance
 Descrip: The divine power of an angry deity imposes a punishment in the form of a sharp, spiritual blow to the target, dealing 1d6+4 points of good damage per caster level. A successful Will save reduces this damage by half.
 
 SpellName: Delayed Blast Fireball
-Descrip: Creates a ball of fire that detonates on impact, causing an explosion of flame that does 1d6+7 fire damage per caster level (Maximum caster level 20) to targets around it. A successful Reflex save reduces the damage by half.
+Descrip: Creates a ball of fire that detonates on impact, causing an explosion of flame that does 1d6+7 Fire damage per caster level (Maximum caster level 20) to targets around it. A successful Reflex save reduces the damage by half.
 Flags: Rare
 
 SpellName: Destruction
@@ -456,7 +453,7 @@ SpellName: Displacement Draught
 Descrip: Drink a potion with the effects of the Displacement spell. Your appearance becomes extremely blurred, giving enemies a 50% miss chance when attacking for 6 seconds per Caster Level.
 
 SpellName: Disrupt Undead
-Descrip: This ray deals 2d3+6 positive energy damage plus an additional 1d3+3 damage per two caster levels to an enemy undead. This spell has nearly unlimited range.
+Descrip: This ray deals 2d3+6 Positive energy damage plus an additional 1d3+3 damage per two caster levels to an enemy undead. This spell has nearly unlimited range.
 Flags: Rare
 
 SpellName: Divine Favor
@@ -466,10 +463,10 @@ SpellName: Divine Power
 Descrip: The divine power of a god imbues the caster with power and skill in combat, granting a +6 enhancement bonus to Strength, 1 temporary hit point per caster level, and a base attack bonus equal to a Fighter of the same level.
 
 SpellName: Divine Punishment
-Descrip: Focuses the power of the gods upon the target, inflicting 1 to 6 +1 per caster level light damage every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
+Descrip: Focuses the power of the gods upon the target, inflicting 1d8 per caster level Light damage every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
 
 SpellName: Divine Wrath
-Descrip: Calls down divine wrath on foes, dealing 2d6 light damage per character level, will save for half . Allies caught within blast are healed for 1d6 Positive Energy damage per character level.
+Descrip: Calls down divine wrath on foes, dealing 2d6 Light damage per character level, will save for half . Allies caught within blast are healed for 1d6 Positive energy damage per character level.
 Flags: Rare
 
 SpellName: Dominate Animal
@@ -531,7 +528,7 @@ SpellName: Earthquake
 Descrip: Summons an earthquake beneath your enemies' feet. Enemies within the area of effect have an additional 30% spell failure chance, and every three seconds they are knocked down and take 2 to 16 points of damage. A successful reflex save vs. the damage halves the damage, and a reflex save vs. the knockdown negates it. Flying enemies are immune. D&D Dice: Deals 2d8 level bludgeoning damage.
 
 SpellName: Eladar's Electric Surge
-Descrip: The target's body is wracked with powerful electric shocks, dealing 1 to 6 electric damage + 1 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
+Descrip: The target's body is wracked with powerful electric shocks, dealing 1d6 Electric damage + 2 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 5 times, increasing the damage with each stack.
 Flags: Rare
 
 SpellName: Electric Loop
@@ -552,9 +549,6 @@ Descrip: Valid Forms: Fire Elemental, Water Elemental. Draw elemental matter int
 SpellName: Elemental Weapons
 Descrip: Your target gains +1 bonus Imbue Dice. An item can have only one temporary item enchantment at a time.
 
-SpellName: Empty Bottle
-Descrip: 1d6+2 Bludgeoning damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
-
 SpellName: Enchant Armor
 Descrip: Increases the Enhancement Bonus of your targets' currently equipped armor by 1.
 Flags: Rare
@@ -564,17 +558,17 @@ Descrip: Increases the Enhancement Bonus of your target's currently equipped wea
 Flags: Rare
 
 SpellName: Energy Drain
-Descrip: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 2d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature -2 penalty on attack rolls, saving throws, Skill checks, Ability checks and -1 to effective level. Negative levels stack.
+Descrip: A black ray of crackling Negative energy suppresses the life force of any living creature it strikes, granting an enemy 2d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature -2 penalty on attack rolls, saving throws, Skill checks, Ability checks and -1 to effective level. Negative levels stack.}}Also applies a damage over time effect. This deals Negative damage equal to 1d6 + 2 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. Applies 2 stacks each time, and stacks up to 5 times.
 Flags: Rare
 
 SpellName: Enervation
-Descrip: A black ray of crackling negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack. As of U51, the Enervation spell now applies a Negative Damage Over Time effect.
+Descrip: A black ray of crackling Negative energy suppresses the life force of any living creature it strikes, granting an enemy 1d4 negative levels. If the target has as many negative levels as its Hit Die, it dies. Each negative level gives a creature a -2 penalty to attack rolls, saving throws, Skill checks, Ability checks and a -1 to effective level. Negative levels stack.}}Also applies a damage over time effect. This deals Negative damage equal to 1d6 + 2 per caster level every 2 seconds for 16 seconds, for a total of eight ticks per stack. This stacks up to 5 times.
 
 SpellName: Entangle
 Descrip: Primal magic awakens plants and vines to grasp at the caster's enemies. Entangled creatures suffer a 90% penalty to movement speed, a 50% attack speed penalty, and a -1 penalty to attack rolls, AC and Reflex. A successful Reflex save negates this effect. Entangled creatures may leave the affected area to escape its effects, or attempt to make a Strength check every 2 seconds to negate. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
 
 SpellName: Enveloping Swarm
-Descrip: A swarm of voracious insects to envelop your target, dealing 2d6 Acid damage + 1d6 for every 3 Druid levels every 2 seconds for 16 seconds. Spell Point cost is 10. Effected by Maximize, Intensify, Empower, Enlarge, and Heighten Metamagic feats. A successful Reflex Saving Throw halves the damage each tick.
+Descrip: A swarm of voracious insects to envelop your target, dealing 1d6 + 2 per caster level of Acid damage every 2 seconds for 16 seconds, and can stack up to 5 times. A successful Reflex Saving Throw halves the damage each tick.
 
 SpellName: Evard's Black Tentacles
 Descrip: Conjures a zone filled with many rubbery black tentacles for 10 seconds. While inside the zone, enemies are Slowed (no save). Every 2 seconds, enemies within the zone must make a successful Strength save or become Entangled by the tentacles for 10 seconds. All enemies within the zone take 1d4 Bludgeoning damage per caster level (Scales with Spell Power) every 2 seconds as the tentacles try and grab them, and an additional 1d4 per caster level if Entangled. A successful Fortitude save reduces the damage by half. Tentacles may continue to hold enemies after the zone fades, though they will not deal damage.
@@ -615,48 +609,45 @@ SpellName: Finger of Death
 Descrip: You can slay any one living creature within range. The target is entitled to a Fortitude saving throw to survive the attack. If the save is successful, the creature instead takes 4d2+4 untyped damage per caster level (Maximum caster level 25 or 100d2+100) damage.
 
 SpellName: Fire Seeds
-Descrip: Flings three burning acorns at your target, where they explode into flames. Each acorn does 1d6 fire damage per caster level. (Max Caster Level 21) Reflex save halves. You can also place the acorns on the ground to act as a trap, for reduced Spell Point cost.
+Descrip: Flings three burning acorns at your target, where they explode into flames. Each acorn does 1d6 Fire damage per caster level. (Max Caster Level 21) Reflex save halves. You can also place the acorns on the ground to act as a trap, for reduced Spell Point cost.
 
 SpellName: Fire Shield
-Descrip: Wreaths the caster in hot or cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) damage. The Fire version of this spell deals fire damage and reduces damage the caster takes from cold by half. The cold version of this spell deals cold damage and reduces damage the caster takes from fire by half. The flame from the fire version will burn away any webs that attempt to entangle you.
+Descrip: Wreaths the caster in hot or cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15.) damage. The Fire version of this spell deals Fire damage and reduces damage the caster takes from cold by half. The cold version of this spell deals Cold damage and reduces damage the caster takes from fire by half. The flame from the fire version will burn away any webs that attempt to entangle you.
 
 SpellName: Fire Shield Cold
-Descrip: Wreaths the caster in cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15) cold damage. This spell reduces damage the caster takes from fire by half.
+Descrip: Wreaths the caster in cold flames. Any creature striking you in melee takes 1d3+3 plus 1 per caster level (Maximum caster level 15) Cold damage. This spell reduces damage the caster takes from fire by half.
 
 SpellName: Fire Storm
-Descrip: Deals 1d6+8 fire damage per caster level for targets in the storm area.
+Descrip: Deals 1d6+8 Fire damage per caster level for targets in the storm area.
 
 SpellName: Fire Trap
-Descrip: Creates a trap that wards an area. When an enemy triggers the spell by entering the area, a fiery explosion does 1d6+4 fire damage per caster level. (Maximum caster level 20.) A successful Reflex save reduces the damage by half.
+Descrip: Creates a trap that wards an area. When an enemy triggers the spell by entering the area, a fiery explosion does 1d6+4 Fire damage per caster level. (Maximum caster level 20.) A successful Reflex save reduces the damage by half.
 
 SpellName: Fireball
-Descrip: Creates a ball of fire dealing 1d6+3 per caster level (Maximum damage 10d6+30) fire damage, to targets around it. A successful Reflex save reduces the damage by half.
+Descrip: Creates a ball of fire dealing 1d6+3 per caster level (Maximum damage 10d6+30) Fire damage, to targets around it. A successful Reflex save reduces the damage by half.
 
 SpellName: Fires of Purity
 WikiName: Fires of Purity (spell)
-Descrip: Valid Forms: Fire Elemental. Enchants your target's weapons with fires of purity. They deal an extra 2d4 fire damage, and enemies that strike them receive 10% vulnerability to fire. An item can have only one temporary item enchantment at a time.
+Descrip: Valid Forms: Fire Elemental. Enchants your target's weapons with fires of purity. They deal an extra 2d4 Fire damage, and enemies that strike them receive 10% vulnerability to fire. An item can have only one temporary item enchantment at a time.
 
 SpellName: Flame Arrow
-Descrip: Creates 500 flaming ammo within the caster's inventory, each ammo deals an additional 1d6 fire damage. This spell requires and consumes 1 normal ammo of that type. Ammo drops when you log out.
+Descrip: Creates 500 flaming ammo within the caster's inventory, each ammo deals an additional 1d6 Fire damage. This spell requires and consumes 1 normal ammo of that type. Ammo drops when you log out.
 
 SpellName: Flame Blade
-Descrip: Summons a scimitar of fire that does fire damage, instead of slashing damage, and uses the wielder's Wisdom instead of Strength for determining attack and damage bonuses. The user can choose to summon one-handed or two-handed versions, and the swords are automatically equipped when created. At caster level 1, it has a +1 enhancement bonus and the flaming effect. Every five caster levels the summoned swords improve. Because they are an extension of the caster's will, monks may use these weapons without becoming uncentered. The flame blade is not a physical weapon, but rather pure flame shaped by the caster's will; because of this, it is snuffed out if unequipped.
+Descrip: Summons a scimitar of fire that does Fire damage, instead of slashing damage, and uses the wielder's Wisdom instead of Strength for determining attack and damage bonuses. The user can choose to summon one-handed or two-handed versions, and the swords are automatically equipped when created. At caster level 1, it has a +1 enhancement bonus and the flaming effect. Every five caster levels the summoned swords improve. Because they are an extension of the caster's will, monks may use these weapons without becoming uncentered. The flame blade is not a physical weapon, but rather pure flame shaped by the caster's will; because of this, it is snuffed out if unequipped.
 
 SpellName: Flame Concentration
-Descrip: Deal 1d6 fire damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Reflex save reduces damage by half.
+Descrip: Deal 1d6 Fire damage + 2 per caster level every 2 seconds for 16 seconds, can stack up to 5 times. Reflex save reduces damage by half.
 
 SpellName: Flame Strike
-Descrip: A flame strike produces a vertical column of divine fire roaring downward. The spell deals 1d6+5 points of damage per caster level. (Maximum caster level 15.) 1d3 of the damage is fire damage, but the other 1d3 results directly from divine power and is therefore not subject to being reduced by resistance to fire based attacks. A successful Reflex save reduces the damage by half.
+Descrip: A flame strike produces a vertical column of divine fire roaring downward. The spell deals 1d6+5 points of damage per caster level. 1d3 of the damage is Fire damage, but the other 1d3 is Light. A successful Reflex save reduces the damage by half.
 
 SpellName: Flame Turret
 Descrip: Conjures a destroyable turret that fires jets of flame at nearby enemies. You can have only one summoned creature at a time.
 Flags: Rare
 
-SpellName: Flaming Bolt
-Descrip: Fires a single-target bolt that does 1d6+2 fire damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flaming Bolt, Freezing Bolt) share a cooldown.
-
 SpellName: Flaming Sphere
-Descrip: Creates a rolling ball of fire, dealing 2d6 fire damage. A successful Reflex save negates the damage.
+Descrip: Creates a rolling ball of fire, dealing 2d6 Fire damage. A successful Reflex save negates the damage.
 
 SpellName: Flash Freeze
 Descrip: Smash a bottle beneath your feet containing a volatile chemical reaction that creates an explosion of intense cold, locking enemies in solid ice. Enemies who fail a Fortitude save are stunned and helpless for 6 seconds per Caster Level.
@@ -688,24 +679,21 @@ Descrip: An ally gains a +4 enhancement bonus to Intelligence for 1 minute per c
 SpellName: Freedom of Movement
 Descrip: This spell enables an ally to move and attack normally for the duration of the spell, even under the influence of magic or conditions that normally impedes movement, such as Entangled, Paralyzed**, or Solid Fog **Earthgrab is no longer a Paralyzed effect, so is no longer cured or prevented by Freedom of Movement.
 
-SpellName: Freezing Bolt
-Descrip: Fires a single-target bolt that does 1d6+2 cold damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flmaing Bolt, Freezing Bolt) share a cooldown.
-
 SpellName: Freezing Spray
-Descrip: Valid Forms: Water Elemental . Douses an opponent in freezing spray, giving the target 25% cold vulnerability. Targets with this vulnerability will take 25% extra damage from all sources of cold damage. Once this effect wears off, it cannot be reapplied for 30 seconds.
+Descrip: Valid Forms: Water Elemental . Douses an opponent in freezing spray, giving the target 25% cold vulnerability. Targets with this vulnerability will take 25% extra damage from all sources of Cold damage. Once this effect wears off, it cannot be reapplied for 30 seconds.
 
 SpellName: Frost Concentration
-Descrip: Deal 1d6 cold damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Reflex save reduces damage by half.
+Descrip: Deal 1d6 Cold damage + 2 per caster level every 2 seconds for 16 seconds, can stack up to 5 times. Reflex save reduces damage by half.
 
 SpellName: Frost Lance
-Descrip: Freezing lances strike a target, each doing 9-16 cold damage per two caster levels on impact (Max Level 20). (A Fortitude save reduces the damage by half.) 1st lance at 3rd level, a 2nd lance at 7th level, and a 3rd lance at 11th.
+Descrip: Blasts a target with a lance of freezing energy, dealing 1d6+4 per 2 caster levels of Cold damage on impact. The number of lances increases to two at caster level 7, then to to a maximum of three at caster level 11. A successful Fortitude save reduces the damage by half. Each lance requires it's own individual save.
 
 SpellName: Frostbite
 WikiName: Frostbite (spell)
-Descrip: Valid Forms: Winter Wolf. Your frigid breath and freezing jaws drain the warmth from your enemies. Your melee attacks deal an extra 1d6 cold damage each hit. Critical hits deal an additional 1d10 cold damage if you have a x2 critical multiplier, 2d10 for a x3 critical multiplier and 3d10 for a x4 multiplier.
+Descrip: Valid Forms: Winter Wolf. Your frigid breath and freezing jaws drain the warmth from your enemies. Your melee attacks deal an extra 1d6 Cold damage each hit. Critical hits deal an additional 1d10 Cold damage if you have a x2 critical multiplier, 2d10 for a x3 critical multiplier and 3d10 for a x4 multiplier.
 
 SpellName: Ghoul Touch
-Descrip: This spell imbues your hand with negative energy, allowing you to paralyze 1 living Humanoid that you touch. A successful Fortitude save negates. Humanoids include Kobolds, Goblinoids, player Races except for Warforged, Troglodytes, and more.
+Descrip: This spell imbues your hand with Negative energy, allowing you to paralyze 1 living Humanoid that you touch. A successful Fortitude save negates. Humanoids include Kobolds, Goblinoids, player Races except for Warforged, Troglodytes, and more.
 
 SpellName: Gills Extract
 Descrip: This potion will mutate you, granting you gills and increased ability to swim underwater. This grants the effects of the Water Breathing and Merfolk's Blessing spells: You gain the ability to breathe underwater and +10 Enhancement bonus to Swim, plus 1 for every 2 caster levels beyond the first. These effects last for 30 seconds +6 seconds per Caster Level.
@@ -735,7 +723,7 @@ SpellName: Grasping Thorns
 Descrip: Powerful thorny vines rip out of the ground seizing all enemies in the area. Enemies save vs Reflex or become entangled, with a re-occuring Strength save to break free. Targets also take 1d6 in piercing damage every 2 seconds. All enemy movement through the area is slowed by 30%, no save. Area of effect fire spells will destroy these vines and free any entangled creatures. Incorporeal creatures and oozes are naturally immune. Fire elementals and other fire creatures are immune because they burn through the plants.
 
 SpellName: Grease
-Descrip: Covers the ground with a 10 ft. square layer of slippery grease, forcing targets to make a Reflex save or fall. (Affects party members.) Sometimes it deals 2d6 fire damage per 2 caster levels  to all enemies of the caster in the grease every few seconds, as well as the caster of the Grease spell. A successful Reflex save will reduce this damage by half.
+Descrip: Covers the ground with a 10 ft. square layer of slippery grease, forcing targets to make a Reflex save or fall. (Affects party members.) Sometimes it deals 2d6 Fire damage per 2 caster levels  to all enemies of the caster in the grease every few seconds, as well as the caster of the Grease spell. A successful Reflex save will reduce this damage by half.
 
 SpellName: Greater Color Spray
 Descrip: Enemies are sprayed with illusions of color, and must make a Will save or be Dazed, Blinded, and/or Silenced. The target must make a saving throw for each effect.
@@ -744,10 +732,10 @@ SpellName: Greater Command
 Descrip: The caster commands multiple living enemies (Affects 1 living enemy per caster level.) to fall to the ground and lie Prone. A successful Will save negates.
 
 SpellName: Greater Creeping Cold
-Descrip: Deals ongoing cold damage to the target every 2 seconds for 12 seconds. The damage starts small, and grows larger as the spell continues. Each phase lasts 4 seconds. First phase: 2d4 damage +4 per 2 caster levels (max +40 at caster level 20). Second phase: 4d4 damage + 6 per 2 caster levels (max +60 at caster level 20). Third Phase: 6d4 damage +8 per 2 caster levels (max +80 at caster level 20).
+Descrip: Deals on-going 1d6 + (1 per caster level) Cold damage to the target every 2 seconds for 16 seconds. The effect can stack 10 times. Every cast applies two stacks.
 
 SpellName: Greater Death Aura
-Descrip: Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 3 to 12 negative energy damage plus 1 additional point per caster level (max 10) every three seconds as long as they remain within it. A successful Fortitude save reduces the damage by half. Undead are instead healed by the aura.}{-This can be cast simultaneously with Lesser Death Aura and Death Aura. Effects that increase caster or maximum caster level only increase duration.{-This spell is supposed to receive +10 maximum caster level from the Master of the Dead epic feat, but is currently bugged and is not receiving a bonus.
+Descrip: Envelops the caster in a sickly aura of Negative energy. Living enemies stepping inside the aura take 3 to 12 Negative energy damage plus 1 additional point per caster level (max 10) every three seconds as long as they remain within it. A successful Fortitude save reduces the damage by half. Undead are instead healed by the aura.}{-This can be cast simultaneously with Lesser Death Aura and Death Aura. Effects that increase caster or maximum caster level only increase duration.{-This spell is supposed to receive +10 maximum caster level from the Master of the Dead epic feat, but is currently bugged and is not receiving a bonus.
 
 SpellName: Greater Dispel Magic
 Descrip: Removes ongoing spells that have been cast on a target. You must make a caster level check of 1d20+your caster level (Maximum caster level 20.) of DC 11+spell's caster level to remove an effect. In addition, this spell can be used to sever the connection between a summoner and his or her summoned monster, causing the summoned creature to attack unpredictably, possibly turning on its summoner.If cast on a spell ward trap, this spell will reduce the level of the trap by 1 to 4 (1d4 levels). If the level of the trap is reduced to 0, the trap is disabled.
@@ -780,7 +768,7 @@ SpellName: Greater Restorative Draught
 Descrip: Throw a small vial of magical liquid at a single target that provides the effects of the Greater Restoration spell: Cures all temporary ability damage, restores all negative levels suffered from energy drain, and eliminates fatigue, exhaustion, confusion, and insanity effects on you.
 
 SpellName: Greater Shout
-Descrip: Emits an ear-splitting yell that deafens and deals 1d6+3 per caster level sonic damage and stuns targets in its path. A successful Fortitude save halves the damage and negates stun.
+Descrip: Emits an ear-splitting yell that deafens and deals 1d6+3 per caster level Sonic damage and stuns targets in its path. A successful Fortitude save halves the damage and negates stun.
 Flags: Rare
 
 SpellName: Greater Soulshatter Poison Imbue
@@ -796,7 +784,7 @@ SpellName: Greater Venom Vial
 Descrip: Conjuring a bottle of magical poison, you throw a projectile that explodes on impact, dealing 1d6+2 Poison damage per caster level, max caster level 10, to all foes caught within the area. This poison will leave enemies struck Contaminated.
 
 SpellName: Greater Vigor
-Descrip: A positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +4 at caster level 12), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: A Positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +4 at caster level 12), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Greater Voidmind Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the defenses from your enemies on contact. On Hit: -1 Spell Resistance per stack, stacks 5 times. On Crit: 1d6 Intelligence Damage. On Vopal: 1 stack of Vulnerability. An item can have only one Temporary item enchantment at a time.
@@ -808,7 +796,7 @@ SpellName: Halt Undead
 Descrip: Immobilizes Undead targets in range immobile for 6 seconds per caster level. A successful Will save negates this effect. Non-intelligent Undead do not get a Will save.
 
 SpellName: Harm
-Descrip: Charges the target with negative energy dealing 10 points of damage per caster level. (Maximum damage 150.) A successful Will save reduces the damage by half. Harm cannot reduce the target's Hit points to less than 1. Against Undead targets this spell heals like Heal.
+Descrip: Charges the target with Negative energy dealing 10 points of damage per caster level. (Maximum damage 150.) A successful Will save reduces the damage by half. Harm cannot reduce the target's Hit points to less than 1. Against Undead targets this spell heals like Heal.
 
 SpellName: Harrowing Pack
 Descrip: Valid Forms: Wolf, Winter Wolf. The wolf pack hounds their prey, attacking from all sides. Grants the caster and all of his or her hirelings, pets, summoned creatures, and charmed creatures a +2 enhancement bonus to flanking attacks, and granting them a knockdown effect when they roll a 20 on attack rolls.
@@ -819,7 +807,7 @@ Descrip: Quickens allies (32% enhancement bonus to run speed), causing them to a
 
 SpellName: Heal
 WikiName: Heal (spell)
-Descrip: Channels powerful positive energy into allies to wipe away injury and afflictions, restore 10 Hit Points per caster level (Maximum caster level 15.), removes the conditions or effects: Ability Damaged, Blinded, Confused, Dazed, Dazzled, Deafened, Diseased, Exhausted, Fatigued, Feebleminded, Insanity, Nauseated, and Poisoned. Against Undead this spell acts as Harm. Undead who make a successful Will save reduce the damage by half.
+Descrip: Channels powerful Positive energy into allies to wipe away injury and afflictions, restore 10 Hit Points per caster level (Maximum caster level 15.), removes the conditions or effects: Ability Damaged, Blinded, Confused, Dazed, Dazzled, Deafened, Diseased, Exhausted, Fatigued, Feebleminded, Insanity, Nauseated, and Poisoned. Against Undead this spell acts as Harm. Undead who make a successful Will save reduce the damage by half.
 
 SpellName: Heroes' Feast
 Descrip: Brings forth a great feast for all nearby allies. While this spell is active on someone, the next time they use a rest shrine they consume the feast. The nectar like beverage which is part of the feast cures them of all Diseases, Nauseated, and Sickened, makes them immune to Poison for 1 minute per caster level, and grants 1d8 temporary Hit Points plus 1 per 2 caster levels. (Maximum caster level 20.) The ambrosial food that is consumed grants each creature that partakes a +1 morale bonus on Attack rolls, Will saves, and immunity to fear for 1 minute per caster level.
@@ -855,7 +843,7 @@ SpellName: Holy Sword
 Descrip: While you are enchanted with Holy Sword, any weapons in your hands gain +1 to their Enhancement bonus and +1 Competence bonus to Critical Threat Range and Critical Damage Multiplier. This does not apply to shields, orbs, or Rune Arms.
 
 SpellName: Horrid Wilting
-Descrip: This spell evaporates moisture from the body of each subject living creature, dealing 1d3+3 points of damage per caster level. (Maximum damage 20d3+60.) This spell is especially devastating to water type outsiders like Water Elementals, and to Plants which instead take 1d4+4 points of damage per caster level. (Maximum damage 20d4+80.)
+Descrip: This spell evaporates moisture from the body of each subject living creature, dealing 1d6+7 points of Negative energy damage per caster level. This spell does 50% more damage to Water type outsiders (like Water Elementals) and to Plants.
 Flags: Rare
 
 SpellName: Howl of Terror
@@ -875,20 +863,20 @@ SpellName: Ice Chill Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the speed from your enemies on contact. On Hit: -1 Reflex Save per stack, stacks 3 times. On Crit: 1d6 Dexterity Damage. An item can have only one temporary item enchantment at a time.
 
 SpellName: Ice Flowers
-Descrip: Valid Forms: Water Elemental . Lances of ice burst from the ground where you point, dealing 1d6+3 piercing and 1d6+3 cold damage per caster level.
+Descrip: Valid Forms: Water Elemental . Lances of ice burst from the ground where you point, dealing 1d6+3 piercing and 1d6+3 Cold damage per caster level.
 
 SpellName: Ice Storm
-Descrip: Hail creates a lingering area of effect for 30 seconds that deals 2d6 of bludgeon damage and 1d6 of cold damage plus 1 per caster level (up to a maximum caster level of 15) every 2 seconds to each creature inside the area.
+Descrip: Hail creates a lingering area of effect for 30 seconds that deals 2d6 of bludgeon damage and 1d6 of Cold damage plus 1 per caster level (up to a maximum caster level of 15) every 2 seconds to each creature inside the area.
 
 SpellName: Implosion
 Descrip: You create a destructive resonance field around yourself, causing nearby corporeal enemies to collapse in upon themselves and die instantly. This effect must first bypass a target's Spell Resistance to take effect, and a successful Fortitude save negates the effect. Every few seconds, an enemy within your aura will be affected by this spell, but you are free to perform other actions while it is active.
 
 SpellName: Incendiary Cloud
-Descrip: A cloud of roiling smoke and white-hot embers, obscuring the sight of all targets within its effect and dealing 2d4 + 1 per caster level of fire damage every 2 seconds. Creatures entering the cloud must save vs reflex or become blinded until they leave the cloud.
+Descrip: A cloud of roiling smoke and white-hot embers, obscuring the sight of all targets within its effect and dealing 2d4 + 1 per caster level of Fire damage every 2 seconds. Creatures entering the cloud must save vs reflex or become blinded until they leave the cloud.
 Flags: Rare
 
 SpellName: Incinerating Wave
-Descrip: Creates an incinerating wave of ki fire. This effect does 1d6+3 fire and force damage per caster level. This damage scales with 200% Melee Power.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
+Descrip: Creates an incinerating wave of ki fire. This effect does 1d6+3 fire and force damage per caster level. This damage scales with 50% Melee Power and 100% Spell Power.}}Notes: Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
 
 SpellName: Inflict Critical Damage
 Descrip: Deals 4d6+8 damage plus 1d4 per caster level (Maximum caster level 20.) to a construct.
@@ -946,16 +934,16 @@ WikiName: Jump (spell)
 Descrip: Gives an allied creature a +10 enhancement bonus to Jump skill for 1 minute per caster level. This bonus increases to +20 at 5th level, and +30 at 9th level. However creatures will see no improvement after obtaining a Jump skill of 40.
 
 SpellName: Ki Bolt
-Descrip: You fire a ki blast that deals 1d6 fire and 1d4 force damage per caster level to an opponent. This damage scales with 300% Melee Power. This ability has double normal spell range.}{Possessing levels in Sacred Fist adds an additional 1d6+? light damage per caster level. This includes the Henshin Mystic SLA, although obviously caster levels will not carry over.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
+Descrip: You fire a ki blast that deals 1d6 fire and 1d4 force damage per caster level to an opponent. This damage scales with 150% Melee Power and 100% Spell Power. This ability has double normal spell range.}}Note: Possessing levels in Sacred Fist adds an additional 1d6 Light damage per caster level. This includes the Henshin Mystic SLA, although obviously caster levels will not carry over. Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
 
 SpellName: Ki Explosion
-Descrip: Waves of fire emanate from your body, dealing 1d6+3 fire and force damage per caster level to enemies in your vicinity, scaling with 300% Melee Power. For 20 seconds after you cast this spell, you benefit from Fire Shield: Hot, which prevents 50% of your incoming Cold damage and deals a small amount of Fire damage to attackers that strike you in melee.}{Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
+Descrip: Waves of fire emanate from your body, dealing 1d6+3 fire and force damage per caster level to enemies in your vicinity, scaling with 150% Melee Power and 100% Spell Power. For 20 seconds after you cast this spell, you benefit from Fire Shield: Hot, which prevents 50% of your incoming Cold damage and deals a small amount of Fire damage to attackers that strike you in melee.}}Notes: Metamagic feats increase the SP cost of Ki Spells, rather than Ki cost. Quickened Ki spells cost both Ki and Spell Points.
 
 SpellName: Knock
 Descrip: Unlocks locked doors and chests as if a Rogue with a Open Lock skill of caster level+casting ability modifier (Intelligence for Wizards, and Charisma for Sorcerers) was attempting to pick the lock.
 
 SpellName: Lesser Death Aura
-Descrip: Envelops the caster in a sickly aura of negative energy. Living enemies stepping inside the aura take 1d4 negative damage every 2 seconds as long as they remain within it. Undead are instead healed by the aura.
+Descrip: Envelops the caster in a sickly aura of Negative energy. Living enemies stepping inside the aura take 1d4 negative damage every 2 seconds as long as they remain within it. Undead are instead healed by the aura.
 Flags: Rare
 
 SpellName: Lesser Draconic Burst: Acid
@@ -998,19 +986,19 @@ SpellName: Lesser Soulshatter Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the willpower from your enemies on contact. On Hit: -1 Will Save (does not stack). On Crit: 1d6 Wisdom Damage. An item can have only one Temporary item enchantment at a time
 
 SpellName: Lesser Vigor
-Descrip: A positive energy conjuration that heals 1d2, +1 per 3 caster levels (max +2 at caster level 6), every 2 seconds for 8 seconds. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: A Positive energy conjuration that heals 1d2, +1 per 3 caster levels (max +2 at caster level 6), every 2 seconds for 8 seconds. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Lesser Voidmind Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the defenses from your enemies on contact. On Hit: -1 Spell Resistance (does not stack). On Crit: 1d6 Intelligence Damage. An item can have only one Temporary item enchantment at a time
 
 SpellName: Lightning Bolt
-Descrip: Deals 1d6+3 electricity damage per caster level (Maximum damage 10d6+30) to each target in its path. A successful Reflex save reduces the damage by half. Has a 50% chance to fork, hitting affected targets a second time with another reflex save allowed to halve the damage from the second bolt.
+Descrip: Deals 1d6+3 Electricity damage per caster level (Maximum damage 10d6+30) to each target in its path. A successful Reflex save reduces the damage by half. Has a 50% chance to fork, hitting affected targets a second time with another reflex save allowed to halve the damage from the second bolt.
 
 SpellName: Lightning Motes
 Descrip: You create a nebulous cloud of electric motes that damages enemies that enter it. Any creatures that are hit by the cloud take 1d6+2 electric damage per caster level (up to a max of 10d3+30 damage at caster level 10). A successful Reflex save reduces this damage by half. Enemies hit by the cloud are also made temporarily more vulnerable to electric damage, taking 15% extra damage from any electric-based attacks.
 
 SpellName: Lightning Sphere
-Descrip: Launches an electrical orb that explodes on impact, dealing 1d6 electrical damage per two caster levels (up to a max of 5d4+20 electricity damage at caster level 10) to targets in the area. The targets of this spell will also be dazed for a short period of time or until they take damage. A successful Fortitude save reduces the damage by half and negates the daze. Unlike most other projectile spells, the caster can arc the orb if no target is selected.
+Descrip: Launches an electrical orb that explodes on impact, dealing 1d6 electrical damage per two caster levels (up to a max of 5d4+20 Electricity damage at caster level 10) to targets in the area. The targets of this spell will also be dazed for a short period of time or until they take damage. A successful Fortitude save reduces the damage by half and negates the daze. Unlike most other projectile spells, the caster can arc the orb if no target is selected.
 
 SpellName: Lionheart
 WikiName: Lionheart (spell)
@@ -1080,7 +1068,7 @@ Descrip: Casts Cure Serious Wounds on multiple targets. Positive energy is chann
 
 SpellName: Mass Death Ward
 WikiName: Death Ward, Mass
-Descrip: Casts Death Ward on multiple friendly creatures, granting to each creature immunity to death spells and effects, Energy Drained, and 50% absorption against negative energy effects.
+Descrip: Casts Death Ward on multiple friendly creatures, granting to each creature immunity to death spells and effects, Energy Drained, and 50% absorption against Negative energy effects.
 
 SpellName: Mass Eagle's Splendor
 WikiName: Eagle's Splendor, Mass
@@ -1100,11 +1088,11 @@ Descrip: Casts Freedom of Movement on multiple targets. This spell enables an al
 
 SpellName: Mass Greater Vigor
 WikiName: Greater Vigor, Mass
-Descrip: Casts Greater Vigor on multiple targets. A positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +13 at caster level 39), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: Casts Greater Vigor on multiple targets. A Positive energy conjuration that heals 1d8, +1 per 3 caster levels (max +13 at caster level 39), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Mass Heal
 WikiName: Heal, Mass
-Descrip: Casts Heal on multiple targets. Channels powerful positive energy into allies to wipe away injury and afflictions, restore 10 hit points per caster level(max cap is not certain, at least level 20) removes ability damage and the conditions blinded, confused, dazed, dazzled, deafened, diseased, exhausted, fatigued, feebleminded, insanity, nauseated, and poisoned. Against Undead this spell acts as Harm. Undead who make a successful Will save reduce the damage by half.
+Descrip: Casts Heal on multiple targets. Channels powerful Positive energy into allies to wipe away injury and afflictions, restore 10 hit points per caster level(max cap is not certain, at least level 20) removes ability damage and the conditions blinded, confused, dazed, dazzled, deafened, diseased, exhausted, fatigued, feebleminded, insanity, nauseated, and poisoned. Against Undead this spell acts as Harm. Undead who make a successful Will save reduce the damage by half.
 
 SpellName: Mass Hold Monster
 WikiName: Hold Monster, Mass
@@ -1122,7 +1110,7 @@ Flags: Rare
 
 SpellName: Mass Inflict Critical Wounds
 WikiName: Inflict Critical Wounds, Mass
-Descrip: Casts Inflict Critical Wounds on multiple targets at range inflicting 1d6+10 negative energy damage per caster level (Maximum caster level 40.), or healing Undead. A successful Will save reduces the damage by half.
+Descrip: Casts Inflict Critical Wounds on multiple targets at range inflicting 1d6+10 Negative energy damage per caster level (Maximum caster level 40.), or healing Undead. A successful Will save reduces the damage by half.
 
 SpellName: Mass Inflict Light Damage
 WikiName: Inflict Light Damage, Mass
@@ -1130,7 +1118,7 @@ Descrip: Transmutes the structure of construct enemies to deal 1d6+2 rust damage
 
 SpellName: Mass Inflict Light Wounds
 WikiName: Inflict Light Wounds, Mass
-Descrip: Casts Inflict Light Wounds on multiple targets at range inflicting 1d6+2 negative energy damage per caster level (Maximum caster level 25.), or healing Undeads. A successful Will save reduces the damage by half.
+Descrip: Casts Inflict Light Wounds on multiple targets at range inflicting 1d6+2 Negative energy damage per caster level (Maximum caster level 25.), or healing Undeads. A successful Will save reduces the damage by half.
 
 SpellName: Mass Inflict Moderate Damage
 WikiName: Inflict Moderate Damage, Mass
@@ -1139,7 +1127,7 @@ Flags: Rare
 
 SpellName: Mass Inflict Moderate Wounds
 WikiName: Inflict Moderate Wounds, Mass
-Descrip: Casts Inflict Moderate Wounds on multiple targets at range inflicting 1d6+4 negative energy damage per caster level (Maximum caster level 30.), or healing Undeads. A successful Will save reduces the damage by half.
+Descrip: Casts Inflict Moderate Wounds on multiple targets at range inflicting 1d6+4 Negative energy damage per caster level (Maximum caster level 30.), or healing Undeads. A successful Will save reduces the damage by half.
 
 SpellName: Mass Inflict Serious Damage
 WikiName: Inflict Serious Damage, Mass
@@ -1148,7 +1136,7 @@ Flags: Rare
 
 SpellName: Mass Inflict Serious Wounds
 WikiName: Inflict Serious Wounds, Mass
-Descrip: Casts Inflict Serious Wounds on multiple targets at range inflicting 1d6+6 negative energy damage per caster level (Maximum caster level 35.), or healing Undeads. A successful Will save reduces the damage by half.
+Descrip: Casts Inflict Serious Wounds on multiple targets at range inflicting 1d6+6 Negative energy damage per caster level (Maximum caster level 35.), or healing Undeads. A successful Will save reduces the damage by half.
 
 SpellName: Mass Invisibility
 WikiName: Invisibility, Mass
@@ -1156,7 +1144,7 @@ Descrip: Casts Invisibility on multiple allied creatures, rendering the creature
 
 SpellName: Mass Lesser Vigor
 WikiName: Lesser Vigor, Mass
-Descrip: Casts Lesser Vigor on multiple targets. A positive energy conjuration that heals 1d2, +1 per 3 caster levels (max +8 at caster level 24), every 2 seconds for 8 seconds. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: Casts Lesser Vigor on multiple targets. A Positive energy conjuration that heals 1d2, +1 per 3 caster levels (max +8 at caster level 24), every 2 seconds for 8 seconds. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Mass Longstrider
 WikiName: Longstrider, Mass
@@ -1172,7 +1160,7 @@ Descrip: Casts Protection from Elements on multiple targets, granting targets te
 
 SpellName: Mass Regenerate
 WikiName: Regenerate, Mass
-Descrip: Casts Regenerate on multiple targets. A positive energy conjuration that heals hit points, ability point damage, and level drain, and cures bleed effects. It heals 1d6 hit points, +1 per caster levels (max +25), every 2 seconds for 8 seconds. Every two seconds 2 ability point damage is healed, and every three seconds one drained level and 1 bleed effect are removed. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one heal-over-time spell can be active at a time, with the most beneficial taking priority. If multiple Regenerate spells are cast on the same target, then the duration is extended.
+Descrip: Casts Regenerate on multiple targets. A Positive energy conjuration that heals hit points, ability point damage, and level drain, and cures bleed effects. It heals 1d6 hit points, +1 per caster levels (max +25), every 2 seconds for 8 seconds. Every two seconds 2 ability point damage is healed, and every three seconds one drained level and 1 bleed effect are removed. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one heal-over-time spell can be active at a time, with the most beneficial taking priority. If multiple Regenerate spells are cast on the same target, then the duration is extended.
 
 SpellName: Mass Repair Critical Damage
 WikiName: Repair Critical Damage, Mass
@@ -1214,17 +1202,20 @@ Descrip: Casts True Seeing on multiple targets. This allows the target to find s
 
 SpellName: Mass Vigor
 WikiName: Vigor, Mass
-Descrip: Casts Vigor on multiple targets. A positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +11 at level 33), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: Casts Vigor on multiple targets. A Positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +11 at level 33), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Master's Touch
 Descrip: Enchants the items currently equipped in the target's right and left hands to grant their wielder proficiency if the items are simple or martial weapons, or shields, and lasts until the target rests.}}***** NOTE *****}Master's Touch scrolls can only be purchased in the Portable Hole, which requires teleport. If you want the spell but can't teleport yet, be sure to learn it from a trainer during levelup.
+
+SpellName: Material Fang
+Descrip: Your target's natural weapons gain the ability to bypass the Material based damage reduction of your choice. Lasts 1 minute per caster level. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. An item can have only one temporary item enchantment at a time.
 
 SpellName: Maul
 WikiName: Maul (spell)
 Descrip: This attack deals an extra 2[W] to the target, and applies a bleeding effect that deals 1d4 slash damage every 2 seconds for 8 seconds. Striking the target successfully may also intimidate the target based on the player's intimidate skill.
 
 SpellName: Melf's Acid Arrow
-Descrip: Deals 2d4 + 1 per 2 caster level of acid damage to a target for 12 seconds.
+Descrip: Deals 2d4 + 1 per 2 caster level of Acid damage to a target for 12 seconds.
 
 SpellName: Melt Armor
 Descrip: Lob a vial of burning liquid at a single foe that deals heavy damage and melts the armor of whatever it strikes. Deals 1d4+4 damage per caster level, max caster level 10, to a single target, and reduces their Armor Class and Physical Resistance Rating by 4 for 15 seconds +2 seconds per caster level.
@@ -1236,7 +1227,7 @@ SpellName: Merfolk's Blessing
 Descrip: Gives an ally a +10 enhancement bonus on Swim plus 1 for every 2 caster levels beyond 1st.
 
 SpellName: Meteor Swarm
-Descrip: Chunks of flaming stone crush and burn your enemies causing 4 spheres of 2 ft. diameter explode on impact, each meteor deals 1d3+1 fire damage per caster level (A successful Reflex save reduces the damage by half), and 1d2+1 bludgeoning damage per caster level (No save) to targets in the area. Maximum caster level 20.}}At caster level 20, if all four stones hit they deal a combined 160 to 320 fire damage (reflex save for half) and 160 to 240 bludgeon damage (no save). Cooldown is 9 seconds on wizards and 6 seconds on sorcerers.
+Descrip: Chunks of flaming stone crush and burn your enemies causing 4 spheres of 2 ft. diameter explode on impact, each meteor deals 1d3+1 Fire damage per caster level (A successful Reflex save reduces the damage by half), and 1d2+1 bludgeoning damage per caster level (No save) to targets in the area. Maximum caster level 20.}}At caster level 20, if all four stones hit they deal a combined 160 to 320 Fire damage (reflex save for half) and 160 to 240 bludgeon damage (no save). Cooldown is 9 seconds on wizards and 6 seconds on sorcerers.
 Flags: Rare
 
 SpellName: Mind Fog
@@ -1246,7 +1237,14 @@ SpellName: Molotov Cocktail
 Descrip: Lob a glass bottle full of reactive chemicals that shatters and then ignites in a large area, dealing damage to all enemies struck. Enemies are ignited, dealing 1d6+3 Fire damage per caster level, max caster level 15.
 
 SpellName: Mordenkainen's Disjunction
-Descrip: A powerful force disrupts magical effects on the target, removing ongoing spells that have been cast on a target. You must make a caster level check of 1d20+your caster level (No maximum) versus 11+the spell's caster level to remove a spell effect, and your target must make a Will save for each equipped item or all magical properties on them are temporarily disabled for 2 minutes.
+Descrip: A powerful force disrupts magical effects on the target, removing ongoing spells that have been cast on a target. You must make a Caster Level check of 1d20 + your Caster Level (no maximum) versus 11 + the spell's Caster Level to remove a spell effect, and magical healing being applied to the target is greatly reduced for 30 seconds. Your target must almost make a Will save for they will be unable to cast for the duration (excludes bosses). If the target is a construct or living construct they are destroyed on a failed save. If cast on a Spell Ward trap, this spell will reduce the level of the trap by 1 to 8. If the level of the trap is reduced to 0, the trap is disabled.
+Flags: Rare
+
+SpellName: Morphic Fang
+Descrip: Your target's natural weapons gain the ability to bypass the Physical based damage reduction of your choice. Lasts 1 minute per caster level. Only works on players, hirelings, or pets, and only if they are Animals, Vermin, Magical Beasts, Dragons, or Fey. An item can have only one temporary item enchantment at a time.
+
+SpellName: Morphic Weapons
+Descrip: Your target's currently equipped weapons gain the ability to bypass Physical based damage reduction. An item can only have one temporary item enchantment at a time.
 Flags: Rare
 
 SpellName: Multivial of Acid
@@ -1265,7 +1263,7 @@ SpellName: Multivial of Sparks
 Descrip: Conjuring many bottles of reactive material, you throw 4 projectiles that exploed on impact, with each dealing 1d4+3 Electric damage per caster level to all nearby foes, max caster level 20. Shares a cooldown with all other Multivial spells.
 
 SpellName: Necrotic Ray
-Descrip: A negative energy ray that does 1d6+12 negative damage per caster level to a living enemy. A successful Fortitude save reduces the damage by half. The ray also suppresses the life force of any living creature it strikes, granting it 1 negative level.
+Descrip: A Negative energy ray that does 1d6+12 negative damage per caster level to a living enemy. A successful Fortitude save reduces the damage by half. The ray also suppresses the life force of any living creature it strikes, granting it 1 negative level.
 Flags: Rare
 
 SpellName: Negative Energy Burst
@@ -1276,17 +1274,17 @@ SpellName: Neutralize Poison
 Descrip: Detoxifies any sort of venom in an ally, causing him to suffer no additional effects from the Poison. Additionally, it immunizes the ally from any Poison he is exposed to during the duration of the spell.
 
 SpellName: Niac's Biting Cold
-Descrip: A deep and chilling cold settles into the target's body, dealing 1 to 6 cold damage + 1 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 3 times, increasing the damage with each stack.
+Descrip: A deep and chilling cold settles into the target's body, dealing 1d6 Cold damage + 2 per caster level every 2 seconds for a duration of 16 seconds. This spell can stack on the target up to 5 times, increasing the damage with each stack.
 Flags: Rare
 
 SpellName: Niac's Cold Ray
-Descrip: Shoots a ray of ice inflicting 1d5+5 cold damage per caster level (Maximum damage 5d5+25.) to a single target. A successful Reflex save negates damage.
+Descrip: Shoots a ray of ice inflicting 1d5+5 Cold damage per caster level (Maximum damage 5d5+25.) to a single target. A successful Reflex save negates damage.
 
 SpellName: Nightshield
 Descrip: Grants a +1 resistance bonus to saves (+2 at 6th level, +3 at 9th level), and protection from Magic Missiles for 1 minute per caster level. Minimum duration 5 minutes.
 
 SpellName: Nimbus of Light
-Descrip: A glittering corona of light coalesces around your outstretched arm, dealing 1d6 points of light damage per caster level. (Max Caster Level 15)
+Descrip: A glittering corona of light coalesces around your outstretched arm, dealing 1d6+2 points of Light damage per caster level.
 
 SpellName: Obscuring Mist
 Descrip: A misty vapor arises around the caster obscuring all sight, giving all creatures in the fog concealment. (Attackers have 20% miss chance.) Obscuring Mist can be burned away with fire spells that hit the area of the mist.
@@ -1298,7 +1296,7 @@ SpellName: Order's Wrath
 Descrip: Lawful power smites your targets. Only Chaotic and Neutral creatures are harmed by the spell. The spell deals 1d6+4 points of damage per caster level to a Chaotic creature and causes it to be Dazed for 6 seconds. A successful Will save reduces damage to half and negates the Dazed. The spell deals only half damage to creatures who are neither Lawful nor Chaotic, and they are not Dazed. This spell can only be cast by Lawful or Neutral casters, it has no effect when cast by a Chaotic caster.
 
 SpellName: Otiluke's Freezing Sphere
-Descrip: A frigid globe of cold energy streaks towards a target. On impact it explodes, causing 1d6+6 cold damage per caster level (Maximum caster level 20) to targets in the area. A successful Reflex save reduces the damage by half.
+Descrip: A frigid globe of cold energy streaks towards a target. On impact it explodes, causing 1d6+6 Cold damage per caster level (Maximum caster level 20) to targets in the area. A successful Reflex save reduces the damage by half.
 
 SpellName: Otto's Irresistible Dance
 Descrip: This spell makes it impossible for the enemy to do anything other than caper and prance in place.
@@ -1321,7 +1319,7 @@ SpellName: Pack Presence
 Descrip: Forms a link between a leader and his or her pack. The caster chooses to reduce or increase his or her minions' hate generation by 75%. The spell affects all of the target's hirelings, pets, summoned creatures, and charmed creatures. The more hate a creature generates, the more likely that its enemies will choose to attack it. If the caster chooses to increase hate generation, then casting the spell causes the caster's hirelings and pets to do an intimidate check with a +20 circumstance bonus to creatures around them.
 
 SpellName: Panacea
-Descrip: Channels powerful positive energy into a target to wipe away afflictions, restores 1d6+2 Hit Points plus 1 per caster level (Maximum caster level 20.), removes the conditions or effects: Ability Damaged, Blinded, Confused, Dazed, Dazzled, Deafened, Diseased, Exhausted, Fatigued, Feebleminded, Insanity, Nauseated, and Poisoned. Against Undead this spell will damage 1d6+2 Hit Points plus 1 per caster level (Maximum caster level 20). Undead who make a successful Will save reduce the damage by half.
+Descrip: Channels powerful Positive energy into a target to wipe away afflictions, restores 1d6+2 Hit Points plus 1 per caster level (Maximum caster level 20.), removes the conditions or effects: Ability Damaged, Blinded, Confused, Dazed, Dazzled, Deafened, Diseased, Exhausted, Fatigued, Feebleminded, Insanity, Nauseated, and Poisoned. Against Undead this spell will damage 1d6+2 Hit Points plus 1 per caster level (Maximum caster level 20). Undead who make a successful Will save reduce the damage by half.
 
 SpellName: Pass Without Trace
 Descrip: Your feet touch the ground, but leave no trace. Gives an ally +5 enhancement bonus on Move Silently checks, plus 1 per 2 caster levels to a maximum of 20.
@@ -1340,7 +1338,7 @@ SpellName: Poison Breath
 Descrip: You exhale poison through your mouth in a large cone, causing enemies caught within the area to take 1d6+5 Poison damage per caster level, max caster level 20. This is a Breath attack. This poison will leave enemies struck Contaminated.
 
 SpellName: Polar Ray
-Descrip: Strikes a creature for 1d6+8 cold damage per caster level. (Maximum caster level 25.)
+Descrip: A blue-white ray of freezing air and ice springs from your hand. The ray deals 1d6+10 points of Cold damage per caster level.
 Flags: Rare
 
 SpellName: Positive Energy Infusion
@@ -1351,7 +1349,7 @@ SpellName: Power Word: Blind
 Descrip: A single word of power is uttered, causing your target to become Blinded. Creatures are Blinded for at least 6+6d4 seconds, and players are Blinded for at least 4+1d6 seconds. Creatures with more than 100,000 Hit Points are unaffected by Power Word: Blind.
 
 SpellName: Power Word: Kill
-Descrip: A single word causes the death of a single enemy with no saving throw allowed. Cooldown timer of 210 seconds.
+Descrip: A single word causes the death of a single enemy with no saving throw allowed. Cooldown timer of 60 seconds.
 Flags: Rare
 
 SpellName: Power Word: Stun
@@ -1375,7 +1373,7 @@ Descrip: Ray spell. Enemy takes 1d6 per caster level in two of three elements (F
 Flags: Rare
 
 SpellName: Produce Flame
-Descrip: Flames as bright as a torch appear in your open hand and launch towards your foes. They deal 1d6+1 fire damage per caster level. (Max Caster Level 15)
+Descrip: Flames as bright as a torch appear in your open hand and launch towards your foes. They deal 1d6+1 Fire damage per caster level. (Max Caster Level 15)
 
 SpellName: Protection from Elements
 Descrip: Grants temporary immunity to five forms of energy damage for 1 minute per caster level, or until 12 points of energy per caster level (Maximum 120 points at caster level 10) for each energy type has been absorbed. Protects against: Acid, Cold, Lightning, Fire and Sonic.
@@ -1387,7 +1385,7 @@ SpellName: Protection from Evil
 Descrip: Creates a magical barrier that wards a target from attacks by Evil creatures. It grants a +2 deflection bonus to Armor Class, and a +2 resistance bonus to saves versus attacks from Evil creatures. The target is also warded from Evil magical controls and compulsions.
 
 SpellName: Quench
-Descrip: A burst of water quenches flames. Lingering fire spells, such as Wall of Fire, are dispelled. Your allies are cured of any lingering fire damage effects, and receive a +15 enhancement bonus to fire resistance. Your enemies receive a -20 penalty to cold and electricity resistance. The resistance bonuses and penalties increase to 25 at caster level 8, and 35 and caster level 12. They last one minute. Fiery enemies, such as fire elementals, take 27 to 33 cold damage per 4 caster levels, to a maximum of 108 to 132. A successful fortitude save halves the damage, and negates the resistance penalties. D&D Dice: Deals 2d4+25 cold damage per 4 caster levels.
+Descrip: A burst of water quenches flames. Lingering fire spells, such as Wall of Fire, are dispelled. Your allies are cured of any lingering Fire damage effects, and receive a +15 enhancement bonus to fire resistance. Your enemies receive a -20 penalty to cold and electricity resistance. The resistance bonuses and penalties increase to 25 at caster level 8, and 35 and caster level 12. They last one minute. Fiery enemies, such as fire elementals, take 27 to 33 Cold damage per 4 caster levels, to a maximum of 108 to 132. A successful fortitude save halves the damage, and negates the resistance penalties. D&D Dice: Deals 2d4+25 Cold damage per 4 caster levels.
 
 SpellName: Quicksilver Potion
 Descrip: Drink a potion of shiny liquid that bestows incredible speed for a short time, the effect of the Haste spell. You are quickened, causing you to attack 15% faster than normal. In addition, you gain a +1 enhancement bonus to attack rolls, a +1 bonus to Reflex Saving Throws, and +1% Dodge.
@@ -1422,7 +1420,7 @@ SpellName: Reconstruct
 Descrip: Repairs the ally Construct, restoring 10 Hit Points per caster level (Maximum caster level 15.), while simultaneously granting the Construct an increase in attack speed for a short time.
 
 SpellName: Regenerate
-Descrip: A positive energy conjuration that heals Hit points, ability point damage, and level drain, and cures bleed effects. It heals 1d6, +1 per cast levels (max +17), every 2 seconds for 8 seconds. Every two seconds 2 ability point damage is healed, and every three seconds 1 drained level and 1 bleed effect are removed. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one heal-over-time spell can be active at a time, with the most beneficial taking priority. If multiple Regenerate spells are cast on the same target, then the duration is extended.
+Descrip: A Positive energy conjuration that heals Hit points, ability point damage, and level drain, and cures bleed effects. It heals 1d6, +1 per cast levels (max +17), every 2 seconds for 8 seconds. Every two seconds 2 ability point damage is healed, and every three seconds 1 drained level and 1 bleed effect are removed. When the initial effect expires, a smaller healing effect that heals 2 HP every 5 seconds for 30 seconds is applied. Only one heal-over-time spell can be active at a time, with the most beneficial taking priority. If multiple Regenerate spells are cast on the same target, then the duration is extended.
 
 SpellName: Reincarnate
 WikiName: Reincarnate (spell)
@@ -1451,6 +1449,7 @@ Descrip: This spell frees an ally from the condition Paralyzed, and the effects 
 
 SpellName: Rend the Soul
 Descrip: Twists unholy energies around a single foe, causing it significant negative damage over time. Deals 5 to 10 damage every two seconds for 10 seconds for every caster level up to 20. A successful fortitude save reduces the damage by half.
+Flags: Rare
 
 SpellName: Repair Critical Damage
 Descrip: Transmutes the structure of a living Construct ally to repair 4d6+8 Hit Points plus 1 per caster level. (Maximum caster level 20.)
@@ -1508,13 +1507,13 @@ WikiName: Scare (spell)
 Descrip: This spell functions like Cause Fear on multiple targets. Creatures with 6 or more Hit Die are immune to this effect. Affected enemies become frightened. A successful Will save causes the target to become Shaken instead.
 
 SpellName: Scorch
-Descrip: A jet of roaring flame bursts from your outstretched hand, dealing 1d6+2 fire damage per caster level (max 10d6+20) to targets in its path. A successful Reflex save reduces the damage by half.
+Descrip: A jet of roaring flame bursts from your outstretched hand, dealing 1d6+2 Fire damage per caster level (max 10d6+20) to targets in its path. A successful Reflex save reduces the damage by half.
 
 SpellName: Scorching Ray
-Descrip: Blasts a target with fiery rays, each doing 7-12 fire damage per two caster levels on impact (Max Level 20). You may fire 1 ray, plus 1 additional ray for every 4 caster levels beyond 3rd. (Maximum rays 3.)
+Descrip: Blasts a target with fiery rays, each doing 7-12 Fire damage per two caster levels on impact (Max Level 20). You may fire 1 ray, plus 1 additional ray for every 4 caster levels beyond 3rd. (Maximum rays 3.)
 
 SpellName: Searing Light
-Descrip: Focuses divine power like a ray of the sun, causing a blast of light to deal 1d6+6 light damage per caster level.
+Descrip: Focuses divine power like a ray of the sun, causing a blast of light to deal 1d6+6 Light damage per caster level.
 
 SpellName: See Invisibility
 Descrip: Reveals Invisible creatures, or objects.
@@ -1535,14 +1534,11 @@ Descrip: Creates a shimmering, magical field around an ally that averts attacks,
 SpellName: Shillelagh
 Descrip: Enchants your wooden melee weapons to do additional base weapon damage, and converts their damage type to bludgeoning. Weapons with this enchantment deal an additional 0.5[W] damage. Quarterstaves with this enchantment deal an additional 1.0[W] damage. A weapon can only have one item enhancement at a time.
 
-SpellName: Shocking Bolt
-Descrip: Fires a single-target bolt that does 1d6+2 electricity damage per Caster Level, to a maximum Caster Level of 10. Costs 2 spell points, 4.5 second cooldown. (3.5 seconds for Sorcerers) All four bolt spells (Caustic Bolt, Shocking Bolt, Flaming Bolt, Freezing Bolt) share a cooldown.
-
 SpellName: Shocking Grasp
-Descrip: Delivers a jolt of 1d6+1 electricity damage per caster level (Maximum damage 5d6+5) to any enemy you touch.
+Descrip: Delivers a jolt of 1d12+2 Electricity damage per caster level (Maximum damage 5d6+5) to any enemy you touch.
 
 SpellName: Shout
-Descrip: Emits an ear-splitting yell that does 1d6+3 per caster level sonic damage to all targets in its path. A successful Fortitude save halves the damage.
+Descrip: Emits an ear-splitting yell that does 1d6+3 per caster level Sonic damage to all targets in its path. A successful Fortitude save halves the damage.
 
 SpellName: Shred
 Descrip: Valid Forms: Bear, Dire Bear. This attack has +1 crit range and multiplier and deals an extra 3[W] damage to the target, and you may reduce the target's Armor Class by 4 for a short time. Some creates may be immune to the sunder effect. A successful Fortitude save negates this effect. (DC 13 + highest of STR/WIS mod + half Druid level + Sunder modifiers)
@@ -1578,7 +1574,7 @@ SpellName: Snare
 Descrip: Creates a snare that when triggered entangles a single enemy. An Entangled creature may attempt to make a Strength check every 2 seconds to escape. Incorporeal creatures, and Oozes cannot be caught in the snare.
 
 SpellName: Snowball Swarm
-Descrip: A flurry of magical snowballs erupt near your target, dealing 1d6+2 cold damage per caster level. (Maximum damage 10d6+20.) A successful Reflex save reduces the damage by half.
+Descrip: A flurry of magical snowballs erupt near your target, dealing 1d6+2 Cold damage per caster level. (Maximum damage 10d6+20.) A successful Reflex save reduces the damage by half.
 
 SpellName: Snowslide
 Descrip: Valid Forms: Winter Wolf. You leap forward with the speed and ferocity of a sudden avalanche. You attack enemies in your path with +1 crit range and multiplier and deal an extra 2[W] damage. Targets caught in your wake are frozen solid for 20 seconds. A successful reflex save negates the effect, and creatures caught in the ice can attempt fortitude saves to escape every 3 seconds. Creatures frozen are considered helpless, but they also gain DR 5/Adamantine. (DC 19 + higher of STR/WIS mod + Druid level + Stun bonuses.)
@@ -1588,16 +1584,16 @@ Descrip: Obscures vision like Fog Cloud (20% concealment miss chance to all crea
 Flags: Rare
 
 SpellName: Sonic Blast
-Descrip: Blasts an enemy with loud high-pitched sounds, dealing 1d6+1 sonic damage per caster level. The target must make a successful Will save to avoid be Dazed for a short period of time, or until they take damage.
+Descrip: Blasts an enemy with loud high-pitched sounds, dealing 1d6+1 Sonic damage per caster level. The target must make a successful Will save to avoid be Dazed for a short period of time, or until they take damage.
 
 SpellName: Soulshatter Poison Imbue
 Descrip: Coat your weapon in a magical poison that saps the willpower from your enemies on contact. On Hit: -1 Will Save per stack, stacks 3 times. On Crit: 1d6 Wisdom Damage. An item can have only one Temporary item enchantment at a time
 
 SpellName: Soundburst
-Descrip: A tremendous cacophony creates a burst area of effect dealing to every creature 1d6+1 points of sonic damage, and each creature must succeed on a fortitude save to avoid being stunned for 6 seconds. (Max Caster Level 15)
+Descrip: A tremendous cacophony creates a burst area of effect dealing to every creature 1d6 points of Sonic damage, and each creature must succeed on a fortitude save to avoid being stunned for 6 seconds. (Max Caster Level 15)
 
 SpellName: Sparks Concentration
-Descrip: Deal 1d6 electric damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Reflex save reduces damage by half.
+Descrip: Deal 1d6 Electric damage + 2 per caster level every 2 seconds for 16 seconds, can stack up to 5 times. Reflex save reduces damage by half.
 
 SpellName: Spawn Screen
 Descrip: Prevents 1 ally per caster level from rising as Undead. Certain rare, extremely powerful Undead can circumvent this protection.
@@ -1619,7 +1615,7 @@ SpellName: Stalwart Pact
 Descrip: Grants the target 5 Hit Points for every 2 caster levels, a +2 luck bonus to Saving Throws, and Damage Reduction 5/Magic, if the target of the spell falls below 50% Hit Points.
 
 SpellName: Static Shock
-Descrip: An electrical discharge strikes one target for 1d6 electricity damage plus 1d6 electricity damage per two caster levels up to a maximum damage of 6d3+18 at caster level 10. A successful Reflex save reduces this damage by half. On a failed save, the target must make a successful Will save or be dazed for a short period of time or until they take damage.
+Descrip: An electrical discharge strikes one target for 1d6 Electricity damage plus 1d6 Electricity damage per two caster levels up to a maximum damage of 6d3+18 at caster level 10. A successful Reflex save reduces this damage by half. On a failed save, the target must make a successful Will save or be dazed for a short period of time or until they take damage.
 
 SpellName: Stiffen Skin
 Descrip: This potion will mutate you and make your skin a little more resistance to physical damage. This grants a +2 Deflection bonus to AC, +1 per 6 caster levels, for 1 minute per caster level.
@@ -1637,7 +1633,7 @@ SpellName: Stoneskin Potion
 Descrip: Turn your skin to durable stone. Gain a resistance to physical damage of 10/Adamantine for the duration. Once this potion has prevented 10 points of damage per caster level, it is discharged.
 
 SpellName: Storm of Vengeance
-Descrip: Conjures a storm with a massive thunderclap, deafening enemies, dousing them in acid rain, and lancing them with lightning bolts. Enemies within the cloud when it is first conjured are deafened for 3 seconds per caster level. Enemies within the storm take Acid damage every 2 seconds (1d8 for every 3 Druid levels.) Every 4 seconds, a random enemy within the storm takes 1d6+6 electricity damage per caster level. (A successful reflex save halves). The storm lasts 3 seconds per caster level. Maximum Caster Level 25.
+Descrip: Conjures a storm with a massive thunderclap, deafening enemies, dousing them in acid rain, and lancing them with lightning bolts. Enemies within the cloud when it is first conjured are deafened for 3 seconds per caster level. Enemies within the storm take Acid damage every 2 seconds (1d8 for every 3 Druid levels.) Every 4 seconds, a random enemy within the storm takes 1d6+6 Electricity damage per caster level. (A successful reflex save halves). The storm lasts 3 seconds per caster level. Maximum Caster Level 25.
 
 SpellName: Stormrage
 Descrip: Enemies damaged by your attacks or spells are also struck by lightning, dealing 10d20 electric damage, halved on a reflex save vs. DC 50. Lightning strikes up to one enemy each second. You also gain featherfall and Deflect Arrows. Lasts 18 seconds.
@@ -1704,10 +1700,10 @@ SpellName: Summon Nature's Ally VIII
 Descrip: Summons a Challenge Rating <?> Greater Air Elemental or Dire Bear to fight for you for 10 minutes. You can only have 1 summoned creature of any type serving you at a time. Summoning a new creature of any type will return the previous one to its home plane.
 
 SpellName: Sunbeam
-Descrip: Deals 1d6+7 light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
+Descrip: Deals 1d6+7 Light damage per caster level with a mighty beam of sunlight, and temporarily blinds the target. (No Max Caster Level) Against Undead or Oozies, it does double damage. A successful Reflex save halves the damage and negates the blind effect. This spell has double range.
 
 SpellName: Sunburst
-Descrip: Sunburst causes a globe of searing radiance to explode silently from a point you select dealing to all creatures 1d6+4 points of light damage per caster level in addition to blinding them. A successful Reflex save reduces the damage by half and negates the condition Blinded. Light fearing Undead may be instantly destroyed by this spell if it fails its save.
+Descrip: Sunburst causes a globe of searing radiance to explode silently from a point you select dealing to all creatures 1d6+4 points of Light damage per caster level in addition to blinding them. A successful Reflex save reduces the damage by half and negates the condition Blinded. Light fearing Undead may be instantly destroyed by this spell if it fails its save.
 Flags: Rare
 
 SpellName: Symbol of Death
@@ -1719,7 +1715,7 @@ Descrip: You create a purple symbol of power in the air, and it's activated by a
 Flags: Rare
 
 SpellName: Symbol of Flame
-Descrip: You scribe a potent rune of power in the air, and it's activated by an enemy who comes into range of it dealing 5d3+15 fire damage to that target. A successful Reflex save reduces damage by half. The symbol dissolves 20 seconds after being triggered, or in 5 minutes otherwise.
+Descrip: You scribe a potent rune of power in the air, and it's activated by an enemy who comes into range of it dealing 5d3+15 Fire damage to that target. A successful Reflex save reduces damage by half. The symbol dissolves 20 seconds after being triggered, or in 5 minutes otherwise.
 Flags: Rare
 
 SpellName: Symbol of Pain
@@ -1738,7 +1734,7 @@ Descrip: You create a greenish symbol of power in the air, and it's activated by
 Flags: Rare
 
 SpellName: Tactical Detonation
-Descrip: Causes an unstable ball of plasma to streak towards your enemy. The ball explodes on impact, knocking enemies to the ground and dealing 1d6+3 fire damage per caster level (a successful Reflex save reduces the fire damage by half and negates the knockdown effect) and 1d6+3 force damage per caster level (no save) to targets in the area.
+Descrip: Causes an unstable ball of plasma to streak towards your enemy. The ball explodes on impact, knocking enemies to the ground and dealing 1d6+3 Fire damage per caster level (a successful Reflex save reduces the Fire damage by half and negates the knockdown effect) and 1d6+3 force damage per caster level (no save) to targets in the area.
 Flags: Rare
 
 SpellName: Takedown
@@ -1754,7 +1750,7 @@ SpellName: Tenser's Transformation
 Descrip: Causes the caster to become a virtual fighting machine becoming stronger, tougher, faster, and more skilled in combat. You gain a +4 alchemical bonus to Strength, Dexterity, and Constitution, a +6 alchemical bonus to Armor Class, and proficiency with all simple and martial weapons. Your base attack bonus equals your character level. Your spellcasting ability is reduced, resulting in a -2 penalty to all spell DCs, -2 to your rolls to bypass enemy Spell Resistance, and doubling the cooldown of your spells.
 
 SpellName: Thorn Blade
-Descrip: Summons a scimitar of blight that does a mix of acid and poison damage instead of slashing damage, and uses the wielder's Wisdom instead of Strength for determining attack and damage bonuses. The user can choose to summon one-handed or two-handed versions, and the swords are automatically equipped when created. At caster level 1, it has a +1 enhancement bonus and the Acidic effect. Every five caster levels the summoned swords improve. Because they are an extension of the caster's will, monks may use these weapons without becoming uncentered. The thorn blade is not a physical weapon, but rather pure nature shaped by the caster's will; because of this, it withers away if unequipped.}{-This spell functions in a very similar way to Flame Blade.}{-Effects that increase your caster level with Thorn spells, such as being in Thorn Kin or Thorn Knight form, allow you to summon a more potent, high-level blade.
+Descrip: Summons a scimitar of blight that does a mix of acid and Poison damage instead of slashing damage, and uses the wielder's Wisdom instead of Strength for determining attack and damage bonuses. The user can choose to summon one-handed or two-handed versions, and the swords are automatically equipped when created. At caster level 1, it has a +1 enhancement bonus and the Acidic effect. Every five caster levels the summoned swords improve. Because they are an extension of the caster's will, monks may use these weapons without becoming uncentered. The thorn blade is not a physical weapon, but rather pure nature shaped by the caster's will; because of this, it withers away if unequipped.}{-This spell functions in a very similar way to Flame Blade.}{-Effects that increase your caster level with Thorn spells, such as being in Thorn Kin or Thorn Knight form, allow you to summon a more potent, high-level blade.
 
 SpellName: Thorn Bloom
 Descrip: Thorns blast out from your body inflicting 5 to 10 points of Piercing damage per caster level (up to a maximum of 50 to 100 damage at caster level 10) to all nearby foes. Reflex save for half.
@@ -1769,7 +1765,7 @@ SpellName: Thorn Wave
 Descrip: You hurl a wave of magical thorns in front of you dealing to all targets in front of you for 6 to 11 points of Piercing damage per caster level (up to a maximum of 90 to 165 damage at caster level 15). Reflex save for half.
 
 SpellName: Thundering Armor
-Descrip: Your target's currently equipped armor gains Retributive Hit Effect: Attacker takes 1d6 sonic damage and has a 5% chance to take an additional 8d6 sonic damage (Fortitude DC: 25 save for half damage). An item can have only one temporary item enchantment at a time.
+Descrip: Your target's currently equipped armor gains Retributive Hit Effect: Attacker takes 1d6 Sonic damage and has a 5% chance to take an additional 8d6 Sonic damage (Fortitude DC: 25 save for half damage). An item can have only one temporary item enchantment at a time.
 Flags: Rare
 
 SpellName: Thunderstroke
@@ -1781,6 +1777,9 @@ Descrip: Target takes 1d6 points of Charisma, Intelligence, and Wisdom damage.
 
 SpellName: Toughen Construct
 Descrip: Toughens the skin of a ally construct, giving a +2 natural armor bonus to AC with an additional +1 bonus for every 3 caster levels above 3rd, to a maximum of +5 at caster level 12.
+
+SpellName: Transmuted Weapons
+Descrip: Your target's currently equipped weapons gain the ability to bypass Material based damage reduction. An item can only have one temporary item enchantment at a time.
 
 SpellName: Trap the Soul
 Descrip: Forces a creature's life force and its material body into a gem on a failed Will save. Although this essentially 'kills' the target, it is not a Death effect and functions on creatures such as Undead but not most Constructs. This spell requires a Khyber Dragonshard as a special material component. It is often helpful to cast Enervation on a target before casting Trap the Soul to reduce the creature's saving throw.
@@ -1797,7 +1796,7 @@ WikiName: True Seeing (spell)
 Descrip: You confer on the subject the ability to see things as they actually are. This allows the target to find secret doors that have a DC of 30 or less, see the exact location of creatures hidden by Blur or Displacement effects, and see Invisible creatures or objects normally.
 
 SpellName: Tsunami
-Descrip: Sends forth a wave of water, knocking enemies down and dealing 30 cold damage plus 1d10 per character level and 30 bludgeoning damage plus 1d10 per character level. The cold damage and knockdown are negated on a successful Fortitude save vs. 10 + Wisdom modifier + Character level. Some monsters can resist Tsunami completely, such as Water Elementals and Oozes.
+Descrip: Call forth a wave of water, knocking enemies down and dealing 1d6+6 Cold damage and 1d6+4 Bludgeoning damage per caster level. The Cold portion is halved on successful Fortitude save. Bludgeoning damage has no saving throw.
 Flags: Rare
 
 SpellName: Tumble
@@ -1814,28 +1813,13 @@ SpellName: Unholy Blight
 Descrip: Unholy power smites your targets. Only Good and Neutral (Not Evil.) creatures are harmed by the spell. This spell deals 1d4+4 points of damage per 2 caster levels (Maximum damage 5d4+20.) to a Good creature, or 1d3+3 points of damage per caster level (Maximum 10d3+30.) to a Good Outsider, and causes it to be Sickened for 6d4 seconds. A successful Will save reduces damage by half and negates the Sickened condition. Neutral targets take half damage 1d2+2 points of damage per 2 caster levels (Maximum damage 5d2+10.), and they are not Sickened. This spell can only be cast by Evil or Neutral casters as it has no effect when cast by a Good caster.
 
 SpellName: Unstoppable
-Descrip: Valid Forms: Dire Bear . You expend your body's ability to heal to fuel a burst of determination. You gain 15 temporary hit points per caster level, and +5 damage, but your positive damage vulnerability becomes 0%, preventing healing. You are also immune to fear, enchantment, sleep, energy drain, paralysis, exhaustion and death effects, though any effects already active remain unchanged. Lasts 15 seconds.
+Descrip: Valid Forms: Dire Bear. You expend your body's ability to heal to fuel a burst of determination. You gain 15 temporary hit points per caster level, and +5 damage, but your positive damage vulnerability becomes 0%, preventing healing. You are also immune to fear, enchantment, sleep, energy drain, paralysis, exhaustion and death effects, though any effects already active remain unchanged. Lasts 15 seconds.
 
 SpellName: Vein Freeze
 Descrip: Throw a bottle at a targeted foe that explodes, dealing 1d6+4 Cold damage per caster level, and slows enemies caught within. Some enemies may be required to make a Fortitude save or be Frozen for 12 seconds.
 
 SpellName: Venom Concentration
-Descrip: Deal 1d6 poison damage + 1 per caster level every 2 seconds for 16 seconds, can stack 3x. Max 1d6+20. Fortitude save reduces damage by half.
-
-SpellName: Vial of Acid
-Descrip: 1d6+2 Acid damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
-
-SpellName: Vial of Flame
-Descrip: 1d6+2 Fire damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
-
-SpellName: Vial of Frost
-Descrip: 1d6+2 Frost damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
-
-SpellName: Vial of Sparks
-Descrip: 1d6+2 Electricity damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown.
-
-SpellName: Vial of Venom
-Descrip: 1d6+2 Poison damage per Caster Level to a single target (Max Caster Level 10), 4 second cooldown. Applies Contaminated.
+Descrip: Deal 1d6 Poison damage + 2 per caster level every 2 seconds for 16 seconds, can stack up to 5 times. Reflex save reduces damage by half.
 
 SpellName: Vial Smash: Acid
 Descrip: 1d6+1 Acid damage per Caster Level to a small AoE (Max Caster Level 5), 5 second cooldown.
@@ -1853,7 +1837,7 @@ SpellName: Vial Smash: Poison
 Descrip: 1d6+1 Poison damage per Caster Level to a small AoE (Max Caster Level 5), 5 second cooldown. Applies Contaminated.
 
 SpellName: Vigor
-Descrip: A positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +3 at caster level 9), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
+Descrip: A Positive energy conjuration that heals 1d6, +1 per 3 caster levels (max +3 at caster level 9), every 2 seconds for 8 seconds. When the initial effect expires, a smaller healing effect that heals 1 HP every 5 seconds for 30 seconds is applied. Only one Vigor spell can be active at a time, with the most beneficial taking priority. If multiple Vigor spells are cast on the same target, then the duration is extended.
 
 SpellName: Virtue
 Descrip: Grants 10 temporary Hit Points plus 2 per caster level over level 4th (Maximum Hit Points 20.) to an ally.
@@ -1875,17 +1859,17 @@ Descrip: You emit a terrible scream, creating a deadly area around yourself for 
 Flags: Rare
 
 SpellName: Wall of Fire
-Descrip: This wall deals 2d6 points of fire damage plus 1 point of fire damage per caster level (Maximum caster level 15) to targets within the wall, and deals an additional 2d6 damage to Undead creatures. The duration is 30 seconds regardless of caster level.
+Descrip: This wall deals 2d6 points of Fire damage plus 1 point of Fire damage per caster level (Maximum caster level 15) to targets within the wall, and deals an additional 2d6 damage to Undead creatures. The duration is 30 seconds regardless of caster level.
 Flags: Rare
 
 SpellName: Water Breathing
 Descrip: Grants the ability to breathe water to you and your allies.
 
 SpellName: Waves of Exhaustion
-Descrip: Waves of negative energy cause all living creatures to become Exhausted. Exhausted creatures take a -25% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble.
+Descrip: Waves of Negative energy cause all living creatures to become Exhausted. Exhausted creatures take a -25% penalty to movement speed, -6 penalty to Strength and Dexterity, and cannot tumble.
 
 SpellName: Waves of Fatigue
-Descrip: Waves of negative energy render all living creatures in the spell's area fatigued. A fatigued creature takes a -2 penalty to Strength and Dexterity, and suffers a -10% penalty to movement speed.
+Descrip: Waves of Negative energy render all living creatures in the spell's area fatigued. A fatigued creature takes a -2 penalty to Strength and Dexterity, and suffers a -10% penalty to movement speed.
 
 SpellName: Web
 Descrip: Creates a many-layered mass of strong, sticky strands that entangle targets within them. A successful Reflex save negates this effect. Entangled creatures may attempt to make a Strength check every 2 seconds to escape. Area of effect fire spells will destroy these webs and free any entangled creatures. Incorporeal creatures, oozes, and spiders are naturally immune. Fire elementals and other fire creatures are immune because they burn through the webs. The duration is a fixed 30 seconds.

@@ -6,8 +6,9 @@ BAB: 0.75
 SkillPoints: 4
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Heal, Search, Spellcraft, Spot, Use Magic Device
 GrantedFeats1: Magical Training, Inscribe Alchemy Recipe, Arcane Lore, Alchemical Spellcasting
-GrantedFeats2: Insightful Reflexes
-GrantedFeats2: Artificer Knowledge: Potions
+GrantedFeats1: Cantrip: Empty Bottle, Cantrip: Vial of Acid, Cantrip: Vial of Flame
+GrantedFeats1: Cantrip: Vial of Frost, Cantrip: Vial of Sparks, Cantrip: Vial of Venom
+GrantedFeats2: Insightful Reflexes, Artificer Knowledge: Potions
 GrantedFeats3: Alchemy on the Run
 GrantedFeats5: Artificer Knowledge: Potions
 GrantedFeats6: Multitude of Missiles
@@ -26,7 +27,7 @@ SpellSlots3: 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5, 5
 SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 4, 5, 5, 5, 5
 SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 4, 5
-SpellList1: Bottled Boost: Attack, Bottled Boost: Defense, Curative Admixture: Cure Light Wounds, Curative Admixture: Inflict Light Wounds, Curative Admixture: Remove Disease, Curative Admixture: Remove Poison, Empty Bottle, Fine Dust, Elemental Skin, Feathers Extract, Flash Powder, Gills Extract, Lesser Evolution, Lesser Restorative Draught, Rapid Condensation, Sleep Powder, Stiffen Skin, Vial of Acid, Vial of Flame, Vial of Frost, Vial of Sparks, Vial of Venom, Vial Smash: Acid, Vial Smash: Cold, Vial Smash: Electric, Vial Smash: Fire, Vial Smash: Poison
+SpellList1: Bottled Boost: Attack, Bottled Boost: Defense, Curative Admixture: Cure Light Wounds, Curative Admixture: Inflict Light Wounds, Curative Admixture: Remove Disease, Curative Admixture: Remove Poison, Fine Dust, Elemental Skin, Feathers Extract, Flash Powder, Gills Extract, Lesser Evolution, Lesser Restorative Draught, Rapid Condensation, Sleep Powder, Stiffen Skin, Vial Smash: Acid, Vial Smash: Cold, Vial Smash: Electric, Vial Smash: Fire, Vial Smash: Poison
 SpellList2: Alluring Elixir, Augment Armor, Bottled Boost: Spell, Cold Spike, Corrode Weapons, Curative Admixture: Cure Moderate Wounds, Curative Admixture: Inflict Moderate Wounds, Curative Admixture: Remove Curse, Curative Admixture: Remove Paralysis, Greater Venom Vial, Glue Bomb, Lesser Heartseeker Poison Imbue, Lesser Ice Chill Poison Imbue, Lesser Soulshatter Poison Imbue, Lesser Voidmind Poison Imbue, Liquid Courage, Melt Armor, Restorative Draught, Salt Crystals, Venom Concentration, Voltaic Backlash
 SpellList3: Acid Concentration, Bitter Frost Burst, Bottled Boost: Double, Caustic Solvent, Choking Smog, Curative Admixture: Cure Serious Wounds, Curative Admixture: Inflict Serious Wounds, Displacement Draught, Elemental Weapons, Evolution, Flame Concentration, Frost Concentration, Flash Freeze, Greater Liquid Courage, Greater Restorative Draught, Heartstopper Poison, Invisibility Potion, Iron Shavings, Melt Lock, Molotov Cocktail, Quicksilver Potion, Sparks Concentration, Voltaic Induction
 SpellList4: Bottled Boost: Power, Bottled Boost: Sprint, Caustic Overload, Cindersmoke, Corrosive Dust, Curative Admixture: Cure Critical Wounds, Curative Admixture: Inflict Critical Wounds, Flesh to Gold, Heartseeker Poison Imbue, Hypnotic Combination, Ice Chill Poison Imbue, Sanctified Vial, Smoke Bomb, Soulshatter Poison Imbue, Stoneskin Potion,  Vein Freeze, Voidmind Poison Imbue, Voltaic Burst
@@ -45,6 +46,7 @@ GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Profi
 GrantedFeats1: Simple Weapons, Martial Weapon: Light Hammer, Martial Weapon: Warhammer, Exotic Weapon: Great Crossbow, Exotic Weapon: Rpt Lt Crossbow, Exotic Weapon: Rpt Hvy Crossbow
 GrantedFeats1: Magical Training, Rapid Reload, Arcane Lore, Inscribe Artificer Scroll, Trapfinding
 GrantedFeats1: Unleash Iron Defender, Reanimate Construct
+GrantedFeats1: Cantrip: Cut, Cantrip: Finger of Fire, Cantrip: Jolt
 GrantedFeats2: Artificer Knowledge: Scrolls
 GrantedFeats2: Rune Arm Use, Artificer Craft Mastery
 GrantedFeats2: Artificer Knowledge: Potions
@@ -76,11 +78,11 @@ SpellSlots3: 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5
 SpellSlots4: 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5
 SpellSlots5: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 3, 3, 4, 4
 SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, 4
-SpellList1: Ablative Armor, Admixture: Cure Light Wounds, Conjure Bolts, Enchant Armor, Enchant Weapons, Flaming Bolt, Grease, Inflict Light Damage, Master's Touch, Repair Light Damage, Resist Energy, Resistance, Shield of Faith, Shocking Bolt, Static Shock
-SpellList2: Admixture: Cure Moderate Wounds, Bear's Endurance, Bull's Strength, Byeshk Weapons, Cat's Grace, Eagle's Splendor, Elemental Prod, Elemental Weapons, Fire Trap, Flame Arrow, Fox's Cunning, Inflict Moderate Damage, Insightful Strikes, Lightning Sphere, Lucky Cape, Owl's Wisdom, Protection from Energy, Reinforce Construct, Repair Moderate Damage, Toughen Construct
-SpellList3: Adamantine Weapons, Admixture: Cure Serious Wounds, Admixture: Remove Disease, Blast Rod, Flame Turret, Inflict Serious Damage, Insightful Damage, Lightning Bolt, Mass Inflict Light Damage, Mass Repair Light Damage, Mass Shield of Faith, Repair Serious Damage, Positive Energy Infusion, Stoneskin
-Spelllist4: Admixture: Remove Poison, Armor of Speed, Cold Iron Weapons, Greater Elemental Weapons, Inflict Critical Damage, Lesser Globe of Invulnerability, Lightning Motes, Mass Inflict Moderate Damage, Mass Repair Moderate Damage, Protection from Elements, Repair Critical Damage, Thundering Armor
-SpellList5: Admixture: Cure Critical Wounds, Admixture: Remove Curse, Align Weapons, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Inflict Serious Damage, Mass Owl's Wisdom, Mass Repair Serious Damage, Prismatic Strike, Radiant Forcefield, Silver Weapons, Tenser's Transformation
+SpellList1: Ablative Armor, Admixture: Cure Light Wounds, Conjure Bolts, Enchant Armor, Enchant Weapons, Grease, Inflict Light Damage, Master's Touch, Repair Light Damage, Resist Energy, Resistance, Shield of Faith, Static Shock
+SpellList2: Admixture: Cure Moderate Wounds, Bear's Endurance, Bull's Strength, Cat's Grace, Eagle's Splendor, Elemental Prod, Elemental Weapons, Fire Trap, Flame Arrow, Fox's Cunning, Inflict Moderate Damage, Insightful Strikes, Lightning Sphere, Lucky Cape, Morphic Weapons, Owl's Wisdom, Protection from Energy, Reinforce Construct, Repair Moderate Damage, Toughen Construct
+SpellList3: Admixture: Cure Serious Wounds, Admixture: Remove Disease, Blast Rod, Flame Turret, Inflict Serious Damage, Insightful Damage, Lightning Bolt, Mass Inflict Light Damage, Mass Repair Light Damage, Mass Shield of Faith, Repair Serious Damage, Positive Energy Infusion, Stoneskin, Transmuted Weapons
+Spelllist4: Admixture: Remove Poison, Armor of Speed, Greater Elemental Weapons, Inflict Critical Damage, Lesser Globe of Invulnerability, Lightning Motes, Mass Inflict Moderate Damage, Mass Repair Moderate Damage, Protection from Elements, Repair Critical Damage, Thundering Armor
+SpellList5: Admixture: Cure Critical Wounds, Admixture: Remove Curse, Align Weapons, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Inflict Serious Damage, Mass Owl's Wisdom, Mass Repair Serious Damage, Prismatic Strike, Radiant Forcefield, Tenser's Transformation
 SpellList6: Arcane Tempest, Blade Barrier, Chain Lightning, Deadly Weapons, Deconstruct, Globe of Invulnerability, Mass Inflict Critical Damage, Mass Protection from Elements, Mass Repair Critical Damage, Reconstruct, Tactical Detonation
 FreeSpells: Inflict Light Damage, Inflict Moderate Damage, Inflict Serious Damage, Inflict Critical Damage, Repair Light Damage, Repair Moderate Damage, Repair Serious Damage, Repair Critical Damage
 
@@ -120,9 +122,10 @@ BAB: 0.75
 SkillPoints: 6
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Hide, Jump, Listen, Move Silently, Perform, Spellcraft, Swim, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light, Shield Proficiency
-GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Shortsword, Martial Weapon: Shortbow
-GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore
-GrantedFeats1: Bardic Ballad, Inspire Courage, Dismiss Charm
+GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier
+GrantedFeats1: Martial Weapon: Shortsword, Martial Weapon: Shortbow
+GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore, Magical Training
+GrantedFeats1: Bardic Ballad, Inspire Courage, Dismiss Charm, Cantrip: Sharp Whisper
 GrantedFeats3: Bardic Inspiration
 GrantedFeats6: Suggestion Song
 GrantedFeats8: Soothing Song, Improved Inspire Courage
@@ -157,9 +160,9 @@ Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neut
 BAB: 0.75
 SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Spellcraft
-GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
-GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Turn Undead, Religious Lore
+GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy
+GrantedFeats1: Shield Proficiency, Simple Weapons
+GrantedFeats1: Magical Training, Turn Undead, Religious Lore, Cantrip: Divine Strike
 ClassFeat: 1, 2, 6
 Trees: Divine Disciple, Radiant Servant, Warpriest
 HealingSpell: 1
@@ -194,9 +197,9 @@ BAB: 0.75
 SkillPoints: 4
 Skills: Concentration, Diplomacy, Heal, Intimidate, Listen, Spellcraft, Spot, Swim
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
-GrantedFeats1: Martial Weapon: Scimitar
-GrantedFeats1: Magical Training, Call Wolf Companion, Druidic Oath, Goodberry, Wild Empathy, Druid Spontaneous Casting
-GrantedFeats1: Wilderness Lore
+GrantedFeats1: Martial Weapon: Scimitar, Wilderness Lore
+GrantedFeats1: Magical Training, Call Wolf Companion, Druidic Oath, Goodberry, Wild Empathy
+GrantedFeats1: Druid Spontaneous Casting, Cantrip: Finger of Fire, Cantrip: Jolt
 GrantedFeats7: Improved Wild Empathy
 GrantedFeats9: Venom Immunity
 GrantedFeats15: Timeless Body
@@ -216,8 +219,8 @@ SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 5
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 5
 SpellList1: Charm Animal, Entangle, Faerie Fire, Jump, Lesser Vigor, Longstrider, Magic Fang, Maul, Merfolk's Blessing, Pass Without Trace, Produce Flame, Ram's Might, Shillelagh, Summon Nature's Ally I, Takedown, Thorn Strike
 SpellList2: Align Fang, Animal Trance, Barkskin, Bear's Endurance, Bull's Strength, Cat's Grace, Creeping Cold, Cure Light Wounds, Eagle's Splendor, Fire Trap, Flame Blade, Flaming Sphere, Fog Cloud, Fox's Cunning, Gust of Wind, Hold Animal, Lesser Restoration, Owl's Wisdom, Pack Presence, Resist Energy, Roar, Splinterbolt, Summon Nature's Ally II
-SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Dominate Animal, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Shred, Sleet Storm, Snare, Spiderskin, Spike Growth, Summon Nature's Ally III, Thorn Bloom, Vigor, Water Breathing
-SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Lesser Vigor, Mass Longstrider, Rising Fury, Summon Nature's Ally IV
+SpellList3: Baiting Bite, Call Lightning, Contagion, Cure Moderate Wounds, Dominate Animal, Morphic Fang, Neutralize Poison, Poison, Protection from Energy, Quench, Remove Disease, Salt Ray, Shred, Sleet Storm, Snare, Spiderskin, Spike Growth, Summon Nature's Ally III, Thorn Bloom, Vigor, Water Breathing
+SpellList4: Cure Serious Wounds, Dispel Magic, Enveloping Swarm, Flame Strike, Freedom of Movement, Harrowing Pack, Ice Storm, Mass Lesser Vigor, Mass Longstrider, Material Fang, Rising Fury, Summon Nature's Ally IV
 SpellList5: Animal Growth, Call Lightning Storm, Cold Breath, Cure Critical Wounds, Death Ward, Greater Vigor, Pack Aptitude, Panacea, Reincarnate, Stoneskin, Summon Nature's Ally V, Thorn Wave, Wall of Fire
 SpellList6: Fire Seeds, Fire Shield, Frostbite, Grasping Thorns, Greater Creeping Cold, Greater Dispel Magic, Jaws of Winter, Mass Bear's Endurance, Mass Bull's Strength, Mass Cat's Grace, Mass Eagle's Splendor, Mass Fox's Cunning, Mass Owl's Wisdom, Mass Vigor, Summon Nature's Ally VI, Tenacious Pack, Tremor, Word of Balance
 SpellList7: Body of the Sun, Creeping Doom, Elemental Toughness, Fire Storm, Freezing Spray, Insidious Spores, Mass Freedom of Movement, Mass Greater Vigor, Regenerate, Relentless Onslaught, Summon Nature's Ally VII, Sunbeam, True Seeing
@@ -235,7 +238,7 @@ SkillPoints: 2
 Skills: Concentration, Diplomacy, Heal, Jump, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Simple Weapons
-GrantedFeats1: Magical Training, Religious Lore
+GrantedFeats1: Magical Training, Religious Lore, Cantrip: Divine Strike
 GrantedFeats3: Child of Faith
 GrantedFeats12: Beloved of the Divine
 ClassFeat: 1, 2, 5, 6, 7, 10, 15, 20
@@ -417,6 +420,8 @@ SkillPoints: 2
 Skills: Bluff, Concentration, Spellcraft
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm
+GrantedFeats1: Cantrip: Acid Splash, Cantrip: Cut, Cantrip: Disrupt Living, Cantrip: Finger of Fire
+GrantedFeats1: Cantrip: Jolt, Cantrip: Ray of Frost, Cantrip: Sharp Whisper
 Trees: Air Savant, Earth Savant, Fire Savant, Water Savant, Eldritch Knight (Sorcerer)
 MaxSpellLevel: 9
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -429,7 +434,7 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3, 3, 3
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3
-SpellList1: Acid Spray, Burning Hands, Charm Person, Cause Fear, Caustic Bolt, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Flaming Bolt, Freezing Bolt, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Bolt, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
+SpellList1: Acid Spray, Burning Hands, Charm Person, Cause Fear, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
 SpellList2: Bear's Endurance, Blindness, Blur, Bull's Strength, Cat's Grace, Command Undead, Daze Monster, Eagle's Splendor, Electric Loop, False Life, Flaming Sphere, Fog Cloud, Fox's Cunning, Ghoul Touch, Glitterdust, Gust of Wind, Hypnotic Pattern, Invisibility, Knock, Lesser Death Aura, Melf's Acid Arrow, Ooze Puppet, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scare, Scorch, Scorching Ray, See Invisibility, Snowball Swarm, Spawn Screen, Summon Monster II, Touch of Idiocy, Web
 SpellList3: Acid Blast, Chain Missiles, Deep Slumber, Dispel Magic, Displacement, Fireball, Flame Arrow, Frost Lance, Halt Undead, Haste, Heroism, Hold Person, Lightning Bolt, Magic Circle Against Evil, Protection from Energy, Rage, Ray of Exhaustion, Repair Serious Damage, Sleet Storm, Slow, Stinking Cloud, Suggestion, Summon Monster III, Water Breathing
 SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Contagion, Crushing Despair, Death Aura, Dimension Door, Enervation, Fear, Fire Shield, Fire Trap, Force Missiles, Ice Storm, Lesser Globe of Invulnerability, Negative Energy Burst, Phantasmal Killer, Remove Curse, Repair Critical Damage, Shout, Solid Fog, Stoneskin, Summon Monster IV, Symbol of Flame, Wall of Fire
@@ -488,7 +493,12 @@ Alignment: Lawful Neutral, Lawful Good, Chaotic Neutral, Chaotic Good, True Neut
 BAB: 0.5
 SkillPoints: 2
 Skills: Concentration, Repair, Spellcraft
-GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Inscribe Scroll, Simple Weapons: Club, Simple Weapons: Dagger, Simple Weapons: Quarterstaff, Simple Weapons: Heavy Crossbow, Simple Weapons: Light Crossbow, Simple Weapons: Throwing Dagger
+GrantedFeats1: Simple Weapons: Club, Simple Weapons: Dagger, Simple Weapons: Quarterstaff
+GrantedFeats1: Simple Weapons: Heavy Crossbow, Simple Weapons: Light Crossbow
+GrantedFeats1: Simple Weapons: Throwing Dagger
+GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Inscribe Scroll
+GrantedFeats1: Cantrip: Acid Splash, Cantrip: Cut, Cantrip: Disrupt Living, Cantrip: Finger of Fire
+GrantedFeats1: Cantrip: Jolt, Cantrip: Ray of Frost, Cantrip: Sharp Whisper
 BonusFeat: 1, 5, 10, 15, 20
 Trees: Archmage, Pale Master, Eldritch Knight (Wizard)
 MaxSpellLevel: 9
@@ -502,7 +512,7 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 4, 5, 5
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 4, 4, 5
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 5
-SpellList1: Acid Spray, Burning Hands, Charm Person, Cause Fear, Caustic Bolt, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Flaming Bolt, Freezing Bolt, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Bolt, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
+SpellList1: Acid Spray, Burning Hands, Charm Person, Cause Fear, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
 SpellList2: Bear's Endurance, Blindness, Blur, Bull's Strength, Cat's Grace, Command Undead, Daze Monster, Eagle's Splendor, Electric Loop, False Life, Flaming Sphere, Fog Cloud, Fox's Cunning, Ghoul Touch, Glitterdust, Gust of Wind, Hypnotic Pattern, Invisibility, Knock, Lesser Death Aura, Melf's Acid Arrow, Ooze Puppet, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scare, Scorch, Scorching Ray, See Invisibility, Snowball Swarm, Spawn Screen, Summon Monster II, Touch of Idiocy, Web
 SpellList3: Acid Blast, Chain Missiles, Deep Slumber, Dispel Magic, Displacement, Fireball, Flame Arrow, Frost Lance, Halt Undead, Haste, Heroism, Hold Person, Lightning Bolt, Magic Circle Against Evil, Protection from Energy, Rage, Ray of Exhaustion, Repair Serious Damage, Sleet Storm, Slow, Stinking Cloud, Suggestion, Summon Monster III, Water Breathing
 SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Contagion, Crushing Despair, Death Aura, Dimension Door, Enervation, Fear, Fire Shield, Fire Trap, Force Missiles, Ice Storm, Lesser Globe of Invulnerability, Negative Energy Burst, Phantasmal Killer, Remove Curse, Repair Critical Damage, Shout, Solid Fog, Stoneskin, Summon Monster IV, Symbol of Flame, Wall of Fire
@@ -522,8 +532,9 @@ BAB: 0.75
 SkillPoints: 6
 Skills: Balance, Bluff, Concentration, Diplomacy, Haggle, Hide, Jump, Listen, Move Silently, Perform, Spellcraft, Swim, Tumble, Use Magic Device
 GrantedFeats1: Armor Proficiency: Light, Shield Proficiency
-GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier, Martial Weapon: Shortsword, Martial Weapon: Shortbow
-GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore
+GrantedFeats1: Simple Weapons, Martial Weapon: Longsword, Martial Weapon: Rapier
+GrantedFeats1: Martial Weapon: Shortsword, Martial Weapon: Shortbow
+GrantedFeats1: Fascinate, Arcane Lore, Wilderness Lore, Religious Lore, Cantrip: Jolt
 GrantedFeats1: Inspire Courage, Dismiss Charm, Magical Training
 GrantedFeats3: Bardic Inspiration
 GrantedFeats6: Suggestion Song
@@ -560,6 +571,7 @@ Skills: Concentration, Diplomacy, Heal, Spellcraft
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Armor Proficiency: Heavy, Shield Proficiency
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Turn Undead, Religious Lore, Dark Apostate Spontaneous Casting
+GrantedFeats1: Cantrip: Divine Strike, Cantrip: Inflict Minor Wounds
 ClassFeat: 1, 2, 6
 Trees: Dark Apostate, Divine Disciple, Warpriest
 HealingSpell: 1
@@ -596,7 +608,7 @@ Skills: Concentration, Diplomacy, Heal, Intimidate, Listen, Spellcraft, Spot, Sw
 GrantedFeats1: Armor Proficiency: Light, Armor Proficiency: Medium, Shield Proficiency
 GrantedFeats1: Martial Weapon: Scimitar
 GrantedFeats1: Magical Training, Druidic Oath, Druid Spontaneous Casting, Disease Immunity
-GrantedFeats1: Wilderness Lore
+GrantedFeats1: Wilderness Lore, Cantrip: Acid Splash, Cantrip: Disrupt Living
 GrantedFeats2: Wild Shape Plague Wolf
 GrantedFeats5: Venom Immunity
 GrantedFeats11: Wild Shape Blighted Wolf
@@ -758,6 +770,8 @@ SkillPoints: 2
 Skills: Bluff, Concentration, Spellcraft
 GrantedFeats1: Simple Weapons
 GrantedFeats1: Magical Training, Arcane Lore, Dismiss Charm, Wild Magic
+GrantedFeats1: Cantrip: Acid Splash, Cantrip: Cut, Cantrip: Disrupt Living, Cantrip: Finger of Fire
+GrantedFeats1: Cantrip: Jolt, Cantrip: Ray of Frost, Cantrip: Sharp Whisper
 Trees: Air Savant, Earth Savant, Fire Savant, Water Savant, Wild Mage
 MaxSpellLevel: 9
 SpellSlots0: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
@@ -770,7 +784,7 @@ SpellSlots6: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3, 3, 3
 SpellSlots7: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3, 3, 3
 SpellSlots8: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 3
 SpellSlots9: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3
-SpellList1: Acid Spray, Burning Hands, Cause Fear, Caustic Bolt, Chaos Bolt, Charm Person, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Flaming Bolt, Freezing Bolt, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Bolt, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
+SpellList1: Acid Spray, Burning Hands, Cause Fear, Chaos Bolt, Charm Person, Chill Touch, Color Spray, Detect Secret Doors, Disrupt Undead, Expeditious Retreat, Feather Fall, Grease, Hypnotism, Jump, Mage Armor, Magic Missile, Master's Touch, Merfolk's Blessing, Niac's Cold Ray, Nightshield, Obscuring Mist, Protection from Evil, Ray of Enfeeblement, Repair Light Damage, Shield, Shocking Grasp, Sleep, Sonic Blast, Summon Monster I, Tumble
 SpellList2: Bear's Endurance, Blindness, Blur, Bull's Strength, Cat's Grace, Command Undead, Daze Monster, Eagle's Splendor, Electric Loop, False Life, Flaming Sphere, Fog Cloud, Fox's Cunning, Ghoul Touch, Glitterdust, Gust of Wind, Hypnotic Pattern, Invisibility, Knock, Lesser Death Aura, Melf's Acid Arrow, Ooze Puppet, Otto's Resistible Dance, Owl's Wisdom, Repair Moderate Damage, Resist Energy, Scare, Scorch, Scorching Ray, See Invisibility, Snowball Swarm, Spawn Screen, Summon Monster II, Touch of Idiocy, Web
 SpellList3: Acid Blast, Chain Missiles, Chaos Sphere, Deep Slumber, Dispel Magic, Displacement, Fireball, Flame Arrow, Frost Lance, Halt Undead, Haste, Heroism, Hold Person, Lightning Bolt, Magic Circle Against Evil, Protection from Energy, Rage, Ray of Exhaustion, Repair Serious Damage, Sleet Storm, Slow, Stinking Cloud, Suggestion, Summon Monster III, Water Breathing
 SpellList4: Acid Rain, Bestow Curse, Burning Blood, Charm Monster, Chaos Hammer, Contagion, Crushing Despair, Death Aura, Dimension Door, Enervation, Fear, Fire Shield, Fire Trap, Force Missiles, Ice Storm, Lesser Globe of Invulnerability, Negative Energy Burst, Phantasmal Killer, Remove Curse, Repair Critical Damage, Shout, Solid Fog, Stoneskin, Summon Monster IV, Symbol of Flame, Wall of Fire
@@ -829,9 +843,10 @@ BAB: 0.75
 SkillPoints: 8
 Trapper: true
 Skills: Balance, Bluff, Concentration, Diplomacy, Disable Device, Haggle, Hide, Jump, Listen, Move Silently, Open Lock, Repair, Search, Spellcraft, Spot, Tumble, Use Magic Device
-GrantedFeats1: Armor Proficiency: Light
-GrantedFeats1: Simple Weapons, Martial Weapon: Rapier, Martial Weapon: Shortbow, Martial Weapon: Shortsword
-GrantedFeats1: Sneak Attack, Trapfinding
+GrantedFeats1: Armor Proficiency: Light, Simple Weapons, Martial Weapon: Rapier
+GrantedFeats1: Martial Weapon: Shortbow, Martial Weapon: Shortsword, Sneak Attack, Trapfinding
+GrantedFeats1: Cantrip: Acid Splash, Cantrip: Cut, Cantrip: Finger of Fire, Cantrip: Jolt
+GrantedFeats1: Cantrip: Ray of Frost, Cantrip: Sharp Whisper
 GrantedFeats2: Evasion
 GrantedFeats3: Sneak Attack, Mage Hand: Bluff, Mage Hand: Disable Traps, Magical Training
 GrantedFeats5: Sneak Attack
