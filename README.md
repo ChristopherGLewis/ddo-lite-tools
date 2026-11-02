@@ -22,7 +22,7 @@ files and basically keeping this project alive.  It's been over 7 years since I 
 and his initial release of this tool, and its been a pleasure keeping it working and adding all the new features.
 
 #### Character Builder
-- Version 4.14
+- Version 4.15
 - All sorts of updates to Enhancements 
 - Addition of Cantrips as auto granted feats
 - Minor fix to the second Deity enhancement selectors to line up to the first Deity enhancement
@@ -35,7 +35,7 @@ and his initial release of this tool, and its been a pleasure keeping it working
 - Update to use the new RES file
 
 #### Compendium
-- Version 1.21.1
+- Version 1.22.0
 - Update to use the new RES file
 
 #### General
